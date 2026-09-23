@@ -46,15 +46,38 @@ body { margin:0; background:#fff; color:var(--ink); font-family:var(--sans);
 .wordsub { font-size:11px; letter-spacing:.24em; text-transform:uppercase;
   color:var(--mut); margin-top:7px; font-weight:600; }
 
-/* section nav: glossy magazine bar, one scrollable row on phones */
-.sitenav { display:flex; gap:2px; overflow-x:auto; background:var(--ink);
-  border-radius:10px; margin:20px 0 0; padding:0 10px; scrollbar-width:none; }
-.sitenav::-webkit-scrollbar { display:none; }
-.sitenav a { color:#c3c9d2; text-decoration:none; font-size:11px; font-weight:600;
-  letter-spacing:.11em; text-transform:uppercase; padding:15px 13px 12px;
+/* section nav: 4 intent groups; desktop dropdown line, mobile burger */
+.navtoggle { position:absolute; left:-9999px; width:1px; height:1px; }
+.navburger { display:none; }
+.sitenav { display:flex; gap:2px; background:var(--ink);
+  border-radius:10px; margin:20px 0 0; padding:0 10px; }
+.navdrop { position:relative; }
+.nd > summary { list-style:none; display:flex; align-items:center; cursor:pointer; }
+.nd > summary::-webkit-details-marker { display:none; }
+.nd-top { color:#c3c9d2; text-decoration:none; font-size:11px; font-weight:600;
+  letter-spacing:.11em; text-transform:uppercase; padding:15px 4px 12px 13px;
   white-space:nowrap; border-bottom:3px solid transparent; }
-.sitenav a:hover { color:#fff; }
-.sitenav a[aria-current="page"] { color:#fff; border-bottom-color:var(--acc-bright); }
+.nd-caret { display:inline-block; width:0; height:0; margin:2px 13px 0 4px;
+  border-left:4px solid transparent; border-right:4px solid transparent;
+  border-top:5px solid #8b93a0; flex:none; }
+.nd-sum:hover .nd-top { color:#fff; }
+.navdrop.active .nd-top { color:#fff; border-bottom-color:var(--acc-bright); }
+.nd-menu { display:none; position:absolute; top:100%; left:0; z-index:50;
+  background:#fff; border:1px solid var(--line); border-radius:0 0 10px 10px;
+  box-shadow:0 14px 30px rgba(23,25,29,.16); padding:8px; min-width:235px; }
+.nd:hover .nd-menu, .nd[open] .nd-menu { display:block; }
+.nd-menu .mi { display:block; color:var(--ink); text-decoration:none;
+  font-size:13.5px; padding:8px 12px; border-radius:6px; white-space:nowrap; }
+.nd-menu .mi:hover { background:var(--wash); }
+.nd-menu .mi[aria-current="page"] { font-weight:700; }
+/* projects mega menu: all-projects link over 3 category columns */
+.nd-megahead .mi { font-weight:600; }
+.nd-mega { display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:4px 10px; min-width:600px; padding:4px 0 2px; }
+.mcol .mcat { display:block; font-size:11px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--acc); text-decoration:none;
+  padding:8px 12px 3px; }
+.mcol .mi.small { font-size:12.5px; padding:5px 12px; white-space:normal; }
 
 /* headlines */
 .crumb { font-size:12.5px; color:var(--mut); margin:24px 0 8px; letter-spacing:.02em; }
@@ -168,6 +191,29 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
   .wordmark { font-size:31px; }
   .mark { width:40px; height:40px; }
   h1 { font-size:31px; }
+  /* mobile burger: checkbox reveals 4 stacked, expandable groups */
+  .navburger { display:flex; flex-direction:column; justify-content:center;
+    gap:5px; width:46px; height:44px; margin:16px 0 0; cursor:pointer; }
+  .navburger span { display:block; height:2px; background:var(--ink);
+    border-radius:2px; }
+  .sitenav { display:none; flex-direction:column; border-radius:10px;
+    padding:6px; margin-top:10px; }
+  .navtoggle:checked ~ .sitenav { display:flex; }
+  .nd > summary { width:100%; }
+  .nd-top { padding:13px 4px 13px 10px; }
+  .nd-caret { padding:14px 12px; margin:0; border:none; width:auto; height:auto; }
+  .nd-caret::after { content:""; display:block; width:0; height:0;
+    border-left:5px solid transparent; border-right:5px solid transparent;
+    border-top:6px solid #8b93a0; }
+  .nd:hover .nd-menu { display:none; }
+  .nd[open] .nd-menu { display:block; position:static; box-shadow:none;
+    border:none; border-left:2px solid #3a3f47; border-radius:0;
+    background:transparent; padding:2px 0 10px 6px; min-width:0; }
+  .nd-menu .mi { color:#c3c9d2; white-space:normal; }
+  .nd-menu .mi:hover { background:#22262c; color:#fff; }
+  .nd-mega { grid-template-columns:1fr; min-width:0; gap:0; }
+  .mcol .mcat { color:var(--acc-bright); }
+  .nd-megahead .mi { color:#fff; }
   h2 { font-size:22px; }
   .sub { font-size:17px; }
   .dateline { flex-direction:column; gap:2px; }
@@ -176,7 +222,7 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
 }
 
 @media print {
-  .sitenav { display:none; }
+  .sitenav, .navburger, .navtoggle { display:none; }
   .dateline { border-bottom:2px solid var(--ink); }
   .brandlock { padding:12px 0 2px; }
   .wordmark { font-size:28px; }
@@ -194,20 +240,14 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
   <header class="masthead">
     <div class="dateline"><span class="dl-left">The WCSB supply letter</span><span class="dl-right"><b>Updated</b> September 23, 2026 &middot; <b>Source</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; forward maintenance calendar annotations/maintenance_forward.yaml (compiled 2026-09-22)</span></div>
     <div class="brandlock"><a class="brandlink" href="../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#d9481f" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
-    <nav class="sitenav" aria-label="Sections">
-      <a href="../index.html">Latest</a>
-      <a href="../st3-dashboard.html">Dashboard</a>
-      <a href="../balance/index.html">Balance</a>
-      <a href="../maintenance/index.html">Maintenance</a>
-      <a href="index.html" aria-current="page">Projects</a>
-      <a href="../fieldguide/index.html">Field Guide</a>
-      <a href="../weekly/index.html">Weekly</a>
-      <a href="../sources/index.html">Sources</a>
-      <a href="../data/index.html">Data</a>
-      <a href="../venezuela/index.html">Venezuela</a>
-      <a href="../methodology/index.html">Methodology</a>
-      <a href="../../reports/index.html">Reports</a>
-    </nav>
+    <input type="checkbox" id="navtoggle" class="navtoggle" aria-hidden="true">
+      <label for="navtoggle" class="navburger" aria-label="Menu"><span></span><span></span><span></span></label>
+      <nav class="sitenav" aria-label="Sections">
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../../reports/weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
+      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="../st3-dashboard.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="index.html">All projects</a></div><div class="nd-mega"><div class="mcol"><a class="mcat" href="index.html#in-situ">In-situ</a><a class="mi small" href="cve_foster_creek.html">Foster Creek</a><a class="mi small" href="cve_christina_lake.html">Christina Lake</a><a class="mi small" href="cve_sunrise.html">Sunrise</a><a class="mi small" href="narrows_lake.html">Narrows Lake</a><a class="mi small" href="su_firebag.html">Firebag</a><a class="mi small" href="su_mackay_river.html">MacKay River</a><a class="mi small" href="cnq_jackfish.html">Jackfish</a><a class="mi small" href="cnq_kirby.html">Kirby</a><a class="mi small" href="cop_surmont.html">Surmont</a><a class="mi small" href="meg_christina_lake.html">Christina Lake North</a><a class="mi small" href="ath_leismer.html">Leismer</a><a class="mi small" href="ath_hangingstone.html">Hangingstone</a><a class="mi small" href="gfr_hangingstone_exp.html">Hangingstone Expansion</a><a class="mi small" href="scr_orion.html">Orion</a><a class="mi small" href="scr_lindbergh.html">Lindbergh</a><a class="mi small" href="scr_tucker.html">Tucker</a><a class="mi small" href="connacher_great_divide.html">Great Divide</a><a class="mi small" href="harvest_blackgold.html">BlackGold</a><a class="mi small" href="ipc_blackrod.html">Blackrod</a><a class="mi small" href="petrochina_mackay.html">MacKay River (PetroChina)</a><a class="mi small" href="imo_cold_lake.html">Cold Lake</a><a class="mi small" href="cnq_primrose.html">Primrose and Wolf Lake</a><a class="mi small" href="cnq_peace_river.html">Peace River</a></div><div class="mcol"><a class="mcat" href="index.html#mining">Mined</a><a class="mi small" href="imo_kearl.html">Kearl</a><a class="mi small" href="su_fort_hills.html">Fort Hills</a><a class="mi small" href="cnq_horizon.html">Horizon</a><a class="mi small" href="su_base_plant.html">Base Plant</a><a class="mi small" href="syncrude.html">Syncrude</a></div><div class="mcol"><a class="mcat" href="index.html#upgrading">Upgrading</a><a class="mi small" href="cnooc_long_lake_upgrader.html">Long Lake Upgrader</a></div></div></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../venezuela/index.html">Venezuela watch</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../fieldguide/index.html">Field Guide</a><a class="mi" href="../data/index.html">Data</a><a class="mi" href="../sources/index.html">Sources</a><a class="mi" href="../methodology/index.html">Methodology</a></div></details></div>
+      </nav>
   </header>
   <div class="crumb"><a href="index.html">Projects</a> / MacKay River (PetroChina)</div>
   <h1>MacKay River (PetroChina)</h1>
@@ -234,15 +274,15 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
   <h2>Production</h2>
   <div class="statgrid">
     <div class="stat"><div class="v">11.9 kb/d</div><div class="l">latest actual, Jul 2026 (MacKay River (PetroChina) (PetroChina))</div></div>
-    <div class="stat"><div class="v">10.3 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
+    <div class="stat"><div class="v">10.2 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
   </div>
 <figure class="chart">
 <svg viewbox="0 0 720 230" role="img" aria-label="MacKay River (PetroChina) (PetroChina) monthly production">
 <style>text{font-family:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums;}.ctitle{font-size:13.5px;font-weight:700;fill:#17191d;}.cunit{font-size:11.5px;font-weight:500;fill:#5d636e;}.tick{font-size:12px;fill:#6b7280;}.xlab{font-size:11px;fill:#6b7280;}.val{font-size:11.5px;font-weight:700;fill:#17191d;}</style>
 <title>MacKay River (PetroChina) (PetroChina) monthly production</title>
 <text x="52" y="20" class="ctitle">MacKay River (PetroChina) (PetroChina) monthly production<tspan class="cunit">  kb/d</tspan></text>
-<rect x="353.8" y="42" width="50.3" height="148" fill="#fbf7ea" />
-<rect x="404.2" y="42" width="301.8" height="148" fill="#f2f5fa" />
+<rect x="322.6" y="42" width="45.1" height="148" fill="#fbf7ea" />
+<rect x="367.7" y="42" width="338.3" height="148" fill="#f2f5fa" />
 <line x1="52" y1="190.0" x2="706" y2="190.0" stroke="#e8eaee" />
 <text x="44" y="194.0" text-anchor="end" class="tick">0.0</text>
 <line x1="52" y1="153.0" x2="706" y2="153.0" stroke="#e8eaee" />
@@ -254,47 +294,47 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
 <line x1="52" y1="42.0" x2="706" y2="42.0" stroke="#e8eaee" />
 <text x="44" y="46.0" text-anchor="end" class="tick">20.0</text>
 <line x1="52" y1="190.0" x2="706" y2="190.0" stroke="#c9ccd2" />
-<rect x="56.8" y="102.7" width="15.6" height="87.3" fill="#23272e"><title>Aug 25: 11.8 kb/d</title></rect>
-<rect x="81.9" y="101.9" width="15.6" height="88.1" fill="#23272e"><title>Sep 25: 11.9 kb/d</title></rect>
-<rect x="107.1" y="104.9" width="15.6" height="85.1" fill="#23272e"><title>Oct 25: 11.5 kb/d</title></rect>
-<rect x="132.2" y="104.9" width="15.6" height="85.1" fill="#23272e"><title>Nov 25: 11.5 kb/d</title></rect>
-<rect x="157.4" y="107.1" width="15.6" height="82.9" fill="#23272e"><title>Dec 25: 11.2 kb/d</title></rect>
-<rect x="182.5" y="104.9" width="15.6" height="85.1" fill="#23272e"><title>Jan 26: 11.5 kb/d</title></rect>
-<rect x="207.7" y="105.6" width="15.6" height="84.4" fill="#23272e"><title>Feb 26: 11.4 kb/d</title></rect>
-<rect x="232.9" y="112.3" width="15.6" height="77.7" fill="#23272e"><title>Mar 26: 10.5 kb/d</title></rect>
-<rect x="258.0" y="116.0" width="15.6" height="74.0" fill="#23272e"><title>Apr 26: 10.0 kb/d</title></rect>
-<rect x="283.2" y="181.9" width="15.6" height="8.1" fill="#23272e"><title>May 26: 1.1 kb/d</title></rect>
-<rect x="308.3" y="119.0" width="15.6" height="71.0" fill="#23272e"><title>Jun 26: 9.6 kb/d</title></rect>
-<rect x="333.5" y="101.9" width="15.6" height="88.1" fill="#23272e"><title>Jul 26: 11.9 kb/d</title></rect>
-<rect x="358.6" y="114.5" width="15.6" height="75.5" fill="#c08a2d"><title>Aug 26: 10.2 kb/d</title></rect>
-<rect x="383.8" y="113.8" width="15.6" height="76.2" fill="#c08a2d"><title>Sep 26: 10.3 kb/d</title></rect>
-<rect x="408.9" y="116.7" width="15.6" height="73.3" fill="#2f6fb2"><title>Oct 26: 9.9 kb/d</title></rect>
-<rect x="434.1" y="116.0" width="15.6" height="74.0" fill="#2f6fb2"><title>Nov 26: 10.0 kb/d</title></rect>
-<rect x="459.2" y="116.0" width="15.6" height="74.0" fill="#2f6fb2"><title>Dec 26: 10.0 kb/d</title></rect>
-<rect x="484.4" y="113.8" width="15.6" height="76.2" fill="#2f6fb2"><title>Jan 27: 10.3 kb/d</title></rect>
-<rect x="509.5" y="112.3" width="15.6" height="77.7" fill="#2f6fb2"><title>Feb 27: 10.5 kb/d</title></rect>
-<rect x="534.7" y="112.3" width="15.6" height="77.7" fill="#2f6fb2"><title>Mar 27: 10.5 kb/d</title></rect>
-<rect x="559.9" y="111.6" width="15.6" height="78.4" fill="#2f6fb2"><title>Apr 27: 10.6 kb/d</title></rect>
-<rect x="585.0" y="111.6" width="15.6" height="78.4" fill="#2f6fb2"><title>May 27: 10.6 kb/d</title></rect>
-<rect x="610.2" y="113.0" width="15.6" height="77.0" fill="#2f6fb2"><title>Jun 27: 10.4 kb/d</title></rect>
-<rect x="635.3" y="113.0" width="15.6" height="77.0" fill="#2f6fb2"><title>Jul 27: 10.4 kb/d</title></rect>
-<rect x="660.5" y="113.8" width="15.6" height="76.2" fill="#2f6fb2"><title>Aug 27: 10.3 kb/d</title></rect>
-<rect x="685.6" y="113.8" width="15.6" height="76.2" fill="#2f6fb2"><title>Sep 27: 10.3 kb/d</title></rect>
-<text x="693.4" y="107.8" text-anchor="middle" class="val">10.3</text>
-<text x="64.6" y="216" text-anchor="middle" class="xlab">Aug 25</text>
-<text x="114.9" y="216" text-anchor="middle" class="xlab">Oct 25</text>
-<text x="165.2" y="216" text-anchor="middle" class="xlab">Dec 25</text>
-<text x="215.5" y="216" text-anchor="middle" class="xlab">Feb 26</text>
-<text x="265.8" y="216" text-anchor="middle" class="xlab">Apr 26</text>
-<text x="316.1" y="216" text-anchor="middle" class="xlab">Jun 26</text>
-<text x="366.4" y="216" text-anchor="middle" class="xlab">Aug 26</text>
-<text x="416.7" y="216" text-anchor="middle" class="xlab">Oct 26</text>
-<text x="467.0" y="216" text-anchor="middle" class="xlab">Dec 26</text>
-<text x="517.3" y="216" text-anchor="middle" class="xlab">Feb 27</text>
-<text x="567.7" y="216" text-anchor="middle" class="xlab">Apr 27</text>
-<text x="618.0" y="216" text-anchor="middle" class="xlab">Jun 27</text>
-<text x="668.3" y="216" text-anchor="middle" class="xlab">Aug 27</text>
-<text x="693.4" y="216" text-anchor="middle" class="xlab">Sep 27</text>
+<rect x="56.3" y="102.7" width="14.0" height="87.3" fill="#23272e"><title>Aug 25: 11.8 kb/d</title></rect>
+<rect x="78.8" y="101.9" width="14.0" height="88.1" fill="#23272e"><title>Sep 25: 11.9 kb/d</title></rect>
+<rect x="101.4" y="104.9" width="14.0" height="85.1" fill="#23272e"><title>Oct 25: 11.5 kb/d</title></rect>
+<rect x="123.9" y="104.9" width="14.0" height="85.1" fill="#23272e"><title>Nov 25: 11.5 kb/d</title></rect>
+<rect x="146.5" y="107.1" width="14.0" height="82.9" fill="#23272e"><title>Dec 25: 11.2 kb/d</title></rect>
+<rect x="169.0" y="104.9" width="14.0" height="85.1" fill="#23272e"><title>Jan 26: 11.5 kb/d</title></rect>
+<rect x="191.6" y="105.6" width="14.0" height="84.4" fill="#23272e"><title>Feb 26: 11.4 kb/d</title></rect>
+<rect x="214.1" y="112.3" width="14.0" height="77.7" fill="#23272e"><title>Mar 26: 10.5 kb/d</title></rect>
+<rect x="236.7" y="116.0" width="14.0" height="74.0" fill="#23272e"><title>Apr 26: 10.0 kb/d</title></rect>
+<rect x="259.3" y="181.9" width="14.0" height="8.1" fill="#23272e"><title>May 26: 1.1 kb/d</title></rect>
+<rect x="281.8" y="119.0" width="14.0" height="71.0" fill="#23272e"><title>Jun 26: 9.6 kb/d</title></rect>
+<rect x="304.4" y="101.9" width="14.0" height="88.1" fill="#23272e"><title>Jul 26: 11.9 kb/d</title></rect>
+<rect x="326.9" y="114.5" width="14.0" height="75.5" fill="#c08a2d"><title>Aug 26: 10.2 kb/d</title></rect>
+<rect x="349.5" y="113.8" width="14.0" height="76.2" fill="#c08a2d"><title>Sep 26: 10.3 kb/d</title></rect>
+<rect x="372.0" y="116.7" width="14.0" height="73.3" fill="#2f6fb2"><title>Oct 26: 9.9 kb/d</title></rect>
+<rect x="394.6" y="116.0" width="14.0" height="74.0" fill="#2f6fb2"><title>Nov 26: 10.0 kb/d</title></rect>
+<rect x="417.1" y="116.0" width="14.0" height="74.0" fill="#2f6fb2"><title>Dec 26: 10.0 kb/d</title></rect>
+<rect x="439.7" y="113.8" width="14.0" height="76.2" fill="#2f6fb2"><title>Jan 27: 10.3 kb/d</title></rect>
+<rect x="462.2" y="112.3" width="14.0" height="77.7" fill="#2f6fb2"><title>Feb 27: 10.5 kb/d</title></rect>
+<rect x="484.8" y="112.3" width="14.0" height="77.7" fill="#2f6fb2"><title>Mar 27: 10.5 kb/d</title></rect>
+<rect x="507.3" y="111.6" width="14.0" height="78.4" fill="#2f6fb2"><title>Apr 27: 10.6 kb/d</title></rect>
+<rect x="529.9" y="111.6" width="14.0" height="78.4" fill="#2f6fb2"><title>May 27: 10.6 kb/d</title></rect>
+<rect x="552.4" y="113.0" width="14.0" height="77.0" fill="#2f6fb2"><title>Jun 27: 10.4 kb/d</title></rect>
+<rect x="575.0" y="113.0" width="14.0" height="77.0" fill="#2f6fb2"><title>Jul 27: 10.4 kb/d</title></rect>
+<rect x="597.5" y="113.8" width="14.0" height="76.2" fill="#2f6fb2"><title>Aug 27: 10.3 kb/d</title></rect>
+<rect x="620.1" y="113.8" width="14.0" height="76.2" fill="#2f6fb2"><title>Sep 27: 10.3 kb/d</title></rect>
+<rect x="642.6" y="116.7" width="14.0" height="73.3" fill="#2f6fb2"><title>Oct 27: 9.9 kb/d</title></rect>
+<rect x="665.2" y="116.0" width="14.0" height="74.0" fill="#2f6fb2"><title>Nov 27: 10.0 kb/d</title></rect>
+<rect x="687.7" y="116.0" width="14.0" height="74.0" fill="#2f6fb2"><title>Dec 27: 10.0 kb/d</title></rect>
+<text x="694.7" y="110.0" text-anchor="middle" class="val">10.0</text>
+<text x="63.3" y="216" text-anchor="middle" class="xlab">Aug 25</text>
+<text x="130.9" y="216" text-anchor="middle" class="xlab">Nov 25</text>
+<text x="198.6" y="216" text-anchor="middle" class="xlab">Feb 26</text>
+<text x="266.2" y="216" text-anchor="middle" class="xlab">May 26</text>
+<text x="333.9" y="216" text-anchor="middle" class="xlab">Aug 26</text>
+<text x="401.6" y="216" text-anchor="middle" class="xlab">Nov 26</text>
+<text x="469.2" y="216" text-anchor="middle" class="xlab">Feb 27</text>
+<text x="536.9" y="216" text-anchor="middle" class="xlab">May 27</text>
+<text x="604.5" y="216" text-anchor="middle" class="xlab">Aug 27</text>
+<text x="672.2" y="216" text-anchor="middle" class="xlab">Nov 27</text>
+<text x="694.7" y="216" text-anchor="middle" class="xlab">Dec 27</text>
 </svg>
 <figcaption><b>Vintage:</b> AER ST53 actuals through 2026-07 (ST39 through 2026-05), pulled 2026-09-22; Aug-Sep 2026 nowcast estimated, built 2026-09-23; forecast built 2026-09-22. Solid orange shading marks months with modeled maintenance on this series. <b>Series:</b> MacKay River (PetroChina) (PetroChina).</figcaption>
 <div class="lg"><span><span class="sw" style="background:#23272e"></span>Actuals (AER)</span><span><span class="sw" style="background:#c08a2d"></span>Nowcast (model est.)</span><span><span class="sw" style="background:#2f6fb2"></span>Forecast (model)</span><span><span class="sw" style="background:rgba(217,72,31,.45)"></span>Modeled maintenance month</span></div>
@@ -318,7 +358,7 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
   <p class="src"><b>Named assumptions:</b> Seasonal baseline off a 8.1 kb/d trailing-12m baseline. No 2027 turnaround statements; single-month dips are seasonal factors repeating the last 3 years.</p>
   <p class="src"><b>Confirmation status:</b> model forecast; maintenance impacts enter the math only from public-confirmed guidance.</p>
   <h2>Market relevance</h2>
-  <p>In-situ bitumen has flexible disposition (dilbit to market or upgrader feed). In the model, MacKay River (PetroChina) output is unchanged by upgrader outages and any upgrader-bound share is assumed diverted to dilbit, so its 10.3 kb/d 12-month forecast average is a steady contributor to marketable dilbit across the tradable window.</p>
+  <p>In-situ bitumen has flexible disposition (dilbit to market or upgrader feed). In the model, MacKay River (PetroChina) output is unchanged by upgrader outages and any upgrader-bound share is assumed diverted to dilbit, so its 10.2 kb/d 12-month forecast average is a steady contributor to marketable dilbit across the tradable window.</p>
   <p class="src"><b>Basis:</b> model-derived from the dashboard series above; no external view is added.</p>
   <h2>Related weekly notes</h2>
   <ul class="ev">

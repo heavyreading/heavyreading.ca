@@ -46,15 +46,38 @@ body { margin:0; background:#fff; color:var(--ink); font-family:var(--sans);
 .wordsub { font-size:11px; letter-spacing:.24em; text-transform:uppercase;
   color:var(--mut); margin-top:7px; font-weight:600; }
 
-/* section nav: glossy magazine bar, one scrollable row on phones */
-.sitenav { display:flex; gap:2px; overflow-x:auto; background:var(--ink);
-  border-radius:10px; margin:20px 0 0; padding:0 10px; scrollbar-width:none; }
-.sitenav::-webkit-scrollbar { display:none; }
-.sitenav a { color:#c3c9d2; text-decoration:none; font-size:11px; font-weight:600;
-  letter-spacing:.11em; text-transform:uppercase; padding:15px 13px 12px;
+/* section nav: 4 intent groups; desktop dropdown line, mobile burger */
+.navtoggle { position:absolute; left:-9999px; width:1px; height:1px; }
+.navburger { display:none; }
+.sitenav { display:flex; gap:2px; background:var(--ink);
+  border-radius:10px; margin:20px 0 0; padding:0 10px; }
+.navdrop { position:relative; }
+.nd > summary { list-style:none; display:flex; align-items:center; cursor:pointer; }
+.nd > summary::-webkit-details-marker { display:none; }
+.nd-top { color:#c3c9d2; text-decoration:none; font-size:11px; font-weight:600;
+  letter-spacing:.11em; text-transform:uppercase; padding:15px 4px 12px 13px;
   white-space:nowrap; border-bottom:3px solid transparent; }
-.sitenav a:hover { color:#fff; }
-.sitenav a[aria-current="page"] { color:#fff; border-bottom-color:var(--acc-bright); }
+.nd-caret { display:inline-block; width:0; height:0; margin:2px 13px 0 4px;
+  border-left:4px solid transparent; border-right:4px solid transparent;
+  border-top:5px solid #8b93a0; flex:none; }
+.nd-sum:hover .nd-top { color:#fff; }
+.navdrop.active .nd-top { color:#fff; border-bottom-color:var(--acc-bright); }
+.nd-menu { display:none; position:absolute; top:100%; left:0; z-index:50;
+  background:#fff; border:1px solid var(--line); border-radius:0 0 10px 10px;
+  box-shadow:0 14px 30px rgba(23,25,29,.16); padding:8px; min-width:235px; }
+.nd:hover .nd-menu, .nd[open] .nd-menu { display:block; }
+.nd-menu .mi { display:block; color:var(--ink); text-decoration:none;
+  font-size:13.5px; padding:8px 12px; border-radius:6px; white-space:nowrap; }
+.nd-menu .mi:hover { background:var(--wash); }
+.nd-menu .mi[aria-current="page"] { font-weight:700; }
+/* projects mega menu: all-projects link over 3 category columns */
+.nd-megahead .mi { font-weight:600; }
+.nd-mega { display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:4px 10px; min-width:600px; padding:4px 0 2px; }
+.mcol .mcat { display:block; font-size:11px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--acc); text-decoration:none;
+  padding:8px 12px 3px; }
+.mcol .mi.small { font-size:12.5px; padding:5px 12px; white-space:normal; }
 
 /* headlines */
 .crumb { font-size:12.5px; color:var(--mut); margin:24px 0 8px; letter-spacing:.02em; }
@@ -168,6 +191,29 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
   .wordmark { font-size:31px; }
   .mark { width:40px; height:40px; }
   h1 { font-size:31px; }
+  /* mobile burger: checkbox reveals 4 stacked, expandable groups */
+  .navburger { display:flex; flex-direction:column; justify-content:center;
+    gap:5px; width:46px; height:44px; margin:16px 0 0; cursor:pointer; }
+  .navburger span { display:block; height:2px; background:var(--ink);
+    border-radius:2px; }
+  .sitenav { display:none; flex-direction:column; border-radius:10px;
+    padding:6px; margin-top:10px; }
+  .navtoggle:checked ~ .sitenav { display:flex; }
+  .nd > summary { width:100%; }
+  .nd-top { padding:13px 4px 13px 10px; }
+  .nd-caret { padding:14px 12px; margin:0; border:none; width:auto; height:auto; }
+  .nd-caret::after { content:""; display:block; width:0; height:0;
+    border-left:5px solid transparent; border-right:5px solid transparent;
+    border-top:6px solid #8b93a0; }
+  .nd:hover .nd-menu { display:none; }
+  .nd[open] .nd-menu { display:block; position:static; box-shadow:none;
+    border:none; border-left:2px solid #3a3f47; border-radius:0;
+    background:transparent; padding:2px 0 10px 6px; min-width:0; }
+  .nd-menu .mi { color:#c3c9d2; white-space:normal; }
+  .nd-menu .mi:hover { background:#22262c; color:#fff; }
+  .nd-mega { grid-template-columns:1fr; min-width:0; gap:0; }
+  .mcol .mcat { color:var(--acc-bright); }
+  .nd-megahead .mi { color:#fff; }
   h2 { font-size:22px; }
   .sub { font-size:17px; }
   .dateline { flex-direction:column; gap:2px; }
@@ -176,7 +222,7 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
 }
 
 @media print {
-  .sitenav { display:none; }
+  .sitenav, .navburger, .navtoggle { display:none; }
   .dateline { border-bottom:2px solid var(--ink); }
   .brandlock { padding:12px 0 2px; }
   .wordmark { font-size:28px; }
@@ -192,41 +238,29 @@ figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:10px;
 <body>
 <div class="wrap">
   <header class="masthead">
-    <div class="dateline"><span class="dl-left">The WCSB supply letter</span><span class="dl-right"><b>Updated</b> September 23, 2026 &middot; <b>Source</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; company guidance via the forward maintenance calendar (compiled 2026-09-22)</span></div>
+    <div class="dateline"><span class="dl-left">The WCSB supply letter</span><span class="dl-right"><b>Updated</b> September 23, 2026 &middot; <b>Source</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; company guidance via the forward maintenance calendar (revised 2026-09-23)</span></div>
     <div class="brandlock"><a class="brandlink" href="../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#d9481f" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
-    <nav class="sitenav" aria-label="Sections">
-      <a href="../index.html">Latest</a>
-      <a href="../st3-dashboard.html">Dashboard</a>
-      <a href="../balance/index.html">Balance</a>
-      <a href="../maintenance/index.html">Maintenance</a>
-      <a href="../projects/index.html">Projects</a>
-      <a href="../fieldguide/index.html">Field Guide</a>
-      <a href="../weekly/index.html">Weekly</a>
-      <a href="../sources/index.html">Sources</a>
-      <a href="index.html" aria-current="page">Data</a>
-      <a href="../venezuela/index.html">Venezuela</a>
-      <a href="../methodology/index.html">Methodology</a>
-      <a href="../../reports/index.html">Reports</a>
-    </nav>
+    <input type="checkbox" id="navtoggle" class="navtoggle" aria-hidden="true">
+      <label for="navtoggle" class="navburger" aria-label="Menu"><span></span><span></span><span></span></label>
+      <nav class="sitenav" aria-label="Sections">
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../../reports/weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../st3-dashboard.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="../projects/index.html">All projects</a></div><div class="nd-mega"><div class="mcol"><a class="mcat" href="../projects/index.html#in-situ">In-situ</a><a class="mi small" href="../projects/cve_foster_creek.html">Foster Creek</a><a class="mi small" href="../projects/cve_christina_lake.html">Christina Lake</a><a class="mi small" href="../projects/cve_sunrise.html">Sunrise</a><a class="mi small" href="../projects/narrows_lake.html">Narrows Lake</a><a class="mi small" href="../projects/su_firebag.html">Firebag</a><a class="mi small" href="../projects/su_mackay_river.html">MacKay River</a><a class="mi small" href="../projects/cnq_jackfish.html">Jackfish</a><a class="mi small" href="../projects/cnq_kirby.html">Kirby</a><a class="mi small" href="../projects/cop_surmont.html">Surmont</a><a class="mi small" href="../projects/meg_christina_lake.html">Christina Lake North</a><a class="mi small" href="../projects/ath_leismer.html">Leismer</a><a class="mi small" href="../projects/ath_hangingstone.html">Hangingstone</a><a class="mi small" href="../projects/gfr_hangingstone_exp.html">Hangingstone Expansion</a><a class="mi small" href="../projects/scr_orion.html">Orion</a><a class="mi small" href="../projects/scr_lindbergh.html">Lindbergh</a><a class="mi small" href="../projects/scr_tucker.html">Tucker</a><a class="mi small" href="../projects/connacher_great_divide.html">Great Divide</a><a class="mi small" href="../projects/harvest_blackgold.html">BlackGold</a><a class="mi small" href="../projects/ipc_blackrod.html">Blackrod</a><a class="mi small" href="../projects/petrochina_mackay.html">MacKay River (PetroChina)</a><a class="mi small" href="../projects/imo_cold_lake.html">Cold Lake</a><a class="mi small" href="../projects/cnq_primrose.html">Primrose and Wolf Lake</a><a class="mi small" href="../projects/cnq_peace_river.html">Peace River</a></div><div class="mcol"><a class="mcat" href="../projects/index.html#mining">Mined</a><a class="mi small" href="../projects/imo_kearl.html">Kearl</a><a class="mi small" href="../projects/su_fort_hills.html">Fort Hills</a><a class="mi small" href="../projects/cnq_horizon.html">Horizon</a><a class="mi small" href="../projects/su_base_plant.html">Base Plant</a><a class="mi small" href="../projects/syncrude.html">Syncrude</a></div><div class="mcol"><a class="mcat" href="../projects/index.html#upgrading">Upgrading</a><a class="mi small" href="../projects/cnooc_long_lake_upgrader.html">Long Lake Upgrader</a></div></div></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../venezuela/index.html">Venezuela watch</a></div></details></div>
+      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="../fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../fieldguide/index.html">Field Guide</a><a class="mi" href="index.html" aria-current="page">Data</a><a class="mi" href="../sources/index.html">Sources</a><a class="mi" href="../methodology/index.html">Methodology</a></div></details></div>
+      </nav>
   </header>
   <div class="crumb"><a href="../index.html">Home</a> / Data</div>
   <h1>Data</h1>
   <p class="sub">Free downloads. Every public series behind the site, as CSV.</p>
-  <p class="sub">Free CSV downloads of every public series used on this site. Their $195 paywall, drained. No licensed data appears in any file.</p>
+  <p class="sub">Free CSV downloads of every public WCSB supply/demand series used on this site. Their $195 paywall, drained. No licensed data appears in any file.</p>
   <div class="tblwrap"><table class="data">
     <tr><th>File</th><th>Contents</th><th>Source</th></tr>
     <tr><td><a href="wcsb_balance_monthly.csv" download="None">wcsb_balance_monthly.csv</a></td><td>Monthly S&amp;D balance: supply, diluent, Alberta use, removals, maintenance offline, implied storage change.</td><td>AER ST3/ST39/ST53 via the model</td></tr>
     <tr><td><a href="wcsb_grades_monthly.csv" download="None">wcsb_grades_monthly.csv</a></td><td>Monthly supply by grade: SCO, marketable bitumen (dilbit), sent for further processing, grade total.</td><td>Model grade layer</td></tr>
     <tr><td><a href="wcsb_project_leaves_monthly.csv" download="None">wcsb_project_leaves_monthly.csv</a></td><td>Monthly production by project leaf (ST53 schemes, ST39 plants and upgraders).</td><td>AER ST53/ST39 via the model</td></tr>
-    <tr><td><a href="wcsb_maintenance_calendar.csv" download="None">wcsb_maintenance_calendar.csv</a></td><td>Forward maintenance calendar, Oct 2026 to Sep 2027: confirmed vs pattern-indicated, kb/d impacts.</td><td>annotations/maintenance_forward.yaml (compiled 2026-09-22)</td></tr>
-    <tr><td><a href="venezuela_imports_weekly.csv" download="None">venezuela_imports_weekly.csv</a></td><td>Weekly US imports of Venezuelan crude, kb/d.</td><td>EIA WPSR Table 8 (EIA API v2)</td></tr>
-    <tr><td><a href="us_crude_exports_weekly.csv" download="None">us_crude_exports_weekly.csv</a></td><td>Weekly US crude exports, kb/d.</td><td>EIA Weekly Petroleum Status Report (EIA API v2)</td></tr>
-    <tr><td><a href="us_crude_exports_monthly.csv" download="None">us_crude_exports_monthly.csv</a></td><td>Monthly US crude exports, kb/d.</td><td>EIA Petroleum Supply Monthly (EIA API v2)</td></tr>
-    <tr><td><a href="venezuela_production_monthly.csv" download="None">venezuela_production_monthly.csv</a></td><td>Venezuelan crude production: OPEC secondary sources vs direct communication, kb/d.</td><td>OPEC Monthly Oil Market Report</td></tr>
-    <tr><td><a href="merey_pricing.csv" download="None">merey_pricing.csv</a></td><td>Reported Merey outright prices and Brent differentials.</td><td>Reported assessments (see Sources)</td></tr>
-    <tr><td><a href="venezuela_freight_rates.csv" download="None">venezuela_freight_rates.csv</a></td><td>Aframax Jose-to-USGC lump sums and $/bbl equivalents.</td><td>Reported fixtures (see Sources)</td></tr>
+    <tr><td><a href="wcsb_maintenance_calendar.csv" download="None">wcsb_maintenance_calendar.csv</a></td><td>Forward maintenance calendar, Oct 2026 to Dec 2027: public-confirmed, cadence-modeled (CADENCE-MODELED), and guidance-sourced, kb/d impacts.</td><td>annotations/maintenance_forward.yaml (revised 2026-09-23)</td></tr>
   </table></div>
-  <p class="tblnote">AER ST3/ST53 actuals through 2026-07 (ST39 through 2026-05), pulled 2026-09-22; Aug-Sep 2026 nowcast estimated, built 2026-09-23; forecast built 2026-09-22. Months run 2025-08 to 2027-09; band is act (AER actuals), nc (model nowcast), or fc (model forecast). Blank cells are unpublished months, not zeros.</p>
+  <p class="tblnote">AER ST3/ST53 actuals through 2026-07 (ST39 through 2026-05), pulled 2026-09-22; Aug-Sep 2026 nowcast estimated, built 2026-09-23; forecast built 2026-09-22. Months run 2025-08 to 2027-12; band is act (AER actuals), nc (model nowcast), or fc (model forecast). Blank cells are unpublished months, not zeros.</p>
   <h2>Sources</h2>
 <div class="tblwrap"><table class="data"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-07 (latest file vintage 2026-08-27)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-07</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded in repo</td><td>Monthly</td><td>Actuals through 2026-05</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in annotations/maintenance_forward.yaml</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-09-30, compiled 2026-09-22</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (repo build)</td><td>Per build</td><td>Forecast built 2026-09-22; Aug-Sep 2026 nowcast built 2026-09-23</td><td>2026-09-23</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
   <div class="foot">
