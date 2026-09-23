@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balance | Heavy Reading | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa;
+        --band-nc:#fdf6e3; --band-fc:#f4f8ff; --maint:rgba(217,72,31,.16); }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%; }
+.wrap { max-width:1060px; margin:0 auto; padding:0 14px 60px; }
+.masthead { border-bottom:4px solid var(--ink); padding:18px 0 12px; margin-bottom:14px; }
+.brand { font-weight:800; letter-spacing:2.5px; font-size:12px; color:var(--acc);
+         text-transform:uppercase; margin-bottom:2px; }
+.tagline { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+.sitenav { display:flex; flex-wrap:wrap; gap:2px 18px; margin:10px 0 2px; font-size:14px; }
+.sitenav a { color:var(--ink); text-decoration:none; padding:10px 2px; min-height:40px;
+             box-sizing:border-box; border-bottom:2px solid transparent; }
+.sitenav a:hover { border-bottom-color:var(--acc); }
+.sitenav a[aria-current="page"] { font-weight:700; border-bottom-color:var(--acc); }
+.meta { font-size:12.5px; color:var(--mut); margin:8px 0 0; }
+.meta b { color:var(--ink); }
+.crumb { font-size:13px; color:var(--mut); margin:12px 0 4px; }
+.crumb a { color:var(--ink); }
+h1 { font-size:24px; line-height:1.2; letter-spacing:-0.01em; margin:0 0 4px; }
+.sub { color:var(--mut); font-size:14px; margin:0 0 6px; }
+h2 { font-size:17px; margin:26px 0 8px; padding-top:14px; border-top:1px solid var(--line); }
+h2:first-of-type { border-top:none; padding-top:0; margin-top:18px; }
+table.data { border-collapse:collapse; width:100%; font-size:13.5px; margin:8px 0; }
+table.data th, table.data td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+table.data th { background:var(--wash); font-weight:700; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.facts td:first-child { font-weight:600; white-space:nowrap; width:34%; }
+.tblwrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tblnote { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.src { font-size:12.5px; color:var(--mut); margin:6px 0; }
+.src b { color:var(--ink); }
+.chip { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.05em;
+        text-transform:uppercase; border:1px solid var(--line); border-radius:4px;
+        padding:2px 8px; margin:2px 8px 2px 0; vertical-align:2px; color:var(--mut); }
+.badge-ok { color:#1a6b1a; border-color:#1a6b1a; }
+.badge-warn { color:var(--acc); border-color:var(--acc); }
+.badge-info { color:#1a4f8a; border-color:#1a4f8a; }
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:10px; margin:10px 0; }
+.stat { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+.stat .v { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+.stat .l { font-size:12px; color:var(--mut); }
+.foot { margin-top:34px; padding-top:12px; border-top:1px solid var(--line);
+        font-size:12.5px; color:var(--mut); }
+.foot a { color:var(--ink); }
+.nullnote { color:var(--mut); font-style:italic; }
+ul.ev { margin:8px 0; padding-left:20px; }
+ul.ev li { margin:6px 0; }
+figure.chart { margin:12px 0; }
+figure.chart svg { width:100%; height:auto; display:block;
+                   border:1px solid var(--line); border-radius:8px; background:#fff; }
+figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:6px; }
+.lg { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12.5px; color:var(--mut);
+      margin-top:6px; }
+.lg .sw { display:inline-block; width:11px; height:11px; border-radius:2px;
+          margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
+.exec { border:1px solid var(--line); border-left:5px solid var(--acc);
+        border-radius:8px; padding:12px 16px; margin:14px 0; background:var(--wash); }
+.exec h2 { border:none; margin:0 0 6px; padding:0; font-size:17px; }
+.exec ul { margin:6px 0; padding-left:20px; }
+.exec li { margin:6px 0; }
+.exec-vint { font-size:12px; color:var(--mut); margin:8px 0 0; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+       gap:10px; margin:12px 0; }
+.kpi .stat .v { font-size:26px; }
+.lic-tag { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           color:var(--acc); border:1px solid var(--acc); border-radius:4px;
+           padding:1px 6px; margin-left:6px; white-space:nowrap; }
+.panel { margin:22px 0; }
+.note { font-size:13px; color:var(--mut); }
+.vintage { font-size:12.5px; color:var(--mut); }
+.vintage-inline { font-size:12px; color:var(--mut); }
+@media print {
+  .sitenav { display:none; }
+  .wrap { max-width:none; }
+  table.data, .stat, figure.chart { break-inside:avoid; }
+  h2 { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <nav class="sitenav" aria-label="Sections">
+      <a href="../index.html">Home</a>
+      <a href="../st3-dashboard.html">Trading: executive call + balances</a>
+      <a href="index.html" aria-current="page">Balance</a>
+      <a href="../maintenance/index.html">Maintenance</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="../fieldguide/index.html">Field guide</a>
+      <a href="../weekly/index.html">Weekly</a>
+      <a href="../data/index.html">Data</a>
+      <a href="../venezuela/index.html">Venezuela</a>
+      <a href="../methodology/index.html">Methodology</a>
+      <a href="../../reports/index.html">Reports</a>
+    </nav>
+    <p class="meta"><b>UPDATED</b> September 23, 2026 &middot; <b>SOURCE</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; company guidance via the forward maintenance calendar (compiled 2026-09-22)</p>
+  </header>
+  <div class="crumb"><a href="../index.html">Home</a> / Balance</div>
+  <h1>Balance</h1>
+  <p class="sub">The WCSB supply/demand balance, storage, and removals. The page Oilsands Magazine does not have.</p>
+<section class="exec" aria-label="Executive summary"><h2>Executive call</h2><ul><li>Tradable supply averages <b>4,239.2 kb/d</b> from Nov 2026 onward, +139.1 kb/d versus the Oct 2026 context month (4,100.1 kb/d).</li><li>Oct 2026 is the heaviest modeled maintenance month at <b>164.4 kb/d</b> offline: Horizon 35-day turnaround; Syncrude Coker 8-2 turnaround; Syncrude Coker 8-2 mine dial-back; Imperial Cold Lake 3Q/4Q 2026 turnaround; Christina Lake F/G turnaround tail (assumed, not company-stated). No confirmed maintenance sits in the model math from Jan 2027 onward.</li><li>Largest projected month-to-month supply moves: Oct 2026 to Nov 2026: +360.8 kb/d; Dec 2026 to Jan 2027: -347.9 kb/d; May 2027 to Jun 2027: +270.9 kb/d.</li><li>Implied storage change ranges from a high of <b>-305.6 kb/d</b> in Apr 2027 to a low of <b>-512.2 kb/d</b> in Feb 2027 (positive = build into commercial storage, negative = draw).</li></ul><p class="exec-vint">All figures kb/d, computed from the table below. A bullet is omitted when its value is null; nothing here is estimated beyond the model.</p></section>
+  <h2>Forward balance (kb/d)</h2>
+  <p class="note">Oct 2026 is the context month (post-nominations); the tradable window runs Nov 2026 onward.</p>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Line</th><th class="num" style="background:#f4f8ff">Oct 2026</th><th class="num" style="background:#eef7ee">Nov 2026</th><th class="num" style="background:#eef7ee">Dec 2026</th><th class="num" style="background:#eef7ee">Jan 2027</th><th class="num" style="background:#eef7ee">Feb 2027</th><th class="num" style="background:#eef7ee">Mar 2027</th><th class="num" style="background:#eef7ee">Apr 2027</th><th class="num" style="background:#eef7ee">May 2027</th><th class="num" style="background:#eef7ee">Jun 2027</th><th class="num" style="background:#eef7ee">Jul 2027</th><th class="num" style="background:#eef7ee">Aug 2027</th><th class="num" style="background:#eef7ee">Sep 2027</th><th class="num">12-mo avg</th></tr>
+    <tr><td>Total WCSB crude supply</td><td class="num" style="background:#f4f8ff">4,100.1</td><td class="num" style="background:#eef7ee">4,460.9</td><td class="num" style="background:#eef7ee">4,517.2</td><td class="num" style="background:#eef7ee">4,169.3</td><td class="num" style="background:#eef7ee">4,200.1</td><td class="num" style="background:#eef7ee">4,293.2</td><td class="num" style="background:#eef7ee">4,065.7</td><td class="num" style="background:#eef7ee">3,860.9</td><td class="num" style="background:#eef7ee">4,131.8</td><td class="num" style="background:#eef7ee">4,362.6</td><td class="num" style="background:#eef7ee">4,336.1</td><td class="num" style="background:#eef7ee">4,233.8</td><td class="num"><b>4,227.6</b></td></tr>
+    <tr><td>In-situ bitumen</td><td class="num" style="background:#f4f8ff">1,996.7</td><td class="num" style="background:#eef7ee">2,044.6</td><td class="num" style="background:#eef7ee">2,064.2</td><td class="num" style="background:#eef7ee">2,011.1</td><td class="num" style="background:#eef7ee">2,017.6</td><td class="num" style="background:#eef7ee">2,027.5</td><td class="num" style="background:#eef7ee">1,960.2</td><td class="num" style="background:#eef7ee">1,973.6</td><td class="num" style="background:#eef7ee">2,000.4</td><td class="num" style="background:#eef7ee">2,038.0</td><td class="num" style="background:#eef7ee">2,017.9</td><td class="num" style="background:#eef7ee">1,954.9</td><td class="num"><b>2,008.9</b></td></tr>
+    <tr><td>Mined bitumen + SCO</td><td class="num" style="background:#f4f8ff">1,427.5</td><td class="num" style="background:#eef7ee">1,725.9</td><td class="num" style="background:#eef7ee">1,768.0</td><td class="num" style="background:#eef7ee">1,521.4</td><td class="num" style="background:#eef7ee">1,532.4</td><td class="num" style="background:#eef7ee">1,602.9</td><td class="num" style="background:#eef7ee">1,439.3</td><td class="num" style="background:#eef7ee">1,245.2</td><td class="num" style="background:#eef7ee">1,491.6</td><td class="num" style="background:#eef7ee">1,671.9</td><td class="num" style="background:#eef7ee">1,652.5</td><td class="num" style="background:#eef7ee">1,621.1</td><td class="num"><b>1,558.3</b></td></tr>
+    <tr><td>Conventional crude</td><td class="num" style="background:#f4f8ff">675.9</td><td class="num" style="background:#eef7ee">690.4</td><td class="num" style="background:#eef7ee">685.0</td><td class="num" style="background:#eef7ee">636.8</td><td class="num" style="background:#eef7ee">650.1</td><td class="num" style="background:#eef7ee">662.8</td><td class="num" style="background:#eef7ee">666.2</td><td class="num" style="background:#eef7ee">642.1</td><td class="num" style="background:#eef7ee">639.8</td><td class="num" style="background:#eef7ee">652.7</td><td class="num" style="background:#eef7ee">665.7</td><td class="num" style="background:#eef7ee">657.8</td><td class="num"><b>660.4</b></td></tr>
+    <tr><td>SCO / synthetic crude</td><td class="num" style="background:#f4f8ff">1,291.2</td><td class="num" style="background:#eef7ee">1,487.0</td><td class="num" style="background:#eef7ee">1,493.6</td><td class="num" style="background:#eef7ee">1,366.2</td><td class="num" style="background:#eef7ee">1,391.9</td><td class="num" style="background:#eef7ee">1,399.4</td><td class="num" style="background:#eef7ee">1,251.7</td><td class="num" style="background:#eef7ee">1,073.8</td><td class="num" style="background:#eef7ee">1,249.6</td><td class="num" style="background:#eef7ee">1,441.6</td><td class="num" style="background:#eef7ee">1,440.6</td><td class="num" style="background:#eef7ee">1,278.4</td><td class="num"><b>1,347.1</b></td></tr>
+    <tr><td>Marketable bitumen (dilbit)</td><td class="num" style="background:#f4f8ff">2,133.0</td><td class="num" style="background:#eef7ee">2,283.5</td><td class="num" style="background:#eef7ee">2,338.6</td><td class="num" style="background:#eef7ee">2,166.3</td><td class="num" style="background:#eef7ee">2,158.1</td><td class="num" style="background:#eef7ee">2,231.0</td><td class="num" style="background:#eef7ee">2,147.8</td><td class="num" style="background:#eef7ee">2,145.0</td><td class="num" style="background:#eef7ee">2,242.4</td><td class="num" style="background:#eef7ee">2,268.3</td><td class="num" style="background:#eef7ee">2,229.8</td><td class="num" style="background:#eef7ee">2,297.6</td><td class="num"><b>2,220.1</b></td></tr>
+    <tr><td>Bitumen sent for further processing</td><td class="num" style="background:#f4f8ff">1,492.3</td><td class="num" style="background:#eef7ee">1,725.1</td><td class="num" style="background:#eef7ee">1,723.2</td><td class="num" style="background:#eef7ee">1,582.0</td><td class="num" style="background:#eef7ee">1,602.1</td><td class="num" style="background:#eef7ee">1,619.7</td><td class="num" style="background:#eef7ee">1,469.2</td><td class="num" style="background:#eef7ee">1,258.5</td><td class="num" style="background:#eef7ee">1,455.4</td><td class="num" style="background:#eef7ee">1,654.9</td><td class="num" style="background:#eef7ee">1,665.8</td><td class="num" style="background:#eef7ee">1,483.2</td><td class="num"><b>1,561.0</b></td></tr>
+    <tr><td>Diluent imports</td><td class="num" style="background:#f4f8ff">309.4</td><td class="num" style="background:#eef7ee">310.4</td><td class="num" style="background:#eef7ee">327.1</td><td class="num" style="background:#eef7ee">342.5</td><td class="num" style="background:#eef7ee">333.9</td><td class="num" style="background:#eef7ee">326.4</td><td class="num" style="background:#eef7ee">350.9</td><td class="num" style="background:#eef7ee">338.5</td><td class="num" style="background:#eef7ee">329.4</td><td class="num" style="background:#eef7ee">317.9</td><td class="num" style="background:#eef7ee">287.1</td><td class="num" style="background:#eef7ee">285.5</td><td class="num"><b>321.6</b></td></tr>
+    <tr><td>Total Alberta use</td><td class="num" style="background:#f4f8ff">581.1</td><td class="num" style="background:#eef7ee">620.8</td><td class="num" style="background:#eef7ee">625.3</td><td class="num" style="background:#eef7ee">590.9</td><td class="num" style="background:#eef7ee">612.1</td><td class="num" style="background:#eef7ee">605.6</td><td class="num" style="background:#eef7ee">539.3</td><td class="num" style="background:#eef7ee">526.4</td><td class="num" style="background:#eef7ee">578.5</td><td class="num" style="background:#eef7ee">619.2</td><td class="num" style="background:#eef7ee">610.3</td><td class="num" style="background:#eef7ee">558.2</td><td class="num"><b>589.0</b></td></tr>
+    <tr><td>Removals from Alberta</td><td class="num" style="background:#f4f8ff">4,439.1</td><td class="num" style="background:#eef7ee">4,624.6</td><td class="num" style="background:#eef7ee">4,700.3</td><td class="num" style="background:#eef7ee">4,357.2</td><td class="num" style="background:#eef7ee">4,434.1</td><td class="num" style="background:#eef7ee">4,391.3</td><td class="num" style="background:#eef7ee">4,182.9</td><td class="num" style="background:#eef7ee">4,116.5</td><td class="num" style="background:#eef7ee">4,372.4</td><td class="num" style="background:#eef7ee">4,431.6</td><td class="num" style="background:#eef7ee">4,467.2</td><td class="num" style="background:#eef7ee">4,384.0</td><td class="num"><b>4,408.4</b></td></tr>
+    <tr><td>Maintenance offline</td><td class="num" style="background:#f4f8ff">164.4</td><td class="num" style="background:#eef7ee">23.0</td><td class="num" style="background:#eef7ee">3.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num" style="background:#eef7ee">0.0</td><td class="num"><b>15.9</b></td></tr>
+    <tr><td>Implied storage change</td><td class="num" style="background:#f4f8ff">-610.7</td><td class="num" style="background:#eef7ee">-474.1</td><td class="num" style="background:#eef7ee">-481.3</td><td class="num" style="background:#eef7ee">-436.3</td><td class="num" style="background:#eef7ee">-512.2</td><td class="num" style="background:#eef7ee">-377.3</td><td class="num" style="background:#eef7ee">-305.6</td><td class="num" style="background:#eef7ee">-443.5</td><td class="num" style="background:#eef7ee">-489.7</td><td class="num" style="background:#eef7ee">-370.3</td><td class="num" style="background:#eef7ee">-454.3</td><td class="num" style="background:#eef7ee">-422.9</td><td class="num"><b>-448.2</b></td></tr>
+  </table></div>
+  <p class="tblnote">All flows in kb/d. Blank cells are months AER has not published yet, not zeros.</p>
+  <h2>Supply stack</h2>
+<figure class="chart">
+<svg viewbox="0 0 720 250" role="img" aria-label="WCSB supply stack">
+<title>WCSB supply stack</title>
+<rect x="353.5" y="12" width="50.9" height="200" fill="#fdf6e3" />
+<rect x="404.5" y="12" width="305.5" height="200" fill="#f4f8ff" />
+<rect x="353.5" y="12" width="25.5" height="200" fill="rgba(217,72,31,.16)" />
+<rect x="379.0" y="12" width="25.5" height="200" fill="rgba(217,72,31,.16)" />
+<rect x="404.5" y="12" width="25.5" height="200" fill="rgba(217,72,31,.16)" />
+<rect x="429.9" y="12" width="25.5" height="200" fill="rgba(217,72,31,.16)" />
+<rect x="455.4" y="12" width="25.5" height="200" fill="rgba(217,72,31,.16)" />
+<line x1="48" y1="212.0" x2="710" y2="212.0" stroke="#e5e5e5" />
+<text x="42" y="216.0" text-anchor="end" font-size="11" fill="#555">0.0</text>
+<line x1="48" y1="162.0" x2="710" y2="162.0" stroke="#e5e5e5" />
+<text x="42" y="166.0" text-anchor="end" font-size="11" fill="#555">1,250.0</text>
+<line x1="48" y1="112.0" x2="710" y2="112.0" stroke="#e5e5e5" />
+<text x="42" y="116.0" text-anchor="end" font-size="11" fill="#555">2,500.0</text>
+<line x1="48" y1="62.0" x2="710" y2="62.0" stroke="#e5e5e5" />
+<text x="42" y="66.0" text-anchor="end" font-size="11" fill="#555">3,750.0</text>
+<line x1="48" y1="12.0" x2="710" y2="12.0" stroke="#e5e5e5" />
+<text x="42" y="16.0" text-anchor="end" font-size="11" fill="#555">5,000.0</text>
+<rect x="52.8" y="133.5" width="15.8" height="78.5" fill="#2f6fb2"><title>Aug 25 In-situ bitumen: 1,961.6 kb/d</title></rect>
+<rect x="52.8" y="68.6" width="15.8" height="64.9" fill="#b42318"><title>Aug 25 Mined bitumen + SCO: 1,622.2 kb/d</title></rect>
+<rect x="52.8" y="42.8" width="15.8" height="25.8" fill="#7a7a7a"><title>Aug 25 Conventional crude: 646.0 kb/d</title></rect>
+<rect x="78.3" y="134.9" width="15.8" height="77.1" fill="#2f6fb2"><title>Sep 25 In-situ bitumen: 1,927.9 kb/d</title></rect>
+<rect x="78.3" y="69.2" width="15.8" height="65.7" fill="#b42318"><title>Sep 25 Mined bitumen + SCO: 1,642.7 kb/d</title></rect>
+<rect x="78.3" y="43.5" width="15.8" height="25.7" fill="#7a7a7a"><title>Sep 25 Conventional crude: 642.2 kb/d</title></rect>
+<rect x="103.8" y="133.1" width="15.8" height="78.9" fill="#2f6fb2"><title>Oct 25 In-situ bitumen: 1,972.4 kb/d</title></rect>
+<rect x="103.8" y="72.6" width="15.8" height="60.5" fill="#b42318"><title>Oct 25 Mined bitumen + SCO: 1,511.9 kb/d</title></rect>
+<rect x="103.8" y="46.6" width="15.8" height="26.1" fill="#7a7a7a"><title>Oct 25 Conventional crude: 651.5 kb/d</title></rect>
+<rect x="129.2" y="131.4" width="15.8" height="80.6" fill="#2f6fb2"><title>Nov 25 In-situ bitumen: 2,015.1 kb/d</title></rect>
+<rect x="129.2" y="63.2" width="15.8" height="68.2" fill="#b42318"><title>Nov 25 Mined bitumen + SCO: 1,705.4 kb/d</title></rect>
+<rect x="129.2" y="36.0" width="15.8" height="27.1" fill="#7a7a7a"><title>Nov 25 Conventional crude: 678.6 kb/d</title></rect>
+<rect x="154.7" y="132.3" width="15.8" height="79.7" fill="#2f6fb2"><title>Dec 25 In-situ bitumen: 1,993.3 kb/d</title></rect>
+<rect x="154.7" y="62.2" width="15.8" height="70.1" fill="#b42318"><title>Dec 25 Mined bitumen + SCO: 1,752.3 kb/d</title></rect>
+<rect x="154.7" y="35.8" width="15.8" height="26.3" fill="#7a7a7a"><title>Dec 25 Conventional crude: 658.6 kb/d</title></rect>
+<rect x="180.1" y="131.6" width="15.8" height="80.4" fill="#2f6fb2"><title>Jan 26 In-situ bitumen: 2,010.4 kb/d</title></rect>
+<rect x="180.1" y="69.8" width="15.8" height="61.8" fill="#b42318"><title>Jan 26 Mined bitumen + SCO: 1,544.0 kb/d</title></rect>
+<rect x="180.1" y="43.5" width="15.8" height="26.3" fill="#7a7a7a"><title>Jan 26 Conventional crude: 657.7 kb/d</title></rect>
+<rect x="205.6" y="131.1" width="15.8" height="80.9" fill="#2f6fb2"><title>Feb 26 In-situ bitumen: 2,023.5 kb/d</title></rect>
+<rect x="205.6" y="72.5" width="15.8" height="58.6" fill="#b42318"><title>Feb 26 Mined bitumen + SCO: 1,464.0 kb/d</title></rect>
+<rect x="205.6" y="46.0" width="15.8" height="26.5" fill="#7a7a7a"><title>Feb 26 Conventional crude: 662.6 kb/d</title></rect>
+<rect x="231.1" y="131.2" width="15.8" height="80.8" fill="#2f6fb2"><title>Mar 26 In-situ bitumen: 2,019.7 kb/d</title></rect>
+<rect x="231.1" y="72.0" width="15.8" height="59.3" fill="#b42318"><title>Mar 26 Mined bitumen + SCO: 1,481.4 kb/d</title></rect>
+<rect x="231.1" y="45.3" width="15.8" height="26.7" fill="#7a7a7a"><title>Mar 26 Conventional crude: 666.8 kb/d</title></rect>
+<rect x="256.5" y="133.2" width="15.8" height="78.8" fill="#2f6fb2"><title>Apr 26 In-situ bitumen: 1,968.8 kb/d</title></rect>
+<rect x="256.5" y="73.1" width="15.8" height="60.2" fill="#b42318"><title>Apr 26 Mined bitumen + SCO: 1,504.0 kb/d</title></rect>
+<rect x="256.5" y="46.0" width="15.8" height="27.1" fill="#7a7a7a"><title>Apr 26 Conventional crude: 676.9 kb/d</title></rect>
+<rect x="282.0" y="137.7" width="15.8" height="74.3" fill="#2f6fb2"><title>May 26 In-situ bitumen: 1,856.3 kb/d</title></rect>
+<rect x="282.0" y="78.7" width="15.8" height="59.0" fill="#b42318"><title>May 26 Mined bitumen + SCO: 1,475.3 kb/d</title></rect>
+<rect x="282.0" y="52.3" width="15.8" height="26.4" fill="#7a7a7a"><title>May 26 Conventional crude: 661.2 kb/d</title></rect>
+<rect x="307.5" y="132.8" width="15.8" height="79.2" fill="#2f6fb2"><title>Jun 26 In-situ bitumen: 1,980.1 kb/d</title></rect>
+<rect x="307.5" y="73.5" width="15.8" height="59.3" fill="#b42318"><title>Jun 26 Mined bitumen + SCO: 1,482.0 kb/d</title></rect>
+<rect x="307.5" y="47.0" width="15.8" height="26.5" fill="#7a7a7a"><title>Jun 26 Conventional crude: 662.9 kb/d</title></rect>
+<rect x="332.9" y="128.6" width="15.8" height="83.4" fill="#2f6fb2"><title>Jul 26 In-situ bitumen: 2,085.6 kb/d</title></rect>
+<rect x="332.9" y="62.5" width="15.8" height="66.1" fill="#b42318"><title>Jul 26 Mined bitumen + SCO: 1,652.5 kb/d</title></rect>
+<rect x="332.9" y="36.1" width="15.8" height="26.4" fill="#7a7a7a"><title>Jul 26 Conventional crude: 660.2 kb/d</title></rect>
+<rect x="358.4" y="132.9" width="15.8" height="79.1" fill="#2f6fb2"><title>Aug 26 In-situ bitumen: 1,978.2 kb/d</title></rect>
+<rect x="358.4" y="68.5" width="15.8" height="64.4" fill="#b42318"><title>Aug 26 Mined bitumen + SCO: 1,610.2 kb/d</title></rect>
+<rect x="358.4" y="41.8" width="15.8" height="26.6" fill="#7a7a7a"><title>Aug 26 Conventional crude: 665.7 kb/d</title></rect>
+<rect x="383.8" y="136.0" width="15.8" height="76.0" fill="#2f6fb2"><title>Sep 26 In-situ bitumen: 1,900.3 kb/d</title></rect>
+<rect x="383.8" y="83.1" width="15.8" height="52.9" fill="#b42318"><title>Sep 26 Mined bitumen + SCO: 1,322.4 kb/d</title></rect>
+<rect x="383.8" y="56.8" width="15.8" height="26.3" fill="#7a7a7a"><title>Sep 26 Conventional crude: 657.8 kb/d</title></rect>
+<rect x="409.3" y="132.1" width="15.8" height="79.9" fill="#2f6fb2"><title>Oct 26 In-situ bitumen: 1,996.7 kb/d</title></rect>
+<rect x="409.3" y="75.0" width="15.8" height="57.1" fill="#b42318"><title>Oct 26 Mined bitumen + SCO: 1,427.5 kb/d</title></rect>
+<rect x="409.3" y="48.0" width="15.8" height="27.0" fill="#7a7a7a"><title>Oct 26 Conventional crude: 675.9 kb/d</title></rect>
+<rect x="434.8" y="130.2" width="15.8" height="81.8" fill="#2f6fb2"><title>Nov 26 In-situ bitumen: 2,044.6 kb/d</title></rect>
+<rect x="434.8" y="61.2" width="15.8" height="69.0" fill="#b42318"><title>Nov 26 Mined bitumen + SCO: 1,725.9 kb/d</title></rect>
+<rect x="434.8" y="33.6" width="15.8" height="27.6" fill="#7a7a7a"><title>Nov 26 Conventional crude: 690.4 kb/d</title></rect>
+<rect x="460.2" y="129.4" width="15.8" height="82.6" fill="#2f6fb2"><title>Dec 26 In-situ bitumen: 2,064.2 kb/d</title></rect>
+<rect x="460.2" y="58.7" width="15.8" height="70.7" fill="#b42318"><title>Dec 26 Mined bitumen + SCO: 1,768.0 kb/d</title></rect>
+<rect x="460.2" y="31.3" width="15.8" height="27.4" fill="#7a7a7a"><title>Dec 26 Conventional crude: 685.0 kb/d</title></rect>
+<rect x="485.7" y="131.6" width="15.8" height="80.4" fill="#2f6fb2"><title>Jan 27 In-situ bitumen: 2,011.1 kb/d</title></rect>
+<rect x="485.7" y="70.7" width="15.8" height="60.9" fill="#b42318"><title>Jan 27 Mined bitumen + SCO: 1,521.4 kb/d</title></rect>
+<rect x="485.7" y="45.2" width="15.8" height="25.5" fill="#7a7a7a"><title>Jan 27 Conventional crude: 636.8 kb/d</title></rect>
+<rect x="511.1" y="131.3" width="15.8" height="80.7" fill="#2f6fb2"><title>Feb 27 In-situ bitumen: 2,017.6 kb/d</title></rect>
+<rect x="511.1" y="70.0" width="15.8" height="61.3" fill="#b42318"><title>Feb 27 Mined bitumen + SCO: 1,532.4 kb/d</title></rect>
+<rect x="511.1" y="44.0" width="15.8" height="26.0" fill="#7a7a7a"><title>Feb 27 Conventional crude: 650.1 kb/d</title></rect>
+<rect x="536.6" y="130.9" width="15.8" height="81.1" fill="#2f6fb2"><title>Mar 27 In-situ bitumen: 2,027.5 kb/d</title></rect>
+<rect x="536.6" y="66.8" width="15.8" height="64.1" fill="#b42318"><title>Mar 27 Mined bitumen + SCO: 1,602.9 kb/d</title></rect>
+<rect x="536.6" y="40.3" width="15.8" height="26.5" fill="#7a7a7a"><title>Mar 27 Conventional crude: 662.8 kb/d</title></rect>
+<rect x="562.1" y="133.6" width="15.8" height="78.4" fill="#2f6fb2"><title>Apr 27 In-situ bitumen: 1,960.2 kb/d</title></rect>
+<rect x="562.1" y="76.0" width="15.8" height="57.6" fill="#b42318"><title>Apr 27 Mined bitumen + SCO: 1,439.3 kb/d</title></rect>
+<rect x="562.1" y="49.4" width="15.8" height="26.6" fill="#7a7a7a"><title>Apr 27 Conventional crude: 666.2 kb/d</title></rect>
+<rect x="587.5" y="133.1" width="15.8" height="78.9" fill="#2f6fb2"><title>May 27 In-situ bitumen: 1,973.6 kb/d</title></rect>
+<rect x="587.5" y="83.2" width="15.8" height="49.8" fill="#b42318"><title>May 27 Mined bitumen + SCO: 1,245.2 kb/d</title></rect>
+<rect x="587.5" y="57.6" width="15.8" height="25.7" fill="#7a7a7a"><title>May 27 Conventional crude: 642.1 kb/d</title></rect>
+<rect x="613.0" y="132.0" width="15.8" height="80.0" fill="#2f6fb2"><title>Jun 27 In-situ bitumen: 2,000.4 kb/d</title></rect>
+<rect x="613.0" y="72.3" width="15.8" height="59.7" fill="#b42318"><title>Jun 27 Mined bitumen + SCO: 1,491.6 kb/d</title></rect>
+<rect x="613.0" y="46.7" width="15.8" height="25.6" fill="#7a7a7a"><title>Jun 27 Conventional crude: 639.8 kb/d</title></rect>
+<rect x="638.5" y="130.5" width="15.8" height="81.5" fill="#2f6fb2"><title>Jul 27 In-situ bitumen: 2,038.0 kb/d</title></rect>
+<rect x="638.5" y="63.6" width="15.8" height="66.9" fill="#b42318"><title>Jul 27 Mined bitumen + SCO: 1,671.9 kb/d</title></rect>
+<rect x="638.5" y="37.5" width="15.8" height="26.1" fill="#7a7a7a"><title>Jul 27 Conventional crude: 652.7 kb/d</title></rect>
+<rect x="663.9" y="131.3" width="15.8" height="80.7" fill="#2f6fb2"><title>Aug 27 In-situ bitumen: 2,017.9 kb/d</title></rect>
+<rect x="663.9" y="65.2" width="15.8" height="66.1" fill="#b42318"><title>Aug 27 Mined bitumen + SCO: 1,652.5 kb/d</title></rect>
+<rect x="663.9" y="38.6" width="15.8" height="26.6" fill="#7a7a7a"><title>Aug 27 Conventional crude: 665.7 kb/d</title></rect>
+<rect x="689.4" y="133.8" width="15.8" height="78.2" fill="#2f6fb2"><title>Sep 27 In-situ bitumen: 1,954.9 kb/d</title></rect>
+<rect x="689.4" y="69.0" width="15.8" height="64.8" fill="#b42318"><title>Sep 27 Mined bitumen + SCO: 1,621.1 kb/d</title></rect>
+<rect x="689.4" y="42.6" width="15.8" height="26.3" fill="#7a7a7a"><title>Sep 27 Conventional crude: 657.8 kb/d</title></rect>
+<text x="60.7" y="236" text-anchor="middle" font-size="11" fill="#555">Aug 25</text>
+<text x="137.1" y="236" text-anchor="middle" font-size="11" fill="#555">Nov 25</text>
+<text x="213.5" y="236" text-anchor="middle" font-size="11" fill="#555">Feb 26</text>
+<text x="289.9" y="236" text-anchor="middle" font-size="11" fill="#555">May 26</text>
+<text x="366.3" y="236" text-anchor="middle" font-size="11" fill="#555">Aug 26</text>
+<text x="442.7" y="236" text-anchor="middle" font-size="11" fill="#555">Nov 26</text>
+<text x="519.0" y="236" text-anchor="middle" font-size="11" fill="#555">Feb 27</text>
+<text x="595.4" y="236" text-anchor="middle" font-size="11" fill="#555">May 27</text>
+<text x="671.8" y="236" text-anchor="middle" font-size="11" fill="#555">Aug 27</text>
+<text x="42" y="10" font-size="11" fill="#555">kb/d</text>
+</svg>
+<figcaption><b>Vintage:</b> AER ST3/ST53 actuals through 2026-07 (ST39 through 2026-05), pulled 2026-09-22; Aug-Sep 2026 nowcast estimated, built 2026-09-23; forecast built 2026-09-22. Stack: in-situ bitumen, mined bitumen + SCO, conventional crude; ties exactly to Total WCSB crude supply every month. Orange shading marks months with modeled maintenance offline.</figcaption>
+<div class="lg"><span><span class="sw" style="background:#2f6fb2"></span>In-situ</span><span><span class="sw" style="background:#b42318"></span>Mined + SCO</span><span><span class="sw" style="background:#7a7a7a"></span>Conventional</span><span><span class="sw" style="background:#2b2f36"></span>Actuals (AER)</span><span><span class="sw" style="background:#b97c1e"></span>Nowcast (model est.)</span><span><span class="sw" style="background:#2f6fb2"></span>Forecast (model)</span><span><span class="sw" style="background:rgba(217,72,31,.45)"></span>Modeled maintenance month</span></div>
+</figure>
+  <h2>Storage path</h2>
+<figure class="chart">
+<svg viewbox="0 0 720 230" role="img" aria-label="Implied storage change">
+<title>Implied storage change</title>
+<rect x="353.5" y="12" width="50.9" height="180" fill="#fdf6e3" />
+<rect x="404.5" y="12" width="305.5" height="180" fill="#f4f8ff" />
+<rect x="353.5" y="12" width="25.5" height="180" fill="rgba(217,72,31,.16)" />
+<rect x="353.5" y="12" width="25.5" height="3" fill="#d9481f" />
+<rect x="379.0" y="12" width="25.5" height="180" fill="rgba(217,72,31,.16)" />
+<rect x="379.0" y="12" width="25.5" height="3" fill="#d9481f" />
+<rect x="404.5" y="12" width="25.5" height="180" fill="rgba(217,72,31,.16)" />
+<rect x="404.5" y="12" width="25.5" height="3" fill="#d9481f" />
+<rect x="429.9" y="12" width="25.5" height="180" fill="rgba(217,72,31,.16)" />
+<rect x="429.9" y="12" width="25.5" height="3" fill="#d9481f" />
+<rect x="455.4" y="12" width="25.5" height="180" fill="rgba(217,72,31,.16)" />
+<rect x="455.4" y="12" width="25.5" height="3" fill="#d9481f" />
+<line x1="48" y1="192.0" x2="710" y2="192.0" stroke="#e5e5e5" />
+<text x="42" y="196.0" text-anchor="end" font-size="11" fill="#555">-776.2</text>
+<line x1="48" y1="147.0" x2="710" y2="147.0" stroke="#e5e5e5" />
+<text x="42" y="151.0" text-anchor="end" font-size="11" fill="#555">-332.2</text>
+<line x1="48" y1="102.0" x2="710" y2="102.0" stroke="#e5e5e5" />
+<text x="42" y="106.0" text-anchor="end" font-size="11" fill="#555">111.9</text>
+<line x1="48" y1="57.0" x2="710" y2="57.0" stroke="#e5e5e5" />
+<text x="42" y="61.0" text-anchor="end" font-size="11" fill="#555">556.0</text>
+<line x1="48" y1="12.0" x2="710" y2="12.0" stroke="#e5e5e5" />
+<text x="42" y="16.0" text-anchor="end" font-size="11" fill="#555">1,000.0</text>
+<line x1="48" y1="113.3" x2="710" y2="113.3" stroke="#999" />
+<rect x="358.4" y="113.3" width="15.8" height="54.3" fill="#b97c1e"><title>Aug 26: -536.3 kb/d</title></rect>
+<rect x="383.8" y="113.3" width="15.8" height="78.7" fill="#b97c1e"><title>Sep 26: -776.2 kb/d</title></rect>
+<rect x="409.3" y="113.3" width="15.8" height="61.9" fill="#2f6fb2"><title>Oct 26: -610.7 kb/d</title></rect>
+<rect x="434.8" y="113.3" width="15.8" height="48.0" fill="#2f6fb2"><title>Nov 26: -474.1 kb/d</title></rect>
+<rect x="460.2" y="113.3" width="15.8" height="48.8" fill="#2f6fb2"><title>Dec 26: -481.3 kb/d</title></rect>
+<rect x="485.7" y="113.3" width="15.8" height="44.2" fill="#2f6fb2"><title>Jan 27: -436.3 kb/d</title></rect>
+<rect x="511.1" y="113.3" width="15.8" height="51.9" fill="#2f6fb2"><title>Feb 27: -512.2 kb/d</title></rect>
+<rect x="536.6" y="113.3" width="15.8" height="38.2" fill="#2f6fb2"><title>Mar 27: -377.3 kb/d</title></rect>
+<rect x="562.1" y="113.3" width="15.8" height="31.0" fill="#2f6fb2"><title>Apr 27: -305.6 kb/d</title></rect>
+<rect x="587.5" y="113.3" width="15.8" height="44.9" fill="#2f6fb2"><title>May 27: -443.5 kb/d</title></rect>
+<rect x="613.0" y="113.3" width="15.8" height="49.6" fill="#2f6fb2"><title>Jun 27: -489.7 kb/d</title></rect>
+<rect x="638.5" y="113.3" width="15.8" height="37.5" fill="#2f6fb2"><title>Jul 27: -370.3 kb/d</title></rect>
+<rect x="663.9" y="113.3" width="15.8" height="46.0" fill="#2f6fb2"><title>Aug 27: -454.3 kb/d</title></rect>
+<rect x="689.4" y="113.3" width="15.8" height="42.9" fill="#2f6fb2"><title>Sep 27: -422.9 kb/d</title></rect>
+<text x="60.7" y="216" text-anchor="middle" font-size="11" fill="#555">Aug 25</text>
+<text x="137.1" y="216" text-anchor="middle" font-size="11" fill="#555">Nov 25</text>
+<text x="213.5" y="216" text-anchor="middle" font-size="11" fill="#555">Feb 26</text>
+<text x="289.9" y="216" text-anchor="middle" font-size="11" fill="#555">May 26</text>
+<text x="366.3" y="216" text-anchor="middle" font-size="11" fill="#555">Aug 26</text>
+<text x="442.7" y="216" text-anchor="middle" font-size="11" fill="#555">Nov 26</text>
+<text x="519.0" y="216" text-anchor="middle" font-size="11" fill="#555">Feb 27</text>
+<text x="595.4" y="216" text-anchor="middle" font-size="11" fill="#555">May 27</text>
+<text x="671.8" y="216" text-anchor="middle" font-size="11" fill="#555">Aug 27</text>
+<text x="42" y="10" font-size="11" fill="#555">kb/d</text>
+</svg>
+<figcaption><b>Vintage:</b> AER ST3/ST53 actuals through 2026-07 (ST39 through 2026-05), pulled 2026-09-22; Aug-Sep 2026 nowcast estimated, built 2026-09-23; forecast built 2026-09-22. Implied storage change = supply total minus maintenance offline plus diluent imports minus refinery demand minus removals (kb/d). Positive = builds into commercial storage; negative = draws.</figcaption>
+<div class="lg"><span><span class="sw" style="background:#2b2f36"></span>Actuals (AER)</span><span><span class="sw" style="background:#b97c1e"></span>Nowcast (model est.)</span><span><span class="sw" style="background:#2f6fb2"></span>Forecast (model)</span><span><span class="sw" style="background:rgba(217,72,31,.45)"></span>Modeled maintenance month</span></div>
+</figure>
+  <h2>Maintenance calendar</h2>
+<figure class="chart">
+<svg viewbox="0 0 720 230" role="img" aria-label="Modeled maintenance offline">
+<title>Modeled maintenance offline</title>
+<rect x="48.0" y="12" width="662.0" height="180" fill="#f4f8ff" />
+<line x1="48" y1="192.0" x2="710" y2="192.0" stroke="#e5e5e5" />
+<text x="42" y="196.0" text-anchor="end" font-size="11" fill="#555">0.0</text>
+<line x1="48" y1="147.0" x2="710" y2="147.0" stroke="#e5e5e5" />
+<text x="42" y="151.0" text-anchor="end" font-size="11" fill="#555">50.0</text>
+<line x1="48" y1="102.0" x2="710" y2="102.0" stroke="#e5e5e5" />
+<text x="42" y="106.0" text-anchor="end" font-size="11" fill="#555">100.0</text>
+<line x1="48" y1="57.0" x2="710" y2="57.0" stroke="#e5e5e5" />
+<text x="42" y="61.0" text-anchor="end" font-size="11" fill="#555">150.0</text>
+<line x1="48" y1="12.0" x2="710" y2="12.0" stroke="#e5e5e5" />
+<text x="42" y="16.0" text-anchor="end" font-size="11" fill="#555">200.0</text>
+<rect x="60.6" y="44.0" width="30.0" height="148.0" fill="#2f6fb2"><title>Oct 26: 164.4 kb/d</title></rect>
+<rect x="115.7" y="171.3" width="30.0" height="20.7" fill="#2f6fb2"><title>Nov 26: 23.0 kb/d</title></rect>
+<rect x="170.9" y="189.3" width="30.0" height="2.7" fill="#2f6fb2"><title>Dec 26: 3.0 kb/d</title></rect>
+<rect x="226.1" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Jan 27: 0.0 kb/d</title></rect>
+<rect x="281.2" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Feb 27: 0.0 kb/d</title></rect>
+<rect x="336.4" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Mar 27: 0.0 kb/d</title></rect>
+<rect x="391.6" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Apr 27: 0.0 kb/d</title></rect>
+<rect x="446.7" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>May 27: 0.0 kb/d</title></rect>
+<rect x="501.9" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Jun 27: 0.0 kb/d</title></rect>
+<rect x="557.1" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Jul 27: 0.0 kb/d</title></rect>
+<rect x="612.2" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Aug 27: 0.0 kb/d</title></rect>
+<rect x="667.4" y="192.0" width="30.0" height="1.5" fill="#2f6fb2"><title>Sep 27: 0.0 kb/d</title></rect>
+<text x="75.6" y="216" text-anchor="middle" font-size="11" fill="#555">Oct 26</text>
+<text x="130.8" y="216" text-anchor="middle" font-size="11" fill="#555">Nov 26</text>
+<text x="185.9" y="216" text-anchor="middle" font-size="11" fill="#555">Dec 26</text>
+<text x="241.1" y="216" text-anchor="middle" font-size="11" fill="#555">Jan 27</text>
+<text x="296.2" y="216" text-anchor="middle" font-size="11" fill="#555">Feb 27</text>
+<text x="351.4" y="216" text-anchor="middle" font-size="11" fill="#555">Mar 27</text>
+<text x="406.6" y="216" text-anchor="middle" font-size="11" fill="#555">Apr 27</text>
+<text x="461.7" y="216" text-anchor="middle" font-size="11" fill="#555">May 27</text>
+<text x="516.9" y="216" text-anchor="middle" font-size="11" fill="#555">Jun 27</text>
+<text x="572.1" y="216" text-anchor="middle" font-size="11" fill="#555">Jul 27</text>
+<text x="627.2" y="216" text-anchor="middle" font-size="11" fill="#555">Aug 27</text>
+<text x="682.4" y="216" text-anchor="middle" font-size="11" fill="#555">Sep 27</text>
+<text x="42" y="10" font-size="11" fill="#555">kb/d</text>
+</svg>
+<figcaption><b>Vintage:</b> AER ST3/ST53 actuals through 2026-07 (ST39 through 2026-05), pulled 2026-09-22; Aug-Sep 2026 nowcast estimated, built 2026-09-23; forecast built 2026-09-22. Maintenance calendar compiled 2026-09-22; modeled at the leaves 2026-09-23. Maintenance offline memo: modeled kb/d offline by month. Pattern-indicated turnarounds carry no volume and never enter the math.</figcaption>
+<div class="lg"><span><span class="sw" style="background:#2b2f36"></span>Actuals (AER)</span><span><span class="sw" style="background:#b97c1e"></span>Nowcast (model est.)</span><span><span class="sw" style="background:#2f6fb2"></span>Forecast (model)</span><span><span class="sw" style="background:rgba(217,72,31,.45)"></span>Modeled maintenance month</span></div>
+</figure>
+  <h2>Sources</h2>
+<div class="tblwrap"><table class="data"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-07 (latest file vintage 2026-08-27)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-07</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded in repo</td><td>Monthly</td><td>Actuals through 2026-05</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in annotations/maintenance_forward.yaml</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-09-30, compiled 2026-09-22</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (repo build)</td><td>Per build</td><td>Forecast built 2026-09-22; Aug-Sep 2026 nowcast built 2026-09-23</td><td>2026-09-23</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
+  <div class="foot">
+    Heavy Reading &middot; the WCSB supply letter.<br>
+    Public information only: AER ST3/ST39/ST53 and company disclosures via the WCSB S&amp;D model. Nothing here is licensed data, so this page renders the same with or without <code>?public=1</code>.
+  </div>
+</div>
+
+</body>
+</html>

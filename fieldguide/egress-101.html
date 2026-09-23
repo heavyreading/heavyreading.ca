@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Egress 101 | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa;
+        --band-nc:#fdf6e3; --band-fc:#f4f8ff; --maint:rgba(217,72,31,.16); }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%; }
+.wrap { max-width:1060px; margin:0 auto; padding:0 14px 60px; }
+.masthead { border-bottom:4px solid var(--ink); padding:18px 0 12px; margin-bottom:14px; }
+.brand { font-weight:800; letter-spacing:2.5px; font-size:12px; color:var(--acc);
+         text-transform:uppercase; margin-bottom:2px; }
+.tagline { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+.sitenav { display:flex; flex-wrap:wrap; gap:2px 18px; margin:10px 0 2px; font-size:14px; }
+.sitenav a { color:var(--ink); text-decoration:none; padding:10px 2px; min-height:40px;
+             box-sizing:border-box; border-bottom:2px solid transparent; }
+.sitenav a:hover { border-bottom-color:var(--acc); }
+.sitenav a[aria-current="page"] { font-weight:700; border-bottom-color:var(--acc); }
+.meta { font-size:12.5px; color:var(--mut); margin:8px 0 0; }
+.meta b { color:var(--ink); }
+.crumb { font-size:13px; color:var(--mut); margin:12px 0 4px; }
+.crumb a { color:var(--ink); }
+h1 { font-size:24px; line-height:1.2; letter-spacing:-0.01em; margin:0 0 4px; }
+.sub { color:var(--mut); font-size:14px; margin:0 0 6px; }
+h2 { font-size:17px; margin:26px 0 8px; padding-top:14px; border-top:1px solid var(--line); }
+h2:first-of-type { border-top:none; padding-top:0; margin-top:18px; }
+table.data { border-collapse:collapse; width:100%; font-size:13.5px; margin:8px 0; }
+table.data th, table.data td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+table.data th { background:var(--wash); font-weight:700; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.facts td:first-child { font-weight:600; white-space:nowrap; width:34%; }
+.tblwrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tblnote { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.src { font-size:12.5px; color:var(--mut); margin:6px 0; }
+.src b { color:var(--ink); }
+.chip { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.05em;
+        text-transform:uppercase; border:1px solid var(--line); border-radius:4px;
+        padding:2px 8px; margin:2px 8px 2px 0; vertical-align:2px; color:var(--mut); }
+.badge-ok { color:#1a6b1a; border-color:#1a6b1a; }
+.badge-warn { color:var(--acc); border-color:var(--acc); }
+.badge-info { color:#1a4f8a; border-color:#1a4f8a; }
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:10px; margin:10px 0; }
+.stat { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+.stat .v { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+.stat .l { font-size:12px; color:var(--mut); }
+.foot { margin-top:34px; padding-top:12px; border-top:1px solid var(--line);
+        font-size:12.5px; color:var(--mut); }
+.foot a { color:var(--ink); }
+.nullnote { color:var(--mut); font-style:italic; }
+ul.ev { margin:8px 0; padding-left:20px; }
+ul.ev li { margin:6px 0; }
+figure.chart { margin:12px 0; }
+figure.chart svg { width:100%; height:auto; display:block;
+                   border:1px solid var(--line); border-radius:8px; background:#fff; }
+figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:6px; }
+.lg { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12.5px; color:var(--mut);
+      margin-top:6px; }
+.lg .sw { display:inline-block; width:11px; height:11px; border-radius:2px;
+          margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
+.exec { border:1px solid var(--line); border-left:5px solid var(--acc);
+        border-radius:8px; padding:12px 16px; margin:14px 0; background:var(--wash); }
+.exec h2 { border:none; margin:0 0 6px; padding:0; font-size:17px; }
+.exec ul { margin:6px 0; padding-left:20px; }
+.exec li { margin:6px 0; }
+.exec-vint { font-size:12px; color:var(--mut); margin:8px 0 0; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+       gap:10px; margin:12px 0; }
+.kpi .stat .v { font-size:26px; }
+.lic-tag { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           color:var(--acc); border:1px solid var(--acc); border-radius:4px;
+           padding:1px 6px; margin-left:6px; white-space:nowrap; }
+.panel { margin:22px 0; }
+.note { font-size:13px; color:var(--mut); }
+.vintage { font-size:12.5px; color:var(--mut); }
+.vintage-inline { font-size:12px; color:var(--mut); }
+@media print {
+  .sitenav { display:none; }
+  .wrap { max-width:none; }
+  table.data, .stat, figure.chart { break-inside:avoid; }
+  h2 { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <nav class="sitenav" aria-label="Sections">
+      <a href="../index.html">Home</a>
+      <a href="../st3-dashboard.html">Trading: executive call + balances</a>
+      <a href="../balance/index.html">Balance</a>
+      <a href="../maintenance/index.html">Maintenance</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="index.html" aria-current="page">Field guide</a>
+      <a href="../weekly/index.html">Weekly</a>
+      <a href="../data/index.html">Data</a>
+      <a href="../methodology/index.html">Methodology</a>
+      <a href="../../reports/index.html">Reports</a>
+    </nav>
+    <p class="meta"><b>UPDATED</b> September 23, 2026 &middot; <b>SOURCE</b> Oil Sands Magazine; Canada Energy Regulator</p>
+  </header>
+  <div class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Field guide</a> / Egress 101</div>
+  <h1>Egress 101</h1>
+  <p class="sub">The pipes out of Alberta, apportionment, and why full pipes set the price.</p>
+  <p class="vintage">Field guide entry &middot; written September 23, 2026.</p>
+  <h2>The pipes</h2>
+  <p>Five systems carry crude out of landlocked Western Canada. At year-end 2025 the scoreboard looked like this: Enbridge Mainline 3,200 kb/d (Edmonton to the US Midwest, with links to the Gulf Coast, Ontario, and Quebec); Trans Mountain 890 kb/d (Edmonton to Burnaby and Washington State, after the 590 kb/d TMX expansion started up in May 2024); Keystone 640 kb/d (South Bow, Hardisty to Cushing and the Gulf Coast); Express 310 kb/d (Hardisty to the Rockies and the Midwest via Platte); Milk River 98 and Rangeland 20 kb/d (into Montana). Total nameplate about 5,160 kb/d, or roughly 4,950 of crude once you set aside space for refined products, NGLs, and US barrels. The Mainline is Enbridge's; Keystone is operated by South Bow, spun out of TC Energy in 2024; Trans Mountain is a federal Crown corporation.</p>
+  <h2>Apportionment</h2>
+  <p>When shippers nominate more barrels than a pipe can take, the operator prorates everyone. That is apportionment, and it is the market's way of learning a pipe is full. The Mainline has been apportioned in most months for years. Trans Mountain hit apportionment in June 2026, the first time since the expansion, which tells you the new capacity got absorbed faster than expected. Full pipes mean barrels compete for space, and that competition shows up as wider differentials.</p>
+  <h2>Why pipeline fill matters</h2>
+  <p>A pipeline is working inventory. The millions of barrels sitting inside the pipe (line fill) are not in storage and not available to the market. When a new line starts up, filling it is a one-time demand event that pulls barrels out of the tradable pool. After that, line fill just sits there, quietly holding barrels off the market for as long as the pipe runs.</p>
+  <h2>What is coming</h2>
+  <p>No meaningful expansions were planned before 2027. Enbridge is adding about 150 kb/d of Mainline capacity in late 2026 to 2027, and Trans Mountain is working on optimization (drag-reducing agents, new pump stations) aimed at roughly 300 kb/d more by the end of 2028. Alberta has studied a new million-barrel line to the northwest coast, but no private company has committed to building it.</p>
+<div class="exec"><h2>Why it matters</h2><p>Egress is the hard constraint on the basin. Supply growth without pipe growth goes straight into the differential. Watch apportionment: it is the earliest public signal that the constraint is binding.</p></div>
+<h2>Sources</h2><ul class="ev"><li>Oil Sands Magazine, Pipeline Egress Outlook to 2030, 2026 Edition (2025-12-11) (<a href="https://www.oilsandsmagazine.com/market-insights/2025/12/11/pipeline-egress-outlook-to-2030-2026-edition">https://www.oilsandsmagazine.com/market-insights/2025/12/11/pipeline-egress-outlook-to-2030-2026-edition</a>)</li><li>Canada Energy Regulator via Energi Media, Oil pipeline Throughputs for 2024, the First Half of 2025 (<a href="https://energi.media/news/cer-oil-pipeline-throughputs-for-2024-the-first-half-of-2025-remain-high/">https://energi.media/news/cer-oil-pipeline-throughputs-for-2024-the-first-half-of-2025-remain-high/</a>)</li><li>Reuters via PGJ Online, Trans Mountain Pipeline Hits Full Capacity for First Time Since Expansion (June 2026) (<a href="https://prodadmin.pgjonline.com/news/2026/june/trans-mountain-pipeline-hits-full-capacity-for-first-time-since-expansion">https://prodadmin.pgjonline.com/news/2026/june/trans-mountain-pipeline-hits-full-capacity-for-first-time-since-expansion</a>)</li></ul>
+  <div class="foot">
+    Heavy Reading &middot; the WCSB supply letter.<br>
+    Public information only: AER ST3/ST39/ST53 and company disclosures via the WCSB S&amp;D model. Nothing here is licensed data, so this page renders the same with or without <code>?public=1</code>.
+  </div>
+</div>
+
+</body>
+</html>

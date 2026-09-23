@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa;
+        --band-nc:#fdf6e3; --band-fc:#f4f8ff; --maint:rgba(217,72,31,.16); }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%; }
+.wrap { max-width:1060px; margin:0 auto; padding:0 14px 60px; }
+.masthead { border-bottom:4px solid var(--ink); padding:18px 0 12px; margin-bottom:14px; }
+.brand { font-weight:800; letter-spacing:2.5px; font-size:12px; color:var(--acc);
+         text-transform:uppercase; margin-bottom:2px; }
+.tagline { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+.sitenav { display:flex; flex-wrap:wrap; gap:2px 18px; margin:10px 0 2px; font-size:14px; }
+.sitenav a { color:var(--ink); text-decoration:none; padding:10px 2px; min-height:40px;
+             box-sizing:border-box; border-bottom:2px solid transparent; }
+.sitenav a:hover { border-bottom-color:var(--acc); }
+.sitenav a[aria-current="page"] { font-weight:700; border-bottom-color:var(--acc); }
+.meta { font-size:12.5px; color:var(--mut); margin:8px 0 0; }
+.meta b { color:var(--ink); }
+.crumb { font-size:13px; color:var(--mut); margin:12px 0 4px; }
+.crumb a { color:var(--ink); }
+h1 { font-size:24px; line-height:1.2; letter-spacing:-0.01em; margin:0 0 4px; }
+.sub { color:var(--mut); font-size:14px; margin:0 0 6px; }
+h2 { font-size:17px; margin:26px 0 8px; padding-top:14px; border-top:1px solid var(--line); }
+h2:first-of-type { border-top:none; padding-top:0; margin-top:18px; }
+table.data { border-collapse:collapse; width:100%; font-size:13.5px; margin:8px 0; }
+table.data th, table.data td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+table.data th { background:var(--wash); font-weight:700; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.facts td:first-child { font-weight:600; white-space:nowrap; width:34%; }
+.tblwrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tblnote { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.src { font-size:12.5px; color:var(--mut); margin:6px 0; }
+.src b { color:var(--ink); }
+.chip { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.05em;
+        text-transform:uppercase; border:1px solid var(--line); border-radius:4px;
+        padding:2px 8px; margin:2px 8px 2px 0; vertical-align:2px; color:var(--mut); }
+.badge-ok { color:#1a6b1a; border-color:#1a6b1a; }
+.badge-warn { color:var(--acc); border-color:var(--acc); }
+.badge-info { color:#1a4f8a; border-color:#1a4f8a; }
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:10px; margin:10px 0; }
+.stat { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+.stat .v { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+.stat .l { font-size:12px; color:var(--mut); }
+.foot { margin-top:34px; padding-top:12px; border-top:1px solid var(--line);
+        font-size:12.5px; color:var(--mut); }
+.foot a { color:var(--ink); }
+.nullnote { color:var(--mut); font-style:italic; }
+ul.ev { margin:8px 0; padding-left:20px; }
+ul.ev li { margin:6px 0; }
+figure.chart { margin:12px 0; }
+figure.chart svg { width:100%; height:auto; display:block;
+                   border:1px solid var(--line); border-radius:8px; background:#fff; }
+figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:6px; }
+.lg { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12.5px; color:var(--mut);
+      margin-top:6px; }
+.lg .sw { display:inline-block; width:11px; height:11px; border-radius:2px;
+          margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
+.exec { border:1px solid var(--line); border-left:5px solid var(--acc);
+        border-radius:8px; padding:12px 16px; margin:14px 0; background:var(--wash); }
+.exec h2 { border:none; margin:0 0 6px; padding:0; font-size:17px; }
+.exec ul { margin:6px 0; padding-left:20px; }
+.exec li { margin:6px 0; }
+.exec-vint { font-size:12px; color:var(--mut); margin:8px 0 0; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+       gap:10px; margin:12px 0; }
+.kpi .stat .v { font-size:26px; }
+.lic-tag { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           color:var(--acc); border:1px solid var(--acc); border-radius:4px;
+           padding:1px 6px; margin-left:6px; white-space:nowrap; }
+.panel { margin:22px 0; }
+.note { font-size:13px; color:var(--mut); }
+.vintage { font-size:12.5px; color:var(--mut); }
+.vintage-inline { font-size:12px; color:var(--mut); }
+@media print {
+  .sitenav { display:none; }
+  .wrap { max-width:none; }
+  table.data, .stat, figure.chart { break-inside:avoid; }
+  h2 { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <nav class="sitenav" aria-label="Sections">
+      <a href="../index.html">Home</a>
+      <a href="../st3-dashboard.html">Trading: executive call + balances</a>
+      <a href="../balance/index.html">Balance</a>
+      <a href="../maintenance/index.html">Maintenance</a>
+      <a href="index.html" aria-current="page">Projects</a>
+      <a href="../fieldguide/index.html">Field guide</a>
+      <a href="../weekly/index.html">Weekly</a>
+      <a href="../data/index.html">Data</a>
+      <a href="../venezuela/index.html">Venezuela</a>
+      <a href="../methodology/index.html">Methodology</a>
+      <a href="../../reports/index.html">Reports</a>
+    </nav>
+    <p class="meta"><b>UPDATED</b> September 23, 2026 &middot; <b>SOURCE</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; forward maintenance calendar annotations/maintenance_forward.yaml (compiled 2026-09-22)</p>
+  </header>
+  <div class="crumb">Projects</div>
+  <h1>Projects</h1>
+  <p class="sub">Project profiles fed by the WCSB S&amp;D model leaves: live production charts, maintenance calendars, and market-relevance lines. All public information.</p>
+  <p class="sub">Every producing oil-sands project in the model, grouped by extraction method and operator. Live status is computed from the model's own maintenance math and forward calendar. Capacity figures are company or regulatory disclosures carried with their source; where sources disclose multiple capacity bases, all are shown on the profile. 'Not disclosed' means the reviewed public sources do not state a figure; nothing is estimated.</p>
+  <h2>Mining (5)</h2>
+  <h3>Imperial Oil Resources Limited (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="imo_kearl.html">Kearl</a></td><td>No modeled maintenance in the forward window</td><td>345,000 bbl/d of bitumen recorded as the capacity basis (regulatory approval;... (see profile)</td><td class="num">230.5 (May 2026)</td><td class="num">295.1</td></tr>
+  </table></div>
+  <h3>Suncor Energy Inc. (2)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="su_fort_hills.html">Fort Hills</a></td><td>No modeled maintenance in the forward window</td><td>Announced nameplate of 194,000 bbl/d of bitumen (Suncor-confirmed, 2018). Demonstrated... (see profile)</td><td class="num">163.8 (May 2026)</td><td class="num">184.5</td></tr>
+    <tr><td><a href="su_base_plant.html">Base Plant</a></td><td>Turnaround in model: Nov 2026 (+15.0 kb/d, Suncor Base Plant Q4 bitumen maintenance)</td><td>Upgrader capacity of 350,000 bbl/d of SCO. (see profile)</td><td class="num">232.8 (May 2026)</td><td class="num">262.1</td></tr>
+  </table></div>
+  <h3>Canadian Natural Resources Limited (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="cnq_horizon.html">Horizon</a></td><td>Turnaround in model: Oct 2026 (+119.0 kb/d, Horizon 35-day turnaround)</td><td>Mined-bitumen capacity of 314,000 bbl/d. (see profile)</td><td class="num">333.3 (May 2026)</td><td class="num">301.8</td></tr>
+  </table></div>
+  <h3>Syncrude Canada Ltd. (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="syncrude.html">Syncrude</a></td><td>Turnaround in model: Oct 2026 (+10.1 kb/d, Syncrude Coker 8-2 mine dial-back)</td><td>Gross SCO capacity of about 350,000 bbl/d. (see profile)</td><td class="num">153.1 (May 2026)</td><td class="num">170.6</td></tr>
+  </table></div>
+  <h2>In-situ (23)</h2>
+  <h3>Cenovus Energy Inc. (5)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="cve_foster_creek.html">Foster Creek</a></td><td>No modeled maintenance in the forward window</td><td>Nameplate capacity is 210,000 bbl/d of bitumen, after a debottlenecking/optimization... (see profile)</td><td class="num">310.7 (Jul 2026)</td><td class="num">279.5</td></tr>
+    <tr><td><a href="cve_christina_lake.html">Christina Lake</a></td><td>Turnaround in model: Oct 2026 (+20.0 kb/d, Christina Lake F/G turnaround tail)</td><td>Nameplate capacity of 260,000 bbl/d of bitumen, based on AER and facility-operator...</td><td class="num">403.8 (Jul 2026)</td><td class="num">357.7</td></tr>
+    <tr><td><a href="cve_sunrise.html">Sunrise</a></td><td>No modeled maintenance in the forward window</td><td>Nameplate capacity of 60,000 bbl/d of bitumen at the time of the 2022 acquisition,...</td><td class="num">86.2 (Jul 2026)</td><td class="num">70.0</td></tr>
+    <tr><td><a href="narrows_lake.html">Narrows Lake</a></td><td>No modeled maintenance in the forward window</td><td>Company guidance at sanction: 20,000 to 30,000 bbl/d via the 17-km tie-back, with...</td><td class="num">101.6 (Jul 2026)</td><td class="num">57.1</td></tr>
+    <tr><td><a href="meg_christina_lake.html">Christina Lake North</a></td><td>Pattern-indicated maintenance: May 2027 (indicator only, no volume in model math)</td><td>MEG-era nameplate was reported at 100,000 bbl/d (Phase 1, 2, and 2B operations). Note:...</td><td class="num"><span class="nullnote">no leaf</span></td><td class="num"><span class="nullnote">no leaf</span></td></tr>
+  </table></div>
+  <h3>Suncor Energy Inc. (2)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="su_firebag.html">Firebag</a></td><td>Pattern-indicated maintenance: May 2027 (indicator only, no volume in model math)</td><td>Nameplate capacity of 215,000 bbl/d of bitumen, disclosed after completion of... (see profile)</td><td class="num">305.7 (Jul 2026)</td><td class="num">293.4</td></tr>
+    <tr><td><a href="su_mackay_river.html">MacKay River</a></td><td>Pattern-indicated maintenance: Sep 2027 (indicator only, no volume in model math)</td><td>The facility produces about 38,000 barrels of bitumen per day during normal... (see profile)</td><td class="num">41.7 (Jul 2026)</td><td class="num">41.6</td></tr>
+  </table></div>
+  <h3>Canadian Natural Resources Limited (3)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="cnq_jackfish.html">Jackfish</a></td><td>No modeled maintenance in the forward window</td><td>Announced nameplate capacity of 120,000 bbl/d of bitumen. The facility runs ABOVE... (see profile)</td><td class="num">128.8 (Jul 2026)</td><td class="num">137.3</td></tr>
+    <tr><td><a href="cnq_kirby.html">Kirby</a></td><td>No modeled maintenance in the forward window</td><td>Kirby South nameplate capacity of 40,000 bbl/d; Kirby North nameplate capacity of...</td><td class="num">70.1 (Jul 2026)</td><td class="num">72.3</td></tr>
+    <tr><td><a href="cnq_primrose.html">Primrose and Wolf Lake</a></td><td>Pattern-indicated maintenance: Apr 2027 (indicator only, no volume in model math)</td><td>Nameplate capacity of 140,000 bbl/d of bitumen, including the original Wolf Lake...</td><td class="num">113.5 (Jul 2026)</td><td class="num">99.9</td></tr>
+  </table></div>
+  <h3>ConocoPhillips Canada Resources Corp. (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="cop_surmont.html">Surmont</a></td><td>No modeled maintenance in the forward window</td><td>Announced nameplate of 136,000 bbl/d of bitumen (ConocoPhillips, Q3 2014)....</td><td class="num">167.8 (Jul 2026)</td><td class="num">185.7</td></tr>
+  </table></div>
+  <h3>Athabasca Oil Corporation (2)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="ath_leismer.html">Leismer</a></td><td>Pattern-indicated maintenance: May 2027 (indicator only, no volume in model math)</td><td>Expansion targets 40,000 bbl/d of production by end of 2027, on a ~$300 million...</td><td class="num">32.6 (Jul 2026)</td><td class="num">35.6</td></tr>
+    <tr><td><a href="ath_hangingstone.html">Hangingstone</a></td><td>No modeled maintenance in the forward window</td><td>Phase 1 production capacity of 12,000 bbl/d of bitumen. (see profile)</td><td class="num">11.9 (Jul 2026)</td><td class="num">11.3</td></tr>
+  </table></div>
+  <h3>Greenfire Resources Operating Corporation (2)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="gfr_hangingstone_exp.html">Hangingstone Expansion</a></td><td>No modeled maintenance in the forward window</td><td>The expansion site has capacity for 35,000 bbl/d of bitumen. It achieved first oil on... (see profile)</td><td class="num">23.3 (Jul 2026)</td><td class="num">22.7</td></tr>
+    <tr><td><a href="connacher_great_divide.html">Great Divide</a></td><td>No modeled maintenance in the forward window</td><td><span class="nullnote">not disclosed in reviewed sources</span></td><td class="num">25.3 (Jul 2026)</td><td class="num">24.6</td></tr>
+  </table></div>
+  <h3>Strathcona Resources Ltd. (3)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="scr_orion.html">Orion</a></td><td>No modeled maintenance in the forward window</td><td><span class="nullnote">not disclosed in reviewed sources</span></td><td class="num">28.4 (Jul 2026)</td><td class="num">28.4</td></tr>
+    <tr><td><a href="scr_lindbergh.html">Lindbergh</a></td><td>No modeled maintenance in the forward window</td><td><span class="nullnote">not disclosed in reviewed sources</span></td><td class="num">25.4 (Jul 2026)</td><td class="num">20.0</td></tr>
+    <tr><td><a href="scr_tucker.html">Tucker</a></td><td>No modeled maintenance in the forward window</td><td><span class="nullnote">not disclosed in reviewed sources</span></td><td class="num">28.9 (Jul 2026)</td><td class="num">30.4</td></tr>
+  </table></div>
+  <h3>Harvest Operations Corp. (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="harvest_blackgold.html">BlackGold</a></td><td>No modeled maintenance in the forward window</td><td>Phase 1 design capacity of 10,000 bbl/d of bitumen; nameplate bitumen production was...</td><td class="num">13.4 (Jul 2026)</td><td class="num">11.1</td></tr>
+  </table></div>
+  <h3>Ipc Canada Ltd. (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="ipc_blackrod.html">Blackrod</a></td><td>No modeled maintenance in the forward window</td><td>Regulatory approval covers up to 80,000 bbl/d. Phase 1 was sanctioned in Q1 2023 for a...</td><td class="num">5.0 (Jul 2026)</td><td class="num">16.6</td></tr>
+  </table></div>
+  <h3>PetroChina Canada Ltd. (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="petrochina_mackay.html">MacKay River (PetroChina)</a></td><td>No modeled maintenance in the forward window</td><td>Phase 1 capacity is cited at 35,000 bbl/d, with an ultimate phased target of 150,000...</td><td class="num">11.9 (Jul 2026)</td><td class="num">10.3</td></tr>
+  </table></div>
+  <h3>Imperial Oil Resources Limited (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="imo_cold_lake.html">Cold Lake</a></td><td>Turnaround in model: Oct 2026 (+3.0 kb/d, Imperial Cold Lake 3Q/4Q 2026 turnaround)</td><td>2026 production guidance of 152,000 to 160,000 bbl/d (gross). This is a guidance...</td><td class="num">194.3 (Jul 2026)</td><td class="num">199.5</td></tr>
+  </table></div>
+  <h3>Canadian Natural Upgrading Limited (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="cnq_peace_river.html">Peace River</a></td><td>No modeled maintenance in the forward window</td><td>Plant capacity of 12,500 bbl/d of bitumen. Note: secondary-sourced.</td><td class="num">4.4 (Jul 2026)</td><td class="num">3.7</td></tr>
+  </table></div>
+  <h2>Upgrading (1)</h2>
+  <h3>CNOOC Petroleum North America ULC (1)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
+    <tr><td><a href="cnooc_long_lake_upgrader.html">Long Lake Upgrader</a></td><td>No production leaf in the model</td><td>SAGD design bitumen capacity of 11,130 m3/d, i.e., 70,000 bbl/d; steam capacity of... (see profile)</td><td class="num"><span class="nullnote">no leaf</span></td><td class="num"><span class="nullnote">no leaf</span></td></tr>
+  </table></div>
+  <div class="foot">
+    Heavy Reading &middot; the WCSB supply letter.<br>
+    Public information only: AER ST3/ST39/ST53 and company disclosures via the WCSB S&amp;D model. Nothing here is licensed data, so this page renders the same with or without <code>?public=1</code>.
+  </div>
+</div>
+
+</body>
+</html>

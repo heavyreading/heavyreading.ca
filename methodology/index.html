@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology | Heavy Reading | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa;
+        --band-nc:#fdf6e3; --band-fc:#f4f8ff; --maint:rgba(217,72,31,.16); }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%; }
+.wrap { max-width:1060px; margin:0 auto; padding:0 14px 60px; }
+.masthead { border-bottom:4px solid var(--ink); padding:18px 0 12px; margin-bottom:14px; }
+.brand { font-weight:800; letter-spacing:2.5px; font-size:12px; color:var(--acc);
+         text-transform:uppercase; margin-bottom:2px; }
+.tagline { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+.sitenav { display:flex; flex-wrap:wrap; gap:2px 18px; margin:10px 0 2px; font-size:14px; }
+.sitenav a { color:var(--ink); text-decoration:none; padding:10px 2px; min-height:40px;
+             box-sizing:border-box; border-bottom:2px solid transparent; }
+.sitenav a:hover { border-bottom-color:var(--acc); }
+.sitenav a[aria-current="page"] { font-weight:700; border-bottom-color:var(--acc); }
+.meta { font-size:12.5px; color:var(--mut); margin:8px 0 0; }
+.meta b { color:var(--ink); }
+.crumb { font-size:13px; color:var(--mut); margin:12px 0 4px; }
+.crumb a { color:var(--ink); }
+h1 { font-size:24px; line-height:1.2; letter-spacing:-0.01em; margin:0 0 4px; }
+.sub { color:var(--mut); font-size:14px; margin:0 0 6px; }
+h2 { font-size:17px; margin:26px 0 8px; padding-top:14px; border-top:1px solid var(--line); }
+h2:first-of-type { border-top:none; padding-top:0; margin-top:18px; }
+table.data { border-collapse:collapse; width:100%; font-size:13.5px; margin:8px 0; }
+table.data th, table.data td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+table.data th { background:var(--wash); font-weight:700; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.facts td:first-child { font-weight:600; white-space:nowrap; width:34%; }
+.tblwrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tblnote { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.src { font-size:12.5px; color:var(--mut); margin:6px 0; }
+.src b { color:var(--ink); }
+.chip { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.05em;
+        text-transform:uppercase; border:1px solid var(--line); border-radius:4px;
+        padding:2px 8px; margin:2px 8px 2px 0; vertical-align:2px; color:var(--mut); }
+.badge-ok { color:#1a6b1a; border-color:#1a6b1a; }
+.badge-warn { color:var(--acc); border-color:var(--acc); }
+.badge-info { color:#1a4f8a; border-color:#1a4f8a; }
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:10px; margin:10px 0; }
+.stat { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+.stat .v { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+.stat .l { font-size:12px; color:var(--mut); }
+.foot { margin-top:34px; padding-top:12px; border-top:1px solid var(--line);
+        font-size:12.5px; color:var(--mut); }
+.foot a { color:var(--ink); }
+.nullnote { color:var(--mut); font-style:italic; }
+ul.ev { margin:8px 0; padding-left:20px; }
+ul.ev li { margin:6px 0; }
+figure.chart { margin:12px 0; }
+figure.chart svg { width:100%; height:auto; display:block;
+                   border:1px solid var(--line); border-radius:8px; background:#fff; }
+figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:6px; }
+.lg { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12.5px; color:var(--mut);
+      margin-top:6px; }
+.lg .sw { display:inline-block; width:11px; height:11px; border-radius:2px;
+          margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
+.exec { border:1px solid var(--line); border-left:5px solid var(--acc);
+        border-radius:8px; padding:12px 16px; margin:14px 0; background:var(--wash); }
+.exec h2 { border:none; margin:0 0 6px; padding:0; font-size:17px; }
+.exec ul { margin:6px 0; padding-left:20px; }
+.exec li { margin:6px 0; }
+.exec-vint { font-size:12px; color:var(--mut); margin:8px 0 0; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+       gap:10px; margin:12px 0; }
+.kpi .stat .v { font-size:26px; }
+.lic-tag { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           color:var(--acc); border:1px solid var(--acc); border-radius:4px;
+           padding:1px 6px; margin-left:6px; white-space:nowrap; }
+.panel { margin:22px 0; }
+.note { font-size:13px; color:var(--mut); }
+.vintage { font-size:12.5px; color:var(--mut); }
+.vintage-inline { font-size:12px; color:var(--mut); }
+@media print {
+  .sitenav { display:none; }
+  .wrap { max-width:none; }
+  table.data, .stat, figure.chart { break-inside:avoid; }
+  h2 { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <nav class="sitenav" aria-label="Sections">
+      <a href="../index.html">Home</a>
+      <a href="../st3-dashboard.html">Trading: executive call + balances</a>
+      <a href="../balance/index.html">Balance</a>
+      <a href="../maintenance/index.html">Maintenance</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="../fieldguide/index.html">Field guide</a>
+      <a href="../weekly/index.html">Weekly</a>
+      <a href="../data/index.html">Data</a>
+      <a href="../venezuela/index.html">Venezuela</a>
+      <a href="index.html" aria-current="page">Methodology</a>
+      <a href="../../reports/index.html">Reports</a>
+    </nav>
+    <p class="meta"><b>UPDATED</b> September 23, 2026 &middot; <b>SOURCE</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; company guidance via the forward maintenance calendar (compiled 2026-09-22)</p>
+  </header>
+  <div class="crumb"><a href="../index.html">Home</a> / Methodology</div>
+  <h1>Methodology</h1>
+  <p class="sub">Standing methodology for the WCSB S&D; model.</p>
+  <h2>What this model is</h2>
+  <p>A physical supply/demand balance for the Western Canadian Sedimentary Basin. It is not a differential forecast. Every number carries its publisher, vintage, and method; unknown values stay null, never fabricated.</p>
+  <h2>Supply forecast</h2>
+  <p>Forecast at the most granular public leaves, then aggregate: AER ST53 commercial-scheme leaves for SAGD/CSS, ST39 facility rows for mined bitumen and SCO, ST3 lines for conventional streams. Each leaf is a trailing-12-month mean times a seasonal factor from the last three complete years. Mapped ST53 projects cover 76.7% of ST3 in-situ; the balance is grossed up with an explicit coverage factor.</p>
+  <h2>Maintenance</h2>
+  <p>Maintenance offline counts only public-confirmed company guidance and transcript items, modeled at the project leaves. Seasonal-pattern indicators are shown as assumed and never enter the math. The forward calendar (2026-10-01 to 2027-09-30, compiled 2026-09-22) distinguishes public-confirmed, guidance-sourced, and pattern-indicated entries; unknown volumes stay null.</p>
+  <h2>Grade layer</h2>
+  <p>Supply is cut by grade as well as by source: SCO (upgraded production), marketable bitumen (dilbit), and bitumen sent for further processing. Grade conversion default: 0.87 SCO per barrel of bitumen feed (observed: fleet 0.865, Horizon 0.888, Syncrude 0.843). NFT mined bitumen (Suncor Base, Syncrude, Horizon) is upgrader-locked and cannot meet pipeline dilbit spec; PFT mines (Kearl, Fort Hills) sell dilbit directly; SAGD bitumen is flexible between dilbit sales and upgrader feed. See the dashboard grade-layer assumptions panel for the full leaf mapping.</p>
+  <h2>Storage</h2>
+  <p>Implied storage change = supply total minus maintenance offline plus diluent imports minus refinery demand minus removals (all kb/d). It is the simple physical balance, not the ST3 inventory print. Positive = builds into commercial storage; negative = draws.</p>
+  <h2>Trading cycle</h2>
+  <p>Injection-month barrels trade during the prior calendar month, before noms day. The tradable barrel is always past the current maintenance window, so the forward balance for the next tradable injection month is what prices barrels, not the current outage snapshot.</p>
+  <h2>Sources</h2>
+<div class="tblwrap"><table class="data"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-07 (latest file vintage 2026-08-27)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-07</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded in repo</td><td>Monthly</td><td>Actuals through 2026-05</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in annotations/maintenance_forward.yaml</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-09-30, compiled 2026-09-22</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (repo build)</td><td>Per build</td><td>Forecast built 2026-09-22; Aug-Sep 2026 nowcast built 2026-09-23</td><td>2026-09-23</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
+  <div class="foot">
+    Heavy Reading &middot; the WCSB supply letter.<br>
+    Public information only: AER ST3/ST39/ST53 and company disclosures via the WCSB S&amp;D model. Nothing here is licensed data, so this page renders the same with or without <code>?public=1</code>.
+  </div>
+</div>
+
+</body>
+</html>

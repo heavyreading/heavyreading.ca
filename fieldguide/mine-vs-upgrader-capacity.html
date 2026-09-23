@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mine capacity vs upgrader capacity | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa;
+        --band-nc:#fdf6e3; --band-fc:#f4f8ff; --maint:rgba(217,72,31,.16); }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%; }
+.wrap { max-width:1060px; margin:0 auto; padding:0 14px 60px; }
+.masthead { border-bottom:4px solid var(--ink); padding:18px 0 12px; margin-bottom:14px; }
+.brand { font-weight:800; letter-spacing:2.5px; font-size:12px; color:var(--acc);
+         text-transform:uppercase; margin-bottom:2px; }
+.tagline { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+.sitenav { display:flex; flex-wrap:wrap; gap:2px 18px; margin:10px 0 2px; font-size:14px; }
+.sitenav a { color:var(--ink); text-decoration:none; padding:10px 2px; min-height:40px;
+             box-sizing:border-box; border-bottom:2px solid transparent; }
+.sitenav a:hover { border-bottom-color:var(--acc); }
+.sitenav a[aria-current="page"] { font-weight:700; border-bottom-color:var(--acc); }
+.meta { font-size:12.5px; color:var(--mut); margin:8px 0 0; }
+.meta b { color:var(--ink); }
+.crumb { font-size:13px; color:var(--mut); margin:12px 0 4px; }
+.crumb a { color:var(--ink); }
+h1 { font-size:24px; line-height:1.2; letter-spacing:-0.01em; margin:0 0 4px; }
+.sub { color:var(--mut); font-size:14px; margin:0 0 6px; }
+h2 { font-size:17px; margin:26px 0 8px; padding-top:14px; border-top:1px solid var(--line); }
+h2:first-of-type { border-top:none; padding-top:0; margin-top:18px; }
+table.data { border-collapse:collapse; width:100%; font-size:13.5px; margin:8px 0; }
+table.data th, table.data td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+table.data th { background:var(--wash); font-weight:700; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.facts td:first-child { font-weight:600; white-space:nowrap; width:34%; }
+.tblwrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tblnote { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.src { font-size:12.5px; color:var(--mut); margin:6px 0; }
+.src b { color:var(--ink); }
+.chip { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.05em;
+        text-transform:uppercase; border:1px solid var(--line); border-radius:4px;
+        padding:2px 8px; margin:2px 8px 2px 0; vertical-align:2px; color:var(--mut); }
+.badge-ok { color:#1a6b1a; border-color:#1a6b1a; }
+.badge-warn { color:var(--acc); border-color:var(--acc); }
+.badge-info { color:#1a4f8a; border-color:#1a4f8a; }
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:10px; margin:10px 0; }
+.stat { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+.stat .v { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+.stat .l { font-size:12px; color:var(--mut); }
+.foot { margin-top:34px; padding-top:12px; border-top:1px solid var(--line);
+        font-size:12.5px; color:var(--mut); }
+.foot a { color:var(--ink); }
+.nullnote { color:var(--mut); font-style:italic; }
+ul.ev { margin:8px 0; padding-left:20px; }
+ul.ev li { margin:6px 0; }
+figure.chart { margin:12px 0; }
+figure.chart svg { width:100%; height:auto; display:block;
+                   border:1px solid var(--line); border-radius:8px; background:#fff; }
+figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:6px; }
+.lg { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12.5px; color:var(--mut);
+      margin-top:6px; }
+.lg .sw { display:inline-block; width:11px; height:11px; border-radius:2px;
+          margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
+.exec { border:1px solid var(--line); border-left:5px solid var(--acc);
+        border-radius:8px; padding:12px 16px; margin:14px 0; background:var(--wash); }
+.exec h2 { border:none; margin:0 0 6px; padding:0; font-size:17px; }
+.exec ul { margin:6px 0; padding-left:20px; }
+.exec li { margin:6px 0; }
+.exec-vint { font-size:12px; color:var(--mut); margin:8px 0 0; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+       gap:10px; margin:12px 0; }
+.kpi .stat .v { font-size:26px; }
+.lic-tag { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           color:var(--acc); border:1px solid var(--acc); border-radius:4px;
+           padding:1px 6px; margin-left:6px; white-space:nowrap; }
+.panel { margin:22px 0; }
+.note { font-size:13px; color:var(--mut); }
+.vintage { font-size:12.5px; color:var(--mut); }
+.vintage-inline { font-size:12px; color:var(--mut); }
+@media print {
+  .sitenav { display:none; }
+  .wrap { max-width:none; }
+  table.data, .stat, figure.chart { break-inside:avoid; }
+  h2 { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <nav class="sitenav" aria-label="Sections">
+      <a href="../index.html">Home</a>
+      <a href="../st3-dashboard.html">Trading: executive call + balances</a>
+      <a href="../balance/index.html">Balance</a>
+      <a href="../maintenance/index.html">Maintenance</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="index.html" aria-current="page">Field guide</a>
+      <a href="../weekly/index.html">Weekly</a>
+      <a href="../data/index.html">Data</a>
+      <a href="../methodology/index.html">Methodology</a>
+      <a href="../../reports/index.html">Reports</a>
+    </nav>
+    <p class="meta"><b>UPDATED</b> September 23, 2026 &middot; <b>SOURCE</b> Heavy Reading research: AER ST39 demonstrated history, verified 2026-09-23</p>
+  </header>
+  <div class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Field guide</a> / Mine capacity vs upgrader capacity</div>
+  <h1>Mine capacity vs upgrader capacity</h1>
+  <p class="sub">Two plants, two numbers. Never blend them.</p>
+  <p class="vintage">Field guide entry &middot; written September 23, 2026.</p>
+  <h2>Why there are two numbers</h2>
+  <p>An integrated oil sands site is two plants bolted together. The mine digs up bitumen; the upgrader converts bitumen into synthetic crude. Each has its own capacity, measured in different streams: bitumen in, SCO out. Upgrading is not one-for-one. The observed conversion runs about 0.87 barrels of SCO per barrel of bitumen feed across the fleet (0.865 on ST3 data from 2017 to 2026; Horizon 0.888, Syncrude 0.843, Suncor Base around 0.86 to 0.91). The rest goes to coke, fuel gas, sulphur, and process losses.</p>
+  <h2>Horizon, worked example</h2>
+  <p>Horizon carries three stated capacity bases: 264 kb/d of company operating SCO capacity, 271 kb/d of regulatory SCO nameplate, and 314 kb/d of mined-bitumen capacity. Demonstrated history beats all three. The peak monthly SCO output on record is 309.8 kb/d (November 2025); the peak mined-bitumen output is 333.3 kb/d (May 2026). For headroom and utilization math, those demonstrated peaks are the reference, not the stated figures. (Horizon is 100 percent CNRL, owned and operated.) Note the peaks are different months: you cannot divide 309.8 by 333.3 and call it a yield, because the mine and upgrader do not peak together.</p>
+  <h2>The rule</h2>
+  <p>Like for like, always. Compare SCO output to SCO capacity, and bitumen output to bitumen capacity. A "capacity" number that mixes bitumen-in with SCO-out is meaningless, and any utilization figure built on it is wrong. Where stated capacity conflicts with demonstrated output, history wins, and the page says so explicitly. Non-integrated sites carry only one of the two numbers: a SAGD project has bitumen production capacity and no upgrader at all. The project pages on this site keep the two as separate fields for exactly this reason, mine capacity in bitumen and upgrader capacity in SCO, and where a site has only one, the other field stays empty rather than getting a blended guess. Horizon's three stated bases (264, 271, and 314) are kept as separate line items on its page, with the demonstrated peaks shown alongside them.</p>
+<div class="exec"><h2>Why it matters</h2><p>Every utilization and headroom number on this site depends on this split. Blend the two capacities and you will either invent spare room that does not exist or hide tightness that does.</p></div>
+<h2>Sources</h2><ul class="ev"><li>Heavy Reading research note, Horizon capacity reconciliation: demonstrated ST39 peaks vs stated bases, verified 2026-09-23 from AER ST39 (URL not recorded in repo)</li><li>Heavy Reading research note, Upgrader yield study: fleet and plant-level bitumen-to-SCO yields from AER ST3/ST39, 2017-2026 (URL not recorded in repo)</li></ul>
+  <div class="foot">
+    Heavy Reading &middot; the WCSB supply letter.<br>
+    Public information only: AER ST3/ST39/ST53 and company disclosures via the WCSB S&amp;D model. Nothing here is licensed data, so this page renders the same with or without <code>?public=1</code>.
+  </div>
+</div>
+
+</body>
+</html>

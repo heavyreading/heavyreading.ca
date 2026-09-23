@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Scotford chain | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa;
+        --band-nc:#fdf6e3; --band-fc:#f4f8ff; --maint:rgba(217,72,31,.16); }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%; }
+.wrap { max-width:1060px; margin:0 auto; padding:0 14px 60px; }
+.masthead { border-bottom:4px solid var(--ink); padding:18px 0 12px; margin-bottom:14px; }
+.brand { font-weight:800; letter-spacing:2.5px; font-size:12px; color:var(--acc);
+         text-transform:uppercase; margin-bottom:2px; }
+.tagline { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+.sitenav { display:flex; flex-wrap:wrap; gap:2px 18px; margin:10px 0 2px; font-size:14px; }
+.sitenav a { color:var(--ink); text-decoration:none; padding:10px 2px; min-height:40px;
+             box-sizing:border-box; border-bottom:2px solid transparent; }
+.sitenav a:hover { border-bottom-color:var(--acc); }
+.sitenav a[aria-current="page"] { font-weight:700; border-bottom-color:var(--acc); }
+.meta { font-size:12.5px; color:var(--mut); margin:8px 0 0; }
+.meta b { color:var(--ink); }
+.crumb { font-size:13px; color:var(--mut); margin:12px 0 4px; }
+.crumb a { color:var(--ink); }
+h1 { font-size:24px; line-height:1.2; letter-spacing:-0.01em; margin:0 0 4px; }
+.sub { color:var(--mut); font-size:14px; margin:0 0 6px; }
+h2 { font-size:17px; margin:26px 0 8px; padding-top:14px; border-top:1px solid var(--line); }
+h2:first-of-type { border-top:none; padding-top:0; margin-top:18px; }
+table.data { border-collapse:collapse; width:100%; font-size:13.5px; margin:8px 0; }
+table.data th, table.data td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+table.data th { background:var(--wash); font-weight:700; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.facts td:first-child { font-weight:600; white-space:nowrap; width:34%; }
+.tblwrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tblnote { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.src { font-size:12.5px; color:var(--mut); margin:6px 0; }
+.src b { color:var(--ink); }
+.chip { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.05em;
+        text-transform:uppercase; border:1px solid var(--line); border-radius:4px;
+        padding:2px 8px; margin:2px 8px 2px 0; vertical-align:2px; color:var(--mut); }
+.badge-ok { color:#1a6b1a; border-color:#1a6b1a; }
+.badge-warn { color:var(--acc); border-color:var(--acc); }
+.badge-info { color:#1a4f8a; border-color:#1a4f8a; }
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:10px; margin:10px 0; }
+.stat { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+.stat .v { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+.stat .l { font-size:12px; color:var(--mut); }
+.foot { margin-top:34px; padding-top:12px; border-top:1px solid var(--line);
+        font-size:12.5px; color:var(--mut); }
+.foot a { color:var(--ink); }
+.nullnote { color:var(--mut); font-style:italic; }
+ul.ev { margin:8px 0; padding-left:20px; }
+ul.ev li { margin:6px 0; }
+figure.chart { margin:12px 0; }
+figure.chart svg { width:100%; height:auto; display:block;
+                   border:1px solid var(--line); border-radius:8px; background:#fff; }
+figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:6px; }
+.lg { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12.5px; color:var(--mut);
+      margin-top:6px; }
+.lg .sw { display:inline-block; width:11px; height:11px; border-radius:2px;
+          margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
+.exec { border:1px solid var(--line); border-left:5px solid var(--acc);
+        border-radius:8px; padding:12px 16px; margin:14px 0; background:var(--wash); }
+.exec h2 { border:none; margin:0 0 6px; padding:0; font-size:17px; }
+.exec ul { margin:6px 0; padding-left:20px; }
+.exec li { margin:6px 0; }
+.exec-vint { font-size:12px; color:var(--mut); margin:8px 0 0; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+       gap:10px; margin:12px 0; }
+.kpi .stat .v { font-size:26px; }
+.lic-tag { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           color:var(--acc); border:1px solid var(--acc); border-radius:4px;
+           padding:1px 6px; margin-left:6px; white-space:nowrap; }
+.panel { margin:22px 0; }
+.note { font-size:13px; color:var(--mut); }
+.vintage { font-size:12.5px; color:var(--mut); }
+.vintage-inline { font-size:12px; color:var(--mut); }
+@media print {
+  .sitenav { display:none; }
+  .wrap { max-width:none; }
+  table.data, .stat, figure.chart { break-inside:avoid; }
+  h2 { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <nav class="sitenav" aria-label="Sections">
+      <a href="../index.html">Home</a>
+      <a href="../st3-dashboard.html">Trading: executive call + balances</a>
+      <a href="../balance/index.html">Balance</a>
+      <a href="../maintenance/index.html">Maintenance</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="index.html" aria-current="page">Field guide</a>
+      <a href="../weekly/index.html">Weekly</a>
+      <a href="../data/index.html">Data</a>
+      <a href="../methodology/index.html">Methodology</a>
+      <a href="../../reports/index.html">Reports</a>
+    </nav>
+    <p class="meta"><b>UPDATED</b> September 23, 2026 &middot; <b>SOURCE</b> Company disclosures (CNRL, Shell) via newswire; AER ST39</p>
+  </header>
+  <div class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Field guide</a> / The Scotford chain</div>
+  <h1>The Scotford chain</h1>
+  <p class="sub">Muskeg River and Jackpine mines, the Corridor pipeline, and a Shell-operated upgrader outside Edmonton. How CNRL's mined bitumen becomes synthetic crude.</p>
+  <p class="vintage">Field guide entry &middot; written September 23, 2026.</p>
+  <h2>What it is</h2>
+  <p>The Scotford chain is the Athabasca Oil Sands Project's path from mine to synthetic crude. Bitumen comes out of the Muskeg River and Jackpine mines north of Fort McMurray, travels south by pipeline as diluted bitumen, and gets upgraded into synthetic crude at the Scotford Upgrader near Fort Saskatchewan, just northeast of Edmonton. It is one of two upgrader systems tied to Canadian Natural Resources. The other is Horizon, which is fully integrated on a single site.</p>
+  <h2>How it works, physically</h2>
+  <p>The mines use paraffinic froth treatment, which produces bitumen clean enough to meet pipeline spec. That bitumen is blended with diluent and shipped down the Corridor pipeline to Scotford; the diluent comes back north in a reverse loop on the same system. At Scotford the upgrader runs LC-Fining, a hydrogen-addition process that cracks the heavy residue into lighter products. Because it adds hydrogen rather than rejecting carbon as coke, the plant puts out slightly more liquid than it takes in as bitumen. The main products are Premium Albian Synthetic (a light sweet SCO), vacuum gas oil, and Albian Heavy Synthetic. A large share of the output feeds the Shell Scotford refinery next door; the rest goes to Sarnia and the open market.</p>
+  <h2>Who owns and operates it</h2>
+  <p>This is the confusing part, and it changed twice. In 2017 CNRL bought Shell's 60 percent of the Athabasca Oil Sands Project and took over operating the mines. Shell stayed on as operator of the upgrader and the Quest carbon capture unit. Then in a 2025 asset swap, CNRL traded 10 percent of the upgrader and Quest to Shell in exchange for Shell's remaining 10 percent of the mines. The deal closed late in 2025. The result: the mines are now 100 percent CNRL, while the upgrader is owned 60 percent CNRL, 20 percent Shell, and 20 percent Chevron. Shell still operates the upgrader.</p>
+  <h2>Key numbers</h2>
+  <ul class="ev"><li>Rated SCO capacity around 255 kb/d, after a 100 kb/d expansion in 2011.</li><li>Roughly 280 kb/d of bitumen in.</li><li>Product split disclosed at the 2017 acquisition: about 150 kb/d Premium Albian Synthetic, 60 kb/d vacuum gas oil, 79 kb/d Albian Heavy Synthetic, plus a small off-gas stream.</li><li>The Quest carbon capture unit attached to the upgrader captures about 1.1 million tonnes of CO2 per year.</li></ul>
+<div class="exec"><h2>Why it matters</h2><p>CNRL digs up bitumen it fully owns, then feeds it to an upgrader it only majority-owns and does not operate. The SCO that comes out is a joint-venture stream, not CNRL SCO. And unlike the Suncor-Syncrude pair, there is no interconnect to lean on: a Scotford turnaround means the Albian mines dial back directly. Compare Horizon, where the mine and upgrader sit on one site and both are 100 percent CNRL.</p></div>
+<h2>Sources</h2><ul class="ev"><li>Canadian Natural Resources, Acquisition of working interest in the Athabasca Oil Sands Project, news release (2017-03-09) (<a href="https://boereport.com/2017/03/09/canadian-natural-resources-limited-announces-the-acquisition-of-working-interest-in-the-athabasca-oil-sands-project-and-other-oil-sands-assets/amp/">https://boereport.com/2017/03/09/canadian-natural-resources-limited-announces-the-acquisition-of-working-interest-in-the-athabasca-oil-sands-project-and-other-oil-sands-assets/amp/</a>)</li><li>The Canadian Press via BOE Report, Canadian Natural raises production outlook after taking full control of oilsands mine (2025-11-03) (<a href="https://boereport.com/2025/11/03/canadian-natural-raises-production-outlook-after-taking-full-control-of-oilsands-mine/">https://boereport.com/2025/11/03/canadian-natural-raises-production-outlook-after-taking-full-control-of-oilsands-mine/</a>)</li><li>Oil Sands Magazine, Scotford Upgrader project page (<a href="https://www.oilsandsmagazine.com/projects/shell-scotford-upgrader">https://www.oilsandsmagazine.com/projects/shell-scotford-upgrader</a>)</li></ul>
+  <div class="foot">
+    Heavy Reading &middot; the WCSB supply letter.<br>
+    Public information only: AER ST3/ST39/ST53 and company disclosures via the WCSB S&amp;D model. Nothing here is licensed data, so this page renders the same with or without <code>?public=1</code>.
+  </div>
+</div>
+
+</body>
+</html>

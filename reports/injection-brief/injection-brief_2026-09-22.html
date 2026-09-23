@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- REPORT-META {"report_type": "injection-brief", "title": "Pre-Injection-Month Trading Brief", "edition": "November 2026 injections", "edition_date": "2026-09-22", "license": "public"} -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pre-Injection-Month Trading Brief - November 2026 injections | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa; }
+* { box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink); line-height:1.55; margin:0; background:#fff; }
+.wrap { max-width:760px; margin:0 auto; padding:0 16px 64px; }
+/* masthead */
+.masthead { border-bottom:4px solid var(--ink); padding:20px 0 14px; margin-bottom:8px; }
+.brand { font-weight:800; letter-spacing:2px; font-size:15px; color:var(--acc); }
+.masthead h1 { font-size:30px; margin:6px 0 4px; line-height:1.2; }
+.edition { color:var(--mut); font-size:14px; margin:0 0 10px; }
+.tagline { color:var(--mut); font-size:13px; margin:2px 0 0; }
+.vintages { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 4px; }
+.chip { font-size:12px; background:var(--wash); border:1px solid var(--line);
+        border-radius:4px; padding:3px 8px; color:var(--mut); }
+.chip b { color:var(--ink); font-weight:600; }
+/* exec summary */
+.exec { background:#fff8f6; border:1px solid #e8c4bd; border-left:5px solid var(--acc);
+        padding:14px 16px; margin:20px 0 26px; border-radius:0 6px 6px 0; }
+.exec h2 { font-size:13px; letter-spacing:1.5px; color:var(--acc); margin:0 0 8px;
+           text-transform:uppercase; }
+.exec ul { margin:0; padding-left:20px; }
+.exec li { margin:6px 0; font-size:15px; }
+/* sections */
+section.block { margin:30px 0; }
+h2.sec { font-size:21px; border-bottom:2px solid var(--ink); padding-bottom:6px;
+         margin:0 0 12px; }
+.sec-intro { color:var(--mut); font-size:14px; margin:0 0 14px; }
+p.body { font-size:15px; margin:10px 0; }
+/* tables */
+.tblwrap { overflow-x:auto; margin:14px 0; }
+table.data { border-collapse:collapse; width:100%; font-size:14px; }
+table.data caption { text-align:left; font-weight:700; font-size:14px;
+                     padding:0 0 8px; }
+table.data th, table.data td { border:1px solid var(--line); padding:8px 10px;
+                                text-align:left; vertical-align:top; }
+table.data th { background:var(--wash); font-size:13px; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.data tr:nth-child(even) td { background:#fcfcfc; }
+.tblnote { font-size:12px; color:var(--mut); margin:6px 0 0; }
+.tblsrc { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.tblsrc.missing { color:var(--acc); font-weight:700; }
+/* charts */
+figure.chart { margin:18px 0; }
+figure.chart img { width:100%; height:auto; display:block; border:1px solid var(--line); }
+figure.chart figcaption { font-size:13px; color:var(--mut); margin-top:6px; }
+figure.chart .chsrc { font-size:12px; color:var(--mut); margin-top:2px; }
+figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
+/* risks */
+.risks { background:var(--wash); border:1px solid var(--line); border-radius:6px;
+         padding:14px 16px; margin:20px 0; }
+.risks h2 { font-size:13px; letter-spacing:1.5px; text-transform:uppercase;
+            margin:0 0 8px; color:var(--ink); }
+.risks ul { margin:0; padding-left:20px; }
+.risks li { margin:8px 0; font-size:15px; }
+.risks .flip { color:var(--mut); }
+/* appendix */
+.appendix { border-top:2px solid var(--ink); margin-top:34px; padding-top:10px; }
+.appendix h2 { font-size:18px; margin:0 0 10px; }
+.appendix p, .appendix li { font-size:13.5px; color:#333; }
+/* footer nav */
+.repnav { display:flex; justify-content:space-between; gap:12px; margin:34px 0 0;
+          padding-top:14px; border-top:1px solid var(--line); font-size:13px; }
+.repnav a { color:var(--acc); }
+.archive { margin:18px 0 0; font-size:13px; color:var(--mut); }
+.archive a { color:var(--acc); margin-right:12px; }
+.disclaimer { font-size:12px; color:var(--mut); margin-top:22px;
+              border-top:1px solid var(--line); padding-top:10px; }
+.lic { display:inline-block; font-size:11px; border:1px solid var(--line);
+       border-radius:3px; padding:1px 6px; color:var(--mut); margin-left:8px;
+       vertical-align:middle; }
+@media (max-width:560px) {
+  .masthead h1 { font-size:24px; }
+  h2.sec { font-size:18px; }
+  .exec li, p.body, .risks li { font-size:14px; }
+  table.data { font-size:13px; }
+  table.data th, table.data td { padding:6px 7px; }
+}
+@media print {
+  body { font-size:11pt; }
+  .wrap { max-width:none; padding:0; }
+  .repnav, .archive { display:none; }
+  .masthead { padding-top:0; }
+  section.block, .exec, .risks, figure.chart, .tblwrap { break-inside:avoid; }
+  h2.sec { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+  figure.chart img { border:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <h1>Pre-Injection-Month Trading Brief<span class="lic">public data only</span></h1>
+    <p class="edition">November 2026 injections &middot; published 2026-09-22</p>
+    <div class="vintages"><span class="chip">Pipeline build: <b>2026-09-22 ~16:45 MDT (supersedes 09:28 and 16:31 builds same day)</b></span><span class="chip">ST3 / ST53 actuals: <b>through Jul 2026, re-downloaded 2026-09-22</b></span><span class="chip">Residual calibration: <b>re-measured 2026-09-22: mean +439 kb/d, stdev 45 vs ST3 actual inventory changes Jan-Jul 2026</b></span><span class="chip">Forward maintenance calendar: <b>compiled 2026-09-22; Horizon bridge ruling 2026-09-22</b></span><span class="chip">CER egress: <b>Jun 2026, pulled 2026-09-22 (~3-month lag)</b></span><span class="chip">CER crude-by-rail: <b>May 2026 observation, file updated 2026-07-22</b></span><span class="chip">EIA PADD 2 runs: <b>week ending 2026-09-11, pulled 2026-09-22</b></span><span class="chip">Basis (licensed, numbers withheld): <b>desk ICE 1a transcription (Eikon): Sep 2026 final, Oct 2026 preliminary; Nov M1 NULL</b></span></div>
+  </header>
+  <div class="exec"><h2>The call</h2><ul><li>The call: watch, not trigger. The November 2026 barrel (trading October 1-31, 2026) prices off a flat-ish calibrated forward balance of roughly -38 kb/d, with October's heavy maintenance in the rearview and a June-vintage CER pipe picture that is tight into the November supply ramp, but there is no forward basis mark to anchor against.</li><li>November balance (pipeline run 2026-09-22, AER ST3/ST53 actuals through Jul 2026): supply 4481.2 kb/d against demand of 5245.4 kb/d, raw implied storage change -476.8 kb/d, calibrated with the measured +439 kb/d residual (stdev 45) to roughly -38 kb/d. The raw level is not a stock forecast.</li><li>Egress (CER, Jun 2026 vintage, ~3-month lag): Enbridge apportioning 12.4% of nominations, Keystone eased to 5% for the first time in a year, TMX at 96.2% with 33.8 kb/d spare. System spare 272.2 kb/d, of which only Enbridge's 201.9 kb/d is real cushion for marginal barrels.</li><li>Basis: November M1 is NULL (the desk cannot supply daily strips, nothing fabricated). The forward read completes when ICE settlement retrieval is fixed or the desk supplies strips; until then the November basis leg is unknown.</li><li>What flips the read: Enbridge apportionment inflecting higher on the next CER vintage while the builds run hot, or confirmed forward strips that price the November barrel.</li></ul></div>
+  <section class="block"><h2 class="sec">The November 2026 barrel balance</h2>
+<p class="sec-intro">Forward balance for the next tradable injection month. November 2026 injections trade October 1-31, 2026; October injections are closed post-noms. Pipeline run 2026-09-22 ~16:45 MDT; AER ST3 and ST53 actuals through Jul 2026, re-downloaded 2026-09-22.</p>
+<p class="body">Supply total 4481.2 kb/d against refinery demand 620.8 plus exports 4624.6 kb/d. The raw identity prints implied storage change of -476.8 kb/d, which is not a stock forecast: the simple public-data identity runs +439 kb/d low on average (stdev 45) against measured ST3 inventory changes for Jan-Jul 2026, a stable residual from the unmeasured legs.</p>
+<p class="body">Calibrated read: roughly -38 kb/d, flat-ish. Trade the shape, calibrate the level. October to November: supply rises 220.0 kb/d (4261.2 to 4481.2) as October's heavy maintenance lifts; exports rise 185.5 kb/d (4439.1 to 4624.6).</p>
+<div class="tblwrap"><table class="data"><caption>November 2026 barrel balance (kb/d)</caption><tr><th>Leaf</th><th class="num">Nov 2026 kb/d</th></tr><tr><td>mined bitumen / SCO</td><td class="num">1745.9</td></tr><tr><td>SAGD</td><td class="num">1718.3</td></tr><tr><td>CSS</td><td class="num">326.7</td></tr><tr><td>conventional</td><td class="num">690.3</td></tr><tr><td>supply total</td><td class="num">4481.2</td></tr><tr><td>less: maintenance offline (confirmed)</td><td class="num">23.0</td></tr><tr><td>plus: diluent imports</td><td class="num">310.4</td></tr><tr><td>less: refinery demand</td><td class="num">620.8</td></tr><tr><td>less: exports</td><td class="num">4624.6</td></tr><tr><td>= implied storage change (raw identity)</td><td class="num">-476.8</td></tr><tr><td>residual correction (mean +439, stdev 45)</td><td class="num">+439</td></tr><tr><td>= calibrated storage change</td><td class="num">-38</td></tr></table></div><p class="tblnote">Residual measured against ST3 actual inventory changes, Jan-Jul 2026; re-measured 2026-09-22. Raw level is not a stock forecast.</p><p class="tblsrc">Source: WCSB S&amp;D model pipeline run 2026-09-22 ~16:45 MDT; AER ST3 Oil current + ST53 actuals through Jul 2026 (re-downloaded 2026-09-22)</p>
+</section>
+<section class="block"><h2 class="sec">Maintenance inside the injection month</h2>
+<p class="sec-intro">Headline net offline (confirmed): -20 kb/d for November 2026. Confirmed means the company stated both the number and the timing; every number carries its vintage date.</p>
+<p class="body">Both confirmed items are Suncor Base Plant Q4 2026 event-rate guidance, applied to each Q4 month with mid-quarter November timing assumed. The balance table's maintenance offline for November is 23.0 kb/d: the confirmed -20 plus 3 kb/d for Imperial Cold Lake Q4 (Imperial guidance, 3 kb/d annualized, labeled modeled not confirmed because Imperial's public guidance states no timing or number).</p>
+<p class="body">October was the heavy month: confirmed -188 kb/d (Horizon residual 119 kb/d Oct 1-12 per the 2026-09-22 bridge ruling, Syncrude Coker 8-2 to about Oct 9 at -49, Base Plant Q4 portion). Cenovus guided zero Oil Sands planned maintenance for Q4 2026 at the segment level (Q2 2026 results, 2026-07-29). No company-confirmed turnarounds exist anywhere for 2027 as of 2026-09-22.</p>
+<div class="tblwrap"><table class="data"><caption>November 2026 confirmed maintenance (kb/d, negative = barrels offline)</caption><tr><th>Item</th><th class="num">Nov 2026 kb/d</th></tr><tr><td>Suncor Base Plant bitumen (mine side), Q4 window</td><td class="num">-15</td></tr><tr><td>Suncor Base Plant SCO/diesel, Q4 window</td><td class="num">-5</td></tr><tr><td>headline net offline (confirmed)</td><td class="num">-20</td></tr></table></div><p class="tblnote">Imperial Cold Lake bloomberg_recon (-6 event rate over Jul-Dec 2026, Bloomberg First Word schedule desk-supplied 2026-09-22) is not public-confirmed and is excluded from the math.</p><p class="tblsrc">Source: Suncor 2026 planned maintenance table (Q4 2025 / Q1 2026 investor presentations), published 2026-04-01; forward maintenance commentary compiled 2026-09-22</p>
+</section>
+<section class="block"><h2 class="sec">Egress read for November barrels</h2>
+<p class="sec-intro">CER vintage: June 2026, pulled 2026-09-22, ~3-month publication lag. Barrels injected in November travel November 2026 through January 2027. Egress flag: WATCH.</p>
+<p class="body">The pipe picture is tight and the spare is not evenly spread. Keystone's 36.4 and TMX's 33.8 kb/d are effectively zero for marginal barrels; Enbridge's 201.9 kb/d is the only real cushion, and the Mainline was still curtailing 12.4% of nominations in June. Keystone easing (apportionment 61% to 5%, May to June 2026, first time below 30% since April 2025) is the single new development; if it holds, one of the two binding constraints relaxed. TMX at 96.2% utilization is the tightest print since April 2026, apportionment at 0 every month since expansion startup: the Pacific valve is functionally at its limit.</p>
+<p class="body">Direction into November: supply ramps +220 kb/d from October while the pipe picture on the last published vintage adds no spare. Tight into the ramp, not looser. Rail is idle as a relief valve (CER crude-by-rail, May 2026 observation: 87,977 bbl/d vs the Dec 2018 peak of 364,893 bbl/d). PADD 2 runs are above seasonal norm (EIA v2 weekly, week ending 2026-09-11: 4,241 kb/d, 4-wk avg 4,343 kb/d, +307 vs norm).</p>
+<div class="tblwrap"><table class="data"><caption>Egress per route, June 2026 CER vintage</caption><tr><th>Route</th><th class="num">Throughput kb/d</th><th class="num">Capacity kb/d</th><th class="num">Utilization %</th><th class="num">Apportionment %</th><th class="num">Spare kb/d</th></tr><tr><td>Enbridge Mainline</td><td class="num">3075.5</td><td class="num">3277.4</td><td class="num">93.8</td><td class="num">12.4</td><td class="num">201.9</td></tr><tr><td>Keystone</td><td class="num">552.1</td><td class="num">588.5</td><td class="num">93.8</td><td class="num">5.0</td><td class="num">36.4</td></tr><tr><td>Trans Mountain</td><td class="num">865.6</td><td class="num">899.4</td><td class="num">96.2</td><td class="num">0.0</td><td class="num">33.8</td></tr><tr><td>System</td><td class="num">4493.1</td><td class="num">4765.3</td><td class="num">94.3</td><td class="num">n/a</td><td class="num">272.2</td></tr></table></div><p class="tblnote">Apportionment = fraction of shipper nominations curtailed. Enbridge figure computed from accepted vs original nominations; CER leaves its column blank.</p><p class="tblsrc">Source: CER pipeline throughput, capacity and apportionment open data, Jan 2018 - Jun 2026, pulled 2026-09-22</p>
+</section>
+<section class="block"><h2 class="sec">Basis curve read</h2>
+<p class="sec-intro">November 2026 M1 basis: NULL. The desk cannot supply daily strips and nothing is fabricated. The forward curve beyond October is unobservable in the current stack.</p>
+<p class="body">Signal on the observed slope: BEARISH-BASIS (prompt barrels clearing weaker into the post-noms October barrel, per the desk's licensed ICE 1a transcription; exact levels are licensed and withheld from this public render). The read completes when ICE settlement retrieval is fixed or the desk supplies forward strips. WTI leg: null; EIA v2 futures (RCLC1/RCLC2) were discontinued with data ending 2024-04-05, and no public NYMEX delivery-month settles exist in the stack.</p>
+<p class="body">Invalidation: sustained widening past -2 $/bbl month-on-month stays bearish-basis; tightening past +2 flips bullish-basis.</p>
+<div class="tblwrap"><table class="data"><caption>Basis curve read, November 2026 barrel</caption><tr><th>Item</th><th>Value</th></tr><tr><td>Nov 2026 M1 basis</td><td>NULL (no desk strips)</td></tr><tr><td>WTI leg</td><td>NULL (EIA v2 futures discontinued)</td></tr><tr><td>Signal</td><td>BEARISH-BASIS (realized slope only)</td></tr><tr><td>Forward November trade implication</td><td>No forward basis mark to anchor the November barrel</td></tr></table></div><p class="tblnote">Exact historical basis levels are desk-licensed (Eikon) and withheld from this public render; signals and vintages are referenced without the numbers.</p><p class="tblsrc">Source: Desk records as of 2026-09-22: ICE 1a settle transcription (Eikon, licensed; numbers withheld) and desk strip availability (NULL)</p>
+</section>
+<section class="block"><h2 class="sec">The call in plain language</h2>
+<p class="sec-intro">First edition baseline: the standing narrative of 2026-09-22. Watch, not trigger.</p>
+<p class="body">The November barrel prices off a flat-ish calibrated forward balance of roughly -38 kb/d, October's heavy maintenance in the rearview, and a June-vintage pipe picture that is tight into the November supply ramp. Enbridge is still curtailing roughly one barrel in eight on the last published data, Keystone just eased for the first time in a year, and TMX has no spare left. The prompt basis slope is bearish, but there is no forward mark for the November barrel, so that read is on realized slope only.</p>
+<p class="body">There is no confirmed edge to lean into yet. The thing to watch through the October trading window is Enbridge apportionment on the next CER vintage: if it inflects higher while the builds run, the spring trajectory stops being a projection and starts being a position. If the ICE settlement fix lands and gives the desk real forward strips, the November basis read completes. Until then: watch, not trigger.</p>
+</section>
+  <section class="block"><div class="risks"><h2>What flips this</h2><ul><li><strong>CER egress data lags ~3 months: the pipe picture is June 2026 vintage while the November barrel trades in October 2026. A summer-to-fall tightening is invisible until the July/August CER files publish.</strong><br><span class="flip">Flips it: Flips bullish-basis if apportionment collapses further on the July CER vintage with utilization under 90% on the Mainline.</span></li><li><strong>Keystone's June easing (apportionment 61% to 5%) may not hold. If it snaps back above 30%, the system is back to one outage away from a basis event.</strong><br><span class="flip">Flips it: Flips neutral if Enbridge apportionment falls below 5% with utilization under 90%.</span></li><li><strong>November M1 basis is NULL. Any basis edge for the November barrel is unobservable in the current stack; the WTI leg is also null (EIA v2 futures discontinued 2024-04-05).</strong><br><span class="flip">Flips it: Flips the basis read if the ICE settlement retrieval fix delivers real forward strips for the November barrel.</span></li></ul></div></section>
+  <section class="block appendix"><h2>Methodology and sources</h2><p>Physical balance only; it does not project differentials and never substitutes stale prices for current marks.</p><p>Supply leaves are forecast leaf by leaf from AER ST3/ST53 with a trailing-12-month mean times a three-year seasonal factor, then aggregated; never aggregate-then-forecast.</p><p>The implied storage change identity is supply minus maintenance offline plus diluent imports minus refinery demand minus exports; it ties to the printed decimal every month.</p><p>The raw identity runs +439 kb/d low on average (stdev 45) against measured ST3 inventory changes for Jan-Jul 2026; the residual is the unmeasured legs (domestic pentanes+ blended as diluent, other receipts, reporting adjustments, line fill, shrinkage accounting). The residual is re-measured each edition; trade the shape, calibrate the level.</p><p>Maintenance headline uses confirmed items only: company guidance or transcripts stating both the number and the timing. Bloomberg First Word schedule numbers (desk-supplied, not public) are listed with provenance but excluded from math. Seasonal-pattern indicators carry no volumes and never enter the math.</p><p>Injection-month M barrels trade during calendar month M-1 before Enbridge Mainline noms day; nomination dates are never invented; the brief leads with the forward balance for the next tradable injection month.</p><p>This public render spec embeds no licensed data: exact desk basis settles (Eikon) and commercial storage figures (commercial storage) are withheld; their signals and vintages are referenced without the numbers.</p><div class="tblwrap"><table class="data"><caption>Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3 Oil current (crude oil and equivalent supply and disposition, Alberta)</td><td><span class="tblsrc missing">no URL on record</span></td><td>None</td><td>actuals through Jul 2026</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53 (in-situ project production)</td><td><span class="tblsrc missing">no URL on record</span></td><td>None</td><td>actuals through Jul 2026</td><td>2026-09-22</td></tr><tr><td>Suncor Energy</td><td>2026 planned maintenance table (Q4 2025 / Q1 2026 investor presentations)</td><td><span class="tblsrc missing">no URL on record</span></td><td>2026-04-01</td><td>Q4 2026 event-rate guidance</td><td>2026-09-22</td></tr><tr><td>Canadian Natural Resources</td><td>2026 budget (Horizon turnaround timing and guided total loss)</td><td><span class="tblsrc missing">no URL on record</span></td><td>2025-12-16</td><td>35-day turnaround Sep 8 - ~Oct 12 2026</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment open data</td><td><span class="tblsrc missing">no URL on record</span></td><td>None</td><td>Jan 2018 - Jun 2026 (~3-month publication lag)</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Crude-by-rail open data file</td><td><span class="tblsrc missing">no URL on record</span></td><td>2026-07-22</td><td>latest observation May 2026</td><td>2026-09-22</td></tr><tr><td>U.S. Energy Information Administration</td><td>PADD 2 refinery runs, weekly (v2)</td><td><span class="tblsrc missing">no URL on record</span></td><td>None</td><td>week ending 2026-09-11</td><td>2026-09-22</td></tr><tr><td>WCSB S&amp;D model (public-data build)</td><td>Forward physical S&amp;D balance and maintenance commentary pipeline</td><td><span class="tblsrc missing">no URL on record</span></td><td>2026-09-22</td><td>pipeline run 2026-09-22 ~16:45 MDT</td><td>2026-09-22</td></tr><tr><td>Macquarie desk records (licensed Eikon data)</td><td>ICE 1a settle transcription + desk strip availability</td><td><span class="tblsrc missing">no URL on record</span></td><td>None</td><td>Sep 2026 final; Oct 2026 preliminary; licensed numbers withheld from this public render</td><td>2026-09-22</td></tr></table></div><p class="tblnote">Every number in this report traces to a row above. Any chart or table missing its own source line is flagged in place; nothing ships with an unsourced number.</p></section>
+  <nav class="repnav">
+    <a href="../index.html">&larr; All reports</a>
+    <a href="../../site/index.html">Heavy Reading dashboard</a>
+  </nav>
+  
+  <p class="disclaimer">Physical supply/demand balance. Not a differential forecast and not
+  validated as one. Licensed inputs stay in the private workspace and are never committed.
+  Built 2026-09-22.</p>
+</div>
+<script></script>
+</body>
+</html>

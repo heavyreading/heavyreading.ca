@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christina Lake North | Projects | Heavy Reading</title>
+<style>
+:root { --ink:#1a1a1a; --mut:#555; --line:#ddd; --acc:#b42318; --wash:#fafafa;
+        --band-nc:#fdf6e3; --band-fc:#f4f8ff; --maint:rgba(217,72,31,.16); }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%; }
+.wrap { max-width:1060px; margin:0 auto; padding:0 14px 60px; }
+.masthead { border-bottom:4px solid var(--ink); padding:18px 0 12px; margin-bottom:14px; }
+.brand { font-weight:800; letter-spacing:2.5px; font-size:12px; color:var(--acc);
+         text-transform:uppercase; margin-bottom:2px; }
+.tagline { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+.sitenav { display:flex; flex-wrap:wrap; gap:2px 18px; margin:10px 0 2px; font-size:14px; }
+.sitenav a { color:var(--ink); text-decoration:none; padding:10px 2px; min-height:40px;
+             box-sizing:border-box; border-bottom:2px solid transparent; }
+.sitenav a:hover { border-bottom-color:var(--acc); }
+.sitenav a[aria-current="page"] { font-weight:700; border-bottom-color:var(--acc); }
+.meta { font-size:12.5px; color:var(--mut); margin:8px 0 0; }
+.meta b { color:var(--ink); }
+.crumb { font-size:13px; color:var(--mut); margin:12px 0 4px; }
+.crumb a { color:var(--ink); }
+h1 { font-size:24px; line-height:1.2; letter-spacing:-0.01em; margin:0 0 4px; }
+.sub { color:var(--mut); font-size:14px; margin:0 0 6px; }
+h2 { font-size:17px; margin:26px 0 8px; padding-top:14px; border-top:1px solid var(--line); }
+h2:first-of-type { border-top:none; padding-top:0; margin-top:18px; }
+table.data { border-collapse:collapse; width:100%; font-size:13.5px; margin:8px 0; }
+table.data th, table.data td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+table.data th { background:var(--wash); font-weight:700; }
+table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.facts td:first-child { font-weight:600; white-space:nowrap; width:34%; }
+.tblwrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tblnote { font-size:12px; color:var(--mut); margin:4px 0 0; }
+.src { font-size:12.5px; color:var(--mut); margin:6px 0; }
+.src b { color:var(--ink); }
+.chip { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.05em;
+        text-transform:uppercase; border:1px solid var(--line); border-radius:4px;
+        padding:2px 8px; margin:2px 8px 2px 0; vertical-align:2px; color:var(--mut); }
+.badge-ok { color:#1a6b1a; border-color:#1a6b1a; }
+.badge-warn { color:var(--acc); border-color:var(--acc); }
+.badge-info { color:#1a4f8a; border-color:#1a4f8a; }
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:10px; margin:10px 0; }
+.stat { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+.stat .v { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+.stat .l { font-size:12px; color:var(--mut); }
+.foot { margin-top:34px; padding-top:12px; border-top:1px solid var(--line);
+        font-size:12.5px; color:var(--mut); }
+.foot a { color:var(--ink); }
+.nullnote { color:var(--mut); font-style:italic; }
+ul.ev { margin:8px 0; padding-left:20px; }
+ul.ev li { margin:6px 0; }
+figure.chart { margin:12px 0; }
+figure.chart svg { width:100%; height:auto; display:block;
+                   border:1px solid var(--line); border-radius:8px; background:#fff; }
+figure.chart figcaption { font-size:12.5px; color:var(--mut); margin-top:6px; }
+.lg { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12.5px; color:var(--mut);
+      margin-top:6px; }
+.lg .sw { display:inline-block; width:11px; height:11px; border-radius:2px;
+          margin-right:5px; vertical-align:-1px; border:1px solid var(--line); }
+.exec { border:1px solid var(--line); border-left:5px solid var(--acc);
+        border-radius:8px; padding:12px 16px; margin:14px 0; background:var(--wash); }
+.exec h2 { border:none; margin:0 0 6px; padding:0; font-size:17px; }
+.exec ul { margin:6px 0; padding-left:20px; }
+.exec li { margin:6px 0; }
+.exec-vint { font-size:12px; color:var(--mut); margin:8px 0 0; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+       gap:10px; margin:12px 0; }
+.kpi .stat .v { font-size:26px; }
+.lic-tag { font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           color:var(--acc); border:1px solid var(--acc); border-radius:4px;
+           padding:1px 6px; margin-left:6px; white-space:nowrap; }
+.panel { margin:22px 0; }
+.note { font-size:13px; color:var(--mut); }
+.vintage { font-size:12.5px; color:var(--mut); }
+.vintage-inline { font-size:12px; color:var(--mut); }
+@media print {
+  .sitenav { display:none; }
+  .wrap { max-width:none; }
+  table.data, .stat, figure.chart { break-inside:avoid; }
+  h2 { break-after:avoid; }
+  a { color:var(--ink); text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">Heavy Reading</div>
+    <div class="tagline">the WCSB supply letter</div>
+    <nav class="sitenav" aria-label="Sections">
+      <a href="../index.html">Home</a>
+      <a href="../st3-dashboard.html">Trading: executive call + balances</a>
+      <a href="../balance/index.html">Balance</a>
+      <a href="../maintenance/index.html">Maintenance</a>
+      <a href="index.html" aria-current="page">Projects</a>
+      <a href="../fieldguide/index.html">Field guide</a>
+      <a href="../weekly/index.html">Weekly</a>
+      <a href="../data/index.html">Data</a>
+      <a href="../venezuela/index.html">Venezuela</a>
+      <a href="../methodology/index.html">Methodology</a>
+      <a href="../../reports/index.html">Reports</a>
+    </nav>
+    <p class="meta"><b>UPDATED</b> September 23, 2026 &middot; <b>SOURCE</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; forward maintenance calendar annotations/maintenance_forward.yaml (compiled 2026-09-22)</p>
+  </header>
+  <div class="crumb"><a href="index.html">Projects</a> / Christina Lake North</div>
+  <h1>Christina Lake North</h1>
+  <p class="sub">Cenovus Energy Inc.<br><span class="chip badge-info">Pattern-indicated maintenance: May 2027 (indicator only, no volume in model math)</span><span class="chip">SAGD</span><span class="chip">CVE</span></p>
+  <table class="data facts">
+    <tr><td>Operator</td><td>Cenovus Energy Inc.</td></tr>
+    <tr><td>Type</td><td>SAGD</td></tr>
+    <tr><td>Ticker</td><td>CVE</td></tr>
+    <tr><td>ST53 scheme</td><td>Christina Lake</td></tr>
+    <tr><td>Description</td><td>Christina Lake North is the former MEG Energy Christina Lake Regional Project (CLRP), a steam-assisted gravity drainage (SAGD) project in the Athabasca region. Cenovus acquired it from MEG Energy on November 13, 2025. It is tracked separately from Christina Lake (the Cenovus legacy asset); the two share the same ST53 scheme name but are different facilities with different ownership histories. This file must not be merged with cve_christina_lake.<div class="vintage-inline">Source: projects.yaml project master, noting acquisition by Cenovus on 2025-11-13</div><div class="vintage-inline">Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29</div></td></tr>
+    <tr><td>Status</td><td>Operating. The approved scheme covers the Phases 1, 2, and 2B central processing facility footprint.<div class="vintage-inline">Source: Alberta open data, MEG Christina Lake Regional Project assessment document, 2026-09-23</div></td></tr>
+    <tr><td>Nameplate capacity</td><td>MEG-era nameplate was reported at 100,000 bbl/d (Phase 1, 2, and 2B operations). Note: secondary-sourced and dated.<div class="vintage-inline">Source: Oil Sands Magazine, MEG Energy boosts 2020 spending plans, as it lifts output at Christina Lake, 2019-11-22</div></td></tr>
+    <tr><td>Start-up / phases</td><td><span class="nullnote">not tracked in the public data used here</span></td></tr>
+    <tr><td>Ownership / JV split</td><td>Cenovus Energy Inc. owns 100% and operates Christina Lake North, acquired from MEG Energy on November 13, 2025. The transaction was reported as an upsized acquisition; current ownership effective date per the project master is 2025-11-13.<div class="vintage-inline">Source: projects.yaml project master, `meg_christina_lake` record note</div><br>Before acquisition, the project was 100% owned and operated by MEG Energy Corp.<div class="vintage-inline">Source: Alberta open data, MEG Christina Lake Regional Project assessment document, 2026-09-23</div></td></tr>
+    <tr><td>Product and disposition</td><td>Bitumen: flexible disposition, dilbit to market or upgrader feed (economically optimized)<div class="vintage-inline">Source: Dashboard grade-layer panel (leaf mapping lineage); disposition defaults from annotations/maintenance_disposition_history.md</div></td></tr>
+    <tr><td>Process / technology</td><td>SAGD.<div class="vintage-inline">Source: Alberta open data, MEG Christina Lake Regional Project assessment document, 2026-09-23</div></td></tr>
+    <tr><td>Froth treatment</td><td>not applicable (in-situ / upgrading)</td></tr>
+    <tr><td>Interconnects</td><td><span class="nullnote">not tracked in the public data used here</span></td></tr>
+    <tr><td>Growth / expansions</td><td>Cenovus targets approximately 40,000 bbl/d of production from the Christina Lake North expansion by 2028. CONFIRMED by primary corporate disclosure.<div class="vintage-inline">Source: Cenovus Energy, Cenovus announces first-quarter 2026 results news release, 2026-05-06</div><br>Production from the 40-well redevelopment program is expected to ramp up in the second half of 2026, and installation of the first new steam generator was ahead of schedule, expected online before year-end 2026.<div class="vintage-inline">Source: Cenovus Energy, Cenovus announces first-quarter 2026 results news release, 2026-05-06</div><br>APPLIED to the model 2026-09-23 (the editor): linear ramp on the cve_christina_lake project leaf from H2 2026 to +40 kb/d by Dec 2028 (+4.1 kb/d Oct 2026 rising to +19.3 kb/d Sep 2027 within the current forecast window). The North facility's barrels are folded into the cve_christina_lake leaf in the model.<br>The first of two new steam generators was expected online by year-end 2026, with redevelopment production expected to rise in the second half of 2026.<div class="vintage-inline">Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29</div></td></tr>
+    <tr><td>Company-disclosed maintenance</td><td><span class="nullnote">not disclosed in reviewed sources</span></td></tr>
+    <tr><td>Operating costs</td><td><span class="nullnote">not disclosed in reviewed sources</span></td></tr>
+    <tr><td>Note</td><td>Former MEG Energy asset; acquired by Cenovus Nov 13, 2025. See company_lineage.yaml.</td></tr>
+  </table>
+  <p class="tblnote">Blank "not tracked" cells are facts not present in the public data used here. They are labeled, never estimated. Filing-sourced facts carry their document name and date; where sources disclose multiple bases for one figure, all are shown.</p>
+  <h2>Production</h2>
+  <p class="nullnote">Production is tracked at the Christina Lake scheme level, shared with Cenovus Christina Lake since the Nov 13, 2025 acquisition (see company_lineage.yaml). No separate MEG-only leaf exists in AER ST53, so no separate series is shown here. Figures are not split or estimated. See the <a href="cve_christina_lake.html">Christina Lake (Cenovus) profile</a> for the scheme series.</p>
+  <h2>Maintenance</h2>
+  <p class="nullnote">No maintenance events in the current model math for this project.</p>
+  <h3>Forward calendar (Oct 2026 to Sep 2027)</h3>
+  <div class="tblwrap"><table class="data">
+    <tr><th>Timing</th><th>Event</th><th class="num">Impact kb/d</th><th>Standing</th><th>Source</th></tr>
+    <tr><td>May 2027</td><td>Turnaround</td><td class="num"><span class="nullnote">not stated (null, never estimated)</span></td><td>Pattern indicated (indicator only)</td><td>None, ST53 seasonal dip analysis (repo-computed, AER ST53) (2026-09-22)</td></tr>
+  </table></div>
+  <p class="tblnote">Pattern-indicated entries are indicators only: they carry no volume and never enter model math. Math requires public-confirmed guidance.</p>
+  <h2>Outlook</h2>
+  <p class="nullnote">No project-specific outlook assumptions are recorded for this asset. The forecast is the seasonal baseline (trailing-12-month mean times a seasonal factor); nothing beyond that is assumed.</p>
+  <h2>Market relevance</h2>
+  <p class="nullnote">No market-relevance line: this asset has no production leaf in the model, so nothing can be derived.</p>
+  <h2>Related weekly notes</h2>
+  <ul class="ev">
+    <li><a href="../../reports/weekly/wcsb-weekly_2026-09-23.html">WCSB Weekly, 2026-09-23</a> <span class="vintage-inline">(keyword match)</span></li>
+  </ul>
+  <h2>Sources</h2>
+  <h3>Full citation block</h3>
+<div class="tblwrap"><table class="data"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-07 (latest file vintage 2026-08-27)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-07</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded in repo</td><td>Monthly</td><td>Actuals through 2026-05</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in annotations/maintenance_forward.yaml</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-09-30, compiled 2026-09-22</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (repo build)</td><td>Per build</td><td>Forecast built 2026-09-22; Aug-Sep 2026 nowcast built 2026-09-23</td><td>2026-09-23</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
+  <div class="foot">
+    Heavy Reading &middot; the WCSB supply letter.<br>
+    Public information only: AER ST3/ST39/ST53 and company disclosures via the WCSB S&amp;D model. Nothing here is licensed data, so this page renders the same with or without <code>?public=1</code>.
+  </div>
+</div>
+
+</body>
+</html>
