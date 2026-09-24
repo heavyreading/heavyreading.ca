@@ -3,6 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function(){try{var t=localStorage.getItem('hr-theme');
+if(t){document.documentElement.setAttribute('data-theme',t);}else if
+(window.matchMedia('(prefers-color-scheme: dark)').matches){
+document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();
+</script>
 <title>Data | Heavy Reading</title>
 <meta name="description" content="Free downloads: every public series behind Heavy Reading, as CSV.">
 <link rel="canonical" href="https://heavyreading.ca/data/index.html">
@@ -24,6 +30,55 @@
   --acc:#a13c22; --acc-deep:#7c2e1a;
   --serif:"Fraunces",Georgia,"Times New Roman",serif;
   --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  /* chart instrument: every color a chart may use, so one build serves both
+     themes and the toggle switches instantly. */
+  --ch-ink:#1e1b16; --ch-ink-lab:#f6f2e9;
+  --ch-ink2:#2e2a23; --ch-ink2-lab:#f6f2e9;
+  --ch-acc:#a13c22; --ch-acc-lab:#f6f2e9;
+  --ch-steel:#6f7d8c; --ch-steel-lab:#f6f2e9;
+  --ch-g1:#5c564a; --ch-g1-lab:#f6f2e9;
+  --ch-g2:#8a8177; --ch-g2-lab:#f6f2e9;
+  --ch-g3:#b9ab8d; --ch-g3-lab:#1e1b16;
+  --ch-g4:#c9bfae; --ch-g4-lab:#1e1b16;
+  --ch-nc:#97814f; --ch-nc-lab:#f6f2e9;
+  --ch-fc:#62798b; --ch-fc-lab:#f6f2e9;
+  --ch-sand:#a89c86; --ch-sand-lab:#1e1b16;
+  --ch-blue:#2f6fb2; --ch-blue-lab:#f6f2e9;
+  --ch-red:#b42318; --ch-red-lab:#f6f2e9;
+  --ch-gray:#7a7a7a; --ch-gray-lab:#1e1b16;
+  --ch-grid:#e6e1d4; --ch-axis:#d8d2c2;
+  --ch-band-nc:#efe6cf; --ch-band-fc:#e7ebee;
+  --ch-evt:#a89c86;
+  --ch-wash-acc:rgba(161,60,34,.10); --ch-wash-acc2:rgba(161,60,34,.45);
+  --ch-wash-nc:rgba(151,129,79,.10);
+  --ch-pat:rgba(201,138,27,.35);
+}
+/* Dark: warm charcoal, never pure black. Restrained and muted throughout;
+   charts keep their relative ordering, lifted for the dark ground. */
+[data-theme="dark"] {
+  --paper:#201d18; --ink:#ece6d9; --mut:#a89d89; --faint:#7e7565;
+  --line:#38332b; --line2:#2c2822;
+  --acc:#cf7150; --acc-deep:#e08a63;
+  --ch-ink:#ece6d9; --ch-ink-lab:#201d18;
+  --ch-ink2:#cfc7b4; --ch-ink2-lab:#201d18;
+  --ch-acc:#cf7150; --ch-acc-lab:#201d18;
+  --ch-steel:#8ba0b3; --ch-steel-lab:#201d18;
+  --ch-g1:#9a917f; --ch-g1-lab:#201d18;
+  --ch-g2:#7d7466; --ch-g2-lab:#ece6d9;
+  --ch-g3:#6b6252; --ch-g3-lab:#ece6d9;
+  --ch-g4:#57503f; --ch-g4-lab:#ece6d9;
+  --ch-nc:#b39a5e; --ch-nc-lab:#201d18;
+  --ch-fc:#7d94a8; --ch-fc-lab:#201d18;
+  --ch-sand:#6e6656; --ch-sand-lab:#ece6d9;
+  --ch-blue:#6f9fd8; --ch-blue-lab:#201d18;
+  --ch-red:#d95f4e; --ch-red-lab:#201d18;
+  --ch-gray:#9a9a9a; --ch-gray-lab:#201d18;
+  --ch-grid:#37322a; --ch-axis:#4a4438;
+  --ch-band-nc:#2c2820; --ch-band-fc:#222a31;
+  --ch-evt:#6e6656;
+  --ch-wash-acc:rgba(207,113,80,.16); --ch-wash-acc2:rgba(207,113,80,.5);
+  --ch-wash-nc:rgba(179,154,94,.18);
+  --ch-pat:rgba(179,154,94,.45);
 }
 * { box-sizing:border-box; }
 html { -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
@@ -47,6 +102,12 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   font-size:32px; letter-spacing:-0.02em; line-height:1; }
 .wordsub { font-size:10.5px; letter-spacing:.24em; text-transform:uppercase;
   color:var(--mut); margin-top:7px; font-weight:600; }
+/* theme toggle: one quiet word, top-right of the masthead. */
+.masthead { position:relative; }
+.themetoggle { position:absolute; top:2px; right:0; background:none; border:0;
+  padding:6px 2px; font:inherit; font-size:12px; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--faint); cursor:pointer; }
+.themetoggle:hover { color:var(--acc); }
 
 /* section nav: a quiet ruled bar. Text links, hairlines, no pills, no shadows. */
 .mnav { display:block; margin:18px 0 0; padding:0; border:0; }
@@ -155,7 +216,7 @@ h1.arttitle, h1 { font-family:var(--serif); font-optical-sizing:auto; font-weigh
 /* ---- body rhythm ---- */
 .crumb { font-size:12px; color:var(--mut); margin:24px 0 4px; letter-spacing:.02em; }
 .crumb a { color:var(--ink); }
-.lede { font-size:1.06rem; line-height:1.65; max-width:64ch; color:#33302a; }
+.lede { font-size:1.06rem; line-height:1.65; max-width:64ch; color:var(--ink); }
 h2 { font-family:var(--serif); font-optical-sizing:auto; font-weight:560;
   font-size:clamp(1.4rem, 1.2rem + 1vw, 1.65rem); letter-spacing:-0.015em;
   line-height:1.2; margin:3rem 0 1rem; padding-top:1.4rem;
@@ -245,6 +306,12 @@ table.data td { border-bottom:1px solid var(--line);
 table.data tbody tr:last-child td { border-bottom:none; }
 table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
 table.data tr.tot td { font-weight:700; }
+table.data td.n, table.data th.n { text-align:right; font-variant-numeric:tabular-nums; }
+table.data td.k { color:var(--faint); font-size:12px; white-space:nowrap; }
+table.data td.up { color:var(--acc-deep); font-weight:700; }
+table.data td.dn { color:var(--mut); font-weight:700; }
+table.movers { display:block; overflow-x:auto; }
+table.movers thead th { white-space:nowrap; }
 table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
 .tblnote { font-size:12px; color:var(--mut); margin:8px 0 0; max-width:68ch;
   line-height:1.6; }
@@ -455,13 +522,15 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <body>
 <div class="wrap">
   <header class="masthead">
+    <button class="themetoggle" id="themetoggle" type="button" aria-label="Toggle dark mode">Dark</button>
     <div class="brandlock"><a class="brandlink" href="../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
     <details class="mnav">
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../supply/index.html">Supply hub</a><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="../projects/index.html">All projects</a><a class="mi" href="../projects/index.html#insitu">In-situ</a><a class="mi" href="../projects/index.html#mined">Mined</a><a class="mi" href="../projects/index.html#upgrading">Upgrading</a></div></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../venezuela/index.html">Venezuela watch</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../world/hormuz/index.html">Hormuz watch</a><a class="mi" href="../world/redsea/index.html">Red Sea</a><a class="mi" href="../world/russia-refining/index.html">Russian refineries</a><a class="mi" href="../world/china-imports/index.html">China imports</a><a class="mi" href="../world/spr-storage/index.html">SPR & storage</a><a class="mi" href="../venezuela/index.html">Venezuela watch</a><a class="mi" href="../world/trump/index.html">Trump watch</a><a class="mi" href="../world/sour/index.html">The global sour barrel</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">The Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/index.html">Edition archive</a></div></details></div>
       <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="../fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../fieldguide/index.html">Field Guide</a><a class="mi" href="index.html" aria-current="page">Data</a><a class="mi" href="../sources/index.html">Sources</a><a class="mi" href="../methodology/index.html">Methodology</a></div></details></div>
       </nav>
       </details>
@@ -481,7 +550,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">AER ST3/ST53 actuals through 2026-07 (ST39 through 2026-05), pulled 2026-09-22; Aug-Sep 2026 nowcast estimated, built 2026-09-23; forecast built 2026-09-22. Months run 2025-08 to 2027-12; band is act (AER actuals), nc (model nowcast), or fc (model forecast). Blank cells are unpublished months, not zeros.</p>
   <h2>Sources</h2>
 <div class="tblwrap"><table class="data"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-07 (latest file vintage 2026-08-27)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-07</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded</td><td>Monthly</td><td>Actuals through 2026-05</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-09-30, compiled 2026-09-22</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (model build)</td><td>Per build</td><td>Forecast built 2026-09-22; Aug-Sep 2026 nowcast built 2026-09-23</td><td>2026-09-23</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../supply/index.html">Supply hub</a><a href="../st3-dashboard.html">Dashboard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../supply/index.html">Supply hub</a><a href="../st3-dashboard.html">Dashboard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../world/hormuz/index.html">Hormuz watch</a><a href="../world/redsea/index.html">Red Sea</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -526,6 +595,30 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       closeMobile();
     }
   });
+})();
+</script>
+<script>
+(function(){
+  var btn = document.getElementById('themetoggle');
+  if (!btn) return;
+  function label(){
+    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? 'Light' : 'Dark';
+  }
+  btn.addEventListener('click', function(){
+    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    try {
+      if (dark) { document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('hr-theme', 'light'); }
+      else { document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('hr-theme', 'dark'); }
+    } catch (e) {
+      if (dark) document.documentElement.removeAttribute('data-theme');
+      else document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    label();
+  });
+  label();
 })();
 </script>
 <script>
