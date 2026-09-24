@@ -244,20 +244,6 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   color:var(--acc); letter-spacing:.02em; }
 .srow:hover h3 { color:var(--acc-deep); }
 
-/* hot topics index */
-.ht-list { margin:8px 0 0; border-top:1px solid var(--line); }
-.ht-item { display:block; padding:24px 2px; border-bottom:1px solid var(--line);
-  text-decoration:none !important; color:var(--ink); }
-.ht-item .ht-date { font-size:11px; font-weight:700; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--mut); margin:0 0 8px; }
-.ht-item h3 { margin:0 0 8px; font-size:1.42rem; }
-.ht-item:hover h3 { color:var(--acc-deep); }
-.ht-item p.teaser { margin:0; font-size:15px; color:var(--mut); max-width:64ch;
-  line-height:1.6; }
-.ht-item .ht-n { font-size:12px; color:var(--faint); margin-top:10px; }
-.ht-empty { border-top:1px solid var(--line); border-bottom:1px solid var(--line);
-  padding:36px 4px; color:var(--mut); margin:24px 0; }
-.ht-empty p { margin:0; max-width:52ch; }
 /* prev/next week: quiet hairline nav, never a button */
 .weeknav { display:flex; justify-content:space-between; gap:16px;
   margin:44px 0 0; padding-top:18px; border-top:1px solid var(--line); }
@@ -265,12 +251,6 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   max-width:44%; line-height:1.5; }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
-
-/* topic blocks inside a hot-topics week */
-.topic { margin:0 0 2rem; padding-bottom:2rem; border-bottom:1px solid var(--line2); }
-.topic:last-child { border-bottom:none; }
-.topic h3 { font-size:1.25rem; margin-top:0; }
-.topic .tagrow { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0; }
 
 /* desk monitors: hairline-divided entries, status as quiet colored text */
 .idea { border-top:1px solid var(--line); padding:18px 2px; margin:0; }
@@ -438,7 +418,6 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="hot-topics/index.html">Hot Topics</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="hot-topics/2026-09-21.html">Latest week</a><a class="mi" href="hot-topics/index.html">Archive</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="st3-dashboard.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="st3-dashboard.html">Dashboard</a><a class="mi" href="balance/index.html">Balance</a><a class="mi" href="maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="projects/index.html">All projects</a><a class="mi" href="projects/index.html#insitu">In-situ</a><a class="mi" href="projects/index.html#mined">Mined</a><a class="mi" href="projects/index.html#upgrading">Upgrading</a></div></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="venezuela/index.html">Venezuela watch</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="fieldguide/index.html">Field Guide</a><a class="mi" href="data/index.html">Data</a><a class="mi" href="sources/index.html">Sources</a><a class="mi" href="methodology/index.html">Methodology</a></div></details></div>
@@ -451,10 +430,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <section class="hero">  <p class="kicker">This week&apos;s edition</p>  <h2 class="herotitle"><a href="weekly/wcsb-weekly_2026-09-23.html">WCSB Weekly, September 23, 2026</a></h2>  <p class="dek">The tradable call first, history as context.</p>  <div class="artmeta"><span><b>Published</b> September 23, 2026</span><span class="dot"></span><span>WCSB supply letter</span></div>  <a class="btn" href="weekly/wcsb-weekly_2026-09-23.html">Read the edition</a>  </section>
 <section class="exec" aria-label="Executive summary"><h2>Executive call</h2><ul><li>Tradable supply averages <b>4,286.2 kb/d</b> from Nov 2026 onward, +186.1 kb/d versus the Oct 2026 context month (4,100.1 kb/d).</li><li>Oct 2026 is the heaviest modeled maintenance month at <b>164.4 kb/d</b> offline:<ul><li><a class="plink" href="projects/cnq_horizon.html">Horizon</a> 35-day turnaround</li><li><a class="plink" href="projects/syncrude.html">Syncrude</a> Coker 8-2 turnaround</li><li><a class="plink" href="projects/syncrude.html">Syncrude</a> Coker 8-2 mine dial-back</li><li>Imperial <a class="plink" href="projects/imo_cold_lake.html">Cold Lake</a> 3Q/4Q 2026 turnaround</li><li><a class="plink" href="projects/cve_christina_lake.html">Christina Lake</a> F/G turnaround tail (assumed, not company-stated)</li></ul></li></ul><p class="exec-vint">All figures kb/d, computed from the model tables. Full call: <a href="st3-dashboard.html">the Dashboard</a>.</p></section>
   <h2>Inside</h2>
-  <nav class="seclist" aria-label="Sections">  <a class="srow" href="weekly/index.html"><p class="kicker">Weekly</p><h3>The Letter</h3><p>This week&apos;s edition and the full archive. The tradable call first, history as context.</p><span class="go">Open &rarr;</span></a>  <a class="srow" href="hot-topics/index.html"><p class="kicker">Weekly feed</p><h3>Hot Topics</h3><p>The week in WCSB, tested against the tape: what the conversation got right, what updated, what broke.</p><span class="go">Open &rarr;</span></a>  <a class="srow" href="st3-dashboard.html"><p class="kicker">The model</p><h3>Supply</h3><p>The drillable ST3 dashboard, the S&amp;D balance, the maintenance calendar, and 29 project profiles.</p><span class="go">Open &rarr;</span></a>  <a class="srow" href="world/index.html"><p class="kicker">Geopolitics</p><h3>World</h3><p>Supply coverage beyond the basin, starting with the Venezuela watch.</p><span class="go">Open &rarr;</span></a>  <a class="srow last" href="fieldguide/index.html"><p class="kicker">The library</p><h3>Reference</h3><p>The field guide, free data downloads, every source, and the methodology.</p><span class="go">Open &rarr;</span></a>  </nav>
-  <h2>Latest in Hot Topics</h2>
-  <a class="ht-item" href="hot-topics/2026-09-21.html"><p class="ht-date">Week of 2026-09-21</p><h3><span>Week of September 21, 2026</span></h3><p class="teaser">&gt;$120T of investor capital in the room (two-thirds US, rest European, Asian, Middle Eastern, Canadian pensions); 270+ one-on-one meetings; a government prospectus book with ~$100B of conventional-energy deals, ~$100B cle...</p></a>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Hot Topics</h4><a href="hot-topics/2026-09-21.html">Latest week</a><a href="hot-topics/index.html">Archive</a></div><div class="fcol"><h4>Supply</h4><a href="st3-dashboard.html">Dashboard</a><a href="balance/index.html">S&amp;D balance</a><a href="maintenance/index.html">Maintenance</a><a href="projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="venezuela/index.html">Venezuela watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
+  <nav class="seclist" aria-label="Sections">  <a class="srow" href="weekly/index.html"><p class="kicker">Weekly</p><h3>The Letter</h3><p>This week&apos;s edition and the full archive. The tradable call first, history as context.</p><span class="go">Open &rarr;</span></a>  <a class="srow" href="st3-dashboard.html"><p class="kicker">The model</p><h3>Supply</h3><p>The drillable ST3 dashboard, the S&amp;D balance, the maintenance calendar, and 29 project profiles.</p><span class="go">Open &rarr;</span></a>  <a class="srow" href="world/index.html"><p class="kicker">Geopolitics</p><h3>World</h3><p>Supply coverage beyond the basin, starting with the Venezuela watch.</p><span class="go">Open &rarr;</span></a>  <a class="srow last" href="fieldguide/index.html"><p class="kicker">The library</p><h3>Reference</h3><p>The field guide, free data downloads, every source, and the methodology.</p><span class="go">Open &rarr;</span></a>  </nav>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="st3-dashboard.html">Dashboard</a><a href="balance/index.html">S&amp;D balance</a><a href="maintenance/index.html">Maintenance</a><a href="projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="venezuela/index.html">Venezuela watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){

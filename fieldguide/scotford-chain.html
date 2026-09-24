@@ -38,12 +38,6 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
 
 /* ---- masthead: brand, then nav, then search. Nothing else. ---- */
 .masthead { padding:26px 0 0; }
-/* dateline: one whisper row above the brand: publication facts, never competing */
-.dateline { display:flex; justify-content:space-between; align-items:baseline; gap:12px;
-  border-bottom:1px solid var(--line); padding:10px 0; font-size:11px;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--mut); }
-.dateline b { color:var(--ink); font-weight:700; }
-.dateline .dl-left { white-space:nowrap; }
 .brandlock { padding:0 0 6px; }
 .brandlink { display:inline-flex; align-items:center; gap:14px; text-decoration:none;
   color:var(--ink); }
@@ -250,20 +244,6 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   color:var(--acc); letter-spacing:.02em; }
 .srow:hover h3 { color:var(--acc-deep); }
 
-/* hot topics index */
-.ht-list { margin:8px 0 0; border-top:1px solid var(--line); }
-.ht-item { display:block; padding:24px 2px; border-bottom:1px solid var(--line);
-  text-decoration:none !important; color:var(--ink); }
-.ht-item .ht-date { font-size:11px; font-weight:700; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--mut); margin:0 0 8px; }
-.ht-item h3 { margin:0 0 8px; font-size:1.42rem; }
-.ht-item:hover h3 { color:var(--acc-deep); }
-.ht-item p.teaser { margin:0; font-size:15px; color:var(--mut); max-width:64ch;
-  line-height:1.6; }
-.ht-item .ht-n { font-size:12px; color:var(--faint); margin-top:10px; }
-.ht-empty { border-top:1px solid var(--line); border-bottom:1px solid var(--line);
-  padding:36px 4px; color:var(--mut); margin:24px 0; }
-.ht-empty p { margin:0; max-width:52ch; }
 /* prev/next week: quiet hairline nav, never a button */
 .weeknav { display:flex; justify-content:space-between; gap:16px;
   margin:44px 0 0; padding-top:18px; border-top:1px solid var(--line); }
@@ -271,12 +251,6 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   max-width:44%; line-height:1.5; }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
-
-/* topic blocks inside a hot-topics week */
-.topic { margin:0 0 2rem; padding-bottom:2rem; border-bottom:1px solid var(--line2); }
-.topic:last-child { border-bottom:none; }
-.topic h3 { font-size:1.25rem; margin-top:0; }
-.topic .tagrow { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0; }
 
 /* desk monitors: hairline-divided entries, status as quiet colored text */
 .idea { border-top:1px solid var(--line); padding:18px 2px; margin:0; }
@@ -376,7 +350,6 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   .mark { width:34px; height:34px; }
   .wordsub { font-size:9.5px; }
   .arthead { margin-top:28px; padding-bottom:20px; }
-  .dateline { flex-direction:column; gap:2px; }
   .herosub { font-size:1.1rem; margin-top:26px; }
   .hero { margin-top:24px; padding-bottom:26px; }
   .dek, .sub { font-size:1.08rem; }
@@ -440,13 +413,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <body>
 <div class="wrap">
   <header class="masthead">
-    <div class="dateline"><span class="dl-left">Public data only</span><span class="dl-right"><b>Updated</b> September 23, 2026 &middot; <b>Source</b> Company disclosures (CNRL, Shell) via newswire; AER ST39</span></div>
     <div class="brandlock"><a class="brandlink" href="../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
     <details class="mnav">
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../hot-topics/index.html">Hot Topics</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../hot-topics/2026-09-21.html">Latest week</a><a class="mi" href="../hot-topics/index.html">Archive</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../st3-dashboard.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="../projects/index.html">All projects</a><a class="mi" href="../projects/index.html#insitu">In-situ</a><a class="mi" href="../projects/index.html#mined">Mined</a><a class="mi" href="../projects/index.html#upgrading">Upgrading</a></div></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../venezuela/index.html">Venezuela watch</a></div></details></div>
       <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="index.html" aria-current="page">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="index.html" aria-current="page">Field Guide</a><a class="mi" href="../data/index.html">Data</a><a class="mi" href="../sources/index.html">Sources</a><a class="mi" href="../methodology/index.html">Methodology</a></div></details></div>
@@ -468,7 +439,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <ul class="ev"><li>Rated SCO capacity around 255 kb/d, after a 100 kb/d expansion in 2011.</li><li>Roughly 280 kb/d of bitumen in.</li><li>Product split disclosed at the 2017 acquisition: about 150 kb/d Premium Albian Synthetic, 60 kb/d vacuum gas oil, 79 kb/d Albian Heavy Synthetic, plus a small off-gas stream.</li><li>The Quest carbon capture unit attached to the upgrader captures about 1.1 million tonnes of CO2 per year.</li></ul>
 <div class="exec"><h2>Why it matters</h2><p>CNRL digs up bitumen it fully owns, then feeds it to an upgrader it only majority-owns and does not operate. The SCO that comes out is a joint-venture stream, not CNRL SCO. And unlike the Suncor-<a class="plink" href="../projects/syncrude.html">Syncrude</a> pair, there is no interconnect to lean on: a Scotford turnaround means the Albian mines dial back directly. Compare <a class="plink" href="../projects/cnq_horizon.html">Horizon</a>, where the mine and upgrader sit on one site and both are 100 percent CNRL.</p></div>
 <h2>Sources</h2><ul class="ev"><li>Canadian Natural Resources, Acquisition of working interest in the Athabasca Oil Sands Project, news release (2017-03-09) (<a href="https://boereport.com/2017/03/09/canadian-natural-resources-limited-announces-the-acquisition-of-working-interest-in-the-athabasca-oil-sands-project-and-other-oil-sands-assets/amp/">https://boereport.com/2017/03/09/canadian-natural-resources-limited-announces-the-acquisition-of-working-interest-in-the-athabasca-oil-sands-project-and-other-oil-sands-assets/amp/</a>)</li><li>The Canadian Press via BOE Report, Canadian Natural raises production outlook after taking full control of oilsands mine (2025-11-03) (<a href="https://boereport.com/2025/11/03/canadian-natural-raises-production-outlook-after-taking-full-control-of-oilsands-mine/">https://boereport.com/2025/11/03/canadian-natural-raises-production-outlook-after-taking-full-control-of-oilsands-mine/</a>)</li><li>Oil Sands Magazine, Scotford Upgrader project page (<a href="https://www.oilsandsmagazine.com/projects/shell-scotford-upgrader">https://www.oilsandsmagazine.com/projects/shell-scotford-upgrader</a>)</li></ul>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Hot Topics</h4><a href="../hot-topics/2026-09-21.html">Latest week</a><a href="../hot-topics/index.html">Archive</a></div><div class="fcol"><h4>Supply</h4><a href="../st3-dashboard.html">Dashboard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../st3-dashboard.html">Dashboard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
