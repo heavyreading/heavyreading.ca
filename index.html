@@ -38,12 +38,6 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
 
 /* ---- masthead: brand, then nav, then search. Nothing else. ---- */
 .masthead { padding:26px 0 0; }
-/* dateline: one whisper row above the brand: publication facts, never competing */
-.dateline { display:flex; justify-content:space-between; align-items:baseline; gap:12px;
-  border-bottom:1px solid var(--line); padding:10px 0; font-size:11px;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--mut); }
-.dateline b { color:var(--ink); font-weight:700; }
-.dateline .dl-left { white-space:nowrap; }
 .brandlock { padding:0 0 6px; }
 .brandlink { display:inline-flex; align-items:center; gap:14px; text-decoration:none;
   color:var(--ink); }
@@ -376,7 +370,6 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   .mark { width:34px; height:34px; }
   .wordsub { font-size:9.5px; }
   .arthead { margin-top:28px; padding-bottom:20px; }
-  .dateline { flex-direction:column; gap:2px; }
   .herosub { font-size:1.1rem; margin-top:26px; }
   .hero { margin-top:24px; padding-bottom:26px; }
   .dek, .sub { font-size:1.08rem; }
@@ -440,7 +433,6 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <body>
 <div class="wrap">
   <header class="masthead">
-    <div class="dateline"><span class="dl-left">Public data only</span><span class="dl-right"><b>Updated</b> September 23, 2026 &middot; <b>Source</b> AER ST3/ST39/ST53 via the WCSB S&amp;D model; company guidance via the forward maintenance calendar (revised 2026-09-23)</span></div>
     <div class="brandlock"><a class="brandlink" href="index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg><span class="wordstack"><h1 class="wordmark">Heavy Reading</h1><span class="wordsub">The WCSB supply letter</span></span></a></div>
     <details class="mnav">
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>

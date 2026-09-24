@@ -23,11 +23,7 @@ body { font-family:var(--sans); color:var(--ink); line-height:1.65; margin:0;
        font-feature-settings:"pnum" on, "lnum" on, "liga" on, "tnum" on;
        -webkit-font-smoothing:antialiased; }
 .wrap { max-width:780px; margin:0 auto; padding:0 18px 72px; }
-/* masthead */
-.dateline { display:flex; justify-content:space-between; align-items:baseline; gap:12px;
-  border-bottom:1px solid var(--line); padding:10px 0; font-size:11px;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--mut); }
-.dateline b { color:var(--ink); font-weight:700; }
+/* masthead: just the real header - brand lockup, title, edition, vintage chips */
 .brandlock { padding:26px 0 4px; }
 .brandlink { display:inline-flex; align-items:center; gap:14px; text-decoration:none;
   color:var(--ink); }
@@ -119,7 +115,6 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
   .exec li, p.body, .risks li { font-size:15px; }
   table.data { font-size:13px; }
   table.data th, table.data td { padding:7px 8px; }
-  .dateline { flex-direction:column; gap:2px; }
 }
 @media print {
   body { background:#fff; font-size:11pt; }
@@ -162,9 +157,8 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
 <body>
 <div class="wrap">
   <header class="masthead">
-    <div class="dateline"><span class="dl-left">The WCSB supply letter</span><span class="dl-right"><b>Published</b> 2026-09-23</span></div>
     <div class="brandlock"><a class="brandlink" href="../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
-    <h1>WCSB Weekly<span class="lic">public data only</span></h1>
+    <h1>WCSB Weekly</h1>
     <p class="edition">Week of September 23, 2026 &middot; published 2026-09-23</p>
     <div class="vintages"><span class="chip">ST3/ST53 actuals: <b>through 2026-07, pulled 2026-09-22</b></span><span class="chip">Forward balance: <b>model build 2026-09-22</b></span><span class="chip">CER egress: <b>through 2026-06 (~3-month lag)</b></span><span class="chip">Flags: <b>reads as of 2026-09-22</b></span></div>
   </header>
