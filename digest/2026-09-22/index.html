@@ -283,7 +283,7 @@ h1 a:hover, h2 a:hover, h3 a:hover { color:var(--acc-deep); }
   background-repeat:no-repeat;
   background-size:44px 100%, 44px 100%, 16px 100%, 16px 100%;
   background-attachment:local, local, scroll, scroll; }
-/* tbox: a tall table in a scrollbox — sticky header row AND sticky first
+/* tbox: a tall table in a scrollbox: sticky header row AND sticky first
    column, with the corner cell layered above both. */
 .tblwrap.tbox { overflow:auto; max-height:min(76vh, 840px); }
 .tblwrap.tbox table.data thead th { position:sticky; top:0; z-index:4;
@@ -312,6 +312,8 @@ table.data td.up { color:var(--acc-deep); font-weight:700; }
 table.data td.dn { color:var(--mut); font-weight:700; }
 table.movers { display:block; overflow-x:auto; }
 table.movers thead th { white-space:nowrap; }
+table.movers td.sig { color:var(--acc-deep); font-weight:700; font-size:12px;
+  white-space:nowrap; }
 /* ---- Trump watch live feed: plain-text posts, Heavy Reading typography ---- */
 .wpost { border-top:1px solid var(--line); padding:18px 0 20px; max-width:68ch; }
 .wpost:first-of-type { border-top:none; }

@@ -283,7 +283,7 @@ h1 a:hover, h2 a:hover, h3 a:hover { color:var(--acc-deep); }
   background-repeat:no-repeat;
   background-size:44px 100%, 44px 100%, 16px 100%, 16px 100%;
   background-attachment:local, local, scroll, scroll; }
-/* tbox: a tall table in a scrollbox — sticky header row AND sticky first
+/* tbox: a tall table in a scrollbox: sticky header row AND sticky first
    column, with the corner cell layered above both. */
 .tblwrap.tbox { overflow:auto; max-height:min(76vh, 840px); }
 .tblwrap.tbox table.data thead th { position:sticky; top:0; z-index:4;
@@ -312,6 +312,29 @@ table.data td.up { color:var(--acc-deep); font-weight:700; }
 table.data td.dn { color:var(--mut); font-weight:700; }
 table.movers { display:block; overflow-x:auto; }
 table.movers thead th { white-space:nowrap; }
+table.movers td.sig { color:var(--acc-deep); font-weight:700; font-size:12px;
+  white-space:nowrap; }
+/* ---- Trump watch live feed: plain-text posts, Heavy Reading typography ---- */
+.wpost { border-top:1px solid var(--line); padding:18px 0 20px; max-width:68ch; }
+.wpost:first-of-type { border-top:none; }
+.wdate { font-size:12px; color:var(--mut); letter-spacing:.04em; margin:0 0 8px;
+  text-transform:uppercase; }
+.wtext { font-size:1.02rem; line-height:1.62; margin:0 0 10px; }
+.wwhy { font-size:13.5px; color:var(--mut); margin:0 0 6px; max-width:64ch; }
+.wwhy b { color:var(--ink); font-weight:600; }
+.wflag { font-size:12px; color:var(--acc-deep); margin:0 0 8px; font-weight:600; }
+.wtags { margin:8px 0 0; }
+.wtag { display:inline-block; font-size:11px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--faint);
+  border:1px solid var(--line); border-radius:20px; padding:2px 9px;
+  margin:0 6px 6px 0; }
+details.verbatim { margin-top:10px; }
+details.verbatim > summary { cursor:pointer; font-size:12px; color:var(--mut); }
+details.verbatim > summary::-webkit-details-marker { display:none; }
+details.verbatim > summary::before { content:"+ "; color:var(--faint); }
+details.verbatim[open] > summary::before { content:"2  "; }
+.wraw { font-size:13px; color:var(--mut); white-space:pre-wrap; max-width:66ch;
+  border-left:2px solid var(--line); padding-left:12px; }
 table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
 .tblnote { font-size:12px; color:var(--mut); margin:8px 0 0; max-width:68ch;
   line-height:1.6; }
@@ -529,7 +552,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
       <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="../supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../supply/index.html">Supply hub</a><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="index.html">All projects</a><a class="mi" href="index.html#insitu">In-situ</a><a class="mi" href="index.html#mined">Mined</a><a class="mi" href="index.html#upgrading">Upgrading</a></div></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../world/hormuz/index.html">Hormuz watch</a><a class="mi" href="../world/redsea/index.html">Red Sea</a><a class="mi" href="../world/russia-refining/index.html">Russian refineries</a><a class="mi" href="../world/china-imports/index.html">China imports</a><a class="mi" href="../world/spr-storage/index.html">SPR & storage</a><a class="mi" href="../venezuela/index.html">Venezuela watch</a><a class="mi" href="../world/trump/index.html">Trump watch</a><a class="mi" href="../world/sour/index.html">The global sour barrel</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../world/hormuz/index.html">Hormuz watch</a><a class="mi" href="../world/iran/index.html">Iran watch</a><a class="mi" href="../world/redsea/index.html">Red Sea</a><a class="mi" href="../world/russia-refining/index.html">Russian refineries</a><a class="mi" href="../world/china-imports/index.html">China imports</a><a class="mi" href="../world/spr-storage/index.html">SPR & storage</a><a class="mi" href="../venezuela/index.html">Venezuela watch</a><a class="mi" href="../world/trump/index.html">Trump watch</a><a class="mi" href="../world/sour/index.html">The global sour barrel</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">The Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/index.html">Edition archive</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../fieldguide/index.html">Field Guide</a><a class="mi" href="../data/index.html">Data</a><a class="mi" href="../sources/index.html">Sources</a><a class="mi" href="../methodology/index.html">Methodology</a></div></details></div>
       </nav>
@@ -543,80 +566,81 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <h3 class="ctake">5 of the 12 largest projects are producing within 5% of their trailing-12-month peak</h3>
 <figure class="chart">
 <svg viewbox="0 0 720 534" role="img">
-<style>text{font-family:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums;}.tick{font-size:13px;fill:#6f675b;}.xlab{font-size:12.5px;fill:#a79d8d;}.elab{font-size:12.5px;font-weight:700;}.evt{font-size:11px;fill:#6f675b;}.val{font-size:13px;font-weight:700;fill:#1e1b16;}</style>
-<line x1="168.0" y1="14" x2="168.0" y2="494.0" stroke="#e9e3d5" />
+<style>text{font-family:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums;}.tick{font-size:13px;fill:var(--mut);}.xlab{font-size:12.5px;fill:var(--faint);}.elab{font-size:12.5px;font-weight:700;}.evt{font-size:11px;fill:var(--mut);}.val{font-size:13px;font-weight:700;fill:var(--ink);}</style>
+<rect x="0" y="0" width="720" height="534" fill="var(--paper)" />
+<line x1="168.0" y1="14" x2="168.0" y2="494.0" style="stroke:var(--ch-grid)" />
 <text x="168.0" y="514" text-anchor="middle" class="tick">0</text>
-<line x1="290.0" y1="14" x2="290.0" y2="494.0" stroke="#e9e3d5" />
+<line x1="290.0" y1="14" x2="290.0" y2="494.0" style="stroke:var(--ch-grid)" />
 <text x="290.0" y="514" text-anchor="middle" class="tick">125</text>
-<line x1="412.0" y1="14" x2="412.0" y2="494.0" stroke="#e9e3d5" />
+<line x1="412.0" y1="14" x2="412.0" y2="494.0" style="stroke:var(--ch-grid)" />
 <text x="412.0" y="514" text-anchor="middle" class="tick">250</text>
-<line x1="534.0" y1="14" x2="534.0" y2="494.0" stroke="#e9e3d5" />
+<line x1="534.0" y1="14" x2="534.0" y2="494.0" style="stroke:var(--ch-grid)" />
 <text x="534.0" y="514" text-anchor="middle" class="tick">375</text>
-<line x1="656.0" y1="14" x2="656.0" y2="494.0" stroke="#e9e3d5" />
+<line x1="656.0" y1="14" x2="656.0" y2="494.0" style="stroke:var(--ch-grid)" />
 <text x="656.0" y="514" text-anchor="middle" class="tick">500</text>
 <text x="656" y="12" text-anchor="end" class="xlab">kb/d</text>
 <text x="158" y="38.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a></text>
-<rect x="168" y="17.5" width="394.1" height="14.5" rx="2" fill="ink"><title>Christina Lake Latest actual (Jul 2026): 403.8 kb/d</title></rect>
+<rect x="168" y="17.5" width="394.1" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Christina Lake Latest actual (Jul 2026): 403.8 kb/d</title></rect>
 <text x="568.1" y="26.8" class="tick">403.8</text>
-<rect x="168" y="34.0" width="394.1" height="14.5" rx="2" fill="sand"><title>Christina Lake Trailing-12m peak: 403.8 kb/d</title></rect>
+<rect x="168" y="34.0" width="394.1" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Christina Lake Trailing-12m peak: 403.8 kb/d</title></rect>
 <text x="568.1" y="43.2" class="tick">403.8</text>
 <text x="158" y="78.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cve_foster_creek.html">Foster Creek</a></text>
-<rect x="168" y="57.5" width="303.2" height="14.5" rx="2" fill="ink"><title>Foster Creek Latest actual (Jul 2026): 310.7 kb/d</title></rect>
+<rect x="168" y="57.5" width="303.2" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Foster Creek Latest actual (Jul 2026): 310.7 kb/d</title></rect>
 <text x="477.2" y="66.8" class="tick">310.7</text>
-<rect x="168" y="74.0" width="303.2" height="14.5" rx="2" fill="sand"><title>Foster Creek Trailing-12m peak: 310.7 kb/d</title></rect>
+<rect x="168" y="74.0" width="303.2" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Foster Creek Trailing-12m peak: 310.7 kb/d</title></rect>
 <text x="477.2" y="83.2" class="tick">310.7</text>
 <text x="158" y="118.0" text-anchor="end" class="tick"><a class="plink" href="../projects/su_firebag.html">Firebag</a></text>
-<rect x="168" y="97.5" width="298.4" height="14.5" rx="2" fill="ink"><title>Firebag Latest actual (Jul 2026): 305.7 kb/d</title></rect>
+<rect x="168" y="97.5" width="298.4" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Firebag Latest actual (Jul 2026): 305.7 kb/d</title></rect>
 <text x="472.4" y="106.8" class="tick">305.7</text>
-<rect x="168" y="114.0" width="314.2" height="14.5" rx="2" fill="sand"><title>Firebag Trailing-12m peak: 321.9 kb/d</title></rect>
+<rect x="168" y="114.0" width="314.2" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Firebag Trailing-12m peak: 321.9 kb/d</title></rect>
 <text x="488.2" y="123.2" class="tick">321.9</text>
 <text x="158" y="158.0" text-anchor="end" class="tick"><a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a></text>
-<rect x="168" y="137.5" width="189.6" height="14.5" rx="2" fill="ink"><title>Cold Lake Latest actual (Jul 2026): 194.3 kb/d</title></rect>
+<rect x="168" y="137.5" width="189.6" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Cold Lake Latest actual (Jul 2026): 194.3 kb/d</title></rect>
 <text x="363.6" y="146.8" class="tick">194.3</text>
-<rect x="168" y="154.0" width="202.5" height="14.5" rx="2" fill="sand"><title>Cold Lake Trailing-12m peak: 207.5 kb/d</title></rect>
+<rect x="168" y="154.0" width="202.5" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Cold Lake Trailing-12m peak: 207.5 kb/d</title></rect>
 <text x="376.5" y="163.2" class="tick">207.5</text>
 <text x="158" y="198.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cop_surmont.html">Surmont</a></text>
-<rect x="168" y="177.5" width="163.8" height="14.5" rx="2" fill="ink"><title>Surmont Latest actual (Jul 2026): 167.8 kb/d</title></rect>
+<rect x="168" y="177.5" width="163.8" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Surmont Latest actual (Jul 2026): 167.8 kb/d</title></rect>
 <text x="337.8" y="186.8" class="tick">167.8</text>
-<rect x="168" y="194.0" width="194.5" height="14.5" rx="2" fill="sand"><title>Surmont Trailing-12m peak: 199.3 kb/d</title></rect>
+<rect x="168" y="194.0" width="194.5" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Surmont Trailing-12m peak: 199.3 kb/d</title></rect>
 <text x="368.5" y="203.2" class="tick">199.3</text>
 <text x="158" y="238.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cnq_jackfish.html">Jackfish</a></text>
-<rect x="168" y="217.5" width="125.7" height="14.5" rx="2" fill="ink"><title>Jackfish Latest actual (Jul 2026): 128.8 kb/d</title></rect>
+<rect x="168" y="217.5" width="125.7" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Jackfish Latest actual (Jul 2026): 128.8 kb/d</title></rect>
 <text x="299.7" y="226.8" class="tick">128.8</text>
-<rect x="168" y="234.0" width="155.7" height="14.5" rx="2" fill="sand"><title>Jackfish Trailing-12m peak: 159.5 kb/d</title></rect>
+<rect x="168" y="234.0" width="155.7" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Jackfish Trailing-12m peak: 159.5 kb/d</title></rect>
 <text x="329.7" y="243.2" class="tick">159.5</text>
-<text x="158" y="278.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cnq_primrose.html">Primrose and Wolf Lake</a></text>
-<rect x="168" y="257.5" width="110.8" height="14.5" rx="2" fill="ink"><title>Primrose and Wolf Lake Latest actual (Jul 2026): 113.5 kb/d</title></rect>
+<text x="158" y="278.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cnq_primrose.html">Primrose</a> and Wolf L…</text>
+<rect x="168" y="257.5" width="110.8" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Primrose and Wolf Lake Latest actual (Jul 2026): 113.5 kb/d</title></rect>
 <text x="284.8" y="266.8" class="tick">113.5</text>
-<rect x="168" y="274.0" width="110.8" height="14.5" rx="2" fill="sand"><title>Primrose and Wolf Lake Trailing-12m peak: 113.5 kb/d</title></rect>
+<rect x="168" y="274.0" width="110.8" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Primrose and Wolf Lake Trailing-12m peak: 113.5 kb/d</title></rect>
 <text x="284.8" y="283.2" class="tick">113.5</text>
 <text x="158" y="318.0" text-anchor="end" class="tick"><a class="plink" href="../projects/narrows_lake.html">Narrows Lake</a></text>
-<rect x="168" y="297.5" width="99.2" height="14.5" rx="2" fill="ink"><title>Narrows Lake Latest actual (Jul 2026): 101.6 kb/d</title></rect>
+<rect x="168" y="297.5" width="99.2" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Narrows Lake Latest actual (Jul 2026): 101.6 kb/d</title></rect>
 <text x="273.2" y="306.8" class="tick">101.6</text>
-<rect x="168" y="314.0" width="99.2" height="14.5" rx="2" fill="sand"><title>Narrows Lake Trailing-12m peak: 101.6 kb/d</title></rect>
+<rect x="168" y="314.0" width="99.2" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Narrows Lake Trailing-12m peak: 101.6 kb/d</title></rect>
 <text x="273.2" y="323.2" class="tick">101.6</text>
 <text x="158" y="358.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cve_sunrise.html">Sunrise</a></text>
-<rect x="168" y="337.5" width="84.1" height="14.5" rx="2" fill="ink"><title>Sunrise Latest actual (Jul 2026): 86.2 kb/d</title></rect>
+<rect x="168" y="337.5" width="84.1" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Sunrise Latest actual (Jul 2026): 86.2 kb/d</title></rect>
 <text x="258.1" y="346.8" class="tick">86.2</text>
-<rect x="168" y="354.0" width="84.1" height="14.5" rx="2" fill="sand"><title>Sunrise Trailing-12m peak: 86.2 kb/d</title></rect>
+<rect x="168" y="354.0" width="84.1" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Sunrise Trailing-12m peak: 86.2 kb/d</title></rect>
 <text x="258.1" y="363.2" class="tick">86.2</text>
 <text x="158" y="398.0" text-anchor="end" class="tick"><a class="plink" href="../projects/cnq_kirby.html">Kirby</a></text>
-<rect x="168" y="377.5" width="68.4" height="14.5" rx="2" fill="ink"><title>Kirby Latest actual (Jul 2026): 70.1 kb/d</title></rect>
+<rect x="168" y="377.5" width="68.4" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Kirby Latest actual (Jul 2026): 70.1 kb/d</title></rect>
 <text x="242.4" y="386.8" class="tick">70.1</text>
-<rect x="168" y="394.0" width="74.5" height="14.5" rx="2" fill="sand"><title>Kirby Trailing-12m peak: 76.3 kb/d</title></rect>
+<rect x="168" y="394.0" width="74.5" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Kirby Trailing-12m peak: 76.3 kb/d</title></rect>
 <text x="248.5" y="403.2" class="tick">76.3</text>
 <text x="158" y="438.0" text-anchor="end" class="tick"><a class="plink" href="../projects/su_mackay_river.html">MacKay River</a></text>
-<rect x="168" y="417.5" width="40.7" height="14.5" rx="2" fill="ink"><title>MacKay River Latest actual (Jul 2026): 41.7 kb/d</title></rect>
+<rect x="168" y="417.5" width="40.7" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>MacKay River Latest actual (Jul 2026): 41.7 kb/d</title></rect>
 <text x="214.7" y="426.8" class="tick">41.7</text>
-<rect x="168" y="434.0" width="45.2" height="14.5" rx="2" fill="sand"><title>MacKay River Trailing-12m peak: 46.3 kb/d</title></rect>
+<rect x="168" y="434.0" width="45.2" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>MacKay River Trailing-12m peak: 46.3 kb/d</title></rect>
 <text x="219.2" y="443.2" class="tick">46.3</text>
 <text x="158" y="478.0" text-anchor="end" class="tick"><a class="plink" href="../projects/ath_leismer.html">Leismer</a></text>
-<rect x="168" y="457.5" width="31.8" height="14.5" rx="2" fill="ink"><title>Leismer Latest actual (Jul 2026): 32.6 kb/d</title></rect>
+<rect x="168" y="457.5" width="31.8" height="14.5" rx="2" style="fill:var(--ch-ink)"><title>Leismer Latest actual (Jul 2026): 32.6 kb/d</title></rect>
 <text x="205.8" y="466.8" class="tick">32.6</text>
-<rect x="168" y="474.0" width="34.6" height="14.5" rx="2" fill="sand"><title>Leismer Trailing-12m peak: 35.4 kb/d</title></rect>
+<rect x="168" y="474.0" width="34.6" height="14.5" rx="2" style="fill:var(--ch-sand)"><title>Leismer Trailing-12m peak: 35.4 kb/d</title></rect>
 <text x="208.6" y="483.2" class="tick">35.4</text>
 </svg>
-<figcaption>Latest actual vs the highest month in the trailing 12 — the demonstrated peak. Announced nameplates live on the project profiles where disclosed; where a project runs above its announced figure the profile says so. <b>Vintage:</b> AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22.</figcaption>
+<figcaption>Latest actual vs the highest month in the trailing 12, the demonstrated peak. Announced nameplates live on the project profiles where disclosed; where a project runs above its announced figure the profile says so. <b>Vintage:</b> AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22.</figcaption>
 <div class="lg"><span><span class="sw" style="background:#1e1b16"></span>Latest actual (Jul 2026)</span><span><span class="sw" style="background:#a89c86"></span>Trailing-12m peak</span></div>
 </figure><p class="csvdl"><a href="../data/charts/project-production-vs-peak.csv">Download CSV</a> <span class="vintageline">CSV · AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22</span></p>
   <h2 id="in-situ">In-situ (23)</h2>
@@ -711,7 +735,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h3>Syncrude Canada Ltd. (1)</h3>
   <div class="tblwrap"><table class="data">
     <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
-    <tr><td><a href="syncrude.html">Syncrude</a></td><td>Turnaround in model: Oct 2026 (+10.1 kb/d, <a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2 mine dial-back)</td><td>Gross SCO capacity of about 350,000 bbl/d. (see profile)</td><td class="num">153.1 (May 2026)</td><td class="num">174.6</td></tr>
+    <tr><td><a href="syncrude.html">Syncrude</a></td><td>Turnaround in model: Oct 2026 (+22.4 kb/d, <a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2 turnaround)</td><td>Gross SCO capacity of about 350,000 bbl/d. (see profile)</td><td class="num">153.1 (May 2026)</td><td class="num">175.2</td></tr>
   </table></div>
   <h2 id="upgrading">Upgrading (1)</h2>
   <h3>CNOOC Petroleum North America ULC (1)</h3>
@@ -719,7 +743,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><th>Project</th><th>Live status</th><th>Capacity</th><th class="num">Latest actual kb/d</th><th class="num">12-mo fcst avg kb/d</th></tr>
     <tr><td><a href="cnooc_long_lake_upgrader.html">Long Lake Upgrader</a></td><td>No production leaf in the model</td><td>SAGD design bitumen capacity of 11,130 m3/d, i.e., 70,000 bbl/d; steam capacity of... (see profile)</td><td class="num"><span class="nullnote">no leaf</span></td><td class="num"><span class="nullnote">no leaf</span></td></tr>
   </table></div>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../supply/index.html">Supply hub</a><a href="../st3-dashboard.html">Dashboard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../world/hormuz/index.html">Hormuz watch</a><a href="../world/redsea/index.html">Red Sea</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../supply/index.html">Supply hub</a><a href="../st3-dashboard.html">Dashboard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../world/hormuz/index.html">Hormuz watch</a><a href="../world/iran/index.html">Iran watch</a><a href="../world/redsea/index.html">Red Sea</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
