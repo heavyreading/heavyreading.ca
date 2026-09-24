@@ -164,7 +164,18 @@ details.vintage li b { color:var(--ink); font-weight:600; }
    same light tints as their columns (no white-on-solid terminal headers);
    the one strong rule is the ink hairline under the month row. */
 .tblwrap { overflow-x:auto; border:1px solid var(--line);
-           -webkit-overflow-scrolling:touch; }
+           -webkit-overflow-scrolling:touch;
+  background:
+    linear-gradient(to right, var(--paper) 30%, rgba(250,247,240,0)),
+    linear-gradient(to right, rgba(250,247,240,0), var(--paper) 70%) 100% 0,
+    radial-gradient(farthest-side at 0 50%, rgba(30,27,22,.13), rgba(30,27,22,0)),
+    radial-gradient(farthest-side at 100% 50%, rgba(30,27,22,.13), rgba(30,27,22,0)) 100% 0;
+  background-repeat:no-repeat;
+  background-size:44px 100%, 44px 100%, 16px 100%, 16px 100%;
+  background-attachment:local, local, scroll, scroll; }
+/* tbox: tall scrollbox — the two header rows stick on vertical scroll and the
+   corner cells pin on both axes above the sticky row labels. */
+.tblwrap.tbox { overflow:auto; max-height:min(78vh, 860px); }
 table.data { border-collapse:separate; border-spacing:0; font-size:13px; min-width:100%; }
 table.data thead th { position:sticky; background:var(--paper); color:var(--ink); z-index:3;
                       padding:8px; font-size:11px; font-weight:700; white-space:nowrap;
@@ -172,7 +183,8 @@ table.data thead th { position:sticky; background:var(--paper); color:var(--ink)
 table.data thead tr.band th { top:0; height:38px; padding:4px 8px; font-size:11px;
   letter-spacing:.09em; text-transform:uppercase; }
 table.data thead tr.months th { top:38px; border-bottom:1px solid var(--ink); }
-table.data thead th.rowhead { background:var(--paper); z-index:4; }
+table.data thead th.rowhead { background:var(--paper); z-index:6; left:0;
+  box-shadow:1px 0 0 var(--line2); }
 table.data thead th.fcband { background:var(--fcbg); }
 table.data thead th.ncband { background:var(--ncbg); }
 table.data thead th.tradband { background:var(--tradbg); }
@@ -219,6 +231,16 @@ tr.hidden { display:none; }
 .lic-tag { font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
            color:var(--acc); margin-left:8px; white-space:nowrap; }
 .vintage-inline { font-size:11px; color:var(--mut); }
+
+/* KPI strip: four quiet stats between the call and the table */
+.statgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:1px; background:var(--line); border:1px solid var(--line); margin:6px 0 22px; }
+.stat { background:var(--paper); padding:14px 16px 12px; }
+.stat .k { font-size:10.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--mut); margin-bottom:6px; }
+.stat .v { font-size:26px; font-weight:650; letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums; line-height:1.1; }
+.stat .s { font-size:12px; color:var(--mut); margin-top:5px; line-height:1.5; }
 
 /* footer */
 .foot { font-size:12.5px; color:var(--mut); margin-top:24px; }
@@ -276,6 +298,7 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
   .mark { width:32px; height:32px; }
   .exec { break-inside:avoid; }
   .tblwrap { overflow:visible; border:none; border-radius:0; }
+  .tblwrap.tbox { max-height:none; }
   table.data { font-size:10.5px; }
   /* sticky positioning breaks paged output: drop it for print */
   table.data thead th, table.data thead tr.band th, table.data thead tr.months th,
@@ -295,7 +318,7 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="st3-dashboard.html" aria-current="page">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="st3-dashboard.html" aria-current="page">Dashboard</a><a class="mi" href="balance/index.html">Balance</a><a class="mi" href="maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="projects/index.html">All projects</a><a class="mi" href="projects/index.html#insitu">In-situ</a><a class="mi" href="projects/index.html#mined">Mined</a><a class="mi" href="projects/index.html#upgrading">Upgrading</a></div></div></details></div>
+      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="supply/index.html">Supply hub</a><a class="mi" href="st3-dashboard.html" aria-current="page">Dashboard</a><a class="mi" href="balance/index.html">Balance</a><a class="mi" href="maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="projects/index.html">All projects</a><a class="mi" href="projects/index.html#insitu">In-situ</a><a class="mi" href="projects/index.html#mined">Mined</a><a class="mi" href="projects/index.html#upgrading">Upgrading</a></div></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="venezuela/index.html">Venezuela watch</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="fieldguide/index.html">Field Guide</a><a class="mi" href="data/index.html">Data</a><a class="mi" href="sources/index.html">Sources</a><a class="mi" href="methodology/index.html">Methodology</a></div></details></div>
       </nav>
@@ -310,7 +333,8 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
     <div class="edition">Edition: September 23, 2026</div>
     <details class="vintage"><summary>Data vintage &amp; sources</summary><ul><li><b>ST3 actuals</b>: AER, through 2026-07, pulled 2026-09-22</li><li><b>ST53 actuals</b>: AER, through 2026-07, pulled 2026-09-22</li><li><b>ST39 actuals</b>: AER, through 2026-05, pulled 2026-09-22</li><li><b>Forecast</b>: model build 2026-09-22</li><li><b>Aug-Sep 2026 nowcast</b>: estimated, built 2026-09-23</li><li><b>Maintenance</b>: forward calendar 2026-09-22; modeled at the leaves 2026-09-23</li></ul></details>
   </header>
-  <section class="exec" aria-label="Executive summary"><h2>Executive call</h2><ul><li>Tradable supply averages <b>4,286.2 kb/d</b> from Nov 2026 onward, +186.1 kb/d versus the Oct 2026 context month (4,100.1 kb/d).</li><li>Oct 2026 is the heaviest modeled maintenance month at <b>164.4 kb/d</b> offline:<ul><li>Horizon 35-day turnaround</li><li>Syncrude Coker 8-2 turnaround</li><li>Syncrude Coker 8-2 mine dial-back</li><li>Imperial Cold Lake 3Q/4Q 2026 turnaround</li><li>Christina Lake F/G turnaround tail (assumed, not company-stated)</li></ul></li><li>No public-confirmed maintenance sits in the model math from Jan 2027 onward:<ul><li>April 2027: Primrose/Wolf Lake CADENCE-MODELED turnaround (-26 kb/d, weak-signal flag)</li><li>September 2027: MacKay River CADENCE-MODELED turnaround (-12 kb/d)</li></ul></li><li>Largest projected month-to-month supply moves:<ul><li>Oct 2026 to Nov 2026: +360.8 kb/d</li><li>Dec 2026 to Jan 2027: -347.9 kb/d</li><li>May 2027 to Jun 2027: +270.9 kb/d</li></ul></li><li>Implied storage change ranges from a high of <b>-331.6 kb/d</b> in Apr 2027 to a low of <b>-512.2 kb/d</b> in Feb 2027 (positive = build into commercial storage, negative = draw).</li></ul><p class="exec-vint">All figures kb/d, computed from the model tables.</p></section>
+  <section class="exec" aria-label="Executive summary"><h2>Executive call</h2><ul><li>Tradable supply averages <b>4,286.2 kb/d</b> from Nov 2026 onward, +186.1 kb/d versus the Oct 2026 context month (4,100.1 kb/d).</li><li>Sep 2026 is the heaviest modeled maintenance month at <b>310.0 kb/d</b> offline:<ul><li>Horizon 35-day turnaround</li><li>Syncrude Coker 8-2 turnaround</li><li>Syncrude Coker 8-2 mine dial-back</li><li>Imperial Cold Lake 3Q/4Q 2026 turnaround</li></ul></li><li>No public-confirmed maintenance sits in the model math from Jan 2027 onward:<ul><li>April 2027: Primrose/Wolf Lake CADENCE-MODELED turnaround (-26 kb/d, weak-signal flag)</li><li>September 2027: MacKay River CADENCE-MODELED turnaround (-12 kb/d)</li></ul></li><li>Largest projected month-to-month supply moves:<ul><li>Oct 2026 to Nov 2026: +360.8 kb/d</li><li>Dec 2026 to Jan 2027: -347.9 kb/d</li><li>May 2027 to Jun 2027: +270.9 kb/d</li></ul></li><li>Implied storage change ranges from a high of <b>-331.6 kb/d</b> in Apr 2027 to a low of <b>-512.2 kb/d</b> in Feb 2027 (positive = build into commercial storage, negative = draw).</li></ul><p class="exec-vint">All figures kb/d, computed from the model tables.</p></section>
+  <div class="statgrid kpi"><div class="stat"><div class="k">Supply, latest actual</div><div class="v">4,398.3 <span>kb/d</span></div><div class="s">Jul 2026 · AER ST3 actual</div></div><div class="stat"><div class="k">Tradable supply, avg</div><div class="v">4,286.2 <span>kb/d</span></div><div class="s">Nov 2026 onward</div></div><div class="stat"><div class="k">Heaviest maintenance</div><div class="v">310.0 <span>kb/d</span></div><div class="s">Sep 2026 offline</div></div><div class="stat"><div class="k">Egress spare capacity</div><div class="v">272.2 <span>kb/d</span></div><div class="s">Jun 2026 · CER, pulled 2026-09-22</div></div></div>
   <div class="controls">
     <button class="btn primary" id="dlCsv">Download CSV</button>
     <button class="btn" id="expandAll">Expand all</button>
@@ -321,7 +345,7 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
     <span class="sw" style="background:#e9ede9"></span>tradable from Nov 2026
     <span class="sw" style="background:#a13c22"></span>maintenance offline (kb/d)</span>
   </div>
-  <div class="tblwrap">
+  <div class="tblwrap tbox">
     <table class="data">
       <thead id="st3head"></thead>
       <tbody id="st3body"></tbody>
@@ -398,7 +422,7 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
           <td>Compiled 2026-09-22</td><td>2026-09-22</td></tr>
     </table>
     <p class="backlink"><a href="index.html">&larr; Back to the Heavy Reading dashboard</a></p>
-    <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="st3-dashboard.html">Dashboard</a><a href="balance/index.html">S&amp;D balance</a><a href="maintenance/index.html">Maintenance</a><a href="projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="venezuela/index.html">Venezuela watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
+    <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="supply/index.html">Supply hub</a><a href="st3-dashboard.html">Dashboard</a><a href="balance/index.html">S&amp;D balance</a><a href="maintenance/index.html">Maintenance</a><a href="projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="venezuela/index.html">Venezuela watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
   </div>
 </div>
 <script>
