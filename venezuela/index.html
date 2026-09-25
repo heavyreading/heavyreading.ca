@@ -703,6 +703,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><th>Observation</th><th>Value</th><th>Basis</th><th>Source</th></tr>
     <tr><td>2026-01</td><td>-5.00</td><td>$/bbl differential to ICE Brent; Vitol Merey offer to China</td><td>Bloomberg via OilPrice.com Jan 2026</td></tr>
     <tr><td>2026-08</td><td>76.82</td><td>$/bbl outright Merey formula price; about $14 under Brent</td><td>Reuters Sep 22 2026</td></tr>
+    <tr><td>2026-10</td><td>-14.00</td><td>$/bbl differential to ICE Brent; October Merey cargo offers (spot sales stalled on freight)</td><td>Bloomberg via gCaptain Sep 24 2026</td></tr>
   </table></div>
   <p class="tblnote">Points come on different bases (outright vs Brent differential); they are not one continuous series. A chart appears once a consistent differential series accumulates.</p>
   <h2>Jose to USGC freight</h2>
@@ -715,18 +716,21 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <line x1="52" y1="190.0" x2="706" y2="190.0" style="stroke:var(--ch-grid)" />
 <text x="44" y="194.0" text-anchor="end" class="tick">0.0</text>
 <line x1="52" y1="153.0" x2="706" y2="153.0" style="stroke:var(--ch-grid)" />
-<text x="44" y="157.0" text-anchor="end" class="tick">1.2</text>
+<text x="44" y="157.0" text-anchor="end" class="tick">2.5</text>
 <line x1="52" y1="116.0" x2="706" y2="116.0" style="stroke:var(--ch-grid)" />
-<text x="44" y="120.0" text-anchor="end" class="tick">2.5</text>
+<text x="44" y="120.0" text-anchor="end" class="tick">5.0</text>
 <line x1="52" y1="79.0" x2="706" y2="79.0" style="stroke:var(--ch-grid)" />
-<text x="44" y="83.0" text-anchor="end" class="tick">3.8</text>
+<text x="44" y="83.0" text-anchor="end" class="tick">7.5</text>
 <line x1="52" y1="42.0" x2="706" y2="42.0" style="stroke:var(--ch-grid)" />
-<text x="44" y="46.0" text-anchor="end" class="tick">5.0</text>
+<text x="44" y="46.0" text-anchor="end" class="tick">10.0</text>
 <line x1="52" y1="190.0" x2="706" y2="190.0" style="stroke:var(--ch-axis)" />
-<rect x="200.5" y="133.8" width="30.0" height="56.2" rx="2.5" style="fill:var(--ch-ink)"><title>Jan 26: 1.9 $/bbl</title></rect>
-<rect x="527.5" y="42.0" width="30.0" height="148.0" rx="2.5" style="fill:var(--ch-ink)"><title>Sep 26: 5.0 $/bbl</title></rect>
-<text x="215.5" y="216" text-anchor="middle" class="xlab">Jan 26</text>
-<text x="542.5" y="216" text-anchor="middle" class="xlab">Sep 26</text>
+<rect x="146.0" y="161.9" width="30.0" height="28.1" rx="2.5" style="fill:var(--ch-ink)"><title>Jan 26: 1.9 $/bbl</title></rect>
+<rect x="364.0" y="86.4" width="30.0" height="103.6" rx="2.5" style="fill:var(--ch-ink)"><title>Sep 26: 7.0 $/bbl</title></rect>
+<rect x="582.0" y="86.4" width="30.0" height="103.6" rx="2.5" style="fill:var(--ch-ink)"><title>Sep 26: 7.0 $/bbl</title></rect>
+<text x="597.0" y="80.4" text-anchor="middle" class="val">7.0</text>
+<text x="161.0" y="216" text-anchor="middle" class="xlab">Jan 26</text>
+<text x="379.0" y="216" text-anchor="middle" class="xlab">Sep 26</text>
+<text x="597.0" y="216" text-anchor="middle" class="xlab">Sep 26</text>
 </svg>
 <figcaption><b>Vintage:</b> Reported Aframax fixtures, Jose to USGC, $/bbl equivalent (lump sum / ~700 kb cargo). Freight up widens the FOB netback wedge and pressures PDVSA to lower its offer.</figcaption>
 <div class="lg"><span><span class="sw" style="background:#2b2f36"></span>Freight, $/bbl</span></div>
@@ -735,6 +739,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><th>Observation</th><th>$/bbl</th><th>Basis</th><th>Source</th></tr>
     <tr><td>2026-01</td><td>1.90</td><td>$/bbl equivalent; Aframax Jose to USGC lump sum $1.35M</td><td>Signal Maritime via Reuters Sep 22 2026</td></tr>
     <tr><td>2026-09</td><td>5.00</td><td>$/bbl equivalent; Aframax Jose to USGC lump sum $3.50M</td><td>Signal Maritime via Reuters Sep 22 2026</td></tr>
+    <tr><td>2026-09</td><td>7.00</td><td>$/bbl equivalent; Aframax Jose to USGC (October Merey cargoes)</td><td>Bloomberg via gCaptain Sep 24 2026</td></tr>
   </table></div>
   <h2>US crude exports: the export-arb read</h2>
 <figure class="chart">
@@ -820,13 +825,15 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <div class="tblwrap"><table class="data">
     <tr><th>Series</th><th>Publisher</th><th>Detail</th><th>Observation</th><th>Retrieved</th></tr>
     <tr><td>US imports of Venezuelan crude</td><td>EIA</td><td>WPSR Table 8, API v2 series W_EPC0_IM0_NUS-NVE_MBBLD (<a href="https://www.eia.gov/petroleum/">eia.gov/petroleum</a>)</td><td>week ending 2026-09-18</td><td>2026-09-24</td></tr>
-    <tr><td>Venezuelan production</td><td>OPEC</td><td>MOMR Tables 5-7/5-8 (<a href="https://www.opec.org/assets/assetdb/momr-august-2026.pdf">August 2026 MOMR PDF</a>)</td><td>2026-07</td><td>2026-09-24</td></tr>
+    <tr><td>Venezuelan production</td><td>OPEC</td><td>MOMR Tables 5-7/5-8 (<a href="https://www.opec.org/assets/assetdb/momr-august-2026.pdf">August 2026 MOMR PDF</a>)</td><td>2026-07</td><td>2026-09-25</td></tr>
     <tr><td>US crude exports (weekly)</td><td>EIA</td><td>API v2 series WCREXUS2 (<a href="https://www.eia.gov/petroleum/">eia.gov/petroleum</a>)</td><td>week ending 2026-09-18</td><td>2026-09-24</td></tr>
     <tr><td>US crude exports (monthly)</td><td>EIA</td><td>API v2 series MCREXUS2 (<a href="https://www.eia.gov/petroleum/">eia.gov/petroleum</a>)</td><td>2026-06</td><td>2026-09-23</td></tr>
     <tr><td>Merey 2026-01</td><td>Reported</td><td>Bloomberg via OilPrice.com Jan 2026 <a href="https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html">link</a></td><td>2026-01</td><td>2026-09-23</td></tr>
     <tr><td>Merey 2026-08</td><td>Reported</td><td>Reuters Sep 22 2026 <a href="https://logistics.maritimeprofessional.com/transport-infrastructure/2026/09/22/sources-say-that-traders-are-pushing-for-lower-prices-for-venezuelan-crude-oil-as-shipping-costs-have-risen">link</a></td><td>2026-08</td><td>2026-09-23</td></tr>
+    <tr><td>Merey 2026-10</td><td>Reported</td><td>Bloomberg via gCaptain Sep 24 2026 <a href="https://gcaptain.com/venezuela-spot-oil-sales-snarled-by-surging-freight-costs/">link</a></td><td>2026-10</td><td>2026-09-23</td></tr>
     <tr><td>Freight 2026-01</td><td>Reported</td><td>Signal Maritime via Reuters Sep 22 2026 <a href="https://logistics.maritimeprofessional.com/transport-infrastructure/2026/09/22/sources-say-that-traders-are-pushing-for-lower-prices-for-venezuelan-crude-oil-as-shipping-costs-have-risen">link</a></td><td>2026-01</td><td>2026-09-23</td></tr>
     <tr><td>Freight 2026-09</td><td>Reported</td><td>Signal Maritime via Reuters Sep 22 2026 <a href="https://logistics.maritimeprofessional.com/transport-infrastructure/2026/09/22/sources-say-that-traders-are-pushing-for-lower-prices-for-venezuelan-crude-oil-as-shipping-costs-have-risen">link</a></td><td>2026-09</td><td>2026-09-23</td></tr>
+    <tr><td>Freight 2026-09</td><td>Reported</td><td>Bloomberg via gCaptain Sep 24 2026 <a href="https://gcaptain.com/venezuela-spot-oil-sales-snarled-by-surging-freight-costs/">link</a></td><td>2026-09</td><td>2026-09-23</td></tr>
   </table></div>
   <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../supply/index.html">Supply hub</a><a href="../st3-dashboard.html">Dashboard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../world/hormuz/index.html">Hormuz watch</a><a href="../world/iran/index.html">Iran watch</a><a href="../world/redsea/index.html">Red Sea</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>

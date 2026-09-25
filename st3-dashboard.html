@@ -244,8 +244,20 @@ table.dhead thead th { background:var(--paper); color:var(--ink);
 table.dhead thead tr.band th { padding:4px 8px; font-size:11px;
   letter-spacing:.09em; text-transform:uppercase; }
 table.dhead thead tr.months th { border-bottom:1px solid var(--ink); }
+/* iOS Safari quirk (attempt 5, the editor's iPhone 2026-09-25): the separate
+   header table's month labels rendered ~15-20px left of the body columns
+   while desktop lab tests pass. The header month cells should already get
+   the body cell geometry via table.data th.month, but this
+   high-specificity rule restates it outright so there is no cascade doubt
+   on device. */
+table.data.dhead thead tr.months th.month { text-align:right; padding:8px 10px;
+  font-variant-numeric:tabular-nums; white-space:nowrap; }
 table.dhead thead th.rowhead { position:sticky; left:0; z-index:6;
-  box-shadow:1px 0 0 var(--line2); }
+  box-shadow:1px 0 0 var(--line2); width:172px; min-width:172px; }
+/* The corner cell must hold the label-column width (172px, matching the
+   server-rendered colgroup): with rowspan=2 plus sticky positioning, iOS
+   Safari can size it from content instead, which shifts every month column
+   left by the shortfall. */
 table.data thead th.fcband { background:var(--fcbg); }
 table.data thead th.ncband { background:var(--ncbg); }
 table.data thead th.tradband { background:var(--tradbg); }
@@ -736,6 +748,37 @@ function licenseLabel(k) { return LICENSE_LABEL[k] || k; }
     });
     document.querySelector("#st3body").innerHTML = body;
   }
+  /* Synced header/body columns (attempt 5, the editor's iPhone 2026-09-25):
+     iOS Safari lays out the separate header table a constant few px off the
+     body table while desktop lab tests pass. Measure the body's true column
+     widths on-device and impose them on the header's colgroup and cells,
+     the standard synced-table technique. Runs after render, on resize, once
+     webfonts settle, and once more after a beat to catch late iOS layout. */
+  function syncHeadCols() {
+    var head = document.querySelector("table.dhead");
+    var body = document.querySelector("table.dbody");
+    if (!head || !body) return;
+    var firstRow = body.querySelector("tbody tr:not(.detail):not(.hidden)");
+    var cols = head.querySelectorAll("colgroup col");
+    if (!firstRow || !cols.length) return;
+    var cells = firstRow.children;
+    var headMonths = head.querySelectorAll("thead tr.months th.month");
+    var rowhead = head.querySelector("thead th.rowhead");
+    var n = Math.min(cols.length, cells.length);
+    for (var i = 0; i < n; i++) {
+      var w = cells[i].getBoundingClientRect().width;
+      if (w > 0.5) {
+        var px = w.toFixed(1) + "px";
+        cols[i].style.width = px;
+        var hc = i === 0 ? rowhead : headMonths[i - 1];
+        if (hc) {
+          hc.style.boxSizing = "border-box";
+          hc.style.width = px;
+          hc.style.minWidth = px;
+        }
+      }
+    }
+  }
   function setKidsVisible(id, visible) {
     (childrenOf[id] || []).forEach(function (kid) {
       var tr = document.querySelector('tr[data-row="' + kid + '"]');
@@ -817,6 +860,15 @@ function licenseLabel(k) { return LICENSE_LABEL[k] || k; }
   } catch (e) {}
   render();
   collapseAll();
+  syncHeadCols();
+  window.addEventListener("load", syncHeadCols);
+  window.addEventListener("resize", syncHeadCols);
+  try {
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(syncHeadCols);
+    }
+  } catch (e) {}
+  setTimeout(syncHeadCols, 800);
   /* print: expand the full tree for a complete hard copy, then restore */
   window.addEventListener("beforeprint", expandAll);
   window.addEventListener("afterprint", collapseAll);
