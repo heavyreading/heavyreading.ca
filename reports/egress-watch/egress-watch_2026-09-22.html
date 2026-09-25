@@ -23,11 +23,7 @@ body { font-family:var(--sans); color:var(--ink); line-height:1.65; margin:0;
        font-feature-settings:"pnum" on, "lnum" on, "liga" on, "tnum" on;
        -webkit-font-smoothing:antialiased; }
 .wrap { max-width:780px; margin:0 auto; padding:0 18px 72px; }
-/* masthead */
-.dateline { display:flex; justify-content:space-between; align-items:baseline; gap:12px;
-  border-bottom:1px solid var(--line); padding:10px 0; font-size:11px;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--mut); }
-.dateline b { color:var(--ink); font-weight:700; }
+/* masthead: just the real header - brand lockup, title, edition, vintage chips */
 .brandlock { padding:26px 0 4px; }
 .brandlink { display:inline-flex; align-items:center; gap:14px; text-decoration:none;
   color:var(--ink); }
@@ -67,7 +63,24 @@ h2.sec { font-family:var(--serif); font-optical-sizing:auto; font-weight:560;
 .sec-intro { color:var(--mut); font-size:14.5px; margin:0 0 14px; }
 p.body { font-size:16px; margin:12px 0; max-width:72ch; }
 /* tables */
-.tblwrap { overflow-x:auto; margin:16px 0; -webkit-overflow-scrolling:touch; }
+/* tables: edge shadows hint at horizontal scroll; long tables scroll in a
+   box with a sticky header row and sticky first column. */
+.tblwrap { overflow-x:auto; margin:16px 0; -webkit-overflow-scrolling:touch;
+  background:
+    linear-gradient(to right, var(--paper) 30%, rgba(250,247,240,0)),
+    linear-gradient(to right, rgba(250,247,240,0), var(--paper) 70%) 100% 0,
+    radial-gradient(farthest-side at 0 50%, rgba(30,27,22,.13), rgba(30,27,22,0)),
+    radial-gradient(farthest-side at 100% 50%, rgba(30,27,22,.13), rgba(30,27,22,0)) 100% 0;
+  background-repeat:no-repeat;
+  background-size:44px 100%, 44px 100%, 16px 100%, 16px 100%;
+  background-attachment:local, local, scroll, scroll; }
+.tblwrap.tbox { overflow:auto; max-height:min(76vh, 780px); }
+.tblwrap.tbox table.data thead th { position:sticky; top:0; z-index:2;
+  background:var(--paper); }
+.tblwrap.tbox table.data thead th:first-child { left:0; z-index:3;
+  box-shadow:1px 0 0 var(--line); }
+.tblwrap.tbox table.data tbody td:first-child { position:sticky; left:0;
+  background:var(--paper); z-index:1; box-shadow:1px 0 0 var(--line); }
 table.data { border-collapse:collapse; width:100%; font-size:14px; }
 table.data caption { text-align:left; font-family:var(--serif); font-optical-sizing:auto;
                      font-weight:560; font-size:16px; padding:0 0 10px; letter-spacing:-0.008em; }
@@ -110,6 +123,16 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
 .lic { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.06em;
        text-transform:uppercase; color:var(--acc); margin-left:10px; vertical-align:3px;
        white-space:nowrap; }
+/* sitemap footer: the same map as the rest of the site */
+.sitefoot { margin-top:56px; padding-top:22px; border-top:1px solid var(--ink); }
+.fcols { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; }
+.fcol h4 { font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+           color:var(--mut); margin:0 0 10px; }
+.fcol a { display:block; font-size:13.5px; color:var(--ink); text-decoration:none;
+          padding:3px 0; }
+.fcolophon { font-size:12.5px; color:var(--mut); margin:22px 0 0; max-width:76ch;
+             line-height:1.6; }
+.fcolophon a { color:var(--ink); }
 @media (max-width:600px) {
   .wrap { padding:0 14px 60px; }
   .wordmark { font-size:29px; }
@@ -119,7 +142,6 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
   .exec li, p.body, .risks li { font-size:15px; }
   table.data { font-size:13px; }
   table.data th, table.data td { padding:7px 8px; }
-  .dateline { flex-direction:column; gap:2px; }
 }
 @media print {
   body { background:#fff; font-size:11pt; }
@@ -129,6 +151,9 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
   .wordmark { font-size:26px; }
   .mark { width:32px; height:32px; }
   section.block, .exec, .risks, figure.chart, .tblwrap, .disclaimer { break-inside:avoid; }
+  .tblwrap.tbox { max-height:none; overflow:visible; }
+  .tblwrap.tbox table.data thead th, .tblwrap.tbox table.data tbody td:first-child {
+    position:static; box-shadow:none; }
   h2.sec, .appendix h2 { break-after:avoid; }
   p, li { orphans:3; widows:3; }
   a { color:var(--ink); text-decoration:none; }
@@ -162,16 +187,15 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
 <body>
 <div class="wrap">
   <header class="masthead">
-    <div class="dateline"><span class="dl-left">The WCSB supply letter</span><span class="dl-right"><b>Published</b> 2026-09-22</span></div>
-    <div class="brandlock"><a class="brandlink" href="../../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
-    <h1>Egress Watch<span class="lic">public data only</span></h1>
+    <div class="brandlock"><a class="brandlink" href="../../../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
+    <h1>Egress Watch</h1>
     <p class="edition">June 2026 data vintage &middot; published 2026-09-22</p>
     <div class="vintages"><span class="chip">CER data: <b>Jun 2026</b></span><span class="chip">Pulled: <b>2026-09-22</b></span><span class="chip">Coverage: <b>Jan 2018-Jun 2026</b></span></div>
   </header>
   <div class="exec"><h2>The call</h2><ul><li>System spare is 272 kb/d on 4.5 mb/d of capacity, and it is lopsided: Enbridge holds 202 of it; Keystone (36) and TMX (34) are effectively zero for marginal barrels.</li><li>Keystone eased for the first time in a year: apportionment collapsed from 61% to 5% in June. If it holds, one binding constraint has relaxed; if it snaps back, nothing changed.</li><li>TMX printed 96.2% utilization in June, the second-tightest month since expansion startup. The Pacific release valve is functionally at its limit.</li><li>Basis risk into Q4 is skewed wider. This is June vintage with a 3-month CER lag: not a current-month read.</li></ul></div>
   <section class="block"><h2 class="sec">Per-route snapshot</h2>
 <p class="sec-intro">Utilization is throughput over CER Available Capacity. Apportionment is the share of shipper nominations curtailed.</p>
-<div class="tblwrap"><table class="data"><caption>June 2026: utilization, apportionment, spare capacity</caption><tr><th>Route</th><th class="num">Capacity kb/d</th><th class="num">Throughput kb/d</th><th class="num">Utilization</th><th class="num">Apportionment</th><th class="num">Spare kb/d</th></tr><tr><td>Enbridge Mainline</td><td class="num">3,277.4</td><td class="num">3,075.5</td><td class="num">93.8%</td><td class="num">12.4%</td><td class="num">201.9</td></tr><tr><td>Keystone</td><td class="num">588.5</td><td class="num">552.1</td><td class="num">93.8%</td><td class="num">5.0%</td><td class="num">36.4</td></tr><tr><td>Trans Mountain</td><td class="num">899.4</td><td class="num">865.6</td><td class="num">96.2%</td><td class="num">0%</td><td class="num">33.8</td></tr><tr><td>System</td><td class="num">4,765.3</td><td class="num">4,493.1</td><td class="num">94.3%</td><td class="num">n/a</td><td class="num">272.2</td></tr></table></div><p class="tblnote">Spare = capacity minus throughput. Apportionment = share of shipper nominations curtailed. Keystone 100% prints are a CER reporting artifact; apportionment carries the signal there.</p><p class="tblsrc">Source: CER open data, throughput-capacity and apportionment CSVs, pulled 2026-09-22</p>
+<div class="tblwrap"><table class="data"><caption>June 2026: utilization, apportionment, spare capacity</caption><thead><tr><th>Route</th><th class="num">Capacity kb/d</th><th class="num">Throughput kb/d</th><th class="num">Utilization</th><th class="num">Apportionment</th><th class="num">Spare kb/d</th></tr></thead><tbody><tr><td>Enbridge Mainline</td><td class="num">3,277.4</td><td class="num">3,075.5</td><td class="num">93.8%</td><td class="num">12.4%</td><td class="num">201.9</td></tr><tr><td>Keystone</td><td class="num">588.5</td><td class="num">552.1</td><td class="num">93.8%</td><td class="num">5.0%</td><td class="num">36.4</td></tr><tr><td>Trans Mountain</td><td class="num">899.4</td><td class="num">865.6</td><td class="num">96.2%</td><td class="num">0%</td><td class="num">33.8</td></tr><tr><td>System</td><td class="num">4,765.3</td><td class="num">4,493.1</td><td class="num">94.3%</td><td class="num">n/a</td><td class="num">272.2</td></tr></tbody></table></div><p class="tblnote">Spare = capacity minus throughput. Apportionment = share of shipper nominations curtailed. Keystone 100% prints are a CER reporting artifact; apportionment carries the signal there.</p><p class="tblsrc">Source: CER open data, throughput-capacity and apportionment CSVs, pulled 2026-09-22</p>
 </section>
 <section class="block"><h2 class="sec">What changed month-on-month (May to Jun 2026)</h2>
 <p class="body">Enbridge: throughput +23.2 kb/d (3,052.3 to 3,075.5). Apportionment 9.5% to 12.4%: still curtailing roughly one in eight shipper barrels while utilization sits at 93.8%.</p>
@@ -182,7 +206,7 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
 </section>
 <section class="block"><h2 class="sec">TMX ramp tracker</h2>
 <p class="body">Apportionment has been 0 in every month since expansion startup, so the line has never publicly curtailed. But 33.8 kb/d of spare in June 2026 is the second-thinnest margin on record (only Apr 2026 was tighter at 10.4).</p>
-<div class="tblwrap"><table class="data"><caption>TMX ramp since expansion startup (May 2024)</caption><tr><th>Month</th><th class="num">Capacity kb/d</th><th class="num">Throughput kb/d</th><th class="num">Utilization</th><th class="num">Apportionment</th></tr><tr><td>2024-05</td><td class="num">746.0</td><td class="num">411.1</td><td class="num">55.1%</td><td class="num">0</td></tr><tr><td>2024-06</td><td class="num">865.5</td><td class="num">704.1</td><td class="num">81.4%</td><td class="num">0</td></tr><tr><td>2024-12</td><td class="num">899.4</td><td class="num">681.3</td><td class="num">75.8%</td><td class="num">0</td></tr><tr><td>2025-06</td><td class="num">893.2</td><td class="num">701.6</td><td class="num">78.6%</td><td class="num">0</td></tr><tr><td>2025-12</td><td class="num">899.4</td><td class="num">725.6</td><td class="num">80.7%</td><td class="num">0</td></tr><tr><td>2026-02</td><td class="num">899.4</td><td class="num">641.2</td><td class="num">71.3%</td><td class="num">0</td></tr><tr><td>2026-04</td><td class="num">861.7</td><td class="num">851.3</td><td class="num">98.8%</td><td class="num">0</td></tr><tr><td>2026-05</td><td class="num">905.7</td><td class="num">804.3</td><td class="num">88.8%</td><td class="num">0</td></tr><tr><td>2026-06</td><td class="num">899.4</td><td class="num">865.6</td><td class="num">96.2%</td><td class="num">0</td></tr></table></div><p class="tblnote">Nameplate has sat near 893-906 kb/d for two years. Throughput broke out in 2026: 851.3 (Apr), 804.3 (May), 865.6 (Jun).</p><p class="tblsrc">Source: CER open data, throughput-capacity and apportionment CSVs, pulled 2026-09-22</p>
+<div class="tblwrap"><table class="data"><caption>TMX ramp since expansion startup (May 2024)</caption><thead><tr><th>Month</th><th class="num">Capacity kb/d</th><th class="num">Throughput kb/d</th><th class="num">Utilization</th><th class="num">Apportionment</th></tr></thead><tbody><tr><td>2024-05</td><td class="num">746.0</td><td class="num">411.1</td><td class="num">55.1%</td><td class="num">0</td></tr><tr><td>2024-06</td><td class="num">865.5</td><td class="num">704.1</td><td class="num">81.4%</td><td class="num">0</td></tr><tr><td>2024-12</td><td class="num">899.4</td><td class="num">681.3</td><td class="num">75.8%</td><td class="num">0</td></tr><tr><td>2025-06</td><td class="num">893.2</td><td class="num">701.6</td><td class="num">78.6%</td><td class="num">0</td></tr><tr><td>2025-12</td><td class="num">899.4</td><td class="num">725.6</td><td class="num">80.7%</td><td class="num">0</td></tr><tr><td>2026-02</td><td class="num">899.4</td><td class="num">641.2</td><td class="num">71.3%</td><td class="num">0</td></tr><tr><td>2026-04</td><td class="num">861.7</td><td class="num">851.3</td><td class="num">98.8%</td><td class="num">0</td></tr><tr><td>2026-05</td><td class="num">905.7</td><td class="num">804.3</td><td class="num">88.8%</td><td class="num">0</td></tr><tr><td>2026-06</td><td class="num">899.4</td><td class="num">865.6</td><td class="num">96.2%</td><td class="num">0</td></tr></tbody></table></div><p class="tblnote">Nameplate has sat near 893-906 kb/d for two years. Throughput broke out in 2026: 851.3 (Apr), 804.3 (May), 865.6 (Jun).</p><p class="tblsrc">Source: CER open data, throughput-capacity and apportionment CSVs, pulled 2026-09-22</p>
 </section>
 <section class="block"><h2 class="sec">Trader read</h2>
 <p class="body">The system is tight and has been all year. Enbridge was still apportioning 12.4% in June, so the Mainline is already curtailing shippers even with spare on paper.</p>
@@ -190,15 +214,16 @@ figure.chart .chsrc.missing { color:var(--acc); font-weight:700; }
 <p class="body">TMX at 96% utilization with no spare margin is the thing to watch into fall. Winter maintenance season and the normal Q4 supply ramp will test all three pipes at once.</p>
 </section>
   <section class="block"><div class="risks"><h2>What flips this</h2><ul><li><strong>Keystone apportionment snaps back above 30%</strong><br><span class="flip">Flips it: The June easing was noise; the pipe re-binds and Mainline/TMX pressure returns.</span></li><li><strong>Enbridge apportionment sustains above 25%</strong><br><span class="flip">Flips it: Pipe-full regime on the Mainline; 2018-style basis blowout risk.</span></li><li><strong>TMX available capacity drops (maintenance or restriction)</strong><br><span class="flip">Flips it: The 33.8 kb/d spare vanishes; Pacific barrels reroute to an already-curtailing Mainline.</span></li><li><strong>CER revises Keystone available capacity methodology</strong><br><span class="flip">Flips it: Utilization prints change without any physical change; apportionment remains the cleaner signal.</span></li></ul></div></section>
-  <section class="block appendix"><h2>Methodology and sources</h2><p>Capacity means CER Available Capacity, falling back to nameplate where available capacity is absent. Throughput and capacity come from CER route files; apportionment from CER's public apportionment file.</p><p>Enbridge apportionment is computed from accepted vs original nominations because CER leaves the percentage blank. Trans Mountain throughput sums Westridge, Sumas, and Burnaby.</p><p>Keystone caveat: CER may report available capacity equal to realized throughput while the pipe is constrained, printing exactly 100% utilization. Apportionment is the informative series there.</p><p>Crude-by-rail is excluded (separate CER file exists). Publication lag is approximately three months.</p><div class="tblwrap"><table class="data"><caption>Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Canada Energy Regulator</td><td>Enbridge Mainline throughput and capacity (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/enbridge-mainline-throughput-and-capacity.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/enbridge-mainline-throughput-and-capacity.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Keystone throughput and capacity (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/keystone-throughput-and-capacity.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/keystone-throughput-and-capacity.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Trans Mountain throughput and capacity (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/trans-mountain-throughput-and-capacity.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/trans-mountain-throughput-and-capacity.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline apportionment (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr></table></div><p class="tblnote">Every number in this report traces to a row above. Any chart or table missing its own source line is flagged in place; nothing ships with an unsourced number.</p></section>
+  <section class="block appendix"><h2>Methodology and sources</h2><p>Capacity means CER Available Capacity, falling back to nameplate where available capacity is absent. Throughput and capacity come from CER route files; apportionment from CER's public apportionment file.</p><p>Enbridge apportionment is computed from accepted vs original nominations because CER leaves the percentage blank. Trans Mountain throughput sums Westridge, Sumas, and Burnaby.</p><p>Keystone caveat: CER may report available capacity equal to realized throughput while the pipe is constrained, printing exactly 100% utilization. Apportionment is the informative series there.</p><p>Crude-by-rail is excluded (separate CER file exists). Publication lag is approximately three months.</p><div class="tblwrap tbox"><table class="data"><caption>Sources</caption><thead><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr></thead><tbody><tr><td>Canada Energy Regulator</td><td>Enbridge Mainline throughput and capacity (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/enbridge-mainline-throughput-and-capacity.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/enbridge-mainline-throughput-and-capacity.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Keystone throughput and capacity (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/keystone-throughput-and-capacity.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/keystone-throughput-and-capacity.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Trans Mountain throughput and capacity (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/trans-mountain-throughput-and-capacity.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/trans-mountain-throughput-and-capacity.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline apportionment (open data CSV)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018-Jun 2026</td><td>2026-09-22</td></tr></tbody></table></div><p class="tblnote">Every number in this report traces to a row above. Any chart or table missing its own source line is flagged in place; nothing ships with an unsourced number.</p></section>
   <nav class="repnav">
-    <a href="../../weekly/index.html">&larr; All reports</a>
-    <a href="../../index.html">Heavy Reading dashboard</a>
+    <a href="../../../weekly/index.html">&larr; All reports</a>
+    <a href="../../../index.html">Heavy Reading dashboard</a>
   </nav>
   
   <p class="disclaimer">Physical supply/demand balance. Not a differential forecast and not
   validated as one. Licensed inputs stay in the private workspace and are never committed.
   Built 2026-09-22.</p>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../../supply/index.html">Supply hub</a><a href="../../st3-dashboard.html">ST3 dashboard</a><a href="../../balance/index.html">Balance</a><a href="../../maintenance/index.html">Maintenance</a><a href="../../projects/index.html">Projects</a></div><div class="fcol"><h4>World</h4><a href="../../venezuela/index.html">Venezuela watch</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field Guide</a><a href="../../data/index.html">Data</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script></script>
 </body>

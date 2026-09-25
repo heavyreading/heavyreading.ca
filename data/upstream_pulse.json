@@ -1,0 +1,5212 @@
+{
+ "meta": {
+  "vintage": "Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-25",
+  "max_month": "2026-08",
+  "radar_latest": "2026-08",
+  "radar_trail": [
+   "2026-05",
+   "2026-06",
+   "2026-07"
+  ],
+  "licensing": "Republication licensing cleared 2026-09-24: Petrinex staff confirmed verbally that the public data is government open data. No written terms on file."
+ },
+ "turnarounds": [],
+ "largest_drops": [
+  {
+   "facility_id": "ABBT0051212",
+   "facility_name": "IMPERIAL MAHIHKAN BATTERY 02-21",
+   "operator": "IMPERIAL OIL RESOURCES LIMITED",
+   "subtype": "IN-SITU OIL SANDS",
+   "trail3_kbd": 54.5,
+   "latest_kbd": 48.1,
+   "drop_kbd": 6.4,
+   "drop_pct": 11.8,
+   "near_zero": false,
+   "history": {
+    "2025-08": 51.1,
+    "2025-09": 49.8,
+    "2025-10": 44.2,
+    "2025-11": 48.5,
+    "2025-12": 47.3,
+    "2026-01": 46.3,
+    "2026-02": 47.5,
+    "2026-03": 47.3,
+    "2026-04": 45.5,
+    "2026-05": 52.6,
+    "2026-06": 55.9,
+    "2026-07": 54.9
+   }
+  },
+  {
+   "facility_id": "ABBT0114300",
+   "facility_name": "JACKFISH 7-27-75-7w4",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "IN-SITU OIL SANDS",
+   "trail3_kbd": 47.4,
+   "latest_kbd": 43.8,
+   "drop_kbd": 3.6,
+   "drop_pct": 7.6,
+   "near_zero": false,
+   "history": {
+    "2025-08": 51.2,
+    "2025-09": 51.9,
+    "2025-10": 51.1,
+    "2025-11": 49.4,
+    "2025-12": 47.2,
+    "2026-01": 48.2,
+    "2026-02": 46.8,
+    "2026-03": 43.8,
+    "2026-04": 43.3,
+    "2026-05": 47.6,
+    "2026-06": 47.5,
+    "2026-07": 47.0
+   }
+  },
+  {
+   "facility_id": "ABBT0094366",
+   "facility_name": "JACKFISH 10-28-75-6w4",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "IN-SITU OIL SANDS",
+   "trail3_kbd": 41.5,
+   "latest_kbd": 38.5,
+   "drop_kbd": 3.0,
+   "drop_pct": 7.2,
+   "near_zero": false,
+   "history": {
+    "2025-08": 37.3,
+    "2025-09": 37.6,
+    "2025-10": 37.2,
+    "2025-11": 36.5,
+    "2025-12": 34.9,
+    "2026-01": 35.0,
+    "2026-02": 37.4,
+    "2026-03": 36.5,
+    "2026-04": 10.8,
+    "2026-05": 40.0,
+    "2026-06": 43.5,
+    "2026-07": 41.0
+   }
+  },
+  {
+   "facility_id": "ABBT0119087",
+   "facility_name": "IMPERIAL NABIYE 11-23",
+   "operator": "IMPERIAL OIL RESOURCES LIMITED",
+   "subtype": "IN-SITU OIL SANDS",
+   "trail3_kbd": 35.2,
+   "latest_kbd": 32.3,
+   "drop_kbd": 2.9,
+   "drop_pct": 8.2,
+   "near_zero": false,
+   "history": {
+    "2025-08": 42.8,
+    "2025-09": 42.4,
+    "2025-10": 39.7,
+    "2025-11": 42.3,
+    "2025-12": 42.0,
+    "2026-01": 41.1,
+    "2026-02": 42.5,
+    "2026-03": 41.1,
+    "2026-04": 40.3,
+    "2026-05": 29.5,
+    "2026-06": 38.5,
+    "2026-07": 37.6
+   }
+  },
+  {
+   "facility_id": "ABBT0051211",
+   "facility_name": "IMPERIAL MASKWA BATTERY 10-12",
+   "operator": "IMPERIAL OIL RESOURCES LIMITED",
+   "subtype": "IN-SITU OIL SANDS",
+   "trail3_kbd": 26.3,
+   "latest_kbd": 24.1,
+   "drop_kbd": 2.2,
+   "drop_pct": 8.4,
+   "near_zero": false,
+   "history": {
+    "2025-08": 31.8,
+    "2025-09": 29.1,
+    "2025-10": 30.4,
+    "2025-11": 32.7,
+    "2025-12": 32.2,
+    "2026-01": 28.1,
+    "2026-02": 30.3,
+    "2026-03": 30.2,
+    "2026-04": 29.1,
+    "2026-05": 27.4,
+    "2026-06": 26.7,
+    "2026-07": 24.9
+   }
+  },
+  {
+   "facility_id": "ABBT0126615",
+   "facility_name": "Brintnell Central 1-36-80-22w4 ",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "CRUDE BITUMEN MULTIWELL PRORATION BATTERY",
+   "trail3_kbd": 21.7,
+   "latest_kbd": 19.7,
+   "drop_kbd": 2.0,
+   "drop_pct": 9.4,
+   "near_zero": false,
+   "history": {
+    "2025-08": 24.6,
+    "2025-09": 24.0,
+    "2025-10": 24.7,
+    "2025-11": 24.4,
+    "2025-12": 24.4,
+    "2026-01": 24.0,
+    "2026-02": 21.9,
+    "2026-03": 21.7,
+    "2026-04": 21.9,
+    "2026-05": 21.8,
+    "2026-06": 22.2,
+    "2026-07": 21.3
+   }
+  },
+  {
+   "facility_id": "SKBT0005295",
+   "facility_name": "Husky Pikes Peak SAGD 5-7-49-23 ",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "THERMAL IN-SITU BATTERY",
+   "trail3_kbd": 18.8,
+   "latest_kbd": 16.8,
+   "drop_kbd": 2.0,
+   "drop_pct": 10.8,
+   "near_zero": false,
+   "history": {
+    "2025-08": 20.0,
+    "2025-09": 19.9,
+    "2025-10": 20.4,
+    "2025-11": 20.6,
+    "2025-12": 18.4,
+    "2026-01": 19.5,
+    "2026-02": 19.2,
+    "2026-03": 19.7,
+    "2026-04": 21.2,
+    "2026-05": 20.0,
+    "2026-06": 18.6,
+    "2026-07": 17.9
+   }
+  },
+  {
+   "facility_id": "ABBT0141267",
+   "facility_name": "Inception 03-26-69-05w6 prorated bty",
+   "operator": "WHITECAP PARTNERSHIP",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "trail3_kbd": 11.1,
+   "latest_kbd": 9.7,
+   "drop_kbd": 1.4,
+   "drop_pct": 12.9,
+   "near_zero": false,
+   "history": {
+    "2025-08": 9.2,
+    "2025-09": 8.9,
+    "2025-10": 8.8,
+    "2025-11": 13.1,
+    "2025-12": 12.8,
+    "2026-01": 12.9,
+    "2026-02": 13.9,
+    "2026-03": 12.9,
+    "2026-04": 12.4,
+    "2026-05": 12.1,
+    "2026-06": 11.0,
+    "2026-07": 10.2
+   }
+  },
+  {
+   "facility_id": "SKBT0017658",
+   "facility_name": "HUSKY EDAM EAST 05-08-048-19W3 OIL",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "THERMAL IN-SITU BATTERY",
+   "trail3_kbd": 12.0,
+   "latest_kbd": 10.7,
+   "drop_kbd": 1.3,
+   "drop_pct": 10.6,
+   "near_zero": false,
+   "history": {
+    "2025-08": 12.4,
+    "2025-09": 9.1,
+    "2025-10": 11.4,
+    "2025-11": 16.7,
+    "2025-12": 17.1,
+    "2026-01": 15.7,
+    "2026-02": 15.5,
+    "2026-03": 14.6,
+    "2026-04": 12.0,
+    "2026-05": 12.0,
+    "2026-06": 12.5,
+    "2026-07": 11.4
+   }
+  },
+  {
+   "facility_id": "ABBT0116017",
+   "facility_name": "Kirby 14-21-73-7W4",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "IN-SITU OIL SANDS",
+   "trail3_kbd": 37.9,
+   "latest_kbd": 36.9,
+   "drop_kbd": 1.0,
+   "drop_pct": 2.7,
+   "near_zero": false,
+   "history": {
+    "2025-08": 32.8,
+    "2025-09": 31.9,
+    "2025-10": 29.2,
+    "2025-11": 34.2,
+    "2025-12": 33.3,
+    "2026-01": 33.4,
+    "2026-02": 33.2,
+    "2026-03": 37.1,
+    "2026-04": 38.3,
+    "2026-05": 39.6,
+    "2026-06": 38.0,
+    "2026-07": 35.9
+   }
+  }
+ ],
+ "rail": {
+  "monthly": [
+   {
+    "month": "2022-01",
+    "kbd": 32.0
+   },
+   {
+    "month": "2022-02",
+    "kbd": 30.4
+   },
+   {
+    "month": "2022-03",
+    "kbd": 40.4
+   },
+   {
+    "month": "2022-04",
+    "kbd": 44.7
+   },
+   {
+    "month": "2022-05",
+    "kbd": 43.4
+   },
+   {
+    "month": "2022-06",
+    "kbd": 48.2
+   },
+   {
+    "month": "2022-07",
+    "kbd": 49.2
+   },
+   {
+    "month": "2022-08",
+    "kbd": 45.3
+   },
+   {
+    "month": "2022-09",
+    "kbd": 43.2
+   },
+   {
+    "month": "2022-10",
+    "kbd": 37.8
+   },
+   {
+    "month": "2022-11",
+    "kbd": 42.8
+   },
+   {
+    "month": "2022-12",
+    "kbd": 40.5
+   },
+   {
+    "month": "2023-01",
+    "kbd": 39.1
+   },
+   {
+    "month": "2023-02",
+    "kbd": 36.7
+   },
+   {
+    "month": "2023-03",
+    "kbd": 33.4
+   },
+   {
+    "month": "2023-04",
+    "kbd": 35.1
+   },
+   {
+    "month": "2023-05",
+    "kbd": 32.3
+   },
+   {
+    "month": "2023-06",
+    "kbd": 31.9
+   },
+   {
+    "month": "2023-07",
+    "kbd": 31.9
+   },
+   {
+    "month": "2023-08",
+    "kbd": 30.8
+   },
+   {
+    "month": "2023-09",
+    "kbd": 28.7
+   },
+   {
+    "month": "2023-10",
+    "kbd": 34.4
+   },
+   {
+    "month": "2023-11",
+    "kbd": 35.0
+   },
+   {
+    "month": "2023-12",
+    "kbd": 29.4
+   },
+   {
+    "month": "2024-01",
+    "kbd": 34.7
+   },
+   {
+    "month": "2024-02",
+    "kbd": 32.6
+   },
+   {
+    "month": "2024-03",
+    "kbd": 31.5
+   },
+   {
+    "month": "2024-04",
+    "kbd": 36.3
+   },
+   {
+    "month": "2024-05",
+    "kbd": 36.0
+   },
+   {
+    "month": "2024-06",
+    "kbd": 30.0
+   },
+   {
+    "month": "2024-07",
+    "kbd": 34.0
+   },
+   {
+    "month": "2024-08",
+    "kbd": 25.4
+   },
+   {
+    "month": "2024-09",
+    "kbd": 40.0
+   },
+   {
+    "month": "2024-10",
+    "kbd": 34.9
+   },
+   {
+    "month": "2024-11",
+    "kbd": 37.5
+   },
+   {
+    "month": "2024-12",
+    "kbd": 31.8
+   },
+   {
+    "month": "2025-01",
+    "kbd": 31.2
+   },
+   {
+    "month": "2025-02",
+    "kbd": 32.2
+   },
+   {
+    "month": "2025-03",
+    "kbd": 30.5
+   },
+   {
+    "month": "2025-04",
+    "kbd": 31.7
+   },
+   {
+    "month": "2025-05",
+    "kbd": 33.1
+   },
+   {
+    "month": "2025-06",
+    "kbd": 32.3
+   },
+   {
+    "month": "2025-07",
+    "kbd": 33.5
+   },
+   {
+    "month": "2025-08",
+    "kbd": 38.0
+   },
+   {
+    "month": "2025-09",
+    "kbd": 35.9
+   },
+   {
+    "month": "2025-10",
+    "kbd": 36.8
+   },
+   {
+    "month": "2025-11",
+    "kbd": 36.5
+   },
+   {
+    "month": "2025-12",
+    "kbd": 37.5
+   },
+   {
+    "month": "2026-01",
+    "kbd": 33.3
+   },
+   {
+    "month": "2026-02",
+    "kbd": 32.3
+   },
+   {
+    "month": "2026-03",
+    "kbd": 31.3
+   },
+   {
+    "month": "2026-04",
+    "kbd": 32.9
+   },
+   {
+    "month": "2026-05",
+    "kbd": 33.4
+   },
+   {
+    "month": "2026-06",
+    "kbd": 33.3
+   },
+   {
+    "month": "2026-07",
+    "kbd": 36.4
+   },
+   {
+    "month": "2026-08",
+    "kbd": 30.4
+   }
+  ],
+  "terminals": [
+   {
+    "name": "HAMLIN RAILCAR OIL TERMINAL",
+    "operator": "SERAFINA ENERGY LTD.",
+    "avg_kbd": 27.6
+   },
+   {
+    "name": "HAMLIN RAILCAR OIL TERMINAL",
+    "operator": "STRATHCONA RESOURCES LTD.",
+    "avg_kbd": 27.3
+   },
+   {
+    "name": "ALTEX NEW LASHBURN TERMINAL",
+    "operator": "ALTEX ENERGY LTD.",
+    "avg_kbd": 7.8
+   },
+   {
+    "name": "Secure Beadle East FSR",
+    "operator": "SECURE WASTE INFRASTRUCTURE CORP.",
+    "avg_kbd": 0.4
+   },
+   {
+    "name": "NWT Unity Rail Terminal",
+    "operator": "TORQ TRANSLOADING INC.",
+    "avg_kbd": 0.3
+   },
+   {
+    "name": "Altex Unity Terminal",
+    "operator": "ALTEX ENERGY LTD.",
+    "avg_kbd": 0.0
+   },
+   {
+    "name": "KERROBERT UNIT TRAIN TERMINAL",
+    "operator": "KEYERA MIDSTREAM CANADA LTD.",
+    "avg_kbd": 0.0
+   }
+  ]
+ },
+ "operators": {
+  "growers": [
+   {
+    "operator": "CENOVUS ENERGY INC.",
+    "latest_kbd": 820.7,
+    "change_kbd": 192.8,
+    "change_pct": 30.7,
+    "insitu_share_pct": 96.0
+   },
+   {
+    "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+    "latest_kbd": 511.9,
+    "change_kbd": 47.7,
+    "change_pct": 10.3,
+    "insitu_share_pct": 82.0
+   },
+   {
+    "operator": "STRATHCONA RESOURCES LTD.",
+    "latest_kbd": 122.5,
+    "change_kbd": 14.7,
+    "change_pct": 13.7,
+    "insitu_share_pct": 84.0
+   },
+   {
+    "operator": "SPUR PETROLEUM LTD.",
+    "latest_kbd": 65.3,
+    "change_kbd": 12.3,
+    "change_pct": 23.3,
+    "insitu_share_pct": 39.0
+   },
+   {
+    "operator": "SUNCOR ENERGY INC.",
+    "latest_kbd": 278.8,
+    "change_kbd": 5.8,
+    "change_pct": 2.1,
+    "insitu_share_pct": 100.0
+   },
+   {
+    "operator": "CARDINAL ENERGY LTD.",
+    "latest_kbd": 23.5,
+    "change_kbd": 4.5,
+    "change_pct": 24.0,
+    "insitu_share_pct": 27.0
+   },
+   {
+    "operator": "SPARTAN DELTA CORP.",
+    "latest_kbd": 9.0,
+    "change_kbd": 3.8,
+    "change_pct": 72.3,
+    "insitu_share_pct": 0.0
+   },
+   {
+    "operator": "HEADWATER EXPLORATION INC.",
+    "latest_kbd": 24.1,
+    "change_kbd": 3.2,
+    "change_pct": 15.2,
+    "insitu_share_pct": 99.0
+   }
+  ],
+  "decliners": [
+   {
+    "operator": "TOURMALINE OIL CORP.",
+    "latest_kbd": 1.5,
+    "change_kbd": -10.7,
+    "change_pct": -87.7,
+    "insitu_share_pct": 0.0
+   },
+   {
+    "operator": "CONOCOPHILLIPS CANADA RESOURCES CORP.",
+    "latest_kbd": 136.9,
+    "change_kbd": -7.9,
+    "change_pct": -5.4,
+    "insitu_share_pct": 100.0
+   },
+   {
+    "operator": "WHITECAP RESOURCES INC.",
+    "latest_kbd": 73.2,
+    "change_kbd": -5.0,
+    "change_pct": -6.4,
+    "insitu_share_pct": 0.0
+   },
+   {
+    "operator": "VERMILION ENERGY INC.",
+    "latest_kbd": 2.6,
+    "change_kbd": -4.1,
+    "change_pct": -61.1,
+    "insitu_share_pct": 0.0
+   },
+   {
+    "operator": "TEINE ENERGY LTD.",
+    "latest_kbd": 33.5,
+    "change_kbd": -3.7,
+    "change_pct": -9.9,
+    "insitu_share_pct": 0.0
+   },
+   {
+    "operator": "HWN ENERGY LTD.",
+    "latest_kbd": 5.8,
+    "change_kbd": -3.1,
+    "change_pct": -35.0,
+    "insitu_share_pct": 0.0
+   },
+   {
+    "operator": "WHITECAP PARTNERSHIP",
+    "latest_kbd": 66.9,
+    "change_kbd": -2.9,
+    "change_pct": -4.1,
+    "insitu_share_pct": 0.0
+   },
+   {
+    "operator": "ATHABASCA OIL CORPORATION",
+    "latest_kbd": 33.9,
+    "change_kbd": -2.6,
+    "change_pct": -7.0,
+    "insitu_share_pct": 100.0
+   }
+  ]
+ },
+ "new_batteries": [
+  {
+   "facility_name": "CVE FOSTER CREEK COMMERCIAL OIL BTTY",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "SULPHUR REPORTING AT OIL SANDS",
+   "first_month": "2026-05",
+   "latest_kbd": 248.9,
+   "likely_rereport": true
+  },
+  {
+   "facility_name": "MEG Christina Lake Regional Project",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "SULPHUR REPORTING AT OIL SANDS",
+   "first_month": "2026-01",
+   "latest_kbd": 115.1,
+   "likely_rereport": true
+  },
+  {
+   "facility_name": "HUSKY VAWN 16-01-048-19W3 OIL",
+   "operator": "STRATHCONA RESOURCES LTD.",
+   "subtype": "THERMAL IN-SITU BATTERY",
+   "first_month": "2026-01",
+   "latest_kbd": 7.4,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "WCP Gold Creek 04-17-069-03W6",
+   "operator": "WHITECAP PARTNERSHIP",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "first_month": "2026-06",
+   "latest_kbd": 6.3,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "Cardinal Thermal Battery 14-6-38-19",
+   "operator": "CARDINAL ENERGY LTD.",
+   "subtype": "THERMAL IN-SITU BATTERY",
+   "first_month": "2025-09",
+   "latest_kbd": 5.8,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "PEAVINE 14-36-078-16W5 MWPB",
+   "operator": "BAYTEX ENERGY LTD.",
+   "subtype": "CRUDE BITUMEN MULTIWELL PRORATION BATTERY",
+   "first_month": "2026-02",
+   "latest_kbd": 5.1,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "Spirit River 6-3-78-7w6",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "first_month": "2026-02",
+   "latest_kbd": 5.0,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "MANATOKAN 03-23-062-07W4",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "CRUDE BITUMEN MULTIWELL GROUP BATTERY",
+   "first_month": "2026-05",
+   "latest_kbd": 4.4,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "SPARTAN PEMBINA 04-20-041-03W5 MWOB",
+   "operator": "SPARTAN DELTA CORP.",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "first_month": "2025-12",
+   "latest_kbd": 3.9,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "Spirit River 6-9-77-7W6 Oil Battery",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "first_month": "2026-02",
+   "latest_kbd": 3.5,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "MEOTA CENTRAL 1 MULTIWELL",
+   "operator": "STRATHCONA RESOURCES LTD.",
+   "subtype": "THERMAL IN-SITU BATTERY",
+   "first_month": "2026-07",
+   "latest_kbd": 3.3,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "PRTL CECIL 15-07-085-06W6 mwb",
+   "operator": "PRAIRIE THUNDER RESOURCES LTD.",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "first_month": "2025-08",
+   "latest_kbd": 3.3,
+   "likely_rereport": false
+  }
+ ],
+ "diluent": [
+  {
+   "month": "2022-01",
+   "bitumen_kbd": 1860.0,
+   "condensate_kbd": 680.5,
+   "blend_ratio": 0.366
+  },
+  {
+   "month": "2022-02",
+   "bitumen_kbd": 1869.6,
+   "condensate_kbd": 699.2,
+   "blend_ratio": 0.374
+  },
+  {
+   "month": "2022-03",
+   "bitumen_kbd": 1881.0,
+   "condensate_kbd": 686.8,
+   "blend_ratio": 0.365
+  },
+  {
+   "month": "2022-04",
+   "bitumen_kbd": 1875.3,
+   "condensate_kbd": 658.6,
+   "blend_ratio": 0.351
+  },
+  {
+   "month": "2022-05",
+   "bitumen_kbd": 1716.0,
+   "condensate_kbd": 575.9,
+   "blend_ratio": 0.336
+  },
+  {
+   "month": "2022-06",
+   "bitumen_kbd": 1654.8,
+   "condensate_kbd": 574.7,
+   "blend_ratio": 0.347
+  },
+  {
+   "month": "2022-07",
+   "bitumen_kbd": 1863.9,
+   "condensate_kbd": 582.1,
+   "blend_ratio": 0.312
+  },
+  {
+   "month": "2022-08",
+   "bitumen_kbd": 1871.1,
+   "condensate_kbd": 572.7,
+   "blend_ratio": 0.306
+  },
+  {
+   "month": "2022-09",
+   "bitumen_kbd": 1865.6,
+   "condensate_kbd": 577.2,
+   "blend_ratio": 0.309
+  },
+  {
+   "month": "2022-10",
+   "bitumen_kbd": 1923.0,
+   "condensate_kbd": 624.4,
+   "blend_ratio": 0.325
+  },
+  {
+   "month": "2022-11",
+   "bitumen_kbd": 1929.2,
+   "condensate_kbd": 668.2,
+   "blend_ratio": 0.346
+  },
+  {
+   "month": "2022-12",
+   "bitumen_kbd": 1914.5,
+   "condensate_kbd": 658.6,
+   "blend_ratio": 0.344
+  },
+  {
+   "month": "2023-01",
+   "bitumen_kbd": 1910.7,
+   "condensate_kbd": 652.1,
+   "blend_ratio": 0.341
+  },
+  {
+   "month": "2023-02",
+   "bitumen_kbd": 1915.4,
+   "condensate_kbd": 675.4,
+   "blend_ratio": 0.353
+  },
+  {
+   "month": "2023-03",
+   "bitumen_kbd": 1908.1,
+   "condensate_kbd": 654.2,
+   "blend_ratio": 0.343
+  },
+  {
+   "month": "2023-04",
+   "bitumen_kbd": 1812.4,
+   "condensate_kbd": 603.2,
+   "blend_ratio": 0.333
+  },
+  {
+   "month": "2023-05",
+   "bitumen_kbd": 1826.1,
+   "condensate_kbd": 596.8,
+   "blend_ratio": 0.327
+  },
+  {
+   "month": "2023-06",
+   "bitumen_kbd": 1885.6,
+   "condensate_kbd": 584.1,
+   "blend_ratio": 0.31
+  },
+  {
+   "month": "2023-07",
+   "bitumen_kbd": 1916.4,
+   "condensate_kbd": 558.8,
+   "blend_ratio": 0.292
+  },
+  {
+   "month": "2023-08",
+   "bitumen_kbd": 1943.7,
+   "condensate_kbd": 570.6,
+   "blend_ratio": 0.294
+  },
+  {
+   "month": "2023-09",
+   "bitumen_kbd": 1900.3,
+   "condensate_kbd": 565.5,
+   "blend_ratio": 0.298
+  },
+  {
+   "month": "2023-10",
+   "bitumen_kbd": 1927.8,
+   "condensate_kbd": 593.3,
+   "blend_ratio": 0.308
+  },
+  {
+   "month": "2023-11",
+   "bitumen_kbd": 1976.7,
+   "condensate_kbd": 624.7,
+   "blend_ratio": 0.316
+  },
+  {
+   "month": "2023-12",
+   "bitumen_kbd": 2024.5,
+   "condensate_kbd": 651.6,
+   "blend_ratio": 0.322
+  },
+  {
+   "month": "2024-01",
+   "bitumen_kbd": 1969.7,
+   "condensate_kbd": 645.7,
+   "blend_ratio": 0.328
+  },
+  {
+   "month": "2024-02",
+   "bitumen_kbd": 2003.0,
+   "condensate_kbd": 655.0,
+   "blend_ratio": 0.327
+  },
+  {
+   "month": "2024-03",
+   "bitumen_kbd": 2003.9,
+   "condensate_kbd": 642.5,
+   "blend_ratio": 0.321
+  },
+  {
+   "month": "2024-04",
+   "bitumen_kbd": 1982.6,
+   "condensate_kbd": 627.8,
+   "blend_ratio": 0.317
+  },
+  {
+   "month": "2024-05",
+   "bitumen_kbd": 1980.0,
+   "condensate_kbd": 598.9,
+   "blend_ratio": 0.302
+  },
+  {
+   "month": "2024-06",
+   "bitumen_kbd": 2024.3,
+   "condensate_kbd": 610.4,
+   "blend_ratio": 0.302
+  },
+  {
+   "month": "2024-07",
+   "bitumen_kbd": 1972.2,
+   "condensate_kbd": 633.0,
+   "blend_ratio": 0.321
+  },
+  {
+   "month": "2024-08",
+   "bitumen_kbd": 1918.1,
+   "condensate_kbd": 613.0,
+   "blend_ratio": 0.32
+  },
+  {
+   "month": "2024-09",
+   "bitumen_kbd": 1837.8,
+   "condensate_kbd": 586.2,
+   "blend_ratio": 0.319
+  },
+  {
+   "month": "2024-10",
+   "bitumen_kbd": 2060.8,
+   "condensate_kbd": 671.4,
+   "blend_ratio": 0.326
+  },
+  {
+   "month": "2024-11",
+   "bitumen_kbd": 2069.0,
+   "condensate_kbd": 719.2,
+   "blend_ratio": 0.348
+  },
+  {
+   "month": "2024-12",
+   "bitumen_kbd": 2099.6,
+   "condensate_kbd": 732.6,
+   "blend_ratio": 0.349
+  },
+  {
+   "month": "2025-01",
+   "bitumen_kbd": 2100.3,
+   "condensate_kbd": 745.7,
+   "blend_ratio": 0.355
+  },
+  {
+   "month": "2025-02",
+   "bitumen_kbd": 2072.6,
+   "condensate_kbd": 719.1,
+   "blend_ratio": 0.347
+  },
+  {
+   "month": "2025-03",
+   "bitumen_kbd": 2108.5,
+   "condensate_kbd": 735.8,
+   "blend_ratio": 0.349
+  },
+  {
+   "month": "2025-04",
+   "bitumen_kbd": 2056.7,
+   "condensate_kbd": 707.1,
+   "blend_ratio": 0.344
+  },
+  {
+   "month": "2025-05",
+   "bitumen_kbd": 1924.3,
+   "condensate_kbd": 658.0,
+   "blend_ratio": 0.342
+  },
+  {
+   "month": "2025-06",
+   "bitumen_kbd": 1964.4,
+   "condensate_kbd": 639.8,
+   "blend_ratio": 0.326
+  },
+  {
+   "month": "2025-07",
+   "bitumen_kbd": 2111.5,
+   "condensate_kbd": 687.9,
+   "blend_ratio": 0.326
+  },
+  {
+   "month": "2025-08",
+   "bitumen_kbd": 2099.6,
+   "condensate_kbd": 652.8,
+   "blend_ratio": 0.311
+  },
+  {
+   "month": "2025-09",
+   "bitumen_kbd": 2059.7,
+   "condensate_kbd": 638.0,
+   "blend_ratio": 0.31
+  },
+  {
+   "month": "2025-10",
+   "bitumen_kbd": 2115.6,
+   "condensate_kbd": 683.4,
+   "blend_ratio": 0.323
+  },
+  {
+   "month": "2025-11",
+   "bitumen_kbd": 2173.2,
+   "condensate_kbd": 750.2,
+   "blend_ratio": 0.345
+  },
+  {
+   "month": "2025-12",
+   "bitumen_kbd": 2149.7,
+   "condensate_kbd": 812.8,
+   "blend_ratio": 0.378
+  },
+  {
+   "month": "2026-01",
+   "bitumen_kbd": 2161.2,
+   "condensate_kbd": 815.7,
+   "blend_ratio": 0.377
+  },
+  {
+   "month": "2026-02",
+   "bitumen_kbd": 2173.7,
+   "condensate_kbd": 789.5,
+   "blend_ratio": 0.363
+  },
+  {
+   "month": "2026-03",
+   "bitumen_kbd": 2168.1,
+   "condensate_kbd": 756.7,
+   "blend_ratio": 0.349
+  },
+  {
+   "month": "2026-04",
+   "bitumen_kbd": 2118.5,
+   "condensate_kbd": 753.9,
+   "blend_ratio": 0.356
+  },
+  {
+   "month": "2026-05",
+   "bitumen_kbd": 2005.0,
+   "condensate_kbd": 711.4,
+   "blend_ratio": 0.355
+  },
+  {
+   "month": "2026-06",
+   "bitumen_kbd": 2131.8,
+   "condensate_kbd": 696.4,
+   "blend_ratio": 0.327
+  },
+  {
+   "month": "2026-07",
+   "bitumen_kbd": 2231.6,
+   "condensate_kbd": 686.8,
+   "blend_ratio": 0.308
+  },
+  {
+   "month": "2026-08",
+   "bitumen_kbd": 2266.1,
+   "condensate_kbd": 702.1,
+   "blend_ratio": 0.31
+  }
+ ],
+ "declines": [
+  {
+   "facility_name": "CVE CHRISTINA LAKE LEISMER 08-17",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "IN-SITU OIL SANDS",
+   "series": [
+    [
+     "2022-01",
+     259.0
+    ],
+    [
+     "2022-02",
+     253.5
+    ],
+    [
+     "2022-03",
+     249.4
+    ],
+    [
+     "2022-04",
+     234.9
+    ],
+    [
+     "2022-05",
+     207.7
+    ],
+    [
+     "2022-06",
+     244.9
+    ],
+    [
+     "2022-07",
+     255.0
+    ],
+    [
+     "2022-08",
+     252.4
+    ],
+    [
+     "2022-09",
+     251.5
+    ],
+    [
+     "2022-10",
+     255.9
+    ],
+    [
+     "2022-11",
+     250.9
+    ],
+    [
+     "2022-12",
+     243.7
+    ],
+    [
+     "2023-01",
+     236.4
+    ],
+    [
+     "2023-02",
+     240.4
+    ],
+    [
+     "2023-03",
+     235.0
+    ],
+    [
+     "2023-04",
+     229.2
+    ],
+    [
+     "2023-05",
+     238.9
+    ],
+    [
+     "2023-06",
+     237.9
+    ],
+    [
+     "2023-07",
+     236.4
+    ],
+    [
+     "2023-08",
+     238.4
+    ],
+    [
+     "2023-09",
+     236.7
+    ],
+    [
+     "2023-10",
+     234.2
+    ],
+    [
+     "2023-11",
+     241.7
+    ],
+    [
+     "2023-12",
+     242.0
+    ],
+    [
+     "2024-01",
+     237.3
+    ],
+    [
+     "2024-02",
+     238.8
+    ],
+    [
+     "2024-03",
+     233.7
+    ],
+    [
+     "2024-04",
+     238.2
+    ],
+    [
+     "2024-05",
+     231.3
+    ],
+    [
+     "2024-06",
+     241.8
+    ],
+    [
+     "2024-07",
+     241.9
+    ],
+    [
+     "2024-08",
+     241.2
+    ],
+    [
+     "2024-09",
+     150.8
+    ],
+    [
+     "2024-10",
+     257.4
+    ],
+    [
+     "2024-11",
+     253.7
+    ],
+    [
+     "2024-12",
+     243.4
+    ],
+    [
+     "2025-01",
+     235.8
+    ],
+    [
+     "2025-02",
+     238.5
+    ],
+    [
+     "2025-03",
+     238.9
+    ],
+    [
+     "2025-04",
+     238.3
+    ],
+    [
+     "2025-05",
+     217.7
+    ],
+    [
+     "2025-06",
+     199.0
+    ],
+    [
+     "2025-07",
+     257.1
+    ],
+    [
+     "2025-08",
+     247.1
+    ],
+    [
+     "2025-09",
+     249.9
+    ],
+    [
+     "2025-10",
+     249.9
+    ],
+    [
+     "2025-11",
+     249.6
+    ],
+    [
+     "2025-12",
+     247.4
+    ],
+    [
+     "2026-01",
+     248.1
+    ],
+    [
+     "2026-02",
+     247.2
+    ],
+    [
+     "2026-03",
+     260.0
+    ],
+    [
+     "2026-04",
+     259.9
+    ],
+    [
+     "2026-05",
+     269.9
+    ],
+    [
+     "2026-06",
+     263.4
+    ],
+    [
+     "2026-07",
+     284.0
+    ],
+    [
+     "2026-08",
+     283.5
+    ]
+   ],
+   "tieins": [
+    "2024-10",
+    "2025-07"
+   ]
+  },
+  {
+   "facility_name": "CVE FOSTER CREEK COMMERCIAL OIL BTTY",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "IN-SITU OIL SANDS",
+   "series": [
+    [
+     "2022-01",
+     203.0
+    ],
+    [
+     "2022-02",
+     197.3
+    ],
+    [
+     "2022-03",
+     193.0
+    ],
+    [
+     "2022-04",
+     190.9
+    ],
+    [
+     "2022-05",
+     184.8
+    ],
+    [
+     "2022-06",
+     187.7
+    ],
+    [
+     "2022-07",
+     193.6
+    ],
+    [
+     "2022-08",
+     168.1
+    ],
+    [
+     "2022-09",
+     185.2
+    ],
+    [
+     "2022-10",
+     194.8
+    ],
+    [
+     "2022-11",
+     196.7
+    ],
+    [
+     "2022-12",
+     195.8
+    ],
+    [
+     "2023-01",
+     193.7
+    ],
+    [
+     "2023-02",
+     189.5
+    ],
+    [
+     "2023-03",
+     186.5
+    ],
+    [
+     "2023-04",
+     145.3
+    ],
+    [
+     "2023-05",
+     169.8
+    ],
+    [
+     "2023-06",
+     186.0
+    ],
+    [
+     "2023-07",
+     183.4
+    ],
+    [
+     "2023-08",
+     189.5
+    ],
+    [
+     "2023-09",
+     195.3
+    ],
+    [
+     "2023-10",
+     195.6
+    ],
+    [
+     "2023-11",
+     201.9
+    ],
+    [
+     "2023-12",
+     198.1
+    ],
+    [
+     "2024-01",
+     196.4
+    ],
+    [
+     "2024-02",
+     199.6
+    ],
+    [
+     "2024-03",
+     192.1
+    ],
+    [
+     "2024-04",
+     190.7
+    ],
+    [
+     "2024-05",
+     197.9
+    ],
+    [
+     "2024-06",
+     195.7
+    ],
+    [
+     "2024-07",
+     204.8
+    ],
+    [
+     "2024-08",
+     196.8
+    ],
+    [
+     "2024-09",
+     191.9
+    ],
+    [
+     "2024-10",
+     190.5
+    ],
+    [
+     "2024-11",
+     199.5
+    ],
+    [
+     "2024-12",
+     195.9
+    ],
+    [
+     "2025-01",
+     207.6
+    ],
+    [
+     "2025-02",
+     203.0
+    ],
+    [
+     "2025-03",
+     198.0
+    ],
+    [
+     "2025-04",
+     166.6
+    ],
+    [
+     "2025-05",
+     183.3
+    ],
+    [
+     "2025-06",
+     208.5
+    ],
+    [
+     "2025-07",
+     217.0
+    ],
+    [
+     "2025-08",
+     210.3
+    ],
+    [
+     "2025-09",
+     218.5
+    ],
+    [
+     "2025-10",
+     217.9
+    ],
+    [
+     "2025-11",
+     212.2
+    ],
+    [
+     "2025-12",
+     230.2
+    ],
+    [
+     "2026-01",
+     219.2
+    ],
+    [
+     "2026-02",
+     223.2
+    ],
+    [
+     "2026-03",
+     227.0
+    ],
+    [
+     "2026-04",
+     234.3
+    ]
+   ],
+   "tieins": []
+  },
+  {
+   "facility_name": "SURMONT IN-SITU PHASE #1 05-18",
+   "operator": "CONOCOPHILLIPS CANADA RESOURCES CORP.",
+   "subtype": "IN-SITU OIL SANDS",
+   "series": [
+    [
+     "2022-01",
+     126.8
+    ],
+    [
+     "2022-02",
+     132.2
+    ],
+    [
+     "2022-03",
+     130.5
+    ],
+    [
+     "2022-04",
+     128.6
+    ],
+    [
+     "2022-05",
+     129.3
+    ],
+    [
+     "2022-06",
+     95.7
+    ],
+    [
+     "2022-07",
+     131.7
+    ],
+    [
+     "2022-08",
+     133.6
+    ],
+    [
+     "2022-09",
+     139.5
+    ],
+    [
+     "2022-10",
+     138.6
+    ],
+    [
+     "2022-11",
+     134.9
+    ],
+    [
+     "2022-12",
+     134.6
+    ],
+    [
+     "2023-01",
+     135.6
+    ],
+    [
+     "2023-02",
+     134.7
+    ],
+    [
+     "2023-03",
+     133.3
+    ],
+    [
+     "2023-04",
+     126.6
+    ],
+    [
+     "2023-05",
+     127.2
+    ],
+    [
+     "2023-06",
+     125.8
+    ],
+    [
+     "2023-07",
+     121.0
+    ],
+    [
+     "2023-08",
+     125.1
+    ],
+    [
+     "2023-09",
+     124.1
+    ],
+    [
+     "2023-10",
+     126.2
+    ],
+    [
+     "2023-11",
+     126.5
+    ],
+    [
+     "2023-12",
+     125.3
+    ],
+    [
+     "2024-01",
+     122.6
+    ],
+    [
+     "2024-02",
+     129.6
+    ],
+    [
+     "2024-03",
+     132.8
+    ],
+    [
+     "2024-04",
+     126.7
+    ],
+    [
+     "2024-05",
+     138.4
+    ],
+    [
+     "2024-06",
+     136.1
+    ],
+    [
+     "2024-07",
+     136.5
+    ],
+    [
+     "2024-08",
+     55.3
+    ],
+    [
+     "2024-09",
+     72.7
+    ],
+    [
+     "2024-10",
+     138.4
+    ],
+    [
+     "2024-11",
+     132.5
+    ],
+    [
+     "2024-12",
+     143.7
+    ],
+    [
+     "2025-01",
+     144.8
+    ],
+    [
+     "2025-02",
+     144.1
+    ],
+    [
+     "2025-03",
+     143.8
+    ],
+    [
+     "2025-04",
+     146.6
+    ],
+    [
+     "2025-05",
+     144.0
+    ],
+    [
+     "2025-06",
+     137.4
+    ],
+    [
+     "2025-07",
+     147.7
+    ],
+    [
+     "2025-08",
+     149.4
+    ],
+    [
+     "2025-09",
+     142.6
+    ],
+    [
+     "2025-10",
+     145.2
+    ],
+    [
+     "2025-11",
+     150.9
+    ],
+    [
+     "2025-12",
+     149.8
+    ],
+    [
+     "2026-01",
+     148.3
+    ],
+    [
+     "2026-02",
+     155.5
+    ],
+    [
+     "2026-03",
+     157.3
+    ],
+    [
+     "2026-04",
+     151.1
+    ],
+    [
+     "2026-05",
+     140.6
+    ],
+    [
+     "2026-06",
+     135.8
+    ],
+    [
+     "2026-07",
+     132.3
+    ],
+    [
+     "2026-08",
+     142.6
+    ]
+   ],
+   "tieins": [
+    "2022-07",
+    "2024-09",
+    "2024-10"
+   ]
+  },
+  {
+   "facility_name": "WOLF LAKE 8-8-66-5w4",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "IN-SITU OIL SANDS",
+   "series": [
+    [
+     "2022-01",
+     69.8
+    ],
+    [
+     "2022-02",
+     70.4
+    ],
+    [
+     "2022-03",
+     68.7
+    ],
+    [
+     "2022-04",
+     71.4
+    ],
+    [
+     "2022-05",
+     66.8
+    ],
+    [
+     "2022-06",
+     61.4
+    ],
+    [
+     "2022-07",
+     69.6
+    ],
+    [
+     "2022-08",
+     67.8
+    ],
+    [
+     "2022-09",
+     69.0
+    ],
+    [
+     "2022-10",
+     70.8
+    ],
+    [
+     "2022-11",
+     72.1
+    ],
+    [
+     "2022-12",
+     72.7
+    ],
+    [
+     "2023-01",
+     70.7
+    ],
+    [
+     "2023-02",
+     69.8
+    ],
+    [
+     "2023-03",
+     73.2
+    ],
+    [
+     "2023-04",
+     53.3
+    ],
+    [
+     "2023-05",
+     55.6
+    ],
+    [
+     "2023-06",
+     69.9
+    ],
+    [
+     "2023-07",
+     96.0
+    ],
+    [
+     "2023-08",
+     101.9
+    ],
+    [
+     "2023-09",
+     115.0
+    ],
+    [
+     "2023-10",
+     92.7
+    ],
+    [
+     "2023-11",
+     88.4
+    ],
+    [
+     "2023-12",
+     101.6
+    ],
+    [
+     "2024-01",
+     81.0
+    ],
+    [
+     "2024-02",
+     75.9
+    ],
+    [
+     "2024-03",
+     79.9
+    ],
+    [
+     "2024-04",
+     91.0
+    ],
+    [
+     "2024-05",
+     88.6
+    ],
+    [
+     "2024-06",
+     77.7
+    ],
+    [
+     "2024-07",
+     78.3
+    ],
+    [
+     "2024-08",
+     68.2
+    ],
+    [
+     "2024-09",
+     68.3
+    ],
+    [
+     "2024-10",
+     70.6
+    ],
+    [
+     "2024-11",
+     82.5
+    ],
+    [
+     "2024-12",
+     101.0
+    ],
+    [
+     "2025-01",
+     92.1
+    ],
+    [
+     "2025-02",
+     88.4
+    ],
+    [
+     "2025-03",
+     108.6
+    ],
+    [
+     "2025-04",
+     102.3
+    ],
+    [
+     "2025-05",
+     87.6
+    ],
+    [
+     "2025-06",
+     94.1
+    ],
+    [
+     "2025-07",
+     91.6
+    ],
+    [
+     "2025-08",
+     80.3
+    ],
+    [
+     "2025-09",
+     83.8
+    ],
+    [
+     "2025-10",
+     88.1
+    ],
+    [
+     "2025-11",
+     83.8
+    ],
+    [
+     "2025-12",
+     72.9
+    ],
+    [
+     "2026-01",
+     74.8
+    ],
+    [
+     "2026-02",
+     78.3
+    ],
+    [
+     "2026-03",
+     74.1
+    ],
+    [
+     "2026-04",
+     73.2
+    ],
+    [
+     "2026-05",
+     73.9
+    ],
+    [
+     "2026-06",
+     72.5
+    ],
+    [
+     "2026-07",
+     89.5
+    ],
+    [
+     "2026-08",
+     97.9
+    ]
+   ],
+   "tieins": [
+    "2023-06",
+    "2023-07"
+   ]
+  },
+  {
+   "facility_name": "Sunrise In Situ Oil Sands - Prod",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "IN-SITU OIL SANDS",
+   "series": [
+    [
+     "2022-01",
+     47.2
+    ],
+    [
+     "2022-02",
+     48.4
+    ],
+    [
+     "2022-03",
+     50.4
+    ],
+    [
+     "2022-04",
+     49.5
+    ],
+    [
+     "2022-05",
+     51.4
+    ],
+    [
+     "2022-06",
+     50.5
+    ],
+    [
+     "2022-07",
+     47.7
+    ],
+    [
+     "2022-08",
+     45.5
+    ],
+    [
+     "2022-09",
+     46.9
+    ],
+    [
+     "2022-10",
+     45.8
+    ],
+    [
+     "2022-11",
+     44.9
+    ],
+    [
+     "2022-12",
+     43.5
+    ],
+    [
+     "2023-01",
+     45.3
+    ],
+    [
+     "2023-02",
+     45.0
+    ],
+    [
+     "2023-03",
+     43.1
+    ],
+    [
+     "2023-04",
+     42.5
+    ],
+    [
+     "2023-05",
+     46.9
+    ],
+    [
+     "2023-06",
+     50.9
+    ],
+    [
+     "2023-07",
+     54.0
+    ],
+    [
+     "2023-08",
+     56.9
+    ],
+    [
+     "2023-09",
+     51.9
+    ],
+    [
+     "2023-10",
+     51.9
+    ],
+    [
+     "2023-11",
+     50.0
+    ],
+    [
+     "2023-12",
+     48.4
+    ],
+    [
+     "2024-01",
+     46.8
+    ],
+    [
+     "2024-02",
+     50.0
+    ],
+    [
+     "2024-03",
+     49.6
+    ],
+    [
+     "2024-04",
+     49.4
+    ],
+    [
+     "2024-05",
+     38.0
+    ],
+    [
+     "2024-06",
+     51.8
+    ],
+    [
+     "2024-07",
+     50.9
+    ],
+    [
+     "2024-08",
+     48.4
+    ],
+    [
+     "2024-09",
+     51.7
+    ],
+    [
+     "2024-10",
+     53.0
+    ],
+    [
+     "2024-11",
+     52.9
+    ],
+    [
+     "2024-12",
+     53.3
+    ],
+    [
+     "2025-01",
+     52.0
+    ],
+    [
+     "2025-02",
+     50.8
+    ],
+    [
+     "2025-03",
+     53.5
+    ],
+    [
+     "2025-04",
+     55.7
+    ],
+    [
+     "2025-05",
+     44.4
+    ],
+    [
+     "2025-06",
+     50.8
+    ],
+    [
+     "2025-07",
+     59.4
+    ],
+    [
+     "2025-08",
+     59.1
+    ],
+    [
+     "2025-09",
+     38.4
+    ],
+    [
+     "2025-10",
+     59.8
+    ],
+    [
+     "2025-11",
+     61.3
+    ],
+    [
+     "2025-12",
+     60.0
+    ],
+    [
+     "2026-01",
+     61.1
+    ],
+    [
+     "2026-02",
+     63.1
+    ],
+    [
+     "2026-03",
+     54.1
+    ],
+    [
+     "2026-04",
+     61.8
+    ],
+    [
+     "2026-05",
+     68.7
+    ],
+    [
+     "2026-06",
+     66.3
+    ],
+    [
+     "2026-07",
+     70.9
+    ],
+    [
+     "2026-08",
+     69.9
+    ]
+   ],
+   "tieins": [
+    "2024-06",
+    "2025-10"
+   ]
+  },
+  {
+   "facility_name": "WHITECAP WEYBURN UNIT #1",
+   "operator": "WHITECAP RESOURCES INC.",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "series": [
+    [
+     "2022-01",
+     20.7
+    ],
+    [
+     "2022-02",
+     19.8
+    ],
+    [
+     "2022-03",
+     21.7
+    ],
+    [
+     "2022-04",
+     22.1
+    ],
+    [
+     "2022-05",
+     21.6
+    ],
+    [
+     "2022-06",
+     20.9
+    ],
+    [
+     "2022-07",
+     21.7
+    ],
+    [
+     "2022-08",
+     20.6
+    ],
+    [
+     "2022-09",
+     20.5
+    ],
+    [
+     "2022-10",
+     20.6
+    ],
+    [
+     "2022-11",
+     20.6
+    ],
+    [
+     "2022-12",
+     20.8
+    ],
+    [
+     "2023-01",
+     20.5
+    ],
+    [
+     "2023-02",
+     21.0
+    ],
+    [
+     "2023-03",
+     20.9
+    ],
+    [
+     "2023-04",
+     20.8
+    ],
+    [
+     "2023-05",
+     20.6
+    ],
+    [
+     "2023-06",
+     21.0
+    ],
+    [
+     "2023-07",
+     21.1
+    ],
+    [
+     "2023-08",
+     21.0
+    ],
+    [
+     "2023-09",
+     21.0
+    ],
+    [
+     "2023-10",
+     21.1
+    ],
+    [
+     "2023-11",
+     20.8
+    ],
+    [
+     "2023-12",
+     21.4
+    ],
+    [
+     "2024-01",
+     20.7
+    ],
+    [
+     "2024-02",
+     20.6
+    ],
+    [
+     "2024-03",
+     20.0
+    ],
+    [
+     "2024-04",
+     21.0
+    ],
+    [
+     "2024-05",
+     21.1
+    ],
+    [
+     "2024-06",
+     19.7
+    ],
+    [
+     "2024-07",
+     20.4
+    ],
+    [
+     "2024-08",
+     20.3
+    ],
+    [
+     "2024-09",
+     18.5
+    ],
+    [
+     "2024-10",
+     20.8
+    ],
+    [
+     "2024-11",
+     20.6
+    ],
+    [
+     "2024-12",
+     20.5
+    ],
+    [
+     "2025-01",
+     20.5
+    ],
+    [
+     "2025-02",
+     20.5
+    ],
+    [
+     "2025-03",
+     21.0
+    ],
+    [
+     "2025-04",
+     21.2
+    ],
+    [
+     "2025-05",
+     20.8
+    ],
+    [
+     "2025-06",
+     20.0
+    ],
+    [
+     "2025-07",
+     20.0
+    ],
+    [
+     "2025-08",
+     20.1
+    ],
+    [
+     "2025-09",
+     20.3
+    ],
+    [
+     "2025-10",
+     20.2
+    ],
+    [
+     "2025-11",
+     20.8
+    ],
+    [
+     "2025-12",
+     20.5
+    ],
+    [
+     "2026-01",
+     20.5
+    ],
+    [
+     "2026-02",
+     20.5
+    ],
+    [
+     "2026-03",
+     20.8
+    ],
+    [
+     "2026-04",
+     20.5
+    ],
+    [
+     "2026-05",
+     20.2
+    ],
+    [
+     "2026-06",
+     19.4
+    ],
+    [
+     "2026-07",
+     19.5
+    ],
+    [
+     "2026-08",
+     19.8
+    ]
+   ],
+   "tieins": []
+  }
+ ],
+ "feeders": {
+  "measured_note": "Saskatchewan oil pipelines report movements in Petrinex volumetrics, so these flows are measured receipts (REC, crude oil) into each pipeline system by month. Capacity data is not public, so this is throughput, not utilization against a nameplate.",
+  "ab_note": "Alberta feeder pipelines are licensed in the Petrinex facility directory but report no movements in public volumetrics, so no monthly flow series can be built for them from this dataset. They are listed for coverage; Saskatchewan measured systems are the flow sample.",
+  "systems": [
+   {
+    "system": "Kingston Midstream",
+    "operator": "KINGSTON MIDSTREAM SASKATCHEWAN LIMITED; KINGSTON MIDSTREAM WESTSPUR LIMITED; KINGSTON MIDSTREAM WEYBURN LIMITED",
+    "note": "",
+    "facilities": [
+     "KINGSTON MIDSTREAM SASK PIPELINE",
+     "KINGSTON MIDSTREAM WESTPUR PIPELINE",
+     "KINGSTON MIDSTREAM WEYBURN PIPELINE"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 275.7,
+    "avg12_kbd": 276.0,
+    "peak_kbd": 294.2,
+    "peak_month": "2025-03"
+   },
+   {
+    "system": "Husky",
+    "operator": "CENOVUS ENERGY INC.",
+    "note": "",
+    "facilities": [
+     "HUSKY PIPELINE"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 183.2,
+    "avg12_kbd": 172.3,
+    "peak_kbd": 199.7,
+    "peak_month": "2023-12"
+   },
+   {
+    "system": "South Saskatchewan / Wascana",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "note": "Operated by Keyera Midstream Canada Ltd. through 2026-01; Plains Canada Liquid Pipelines ULC from 2026-02.",
+    "facilities": [
+     "SOUTH SASKATCHEWAN PIPELINE",
+     "WASCANA PIPELINE"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 78.2,
+    "avg12_kbd": 80.0,
+    "peak_kbd": 100.8,
+    "peak_month": "2024-04"
+   },
+   {
+    "system": "Mid Saskatchewan",
+    "operator": "INTER PIPELINE LTD.",
+    "note": "",
+    "facilities": [
+     "MID SASKATCHEWAN PIPELINE-LIGHT",
+     "MID SASKTCHEWAN PIPELINE-HEAVY"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 33.5,
+    "avg12_kbd": 32.2,
+    "peak_kbd": 50.0,
+    "peak_month": "2023-09"
+   },
+   {
+    "system": "Kerrobert Light",
+    "operator": "SECURE WASTE INFRASTRUCTURE CORP.",
+    "note": "",
+    "facilities": [
+     "KERROBERT LIGHT PIPELINE SYSTEM"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 24.9,
+    "avg12_kbd": 27.2,
+    "peak_kbd": 40.9,
+    "peak_month": "2022-10"
+   },
+   {
+    "system": "Cactus Lake / Manito",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "note": "Operated by Keyera Midstream Canada Ltd. through 2026-01; Plains Canada Liquid Pipelines ULC from 2026-02.",
+    "facilities": [
+     "CACTUS LAKE PIPELINE",
+     "MANITO PIPELINE"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 20.4,
+    "avg12_kbd": 24.2,
+    "peak_kbd": 64.8,
+    "peak_month": "2022-12"
+   },
+   {
+    "system": "Plato",
+    "operator": "BROADBILL ENERGY INC.",
+    "note": "",
+    "facilities": [
+     "BROADBILL ENERGY PLATO PIPELINE"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 6.4,
+    "avg12_kbd": 6.3,
+    "peak_kbd": 8.7,
+    "peak_month": "2024-10"
+   },
+   {
+    "system": "Court / Winter",
+    "operator": "STRATHCONA RESOURCES LTD.",
+    "note": "",
+    "facilities": [
+     "COURT PIPELINE",
+     "WINTER PIPELINE"
+    ],
+    "latest_month": "2026-08",
+    "latest_kbd": 4.2,
+    "avg12_kbd": 4.3,
+    "peak_kbd": 6.4,
+    "peak_month": "2023-03"
+   }
+  ],
+  "monthly": [
+   {
+    "month": "2022-01",
+    "system": "Cactus Lake / Manito",
+    "kbd": 33.6
+   },
+   {
+    "month": "2022-02",
+    "system": "Cactus Lake / Manito",
+    "kbd": 30.0
+   },
+   {
+    "month": "2022-03",
+    "system": "Cactus Lake / Manito",
+    "kbd": 37.6
+   },
+   {
+    "month": "2022-04",
+    "system": "Cactus Lake / Manito",
+    "kbd": 41.6
+   },
+   {
+    "month": "2022-05",
+    "system": "Cactus Lake / Manito",
+    "kbd": 37.6
+   },
+   {
+    "month": "2022-06",
+    "system": "Cactus Lake / Manito",
+    "kbd": 46.7
+   },
+   {
+    "month": "2022-07",
+    "system": "Cactus Lake / Manito",
+    "kbd": 44.8
+   },
+   {
+    "month": "2022-08",
+    "system": "Cactus Lake / Manito",
+    "kbd": 51.1
+   },
+   {
+    "month": "2022-09",
+    "system": "Cactus Lake / Manito",
+    "kbd": 47.6
+   },
+   {
+    "month": "2022-10",
+    "system": "Cactus Lake / Manito",
+    "kbd": 39.3
+   },
+   {
+    "month": "2022-11",
+    "system": "Cactus Lake / Manito",
+    "kbd": 41.5
+   },
+   {
+    "month": "2022-12",
+    "system": "Cactus Lake / Manito",
+    "kbd": 64.8
+   },
+   {
+    "month": "2023-01",
+    "system": "Cactus Lake / Manito",
+    "kbd": 48.3
+   },
+   {
+    "month": "2023-02",
+    "system": "Cactus Lake / Manito",
+    "kbd": 48.8
+   },
+   {
+    "month": "2023-03",
+    "system": "Cactus Lake / Manito",
+    "kbd": 33.1
+   },
+   {
+    "month": "2023-04",
+    "system": "Cactus Lake / Manito",
+    "kbd": 36.9
+   },
+   {
+    "month": "2023-05",
+    "system": "Cactus Lake / Manito",
+    "kbd": 25.3
+   },
+   {
+    "month": "2023-06",
+    "system": "Cactus Lake / Manito",
+    "kbd": 36.7
+   },
+   {
+    "month": "2023-07",
+    "system": "Cactus Lake / Manito",
+    "kbd": 34.0
+   },
+   {
+    "month": "2023-08",
+    "system": "Cactus Lake / Manito",
+    "kbd": 34.8
+   },
+   {
+    "month": "2023-09",
+    "system": "Cactus Lake / Manito",
+    "kbd": 35.2
+   },
+   {
+    "month": "2023-10",
+    "system": "Cactus Lake / Manito",
+    "kbd": 36.0
+   },
+   {
+    "month": "2023-11",
+    "system": "Cactus Lake / Manito",
+    "kbd": 37.6
+   },
+   {
+    "month": "2023-12",
+    "system": "Cactus Lake / Manito",
+    "kbd": 64.0
+   },
+   {
+    "month": "2024-01",
+    "system": "Cactus Lake / Manito",
+    "kbd": 36.5
+   },
+   {
+    "month": "2024-02",
+    "system": "Cactus Lake / Manito",
+    "kbd": 38.5
+   },
+   {
+    "month": "2024-03",
+    "system": "Cactus Lake / Manito",
+    "kbd": 32.1
+   },
+   {
+    "month": "2024-04",
+    "system": "Cactus Lake / Manito",
+    "kbd": 40.8
+   },
+   {
+    "month": "2024-05",
+    "system": "Cactus Lake / Manito",
+    "kbd": 26.9
+   },
+   {
+    "month": "2024-06",
+    "system": "Cactus Lake / Manito",
+    "kbd": 26.7
+   },
+   {
+    "month": "2024-07",
+    "system": "Cactus Lake / Manito",
+    "kbd": 25.6
+   },
+   {
+    "month": "2024-08",
+    "system": "Cactus Lake / Manito",
+    "kbd": 37.1
+   },
+   {
+    "month": "2024-09",
+    "system": "Cactus Lake / Manito",
+    "kbd": 32.4
+   },
+   {
+    "month": "2024-10",
+    "system": "Cactus Lake / Manito",
+    "kbd": 35.2
+   },
+   {
+    "month": "2024-11",
+    "system": "Cactus Lake / Manito",
+    "kbd": 33.3
+   },
+   {
+    "month": "2024-12",
+    "system": "Cactus Lake / Manito",
+    "kbd": 38.3
+   },
+   {
+    "month": "2025-01",
+    "system": "Cactus Lake / Manito",
+    "kbd": 36.3
+   },
+   {
+    "month": "2025-02",
+    "system": "Cactus Lake / Manito",
+    "kbd": 40.0
+   },
+   {
+    "month": "2025-03",
+    "system": "Cactus Lake / Manito",
+    "kbd": 48.0
+   },
+   {
+    "month": "2025-04",
+    "system": "Cactus Lake / Manito",
+    "kbd": 36.8
+   },
+   {
+    "month": "2025-05",
+    "system": "Cactus Lake / Manito",
+    "kbd": 34.2
+   },
+   {
+    "month": "2025-06",
+    "system": "Cactus Lake / Manito",
+    "kbd": 29.5
+   },
+   {
+    "month": "2025-07",
+    "system": "Cactus Lake / Manito",
+    "kbd": 27.4
+   },
+   {
+    "month": "2025-08",
+    "system": "Cactus Lake / Manito",
+    "kbd": 28.4
+   },
+   {
+    "month": "2025-09",
+    "system": "Cactus Lake / Manito",
+    "kbd": 35.0
+   },
+   {
+    "month": "2025-10",
+    "system": "Cactus Lake / Manito",
+    "kbd": 29.9
+   },
+   {
+    "month": "2025-11",
+    "system": "Cactus Lake / Manito",
+    "kbd": 22.2
+   },
+   {
+    "month": "2025-12",
+    "system": "Cactus Lake / Manito",
+    "kbd": 25.0
+   },
+   {
+    "month": "2026-01",
+    "system": "Cactus Lake / Manito",
+    "kbd": 22.1
+   },
+   {
+    "month": "2026-02",
+    "system": "Cactus Lake / Manito",
+    "kbd": 21.1
+   },
+   {
+    "month": "2026-03",
+    "system": "Cactus Lake / Manito",
+    "kbd": 23.4
+   },
+   {
+    "month": "2026-04",
+    "system": "Cactus Lake / Manito",
+    "kbd": 24.8
+   },
+   {
+    "month": "2026-05",
+    "system": "Cactus Lake / Manito",
+    "kbd": 23.7
+   },
+   {
+    "month": "2026-06",
+    "system": "Cactus Lake / Manito",
+    "kbd": 20.3
+   },
+   {
+    "month": "2026-07",
+    "system": "Cactus Lake / Manito",
+    "kbd": 22.5
+   },
+   {
+    "month": "2026-08",
+    "system": "Cactus Lake / Manito",
+    "kbd": 20.4
+   },
+   {
+    "month": "2022-01",
+    "system": "Court / Winter",
+    "kbd": 4.9
+   },
+   {
+    "month": "2022-02",
+    "system": "Court / Winter",
+    "kbd": 5.1
+   },
+   {
+    "month": "2022-03",
+    "system": "Court / Winter",
+    "kbd": 5.7
+   },
+   {
+    "month": "2022-04",
+    "system": "Court / Winter",
+    "kbd": 6.0
+   },
+   {
+    "month": "2022-05",
+    "system": "Court / Winter",
+    "kbd": 5.2
+   },
+   {
+    "month": "2022-06",
+    "system": "Court / Winter",
+    "kbd": 4.4
+   },
+   {
+    "month": "2022-07",
+    "system": "Court / Winter",
+    "kbd": 5.3
+   },
+   {
+    "month": "2022-08",
+    "system": "Court / Winter",
+    "kbd": 5.7
+   },
+   {
+    "month": "2022-09",
+    "system": "Court / Winter",
+    "kbd": 5.0
+   },
+   {
+    "month": "2022-10",
+    "system": "Court / Winter",
+    "kbd": 4.9
+   },
+   {
+    "month": "2022-11",
+    "system": "Court / Winter",
+    "kbd": 5.2
+   },
+   {
+    "month": "2022-12",
+    "system": "Court / Winter",
+    "kbd": 4.5
+   },
+   {
+    "month": "2023-01",
+    "system": "Court / Winter",
+    "kbd": 5.5
+   },
+   {
+    "month": "2023-02",
+    "system": "Court / Winter",
+    "kbd": 6.2
+   },
+   {
+    "month": "2023-03",
+    "system": "Court / Winter",
+    "kbd": 6.4
+   },
+   {
+    "month": "2023-04",
+    "system": "Court / Winter",
+    "kbd": 6.1
+   },
+   {
+    "month": "2023-05",
+    "system": "Court / Winter",
+    "kbd": 4.2
+   },
+   {
+    "month": "2023-06",
+    "system": "Court / Winter",
+    "kbd": 4.8
+   },
+   {
+    "month": "2023-07",
+    "system": "Court / Winter",
+    "kbd": 5.6
+   },
+   {
+    "month": "2023-08",
+    "system": "Court / Winter",
+    "kbd": 6.1
+   },
+   {
+    "month": "2023-09",
+    "system": "Court / Winter",
+    "kbd": 4.9
+   },
+   {
+    "month": "2023-10",
+    "system": "Court / Winter",
+    "kbd": 3.1
+   },
+   {
+    "month": "2023-11",
+    "system": "Court / Winter",
+    "kbd": 4.0
+   },
+   {
+    "month": "2023-12",
+    "system": "Court / Winter",
+    "kbd": 5.4
+   },
+   {
+    "month": "2024-01",
+    "system": "Court / Winter",
+    "kbd": 5.2
+   },
+   {
+    "month": "2024-02",
+    "system": "Court / Winter",
+    "kbd": 4.8
+   },
+   {
+    "month": "2024-03",
+    "system": "Court / Winter",
+    "kbd": 5.1
+   },
+   {
+    "month": "2024-04",
+    "system": "Court / Winter",
+    "kbd": 5.5
+   },
+   {
+    "month": "2024-05",
+    "system": "Court / Winter",
+    "kbd": 3.3
+   },
+   {
+    "month": "2024-06",
+    "system": "Court / Winter",
+    "kbd": 5.2
+   },
+   {
+    "month": "2024-07",
+    "system": "Court / Winter",
+    "kbd": 4.5
+   },
+   {
+    "month": "2024-08",
+    "system": "Court / Winter",
+    "kbd": 4.5
+   },
+   {
+    "month": "2024-09",
+    "system": "Court / Winter",
+    "kbd": 3.4
+   },
+   {
+    "month": "2024-10",
+    "system": "Court / Winter",
+    "kbd": 2.7
+   },
+   {
+    "month": "2024-11",
+    "system": "Court / Winter",
+    "kbd": 4.2
+   },
+   {
+    "month": "2024-12",
+    "system": "Court / Winter",
+    "kbd": 4.1
+   },
+   {
+    "month": "2025-01",
+    "system": "Court / Winter",
+    "kbd": 5.3
+   },
+   {
+    "month": "2025-02",
+    "system": "Court / Winter",
+    "kbd": 4.9
+   },
+   {
+    "month": "2025-03",
+    "system": "Court / Winter",
+    "kbd": 6.3
+   },
+   {
+    "month": "2025-04",
+    "system": "Court / Winter",
+    "kbd": 6.2
+   },
+   {
+    "month": "2025-05",
+    "system": "Court / Winter",
+    "kbd": 5.8
+   },
+   {
+    "month": "2025-06",
+    "system": "Court / Winter",
+    "kbd": 5.8
+   },
+   {
+    "month": "2025-07",
+    "system": "Court / Winter",
+    "kbd": 5.8
+   },
+   {
+    "month": "2025-08",
+    "system": "Court / Winter",
+    "kbd": 4.9
+   },
+   {
+    "month": "2025-09",
+    "system": "Court / Winter",
+    "kbd": 4.9
+   },
+   {
+    "month": "2025-10",
+    "system": "Court / Winter",
+    "kbd": 4.8
+   },
+   {
+    "month": "2025-11",
+    "system": "Court / Winter",
+    "kbd": 4.6
+   },
+   {
+    "month": "2025-12",
+    "system": "Court / Winter",
+    "kbd": 4.6
+   },
+   {
+    "month": "2026-01",
+    "system": "Court / Winter",
+    "kbd": 4.6
+   },
+   {
+    "month": "2026-02",
+    "system": "Court / Winter",
+    "kbd": 4.7
+   },
+   {
+    "month": "2026-03",
+    "system": "Court / Winter",
+    "kbd": 4.9
+   },
+   {
+    "month": "2026-04",
+    "system": "Court / Winter",
+    "kbd": 3.4
+   },
+   {
+    "month": "2026-05",
+    "system": "Court / Winter",
+    "kbd": 2.9
+   },
+   {
+    "month": "2026-06",
+    "system": "Court / Winter",
+    "kbd": 4.1
+   },
+   {
+    "month": "2026-07",
+    "system": "Court / Winter",
+    "kbd": 3.9
+   },
+   {
+    "month": "2026-08",
+    "system": "Court / Winter",
+    "kbd": 4.2
+   },
+   {
+    "month": "2022-01",
+    "system": "Husky",
+    "kbd": 184.1
+   },
+   {
+    "month": "2022-02",
+    "system": "Husky",
+    "kbd": 185.9
+   },
+   {
+    "month": "2022-03",
+    "system": "Husky",
+    "kbd": 151.7
+   },
+   {
+    "month": "2022-04",
+    "system": "Husky",
+    "kbd": 159.5
+   },
+   {
+    "month": "2022-05",
+    "system": "Husky",
+    "kbd": 162.2
+   },
+   {
+    "month": "2022-06",
+    "system": "Husky",
+    "kbd": 172.5
+   },
+   {
+    "month": "2022-07",
+    "system": "Husky",
+    "kbd": 173.8
+   },
+   {
+    "month": "2022-08",
+    "system": "Husky",
+    "kbd": 167.1
+   },
+   {
+    "month": "2022-09",
+    "system": "Husky",
+    "kbd": 167.8
+   },
+   {
+    "month": "2022-10",
+    "system": "Husky",
+    "kbd": 171.3
+   },
+   {
+    "month": "2022-11",
+    "system": "Husky",
+    "kbd": 178.5
+   },
+   {
+    "month": "2022-12",
+    "system": "Husky",
+    "kbd": 152.2
+   },
+   {
+    "month": "2023-01",
+    "system": "Husky",
+    "kbd": 170.7
+   },
+   {
+    "month": "2023-02",
+    "system": "Husky",
+    "kbd": 168.9
+   },
+   {
+    "month": "2023-03",
+    "system": "Husky",
+    "kbd": 176.7
+   },
+   {
+    "month": "2023-04",
+    "system": "Husky",
+    "kbd": 164.6
+   },
+   {
+    "month": "2023-05",
+    "system": "Husky",
+    "kbd": 177.3
+   },
+   {
+    "month": "2023-06",
+    "system": "Husky",
+    "kbd": 187.8
+   },
+   {
+    "month": "2023-07",
+    "system": "Husky",
+    "kbd": 192.7
+   },
+   {
+    "month": "2023-08",
+    "system": "Husky",
+    "kbd": 183.4
+   },
+   {
+    "month": "2023-09",
+    "system": "Husky",
+    "kbd": 187.7
+   },
+   {
+    "month": "2023-10",
+    "system": "Husky",
+    "kbd": 172.3
+   },
+   {
+    "month": "2023-11",
+    "system": "Husky",
+    "kbd": 186.4
+   },
+   {
+    "month": "2023-12",
+    "system": "Husky",
+    "kbd": 199.7
+   },
+   {
+    "month": "2024-01",
+    "system": "Husky",
+    "kbd": 191.1
+   },
+   {
+    "month": "2024-02",
+    "system": "Husky",
+    "kbd": 198.7
+   },
+   {
+    "month": "2024-03",
+    "system": "Husky",
+    "kbd": 198.1
+   },
+   {
+    "month": "2024-04",
+    "system": "Husky",
+    "kbd": 190.1
+   },
+   {
+    "month": "2024-05",
+    "system": "Husky",
+    "kbd": 159.0
+   },
+   {
+    "month": "2024-06",
+    "system": "Husky",
+    "kbd": 138.9
+   },
+   {
+    "month": "2024-07",
+    "system": "Husky",
+    "kbd": 172.6
+   },
+   {
+    "month": "2024-08",
+    "system": "Husky",
+    "kbd": 191.9
+   },
+   {
+    "month": "2024-09",
+    "system": "Husky",
+    "kbd": 182.7
+   },
+   {
+    "month": "2024-10",
+    "system": "Husky",
+    "kbd": 188.9
+   },
+   {
+    "month": "2024-11",
+    "system": "Husky",
+    "kbd": 178.0
+   },
+   {
+    "month": "2024-12",
+    "system": "Husky",
+    "kbd": 186.6
+   },
+   {
+    "month": "2025-01",
+    "system": "Husky",
+    "kbd": 195.9
+   },
+   {
+    "month": "2025-02",
+    "system": "Husky",
+    "kbd": 193.1
+   },
+   {
+    "month": "2025-03",
+    "system": "Husky",
+    "kbd": 197.6
+   },
+   {
+    "month": "2025-04",
+    "system": "Husky",
+    "kbd": 189.4
+   },
+   {
+    "month": "2025-05",
+    "system": "Husky",
+    "kbd": 171.3
+   },
+   {
+    "month": "2025-06",
+    "system": "Husky",
+    "kbd": 163.7
+   },
+   {
+    "month": "2025-07",
+    "system": "Husky",
+    "kbd": 166.5
+   },
+   {
+    "month": "2025-08",
+    "system": "Husky",
+    "kbd": 151.0
+   },
+   {
+    "month": "2025-09",
+    "system": "Husky",
+    "kbd": 160.2
+   },
+   {
+    "month": "2025-10",
+    "system": "Husky",
+    "kbd": 168.9
+   },
+   {
+    "month": "2025-11",
+    "system": "Husky",
+    "kbd": 179.1
+   },
+   {
+    "month": "2025-12",
+    "system": "Husky",
+    "kbd": 180.0
+   },
+   {
+    "month": "2026-01",
+    "system": "Husky",
+    "kbd": 171.8
+   },
+   {
+    "month": "2026-02",
+    "system": "Husky",
+    "kbd": 169.3
+   },
+   {
+    "month": "2026-03",
+    "system": "Husky",
+    "kbd": 180.1
+   },
+   {
+    "month": "2026-04",
+    "system": "Husky",
+    "kbd": 168.7
+   },
+   {
+    "month": "2026-05",
+    "system": "Husky",
+    "kbd": 176.2
+   },
+   {
+    "month": "2026-06",
+    "system": "Husky",
+    "kbd": 157.8
+   },
+   {
+    "month": "2026-07",
+    "system": "Husky",
+    "kbd": 172.9
+   },
+   {
+    "month": "2026-08",
+    "system": "Husky",
+    "kbd": 183.2
+   },
+   {
+    "month": "2022-01",
+    "system": "Kerrobert Light",
+    "kbd": 31.8
+   },
+   {
+    "month": "2022-02",
+    "system": "Kerrobert Light",
+    "kbd": 33.1
+   },
+   {
+    "month": "2022-03",
+    "system": "Kerrobert Light",
+    "kbd": 34.7
+   },
+   {
+    "month": "2022-04",
+    "system": "Kerrobert Light",
+    "kbd": 34.2
+   },
+   {
+    "month": "2022-05",
+    "system": "Kerrobert Light",
+    "kbd": 35.5
+   },
+   {
+    "month": "2022-06",
+    "system": "Kerrobert Light",
+    "kbd": 33.2
+   },
+   {
+    "month": "2022-07",
+    "system": "Kerrobert Light",
+    "kbd": 38.2
+   },
+   {
+    "month": "2022-08",
+    "system": "Kerrobert Light",
+    "kbd": 39.3
+   },
+   {
+    "month": "2022-09",
+    "system": "Kerrobert Light",
+    "kbd": 39.3
+   },
+   {
+    "month": "2022-10",
+    "system": "Kerrobert Light",
+    "kbd": 40.9
+   },
+   {
+    "month": "2022-11",
+    "system": "Kerrobert Light",
+    "kbd": 37.3
+   },
+   {
+    "month": "2022-12",
+    "system": "Kerrobert Light",
+    "kbd": 35.7
+   },
+   {
+    "month": "2023-01",
+    "system": "Kerrobert Light",
+    "kbd": 37.8
+   },
+   {
+    "month": "2023-02",
+    "system": "Kerrobert Light",
+    "kbd": 39.4
+   },
+   {
+    "month": "2023-03",
+    "system": "Kerrobert Light",
+    "kbd": 40.1
+   },
+   {
+    "month": "2023-04",
+    "system": "Kerrobert Light",
+    "kbd": 39.4
+   },
+   {
+    "month": "2023-05",
+    "system": "Kerrobert Light",
+    "kbd": 37.7
+   },
+   {
+    "month": "2023-06",
+    "system": "Kerrobert Light",
+    "kbd": 35.3
+   },
+   {
+    "month": "2023-07",
+    "system": "Kerrobert Light",
+    "kbd": 36.8
+   },
+   {
+    "month": "2023-08",
+    "system": "Kerrobert Light",
+    "kbd": 36.1
+   },
+   {
+    "month": "2023-09",
+    "system": "Kerrobert Light",
+    "kbd": 37.7
+   },
+   {
+    "month": "2023-10",
+    "system": "Kerrobert Light",
+    "kbd": 37.7
+   },
+   {
+    "month": "2023-11",
+    "system": "Kerrobert Light",
+    "kbd": 37.9
+   },
+   {
+    "month": "2023-12",
+    "system": "Kerrobert Light",
+    "kbd": 33.9
+   },
+   {
+    "month": "2024-01",
+    "system": "Kerrobert Light",
+    "kbd": 33.2
+   },
+   {
+    "month": "2024-02",
+    "system": "Kerrobert Light",
+    "kbd": 36.0
+   },
+   {
+    "month": "2024-03",
+    "system": "Kerrobert Light",
+    "kbd": 37.4
+   },
+   {
+    "month": "2024-04",
+    "system": "Kerrobert Light",
+    "kbd": 35.4
+   },
+   {
+    "month": "2024-05",
+    "system": "Kerrobert Light",
+    "kbd": 35.4
+   },
+   {
+    "month": "2024-06",
+    "system": "Kerrobert Light",
+    "kbd": 32.6
+   },
+   {
+    "month": "2024-07",
+    "system": "Kerrobert Light",
+    "kbd": 36.1
+   },
+   {
+    "month": "2024-08",
+    "system": "Kerrobert Light",
+    "kbd": 34.2
+   },
+   {
+    "month": "2024-09",
+    "system": "Kerrobert Light",
+    "kbd": 33.1
+   },
+   {
+    "month": "2024-10",
+    "system": "Kerrobert Light",
+    "kbd": 35.4
+   },
+   {
+    "month": "2024-11",
+    "system": "Kerrobert Light",
+    "kbd": 33.1
+   },
+   {
+    "month": "2024-12",
+    "system": "Kerrobert Light",
+    "kbd": 30.0
+   },
+   {
+    "month": "2025-01",
+    "system": "Kerrobert Light",
+    "kbd": 30.8
+   },
+   {
+    "month": "2025-02",
+    "system": "Kerrobert Light",
+    "kbd": 29.1
+   },
+   {
+    "month": "2025-03",
+    "system": "Kerrobert Light",
+    "kbd": 33.6
+   },
+   {
+    "month": "2025-04",
+    "system": "Kerrobert Light",
+    "kbd": 33.0
+   },
+   {
+    "month": "2025-05",
+    "system": "Kerrobert Light",
+    "kbd": 36.4
+   },
+   {
+    "month": "2025-06",
+    "system": "Kerrobert Light",
+    "kbd": 28.1
+   },
+   {
+    "month": "2025-07",
+    "system": "Kerrobert Light",
+    "kbd": 29.3
+   },
+   {
+    "month": "2025-08",
+    "system": "Kerrobert Light",
+    "kbd": 28.0
+   },
+   {
+    "month": "2025-09",
+    "system": "Kerrobert Light",
+    "kbd": 40.4
+   },
+   {
+    "month": "2025-10",
+    "system": "Kerrobert Light",
+    "kbd": 29.0
+   },
+   {
+    "month": "2025-11",
+    "system": "Kerrobert Light",
+    "kbd": 27.2
+   },
+   {
+    "month": "2025-12",
+    "system": "Kerrobert Light",
+    "kbd": 25.2
+   },
+   {
+    "month": "2026-01",
+    "system": "Kerrobert Light",
+    "kbd": 26.0
+   },
+   {
+    "month": "2026-02",
+    "system": "Kerrobert Light",
+    "kbd": 26.5
+   },
+   {
+    "month": "2026-03",
+    "system": "Kerrobert Light",
+    "kbd": 25.5
+   },
+   {
+    "month": "2026-04",
+    "system": "Kerrobert Light",
+    "kbd": 26.0
+   },
+   {
+    "month": "2026-05",
+    "system": "Kerrobert Light",
+    "kbd": 27.5
+   },
+   {
+    "month": "2026-06",
+    "system": "Kerrobert Light",
+    "kbd": 22.7
+   },
+   {
+    "month": "2026-07",
+    "system": "Kerrobert Light",
+    "kbd": 25.4
+   },
+   {
+    "month": "2026-08",
+    "system": "Kerrobert Light",
+    "kbd": 24.9
+   },
+   {
+    "month": "2022-01",
+    "system": "Kingston Midstream",
+    "kbd": 260.7
+   },
+   {
+    "month": "2022-02",
+    "system": "Kingston Midstream",
+    "kbd": 253.7
+   },
+   {
+    "month": "2022-03",
+    "system": "Kingston Midstream",
+    "kbd": 267.5
+   },
+   {
+    "month": "2022-04",
+    "system": "Kingston Midstream",
+    "kbd": 257.1
+   },
+   {
+    "month": "2022-05",
+    "system": "Kingston Midstream",
+    "kbd": 259.7
+   },
+   {
+    "month": "2022-06",
+    "system": "Kingston Midstream",
+    "kbd": 258.9
+   },
+   {
+    "month": "2022-07",
+    "system": "Kingston Midstream",
+    "kbd": 254.7
+   },
+   {
+    "month": "2022-08",
+    "system": "Kingston Midstream",
+    "kbd": 266.1
+   },
+   {
+    "month": "2022-09",
+    "system": "Kingston Midstream",
+    "kbd": 269.1
+   },
+   {
+    "month": "2022-10",
+    "system": "Kingston Midstream",
+    "kbd": 267.2
+   },
+   {
+    "month": "2022-11",
+    "system": "Kingston Midstream",
+    "kbd": 277.0
+   },
+   {
+    "month": "2022-12",
+    "system": "Kingston Midstream",
+    "kbd": 272.3
+   },
+   {
+    "month": "2023-01",
+    "system": "Kingston Midstream",
+    "kbd": 267.2
+   },
+   {
+    "month": "2023-02",
+    "system": "Kingston Midstream",
+    "kbd": 271.3
+   },
+   {
+    "month": "2023-03",
+    "system": "Kingston Midstream",
+    "kbd": 272.5
+   },
+   {
+    "month": "2023-04",
+    "system": "Kingston Midstream",
+    "kbd": 259.9
+   },
+   {
+    "month": "2023-05",
+    "system": "Kingston Midstream",
+    "kbd": 264.8
+   },
+   {
+    "month": "2023-06",
+    "system": "Kingston Midstream",
+    "kbd": 257.6
+   },
+   {
+    "month": "2023-07",
+    "system": "Kingston Midstream",
+    "kbd": 271.8
+   },
+   {
+    "month": "2023-08",
+    "system": "Kingston Midstream",
+    "kbd": 269.2
+   },
+   {
+    "month": "2023-09",
+    "system": "Kingston Midstream",
+    "kbd": 276.9
+   },
+   {
+    "month": "2023-10",
+    "system": "Kingston Midstream",
+    "kbd": 280.3
+   },
+   {
+    "month": "2023-11",
+    "system": "Kingston Midstream",
+    "kbd": 283.2
+   },
+   {
+    "month": "2023-12",
+    "system": "Kingston Midstream",
+    "kbd": 275.9
+   },
+   {
+    "month": "2024-01",
+    "system": "Kingston Midstream",
+    "kbd": 267.9
+   },
+   {
+    "month": "2024-02",
+    "system": "Kingston Midstream",
+    "kbd": 270.9
+   },
+   {
+    "month": "2024-03",
+    "system": "Kingston Midstream",
+    "kbd": 283.0
+   },
+   {
+    "month": "2024-04",
+    "system": "Kingston Midstream",
+    "kbd": 276.6
+   },
+   {
+    "month": "2024-05",
+    "system": "Kingston Midstream",
+    "kbd": 280.0
+   },
+   {
+    "month": "2024-06",
+    "system": "Kingston Midstream",
+    "kbd": 268.1
+   },
+   {
+    "month": "2024-07",
+    "system": "Kingston Midstream",
+    "kbd": 264.9
+   },
+   {
+    "month": "2024-08",
+    "system": "Kingston Midstream",
+    "kbd": 275.3
+   },
+   {
+    "month": "2024-09",
+    "system": "Kingston Midstream",
+    "kbd": 272.4
+   },
+   {
+    "month": "2024-10",
+    "system": "Kingston Midstream",
+    "kbd": 275.9
+   },
+   {
+    "month": "2024-11",
+    "system": "Kingston Midstream",
+    "kbd": 279.2
+   },
+   {
+    "month": "2024-12",
+    "system": "Kingston Midstream",
+    "kbd": 286.1
+   },
+   {
+    "month": "2025-01",
+    "system": "Kingston Midstream",
+    "kbd": 282.9
+   },
+   {
+    "month": "2025-02",
+    "system": "Kingston Midstream",
+    "kbd": 280.9
+   },
+   {
+    "month": "2025-03",
+    "system": "Kingston Midstream",
+    "kbd": 294.2
+   },
+   {
+    "month": "2025-04",
+    "system": "Kingston Midstream",
+    "kbd": 287.4
+   },
+   {
+    "month": "2025-05",
+    "system": "Kingston Midstream",
+    "kbd": 281.4
+   },
+   {
+    "month": "2025-06",
+    "system": "Kingston Midstream",
+    "kbd": 276.3
+   },
+   {
+    "month": "2025-07",
+    "system": "Kingston Midstream",
+    "kbd": 269.4
+   },
+   {
+    "month": "2025-08",
+    "system": "Kingston Midstream",
+    "kbd": 269.1
+   },
+   {
+    "month": "2025-09",
+    "system": "Kingston Midstream",
+    "kbd": 268.4
+   },
+   {
+    "month": "2025-10",
+    "system": "Kingston Midstream",
+    "kbd": 274.0
+   },
+   {
+    "month": "2025-11",
+    "system": "Kingston Midstream",
+    "kbd": 280.6
+   },
+   {
+    "month": "2025-12",
+    "system": "Kingston Midstream",
+    "kbd": 277.4
+   },
+   {
+    "month": "2026-01",
+    "system": "Kingston Midstream",
+    "kbd": 271.6
+   },
+   {
+    "month": "2026-02",
+    "system": "Kingston Midstream",
+    "kbd": 284.3
+   },
+   {
+    "month": "2026-03",
+    "system": "Kingston Midstream",
+    "kbd": 285.8
+   },
+   {
+    "month": "2026-04",
+    "system": "Kingston Midstream",
+    "kbd": 280.5
+   },
+   {
+    "month": "2026-05",
+    "system": "Kingston Midstream",
+    "kbd": 277.3
+   },
+   {
+    "month": "2026-06",
+    "system": "Kingston Midstream",
+    "kbd": 266.2
+   },
+   {
+    "month": "2026-07",
+    "system": "Kingston Midstream",
+    "kbd": 269.8
+   },
+   {
+    "month": "2026-08",
+    "system": "Kingston Midstream",
+    "kbd": 275.7
+   },
+   {
+    "month": "2022-01",
+    "system": "Mid Saskatchewan",
+    "kbd": 42.1
+   },
+   {
+    "month": "2022-02",
+    "system": "Mid Saskatchewan",
+    "kbd": 43.1
+   },
+   {
+    "month": "2022-03",
+    "system": "Mid Saskatchewan",
+    "kbd": 43.8
+   },
+   {
+    "month": "2022-04",
+    "system": "Mid Saskatchewan",
+    "kbd": 43.1
+   },
+   {
+    "month": "2022-05",
+    "system": "Mid Saskatchewan",
+    "kbd": 41.1
+   },
+   {
+    "month": "2022-06",
+    "system": "Mid Saskatchewan",
+    "kbd": 40.2
+   },
+   {
+    "month": "2022-07",
+    "system": "Mid Saskatchewan",
+    "kbd": 38.1
+   },
+   {
+    "month": "2022-08",
+    "system": "Mid Saskatchewan",
+    "kbd": 36.9
+   },
+   {
+    "month": "2022-09",
+    "system": "Mid Saskatchewan",
+    "kbd": 42.1
+   },
+   {
+    "month": "2022-10",
+    "system": "Mid Saskatchewan",
+    "kbd": 44.9
+   },
+   {
+    "month": "2022-11",
+    "system": "Mid Saskatchewan",
+    "kbd": 44.9
+   },
+   {
+    "month": "2022-12",
+    "system": "Mid Saskatchewan",
+    "kbd": 40.9
+   },
+   {
+    "month": "2023-01",
+    "system": "Mid Saskatchewan",
+    "kbd": 46.1
+   },
+   {
+    "month": "2023-02",
+    "system": "Mid Saskatchewan",
+    "kbd": 45.8
+   },
+   {
+    "month": "2023-03",
+    "system": "Mid Saskatchewan",
+    "kbd": 46.9
+   },
+   {
+    "month": "2023-04",
+    "system": "Mid Saskatchewan",
+    "kbd": 40.5
+   },
+   {
+    "month": "2023-05",
+    "system": "Mid Saskatchewan",
+    "kbd": 43.0
+   },
+   {
+    "month": "2023-06",
+    "system": "Mid Saskatchewan",
+    "kbd": 44.4
+   },
+   {
+    "month": "2023-07",
+    "system": "Mid Saskatchewan",
+    "kbd": 48.2
+   },
+   {
+    "month": "2023-08",
+    "system": "Mid Saskatchewan",
+    "kbd": 49.5
+   },
+   {
+    "month": "2023-09",
+    "system": "Mid Saskatchewan",
+    "kbd": 50.0
+   },
+   {
+    "month": "2023-10",
+    "system": "Mid Saskatchewan",
+    "kbd": 49.6
+   },
+   {
+    "month": "2023-11",
+    "system": "Mid Saskatchewan",
+    "kbd": 49.1
+   },
+   {
+    "month": "2023-12",
+    "system": "Mid Saskatchewan",
+    "kbd": 47.2
+   },
+   {
+    "month": "2024-01",
+    "system": "Mid Saskatchewan",
+    "kbd": 41.5
+   },
+   {
+    "month": "2024-02",
+    "system": "Mid Saskatchewan",
+    "kbd": 47.9
+   },
+   {
+    "month": "2024-03",
+    "system": "Mid Saskatchewan",
+    "kbd": 48.5
+   },
+   {
+    "month": "2024-04",
+    "system": "Mid Saskatchewan",
+    "kbd": 47.0
+   },
+   {
+    "month": "2024-05",
+    "system": "Mid Saskatchewan",
+    "kbd": 44.7
+   },
+   {
+    "month": "2024-06",
+    "system": "Mid Saskatchewan",
+    "kbd": 49.8
+   },
+   {
+    "month": "2024-07",
+    "system": "Mid Saskatchewan",
+    "kbd": 46.9
+   },
+   {
+    "month": "2024-08",
+    "system": "Mid Saskatchewan",
+    "kbd": 47.2
+   },
+   {
+    "month": "2024-09",
+    "system": "Mid Saskatchewan",
+    "kbd": 46.0
+   },
+   {
+    "month": "2024-10",
+    "system": "Mid Saskatchewan",
+    "kbd": 49.3
+   },
+   {
+    "month": "2024-11",
+    "system": "Mid Saskatchewan",
+    "kbd": 45.9
+   },
+   {
+    "month": "2024-12",
+    "system": "Mid Saskatchewan",
+    "kbd": 39.3
+   },
+   {
+    "month": "2025-01",
+    "system": "Mid Saskatchewan",
+    "kbd": 42.8
+   },
+   {
+    "month": "2025-02",
+    "system": "Mid Saskatchewan",
+    "kbd": 36.8
+   },
+   {
+    "month": "2025-03",
+    "system": "Mid Saskatchewan",
+    "kbd": 43.7
+   },
+   {
+    "month": "2025-04",
+    "system": "Mid Saskatchewan",
+    "kbd": 32.4
+   },
+   {
+    "month": "2025-05",
+    "system": "Mid Saskatchewan",
+    "kbd": 35.7
+   },
+   {
+    "month": "2025-06",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.0
+   },
+   {
+    "month": "2025-07",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.5
+   },
+   {
+    "month": "2025-08",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.3
+   },
+   {
+    "month": "2025-09",
+    "system": "Mid Saskatchewan",
+    "kbd": 30.5
+   },
+   {
+    "month": "2025-10",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.5
+   },
+   {
+    "month": "2025-11",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.8
+   },
+   {
+    "month": "2025-12",
+    "system": "Mid Saskatchewan",
+    "kbd": 29.8
+   },
+   {
+    "month": "2026-01",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.3
+   },
+   {
+    "month": "2026-02",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.0
+   },
+   {
+    "month": "2026-03",
+    "system": "Mid Saskatchewan",
+    "kbd": 35.2
+   },
+   {
+    "month": "2026-04",
+    "system": "Mid Saskatchewan",
+    "kbd": 30.3
+   },
+   {
+    "month": "2026-05",
+    "system": "Mid Saskatchewan",
+    "kbd": 30.9
+   },
+   {
+    "month": "2026-06",
+    "system": "Mid Saskatchewan",
+    "kbd": 29.0
+   },
+   {
+    "month": "2026-07",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.4
+   },
+   {
+    "month": "2026-08",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.5
+   },
+   {
+    "month": "2022-01",
+    "system": "Plato",
+    "kbd": 4.6
+   },
+   {
+    "month": "2022-02",
+    "system": "Plato",
+    "kbd": 4.3
+   },
+   {
+    "month": "2022-03",
+    "system": "Plato",
+    "kbd": 4.2
+   },
+   {
+    "month": "2022-04",
+    "system": "Plato",
+    "kbd": 4.9
+   },
+   {
+    "month": "2022-05",
+    "system": "Plato",
+    "kbd": 5.1
+   },
+   {
+    "month": "2022-06",
+    "system": "Plato",
+    "kbd": 5.2
+   },
+   {
+    "month": "2022-07",
+    "system": "Plato",
+    "kbd": 4.7
+   },
+   {
+    "month": "2022-08",
+    "system": "Plato",
+    "kbd": 4.4
+   },
+   {
+    "month": "2022-09",
+    "system": "Plato",
+    "kbd": 5.3
+   },
+   {
+    "month": "2022-10",
+    "system": "Plato",
+    "kbd": 5.5
+   },
+   {
+    "month": "2022-11",
+    "system": "Plato",
+    "kbd": 5.1
+   },
+   {
+    "month": "2022-12",
+    "system": "Plato",
+    "kbd": 4.3
+   },
+   {
+    "month": "2023-01",
+    "system": "Plato",
+    "kbd": 5.2
+   },
+   {
+    "month": "2023-02",
+    "system": "Plato",
+    "kbd": 4.4
+   },
+   {
+    "month": "2023-03",
+    "system": "Plato",
+    "kbd": 4.6
+   },
+   {
+    "month": "2023-04",
+    "system": "Plato",
+    "kbd": 3.6
+   },
+   {
+    "month": "2023-05",
+    "system": "Plato",
+    "kbd": 4.7
+   },
+   {
+    "month": "2023-06",
+    "system": "Plato",
+    "kbd": 4.5
+   },
+   {
+    "month": "2023-07",
+    "system": "Plato",
+    "kbd": 5.0
+   },
+   {
+    "month": "2023-08",
+    "system": "Plato",
+    "kbd": 5.7
+   },
+   {
+    "month": "2023-09",
+    "system": "Plato",
+    "kbd": 5.7
+   },
+   {
+    "month": "2023-10",
+    "system": "Plato",
+    "kbd": 4.3
+   },
+   {
+    "month": "2023-11",
+    "system": "Plato",
+    "kbd": 4.5
+   },
+   {
+    "month": "2023-12",
+    "system": "Plato",
+    "kbd": 3.7
+   },
+   {
+    "month": "2024-01",
+    "system": "Plato",
+    "kbd": 3.3
+   },
+   {
+    "month": "2024-02",
+    "system": "Plato",
+    "kbd": 3.5
+   },
+   {
+    "month": "2024-03",
+    "system": "Plato",
+    "kbd": 6.7
+   },
+   {
+    "month": "2024-04",
+    "system": "Plato",
+    "kbd": 5.6
+   },
+   {
+    "month": "2024-05",
+    "system": "Plato",
+    "kbd": 6.7
+   },
+   {
+    "month": "2024-06",
+    "system": "Plato",
+    "kbd": 8.3
+   },
+   {
+    "month": "2024-07",
+    "system": "Plato",
+    "kbd": 7.3
+   },
+   {
+    "month": "2024-08",
+    "system": "Plato",
+    "kbd": 7.9
+   },
+   {
+    "month": "2024-09",
+    "system": "Plato",
+    "kbd": 6.7
+   },
+   {
+    "month": "2024-10",
+    "system": "Plato",
+    "kbd": 8.7
+   },
+   {
+    "month": "2024-11",
+    "system": "Plato",
+    "kbd": 6.6
+   },
+   {
+    "month": "2024-12",
+    "system": "Plato",
+    "kbd": 5.9
+   },
+   {
+    "month": "2025-01",
+    "system": "Plato",
+    "kbd": 5.7
+   },
+   {
+    "month": "2025-02",
+    "system": "Plato",
+    "kbd": 5.4
+   },
+   {
+    "month": "2025-03",
+    "system": "Plato",
+    "kbd": 6.3
+   },
+   {
+    "month": "2025-04",
+    "system": "Plato",
+    "kbd": 6.4
+   },
+   {
+    "month": "2025-05",
+    "system": "Plato",
+    "kbd": 6.4
+   },
+   {
+    "month": "2025-06",
+    "system": "Plato",
+    "kbd": 7.3
+   },
+   {
+    "month": "2025-07",
+    "system": "Plato",
+    "kbd": 6.2
+   },
+   {
+    "month": "2025-08",
+    "system": "Plato",
+    "kbd": 7.2
+   },
+   {
+    "month": "2025-09",
+    "system": "Plato",
+    "kbd": 6.7
+   },
+   {
+    "month": "2025-10",
+    "system": "Plato",
+    "kbd": 6.9
+   },
+   {
+    "month": "2025-11",
+    "system": "Plato",
+    "kbd": 6.7
+   },
+   {
+    "month": "2025-12",
+    "system": "Plato",
+    "kbd": 5.0
+   },
+   {
+    "month": "2026-01",
+    "system": "Plato",
+    "kbd": 4.8
+   },
+   {
+    "month": "2026-02",
+    "system": "Plato",
+    "kbd": 5.6
+   },
+   {
+    "month": "2026-03",
+    "system": "Plato",
+    "kbd": 6.7
+   },
+   {
+    "month": "2026-04",
+    "system": "Plato",
+    "kbd": 6.7
+   },
+   {
+    "month": "2026-05",
+    "system": "Plato",
+    "kbd": 7.0
+   },
+   {
+    "month": "2026-06",
+    "system": "Plato",
+    "kbd": 5.7
+   },
+   {
+    "month": "2026-07",
+    "system": "Plato",
+    "kbd": 7.4
+   },
+   {
+    "month": "2026-08",
+    "system": "Plato",
+    "kbd": 6.4
+   },
+   {
+    "month": "2022-01",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 96.4
+   },
+   {
+    "month": "2022-02",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 87.8
+   },
+   {
+    "month": "2022-03",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 96.3
+   },
+   {
+    "month": "2022-04",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 93.2
+   },
+   {
+    "month": "2022-05",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 95.7
+   },
+   {
+    "month": "2022-06",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 94.6
+   },
+   {
+    "month": "2022-07",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 88.9
+   },
+   {
+    "month": "2022-08",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 83.7
+   },
+   {
+    "month": "2022-09",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 89.0
+   },
+   {
+    "month": "2022-10",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 86.8
+   },
+   {
+    "month": "2022-11",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 78.9
+   },
+   {
+    "month": "2022-12",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 91.4
+   },
+   {
+    "month": "2023-01",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 88.4
+   },
+   {
+    "month": "2023-02",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 83.4
+   },
+   {
+    "month": "2023-03",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 92.3
+   },
+   {
+    "month": "2023-04",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 100.6
+   },
+   {
+    "month": "2023-05",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 95.7
+   },
+   {
+    "month": "2023-06",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 92.5
+   },
+   {
+    "month": "2023-07",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 87.1
+   },
+   {
+    "month": "2023-08",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 84.7
+   },
+   {
+    "month": "2023-09",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 84.1
+   },
+   {
+    "month": "2023-10",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 84.1
+   },
+   {
+    "month": "2023-11",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 75.0
+   },
+   {
+    "month": "2023-12",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 90.2
+   },
+   {
+    "month": "2024-01",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 96.8
+   },
+   {
+    "month": "2024-02",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 90.3
+   },
+   {
+    "month": "2024-03",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 94.9
+   },
+   {
+    "month": "2024-04",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 100.8
+   },
+   {
+    "month": "2024-05",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 76.5
+   },
+   {
+    "month": "2024-06",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 85.2
+   },
+   {
+    "month": "2024-07",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 86.4
+   },
+   {
+    "month": "2024-08",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 80.4
+   },
+   {
+    "month": "2024-09",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 73.8
+   },
+   {
+    "month": "2024-10",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 85.2
+   },
+   {
+    "month": "2024-11",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 82.6
+   },
+   {
+    "month": "2024-12",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 79.7
+   },
+   {
+    "month": "2025-01",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 88.1
+   },
+   {
+    "month": "2025-02",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 85.5
+   },
+   {
+    "month": "2025-03",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 82.3
+   },
+   {
+    "month": "2025-04",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 75.1
+   },
+   {
+    "month": "2025-05",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 77.3
+   },
+   {
+    "month": "2025-06",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 74.7
+   },
+   {
+    "month": "2025-07",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 75.8
+   },
+   {
+    "month": "2025-08",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 76.1
+   },
+   {
+    "month": "2025-09",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 81.7
+   },
+   {
+    "month": "2025-10",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 80.9
+   },
+   {
+    "month": "2025-11",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 79.0
+   },
+   {
+    "month": "2025-12",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 77.7
+   },
+   {
+    "month": "2026-01",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 80.5
+   },
+   {
+    "month": "2026-02",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 83.6
+   },
+   {
+    "month": "2026-03",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 85.3
+   },
+   {
+    "month": "2026-04",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 79.8
+   },
+   {
+    "month": "2026-05",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 77.2
+   },
+   {
+    "month": "2026-06",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 78.2
+   },
+   {
+    "month": "2026-07",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 78.4
+   },
+   {
+    "month": "2026-08",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 78.2
+   }
+  ],
+  "total_monthly": [
+   {
+    "month": "2022-01",
+    "kbd": 658.2
+   },
+   {
+    "month": "2022-02",
+    "kbd": 643.0
+   },
+   {
+    "month": "2022-03",
+    "kbd": 641.5
+   },
+   {
+    "month": "2022-04",
+    "kbd": 639.6
+   },
+   {
+    "month": "2022-05",
+    "kbd": 642.1
+   },
+   {
+    "month": "2022-06",
+    "kbd": 655.7
+   },
+   {
+    "month": "2022-07",
+    "kbd": 648.5
+   },
+   {
+    "month": "2022-08",
+    "kbd": 654.3
+   },
+   {
+    "month": "2022-09",
+    "kbd": 665.2
+   },
+   {
+    "month": "2022-10",
+    "kbd": 660.8
+   },
+   {
+    "month": "2022-11",
+    "kbd": 668.4
+   },
+   {
+    "month": "2022-12",
+    "kbd": 666.1
+   },
+   {
+    "month": "2023-01",
+    "kbd": 669.2
+   },
+   {
+    "month": "2023-02",
+    "kbd": 668.2
+   },
+   {
+    "month": "2023-03",
+    "kbd": 672.6
+   },
+   {
+    "month": "2023-04",
+    "kbd": 651.6
+   },
+   {
+    "month": "2023-05",
+    "kbd": 652.7
+   },
+   {
+    "month": "2023-06",
+    "kbd": 663.6
+   },
+   {
+    "month": "2023-07",
+    "kbd": 681.2
+   },
+   {
+    "month": "2023-08",
+    "kbd": 669.5
+   },
+   {
+    "month": "2023-09",
+    "kbd": 682.2
+   },
+   {
+    "month": "2023-10",
+    "kbd": 667.4
+   },
+   {
+    "month": "2023-11",
+    "kbd": 677.7
+   },
+   {
+    "month": "2023-12",
+    "kbd": 720.0
+   },
+   {
+    "month": "2024-01",
+    "kbd": 675.5
+   },
+   {
+    "month": "2024-02",
+    "kbd": 690.6
+   },
+   {
+    "month": "2024-03",
+    "kbd": 705.8
+   },
+   {
+    "month": "2024-04",
+    "kbd": 701.8
+   },
+   {
+    "month": "2024-05",
+    "kbd": 632.5
+   },
+   {
+    "month": "2024-06",
+    "kbd": 614.8
+   },
+   {
+    "month": "2024-07",
+    "kbd": 644.3
+   },
+   {
+    "month": "2024-08",
+    "kbd": 678.5
+   },
+   {
+    "month": "2024-09",
+    "kbd": 650.5
+   },
+   {
+    "month": "2024-10",
+    "kbd": 681.3
+   },
+   {
+    "month": "2024-11",
+    "kbd": 662.9
+   },
+   {
+    "month": "2024-12",
+    "kbd": 670.0
+   },
+   {
+    "month": "2025-01",
+    "kbd": 687.8
+   },
+   {
+    "month": "2025-02",
+    "kbd": 675.7
+   },
+   {
+    "month": "2025-03",
+    "kbd": 712.0
+   },
+   {
+    "month": "2025-04",
+    "kbd": 666.7
+   },
+   {
+    "month": "2025-05",
+    "kbd": 648.5
+   },
+   {
+    "month": "2025-06",
+    "kbd": 618.4
+   },
+   {
+    "month": "2025-07",
+    "kbd": 613.9
+   },
+   {
+    "month": "2025-08",
+    "kbd": 598.0
+   },
+   {
+    "month": "2025-09",
+    "kbd": 627.8
+   },
+   {
+    "month": "2025-10",
+    "kbd": 627.9
+   },
+   {
+    "month": "2025-11",
+    "kbd": 633.2
+   },
+   {
+    "month": "2025-12",
+    "kbd": 624.7
+   },
+   {
+    "month": "2026-01",
+    "kbd": 614.7
+   },
+   {
+    "month": "2026-02",
+    "kbd": 628.1
+   },
+   {
+    "month": "2026-03",
+    "kbd": 646.9
+   },
+   {
+    "month": "2026-04",
+    "kbd": 620.2
+   },
+   {
+    "month": "2026-05",
+    "kbd": 622.7
+   },
+   {
+    "month": "2026-06",
+    "kbd": 584.0
+   },
+   {
+    "month": "2026-07",
+    "kbd": 613.7
+   },
+   {
+    "month": "2026-08",
+    "kbd": 626.5
+   }
+  ],
+  "alberta_roster": [
+   {
+    "system": "PEACE PIPELINE",
+    "operator": "PEMBINA PIPELINE CORPORATION",
+    "location": "13-07-069-24W5"
+   },
+   {
+    "system": "DRAYTON VALLEY PIPELINE",
+    "operator": "PEMBINA PIPELINE CORPORATION",
+    "location": "05-24-051-15W5"
+   },
+   {
+    "system": "RAINBOW PIPELINE",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "location": "03-11-109-08W6"
+   },
+   {
+    "system": "COLD LAKE HEAVY OIL PIPELINE",
+    "operator": "COLD LAKE PIPELINE LTD.",
+    "location": "08-35-059-07W4"
+   },
+   {
+    "system": "CENTRAL ALBERTA PIPELINE",
+    "operator": "INTER PIPELINE LTD.",
+    "location": "16-35-024-21W4"
+   },
+   {
+    "system": "RANGELAND PIPELINE",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "location": "16-32-038-03W5"
+   },
+   {
+    "system": "RANGELAND HEAVY OIL PIPELINE",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "location": "01-01-001-01W5"
+   },
+   {
+    "system": "BONNIE GLEN  PIPELINE",
+    "operator": "PEMBINA PIPELINE CORPORATION",
+    "location": "08-28-042-02W5"
+   },
+   {
+    "system": "BONNIE GLEN SOUR CRUDE PIPELINE",
+    "operator": "PEMBINA PIPELINE CORPORATION",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "CHAUVIN PIPELINE",
+    "operator": "GIBSON ENERGY INC.",
+    "location": "13-22-042-02W4"
+   },
+   {
+    "system": "RED EARTH PIPELINE",
+    "operator": "HARVEST OPERATIONS CORP.",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "MID-ALBERTA PIPELINE",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "BOW RIVER 'A' PIPELINE - NORTH",
+    "operator": "INTER PIPELINE LTD.",
+    "location": "03-22-030-11W4"
+   },
+   {
+    "system": "LLOYDMINSTER PIPELINE",
+    "operator": "CENOVUS ENERGY INC.",
+    "location": "04-24-048-09W4"
+   },
+   {
+    "system": "SEAL PIPELINE",
+    "operator": "SUNRISE ENERGY CORP.",
+    "location": "05-02-083-14W5"
+   },
+   {
+    "system": "PELICAN LAKE PIPELINE",
+    "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+    "location": "11-07-082-22W4"
+   },
+   {
+    "system": "Nipisi Pipeline",
+    "operator": "PEMBINA PIPELINE CORPORATION",
+    "location": "03-02-080-08W5"
+   },
+   {
+    "system": "Mitsue Pipeline",
+    "operator": "PEMBINA PIPELINE CORPORATION",
+    "location": "15-34-063-10W5"
+   },
+   {
+    "system": "WABASCA RIVER PIPELINE",
+    "operator": "HIGHWOOD ASSET MANAGEMENT LTD.",
+    "location": "11-05-087-13W5"
+   },
+   {
+    "system": "JOARCAM PIPELINE",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "location": "06-11-050-22W4"
+   },
+   {
+    "system": "CREMONA PIPELINE",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "location": "02-03-031-04W5"
+   },
+   {
+    "system": "THRONE CONNECTOR PIPELINE",
+    "operator": "INTER PIPELINE LTD.",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "RIMBEY PIPELINE",
+    "operator": "KEYERA ENERGY LTD.",
+    "location": "02-05-044-01W5"
+   },
+   {
+    "system": "PROVOST LIGHT PIPELINE",
+    "operator": "GIBSON ENERGY INC.",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "PROVOST HEAVY PIPELINE",
+    "operator": "GIBSON ENERGY INC.",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "Viking Pipeline",
+    "operator": "GIBSON ENERGY INC.",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "BODO PIPELINE",
+    "operator": "PLAINS CANADA LIQUID PIPELINES ULC",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "ST. ALBERT PIPELINE",
+    "operator": "GIBSON ENERGY INC.",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "WAINWRIGHT PIPELINE",
+    "operator": "CENOVUS ENERGY INC.",
+    "location": "01-01-001-01W4"
+   },
+   {
+    "system": "Marten Hills Crude Pipeline",
+    "operator": "KINGSTON MIDSTREAM ALBERTA LIMITED",
+    "location": "14-29-073-24W4"
+   }
+  ]
+ }
+}

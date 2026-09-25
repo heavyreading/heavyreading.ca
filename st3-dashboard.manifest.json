@@ -1,0 +1,22 @@
+{
+ "page": "/st3-dashboard.html",
+ "title": "ST3 supply dashboard",
+ "dek": "Monthly WCSB supply balance: actuals and forecast by source.",
+ "built_at": "2026-09-25",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "WCSB supply balance dashboard: monthly actual and forecast supply by source, ST3-sourced detail rows, and the implied storage balance plug",
+   "vintage": "AER ST53 actuals through 2026-07, pulled 2026-09-22",
+   "source": "AER ST3 (DB) via the WCSB S&D model",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "AER ST3 (actuals via DB)",
+   "vintage": "AER ST53 actuals through 2026-07, pulled 2026-09-22",
+   "url": ""
+  }
+ ]
+}

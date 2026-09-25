@@ -1,0 +1,55 @@
+{
+ "page": "/reports/egress-watch/egress-watch_2026-09-22.html",
+ "title": "Egress Watch - June 2026 data vintage",
+ "dek": "Egress Watch: June 2026 data vintage",
+ "built_at": "2026-09-25",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "Per-route snapshot: Utilization is throughput over CER Available Capacity. Apportionment is the share of shipper nominations curtailed.",
+   "vintage": "June 2026 data vintage",
+   "source": "Egress Watch",
+   "source_url": ""
+  },
+  {
+   "text": "What changed month-on-month (May to Jun 2026): Enbridge: throughput +23.2 kb/d (3,052.3 to 3,075.5). Apportionment 9.5% to 12.4%: still curtailing roughly one in eight shipper barrels while utilization sits at 93.8%.",
+   "vintage": "June 2026 data vintage",
+   "source": "Egress Watch",
+   "source_url": ""
+  },
+  {
+   "text": "TMX ramp tracker: Apportionment has been 0 in every month since expansion startup, so the line has never publicly curtailed. But 33.8 kb/d of spare in June 2026 is the second-thinnest margin on record (only Apr 2026 was tighter at 10.4).",
+   "vintage": "June 2026 data vintage",
+   "source": "Egress Watch",
+   "source_url": ""
+  },
+  {
+   "text": "Trader read: The system is tight and has been all year. Enbridge was still apportioning 12.4% in June, so the Mainline is already curtailing shippers even with spare on paper.",
+   "vintage": "June 2026 data vintage",
+   "source": "Egress Watch",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "Canada Energy Regulator",
+   "vintage": "Jan 2018-Jun 2026",
+   "url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/enbridge-mainline-throughput-and-capacity.csv"
+  },
+  {
+   "publisher": "Canada Energy Regulator",
+   "vintage": "Jan 2018-Jun 2026",
+   "url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/keystone-throughput-and-capacity.csv"
+  },
+  {
+   "publisher": "Canada Energy Regulator",
+   "vintage": "Jan 2018-Jun 2026",
+   "url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/trans-mountain-throughput-and-capacity.csv"
+  },
+  {
+   "publisher": "Canada Energy Regulator",
+   "vintage": "Jan 2018-Jun 2026",
+   "url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv"
+  }
+ ]
+}
