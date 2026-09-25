@@ -95,18 +95,31 @@ html, body { overflow-x:clip; }
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .nd-caret { display:inline-block; width:0; height:0; margin:1px 14px 0 -8px;
   border-left:4px solid transparent; border-right:4px solid transparent;
-  border-top:5px solid var(--faint); flex:none; }
+  border-top:5px solid var(--faint); flex:none;
+  transition:transform .18s ease; }
 @media (hover:hover) {
   .nd-menu .mi:hover { color:var(--acc-deep); }
   .nd-top:hover { color:var(--acc-deep); }
+  .nd:hover .nd-caret, .nd[open] .nd-caret { transform:rotate(180deg); }
 }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-.nd-menu { display:none; position:absolute; top:100%; left:0; z-index:50;
+/* desktop dropdown animation: the menu stays rendered and hides with
+   opacity/visibility/transform (never display:none, which kills the
+   transition), so open and close both glide. Mobile keeps its own
+   display-based disclosure in the media query below. */
+.nd-menu { position:absolute; top:100%; left:0; z-index:50;
   background:var(--paper); border:1px solid var(--line); padding:6px; min-width:230px;
-  max-width:calc(100vw - 32px); }
+  max-width:calc(100vw - 32px);
+  opacity:0; visibility:hidden; transform:translateY(-8px);
+  pointer-events:none;
+  transition:opacity .18s ease, transform .18s ease, visibility 0s linear .2s; }
 .navdrop:last-child .nd-menu, .navdrop:nth-last-child(2) .nd-menu {
   left:auto; right:0; }
-.nd:hover .nd-menu, .nd[open] .nd-menu { display:block; }
+/* hover intent: a short fuse on open, a slightly longer glide on close, so
+   a stray pass doesn't fling a menu over the page heading */
+.nd:hover .nd-menu, .nd[open] .nd-menu { opacity:1; visibility:visible; transform:none;
+  pointer-events:auto;
+  transition:opacity .18s ease .08s, transform .18s ease .08s, visibility 0s; }
 .nd-menu .mi { display:block; color:var(--ink); text-decoration:none;
   font-size:14px; padding:8px 12px; white-space:nowrap; }
 .nd-menu .mi[aria-current="page"] { font-weight:700; }
@@ -207,16 +220,31 @@ details.vintage li b { color:var(--ink); font-weight:600; }
 table.data { border-collapse:separate; border-spacing:0; font-size:13px; min-width:100%; }
 /* Fixed layout for the ST3 grid (the editor 2026-09-24): column widths come from
    the server-rendered colgroup (172px labels, 68px months). This keeps the
-   sticky date header (vertical scroll) and sticky row labels (horizontal
-   scroll) working at phone width. */
+   sticky row labels (horizontal scroll) working at phone width. */
+/* Date header pinning (the editor 2026-09-24, reworked 2026-09-25): the header
+   table lives inside a plain block wrapper (.dheadwrap) that sticks to the
+   top of the scrollbox. Three earlier rounds all moved table-level boxes and
+   all failed on the editor's physical iPhone while passing desktop lab tests:
+   per-cell sticky thead th drifted ~half a column off the body during
+   horizontal scroll, a sticky header table landed ~26px off the body columns
+   after a swipe, and a JS translate3d on the table neither tracked vertical
+   scroll nor stayed aligned. Mobile WebKit mishandles positioned and
+   transformed table boxes during 2D scrolling; a plain div is the one sticky
+   configuration it handles reliably, and sticky tracks on the compositor so
+   there is no scroll-listener lag during momentum flings. The inner table
+   does static layout only. Both tables share the fixed layout and identical
+   colgroups, so the columns line up. */
 .tblwrap.tbox table.data { table-layout:fixed; }
-table.data thead th { position:sticky; background:var(--paper); color:var(--ink); z-index:3;
+.tblwrap.tbox .dheadwrap { position:sticky; top:0; z-index:5; }
+.tblwrap.tbox table.dhead { margin:0; }
+.tblwrap.tbox table.dbody { margin:0; }
+table.dhead thead th { background:var(--paper); color:var(--ink);
                       padding:8px; font-size:11px; font-weight:700; white-space:nowrap;
                       letter-spacing:.04em; }
-table.data thead tr.band th { top:0; height:38px; padding:4px 8px; font-size:11px;
+table.dhead thead tr.band th { padding:4px 8px; font-size:11px;
   letter-spacing:.09em; text-transform:uppercase; }
-table.data thead tr.months th { top:38px; border-bottom:1px solid var(--ink); }
-table.data thead th.rowhead { background:var(--paper); z-index:6; left:0;
+table.dhead thead tr.months th { border-bottom:1px solid var(--ink); }
+table.dhead thead th.rowhead { position:sticky; left:0; z-index:6;
   box-shadow:1px 0 0 var(--line2); }
 table.data thead th.fcband { background:var(--fcbg); }
 table.data thead th.ncband { background:var(--ncbg); }
@@ -317,7 +345,9 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
     .nd-top { padding:14px 2px; font-size:13px; }
     .nd-caret { margin-left:auto; margin-right:2px; }
     .nd:hover .nd-menu { display:none; }
-    .nd[open] .nd-menu { display:block; position:static; border:none; padding:0 0 12px; }
+    .nd[open] .nd-menu { display:block; position:static; border:none; padding:0 0 12px;
+      opacity:1; visibility:visible; transform:none; pointer-events:auto;
+      transition:none; }
     .nd-menu .mi { padding:9px 2px; font-size:14.5px; white-space:normal; }
     .nd-mega { grid-template-columns:1fr; min-width:0; gap:0; }
   .wordmark { font-size:26px; }
@@ -339,8 +369,8 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
   .tblwrap.tbox { max-height:none; }
   table.data { font-size:10.5px; }
   /* sticky positioning breaks paged output: drop it for print */
-  table.data thead th, table.data thead tr.band th, table.data thead tr.months th,
-  table.data thead th.rowhead, table.data th.rowlab, table.data td.rowlab { position:static; }
+  .tblwrap.tbox .dheadwrap, .tblwrap.tbox table.dhead, table.data thead th.rowhead,
+  table.data th.rowlab, table.data td.rowlab { position:static; }
   table.data th.rowlab, table.data td.rowlab { min-width:0; max-width:none; }
   table.data tr { break-inside:avoid; }
   .tgl { min-width:0; min-height:0; border:none; background:none; margin-right:4px; }
@@ -357,7 +387,7 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="supply/index.html">Supply hub</a><a class="mi" href="st3-dashboard.html" aria-current="page">Dashboard</a><a class="mi" href="balance/index.html">Balance</a><a class="mi" href="maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="projects/index.html">All projects</a><a class="mi" href="projects/index.html#insitu">In-situ</a><a class="mi" href="projects/index.html#mined">Mined</a><a class="mi" href="projects/index.html#upgrading">Upgrading</a></div></div></details></div>
+      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="supply/index.html">Supply hub</a><a class="mi" href="st3-dashboard.html" aria-current="page">Dashboard</a><a class="mi" href="balance/index.html">Balance</a><a class="mi" href="egress/index.html">Egress Outlook</a><a class="mi" href="maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="projects/index.html">All projects</a><a class="mi" href="projects/index.html#insitu">In-situ</a><a class="mi" href="projects/index.html#mined">Mined</a><a class="mi" href="projects/index.html#upgrading">Upgrading</a></div></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="world/hormuz/index.html">Hormuz watch</a><a class="mi" href="world/iran/index.html">Iran watch</a><a class="mi" href="world/redsea/index.html">Red Sea</a><a class="mi" href="world/russia-refining/index.html">Russian refineries</a><a class="mi" href="world/china-imports/index.html">China imports</a><a class="mi" href="world/spr-storage/index.html">SPR & storage</a><a class="mi" href="venezuela/index.html">Venezuela watch</a><a class="mi" href="world/trump/index.html">Trump watch</a><a class="mi" href="world/sour/index.html">The global sour barrel</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="digest/index.html">The Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="digest/index.html">Edition archive</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="fieldguide/index.html">Field Guide</a><a class="mi" href="data/index.html">Data</a><a class="mi" href="sources/index.html">Sources</a><a class="mi" href="methodology/index.html">Methodology</a></div></details></div>
@@ -386,9 +416,14 @@ dl.assumps dd { margin:0 0 0 16px; color:#3a352c; }
     <span class="sw" style="background:var(--acc)"></span>maintenance offline (kb/d)</span>
   </div>
   <div class="tblwrap tbox">
-    <table class="data" style="width:2144px">
+    <div class="dheadwrap" style="width:2144px">
+    <table class="data dhead" style="width:2144px">
       <colgroup><col style="width:172px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"></colgroup>
       <thead id="st3head"></thead>
+    </table>
+    </div>
+    <table class="data dbody" style="width:2144px">
+      <colgroup><col style="width:172px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"><col style="width:68px"></colgroup>
       <tbody id="st3body"></tbody>
     </table>
   </div>

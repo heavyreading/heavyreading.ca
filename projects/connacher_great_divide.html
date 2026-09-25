@@ -125,26 +125,35 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .nd-caret { display:inline-block; width:0; height:0; margin:1px 14px 0 -8px;
   border-left:4px solid transparent; border-right:4px solid transparent;
-  border-top:5px solid var(--faint); flex:none; }
+  border-top:5px solid var(--faint); flex:none;
+  transition:transform .18s ease; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-.nd-menu { display:none; position:absolute; top:100%; left:0; z-index:50;
+/* desktop dropdown animation: the menu stays rendered and hides with
+   opacity/visibility/transform (never display:none, which kills the
+   transition), so open and close both glide. Mobile keeps its own
+   display-based disclosure in the media query below. */
+.nd-menu { position:absolute; top:100%; left:0; z-index:50;
   background:var(--paper); border:1px solid var(--line);
-  padding:6px; min-width:230px; max-width:calc(100vw - 32px); }
+  padding:6px; min-width:230px; max-width:calc(100vw - 32px);
+  opacity:0; visibility:hidden; transform:translateY(-8px);
+  pointer-events:none;
+  transition:opacity .18s ease, transform .18s ease, visibility 0s linear .2s; }
 .navdrop:last-child .nd-menu, .navdrop:nth-last-child(2) .nd-menu {
   left:auto; right:0; }
+/* hover intent: a short fuse on open, a slightly longer glide on close, so
+   a stray pass doesn't fling a menu over the page heading */
 .nd:hover .nd-menu, .nd[open] .nd-menu, .nd:focus-within .nd-menu {
-  display:block; opacity:1; visibility:visible; transform:none;
-  transition:opacity .12s ease .08s, visibility 0s, transform .12s ease .08s; }
-/* hover intent: a short fuse on open, a longer one on close, so a stray
-   pass doesn't fling a menu over the page heading */
-.nd-menu { opacity:0; visibility:hidden; transform:translateY(-3px);
-  transition:opacity .12s ease, transform .12s ease, visibility 0s linear .22s; }
+  opacity:1; visibility:visible; transform:none; pointer-events:auto;
+  transition:opacity .18s ease .08s, transform .18s ease .08s, visibility 0s; }
 .nd-menu .mi { display:block; color:var(--ink); text-decoration:none;
   font-size:14px; padding:8px 12px; white-space:nowrap; }
 .nd-menu .mi[aria-current="page"] { font-weight:700; }
 @media (hover:hover) {
   .nd-menu .mi:hover { color:var(--acc-deep); }
   .nd-top:hover { color:var(--acc-deep); }
+  /* caret tips up while its menu is open: quiet confirmation, desktop only */
+  .nd:hover .nd-caret, .nd[open] .nd-caret, .nd:focus-within .nd-caret {
+    transform:rotate(180deg); }
 }
 .nd-megahead .mi { font-weight:600; }
 .nd-mega { display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
@@ -493,7 +502,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   .nd-top { padding:14px 2px; font-size:13px; }
   .nd-caret { margin-left:auto; margin-right:2px; }
   .nd:hover .nd-menu { display:none; }
-  .nd[open] .nd-menu { display:block; position:static; border:none; padding:0 0 12px; }
+  .nd[open] .nd-menu { display:block; position:static; border:none; padding:0 0 12px;
+    opacity:1; visibility:visible; transform:none; pointer-events:auto;
+    transition:none; }
   .nd-menu .mi { padding:9px 2px; font-size:14.5px; white-space:normal; }
   .nd-mega { grid-template-columns:1fr; min-width:0; gap:0; }
   /* tables: horizontal scroll with a sticky first column */
@@ -540,6 +551,17 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   .prov > summary::before, details.vintage > summary::before { content:none; }
   .hero { padding-bottom:26px; }
 }
+
+/* annual charts (egress outlook): year labels, spare annotations, line
+   end-labels, and the takeaway box. Shared stylesheet, not a fork. */
+.xl { font-size:13px; fill:var(--ink); }
+.xlmut { font-size:11.5px; fill:var(--mut); }
+.xlneg { font-size:11.5px; font-weight:600; fill:var(--ch-red); }
+.eln { font-size:12.5px; font-weight:600; }
+.takeaway { border:1px solid var(--line); border-left:3px solid var(--acc);
+  padding:14px 18px; margin:22px 0; }
+.takeaway h2 { margin:0 0 8px; font-size:17px; }
+.takeaway p.note { margin-bottom:0; }
 </style>
 </head>
 <body>
@@ -551,7 +573,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="../supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../supply/index.html">Supply hub</a><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="index.html">All projects</a><a class="mi" href="index.html#insitu">In-situ</a><a class="mi" href="index.html#mined">Mined</a><a class="mi" href="index.html#upgrading">Upgrading</a></div></div></details></div>
+      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="../supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../supply/index.html">Supply hub</a><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../egress/index.html">Egress Outlook</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="index.html">All projects</a><a class="mi" href="index.html#insitu">In-situ</a><a class="mi" href="index.html#mined">Mined</a><a class="mi" href="index.html#upgrading">Upgrading</a></div></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../world/hormuz/index.html">Hormuz watch</a><a class="mi" href="../world/iran/index.html">Iran watch</a><a class="mi" href="../world/redsea/index.html">Red Sea</a><a class="mi" href="../world/russia-refining/index.html">Russian refineries</a><a class="mi" href="../world/china-imports/index.html">China imports</a><a class="mi" href="../world/spr-storage/index.html">SPR & storage</a><a class="mi" href="../venezuela/index.html">Venezuela watch</a><a class="mi" href="../world/trump/index.html">Trump watch</a><a class="mi" href="../world/sour/index.html">The global sour barrel</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">The Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/index.html">Edition archive</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../fieldguide/index.html">Field Guide</a><a class="mi" href="../data/index.html">Data</a><a class="mi" href="../sources/index.html">Sources</a><a class="mi" href="../methodology/index.html">Methodology</a></div></details></div>
