@@ -140,10 +140,21 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   transition:opacity .18s ease, transform .18s ease, visibility 0s linear .2s; }
 .navdrop:last-child .nd-menu, .navdrop:nth-last-child(2) .nd-menu {
   left:auto; right:0; }
+/* Chromium hides a closed <details>' contents via
+   ::details-content { content-visibility:hidden }, which no descendant rule
+   can override: without this, :hover could never reveal a menu inside a
+   closed dropdown (Edge/Chrome desktop nav froze with no dropdowns). Force
+   it visible; the menu's own opacity/visibility/pointer-events below own
+   the actual show/hide. Harmless where ::details-content is unsupported. */
+details.nd::details-content { content-visibility:visible; }
 /* hover intent: a short fuse on open, a slightly longer glide on close, so
-   a stray pass doesn't fling a menu over the page heading */
-.nd:hover .nd-menu, .nd[open] .nd-menu, .nd:focus-within .nd-menu {
-  opacity:1; visibility:visible; transform:none; pointer-events:auto;
+   a stray pass doesn't fling a menu over the page heading.
+   NOTE: .nd[open] is deliberately not a show trigger on desktop: the
+   active section ships with open (for the mobile disclosure), and letting
+   it force the menu visible left a stuck-open dropdown overlapping its
+   neighbours and eating their clicks. */
+.nd:hover .nd-menu, .nd:focus-within .nd-menu {
+  display:block; opacity:1; visibility:visible; transform:none; pointer-events:auto;
   transition:opacity .18s ease .08s, transform .18s ease .08s, visibility 0s; }
 .nd-menu .mi { display:block; color:var(--ink); text-decoration:none;
   font-size:14px; padding:8px 12px; white-space:nowrap; }
@@ -151,8 +162,10 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
 @media (hover:hover) {
   .nd-menu .mi:hover { color:var(--acc-deep); }
   .nd-top:hover { color:var(--acc-deep); }
-  /* caret tips up while its menu is open: quiet confirmation, desktop only */
-  .nd:hover .nd-caret, .nd[open] .nd-caret, .nd:focus-within .nd-caret {
+  /* caret tips up while its menu is open: quiet confirmation, desktop only.
+     No .nd[open] trigger: the active section ships open (mobile), and on
+     desktop open no longer shows the menu. */
+  .nd:hover .nd-caret, .nd:focus-within .nd-caret {
     transform:rotate(180deg); }
 }
 .nd-megahead .mi { font-weight:600; }
@@ -573,13 +586,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">The Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/wcsb-weekly_2026-09-23.html">This week&apos;s edition</a><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop active"><details class="nd" open="None"><summary class="nd-sum"><a class="nd-top" href="../supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../supply/index.html">Supply hub</a><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../egress/index.html">Egress Outlook</a><a class="mi" href="../upstream-pulse/index.html">Upstream Pulse</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="index.html">All projects</a><a class="mi" href="index.html#insitu">In-situ</a><a class="mi" href="index.html#mined">Mined</a><a class="mi" href="index.html#upgrading">Upgrading</a></div></div></details></div>
+      <div class="navdrop active"><details class="nd" open><summary class="nd-sum"><a class="nd-top" href="../supply/index.html">Supply</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../supply/index.html">Supply hub</a><a class="mi" href="../st3-dashboard.html">Dashboard</a><a class="mi" href="../balance/index.html">Balance</a><a class="mi" href="../egress/index.html">Egress Outlook</a><a class="mi" href="../upstream-pulse/index.html">Upstream Pulse</a><a class="mi" href="../maintenance/index.html">Maintenance</a><div class="nd-megahead"><a class="mi" href="index.html">All projects</a><a class="mi" href="index.html#insitu">In-situ</a><a class="mi" href="index.html#mined">Mined</a><a class="mi" href="index.html#upgrading">Upgrading</a></div></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../world/index.html">World</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../world/hormuz/index.html">Hormuz watch</a><a class="mi" href="../world/iran/index.html">Iran watch</a><a class="mi" href="../world/redsea/index.html">Red Sea</a><a class="mi" href="../world/russia-refining/index.html">Russian refineries</a><a class="mi" href="../world/china-imports/index.html">China imports</a><a class="mi" href="../world/spr-storage/index.html">SPR & storage</a><a class="mi" href="../venezuela/index.html">Venezuela watch</a><a class="mi" href="../world/trump/index.html">Trump watch</a><a class="mi" href="../world/sour/index.html">The global sour barrel</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">The Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/index.html">Edition archive</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../fieldguide/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../fieldguide/index.html">Field Guide</a><a class="mi" href="../data/index.html">Data</a><a class="mi" href="../sources/index.html">Sources</a><a class="mi" href="../methodology/index.html">Methodology</a></div></details></div>
       </nav>
       </details>
-    <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden="None"></div></div>
+    <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
   <div class="crumb"><a href="../index.html">Home</a> / <a href="../st3-dashboard.html">Supply</a> / <a href="index.html">Projects</a> / Long Lake Upgrader</div>
   <h1>Long Lake Upgrader</h1>
