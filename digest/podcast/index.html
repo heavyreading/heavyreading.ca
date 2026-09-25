@@ -607,8 +607,34 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   New episodes publish weekday mornings. Add it to any podcast app with the
   feed address below.</p>
   <h2>The feed address</h2>
-  <p><code class="feedurl">https://pub-9df98d7efbc74d9fbe1dfe6431229e0e.r2.dev/feed.xml</code></p>
-  <p class="note">Copy the address above, then follow the steps for your app.</p>
+  <p class="feedrow" style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap"><code class="feedurl" id="feedurl">https://pub-9df98d7efbc74d9fbe1dfe6431229e0e.r2.dev/feed.xml</code>
+  <button class="btn primary" id="copyfeed" type="button">Copy</button></p>
+  <script>
+  (function() {
+    var btn = document.getElementById('copyfeed');
+    btn.addEventListener('click', function() {
+      var t = document.getElementById('feedurl').textContent;
+      var done = function() {
+        btn.textContent = 'Copied';
+        setTimeout(function() { btn.textContent = 'Copy'; }, 1500);
+      };
+      function legacy() {
+        var ta = document.createElement('textarea');
+        ta.value = t;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(t).then(done, legacy);
+      } else {
+        legacy();
+      }
+    });
+  })();
+  </script>
+  <p class="note">Tap Copy, then follow the steps for your app below.</p>
   <h2>Apple Podcasts (iPhone or iPad)</h2>
   <p>Open Podcasts, go to Library, tap the <b>&#8230;</b> button, choose
   <b>Add a Show by URL</b>, and paste the feed address.</p>
