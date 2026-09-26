@@ -1,0 +1,177 @@
+{
+  "calendar": [
+    {
+      "date": "2026-09-27",
+      "impact": "Impact unquantified — watch the open",
+      "title": "Crude reopen — gap risk on the Hormuz re-closure news"
+    },
+    {
+      "date": "2026-09-30",
+      "impact": "PADD 2 stocks vs seasonal — the WCSB's backyard",
+      "title": "EIA Weekly Petroleum Status Report (every Wednesday)"
+    },
+    {
+      "date": "2026-10-01",
+      "impact": "Structural for 2027 egress",
+      "title": "TMX toll: CER approval deadline (firm 80% → 90%, Jan 1 2027)"
+    },
+    {
+      "date": "2026-10-04",
+      "impact": "Watch Iraq physical shut-ins",
+      "title": "OPEC+ quota review"
+    },
+    {
+      "date": "2026-10-07",
+      "impact": "Weekly PADD 2 read",
+      "title": "EIA Weekly Petroleum Status Report"
+    },
+    {
+      "approx": true,
+      "date": "2026-10-12",
+      "impact": "+~29 kb/d SCO returns",
+      "title": "Horizon upgrader back (~day 35 of turnaround)"
+    },
+    {
+      "date": "2026-10-14",
+      "impact": "Weekly PADD 2 read",
+      "title": "EIA Weekly Petroleum Status Report"
+    },
+    {
+      "date": "2026-10-21",
+      "impact": "Weekly PADD 2 read",
+      "title": "EIA Weekly Petroleum Status Report"
+    },
+    {
+      "date": "2026-10-28",
+      "impact": "Weekly PADD 2 read",
+      "title": "EIA Weekly Petroleum Status Report"
+    },
+    {
+      "approx": true,
+      "date": "2026-11-18",
+      "impact": "Atlantic basin demand returns",
+      "title": "Irving Saint John turnaround ends"
+    },
+    {
+      "impact": "Egress utilization update",
+      "recurring": "monthly",
+      "title": "CER monthly pipeline flows"
+    },
+    {
+      "impact": "Supply actuals",
+      "recurring": "monthly",
+      "title": "AER ST3 production data"
+    },
+    {
+      "impact": "PADD 2 demand offline — watch restarts",
+      "recurring": "season",
+      "title": "Imperial Sarnia turnaround (underway); Cenovus Lima fall turnaround guided"
+    }
+  ],
+  "call_vintage": "as of Sat Sep 26 close",
+  "changes": [
+    {
+      "balance": "~275 kb/d of WCS demand still offline — the diff stays pressured until full rates.",
+      "body": "Several units at the ~275 kb/d Illinois refinery returned Wednesday (Quantum Commodity Intelligence, Sep 24) — but there is no company-confirmed full restart. Offline = Western Canadian Select (WCS) wider and weaker; units returning = tightening in anticipation; a confirmed full restart = the snap tighter for Nov/Dec.",
+      "delta": "~275 kb/d still offline",
+      "source": "Quantum Commodity Intelligence",
+      "title": "Joliet partial restart only",
+      "vintage": "Sep 24, 2026"
+    },
+    {
+      "balance": "Spare takeaway −38 kb/d m/m against record Q4 supply — widening-risk bias into winter.",
+      "body": "Carry-forward June 2026 data: Keystone ~94%, Trans Mountain ~96%, Enbridge Mainline ~94% of available capacity. Spare takeaway down from ~310 kb/d in May. Oil Sands Magazine (Sep 22) puts Q4 basin production at a record 4.8 MMb/d.",
+      "delta": "~272 kb/d spare (5.7%)",
+      "evidence": "charts/apportionment.html",
+      "evidence_label": "Apportionment timeline, 2006→2026",
+      "source": "Canada Energy Regulator (CER)",
+      "title": "Egress functionally full",
+      "vintage": "Jun 2026 flows"
+    },
+    {
+      "balance": "~300 kb/d of synthetic supply offline plus record distillate cracks — doubly supportive for SCO/WCS relative value.",
+      "body": "Back ~mid-October. Horizon essentially fully offline for the 35-day turnaround — roughly 300 kb/d of synthetic crude out. (Canadian Natural's 29 kb/d figure is the annual-average guidance impact, not the daily outage.) Synthetic-supportive vs WCS while down. Second leg: distillate cracks at all-time records — ULSD crack ~$106–108/bbl early September (first prints ever above $100; normal $20–30), heating oil crack $117/bbl Sep 10. Distillate-rich synthetic crude is the prime beneficiary — double support for SCO relative value alongside the outage.",
+      "delta": "~300 kb/d SCO offline (full turnaround)",
+      "source": "Heavy Reading maintenance calendar (corrected Sep 26)",
+      "title": "Horizon upgrader ~day 19 of 35",
+      "vintage": "Sep 26, 2026"
+    },
+    {
+      "balance": "Financial positioning, not physical barrels — but the only public window into speculative pressure on the WCSB's own paper.",
+      "body": "Managed money net short the ICE WCS 1A differential by ~19,735 contracts — 1.8σ below the 52-week mean, an extreme print. Net long Houston +12,298 (z +0.8, not extreme).",
+      "delta": "−19,735 contracts (z −1.8)",
+      "evidence": "charts/positioning.html",
+      "evidence_label": "WCS paper positioning vs 52-wk bands",
+      "source": "U.S. Commodity Futures Trading Commission (CFTC)",
+      "title": "WCS paper: specs short the 1A",
+      "vintage": "CFTC data as of Tue Sep 22, released Fri Sep 25"
+    },
+    {
+      "balance": "Directional: a below-normal PADD 2 is supportive for WCSB barrels clearing east.",
+      "body": "Petroleum Administration for Defense District (PADD) 2 crude stocks sit below the 5-year seasonal norm for this week — the WCSB's refining backyard is not long crude.",
+      "delta": "−1,496 kbbl vs 5-yr mean",
+      "evidence": "charts/padd2-stocks.html",
+      "evidence_label": "PADD 2 stocks vs seasonal band",
+      "source": "U.S. Energy Information Administration (EIA)",
+      "title": "PADD 2 stocks below seasonal",
+      "vintage": "EIA w/e Sep 18"
+    },
+    {
+      "balance": "Watch-only near term; structural for 2027 egress.",
+      "body": "The next catalyst is the Canada Energy Regulator approval deadline Trans Mountain requested — Oct 1, for Jan 1, 2027 implementation (firm share 80% → 90%).",
+      "delta": "CER deadline Oct 1",
+      "source": "Trans Mountain / CER",
+      "title": "TMX toll catalyst Oct 1",
+      "vintage": "Sep 26, 2026"
+    },
+    {
+      "balance": "Watch-only for WCSB barrels; directional support for heavy barrels via global product markets.",
+      "body": "LUKOIL's ~252 kb/d Perm refinery (Russia's 7th-largest) halted operations after the overnight Sep 24/25 strike. The gasoil crack vs Brent printed a record ~$95/bbl on diesel-export-ban chatter.",
+      "delta": "~252 kb/d halted",
+      "source": "Reuters via industry sources",
+      "title": "Perm refinery halt",
+      "vintage": "Sep 25, 2026"
+    },
+    {
+      "balance": "Leading supply indicator — watch-only; rigs today are barrels in 6–9 months.",
+      "body": "Canadian oil rigs at 143, +11 week-on-week and +17 year-on-year — the rebound concentrated in heavy-oil regions (RBN Energy, Sep 25).",
+      "delta": "143 oil rigs (+11 w/w)",
+      "source": "RBN Energy",
+      "title": "Canadian rigs rebound",
+      "vintage": "Sep 25, 2026"
+    }
+  ],
+  "edition": "2026-09-26",
+  "flags": [
+    {
+      "body": "Friday's −2.33% West Texas Intermediate (WTI) fade was the de-escalation trade; the deal died after the close and the IRGC Navy re-closed Hormuz Friday evening.",
+      "expires": "Mon Sep 28",
+      "title": "Sunday reopen gap risk",
+      "trigger": "Becomes a change if the Sunday evening open gaps up on the re-closure; killed by a flat or soft open."
+    },
+    {
+      "body": "Units returning = tightening in anticipation; a confirmed full restart = the snap tighter for Nov/Dec WCS.",
+      "expires": "5 trading days",
+      "title": "Joliet full-restart confirmation",
+      "trigger": "Becomes a change if the company confirms full rates."
+    },
+    {
+      "body": "October quotas held; Iraq began shutting some field operations as storage fills — physical shut-ins spreading.",
+      "expires": "Oct 4",
+      "title": "OPEC+ Oct 4 review",
+      "trigger": "Becomes a change on any quota change or wider physical shut-ins."
+    },
+    {
+      "body": "CER deadline Oct 1 for Jan 1, 2027 implementation (firm 80% → 90%).",
+      "expires": "Oct 1",
+      "title": "TMX toll decision",
+      "trigger": "Becomes a change on CER approval, denial, or delay."
+    },
+    {
+      "title": "US diesel export ban decision",
+      "trigger": "Federal ban (full/partial) announced → US distillate cracks fall, record-crack leg of SCO support breaks; voluntary cuts only → softer easing",
+      "body": "Trump endorsed a diesel export ban Sep 22 with a fast decision promised; current posture is voluntary refiner export cuts (no federal ban ordered). A ban traps barrels at home and crushes the cracks currently supporting synthetic crude. Watch the early-next-week plan.",
+      "expires": "Administration plan expected early next week — flag resolves on announcement"
+    }
+  ]
+}
