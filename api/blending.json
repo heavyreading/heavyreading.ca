@@ -1,0 +1,71 @@
+{
+ "vintage": "Blender-behavior nowcast on Sep-2026 illustrative pricing anchors; equalization slopes industryeq.ca (crude frozen Dec 2014, condensate Aug 2026 notice); built 2026-09-27",
+ "data": {
+  "as_of": "2026-09-27",
+  "data_status": "synthetic",
+  "pricing": {
+   "heavy_usd_per_bbl": 73.0,
+   "light_usd_per_bbl": 86.0,
+   "condensate_usd_per_bbl": 92.0,
+   "fx_cad_per_usd": 1.38,
+   "note": "Sep-2026 illustrative anchors (WCS US$73, LSB US$86, condensate US$92). Structure accepts live prices; the arb math only ever uses price differences."
+  },
+  "blender_behavior": {
+   "heavy_into_light": {
+    "heavy_fraction": 0.432,
+    "binding_constraint": "viscosity",
+    "blend_density_kgm3": 851.9,
+    "blend_visc_cst": 20.0,
+    "gross_arb_cad_per_bbl": 7.76,
+    "eq_penalty_cad_per_bbl": 0.15,
+    "net_arb_cad_per_bbl": 7.61,
+    "net_arb_usd_per_bbl": 5.51,
+    "window_open": true,
+    "read": "Blenders push heavy into the light stream until the viscosity cap binds; the equalization penalty is small because the cap keeps the tender near the stream reference."
+   },
+   "diluent": {
+    "standard_diluent_fraction": 0.3,
+    "saving_per_pct_cut_usd_per_bbl": 0.92,
+    "saving_30_to_28_usd_per_bbl": 1.84,
+    "binding_constraint": "viscosity_350cst_cap",
+    "read": "Blenders crowd the 350 cSt limit: every 1% of diluent cut is pure margin, so the cap is where the barrels are."
+   }
+  },
+  "market_impact": {
+   "reclassified_kbd_per_100kbd_light": 43.2,
+   "spread_direction": "narrowing",
+   "arb_incentive_usd_per_bbl": 5.51,
+   "market_quality_price_cad_per_bbl_per_kgm3": 0.27,
+   "eq_quality_price_cad_per_bbl_per_kgm3": 0.078,
+   "note": "Blending buys heavy and sells light: heavy demand up, light supply up, light-heavy spread pressured narrower while the window is open. Reclassified barrels also nominate in the light apportionment pool — a capacity edge on top of the price edge. Incentive strength is reported; no price move is predicted (phase-gated)."
+  },
+  "equalization": {
+   "density_slope_cad_per_m3_per_kgm3": 0.49,
+   "density_slope_cad_per_bbl_per_kgm3": 0.078,
+   "sulphur_slope_cad_per_m3_per_01wtpct": 1.38,
+   "sulphur_slope_cad_per_bbl_per_01wtpct": 0.219,
+   "crude_scale_status": "frozen since Dec 2014; Jun 2024 industry vote: maintained indefinitely, no annual review",
+   "condensate_note": "recalculated monthly from market prices; Aug 2026 notice: $0.23/m3 per kg/m3"
+  }
+ },
+ "meta": {
+  "units": {
+   "arb": "USD/bbl or CAD/bbl as labeled",
+   "density": "kg/m3",
+   "viscosity": "cSt",
+   "reclassification": "kb/d per 100 kb/d light tendered"
+  },
+  "sources": [
+   "industryeq.ca (equalization slopes)",
+   "Enbridge Mainline CER No. 1 / CER 573/598 (specs)",
+   "Sep-2026 public price anchors (illustrative)"
+  ],
+  "notes": "data_status=synthetic: pricing inputs are illustrative anchors, not live feeds; the behavioral loop is plumbing until validated against observed blender activity. Spread direction is incentive strength, not a price forecast.",
+  "blindsided": [
+   "Illustrative assays (920/500 heavy, 800/5 light) are not measurements",
+   "Equalization dead band (800-825 kg/m3) not modeled in the penalty",
+   "Condensate slope moves monthly; the Aug 2026 value will age",
+   "TMX has no administered equalization bank (shipper-to-shipper only)"
+  ]
+ }
+}
