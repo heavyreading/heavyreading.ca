@@ -1,0 +1,502 @@
+{
+ "vintage": "COT through 2026-09-22; flags generated September 27, 2026",
+ "data": {
+  "read": [
+   "Commercials sold 5,874 lots in WCS 1A - trimming length",
+   "Funds covered 2,475 lots of their WCS 1A short - covering",
+   "Commercials sold 2,259 lots in SW 1A - trimming length",
+   "Commercials sold 2,165 lots in WCS Houston - fresh selling",
+   "Funds bought 1,979 lots in WCS Houston - fresh buying",
+   "Funds covered 755 lots of their SW 1A short - covering",
+   "New probable-whale flags: 2 high-confidence: commercials sold 5,874 lots in WCS 1A; commercials sold 2,259 lots in SW 1A. 3 low-confidence.",
+   "Commercials: long the Hardisty-Houston basis (+34,238 WCS 1A vs -17,229 ARV (the Houston WCS differential)); cut it by 3,709 lots this week",
+   "Funds: short the Hardisty-Houston basis (-19,735 WCS 1A vs +12,298 ARV)",
+   "Flat price: Commercials sold 20,720 lots of ICE WTI; Funds bought 5,201 lots of NYMEX WTI."
+  ],
+  "snapshot": [
+   {
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "mm_net": -19735,
+    "mm_wow": 2475,
+    "comm_net": 34238,
+    "comm_wow": -5874,
+    "oi": 69279,
+    "data_pending": false,
+    "missing": false
+   },
+   {
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "mm_net": 12298,
+    "mm_wow": 1979,
+    "comm_net": -17229,
+    "comm_wow": -2165,
+    "oi": 73322,
+    "data_pending": false,
+    "missing": false
+   },
+   {
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "mm_net": -170,
+    "mm_wow": 755,
+    "comm_net": 6601,
+    "comm_wow": -2259,
+    "oi": 10216,
+    "data_pending": false,
+    "missing": false
+   },
+   {
+    "market": "ICE C5 1A diff",
+    "short": "C5 1A",
+    "mm_net": 0,
+    "mm_wow": 0,
+    "comm_net": -660,
+    "comm_wow": 315,
+    "oi": 13300,
+    "data_pending": false,
+    "missing": false
+   },
+   {
+    "market": "ICE WTI",
+    "short": "ICE WTI",
+    "mm_net": 5879,
+    "mm_wow": 3132,
+    "comm_net": 107241,
+    "comm_wow": -20720,
+    "oi": 961132,
+    "data_pending": false,
+    "missing": false
+   },
+   {
+    "market": "NYMEX WTI",
+    "short": "NYMEX WTI",
+    "mm_net": 141106,
+    "mm_wow": 5201,
+    "comm_net": -169889,
+    "comm_wow": -5031,
+    "oi": 1841811,
+    "data_pending": false,
+    "missing": false
+   }
+  ],
+  "flags": [
+   {
+    "date": "2026-09-22",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -2165,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-22",
+    "market": "ICE C5 1A diff",
+    "short": "C5 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 315,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-22",
+    "market": "ICE WTI",
+    "short": "ICE WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -20720,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-22",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "high",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -5874,
+    "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
+   },
+   {
+    "date": "2026-09-22",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "high",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -2259,
+    "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
+   },
+   {
+    "date": "2026-09-15",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 1425,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-15",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "low",
+    "category": "managed_money",
+    "direction": 1,
+    "d1_lots": 105,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-15",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 898,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-08",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 980,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-08",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -420,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-08",
+    "market": "NYMEX WTI",
+    "short": "NYMEX WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -10180,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-01",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "low",
+    "category": "managed_money",
+    "direction": -1,
+    "d1_lots": -3555,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-01",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 220,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-01",
+    "market": "ICE WTI",
+    "short": "ICE WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 5779,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-09-01",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "medium",
+    "category": "managed_money",
+    "direction": -1,
+    "d1_lots": -1920,
+    "attribution": "likely Citadel (probable fund-whale candidate — not confirmed)"
+   },
+   {
+    "date": "2026-08-25",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -1895,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-25",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -1294,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-25",
+    "market": "ICE WTI",
+    "short": "ICE WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -5358,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-25",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "medium",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 1380,
+    "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
+   },
+   {
+    "date": "2026-08-18",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "low",
+    "category": "managed_money",
+    "direction": -1,
+    "d1_lots": -1775,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-18",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 130,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-18",
+    "market": "ICE WTI",
+    "short": "ICE WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 13826,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-18",
+    "market": "NYMEX WTI",
+    "short": "NYMEX WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -23450,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-18",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "medium",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -2280,
+    "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
+   },
+   {
+    "date": "2026-08-11",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 1005,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-11",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 300,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-11",
+    "market": "ICE WTI",
+    "short": "ICE WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 16167,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-11",
+    "market": "NYMEX WTI",
+    "short": "NYMEX WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 24138,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-11",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "medium",
+    "category": "managed_money",
+    "direction": 1,
+    "d1_lots": 1615,
+    "attribution": "likely Citadel (probable fund-whale candidate — not confirmed)"
+   },
+   {
+    "date": "2026-08-04",
+    "market": "NYMEX WTI",
+    "short": "NYMEX WTI",
+    "confidence": "low",
+    "category": "managed_money",
+    "direction": -1,
+    "d1_lots": -7665,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-08-04",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "high",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -4020,
+    "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
+   },
+   {
+    "date": "2026-07-28",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 2415,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-07-28",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 465,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-07-28",
+    "market": "NYMEX WTI",
+    "short": "NYMEX WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -50221,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-07-21",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -3600,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-07-21",
+    "market": "ICE SW 1A diff",
+    "short": "SW 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -1009,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-07-21",
+    "market": "NYMEX WTI",
+    "short": "NYMEX WTI",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -23513,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-07-21",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "medium",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -2410,
+    "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
+   },
+   {
+    "date": "2026-07-14",
+    "market": "ICE WCS 1A diff",
+    "short": "WCS 1A",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": 1,
+    "d1_lots": 3605,
+    "attribution": "withheld (sub-whale)"
+   },
+   {
+    "date": "2026-07-14",
+    "market": "ICE WCS Houston diff",
+    "short": "WCS Houston",
+    "confidence": "low",
+    "category": "commercial",
+    "direction": -1,
+    "d1_lots": -1155,
+    "attribution": "withheld (sub-whale)"
+   }
+  ],
+  "counts": {
+   "total": 549,
+   "high": 27,
+   "medium": 69,
+   "low": 453
+  }
+ },
+ "meta": {
+  "units": "lots; 1 lot = 1,000 bbl",
+  "sources": "CFTC Commitments of Traders, disaggregated report (futures and options combined; NYMEX WTI legacy); ICE Futures Energy Division",
+  "notes": [
+   "Commercial leg = prod/merch on disaggregated rows.",
+   "TMF (C5) managed-money leg reads ~zero: verified genuine, funds do not trade it; C5 flags carry no named attribution.",
+   "Attribution is hedged throughout; nothing here is confirmed."
+  ]
+ }
+}
