@@ -1,0 +1,34 @@
+{
+ "page": "/apportionment/",
+ "title": "Apportionment",
+ "dek": "Enbridge Mainline apportionment by line and node: the three-level read (path, system, basin), a live system schematic, the monthly nowcast, 234 months of nodal history, the nomination game mechanics, and the NOS-locked forecast.",
+ "built_at": "2026-09-26",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "Jun 2026: Superior - Line 6/61 apportioned 19%",
+   "vintage": "CER Guide BB.2, Jun 2026 (pulled Sep 26, 2026)",
+   "source": "CER Open Government apportionment CSV",
+   "source_url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv"
+  },
+  {
+   "text": "Jun 2026: Kerrobert - Line 2/93 apportioned 18%",
+   "vintage": "CER Guide BB.2, Jun 2026 (pulled Sep 26, 2026)",
+   "source": "CER Open Government apportionment CSV",
+   "source_url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv"
+  },
+  {
+   "text": "Jun 2026: system nominations 14% above accepted volumes (air index 1.14)",
+   "vintage": "CER Guide BB.2, Jun 2026 (pulled Sep 26, 2026)",
+   "source": "CER Open Government apportionment CSV",
+   "source_url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv"
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "CER Open Government (Guide BB.2); Enbridge tariffs; NEB/CER",
+   "vintage": "Jan 2007-Jun 2026 (pulled Sep 26, 2026)",
+   "url": "https://www.cer-rec.gc.ca/open/energy/throughput-capacity/apportionment.csv"
+  }
+ ]
+}

@@ -390,6 +390,17 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   margin:44px 0 0; padding-top:18px; border-top:1px solid var(--line); }
 .weeknav a { font-size:14px; font-weight:600; text-decoration:none; color:var(--ink);
   max-width:44%; line-height:1.5; }
+
+/* in-page jump-list: quiet sticky section links for long indexes (projects).
+   In-flow on phones, sticks under the masthead on desktop. */
+.jumplist { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap;
+  align-items:baseline; gap:6px 18px; padding:10px 2px; margin:6px 0 0;
+  background:var(--paper); border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); font-size:13px; }
+.jumplist .jl-cap { font-size:11px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--mut); }
+.jumplist a { text-decoration:none; color:var(--ink); font-weight:600; }
+.jumplist a:hover { color:var(--acc-deep); }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
 
@@ -586,8 +597,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
+      <div class="navdrop"><a class="nd-top nd-plain" href="../apportionment/index.html">Apportionment</a></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/index.html">Edition archive</a><a class="mi" href="../digest/podcast/index.html">Reader podcast</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/2026-09-26/index.html">Today&apos;s edition</a><a class="mi" href="../digest/index.html">Edition archive</a><a class="mi" href="../digest/podcast/index.html">Reader podcast</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../reference/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../reference/index.html#levels">Understand a level</a><a class="mi" href="../reference/index.html#basin">Learn the basin</a><a class="mi" href="../reference/index.html#watches">Check a watch</a><a class="mi" href="../reference/index.html#work">Track work</a><a class="mi" href="../reference/index.html#provenance">Provenance</a></div></details></div>
       </nav>
       </details>
@@ -618,7 +630,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h2>Production</h2>
   <div class="statgrid">
     <div class="stat"><div class="v">333.3 kb/d</div><div class="l">latest actual, May 2026 (Horizon (CNRL))</div></div>
-    <div class="stat"><div class="v">318.1 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
+    <div class="stat"><div class="v">316.2 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
   </div>
 <figure class="chart">
 <svg viewbox="0 0 720 230" role="img" aria-label="Horizon (CNRL) monthly production">
@@ -649,24 +661,24 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <rect x="217.2" y="105.0" width="13.9" height="85.0" rx="2.5" style="fill:var(--ch-ink)"><title>Mar 26: 287.1 kb/d</title></rect>
 <rect x="239.6" y="97.3" width="13.9" height="92.7" rx="2.5" style="fill:var(--ch-ink)"><title>Apr 26: 313.3 kb/d</title></rect>
 <rect x="262.0" y="91.3" width="13.9" height="98.7" rx="2.5" style="fill:var(--ch-ink)"><title>May 26: 333.3 kb/d</title></rect>
-<rect x="329.2" y="94.1" width="13.9" height="95.9" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 324.0 kb/d</title></rect>
-<rect x="351.6" y="90.5" width="13.9" height="99.5" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 336.2 kb/d</title></rect>
-<rect x="374.1" y="90.3" width="13.9" height="99.7" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 336.9 kb/d</title></rect>
-<rect x="396.5" y="87.7" width="13.9" height="102.3" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 345.6 kb/d</title></rect>
-<rect x="418.9" y="87.0" width="13.9" height="103.0" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 348.1 kb/d</title></rect>
-<rect x="441.3" y="102.5" width="13.9" height="87.5" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 295.6 kb/d</title></rect>
-<rect x="463.7" y="98.2" width="13.9" height="91.8" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 310.3 kb/d</title></rect>
-<rect x="486.1" y="95.7" width="13.9" height="94.3" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 318.7 kb/d</title></rect>
-<rect x="508.5" y="90.0" width="13.9" height="100.0" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 337.9 kb/d</title></rect>
-<rect x="530.9" y="128.9" width="13.9" height="61.1" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 206.4 kb/d</title></rect>
-<rect x="553.4" y="118.2" width="13.9" height="71.8" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 242.5 kb/d</title></rect>
-<rect x="575.8" y="89.8" width="13.9" height="100.2" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 338.6 kb/d</title></rect>
-<rect x="598.2" y="94.1" width="13.9" height="95.9" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 324.0 kb/d</title></rect>
-<rect x="620.6" y="90.5" width="13.9" height="99.5" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 336.2 kb/d</title></rect>
-<rect x="643.0" y="90.3" width="13.9" height="99.7" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 336.9 kb/d</title></rect>
-<rect x="665.4" y="87.7" width="13.9" height="102.3" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 345.6 kb/d</title></rect>
-<rect x="687.8" y="87.0" width="13.9" height="103.0" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 348.1 kb/d</title></rect>
-<text x="694.8" y="81.0" text-anchor="middle" class="val">348.1</text>
+<rect x="329.2" y="94.7" width="13.9" height="95.3" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 322.1 kb/d</title></rect>
+<rect x="351.6" y="91.1" width="13.9" height="98.9" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 334.2 kb/d</title></rect>
+<rect x="374.1" y="90.9" width="13.9" height="99.1" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 334.8 kb/d</title></rect>
+<rect x="396.5" y="88.3" width="13.9" height="101.7" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 343.5 kb/d</title></rect>
+<rect x="418.9" y="87.6" width="13.9" height="102.4" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 346.1 kb/d</title></rect>
+<rect x="441.3" y="103.1" width="13.9" height="86.9" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 293.7 kb/d</title></rect>
+<rect x="463.7" y="98.8" width="13.9" height="91.2" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 308.1 kb/d</title></rect>
+<rect x="486.1" y="96.2" width="13.9" height="93.8" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 317.0 kb/d</title></rect>
+<rect x="508.5" y="90.6" width="13.9" height="99.4" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 335.7 kb/d</title></rect>
+<rect x="530.9" y="129.2" width="13.9" height="60.8" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 205.4 kb/d</title></rect>
+<rect x="553.4" y="118.7" width="13.9" height="71.3" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 240.9 kb/d</title></rect>
+<rect x="575.8" y="90.4" width="13.9" height="99.6" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 336.6 kb/d</title></rect>
+<rect x="598.2" y="94.7" width="13.9" height="95.3" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 322.1 kb/d</title></rect>
+<rect x="620.6" y="91.1" width="13.9" height="98.9" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 334.2 kb/d</title></rect>
+<rect x="643.0" y="90.9" width="13.9" height="99.1" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 334.8 kb/d</title></rect>
+<rect x="665.4" y="88.3" width="13.9" height="101.7" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 343.5 kb/d</title></rect>
+<rect x="687.8" y="87.6" width="13.9" height="102.4" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 346.1 kb/d</title></rect>
+<text x="694.8" y="81.6" text-anchor="middle" class="val">346.1</text>
 <text x="67.2" y="216" text-anchor="middle" class="xlab">Aug 25</text>
 <text x="134.4" y="216" text-anchor="middle" class="xlab">Nov 25</text>
 <text x="201.7" y="216" text-anchor="middle" class="xlab">Feb 26</text>
@@ -714,24 +726,24 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <rect x="217.2" y="116.7" width="13.9" height="73.3" rx="2.5" style="fill:var(--ch-ink)"><title>Mar 26: 247.5 kb/d</title></rect>
 <rect x="239.6" y="104.6" width="13.9" height="85.4" rx="2.5" style="fill:var(--ch-ink)"><title>Apr 26: 288.4 kb/d</title></rect>
 <rect x="262.0" y="105.6" width="13.9" height="84.4" rx="2.5" style="fill:var(--ch-ink)"><title>May 26: 285.3 kb/d</title></rect>
-<rect x="329.2" y="102.5" width="13.9" height="87.5" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 295.5 kb/d</title></rect>
-<rect x="351.6" y="173.0" width="13.9" height="17.0" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 57.6 kb/d</title></rect>
-<rect x="374.1" y="133.9" width="13.9" height="56.1" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 189.5 kb/d</title></rect>
-<rect x="396.5" y="95.9" width="13.9" height="94.1" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 317.8 kb/d</title></rect>
-<rect x="418.9" y="96.6" width="13.9" height="93.4" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 315.6 kb/d</title></rect>
-<rect x="441.3" y="111.4" width="13.9" height="78.6" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 265.5 kb/d</title></rect>
-<rect x="463.7" y="106.0" width="13.9" height="84.0" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 283.8 kb/d</title></rect>
-<rect x="486.1" y="104.0" width="13.9" height="86.0" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 290.7 kb/d</title></rect>
-<rect x="508.5" y="100.3" width="13.9" height="89.7" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 303.1 kb/d</title></rect>
-<rect x="530.9" y="138.1" width="13.9" height="51.9" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 175.2 kb/d</title></rect>
-<rect x="553.4" y="126.2" width="13.9" height="63.8" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 215.7 kb/d</title></rect>
-<rect x="575.8" y="95.0" width="13.9" height="95.0" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 320.9 kb/d</title></rect>
-<rect x="598.2" y="100.7" width="13.9" height="89.3" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 301.8 kb/d</title></rect>
-<rect x="620.6" y="103.0" width="13.9" height="87.0" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 293.9 kb/d</title></rect>
-<rect x="643.0" y="96.8" width="13.9" height="93.2" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 314.8 kb/d</title></rect>
-<rect x="665.4" y="94.1" width="13.9" height="95.9" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 324.1 kb/d</title></rect>
-<rect x="687.8" y="94.7" width="13.9" height="95.3" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 321.9 kb/d</title></rect>
-<text x="694.8" y="88.7" text-anchor="middle" class="val">321.9</text>
+<rect x="329.2" y="101.8" width="13.9" height="88.2" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 298.1 kb/d</title></rect>
+<rect x="351.6" y="172.2" width="13.9" height="17.8" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 60.0 kb/d</title></rect>
+<rect x="374.1" y="133.1" width="13.9" height="56.9" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 192.1 kb/d</title></rect>
+<rect x="396.5" y="95.0" width="13.9" height="95.0" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 320.9 kb/d</title></rect>
+<rect x="418.9" y="95.7" width="13.9" height="94.3" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 318.7 kb/d</title></rect>
+<rect x="441.3" y="110.7" width="13.9" height="79.3" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 267.8 kb/d</title></rect>
+<rect x="463.7" y="105.3" width="13.9" height="84.7" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 286.2 kb/d</title></rect>
+<rect x="486.1" y="103.2" width="13.9" height="86.8" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 293.4 kb/d</title></rect>
+<rect x="508.5" y="99.5" width="13.9" height="90.5" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 305.8 kb/d</title></rect>
+<rect x="530.9" y="137.7" width="13.9" height="52.3" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 176.6 kb/d</title></rect>
+<rect x="553.4" y="125.6" width="13.9" height="64.4" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 217.7 kb/d</title></rect>
+<rect x="575.8" y="94.2" width="13.9" height="95.8" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 323.7 kb/d</title></rect>
+<rect x="598.2" y="99.9" width="13.9" height="90.1" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 304.4 kb/d</title></rect>
+<rect x="620.6" y="102.3" width="13.9" height="87.7" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 296.3 kb/d</title></rect>
+<rect x="643.0" y="96.0" width="13.9" height="94.0" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 317.4 kb/d</title></rect>
+<rect x="665.4" y="93.1" width="13.9" height="96.9" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 327.2 kb/d</title></rect>
+<rect x="687.8" y="93.8" width="13.9" height="96.2" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 325.0 kb/d</title></rect>
+<text x="694.8" y="87.8" text-anchor="middle" class="val">325.0</text>
 <text x="67.2" y="216" text-anchor="middle" class="xlab">Aug 25</text>
 <text x="134.4" y="216" text-anchor="middle" class="xlab">Nov 25</text>
 <text x="201.7" y="216" text-anchor="middle" class="xlab">Feb 26</text>
@@ -755,12 +767,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <div class="tblwrap"><table class="data">
     <caption style="text-align:left;font-weight:700;padding:6px 0;">First forecast months (kb/d)</caption>
     <tr><th>Series</th><th>Oct 2026</th><th>Nov 2026</th><th>Dec 2026</th><th>Jan 2027</th><th>Feb 2027</th><th>Mar 2027</th></tr>
-    <tr><td>Horizon (CNRL)</td><td class="num">336.9</td><td class="num">345.6</td><td class="num">348.1</td><td class="num">295.6</td><td class="num">310.3</td><td class="num">318.7</td></tr>
-    <tr><td>Horizon (CNRL)</td><td class="num">189.5</td><td class="num">317.8</td><td class="num">315.6</td><td class="num">265.5</td><td class="num">283.8</td><td class="num">290.7</td></tr>
+    <tr><td>Horizon (CNRL)</td><td class="num">334.8</td><td class="num">343.5</td><td class="num">346.1</td><td class="num">293.7</td><td class="num">308.1</td><td class="num">317.0</td></tr>
+    <tr><td>Horizon (CNRL)</td><td class="num">192.1</td><td class="num">320.9</td><td class="num">318.7</td><td class="num">267.8</td><td class="num">286.2</td><td class="num">293.4</td></tr>
   </table></div>
   <p class="tblnote">Full 26-month table with drill-down lives in the <a href="../st3-dashboard.html">trading dashboard</a>. Blank cells are months AER has not published yet, not zeros.</p>
   <p class="src"><b>How to read Horizon (CNRL):</b> Canadian Natural Resources Limited facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate.</p>
-  <p class="src"><b>How to read Horizon (CNRL):</b> Canadian Natural Resources Limited facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate. Maintenance modeled down at this leaf: Horizon 35-day turnaround (started Sep 8 2026). Sep 2026 -230 kb/d (September bridge per editorial ruling 2026-09-22 on CNRL 2026 budget guidance); Oct 2026 -119 kb/d (Oct 1-12 residual tail). Pure upgrader outage: SCO needs no blending, so the cut reduces tradable synthetic barrels 1:1. Source: CNRL 2026 budget (2025-12-16), final ruling by the editor 2026-09-24. The Maintenance offline memo row shows the same outage for reference; it is not subtracted again. Growth modeled up at this leaf: Horizon NRUTT (Naphtha Recovery Unit Tailings Treatment) +6.3 kb/d SCO step change from Jul 2027, persisting through the Dec 2027 window end. Source: CNRL 2026 budget news release (2025-12-16). Editorially approved 2026-09-23. The implied ~277,300 bbl/d post-NRUTT nameplate is not used: demonstrated ST39 peak is 309.8 kb/d SCO (2025-11) and history wins, so only the +6.3 increment is modeled.</p>
+  <p class="src"><b>How to read Horizon (CNRL):</b> Canadian Natural Resources Limited facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate. Maintenance modeled down at this leaf: Horizon 35-day turnaround (started Sep 8 2026). Sep 2026 -230 kb/d (September bridge per editorial ruling 2026-09-22 on CNRL 2026 budget guidance); Oct 2026 -119 kb/d (Oct 1-12 residual tail; outage extends into October per the operator turnaround schedule). Pure upgrader outage: SCO needs no blending, so the cut reduces tradable synthetic barrels 1:1. Source: CNRL 2026 budget (2025-12-16). The Maintenance offline memo row shows the same outage for reference; it is not subtracted again. Growth modeled up at this leaf: Horizon NRUTT (Naphtha Recovery Unit Tailings Treatment) +6.3 kb/d SCO step change from Jul 2027, persisting through the Dec 2027 window end. Source: CNRL 2026 budget news release (2025-12-16). Editorially approved 2026-09-23. The implied ~277,300 bbl/d post-NRUTT nameplate is not used: demonstrated ST39 peak is 309.8 kb/d SCO (2025-11) and history wins, so only the +6.3 increment is modeled.</p>
   <h2>Maintenance</h2>
   <h3>In the model math</h3>
   <ul class="ev">
@@ -775,10 +787,10 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">CADENCE-MODELED entries are editorially approved estimates in the model math, labeled as such everywhere; they are never presented as company-confirmed. Math otherwise requires public-confirmed guidance.</p>
   <h2>Outlook</h2>
   <p class="src"><b>Named assumptions:</b> Canadian Natural Resources Limited facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate.</p>
-  <p class="src"><b>Named assumptions:</b> Canadian Natural Resources Limited facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate. Maintenance modeled down at this leaf: Horizon 35-day turnaround (started Sep 8 2026). Sep 2026 -230 kb/d (September bridge per editorial ruling 2026-09-22 on CNRL 2026 budget guidance); Oct 2026 -119 kb/d (Oct 1-12 residual tail). Pure upgrader outage: SCO needs no blending, so the cut reduces tradable synthetic barrels 1:1. Source: CNRL 2026 budget (2025-12-16), final ruling by the editor 2026-09-24. The Maintenance offline memo row shows the same outage for reference; it is not subtracted again. Growth modeled up at this leaf: Horizon NRUTT (Naphtha Recovery Unit Tailings Treatment) +6.3 kb/d SCO step change from Jul 2027, persisting through the Dec 2027 window end. Source: CNRL 2026 budget news release (2025-12-16). Editorially approved 2026-09-23. The implied ~277,300 bbl/d post-NRUTT nameplate is not used: demonstrated ST39 peak is 309.8 kb/d SCO (2025-11) and history wins, so only the +6.3 increment is modeled.</p>
+  <p class="src"><b>Named assumptions:</b> Canadian Natural Resources Limited facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate. Maintenance modeled down at this leaf: Horizon 35-day turnaround (started Sep 8 2026). Sep 2026 -230 kb/d (September bridge per editorial ruling 2026-09-22 on CNRL 2026 budget guidance); Oct 2026 -119 kb/d (Oct 1-12 residual tail; outage extends into October per the operator turnaround schedule). Pure upgrader outage: SCO needs no blending, so the cut reduces tradable synthetic barrels 1:1. Source: CNRL 2026 budget (2025-12-16). The Maintenance offline memo row shows the same outage for reference; it is not subtracted again. Growth modeled up at this leaf: Horizon NRUTT (Naphtha Recovery Unit Tailings Treatment) +6.3 kb/d SCO step change from Jul 2027, persisting through the Dec 2027 window end. Source: CNRL 2026 budget news release (2025-12-16). Editorially approved 2026-09-23. The implied ~277,300 bbl/d post-NRUTT nameplate is not used: demonstrated ST39 peak is 309.8 kb/d SCO (2025-11) and history wins, so only the +6.3 increment is modeled.</p>
   <p class="src"><b>Confirmation status:</b> model forecast; maintenance impacts enter the math only from public-confirmed guidance.</p>
   <h2>Market relevance</h2>
-  <p>Horizon SCO averages 282.3 kb/d over the forecast. Horizon has no documented third-party interconnect, so the model dials mine and upgrader back together during turnarounds: SCO supply tightens one-for-one with the modeled outage. Modeled maintenance peaks at Oct 2026 (-119.0 kb/d).</p>
+  <p>Horizon SCO averages 284.9 kb/d over the forecast. Horizon has no documented third-party interconnect, so the model dials mine and upgrader back together during turnarounds: SCO supply tightens one-for-one with the modeled outage. Modeled maintenance peaks at Oct 2026 (-119.0 kb/d).</p>
   <p class="src"><b>Basis:</b> model-derived from the dashboard series above; no external view is added.</p>
   <h2>Related weekly notes</h2>
   <p class="nullnote">No weekly edition to date mentions this asset by name.</p>

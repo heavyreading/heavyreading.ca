@@ -390,6 +390,17 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   margin:44px 0 0; padding-top:18px; border-top:1px solid var(--line); }
 .weeknav a { font-size:14px; font-weight:600; text-decoration:none; color:var(--ink);
   max-width:44%; line-height:1.5; }
+
+/* in-page jump-list: quiet sticky section links for long indexes (projects).
+   In-flow on phones, sticks under the masthead on desktop. */
+.jumplist { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap;
+  align-items:baseline; gap:6px 18px; padding:10px 2px; margin:6px 0 0;
+  background:var(--paper); border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); font-size:13px; }
+.jumplist .jl-cap { font-size:11px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--mut); }
+.jumplist a { text-decoration:none; color:var(--ink); font-weight:600; }
+.jumplist a:hover { color:var(--acc-deep); }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
 
@@ -586,8 +597,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
+      <div class="navdrop"><a class="nd-top nd-plain" href="../apportionment/index.html">Apportionment</a></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/index.html">Edition archive</a><a class="mi" href="../digest/podcast/index.html">Reader podcast</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/2026-09-26/index.html">Today&apos;s edition</a><a class="mi" href="../digest/index.html">Edition archive</a><a class="mi" href="../digest/podcast/index.html">Reader podcast</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../reference/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../reference/index.html#levels">Understand a level</a><a class="mi" href="../reference/index.html#basin">Learn the basin</a><a class="mi" href="../reference/index.html#watches">Check a watch</a><a class="mi" href="../reference/index.html#work">Track work</a><a class="mi" href="../reference/index.html#provenance">Provenance</a></div></details></div>
       </nav>
       </details>
@@ -617,8 +629,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">Blank "not tracked" cells are facts not present in the public data used here. They are labeled, never estimated. Filing-sourced facts carry their document name and date; where sources disclose multiple bases for one figure, all are shown.</p>
   <h2>Production</h2>
   <div class="statgrid">
-    <div class="stat"><div class="v">41.7 kb/d</div><div class="l">latest actual, Jul 2026 (MacKay River (Suncor))</div></div>
-    <div class="stat"><div class="v">41.1 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
+    <div class="stat"><div class="v">40.8 kb/d</div><div class="l">latest actual, Jul 2026 (MacKay River (Suncor))</div></div>
+    <div class="stat"><div class="v">40.4 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
   </div>
 <figure class="chart">
 <svg viewbox="0 0 720 230" role="img" aria-label="MacKay River (Suncor) monthly production">
@@ -641,36 +653,36 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <line x1="52" y1="42.0" x2="706" y2="42.0" style="stroke:var(--ch-grid)" />
 <text x="44" y="46.0" text-anchor="end" class="tick">50.0</text>
 <line x1="52" y1="190.0" x2="706" y2="190.0" style="stroke:var(--ch-axis)" />
-<rect x="56.3" y="54.7" width="14.0" height="135.3" rx="2.5" style="fill:var(--ch-ink)"><title>Aug 25: 45.7 kb/d</title></rect>
-<rect x="78.8" y="109.8" width="14.0" height="80.2" rx="2.5" style="fill:var(--ch-ink)"><title>Sep 25: 27.1 kb/d</title></rect>
-<rect x="101.4" y="94.1" width="14.0" height="95.9" rx="2.5" style="fill:var(--ch-ink)"><title>Oct 25: 32.4 kb/d</title></rect>
-<rect x="123.9" y="59.2" width="14.0" height="130.8" rx="2.5" style="fill:var(--ch-ink)"><title>Nov 25: 44.2 kb/d</title></rect>
-<rect x="146.5" y="60.4" width="14.0" height="129.6" rx="2.5" style="fill:var(--ch-ink)"><title>Dec 25: 43.8 kb/d</title></rect>
-<rect x="169.0" y="59.2" width="14.0" height="130.8" rx="2.5" style="fill:var(--ch-ink)"><title>Jan 26: 44.2 kb/d</title></rect>
-<rect x="191.6" y="57.7" width="14.0" height="132.3" rx="2.5" style="fill:var(--ch-ink)"><title>Feb 26: 44.7 kb/d</title></rect>
-<rect x="214.1" y="66.9" width="14.0" height="123.1" rx="2.5" style="fill:var(--ch-ink)"><title>Mar 26: 41.6 kb/d</title></rect>
-<rect x="236.7" y="58.9" width="14.0" height="131.1" rx="2.5" style="fill:var(--ch-ink)"><title>Apr 26: 44.3 kb/d</title></rect>
-<rect x="259.3" y="53.0" width="14.0" height="137.0" rx="2.5" style="fill:var(--ch-ink)"><title>May 26: 46.3 kb/d</title></rect>
-<rect x="281.8" y="60.1" width="14.0" height="129.9" rx="2.5" style="fill:var(--ch-ink)"><title>Jun 26: 43.9 kb/d</title></rect>
-<rect x="304.4" y="66.6" width="14.0" height="123.4" rx="2.5" style="fill:var(--ch-ink)"><title>Jul 26: 41.7 kb/d</title></rect>
-<rect x="326.9" y="56.8" width="14.0" height="133.2" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 45.0 kb/d</title></rect>
-<rect x="349.5" y="133.8" width="14.0" height="56.2" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 19.0 kb/d</title></rect>
-<rect x="372.0" y="73.4" width="14.0" height="116.6" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 39.4 kb/d</title></rect>
-<rect x="394.6" y="56.8" width="14.0" height="133.2" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 45.0 kb/d</title></rect>
-<rect x="417.1" y="59.5" width="14.0" height="130.5" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 44.1 kb/d</title></rect>
-<rect x="439.7" y="58.9" width="14.0" height="131.1" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 44.3 kb/d</title></rect>
-<rect x="462.2" y="56.2" width="14.0" height="133.8" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 45.2 kb/d</title></rect>
-<rect x="484.8" y="58.0" width="14.0" height="132.0" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 44.6 kb/d</title></rect>
-<rect x="507.3" y="57.4" width="14.0" height="132.6" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 44.8 kb/d</title></rect>
-<rect x="529.9" y="68.0" width="14.0" height="122.0" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 41.2 kb/d</title></rect>
-<rect x="552.4" y="58.9" width="14.0" height="131.1" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 44.3 kb/d</title></rect>
-<rect x="575.0" y="63.0" width="14.0" height="127.0" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 42.9 kb/d</title></rect>
-<rect x="597.5" y="56.8" width="14.0" height="133.2" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 45.0 kb/d</title></rect>
-<rect x="620.1" y="169.3" width="14.0" height="20.7" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 7.0 kb/d</title></rect>
-<rect x="642.6" y="73.4" width="14.0" height="116.6" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 39.4 kb/d</title></rect>
-<rect x="665.2" y="56.8" width="14.0" height="133.2" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 45.0 kb/d</title></rect>
-<rect x="687.7" y="59.5" width="14.0" height="130.5" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 44.1 kb/d</title></rect>
-<text x="694.7" y="53.5" text-anchor="middle" class="val">44.1</text>
+<rect x="56.3" y="57.4" width="14.0" height="132.6" rx="2.5" style="fill:var(--ch-ink)"><title>Aug 25: 44.8 kb/d</title></rect>
+<rect x="78.8" y="111.6" width="14.0" height="78.4" rx="2.5" style="fill:var(--ch-ink)"><title>Sep 25: 26.5 kb/d</title></rect>
+<rect x="101.4" y="96.2" width="14.0" height="93.8" rx="2.5" style="fill:var(--ch-ink)"><title>Oct 25: 31.7 kb/d</title></rect>
+<rect x="123.9" y="61.8" width="14.0" height="128.2" rx="2.5" style="fill:var(--ch-ink)"><title>Nov 25: 43.3 kb/d</title></rect>
+<rect x="146.5" y="63.0" width="14.0" height="127.0" rx="2.5" style="fill:var(--ch-ink)"><title>Dec 25: 42.9 kb/d</title></rect>
+<rect x="169.0" y="61.8" width="14.0" height="128.2" rx="2.5" style="fill:var(--ch-ink)"><title>Jan 26: 43.3 kb/d</title></rect>
+<rect x="191.6" y="60.4" width="14.0" height="129.6" rx="2.5" style="fill:var(--ch-ink)"><title>Feb 26: 43.8 kb/d</title></rect>
+<rect x="214.1" y="69.2" width="14.0" height="120.8" rx="2.5" style="fill:var(--ch-ink)"><title>Mar 26: 40.8 kb/d</title></rect>
+<rect x="236.7" y="61.8" width="14.0" height="128.2" rx="2.5" style="fill:var(--ch-ink)"><title>Apr 26: 43.3 kb/d</title></rect>
+<rect x="259.3" y="55.9" width="14.0" height="134.1" rx="2.5" style="fill:var(--ch-ink)"><title>May 26: 45.3 kb/d</title></rect>
+<rect x="281.8" y="62.7" width="14.0" height="127.3" rx="2.5" style="fill:var(--ch-ink)"><title>Jun 26: 43.0 kb/d</title></rect>
+<rect x="304.4" y="69.2" width="14.0" height="120.8" rx="2.5" style="fill:var(--ch-ink)"><title>Jul 26: 40.8 kb/d</title></rect>
+<rect x="326.9" y="58.9" width="14.0" height="131.1" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 44.3 kb/d</title></rect>
+<rect x="349.5" y="134.6" width="14.0" height="55.4" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 18.7 kb/d</title></rect>
+<rect x="372.0" y="75.4" width="14.0" height="114.6" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 38.7 kb/d</title></rect>
+<rect x="394.6" y="58.9" width="14.0" height="131.1" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 44.3 kb/d</title></rect>
+<rect x="417.1" y="61.5" width="14.0" height="128.5" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 43.4 kb/d</title></rect>
+<rect x="439.7" y="60.6" width="14.0" height="129.4" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 43.7 kb/d</title></rect>
+<rect x="462.2" y="58.3" width="14.0" height="131.7" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 44.5 kb/d</title></rect>
+<rect x="484.8" y="60.1" width="14.0" height="129.9" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 43.9 kb/d</title></rect>
+<rect x="507.3" y="59.2" width="14.0" height="130.8" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 44.2 kb/d</title></rect>
+<rect x="529.9" y="69.8" width="14.0" height="120.2" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 40.6 kb/d</title></rect>
+<rect x="552.4" y="60.6" width="14.0" height="129.4" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 43.7 kb/d</title></rect>
+<rect x="575.0" y="64.8" width="14.0" height="125.2" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 42.3 kb/d</title></rect>
+<rect x="597.5" y="58.9" width="14.0" height="131.1" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 44.3 kb/d</title></rect>
+<rect x="620.1" y="170.2" width="14.0" height="19.8" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 6.7 kb/d</title></rect>
+<rect x="642.6" y="75.4" width="14.0" height="114.6" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 38.7 kb/d</title></rect>
+<rect x="665.2" y="58.9" width="14.0" height="131.1" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 44.3 kb/d</title></rect>
+<rect x="687.7" y="61.5" width="14.0" height="128.5" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 43.4 kb/d</title></rect>
+<text x="694.7" y="55.5" text-anchor="middle" class="val">43.4</text>
 <text x="63.3" y="216" text-anchor="middle" class="xlab">Aug 25</text>
 <text x="130.9" y="216" text-anchor="middle" class="xlab">Nov 25</text>
 <text x="198.6" y="216" text-anchor="middle" class="xlab">Feb 26</text>
@@ -688,12 +700,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <div class="tblwrap"><table class="data">
     <caption style="text-align:left;font-weight:700;padding:6px 0;">Latest actuals (kb/d)</caption>
     <tr><th>Series</th><th>Feb 2026</th><th>Mar 2026</th><th>Apr 2026</th><th>May 2026</th><th>Jun 2026</th><th>Jul 2026</th></tr>
-    <tr><td>MacKay River (Suncor)</td><td class="num">44.7</td><td class="num">41.6</td><td class="num">44.3</td><td class="num">46.3</td><td class="num">43.9</td><td class="num">41.7</td></tr>
+    <tr><td>MacKay River (Suncor)</td><td class="num">43.8</td><td class="num">40.8</td><td class="num">43.3</td><td class="num">45.3</td><td class="num">43.0</td><td class="num">40.8</td></tr>
   </table></div>
   <div class="tblwrap"><table class="data">
     <caption style="text-align:left;font-weight:700;padding:6px 0;">First forecast months (kb/d)</caption>
     <tr><th>Series</th><th>Oct 2026</th><th>Nov 2026</th><th>Dec 2026</th><th>Jan 2027</th><th>Feb 2027</th><th>Mar 2027</th></tr>
-    <tr><td>MacKay River (Suncor)</td><td class="num">39.4</td><td class="num">45.0</td><td class="num">44.1</td><td class="num">44.3</td><td class="num">45.2</td><td class="num">44.6</td></tr>
+    <tr><td>MacKay River (Suncor)</td><td class="num">38.7</td><td class="num">44.3</td><td class="num">43.4</td><td class="num">43.7</td><td class="num">44.5</td><td class="num">43.9</td></tr>
   </table></div>
   <p class="tblnote">Full 26-month table with drill-down lives in the <a href="../st3-dashboard.html">trading dashboard</a>. Blank cells are months AER has not published yet, not zeros.</p>
   <p class="src"><b>How to read MacKay River (Suncor):</b> Sep 2027 carries the MacKay River turnaround at -12 kb/d, CADENCE-MODELED (editorially approved 2026-09-23; median observed September dip, AER ST53 analysis). In the model math, labeled CADENCE-MODELED everywhere, never as company-confirmed. Maintenance modeled down at this leaf: MacKay River September 2027 turnaround, -12 kb/d (CADENCE-MODELED, editorially approved 2026-09-23; median of observed September dips 5.4-33.2 kb/d, median 12.2, in the AER ST53 seasonal dip analysis, vintage July 2026, retrieved 2026-09-23). In the numbers and labeled CADENCE-MODELED everywhere; never presented as company-confirmed. No 2027 company statement exists.</p>
@@ -712,12 +724,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="src"><b>Named assumptions:</b> Sep 2027 carries the MacKay River turnaround at -12 kb/d, CADENCE-MODELED (editorially approved 2026-09-23; median observed September dip, AER ST53 analysis). In the model math, labeled CADENCE-MODELED everywhere, never as company-confirmed. Maintenance modeled down at this leaf: MacKay River September 2027 turnaround, -12 kb/d (CADENCE-MODELED, editorially approved 2026-09-23; median of observed September dips 5.4-33.2 kb/d, median 12.2, in the AER ST53 seasonal dip analysis, vintage July 2026, retrieved 2026-09-23). In the numbers and labeled CADENCE-MODELED everywhere; never presented as company-confirmed. No 2027 company statement exists.</p>
   <p class="src"><b>Confirmation status:</b> model forecast; maintenance impacts enter the math only from public-confirmed guidance.</p>
   <h2>Market relevance</h2>
-  <p>In-situ bitumen has flexible disposition (dilbit to market or upgrader feed). In the model, MacKay River output is unchanged by upgrader outages and any upgrader-bound share is assumed diverted to dilbit, so its 41.1 kb/d 12-month forecast average is a steady contributor to marketable dilbit across the tradable window.</p>
+  <p>In-situ bitumen has flexible disposition (dilbit to market or upgrader feed). In the model, MacKay River output is unchanged by upgrader outages and any upgrader-bound share is assumed diverted to dilbit, so its 40.4 kb/d 12-month forecast average is a steady contributor to marketable dilbit across the tradable window.</p>
   <p class="src"><b>Basis:</b> model-derived from the dashboard series above; no external view is added.</p>
   <h2>Related weekly notes</h2>
   <p class="nullnote">No weekly edition to date mentions this asset by name.</p>
   <h2>Sources</h2>
-  <p class="src"><b>MacKay River (Suncor)</b><br>Source: AER ST53, commercial scheme mapping (Heavy Reading project roster)<br>Vintage: AER ST53 actuals through 2026-07, pulled 2026-09-22; model nowcast (_seasonal_baseline + confirmed maintenance), built 2026-09-23<br>Method: actuals: ST53 scheme observed, grossed up by 1.27 to ST3 in-situ level (mapped projects cover 79.0%). forecast: _seasonal_baseline (trailing-12m mean x seasonal factor from last 3 complete years). Confirmed maintenance is deducted at this leaf after the baseline (see Why).</p>
+  <p class="src"><b>MacKay River (Suncor)</b><br>Source: AER ST53, commercial scheme mapping (Heavy Reading project roster)<br>Vintage: AER ST53 actuals through 2026-07, pulled 2026-09-22; model nowcast (_seasonal_baseline + confirmed maintenance), built 2026-09-23<br>Method: actuals: ST53 scheme observed, grossed up by 1.24 to ST3 in-situ level (mapped projects cover 80.6%). forecast: _seasonal_baseline (trailing-12m mean x seasonal factor from last 3 complete years). Confirmed maintenance is deducted at this leaf after the baseline (see Why).</p>
   <h3>Full citation block</h3>
 <div class="tblwrap"><table class="data"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-07 (latest file vintage 2026-08-27)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-07</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded</td><td>Monthly</td><td>Actuals through 2026-05</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-09-30, compiled 2026-09-22</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (model build)</td><td>Per build</td><td>Forecast built 2026-09-22; Aug-Sep 2026 nowcast built 2026-09-23</td><td>2026-09-23</td></tr><tr><td>U.S. Energy Information Administration</td><td>Weekly Petroleum Status Report (WPSR): weekly preliminary crude imports by country (Table 8), weekly crude exports</td><td><a href="https://www.eia.gov">https://www.eia.gov</a></td><td>Weekly</td><td>Sep 2025 to Sep 2026 weekly series</td><td>2026-09-23</td></tr><tr><td>Organization of the Petroleum Exporting Countries (OPEC)</td><td>Monthly Oil Market Report (MOMR): Venezuela crude production, secondary sources and direct communication</td><td><a href="https://www.opec.org">https://www.opec.org</a></td><td>Monthly</td><td>Venezuela production series via Aug 2026 MOMR Tables 5-7/5-8</td><td>2026-09-24</td></tr><tr><td>ICE</td><td>Delayed futures quotes</td><td><a href="https://www.ice.com">https://www.ice.com</a></td><td>Daily</td><td>Brent settles referenced in weekly digest pricing</td><td>Per edition</td></tr><tr><td>Statistics Canada</td><td>Canadian energy series referenced in weekly digest editions</td><td><a href="https://www.statcan.gc.ca">https://www.statcan.gc.ca</a></td><td>As published</td><td>Series per digest edition</td><td>Per edition</td></tr><tr><td>Suncor Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Canadian Natural Resources (CNRL)</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Imperial Oil</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Cenovus Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Reuters</td><td>Wire reporting cited on watch pages: Venezuela Merey pricing, Signal Maritime freight rates</td><td><a href="https://www.reuters.com">https://www.reuters.com</a></td><td>As published</td><td>Venezuela watch Sep 2026; geopolitical watch pages</td><td>2026-09-24</td></tr><tr><td>The Associated Press</td><td>Wire reporting cited on geopolitical watch pages</td><td><a href="https://apnews.com">https://apnews.com</a></td><td>As published</td><td>Per watch page</td><td>Per watch page</td></tr><tr><td>OilPrice.com</td><td>Vitol Merey offer to China (Bloomberg-sourced), Jan 2026</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html">https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html</a></td><td>As published</td><td>Venezuela watch, Jan 2026</td><td>2026-09-23</td></tr><tr><td>Signal Maritime</td><td>Aframax freight rates, Jose terminal to USGC, reported via Reuters</td><td>URL not recorded</td><td>As published</td><td>Venezuela watch, Jan/Sep 2026</td><td>2026-09-24</td></tr><tr><td>U.S. Department of Energy</td><td>Strategic Petroleum Reserve (SPR) data and policy statements</td><td><a href="https://www.energy.gov">https://www.energy.gov</a></td><td>As published</td><td>SPR &amp; storage watch</td><td>Per watch page</td></tr><tr><td>Commercial storage</td><td>Licensed market-data inputs embedded in model builds; vendor identities withheld per licence terms</td><td>Not disclosed</td><td>Per licence</td><td>As embedded in builds</td><td>Per build</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
   <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="../supply/index.html">Supply hub</a><a href="../st3-dashboard.html">Dashboard</a><a href="../scorecard.html">Scorecard</a><a href="../balance/index.html">S&amp;D balance</a><a href="../maintenance/index.html">Maintenance</a><a href="../projects/index.html">All projects</a></div><div class="fcol"><h4>World</h4><a href="../world/hormuz/index.html">Hormuz watch</a><a href="../world/iran/index.html">Iran watch</a><a href="../world/redsea/index.html">Red Sea</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>

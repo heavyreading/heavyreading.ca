@@ -390,6 +390,17 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   margin:44px 0 0; padding-top:18px; border-top:1px solid var(--line); }
 .weeknav a { font-size:14px; font-weight:600; text-decoration:none; color:var(--ink);
   max-width:44%; line-height:1.5; }
+
+/* in-page jump-list: quiet sticky section links for long indexes (projects).
+   In-flow on phones, sticks under the masthead on desktop. */
+.jumplist { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap;
+  align-items:baseline; gap:6px 18px; padding:10px 2px; margin:6px 0 0;
+  background:var(--paper); border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); font-size:13px; }
+.jumplist .jl-cap { font-size:11px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--mut); }
+.jumplist a { text-decoration:none; color:var(--ink); font-weight:600; }
+.jumplist a:hover { color:var(--acc-deep); }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
 
@@ -586,8 +597,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
+      <div class="navdrop"><a class="nd-top nd-plain" href="../apportionment/index.html">Apportionment</a></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../weekly/index.html">Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/index.html">Edition archive</a><a class="mi" href="../digest/podcast/index.html">Reader podcast</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../digest/2026-09-26/index.html">Today&apos;s edition</a><a class="mi" href="../digest/index.html">Edition archive</a><a class="mi" href="../digest/podcast/index.html">Reader podcast</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="../reference/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="../reference/index.html#levels">Understand a level</a><a class="mi" href="../reference/index.html#basin">Learn the basin</a><a class="mi" href="../reference/index.html#watches">Check a watch</a><a class="mi" href="../reference/index.html#work">Track work</a><a class="mi" href="../reference/index.html#provenance">Provenance</a></div></details></div>
       </nav>
       </details>
@@ -600,7 +612,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h2>The pipes</h2>
   <p>Five systems carry crude out of landlocked Western Canada. At year-end 2025 the scoreboard looked like this: Enbridge Mainline 3,200 kb/d (Edmonton to the US Midwest, with links to the Gulf Coast, Ontario, and Quebec); Trans Mountain 890 kb/d (Edmonton to Burnaby and Washington State, after the 590 kb/d TMX expansion started up in May 2024); Keystone 640 kb/d (South Bow, Hardisty to Cushing and the Gulf Coast); Express 310 kb/d (Hardisty to the Rockies and the Midwest via Platte); Milk River 98 and Rangeland 20 kb/d (into Montana). Total nameplate about 5,160 kb/d, or roughly 4,950 of crude once you set aside space for refined products, NGLs, and US barrels. The Mainline is Enbridge's; Keystone is operated by South Bow, spun out of TC Energy in 2024; Trans Mountain is a federal Crown corporation.</p>
   <h2>Apportionment</h2>
-  <p>When shippers nominate more barrels than a pipe can take, the operator prorates everyone. That is apportionment, and it is the market's way of learning a pipe is full. The Mainline has been apportioned in most months for years. Trans Mountain hit apportionment in June 2026, the first time since the expansion, which tells you the new capacity got absorbed faster than expected. Full pipes mean barrels compete for space, and that competition shows up as wider differentials.</p>
+  <p>When shippers nominate more barrels than a pipe can take, the operator prorates everyone. That is apportionment. The Mainline has been apportioned in most months for years. Trans Mountain hit apportionment in June 2026, the first time since the expansion, which tells you the new capacity got absorbed faster than expected. Full pipes mean barrels compete for space, and that competition shows up as wider differentials.</p>
+  <h2>The game inside the number</h2>
+  <p>The published apportionment percentage is not a physical measurement. It is the outcome of a game both sides play. When shippers expect apportionment, they over-nominate ("nominating air") because a bigger nomination secures a bigger prorated share. Inflated nominations deepen the apportionment, which invites more over-nomination the next month. The nominations lie; the barrels don't.</p><p>Enbridge plays too. In apportionment months, a shipper whose receipts fall more than five percent short of its apportioned volume pays a non-performance penalty (Rule 18 of the Mainline tariff). Apportionment "on" switches the penalty regime on, which forces shippers to nominate full and actually deliver: volume discipline, enforced by fine. Enbridge has every operational reason to keep the pipe managed just into apportionment even when it is not physically full.</p><p>So read apportionment as a regime, not a reading. It cycles: normal nominations until apportionment, or just its expectation, flips the system into over-nomination mode, where the feedback loop runs until demand falls or new capacity breaks it. True tightness is actual throughput against physical capacity. Everything else is the game.</p>
   <h2>Why pipeline fill matters</h2>
   <p>A pipeline is working inventory. The millions of barrels sitting inside the pipe (line fill) are not in storage and not available to the market. When a new line starts up, filling it is a one-time demand event that pulls barrels out of the tradable pool. After that, line fill just sits there, quietly holding barrels off the market for as long as the pipe runs.</p>
   <h2>What is coming</h2>

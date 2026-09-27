@@ -1,0 +1,288 @@
+{
+ "vintage": "Forward calendar 2026-09-22; modeled at leaves 2026-09-23; feed built 2026-09-26",
+ "data": {
+  "offline_by_month": [
+   {
+    "month": "2026-08",
+    "offline_kbd": 32.8,
+    "events": "Coker 8-2 (29.8 kb/d); Cold Lake (3.0 kb/d)"
+   },
+   {
+    "month": "2026-09",
+    "offline_kbd": 310.0,
+    "events": "Coker 8-2 (77.0 kb/d); Cold Lake (3.0 kb/d)"
+   },
+   {
+    "month": "2026-10",
+    "offline_kbd": 164.4,
+    "events": "Coker 8-2 (22.4 kb/d); Christina Lake F/G (assumed) (20.0 kb/d); Cold Lake (3.0 kb/d)"
+   },
+   {
+    "month": "2026-11",
+    "offline_kbd": 23.0,
+    "events": "Suncor Base Plant (20.0 kb/d); Cold Lake (3.0 kb/d)"
+   },
+   {
+    "month": "2026-12",
+    "offline_kbd": 3.0,
+    "events": "Cold Lake (3.0 kb/d)"
+   },
+   {
+    "month": "2027-01",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-02",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-03",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-04",
+    "offline_kbd": 26.0,
+    "events": "Primrose/Wolf Lake (cadence-modeled) (26.0 kb/d)"
+   },
+   {
+    "month": "2027-05",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-06",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-07",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-08",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-09",
+    "offline_kbd": 12.0,
+    "events": "MacKay River (cadence-modeled) (12.0 kb/d)"
+   },
+   {
+    "month": "2027-10",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-11",
+    "offline_kbd": 0.0,
+    "events": ""
+   },
+   {
+    "month": "2027-12",
+    "offline_kbd": 0.0,
+    "events": ""
+   }
+  ],
+  "events": [
+   {
+    "project_id": "cve_christina_lake",
+    "window_start": "2026-10-01",
+    "window_end": "2026-12-31",
+    "window_precision": "quarter",
+    "kind": "none_found",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Cenovus Energy Inc.",
+    "source_date": "2026-07-29"
+   },
+   {
+    "project_id": "cve_foster_creek",
+    "window_start": "2026-10-01",
+    "window_end": "2026-12-31",
+    "window_precision": "quarter",
+    "kind": "none_found",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Cenovus Energy Inc.",
+    "source_date": "2026-07-29"
+   },
+   {
+    "project_id": "cve_sunrise",
+    "window_start": "2026-10-01",
+    "window_end": "2026-12-31",
+    "window_precision": "quarter",
+    "kind": "none_found",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Cenovus Energy Inc.",
+    "source_date": "2026-07-29"
+   },
+   {
+    "project_id": "imo_kearl",
+    "window_start": "2026-10-01",
+    "window_end": "2027-12-31",
+    "window_precision": "exact",
+    "kind": "none_found",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Imperial Oil Limited",
+    "source_date": "2026-01-15"
+   },
+   {
+    "project_id": "su_base_plant",
+    "window_start": "2026-10-01",
+    "window_end": "2026-12-31",
+    "window_precision": "quarter",
+    "kind": "turnaround",
+    "validation": "public-confirmed",
+    "impact_kbd": -15.0,
+    "source_company": "Suncor Energy Inc.",
+    "source_date": "2026-04-01"
+   },
+   {
+    "project_id": "su_base_plant",
+    "window_start": "2026-10-01",
+    "window_end": "2026-12-31",
+    "window_precision": "quarter",
+    "kind": "turnaround",
+    "validation": "public-confirmed",
+    "impact_kbd": -5.0,
+    "source_company": "Suncor Energy Inc.",
+    "source_date": "2026-04-01"
+   },
+   {
+    "project_id": "cnq_primrose",
+    "window_start": "2027-04-01",
+    "window_end": "2027-04-30",
+    "window_precision": "month",
+    "kind": "turnaround",
+    "validation": "cadence-modeled",
+    "impact_kbd": -26.0,
+    "source_company": null,
+    "source_date": "2026-09-23"
+   },
+   {
+    "project_id": "su_mackay_river",
+    "window_start": "2027-09-01",
+    "window_end": "2027-09-30",
+    "window_precision": "month",
+    "kind": "turnaround",
+    "validation": "cadence-modeled",
+    "impact_kbd": -12.0,
+    "source_company": null,
+    "source_date": "2026-09-23"
+   },
+   {
+    "project_id": "cnq_horizon",
+    "window_start": "2028-01-01",
+    "window_end": "2028-12-31",
+    "window_precision": "year",
+    "kind": "forward_schedule",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Canadian Natural Resources Limited",
+    "source_date": "2025-12-16"
+   },
+   {
+    "project_id": "imo_kearl",
+    "window_start": "2029-01-01",
+    "window_end": "2029-12-31",
+    "window_precision": "year",
+    "kind": "forward_schedule",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Imperial Oil Limited",
+    "source_date": "2026-07-31"
+   },
+   {
+    "project_id": "ath_leismer",
+    "window_start": "2030-01-01",
+    "window_end": "2030-12-31",
+    "window_precision": "year",
+    "kind": "forward_schedule",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Athabasca Oil Corporation",
+    "source_date": "2026-05-06"
+   },
+   {
+    "project_id": "cve_christina_lake",
+    "window_start": "2031-01-01",
+    "window_end": "2031-12-31",
+    "window_precision": "year",
+    "kind": "forward_schedule",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Cenovus Energy Inc.",
+    "source_date": "2026-07-29"
+   },
+   {
+    "project_id": "su_firebag",
+    "window_start": "2031-01-01",
+    "window_end": "2031-12-31",
+    "window_precision": "year",
+    "kind": "forward_schedule",
+    "validation": "guidance-sourced",
+    "impact_kbd": null,
+    "source_company": "Suncor Energy Inc.",
+    "source_date": "2026-08-05"
+   },
+   {
+    "project_id": "cnq_horizon",
+    "window_start": null,
+    "window_end": null,
+    "window_precision": null,
+    "kind": "in_model_math",
+    "validation": null,
+    "impact_kbd": null,
+    "source_company": null,
+    "source_date": null
+   },
+   {
+    "project_id": "imo_cold_lake",
+    "window_start": null,
+    "window_end": null,
+    "window_precision": null,
+    "kind": "in_model_math",
+    "validation": null,
+    "impact_kbd": null,
+    "source_company": null,
+    "source_date": null
+   },
+   {
+    "project_id": "syncrude",
+    "window_start": null,
+    "window_end": null,
+    "window_precision": null,
+    "kind": "in_model_math",
+    "validation": null,
+    "impact_kbd": null,
+    "source_company": null,
+    "source_date": null
+   }
+  ]
+ },
+ "meta": {
+  "units": {
+   "offline": "kb/d",
+   "impact": "kb/d"
+  },
+  "sources": [
+   "Company guidance/press releases",
+   "AER ST53 seasonal analysis",
+   "Editorial review 2026-09-23"
+  ],
+  "notes": "kind: turnaround (event), forward_schedule (guidance), in_model_math (already in forecast numbers). validation: guidance-sourced (company said it) vs cadence-modeled (pattern-inferred, less certain).",
+  "blindsided": [
+   "cadence-modeled events are pattern-inferred, not company-confirmed \u2014 treat as softer",
+   "2027 company turnaround schedules unpublished as of 2026-09-22; 2027 calendar is thin",
+   "Unplanned outages (fires, freeze-offs) are not in this calendar by definition",
+   "in_model_math events are already in the balance forecast \u2014 don't double-count"
+  ]
+ }
+}

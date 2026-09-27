@@ -390,6 +390,17 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   margin:44px 0 0; padding-top:18px; border-top:1px solid var(--line); }
 .weeknav a { font-size:14px; font-weight:600; text-decoration:none; color:var(--ink);
   max-width:44%; line-height:1.5; }
+
+/* in-page jump-list: quiet sticky section links for long indexes (projects).
+   In-flow on phones, sticks under the masthead on desktop. */
+.jumplist { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap;
+  align-items:baseline; gap:6px 18px; padding:10px 2px; margin:6px 0 0;
+  background:var(--paper); border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); font-size:13px; }
+.jumplist .jl-cap { font-size:11px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--mut); }
+.jumplist a { text-decoration:none; color:var(--ink); font-weight:600; }
+.jumplist a:hover { color:var(--acc-deep); }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
 
@@ -586,8 +597,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop active"><a class="nd-top nd-plain" href="index.html" aria-current="page">Now</a></div>
+      <div class="navdrop"><a class="nd-top nd-plain" href="apportionment/index.html">Apportionment</a></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="weekly/index.html">Letter</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="weekly/index.html">Edition archive</a></div></details></div>
-      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="digest/index.html">Edition archive</a><a class="mi" href="digest/podcast/index.html">Reader podcast</a></div></details></div>
+      <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="digest/index.html">Digest</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="digest/2026-09-26/index.html">Today&apos;s edition</a><a class="mi" href="digest/index.html">Edition archive</a><a class="mi" href="digest/podcast/index.html">Reader podcast</a></div></details></div>
       <div class="navdrop"><details class="nd"><summary class="nd-sum"><a class="nd-top" href="reference/index.html">Reference</a><span class="nd-caret" aria-hidden="true"></span></summary><div class="nd-menu"><a class="mi" href="reference/index.html#levels">Understand a level</a><a class="mi" href="reference/index.html#basin">Learn the basin</a><a class="mi" href="reference/index.html#watches">Check a watch</a><a class="mi" href="reference/index.html#work">Track work</a><a class="mi" href="reference/index.html#provenance">Provenance</a></div></details></div>
       </nav>
       </details>
@@ -643,6 +655,13 @@ details.now-det summary{cursor:pointer;color:var(--mut);font-size:.88rem;
 .lvl-fig{font-family:var(--serif);font-size:1.6rem;margin:.15rem 0 .3rem}
 .lvl-note{font-size:.88rem;color:var(--mut)}
 .now-foot{margin-top:2rem}
+.eg-fwd{display:flex;gap:1.2rem;margin:.4rem 0 .3rem;flex-wrap:wrap}
+.eg-mo .mo{font-size:.82rem;color:var(--mut);text-transform:uppercase;
+  letter-spacing:.05em}
+.eg-mo .fv{font-family:var(--serif);font-size:1.45rem;margin:.1rem 0}
+.eg-mo .fv.neg{color:#a33}
+.eg-per{font-size:.88rem;color:var(--mut);margin:.15rem 0 .4rem;line-height:1.6}
+.eg-per b{color:var(--ink);font-weight:650}
 </style>
 
 
@@ -742,6 +761,68 @@ stated as estimates.</p>
 </article>
 </section>
 
+<section class="now-sec" aria-label="Egress watch">
+<h2>Egress watch — how much room is left</h2>
+<p class="sec-sub">Three independent reads on spare export capacity out of the
+Western Canadian Sedimentary Basin (WCSB): what the regulator measured, what
+the model says about right now, and what the forward curve says. Every figure
+carries its vintage; every model figure carries its score.</p>
+
+<article class="chg-card">
+<div class="chg-top"><span class="chg-title">The regulator's tape</span></div>
+<p class="chg-delta">+272 kb/d</p>
+<p class="eg-per"><b>Enbridge Canadian Mainline</b>
+202 kb/d spare · apportioned
+12% of nominations<br>
+<b>Keystone</b> 36 kb/d spare ·
+apportioned 5%<br>
+<b>Trans Mountain</b> 34 kb/d spare ·
+apportioned 0% — second-thinnest margin on record;
+the Pacific release valve is functionally at its limit</p>
+<div class="chips"><span class="chip">Canada Energy Regulator (CER) ·
+Jun 2026</span><span class="chip">pulled 2026-09-22</span>
+<span class="chip src">ground truth — this layer is the actual</span></div>
+</article>
+
+<article class="chg-card">
+<div class="chg-top"><span class="chg-title">Right now — model nowcast</span></div>
+<p class="chg-delta">+53 kb/d</p>
+<p class="chg-body">September spare export capacity: export stack
+5,126 kb/d against marketable supply
+5,073 kb/d.</p>
+<div class="chips"><span class="chip">model nowcast · built Sep 27,
+2026</span><span class="chip src">score: walk-forward bias +0.1 kb/d, MAE 161
+kb/d, 139 months</span></div>
+</article>
+
+<article class="chg-card">
+<div class="chg-top"><span class="chg-title">The forward — what you actually
+trade</span></div>
+<div class="eg-fwd"><div class="eg-mo"><div class="mo">Oct 2026</div><div class="fv">+87</div></div><div class="eg-mo"><div class="mo">Nov 2026</div><div class="fv neg">−98</div></div><div class="eg-mo"><div class="mo">Dec 2026</div><div class="fv neg">−174</div></div></div>
+<p class="chg-body">Spare survives the quarter in the base case: spare +87 in October, −98 in November, −174 in December kb/d (export stack
+~5,126 kb/d against marketable supply
+5,039–5,300 kb/d). Negative spare means
+marketable supply exceeds pipe-plus-rail capacity — the overflow must
+clear via storage (if carry pays and ullage exists) or rail economics,
+while apportionment takes a bigger bite.
+<span class="sub">kb/d spare export capacity.</span></p>
+<div class="chips"><span class="chip">model forecast · built Sep 27,
+2026</span><span class="chip src">unscored — CER Nov actuals land ~Feb
+2027</span></div>
+</article>
+
+<details class="now-det"><summary>Method note</summary>
+<p>Model spare = export stack − marketable supply. Export stack is 98%
+working capacity across six export routes plus 85 kb/d crude-by-rail =
+4,954 kb/d, flat. Marketable supply is the WCSB S&amp;D model monthly series
+(AER ST3 actuals through Jul 2026, modeled forward, less the published
+maintenance calendar). The regulator's spare uses Canada Energy Regulator
+"available capacity" — a different denominator from the model's working
+capacity, so the two layers are not directly comparable barrel-for-barrel.
+Low/base/high scenarios are identical through 2027 (they diverge 2028+).</p>
+</details>
+</section>
+
 <section class="now-sec" aria-label="Flags">
 <h2>Flags — what's forming</h2>
 <p class="sec-sub">Not yet changes, but could become them. A flag either
@@ -838,15 +919,15 @@ line: the kbpd impact, or the honest statement that it is unquantified.</p>
 these. Four figures, never more. Charts live on the reference pages.</p>
 <ul class="levels">
 <li><div class="lvl-label">WCSB production</div>
-<div class="lvl-fig">4,260 kb/d</div>
+<div class="lvl-fig">4,235 kb/d</div>
 <div class="lvl-note">Oct 2026 model estimate</div>
 <div class="chips"><span class="chip">AER ST3 thru Jul 2026</span></div></li>
 <li><div class="lvl-label">Egress capacity</div>
-<div class="lvl-fig">4,754 kb/d</div>
-<div class="lvl-note">292 kb/d spare takeaway</div>
+<div class="lvl-fig">4,923 kb/d</div>
+<div class="lvl-note">87 kb/d spare takeaway</div>
 <div class="chips"><span class="chip">CER + model, 2026-09-25</span></div></li>
 <li><div class="lvl-label">Basin balance</div>
-<div class="lvl-fig">-148 kb/d</div>
+<div class="lvl-fig">-160 kb/d</div>
 <div class="lvl-note">implied storage change — drawing</div>
 <div class="chips"><span class="chip">Oct 2026 estimate</span></div></li>
 <li><div class="lvl-label">WCS – WTI differential</div>
