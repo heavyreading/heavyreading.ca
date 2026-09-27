@@ -355,7 +355,7 @@
   "notes": "Reconciled forecast: wanted removals capped at pipe capacity (SK/other baseload reserved); overflow routes to price response when carry does not pay. Identity closes every month. ALL months in this feed are forecast (band=forecast). For observed history see wcsb_balance_monthly.csv (band=act).",
   "blindsided": [
    "2026-08/09 ST3 actuals unknown (reporting lag); forecast starts from 2026-07",
-   "SK/other 600 kb/d is a flat assumption \u2014 sensitivity table shows overflow vanishes at 400, doubles at 800",
+   "SK/other 600 kb/d is a flat assumption — sensitivity table shows overflow vanishes at 400, doubles at 800",
    "requires_price_response is the model's overflow bucket, not a market call",
    "Carry gate is fail-safe closed (missing WTI/diff legs); overflow defaults to price response, not storage",
    "No forecast experiment here has passed blind walk-forward backtest"

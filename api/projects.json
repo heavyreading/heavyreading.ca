@@ -1,0 +1,1322 @@
+{
+ "vintage": "32 projects from projects.yaml + project_intel; production from AER ST3/ST53 actuals through Jul 2026; built 2026-09-27",
+ "data": {
+  "projects": [
+   {
+    "slug": "cve_foster_creek",
+    "name": "Foster Creek",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Foster Creek is a steam-assisted gravity drainage (SAGD) oil sands project in northeast Alberta producing diluted bitumen. It is one of Cenovus's two core in-situ assets alongside Christina Lake.",
+    "capacity_kbd": 210.0,
+    "production_kbd": 304.3,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns 100% and operates Foster Creek, effective May 17, 2017, when ConocoPhillips completed the sale of its 50% non-operated interest in the Foster Creek Christina Lake (FCCL) partnership to Cenovus. (Source: ConocoPhillips, ConocoPhillips Completes Sale of Foster Creek Christina Lake Partnership Interest and Western Canada Deep Basin Gas Assets to Cenovus, 2017-05-17)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity is 210,000 bbl/d of bitumen, after a debottlenecking/optimization program. (Source: Oil Sands Magazine, Cenovus grows capacity at Foster Creek and upsizes expansion at Christina Lake North, 2026-02-20)\n• Demonstrated output has exceeded the stated nameplate: all-time maximum 245,300 bbl/d in July 2026 (AER ST53, scheme \"Foster Creek\"). Modeled nameplate confirmed at 210,000 bbl/d, 2026-09-23: credible and conservative against demonstrated history. Per the standing rule, where actuals beat announced nameplate, history wins."
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• A sanctioned solvent-aided project is expected to add 5,000 to 10,000 bbl/d of production by 2028. (Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29)\n• A sulphur recovery project at Foster Creek was completed, with disclosed expected cost savings of $0.50 to $0.75 per barrel. (Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• A turnaround was conducted at Foster Creek in Q2 2026. Note: secondary-sourced; primary disclosure of planned turnaround frequency and duration was not found in reviewed sources. (Source: Oil Sands Magazine, Cenovus grows capacity at Foster Creek and upsizes expansion at Christina Lake North, 2026-02-20)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Foster Creek specifically was not disclosed. Cenovus disclosed that the completed sulphur project is expected to reduce costs by $0.50 to $0.75/bbl. (Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD with solvent co-injection optimization. (Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The project is part of the Foster Creek Christina Lake partnership scheme and is an established operating facility. Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2026-10-01 to 2026-12-31: none found — impact unquantified (guidance sourced)"
+     }
+    ]
+   },
+   {
+    "slug": "cve_christina_lake",
+    "name": "Christina Lake",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Christina Lake is a steam-assisted gravity drainage (SAGD) project in northeast Alberta producing diluted bitumen. It is Cenovus's largest in-situ asset. It is a separate project from Christina Lake North (the former MEG Energy asset), which is tracked separately under meg_christina_lake; the two share the same ST53 scheme name but are different facilities with different ownership histories.",
+    "capacity_kbd": 260.0,
+    "production_kbd": 252.9,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns 100% and operates Christina Lake, effective May 17, 2017, when ConocoPhillips completed the sale of its 50% non-operated interest in the Foster Creek Christina Lake (FCCL) partnership to Cenovus. (Source: ConocoPhillips, ConocoPhillips Completes Sale of Foster Creek Christina Lake Partnership Interest and Western Canada Deep Basin Gas Assets to Cenovus, 2017-05-17)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity of 260,000 bbl/d of bitumen, based on AER and facility-operator data. Note: secondary-sourced. (Source: Oil Sands Magazine, Christina Lake project profile, 2026-08-11)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• The Narrows Lake lease was developed as a tie-back into the Christina Lake central processing facility via a 17-km connection (about $300 million). First oil was achieved in July 2025; AER ST53 reports Narrows Lake as its own scheme, ramping from 1.2 kb/d in Jul 2025 to 80.2 kb/d in Jul 2026, above the original 20,000 to 30,000 bbl/d company guidance. Narrows Lake is tracked as its own model leaf (narrows_lake) with its forecast from observed history; no generic growth is added on top. (Source: Cenovus Energy, Q3 2024 results news release, 2024-10-31, https://www.cenovus.com/News-and-Stories/News-releases/2024/2972380; Source: Alberta Major Projects, Narrows Lake Tie-Back to Christina Lake, https://majorprojects.alberta.ca/details/Narrows-Lake-Tie-Back-to-Christina-Lake/11241; AER ST53, verified 2026-09-23)\n• At the separate Christina Lake North facility, the first of two new steam generators was expected online by year-end 2026, with redevelopment production expected to rise in the second half of 2026. See meg_christina_lake for the North facility. (Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Maintenance work impacted production at Christina Lake in Q2 2023 (average 234,900 bbl/d in the quarter, down 2,300 bbl/d quarter over quarter); no additional maintenance was planned at the facility for the remainder of 2023. Planned turnaround frequency and duration not disclosed in reviewed sources. (Source: Oil Sands Magazine, Cenovus outlines optimization plans for its SAGD assets, 2023-07-27)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Christina Lake specifically: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD, producing from the Wabiskaw-McMurray formation; product is diluted bitumen. (Source: Oil Sands Magazine, Christina Lake project profile, 2026-08-11)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The Narrows Lake tie-back was integrated into the existing Christina Lake facility (Narrows Lake was originally planned as a stand-alone 130,000 bbl/d SAGD facility but was never sanctioned). (Source: Oil Sands Magazine, Cenovus outlines optimization plans for its SAGD assets, 2023-07-27)"
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2026-10-01 to 2026-12-31: none found — impact unquantified (guidance sourced)\n• 2031-01-01 to 2031-12-31: forward schedule — impact unquantified (guidance sourced)"
+     }
+    ]
+   },
+   {
+    "slug": "cve_sunrise",
+    "name": "Sunrise",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Sunrise is a steam-assisted gravity drainage (SAGD) oil sands project in northeast Alberta producing diluted bitumen. Cenovus acquired full ownership from bp in 2022 and has been applying its oil sands operating model to raise output beyond original nameplate.",
+    "capacity_kbd": 60.0,
+    "production_kbd": 84.5,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns 100% and operates Sunrise. Cenovus announced on June 13, 2022 that it had reached an agreement to purchase the remaining 50% of the Sunrise oil sands project from bp for $600 million in cash plus a variable payment and Cenovus's 35% position in the undeveloped Bay du Nord project offshore Newfoundland and Labrador. The transaction had an effective date of May 1, 2022 and was anticipated to close in Q3 2022. Cenovus had operated Sunrise since the beginning of 2021 following the Husky Energy transaction. (Source: Cenovus Energy, Cenovus acquiring outstanding 50% interest in Sunrise oil sands asset, 2022-06-13)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity of 60,000 bbl/d of bitumen at the time of the 2022 acquisition, with Cenovus expecting to achieve it through a multi-year development program. (Source: Cenovus Energy, Cenovus acquiring outstanding 50% interest in Sunrise oil sands asset, 2022-06-13)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Cenovus targets Sunrise output of approximately 70,000 bbl/d by 2028. CONFIRMED by primary corporate disclosure: \"production continues to ramp up towards 70,000 bbls/d by 2028\"; the first of four new well pads on the east development area began producing in April 2026, with a second pad expected online later in 2026. (Source: Cenovus Energy, Cenovus announces first-quarter 2026 results news release, 2026-05-06)\n• APPLIED to the model 2026-09-23 (the editor): the cve_sunrise project leaf is held at 70.0 kb/d flat across all forecast months (Oct 2026-Dec 2027), replacing the declining seasonal baseline. Current output ~68 kb/d (ST53, 2026-07).\n• Cenovus stated in 2022 that applying its operating techniques should increase Sunrise production while driving down sustaining capital, operating costs, and emissions intensity. (Source: Cenovus Energy, Cenovus acquiring outstanding 50% interest in Sunrise oil sands asset, 2022-06-13)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• The turnaround interval at Sunrise was increased from four years to five years, and the next major turnaround is not expected until 2030. Note: secondary-sourced from an earnings-call recap; primary-source confirmation recommended. (Source: The Cerbat Gem, Cenovus Energy Q4 earnings call highlights, 2026-02-19)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Sunrise specifically: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Oil Sands Magazine, Cenovus outlines optimization plans for its SAGD assets, 2023-07-27)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2026-10-01 to 2026-12-31: none found — impact unquantified (guidance sourced)"
+     }
+    ]
+   },
+   {
+    "slug": "narrows_lake",
+    "name": "Narrows Lake",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Narrows Lake is a steam-assisted gravity drainage (SAGD) project operated by Cenovus Energy Inc., developed as a tie-back into the existing Christina Lake central processing facility via a 17-km pipeline connection. It was originally planned as a stand-alone 130,000 bbl/d SAGD facility but was never sanctioned in that form. First oil was achieved in July 2025. AER ST53 reports Narrows Lake as its own scheme (approval 11798M in 2025, 11798O from 2026), with actuals ramping from 1.2 kb/d in Jul 2025 to 80.2 kb/d in Jul 2026, above the original 20,000 to 30,000 bbl/d company guidance.",
+    "capacity_kbd": null,
+    "production_kbd": 99.5,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns 100% and operates Narrows Lake. (Source: AER ST53, scheme Narrows Lake, operator Cenovus Energy Inc., verified 2026-09-23)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Company guidance at sanction: 20,000 to 30,000 bbl/d via the 17-km tie-back, with first production targeted for mid-2025. Demonstrated output runs above it: AER ST53 actuals reached 80.2 kb/d in Jul 2026. (Source: Cenovus Energy, Cenovus Energy third quarter 2024 results, 2024-10-31; AER ST53, verified 2026-09-23)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No further sanctioned expansion disclosed beyond the tie-back ramp now in production."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Narrows Lake specifically: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD; bitumen is processed at the Christina Lake central processing facility. (Source: Cenovus Energy, Q3 2024 results news release, 2024-10-31)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. AER approval 11798M (2025 rows) and 11798O (2026 rows); the approval rows do not overlap in time. (Source: AER ST53, verified 2026-09-23)"
+     }
+    ]
+   },
+   {
+    "slug": "su_firebag",
+    "name": "Firebag",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Firebag is a steam-assisted gravity drainage (SAGD) in-situ oil sands project in the Athabasca region. Bitumen is processed before being piped to Suncor's upgrading facilities or direct to market. It is part of Suncor's Oil Sands Operations segment.",
+    "capacity_kbd": 215.0,
+    "production_kbd": 299.4,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. owns 100% and operates Firebag. (Source: Suncor Energy, Q4 2025 investor presentation)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity of 215,000 bbl/d of bitumen, disclosed after completion of incremental emulsion-handling and steam-infrastructure integration work. (Source: Suncor Energy, Suncor reports fourth quarter 2020 results, 2021-02-09)\n• Firebag achieved record annual production of 217,000 bbl/d in 2023, above the stated nameplate. (Source: Suncor Energy, Suncor Energy achieves 2023 upstream production corporate guidance, 2024-01-03)\n• 2025 full-year production was 248,000 bbl/d of bitumen. (Source: Suncor Energy, Q4 2025 investor presentation)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• A cogeneration project at Firebag was under construction to replace older energy infrastructure (disclosed as part of Suncor's optimization and free-funds-flow program). (Source: Suncor Energy, Suncor reports fourth quarter 2020 results, 2021-02-09)\n• No new sanctioned capacity expansion disclosed in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Suncor's 2026 corporate guidance disclosed a major Firebag turnaround with a quarterly production and cost effect. Specific duration was not disclosed in the release summary. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)\n• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Firebag specifically: not disclosed. Suncor's 2026 Oil Sands Operations cost guidance (which includes Base Plant, Firebag, and MacKay River) is $26 to $29/bbl. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. Bitumen is processed before being piped to Suncor's upgrading facilities or direct to market. (Source: Suncor Energy, Suncor Celebrates One Billion Barrels of In Situ Production, via Investing News, 2022-11-24)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2031-01-01 to 2031-12-31: forward schedule — impact unquantified (guidance sourced)"
+     }
+    ]
+   },
+   {
+    "slug": "su_mackay_river",
+    "name": "MacKay River",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "SAGD",
+    "region": null,
+    "dek": "MacKay River is a steam-assisted gravity drainage (SAGD) in-situ oil sands project operated by Suncor. It is separate from the PetroChina MacKay River project, which is tracked separately under petrochina_mackay; the two share the same ST53 scheme name but are different facilities with different operators.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. owns 100% and operates MacKay River. (Source: Suncor Energy, Q4 2025 investor presentation)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• The facility produces about 38,000 barrels of bitumen per day during normal operations. Note: this is a stated operating rate, not a labeled nameplate. (Source: Suncor Energy, Suncor Celebrates One Billion Barrels of In Situ Production, via Investing News, 2022-11-24)\n• 2025 full-year production was 33,000 bbl/d of bitumen. (Source: Suncor Energy, Q4 2025 investor presentation)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No sanctioned expansion disclosed in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Suncor's 2026 corporate guidance disclosed maintenance at MacKay River with a quarterly production and cost effect. Specific duration not disclosed. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)\n• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for MacKay River specifically: not disclosed. Suncor's 2026 Oil Sands Operations cost guidance (which includes Base Plant, Firebag, and MacKay River) is $26 to $29/bbl. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. Bitumen is processed before being piped to Suncor's upgrading facilities or direct to market. (Source: Suncor Energy, Suncor Celebrates One Billion Barrels of In Situ Production, via Investing News, 2022-11-24)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2027-09-01 to 2027-09-30: turnaround — -12 kb/d event rate (cadence modeled)"
+     }
+    ]
+   },
+   {
+    "slug": "cnq_jackfish",
+    "name": "Jackfish",
+    "operator": "Canadian Natural Resources Limited",
+    "ticker": "CNQ",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Jackfish is a steam-assisted gravity drainage (SAGD) in-situ oil sands project in the Athabasca region producing bitumen. Canadian Natural acquired it from Devon Energy in 2019.",
+    "capacity_kbd": 120.0,
+    "production_kbd": 126.2,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Canadian Natural Resources Limited owns 100% and operates Jackfish. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Announced nameplate capacity of 120,000 bbl/d of bitumen. The facility runs ABOVE announced nameplate: all-time demonstrated maximum 131,300 bbl/d in July 2026 (AER ST53, scheme \"Jackfish\", Canadian Natural Resources Limited); the facility has at times operated above nameplate (e.g., a record 129,000 bbl/d at the end of 2020). Modeled nameplate is 131,000 bbl/d (demonstrated output), raised 2026-09-23 per the standing rule: where actuals beat announced nameplate, history wins and the page says so explicitly. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07; Oil Sands Magazine, CNRL makes plans to add 'low risk volumes' to its thermal portfolio, 2021-11-14; Source: AER ST53 monthly, verified 2026-09-23)\n• Note: the ST53 scheme \"Jackfish 1\" under Devon NEC Corporation (max 32,100 bbl/d, 2010-12) is a separate legacy scheme and is NOT part of the Jackfish project total. The Devon Canada Corporation \"Jackfish\" row (max 128,200 bbl/d, 2018-12) is the pre-acquisition record of the same physical asset now operated by CNRL."
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• At Pike (adjacent lease, now 100% CNRL after the Q1 2022 acquisition of the remaining 50% working interest), two SAGD pads were being drilled in H1 2025 and will be tied into the existing Jackfish facilities; both were targeted to come on production in 2026 to keep the Jackfish plants at full capacity. (Source: Canadian Natural Resources Limited, Q1 2025 interim report, 2025-05-08)\n• Canadian Natural reports total thermal in-situ facility processing capacity of approximately 340,000 bbl/d across its portfolio (not allocable to individual projects). (Source: Canadian Natural Resources Limited, Q1 2025 interim report, 2025-05-08)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• A turnaround at Jackfish was completed in April 2026, with a Q2 average impact of about 9,300 bbl/d. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07)\n• Planned turnaround frequency: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Canadian Natural discloses thermal in-situ operating costs on a portfolio basis, not by project: C$12.59/bbl in Q1 2026. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07)\n• Full-year 2025 thermal in-situ operating costs were C$11.09/bbl. (Source: Canadian Natural Resources Limited, Q4 2025 results front-end, 2025-03-05)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Canadian Natural Resources Limited, corporate presentation, September 2022, https://www.presentationnation.com/api/assets/companies/canadian-natural-resources/presentations/p-corp-pres-september/original.pdf)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cnq_kirby",
+    "name": "Kirby",
+    "operator": "Canadian Natural Resources Limited",
+    "ticker": "CNQ",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Kirby is a steam-assisted gravity drainage (SAGD) in-situ oil sands project comprising the Kirby South and Kirby North phases. Canadian Natural uses solvent co-injection at Kirby South to reduce steam loads.",
+    "capacity_kbd": 40.0,
+    "production_kbd": 68.7,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Canadian Natural Resources Limited owns 100% and operates Kirby. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Kirby South nameplate capacity of 40,000 bbl/d; Kirby North nameplate capacity of 40,000 bbl/d; combined Kirby capacity of 80,000 bbl/d. Note: secondary-sourced. (Source: Oil Sands Magazine, CNRL makes plans to add 'low risk volumes' to its thermal portfolio, 2021-11-14)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Canadian Natural has a Kirby SAGD pad planned for production in 2027. (Source: Canadian Natural Resources Limited, Q4 2025 results front-end, document date not verified in this pass)\n• Previously, a Kirby SAGD pad was targeted to come on production in Q4 2025, with a second pad targeted for Q4 2026; in 2025 the company reallocated a portion of pad-add capital from Kirby to Primrose to maximize returns. (Source: Canadian Natural Resources Limited, Q1 2025 interim report, 2025-05-08)\n• Canadian Natural reports total thermal in-situ facility processing capacity of approximately 340,000 bbl/d across its portfolio (not allocable to individual projects). (Source: Canadian Natural Resources Limited, Q1 2025 interim report, 2025-05-08)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Canadian Natural discloses thermal in-situ operating costs on a portfolio basis, not by project: C$12.59/bbl in Q1 2026; full-year 2025 was C$11.09/bbl. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07; Canadian Natural Resources Limited, Q4 2025 results front-end, document date not verified in this pass)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. Solvent co-injection at Kirby South has reduced steam loads by about 45%. (Source: Oil Sands Magazine, CNRL makes plans to add 'low risk volumes' to its thermal portfolio, 2021-11-14)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. Kirby North Phase 1 received all required regulatory permits (reported as of late 2014). (Source: Oil Sands Magazine, Canadian Natural Resources beats analysts' expectations for the third quarter, 2014-11-06)"
+     }
+    ]
+   },
+   {
+    "slug": "cop_surmont",
+    "name": "Surmont",
+    "operator": "ConocoPhillips Canada Resources Corp.",
+    "ticker": "COP",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Surmont is a steam-assisted gravity drainage (SAGD) oil sands project in the Athabasca region. ConocoPhillips acquired TotalEnergies' remaining 50% interest and became the 100% owner and operator effective April 1, 2023.",
+    "capacity_kbd": 136.0,
+    "production_kbd": 164.3,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• ConocoPhillips Canada Resources Corp. owns 100% and operates Surmont, effective April 1, 2023, when it acquired TotalEnergies' remaining 50% interest (TotalEnergies' Canadian exit split its Surmont 50% to ConocoPhillips and its Fort Hills 31.23% to Suncor). (Source: Suncor Energy, Suncor completes acquisition of TotalEnergies EP Canada Ltd., 2023-10-04)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Announced nameplate of 136,000 bbl/d of bitumen (ConocoPhillips, Q3 2014). Demonstrated output runs above it: AER ST53 peak of 157,400 bbl/d in March 2026, with recent months running 132,000 to 141,000 bbl/d. Per the standing nameplate rule the modeled nameplate is 157,000 bbl/d; Surmont runs above its announced nameplate. (Source: ConocoPhillips, Q3 2014 announcement; AER ST53, verified 2026-09-23)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No company debottleneck program was found in primary sources; the above-nameplate output is demonstrated history, not a disclosed expansion."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Surmont specifically: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: ConocoPhillips, Canada fact sheet, 2023)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "meg_christina_lake",
+    "name": "Christina Lake North",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Christina Lake North is the former MEG Energy Christina Lake Regional Project (CLRP), a steam-assisted gravity drainage (SAGD) project in the Athabasca region. Cenovus acquired it from MEG Energy on November 13, 2025. It is tracked separately from Christina Lake (the Cenovus legacy asset); the two share the same ST53 scheme name but are different facilities with different ownership histories. This file must not be merged with cve_christina_lake.",
+    "capacity_kbd": 100.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns 100% and operates Christina Lake North, acquired from MEG Energy on November 13, 2025. The transaction was reported as an upsized acquisition; current ownership effective date per the project master is 2025-11-13. (Source: Heavy Reading project roster)\n• Before acquisition, the project was 100% owned and operated by MEG Energy Corp. (Source: Alberta open data, MEG Christina Lake Regional Project assessment document, 2026-09-23)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• MEG-era nameplate was reported at 100,000 bbl/d (Phase 1, 2, and 2B operations). Note: secondary-sourced and dated. (Source: Oil Sands Magazine, MEG Energy boosts 2020 spending plans, as it lifts output at Christina Lake, 2019-11-22)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Cenovus targets approximately 40,000 bbl/d of production from the Christina Lake North expansion by 2028. CONFIRMED by primary corporate disclosure. (Source: Cenovus Energy, Cenovus announces first-quarter 2026 results news release, 2026-05-06)\n• Production from the 40-well redevelopment program is expected to ramp up in the second half of 2026, and installation of the first new steam generator was ahead of schedule, expected online before year-end 2026. (Source: Cenovus Energy, Cenovus announces first-quarter 2026 results news release, 2026-05-06)\n• APPLIED to the model 2026-09-23 (the editor): linear ramp on the cve_christina_lake project leaf from H2 2026 to +40 kb/d by Dec 2028 (+4.1 kb/d Oct 2026 rising to +19.3 kb/d Sep 2027 within the current forecast window). The North facility's barrels are folded into the cve_christina_lake leaf in the model.\n• The first of two new steam generators was expected online by year-end 2026, with redevelopment production expected to rise in the second half of 2026. (Source: Cenovus Energy, Second quarter 2026 results, 2026-07-29)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Christina Lake North specifically: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Alberta open data, MEG Christina Lake Regional Project assessment document, 2026-09-23)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The approved scheme covers the Phases 1, 2, and 2B central processing facility footprint. (Source: Alberta open data, MEG Christina Lake Regional Project assessment document, 2026-09-23)"
+     }
+    ]
+   },
+   {
+    "slug": "ath_leismer",
+    "name": "Leismer",
+    "operator": "Athabasca Oil Corporation",
+    "ticker": "ATH",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Leismer is a steam-assisted gravity drainage (SAGD) oil sands project in the Athabasca region, operated by Athabasca Oil Corporation. It is undergoing an expansion to 40,000 bbl/d by end of 2027.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Athabasca Oil Corporation owns 100% and operates Leismer. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Expansion targets 40,000 bbl/d of production by end of 2027, on a ~$300 million expansion project at about $25,000/bbl/d capital efficiency. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• The $300 million expansion project includes bringing on twelve new wells at Pads L10 and L11, adding two steam generators, heat exchangers, and increased fluid handling capacity. The expansion was expected to be substantially complete at end of 2026, with production growth to 40,000 bbl/d by end of 2027; capital and schedule were on track with original expectations. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)\n• A later Leismer Phase 1 had not yet been formally sanctioned and awaited fiscal-framework confirmation as of Q2 2026; this is distinct from the already-underway 40,000 bbl/d expansion. (Source: Athabasca Oil Corporation, Q2 2026 press release, 2026-07-29)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• A three-week facility turnaround was completed in May 2026 (four-year interval); all tie-ins for the expansion project were also completed during it. The new well pairs began steaming after the turnaround. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Leismer specifically: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The 40,000 bbl/d expansion is under construction; a later phase (Phase 1) was not sanctioned as of Q2 2026. (Source: Athabasca Oil Corporation, Q2 2026 press release, 2026-07-29)"
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2030-01-01 to 2030-12-31: forward schedule — impact unquantified (guidance sourced)"
+     }
+    ]
+   },
+   {
+    "slug": "ath_hangingstone",
+    "name": "Hangingstone",
+    "operator": "Athabasca Oil Corporation",
+    "ticker": "ATH",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Hangingstone is a steam-assisted gravity drainage (SAGD) oil sands project in the southern Athabasca region, about 20 km southwest of Fort McMurray. Athabasca Oil Corporation's Hangingstone 1 project was sanctioned in 2012 with Phase 1 capacity of 12,000 bbl/d. It is separate from the JACOS/Greenfire Hangingstone Expansion, which is tracked separately under gfr_hangingstone_exp.",
+    "capacity_kbd": 12.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Athabasca Oil Corporation owns 100% and operates Hangingstone. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Phase 1 production capacity of 12,000 bbl/d of bitumen. (Source: Oil and Gas Journal, Operator okays Hangingstone SAGD project, 2012-10-04)\n• The current program maintains production at about 8,000 bbl/d through the mid-term by using existing plant capacity. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Two further SAGD phases were proposed at sanction time, which would bring potential production in the area to 80,000 bbl/d; these phases are not sanctioned. (Source: Oil and Gas Journal, Operator okays Hangingstone SAGD project, 2012-10-04)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• A two-week turnaround was completed in April 2026 (six-year interval), plus routine maintenance. (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Hangingstone specifically: not disclosed. Sustaining-well capital efficiency is stated as under $20,000/bbl/d (a capital metric, not operating cost). (Source: Athabasca Oil Corporation, Athabasca Oil Announces its 2026 Budget Focused on Production and Cash Flow Per Share Growth, via GlobeNewswire, 2025-12-11)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Oil and Gas Journal, Operator okays Hangingstone SAGD project, 2012-10-04)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating; the project was approved in 2012. (Source: Offshore Technology, Hangingstone SAGD Project, Alberta, 2026-09-23)"
+     }
+    ]
+   },
+   {
+    "slug": "gfr_hangingstone_exp",
+    "name": "Hangingstone Expansion",
+    "operator": "Greenfire Resources Operating Corporation",
+    "ticker": "GFR",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Hangingstone Expansion is a steam-assisted gravity drainage (SAGD) oil sands project about 50 km southwest of Fort McMurray, adjacent to the Greenfire Hangingstone (demo) facility. Japan Canada Oil Sands Limited (JACOS) developed the expansion; Greenfire acquired JACOS's 75% working interest and operatorship in September 2021. It is separate from Athabasca Oil's Hangingstone project, tracked separately under ath_hangingstone.",
+    "capacity_kbd": 35.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Greenfire Resources Operating Corporation holds a 75% working interest and is the operator. The acquisition of all shares of Japan Canada Oil Sands Limited (JACOS) was announced July 29, 2021 and closed September 20, 2021. (Source: Greenfire Acquisition Corporation, Greenfire Acquisition Corporation Closes Strategic Acquisition of JACOS, via Business Wire, 2021-09-20)\n• CNOOC retains the remaining 25% stake in the Hangingstone Expansion plant. (Source: Oil Sands Magazine, Takeovers, divestments and production creep: In-situ updates from around the oil patch, 2021-11-12)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• The expansion site has capacity for 35,000 bbl/d of bitumen. It achieved first oil on August 3, 2017 and was running at over 20,000 bbl/d of production at the time of the 2021 acquisition. (Source: BOE Report, Greenfire Acquisition Corporation announces acquisition of JACOS including a 75% working interest in the Hangingstone Expansion Site, 2021-07-29)\n• Combined with the adjacent Greenfire Hangingstone (demo) plant, total production capacity is reported as up to 30,000 bbl/d. (Source: Oil Sands Magazine, Takeovers, divestments and production creep: In-situ updates from around the oil patch, 2021-11-12)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Greenfire's standalone output (Hangingstone assets) was expected at about 14,500 bbl/d in 2026; combined with the Connacher Great Divide acquisition (expected 2026 standalone output about 19,500 bbl/d), management targets long-term combined productive capacity of about 65,000 bbl/d. Note: this is a combined portfolio target, not a project-level sanction or nameplate. (Source: Greenfire Resources acquisition conference call transcript via Quartr, 2026-07-16)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Oil Sands Magazine, Takeovers, divestments and production creep: In-situ updates from around the oil patch, 2021-11-12)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The expansion proposal was for up to an additional 35,000 bbl/d of bitumen; the EIA was deemed complete in 2012. (Source: Repository of the Athabasca River Basin, environmental assessment public notice for the JACOS Hangingstone expansion project, 2008)"
+     }
+    ]
+   },
+   {
+    "slug": "scr_orion",
+    "name": "Orion",
+    "operator": "Strathcona Resources Ltd.",
+    "ticker": "SCR",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Orion is a steam-assisted gravity drainage (SAGD) oil sands project operated by Strathcona Resources Ltd. in the Cold Lake region. Public disclosure is thin; Strathcona is privately held.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Strathcona Resources Ltd. operates Orion. Ownership percentages were not disclosed in reviewed sources."
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity: not disclosed."
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• A waste-heat recovery project at Orion was expected to reduce operating costs by about C$2/bbl. (Source: Strathcona Resources corporate presentation, March 2024)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed. The waste-heat recovery project was expected to reduce Orion operating costs by about C$2/bbl. (Source: Strathcona Resources corporate presentation, March 2024)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Strathcona Resources corporate presentation, March 2024)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "scr_lindbergh",
+    "name": "Lindbergh",
+    "operator": "Strathcona Resources Ltd.",
+    "ticker": "SCR",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Lindbergh is a steam-assisted gravity drainage (SAGD) oil sands project operated by Strathcona Resources Ltd. Public disclosure is thin; Strathcona is privately held.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Strathcona Resources Ltd. operates Lindbergh. Ownership percentages were not disclosed in reviewed sources."
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity: not disclosed.\n• A debottlenecking project added approximately 5,000 bbl/d of capacity. (Source: Strathcona Resources corporate presentation, March 2024)\n• The D01 West pad was expected to reach approximately 6,500 bbl/d beginning mid-2026. (Source: Strathcona Resources, Strathcona Resources Ltd. reports third quarter 2025 financial and operating results, via BOE Report, 2025-11-05)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• See Capacity: debottlenecking added ~5,000 bbl/d; D01 West pad targeted ~6,500 bbl/d from mid-2026."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Strathcona Resources corporate presentation, March 2024)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "scr_tucker",
+    "name": "Tucker",
+    "operator": "Strathcona Resources Ltd.",
+    "ticker": "SCR",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Tucker is a steam-assisted gravity drainage (SAGD) oil sands project operated by Strathcona Resources Ltd. Public disclosure is thin; Strathcona is privately held.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Strathcona Resources Ltd. operates Tucker. Ownership percentages were not disclosed in reviewed sources."
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity: not disclosed."
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• None disclosed in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Strathcona Resources corporate presentation, March 2024)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "connacher_great_divide",
+    "name": "Great Divide",
+    "operator": "Greenfire Resources Operating Corporation",
+    "ticker": "GFR",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Great Divide is a steam-assisted gravity drainage (SAGD) oil sands project (Pod One) operated by Connacher Oil and Gas Limited until its acquisition by Greenfire Resources, announced July 13, 2026. The project master records the acquisition as closed August 5, 2026; a closing release should be confirmed before treating that date as fact.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Connacher Oil and Gas Limited was the 100% operator of Great Divide before the acquisition. (Source: Greenfire Resources acquisition conference call transcript via Quartr, 2026-07-16)\n• Greenfire Resources announced the acquisition of Connacher/Great Divide on July 13, 2026. The project master records closing on August 5, 2026, but this needs a closing release before being stated as fact. (Source: Heavy Reading project roster; Source: Greenfire Resources acquisition announcement, 2026-07-13)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity: not disclosed.\n• Great Divide was expected to produce about 19,500 bbl/d on a standalone basis in 2026. (Source: Greenfire Resources acquisition conference call transcript via Quartr, 2026-07-16)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Combined with Greenfire's standalone Hangingstone output (about 14,500 bbl/d expected in 2026), management targets long-term combined productive capacity of about 65,000 bbl/d. Note: this is a combined portfolio target, not a project-level sanction or nameplate. (Source: Greenfire Resources acquisition conference call transcript via Quartr, 2026-07-16)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Heavy Reading project roster)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. An AER-approved scheme; amendment history not disclosed in reviewed sources."
+     }
+    ]
+   },
+   {
+    "slug": "harvest_blackgold",
+    "name": "BlackGold",
+    "operator": "Harvest Operations Corp.",
+    "ticker": null,
+    "method": "SAGD",
+    "region": null,
+    "dek": "BlackGold is a steam-assisted gravity drainage (SAGD) oil sands project operated by Harvest Operations Corp. Harvest is wholly owned by Korea National Oil Corporation (KNOC). Phase 1 achieved nameplate bitumen production in October 2019.",
+    "capacity_kbd": 10.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Harvest Operations Corp. operates BlackGold and is wholly owned by Korea National Oil Corporation (KNOC). (Source: BOE Report, Harvest Operations Corp. confirms decision to start its BlackGold oil sands project, 2017-12-21)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Phase 1 design capacity of 10,000 bbl/d of bitumen; nameplate bitumen production was reached in October 2019. (Source: Oil Sands Magazine, Harvest Operations BlackGold SAGD hits nameplate bitumen production in October, 2019-11-05)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• A Phase 2 expansion to 30,000 bbl/d was historically planned and had awaited approval/sanction. Current status: not disclosed in reviewed sources. (Source: BOE Report, Harvest Operations Corp. confirms decision to start its BlackGold oil sands project, 2017-12-21)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: BOE Report, Harvest Operations Corp. confirms decision to start its BlackGold oil sands project, 2017-12-21)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating (Phase 1). Phase 2 status not disclosed."
+     }
+    ]
+   },
+   {
+    "slug": "ipc_blackrod",
+    "name": "Blackrod",
+    "operator": "Ipc Canada Ltd.",
+    "ticker": "IPCO",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Blackrod is a steam-assisted gravity drainage (SAGD) oil sands project operated by IPC (International Petroleum Corp.) in the Athabasca region. Phase 1 was sanctioned in Q1 2023 for a 30,000 bbl/d plateau; first oil was achieved at the end of May 2026.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• IPC (International Petroleum Corp.) owns 100% and operates Blackrod. (Source: Heavy Reading project roster; operator: Ipc Canada Ltd.)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Regulatory approval covers up to 80,000 bbl/d. Phase 1 was sanctioned in Q1 2023 for a 30,000 bbl/d plateau. (Source: International Petroleum Corp., IPC announces second quarter 2025 financial and operational results, 2025-08-05)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• First oil was achieved May 31, 2026; the 30,000 bbl/d plateau is targeted by late 2027, a quarter earlier than originally guided. (Source: Stockwatch, IPC operational update, 2026-09-23)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Heavy Reading project roster)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Approved to 80,000 bbl/d; Phase 1 (30,000 bbl/d plateau) sanctioned Q1 2023 and now in production. (Source: International Petroleum Corp., IPC announces second quarter 2025 financial and operational results, 2025-08-05)"
+     }
+    ]
+   },
+   {
+    "slug": "petrochina_mackay",
+    "name": "MacKay River (PetroChina)",
+    "operator": "PetroChina Canada Ltd.",
+    "ticker": null,
+    "method": "SAGD",
+    "region": null,
+    "dek": "MacKay River (PetroChina) is a steam-assisted gravity drainage (SAGD) in-situ oil sands project operated by PetroChina Canada Ltd. It is separate from Suncor's MacKay River project, which is tracked separately under su_mackay_river; the two share the same ST53 scheme name but are different facilities with different operators. Caution: the AER's MacKay River decision for the former Petro-Canada/Suncor asset does not apply to this project and must not be attributed to it.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• PetroChina Canada Ltd. owns and operates the project. PetroChina bought the remaining interests in the project during 2012 and 2013. Note: secondary-sourced. (Source: Mix929, Exclusive: PetroChina may sell Australian, Canadian assets to stem losses, 2022-06-28)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Phase 1 capacity is cited at 35,000 bbl/d, with an ultimate phased target of 150,000 bbl/d. Note: secondary-sourced; current primary disclosure is sparse. (Source: 2B1st Consulting, PetroChina selects WorleyParsons for MacKay River and Dover projects, 2026-09-23)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Further phases toward the 150,000 bbl/d ultimate target: sanction status not disclosed. (Source: 2B1st Consulting, PetroChina selects WorleyParsons for MacKay River and Dover projects, 2026-09-23)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Heavy Reading project roster)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating (Phase 1). Regulatory status of further phases: not disclosed."
+     }
+    ]
+   },
+   {
+    "slug": "imo_cold_lake",
+    "name": "Cold Lake",
+    "operator": "Imperial Oil Resources Limited",
+    "ticker": "IMO",
+    "method": "CSS",
+    "region": null,
+    "dek": "Cold Lake is a cyclic steam stimulation (CSS) in-situ oil sands project operated by Imperial Oil. It is one of Imperial's three oil sands assets alongside Kearl and its Syncrude interest.",
+    "capacity_kbd": null,
+    "production_kbd": 190.3,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Imperial Oil Resources Limited owns 100% and operates Cold Lake. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 2026 production guidance of 152,000 to 160,000 bbl/d (gross). This is a guidance range, not a stated nameplate. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• The Grand Rapids development and the ongoing use of solvent-assisted and other optimization technologies support Cold Lake production; no new sanctioned capacity expansion disclosed in reviewed sources. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnarounds at Cold Lake in Q3/Q4 2026 were disclosed in the 2026 guidance. Specific durations not disclosed. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Unit cash cost of C$21.39/bbl in Q2 2026. (Source: Investing News, Imperial announces second quarter 2026 financial and operating results, 2026-07-31)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• CSS (cyclic steam stimulation). (Source: Heavy Reading project roster)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cnq_primrose",
+    "name": "Primrose and Wolf Lake",
+    "operator": "Canadian Natural Resources Limited",
+    "ticker": "CNQ",
+    "method": "CSS",
+    "region": null,
+    "dek": "Primrose is a cyclic steam stimulation (CSS) in-situ project in the Grand Rapids formation, 65 km north of Bonnyville inside the Cold Lake Air Weapons Range; the Wolf Lake development is also included in the facility. The project has operated below capacity since a bitumen flow-to-surface incident in spring 2013, which was deemed to be caused by excessive steaming; Canadian Natural has since modified steaming strategies, enhanced pressure monitoring, and moved to low-pressure steamflood remediation.",
+    "capacity_kbd": 140.0,
+    "production_kbd": 111.1,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Canadian Natural Resources Limited owns 100% and operates Primrose and Wolf Lake. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate capacity of 140,000 bbl/d of bitumen, including the original Wolf Lake development (revised figure). Note: secondary-sourced. (Source: Oil Sands Magazine, CNRL makes plans to add 'low risk volumes' to its thermal portfolio, 2021-11-14)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Pad-add program: a SAGD pad at Wolf Lake came on production ahead of schedule in Q4 2024; two CSS pads at Primrose came on production ahead of schedule in Q4 2024 and Q1 2025; a further CSS pad was drilled and targeted to come on production ahead of schedule in late Q1 2025. (Source: Canadian Natural Resources Limited, Q4 2024 and year-end results, via markets.financialcontent.com, 2025-03-06)\n• One CSS pad was expected in Q3 2026 and two more in 2027. (Source: Canadian Natural Resources Limited, Q4 2025 results front-end, document date not verified in this pass)\n• In 2025 the company reallocated a portion of pad-add capital from Kirby to Primrose following strong results from the recently drilled CSS pads. (Source: Canadian Natural Resources Limited, Q1 2025 interim report, 2025-05-08)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Canadian Natural discloses thermal in-situ operating costs on a portfolio basis, not by project: C$12.59/bbl in Q1 2026; full-year 2025 was C$11.09/bbl. (Source: Canadian Natural Resources Limited, Q1 2026 results front-end, 2026-05-07; Canadian Natural Resources Limited, Q4 2025 results front-end, document date not verified in this pass)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Primrose uses cyclic steam stimulation (CSS) to extract bitumen from the Grand Rapids formation; Wolf Lake uses SAGD. The AER approved a low-pressure steamflood at Primrose East Area 1, and an application was submitted for East Area 2. (Source: Oil Sands Magazine, Canadian Natural Resources beats analysts' expectations for the third quarter, 2014-11-06)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The facility received AER approval to implement low-pressure steamflood at Primrose East Area 1 (commenced, ramping as expected as of late 2014), with an application submitted for East Area 2. (Source: Oil Sands Magazine, Canadian Natural Resources beats analysts' expectations for the third quarter, 2014-11-06)"
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2027-04-01 to 2027-04-30: turnaround — -26 kb/d event rate (cadence modeled)"
+     }
+    ]
+   },
+   {
+    "slug": "cnq_peace_river",
+    "name": "Peace River",
+    "operator": "Canadian Natural Upgrading Limited",
+    "ticker": "CNQ",
+    "method": "CSS",
+    "region": null,
+    "dek": "Peace River is a cyclic steam stimulation (CSS) in-situ project in the Peace River oil sands region, about 300 km west of the main Athabasca deposit. Canadian Natural acquired it (with the Cliffdale heavy oil field and the Carmon Creek thermal project) from Shell as part of the Athabasca Oil Sands Project transaction announced March 9, 2017.",
+    "capacity_kbd": 12.5,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Canadian Natural Resources Limited owns 100% and operates Peace River. (Source: commercial storage, Peace River/Carmon Creek asset report, 2025-09-09)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Plant capacity of 12,500 bbl/d of bitumen. Note: secondary-sourced. (Source: Oil Sands Magazine, Peace River project profile, 2026-09-23; commercial storage, Peace River/Carmon Creek asset report, 2025-09-09)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• The Carmon Creek expansion (Shell's project, targeting 80,000 bbl/d with two central processing facilities) received AER approval in April 2013 but was never sanctioned or built; it remains an undeveloped option associated with the Peace River complex. (Source: Shell, Construction moving forward at oilsands facility, 2013-11-13)\n• Canadian Natural said the Carmon Creek thermal project would be reviewed for future development at the time of the 2017 acquisition. No sanctioned expansion disclosed in reviewed sources. (Source: Canadian Natural Resources Limited, Announces the Acquisition of Working Interest in the Athabasca Oil Sands Project and Other Oil Sands Assets, via BOE Report, 2017-03-09)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• CSS with horizontal wells, producing from the Bluesky formation. The adjacent Cliffdale field produces by primary production techniques. (Source: commercial storage, Peace River/Carmon Creek asset report, 2025-09-09; Canadian Natural Resources Limited, acquisition announcement, via GlobeNewswire, 2017-03-09)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The Peace River Complex is licensed to produce 12,500 barrels of bitumen per day (annual average). The Carmon Creek expansion received AER approval in April 2013 but was never built. (Source: Shell, Construction moving forward at oilsands facility, 2013-11-13)"
+     }
+    ]
+   },
+   {
+    "slug": "cnooc_long_lake_sagd",
+    "name": "Long Lake SAGD",
+    "operator": "CNOOC Petroleum North America ULC",
+    "ticker": "0883.HK",
+    "method": "SAGD",
+    "region": null,
+    "dek": null,
+    "capacity_kbd": null,
+    "production_kbd": 83.1,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": []
+   },
+   {
+    "slug": "cnq_pike",
+    "name": "Pike",
+    "operator": "Canadian Natural Resources Limited",
+    "ticker": "CNQ",
+    "method": "SAGD",
+    "region": null,
+    "dek": null,
+    "capacity_kbd": null,
+    "production_kbd": 57.1,
+    "production_vintage": "AER ST3/ST53 actuals through Jul 2026, pulled 2026-09-22",
+    "sections": []
+   },
+   {
+    "slug": "imo_kearl",
+    "name": "Kearl",
+    "operator": "Imperial Oil Resources Limited",
+    "ticker": "IMO",
+    "method": "Mined",
+    "region": null,
+    "dek": "Kearl is an open-pit oil sands mining project about 75 km northeast of Fort McMurray. It uses paraffinic froth treatment (PFT) to produce diluted bitumen (Kearl Lake Dilbit) with no on-site upgrader; diluent is supplied from Edmonton via pipeline and diluted bitumen is shipped to the Edmonton area by pipeline.",
+    "capacity_kbd": 345.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Imperial Oil Resources Limited operates Kearl with a 70.96% working interest; ExxonMobil Canada holds 29.04%. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 345,000 bbl/d of bitumen recorded as the capacity basis (regulatory approval; ExxonMobil/Imperial 2013 startup announcement: ultimate production capacity about 345,000 bbl/d by about 2020). Demonstrated ST39 single-month peak of 347,800 bbl/d in July 2025 is 0.8% above basis, essentially at basis (metering noise); the capacity basis is unchanged at 345,000 bbl/d. (Source: Ledcor, Kearl Oil Sands project page, 2026-09-23; ExxonMobil, ExxonMobil Announces Production Startup at Kearl Oil Sands Project, 2013-04-27; AER ST39, verified 2026-09-23)\n• The initial development (110,000 bbl/d) started production in April 2013; the expansion (110,000 bbl/d) was fully funded and targeted late 2015, with debottlenecking planned to reach the approved 345,000 bbl/d by about 2020. (Source: ExxonMobil, ExxonMobil Announces Production Startup at Kearl Oil Sands Project, 2013-04-27)\n• 2026 gross production guidance is 285,000 to 295,000 bbl/d. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Imperial disclosed work intended to extend Kearl toward 300,000 bbl/d and to extend the turnaround interval from two years to four years. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• A planned turnaround at Kearl in Q2 2026 was disclosed in the 2026 guidance. The turnaround interval is being extended from two years to four years. Specific duration not disclosed. (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Unit cash cost of C$29.83/bbl in Q2 2026. (Source: Investing News, Imperial announces second quarter 2026 financial and operating results, 2026-07-31)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Open-pit mining with paraffinic froth treatment (PFT); no on-site upgrader. Using the proprietary paraffinic froth treatment process, the need for an on-site upgrader was eliminated, significantly reducing greenhouse gas emissions versus a conventional mining-plus-upgrading configuration. (Source: Canadian Mining Journal, OIL SANDS: Kearl expansion on line ahead of schedule, 2015)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating; approved for up to 345,000 bbl/d of bitumen. (Source: Ledcor, Kearl Oil Sands project page, 2026-09-23)"
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2026-10-01 to 2027-12-31: none found — impact unquantified (guidance sourced)\n• 2029-01-01 to 2029-12-31: forward schedule — impact unquantified (guidance sourced)"
+     }
+    ]
+   },
+   {
+    "slug": "su_fort_hills",
+    "name": "Fort Hills",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "Mined",
+    "region": null,
+    "dek": "Fort Hills is an open-pit oil sands mining project using paraffinic froth treatment (PFT) to produce Fort Hills Dilbit (FRB), which is sold directly and also fed to Suncor's Base Plant upgrader.",
+    "capacity_kbd": 194.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. owns 100% and operates Fort Hills. Suncor acquired TotalEnergies EP Canada Ltd.'s 31.23% working interest for $1.468 billion, announced October 4, 2023, effective April 1, 2023. The acquired interest represented about 61,000 bbl/d of net capacity. (Source: Suncor Energy, Suncor completes acquisition of TotalEnergies EP Canada Ltd., 2023-10-04)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Announced nameplate of 194,000 bbl/d of bitumen (Suncor-confirmed, 2018). Demonstrated output runs above it: AER ST39 peak of 208,100 bbl/d in December 2018, with the 194,000 bbl/d level beaten in 9 separate months. Per the standing nameplate rule the modeled nameplate is 208,000 bbl/d; Fort Hills runs above its announced nameplate. (Source: Suncor Energy, 2018; AER ST39, verified 2026-09-23)\n• 2025 full-year production was 175,000 bbl/d gross. (Source: Suncor Energy, Q4 2025 investor presentation)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No sanctioned expansion disclosed in reviewed sources. Suncor deployed the Autonomous Haulage System (AHS) at Fort Hills to optimize operations. (Source: Suncor Energy Q4 2020 results news release, 2021-02-09, https://energynow.ca/2021/02/suncor-energy-reports-fourth-quarter-2020-results/)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Suncor's 2026 corporate guidance disclosed maintenance at Fort Hills with a quarterly production and cost effect. Specific duration not disclosed. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• 2026 cost guidance of $33 to $36/bbl for Fort Hills (oil sands segment basis). (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Open-pit mining with paraffinic froth treatment (PFT), producing dilbit directly. Fort Hills barrels are flexible: about one-third of output has been upgraded at Suncor's Base Plant upgrader while the balance is sold as dilbit. In Q1 2026, 66,900 bbl/d of Fort Hills bitumen was transferred to Suncor Base during the Syncrude coker outage. (Source: Petroleum Australia, TotalEnergies, ConocoPhillips, Suncor oil assets project page, 2026-09-23; Suncor Energy Q1 2026 Form 6-K, via StockTitan, 2026-05)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cnq_horizon",
+    "name": "Horizon",
+    "operator": "Canadian Natural Resources Limited",
+    "ticker": "CNQ",
+    "method": "Integrated (mine + upgrader)",
+    "region": null,
+    "dek": "Horizon is an integrated oil sands mining and upgrading project north of Fort McMurray. Mined bitumen is upgraded on site to synthetic crude oil (SCO). Canadian Natural reports three distinct capacity bases for Horizon: mined-bitumen capacity, operating SCO capacity, and regulatory SCO nameplate. These are different figures and must not be mixed.",
+    "capacity_kbd": 314.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Canadian Natural Resources Limited owns 100% of the Horizon mine and upgrader and is the operator. Canadian Natural acquired the remaining working interests in the Athabasca Oil Sands Project assets from Shell and Marathon, and since March 1, 2025 it holds 100% of the Albian mines (Jackpine and Muskeg River). It also holds an 80% non-operated interest in the Scotford Upgrader (Shell 20%, operator), a separate upgrading asset. (Source: Canadian Natural Resources Limited, acquisition announcement, via BOE Report, 2017-03-09)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Mined-bitumen capacity of 314,000 bbl/d. (Source: Oil Sands Magazine, CNRL Horizon Mine project profile, 2026-09-23)\n• SCO operating capacity of 264,000 bbl/d, following the 2024 Reliability Enhancement Project. (Source: Canadian Natural Resources Limited, Q1 2025 interim report, 2025-05-08)\n• Regulatory SCO nameplate of 271,000 bbl/d. Note: secondary-sourced. (Source: Oil Sands Magazine, 2026 production forecast: oil sands mining and upgrading, 2026-01-15)\n• Demonstrated peaks exceed all three stated bases: 309,800 bbl/d SCO in November 2025 and 333,300 bbl/d mined bitumen in May 2026 (AER ST39, \"CNRL HORIZON OIL SANDS PROJECT\", Production). The model's capacity reference for headroom/utilization math uses these demonstrated peaks; the three stated bases are recorded as stated. Per the standing rule, where actuals beat announced capacity, history wins. Mine-bitumen capacity and upgrader SCO capacity are kept as separate lines, never blended."
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• The NRUTT (Naphtha Recovery Unit Tailings Treatment) project targets an incremental 6,300 bbl/d of SCO in Q3 2027. APPLIED 2026-09-23 (the editor): +6.3 kb/d step change on the Horizon SCO leaf for Jul-Sep 2027 (the Q3/27 months in the Oct 2026-Dec 2027 forecast window); step change, not a ramp. The previously flagged implied ~277,300 bbl/d post-NRUTT nameplate is moot: demonstrated ST39 peak is 309.8 kb/d SCO (2025-11) and history wins per the standing rule, so only the +6.3 increment is modeled. (Source: Canadian Natural Resources Limited, \"Canadian Natural Resources Limited Announces 2026 Budget\", 2025-12-16: \"At Horizon, the Company is progressing its Naphtha Recovery Unit Tailings Treatment (\"NRUTT\") project that targets incremental production in Q3/27 of approximately 6,300 bbl/d of SCO following mechanical completion.\"; verbatim company release text via newswire mirrors including https://www.advfn.com/stock-market/TSX/CNQ/stock-news/97449467/canadian-natural-resources-limited-announces-2026)\n• In November 2025 Canadian Natural unveiled over $15 billion in oil sands expansion plans; project-level allocation to Horizon was not detailed in the reviewed summary. (Source: Oil Sands Magazine, 2025-11-11, referenced in the Peace River project profile, accessed 2026-09-23, https://www.oilsandsmagazine.com/projects/cnrl-peace-river)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• A 35-day turnaround begins September 2026, with an annual-average impact of 29,000 bbl/d. The turnaround runs on a two-year cycle, with the next one targeted for 2028. (Source: BOE Report, Canadian Natural Resources Limited announces 2026 budget, 2025-12-16)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Oil Sands Mining and Upgrading operating cost of C$21.88/bbl of SCO in Q1 2025 (segment basis covering Horizon, not project-allocated). (Source: Canadian Natural Resources Limited, Q1 2025 interim report, 2025-05-08)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Open-pit mining with naphtha froth treatment (NFT); mined bitumen is upgrader-locked and is upgraded on site to SCO. Note: NFT classification is secondary-sourced research. (Source: project technology research compilation, 2026-09-23)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating. The NRUTT (Naphtha Recovery Unit Tailings Treatment) project is sanctioned with a Q3 2027 in-service target. (Source: BOE Report, Canadian Natural Resources Limited announces 2026 budget, 2025-12-16)"
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2028-01-01 to 2028-12-31: forward schedule — impact unquantified (guidance sourced)"
+     }
+    ]
+   },
+   {
+    "slug": "su_base_plant",
+    "name": "Base Plant",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "Integrated (mine + upgrader)",
+    "region": null,
+    "dek": "Base Plant (Oil Sands Base) is Suncor's integrated mining and upgrading complex north of Fort McMurray. Mined bitumen is upgraded on site to synthetic crude oil (SCO). It is part of Suncor's Oil Sands Operations segment and connects to the Syncrude and Fort Hills assets via bi-directional interconnecting pipelines brought into service in Q4 2020.",
+    "capacity_kbd": 350.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. owns 100% and operates Base Plant. (Source: Suncor Energy, Q4 2025 investor presentation)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Upgrader capacity of 350,000 bbl/d of SCO. (Source: Suncor Energy, Q4 2025 investor presentation)\n• Base Mine production was 262,000 bbl/d of bitumen in 2025. (Source: Suncor Energy, Q4 2025 investor presentation)\n• Convention (confirmed 2026-09-23): mine-bitumen capacity and upgrader SCO capacity are kept as separate lines in the model and on the project page, never blended into a single capacity figure."
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No sanctioned capacity expansion disclosed in reviewed sources. Suncor disclosed a cogeneration project at Oil Sands Base to replace existing coke-fired boilers (part of its environmental and free-funds-flow program). (Source: Suncor Energy, Suncor reports fourth quarter 2020 results, 2021-02-09)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Suncor's 2026 corporate guidance disclosed maintenance at Base Plant with a quarterly production and cost effect. Specific duration not disclosed. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)\n• The Upgrader 2 major five-year turnaround was completed in 2023; the Base Plant upgrader achieved 90% full-year utilization in 2023 including that turnaround. (Source: Suncor Energy, Suncor Energy achieves 2023 upstream production corporate guidance, 2024-01-03)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for Base Plant specifically: not disclosed. Suncor's 2026 Oil Sands Operations cost guidance (Base Plant, Firebag, MacKay River) is $26 to $29/bbl. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Open-pit mining with naphtha froth treatment (NFT); mined bitumen is upgrader-locked and is upgraded on site to SCO. Note: NFT classification is secondary-sourced research. (Source: project technology research compilation, 2026-09-23)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     },
+     {
+      "heading": "Upcoming maintenance",
+      "body": "• 2026-10-01 to 2026-12-31: turnaround — -15 kb/d event rate (public confirmed)\n• 2026-10-01 to 2026-12-31: turnaround — -5 kb/d event rate (public confirmed)"
+     }
+    ]
+   },
+   {
+    "slug": "syncrude",
+    "name": "Syncrude",
+    "operator": "Syncrude Canada Ltd.",
+    "ticker": "SU",
+    "method": "Integrated (mine + upgrader)",
+    "region": null,
+    "dek": "Syncrude is an integrated oil sands mining and upgrading joint venture in the Athabasca region (Mildred Lake and Aurora mines, upgrader). Suncor assumed operatorship in October 2021. Mined bitumen is upgraded on site to synthetic crude oil (SCO).",
+    "capacity_kbd": 350.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• The joint venture partners are Suncor Energy Inc. (58.74%), Imperial Oil Resources Limited (25.0%), Sinopec Oil Sands Partnership (9.03%), and CNOOC Oil Sands Canada (7.23%). Suncor's interest grew from 53.74% to 58.74% when it closed the purchase of Mocal Energy's 5% interest on February 26, 2018, effective January 1, 2018. Suncor is the operator (since October 2021). (Source: Suncor Energy, Suncor Energy closes purchase of additional interest in Syncrude, via GlobeNewswire/BOE Report, 2018-02-26; International Mining, Suncor officially takes over operatorship of Syncrude Joint Venture, 2021-10-08)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Gross SCO capacity of about 350,000 bbl/d. (Source: JX Nippon Oil and Gas Exploration, Summary of Syncrude Oil Sand Project, 2026-09-23; Oil and Gas Journal, Suncor buys Mocal Energy's Syncrude stake, 2018-02-12)\n• Suncor reports its share of upgrader capacity as 206,000 bbl/d, net to its 58.74% working interest (206,000 / 0.5874 implies about 350,700 bbl/d gross; the company does not state the gross figure, so record both bases without treating them as a conflict). (Source: Suncor Energy, Q4 2025 investor presentation)\n• Syncrude gross production averaged 323,000 bbl/d in 2023 (190,000 bbl/d net to Suncor). (Source: Suncor Energy, Suncor Energy achieves 2023 upstream production corporate guidance, 2024-01-03)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No sanctioned expansion disclosed in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Suncor's 2026 corporate guidance disclosed maintenance at Syncrude with a quarterly production and cost effect. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)\n• A planned turnaround at Syncrude in Q2 2026 was disclosed in Imperial Oil's 2026 guidance; Imperial's 2026 Syncrude production guidance is 78,000 to 82,000 bbl/d (Imperial share). (Source: Imperial Oil, Imperial provides 2026 corporate guidance outlook, via Business Wire, 2025-12-15)\n• The Q1 2026 Syncrude coker outage demonstrated the interconnect playbook: 16,400 bbl/d of Syncrude bitumen and 66,900 bbl/d of Fort Hills bitumen were transferred to Suncor Base, with the Base upgrader running at 108% utilization. (Source: Suncor Energy Q1 2026 Form 6-K, via StockTitan, 2026-05)\n• The Suncor Base-Syncrude interconnect pipelines are BI-DIRECTIONAL per Suncor (Nov 2020 operatorship announcement). Flow is not limited to Syncrude-to-Base; Suncor mine bitumen can feed the Syncrude upgrader as well. (Source: Suncor Energy news release via Oilfield Technology, 2020-11-24, https://www.oilfieldtechnology.com/drilling-and-production/24112020/suncor-to-assume-syncrude-operatorship-by-end-of-2021/)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• 2026 cost guidance of $34 to $37/bbl, net to Suncor's 58.74% share. (Source: Suncor Energy, Suncor Energy announces 2026 corporate guidance, 2025-12-11)\n• Imperial Oil reported Q2 2026 unit cash cost of C$57.81/bbl for its Syncrude share. (Source: Investing News, Imperial announces second quarter 2026 financial and operating results, 2026-07-31)"
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Open-pit mining with naphtha froth treatment (NFT); mined bitumen is upgrader-locked and is upgraded on site to SCO. Note: NFT classification is secondary-sourced research. (Source: project technology research compilation, 2026-09-23)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cnooc_long_lake_upgrader",
+    "name": "Long Lake Upgrader",
+    "operator": "CNOOC Petroleum North America ULC",
+    "ticker": "0883.HK",
+    "method": "Upgrading",
+    "region": null,
+    "dek": "Long Lake is an integrated SAGD and upgrader complex about 40 km southeast of Fort McMurray. The upgrader was idled in 2016 after a fatal explosion in January 2016; since then, the SAGD operation has sold diluted bitumen directly to market and the project functions as a SAGD-only producer. This file covers the complex; the ST53 scheme \"Long Lake\" tracks the SAGD bitumen line.",
+    "capacity_kbd": 70.0,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• CNOOC Petroleum North America ULC (CPNA, formerly Nexen Energy ULC) is the 100% owner and operator; CPNA is a wholly owned subsidiary of China National Offshore Oil Company Limited (CNOOC). (Source: Alberta Energy Regulator, CNOOC Long Lake and Kinosis annual performance presentation, 2021-06-30)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• SAGD design bitumen capacity of 11,130 m3/d, i.e., 70,000 bbl/d; steam capacity of 37,000 m3/d (233,000 bbl/d). (Source: Alberta Energy Regulator, CNOOC Long Lake and Kinosis annual performance presentation, 2021-06-30)\n• The SAGD facility is separately reported with capacity of 90,000 bbl/d. Note: secondary-sourced. (Source: Oil Sands Magazine, Long Lake project profile, 2026-09-23)\n• Upgrader nameplate of 58,000 bbl/d of SCO, idled in 2016. (Source: Oil Sands Magazine, Long Lake Upgrader project profile, 2026-09-23)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• An application to restart the idled upgrader was filed with the AER in November 2021, marked \"reassigned\" on January 17, 2022, with a partial resumption targeted by March 2022. The current status of the restart was not disclosed in reviewed sources. (Source: CPECN/Bloomberg, Long Lake Upgrader To Be Restarted Six Years After Fatal Explosion, 2022-01)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD (Wabiskaw-McMurray deposit); current product is diluted bitumen. (Source: Alberta Energy Regulator, CNOOC Long Lake and Kinosis annual performance presentation, 2021-06-30)\n• The idled upgrader used OPTI's proprietary OrCrude technology with solvent deasphalting, at 83% bitumen yield. (Source: Oil Sands Magazine, Long Lake Upgrader project profile, 2026-09-23)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating as a SAGD-only scheme under scheme approval 9485 (as amended). The upgrader is idled; a restart application was filed in November 2021 and its status is not disclosed in reviewed sources. (Source: Alberta Energy Regulator, CNOOC Long Lake and Kinosis annual performance presentation, 2021-06-30; CPECN/Bloomberg, Long Lake Upgrader To Be Restarted Six Years After Fatal Explosion, 2022-01)"
+     }
+    ]
+   },
+   {
+    "slug": "shell_scotford",
+    "name": "Scotford Upgrader",
+    "operator": "Shell Canada Limited",
+    "ticker": "SHEL",
+    "method": "Upgrading",
+    "region": null,
+    "dek": null,
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": []
+   }
+  ]
+ },
+ "meta": {
+  "units": {
+   "capacity_kbd": "kb/d",
+   "production_kbd": "kb/d"
+  },
+  "sources": [
+   "annotations/projects.yaml",
+   "annotations/project_intel (filing research, per-bullet cites)",
+   "AER ST3/ST53 via project-production-vs-peak.csv",
+   "annotations/maintenance_forward.yaml"
+  ],
+  "notes": "capacity_kbd is parsed from the intel Capacity bullet only when it reads like a stated nameplate; guidance, targets, and 'not disclosed' stay null. production_kbd covers the largest projects in the chart CSV.",
+  "blindsided": [
+   "capacity_kbd is a regex read of prose, not a structured series — check the Capacity section text when it matters",
+   "Production covers only projects in the top-12 chart CSV; others carry null",
+   "region is not tracked in the project sources; always null in this feed"
+  ]
+ }
+}

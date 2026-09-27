@@ -1,5 +1,5 @@
 {
- "vintage": "Forward calendar 2026-09-22; modeled at leaves 2026-09-23; feed built 2026-09-26",
+ "vintage": "Forward calendar 2026-09-22; modeled at leaves 2026-09-23; feed built 2026-09-27",
  "data": {
   "offline_by_month": [
    {
@@ -279,10 +279,10 @@
   ],
   "notes": "kind: turnaround (event), forward_schedule (guidance), in_model_math (already in forecast numbers). validation: guidance-sourced (company said it) vs cadence-modeled (pattern-inferred, less certain).",
   "blindsided": [
-   "cadence-modeled events are pattern-inferred, not company-confirmed \u2014 treat as softer",
+   "cadence-modeled events are pattern-inferred, not company-confirmed — treat as softer",
    "2027 company turnaround schedules unpublished as of 2026-09-22; 2027 calendar is thin",
    "Unplanned outages (fires, freeze-offs) are not in this calendar by definition",
-   "in_model_math events are already in the balance forecast \u2014 don't double-count"
+   "in_model_math events are already in the balance forecast — don't double-count"
   ]
  }
 }

@@ -1,5 +1,5 @@
 {
- "vintage": "CER open data pulled 2026-09-22; AER ST3 thru 2026-07; model build 2026-09-27; feed built 2026-09-26",
+ "vintage": "CER open data pulled 2026-09-22; AER ST3 thru 2026-07; model build 2026-09-27; feed built 2026-09-27",
  "data": {
   "history": [
    {
@@ -3043,7 +3043,7 @@
   ],
   "notes": "Capacity is the empirical-crude stack: max(nameplate, expanding max observed CER throughput), less 215 kb/d non-crude on Mainline. Spare = capacity - marketable supply. History rows have kind=measured (observed); forecast rows are model output.",
   "blindsided": [
-   "Empirical stack uses max(observed) \u2014 if pipes never tested above nameplate, capacity may be overstated",
+   "Empirical stack uses max(observed) — if pipes never tested above nameplate, capacity may be overstated",
    "Express/Milk River/Rangeland use nameplate fallback (no CER throughput history)",
    "Marketable supply forecast inherits all S&D model uncertainty",
    "Spare is basin-level; a single pipe can apportion while basin spare looks comfortable"
