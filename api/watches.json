@@ -908,7 +908,7 @@
     "dek": "China's crude buying: import volumes, sourcing shifts, teapot run rates, and what it means for sour barrel demand.",
     "updated": "2026-09-28",
     "how_to_read": "Read this page as the buy side of the sour barrel: China's import volumes and refinery runs decide how much sour crude Asia pulls, and the stock math (imports plus domestic production minus throughput) shows whether Beijing is building inventories or drawing them. Every bullet carries its vintage, so read 2026 wartime figures against pre-war baselines rather than against last week alone.",
-    "wcs_stakes": "China is the world's largest crude importer and the marginal buyer of the sour barrels Western Canadian Select (WCS) competes against, so its buying sets the demand floor under the sour complex. When Chinese teapot refineries pull hard on Russian Urals and Iranian barrels, or Beijing restocks its strategic petroleum reserve (SPR), sour grades firm and Canadian heavies hold their differential; when China draws stocks instead, sour supply backs up and the WCS basis softens. Watch the Kayrros satellite inventory reads and the monthly refinery throughput numbers for the earliest signal of a buying turn.",
+    "wcs_stakes": "China's buying is rotating, not growing: Russian and Iranian crude fell below one-third of September imports from about half in August (Goldman Sachs), and US Treasury Secretary Scott Bessent says only about 15 million barrels of Iranian oil remain on the water under the US blockade -- a forced shift toward non-sanctioned sour that bids up the grades Western Canadian Select (WCS) competes with. But the bid is selective: seaborne imports sit almost 3 million b/d below normal seasonal levels even as refineries processed 13.91 million b/d in August, the most since March. Watch the Kayrros satellite inventory reads and the monthly throughput numbers: restocking bids up sour, stock draws soften the WCS basis.",
     "wcs_closer": "For the WCSB book, China matters through the sour barrel, not through direct Canadian sales. Strong Chinese runs and restocking bid up the grades Mars and Urals price against, which keeps the Canadian differential tight; a stock draw and a buying pause do the opposite. The teapot substitution story, Urals and fuel oil standing in for blocked Iranian barrels, is the near-term variable to watch.",
     "sections": [
      {
@@ -1073,9 +1073,44 @@
     "dek": "US Strategic Petroleum Reserve (SPR) and commercial crude stocks -- SPR inventory, the 2026 exchange/refill mechanics, and Cushing.",
     "updated": "2026-09-28",
     "how_to_read": "Read this page as the US government's sour barrel: the Strategic Petroleum Reserve (SPR) is mostly sour crude, and its exchanges put barrels into the market while the returns schedule takes them back out. The reserve's published inventory is the hard data; the 2026 exchange repayment ledger is not published, so outstanding loan balances are estimates. Every bullet carries its vintage.",
-    "wcs_stakes": "The SPR is the largest single pool of sour crude the US government controls, and its 2026 exchanges have added roughly 130 million barrels of mostly sour supply to the market, directly pressuring the sour grades Western Canadian Select (WCS) competes with. While the exchanges run, refiners have a government-supplied alternative to buying sour barrels, which caps how tight the Canadian differential can get; when repayments start in 2027 at about 1.25 barrels per barrel borrowed, the flow reverses into a standing bid. Cushing stocks are the local gauge: near the operational minimum, West Texas Intermediate (WTI) logistics tighten and Canadian differentials feel it through the flat price.",
-    "wcs_closer": "For the WCSB book, the SPR is a two-act story: exchanges now, repayments later. Watch the weekly EIA petroleum status report for the inventory draw pace and any disclosed repayments; the return schedule starting in 2027 is a known future bid for sour barrels. Until then, the reserve's sour releases are the quiet headwind on every sour differential print.",
+    "wcs_stakes": "What's drawing lately is leaning sweet: between August 20 and September 11 the Strategic Petroleum Reserve (SPR) lost 5.0 million barrels of sweet against 4.2 million of sour, leaving it at roughly 34% sweet and 66% sour against the 40/60 mix the Department of Energy (DOE) says US Gulf Coast refineries were built around, and at 284.9 million barrels the reserve sits only about 32 million above the 252.4-million-barrel minimum Congress mandates. Near term the pressure stays bearish: Energy Secretary Chris Wright calls another exchange round 'a very real possibility' with 38.5 million barrels still unallocated. The trade flips in 2027, when borrowers start returning barrels at about 1.25 per barrel borrowed through 2029, turning the SPR from the market's biggest sour supplier into a standing bid for medium-sour crude.",
+    "wcs_closer": "For the WCSB book, the SPR is a two-act story with a grade twist: exchanges now, repayments later, and sweet leaving fastest while the reserve drifts further from its 40/60 design mix. Watch the weekly EIA petroleum status report for the draw pace, the DOE grade table for the sweet/sour split, and any disclosed repayments; the 2027-2029 return schedule is a known future bid for sour barrels. Until then, the reserve's releases are the quiet headwind on every sour differential print, and the 252.4-million-barrel congressional floor leaves only about 32 million barrels of drawdown room.",
     "sections": [
+     {
+      "heading": "What's drawing lately: sweet vs sour",
+      "bullets": [
+       {
+        "text": "DOE's per-site grade table as of August 20, 2026 showed 101.8 million barrels of sweet and 192.3 million of sour (294.1 million total), or roughly 34.6% sweet and 65.4% sour. DOE defines sweet as sulfur content no greater than 0.5% by weight and sour as greater than 0.5% but less than 2.0%; DOE's stated design ratio is about 40% sweet to 60% sour, based on likely US refinery needs, especially on the Gulf Coast.",
+        "vintage": "Data: Aug 20, 2026; accessed 2026-09-28",
+        "source": "US Department of Energy (SPR Quick Facts)",
+        "source_url": "https://www.energy.gov/hgeo/opr/spr-quick-facts"
+       },
+       {
+        "text": "DOE reported the reserve at 284.9 million barrels as of September 11, split 96.8 million sweet and 188.1 million sour (Reuters). Against the August 20 DOE table, sweet drew about 5.0 million barrels and sour about 4.2 million over roughly three weeks, with sweet leaving slightly faster in absolute terms; the sweet share slipped to about 34.0%, drifting further from DOE's 40% design target. Note the September 11 split comes from secondary reporting of a DOE figure, not the published Quick Facts grade table.",
+        "vintage": "Data: Sep 11, 2026; reported Sep 11, 2026; accessed 2026-09-28",
+        "source": "Reuters (via Permian Basin Oil and Gas Magazine)",
+        "source_url": "https://pboilandgasmagazine.com/oil-in-strategic-petroleum-reserve-falls-to-lowest-level-in-more-than-40-years/"
+       },
+       {
+        "text": "The September 11 total sat about 32.5 million barrels above the 252.4-million-barrel minimum Congress mandates, so the exchange program has limited drawdown room left before hitting the statutory floor. DOE says it has secured cancellation of 140 million barrels of congressionally mandated sales scheduled for fiscal years 2024 through 2027, so there is no forced-sale overhang on the forward calendar.",
+        "vintage": "Reported Sep 11, 2026; accessed 2026-09-28",
+        "source": "Reuters (via Permian Basin Oil and Gas Magazine); US Department of Energy (energy.gov)",
+        "source_url": "https://pboilandgasmagazine.com/oil-in-strategic-petroleum-reserve-falls-to-lowest-level-in-more-than-40-years/"
+       },
+       {
+        "text": "Refill buying stays token: the Senate-passed July 2025 budget bill cut SPR crude purchase funding to $171 million from the House's $1.3 billion, roughly 3 million barrels at prevailing prices, and kept the repeal of the last 7 million barrels of congressionally mandated sales through fiscal year 2027 (final legislative status unconfirmed).",
+        "vintage": "Reported Jul 1, 2025; accessed 2026-09-28",
+        "source": "SRN News (Reuters)",
+        "source_url": "https://srnnews.com/us-senate-budget-bill-slashes-money-to-fill-oil-reserve/"
+       },
+       {
+        "text": "Near term the program still leans bearish for sour: Secretary Wright said in mid-September that another round of exchange loans is 'a very real possibility', with about 38.5 million barrels of the 172-million-barrel authorized program still unallocated. The reversal is scheduled: borrowed crude is expected to start returning early in 2027 and run through 2029 at roughly 1.25 barrels returned per barrel borrowed, implying about 35 to 40 million premium barrels on top of the principal that the market must supply back to the reserve.",
+        "vintage": "~Sep 18, 2026; accessed 2026-09-24",
+        "source": "Turkiye New Updates (citing Argus Media via Anadolu Agency); BOE Report (citing Reuters)",
+        "source_url": "https://turkiyenewupdates.com/us-may-increase-oil-loans-from-strategic-reserve-amid-price-surge-energy-secretary/"
+       }
+      ]
+     },
      {
       "heading": "US petroleum stocks: crude, distillate, and gasoline",
       "bullets": [
@@ -1425,8 +1460,8 @@
     "dek": "The sour grades WCS competes with, Dubai, Mars, Merey: how they are priced, and what moves the arb.",
     "updated": "2026-09-28",
     "how_to_read": "Read this page as the comp sheet: Dubai, Mars, and Merey are the sour grades that price Western Canadian Select (WCS) by substitution, and the Brent-Dubai spread is the arb gauge between Atlantic and Asian sours. Reported differentials are point-in-time values, not a time series, and every bullet carries its vintage. No single public series tracks the full comp set, so compare like with like.",
-    "wcs_stakes": "WCS does not price in a vacuum: it prices against the world sour barrel, and the Brent-Dubai Exchange of Futures for Swaps (EFS) plus the Mars premium to West Texas Intermediate (WTI) are the two numbers that say whether Canadian heavies are cheap or expensive on a relative basis. When Gulf sours vanish and the EFS blows out, substitute sours from the Atlantic Basin firm and WCS rides with them; when Basrah returns or the EFS compresses, the relative bid unwinds. This page is the cross-check on every TMW print: if the sour comp set is strong, a wide WCS differential is a buying opportunity, not a warning.",
-    "wcs_closer": "For the WCSB book, this is the relative-value page: WCS against Mars, Dubai, and Merey tells you whether the differential is about Canadian barrels or the world sour barrel. Watch the Brent-Dubai spread and the Saudi and Iraqi official selling prices as the marginal read on Gulf sour demand. When the comp set firms together, the WCS differential usually follows.",
+    "wcs_stakes": "The read right now is divergence: Western Canadian Select (WCS) printed an unusually wide $21 under West Texas Intermediate (WTI) on September 21 while the world sour comp set stayed mixed but firm — Saudi Aramco lifted November Arab Light to Asia to $4.00 over Oman/Dubai, and the Brent-Dubai Exchange of Futures for Swaps (EFS) hit $4.22 on September 27, its widest since July 8, even as Mars softened on freight costs and Asian spot buying stayed quiet. That says the wide Canadian print is more about Canadian barrels and logistics than a weak sour complex: US refineries are running at 97% with record diesel cracks bidding for heavy feedstock, and the Strategic Petroleum Reserve (SPR) exchange barrels still flowing are the government's thumb on the sour scale until the 1.25x repayments start in 2027. This page is the cross-check on every TMW print: if the sour comp set holds firm and WCS goes wide, the differential is a buying opportunity, not a warning.",
+    "wcs_closer": "For the WCSB book, this is the relative-value page: WCS against Mars, Dubai, and Merey tells you whether the differential is about Canadian barrels or the world sour barrel. Watch the Brent-Dubai spread, the Saudi and Iraqi official selling prices, and the SPR's sweet/sour draw mix as the marginal reads on sour supply. When the comp set firms together, the WCS differential usually follows.",
     "sections": [
      {
       "heading": "Mars: the US Gulf sour benchmark",
@@ -1517,6 +1552,12 @@
      {
       "heading": "What moves the arb",
       "bullets": [
+       {
+        "text": "The US government's own sour barrel is shifting grade: DOE's August 20 grade table showed the SPR at 101.8 million barrels sweet and 192.3 million sour, and by September 11 the split was 96.8 million sweet and 188.1 million sour (Reuters), meaning sweet drew about 5.0 million barrels against 4.2 million of sour over roughly three weeks. With the reserve at roughly 34% sweet versus DOE's 40% design target, the government's remaining emergency supply is getting more sour-dominant, which limits how much sweet relief a future release could actually deliver to light-sweet markets.",
+        "vintage": "Data: Aug 20 to Sep 11, 2026; accessed 2026-09-28",
+        "source": "US Department of Energy (SPR Quick Facts); Reuters (via Permian Basin Oil and Gas Magazine)",
+        "source_url": "https://www.energy.gov/hgeo/opr/spr-quick-facts"
+       },
        {
         "text": "The seven core producers of the Organization of the Petroleum Exporting Countries (OPEC+) and its allies (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman) met virtually on September 6, 2026 and held October production quotas at September levels, the first month since April without an increase. The decision follows the August 2 approval of a 188,000 barrel per day September increase (Saudi Arabia and Russia 62,000 each, Iraq 26,000, Kuwait 16,000, Kazakhstan 10,000, Algeria 6,000, Oman 5,000), which completed the unwinding of the 2023 voluntary cuts. October required levels: Saudi Arabia 10.478 million barrels per day, Russia 9.949, Iraq 4.431, Kuwait 2.676, Kazakhstan 1.628, Algeria 1.007, Oman 0.841. Delegates expect quotas to hold through year-end while a 2027 baseline review runs; the next review is October 4.",
         "vintage": "Decided Sep 6, 2026; accessed 2026-09-24",
@@ -1612,7 +1653,7 @@
     "dek": "Organization of the Petroleum Exporting Countries and its allies (OPEC+) quotas, the Middle East supply disruption, Gulf loadings, and Saudi pricing: the state of the world's swing supply.",
     "updated": "2026-09-28",
     "how_to_read": "Read this page as the supply-side bid for sour barrels: OPEC+ quota decisions set the ceiling, the Middle East conflict sets the actual flow, and Saudi official selling prices set the price signal Asian buyers see. Each bullet carries its vintage, so read 2026 wartime data against the pre-war baselines in the Hormuz watch. The disagreements log flags where trackers and officials genuinely diverge.",
-    "wcs_stakes": "Middle East supply sets the world price of oil and the value of every sour barrel competing with Western Canadian Select. A prolonged shortfall in medium and heavy sour supply from the Gulf supports heavy crude pricing globally and keeps refinery demand for sour barrels strong. If OPEC+ restores output faster than expected or the war ends, the sour premium collapses and Canadian barrels lose their relative bid.",
+    "wcs_stakes": "The Gulf tap is open: Saudi crude exports averaged 5.28 million b/d over September 1-23, the strongest pace since the conflict began, and OPEC+ held October quotas flat -- the first month without an increase since April -- with compliance near 115%. That is the fundamental headwind on every sour premium Western Canadian Select (WCS) competes against: the more Gulf medium and heavy sour that loads, the less refiners need to chase substitute barrels. The forward risk is asymmetric: if Hormuz flows normalize or the 2027 baseline review unlocks more OPEC+ barrels, the sour premium collapses and Canadian differentials lose their relative bid; a fresh disruption does the opposite.",
     "wcs_closer": "For the WCSB book, this page is the fundamental backdrop behind every TMW and ARV print: tight Gulf sour supply is what is keeping the heavy basis bid right now. If Hormuz flows normalize or Saudi pricing turns aggressive again, expect the Canadian differential complex, including TMW and ARV, to soften first at the margin.",
     "sections": [
      {
@@ -1780,7 +1821,7 @@
     "dek": "The other half of every Western Canadian Select (WCS) barrel: what diluent is, where Alberta's condensate comes from, the structural import shortfall, and the cost it puts on the heavy barrel.",
     "updated": "2026-09-28",
     "how_to_read": "Read this page as the cost line inside every Western Canadian Select (WCS) barrel. Trade press usually means pentanes plus (C5+) when it says condensate, the Alberta Energy Regulator's (AER) formal category. Every bullet carries its vintage: 2026 trade-press snapshots sit against the AER's annual ST98 supply and demand balance, the benchmark source.",
-    "wcs_stakes": "Diluent is the embedded cost in every Western Canadian Select (WCS) barrel: roughly 30% of a dilbit barrel is condensate priced near West Texas Intermediate (WTI), while the blended barrel sells at a heavy discount. A tight diluent market, full import pipelines, or a firm condensate premium widens the effective discount bitumen producers realize, even when the headline TMW spread looks steady. Structural import dependence makes diluent tightness a standing risk to oil sands netbacks.",
+    "wcs_stakes": "The so-what on diluent is cost, not price: roughly 30% of every dilbit barrel is condensate priced near West Texas Intermediate (WTI), and Alberta is structurally short -- 2024 pentanes-plus production of 396,000 b/d against 751,000 b/d of demand, with the two US import lines (Cochin at about 95,000 b/d, Southern Lights at about 195,000 b/d) running at or near full. When diluent tightens, the cost hits bitumen netbacks directly even if the TMW print does not move. Fresh signal: FTAI Energy Partners agreed on September 28 to buy the Port Arthur crude terminal and half of the Hardisty Diluent Recovery Unit, midstream money betting that diluent recovery and Gulf Coast placement stay economic.",
     "wcs_closer": "For the WCSB book, watch the AER's ST98 supply and demand balance and the utilization of the two condensate import lines as the leading indicators. If imports saturate and the spot condensate premium firms, bitumen netbacks shrink from the cost side while the TMW print may not move at all. Cheap diluent is as important to the WCS barrel as strong refinery demand.",
     "sections": [
      {
@@ -1936,7 +1977,7 @@
     "dek": "Crack spreads, utilization, and turnarounds: how refinery economics set the bid for discounted heavy barrels like Western Canadian Select (WCS).",
     "updated": "2026-09-28",
     "how_to_read": "Read this page as the demand-side bid under the heavy barrel. The 3-2-1 crack spread is the industry's shorthand for refinery profitability, utilization shows how hard plants are running, and the turnaround calendar shows when crude demand dips. Every bullet carries its vintage. Regional benchmarks differ, so compare like with like.",
-    "wcs_stakes": "Refinery margins are the demand-side bid under every heavy barrel. Record 2026 cracks have kept US refineries, especially the coking-heavy plants of PADD 2 (the Petroleum Administration for Defense District covering the Midwest), running at or above nameplate, which is what absorbs Canadian heavy crude and holds the Western Canadian Select (WCS) differential tight. When margins compress and runs fall, discounted heavy barrels strand first and the differential widens. The February 2024 Whiting outage showed the mechanism in a single day.",
+    "wcs_stakes": "Margins say run, but WCS went wide anyway: the 3-2-1 crack stood at $73.12 a barrel on September 22, near the May 2022 record, yet the Western Canadian Select (WCS) discount printed an unusually wide $21 under West Texas Intermediate (WTI) on September 21. That divergence is the read -- with PADD 2 (the Petroleum Administration for Defense District covering the Midwest) refineries incentivized to run flat out and bid for discounted heavy barrels, a wide print points to logistics and outages (ExxonMobil's 275,000 b/d Joliet refinery shut September 13, restarting September 23) rather than weak demand. The forward risk: when cracks compress and the fall turnaround slate hits, discounted heavy barrels strand first and the differential widens for real.",
     "wcs_closer": "For the WCSB book, this page is the demand-side complement to the supply watches: watch PADD 2 utilization and the fall turnaround slate the way you watch TMW. While cracks sit near record highs, refineries have every incentive to run hard and bid for discounted heavy barrels, which supports WCS. The risk is the turn: when maintenance or margin compression takes runs down, heavy barrels lose their bid first.",
     "sections": [
      {

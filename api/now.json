@@ -42,7 +42,7 @@
    },
    {
     "headline": "Mainline apportioned for October",
-    "dek": "Light 8%, heavy 4%. Enbridge's October Mainline apportionment (official notice, Sep 16): 8% on Line 2/93 lights and 4% on Line 4/67/93 heavies at Kerrobert, plus Line 1 NGL/refined FPA 7% at Regina and SPA 3% at Kerrobert. This corrects the earlier Reuters paraphrase (7% light, 10% heavy), which did not match the official notice. No force-majeure or leak headlines over the weekend on Keystone, Trans Mountain, or the Mainline. CER June data: Keystone 94% of available, Mainline ex-Gretna 94.5%.",
+    "dek": "Light 8%, heavy 4%. Enbridge's October Mainline apportionment (official notice, Sep 16): 8% on Line 2/93 lights and 4% on Line 4/67/93 heavies at Kerrobert, plus Line 1 NGL/refined FPA 7% at Regina and SPA 3% at Kerrobert. No force-majeure or leak headlines over the weekend on Keystone, Trans Mountain, or the Mainline. CER June data: Keystone 94% of available, Mainline ex-Gretna 94.5%.",
     "balance_read": "Cross-border pipes functionally full (~272 kb/d spare on June data) heading into the fall demand window — barrels get priced, not railed.",
     "vintage": "Sep 16, 2026",
     "publishers": "Enbridge Connecting Pipelines notice"
@@ -118,17 +118,22 @@
   ],
   "apportionment": {
    "october_2026": {
-    "light_pct": 7.0,
-    "heavy_pct": 10.0
+    "light_pct": 8.0,
+    "heavy_pct": 4.0
    },
    "september_2026": {
     "light_pct": 0.0,
     "heavy_pct": 0.0
    },
-   "source": "Reuters, Sep 24 2026 (Oct); Enbridge announcement (Sep)",
+   "source": "Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
    "note": "Mainline back into apportionment after zero in September"
   },
-  "breaking": null,
+  "breaking": {
+   "id": "apportionment-october_2026",
+   "headline": "Mainline apportionment out of apportionment for October 2026: heavy 10% to 4%",
+   "set_at": "2026-09-28",
+   "source": "Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)"
+  },
   "balance_highlights": [
    {
     "month": "2026-11",
@@ -159,7 +164,7 @@
   "notes": "Snapshot for the app home tab, mirroring the Now page's data: overnight changes ranked by balance impact, flags forming, the forward calendar, and current apportionment. kbpd change figures are the publication's own arithmetic on public inputs, stated as estimates.",
   "blindsided": [
    "Apportionment announcements are newswire-based; CER Guide BB.2 filings trail ~1 quarter",
-   "Oct 2026 numbers are announced (Reuters), not yet in CER filings",
+   "Oct 2026 numbers are announced (Enbridge notice Sep 16), not yet in CER filings",
    "Balance forecast: 2026-08/09 actuals unknown (ST3 lag); forward starts from 2026-07"
   ]
  }
