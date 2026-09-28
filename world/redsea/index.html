@@ -122,10 +122,27 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   letter-spacing:.1em; text-transform:uppercase; padding:15px 16px 13px;
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-/* flat nav: no dropdowns anywhere (2026-09-27). The mobile Sections panel
-   carries the full link set below the four main links; it is hidden on
-   desktop, where the header shows the four links only. */
+/* desktop dropdowns (2026-09-28): hover/focus reveals the panel; the header
+   stays four clean links at rest. Hidden everywhere else - touch and mobile
+   use the Sections panel. The mobile Sections panel carries the full link
+   set below the four main links; it is hidden on desktop. */
 .mnav-groups { display:none; }
+.nd-panel { display:none; }
+@media (min-width:641px) {
+  .nd-panel { position:absolute; top:100%; left:0; z-index:60;
+    min-width:232px; background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 28px rgba(20,16,8,.10); padding:6px 0 8px; }
+  .navdrop:hover .nd-panel, .navdrop:focus-within .nd-panel { display:block; }
+  .nd-sec + .nd-sec { border-top:1px solid var(--line); margin-top:4px;
+    padding-top:6px; }
+  .nd-label { font-size:10.5px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--acc); margin:4px 0 2px;
+    padding:0 16px; }
+  .nd-link { display:block; padding:7px 16px; font-size:13.5px;
+    color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .nd-link:hover { color:var(--acc-deep); }
+  .nd-link[aria-current="page"] { color:var(--acc-deep); font-weight:600; }
+}
 @media (hover:hover) {
   .nd-top:hover { color:var(--acc-deep); }
   .mg-link:hover { color:var(--acc-deep); }
@@ -554,14 +571,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../weekly/index.html">Letter</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../digest/index.html">Digest</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../reference/index.html">Reference</a></div>
+      <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Supply</p><a class="nd-link" href="../../supply/index.html">Supply hub</a><a class="nd-link" href="../../st3-dashboard.html">Dashboard</a><a class="nd-link" href="../../scorecard.html">Scorecard</a><a class="nd-link" href="../../balance/index.html">S&amp;D balance</a><a class="nd-link" href="../../maintenance/index.html">Maintenance</a><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/hormuz/index.html">Hormuz watch</a><a class="nd-link" href="../../world/iran/index.html">Iran watch</a><a class="nd-link" href="../../world/redsea/index.html" aria-current="page">Red Sea</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">Reference</p><a class="nd-link" href="../../whale-watch.html">Whale watch</a><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="../../supply/index.html">Supply hub</a><a class="mg-link" href="../../st3-dashboard.html">Dashboard</a><a class="mg-link" href="../../scorecard.html">Scorecard</a><a class="mg-link" href="../../balance/index.html">S&amp;D balance</a><a class="mg-link" href="../../maintenance/index.html">Maintenance</a><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/hormuz/index.html">Hormuz watch</a><a class="mg-link" href="../../world/iran/index.html">Iran watch</a><a class="mg-link" href="../../world/redsea/index.html" aria-current="page">Red Sea</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-27/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../whale-watch.html">Whale watch</a><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
       </nav>
@@ -573,9 +590,10 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">Houthi pressure on Red Sea shipping: Bab el-Mandeb transit, territorial control, and the Cape of Good Hope diversion.</p>
   <p class="note">Read this page as the routing risk behind the sour price: the Red Sea and Bab el-Mandeb decide whether Gulf crude reaches Europe and Asia on time or diverts around the Cape of Good Hope at record freight. Houthi claims are carried as claims, not confirmed incidents, and each bullet says which. Vessel counts are proxies for volume, and the quarterly official series lags.</p>
   <p class="lede">The Red Sea is the back door for Gulf sour barrels to Europe and the long way around to Asia, so its closure pushes those barrels onto longer routes at record freight and pushes European refiners onto substitute sours. That substitution is what keeps the bid under Atlantic Basin heavies like Mars and Western Canadian Select (WCS) while Yanbu loadings are suspended. If the East-West pipeline restart holds and Bab el-Mandeb transits recover, European sour demand normalizes and the support under WCS fades.</p>
-  <p class="note freshness">Updated September 27, 2026 &middot; refreshes weekly</p>
+  <p class="note freshness">Updated September 28, 2026 &middot; refreshes weekly</p>
   <h2>September 2026 escalation</h2>
   <ul class="ev">
+  <li>Kpler data showed commodity-vessel transits through Bab el-Mandeb fell to 11 on September 27, the lowest level in months, as Red Sea traffic slowed after Houthi attacks on Saudi coastal installations, though two very large crude carriers were still inbound to Yanbu to load crude.<br><span class="vintage-inline">Sep 27, 2026 <a href="https://www.marinelink.com/news/red-sea-shipping-slows-houthi-attack-541529">Reuters (via MarineLink)</a></span></li>
   <li>Saudi authorities ordered Riyadh schools to switch to remote learning for a week after Saudi air defenses said they intercepted Houthi drones aimed at the capital and ballistic missiles targeting Khamis Mushait; a Houthi political bureau member described the raid as a small-scale rehearsal for a full escalation.<br><span class="vintage-inline">Sep 27, 2026 <a href="https://themedialine.org/headlines/riyadh-suspends-in-person-classes-following-renewed-houthi-attacks-on-saudi-arabia/">The Media Line</a></span></li>
   <li>Houthi military spokesperson Yahya Saree said the group struck Aramco sites in Jizan and Yanbu on September 26, a claim Riyadh did not confirm; Kpler data showed only 11 commodity vessels transited Bab el-Mandeb on September 27, the lowest in months, though two very large crude carriers were still sailing to Yanbu to load Saudi crude.<br><span class="vintage-inline">Sep 26-27, 2026 <a href="https://www.marinelink.com/news/red-sea-shipping-slows-houthi-attack-541529">Reuters (via MarineLink)</a></span></li>
   <li>Yemen's Houthi rebels captured the island of Mayun at the entrance of the Red Sea on September 25, a key position over the alternative shipping lane for Saudi oil while Hormuz is disrupted; Saudi Arabia responded with airstrikes against the airport in Mokha, the Red Sea port the Houthis seized the day before.<br><span class="vintage-inline">Sep 25, 2026 <a href="https://usa-today-news.com/news/houthis-capture-red-sea-island-in-threat-to-shipping-and-other-mideast-developments/">The Associated Press</a></span></li>
@@ -598,6 +616,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </ul>
   <h2>International response</h2>
   <ul class="ev">
+  <li>Saudi Foreign Minister Prince Faisal bin Farhan arrived in Washington on September 28 for talks with Secretary of State Marco Rubio, as Riyadh seeks US help against the Houthis; Reuters sources said Washington agreed to intelligence and targeting support while declining to launch strikes itself.<br><span class="vintage-inline">Sep 28, 2026 <a href="https://anewz.tv/region/middle-east/24847/saudi-us-talks-focus-on-houthi-red-sea-threat/news">AnewZ (citing Reuters sources)</a></span></li>
   <li>Military chiefs from Saudi Arabia, Pakistan and Turkey met in Riyadh under the Makkah Joint Defence Agreement to review the threats facing the kingdom, condemning Houthi attacks and agreeing to deepen intelligence sharing and military coordination.<br><span class="vintage-inline">Sep 25, 2026; reported Sep 26 <a href="https://northlandnewsradio.com/2026/09/25/pakistan-saudi-turkish-chiefs-discuss-closer-military-ties/">Reuters (via Northland News Radio)</a></span></li>
   <li>France confirmed on September 25 it will send troops, radars and air-defense systems to guard the oil terminal at Yanbu; separately, the foreign ministers of Saudi Arabia, Pakistan and Turkey arranged an urgent meeting of military chiefs under the Mecca Joint Defence Agreement, which treats an attack on one member as an attack on all.<br><span class="vintage-inline">Sep 25, 2026 <a href="https://www.genocidewatch.com/single-post/saudi-allies-line-up-support-as-houthi-attacks-mount">Al Jazeera</a></span></li>
   <li>Yemen's Saudi-led coalition said early on September 26 it intercepted two ballistic missiles and two drones launched by the Houthis toward the kingdom, the missiles headed for Khamis Mushait and the drones for Riyadh. Saudi Arabia's military chiefs met in Riyadh with allies Pakistan and Turkey to review threats.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://wncy.com/2026/09/25/saudi-says-it-intercepted-2-drones-launched-by-houthis-towards-riyadh/">Reuters (via WNCY)</a></span></li>
@@ -635,8 +654,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h2>Sources</h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Publisher</th><th>Link</th></tr>
-    <tr><td>The Media Line</td><td><a href="https://themedialine.org/headlines/riyadh-suspends-in-person-classes-following-renewed-houthi-attacks-on-saudi-arabia/">link</a></td></tr>
     <tr><td>Reuters (via MarineLink)</td><td><a href="https://www.marinelink.com/news/red-sea-shipping-slows-houthi-attack-541529">link</a></td></tr>
+    <tr><td>The Media Line</td><td><a href="https://themedialine.org/headlines/riyadh-suspends-in-person-classes-following-renewed-houthi-attacks-on-saudi-arabia/">link</a></td></tr>
     <tr><td>The Associated Press</td><td><a href="https://usa-today-news.com/news/houthis-capture-red-sea-island-in-threat-to-shipping-and-other-mideast-developments/">link</a></td></tr>
     <tr><td>Al Jazeera</td><td><a href="https://www.genocidewatch.com/single-post/saudi-allies-line-up-support-as-houthi-attacks-mount">link</a></td></tr>
     <tr><td>Argus (via World Ports Organization)</td><td><a href="https://www.worldports.org/us-warns-vessels-over-houthi-red-sea-threat/">link</a></td></tr>
@@ -650,6 +669,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Container News (citing the Suez Canal Authority)</td><td><a href="https://container-news.com/cosco-returns-to-suez-canal-as-oocl-portugal-makes-southbound-transit/">link</a></td></tr>
     <tr><td>Ship Universe</td><td><a href="https://www.shipuniverse.com/news/red-sea-war-risk-premiums-jump-after-houthi-tanker-attacks/">link</a></td></tr>
     <tr><td>Infomarine (citing Maritime Executive / Xeneta)</td><td><a href="https://infomarine.net/en/global-shipping-news/19-world-maritime-news/65304-xeneta-ocean-carriers-unlikely-to-return-to-red-sea-in-2026.html">link</a></td></tr>
+    <tr><td>AnewZ (citing Reuters sources)</td><td><a href="https://anewz.tv/region/middle-east/24847/saudi-us-talks-focus-on-houthi-red-sea-threat/news">link</a></td></tr>
     <tr><td>Reuters (via Northland News Radio)</td><td><a href="https://northlandnewsradio.com/2026/09/25/pakistan-saudi-turkish-chiefs-discuss-closer-military-ties/">link</a></td></tr>
     <tr><td>Reuters (via WNCY)</td><td><a href="https://wncy.com/2026/09/25/saudi-says-it-intercepted-2-drones-launched-by-houthis-towards-riyadh/">link</a></td></tr>
     <tr><td>SRN News (citing the Associated Press)</td><td><a href="https://srnnews.com/uk-to-offer-saudi-arabia-aerial-refueling-to-counter-houthi-attacks/">link</a></td></tr>

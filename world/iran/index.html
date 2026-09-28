@@ -122,10 +122,27 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   letter-spacing:.1em; text-transform:uppercase; padding:15px 16px 13px;
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-/* flat nav: no dropdowns anywhere (2026-09-27). The mobile Sections panel
-   carries the full link set below the four main links; it is hidden on
-   desktop, where the header shows the four links only. */
+/* desktop dropdowns (2026-09-28): hover/focus reveals the panel; the header
+   stays four clean links at rest. Hidden everywhere else - touch and mobile
+   use the Sections panel. The mobile Sections panel carries the full link
+   set below the four main links; it is hidden on desktop. */
 .mnav-groups { display:none; }
+.nd-panel { display:none; }
+@media (min-width:641px) {
+  .nd-panel { position:absolute; top:100%; left:0; z-index:60;
+    min-width:232px; background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 28px rgba(20,16,8,.10); padding:6px 0 8px; }
+  .navdrop:hover .nd-panel, .navdrop:focus-within .nd-panel { display:block; }
+  .nd-sec + .nd-sec { border-top:1px solid var(--line); margin-top:4px;
+    padding-top:6px; }
+  .nd-label { font-size:10.5px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--acc); margin:4px 0 2px;
+    padding:0 16px; }
+  .nd-link { display:block; padding:7px 16px; font-size:13.5px;
+    color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .nd-link:hover { color:var(--acc-deep); }
+  .nd-link[aria-current="page"] { color:var(--acc-deep); font-weight:600; }
+}
 @media (hover:hover) {
   .nd-top:hover { color:var(--acc-deep); }
   .mg-link:hover { color:var(--acc-deep); }
@@ -554,14 +571,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../weekly/index.html">Letter</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../digest/index.html">Digest</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../reference/index.html">Reference</a></div>
+      <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Supply</p><a class="nd-link" href="../../supply/index.html">Supply hub</a><a class="nd-link" href="../../st3-dashboard.html">Dashboard</a><a class="nd-link" href="../../scorecard.html">Scorecard</a><a class="nd-link" href="../../balance/index.html">S&amp;D balance</a><a class="nd-link" href="../../maintenance/index.html">Maintenance</a><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/hormuz/index.html">Hormuz watch</a><a class="nd-link" href="../../world/iran/index.html" aria-current="page">Iran watch</a><a class="nd-link" href="../../world/redsea/index.html">Red Sea</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">Reference</p><a class="nd-link" href="../../whale-watch.html">Whale watch</a><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="../../supply/index.html">Supply hub</a><a class="mg-link" href="../../st3-dashboard.html">Dashboard</a><a class="mg-link" href="../../scorecard.html">Scorecard</a><a class="mg-link" href="../../balance/index.html">S&amp;D balance</a><a class="mg-link" href="../../maintenance/index.html">Maintenance</a><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/hormuz/index.html">Hormuz watch</a><a class="mg-link" href="../../world/iran/index.html" aria-current="page">Iran watch</a><a class="mg-link" href="../../world/redsea/index.html">Red Sea</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-27/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../whale-watch.html">Whale watch</a><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
       </nav>
@@ -573,7 +590,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">Iranian oil exports under sanctions and naval blockade: tanker-tracked export estimates, floating storage, grades and rerouting, the shadow fleet, and China's buying. Every figure carries its vintage.</p>
   <p class="note">Read this page as the sanctioned sour barrel: Iran's exports are the largest single pool of distressed medium and heavy sour crude, and every number here is either tracker-observed or claimed, never both. Bullets say which, so treat Iranian state media figures as claims and tanker-tracker figures as observations.</p>
   <p class="lede">Iran is the marginal sour barrel in Asia: its exports land in the same Chinese teapot refineries that buy the Urals and other grades competing with Western Canadian Select (WCS). When Iranian barrels are blocked, teapots bid up substitute sours and the whole sour complex firms, supporting Canadian differentials; when the blockade loosens and Iranian crude flows again, medium and heavy sours soften first. The floating storage stockpile is the leading indicator: it is supply that can move without a single new barrel being produced.</p>
-  <p class="note freshness">Updated September 27, 2026 &middot; refreshes weekly</p>
+  <p class="note freshness">Updated September 28, 2026 &middot; refreshes weekly</p>
   <h2>The blockade timeline</h2>
   <ul class="ev">
   <li>Iranian Foreign Minister Abbas Araghchi posted on September 27 that Tehran's conditions remain unchanged and that only a negotiated solution can end the standoff, adding that mediators had not yet formally conveyed a US rejection; a senior Iranian official told Reuters that Tehran will show no flexibility on uranium enrichment.<br><span class="vintage-inline">Sep 27, 2026 <a href="https://bworldonline.com/world/2026/09/27/782141/iran-insists-on-diplomatic-solution-after-trump-rejects-peace-plan/">Reuters (via BusinessWorld)</a></span></li>
@@ -617,6 +634,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </ul>
   <h2>The shadow fleet</h2>
   <ul class="ev">
+  <li>No fresh sanctions designations on shadow-fleet vessels or entities appeared from the US Treasury's Office of Foreign Assets Control, the European Union, the United Kingdom, or the United Nations in the past week, per sanctions tracker Eagle Intelligence, leaving the enforcement picture flat even as Hormuz tensions raised tanker insurance costs.<br><span class="vintage-inline">Sep 25, 2026 <a href="https://eagleintelmari.com/news/eagle-sanctions-watch-2026-09-25">Eagle Intelligence</a></span></li>
   <li>Tracking data showed the tankers Tifani and Majestic X, seized by US forces in April, sailing along Brazil's northern coast while the June-seized Lenore rounded the Cape of Good Hope into the Atlantic, carrying nearly 6 million barrels of Iranian crude worth about $600 million toward the United States for expected forfeiture.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://gcaptain.com/seized-iranian-oil-tankers-head-toward-u-s-with-600-million-cargo/">gCaptain (citing Bloomberg)</a></span></li>
   <li>Bloomberg reported that the seized tankers Tiffany and Majestic X, both carrying Iranian crude, were tracked sailing along the Brazilian coast over the past week and are most likely headed for the United States, after several course changes since their seizure by US forces in April. The tanker Lenore, seized in the Indian Ocean in June, was spotted rounding the Cape of Good Hope west across the Atlantic; the combined cargo value of the three could reach $600 million.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://en.sedaily.com/international/2026/09/26/iran-says-hormuz-could-reopen-in-seven-days-if-us-meets">Bloomberg (via SE Daily)</a></span></li>
   <li>UANI's 'ghost armada' reached 560 tracked tankers at end-2025 after 83 new vessels were identified during the year; of 180 tankers sanctioned in 2025, 108 had been previously identified by UANI.<br><span class="vintage-inline">Year-end 2025 review; accessed 2026-09-24 <a href="https://infomarine.net/en/global-shipping-news/19-world-maritime-news/59577-us-treasury-sanctions-tankers-in-the-name-of-helping-iranian-protestors.html">UANI (via Infomarine / Maritime Executive)</a></span></li>
@@ -681,6 +699,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>OilPrice.com (citing Kpler)</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/Iranian-Oil-Supply-to-China-Is-Rapidly-Drying-Up.html">link</a></td></tr>
     <tr><td>OilPrice.com (citing Kpler)</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/Chinas-Teapots-Look-Beyond-Iranian-Oil-amid-US-Blockade.html">link</a></td></tr>
     <tr><td>Reuters via Baird Maritime, Sep 2026</td><td><a href="https://www.bairdmaritime.com/shipping/tankers/china-demand-pushes-russias-espo-crude-past-120-a-barrel">link</a></td></tr>
+    <tr><td>Eagle Intelligence</td><td><a href="https://eagleintelmari.com/news/eagle-sanctions-watch-2026-09-25">link</a></td></tr>
     <tr><td>gCaptain (citing Bloomberg)</td><td><a href="https://gcaptain.com/seized-iranian-oil-tankers-head-toward-u-s-with-600-million-cargo/">link</a></td></tr>
     <tr><td>Bloomberg (via SE Daily)</td><td><a href="https://en.sedaily.com/international/2026/09/26/iran-says-hormuz-could-reopen-in-seven-days-if-us-meets">link</a></td></tr>
     <tr><td>MarineInsight (citing Kpler, UANI)</td><td><a href="https://www.marineinsight.com/over-30-iranian-oil-tankers-carrying-50-million-barrels-head-to-asia-under-u-s-sanctions-waiver/">link</a></td></tr>

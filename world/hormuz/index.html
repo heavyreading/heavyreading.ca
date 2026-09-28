@@ -122,10 +122,27 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   letter-spacing:.1em; text-transform:uppercase; padding:15px 16px 13px;
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-/* flat nav: no dropdowns anywhere (2026-09-27). The mobile Sections panel
-   carries the full link set below the four main links; it is hidden on
-   desktop, where the header shows the four links only. */
+/* desktop dropdowns (2026-09-28): hover/focus reveals the panel; the header
+   stays four clean links at rest. Hidden everywhere else - touch and mobile
+   use the Sections panel. The mobile Sections panel carries the full link
+   set below the four main links; it is hidden on desktop. */
 .mnav-groups { display:none; }
+.nd-panel { display:none; }
+@media (min-width:641px) {
+  .nd-panel { position:absolute; top:100%; left:0; z-index:60;
+    min-width:232px; background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 28px rgba(20,16,8,.10); padding:6px 0 8px; }
+  .navdrop:hover .nd-panel, .navdrop:focus-within .nd-panel { display:block; }
+  .nd-sec + .nd-sec { border-top:1px solid var(--line); margin-top:4px;
+    padding-top:6px; }
+  .nd-label { font-size:10.5px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--acc); margin:4px 0 2px;
+    padding:0 16px; }
+  .nd-link { display:block; padding:7px 16px; font-size:13.5px;
+    color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .nd-link:hover { color:var(--acc-deep); }
+  .nd-link[aria-current="page"] { color:var(--acc-deep); font-weight:600; }
+}
 @media (hover:hover) {
   .nd-top:hover { color:var(--acc-deep); }
   .mg-link:hover { color:var(--acc-deep); }
@@ -554,14 +571,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../weekly/index.html">Letter</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../digest/index.html">Digest</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../reference/index.html">Reference</a></div>
+      <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Supply</p><a class="nd-link" href="../../supply/index.html">Supply hub</a><a class="nd-link" href="../../st3-dashboard.html">Dashboard</a><a class="nd-link" href="../../scorecard.html">Scorecard</a><a class="nd-link" href="../../balance/index.html">S&amp;D balance</a><a class="nd-link" href="../../maintenance/index.html">Maintenance</a><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/hormuz/index.html" aria-current="page">Hormuz watch</a><a class="nd-link" href="../../world/iran/index.html">Iran watch</a><a class="nd-link" href="../../world/redsea/index.html">Red Sea</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">Reference</p><a class="nd-link" href="../../whale-watch.html">Whale watch</a><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="../../supply/index.html">Supply hub</a><a class="mg-link" href="../../st3-dashboard.html">Dashboard</a><a class="mg-link" href="../../scorecard.html">Scorecard</a><a class="mg-link" href="../../balance/index.html">S&amp;D balance</a><a class="mg-link" href="../../maintenance/index.html">Maintenance</a><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/hormuz/index.html" aria-current="page">Hormuz watch</a><a class="mg-link" href="../../world/iran/index.html">Iran watch</a><a class="mg-link" href="../../world/redsea/index.html">Red Sea</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-27/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../whale-watch.html">Whale watch</a><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
       </nav>
@@ -573,7 +590,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">Tanker movement through the world's most important oil chokepoint: baseline, conflict disruption, and the current transit picture.</p>
   <p class="note">Read this page as the barrel count behind the price: the Strait of Hormuz carries roughly one-fifth of the world's petroleum liquids, and every transit number here is a proxy for how much of that supply is actually moving. Each bullet carries its vintage, so read the wartime vessel counts against the pre-war baseline of about 20 to 21 million barrels per day, the US Energy Information Administration (EIA) figure for the first half of 2025.</p>
   <p class="lede">Hormuz is the world's main sour export artery, and when it closes, the sour barrels Western Canadian Select (WCS) competes with disappear first, which is why Canadian differentials tightened as the war cut Gulf flows. Fewer Iranian, Iraqi, and Saudi sour barrels reaching Asia and Europe forces buyers onto substitute grades, bidding up Mars and other Atlantic Basin sours alongside WCS. If Hormuz transits normalize, the returning sour supply is the fastest way Canadian differentials soften again.</p>
-  <p class="note freshness">Updated September 27, 2026 &middot; refreshes weekly</p>
+  <p class="note freshness">Updated September 28, 2026 &middot; refreshes weekly</p>
   <h2>Baseline: what normal looked like</h2>
   <ul class="ev">
   <li>EIA estimated oil flows through the Strait of Hormuz averaged 20.9 million b/d in the first half of 2025, roughly 15 million b/d of crude oil and condensate plus about 5.5 million b/d of refined petroleum products.<br><span class="vintage-inline">Data: H1 2025; accessed 2026-09-23 <a href="https://talkmarkets.com/article/the-oil-route-built-to-bypass-hormuz-is-now-under-threat">Talk Markets (citing EIA)</a></span></li>
@@ -588,6 +605,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </ul>
   <h2>The current escalation (reported)</h2>
   <ul class="ev">
+  <li>Foreign Minister Abbas Araghchi said on NBC's Meet the Press that Iran is fully prepared for the war to resume, even a doomsday war, while remaining ready for diplomacy; CNN reported the White House rejected the proposal because it doubts Tehran is negotiating in good faith.<br><span class="vintage-inline">Sep 27, 2026 <a href="https://kioncentralcoast.com/news/national-world/cnn-world/2026/09/26/trump-rejects-irans-latest-proposal-to-reopen-the-strait-of-hormuz/">CNN</a></span></li>
   <li>Iranian Foreign Minister Abbas Araghchi said on September 27 that Tehran's conditions for reopening the strait are unchanged and that he had received nothing from mediators Qatar and Pakistan since the United States rejected the plan, insisting only a negotiated solution can end the standoff.<br><span class="vintage-inline">Sep 27, 2026 <a href="https://businessmirror.com.ph/2026/09/27/iran-says-wont-soften-demands-after-trump-rejects-hormuz-proposal/">Bloomberg (via BusinessMirror)</a></span></li>
   <li>President Trump told reporters on September 26 that he had rejected Iran's seven-day proposal to reopen the strait, saying Tehran wants a deal because it is losing badly under the US naval blockade and calling the blockade the greatest in military history.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://en.sedaily.com/international/2026/09/27/trump-rejects-irans-offer-to-reopen-hormuz-in-seven-days">Seoul Economic Daily (citing AFP/Reuters)</a></span></li>
   <li>Iranian Foreign Minister Abbas Araghchi presented a seven-day proposal at the United Nations General Assembly on September 25, transmitted to Washington through Qatar: Iran would reopen the Strait of Hormuz to normal maritime passage and resume nuclear talks within seven days if the United States ends the naval blockade, waives sanctions on Iranian oil, releases at least $12 billion in frozen assets, and holds a ceasefire on all fronts, including Lebanon and Yemen.<br><span class="vintage-inline">Sep 25, 2026 <a href="https://www.thehindubusinessline.com/news/world/iran-offers-to-reopen-strait-of-hormuz-in-7-days-if-us-lifts-blockade-waives-sanctions/article71510297.ece">The Hindu BusinessLine (citing the Associated Press)</a></span></li>
@@ -604,6 +622,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </ul>
   <h2>Now vs normal: the transit picture</h2>
   <ul class="ev">
+  <li>Trump told Axios on September 27 that Tehran had overplayed its hand and that the offer was what the United States might have accepted a year ago, adding he expects negotiations to resume this week and claiming more than 20 million barrels of oil transited the strait over the weekend, a figure a US defense official put at 22 million barrels; the figure is a US claim, not a tracker count.<br><span class="vintage-inline">Sep 27, 2026 <a href="https://yalibnan.com/2026/09/28/after-rejecting-iran-proposal-trump-tells-axios-he-expects-talks-this-week/">Axios (via Ya Libnan)</a></span></li>
   <li>Trump asserted on September 26 that the United States exercises complete control over the strait and said 29 ships transited the chokepoint over the past day, framing the blockade as the pressure forcing Tehran toward talks; the figure is a US claim, not a tracker count.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html?lbis=472219">Radio Free Europe/Radio Liberty</a></span></li>
   <li>The Antigua and Barbuda-flagged bulk carrier Cape Dao was hit by an unknown projectile on September 23, caught fire and went adrift, with UKMTO reporting one Indian seafarer killed and one injured; preliminary Kpler data cited by Reuters showed only two commodity vessels crossed the strait on September 21, against about 125 large commercial vessels per day before the war.<br><span class="vintage-inline">Sep 23, 2026 <a href="https://safety4sea.com/seafarer-dead-following-vessel-strike-and-fire-in-strait-of-hormuz/">SAFETY4SEA (citing UKMTO; Kpler data via Reuters)</a></span></li>
   <li>US Central Command said it had redirected 122 commercial vessels as of September 25, up from 115 on September 23 and 110 on September 21.<br><span class="vintage-inline">Sep 25, 2026 <a href="https://www.mappr.co/strait-of-hormuz-crisis-2026/">US Central Command (via mappr.co)</a></span></li>
@@ -654,6 +673,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Speed Commerce (citing EIA/IEA)</td><td><a href="https://www.speedcommerce.com/insights/how-much-of-the-worlds-shipping-goes-through-the-strait-of-hormuz/">link</a></td></tr>
     <tr><td>EIA Today in Energy (via GitHub essay)</td><td><a href="https://github.com/lpeasy/outsideinprint/blob/HEAD/content/essays/the-strait-that-holds-the-price.md">link</a></td></tr>
     <tr><td>Talk Markets</td><td><a href="https://talkmarkets.com/article/the-oil-route-built-to-bypass-hormuz-is-now-under-threat">link</a></td></tr>
+    <tr><td>CNN</td><td><a href="https://kioncentralcoast.com/news/national-world/cnn-world/2026/09/26/trump-rejects-irans-latest-proposal-to-reopen-the-strait-of-hormuz/">link</a></td></tr>
     <tr><td>Bloomberg (via BusinessMirror)</td><td><a href="https://businessmirror.com.ph/2026/09/27/iran-says-wont-soften-demands-after-trump-rejects-hormuz-proposal/">link</a></td></tr>
     <tr><td>Seoul Economic Daily (citing AFP/Reuters)</td><td><a href="https://en.sedaily.com/international/2026/09/27/trump-rejects-irans-offer-to-reopen-hormuz-in-seven-days">link</a></td></tr>
     <tr><td>The Hindu BusinessLine (citing the Associated Press)</td><td><a href="https://www.thehindubusinessline.com/news/world/iran-offers-to-reopen-strait-of-hormuz-in-7-days-if-us-lifts-blockade-waives-sanctions/article71510297.ece">link</a></td></tr>
@@ -667,6 +687,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>MarineLink (citing UKMTO)</td><td><a href="https://www.marinelink.com/news/tanker-hit-projectile-strait-hormuz-ukmto-543118">link</a></td></tr>
     <tr><td>London Channel News (via Qatar Tribune / DPA, citing UKMTO)</td><td><a href="https://www.londonchannelnews.com/news/two-attacks-on-tankers-reported-in-strait-of-hormuz-says-ukmto202609221016510005//">link</a></td></tr>
     <tr><td>Nation Press (citing UKMTO)</td><td><a href="https://www.nationpress.com/international/two-hurt-as-tanker-hit-in-strait-of-hormuz">link</a></td></tr>
+    <tr><td>Axios (via Ya Libnan)</td><td><a href="https://yalibnan.com/2026/09/28/after-rejecting-iran-proposal-trump-tells-axios-he-expects-talks-this-week/">link</a></td></tr>
     <tr><td>Radio Free Europe/Radio Liberty</td><td><a href="https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html?lbis=472219">link</a></td></tr>
     <tr><td>SAFETY4SEA (citing UKMTO; Kpler data via Reuters)</td><td><a href="https://safety4sea.com/seafarer-dead-following-vessel-strike-and-fire-in-strait-of-hormuz/">link</a></td></tr>
     <tr><td>US Central Command (via mappr.co)</td><td><a href="https://www.mappr.co/strait-of-hormuz-crisis-2026/">link</a></td></tr>

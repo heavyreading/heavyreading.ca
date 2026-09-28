@@ -122,10 +122,27 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   letter-spacing:.1em; text-transform:uppercase; padding:15px 16px 13px;
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-/* flat nav: no dropdowns anywhere (2026-09-27). The mobile Sections panel
-   carries the full link set below the four main links; it is hidden on
-   desktop, where the header shows the four links only. */
+/* desktop dropdowns (2026-09-28): hover/focus reveals the panel; the header
+   stays four clean links at rest. Hidden everywhere else - touch and mobile
+   use the Sections panel. The mobile Sections panel carries the full link
+   set below the four main links; it is hidden on desktop. */
 .mnav-groups { display:none; }
+.nd-panel { display:none; }
+@media (min-width:641px) {
+  .nd-panel { position:absolute; top:100%; left:0; z-index:60;
+    min-width:232px; background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 28px rgba(20,16,8,.10); padding:6px 0 8px; }
+  .navdrop:hover .nd-panel, .navdrop:focus-within .nd-panel { display:block; }
+  .nd-sec + .nd-sec { border-top:1px solid var(--line); margin-top:4px;
+    padding-top:6px; }
+  .nd-label { font-size:10.5px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--acc); margin:4px 0 2px;
+    padding:0 16px; }
+  .nd-link { display:block; padding:7px 16px; font-size:13.5px;
+    color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .nd-link:hover { color:var(--acc-deep); }
+  .nd-link[aria-current="page"] { color:var(--acc-deep); font-weight:600; }
+}
 @media (hover:hover) {
   .nd-top:hover { color:var(--acc-deep); }
   .mg-link:hover { color:var(--acc-deep); }
@@ -554,14 +571,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../weekly/index.html">Letter</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../digest/index.html">Digest</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../reference/index.html">Reference</a></div>
+      <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Supply</p><a class="nd-link" href="../supply/index.html">Supply hub</a><a class="nd-link" href="../st3-dashboard.html">Dashboard</a><a class="nd-link" href="../scorecard.html">Scorecard</a><a class="nd-link" href="../balance/index.html">S&amp;D balance</a><a class="nd-link" href="../maintenance/index.html">Maintenance</a><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/hormuz/index.html">Hormuz watch</a><a class="nd-link" href="../world/iran/index.html">Iran watch</a><a class="nd-link" href="../world/redsea/index.html">Red Sea</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">Reference</p><a class="nd-link" href="../whale-watch.html">Whale watch</a><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="../supply/index.html">Supply hub</a><a class="mg-link" href="../st3-dashboard.html">Dashboard</a><a class="mg-link" href="../scorecard.html">Scorecard</a><a class="mg-link" href="../balance/index.html">S&amp;D balance</a><a class="mg-link" href="../maintenance/index.html">Maintenance</a><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/hormuz/index.html">Hormuz watch</a><a class="mg-link" href="../world/iran/index.html">Iran watch</a><a class="mg-link" href="../world/redsea/index.html">Red Sea</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-09-27/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../whale-watch.html">Whale watch</a><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
       </nav>
@@ -572,7 +589,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>Upstream Pulse</h1>
   <p class="sub">Facility-level intelligence from Petrinex: turnaround signals, rail loadings, operator moves, diluent, decline curves, and feeder pipeline throughput.</p>
   <p class="sub">What the field is actually doing, measured at the battery. Petrinex is the public petroleum reporting system for Alberta and Saskatchewan: every battery, pipeline, and terminal reports monthly volumes. This page aggregates those reports into trading-relevant signals. Aggregates only; no facility-level raw rows are republished.</p>
-  <p class="vintage"><b>Vintage:</b> Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27.</p>
+  <p class="vintage"><b>Vintage:</b> Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28.</p>
   <p class="vintage"><b>Licensing:</b> republication cleared 2026-09-24: Petrinex staff confirmed verbally that the public data is government open data. No written terms on file.</p>
   <h2>Turnaround radar</h2>
   <p>Batteries are flagged when their latest month falls below half of the trailing-3-month average (minimum 2 kb/d trailing). Petrinex carries no reason code, so a flag is probable maintenance, never confirmed. A battery is a central gathering facility: its output is the sum of its wells, so a collapse usually means the whole site went down.</p>
@@ -640,7 +657,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>HUSKY EDAM EAST 05-08-048-19W3 OIL</td><td>CENOVUS ENERGY INC.</td><td class="num">12.0</td><td class="num">10.7</td><td class="num">1.3</td><td class="num">11%</td></tr>
     <tr><td><a class="plink" href="../projects/cnq_kirby.html">Kirby</a> 14-21-73-7W4</td><td>CANADIAN NATURAL RESOURCES LIMITED</td><td class="num">37.9</td><td class="num">36.9</td><td class="num">1.0</td><td class="num">3%</td></tr>
   </table></div>
-<p class="csvdl"><a href="../data/charts/pulse-largest-drops.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27</span></p>
+<p class="csvdl"><a href="../data/charts/pulse-largest-drops.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28</span></p>
   <h2>Rail watch</h2>
 <div class="statgrid kpi"><div class="stat"><div class="k">Aug 2026 loadings</div><div class="v">30.4 kb/d</div><div class="s">Petrinex railcar oil terminals</div></div><div class="stat"><div class="k">12-month average</div><div class="v">34.2 kb/d</div><div class="s">same series</div></div><div class="stat"><div class="k">Top terminal</div><div class="v">Hamlin Railcar Oil Terminal</div><div class="s">27.6 kb/d average</div></div></div>
 <h3 class="ctake">Rail loadings at 30.4 kb/d in Aug 2026, below the 85 kb/d crude-by-rail assumption on the Egress Outlook page</h3>
@@ -736,7 +753,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Altex Unity Terminal</td><td>ALTEX ENERGY LTD.</td><td class="num">0.0</td></tr>
     <tr><td>Kerrobert Unit Train Terminal</td><td>KEYERA MIDSTREAM CANADA LTD.</td><td class="num">0.0</td></tr>
   </table></div>
-<p class="csvdl"><a href="../data/charts/pulse-rail.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27</span></p>
+<p class="csvdl"><a href="../data/charts/pulse-rail.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28</span></p>
   <h2>Operator scoreboard</h2>
   <p>Latest 3 months against the same 3 months a year earlier (seasonal comparison). In-situ share is the fraction of output from in-situ oil-sands batteries. Cenovus growth includes re-reported <a class="plink" href="../projects/meg_christina_lake.html">MEG Christina Lake</a> barrels after the November 2025 acquisition.</p>
   <h3>Growing</h3>
@@ -849,7 +866,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>WHITECAP PARTNERSHIP</td><td class="num">66.9</td><td class="num">-2.9</td><td class="num">-4.1%</td><td class="num">0%</td></tr>
     <tr><td>ATHABASCA OIL CORPORATION</td><td class="num">33.9</td><td class="num">-2.6</td><td class="num">-7.0%</td><td class="num">100%</td></tr>
   </table></div>
-<p class="csvdl"><a href="../data/charts/pulse-operators.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27</span></p>
+<p class="csvdl"><a href="../data/charts/pulse-operators.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28</span></p>
   <h2>New batteries</h2>
   <p>First material production (above 0.2 kb/d) in the last 12 months, ranked by latest-month rate. The two largest entries are facility re-reports under new IDs, not new pads: <a class="plink" href="../projects/cve_foster_creek.html">Foster Creek</a> and the <a class="plink" href="../projects/meg_christina_lake.html">MEG Christina Lake</a> Regional Project re-reported after the November 2025 acquisition. They are flagged, not dropped.</p>
   <div class="tblwrap"><table class="data">
@@ -867,7 +884,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>MEOTA CENTRAL 1 MULTIWELL</td><td>STRATHCONA RESOURCES LTD.</td><td>THERMAL IN-SITU BATTERY</td><td>Jul 2026</td><td class="num">3.3</td><td></td></tr>
     <tr><td>PRTL CECIL 15-07-085-06W6 mwb</td><td>PRAIRIE THUNDER RESOURCES LTD.</td><td>CRUDE OIL MULTIWELL PRORATION BATTERY</td><td>Aug 2025</td><td class="num">3.3</td><td></td></tr>
   </table></div>
-<p class="csvdl"><a href="../data/charts/pulse-new-batteries.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27</span></p>
+<p class="csvdl"><a href="../data/charts/pulse-new-batteries.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28</span></p>
   <h2>Diluent balance</h2>
   <p>Raw bitumen production against condensate handled. Condensate here is production plus receipts of condensate and spec pentanes-plus (C5+): it includes inter-facility transfers, so read it as condensate handled, not pure imports. The seasonal shape is the point: blend ratios run higher in cold months, which is why the Egress Outlook page seasonalizes the diluent ratio.</p>
 <h3 class="ctake">Blend ratio 0.31 in Aug 2026: 702 kb/d of condensate against 2266 kb/d of raw bitumen</h3>
@@ -1028,7 +1045,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Jul 2026</td><td class="num">2232</td><td class="num">687</td><td class="num">0.31</td></tr>
     <tr><td>Aug 2026</td><td class="num">2266</td><td class="num">702</td><td class="num">0.31</td></tr>
   </table></div>
-<p class="csvdl"><a href="../data/charts/pulse-diluent.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27</span></p>
+<p class="csvdl"><a href="../data/charts/pulse-diluent.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28</span></p>
   <h2>Decline curves</h2>
   <p>The five largest in-situ batteries plus the largest conventional multiwell battery, by trailing-12-month production. A battery curve aggregates the decline of its wells <b>plus</b> step-ups when new wells tie in. Months flagged as probable tie-ins are marked; they are not organic growth.</p>
 <h3 class="ctake">CVE CHRISTINA LAKE LEISMER 08-17: 284 kb/d in Aug 2026</h3>
@@ -1600,7 +1617,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <figcaption><b>Vintage:</b> Petrinex public volumetrics. Operator: WHITECAP RESOURCES INC.. Type: CRUDE OIL MULTIWELL PRORATION BATTERY.</figcaption>
 <div class="lg"><span><span class="sw" style="background:var(--ch-acc)"></span>Production</span></div>
 </figure>
-<p class="csvdl"><a href="../data/charts/pulse-declines.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27</span></p>
+<p class="csvdl"><a href="../data/charts/pulse-declines.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28</span></p>
   <h2>Feeder pipelines</h2>
   <p>How many barrels each Saskatchewan feeder system pulls from upstream batteries each month, measured as receipts of crude oil into the pipeline's Petrinex facilities. This is <b>throughput, not utilization</b>: pipeline capacity data is not public, so no fullness percentage can be computed. If a feeder is running flat out month after month, barrels behind it have nowhere else to go, and that is where basis pressure shows up first.</p>
 <h3 class="ctake">Kingston Midstream is the largest measured feeder at 276 kb/d in Aug 2026</h3>
@@ -2124,9 +2141,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Wainwright Pipeline</td><td>CENOVUS ENERGY INC.</td><td>01-01-001-01W4</td></tr>
     <tr><td>Marten Hills Crude Pipeline</td><td>KINGSTON MIDSTREAM ALBERTA LIMITED</td><td>14-29-073-24W4</td></tr>
   </table></div>
-<p class="csvdl"><a href="../data/charts/pulse-feeders.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27</span></p>
+<p class="csvdl"><a href="../data/charts/pulse-feeders.csv">Download CSV</a> <span class="vintageline">Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28</span></p>
   <h2>Sources</h2>
-  <p class="vintage"><b>Vintage:</b> Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-27.</p>
+  <p class="vintage"><b>Vintage:</b> Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-09-28.</p>
   <p class="src"><b>Method:</b> all volumes converted cubic metres to kb/d with calendar-day weighting. Battery subtypes are the Petrinex oil battery family; in-situ subtypes are the thermal group. Nothing is estimated: where the public data does not report, the page says so.</p>
   <h3>Full citation block</h3>
 <div class="tblwrap"><table class="data"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-07 (latest file vintage 2026-08-27)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-07</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded</td><td>Monthly</td><td>Actuals through 2026-05</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-09-30, compiled 2026-09-22</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (model build)</td><td>Per build</td><td>Forecast built 2026-09-22; Aug-Sep 2026 nowcast built 2026-09-23</td><td>2026-09-23</td></tr><tr><td>U.S. Energy Information Administration</td><td>Weekly Petroleum Status Report (WPSR): weekly preliminary crude imports by country (Table 8), weekly crude exports</td><td><a href="https://www.eia.gov">https://www.eia.gov</a></td><td>Weekly</td><td>Sep 2025 to Sep 2026 weekly series</td><td>2026-09-23</td></tr><tr><td>Organization of the Petroleum Exporting Countries (OPEC)</td><td>Monthly Oil Market Report (MOMR): Venezuela crude production, secondary sources and direct communication</td><td><a href="https://www.opec.org">https://www.opec.org</a></td><td>Monthly</td><td>Venezuela production series via Aug 2026 MOMR Tables 5-7/5-8</td><td>2026-09-24</td></tr><tr><td>ICE</td><td>Delayed futures quotes</td><td><a href="https://www.ice.com">https://www.ice.com</a></td><td>Daily</td><td>Brent settles referenced in weekly digest pricing</td><td>Per edition</td></tr><tr><td>Statistics Canada</td><td>Canadian energy series referenced in weekly digest editions</td><td><a href="https://www.statcan.gc.ca">https://www.statcan.gc.ca</a></td><td>As published</td><td>Series per digest edition</td><td>Per edition</td></tr><tr><td>Suncor Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Canadian Natural Resources (CNRL)</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Imperial Oil</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Cenovus Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Reuters</td><td>Wire reporting cited on watch pages: Venezuela Merey pricing, Signal Maritime freight rates</td><td><a href="https://www.reuters.com">https://www.reuters.com</a></td><td>As published</td><td>Venezuela watch Sep 2026; geopolitical watch pages</td><td>2026-09-24</td></tr><tr><td>The Associated Press</td><td>Wire reporting cited on geopolitical watch pages</td><td><a href="https://apnews.com">https://apnews.com</a></td><td>As published</td><td>Per watch page</td><td>Per watch page</td></tr><tr><td>OilPrice.com</td><td>Vitol Merey offer to China (Bloomberg-sourced), Jan 2026</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html">https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html</a></td><td>As published</td><td>Venezuela watch, Jan 2026</td><td>2026-09-23</td></tr><tr><td>Signal Maritime</td><td>Aframax freight rates, Jose terminal to USGC, reported via Reuters</td><td>URL not recorded</td><td>As published</td><td>Venezuela watch, Jan/Sep 2026</td><td>2026-09-24</td></tr><tr><td>U.S. Department of Energy</td><td>Strategic Petroleum Reserve (SPR) data and policy statements</td><td><a href="https://www.energy.gov">https://www.energy.gov</a></td><td>As published</td><td>SPR &amp; storage watch</td><td>Per watch page</td></tr><tr><td>Commercial storage</td><td>Licensed market-data inputs embedded in model builds; vendor identities withheld per licence terms</td><td>Not disclosed</td><td>Per licence</td><td>As embedded in builds</td><td>Per build</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>

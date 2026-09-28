@@ -122,10 +122,27 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   letter-spacing:.1em; text-transform:uppercase; padding:15px 16px 13px;
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-/* flat nav: no dropdowns anywhere (2026-09-27). The mobile Sections panel
-   carries the full link set below the four main links; it is hidden on
-   desktop, where the header shows the four links only. */
+/* desktop dropdowns (2026-09-28): hover/focus reveals the panel; the header
+   stays four clean links at rest. Hidden everywhere else - touch and mobile
+   use the Sections panel. The mobile Sections panel carries the full link
+   set below the four main links; it is hidden on desktop. */
 .mnav-groups { display:none; }
+.nd-panel { display:none; }
+@media (min-width:641px) {
+  .nd-panel { position:absolute; top:100%; left:0; z-index:60;
+    min-width:232px; background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 28px rgba(20,16,8,.10); padding:6px 0 8px; }
+  .navdrop:hover .nd-panel, .navdrop:focus-within .nd-panel { display:block; }
+  .nd-sec + .nd-sec { border-top:1px solid var(--line); margin-top:4px;
+    padding-top:6px; }
+  .nd-label { font-size:10.5px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--acc); margin:4px 0 2px;
+    padding:0 16px; }
+  .nd-link { display:block; padding:7px 16px; font-size:13.5px;
+    color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .nd-link:hover { color:var(--acc-deep); }
+  .nd-link[aria-current="page"] { color:var(--acc-deep); font-weight:600; }
+}
 @media (hover:hover) {
   .nd-top:hover { color:var(--acc-deep); }
   .mg-link:hover { color:var(--acc-deep); }
@@ -554,14 +571,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../weekly/index.html">Letter</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../digest/index.html">Digest</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../../reference/index.html">Reference</a></div>
+      <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Supply</p><a class="nd-link" href="../../supply/index.html">Supply hub</a><a class="nd-link" href="../../st3-dashboard.html">Dashboard</a><a class="nd-link" href="../../scorecard.html">Scorecard</a><a class="nd-link" href="../../balance/index.html">S&amp;D balance</a><a class="nd-link" href="../../maintenance/index.html">Maintenance</a><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/hormuz/index.html">Hormuz watch</a><a class="nd-link" href="../../world/iran/index.html">Iran watch</a><a class="nd-link" href="../../world/redsea/index.html">Red Sea</a><a class="nd-link" href="../../world/russia-refining/index.html" aria-current="page">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">Reference</p><a class="nd-link" href="../../whale-watch.html">Whale watch</a><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="../../supply/index.html">Supply hub</a><a class="mg-link" href="../../st3-dashboard.html">Dashboard</a><a class="mg-link" href="../../scorecard.html">Scorecard</a><a class="mg-link" href="../../balance/index.html">S&amp;D balance</a><a class="mg-link" href="../../maintenance/index.html">Maintenance</a><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/hormuz/index.html">Hormuz watch</a><a class="mg-link" href="../../world/iran/index.html">Iran watch</a><a class="mg-link" href="../../world/redsea/index.html">Red Sea</a><a class="mg-link" href="../../world/russia-refining/index.html" aria-current="page">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-27/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../whale-watch.html">Whale watch</a><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
       </nav>
@@ -573,7 +590,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">Ukraine's drone campaign against Russian refining: strikes, offline capacity, and the diesel crisis.</p>
   <p class="note">Read this page as the diesel side of the crude market: Ukrainian strikes on Russian refineries remove products, not crude, so the read is crack spreads and export curbs rather than wellhead output. Ukrainian claims are carried as claims. Strike dates are approximate and every bullet carries its vintage.</p>
   <p class="lede">Russian refinery outages tighten global diesel, and record diesel cracks keep US and Asian refiners running at maximum to capture them, which is the demand-side bid under heavy sour barrels including Western Canadian Select (WCS). At the same time, crude displaced from downed Russian refineries has pushed seaborne Russian exports to 16-month highs, capping how much support the tight product market can pass back to sour crude prices. The net effect for WCS is constructive while diesel cracks stay extreme: refineries run hard and bid for every discounted heavy barrel they can crack.</p>
-  <p class="note freshness">Updated September 27, 2026 &middot; refreshes weekly</p>
+  <p class="note freshness">Updated September 28, 2026 &middot; refreshes weekly</p>
   <h2>Crude export redirection</h2>
   <ul class="ev">
   <li>Bloomberg tanker-tracking data cited by OilPrice.com show Russia's seaborne crude exports averaged 3.62 million barrels per day in the four weeks to September 28, the highest since May 2024, a sign that neither India nor other major buyers have reduced purchases despite US pressure. Russia's oil and gas revenues were nevertheless expected to plunge 23 percent year on year in September on lower crude prices and a stronger ruble, per Reuters calculations cited in the piece.<br><span class="vintage-inline">Data: four weeks ending Sep 28, 2026; accessed 2026-09-24 <a href="https://oilprice.com/Latest-Energy-News/World-News/Russian-Crude-Shipments-Hit-16-Month-High-Despite-US-Sanctions.html">OilPrice.com (citing Bloomberg tanker-tracking)</a></span></li>
@@ -581,6 +598,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </ul>
   <h2>Market effects and negotiation backdrop</h2>
   <ul class="ev">
+  <li>President Trump said he asked President Zelenskyy to reduce strikes on Russian oil refineries, warning they could create a global problem, and claimed Zelenskyy said he probably would, though Kyiv did not confirm that response.<br><span class="vintage-inline">Sep 28, 2026 <a href="https://informat.ro/en/international/trump-asks-zelensky-to-reduce-attacks-on-russian-refineries-140870">Informat.ro</a></span></li>
   <li>Both sides kept striking energy assets despite Trump's September 14 announcement of a mutual pledge to stop; Zelenskyy said Kyiv is ready for an energy ceasefire and floated US-pushed trilateral technical talks possibly in Abu Dhabi, while Kremlin spokesman Peskov said Putin and Trump discussed such a meeting but gave no specifics.<br><span class="vintage-inline">Sep 25, 2026 <a href="https://www.europesays.com/russia/69255/">Europesays</a></span></li>
   <li>Russia's seaborne oil product exports rebounded 16.4 percent from July in August to 4.57 million metric tons as some refineries returned from unplanned maintenance, but remained 50 percent below August 2025. The mix skewed to naphtha and fuel oil, Baltic shipments rose 32.7 percent while Black Sea and Azov Sea loadings fell 25.3 percent. Russian diesel exports had already fallen below 1 million metric tons in June, versus roughly 2.5 million tons per month a year earlier. Moscow is extending its diesel export ban through October 31, according to Russian media reports, to rebuild stocks before winter.<br><span class="vintage-inline">Data: August 2026; accessed 2026-09-24 <a href="https://oilprice.com/Latest-Energy-News/World-News/Russian-Fuel-Exports-Rebound-in-August-But-Still-Down-50-From-Last-Year.html">OilPrice.com (citing industry sources and Reuters calculations)</a></span></li>
   <li>The Intercontinental Exchange (ICE) gasoil crack hit a record $79 per barrel in early September, with the U.S. diesel crack trading above $100 per barrel near all-time highs and the September-November gasoil spread at an $80-per-metric-ton backwardation, according to ING (Internationale Nederlanden Groep) commodities strategists Warren Patterson and Ewa Manthey. They expect middle-distillate cracks to stay elevated and volatile into seasonally stronger demand, warning the global refining system has little slack to make up for lost Middle Eastern and Russian flows.<br><span class="vintage-inline">Published ~Sep 2, 2026; accessed 2026-09-24 <a href="https://oilprice.com/Latest-Energy-News/World-News/Diesel-Cracks-Hit-Record-Highs-as-Global-Fuel-Squeeze-Deepens.html">OilPrice.com (citing ING)</a></span></li>
@@ -592,6 +610,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </ul>
   <h2>Named hits and outages</h2>
   <ul class="ev">
+  <li>Ukraine launched a large overnight drone attack on fuel depots in Russia's Krasnodar region, with local authorities reporting fires at three sites and no casualties in Krasnodar, while Russia's Defense Ministry claimed 254 Ukrainian drones were shot down across 15 regions, a figure that was not independently confirmed.<br><span class="vintage-inline">Sep 28, 2026 <a href="https://www.europesays.com/russia/69791/">Associated Press (via Europesays)</a></span></li>
+  <li>Ukrainian drones struck the Afipsky oil refinery in Krasnodar region, starting a fire, and hit Port Kavkaz on the Kerch Strait, injuring three people and damaging a service vessel and the pier complex, according to local authorities.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://infomarine.net/en/global-shipping-news/19-world-maritime-news/67433-ukrainian-drones-strike-oil-refinery,-port-in-russia-s-krasnodar-region.html">Reuters (via Infomarine)</a></span></li>
   <li>Ukraine struck the Ilsky refinery in Krasnodar region overnight on September 26, damaging the AT-4, AT-5 and AT-6 primary units, about 99 percent of its primary capacity, and the plant halted production; Ukraine's General Staff confirmed the strike and the regional governor confirmed drone attacks in the Seversky district.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://www.patreon.com/MeanwhileinUkraine/posts/top-news-today-170676765">Meanwhile in Ukraine (citing Ukraine's General Staff)</a></span></li>
   <li>Ukraine struck the Lukoil-Permnefteorgsintez refinery, Russia's seventh-largest at about 252,000 b/d in 2024, on the night of September 24 into 25; geolocated footage showed a drone hitting the AVT-5 crude unit, roughly 34 percent of capacity. Reuters reported on September 26 that the refinery stopped operations after the attack damaged pipelines, storage and processing units. The plant sits more than 1,500 kilometers from the Ukrainian border.<br><span class="vintage-inline">Sep 26, 2026 <a href="https://www.europesays.com/russia/69095/">Reuters (via Europesays)</a></span></li>
   <li>The Novoshakhtinsk refinery in Russia's Rostov region was damaged overnight September 24 to 25 and temporarily suspended operations, Governor Yuri Slyusar said; Russia's defense ministry said air defenses destroyed 592 drones overnight. One man was killed in the Perm region during the same wave.<br><span class="vintage-inline">Sep 25, 2026 <a href="https://wncy.com/2026/09/24/eight-injured-in-drone-attack-in-russias-ulyanovsk-region-one-killed-in-belgorod-region/">Reuters (via WNCY)</a></span></li>
@@ -632,6 +652,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><th>Publisher</th><th>Link</th></tr>
     <tr><td>OilPrice.com (citing Bloomberg tanker-tracking)</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/Russian-Crude-Shipments-Hit-16-Month-High-Despite-US-Sanctions.html">link</a></td></tr>
     <tr><td>Maritime Professional (citing traders)</td><td><a href="https://logistics.maritimeprofessional.com/transport-infrastructure/2026/09/01/traders-say-that-novorossiysks-disruptions-will-cause-a-drop-in-russias-west-oil-exports-in-september">link</a></td></tr>
+    <tr><td>Informat.ro</td><td><a href="https://informat.ro/en/international/trump-asks-zelensky-to-reduce-attacks-on-russian-refineries-140870">link</a></td></tr>
     <tr><td>Europesays</td><td><a href="https://www.europesays.com/russia/69255/">link</a></td></tr>
     <tr><td>OilPrice.com (citing industry sources and Reuters calculations)</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/Russian-Fuel-Exports-Rebound-in-August-But-Still-Down-50-From-Last-Year.html">link</a></td></tr>
     <tr><td>OilPrice.com (citing ING)</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/Diesel-Cracks-Hit-Record-Highs-as-Global-Fuel-Squeeze-Deepens.html">link</a></td></tr>
@@ -640,6 +661,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Signal Post News</td><td><a href="https://signalpostnews.com/trump-zelensky-unga-meeting-outcome-energy-ceasefire-september-2026">link</a></td></tr>
     <tr><td>KRVS/NPR</td><td><a href="https://www.krvs.org/2026-09-23/ukraines-zelenskyy-proposes-energy-truce-with-russia-during-meeting-with-trump">link</a></td></tr>
     <tr><td>Commodity Board</td><td><a href="https://commodity-board.com/crude-oil-pauses-near-two-week-lows-while-diesel-tightens-the-market">link</a></td></tr>
+    <tr><td>Associated Press (via Europesays)</td><td><a href="https://www.europesays.com/russia/69791/">link</a></td></tr>
+    <tr><td>Reuters (via Infomarine)</td><td><a href="https://infomarine.net/en/global-shipping-news/19-world-maritime-news/67433-ukrainian-drones-strike-oil-refinery,-port-in-russia-s-krasnodar-region.html">link</a></td></tr>
     <tr><td>Meanwhile in Ukraine (citing Ukraine's General Staff)</td><td><a href="https://www.patreon.com/MeanwhileinUkraine/posts/top-news-today-170676765">link</a></td></tr>
     <tr><td>Reuters (via Europesays)</td><td><a href="https://www.europesays.com/russia/69095/">link</a></td></tr>
     <tr><td>Reuters (via WNCY)</td><td><a href="https://wncy.com/2026/09/24/eight-injured-in-drone-attack-in-russias-ulyanovsk-region-one-killed-in-belgorod-region/">link</a></td></tr>

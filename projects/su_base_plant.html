@@ -122,10 +122,27 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   letter-spacing:.1em; text-transform:uppercase; padding:15px 16px 13px;
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-/* flat nav: no dropdowns anywhere (2026-09-27). The mobile Sections panel
-   carries the full link set below the four main links; it is hidden on
-   desktop, where the header shows the four links only. */
+/* desktop dropdowns (2026-09-28): hover/focus reveals the panel; the header
+   stays four clean links at rest. Hidden everywhere else - touch and mobile
+   use the Sections panel. The mobile Sections panel carries the full link
+   set below the four main links; it is hidden on desktop. */
 .mnav-groups { display:none; }
+.nd-panel { display:none; }
+@media (min-width:641px) {
+  .nd-panel { position:absolute; top:100%; left:0; z-index:60;
+    min-width:232px; background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 28px rgba(20,16,8,.10); padding:6px 0 8px; }
+  .navdrop:hover .nd-panel, .navdrop:focus-within .nd-panel { display:block; }
+  .nd-sec + .nd-sec { border-top:1px solid var(--line); margin-top:4px;
+    padding-top:6px; }
+  .nd-label { font-size:10.5px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--acc); margin:4px 0 2px;
+    padding:0 16px; }
+  .nd-link { display:block; padding:7px 16px; font-size:13.5px;
+    color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .nd-link:hover { color:var(--acc-deep); }
+  .nd-link[aria-current="page"] { color:var(--acc-deep); font-weight:600; }
+}
 @media (hover:hover) {
   .nd-top:hover { color:var(--acc-deep); }
   .mg-link:hover { color:var(--acc-deep); }
@@ -554,14 +571,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../weekly/index.html">Letter</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../digest/index.html">Digest</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="../reference/index.html">Reference</a></div>
+      <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Supply</p><a class="nd-link" href="../supply/index.html">Supply hub</a><a class="nd-link" href="../st3-dashboard.html">Dashboard</a><a class="nd-link" href="../scorecard.html">Scorecard</a><a class="nd-link" href="../balance/index.html">S&amp;D balance</a><a class="nd-link" href="../maintenance/index.html">Maintenance</a><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/hormuz/index.html">Hormuz watch</a><a class="nd-link" href="../world/iran/index.html">Iran watch</a><a class="nd-link" href="../world/redsea/index.html">Red Sea</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">Reference</p><a class="nd-link" href="../whale-watch.html">Whale watch</a><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="../supply/index.html">Supply hub</a><a class="mg-link" href="../st3-dashboard.html">Dashboard</a><a class="mg-link" href="../scorecard.html">Scorecard</a><a class="mg-link" href="../balance/index.html">S&amp;D balance</a><a class="mg-link" href="../maintenance/index.html">Maintenance</a><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/hormuz/index.html">Hormuz watch</a><a class="mg-link" href="../world/iran/index.html">Iran watch</a><a class="mg-link" href="../world/redsea/index.html">Red Sea</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-09-27/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-09-28/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../whale-watch.html">Whale watch</a><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
       </nav>
@@ -592,8 +609,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">Blank "not tracked" cells are facts not present in the public data used here. They are labeled, never estimated. Filing-sourced facts carry their document name and date; where sources disclose multiple bases for one figure, all are shown.</p>
   <h2>Production</h2>
   <div class="statgrid">
-    <div class="stat"><div class="v">232.8 kb/d</div><div class="l">latest actual, May 2026 (Suncor OSG)</div></div>
-    <div class="stat"><div class="v">267.3 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
+    <div class="stat"><div class="v">251.2 kb/d</div><div class="l">latest actual, Jun 2026 (Suncor OSG)</div></div>
+    <div class="stat"><div class="v">277.5 kb/d</div><div class="l">12-month forecast average, Oct 2026 to Sep 2027</div></div>
   </div>
 <figure class="chart">
 <svg viewbox="0 0 720 230" role="img" aria-label="Suncor OSG monthly production">
@@ -626,24 +643,25 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <rect x="217.2" y="111.6" width="13.9" height="78.4" rx="2.5" style="fill:var(--ch-ink)"><title>Mar 26: 264.9 kb/d</title></rect>
 <rect x="239.6" y="117.5" width="13.9" height="72.5" rx="2.5" style="fill:var(--ch-ink)"><title>Apr 26: 244.9 kb/d</title></rect>
 <rect x="262.0" y="121.1" width="13.9" height="68.9" rx="2.5" style="fill:var(--ch-ink)"><title>May 26: 232.8 kb/d</title></rect>
-<rect x="329.2" y="103.2" width="13.9" height="86.8" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 293.2 kb/d</title></rect>
-<rect x="351.6" y="118.3" width="13.9" height="71.7" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 242.3 kb/d</title></rect>
-<rect x="374.1" y="128.7" width="13.9" height="61.3" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 207.1 kb/d</title></rect>
-<rect x="396.5" y="102.0" width="13.9" height="88.0" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 297.2 kb/d</title></rect>
-<rect x="418.9" y="95.9" width="13.9" height="94.1" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 317.9 kb/d</title></rect>
-<rect x="441.3" y="110.3" width="13.9" height="79.7" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 269.4 kb/d</title></rect>
-<rect x="463.7" y="111.6" width="13.9" height="78.4" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 264.9 kb/d</title></rect>
-<rect x="486.1" y="104.1" width="13.9" height="85.9" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 290.1 kb/d</title></rect>
-<rect x="508.5" y="108.4" width="13.9" height="81.6" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 275.7 kb/d</title></rect>
-<rect x="530.9" y="130.8" width="13.9" height="59.2" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 199.9 kb/d</title></rect>
-<rect x="553.4" y="124.4" width="13.9" height="65.6" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 221.5 kb/d</title></rect>
-<rect x="575.8" y="103.2" width="13.9" height="86.8" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 293.2 kb/d</title></rect>
-<rect x="598.2" y="103.2" width="13.9" height="86.8" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 293.2 kb/d</title></rect>
-<rect x="620.6" y="118.3" width="13.9" height="71.7" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 242.3 kb/d</title></rect>
-<rect x="643.0" y="128.7" width="13.9" height="61.3" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 207.1 kb/d</title></rect>
-<rect x="665.4" y="97.6" width="13.9" height="92.4" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 312.2 kb/d</title></rect>
-<rect x="687.8" y="95.9" width="13.9" height="94.1" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 317.9 kb/d</title></rect>
-<text x="694.8" y="89.9" text-anchor="middle" class="val">317.9</text>
+<rect x="284.4" y="115.6" width="13.9" height="74.4" rx="2.5" style="fill:var(--ch-ink)"><title>Jun 26: 251.2 kb/d</title></rect>
+<rect x="329.2" y="99.9" width="13.9" height="90.1" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 304.3 kb/d</title></rect>
+<rect x="351.6" y="115.5" width="13.9" height="74.5" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 251.6 kb/d</title></rect>
+<rect x="374.1" y="126.3" width="13.9" height="63.7" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 215.2 kb/d</title></rect>
+<rect x="396.5" y="98.5" width="13.9" height="91.5" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 309.0 kb/d</title></rect>
+<rect x="418.9" y="92.3" width="13.9" height="97.7" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 330.0 kb/d</title></rect>
+<rect x="441.3" y="107.3" width="13.9" height="82.7" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 279.5 kb/d</title></rect>
+<rect x="463.7" y="108.7" width="13.9" height="81.3" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 274.6 kb/d</title></rect>
+<rect x="486.1" y="100.9" width="13.9" height="89.1" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 301.1 kb/d</title></rect>
+<rect x="508.5" y="105.5" width="13.9" height="84.5" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 285.5 kb/d</title></rect>
+<rect x="530.9" y="128.5" width="13.9" height="61.5" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 207.9 kb/d</title></rect>
+<rect x="553.4" y="121.9" width="13.9" height="68.1" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 230.2 kb/d</title></rect>
+<rect x="575.8" y="100.0" width="13.9" height="90.0" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 304.2 kb/d</title></rect>
+<rect x="598.2" y="99.9" width="13.9" height="90.1" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 304.3 kb/d</title></rect>
+<rect x="620.6" y="115.5" width="13.9" height="74.5" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 251.6 kb/d</title></rect>
+<rect x="643.0" y="126.3" width="13.9" height="63.7" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 215.2 kb/d</title></rect>
+<rect x="665.4" y="94.1" width="13.9" height="95.9" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 324.0 kb/d</title></rect>
+<rect x="687.8" y="92.3" width="13.9" height="97.7" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 330.0 kb/d</title></rect>
+<text x="694.8" y="86.3" text-anchor="middle" class="val">330.0</text>
 <text x="67.2" y="216" text-anchor="middle" class="xlab">Aug 25</text>
 <text x="134.4" y="216" text-anchor="middle" class="xlab">Nov 25</text>
 <text x="201.7" y="216" text-anchor="middle" class="xlab">Feb 26</text>
@@ -684,29 +702,30 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <rect x="105.1" y="77.1" width="13.9" height="112.9" rx="2.5" style="fill:var(--ch-ink)"><title>Oct 25: 381.4 kb/d</title></rect>
 <rect x="127.5" y="78.1" width="13.9" height="111.9" rx="2.5" style="fill:var(--ch-ink)"><title>Nov 25: 378.2 kb/d</title></rect>
 <rect x="149.9" y="92.7" width="13.9" height="97.3" rx="2.5" style="fill:var(--ch-ink)"><title>Dec 25: 328.8 kb/d</title></rect>
-<rect x="172.3" y="79.5" width="13.9" height="110.5" rx="2.5" style="fill:var(--ch-ink)"><title>Jan 26: 373.3 kb/d</title></rect>
+<rect x="172.3" y="79.7" width="13.9" height="110.3" rx="2.5" style="fill:var(--ch-ink)"><title>Jan 26: 372.6 kb/d</title></rect>
 <rect x="194.7" y="79.7" width="13.9" height="110.3" rx="2.5" style="fill:var(--ch-ink)"><title>Feb 26: 372.7 kb/d</title></rect>
 <rect x="217.2" y="77.0" width="13.9" height="113.0" rx="2.5" style="fill:var(--ch-ink)"><title>Mar 26: 381.8 kb/d</title></rect>
 <rect x="239.6" y="89.3" width="13.9" height="100.7" rx="2.5" style="fill:var(--ch-ink)"><title>Apr 26: 340.3 kb/d</title></rect>
 <rect x="262.0" y="117.8" width="13.9" height="72.2" rx="2.5" style="fill:var(--ch-ink)"><title>May 26: 244.0 kb/d</title></rect>
-<rect x="329.2" y="77.2" width="13.9" height="112.8" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 381.1 kb/d</title></rect>
-<rect x="351.6" y="103.7" width="13.9" height="86.3" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 291.5 kb/d</title></rect>
-<rect x="374.1" y="107.1" width="13.9" height="82.9" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 280.0 kb/d</title></rect>
-<rect x="396.5" y="72.8" width="13.9" height="117.2" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 396.1 kb/d</title></rect>
-<rect x="418.9" y="72.6" width="13.9" height="117.4" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 396.6 kb/d</title></rect>
-<rect x="441.3" y="78.9" width="13.9" height="111.1" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 375.4 kb/d</title></rect>
-<rect x="463.7" y="79.4" width="13.9" height="110.6" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 373.5 kb/d</title></rect>
-<rect x="486.1" y="73.3" width="13.9" height="116.7" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 394.3 kb/d</title></rect>
-<rect x="508.5" y="73.0" width="13.9" height="117.0" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 395.3 kb/d</title></rect>
-<rect x="530.9" y="96.2" width="13.9" height="93.8" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 317.0 kb/d</title></rect>
-<rect x="553.4" y="96.7" width="13.9" height="93.3" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 315.2 kb/d</title></rect>
-<rect x="575.8" y="78.8" width="13.9" height="111.2" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 375.6 kb/d</title></rect>
-<rect x="598.2" y="77.2" width="13.9" height="112.8" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 381.1 kb/d</title></rect>
-<rect x="620.6" y="103.7" width="13.9" height="86.3" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 291.5 kb/d</title></rect>
-<rect x="643.0" y="107.1" width="13.9" height="82.9" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 280.0 kb/d</title></rect>
-<rect x="665.4" y="71.3" width="13.9" height="118.7" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 401.1 kb/d</title></rect>
-<rect x="687.8" y="72.6" width="13.9" height="117.4" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 396.6 kb/d</title></rect>
-<text x="694.8" y="66.6" text-anchor="middle" class="val">396.6</text>
+<rect x="284.4" y="85.6" width="13.9" height="104.4" rx="2.5" style="fill:var(--ch-ink)"><title>Jun 26: 352.6 kb/d</title></rect>
+<rect x="329.2" y="73.6" width="13.9" height="116.4" rx="2.5" style="fill:var(--ch-nc)"><title>Aug 26: 393.2 kb/d</title></rect>
+<rect x="351.6" y="100.9" width="13.9" height="89.1" rx="2.5" style="fill:var(--ch-nc)"><title>Sep 26: 301.0 kb/d</title></rect>
+<rect x="374.1" y="104.3" width="13.9" height="85.7" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 26: 289.4 kb/d</title></rect>
+<rect x="396.5" y="69.1" width="13.9" height="120.9" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 26: 408.6 kb/d</title></rect>
+<rect x="418.9" y="68.9" width="13.9" height="121.1" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 26: 409.0 kb/d</title></rect>
+<rect x="441.3" y="75.5" width="13.9" height="114.5" rx="2.5" style="fill:var(--ch-fc)"><title>Jan 27: 386.8 kb/d</title></rect>
+<rect x="463.7" y="76.0" width="13.9" height="114.0" rx="2.5" style="fill:var(--ch-fc)"><title>Feb 27: 385.0 kb/d</title></rect>
+<rect x="486.1" y="69.7" width="13.9" height="120.3" rx="2.5" style="fill:var(--ch-fc)"><title>Mar 27: 406.3 kb/d</title></rect>
+<rect x="508.5" y="69.6" width="13.9" height="120.4" rx="2.5" style="fill:var(--ch-fc)"><title>Apr 27: 406.7 kb/d</title></rect>
+<rect x="530.9" y="93.5" width="13.9" height="96.5" rx="2.5" style="fill:var(--ch-fc)"><title>May 27: 326.0 kb/d</title></rect>
+<rect x="553.4" y="93.7" width="13.9" height="96.3" rx="2.5" style="fill:var(--ch-fc)"><title>Jun 27: 325.3 kb/d</title></rect>
+<rect x="575.8" y="75.2" width="13.9" height="114.8" rx="2.5" style="fill:var(--ch-fc)"><title>Jul 27: 387.7 kb/d</title></rect>
+<rect x="598.2" y="73.6" width="13.9" height="116.4" rx="2.5" style="fill:var(--ch-fc)"><title>Aug 27: 393.2 kb/d</title></rect>
+<rect x="620.6" y="100.9" width="13.9" height="89.1" rx="2.5" style="fill:var(--ch-fc)"><title>Sep 27: 301.0 kb/d</title></rect>
+<rect x="643.0" y="104.3" width="13.9" height="85.7" rx="2.5" style="fill:var(--ch-fc)"><title>Oct 27: 289.4 kb/d</title></rect>
+<rect x="665.4" y="67.6" width="13.9" height="122.4" rx="2.5" style="fill:var(--ch-fc)"><title>Nov 27: 413.6 kb/d</title></rect>
+<rect x="687.8" y="68.9" width="13.9" height="121.1" rx="2.5" style="fill:var(--ch-fc)"><title>Dec 27: 409.0 kb/d</title></rect>
+<text x="694.8" y="62.9" text-anchor="middle" class="val">409.0</text>
 <text x="67.2" y="216" text-anchor="middle" class="xlab">Aug 25</text>
 <text x="134.4" y="216" text-anchor="middle" class="xlab">Nov 25</text>
 <text x="201.7" y="216" text-anchor="middle" class="xlab">Feb 26</text>
@@ -724,14 +743,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <div class="tblwrap"><table class="data">
     <caption style="text-align:left;font-weight:700;padding:6px 0;">Latest actuals (kb/d)</caption>
     <tr><th>Series</th><th>Feb 2026</th><th>Mar 2026</th><th>Apr 2026</th><th>May 2026</th><th>Jun 2026</th><th>Jul 2026</th></tr>
-    <tr><td>Suncor OSG</td><td class="num">231.7</td><td class="num">264.9</td><td class="num">244.9</td><td class="num">232.8</td><td class="num">n/a</td><td class="num">n/a</td></tr>
-    <tr><td>Suncor OSG</td><td class="num">372.7</td><td class="num">381.8</td><td class="num">340.3</td><td class="num">244.0</td><td class="num">n/a</td><td class="num">n/a</td></tr>
+    <tr><td>Suncor OSG</td><td class="num">231.7</td><td class="num">264.9</td><td class="num">244.9</td><td class="num">232.8</td><td class="num">251.2</td><td class="num">n/a</td></tr>
+    <tr><td>Suncor OSG</td><td class="num">372.7</td><td class="num">381.8</td><td class="num">340.3</td><td class="num">244.0</td><td class="num">352.6</td><td class="num">n/a</td></tr>
   </table></div>
   <div class="tblwrap"><table class="data">
     <caption style="text-align:left;font-weight:700;padding:6px 0;">First forecast months (kb/d)</caption>
     <tr><th>Series</th><th>Oct 2026</th><th>Nov 2026</th><th>Dec 2026</th><th>Jan 2027</th><th>Feb 2027</th><th>Mar 2027</th></tr>
-    <tr><td>Suncor OSG</td><td class="num">207.1</td><td class="num">297.2</td><td class="num">317.9</td><td class="num">269.4</td><td class="num">264.9</td><td class="num">290.1</td></tr>
-    <tr><td>Suncor OSG</td><td class="num">280.0</td><td class="num">396.1</td><td class="num">396.6</td><td class="num">375.4</td><td class="num">373.5</td><td class="num">394.3</td></tr>
+    <tr><td>Suncor OSG</td><td class="num">215.2</td><td class="num">309.0</td><td class="num">330.0</td><td class="num">279.5</td><td class="num">274.6</td><td class="num">301.1</td></tr>
+    <tr><td>Suncor OSG</td><td class="num">289.4</td><td class="num">408.6</td><td class="num">409.0</td><td class="num">386.8</td><td class="num">385.0</td><td class="num">406.3</td></tr>
   </table></div>
   <p class="tblnote">Full 26-month table with drill-down lives in the <a href="../st3-dashboard.html">trading dashboard</a>. Blank cells are months AER has not published yet, not zeros.</p>
   <p class="src"><b>How to read Suncor OSG:</b> Suncor Energy Inc. facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate. Maintenance modeled down at this leaf: Suncor Base Plant Q4 bitumen maintenance, Nov 2026 -15 kb/d (quarterly event-rate; timing within Q4 unpublished, placed mid-quarter). Source: Suncor 2026 planned maintenance table (Q1 2026 investor presentation, 2026-04-01).</p>
@@ -754,7 +773,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="src"><b>Named assumptions:</b> Suncor Energy Inc. facility. Actuals through 2026-05; Jun-Jul 2026 are blank until AER publishes them. The forecast repeats this plant's own seasonality; the pro-rata scaling only changes the level so the drill-down ties to the approved aggregate. Maintenance modeled down at this leaf: Suncor Base Plant Q4 SCO and diesel maintenance, Nov 2026 -5 kb/d. Source: Suncor 2026 planned maintenance table (Q1 2026 investor presentation, 2026-04-01).</p>
   <p class="src"><b>Confirmation status:</b> model forecast; maintenance impacts enter the math only from public-confirmed guidance.</p>
   <h2>Market relevance</h2>
-  <p>Base Plant SCO averages 358.0 kb/d over the forecast. At interconnected Suncor/<a class="plink" href="../projects/syncrude.html">Syncrude</a> sites the interconnect acts as a relief valve during unplanned upgrader outages (Q1 2026 precedent), and flexible SAGD/PFT barrels tilt toward dilbit; planned upgrader turnarounds instead coordinate the mine to reduced demand, with no redirect modeled (Coker 8-2 ruling, 2026-09-24). Modeled maintenance peaks at Nov 2026 (-15.0 kb/d).</p>
+  <p>Base Plant SCO averages 369.1 kb/d over the forecast. At interconnected Suncor/<a class="plink" href="../projects/syncrude.html">Syncrude</a> sites the interconnect acts as a relief valve during unplanned upgrader outages (Q1 2026 precedent), and flexible SAGD/PFT barrels tilt toward dilbit; planned upgrader turnarounds instead coordinate the mine to reduced demand, with no redirect modeled (Coker 8-2 ruling, 2026-09-24). Modeled maintenance peaks at Nov 2026 (-15.0 kb/d).</p>
   <p class="src"><b>Basis:</b> model-derived from the dashboard series above; no external view is added.</p>
   <h2>Related weekly notes</h2>
   <p class="nullnote">No weekly edition to date mentions this asset by name.</p>

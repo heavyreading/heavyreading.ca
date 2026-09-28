@@ -122,10 +122,27 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sa
   letter-spacing:.1em; text-transform:uppercase; padding:15px 16px 13px;
   white-space:nowrap; border-bottom:2px solid transparent; margin-bottom:-1px; }
 .navdrop.active .nd-top { border-bottom-color:var(--acc); }
-/* flat nav: no dropdowns anywhere (2026-09-27). The mobile Sections panel
-   carries the full link set below the four main links; it is hidden on
-   desktop, where the header shows the four links only. */
+/* desktop dropdowns (2026-09-28): hover/focus reveals the panel; the header
+   stays four clean links at rest. Hidden everywhere else - touch and mobile
+   use the Sections panel. The mobile Sections panel carries the full link
+   set below the four main links; it is hidden on desktop. */
 .mnav-groups { display:none; }
+.nd-panel { display:none; }
+@media (min-width:641px) {
+  .nd-panel { position:absolute; top:100%; left:0; z-index:60;
+    min-width:232px; background:var(--paper); border:1px solid var(--line);
+    box-shadow:0 10px 28px rgba(20,16,8,.10); padding:6px 0 8px; }
+  .navdrop:hover .nd-panel, .navdrop:focus-within .nd-panel { display:block; }
+  .nd-sec + .nd-sec { border-top:1px solid var(--line); margin-top:4px;
+    padding-top:6px; }
+  .nd-label { font-size:10.5px; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--acc); margin:4px 0 2px;
+    padding:0 16px; }
+  .nd-link { display:block; padding:7px 16px; font-size:13.5px;
+    color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .nd-link:hover { color:var(--acc-deep); }
+  .nd-link[aria-current="page"] { color:var(--acc-deep); font-weight:600; }
+}
 @media (hover:hover) {
   .nd-top:hover { color:var(--acc-deep); }
   .mg-link:hover { color:var(--acc-deep); }
@@ -554,14 +571,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="index.html">Now</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="weekly/index.html">Letter</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="digest/index.html">Digest</a></div>
-      <div class="navdrop"><a class="nd-top nd-plain" href="reference/index.html">Reference</a></div>
+      <div class="navdrop"><a class="nd-top" href="weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="weekly/index.html">Edition archive</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-09-28/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Supply</p><a class="nd-link" href="supply/index.html">Supply hub</a><a class="nd-link" href="st3-dashboard.html">Dashboard</a><a class="nd-link" href="scorecard.html">Scorecard</a><a class="nd-link" href="balance/index.html">S&amp;D balance</a><a class="nd-link" href="maintenance/index.html">Maintenance</a><a class="nd-link" href="projects/index.html">All projects</a><a class="nd-link" href="apportionment/index.html">Apportionment</a></div><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="world/hormuz/index.html">Hormuz watch</a><a class="nd-link" href="world/iran/index.html">Iran watch</a><a class="nd-link" href="world/redsea/index.html">Red Sea</a><a class="nd-link" href="world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="world/china-imports/index.html">China imports</a><a class="nd-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="world/sour/index.html">The global sour barrel</a><a class="nd-link" href="venezuela/index.html">Venezuela watch</a><a class="nd-link" href="world/trump/index.html">Trump watch</a><a class="nd-link" href="world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">Reference</p><a class="nd-link" href="whale-watch.html">Whale watch</a><a class="nd-link" href="fieldguide/index.html">Field guide</a><a class="nd-link" href="data/index.html">Data downloads</a><a class="nd-link" href="sources/index.html">Sources</a><a class="nd-link" href="methodology/index.html">Methodology</a><a class="nd-link" href="about/index.html">About</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="supply/index.html">Supply hub</a><a class="mg-link" href="st3-dashboard.html">Dashboard</a><a class="mg-link" href="scorecard.html">Scorecard</a><a class="mg-link" href="balance/index.html">S&amp;D balance</a><a class="mg-link" href="maintenance/index.html">Maintenance</a><a class="mg-link" href="projects/index.html">All projects</a><a class="mg-link" href="apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="world/hormuz/index.html">Hormuz watch</a><a class="mg-link" href="world/iran/index.html">Iran watch</a><a class="mg-link" href="world/redsea/index.html">Red Sea</a><a class="mg-link" href="world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="world/china-imports/index.html">China imports</a><a class="mg-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="world/sour/index.html">The global sour barrel</a><a class="mg-link" href="venezuela/index.html">Venezuela watch</a><a class="mg-link" href="world/trump/index.html">Trump watch</a><a class="mg-link" href="world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-09-27/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-09-28/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="whale-watch.html">Whale watch</a><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
       </div>
       </nav>
@@ -575,6 +592,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p class="lede">Steam-assisted gravity drainage (SAGD) facilities run large cogeneration plants that make the steam for the reservoir and export power to the grid. When a cogen unit trips, bitumen output can stay offline for days, so the daily check below watches every Alberta SAGD cogen for its maximum capability (MC) slipping materially below nameplate: the earliest public signal that a facility may be down.</p>
 <p class="note"><strong>Check the live readings yourself:</strong> the <a href="http://ets.aeso.ca/ets_web/ip/Market/Reports/CSDReportServlet">AESO Current Supply Demand report</a> (Alberta Electric System Operator) lists every generating asset with its current output in megawatts, updated through the day. Look for the Cogeneration group and compare each unit's MC (maximum capability) against its nameplate: a material MC derate is the trip signal this page tracks. TNG (total net generation) moves with dispatch and on-site use, and zero TNG on net-to-grid (*-marked) assets is normal, so it is not the signal.</p>
 <p class="vintage"><strong>Source:</strong> Alberta Electric System Operator (AESO) Current Supply Demand report; company disclosures and newswires via the morning watch. Vintage follows each entry below.</p>
+<h2>September 28, 2026: (AESO CSD, last update 05:30 MDT), no power disruptions reported; all monitored cogen units at full MC.</h2>
+<p class="note">All named units at full MC (MC = nameplate): Cenovus <a class="plink" href="projects/cve_christina_lake.html">Christina Lake</a> CL01 100/100 (TNG 0, not a trip signal); Cenovus <a class="plink" href="projects/cve_foster_creek.html">Foster Creek</a> EC04 98/98; Suncor <a class="plink" href="projects/su_firebag.html">Firebag</a> SCR6 497/497; Suncor <a class="plink" href="projects/su_mackay_river.html">MacKay River</a> MKRC 207/207 (TNG 0); Imperial Mahkeses IOR1 180/180; Imperial Nabiye IOR2 195/195 (*-marked); CNRL <a class="plink" href="projects/cnq_primrose.html">Primrose</a> #1 PR1 100/100; CNOOC Long Lake NX01 120/120 (TNG 0), NX02 220/220. No AESO grid alerts or EEA events noted in report. Note: AESO lists no cogen assets for Cenovus <a class="plink" href="projects/cve_sunrise.html">Sunrise</a>/<a class="plink" href="projects/scr_tucker.html">Tucker</a>, CNRL <a class="plink" href="projects/cnq_kirby.html">Kirby</a>/<a class="plink" href="projects/cnq_jackfish.html">Jackfish</a>, Athabasca <a class="plink" href="projects/ath_leismer.html">Leismer</a>/<a class="plink" href="projects/ath_hangingstone.html">Hangingstone</a>, Conoco <a class="plink" href="projects/cop_surmont.html">Surmont</a>, Greenfire, Harvest <a class="plink" href="projects/harvest_blackgold.html">BlackGold</a>, IPC <a class="plink" href="projects/ipc_blackrod.html">Blackrod</a>, PetroChina Brion, no visibility via CSD.</p>
 <h2>September 27, 2026: (AESO CSD, last update 05:30 MDT), no power disruptions reported; all monitored cogen units at full MC.</h2>
 <p class="note">All named units at full MC (MC = nameplate): Cenovus <a class="plink" href="projects/cve_christina_lake.html">Christina Lake</a> CL01 100/100 (TNG 0, not a trip signal); Cenovus <a class="plink" href="projects/cve_foster_creek.html">Foster Creek</a> EC04 98/98; Suncor <a class="plink" href="projects/su_firebag.html">Firebag</a> SCR6 497/497; Suncor <a class="plink" href="projects/su_mackay_river.html">MacKay River</a> MKRC 207/207 (TNG 0); Imperial Mahkeses IOR1 180/180; Imperial Nabiye IOR2 195/195 (*-marked); CNRL <a class="plink" href="projects/cnq_primrose.html">Primrose</a> #1 PR1 100/100; CNOOC Long Lake NX01 120/120 (TNG 0), NX02 220/220; adjacent <a class="plink" href="projects/meg_christina_lake.html">MEG Christina Lake</a> MEG1 202/202. Lead check: OilPrice.com wildfire piece (fresh crawl, but content dated) describes the May/June 2025 Caribou Lake Fire event (Cenovus CL 238 kb/d shut-in May 29, CNRL <a class="plink" href="projects/cnq_jackfish.html">Jackfish</a> 36.5 kb/d May 31, MEG Phase 2B delay), stale, not current; no September 2026 wildfire threat found. No AESO grid alerts, no EEA events.</p>
 <h2>September 26, 2026: (AESO CSD, last update 05:30 MDT), no power disruptions reported; all monitored cogen units at full MC.</h2>
