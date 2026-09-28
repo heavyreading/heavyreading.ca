@@ -2,16 +2,16 @@
  "vintage": "COT through 2026-09-22; flags generated September 27, 2026",
  "data": {
   "read": [
-   "Commercials sold 5,874 lots in WCS 1A - trimming length",
-   "Funds covered 2,475 lots of their WCS 1A short - covering",
-   "Commercials sold 2,259 lots in SW 1A - trimming length",
-   "Commercials sold 2,165 lots in WCS Houston - fresh selling",
-   "Funds bought 1,979 lots in WCS Houston - fresh buying",
-   "Funds covered 755 lots of their SW 1A short - covering",
+   "Commercials sold 5,874 lots in WCS 1A - trimming length to +34,238 (from +40,112 last week)",
+   "Funds covered 2,475 lots of their WCS 1A short - covering to -19,735 (from -22,210 last week)",
+   "Commercials sold 2,259 lots in SW 1A - trimming length to +6,601 (from +8,860 last week)",
+   "Commercials sold 2,165 lots in WCS Houston - fresh selling to -17,229 (from -15,064 last week)",
+   "Funds bought 1,979 lots in WCS Houston - fresh buying to +12,298 (from +10,319 last week)",
+   "Funds covered 755 lots of their SW 1A short - covering to -170 (from -925 last week)",
    "New probable-whale flags: 2 high-confidence: commercials sold 5,874 lots in WCS 1A; commercials sold 2,259 lots in SW 1A. 3 low-confidence.",
    "Commercials: long the Hardisty-Houston basis (+34,238 WCS 1A vs -17,229 ARV (the Houston WCS differential)); cut it by 3,709 lots this week",
    "Funds: short the Hardisty-Houston basis (-19,735 WCS 1A vs +12,298 ARV)",
-   "Flat price: Commercials sold 20,720 lots of ICE WTI; Funds bought 5,201 lots of NYMEX WTI."
+   "Flat price: Commercials sold 20,720 lots of ICE WTI to +107,241 (from +127,961 last week); Funds bought 5,201 lots of NYMEX WTI to +141,106 (from +135,905 last week)."
   ],
   "snapshot": [
    {
@@ -83,6 +83,7 @@
   ],
   "flags": [
    {
+    "flag_id": "2026-09-22|ICE WCS Houston diff|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-2165 lots (4w 280) vs whale threshold 5499; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-22",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -93,6 +94,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-22|ICE C5 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=315 lots (4w 510) vs whale threshold 1875; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-22",
     "market": "ICE C5 1A diff",
     "short": "C5 1A",
@@ -103,6 +105,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-22|ICE WTI|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-20720 lots (4w -10196) vs whale threshold 72085; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-22",
     "market": "ICE WTI",
     "short": "ICE WTI",
@@ -113,6 +116,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-22|ICE WCS 1A diff|cot_attribution|-1|whale|weekly d(commercial_net)=-5874 lots (4w -1549) vs whale threshold 5196; velocity single_week; whale-sized + single-week velocity + category confirmed (COT agrees with OI tripwire direction, or COT-only whale build with clean category)",
     "date": "2026-09-22",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -123,6 +127,7 @@
     "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
    },
    {
+    "flag_id": "2026-09-22|ICE SW 1A diff|cot_attribution|-1|whale|weekly d(commercial_net)=-2259 lots (4w -916) vs whale threshold 1875; velocity single_week; whale-sized + single-week velocity + category confirmed (COT agrees with OI tripwire direction, or COT-only whale build with clean category)",
     "date": "2026-09-22",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -133,6 +138,7 @@
     "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
    },
    {
+    "flag_id": "2026-09-15|ICE WCS 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=1425 lots (4w 2430) vs whale threshold 5891; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-15",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -143,6 +149,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-15|ICE WCS Houston diff|cot_attribution|1|sub_whale|weekly d(managed_money_net)=105 lots (4w -4395) vs whale threshold 5390; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-15",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -153,6 +160,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-15|ICE SW 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=898 lots (4w 49) vs whale threshold 1875; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-15",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -163,6 +171,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-08|ICE WCS 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=980 lots (4w 1820) vs whale threshold 5306; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-08",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -173,6 +182,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-08|ICE WCS Houston diff|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-420 lots (4w 1630) vs whale threshold 4850; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-08",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -183,6 +193,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-08|NYMEX WTI|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-10180 lots (4w -36548) vs whale threshold 145493; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-08",
     "market": "NYMEX WTI",
     "short": "NYMEX WTI",
@@ -193,6 +204,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-01|ICE WCS Houston diff|cot_attribution|-1|sub_whale|weekly d(managed_money_net)=-3555 lots (4w -840) vs whale threshold 4607; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-01",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -203,6 +215,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-01|ICE SW 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=220 lots (4w -644) vs whale threshold 1875; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-01",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -213,6 +226,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-01|ICE WTI|cot_attribution|1|sub_whale|weekly d(commercial_net)=5779 lots (4w 30414) vs whale threshold 77338; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-09-01",
     "market": "ICE WTI",
     "short": "ICE WTI",
@@ -223,6 +237,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-09-01|ICE WCS 1A diff|cot_attribution|-1|whale|weekly d(managed_money_net)=-1920 lots (4w -5879) vs whale threshold 5144; velocity multi_week; whale-sized but multi-week accumulation, OR OI-tripwire-only early warning (category unattributed until Friday), OR whale-sized with OI/COT direction conflict",
     "date": "2026-09-01",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -233,6 +248,7 @@
     "attribution": "likely Citadel (probable fund-whale candidate — not confirmed)"
    },
    {
+    "flag_id": "2026-08-25|ICE WCS 1A diff|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-1895 lots (4w 1070) vs whale threshold 4808; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-25",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -243,6 +259,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-25|ICE SW 1A diff|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-1294 lots (4w -1224) vs whale threshold 1875; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-25",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -253,6 +270,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-25|ICE WTI|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-5358 lots (4w 30166) vs whale threshold 76290; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-25",
     "market": "ICE WTI",
     "short": "ICE WTI",
@@ -263,6 +281,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-25|ICE WCS Houston diff|cot_attribution|1|whale|weekly d(commercial_net)=1380 lots (4w -6060) vs whale threshold 4985; velocity multi_week; whale-sized but multi-week accumulation, OR OI-tripwire-only early warning (category unattributed until Friday), OR whale-sized with OI/COT direction conflict",
     "date": "2026-08-25",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -273,6 +292,7 @@
     "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
    },
    {
+    "flag_id": "2026-08-18|ICE WCS 1A diff|cot_attribution|-1|sub_whale|weekly d(managed_money_net)=-1775 lots (4w -3270) vs whale threshold 5192; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-18",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -283,6 +303,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-18|ICE SW 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=130 lots (4w 535) vs whale threshold 1875; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-18",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -293,6 +314,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-18|ICE WTI|cot_attribution|1|sub_whale|weekly d(commercial_net)=13826 lots (4w 39572) vs whale threshold 79099; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-18",
     "market": "ICE WTI",
     "short": "ICE WTI",
@@ -303,6 +325,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-18|NYMEX WTI|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-23450 lots (4w -44486) vs whale threshold 141672; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-18",
     "market": "NYMEX WTI",
     "short": "NYMEX WTI",
@@ -313,6 +336,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-18|ICE WCS Houston diff|cot_attribution|-1|whale|weekly d(commercial_net)=-2280 lots (4w -5025) vs whale threshold 4605; velocity multi_week; whale-sized but multi-week accumulation, OR OI-tripwire-only early warning (category unattributed until Friday), OR whale-sized with OI/COT direction conflict",
     "date": "2026-08-18",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -323,6 +347,7 @@
     "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
    },
    {
+    "flag_id": "2026-08-11|ICE WCS 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=1005 lots (4w -1880) vs whale threshold 4886; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-11",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -333,6 +358,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-11|ICE SW 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=300 lots (4w -604) vs whale threshold 1875; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-11",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -343,6 +369,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-11|ICE WTI|cot_attribution|1|sub_whale|weekly d(commercial_net)=16167 lots (4w 25715) vs whale threshold 82329; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-11",
     "market": "ICE WTI",
     "short": "ICE WTI",
@@ -353,6 +380,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-11|NYMEX WTI|cot_attribution|1|sub_whale|weekly d(commercial_net)=24138 lots (4w -44549) vs whale threshold 141932; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-11",
     "market": "NYMEX WTI",
     "short": "NYMEX WTI",
@@ -363,6 +391,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-11|ICE WCS Houston diff|cot_attribution|1|whale|weekly d(managed_money_net)=1615 lots (4w 5430) vs whale threshold 4200; velocity multi_week; whale-sized but multi-week accumulation, OR OI-tripwire-only early warning (category unattributed until Friday), OR whale-sized with OI/COT direction conflict",
     "date": "2026-08-11",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -373,6 +402,7 @@
     "attribution": "likely Citadel (probable fund-whale candidate — not confirmed)"
    },
    {
+    "flag_id": "2026-08-04|NYMEX WTI|cot_attribution|-1|sub_whale|weekly d(managed_money_net)=-7665 lots (4w 36694) vs whale threshold 141511; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-08-04",
     "market": "NYMEX WTI",
     "short": "NYMEX WTI",
@@ -383,6 +413,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-08-04|ICE WCS Houston diff|cot_attribution|-1|whale|weekly d(commercial_net)=-4020 lots (4w -5170) vs whale threshold 3676; velocity single_week; whale-sized + single-week velocity + category confirmed (COT agrees with OI tripwire direction, or COT-only whale build with clean category)",
     "date": "2026-08-04",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -393,6 +424,7 @@
     "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
    },
    {
+    "flag_id": "2026-07-28|ICE WCS Houston diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=2415 lots (4w -2254) vs whale threshold 3226; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-28",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -403,6 +435,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-07-28|ICE SW 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=465 lots (4w 666) vs whale threshold 1875; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-28",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -413,6 +446,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-07-28|NYMEX WTI|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-50221 lots (4w -18674) vs whale threshold 139485; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-28",
     "market": "NYMEX WTI",
     "short": "NYMEX WTI",
@@ -423,6 +457,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-07-21|ICE WCS 1A diff|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-3600 lots (4w 2394) vs whale threshold 4141; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-21",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -433,6 +468,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-07-21|ICE SW 1A diff|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-1009 lots (4w 246) vs whale threshold 1875; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-21",
     "market": "ICE SW 1A diff",
     "short": "SW 1A",
@@ -443,6 +479,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-07-21|NYMEX WTI|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-23513 lots (4w 44005) vs whale threshold 139837; velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-21",
     "market": "NYMEX WTI",
     "short": "NYMEX WTI",
@@ -453,6 +490,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-07-21|ICE WCS Houston diff|cot_attribution|-1|whale|weekly d(commercial_net)=-2410 lots (4w -4539) vs whale threshold 3524; velocity multi_week; whale-sized but multi-week accumulation, OR OI-tripwire-only early warning (category unattributed until Friday), OR whale-sized with OI/COT direction conflict",
     "date": "2026-07-21",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
@@ -463,6 +501,7 @@
     "attribution": "likely Equinor or Exxon (BP/Suncor possible but less likely; possibly a combination) — probable commercial-whale candidates, not confirmed"
    },
    {
+    "flag_id": "2026-07-14|ICE WCS 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=3605 lots (4w 3959) vs whale threshold 4800; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-14",
     "market": "ICE WCS 1A diff",
     "short": "WCS 1A",
@@ -473,6 +512,7 @@
     "attribution": "withheld (sub-whale)"
    },
    {
+    "flag_id": "2026-07-14|ICE WCS Houston diff|cot_attribution|-1|sub_whale|weekly d(commercial_net)=-1155 lots (4w -3404) vs whale threshold 3541; velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
     "date": "2026-07-14",
     "market": "ICE WCS Houston diff",
     "short": "WCS Houston",
