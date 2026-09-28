@@ -1,14 +1,19 @@
 {
  "page": "/whale-watch.html",
  "title": "Whale watch",
- "dek": "Whale watch: managed-money positioning in ICE WCS paper from CFTC Commitments of Traders data, with probable whale flags and an open-interest tripwire.",
+ "dek": "Whale watch: managed-money positioning in ICE WCS paper from CFTC and ICE Commitments of Traders data, with probable whale flags, Canadian differential activity, and an open-interest tripwire.",
  "built_at": "2026-09-28",
  "generator": "heavyreading-manifest/1",
  "claims": [],
  "sources": [
   {
    "publisher": "U.S. Commodity Futures Trading Commission (CFTC)",
-   "vintage": "weekly; data through 2026-09-22, retrieved 2026-09-27",
+   "vintage": "weekly; data through 2026-09-22, retrieved 2026-09-28",
+   "url": ""
+  },
+  {
+   "publisher": "Intercontinental Exchange (ICE)",
+   "vintage": "weekly COT PDFs (Brent, Gasoil); daily EOD report 142 (Canadian diffs)",
    "url": ""
   }
  ]
