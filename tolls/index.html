@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function(){try{var t=localStorage.getItem('hr-theme');
+if(t){document.documentElement.setAttribute('data-theme',t);}else if
+(window.matchMedia('(prefers-color-scheme: dark)').matches){
+document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();
+</script>
+<title>Tolls Search | Heavy Reading</title>
+<meta name="description" content="Search every filed pipeline toll in the WCSB database: pipeline, path, grade, commitment, fixed vs variable cost structure, dates, and source filing.">
+<style>
+:root{
+  --paper:#faf8f4; --ink:#1e1b16; --mut:#6f675b; --faint:#a79d8d;
+  --line:#e6e1d4; --line2:#f0ece1;
+  --acc:#a13c22; --acc-deep:#7c2e1a;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+[data-theme="dark"]{
+  --paper:#201d18; --ink:#ece6d9; --mut:#a89d89; --faint:#7e7565;
+  --line:#38332b; --line2:#2c2822;
+  --acc:#cf7150; --acc-deep:#e08a63;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+.masthead{display:flex;align-items:center;gap:14px;padding:14px 22px;border-bottom:1px solid var(--line)}
+.brandlink{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+.brandlink:hover{text-decoration:none}
+.mark{width:34px;height:34px}
+.wordmark{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.2px;display:block;line-height:1.1}
+.wordsub{font-size:11.5px;color:var(--mut);display:block;letter-spacing:.4px}
+.themetoggle{margin-left:auto;background:none;border:1px solid var(--line);color:var(--mut);
+  border-radius:999px;padding:5px 14px;font-size:12.5px;cursor:pointer;font-family:var(--sans)}
+.themetoggle:hover{color:var(--ink);border-color:var(--faint)}
+.proto{font-size:11.5px;color:var(--faint);border:1px dashed var(--line);border-radius:999px;padding:4px 12px}
+main{max-width:1220px;margin:0 auto;padding:30px 22px 70px}
+.pagehead h1{font-family:var(--serif);font-weight:600;font-size:34px;margin:0 0 6px;letter-spacing:.2px}
+.pagehead p{color:var(--mut);margin:0 0 4px;max-width:76ch}
+.vintage{font-size:12.5px;color:var(--faint);margin:0 0 22px}
+.filters{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;
+  display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-bottom:14px}
+.fld{display:flex;flex-direction:column;gap:5px}
+.fld.span4{grid-column:span 4}.fld.span3{grid-column:span 3}.fld.span2{grid-column:span 2}
+.fld label{font-size:11.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--mut)}
+.fld input,.fld select{font-family:var(--sans);font-size:14px;color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%}
+.fld input:focus,.fld select:focus{outline:2px solid var(--acc);outline-offset:-1px;border-color:var(--acc)}
+.searchrow{grid-column:span 12;display:flex;gap:10px}
+.searchrow input{flex:1;font-size:15px;padding:10px 14px}
+.curseg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.curseg button{border:0;background:transparent;color:var(--mut);font-family:var(--sans);font-size:13px;
+  padding:8px 14px;cursor:pointer}
+.curseg button.on{background:var(--acc);color:#fff}
+.resultline{font-size:13px;color:var(--mut);margin:2px 2px 10px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.resultline .src-note{color:var(--faint)}
+.tablewrap{border:1px solid var(--line);border-radius:12px;overflow:auto;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:1040px}
+thead th{position:sticky;top:0;background:var(--line2);text-align:left;font-size:11.5px;
+  text-transform:uppercase;letter-spacing:.6px;color:var(--mut);padding:10px 12px;
+  border-bottom:1px solid var(--line);white-space:nowrap;cursor:pointer;user-select:none}
+thead th.nosort{cursor:default}
+thead th .arr{color:var(--acc)}
+tbody td{padding:10px 12px;border-bottom:1px solid var(--line2);vertical-align:top}
+tbody tr.row{cursor:pointer}
+tbody tr.row:hover{background:var(--line2)}
+td.toll{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+td .ccy{font-weight:400;color:var(--mut);font-size:12px}
+.equiv{display:block;font-size:11.5px;color:var(--mut);font-weight:400;font-variant-numeric:tabular-nums}
+.fx{display:block;font-size:11px;color:var(--faint);font-weight:400;margin-top:2px}
+.fv{font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums}
+.fv b{color:var(--ink);font-weight:600}
+.fvbar{height:5px;border-radius:3px;background:var(--line);margin-top:6px;overflow:hidden;max-width:140px}
+.fvbar i{display:block;height:100%;background:var(--acc)}
+.fvleg{font-size:10.5px;color:var(--faint);margin-top:3px}
+.src{font-size:12.5px}
+.src .eff{color:var(--faint);display:block;font-size:11.5px}
+.status{display:inline-block;font-size:11px;letter-spacing:.4px;text-transform:uppercase;
+  border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--mut)}
+.status.effective{color:var(--acc);border-color:var(--acc)}
+.struct{display:inline-block;font-size:11px;border-radius:4px;padding:2px 8px;margin-bottom:5px;
+  background:var(--line2);color:var(--mut);border:1px solid var(--line)}
+.struct.fh{color:var(--acc);border-color:var(--acc)}
+.detail td{background:var(--line2);font-size:13px;color:var(--mut)}
+.detail .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px 26px;max-width:1040px}
+.detail dt{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint)}
+.detail dd{margin:2px 0 10px;color:var(--ink)}
+.hidden{display:none}
+.sitefoot{border-top:1px solid var(--line);padding:26px 22px 40px;max-width:1220px;margin:0 auto}
+.fcolophon{font-size:12.5px;color:var(--faint);max-width:82ch;margin:0}
+.fcolophon b{color:var(--mut)}
+@media(max-width:760px){
+  .fld.span4,.fld.span3,.fld.span2{grid-column:span 12}
+  .pagehead h1{font-size:27px}
+  .detail .dgrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <a class="brandlink" href="https://heavyreading.ca" aria-label="Heavy Reading: home">
+    <svg class="mark" viewbox="0 0 44 44" aria-hidden="true"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg>
+    <span><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span>
+  </a>
+  <button class="themetoggle" id="themetoggle" type="button" aria-label="Toggle dark mode">Dark</button>
+</header>
+<main>
+  <div class="pagehead">
+    <h1>Tolls Search</h1>
+    <p>Every filed pipeline toll in the database — filter by pipeline, route, grade, commitment, cost structure, and dates. Each figure carries its source filing, effective date, and FX vintage. Click a row for notes, fixed/variable detail, and normalization.</p>
+    <p class="vintage" id="vintage">Loading…</p>
+  </div>
+
+  <section class="filters" aria-label="Search filters">
+    <div class="fld span4">
+      <label for="q">Search</label>
+      <div class="searchrow"><input id="q" type="search" placeholder="Pipeline, route, filing, note… e.g. Keystone heavy" autocomplete="off"></div>
+    </div>
+    <div class="fld span4"><label for="f-pipe">Pipeline</label><select id="f-pipe"><option value="">All pipelines</option></select></div>
+    <div class="fld span4"><label for="f-route">Route</label><select id="f-route"><option value="">All routes</option></select></div>
+    <div class="fld span3"><label for="f-grade">Grade</label><select id="f-grade"><option value="">All grades</option></select></div>
+    <div class="fld span3"><label for="f-commit">Commitment</label><select id="f-commit"><option value="">All levels</option></select></div>
+    <div class="fld span2"><label for="f-status">Status</label><select id="f-status"><option value="">All statuses</option></select></div>
+    <div class="fld span4"><label for="f-struct">Cost structure</label>
+      <select id="f-struct">
+        <option value="">All structures</option>
+        <option value="fixed-only">Fixed-only (no variable leg)</option>
+        <option value="fixed-heavy">Fixed-heavy (fixed ≥ variable)</option>
+        <option value="variable-heavy">Variable-heavy (variable &gt; fixed)</option>
+        <option value="variable-only">Variable-only (no fixed leg)</option>
+        <option value="split-mixed">Split, mixed units</option>
+        <option value="single">Single volumetric rate (no split)</option>
+      </select>
+    </div>
+    <div class="fld span3"><label>Display currency</label>
+      <div class="curseg" role="group" aria-label="Display currency">
+        <button data-cur="native" class="on">Native</button><button data-cur="CAD">CAD</button><button data-cur="USD">USD</button>
+      </div>
+    </div>
+    <div class="fld span2"><label for="f-from">Effective from</label><input id="f-from" type="date" min="2010-01-01"></div>
+    <div class="fld span2"><label for="f-to">Effective to</label><input id="f-to" type="date"></div>
+    <div class="fld span2"><label>&nbsp;</label><button id="clear" class="themetoggle" style="margin:0;align-self:flex-start">Clear filters</button></div>
+  </section>
+
+  <div class="resultline"><span id="count"></span><span class="src-note">Every toll shows its source filing and FX vintage. No unsourced figures are displayed.</span></div>
+
+  <div class="tablewrap">
+    <table aria-label="Tolls">
+      <thead><tr>
+        <th data-k="toll">Toll / bbl <span class="arr"></span></th>
+        <th data-k="pipeline">Pipeline <span class="arr"></span></th>
+        <th class="nosort">Route</th>
+        <th class="nosort">Grade</th>
+        <th class="nosort">Commitment</th>
+        <th class="nosort" title="Fixed vs variable cost decomposition. The bar shows the fixed share where both legs share units.">Fixed / variable</th>
+        <th data-k="eff">Effective <span class="arr"></span></th>
+        <th class="nosort">Status</th>
+        <th class="nosort">Source filing</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+</main>
+<footer class="sitefoot">
+  <p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, company disclosures, and filed tariffs. Tolls are compiled from filed tariff documents; the source filing, effective date, and FX vintage ride with every figure. Currency conversions use the normalization recorded per toll — see row detail. Fixed/variable splits follow the tariff's own decomposition; where a tariff states a single volumetric rate, that is shown as-is.</p>
+</footer>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const state = { q:"", pipe:"", route:"", grade:"", commit:"", status:"", struct:"",
+                from:"", to:"", cur:"native", sortK:"eff", sortDir:-1 };
+let DATA = null;
+
+/* ---------- formatting ---------- */
+function money(v){
+  if (v == null || isNaN(v)) return "—";
+  return Number(v).toFixed(4).replace(/0+$/,"").replace(/\.$/,"");
+}
+function primary(t){
+  // Converted display legs are withheld when the toll carries no FX record:
+  // a converted figure without its vintage is never shown.
+  if (state.cur === "CAD"){
+    if (t.currency !== "CAD" && !hasFx(t)) return { v: null, c: "CAD" };
+    return { v: t.toll_cad_per_bbl, c: "CAD" };
+  }
+  if (state.cur === "USD"){
+    if (t.currency !== "USD" && !hasFx(t)) return { v: null, c: "USD" };
+    return { v: t.toll_usd_per_bbl, c: "USD" };
+  }
+  return { v: t.toll_per_bbl, c: t.currency || "" };
+}
+/* FX vintage line: never show a converted figure without this. */
+function fxLine(t){
+  const n = t.normalization || {};
+  const rate = n.fx_usd_per_cad_used, m = n.fx_month_used,
+        src = n.fx_source, d = n.fx_date;
+  if (rate == null && !m && !src) return '<span class="fx">FX: not recorded</span>';
+  const bits = [];
+  if (rate != null) bits.push("FX " + money(rate) + " USD/CAD");
+  if (m) bits.push("month " + esc(m));
+  else if (d) bits.push("as of " + esc(d));
+  if (src) bits.push(esc(src));
+  return '<span class="fx">' + bits.join(" · ") + "</span>";
+}
+/* Does this toll carry an FX record? Converted figures are only shown with one. */
+function hasFx(t){
+  const n = t.normalization || {};
+  return n.fx_usd_per_cad_used != null || !!n.fx_month_used || !!n.fx_source;
+}
+function equivLine(t){
+  const me = state.cur === "native" ? (t.currency || "native") : state.cur;
+  const fx = hasFx(t);
+  const seen = new Set();
+  const rows = [
+    [t.toll_per_bbl, t.currency, true],
+    // converted legs need an FX vintage, or they're withheld outright
+    [t.toll_cad_per_bbl, "CAD", t.currency === "CAD" || fx],
+    [t.toll_usd_per_bbl, "USD", t.currency === "USD" || fx],
+  ].filter(r => {
+    if (!r[2] || r[1] == null) return false;
+    const c = r[1] === undefined ? "" : r[1];
+    const key = String(c || "").toUpperCase();
+    if (seen.has(key) || key === String(me).toUpperCase()) return false;
+    seen.add(key);
+    return true;
+  });
+  if (!rows.length) return '<span class="equiv">no converted legs</span>';
+  return '<span class="equiv">' + rows.map(r =>
+    money(r[0]) + " " + esc(r[1] || "")).join(" · ") + "</span>";
+}
+
+/* ---------- fixed / variable cost structure ---------- */
+function costStructure(t){
+  const fn = t.fixed && t.fixed.native != null ? +t.fixed.native : 0;
+  const vn = t.variable && t.variable.native != null ? +t.variable.native : 0;
+  const hasF = fn !== 0, hasV = vn !== 0;
+  if (!hasF && !hasV) return "single";
+  if (hasF && !hasV) return "fixed-only";
+  if (hasV && !hasF) return "variable-only";
+  const sameUnit = (t.fixed.unit || "") === (t.variable.unit || "");
+  if (!sameUnit) return "split-mixed";
+  return fn >= vn ? "fixed-heavy" : "variable-heavy";
+}
+const STRUCT_LABEL = {
+  "fixed-only": "Fixed-only", "fixed-heavy": "Fixed-heavy",
+  "variable-heavy": "Variable-heavy", "variable-only": "Variable-only",
+  "split-mixed": "Split · mixed units", "single": "Single volumetric rate"
+};
+function fvCell(t){
+  const s = costStructure(t);
+  let html = '<span class="struct' + (s === "fixed-heavy" || s === "fixed-only" ? " fh" : "") +
+    '">' + STRUCT_LABEL[s] + "</span>";
+  const bits = [];
+  if (t.fixed && +t.fixed.native !== 0)
+    bits.push("<b>F</b> " + money(t.fixed.native) + " " + esc(t.fixed.currency || "") +
+      "/" + esc(t.fixed.unit || "") +
+      (t.fixed.time_basis ? ' <span class="fvleg">' + esc(t.fixed.time_basis) + "</span>" : ""));
+  if (t.variable && +t.variable.native !== 0)
+    bits.push("<b>V</b> " + money(t.variable.native) + " " + esc(t.variable.currency || "") +
+      "/" + esc(t.variable.unit || "") +
+      (t.variable.time_basis ? ' <span class="fvleg">' + esc(t.variable.time_basis) + "</span>" : ""));
+  if (bits.length) html += '<span class="fv">' + bits.join("<br>") + "</span>";
+  // proportion bar where both legs share units
+  if ((s === "fixed-heavy" || s === "variable-heavy") && t.fixed && t.variable){
+    const fn = +t.fixed.native, vn = +t.variable.native, tot = fn + vn;
+    const pct = Math.round(100 * fn / tot);
+    html += '<div class="fvbar" title="Fixed ' + pct + '% / Variable ' + (100 - pct) + '%"><i style="width:' +
+      pct + '%"></i></div><div class="fvleg">fixed ' + pct + "%</div>";
+  }
+  return html;
+}
+function srcCell(t){
+  const s = t.source_filing ? esc(t.source_filing) : "<i>unsourced</i>";
+  const link = t.source_url ? '<a href="' + esc(t.source_url) + '" target="_blank" rel="noopener">' + s + "</a>" : s;
+  const eff = t.effective_date ? "effective " + esc(t.effective_date) +
+    (t.expiry_date ? " – " + esc(t.expiry_date) : " – present") : "date n/a";
+  return '<span class="src">' + link + '<span class="eff">' + eff + "</span></span>";
+}
+
+/* ---------- filtering / sorting ---------- */
+function filtered(){
+  const q = state.q.trim().toLowerCase();
+  return DATA.tolls.filter(t => {
+    if (t.flagged_unsourced) return false;           // never display unsourced figures
+    if (state.pipe && t.pipeline !== state.pipe) return false;
+    if (state.route && (t.origin + " → " + t.destination) !== state.route) return false;
+    if (state.grade && t.grade !== state.grade) return false;
+    if (state.commit && t.commitment !== state.commit) return false;
+    if (state.status && t.status !== state.status) return false;
+    if (state.struct && costStructure(t) !== state.struct) return false;
+    if (state.from && (t.effective_date || "") < state.from) return false;
+    if (state.to && (t.effective_date || "") > state.to) return false;
+    if (q){
+      const hay = [t.pipeline,t.origin,t.destination,t.grade,t.commitment,
+                   t.source_filing,t.notes,t.includes,t.excludes].join(" ").toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  }).sort(cmp);
+}
+function cmp(a, b){
+  const k = state.sortK, d = state.sortDir;
+  let x, y;
+  if (k === "toll"){ x = primary(a).v; y = primary(b).v;
+    x = (x == null ? -Infinity : x); y = (y == null ? -Infinity : y); }
+  else if (k === "eff"){ x = a.effective_date || ""; y = b.effective_date || ""; }
+  else if (k === "pipeline"){ x = a.pipeline; y = b.pipeline; }
+  else return 0;
+  return (x < y ? -1 : x > y ? 1 : 0) * d;
+}
+
+/* ---------- rendering ---------- */
+function detailRow(t){
+  const n = t.normalization || {};
+  const rows = [];
+  if (t.notes) rows.push(["Notes", esc(t.notes)]);
+  rows.push(["Cost structure", "<b>" + STRUCT_LABEL[costStructure(t)] + "</b>" +
+    " — fixed leg " + (t.fixed ? money(t.fixed.native) + " " + esc(t.fixed.currency || "") + "/" + esc(t.fixed.unit || "") : "none") +
+    "; variable leg " + (t.variable ? money(t.variable.native) + " " + esc(t.variable.currency || "") + "/" + esc(t.variable.unit || "") : "none")]);
+  if (t.includes) rows.push(["Toll includes", esc(t.includes)]);
+  if (t.excludes) rows.push(["Toll excludes", esc(t.excludes)]);
+  if (t.toll_original != null)
+    rows.push(["As filed", money(t.toll_original) + " " + esc(t.native_currency || "") + " / " + esc(t.native_unit || t.original_unit || "")]);
+  rows.push(["FX used", hasFx(t)
+    ? esc(String(n.fx_usd_per_cad_used ?? "—")) + " USD/CAD · month " +
+      esc(n.fx_month_used || "—") + " · source " + esc(n.fx_source || "—") +
+      (n.fx_date ? " · " + esc(n.fx_date) : "")
+    : "<b>NOT RECORDED</b> — converted legs withheld until the FX vintage is in the database"]);
+  rows.push(["Normalization", esc(n.status || "—") + (n.note ? " — " + n.note : "")]);
+  if (n.conv_factor_used != null)
+    rows.push(["Conversion", "factor " + esc(String(n.conv_factor_used)) + " via " + esc(n.conv_factor_source || "—")]);
+  return '<tr class="detail hidden" data-d="' + t.id + '"><td colspan="9"><dl class="dgrid">' +
+    rows.map(r => "<div><dt>" + r[0] + "</dt><dd>" + r[1] + "</dd></div>").join("") +
+    "</dl></td></tr>";
+}
+function render(){
+  const list = filtered();
+  $("count").textContent = list.length + " of " + DATA.count + " tolls";
+  const tb = $("rows");
+  tb.innerHTML = list.map(t => {
+    const p = primary(t);
+    return '<tr class="row" data-id="' + t.id + '">' +
+      '<td class="toll">' + money(p.v) + ' <span class="ccy">' + esc(p.c) + '/bbl</span><br>' +
+        equivLine(t) + "<br>" + fxLine(t) + "</td>" +
+      "<td>" + esc(t.pipeline) + "</td>" +
+      "<td>" + esc(t.origin) + " → " + esc(t.destination) + "</td>" +
+      "<td>" + esc(t.grade) + "</td>" +
+      "<td>" + esc(t.commitment) + "</td>" +
+      "<td>" + fvCell(t) + "</td>" +
+      "<td style='white-space:nowrap'>" + esc(t.effective_date || "—") + "</td>" +
+      '<td><span class="status ' + esc(t.status || "") + '">' + esc(t.status || "—") + "</span></td>" +
+      "<td>" + srcCell(t) + "</td></tr>" +
+      detailRow(t);
+  }).join("");
+  tb.querySelectorAll("tr.row").forEach(tr => {
+    tr.addEventListener("click", ev => {
+      if (ev.target.tagName === "A") return;
+      const d = tb.querySelector('tr.detail[data-d="' + tr.dataset.id + '"]');
+      if (d) d.classList.toggle("hidden");
+    });
+  });
+  document.querySelectorAll("thead th[data-k]").forEach(th => {
+    const k = th.dataset.k, arr = th.querySelector(".arr");
+    arr.textContent = (state.sortK === k) ? (state.sortDir === 1 ? " ▲" : " ▼") : "";
+  });
+}
+
+/* ---------- init ---------- */
+function fill(sel, vals){
+  const el = $(sel);
+  vals.forEach(v => { const o = document.createElement("option"); o.value = v; o.textContent = v; el.appendChild(o); });
+}
+function refreshRoutes(){
+  const el = $("f-route"), keep = state.route;
+  el.innerHTML = '<option value="">All routes</option>';
+  const seen = new Set();
+  DATA.tolls.forEach(t => {
+    if (state.pipe && t.pipeline !== state.pipe) return;
+    const r = t.origin + " → " + t.destination;
+    if (!seen.has(r)){ seen.add(r); const o = document.createElement("option"); o.value = r; o.textContent = r; el.appendChild(o); }
+  });
+  el.value = [...seen].includes(keep) ? keep : "";
+  state.route = el.value;
+}
+function init(d){
+  DATA = d;
+  const gen = new Date(d.generated_at);
+  $("vintage").textContent = "Database vintage: " + gen.toISOString().slice(0, 10) +
+    " · " + d.count + " tolls, " + d.pipelines.length + " pipelines · all figures sourced";
+  fill("f-pipe", d.pipelines); fill("f-grade", d.grades);
+  fill("f-commit", d.commitments); fill("f-status", d.statuses);
+  refreshRoutes();
+  const bind = (id, key, after) => $(id).addEventListener("input", e => {
+    state[key] = e.target.value; if (after) after(); render();
+  });
+  bind("q", "q"); bind("f-pipe", "pipe", refreshRoutes); bind("f-route", "route");
+  bind("f-grade", "grade"); bind("f-commit", "commit"); bind("f-status", "status");
+  bind("f-struct", "struct");
+  bind("f-from", "from"); bind("f-to", "to");
+  document.querySelectorAll(".curseg button").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".curseg button").forEach(x => x.classList.remove("on"));
+    b.classList.add("on"); state.cur = b.dataset.cur; render();
+  }));
+  document.querySelectorAll("thead th[data-k]").forEach(th => th.addEventListener("click", () => {
+    const k = th.dataset.k;
+    if (state.sortK === k) state.sortDir *= -1;
+    else { state.sortK = k; state.sortDir = (k === "pipeline" ? 1 : -1); }
+    render();
+  }));
+  $("clear").addEventListener("click", () => {
+    Object.assign(state, {q:"", pipe:"", route:"", grade:"", commit:"", status:"", struct:"", from:"", to:""});
+    ["q","f-pipe","f-route","f-grade","f-commit","f-status","f-struct","f-from","f-to"].forEach(id => $(id).value = "");
+    refreshRoutes(); render();
+  });
+  render();
+}
+fetch("tolls.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(init)
+  .catch(err => {
+    $("vintage").textContent = "Could not load tolls.json (" + err.message + "). " +
+      "Serve this directory over HTTP, e.g. python3 -m http.server, then reload.";
+    $("count").textContent = "0 tolls loaded";
+  });
+$("themetoggle").addEventListener("click", () => {
+  const el = document.documentElement;
+  const next = el.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  el.setAttribute("data-theme", next);
+  try{ localStorage.setItem("hr-theme", next); }catch(e){}
+  $("themetoggle").textContent = next === "dark" ? "Light" : "Dark";
+});
+(function(){ const t = document.documentElement.getAttribute("data-theme");
+  $("themetoggle").textContent = t === "dark" ? "Light" : "Dark"; })();
+</script>
+</body>
+</html>
