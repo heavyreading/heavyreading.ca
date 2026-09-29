@@ -1,18 +1,370 @@
 {
- "vintage": "11 watches; newest source update 2026-09-28; built 2026-09-29",
+ "vintage": "9 watches; newest source update 2026-09-29; built 2026-09-29",
  "data": {
   "watches": [
    {
-    "slug": "hormuz",
-    "title": "Hormuz Watch",
-    "dek": "Tanker movement through the world's most important oil chokepoint: baseline, conflict disruption, and the current transit picture.",
-    "updated": "2026-09-28",
-    "how_to_read": "Read this page as the barrel count behind the price: the Strait of Hormuz carries roughly one-fifth of the world's petroleum liquids, and every transit number here is a proxy for how much of that supply is actually moving. Each bullet carries its vintage, so read the wartime vessel counts against the pre-war baseline of about 20 to 21 million barrels per day, the US Energy Information Administration (EIA) figure for the first half of 2025.",
-    "wcs_stakes": "Hormuz is the world's main sour export artery, and when it closes, the sour barrels Western Canadian Select (WCS) competes with disappear first, which is why Canadian differentials tightened as the war cut Gulf flows. Fewer Iranian, Iraqi, and Saudi sour barrels reaching Asia and Europe forces buyers onto substitute grades, bidding up Mars and other Atlantic Basin sours alongside WCS. If Hormuz transits normalize, the returning sour supply is the fastest way Canadian differentials soften again.",
-    "wcs_closer": "For the WCSB book, Hormuz is the supply-side risk premium inside every WCS print. Vessel counts and the EIA's quarterly volume series tell you whether the chokepoint is loosening before the price does. The moment Gulf sour barrels flow freely again, expect the bid under Canadian heavies to fade with them.",
+    "slug": "middle-east",
+    "title": "Middle East watch",
+    "dek": "One war, three fronts: Iran's sanctioned exports under the naval blockade, tanker movement through the Strait of Hormuz, and Houthi pressure on Red Sea shipping. The fronts move together; this page tracks them together. Every number is either tracker-observed or claimed, never both — bullets say which. When any front tightens, buyers bid up substitute sours and the whole complex firms, supporting Canadian differentials; when they loosen, medium and heavy sours soften.",
+    "updated": "2026-09-29",
+    "how_to_read": null,
+    "wcs_stakes": null,
+    "wcs_closer": "For the WCSB book, watch the floating storage drawdown and the blockade line for how much Iranian sour is coming, vessel counts and the EIA quarterly series for whether Hormuz is loosening before the price does, and Bab el-Mandeb transit counts plus Yanbu loading resumption for the earliest sign Gulf sour is reaching Europe normally again. The moment Gulf sour flows freely on all three fronts, expect the bid under Canadian heavies to fade with it.",
     "sections": [
      {
-      "heading": "Baseline: what normal looked like",
+      "heading": "The latest",
+      "bullets": [
+       {
+        "text": "Bab el-Mandeb traffic fell to 11 commodity-vessel transits on September 27, the lowest in months, after Houthi strikes on Saudi coastal installations; on September 25 the Houthis captured Mayun island at the Red Sea entrance, a key position over the alternative lane for Saudi oil while Hormuz is disrupted.",
+        "vintage": "Sep 25-27, 2026",
+        "source": "Reuters (via MarineLink); The Associated Press",
+        "source_url": "https://www.marinelink.com/news/red-sea-shipping-slows-houthi-attack-541529"
+       },
+       {
+        "text": "Diplomacy stalled: President Trump rejected Iran's seven-day Hormuz reopening proposal on September 26, and the Wall Street Journal reported US officials expect airstrikes to resume after the November midterms.",
+        "vintage": "Sep 26, 2026",
+        "source": "Seoul Economic Daily (citing AFP/Reuters); Wall Street Journal",
+        "source_url": "https://en.sedaily.com/international/2026/09/27/trump-rejects-irans-offer-to-reopen-hormuz-in-seven-days"
+       },
+       {
+        "text": "The recovery split widened: Kpler's September snapshot put regional exports at 12.8 million b/d (highest since February), Hormuz at ~7.4 million b/d and Saudi Arabia at ~5.4 million b/d versus 2.4 million in August, while Iranian crude exports stayed at zero for 60+ days.",
+        "vintage": "Sep 18-23, 2026; accessed 2026-09-29",
+        "source": "Kpler / LSEG / Reuters; TankerTrackers",
+        "source_url": "https://www.assafinaonline.com/en/article/Middle-East-Oil-Exports-Shift-to-New-Shuttling-System"
+       },
+       {
+        "text": "Hormuz transits are rebounding from the floor: Kpler tracked 9 commodity-vessel transits on September 24, and September crude transits month-to-date hit 10.1 million b/d, up ~70% from August and the first time above 10 million b/d since the war began.",
+        "vintage": "Sep 24, 2026",
+        "source": "OilMonster / TradeWinds (citing Kpler)",
+        "source_url": "https://www.tradewindsnews.com/tankers/monthly-hormuz-crude-exports-swing-back-above-10m-barrels-per-day-for-first-time-since-war-s-start/2-1-2050594"
+       },
+       {
+        "text": "Saudi Arabia pushed barrels out the east coast instead: tankers loaded roughly 12 million barrels in 24 hours at Ras Tanura and Juaymah on September 21, the largest single-day Gulf loading surge since the escalation, and the East-West Pipeline to Yanbu restarted September 22 after a nine-day drone-attack shutdown.",
+        "vintage": "Sep 21-23, 2026",
+        "source": "Kpler / TankerTrackers / MarineTraffic (via UAE Vartha); Mettis Global (citing Reuters)",
+        "source_url": "https://english.uaevartha.com/saudi-arabia-surges-oil-shipments-to-near-12-million-barrels-in-single-day-gulf-outflow/"
+       },
+       {
+        "text": "Hormuz stayed violent: the bulk carrier Cape Dao was hit by a projectile on September 23, killing one seafarer, and preliminary Kpler data showed only two commodity vessels crossed the strait on September 21, against ~125 large commercial vessels per day before the war.",
+        "vintage": "Sep 23, 2026",
+        "source": "SAFETY4SEA (citing UKMTO; Kpler data via Reuters)",
+        "source_url": "https://safety4sea.com/seafarer-dead-following-vessel-strike-and-fire-in-strait-of-hormuz/"
+       },
+       {
+        "text": "Freight priced the risk at records: VLCC rates Gulf-to-China surged above $30 per barrel (LSEG's highest on record) and West Asia-China time-charters hit a record $1.27 million a day (LSEG), more than doubling since late August.",
+        "vintage": "Sep 18-24, 2026",
+        "source": "LSEG / Reuters; PressTV (citing Financial Times / Braemar)",
+        "source_url": "https://www.presstv.co.uk/Detail/2026/09/23/776865/Oil-tanker-rates-hit-record--1-2m-a-day-as-US-war-on-Iran-disrupts-shipping"
+       }
+      ]
+     },
+     {
+      "heading": "One war, three fronts",
+      "bullets": [
+       {
+        "text": "Front 1 (The war) covers Iran's sanctioned exports, floating storage, the shadow fleet, and China's buying. Front 2 (Hormuz) covers tanker movement through the chokepoint against its pre-war baseline. Front 3 (Red Sea) covers Houthi pressure on Bab el-Mandeb shipping, Saudi export rerouting, and the Cape of Good Hope diversion.",
+        "vintage": "2026-09-28",
+        "source": "Heavy Reading",
+        "source_url": "https://heavyreading.ca/world/middle-east/index.html"
+       }
+      ]
+     },
+     {
+      "heading": "The war: The blockade timeline",
+      "bullets": [
+       {
+        "text": "Iranian Foreign Minister Abbas Araghchi posted on September 27 that Tehran's conditions remain unchanged and that only a negotiated solution can end the standoff, adding that mediators had not yet formally conveyed a US rejection; a senior Iranian official told Reuters that Tehran will show no flexibility on uranium enrichment.",
+        "vintage": "Sep 27, 2026",
+        "source": "Reuters (via BusinessWorld)",
+        "source_url": "https://bworldonline.com/world/2026/09/27/782141/iran-insists-on-diplomatic-solution-after-trump-rejects-peace-plan/"
+       },
+       {
+        "text": "President Trump said on September 26 that he had rejected the seven-day proposal, which had conditioned reopening Hormuz on a region-wide ceasefire, release of about $12 billion in frozen assets, a waiver of oil sanctions and an end to the US naval blockade; the Wall Street Journal reported US officials expect airstrikes to resume after the November midterms.",
+        "vintage": "Sep 26, 2026",
+        "source": "Seoul Economic Daily (citing AFP/Reuters)",
+        "source_url": "https://en.sedaily.com/international/2026/09/27/trump-rejects-irans-offer-to-reopen-hormuz-in-seven-days"
+       },
+       {
+        "text": "Iranian Foreign Minister Abbas Araghchi detailed a seven-day Hormuz reopening plan in private meetings on the sidelines of the UN General Assembly on September 25: hostilities would end on all fronts including Lebanon within seven days, the US would lift its naval blockade of Iranian ports, release frozen funds and waive oil sanctions, after which nuclear talks would resume. The White House said September 25 it was having positive and constructive conversations with mediators.",
+        "vintage": "Sep 25, 2026",
+        "source": "The Hindu BusinessLine (citing the Associated Press)",
+        "source_url": "https://www.thehindubusinessline.com/news/world/iran-offers-to-reopen-strait-of-hormuz-in-7-days-if-us-lifts-blockade-waives-sanctions/article71510297.ece"
+       },
+       {
+        "text": "A senior Iranian official told Reuters on September 25 that Iran would show no flexibility over its nuclear program even if the United States accepts the Hormuz proposal, and that the waterway would stay closed until all of Iran's conditions are met. Tehran would give no concessions on enriching uranium or shipping highly enriched uranium out of the country, one of the main US demands. President Pezeshkian said he hopes for a deal before the November 3 midterm elections.",
+        "vintage": "Sep 26, 2026",
+        "source": "Reuters (via TBS News)",
+        "source_url": "https://www.tbsnews.net/worldbiz/middle-east/iran-will-make-no-nuclear-concessions-iranian-official-1553941"
+       },
+       {
+        "text": "The US blockade of Iranian ports started April 13, 2026; United Against Nuclear Iran (UANI) measures exports by vessels crossing the blockade line from the eastern point of Oman to the Iran-Pakistan border, exiting the Gulf of Oman, rather than by point of loading.",
+        "vintage": "Reported ~Jun 2026; accessed 2026-09-24",
+        "source": "Seatrade Maritime (citing UANI)",
+        "source_url": "https://www.seatrade-maritime.com/tankers/iran-oil-exports-plunge-over-90-as-us-blockade-bites"
+       },
+       {
+        "text": "Mid-June 2026, the Islamabad memorandum of understanding (MOU) took effect and the US lifted the naval blockade under a sanctions waiver; Iran exported roughly 50 million barrels in the following two weeks (~1.66 million b/d in June, per TankerTrackers), and Iran's parliament speaker put the post-blockade figure above 40 million barrels.",
+        "vintage": "Jul 1, 2026; accessed 2026-09-24",
+        "source": "RFE/RL (via GlobalSecurity)",
+        "source_url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/07/iran-260701-rferl09.htm"
+       },
+       {
+        "text": "In the 26 days after the MOU signing, Iran exported more than 80 million barrels of crude and products, worth over $6 billion at prevailing prices, per TankerTrackers.",
+        "vintage": "Jul 14, 2026; accessed 2026-09-24",
+        "source": "WANA (citing TankerTrackers)",
+        "source_url": "https://wanaen.com/iran-exports-more-than-80-million-barrels-of-oil-in-26-days/"
+       },
+       {
+        "text": "Between the June 14 MOU announcement and July 6, Iran exported roughly 55 million barrels valued above $4.5 billion; pre-war, a typical month was 47-50 million barrels (~$3.05B), so the waiver window generated ~47% more revenue in 22 days than a full pre-war month.",
+        "vintage": "Jul 8, 2026; accessed 2026-09-24",
+        "source": "JINSA (citing TankerTrackers)",
+        "source_url": "https://jinsa.org/wp-content/uploads/2026/07/Oil-For-Tehran-Not-Us-Insight-1.pdf"
+       },
+       {
+        "text": "Washington restored the blockade on July 14, 2026; Kpler, Vortexa and TankerTrackers identified no Iranian crude cargo vessel successfully transiting Hormuz to China after that date.",
+        "vintage": "~Sep 2, 2026; accessed 2026-09-24",
+        "source": "National Security Journal (citing Vortexa, Kpler, Reuters)",
+        "source_url": "https://nationalsecurityjournal.org/iran-still-has-over-a-hundred-million-barrels-of-crude-on-tankers-but-the-stockpile-is-shrinking-fast-under-the-blockade-per-vortexa/"
+       },
+       {
+        "text": "On September 22, 2026, TankerTrackers spotted the first Iranian crude exports in two months: very large crude carriers (VLCCs) Diona (IMO 9569695) and Hero2 (IMO 9362073) plus the Suezmax tanker Sonia I exiting past the blockade line at the east end of the Gulf of Oman; Kpler confirmed four Iran-linked tankers exiting the Gulf of Oman.",
+        "vintage": "Sep 23, 2026; accessed 2026-09-24",
+        "source": "Maritime Executive (citing TankerTrackers, Kpler)",
+        "source_url": "https://maritime-executive.com/article/iranian-tankers-begin-to-move-out-past-u-s-blockade-line"
+       }
+      ]
+     },
+     {
+      "heading": "The war: Exports: what the trackers see",
+      "bullets": [
+       {
+        "text": "Vessel-tracking data showed Iranian crude and condensate loadings averaged just 220,000 to 260,000 b/d in August 2026, down from 1.7 to 2.0 million b/d a year earlier, an over-80 percent collapse. No confirmed Iranian crude cargoes have passed the enforcement line since the US blockade went back up in mid-July, and analysts estimate production could fall to 1.2 to 1.3 million b/d if the blockade holds, near domestic consumption levels.",
+        "vintage": "Reported ~Sep 20, 2026",
+        "source": "Cryptobriefing (citing vessel-tracking data)",
+        "source_url": "https://cryptobriefing.com/iran-oil-loadings-drop-us-blockade/"
+       },
+       {
+        "text": "Iran's seaborne oil exports were 587 million barrels in 2024 (+10.75% y/y); China took 533 million barrels, 91% of the total, up 24% from 2023.",
+        "vintage": "Year-end 2024 review; accessed 2026-09-24",
+        "source": "UANI (via Maritime Executive)",
+        "source_url": "https://maritime-executive.com/article/uani-calls-for-new-enforcement-methods-as-iran-s-oil-exports-grow"
+       },
+       {
+        "text": "Iran exported 666 million barrels in 2025 (+13.5% y/y), with China by far the largest buyer.",
+        "vintage": "Year-end 2025 review; accessed 2026-09-24",
+        "source": "UANI (via Infomarine / Maritime Executive)",
+        "source_url": "https://infomarine.net/en/global-shipping-news/19-world-maritime-news/59577-us-treasury-sanctions-tankers-in-the-name-of-helping-iranian-protestors.html"
+       },
+       {
+        "text": "March 2026 loadings were ~2.0 million b/d; July fell to ~749 kb/d of crude and condensate; August loadings were only ~220-255 kb/d.",
+        "vintage": "~Sep 2, 2026; accessed 2026-09-24",
+        "source": "National Security Journal (citing Vortexa, Kpler, Reuters)",
+        "source_url": "https://nationalsecurityjournal.org/iran-still-has-over-a-hundred-million-barrels-of-crude-on-tankers-but-the-stockpile-is-shrinking-fast-under-the-blockade-per-vortexa/"
+       },
+       {
+        "text": "May 2026 exports by sea were just 2.01 million barrels vs 29.7 million in April (-93%); the May total was four Panamax/Handymax naphtha shipments to China plus limited liquefied petroleum gas (LPG). Very large crude carrier (VLCC) 2-million-barrel crude shipments dropped to zero.",
+        "vintage": "May 2026 data; accessed 2026-09-24",
+        "source": "Seatrade Maritime (citing UANI Tanker Tracker)",
+        "source_url": "https://www.seatrade-maritime.com/tankers/iran-oil-exports-plunge-over-90-as-us-blockade-bites"
+       },
+       {
+        "text": "Iran's pre-war baseline exports were 1.68 million b/d; TankerTrackers estimated they had fallen to zero by early September 2026 and could remain there 'for the foreseeable future' depending on any agreement.",
+        "vintage": "Sep 6, 2026; accessed 2026-09-24",
+        "source": "RFE/RL (citing TankerTrackers)",
+        "source_url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260906-rferl03.htm"
+       },
+       {
+        "text": "Iranian state media claimed August 2026 oil exports above $3 billion, the highest monthly figure in two years, sharply at odds with tracker estimates of ~220-255 kb/d loaded that month; treat as claimed, not tracked.",
+        "vintage": "Sep 19, 2026; accessed 2026-09-24",
+        "source": "StoryChase (citing Iranian state media)",
+        "source_url": "https://storychase.co/news/irans-august-oil-exports-hit-two-year-peak-despite-sanctions-pressure/"
+       },
+       {
+        "text": "For the first time in two months, aggregate crude exports out of the US blockade line by Iraq, Kuwait, Saudi Arabia, Qatar, the UAE and Oman averaged north of 10 million b/d; Iranian crude exports remained at zero, with 'not a single barrel of crude oil' coming out of Iran over the past 60 days.",
+        "vintage": "Sep 2026; accessed 2026-09-29",
+        "source": "TankerTrackers (own Telegram channel)",
+        "source_url": null
+       },
+       {
+        "text": "Middle East crude exports were down 39% in August versus a January-February baseline of 18.5 million b/d; the shortfall from that baseline narrowed to 7.2 million b/d, from a peak deficit of 12.4 million in May when exports were down 67%.",
+        "vintage": "Sep 6, 2026; accessed 2026-09-29",
+        "source": "TankerTrackers (via RFE/RL live blog)",
+        "source_url": null
+       },
+       {
+        "text": "Vortexa's own write-up (Sep 15) put Iranian crude loadings at around 210 kb/d in August, the lowest since 2020 and down from roughly 2 million b/d earlier in 2026 — and said the barrels still loading are not translating into fresh Iranian crude clearing the Gulf. The 210 kb/d (Vortexa, crude-only) and the 220,000-255,000 b/d (Reuters aggregation of Kpler, Vortexa and TankerTrackers, crude plus condensate) describe the same August; the gap is condensate, not a disagreement.",
+        "vintage": "Sep 15, 2026; accessed 2026-09-29",
+        "source": "Vortexa",
+        "source_url": null
+       },
+       {
+        "text": "On whether any Iranian oil is actually getting out, the three trackers agree: Kpler, Vortexa and TankerTrackers all report no Iranian crude cargo has cleared Hormuz for China since the blockade was reinstated on July 14 (Reuters, Sep 1). The '210k vs zero' gap is loadings-versus-cleared-cargoes — different measures, same story.",
+        "vintage": "Sep 1-29, 2026; accessed 2026-09-29",
+        "source": "Reuters (Kpler, Vortexa, TankerTrackers estimates)",
+        "source_url": null
+       }
+      ]
+     },
+     {
+      "heading": "The war: Floating storage",
+      "bullets": [
+       {
+        "text": "Iranian floating crude was ~29 million barrels on September 8, 2026, down from ~90 million in mid-July, the blockade drew down pre-war floating stock by roughly two-thirds (Kpler, via WSJ).",
+        "vintage": "Sep 8, 2026; accessed 2026-09-24",
+        "source": "WSJ via Kpler (compiled in Oil Depletion Report)",
+        "source_url": "https://github.com/mattcone/depletion-ledger/blob/HEAD/research/Oil-Depletion-Report.md"
+       },
+       {
+        "text": "Vortexa's broader measure, all Iranian crude stored aboard tankers, fell from ~135 million barrels at end-July to ~107 million by August 26; Iran is drawing down crude that had already cleared the blockade without replacing it.",
+        "vintage": "~Sep 2, 2026; accessed 2026-09-24",
+        "source": "National Security Journal (citing Vortexa)",
+        "source_url": "https://nationalsecurityjournal.org/iran-still-has-over-a-hundred-million-barrels-of-crude-on-tankers-but-the-stockpile-is-shrinking-fast-under-the-blockade-per-vortexa/"
+       },
+       {
+        "text": "Iran sold about 9 million barrels (~$900M) out of floating storage in the Gulf of Oman, vessels already clear of Iranian ports when enforcement began, hence outside the blockade's reach.",
+        "vintage": "~Sep 10, 2026; accessed 2026-09-24",
+        "source": "Maritime Executive (citing TankerTrackers)",
+        "source_url": "https://maritime-executive.com/article/iran-continues-to-sell-oil-out-of-its-floating-storage-reserve"
+       },
+       {
+        "text": "TankerTrackers estimated ~30 million barrels of Iranian crude awaiting export in mid-July, with ~60 million barrels of floating storage capacity available in surrounding waters as a buffer if production faced restrictions.",
+        "vintage": "Jul 14, 2026; accessed 2026-09-24",
+        "source": "WANA (citing TankerTrackers)",
+        "source_url": "https://wanaen.com/iran-exports-more-than-80-million-barrels-of-oil-in-26-days/"
+       },
+       {
+        "text": "Iranian crude in floating storage west of the blockade line stood at 41.7 million barrels by Aug 26, as loadings continued while nothing cleared.",
+        "vintage": "Sep 1, 2026; accessed 2026-09-29",
+        "source": "Reuters (Kpler, Vortexa, TankerTrackers estimates)",
+        "source_url": null
+       },
+       {
+        "text": "An estimated 40-50 million barrels of Iranian oil remained on the water in Asia, with Chinese discharges running near 1 million b/d — Tehran selling from already-cleared floating storage it cannot replenish.",
+        "vintage": "~Sep 12, 2026; accessed 2026-09-29",
+        "source": "Kpler (via Iran International)",
+        "source_url": null
+       },
+       {
+        "text": "27 sanctioned tankers were waiting off Sri Lanka in ballast, part of the shadow fleet left idle by the blockade.",
+        "vintage": "Sep 18-23, 2026; accessed 2026-09-29",
+        "source": "Kpler / LSEG / Reuters",
+        "source_url": null
+       }
+      ]
+     },
+     {
+      "heading": "The war: What grades are stuck, and what unwinds first",
+      "bullets": [
+       {
+        "text": "Iran's export stream is medium and heavy sour crude: Iran Light (medium sour, American Petroleum Institute (API) gravity 33.6, 1.46% sulfur) and Iran Heavy (heavy sour, API gravity about 29.5, sulfur about 1.77%), per National Iranian Oil Company (NIOC) assays reported by S&P Global Platts.",
+        "vintage": "Sep 2023",
+        "source": "Hellenic Shipping News (citing S&P Global Platts)",
+        "source_url": "https://www.hellenicshippingnews.com/china-independent-oil-refiners-shift-to-sanctioned-iranian-crude-gives-world-breathing-space/"
+       },
+       {
+        "text": "China's independent refiners buy mainly Iran Light and some Iran Heavy. They crack Iran Light directly in their crude distillation units; Iran Heavy has to be blended with lighter grades first.",
+        "vintage": "Mar 2024",
+        "source": "Hellenic Shipping News",
+        "source_url": "https://www.hellenicshippingnews.com/irans-crude-production-upside-faces-risk-of-further-western-sanctions/"
+       },
+       {
+        "text": "Iran Light is a direct substitute for Russian Urals in China's teapot refineries (independent refiners): similar medium sour specs (Iran Light 33.6 API and 1.46% sulfur vs Urals 31.7 API and 1.19%), and teapot sources say Iranian barrels suit their units better than Russian ones.",
+        "vintage": "Sep 2023",
+        "source": "Hellenic Shipping News",
+        "source_url": "https://www.hellenicshippingnews.com/china-independent-oil-refiners-shift-to-sanctioned-iranian-crude-gives-world-breathing-space/"
+       },
+       {
+        "text": "Scarcity is already pricing in: Kpler reported Iran Light flipping from a $3.50 per barrel discount to a $3.50 premium over Intercontinental Exchange (ICE) Brent within a week as available floating cargoes thinned.",
+        "vintage": "Aug 2026",
+        "source": "OilPrice.com (citing Kpler)",
+        "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Iranian-Oil-Supply-to-China-Is-Rapidly-Drying-Up.html"
+       },
+       {
+        "text": "Kpler put total Iranian crude outside the Persian Gulf and Gulf of Oman at about 83 million barrels, with about 40 million at Singapore's Eastern Outer Port Limits (EOPL) anchorage, but only about 4 million barrels of that still unsold. An unwind would mostly deliver already-sold cargoes, not flood the spot market.",
+        "vintage": "Aug 2026",
+        "source": "OilPrice.com (citing Kpler)",
+        "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Iranian-Oil-Supply-to-China-Is-Rapidly-Drying-Up.html"
+       },
+       {
+        "text": "The reroute path back is Kharg Island loadings, transit through the Gulf of Oman, ship-to-ship transfer at EOPL Malaysia, delivery to Shandong teapots. Kpler notes teapots have been substituting Russian Urals and fuel oil while Iranian barrels were blocked, with the Eastern Siberia-Pacific Ocean (ESPO) blend sold out weeks in advance.",
+        "vintage": "Aug 2026",
+        "source": "OilPrice.com (citing Kpler)",
+        "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Teapots-Look-Beyond-Iranian-Oil-amid-US-Blockade.html"
+       },
+       {
+        "text": "So the grades hit hardest by a return are medium and heavy sours: Russian Urals first (direct teapot substitute), then the wider medium-sour complex. Light sweets are less exposed, though record ESPO premiums of $20 to $30 per barrel over Brent would also ease.",
+        "vintage": "Sep 2026",
+        "source": "Reuters via Baird Maritime, Sep 2026",
+        "source_url": "https://www.bairdmaritime.com/shipping/tankers/china-demand-pushes-russias-espo-crude-past-120-a-barrel"
+       }
+      ]
+     },
+     {
+      "heading": "The war: The shadow fleet",
+      "bullets": [
+       {
+        "text": "No fresh sanctions designations on shadow-fleet vessels or entities appeared from the US Treasury's Office of Foreign Assets Control, the European Union, the United Kingdom, or the United Nations in the past week, per sanctions tracker Eagle Intelligence, leaving the enforcement picture flat even as Hormuz tensions raised tanker insurance costs.",
+        "vintage": "Sep 25, 2026",
+        "source": "Eagle Intelligence",
+        "source_url": "https://eagleintelmari.com/news/eagle-sanctions-watch-2026-09-25"
+       },
+       {
+        "text": "Tracking data showed the tankers Tifani and Majestic X, seized by US forces in April, sailing along Brazil's northern coast while the June-seized Lenore rounded the Cape of Good Hope into the Atlantic, carrying nearly 6 million barrels of Iranian crude worth about $600 million toward the United States for expected forfeiture.",
+        "vintage": "Sep 26, 2026",
+        "source": "gCaptain (citing Bloomberg)",
+        "source_url": "https://gcaptain.com/seized-iranian-oil-tankers-head-toward-u-s-with-600-million-cargo/"
+       },
+       {
+        "text": "UANI's 'ghost armada' reached 560 tracked tankers at end-2025 after 83 new vessels were identified during the year; of 180 tankers sanctioned in 2025, 108 had been previously identified by UANI.",
+        "vintage": "Year-end 2025 review; accessed 2026-09-24",
+        "source": "UANI (via Infomarine / Maritime Executive)",
+        "source_url": "https://infomarine.net/en/global-shipping-news/19-world-maritime-news/59577-us-treasury-sanctions-tankers-in-the-name-of-helping-iranian-protestors.html"
+       },
+       {
+        "text": "TankerTrackers identified two US-sanctioned tankers in ballast that penetrated the blockade inbound for Iran with Automatic Identification System (AIS) transponders on; the US Navy claims 13 Iranian tankers have been turned back so far.",
+        "vintage": "~Sep 10, 2026; accessed 2026-09-24",
+        "source": "Maritime Executive (citing TankerTrackers)",
+        "source_url": "https://maritime-executive.com/article/iran-continues-to-sell-oil-out-of-its-floating-storage-reserve"
+       },
+       {
+        "text": "During the June waiver window, 30+ tankers carrying 50M+ barrels of Iranian crude headed for Asia (Kpler); UANI separately tracked ~15 large Iranian-registered tankers departing Iranian ports with Automatic Identification System (AIS) transponders switched on, a break from dark-fleet practice. For years, cargoes were masked via ship-to-ship (STS) transfers at Malaysia's Eastern Outer Port Limits (EOPL) before continuing to Asia.",
+        "vintage": "~Jun 24, 2026; accessed 2026-09-24",
+        "source": "MarineInsight (citing Kpler, UANI)",
+        "source_url": "https://www.marineinsight.com/over-30-iranian-oil-tankers-carrying-50-million-barrels-head-to-asia-under-u-s-sanctions-waiver/"
+       },
+       {
+        "text": "Treasury Secretary Bessent said the US sent warning letters to banks in China, Hong Kong, the UAE and Oman over continued Iranian-oil business, threatening secondary sanctions, 'the financial equivalent of a bomb' on Iran's oil sales system.",
+        "vintage": "~Sep 10, 2026; accessed 2026-09-24",
+        "source": "Maritime Executive (citing TankerTrackers)",
+        "source_url": "https://maritime-executive.com/article/iran-continues-to-sell-oil-out-of-its-floating-storage-reserve"
+       }
+      ]
+     },
+     {
+      "heading": "The war: China: the buyer of last resort",
+      "bullets": [
+       {
+        "text": "China imported ~431 million barrels of Iranian oil in 2023 (over 80% of Iran's exports), rising to ~533 million in 2024 (over 91%), largely via ghost-fleet tankers offloading through intermediaries before reaching China.",
+        "vintage": "Testimony Apr 1, 2025; accessed 2026-09-24",
+        "source": "Claire Jungman, UANI (House Foreign Affairs testimony)",
+        "source_url": "https://docs.house.gov/meetings/FA/FA00/20250401/118069/HHRG-119-FA00-Wstate-JungmanC-20250401.pdf"
+       },
+       {
+        "text": "Treasury Secretary Bessent said June 29, 2026 that despite the US lifting sanctions on Iranian oil, no country except China had bought at a discount, others held back fearing sanctions snapback.",
+        "vintage": "Jul 1, 2026; accessed 2026-09-24",
+        "source": "RFE/RL (via GlobalSecurity)",
+        "source_url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/07/iran-260701-rferl09.htm"
+       },
+       {
+        "text": "China is expected to remain the biggest buyer via independent refiners; UANI's Charlie Brown noted it was unclear whether exporters would abandon the established EOPL ship-to-ship transfer networks even under the waiver.",
+        "vintage": "~Jun 24, 2026; accessed 2026-09-24",
+        "source": "MarineInsight (citing UANI)",
+        "source_url": "https://www.marineinsight.com/over-30-iranian-oil-tankers-carrying-50-million-barrels-head-to-asia-under-u-s-sanctions-waiver/"
+       }
+      ]
+     },
+     {
+      "heading": "Hormuz: Baseline: what normal looked like",
       "bullets": [
        {
         "text": "EIA estimated oil flows through the Strait of Hormuz averaged 20.9 million b/d in the first half of 2025, roughly 15 million b/d of crude oil and condensate plus about 5.5 million b/d of refined petroleum products.",
@@ -71,7 +423,7 @@
       ]
      },
      {
-      "heading": "The current escalation (reported)",
+      "heading": "Hormuz: The current escalation (reported)",
       "bullets": [
        {
         "text": "Foreign Minister Abbas Araghchi said on NBC's Meet the Press that Iran is fully prepared for the war to resume, even a doomsday war, while remaining ready for diplomacy; CNN reported the White House rejected the proposal because it doubts Tehran is negotiating in good faith.",
@@ -80,28 +432,10 @@
         "source_url": "https://kioncentralcoast.com/news/national-world/cnn-world/2026/09/26/trump-rejects-irans-latest-proposal-to-reopen-the-strait-of-hormuz/"
        },
        {
-        "text": "Iranian Foreign Minister Abbas Araghchi said on September 27 that Tehran's conditions for reopening the strait are unchanged and that he had received nothing from mediators Qatar and Pakistan since the United States rejected the plan, insisting only a negotiated solution can end the standoff.",
-        "vintage": "Sep 27, 2026",
-        "source": "Bloomberg (via BusinessMirror)",
-        "source_url": "https://businessmirror.com.ph/2026/09/27/iran-says-wont-soften-demands-after-trump-rejects-hormuz-proposal/"
-       },
-       {
         "text": "President Trump told reporters on September 26 that he had rejected Iran's seven-day proposal to reopen the strait, saying Tehran wants a deal because it is losing badly under the US naval blockade and calling the blockade the greatest in military history.",
         "vintage": "Sep 26, 2026",
         "source": "Seoul Economic Daily (citing AFP/Reuters)",
         "source_url": "https://en.sedaily.com/international/2026/09/27/trump-rejects-irans-offer-to-reopen-hormuz-in-seven-days"
-       },
-       {
-        "text": "Iranian Foreign Minister Abbas Araghchi presented a seven-day proposal at the United Nations General Assembly on September 25, transmitted to Washington through Qatar: Iran would reopen the Strait of Hormuz to normal maritime passage and resume nuclear talks within seven days if the United States ends the naval blockade, waives sanctions on Iranian oil, releases at least $12 billion in frozen assets, and holds a ceasefire on all fronts, including Lebanon and Yemen.",
-        "vintage": "Sep 25, 2026",
-        "source": "The Hindu BusinessLine (citing the Associated Press)",
-        "source_url": "https://www.thehindubusinessline.com/news/world/iran-offers-to-reopen-strait-of-hormuz-in-7-days-if-us-lifts-blockade-waives-sanctions/article71510297.ece"
-       },
-       {
-        "text": "The Wall Street Journal reported on September 26 that President Trump rejected Iran's seven-day Hormuz proposal, telling aides he doubts Tehran will meet his demands and expects a renewed bombing campaign after the November midterms.",
-        "vintage": "Sep 26, 2026",
-        "source": "Wall Street Journal (via mappr.co)",
-        "source_url": "https://www.mappr.co/strait-of-hormuz-crisis-2026/"
        },
        {
         "text": "Two tankers were attacked on the Omani side of the Strait of Hormuz, four nautical miles off Khasab on the Musandam Peninsula: about four projectiles hit the two vessels at roughly 1910 UTC, one caught fire and the other's status was unknown, according to a report UKMTO received from a nearby vessel's master. Iran has not claimed responsibility.",
@@ -160,7 +494,7 @@
       ]
      },
      {
-      "heading": "Now vs normal: the transit picture",
+      "heading": "Hormuz: Now vs normal: the transit picture",
       "bullets": [
        {
         "text": "Kpler tracked nine Hormuz commodity-vessel transits on September 24, down from 14 the day before and below the 10-day average of about 18; Kpler estimated 33.7 million barrels of crude exported in the week beginning September 20, with 17 of the 19 crude tankers tracked that week being very large crude carriers, which is why barrel flows can run ahead of vessel counts.",
@@ -245,11 +579,59 @@
         "vintage": "Sep 18–19, 2026; accessed 2026-09-23",
         "source": "The DeepDraft SITREP (Sep 19, 2026)",
         "source_url": "https://thedeepdraft.com/2026/09/19/hormuz-tanker-attacks-saudi-crude-vlcc-rates-september-19-2026/"
+       },
+       {
+        "text": "TankerTrackers' Sep 14-15 satellite imagery analysis said the strait 'now hosts bi-directional daytime traffic of VLCC supertankers' and that 'greater volumes of crude oil, LNG and LPG are being exchanged via STS transfer in the Gulf of Oman' (no vessel count given). The same day it reported Saudi Arabia had loaded 8.7 million barrels at its east-coast terminals that day — a loading figure, not a Hormuz transit figure.",
+        "vintage": "Sep 15, 2026; accessed 2026-09-29",
+        "source": "TankerTrackers (Sep 15, 2026 post)",
+        "source_url": null
+       },
+       {
+        "text": "TankerTrackers identified at least 56 tankers running 'dark' in August — AIS transponders off, visible only via satellite — shuttling Hormuz to Gulf-of-Oman ship-to-ship transfers and back for another load, moving GCC/Arab-state exports under US military protection, not Iran's shadow fleet. Do not conflate with Iran's separate 56-vessel blacklist for unauthorized Hormuz transits, an Iranian toll/enforcement list (same number by coincidence).",
+        "vintage": "Aug 8-9, 2026; accessed 2026-09-29",
+        "source": "TankerTrackers (via Iran International / Middle East Eye)",
+        "source_url": null
+       },
+       {
+        "text": "On Gulf ship-to-ship volumes the trackers are directionally aligned but measure different universes: Vortexa's published Sep 21 note put crude-on-VLCC STS from ports west of Hormuz at around 6 million b/d since end-August (about three VLCC pairs starting STS daily), with operations stretching to nearly 10 days from 5-7 and queues worsening; outlets quoting TankerTrackers put all-transfer STS at about 7.15 million b/d over the 14 days to mid-September, up 56% month-on-month (secondhand — treat as an estimate until the direct post is captured); Kpler's narrower Gulf-of-Oman STS read was about 2.5 million b/d for September versus 1.4 million in August. Editorial: Vortexa's is the firmest published figure; all three agree STS has surged to multi-million-b/d scale.",
+        "vintage": "Sep 17-24, 2026; accessed 2026-09-29",
+        "source": "Vortexa (Sep 21 note); TankerTrackers (via outlets); Kpler",
+        "source_url": null
+       },
+       {
+        "text": "The 5-million-b/d East-West Petroline to Yanbu was knocked offline by drone strikes — one account dates them to Sep 10, another to Sep 13 — and Yanbu loading halted from Sep 11. Aramco pivoted to eastern sea lanes, offering about 60 million barrels of Ras Tanura crude for Sep-Oct delivery via a two-tier shuttle: smaller tankers to Sohar, Oman, then ship-to-ship transfers onto deep-draft vessels for Asia. US CENTCOM said its forces had assisted about 2,000 commercial transits and moved over 1 billion barrels of Gulf oil over the prior couple of months.",
+        "vintage": "Sep 2026; accessed 2026-09-29",
+        "source": "Reuters (via UAE Vartha); CENTCOM (via Assafina)",
+        "source_url": null
+       },
+       {
+        "text": "Kpler's Homayoun Falakshahi (~Sep 12): 'It's exactly the opposite scenario compared to the beginning of the war where Iran could export its oil but the neighbors couldn't... And now it's actually the contrary. Iran cannot export new oil.' Hormuz crude-and-condensate flows recovered to around two-thirds of pre-war volumes (Goldman Sachs), roughly 70% on Kpler's broader read; the UAE contrast: shipments back within 0.02% of pre-war, running 3.7-4.3 million b/d June through September versus a March crater of about 1.9-2.13 million b/d.",
+        "vintage": "~Sep 12, 2026; accessed 2026-09-29",
+        "source": "Kpler (via Iran International); Goldman Sachs",
+        "source_url": null
+       },
+       {
+        "text": "On the Saudi September rebound the trackers agree: Kpler's September snapshot put Saudi exports at about 5.4 million b/d; Bloomberg ship-tracking had 5.28 million b/d for Sep 1-23. The Sep 21 east-coast surge reads 12-14 million barrels in 24 hours at Ras Tanura and Juaymah — Kpler counted six VLCCs, TankerTrackers seven supertankers — the largest single-day Gulf loading surge since the escalation; Saudi exports ran past 4 million b/d in mid-September from August's 2.4 million trough.",
+        "vintage": "Sep 18-26, 2026; accessed 2026-09-29",
+        "source": "Kpler; Bloomberg ship-tracking; TankerTrackers (via UAE Vartha)",
+        "source_url": null
+       },
+       {
+        "text": "Kpler's September Hormuz figures look scattered until sorted by definition: about 7 million b/d of crude for the full week before Sep 20 (49.2 million barrels), 10.1 million b/d crude month-to-date, and above 13.5 million b/d all-liquids on a 7-day average (Sep 26). Same tracker, different windows and product universes — read the window before comparing.",
+        "vintage": "Sep 20-26, 2026; accessed 2026-09-29",
+        "source": "Kpler (via Reuters; Commodity Context)",
+        "source_url": null
+       },
+       {
+        "text": "Asia's Middle East imports ran 12.56 million b/d in September, still 3.53 million b/d below the pre-conflict average.",
+        "vintage": "Sep 18-23, 2026; accessed 2026-09-29",
+        "source": "Kpler (via UAE Vartha)",
+        "source_url": null
        }
       ]
      },
      {
-      "heading": "Freight, insurance, and price knock-ons",
+      "heading": "Hormuz: Freight, insurance, and price knock-ons",
       "bullets": [
        {
         "text": "Brent closed the September 21-25 trading week at about $105.40 a barrel, up roughly 1.4 percent on the week, while WTI fell about 3.3 percent to roughly $92.90, as Houthi strikes on Saudi Aramco facilities and stop-start US-Iran negotiations pulled the two benchmarks in different directions.",
@@ -294,318 +676,10 @@
         "source_url": "https://www.iea.org/reports/oil-market-report-september-2026"
        }
       ]
-     }
-    ],
-    "bullets": null,
-    "gaps": [
-     "Day-to-day vessel transit counts change constantly; Kpler/Vortexa snapshots cited are date-specific.",
-     "The Sep 21 struck tanker's name and flag were not released by UKMTO at time of reporting.",
-     "Whether the Sep 22 LNG tanker strike is independently confirmed beyond UKMTO/DPA reporting.",
-     "EIA's next scheduled World Oil Transit Chokepoints update date was not found.",
-     "Exact current daily barrel flow (vs vessel counts), trackers report vessels; EIA's quarterly volume series lags by months.",
-     "Two outlets report EIA's Q1 2026 Hormuz figure as 14.9 million b/d rather than 14.6; the decomposed breakdown (10.7 crude plus 3.9 products) sums to 14.6, which is used here.",
-     "US Energy Secretary Chris Wright said on Fox News that Hormuz flows were averaging almost 13 million b/d with a single day above 20 million; single-outlet report, not corroborated against tracker data, so it is not used in the table."
-    ]
-   },
-   {
-    "slug": "iran",
-    "title": "Iran watch",
-    "dek": "Iranian oil exports under sanctions and naval blockade: tanker-tracked export estimates, floating storage, grades and rerouting, the shadow fleet, and China's buying. Every figure carries its vintage.",
-    "updated": "2026-09-28",
-    "how_to_read": "Read this page as the sanctioned sour barrel: Iran's exports are the largest single pool of distressed medium and heavy sour crude, and every number here is either tracker-observed or claimed, never both. Bullets say which, so treat Iranian state media figures as claims and tanker-tracker figures as observations.",
-    "wcs_stakes": "Iran is the marginal sour barrel in Asia: its exports land in the same Chinese teapot refineries that buy the Urals and other grades competing with Western Canadian Select (WCS). When Iranian barrels are blocked, teapots bid up substitute sours and the whole sour complex firms, supporting Canadian differentials; when the blockade loosens and Iranian crude flows again, medium and heavy sours soften first. The floating storage stockpile is the leading indicator: it is supply that can move without a single new barrel being produced.",
-    "wcs_closer": "For the WCSB book, watch the floating storage drawdown and the blockade line: they tell you how much Iranian sour is coming before any official announcement. A sustained return of Iranian barrels would pressure the medium and heavy sour grades that price off Urals first, and Canadian heavies would feel it at the margin. The Iran Light premium flipping from discount to premium shows how fast the sour complex reprices when barrels vanish.",
-    "sections": [
-     {
-      "heading": "The blockade timeline",
-      "bullets": [
-       {
-        "text": "Iranian Foreign Minister Abbas Araghchi posted on September 27 that Tehran's conditions remain unchanged and that only a negotiated solution can end the standoff, adding that mediators had not yet formally conveyed a US rejection; a senior Iranian official told Reuters that Tehran will show no flexibility on uranium enrichment.",
-        "vintage": "Sep 27, 2026",
-        "source": "Reuters (via BusinessWorld)",
-        "source_url": "https://bworldonline.com/world/2026/09/27/782141/iran-insists-on-diplomatic-solution-after-trump-rejects-peace-plan/"
-       },
-       {
-        "text": "President Trump said on September 26 that he had rejected the seven-day proposal, which had conditioned reopening Hormuz on a region-wide ceasefire, release of about $12 billion in frozen assets, a waiver of oil sanctions and an end to the US naval blockade; the Wall Street Journal reported US officials expect airstrikes to resume after the November midterms.",
-        "vintage": "Sep 26, 2026",
-        "source": "Seoul Economic Daily (citing AFP/Reuters)",
-        "source_url": "https://en.sedaily.com/international/2026/09/27/trump-rejects-irans-offer-to-reopen-hormuz-in-seven-days"
-       },
-       {
-        "text": "Iranian Foreign Minister Abbas Araghchi detailed a seven-day Hormuz reopening plan in private meetings on the sidelines of the UN General Assembly on September 25: hostilities would end on all fronts including Lebanon within seven days, the US would lift its naval blockade of Iranian ports, release frozen funds and waive oil sanctions, after which nuclear talks would resume. The White House said September 25 it was having positive and constructive conversations with mediators.",
-        "vintage": "Sep 25, 2026",
-        "source": "The Hindu BusinessLine (citing the Associated Press)",
-        "source_url": "https://www.thehindubusinessline.com/news/world/iran-offers-to-reopen-strait-of-hormuz-in-7-days-if-us-lifts-blockade-waives-sanctions/article71510297.ece"
-       },
-       {
-        "text": "A senior Iranian official told Reuters on September 25 that Iran would show no flexibility over its nuclear program even if the United States accepts the Hormuz proposal, and that the waterway would stay closed until all of Iran's conditions are met. Tehran would give no concessions on enriching uranium or shipping highly enriched uranium out of the country, one of the main US demands. President Pezeshkian said he hopes for a deal before the November 3 midterm elections.",
-        "vintage": "Sep 26, 2026",
-        "source": "Reuters (via TBS News)",
-        "source_url": "https://www.tbsnews.net/worldbiz/middle-east/iran-will-make-no-nuclear-concessions-iranian-official-1553941"
-       },
-       {
-        "text": "The current war was triggered February 28, 2026 by joint US and Israeli strikes on Iran; Iran responded by closing commercial access to Hormuz. The US blockaded Iranian ports from April 13.",
-        "vintage": "Reported Sep 2026; accessed 2026-09-24",
-        "source": "Hormuz watch (Heavy Reading)",
-        "source_url": "https://heavyreading.ca/world/hormuz/index.html"
-       },
-       {
-        "text": "The US blockade of Iranian ports started April 13, 2026; United Against Nuclear Iran (UANI) measures exports by vessels crossing the blockade line from the eastern point of Oman to the Iran-Pakistan border, exiting the Gulf of Oman, rather than by point of loading.",
-        "vintage": "Reported ~Jun 2026; accessed 2026-09-24",
-        "source": "Seatrade Maritime (citing UANI)",
-        "source_url": "https://www.seatrade-maritime.com/tankers/iran-oil-exports-plunge-over-90-as-us-blockade-bites"
-       },
-       {
-        "text": "Mid-June 2026, the Islamabad memorandum of understanding (MOU) took effect and the US lifted the naval blockade under a sanctions waiver; Iran exported roughly 50 million barrels in the following two weeks (~1.66 million b/d in June, per TankerTrackers), and Iran's parliament speaker put the post-blockade figure above 40 million barrels.",
-        "vintage": "Jul 1, 2026; accessed 2026-09-24",
-        "source": "RFE/RL (via GlobalSecurity)",
-        "source_url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/07/iran-260701-rferl09.htm"
-       },
-       {
-        "text": "In the 26 days after the MOU signing, Iran exported more than 80 million barrels of crude and products, worth over $6 billion at prevailing prices, per TankerTrackers.",
-        "vintage": "Jul 14, 2026; accessed 2026-09-24",
-        "source": "WANA (citing TankerTrackers)",
-        "source_url": "https://wanaen.com/iran-exports-more-than-80-million-barrels-of-oil-in-26-days/"
-       },
-       {
-        "text": "Between the June 14 MOU announcement and July 6, Iran exported roughly 55 million barrels valued above $4.5 billion; pre-war, a typical month was 47-50 million barrels (~$3.05B), so the waiver window generated ~47% more revenue in 22 days than a full pre-war month.",
-        "vintage": "Jul 8, 2026; accessed 2026-09-24",
-        "source": "JINSA (citing TankerTrackers)",
-        "source_url": "https://jinsa.org/wp-content/uploads/2026/07/Oil-For-Tehran-Not-Us-Insight-1.pdf"
-       },
-       {
-        "text": "Washington restored the blockade on July 14, 2026; Kpler, Vortexa and TankerTrackers identified no Iranian crude cargo vessel successfully transiting Hormuz to China after that date.",
-        "vintage": "~Sep 2, 2026; accessed 2026-09-24",
-        "source": "National Security Journal (citing Vortexa, Kpler, Reuters)",
-        "source_url": "https://nationalsecurityjournal.org/iran-still-has-over-a-hundred-million-barrels-of-crude-on-tankers-but-the-stockpile-is-shrinking-fast-under-the-blockade-per-vortexa/"
-       },
-       {
-        "text": "On September 22, 2026, TankerTrackers spotted the first Iranian crude exports in two months: very large crude carriers (VLCCs) Diona (IMO 9569695) and Hero2 (IMO 9362073) plus the Suezmax tanker Sonia I exiting past the blockade line at the east end of the Gulf of Oman; Kpler confirmed four Iran-linked tankers exiting the Gulf of Oman.",
-        "vintage": "Sep 23, 2026; accessed 2026-09-24",
-        "source": "Maritime Executive (citing TankerTrackers, Kpler)",
-        "source_url": "https://maritime-executive.com/article/iranian-tankers-begin-to-move-out-past-u-s-blockade-line"
-       }
-      ]
      },
      {
-      "heading": "Exports: what the trackers see",
+      "heading": "Red Sea: September 2026 escalation",
       "bullets": [
-       {
-        "text": "Vessel-tracking data showed Iranian crude and condensate loadings averaged just 220,000 to 260,000 b/d in August 2026, down from 1.7 to 2.0 million b/d a year earlier, an over-80 percent collapse. No confirmed Iranian crude cargoes have passed the enforcement line since the US blockade went back up in mid-July, and analysts estimate production could fall to 1.2 to 1.3 million b/d if the blockade holds, near domestic consumption levels.",
-        "vintage": "Reported ~Sep 20, 2026",
-        "source": "Cryptobriefing (citing vessel-tracking data)",
-        "source_url": "https://cryptobriefing.com/iran-oil-loadings-drop-us-blockade/"
-       },
-       {
-        "text": "Iran's seaborne oil exports were 587 million barrels in 2024 (+10.75% y/y); China took 533 million barrels, 91% of the total, up 24% from 2023.",
-        "vintage": "Year-end 2024 review; accessed 2026-09-24",
-        "source": "UANI (via Maritime Executive)",
-        "source_url": "https://maritime-executive.com/article/uani-calls-for-new-enforcement-methods-as-iran-s-oil-exports-grow"
-       },
-       {
-        "text": "Iran exported 666 million barrels in 2025 (+13.5% y/y), with China by far the largest buyer.",
-        "vintage": "Year-end 2025 review; accessed 2026-09-24",
-        "source": "UANI (via Infomarine / Maritime Executive)",
-        "source_url": "https://infomarine.net/en/global-shipping-news/19-world-maritime-news/59577-us-treasury-sanctions-tankers-in-the-name-of-helping-iranian-protestors.html"
-       },
-       {
-        "text": "March 2026 loadings were ~2.0 million b/d; July fell to ~749 kb/d of crude and condensate; August loadings were only ~220-255 kb/d.",
-        "vintage": "~Sep 2, 2026; accessed 2026-09-24",
-        "source": "National Security Journal (citing Vortexa, Kpler, Reuters)",
-        "source_url": "https://nationalsecurityjournal.org/iran-still-has-over-a-hundred-million-barrels-of-crude-on-tankers-but-the-stockpile-is-shrinking-fast-under-the-blockade-per-vortexa/"
-       },
-       {
-        "text": "May 2026 exports by sea were just 2.01 million barrels vs 29.7 million in April (-93%); the May total was four Panamax/Handymax naphtha shipments to China plus limited liquefied petroleum gas (LPG). Very large crude carrier (VLCC) 2-million-barrel crude shipments dropped to zero.",
-        "vintage": "May 2026 data; accessed 2026-09-24",
-        "source": "Seatrade Maritime (citing UANI Tanker Tracker)",
-        "source_url": "https://www.seatrade-maritime.com/tankers/iran-oil-exports-plunge-over-90-as-us-blockade-bites"
-       },
-       {
-        "text": "Iran's pre-war baseline exports were 1.68 million b/d; TankerTrackers estimated they had fallen to zero by early September 2026 and could remain there 'for the foreseeable future' depending on any agreement.",
-        "vintage": "Sep 6, 2026; accessed 2026-09-24",
-        "source": "RFE/RL (citing TankerTrackers)",
-        "source_url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260906-rferl03.htm"
-       },
-       {
-        "text": "Iranian state media claimed August 2026 oil exports above $3 billion, the highest monthly figure in two years, sharply at odds with tracker estimates of ~220-255 kb/d loaded that month; treat as claimed, not tracked.",
-        "vintage": "Sep 19, 2026; accessed 2026-09-24",
-        "source": "StoryChase (citing Iranian state media)",
-        "source_url": "https://storychase.co/news/irans-august-oil-exports-hit-two-year-peak-despite-sanctions-pressure/"
-       }
-      ]
-     },
-     {
-      "heading": "Floating storage",
-      "bullets": [
-       {
-        "text": "Iranian floating crude was ~29 million barrels on September 8, 2026, down from ~90 million in mid-July, the blockade drew down pre-war floating stock by roughly two-thirds (Kpler, via WSJ).",
-        "vintage": "Sep 8, 2026; accessed 2026-09-24",
-        "source": "WSJ via Kpler (compiled in Oil Depletion Report)",
-        "source_url": "https://github.com/mattcone/depletion-ledger/blob/HEAD/research/Oil-Depletion-Report.md"
-       },
-       {
-        "text": "Vortexa's broader measure, all Iranian crude stored aboard tankers, fell from ~135 million barrels at end-July to ~107 million by August 26; Iran is drawing down crude that had already cleared the blockade without replacing it.",
-        "vintage": "~Sep 2, 2026; accessed 2026-09-24",
-        "source": "National Security Journal (citing Vortexa)",
-        "source_url": "https://nationalsecurityjournal.org/iran-still-has-over-a-hundred-million-barrels-of-crude-on-tankers-but-the-stockpile-is-shrinking-fast-under-the-blockade-per-vortexa/"
-       },
-       {
-        "text": "Iran sold about 9 million barrels (~$900M) out of floating storage in the Gulf of Oman, vessels already clear of Iranian ports when enforcement began, hence outside the blockade's reach.",
-        "vintage": "~Sep 10, 2026; accessed 2026-09-24",
-        "source": "Maritime Executive (citing TankerTrackers)",
-        "source_url": "https://maritime-executive.com/article/iran-continues-to-sell-oil-out-of-its-floating-storage-reserve"
-       },
-       {
-        "text": "TankerTrackers estimated ~30 million barrels of Iranian crude awaiting export in mid-July, with ~60 million barrels of floating storage capacity available in surrounding waters as a buffer if production faced restrictions.",
-        "vintage": "Jul 14, 2026; accessed 2026-09-24",
-        "source": "WANA (citing TankerTrackers)",
-        "source_url": "https://wanaen.com/iran-exports-more-than-80-million-barrels-of-oil-in-26-days/"
-       }
-      ]
-     },
-     {
-      "heading": "What grades are stuck, and what unwinds first",
-      "bullets": [
-       {
-        "text": "Iran's export stream is medium and heavy sour crude: Iran Light (medium sour, American Petroleum Institute (API) gravity 33.6, 1.46% sulfur) and Iran Heavy (heavy sour, API gravity about 29.5, sulfur about 1.77%), per National Iranian Oil Company (NIOC) assays reported by S&P Global Platts.",
-        "vintage": "Sep 2023",
-        "source": "Hellenic Shipping News (citing S&P Global Platts)",
-        "source_url": "https://www.hellenicshippingnews.com/china-independent-oil-refiners-shift-to-sanctioned-iranian-crude-gives-world-breathing-space/"
-       },
-       {
-        "text": "China's independent refiners buy mainly Iran Light and some Iran Heavy. They crack Iran Light directly in their crude distillation units; Iran Heavy has to be blended with lighter grades first.",
-        "vintage": "Mar 2024",
-        "source": "Hellenic Shipping News",
-        "source_url": "https://www.hellenicshippingnews.com/irans-crude-production-upside-faces-risk-of-further-western-sanctions/"
-       },
-       {
-        "text": "Iran Light is a direct substitute for Russian Urals in China's teapot refineries (independent refiners): similar medium sour specs (Iran Light 33.6 API and 1.46% sulfur vs Urals 31.7 API and 1.19%), and teapot sources say Iranian barrels suit their units better than Russian ones.",
-        "vintage": "Sep 2023",
-        "source": "Hellenic Shipping News",
-        "source_url": "https://www.hellenicshippingnews.com/china-independent-oil-refiners-shift-to-sanctioned-iranian-crude-gives-world-breathing-space/"
-       },
-       {
-        "text": "Scarcity is already pricing in: Kpler reported Iran Light flipping from a $3.50 per barrel discount to a $3.50 premium over Intercontinental Exchange (ICE) Brent within a week as available floating cargoes thinned.",
-        "vintage": "Aug 2026",
-        "source": "OilPrice.com (citing Kpler)",
-        "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Iranian-Oil-Supply-to-China-Is-Rapidly-Drying-Up.html"
-       },
-       {
-        "text": "Kpler put total Iranian crude outside the Persian Gulf and Gulf of Oman at about 83 million barrels, with about 40 million at Singapore's Eastern Outer Port Limits (EOPL) anchorage, but only about 4 million barrels of that still unsold. An unwind would mostly deliver already-sold cargoes, not flood the spot market.",
-        "vintage": "Aug 2026",
-        "source": "OilPrice.com (citing Kpler)",
-        "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Iranian-Oil-Supply-to-China-Is-Rapidly-Drying-Up.html"
-       },
-       {
-        "text": "The reroute path back is Kharg Island loadings, transit through the Gulf of Oman, ship-to-ship transfer at EOPL Malaysia, delivery to Shandong teapots. Kpler notes teapots have been substituting Russian Urals and fuel oil while Iranian barrels were blocked, with the Eastern Siberia-Pacific Ocean (ESPO) blend sold out weeks in advance.",
-        "vintage": "Aug 2026",
-        "source": "OilPrice.com (citing Kpler)",
-        "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Teapots-Look-Beyond-Iranian-Oil-amid-US-Blockade.html"
-       },
-       {
-        "text": "So the grades hit hardest by a return are medium and heavy sours: Russian Urals first (direct teapot substitute), then the wider medium-sour complex. Light sweets are less exposed, though record ESPO premiums of $20 to $30 per barrel over Brent would also ease.",
-        "vintage": "Sep 2026",
-        "source": "Reuters via Baird Maritime, Sep 2026",
-        "source_url": "https://www.bairdmaritime.com/shipping/tankers/china-demand-pushes-russias-espo-crude-past-120-a-barrel"
-       }
-      ]
-     },
-     {
-      "heading": "The shadow fleet",
-      "bullets": [
-       {
-        "text": "No fresh sanctions designations on shadow-fleet vessels or entities appeared from the US Treasury's Office of Foreign Assets Control, the European Union, the United Kingdom, or the United Nations in the past week, per sanctions tracker Eagle Intelligence, leaving the enforcement picture flat even as Hormuz tensions raised tanker insurance costs.",
-        "vintage": "Sep 25, 2026",
-        "source": "Eagle Intelligence",
-        "source_url": "https://eagleintelmari.com/news/eagle-sanctions-watch-2026-09-25"
-       },
-       {
-        "text": "Tracking data showed the tankers Tifani and Majestic X, seized by US forces in April, sailing along Brazil's northern coast while the June-seized Lenore rounded the Cape of Good Hope into the Atlantic, carrying nearly 6 million barrels of Iranian crude worth about $600 million toward the United States for expected forfeiture.",
-        "vintage": "Sep 26, 2026",
-        "source": "gCaptain (citing Bloomberg)",
-        "source_url": "https://gcaptain.com/seized-iranian-oil-tankers-head-toward-u-s-with-600-million-cargo/"
-       },
-       {
-        "text": "Bloomberg reported that the seized tankers Tiffany and Majestic X, both carrying Iranian crude, were tracked sailing along the Brazilian coast over the past week and are most likely headed for the United States, after several course changes since their seizure by US forces in April. The tanker Lenore, seized in the Indian Ocean in June, was spotted rounding the Cape of Good Hope west across the Atlantic; the combined cargo value of the three could reach $600 million.",
-        "vintage": "Sep 26, 2026",
-        "source": "Bloomberg (via SE Daily)",
-        "source_url": "https://en.sedaily.com/international/2026/09/26/iran-says-hormuz-could-reopen-in-seven-days-if-us-meets"
-       },
-       {
-        "text": "UANI's 'ghost armada' reached 560 tracked tankers at end-2025 after 83 new vessels were identified during the year; of 180 tankers sanctioned in 2025, 108 had been previously identified by UANI.",
-        "vintage": "Year-end 2025 review; accessed 2026-09-24",
-        "source": "UANI (via Infomarine / Maritime Executive)",
-        "source_url": "https://infomarine.net/en/global-shipping-news/19-world-maritime-news/59577-us-treasury-sanctions-tankers-in-the-name-of-helping-iranian-protestors.html"
-       },
-       {
-        "text": "TankerTrackers identified two US-sanctioned tankers in ballast that penetrated the blockade inbound for Iran with Automatic Identification System (AIS) transponders on; the US Navy claims 13 Iranian tankers have been turned back so far.",
-        "vintage": "~Sep 10, 2026; accessed 2026-09-24",
-        "source": "Maritime Executive (citing TankerTrackers)",
-        "source_url": "https://maritime-executive.com/article/iran-continues-to-sell-oil-out-of-its-floating-storage-reserve"
-       },
-       {
-        "text": "During the June waiver window, 30+ tankers carrying 50M+ barrels of Iranian crude headed for Asia (Kpler); UANI separately tracked ~15 large Iranian-registered tankers departing Iranian ports with Automatic Identification System (AIS) transponders switched on, a break from dark-fleet practice. For years, cargoes were masked via ship-to-ship (STS) transfers at Malaysia's Eastern Outer Port Limits (EOPL) before continuing to Asia.",
-        "vintage": "~Jun 24, 2026; accessed 2026-09-24",
-        "source": "MarineInsight (citing Kpler, UANI)",
-        "source_url": "https://www.marineinsight.com/over-30-iranian-oil-tankers-carrying-50-million-barrels-head-to-asia-under-u-s-sanctions-waiver/"
-       },
-       {
-        "text": "Treasury Secretary Bessent said the US sent warning letters to banks in China, Hong Kong, the UAE and Oman over continued Iranian-oil business, threatening secondary sanctions, 'the financial equivalent of a bomb' on Iran's oil sales system.",
-        "vintage": "~Sep 10, 2026; accessed 2026-09-24",
-        "source": "Maritime Executive (citing TankerTrackers)",
-        "source_url": "https://maritime-executive.com/article/iran-continues-to-sell-oil-out-of-its-floating-storage-reserve"
-       }
-      ]
-     },
-     {
-      "heading": "China: the buyer of last resort",
-      "bullets": [
-       {
-        "text": "China imported ~431 million barrels of Iranian oil in 2023 (over 80% of Iran's exports), rising to ~533 million in 2024 (over 91%), largely via ghost-fleet tankers offloading through intermediaries before reaching China.",
-        "vintage": "Testimony Apr 1, 2025; accessed 2026-09-24",
-        "source": "Claire Jungman, UANI (House Foreign Affairs testimony)",
-        "source_url": "https://docs.house.gov/meetings/FA/FA00/20250401/118069/HHRG-119-FA00-Wstate-JungmanC-20250401.pdf"
-       },
-       {
-        "text": "Treasury Secretary Bessent said June 29, 2026 that despite the US lifting sanctions on Iranian oil, no country except China had bought at a discount, others held back fearing sanctions snapback.",
-        "vintage": "Jul 1, 2026; accessed 2026-09-24",
-        "source": "RFE/RL (via GlobalSecurity)",
-        "source_url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/07/iran-260701-rferl09.htm"
-       },
-       {
-        "text": "China is expected to remain the biggest buyer via independent refiners; UANI's Charlie Brown noted it was unclear whether exporters would abandon the established EOPL ship-to-ship transfer networks even under the waiver.",
-        "vintage": "~Jun 24, 2026; accessed 2026-09-24",
-        "source": "MarineInsight (citing UANI)",
-        "source_url": "https://www.marineinsight.com/over-30-iranian-oil-tankers-carrying-50-million-barrels-head-to-asia-under-u-s-sanctions-waiver/"
-       }
-      ]
-     }
-    ],
-    "bullets": null,
-    "gaps": [
-     "Kpler and Vortexa publish different floating-storage scopes (Kpler ~29M bbl of floating crude Sep 8 vs Vortexa ~107M bbl of crude aboard tankers Aug 26); the two are not directly comparable, definitional difference, not a data conflict.",
-     "Iranian state media claimed August 2026 exports above $3B, a two-year high, while Vortexa/Kpler tracked only ~220-255 kb/d loaded that month, claimed vs tracked, unresolved.",
-     "The exact count of sanctioned vessels laden vs in ballast changes daily; no public source publishes it continuously."
-    ]
-   },
-   {
-    "slug": "redsea",
-    "title": "Red Sea Watch",
-    "dek": "Houthi pressure on Red Sea shipping: Bab el-Mandeb transit, territorial control, and the Cape of Good Hope diversion.",
-    "updated": "2026-09-28",
-    "how_to_read": "Read this page as the routing risk behind the sour price: the Red Sea and Bab el-Mandeb decide whether Gulf crude reaches Europe and Asia on time or diverts around the Cape of Good Hope at record freight. Houthi claims are carried as claims, not confirmed incidents, and each bullet says which. Vessel counts are proxies for volume, and the quarterly official series lags.",
-    "wcs_stakes": "The Red Sea is the back door for Gulf sour barrels to Europe and the long way around to Asia, so its closure pushes those barrels onto longer routes at record freight and pushes European refiners onto substitute sours. That substitution is what keeps the bid under Atlantic Basin heavies like Mars and Western Canadian Select (WCS) while Yanbu loadings are suspended. If the East-West pipeline restart holds and Bab el-Mandeb transits recover, European sour demand normalizes and the support under WCS fades.",
-    "wcs_closer": "For the WCSB book, the Red Sea is freight and substitution: watch Bab el-Mandeb transit counts and Yanbu loading resumption for the earliest sign that Gulf sour is reaching Europe normally again. While the reroute persists, record very large crude carrier (VLCC) rates keep delivered sour expensive and Canadian barrels relatively bid. The pipeline restart is fragile, so treat the recovery as a signal, not a settlement.",
-    "sections": [
-     {
-      "heading": "September 2026 escalation",
-      "bullets": [
-       {
-        "text": "Kpler data showed commodity-vessel transits through Bab el-Mandeb fell to 11 on September 27, the lowest level in months, as Red Sea traffic slowed after Houthi attacks on Saudi coastal installations, though two very large crude carriers were still inbound to Yanbu to load crude.",
-        "vintage": "Sep 27, 2026",
-        "source": "Reuters (via MarineLink)",
-        "source_url": "https://www.marinelink.com/news/red-sea-shipping-slows-houthi-attack-541529"
-       },
        {
         "text": "Saudi authorities ordered Riyadh schools to switch to remote learning for a week after Saudi air defenses said they intercepted Houthi drones aimed at the capital and ballistic missiles targeting Khamis Mushait; a Houthi political bureau member described the raid as a small-scale rehearsal for a full escalation.",
         "vintage": "Sep 27, 2026",
@@ -669,7 +743,7 @@
       ]
      },
      {
-      "heading": "Freight, routing, and price knock-ons",
+      "heading": "Red Sea: Freight, routing, and price knock-ons",
       "bullets": [
        {
         "text": "Brent rose more than 3 percent on September 24, briefly topping $108 a barrel, before easing to $105.77 on September 25 morning, as Houthi strikes on Yanbu added pressure on Saudi Arabia's oil exports; analysts said crude would likely stay above $100 a barrel as long as the war on Iran continued.",
@@ -710,7 +784,7 @@
       ]
      },
      {
-      "heading": "International response",
+      "heading": "Red Sea: International response",
       "bullets": [
        {
         "text": "Saudi Foreign Minister Prince Faisal bin Farhan arrived in Washington on September 28 for talks with Secretary of State Marco Rubio, as Riyadh seeks US help against the Houthis; Reuters sources said Washington agreed to intelligence and targeting support while declining to launch strikes itself.",
@@ -725,13 +799,13 @@
         "source_url": "https://northlandnewsradio.com/2026/09/25/pakistan-saudi-turkish-chiefs-discuss-closer-military-ties/"
        },
        {
-        "text": "France confirmed on September 25 it will send troops, radars and air-defense systems to guard the oil terminal at Yanbu; separately, the foreign ministers of Saudi Arabia, Pakistan and Turkey arranged an urgent meeting of military chiefs under the Mecca Joint Defence Agreement, which treats an attack on one member as an attack on all.",
+        "text": "France confirmed on September 25 it will send troops, radars and air-defense systems to guard the oil terminal at Yanbu.",
         "vintage": "Sep 25, 2026",
         "source": "Al Jazeera",
         "source_url": "https://www.genocidewatch.com/single-post/saudi-allies-line-up-support-as-houthi-attacks-mount"
        },
        {
-        "text": "Yemen's Saudi-led coalition said early on September 26 it intercepted two ballistic missiles and two drones launched by the Houthis toward the kingdom, the missiles headed for Khamis Mushait and the drones for Riyadh. Saudi Arabia's military chiefs met in Riyadh with allies Pakistan and Turkey to review threats.",
+        "text": "Yemen's Saudi-led coalition said early on September 26 it intercepted two ballistic missiles and two drones launched by the Houthis toward the kingdom, the missiles headed for Khamis Mushait and the drones for Riyadh.",
         "vintage": "Sep 26, 2026",
         "source": "Reuters (via WNCY)",
         "source_url": "https://wncy.com/2026/09/25/saudi-says-it-intercepted-2-drones-launched-by-houthis-towards-riyadh/"
@@ -745,7 +819,7 @@
       ]
      },
      {
-      "heading": "Baseline: Bab el-Mandeb in 2026",
+      "heading": "Red Sea: Baseline: Bab el-Mandeb in 2026",
       "bullets": [
        {
         "text": "Weekly transit volume through the Bab el-Mandeb Strait grew from 1.1 million to 1.5 million metric tons (roughly 32 to 38 vessel transits) between January and July 2026 as Hormuz disruption pushed traffic south, but contracted to 25 weekly transits carrying about 750,000 metric tons after Houthi missile strikes resumed in July; for scale, pre-October 2023 traffic averaged about 80 vessels and 3.4 million metric tons per week, so Red Sea shipping is still below a third of its old normal.",
@@ -758,6 +832,16 @@
     ],
     "bullets": null,
     "gaps": [
+     "Kpler and Vortexa publish different floating-storage scopes (Kpler ~29M bbl of floating crude Sep 8 vs Vortexa ~107M bbl of crude aboard tankers Aug 26); the two are not directly comparable, definitional difference, not a data conflict.",
+     "Iranian state media claimed August 2026 exports above $3B, a two-year high, while Vortexa/Kpler tracked only ~220-255 kb/d loaded that month, claimed vs tracked, unresolved.",
+     "The exact count of sanctioned vessels laden vs in ballast changes daily; no public source publishes it continuously.",
+     "Day-to-day vessel transit counts change constantly; Kpler/Vortexa snapshots cited are date-specific.",
+     "The Sep 21 struck tanker's name and flag were not released by UKMTO at time of reporting.",
+     "Whether the Sep 22 LNG tanker strike is independently confirmed beyond UKMTO/DPA reporting.",
+     "EIA's next scheduled World Oil Transit Chokepoints update date was not found.",
+     "Exact current daily barrel flow (vs vessel counts), trackers report vessels; EIA's quarterly volume series lags by months.",
+     "Two outlets report EIA's Q1 2026 Hormuz figure as 14.9 million b/d rather than 14.6; the decomposed breakdown (10.7 crude plus 3.9 products) sums to 14.6, which is used here.",
+     "US Energy Secretary Chris Wright said on Fox News that Hormuz flows were averaging almost 13 million b/d with a single day above 20 million; single-outlet report, not corroborated against tracker data, so it is not used in the table.",
      "No single verified series for daily Bab el-Mandeb oil volume in September 2026, trackers report vessel counts, EIA reports quarterly volumes with a lag.",
      "Houthi merchant-ship count claims (408 ships Sep 11–21) are self-reported and not independently verified.",
      "Exact per-route freight surcharge pass-through to delivered crude prices is estimated, not measured.",
