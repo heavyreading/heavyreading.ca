@@ -527,6 +527,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   .stat .v { font-size:25px; }
   figure.chart { overflow-x:auto; -webkit-overflow-scrolling:touch; }
   figure.chart svg { min-width:600px; }
+  figure.chart .lg svg { min-width:0; }
   .fcols { grid-template-columns:repeat(2,1fr); }
   .searchbox input { max-width:none; }
   .seclist { grid-template-columns:1fr; }
@@ -593,7 +594,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Supply</p><a class="mg-link" href="supply/index.html">Supply hub</a><a class="mg-link" href="st3-dashboard.html">Projected ST3</a><a class="mg-link" href="scorecard.html">Scorecard</a><a class="mg-link" href="balance/index.html">S&amp;D balance</a><a class="mg-link" href="maintenance/index.html">Maintenance</a><a class="mg-link" href="projects/index.html">All projects</a><a class="mg-link" href="apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="world/china-imports/index.html">China imports</a><a class="mg-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="world/sour/index.html">The global sour barrel</a><a class="mg-link" href="venezuela/index.html">Venezuela watch</a><a class="mg-link" href="world/trump/index.html">Trump watch</a><a class="mg-link" href="world/index.html">World</a></div>
       <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-09-29/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Whale watch</p><a class="mg-link" href="whale-watch.html">Whale watch</a></div>
+      <div class="mnav-sec"><a class="mg-link" href="whale-watch.html">Whale watch</a></div>
       <div class="mnav-sec"><p class="mnav-label">Tolls</p><a class="mg-link" href="tolls/index.html">Toll search</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
       </div>
@@ -670,69 +671,77 @@ details.now-det summary{cursor:pointer;color:var(--mut);font-size:.88rem;
 
 <section class="now-sec" aria-label="Overnight changes">
 <h2>Overnight changes, ranked by balance impact</h2>
-<p class="sec-sub">Ranked by estimated absolute impact on the Western Canadian
-Sedimentary Basin (WCSB) supply/demand balance, not by how dramatic the news
-reads. kb/d means thousand barrels per day (mb/d means million). Figures are
-the publication's own arithmetic on public inputs, stated as estimates.</p>
+<p class="sec-sub">Ranked by estimated balance impact times confirmation
+confidence on the Western Canadian Sedimentary Basin (WCSB) supply/demand
+balance, not by how dramatic the news reads: a big but unverified item ranks
+below a smaller confirmed one. kb/d means thousand barrels per day (mb/d
+means million). Figures are the publication's own arithmetic on public
+inputs, stated as estimates.</p>
 
 <article class="chg-card">
 <div class="chg-top"><span class="chg-rank">1</span>
-<span class="chg-title">Joliet's restart awaits confirmation</span></div>
-<p class="chg-delta">restart status awaiting public confirmation</p>
-<p class="chg-body">Quantum Commodity Intelligence headlines ExxonMobil's Joliet, Illinois refinery back in service as of about Sep 28, but that article is paywalled and no independent non-paywalled confirmation has surfaced. ExxonMobil's last public word (Sep 18) said the refinery was restarting with no date. The ~275 kb/d heavy-crude buyer has been offline since the Sep 13 power outage; Chicago wholesale prices already fell 25-40 cents on the assumption of a restart, not on confirmed rates. While the refinery is offline the Western Canadian Select (WCS) discount to West Texas Intermediate (WTI) stays wide and weak; a confirmed restart is the classic snap-tighter catalyst.</p>
-<p class="chg-balance"><b>Balance read:</b> If the confirmation lands, ~275 kb/d of WCS demand is back and the discount could narrow quickly in the near-term months. If it does not, the discount stays under pressure.</p>
-<div class="chips"><span class="chip">Sep 28, 2026</span>
-<span class="chip src">Quantum Commodity Intelligence headline (paywalled)</span></div>
-
-</article>
-<article class="chg-card">
-<div class="chg-top"><span class="chg-rank">2</span>
 <span class="chg-title">BP Whiting union talks today</span></div>
 <p class="chg-delta">talks reconvene Sep 29</p>
 <p class="chg-body">BP Whiting talks with United Steelworkers (USW) Local 7-1 reconvene today (Sep 29). BP called the last session constructive, but the lockout of about 800 workers has been running since Mar 19. BP's other refineries have kept normal operations through the lockout; a walkout at Whiting would cut the single largest PADD 2 demand point for heavy sour crude.</p>
 <p class="chg-balance"><b>Balance read:</b> A settlement removes the strike wildcard from WCS; a walkout is the mirror image of Joliet — a demand step-off that widens the discount.</p>
-<div class="chips"><span class="chip">Sep 29, 2026</span>
+<p class="chg-cond"><b>Model conditional:</b> Settlement → the strike wildcard is removed. Walkout → demand steps off at the single largest PADD 2 demand point for heavy sour crude. No dollar translation: the differential model is uncalibrated pending licensed marks, so no model-implied $Y exists.</p>
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Sep 29, 2026</span>
 <span class="chip src">Company disclosures</span></div>
 
 </article>
 <article class="chg-card">
-<div class="chg-top"><span class="chg-rank">3</span>
+<div class="chg-top"><span class="chg-rank">2</span>
 <span class="chg-title">Stalled diplomacy lifts crude; the curve says the tightness is near-term</span></div>
 <p class="chg-delta">Brent ~$107, WTI ~$94; ~$7.50/mo backwardation</p>
 <p class="chg-body">Trump rejected Iran's proposed seven-day Hormuz reopening offer but said the conflict could end soon, and talks continue this week. Monday settled Brent at $105.28 and WTI at $92.60; Tuesday morning trade has Brent near $107 and WTI near $94, a second straight up day. The curve reads acute: about $7.50/month of backwardation between Brent November and December — physical tightness now, normalization further out.</p>
 <p class="chg-balance"><b>Balance read:</b> Crude is up on stalled diplomacy; the curve says the tightness is near-term. This is flat-price noise for the WCS differential until it changes refinery runs or freight.</p>
-<div class="chips"><span class="chip">Sep 28-29, 2026</span>
+
+<div class="chips"><span class="chip conf">single source</span><span class="chip">Sep 28-29, 2026</span>
 <span class="chip src">Reuters wire via secondary outlets</span></div>
 
 </article>
 <article class="chg-card">
-<div class="chg-top"><span class="chg-rank">4</span>
+<div class="chg-top"><span class="chg-rank">3</span>
 <span class="chg-title">Premium moves into freight; Houthi escalation vs Yanbu</span></div>
 <p class="chg-delta">inside-Hormuz freight >$22/bbl vs ~$2 a year ago</p>
 <p class="chg-body">Hormuz traffic remains 75-90% below pre-conflict levels (UK Maritime Trade Operations, UKMTO), but flows keep healing through expensive ship-to-ship transfers: Middle East exports recovered to about 12.8 million b/d in September, and Saudi September exports are running at more than twice August levels. Freight is doing the work of the war: VLCC rates over $1 million/day and inside-Hormuz freight over $22/bbl vs about $2 a year ago. On the escalation track, the Houthis fired missiles toward Khamis Mushait and drones toward Riyadh over the weekend (all intercepted), claimed attacks on two Saudi tankers in the Red Sea, and France pledged military help defending Yanbu.</p>
 <p class="chg-balance"><b>Balance read:</b> The Middle East premium has moved into freight: barrels leak out through costly workarounds while Hormuz transits stay suppressed. Houthi escalation keeps Yanbu — the bypass's own terminus — under fire.</p>
-<div class="chips"><span class="chip">Sep 25-29, 2026</span>
+
+<div class="chips"><span class="chip conf">single source</span><span class="chip">Sep 25-29, 2026</span>
 <span class="chip src">UKMTO / wire reporting</span></div>
 
 </article>
 <article class="chg-card">
-<div class="chg-top"><span class="chg-rank">5</span>
-<span class="chg-title">Ukraine strikes continue; Putin signs refinery-data decree</span></div>
-<p class="chg-delta">Gasoil margins ~$95/bbl; data decree Sep 28</p>
-<p class="chg-body">Ukrainian drones hit four fuel facilities in the Krasnodar region overnight, continuing a refining-strike wave into a global distillate market at record stress: Intercontinental Exchange (ICE) gasoil margins near $95/bbl vs a ~$74 August average, and New York Harbor ultra-low-sulfur diesel (NYH ULSD) at a record $113.48 on Sep 16. Separately, Putin signed a Sep 28 decree restricting public access to Russian refinery and export data (volumes, prices, vessels, routes) to complicate Western sanctions enforcement — an official 10-day window exists to define the scope of what goes dark.</p>
-<p class="chg-balance"><b>Balance read:</b> Distillate-led tightness is constructive for synthetic crude over WCS into winter. The oil read on Putin's decree is the shrinking visibility window on Russian flows, not a price call.</p>
-<div class="chips"><span class="chip">Sep 28-29, 2026</span>
-<span class="chip src">Wire services</span></div>
+<div class="chg-top"><span class="chg-rank">4</span>
+<span class="chg-title">Joliet's restart awaits confirmation</span></div>
+<p class="chg-delta">restart status awaiting public confirmation</p>
+<p class="chg-body">Quantum Commodity Intelligence headlines ExxonMobil's Joliet, Illinois refinery back in service as of about Sep 28, but that article is paywalled and no independent non-paywalled confirmation has surfaced. ExxonMobil's last public word (Sep 18) said the refinery was restarting with no date. The ~275 kb/d heavy-crude buyer has been offline since the Sep 13 power outage; Chicago wholesale prices already fell 25-40 cents on the assumption of a restart, not on confirmed rates. While the refinery is offline the Western Canadian Select (WCS) discount to West Texas Intermediate (WTI) stays wide and weak; a confirmed restart is the classic snap-tighter catalyst.</p>
+<p class="chg-balance"><b>Balance read:</b> If the confirmation lands, ~275 kb/d of WCS demand is back and the discount could narrow quickly in the near-term months. If it does not, the discount stays under pressure.</p>
+<p class="chg-cond"><b>Model conditional:</b> Joliet confirmed → ~275 kb/d of PADD 2 heavy-crude demand back. No dollar translation: the differential model is uncalibrated pending licensed marks, so no model-implied $Y exists.</p>
+<div class="chips"><span class="chip conf">paywalled single source</span><span class="chip">Sep 28, 2026</span>
+<span class="chip src">Quantum Commodity Intelligence headline (paywalled)</span></div>
 
 </article>
 <article class="chg-card">
-<div class="chg-top"><span class="chg-rank">6</span>
+<div class="chg-top"><span class="chg-rank">5</span>
 <span class="chg-title">Positioning: WTI crowded long, Brent de-risked</span></div>
 <p class="chg-delta">WTI 96th percentile; Brent specs cut ~23%</p>
 <p class="chg-body">Speculators in WTI are net long 101,828 contracts (Commodity Futures Trading Commission data), the 96th percentile of the one-year range: a crowded long that would have to unwind if prices fall. In ICE Brent, speculators hold 218,114 net long contracts after cutting about 23% of their longs in a week; that book is already de-risked.</p>
 <p class="chg-balance"><b>Balance read:</b> A de-escalation headline hurts the crowded WTI longs most; fresh escalation could drive a WTI catch-up rally, since WTI lags Brent by about $11.9.</p>
-<div class="chips"><span class="chip">as of Sep 22, 2026</span>
+
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">as of Sep 22, 2026</span>
 <span class="chip src">CFTC/ICE positioning</span></div>
+
+</article>
+<article class="chg-card">
+<div class="chg-top"><span class="chg-rank">6</span>
+<span class="chg-title">Ukraine strikes continue; Putin signs refinery-data decree</span></div>
+<p class="chg-delta">Gasoil margins ~$95/bbl; data decree Sep 28</p>
+<p class="chg-body">Ukrainian drones hit four fuel facilities in the Krasnodar region overnight, continuing a refining-strike wave into a global distillate market at record stress: Intercontinental Exchange (ICE) gasoil margins near $95/bbl vs a ~$74 August average, and New York Harbor ultra-low-sulfur diesel (NYH ULSD) at a record $113.48 on Sep 16. Separately, Putin signed a Sep 28 decree restricting public access to Russian refinery and export data (volumes, prices, vessels, routes) to complicate Western sanctions enforcement — an official 10-day window exists to define the scope of what goes dark.</p>
+<p class="chg-balance"><b>Balance read:</b> Distillate-led tightness is constructive for synthetic crude over WCS into winter. The oil read on Putin's decree is the shrinking visibility window on Russian flows, not a price call.</p>
+
+<div class="chips"><span class="chip conf">single source</span><span class="chip">Sep 28-29, 2026</span>
+<span class="chip src">Wire services</span></div>
 
 </article>
 <article class="chg-card">
@@ -741,7 +750,8 @@ the publication's own arithmetic on public inputs, stated as estimates.</p>
 <p class="chg-delta">-5,874 lots (WCS); -2,259 lots (SW)</p>
 <p class="chg-body">Our Commitments of Traders (COT) model flags high-confidence commercial-sized net-short builds on the ICE WCS 1A and ICE SW 1A differentials: 5,874 lots on WCS, 2,259 on SW. That fits trade houses hedging export economics or producers selling into the rally ahead of Joliet's return. Probable, never fact.</p>
 <p class="chg-balance"><b>Balance read:</b> Trade houses and producers look to be hedging the Canadian differentials into Joliet's return, but that attribution is inferred, not confirmed.</p>
-<div class="chips"><span class="chip">as of Sep 22, 2026</span>
+
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">as of Sep 22, 2026</span>
 <span class="chip src">In-house COT model</span></div>
 
 </article>
@@ -751,7 +761,8 @@ the publication's own arithmetic on public inputs, stated as estimates.</p>
 <p class="chg-delta">TMX 90% contractible; October apportionment 8%/4%</p>
 <p class="chg-body">The Canada Energy Regulator (CER) approved Trans Mountain's negotiated toll settlement Monday, ending an 18-month dispute; up to 90% of 890 kb/d can now be contracted firm, with the optimization program targeting 1.19 MMb/d by late 2028. Near-term, Enbridge's October Mainline apportionment (official notice, Sep 16) is binding: 8% on Line 2/93 lights and 4% on Line 4/67/93 heavies at Kerrobert, plus 7% on Line 1 refined volumes at Regina (FPA) and 3% at Kerrobert (SPA). CER June data: Keystone at 94% of available capacity, Mainline excluding Gretna at 94.5%; implied spare takeaway about 272 kb/d.</p>
 <p class="chg-balance"><b>Balance read:</b> Medium-term egress certainty: the contractible share of Trans Mountain rises from 80% to 90% of 890 kb/d. Near-term, Mainline apportionment binds: extra barrels clear through price (wider differentials, deeper cuts), not through spare capacity.</p>
-<div class="chips"><span class="chip">Sep 28, 2026; Sep 16, 2026</span>
+
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Sep 28, 2026; Sep 16, 2026</span>
 <span class="chip src">CER decision; Enbridge Connecting Pipelines notice</span></div>
 
 </article>
@@ -761,7 +772,8 @@ the publication's own arithmetic on public inputs, stated as estimates.</p>
 <p class="chg-delta">Merey offers -$18/-$20 vs Brent; freight ~$3.5M per voyage</p>
 <p class="chg-body">Venezuelan Merey is being offered at $18-20/bbl under Brent into the US and Europe, with traders seeking steeper discounts as tanker costs squeeze margins: Jose-to-USGC Aframax freight is near $3.5 million per voyage (~$5-7/bbl equivalent). US imports of Venezuelan crude ran 583 kb/d in the week ending Sep 18, down from 782. US Southern Command seized the sanctioned aframax Sagitta, the seventh tanker seizure under the blockade regime; about 20% of Venezuelan seaborne exports are moving into Caribbean storage in the Bahamas, Curacao and Saint Lucia, marketed by Vitol and Trafigura. Destination splits remain estimates: dark-fleet gaps and ship-to-ship transfers make exact shares unverifiable.</p>
 <p class="chg-balance"><b>Balance read:</b> High freight is bearish WCS, not a moat: distressed heavy-sour length either prices down to clear against WCS or goes to storage as overhang.</p>
-<div class="chips"><span class="chip">September 2026</span>
+
+<div class="chips"><span class="chip conf">single source</span><span class="chip">September 2026</span>
 <span class="chip src">Reuters-linked reporting; EIA weekly petroleum status</span></div>
 
 </article>
@@ -771,7 +783,8 @@ the publication's own arithmetic on public inputs, stated as estimates.</p>
 <p class="chg-delta">modeled net incentive $5.51/bbl</p>
 <p class="chg-body">Our blender-behavior nowcast (in-house, synthetic assumptions clearly flagged) has the heavy-into-light arbitrage window open: the viscosity constraint is binding and the incentive to blend heavy barrels into the light pool reads a net $5.51/bbl on the modeled stack, or about 43.2 kb/d of reclassification per 100 kb/d of light tendered. Direction matters, level does not.</p>
 <p class="chg-balance"><b>Balance read:</b> An illustrative model read, not a live market print: while the window is open, barrels reclassify from the heavy pool into the light pool at the margin — a softener on the discount, not a directional call.</p>
-<div class="chips"><span class="chip">Sep 29, 2026</span>
+
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Sep 29, 2026</span>
 <span class="chip src">In-house blending nowcast (synthetic)</span></div>
 
 </article>
@@ -862,7 +875,7 @@ Stale flags are removed.</p>
 </div>
 <div class="flag">
 <h3>Joliet restart awaiting confirmation</h3>
-<p>Quantum Commodity Intelligence headlines Joliet back in service as of about Sep 28, but the article is paywalled and no public confirmation exists. The confirmation itself is the catalyst: the discount snaps tighter when it lands, stays under pressure while it does not.</p>
+<p>Quantum Commodity Intelligence headlines Joliet back in service as of about Sep 28, but the article is paywalled and no public confirmation exists. ExxonMobil's last public statement (Sep 18): power restored, restart underway, no date given. The confirmation itself is the catalyst: the discount snaps tighter when it lands, stays under pressure while it does not.</p>
 <p class="trig"><b>Trigger:</b> Public confirmation from ExxonMobil or a second source turns this into the top ranked change.</p>
 <div class="chips"><span class="chip">expires on public confirmation</span></div>
 </div>
@@ -928,6 +941,30 @@ these. Four figures, never more. Charts live on the reference pages.</p>
 <div class="lvl-note">no public price feed; broker quotes are private</div>
 <div class="chips"><span class="chip">not published</span></div></li>
 </ul>
+</section>
+
+<section class="now-sec" aria-label="Differential: implied vs actual">
+<h2>WCS-WTI differential: implied vs actual</h2>
+<article class="chg-card">
+<div class="chg-top"><span class="chg-title">Model-implied</span></div>
+<p class="chg-delta">not calibrated</p>
+<p class="chg-body">The balance-to-diff framework returns no dollar figure by
+design until licensed differential history arrives. The calibration runs the
+day marks arrive: regress physical features on marks, beat the naive carry
+benchmark out of sample, then publish 10/90 bands. Model-implied ranges are
+not market marks and are never presented as such.</p>
+<div class="chips"><span class="chip">prototype v1</span>
+<span class="chip src">awaiting licensed marks</span></div>
+</article>
+<article class="chg-card">
+<div class="chg-top"><span class="chg-title">Actual market</span></div>
+<p class="chg-delta">n/a</p>
+<p class="chg-body">No public price feed; broker quotes are private. When
+licensed marks arrive, this panel carries implied ranges against actuals,
+scored against the naive benchmark: line accuracy for supply, decision
+performance for the differential.</p>
+<div class="chips"><span class="chip">not published</span></div>
+</article>
 </section>
 <p class="now-foot sub">Every number on this page comes from public sources (AER filings, CER data, EIA releases, company disclosures, CFTC positioning), run through the WCSB supply/demand model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is documented on the <a href="sources/index.html">sources</a> page. The full edition archive lives under <a href="digest/index.html">Digest</a>.</p>
   <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>Supply</h4><a href="supply/index.html">Supply hub</a><a href="st3-dashboard.html">Projected ST3</a><a href="scorecard.html">Scorecard</a><a href="balance/index.html">S&amp;D balance</a><a href="maintenance/index.html">Maintenance</a><a href="projects/index.html">All projects</a><a href="apportionment/index.html">Apportionment</a></div><div class="fcol"><h4>World</h4><a href="world/middle-east/index.html">Middle East watch</a><a href="world/russia-refining/index.html">Russian refineries</a><a href="world/china-imports/index.html">China imports</a><a href="world/spr-storage/index.html">SPR & storage</a><a href="world/sour/index.html">The global sour barrel</a><a href="venezuela/index.html">Venezuela watch</a><a href="world/trump/index.html">Trump watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="digest/index.html">Latest digest</a><a href="digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a><a href="about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
