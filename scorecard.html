@@ -229,14 +229,14 @@ ul.tight li { margin:.38rem 0; }
 
 /* links: quiet, warm on interaction. Visited links keep the same ink color:
    a data publication never shows browser-default blue/purple. */
-main a, .wrap > a, p a, li a, td a, th a, figcaption a, .fcolophon a, section a,
+main a, .wrap > a, p a, li a, td a, th a, figcaption a, .fcolophon a,
 main a:visited, p a:visited, li a:visited, td a:visited, th a:visited,
-figcaption a:visited, .fcolophon a:visited, section a:visited {
+figcaption a:visited, .fcolophon a:visited {
   color:var(--ink); text-decoration:underline;
   text-decoration-color:#cfc8b8; text-decoration-thickness:1px;
   text-underline-offset:3px; }
 main a:hover, p a:hover, li a:hover, td a:hover, th a:hover,
-figcaption a:hover, .fcolophon a:hover, section a:hover {
+figcaption a:hover, .fcolophon a:hover {
   color:var(--acc-deep); text-decoration-color:var(--acc); }
 h1 a, h2 a, h3 a { text-decoration:none; color:var(--ink); }
 h1 a:hover, h2 a:hover, h3 a:hover { color:var(--acc-deep); }
@@ -607,7 +607,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">The model grades itself: every prediction scored, with its uncertainty stated.</p>
   <p class="sub">Every published model nowcast, scored against the Alberta Energy Regulator (AER) Monthly Statistics (ST3) actuals when they land. Positive error means the nowcast ran high.</p>
   <p><b>Why the naive rule gets a column.</b> Every number on this page is measured against the simplest possible forecast: repeat last month (persistence), or predict no change at all. The naive rule is a valid forecast, not a straw man. A fancy model that cannot beat it gets cut, and the naive rule that wins gets used and scored like everything else. The scorecard does not care how clever the method is, only how accurate.</p>
-  <p class="vintage-inline">Nowcasts built 2026-09-23, 2026-09-28, 2026-09-29.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-08-27; loaded 2026-09-28).</p>
+  <p class="vintage-inline">Nowcasts built 2026-09-23, 2026-09-28, 2026-09-29, 2026-09-30.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-08-27; loaded 2026-09-28).</p>
   <h2>Supply nowcasts</h2>
   <p><b>How to read this.</b> Mean error is the average miss across scored months, in thousand barrels per day (kb/d); positive means the nowcast ran high, negative means it ran low. With no scored months yet, this section fills in automatically when the AER publishes ST3 actuals. "On the clock" lists frozen nowcasts: the numbers cannot be revised after the fact, so the score is against exactly what was published.</p>
   <h3>Bias so far</h3>
@@ -860,6 +860,19 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p><b>Plain English.</b> The model calls apportionment on or off correctly 95.8% of the time, but the naive rule (just repeat last month) is right 93.1% of the time, and the uncertainty bands overlap: we do not claim the model beats it. On depth (how much gets apportioned), the model misses by 0.10 points on average and lands within &plusmn;0.23 points 90% of the time; the naive rule misses by less (0.08). That is why the live nowcast below is the naive baseline, not the model: if it has no predictive power we do not use it.</p>
   <p><b>On the clock.</b> November 2026 nowcast: 8% lights / 4% heavies at Kerrobert (baseline chosen by backtest: repeat last month). Frozen; scored when Enbridge publishes the November notice.</p>
   <p class="tblnote">Uncertainty: hit-rate bands are Wilson 95% intervals; depth bands are the empirical 75th and 90th percentiles of absolute error (no normality assumed).</p>
+  <h3>Predicting turnaround months</h3>
+  <p><b>What it predicts.</b> Whether a facility will have a major maintenance shutdown in a given month — from its own production history alone, no company guidance. Two rules, tested walk-forward (each year predicted only from data before that year, 2015-2025): the <b>seasonal pattern</b> (months where this facility has repeatedly dipped before) and <b>cycle projection</b> (projecting the usual gap between past shutdowns forward). A predicted month scores a hit if a real shutdown started within one month of it.</p>
+  <p><b>How to read this.</b> Precision is the share of flagged months that actually had a shutdown nearby: how often the rule cries wolf. Recall is the share of real shutdowns the rules caught between them: how many slipped through. The bands are 95% intervals from the sample size.</p>
+  <div class="tblwrap"><table class="data">
+  <tr><th></th><th>Seasonal pattern precision</th><th>Cycle projection precision</th><th>Recall (either rule)</th></tr>
+  <tr><td>All facilities</td><td class="num">30.1% <span class="tblnote">(22.1%-39.5%)</span></td><td class="num">17.3% <span class="tblnote">(11.1%-26.0%)</span></td><td class="num">39.0% <span class="tblnote">(29.2%-49.8%)</span></td></tr>
+  <tr><td>Cyclic steam stimulation (CSS)</td><td class="num">0.0% <span class="tblnote">(0.0%-32.4%)</span></td><td class="num">6.7% <span class="tblnote">(1.2%-29.8%)</span></td><td class="num">20.0% <span class="tblnote">(3.6%-62.4%)</span></td></tr>
+  <tr><td>Oil-sands mining</td><td class="num">38.4% <span class="tblnote">(28.1%-49.8%)</span></td><td class="num">26.2% <span class="tblnote">(16.8%-38.4%)</span></td><td class="num">48.3% <span class="tblnote">(35.9%-60.8%)</span></td></tr>
+  <tr><td>Steam-assisted gravity drainage (SAGD)</td><td class="num">6.7% <span class="tblnote">(1.2%-29.8%)</span></td><td class="num">0.0% <span class="tblnote">(0.0%-20.4%)</span></td><td class="num">7.7% <span class="tblnote">(1.4%-33.3%)</span></td></tr>
+  <tr><td>Upgraders (synthetic crude)</td><td class="num">28.6% <span class="tblnote">(8.2%-64.1%)</span></td><td class="num">0.0% <span class="tblnote">(0.0%-35.4%)</span></td><td class="num">33.3% <span class="tblnote">(9.7%-70.0%)</span></td></tr>
+  </table></div>
+  <p><b>Plain English.</b> Predicting the exact month from history alone is hard, and the scorecard says so: the seasonal rule gets 30.1% of its flagged months right, cycle projection 17.3%, and together they catch 39.0% of real shutdowns. Mining plants are the most predictable (38% precision, about half the shutdowns caught); steam-assisted gravity drainage (SAGD) is nearly unpredictable from history (8% recall). This is why the live maintenance calendar is built on company guidance, not these rules: history alone is a weak predictor, and the weak predictor does not get used.</p>
+  <p class="tblnote">Method: a month is pattern-flagged when production dipped &gt;15% below its trailing 3-month mean in at least 4 prior years; cycle projection uses the median gap between past major shutdowns. Major shutdown = depth &gt;30% or longer than a month. Uncertainty: Wilson 95% intervals.</p>
   <h3>Egress and spare capacity</h3>
   <p><b>What it predicts.</b> Monthly spare pipeline egress capacity: pipeline capacity minus forecast marketable supply. Negative spare means the basin is pushing against the pipes.</p>
   <p><b>How to read this.</b> Spare inherits the error of the supply and takeaway lines: if those miss by their bands, the spare misses by about the combined band (the inner 75% band is the likely range, the outer 90% band the safety range). Read the line accuracy backtest above as this card's score.</p>
