@@ -1,0 +1,1101 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shipper Commitments - Heavy Reading</title><style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+color:#1c1c1e;background:#fff;line-height:1.55;margin:0;padding:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 60px}
+h1{font-size:2rem;font-weight:650;margin:1.2em 0 .2em}
+.sub{color:#555;font-size:1.02rem;margin:0 0 .4em}
+.meta{color:#888;font-size:.82rem;margin-bottom:1.6em}
+.meta .vchip{display:inline-block;border:1px solid #ddd;border-radius:4px;padding:1px 7px;margin-right:6px;font-size:.78rem;color:#555}
+h2{font-size:1.25rem;font-weight:650;margin:2.2em 0 .6em;border-bottom:1px solid #eee;padding-bottom:.3em}
+p{max-width:72ch}
+.lede{font-size:1.06rem;color:#333}
+.matrixwrap{overflow-x:auto;border:1px solid #e4e4e4;border-radius:6px;margin:1.2em 0}
+table.matrix{border-collapse:separate;border-spacing:0;min-width:1500px;font-size:.82rem}
+table.matrix th,table.matrix td{border-bottom:1px solid #eee;border-right:1px solid #f2f2f2;padding:6px 8px;text-align:center;white-space:nowrap}
+table.matrix thead th{background:#fafafa;position:sticky;top:0;z-index:3;font-weight:650}
+table.matrix thead th.pipe{font-size:.8rem}
+table.matrix thead th.pipe small{display:block;font-weight:400;color:#888;font-size:.68rem;white-space:normal;max-width:110px}
+td.shipper,th.corner{position:sticky;left:0;background:#fff;z-index:2;text-align:left;min-width:170px;max-width:230px;white-space:normal}
+th.corner{z-index:4;background:#fafafa;text-align:left}
+tr.band td, tr.band th{background:#f7f7f5;font-weight:600}
+tr.band td.shipper, tr.band th.corner{background:#f1f1ee}
+td.shipper .nm{font-weight:600;font-size:.86rem}
+td.shipper .nt{font-size:.72rem;color:#888;white-space:normal}
+td.shipper .arw{font-size:.72rem;color:#a06a00;font-weight:600}
+tr.grouprow td{background:#eef1f4;font-weight:650;text-align:left;font-size:.85rem;color:#444}
+td.dash{color:#cfcfcf}
+td.cell{font-weight:600}
+td.cell.filing{color:#1a6b3c;background:#f2faf5}
+td.cell.press{color:#8a5a00;background:#fdf8ee}
+td.cell.inferred{color:#555;background:#f7f7f7}
+td.cell.confirmed{color:#666;font-style:italic;font-weight:400}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:.8em 0;font-size:.8rem;color:#555}
+.legend span{border:1px solid #e2e2e2;border-radius:4px;padding:2px 8px;background:#fafafa}
+.legend .sw{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}
+table.plain{border-collapse:collapse;width:100%;font-size:.85rem;margin:.8em 0}
+table.plain th,table.plain td{border-bottom:1px solid #eee;padding:7px 9px;text-align:left;vertical-align:top}
+table.plain th{font-weight:650;background:#fafafa}
+.tag{display:inline-block;font-size:.68rem;font-weight:650;letter-spacing:.03em;border-radius:3px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.tag.filing{background:#e4f2e9;color:#1a6b3c}
+.tag.press{background:#fbf0d9;color:#8a5a00}
+.tag.inferred{background:#eee;color:#555}
+.tag.confirmed{background:#f0f0f0;color:#555;font-style:italic}
+.tag.legacy{background:#f3e8ee;color:#8a3c5a}
+.note{font-size:.8rem;color:#777}
+.gaps li{margin-bottom:.5em;font-size:.9rem}
+.changelog{font-size:.85rem;color:#555}
+.footer{margin-top:3em;border-top:1px solid #eee;padding-top:1em;font-size:.8rem;color:#888}
+details{margin:.6em 0;font-size:.88rem}
+details summary{cursor:pointer;font-weight:600;color:#333}
+details p, details li{font-size:.86rem}
+</style></head><body><div class="wrap">
+<h1>Shipper Commitments</h1>
+<p class="sub">Committed (contracted) capacity on long-haul crude pipelines out of Western Canada, by shipper</p>
+<div class="meta"><span class="vchip">v1</span><span class="vchip">written September 30, 2026</span><span class="vchip">research vintage Sep 28-30, 2026</span><span class="vchip">public data only</span></div>
+<p class="lede">Most long-haul crude pipelines out of Western Canada are majority-contracted: shippers hold long-term firm capacity (take-or-pay or ship-or-pay) and the toll is the price of the commitment. The Enbridge Mainline is the anomaly - zero percent contracted, every barrel on spot service. This grid records disclosed committed volumes by shipper. Per-shipper splits are confidential by design (transportation service agreements carry non-disclosure terms), so most cells are dashes. A dash is a finding about the public record, not a claim that no commitment exists.</p>
+<h2>The grid</h2>
+<p class="note">Pipes across the top; shippers down the side. The three summary rows give nameplate, spot, and net committed capacity per pipe (kb/d) - the only layer where the record is reasonably complete. Scroll horizontally.</p>
+<div class="legend"><span><span class="sw" style="background:#1a6b3c"></span>DISCLOSED - filing, tariff, or regulatory proceeding</span><span><span class="sw" style="background:#8a5a00"></span>DISCLOSED-VIA-PRESS - company or official statement via energy press</span><span><span class="sw" style="background:#555"></span>ESTIMATED-INFERRED - derived, reasoning shown</span><span><i>shipper</i> - confirmed shipper, volume unknown</span><span>- - no disclosed volume</span></div>
+<div class="matrixwrap"><table class="matrix">
+<thead><tr><th class="corner">Shipper</th>
+<th class="pipe">Mainline<small>Enbridge Mainline (Edmonton to US Midwest/Ontario)</small></th>
+<th class="pipe">TMX<small>Trans Mountain Line 1 and Line 2 (Edmonton to Burnaby/Westridge)</small></th>
+<th class="pipe">Keystone<small>Keystone base system (Hardisty to US Midwest and Gulf Coast)</small></th>
+<th class="pipe">Flan. South<small>Flanagan South (Edmonton to Cushing)</small></th>
+<th class="pipe">Seaway<small>Seaway (Cushing to US Gulf Coast, Texas City)</small></th>
+<th class="pipe">Spearhead<small>Spearhead (Flanagan to Cushing)</small></th>
+<th class="pipe">Express-Platte<small>Express-Platte (Hardisty to Wood River/Guernsey)</small></th>
+<th class="pipe">Marketlink<small>Marketlink (Cushing to Port Arthur, Texas)</small></th>
+<th class="pipe">Southern Lts<small>Southern Lights (diluent, westbound, to Edmonton)</small></th>
+<th class="pipe">Cochin<small>Cochin (light condensate, westbound, to Fort Saskatchewan)</small></th>
+<th class="pipe">Waupisoo<small>Waupisoo (dilbit, Athabasca to Edmonton)</small></th>
+<th class="pipe">AOSPL<small>Athabasca Oil Sands Pipeline (Muskeg River/Jackpine to Edmonton/Upgrader)</small></th>
+<th class="pipe">Norlite<small>Norlite (diluent blend, Edmonton to Fort McMurray)</small></th>
+<th class="pipe">Polaris<small>Polaris (diluent, Edmonton to Fort McMurray)</small></th>
+<th class="pipe">Wood Buffalo<small>Wood Buffalo Extension (Cheecham to Edmonton)</small></th>
+<th class="pipe">SAX<small>Southern Access Extension (Flanagan to Patoka)</small></th>
+<th class="pipe">Line 78<small>Line 78 (Griffith to Stockbridge, Michigan)</small></th>
+<th class="pipe">Capline<small>Capline (St. James to Patoka, reversed)</small></th>
+<th class="pipe">Ozark<small>Ozark (Cushing to Wood River)</small></th>
+</tr></thead><tbody>
+<tr class="band"><td class="shipper"><span class="nm">Nameplate</span> <span class="nt">(kb/d)</span></td>
+<td>~3,200</td>
+<td>890</td>
+<td>591</td>
+<td>585 (685 post-2027)</td>
+<td>~950</td>
+<td>~190</td>
+<td>~310 (Express ~280)</td>
+<td>700-830</td>
+<td>180</td>
+<td>~95</td>
+<td>~600</td>
+<td>570</td>
+<td>270-280</td>
+<td>-</td>
+<td>~490</td>
+<td>300</td>
+<td>~570</td>
+<td>75 + 200 (reversal)</td>
+<td>~360</td>
+</tr>
+<tr class="band"><td class="shipper"><span class="nm">Spot</span> <span class="nt">(kb/d)</span></td>
+<td>~3,200 (all spot)</td>
+<td>~89 (10% set-aside)</td>
+<td>35 (Canadian spot reservation)</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>18 (10% set-aside)</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>~570 (all spot)</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="band"><td class="shipper"><span class="nm">Net Committed</span> <span class="nt">(kb/d)</span></td>
+<td>0</td>
+<td>707.5 (80%); 90% cap eff. Jan 2027</td>
+<td>585 (~99%)</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>77</td>
+<td>-</td>
+<td>480-540</td>
+<td>anchor (volume not stated)</td>
+<td>-</td>
+<td>-</td>
+<td>~490 (2025 AIF)</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="grouprow"><td class="shipper" colspan="20">Oilsands producers</td></tr>
+<tr><td class="shipper"><span class="nm">Cenovus</span><div class="nt">incl. Husky (2021) and the MEG package (Nov 2025)</div></td>
+<td class="dash">-</td>
+<td class="cell press" title="DISCLOSED-VIA-PRESS">~144</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="cell filing" title="DISCLOSED">100 AWB</td>
+<td class="cell filing" title="DISCLOSED">100 AWB</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">CNRL</span><div class="nt">Canadian Natural Resources; incl. Devon Canada assets (2024)</div></td>
+<td class="dash">-</td>
+<td class="cell filing" title="DISCLOSED">169</td>
+<td class="cell press" title="DISCLOSED-VIA-PRESS">10</td>
+<td class="cell press" title="DISCLOSED-VIA-PRESS">77.5</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Suncor</span><div class="nt">incl. Canadian Oil Sands Ltd (2016)</div></td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="cell filing" title="DISCLOSED">anchor</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Imperial</span><div class="nt">Imperial Oil; ExxonMobil affiliate</div></td>
+<td class="dash">-</td>
+<td class="cell press" title="DISCLOSED-VIA-PRESS">minor</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="cell press" title="DISCLOSED-VIA-PRESS">60</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr class="grouprow"><td class="shipper" colspan="20">US refiners and marketers</td></tr>
+<tr><td class="shipper"><span class="nm">BP</span><div class="nt">BP Canada Energy Trading; BP Products North America</div></td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="cell filing" title="DISCLOSED">part of 77</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Marathon</span><div class="nt">Marathon Petroleum; incl. Tesoro/Andeavor (2018)</div></td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">ConocoPhillips</span><div class="nt">ConocoPhillips Canada</div></td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Phillips 66</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Valero</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Citgo</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">HF Sinclair</span><div class="nt">formerly Holly Frontier</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Hunt</span><div class="nt">Hunt Refining / Hunt Oil</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Irving</span><div class="nt">Irving Oil</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Chevron</span><div class="nt">Chevron Canada</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Shell</span><div class="nt">Shell US / Shell Trading</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Enterprise</span><div class="nt">Enterprise Products</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Tidal</span><div class="nt">Tidal Energy Marketing (Calgary)</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Parkland</span><div class="nt">Parkland Refining (Burnaby)</div></td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr class="grouprow"><td class="shipper" colspan="20">Other Canadian producers</td></tr>
+<tr><td class="shipper"><span class="nm">Athabasca Oil</span></td>
+<td class="dash">-</td>
+<td class="cell press" title="DISCLOSED-VIA-PRESS">sold 2021</td>
+<td class="cell press" title="DISCLOSED-VIA-PRESS">assigned 2021</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Baytex</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Whitecap</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Vermilion</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Strathcona</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Obsidian</span><div class="nt">formerly Penn West (renamed 2017)</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Tamarack</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Headwater</span><div class="nt">regional take-or-pay only</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">IPC</span><div class="nt">International Petroleum Corp; regional firm TSA</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">APMC</span><div class="nt">Alberta Petroleum Marketing Commission</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">PetroChina</span></td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Sinopec</span></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">CNOOC</span><div class="nt">incl. Nexen (acquired 2013)</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">ExxonMobil</span><div class="nt">as shipper, separate from Imperial</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr class="grouprow"><td class="shipper" colspan="20">Legacy (moved, exited, or dead)</td></tr>
+<tr><td class="shipper"><span class="nm">Husky</span> <span class="arw">-&gt; to Cenovus (2021)</span><div class="nt">original-13 TMX slot; presumed consolidated under Cenovus, unverified</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="cell filing" title="DISCLOSED">2009 TSA</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Devon</span> <span class="arw">-&gt; to CNRL (2024)</span><div class="nt">original-13 TMX slot; presumed with CNRL, unverified</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Tesoro</span> <span class="arw">-&gt; to Marathon (2018)</span><div class="nt">original-13 TMX slot; presumed the Marathon position, unverified</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Canadian Oil Sands</span> <span class="arw">-&gt; to Suncor (2016)</span><div class="nt">original-13 TMX slot; one of three Suncor slots</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">TotalEnergies</span> <span class="arw">-&gt; exited Canada 2022-23</span><div class="nt">original-13 TMX slot; disposition unknown</div></td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="cell confirmed" title="CONFIRMED SHIPPER, VOLUME UNKNOWN">shipper</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Equinor</span> <span class="arw">-&gt; status unknown</span><div class="nt">formerly Statoil; original-13 TMX slot; absent from 2024 lists</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="cell filing" title="DISCLOSED">part of 77</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">MEG</span> <span class="arw">-&gt; to Cenovus (Nov 2025)</span><div class="nt">100 kb/d FSP + 20 kb/d TMX now Cenovus&#x27;s</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Impex</span> <span class="arw">-&gt; unmapped</span><div class="nt">2014-era name; current entity unidentified</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">TEC</span> <span class="arw">-&gt; unmapped</span><div class="nt">2014-era name; current entity unidentified</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+<tr><td class="shipper"><span class="nm">Other Companies</span><div class="nt">residual</div></td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+<td class="dash">-</td>
+</tr>
+</tbody></table></div>
+<h2>Where the legacy positions went</h2>
+<p class="note">Corporate actions move commitments. Where the current holder cannot be verified, it is marked unknown rather than assumed.</p>
+<table class="plain"><tr><th>Event</th><th>When</th><th>Effect on commitments</th><th>Source</th></tr><tr><td><strong>Cenovus acquired MEG</strong></td><td>closed Nov 13, 2025</td><td>MEG&#x27;s 100 kb/d Flanagan South + Seaway (AWB) and 20 kb/d TMX are now Cenovus&#x27;s</td><td class="note">Cenovus release via GlobeNewswire, Nov 13, 2025</td></tr>
+<tr><td><strong>Cenovus acquired Husky</strong></td><td>effective Jan 1, 2021</td><td>Husky&#x27;s original-13 TMX slot presumed consolidated under Cenovus</td><td class="note">inferred; no public confirmation</td></tr>
+<tr><td><strong>CNRL acquired Devon Canada</strong></td><td>completed 2024</td><td>Devon&#x27;s original-13 TMX slot presumed with CNRL</td><td class="note">inferred; no public confirmation</td></tr>
+<tr><td><strong>Marathon acquired Tesoro (Andeavor)</strong></td><td>2018</td><td>Tesoro&#x27;s original-13 TMX slot presumed the Marathon position</td><td class="note">inferred; transfer unconfirmed</td></tr>
+<tr><td><strong>CNOOC acquired Nexen</strong></td><td>2013, $15.1B</td><td>Nexen&#x27;s original-13 TMX slot went to CNOOC</td><td class="note">press, 2013</td></tr>
+<tr><td><strong>Suncor acquired Canadian Oil Sands Ltd</strong></td><td>2016</td><td>COS&#x27;s original-13 TMX slot with Suncor</td><td class="note">inferred from the corporate action; slot travel unverified</td></tr>
+<tr><td><strong>TotalEnergies exited Canada</strong></td><td>2022-23</td><td>Total&#x27;s original-13 TMX slot disposition unknown</td><td class="note">unknown</td></tr>
+<tr><td><strong>Athabasca sold TMX (20 kb/d) + Keystone (7.2 kb/d)</strong></td><td>Aug 2021</td><td>counterparties unnamed</td><td class="note">Athabasca releases via BOE Report</td></tr>
+<tr><td><strong>KXL permit revoked</strong></td><td>Jan 2021</td><td>all KXL committed positions extinguished</td><td class="note">press</td></tr>
+<tr><td><strong>Valero KXL commitment (at least 100 kb/d to 2030)</strong></td><td>Sep 2011</td><td>KXL commitment, not Keystone base; extinguished with the Jan 2021 permit revocation</td><td class="note">Oil Change International report &#x27;Exporting Energy Security&#x27; (NGO publication, press-grade)</td></tr>
+<tr><td><strong>APMC KXL royalty-in-kind (50 kb/d, 20-yr)</strong></td><td>Jan 2018</td><td>KXL commitment via Alberta royalty-in-kind; extinguished with the Jan 2021 permit revocation</td><td class="note">Oil and Gas 360 Jan 2018; Alberta Legislature transcript May 8, 2018</td></tr></table>
+<h2>Sources for every non-dash cell</h2>
+<table class="plain"><tr><th>Shipper</th><th>Pipe</th><th>Committed volume</th><th>Source</th></tr><tr><td><strong>CNRL</strong></td><td>TMX</td><td>169 kb/d<span class="tag filing">DISCLOSED</span></td><td class="note">CNRL Q1 2025 release (May 8, 2025); 2024 MD&amp;A / financial statement notes; 20-year term to 2044</td></tr>
+<tr><td><strong>Cenovus</strong></td><td>TMX</td><td>~144 kb/d (~24% of capacity)<span class="tag press">DISCLOSED-VIA-PRESS</span></td><td class="note">largest single-shipper TMX position; industry aggregation ~Apr 2024, citing EVP quote (Argus, Nov 2024)</td></tr>
+<tr><td><strong>Cenovus (via MEG)</strong></td><td>TMX</td><td>20 kb/d<span class="tag filing">DISCLOSED</span></td><td class="note">MEG 2023 AIF (filed Feb 29, 2024); Cenovus closed the MEG acquisition Nov 13, 2025 (Cenovus release)</td></tr>
+<tr><td><strong>Suncor</strong></td><td>TMX</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">three original-13 slots: Suncor Energy Marketing, Suncor Energy Products Partnership, Canadian Oil Sands Ltd (2013 Kinder Morgan release); appears in 2024 11-shipper lists</td></tr>
+<tr><td><strong>Imperial</strong></td><td>TMX</td><td>relatively minor<span class="tag press">DISCLOSED-VIA-PRESS</span></td><td class="note">company refuses per-pipe disclosure; described as minor (Argus, Nov 2024)</td></tr>
+<tr><td><strong>BP</strong></td><td>TMX</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">original 13 (2013 Kinder Morgan release); 2024 11-shipper lists (Reuters Apr 29, 2024)</td></tr>
+<tr><td><strong>ConocoPhillips</strong></td><td>TMX</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">2024 11-shipper lists; named in CER toll-dispute filings Oct 2025 (Reuters via BOE Report)</td></tr>
+<tr><td><strong>Marathon</strong></td><td>TMX</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">2024 11-shipper lists; inferred the former Tesoro original-13 slot (Tesoro acquired 2018; transfer unconfirmed)</td></tr>
+<tr><td><strong>Parkland</strong></td><td>TMX</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">2024 11-shipper lists</td></tr>
+<tr><td><strong>PetroChina</strong></td><td>TMX</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">2024 11-shipper lists</td></tr>
+<tr><td><strong>TotalEnergies</strong></td><td>TMX</td><td>confirmed shipper (2023 record)<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">Scotiabank GBM note Jun 28, 2023 citing CER records names Total Energies EP Canada among toll-process shippers; Total exited Canada 2022-23, current holder status unclear</td></tr>
+<tr><td><strong>CNRL</strong></td><td>Keystone</td><td>10 kb/d<span class="tag press">DISCLOSED-VIA-PRESS</span></td><td class="note">press reporting on CNRL committed positions</td></tr>
+<tr><td><strong>ConocoPhillips</strong></td><td>Keystone</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">FERC Opinion No. 590 (188 FERC para. 61,077, Jul 25, 2024): TSA dated Jul 24, 2009 between Keystone and ConocoPhillips Company</td></tr>
+<tr><td><strong>Phillips 66</strong></td><td>Keystone</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">same FERC record; CER complaint C17217-3: &#x27;Phillips US is the shipper pursuant to a TSA dated Jul 24, 2009&#x27;</td></tr>
+<tr><td><strong>Husky (legacy)</strong></td><td>Keystone</td><td>2009 TSA<span class="tag filing">DISCLOSED</span></td><td class="note">FERC Opinion No. 590: Husky US Marketing LLC TSA dated Jul 24, 2009; position presumed with Cenovus since the 2021 combination, unverified</td></tr>
+<tr><td><strong>Cenovus</strong></td><td>Keystone</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">named Transportation Service Agreement holder (2023 AIF); term 20+ years with 7-year renewal options</td></tr>
+<tr><td><strong>Suncor</strong></td><td>Keystone</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">named shipper in South Bow filings</td></tr>
+<tr><td><strong>Imperial</strong></td><td>Keystone</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">named shipper in South Bow filings</td></tr>
+<tr><td><strong>Cenovus (via MEG)</strong></td><td>Flanagan South + Seaway</td><td>100 kb/d AWB, full path<span class="tag filing">DISCLOSED</span></td><td class="note">MEG 2023 AIF; Cenovus closed the MEG acquisition Nov 13, 2025</td></tr>
+<tr><td><strong>CNRL</strong></td><td>Flanagan South</td><td>77.5 kb/d<span class="tag press">DISCLOSED-VIA-PRESS</span></td><td class="note">press reporting on CNRL committed positions</td></tr>
+<tr><td><strong>BP</strong></td><td>Southern Lights</td><td>part of 77 kb/d committed<span class="tag filing">DISCLOSED</span></td><td class="note">FERC 2007-2011 orders: 77 kb/d committed after one shipper terminated; per-shipper split unknown</td></tr>
+<tr><td><strong>Equinor (ex-Statoil)</strong></td><td>Southern Lights</td><td>part of 77 kb/d committed<span class="tag filing">DISCLOSED</span></td><td class="note">FERC 2007-2011 orders; Statoil North America was one of the three original committed shippers</td></tr>
+<tr><td><strong>Imperial</strong></td><td>Polaris</td><td>60 kb/d, 25-year ship-or-pay<span class="tag press">DISCLOSED-VIA-PRESS</span></td><td class="note">press reporting on the Imperial/Enbridge Polaris arrangement</td></tr>
+<tr><td><strong>Suncor</strong></td><td>AOSPL</td><td>anchor shipper<span class="tag filing">DISCLOSED</span></td><td class="note">Canadian Natural 2024 AIF; volume not stated</td></tr>
+<tr><td><strong>Suncor</strong></td><td>Norlite</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">Enbridge 10-K; no volumes</td></tr>
+<tr><td><strong>TotalEnergies</strong></td><td>Norlite</td><td>confirmed shipper (legacy)<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">Enbridge 10-K; Total exited Canada 2022-23, current holder unknown</td></tr>
+<tr><td><strong>Suncor</strong></td><td>Wood Buffalo Ext</td><td>confirmed shipper<span class="tag confirmed">CONFIRMED SHIPPER, VOLUME UNKNOWN</span></td><td class="note">2025 company AIF notes committed volume in this area</td></tr>
+<tr><td><strong>Athabasca Oil</strong></td><td>TMX</td><td>20 kb/d SOLD Aug 2021<span class="tag press">DISCLOSED-VIA-PRESS</span></td><td class="note">Athabasca release via BOE Report Aug 18, 2021: sold to an unnamed downstream player for $20M; ~$1.1B of 20-year commitments removed. Do not carry as a current position.</td></tr>
+<tr><td><strong>Athabasca Oil</strong></td><td>Keystone</td><td>7.2 kb/d ASSIGNED AWAY Aug 2021<span class="tag press">DISCLOSED-VIA-PRESS</span></td><td class="note">Athabasca release Aug 18, 2021: Keystone Base service assigned to an unnamed industry player; entered a 7-year 15 kb/d marketing agreement instead.</td></tr></table>
+<h2>Pipe notes</h2>
+<table class="plain"><tr><th>Pipe</th><th>Capacity and contracting</th><th>Source</th></tr><tr><td><strong>Enbridge Mainline (Edmonton to US Midwest/Ontario)</strong><span class="tag filing">DISCLOSED</span></td><td>Zero percent contracted. The anomaly of the system: every barrel moves on uncommitted (spot) service under CER Group 1 tolls.</td><td class="note">Enbridge CER Group 1 toll filings; Mainline contracting application rejected by CER</td></tr>
+<tr><td><strong>Trans Mountain Line 1 and Line 2 (Edmonton to Burnaby/Westridge)</strong><span class="tag filing">DISCLOSED</span></td><td>890 kb/d in service May 2024. 707.5 kb/d under 15/20-year firm contracts with 13 shippers (2015 NEB record). CER approved the negotiated settlement (Filing C41001) Sep 28, 2026: contractable cap 80% to 90% effective Jan 1, 2027; the 2026 firm contracting open season (Apr 7 to Jun 2) was oversubscribed 2.5x and TSAs were awarded with no shipper names or volumes disclosed. A Scotiabank GBM note (Jun 28, 2023) citing CER records names the toll-process shipper group: MEG, CNRL, Cenovus, Marathon, PetroChina, TotalEnergies, Parkland, BP Products NA, Imperial, Suncor, plus ConocoPhillips (analyst-assumed).</td><td class="note">NEB RH-001-2012 Final Argument (Aug 20, 2015); CER C41001 settlement Sep 2026; Scotiabank GBM Jun 28, 2023</td></tr>
+<tr><td><strong>Keystone base system (Hardisty to US Midwest and Gulf Coast)</strong><span class="tag filing">DISCLOSED</span></td><td>South Bow 2024 AIF: 591 kb/d nominal, ~585 kb/d under long-term contract (avg 18 yr from 2010), 35 kb/d reserved for spot. South Bow 2025 AIF: 585 kb/d committed, of which 540 IG (avg 6 yr) and 45 non-IG (avg 5 yr). FERC Opinion No. 590 (188 FERC para. 61,077, Jul 2024) names TSA holders (Husky US Marketing, ConocoPhillips/Phillips 66, Coffeyville, NCRA) with no per-shipper volumes. Press cites 640 kb/d system figures; the AIF is filing-grade.</td><td class="note">South Bow 2024/2025 AIFs; FERC 188 para. 61,077 (Jul 25, 2024); oilsandsmagazine Dec 2025</td></tr>
+<tr><td><strong>Flanagan South (Edmonton to Cushing)</strong><span class="tag press">DISCLOSED-VIA-PRESS</span></td><td>Enbridge Nov 2025: +100 kb/d expansion in 2027 backed by long-term take-or-pay full-path Edmonton to Houston; majority of existing FSP customers extended contracts into the next decade in the 2025 open season. A joint Apr-May 2026 open season offered 200 kb/d of incremental capacity; results unpublished. Per-shipper list not published.</td><td class="note">Enbridge company release Nov 14, 2025; FERC OR14-5-000 record</td></tr>
+<tr><td><strong>Seaway (Cushing to US Gulf Coast, Texas City)</strong><span class="tag press">DISCLOSED-VIA-PRESS</span></td><td>Enterprise 10-K: 850-950 kb/d (reversal plus looping). Reversal 150 to 400 kb/d, expansion to 850 mid-2014 with substantially all capacity contracted on 5 to 20-year terms; tariff shows anonymous volume tiers (Group A/B). Per-shipper committed list not published.</td><td class="note">Enterprise Products 10-K 2024; FERC tariff record</td></tr>
+<tr><td><strong>Spearhead (Flanagan to Cushing)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: 190 kb/d (2023). Part of the FSP path for some shippers. 2004 open season secured 60 kb/d of 10-year commitments (escalating to 75 by 2009); expansion supported by a minimum 30 kb/d at $1.80/bbl. No shipper names published.</td><td class="note">Enbridge 10-K 2024; Enbridge release Dec 10, 2004; FERC 110 para. 61,211</td></tr>
+<tr><td><strong>Express-Platte (Hardisty to Wood River/Guernsey)</strong><span class="tag filing">DISCLOSED</span></td><td>South Bow 2024 AIF: Express capacity ~280 kb/d; Platte ~164 kb/d. Per-shipper committed list not published.</td><td class="note">South Bow 2024 AIF</td></tr>
+<tr><td><strong>Marketlink (Cushing to Port Arthur, Texas)</strong><span class="tag filing">DISCLOSED</span></td><td>South Bow 2024 AIF: 700 kb/d design, 830 kb/d with DRA. Per-shipper committed list not published.</td><td class="note">South Bow 2024 AIF</td></tr>
+<tr><td><strong>Southern Lights (diluent, westbound, to Edmonton)</strong><span class="tag filing">DISCLOSED</span></td><td>180 kb/d westbound diluent. 77 kb/d committed after one shipper terminated (was 162 kb/d across three shippers incl. BP Products North America and Statoil). Per-shipper split of the 77 kb/d unknown.</td><td class="note">FERC proceedings, Enbridge Pipelines (Southern Lights) LLC, 2007-2011 orders</td></tr>
+<tr><td><strong>Cochin (light condensate, westbound, to Fort Saskatchewan)</strong><span class="tag press">DISCLOSED-VIA-PRESS</span></td><td>Reversed 2014 to westbound condensate. Per-shipper committed list not published.</td><td class="note">industry reporting</td></tr>
+<tr><td><strong>Waupisoo (dilbit, Athabasca to Edmonton)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: ~600 kb/d with DRA. 80-90% contracted at ~$0.72/bbl average term 4.5 yr. Per-shipper list not published.</td><td class="note">Enbridge 10-K 2024</td></tr>
+<tr><td><strong>Athabasca Oil Sands Pipeline (Muskeg River/Jackpine to Edmonton/Upgrader)</strong><span class="tag filing">DISCLOSED</span></td><td>Canadian Natural 2024 AIF: 570 kb/d system; Suncor is anchor shipper. Aggregate transport commitments only.</td><td class="note">Canadian Natural 2024 AIF</td></tr>
+<tr><td><strong>Norlite (diluent blend, Edmonton to Fort McMurray)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: 270-280 kb/d. Shippers named in filings (Suncor, Total, Teck) but no volumes.</td><td class="note">Enbridge 10-K 2024</td></tr>
+<tr><td><strong>Polaris (diluent, Edmonton to Fort McMurray)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: Polaris + Woodland under 25-year ship-or-pay. The 850 kb/d figure sometimes cited is combined Fort Hills/Cenovus-area reporting, not Polaris-only; do not attribute it to Polaris alone.</td><td class="note">Enbridge 10-K 2024</td></tr>
+<tr><td><strong>Wood Buffalo Extension (Cheecham to Edmonton)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: ~490 kb/d. A 2025 company AIF notes a committed volume in this area tied to Fort Hills. Per-shipper list not published.</td><td class="note">Enbridge 10-K 2024; company AIF 2025</td></tr>
+<tr><td><strong>Southern Access Extension (Flanagan to Patoka)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: 300 kb/d (2023). Per-shipper committed list not published.</td><td class="note">Enbridge 10-K 2024</td></tr>
+<tr><td><strong>Line 78 (Griffith to Stockbridge, Michigan)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: ~570 kb/d; uncommitted capacity. Zero percent contracted.</td><td class="note">Enbridge 10-K 2024</td></tr>
+<tr><td><strong>Capline (St. James to Patoka, reversed)</strong><span class="tag press">DISCLOSED-VIA-PRESS</span></td><td>Marathon 2023: 75 kb/d existing, 200 kb/d light-oil reversal completed 2022. Per-shipper list not published.</td><td class="note">Marathon company reporting 2023</td></tr>
+<tr><td><strong>Ozark (Cushing to Wood River)</strong><span class="tag filing">DISCLOSED</span></td><td>Enbridge 10-K: ~360 kb/d (2023). Per-shipper committed list not published.</td><td class="note">Enbridge 10-K 2024</td></tr></table>
+<h2>Honest gaps</h2>
+<ol class="gaps"><li>Per-shipper TMX volumes for 9 of the 11 current shippers (BP, CNRL, ConocoPhillips Canada, Imperial, Marathon, Parkland, PetroChina, Suncor, plus one unnamed 11th shipper). Only Cenovus (~144 kb/d, press-grade) and the MEG 20 kb/d (filing-grade, now Cenovus&#x27;s) have public volumes. The 707,500 b/d aggregate and the 2013 name list are filing-grade; the split was never published.</li><li>The 11th current TMX shipper is unnamed in every source found.</li><li>Travel of legacy positions (Husky to Cenovus, Devon to CNRL, Tesoro to Marathon, Total to unknown) has no public record; marked inferred or unknown, never assumed.</li><li>Equinor&#x27;s current TMX status: in the original 13, absent from 2024 lists, no disclosed sale found. Unknown.</li><li>Keystone: committed share known (~585 of 591 kb/d), individual shippers largely not found beyond the confirmed names.</li><li>Flanagan South and Seaway: per-shipper committed volumes beyond the Cenovus/MEG 100 kb/d not published.</li><li>Southern Lights: per-shipper split of the 77 kb/d not published.</li><li>Express-Platte, diluent lines (Waupisoo, Norlite, Polaris), AOSPL, Cochin, Spearhead, Marketlink, Capline, Ozark: no per-shipper committed volumes surfaced; operators do not publish per-shipper lists.</li><li>The smaller producers (Baytex, Whitecap, Vermilion, Strathcona, Obsidian, Tamarack, Cardinal, InPlay, Headwater, IPC) disclose only dollar-denominated transportation commitments, never per-pipe volumes. A genuine absence in the public record, not a search failure.</li><li>The summary band (Nameplate / Spot / Net Committed) is filing- or press-grade per pipe; do not confuse it with the shipper cells below, which are far sparser.</li><li>An unconfirmed &#x27;Tesoro Canada 508 kb/d&#x27; TMX figure circulated in an earlier research brief; it could not be verified in any proceeding or filing and is not carried on the page.</li><li>The underlying CER and FERC docket exhibits (beyond decisions, tariffs, and releases) were not exhaustively searched; a redacted shipper-level breakout could exist in a non-public filing.</li></ol>
+<h2>Version and changelog</h2>
+<div class="changelog"><p><strong>v1</strong> - written September 30, 2026 (research vintage Sep 28-30, 2026).</p><p>First edition: grid structure mirrors the user's own 2014/2015 logistics contract spreadsheet (structure only; its numbers are stale and were not used). Shipper roster checked against that universe with stale names mapped to current entities. Southern Lights committed volume corrected to 77 kb/d (FERC). Athabasca TMX and Keystone positions marked sold/assigned Aug 2021. MEG positions moved to Cenovus (acquisition closed Nov 13, 2025).</p></div>
+<h2>About this page</h2>
+<p class="note">Committed capacity is the contract layer of the egress system: who has locked in space, for how long, on what commercial structure. It sits under the toll database - the toll is what the commitment costs. Figures here are researched from company filings (annual information forms, 10-Ks), regulatory proceedings (CER, FERC, NEB), and energy press reporting company or official statements, each tagged. Nothing here is modeled or estimated except where labeled.</p>
+<div class="footer">Heavy Reading - Shipper Commitments v1 - September 30, 2026. Research vintage Sep 28-30, 2026. Corrections: every figure carries its source; challenge any of them.</div>
+</div></body></html>
