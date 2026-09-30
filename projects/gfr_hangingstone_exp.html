@@ -229,14 +229,14 @@ ul.tight li { margin:.38rem 0; }
 
 /* links: quiet, warm on interaction. Visited links keep the same ink color:
    a data publication never shows browser-default blue/purple. */
-main a, .wrap > a, p a, li a, td a, th a, figcaption a, .fcolophon a,
+main a, .wrap > a, p a, li a, td a, th a, figcaption a, .fcolophon a, section a,
 main a:visited, p a:visited, li a:visited, td a:visited, th a:visited,
-figcaption a:visited, .fcolophon a:visited {
+figcaption a:visited, .fcolophon a:visited, section a:visited {
   color:var(--ink); text-decoration:underline;
   text-decoration-color:#cfc8b8; text-decoration-thickness:1px;
   text-underline-offset:3px; }
 main a:hover, p a:hover, li a:hover, td a:hover, th a:hover,
-figcaption a:hover, .fcolophon a:hover {
+figcaption a:hover, .fcolophon a:hover, section a:hover {
   color:var(--acc-deep); text-decoration-color:var(--acc); }
 h1 a, h2 a, h3 a { text-decoration:none; color:var(--ink); }
 h1 a:hover, h2 a:hover, h3 a:hover { color:var(--acc-deep); }
@@ -447,6 +447,10 @@ sup.fnref a:hover { color:var(--acc-deep); text-decoration:underline; }
 .note { font-size:13.5px; color:var(--mut); max-width:68ch; line-height:1.6; }
 .vintage { font-size:12px; color:var(--mut); max-width:68ch; line-height:1.6; }
 .vintage-inline { font-size:12px; color:var(--mut); }
+/* per-bullet freshness chips on watch pages: quiet by default; stale red
+   matches the page-level STALE flag in the data-freshness strip. */
+.age-chip { color:var(--faint); font-weight:400; white-space:nowrap; }
+.age-stale { color:#a33; font-weight:600; }
 details.vintage { margin:2px 0 6px; max-width:76ch; }
 details.vintage > summary { cursor:pointer; font-size:12px; color:var(--mut);
   list-style:none; display:inline-block; padding:4px 0; }
