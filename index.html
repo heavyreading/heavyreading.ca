@@ -610,6 +610,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 .now-call{margin:0 0 1.4rem}
 .now-call .call-text{font-family:var(--serif);font-size:1.35rem;line-height:1.45;
   margin:.4rem 0 .6rem;max-width:38rem}
+.house-view{border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;
+  margin:0 0 1.4rem;background:var(--paper)}
+.house-view .hv-text{margin:.4rem 0 .6rem;line-height:1.55;max-width:38rem}
 .now-sec{margin:2rem 0 0}
 .now-sec>h2{font-size:1.05rem;letter-spacing:.02em;margin:0 0 .8rem;
   padding-top:1.2rem;border-top:1px solid var(--line)}
@@ -669,6 +672,19 @@ details.now-det summary{cursor:pointer;color:var(--mut);font-size:.88rem;
 <span class="chip src"><a href="digest/2026-09-29/">Full edition &rarr;</a></span></div>
 </section>
 
+<section class="house-view" aria-label="House view">
+<p class="kicker">House view</p>
+<p class="hv-text"><b>Wider.</b> The heaviest confirmed factors all point one
+way: binding Mainline apportionment, Joliet still offline, commercial short
+positioning on the differential itself, and negative forward spare in
+Nov/Dec. The read is that the WCS discount stays wide and biased wider.
+Smaller offsets like the blending arb do not move the needle. Whiting union
+talks are today's wildcard. A qualitative read of the factor board, not a
+modeled forecast: no backtests, no price target.</p>
+<div class="chips"><span class="chip">Tue Sep 29, 2026</span>
+<span class="chip src">qualitative assessment</span></div>
+</section>
+
 <section class="now-sec" aria-label="Overnight changes">
 <h2>Overnight changes, ranked by balance impact</h2>
 <p class="sec-sub">Ranked by estimated balance impact times confirmation
@@ -702,17 +718,6 @@ inputs, stated as estimates.</p>
 </article>
 <article class="chg-card">
 <div class="chg-top"><span class="chg-rank">3</span>
-<span class="chg-title">Positioning: WTI crowded long, Brent de-risked</span></div>
-<p class="chg-delta">WTI 96th percentile; Brent specs cut ~23%</p>
-<p class="chg-body">Speculators in WTI are net long 101,828 contracts (Commodity Futures Trading Commission data), the 96th percentile of the one-year range: a crowded long that would have to unwind if prices fall. In ICE Brent, speculators hold 218,114 net long contracts after cutting about 23% of their longs in a week; that book is already de-risked.</p>
-<p class="chg-balance"><b>Balance read:</b> A de-escalation headline hurts the crowded WTI longs most; fresh escalation could drive a WTI catch-up rally, since WTI lags Brent by about $11.9.</p>
-
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">as of Sep 22, 2026</span>
-<span class="chip src">CFTC/ICE positioning</span></div>
-
-</article>
-<article class="chg-card">
-<div class="chg-top"><span class="chg-rank">4</span>
 <span class="chg-title">Premium moves into freight; Houthi escalation vs Yanbu</span></div>
 <p class="chg-delta">inside-Hormuz freight >$22/bbl vs ~$2 a year ago</p>
 <p class="chg-body">Hormuz traffic remains 75-90% below pre-conflict levels (UK Maritime Trade Operations, UKMTO), but flows keep healing through expensive ship-to-ship transfers: Middle East exports recovered to about 12.8 million b/d in September, and Saudi September exports are running at more than twice August levels. Freight is doing the work of the war: VLCC rates over $1 million/day and inside-Hormuz freight over $22/bbl vs about $2 a year ago. On the escalation track, the Houthis fired missiles toward Khamis Mushait and drones toward Riyadh over the weekend (all intercepted), claimed attacks on two Saudi tankers in the Red Sea, and France pledged military help defending Yanbu.</p>
@@ -723,14 +728,25 @@ inputs, stated as estimates.</p>
 
 </article>
 <article class="chg-card">
+<div class="chg-top"><span class="chg-rank">4</span>
+<span class="chg-title">Joliet's restart awaits confirmation</span></div>
+<p class="chg-delta">restart status awaiting public confirmation</p>
+<p class="chg-body">Quantum Commodity Intelligence headlines ExxonMobil's Joliet, Illinois refinery back in service as of about Sep 28, but that article is paywalled and no independent non-paywalled confirmation has surfaced. ExxonMobil's last public word (Sep 18) said the refinery was restarting with no date. The ~275 kb/d heavy-crude buyer has been offline since the Sep 13 power outage; Chicago wholesale prices already fell 25-40 cents on the assumption of a restart, not on confirmed rates. While the refinery is offline the Western Canadian Select (WCS) discount to West Texas Intermediate (WTI) stays wide and weak; a confirmed restart is the classic snap-tighter catalyst.</p>
+<p class="chg-balance"><b>Balance read:</b> If the confirmation lands, ~275 kb/d of WCS demand is back and the discount could narrow quickly in the near-term months. If it does not, the discount stays under pressure.</p>
+<p class="chg-cond"><b>Model conditional:</b> Joliet confirmed → ~275 kb/d of PADD 2 heavy-crude demand back. No dollar translation: the differential model is uncalibrated pending licensed marks, so no model-implied $Y exists.</p>
+<div class="chips"><span class="chip conf">paywalled single source</span><span class="chip">Sep 28, 2026</span>
+<span class="chip src">Quantum Commodity Intelligence headline (paywalled)</span></div>
+
+</article>
+<article class="chg-card">
 <div class="chg-top"><span class="chg-rank">5</span>
-<span class="chg-title">Commercial shorts build on the Canadian differentials</span></div>
-<p class="chg-delta">-5,874 lots (WCS); -2,259 lots (SW)</p>
-<p class="chg-body">Our Commitments of Traders (COT) model flags high-confidence commercial-sized net-short builds on the ICE WCS 1A and ICE SW 1A differentials: 5,874 lots on WCS, 2,259 on SW. That fits trade houses hedging export economics or producers selling into the rally ahead of Joliet's return. Probable, never fact.</p>
-<p class="chg-balance"><b>Balance read:</b> Trade houses and producers look to be hedging the Canadian differentials into Joliet's return, but that attribution is inferred, not confirmed.</p>
+<span class="chg-title">Positioning: WTI crowded long, Brent de-risked</span></div>
+<p class="chg-delta">WTI 96th percentile; Brent specs cut ~23%</p>
+<p class="chg-body">Speculators in WTI are net long 101,828 contracts (Commodity Futures Trading Commission data), the 96th percentile of the one-year range: a crowded long that would have to unwind if prices fall. In ICE Brent, speculators hold 218,114 net long contracts after cutting about 23% of their longs in a week; that book is already de-risked.</p>
+<p class="chg-balance"><b>Balance read:</b> A de-escalation headline hurts the crowded WTI longs most; fresh escalation could drive a WTI catch-up rally, since WTI lags Brent by about $11.9.</p>
 
 <div class="chips"><span class="chip conf">confirmed</span><span class="chip">as of Sep 22, 2026</span>
-<span class="chip src">In-house COT model</span></div>
+<span class="chip src">CFTC/ICE positioning</span></div>
 
 </article>
 <article class="chg-card">
@@ -746,13 +762,13 @@ inputs, stated as estimates.</p>
 </article>
 <article class="chg-card">
 <div class="chg-top"><span class="chg-rank">7</span>
-<span class="chg-title">Joliet's restart awaits confirmation</span></div>
-<p class="chg-delta">restart status awaiting public confirmation</p>
-<p class="chg-body">Quantum Commodity Intelligence headlines ExxonMobil's Joliet, Illinois refinery back in service as of about Sep 28, but that article is paywalled and no independent non-paywalled confirmation has surfaced. ExxonMobil's last public word (Sep 18) said the refinery was restarting with no date. The ~275 kb/d heavy-crude buyer has been offline since the Sep 13 power outage; Chicago wholesale prices already fell 25-40 cents on the assumption of a restart, not on confirmed rates. While the refinery is offline the Western Canadian Select (WCS) discount to West Texas Intermediate (WTI) stays wide and weak; a confirmed restart is the classic snap-tighter catalyst.</p>
-<p class="chg-balance"><b>Balance read:</b> If the confirmation lands, ~275 kb/d of WCS demand is back and the discount could narrow quickly in the near-term months. If it does not, the discount stays under pressure.</p>
-<p class="chg-cond"><b>Model conditional:</b> Joliet confirmed → ~275 kb/d of PADD 2 heavy-crude demand back. No dollar translation: the differential model is uncalibrated pending licensed marks, so no model-implied $Y exists.</p>
-<div class="chips"><span class="chip conf">paywalled single source</span><span class="chip">Sep 28, 2026</span>
-<span class="chip src">Quantum Commodity Intelligence headline (paywalled)</span></div>
+<span class="chg-title">Commercial shorts build on the Canadian differentials</span></div>
+<p class="chg-delta">-5,874 lots (WCS); -2,259 lots (SW)</p>
+<p class="chg-body">Our Commitments of Traders (COT) model flags high-confidence commercial-sized net-short builds on the ICE WCS 1A and ICE SW 1A differentials: 5,874 lots on WCS, 2,259 on SW. That fits trade houses hedging export economics or producers selling into the rally ahead of Joliet's return. Probable, never fact.</p>
+<p class="chg-balance"><b>Balance read:</b> Trade houses and producers look to be hedging the Canadian differentials into Joliet's return, but that attribution is inferred, not confirmed.</p>
+
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">as of Sep 22, 2026</span>
+<span class="chip src">In-house COT model</span></div>
 
 </article>
 <article class="chg-card">
@@ -768,17 +784,6 @@ inputs, stated as estimates.</p>
 </article>
 <article class="chg-card">
 <div class="chg-top"><span class="chg-rank">9</span>
-<span class="chg-title">Blending arb window open (illustrative)</span></div>
-<p class="chg-delta">modeled net incentive $5.51/bbl</p>
-<p class="chg-body">Our blender-behavior nowcast (in-house, synthetic assumptions clearly flagged) has the heavy-into-light arbitrage window open: the viscosity constraint is binding and the incentive to blend heavy barrels into the light pool reads a net $5.51/bbl on the modeled stack, or about 43.2 kb/d of reclassification per 100 kb/d of light tendered. Direction matters, level does not.</p>
-<p class="chg-balance"><b>Balance read:</b> An illustrative model read, not a live market print: while the window is open, barrels reclassify from the heavy pool into the light pool at the margin — a softener on the discount, not a directional call.</p>
-
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Sep 29, 2026</span>
-<span class="chip src">In-house blending nowcast (synthetic)</span></div>
-
-</article>
-<article class="chg-card">
-<div class="chg-top"><span class="chg-rank">10</span>
 <span class="chg-title">Merey discounts widen on record freight; 7th tanker seized</span></div>
 <p class="chg-delta">Merey offers -$18/-$20 vs Brent; freight ~$3.5M per voyage</p>
 <p class="chg-body">Venezuelan Merey is being offered at $18-20/bbl under Brent into the US and Europe, with traders seeking steeper discounts as tanker costs squeeze margins: Jose-to-USGC Aframax freight is near $3.5 million per voyage (~$5-7/bbl equivalent). US imports of Venezuelan crude ran 583 kb/d in the week ending Sep 18, down from 782. US Southern Command seized the sanctioned aframax Sagitta, the seventh tanker seizure under the blockade regime; about 20% of Venezuelan seaborne exports are moving into Caribbean storage in the Bahamas, Curacao and Saint Lucia, marketed by Vitol and Trafigura. Destination splits remain estimates: dark-fleet gaps and ship-to-ship transfers make exact shares unverifiable.</p>
@@ -789,36 +794,14 @@ inputs, stated as estimates.</p>
 
 </article>
 <article class="chg-card">
-<div class="chg-top"><span class="chg-rank">11</span>
-<span class="chg-title">Pipeline spare capacity revised for Nov 2026</span></div>
-<p class="chg-delta">+155 kb/d</p>
-<p class="chg-body">Pipeline spare capacity for Nov 2026 moved from -155 to 0 kb/d in the reconciled balance.</p>
-<p class="chg-balance"><b>Balance read:</b> Looser: more room before the pipes bind.</p>
+<div class="chg-top"><span class="chg-rank">10</span>
+<span class="chg-title">Blending arb window open (illustrative)</span></div>
+<p class="chg-delta">modeled net incentive $5.51/bbl</p>
+<p class="chg-body">Our blender-behavior nowcast (in-house, synthetic assumptions clearly flagged) has the heavy-into-light arbitrage window open: the viscosity constraint is binding and the incentive to blend heavy barrels into the light pool reads a net $5.51/bbl on the modeled stack, or about 43.2 kb/d of reclassification per 100 kb/d of light tendered. Direction matters, level does not.</p>
+<p class="chg-balance"><b>Balance read:</b> An illustrative model read, not a live market print: while the window is open, barrels reclassify from the heavy pool into the light pool at the margin — a softener on the discount, not a directional call.</p>
 
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant)</span>
-<span class="chip src">WCSB supply/demand balance model</span></div>
-
-</article>
-<article class="chg-card">
-<div class="chg-top"><span class="chg-rank">12</span>
-<span class="chg-title">Pipeline spare capacity revised for Dec 2026</span></div>
-<p class="chg-delta">+155 kb/d</p>
-<p class="chg-body">Pipeline spare capacity for Dec 2026 moved from -155 to 0 kb/d in the reconciled balance.</p>
-<p class="chg-balance"><b>Balance read:</b> Looser: more room before the pipes bind.</p>
-
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant)</span>
-<span class="chip src">WCSB supply/demand balance model</span></div>
-
-</article>
-<article class="chg-card">
-<div class="chg-top"><span class="chg-rank">13</span>
-<span class="chg-title">Pipeline spare capacity revised for Dec 2027</span></div>
-<p class="chg-delta">+72 kb/d</p>
-<p class="chg-body">Pipeline spare capacity for Dec 2027 moved from -56 to 15 kb/d in the reconciled balance.</p>
-<p class="chg-balance"><b>Balance read:</b> Looser: more room before the pipes bind.</p>
-
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant)</span>
-<span class="chip src">WCSB supply/demand balance model</span></div>
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Sep 29, 2026</span>
+<span class="chip src">In-house blending nowcast (synthetic)</span></div>
 
 </article>
 </section>
