@@ -472,6 +472,15 @@ details.sec > summary::before { content:"+ "; color:var(--faint); font-weight:70
 details.sec[open] > summary::before { content:"\2014  "; }
 details.sec > summary:hover { color:var(--acc-deep); }
 .nullnote { color:var(--mut); font-style:italic; }
+/* Guided vs modeled chip (2026-10-01): quiet, glanceable. Shared by
+   the maintenance page and any table distinguishing company guidance from
+   model estimates. */
+.basis-chip { display:inline-block; font-size:.68rem; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; padding:.1rem .45rem;
+  border-radius:99px; margin-left:.5rem; vertical-align:1px;
+  border:1px solid var(--line2); color:var(--mut); }
+.basis-guided { border-color:#2e7d4f; color:#2e7d4f; }
+.basis-modeled { border-color:#b07d2b; color:#b07d2b; }
 .panel { margin:26px 0; }
 hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:76ch; }
 
@@ -626,28 +635,28 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h2>Public confirmed (2)</h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Project</th><th>Timing</th><th>Event</th><th class="num">Impact kb/d</th><th>Source</th></tr>
-    <tr><td>SU <a class="plink" href="../projects/su_base_plant.html">Base Plant</a></td><td>Q4 2026</td><td>Turnaround</td><td class="num">-15.0</td><td>Suncor Energy Inc., 2026 planned maintenance table (Q4 2025 / Q1 2026 investor presentations) (2026-04-01)</td></tr>
-    <tr><td>SU <a class="plink" href="../projects/su_base_plant.html">Base Plant</a></td><td>Q4 2026</td><td>Turnaround</td><td class="num">-5.0</td><td>Suncor Energy Inc., 2026 planned maintenance table (Q4 2025 / Q1 2026 investor presentations) (2026-04-01)</td></tr>
+    <tr><td>SU <a class="plink" href="../projects/su_base_plant.html">Base Plant</a></td><td>Q4 2026</td><td>Turnaround <span class="basis-chip basis-guided">guided</span></td><td class="num">-15.0</td><td>Suncor Energy Inc., 2026 planned maintenance table (Q4 2025 / Q1 2026 investor presentations) (2026-04-01)</td></tr>
+    <tr><td>SU <a class="plink" href="../projects/su_base_plant.html">Base Plant</a></td><td>Q4 2026</td><td>Turnaround <span class="basis-chip basis-guided">guided</span></td><td class="num">-5.0</td><td>Suncor Energy Inc., 2026 planned maintenance table (Q4 2025 / Q1 2026 investor presentations) (2026-04-01)</td></tr>
   </table></div>
   <h2>Cadence-modeled (editorially approved) (2)</h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Project</th><th>Timing</th><th>Event</th><th class="num">Impact kb/d</th><th>Source</th></tr>
-    <tr><td>CNQ <a class="plink" href="../projects/cnq_primrose.html">Primrose and Wolf Lake</a></td><td>Apr 2027</td><td>Turnaround</td><td class="num">-26.0</td><td>Model estimate, ST53 seasonal dip analysis (model-computed, AER ST53) (2026-09-23)</td></tr>
-    <tr><td>SU <a class="plink" href="../projects/su_mackay_river.html">MacKay River</a></td><td>Sep 2027</td><td>Turnaround</td><td class="num">-12.0</td><td>Model estimate, ST53 seasonal dip analysis (model-computed, AER ST53) (2026-09-23)</td></tr>
+    <tr><td>CNQ <a class="plink" href="../projects/cnq_primrose.html">Primrose and Wolf Lake</a></td><td>Apr 2027</td><td>Turnaround <span class="basis-chip basis-modeled">modeled</span></td><td class="num">-26.0</td><td>Model estimate, ST53 seasonal dip analysis (model-computed, AER ST53) (2026-09-23)</td></tr>
+    <tr><td>SU <a class="plink" href="../projects/su_mackay_river.html">MacKay River</a></td><td>Sep 2027</td><td>Turnaround <span class="basis-chip basis-modeled">modeled</span></td><td class="num">-12.0</td><td>Model estimate, ST53 seasonal dip analysis (model-computed, AER ST53) (2026-09-23)</td></tr>
   </table></div>
   <h2>Guidance sourced (10)</h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Project</th><th>Timing</th><th>Event</th><th class="num">Impact kb/d</th><th>Source</th></tr>
-    <tr><td>CVE <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a></td><td>Q3 2026</td><td>Turnaround</td><td class="num">-20.0</td><td>Cenovus Energy Inc., Cenovus Energy Inc. Q2 2026 earnings call transcript (2026-07-29)</td></tr>
-    <tr><td>IMO <a class="plink" href="../projects/imo_kearl.html">Kearl</a></td><td>Oct 2026 to Dec 2027</td><td>No turnaround in window (stated)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Imperial Oil Limited, 2026 Corporate guidance (via Oil Sands Magazine 2026-01-15) (2026-01-15)</td></tr>
-    <tr><td>CVE <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a></td><td>Q4 2026</td><td>No turnaround in window (stated)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus announces second-quarter 2026 results (2026-07-29)</td></tr>
-    <tr><td>CVE <a class="plink" href="../projects/cve_foster_creek.html">Foster Creek</a></td><td>Q4 2026</td><td>No turnaround in window (stated)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus announces second-quarter 2026 results (2026-07-29)</td></tr>
-    <tr><td>CVE <a class="plink" href="../projects/cve_sunrise.html">Sunrise</a></td><td>Q4 2026</td><td>No turnaround in window (stated)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus announces second-quarter 2026 results (2026-07-29)</td></tr>
-    <tr><td>CNQ <a class="plink" href="../projects/cnq_horizon.html">Horizon</a></td><td>in 2028</td><td>Scheduled (future window)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Canadian Natural Resources Limited, 2026 Budget press release (2025-12-16)</td></tr>
-    <tr><td>IMO <a class="plink" href="../projects/imo_kearl.html">Kearl</a></td><td>in 2029</td><td>Scheduled (future window)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Imperial Oil Limited, Imperial Oil (IMO) Q2 2026 earnings call transcript (2026-07-31)</td></tr>
-    <tr><td>ATH <a class="plink" href="../projects/ath_leismer.html">Leismer</a></td><td>in 2030</td><td>Scheduled (future window)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Athabasca Oil Corporation, Athabasca Oil Reports Strong 2026 First Quarter Results and Increased Cash Flow Outlook (2026-05-06)</td></tr>
-    <tr><td>CVE <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a></td><td>in 2031</td><td>Scheduled (future window)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus Energy Inc. Q2 2026 earnings call transcript (2026-07-29) (2026-07-29)</td></tr>
-    <tr><td>SU <a class="plink" href="../projects/su_firebag.html">Firebag</a></td><td>in 2031</td><td>Scheduled (future window)</td><td class="num"><span class="nullnote">Not estimated</span></td><td>Suncor Energy Inc., Suncor Energy Q2 2026 earnings call transcript (2026-08-05)</td></tr>
+    <tr><td>CVE <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a></td><td>Q3 2026</td><td>Turnaround <span class="basis-chip basis-guided">guided</span></td><td class="num">-20.0</td><td>Cenovus Energy Inc., Cenovus Energy Inc. Q2 2026 earnings call transcript (2026-07-29)</td></tr>
+    <tr><td>IMO <a class="plink" href="../projects/imo_kearl.html">Kearl</a></td><td>Oct 2026 to Dec 2027</td><td>No turnaround in window (stated) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Imperial Oil Limited, 2026 Corporate guidance (via Oil Sands Magazine 2026-01-15) (2026-01-15)</td></tr>
+    <tr><td>CVE <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a></td><td>Q4 2026</td><td>No turnaround in window (stated) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus announces second-quarter 2026 results (2026-07-29)</td></tr>
+    <tr><td>CVE <a class="plink" href="../projects/cve_foster_creek.html">Foster Creek</a></td><td>Q4 2026</td><td>No turnaround in window (stated) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus announces second-quarter 2026 results (2026-07-29)</td></tr>
+    <tr><td>CVE <a class="plink" href="../projects/cve_sunrise.html">Sunrise</a></td><td>Q4 2026</td><td>No turnaround in window (stated) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus announces second-quarter 2026 results (2026-07-29)</td></tr>
+    <tr><td>CNQ <a class="plink" href="../projects/cnq_horizon.html">Horizon</a></td><td>in 2028</td><td>Scheduled (future window) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Canadian Natural Resources Limited, 2026 Budget press release (2025-12-16)</td></tr>
+    <tr><td>IMO <a class="plink" href="../projects/imo_kearl.html">Kearl</a></td><td>in 2029</td><td>Scheduled (future window) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Imperial Oil Limited, Imperial Oil (IMO) Q2 2026 earnings call transcript (2026-07-31)</td></tr>
+    <tr><td>ATH <a class="plink" href="../projects/ath_leismer.html">Leismer</a></td><td>in 2030</td><td>Scheduled (future window) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Athabasca Oil Corporation, Athabasca Oil Reports Strong 2026 First Quarter Results and Increased Cash Flow Outlook (2026-05-06)</td></tr>
+    <tr><td>CVE <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a></td><td>in 2031</td><td>Scheduled (future window) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Cenovus Energy Inc., Cenovus Energy Inc. Q2 2026 earnings call transcript (2026-07-29) (2026-07-29)</td></tr>
+    <tr><td>SU <a class="plink" href="../projects/su_firebag.html">Firebag</a></td><td>in 2031</td><td>Scheduled (future window) <span class="basis-chip basis-guided">guided</span></td><td class="num"><span class="nullnote">Not estimated</span></td><td>Suncor Energy Inc., Suncor Energy Q2 2026 earnings call transcript (2026-08-05)</td></tr>
   </table></div>
   <h2>Modeled offline</h2>
   <p class="note">Major turnarounds only, shown as offline kb/d by month, on top of the baseline forecast. Routine annual maintenance is already inside the baseline (each project forecast carries past routine shutdowns in its history), so nothing here is double-counted.</p>

@@ -472,6 +472,15 @@ details.sec > summary::before { content:"+ "; color:var(--faint); font-weight:70
 details.sec[open] > summary::before { content:"\2014  "; }
 details.sec > summary:hover { color:var(--acc-deep); }
 .nullnote { color:var(--mut); font-style:italic; }
+/* Guided vs modeled chip (2026-10-01): quiet, glanceable. Shared by
+   the maintenance page and any table distinguishing company guidance from
+   model estimates. */
+.basis-chip { display:inline-block; font-size:.68rem; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; padding:.1rem .45rem;
+  border-radius:99px; margin-left:.5rem; vertical-align:1px;
+  border:1px solid var(--line2); color:var(--mut); }
+.basis-guided { border-color:#2e7d4f; color:#2e7d4f; }
+.basis-modeled { border-color:#b07d2b; color:#b07d2b; }
 .panel { margin:26px 0; }
 hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:76ch; }
 

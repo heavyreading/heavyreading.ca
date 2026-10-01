@@ -472,6 +472,15 @@ details.sec > summary::before { content:"+ "; color:var(--faint); font-weight:70
 details.sec[open] > summary::before { content:"\2014  "; }
 details.sec > summary:hover { color:var(--acc-deep); }
 .nullnote { color:var(--mut); font-style:italic; }
+/* Guided vs modeled chip (2026-10-01): quiet, glanceable. Shared by
+   the maintenance page and any table distinguishing company guidance from
+   model estimates. */
+.basis-chip { display:inline-block; font-size:.68rem; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; padding:.1rem .45rem;
+  border-radius:99px; margin-left:.5rem; vertical-align:1px;
+  border:1px solid var(--line2); color:var(--mut); }
+.basis-guided { border-color:#2e7d4f; color:#2e7d4f; }
+.basis-modeled { border-color:#b07d2b; color:#b07d2b; }
 .panel { margin:26px 0; }
 hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:76ch; }
 
@@ -612,13 +621,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <div class="crumb"><a href="../index.html">Home</a> / Supply</div>
   <h1>Supply</h1>
   <p class="sub">The physical barrel: takeaway capacity, crude type, and when production goes offline for maintenance.</p>
-<section class="exec" aria-label="Executive summary"><h2>Executive call</h2><ul><li>Forecast supply averages <b>4,297.0 thousand barrels per day (kb/d)</b> from Nov 2026 onward, +266.4 kb/d versus Oct 2026 (4,030.6 kb/d).</li><li>Sep 2026 has the most maintenance offline, <b>310.0 kb/d</b>:<ul><li><a class="plink" href="../projects/cnq_horizon.html">Horizon</a> 35-day turnaround</li><li><a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2 turnaround</li><li>Imperial <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a> 3Q/4Q 2026 turnaround</li></ul></li><li>No company-confirmed maintenance is in the forecast from Jan 2027 onward:<ul><li>April 2027: <a class="plink" href="../projects/cnq_primrose.html">Primrose/Wolf Lake</a> turnaround (-26 kb/d), cadence-modeled from the historical pattern (weak signal), not company-confirmed</li><li>September 2027: <a class="plink" href="../projects/su_mackay_river.html">MacKay River</a> turnaround (-12 kb/d), cadence-modeled from the historical pattern, not company-confirmed</li></ul></li><li>Largest projected month-to-month supply moves:<ul><li>Oct 2026 to Nov 2026: +366.3 kb/d</li><li>Mar 2027 to Apr 2027: -254.9 kb/d</li><li>Oct 2027 to Nov 2027: +224.9 kb/d</li></ul></li><li>The storage balance runs from a high of <b>+154.7 kb/d</b> in Dec 2026 to a low of <b>-143.9 kb/d</b> in Jun 2027 (positive = oil going into commercial storage, negative = oil drawn out of storage).</li></ul><p class="exec-vint">All figures in thousand barrels per day (kb/d), computed from the model's data. Full call: <a href="../st3-dashboard.html">Projected ST3</a>.</p></section>
+<section class="exec" aria-label="Executive summary"><h2>Executive call</h2><ul><li>Forecast supply averages <b>4,297.0 thousand barrels per day (kb/d)</b> from Nov 2026 onward, +266.4 kb/d versus Oct 2026 (4,030.6 kb/d).</li><li>Sep 2026 has the most maintenance offline, <b>310.0 kb/d</b>:<ul><li><a class="plink" href="../projects/cnq_horizon.html">Horizon</a> 35-day turnaround</li><li><a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2 turnaround</li><li>Imperial <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a> 3Q/4Q 2026 turnaround</li></ul></li><li>No company-confirmed maintenance is in the forecast from Jan 2027 onward:<ul><li>April 2027: <a class="plink" href="../projects/cnq_primrose.html">Primrose/Wolf Lake</a> turnaround (-26 kb/d), cadence-modeled from the historical pattern (weak signal), not company-confirmed</li><li>September 2027: <a class="plink" href="../projects/su_mackay_river.html">MacKay River</a> turnaround (-12 kb/d), cadence-modeled from the historical pattern, not company-confirmed</li></ul></li><li>Largest projected month-to-month supply moves:<ul><li>Oct 2026 to Nov 2026: +366.3 kb/d<br><span class="move-why">SCO +326, mined +202, SAGD +50; Disclosed maintenance: <a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> Q4 bitumen maintenance (-15 kb/d in Nov 2026); Disclosed maintenance: <a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> Q4 SCO and diesel maintenance (-5 kb/d in Nov 2026); Disclosed maintenance: Imperial <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a> 3Q/4Q 2026 turnaround (-3 kb/d in Nov 2026); Disclosed maintenance: <a class="plink" href="../projects/cnq_horizon.html">Horizon</a> 35-day turnaround (-119 kb/d in Oct 2026); Disclosed maintenance: <a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2 turnaround (-22 kb/d in Oct 2026); Disclosed maintenance: Imperial <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a> 3Q/4Q 2026 turnaround (-3 kb/d in Oct 2026); <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a> F/G turnaround tail (-20 kb/d, assumed, not company-confirmed); Seasonal pattern: increases in 10 of 11 years (hist. median +96 kb/d)</span></li><li>Mar 2027 to Apr 2027: -254.9 kb/d<br><span class="move-why">mined -176, SCO -156, SAGD -38; <a class="plink" href="../projects/cnq_primrose.html">Primrose/Wolf Lake</a> April 2027 turnaround (-26 kb/d, cadence-modeled, not company-confirmed); Seasonal pattern: declines in 11 of 12 years (hist. median -224 kb/d); No facility-level turnaround confirmed for 2027</span></li><li>Oct 2027 to Nov 2027: +224.9 kb/d<br><span class="move-why">mined +217, SCO +190, SAGD +30; Seasonal pattern: increases in 10 of 11 years (hist. median +95 kb/d); No facility-level turnaround confirmed for 2027</span></li></ul></li><li>The storage balance runs from a high of <b>+154.7 kb/d</b> in Dec 2026 to a low of <b>-143.9 kb/d</b> in Jun 2027 (positive = oil going into commercial storage, negative = oil drawn out of storage).</li></ul><p class="exec-vint">All figures in thousand barrels per day (kb/d), computed from the model's data. Full call: <a href="../st3-dashboard.html">Projected ST3</a>.</p></section>
 <div class="statgrid kpi"><div class="stat"><div class="k">Supply, latest actual</div><div class="v">4,398.3 <span>kb/d</span></div><div class="s">Jul 2026 · Alberta Energy Regulator (AER) ST3 monthly report</div></div><div class="stat"><div class="k">Forecast supply, average</div><div class="v">4,297.0 <span>kb/d</span></div><div class="s">Nov 2026 onward</div></div><div class="stat"><div class="k">Heaviest maintenance</div><div class="v">310.0 <span>kb/d</span></div><div class="s">Sep 2026 offline</div></div><div class="stat"><div class="k">Egress spare capacity</div><div class="v">272.2 <span>kb/d</span></div><div class="s">Jun 2026 · Canadian Energy Regulator, retrieved 2026-09-22</div></div></div>
 <h2 id="egress">Egress</h2>
 <p class="sub">How full the pipes are: each system's available capacity against what actually flowed, then our forecast of how full they get. In May 2024 the Trans Mountain expansion (TMX) entered service, so total capacity genuinely steps up there.</p>
-<h3 class="ctake">Egress is 94% full: 272 kb/d of spare capacity in Jun 2026 (reported pipeline data; the three systems the CER tracks)</h3>
-<p><b>Measured history, modeled forecast.</b> Through Jun 2026 these are measured numbers: what actually flowed against available capacity on the three pipeline systems the Canada Energy Regulator (CER) tracks. This is reported data, not our model. From Jul 2026 it is our forecast: modeled marketable supply (production available to sell) against total capacity across six pipelines. Where history meets forecast, the line steps up because what is counted changes: the history line is actual throughput on three pipelines, while the forecast line is our full modeled supply, which also moves on Express, Milk River, Rangeland and by rail. It is not a jump in actual flows.</p>
-<p>The reported history covers Enbridge Mainline, Keystone, and Trans Mountain. The CER does not report Express, Milk River, Rangeland or rail, so those are left out of the history entirely (not estimated). In our central forecast, modeled supply sits above total pipeline capacity in 23 of 54 forecast months. The squeeze is worst in winter and deepens through the decade. For spare capacity across every system and scenario, see <a href="../egress/index.html">Egress Outlook</a>.</p>
+<h3 class="ctake">Egress is 96% full: 214 kb/d of spare capacity in Jun 2026 (measured capacity, all six systems; supply from ST3)</h3>
+<p><b>Measured history, modeled forecast.</b> Through Jun 2026 the capacity bars are measured: Canada Energy Regulator (CER) reported available capacity for Enbridge Mainline, Keystone and Trans Mountain, plus empirical capacity for Express, Milk River and Rangeland (which the CER does not track). The Mainline is shown crude-only on both sides, with 215 kb/d of non-crude space removed. The supply line is ST3 marketable supply through Jul 2026 — the same barrels leaving Alberta concept as the forecast, so there is no definition step where history meets forecast. This is reported data, not our model. From Jul 2026 it is our forecast: modeled marketable supply against empirical working capacity across all six pipelines.</p>
+<p>The measured capacity stack covers all six export pipelines: the three large systems from CER reported data and the three smaller ones at empirical capacity (the CER does not report them, so carrying the empirical figure back is more honest than showing three pipes against basin-wide supply). Rail is modeled separately at 85 kb/d. In our central forecast, modeled supply sits above total pipeline capacity in 23 of 54 forecast months. The squeeze is worst in winter and deepens through the decade. For spare capacity across every system and scenario, see <a href="../egress/index.html">Egress Outlook</a>.</p>
 <figure class="chart">
 <svg viewbox="0 0 720 490" role="img" aria-label="Monthly egress capacity vs throughput, measured history into modeled forecast, kb/d" style="width:100%;height:auto;display:block">
 <style>text{font-family:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums;}.tick{font-size:13px;fill:var(--mut);}.xlab{font-size:12.5px;fill:var(--faint);}.elab{font-size:12.5px;font-weight:700;}.evt{font-size:11px;fill:var(--mut);}.val{font-size:13px;font-weight:700;fill:var(--ink);}.valinv{font-size:13px;fill:#fff;}</style>
@@ -635,312 +644,618 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <line x1="66" y1="88.0" x2="694" y2="88.0" style="stroke:var(--ch-grid)" stroke-width="1" />
 <text x="58" y="92.0" text-anchor="end" font-size="11" style="fill:var(--mut)">6,000</text>
 <text x="10" y="20" font-size="11" style="fill:var(--mut)">kb/d</text>
-<rect x="66.6" y="275.2" width="2.9" height="172.8" style="fill:var(--ch-ink2)"><title>2018-01 Enbridge Mainline: 2,880.7 kb/d</title></rect>
-<rect x="66.6" y="239.6" width="2.9" height="35.6" style="fill:var(--ch-steel)"><title>2018-01 Keystone: 592.8 kb/d</title></rect>
-<rect x="66.6" y="223.7" width="2.9" height="15.9" style="fill:var(--ch-g3)"><title>2018-01 Trans Mountain: 264.2 kb/d</title></rect>
-<rect x="70.6" y="281.9" width="2.9" height="166.1" style="fill:var(--ch-ink2)"><title>2018-02 Enbridge Mainline: 2,767.5 kb/d</title></rect>
-<rect x="70.6" y="246.1" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2018-02 Keystone: 597.6 kb/d</title></rect>
-<rect x="70.6" y="227.6" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2018-02 Trans Mountain: 308.2 kb/d</title></rect>
-<rect x="74.6" y="281.9" width="2.9" height="166.1" style="fill:var(--ch-ink2)"><title>2018-03 Enbridge Mainline: 2,767.5 kb/d</title></rect>
-<rect x="74.6" y="246.6" width="2.9" height="35.4" style="fill:var(--ch-steel)"><title>2018-03 Keystone: 589.5 kb/d</title></rect>
-<rect x="74.6" y="229.2" width="2.9" height="17.4" style="fill:var(--ch-g3)"><title>2018-03 Trans Mountain: 289.3 kb/d</title></rect>
-<rect x="78.6" y="282.3" width="2.9" height="165.7" style="fill:var(--ch-ink2)"><title>2018-04 Enbridge Mainline: 2,761.2 kb/d</title></rect>
-<rect x="78.6" y="246.1" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-04 Keystone: 604.4 kb/d</title></rect>
-<rect x="78.6" y="228.3" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2018-04 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="82.7" y="282.3" width="2.9" height="165.7" style="fill:var(--ch-ink2)"><title>2018-05 Enbridge Mainline: 2,761.2 kb/d</title></rect>
-<rect x="82.7" y="246.9" width="2.9" height="35.4" style="fill:var(--ch-steel)"><title>2018-05 Keystone: 590.0 kb/d</title></rect>
-<rect x="82.7" y="228.4" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2018-05 Trans Mountain: 308.2 kb/d</title></rect>
-<rect x="86.7" y="285.0" width="2.9" height="163.0" style="fill:var(--ch-ink2)"><title>2018-06 Enbridge Mainline: 2,717.2 kb/d</title></rect>
-<rect x="86.7" y="249.2" width="2.9" height="35.8" style="fill:var(--ch-steel)"><title>2018-06 Keystone: 596.4 kb/d</title></rect>
-<rect x="86.7" y="231.8" width="2.9" height="17.4" style="fill:var(--ch-g3)"><title>2018-06 Trans Mountain: 289.3 kb/d</title></rect>
-<rect x="90.7" y="283.1" width="2.9" height="164.9" style="fill:var(--ch-ink2)"><title>2018-07 Enbridge Mainline: 2,748.7 kb/d</title></rect>
-<rect x="90.7" y="247.2" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2018-07 Keystone: 597.8 kb/d</title></rect>
-<rect x="90.7" y="229.9" width="2.9" height="17.4" style="fill:var(--ch-g3)"><title>2018-07 Trans Mountain: 289.3 kb/d</title></rect>
-<rect x="94.7" y="284.8" width="2.9" height="163.2" style="fill:var(--ch-ink2)"><title>2018-08 Enbridge Mainline: 2,719.6 kb/d</title></rect>
-<rect x="94.7" y="251.0" width="2.9" height="33.9" style="fill:var(--ch-steel)"><title>2018-08 Keystone: 564.4 kb/d</title></rect>
-<rect x="94.7" y="232.8" width="2.9" height="18.1" style="fill:var(--ch-g3)"><title>2018-08 Trans Mountain: 301.9 kb/d</title></rect>
-<rect x="98.8" y="285.4" width="2.9" height="162.6" style="fill:var(--ch-ink2)"><title>2018-09 Enbridge Mainline: 2,709.5 kb/d</title></rect>
-<rect x="98.8" y="250.4" width="2.9" height="35.0" style="fill:var(--ch-steel)"><title>2018-09 Keystone: 584.0 kb/d</title></rect>
-<rect x="98.8" y="234.2" width="2.9" height="16.2" style="fill:var(--ch-g3)"><title>2018-09 Trans Mountain: 270.5 kb/d</title></rect>
-<rect x="102.8" y="278.7" width="2.9" height="169.3" style="fill:var(--ch-ink2)"><title>2018-10 Enbridge Mainline: 2,821.5 kb/d</title></rect>
-<rect x="102.8" y="244.0" width="2.9" height="34.7" style="fill:var(--ch-steel)"><title>2018-10 Keystone: 578.9 kb/d</title></rect>
-<rect x="102.8" y="227.0" width="2.9" height="17.0" style="fill:var(--ch-g3)"><title>2018-10 Trans Mountain: 283.0 kb/d</title></rect>
-<rect x="106.8" y="278.9" width="2.9" height="169.1" style="fill:var(--ch-ink2)"><title>2018-11 Enbridge Mainline: 2,819.1 kb/d</title></rect>
-<rect x="106.8" y="243.7" width="2.9" height="35.1" style="fill:var(--ch-steel)"><title>2018-11 Keystone: 585.6 kb/d</title></rect>
-<rect x="106.8" y="228.6" width="2.9" height="15.1" style="fill:var(--ch-g3)"><title>2018-11 Trans Mountain: 251.6 kb/d</title></rect>
-<rect x="110.8" y="276.9" width="2.9" height="171.1" style="fill:var(--ch-ink2)"><title>2018-12 Enbridge Mainline: 2,851.9 kb/d</title></rect>
-<rect x="110.8" y="241.5" width="2.9" height="35.4" style="fill:var(--ch-steel)"><title>2018-12 Keystone: 589.5 kb/d</title></rect>
-<rect x="110.8" y="222.6" width="2.9" height="18.9" style="fill:var(--ch-g3)"><title>2018-12 Trans Mountain: 314.5 kb/d</title></rect>
-<rect x="114.9" y="279.7" width="2.9" height="168.3" style="fill:var(--ch-ink2)"><title>2019-01 Enbridge Mainline: 2,805.3 kb/d</title></rect>
-<rect x="114.9" y="244.0" width="2.9" height="35.7" style="fill:var(--ch-steel)"><title>2019-01 Keystone: 595.0 kb/d</title></rect>
-<rect x="114.9" y="224.4" width="2.9" height="19.6" style="fill:var(--ch-g3)"><title>2019-01 Trans Mountain: 327.1 kb/d</title></rect>
-<rect x="118.9" y="277.0" width="2.9" height="171.0" style="fill:var(--ch-ink2)"><title>2019-02 Enbridge Mainline: 2,849.3 kb/d</title></rect>
-<rect x="118.9" y="241.8" width="2.9" height="35.2" style="fill:var(--ch-steel)"><title>2019-02 Keystone: 587.0 kb/d</title></rect>
-<rect x="118.9" y="221.8" width="2.9" height="20.0" style="fill:var(--ch-g3)"><title>2019-02 Trans Mountain: 333.4 kb/d</title></rect>
-<rect x="122.9" y="279.7" width="2.9" height="168.3" style="fill:var(--ch-ink2)"><title>2019-03 Enbridge Mainline: 2,805.3 kb/d</title></rect>
-<rect x="122.9" y="246.0" width="2.9" height="33.7" style="fill:var(--ch-steel)"><title>2019-03 Keystone: 561.4 kb/d</title></rect>
-<rect x="122.9" y="228.6" width="2.9" height="17.4" style="fill:var(--ch-g3)"><title>2019-03 Trans Mountain: 289.3 kb/d</title></rect>
-<rect x="126.9" y="280.1" width="2.9" height="167.9" style="fill:var(--ch-ink2)"><title>2019-04 Enbridge Mainline: 2,799.0 kb/d</title></rect>
-<rect x="126.9" y="246.1" width="2.9" height="34.0" style="fill:var(--ch-steel)"><title>2019-04 Keystone: 565.9 kb/d</title></rect>
-<rect x="126.9" y="227.6" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2019-04 Trans Mountain: 308.2 kb/d</title></rect>
-<rect x="131.0" y="280.8" width="2.9" height="167.2" style="fill:var(--ch-ink2)"><title>2019-05 Enbridge Mainline: 2,786.4 kb/d</title></rect>
-<rect x="131.0" y="244.7" width="2.9" height="36.1" style="fill:var(--ch-steel)"><title>2019-05 Keystone: 601.8 kb/d</title></rect>
-<rect x="131.0" y="224.7" width="2.9" height="20.0" style="fill:var(--ch-g3)"><title>2019-05 Trans Mountain: 333.4 kb/d</title></rect>
-<rect x="135.0" y="275.2" width="2.9" height="172.8" style="fill:var(--ch-ink2)"><title>2019-06 Enbridge Mainline: 2,880.7 kb/d</title></rect>
-<rect x="135.0" y="239.8" width="2.9" height="35.4" style="fill:var(--ch-steel)"><title>2019-06 Keystone: 590.0 kb/d</title></rect>
-<rect x="135.0" y="222.0" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2019-06 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="139.0" y="274.1" width="2.9" height="173.9" style="fill:var(--ch-ink2)"><title>2019-07 Enbridge Mainline: 2,899.0 kb/d</title></rect>
-<rect x="139.0" y="238.4" width="2.9" height="35.6" style="fill:var(--ch-steel)"><title>2019-07 Keystone: 594.0 kb/d</title></rect>
-<rect x="139.0" y="218.0" width="2.9" height="20.4" style="fill:var(--ch-g3)"><title>2019-07 Trans Mountain: 339.6 kb/d</title></rect>
-<rect x="143.1" y="279.4" width="2.9" height="168.6" style="fill:var(--ch-ink2)"><title>2019-08 Enbridge Mainline: 2,809.7 kb/d</title></rect>
-<rect x="143.1" y="244.0" width="2.9" height="35.5" style="fill:var(--ch-steel)"><title>2019-08 Keystone: 591.0 kb/d</title></rect>
-<rect x="143.1" y="226.6" width="2.9" height="17.4" style="fill:var(--ch-g3)"><title>2019-08 Trans Mountain: 289.3 kb/d</title></rect>
-<rect x="147.1" y="277.0" width="2.9" height="171.0" style="fill:var(--ch-ink2)"><title>2019-09 Enbridge Mainline: 2,849.9 kb/d</title></rect>
-<rect x="147.1" y="242.7" width="2.9" height="34.3" style="fill:var(--ch-steel)"><title>2019-09 Keystone: 572.4 kb/d</title></rect>
-<rect x="147.1" y="223.0" width="2.9" height="19.6" style="fill:var(--ch-g3)"><title>2019-09 Trans Mountain: 327.1 kb/d</title></rect>
-<rect x="151.1" y="280.8" width="2.9" height="167.2" style="fill:var(--ch-ink2)"><title>2019-10 Enbridge Mainline: 2,786.4 kb/d</title></rect>
-<rect x="151.1" y="245.1" width="2.9" height="35.7" style="fill:var(--ch-steel)"><title>2019-10 Keystone: 595.0 kb/d</title></rect>
-<rect x="151.1" y="226.2" width="2.9" height="18.9" style="fill:var(--ch-g3)"><title>2019-10 Trans Mountain: 314.5 kb/d</title></rect>
-<rect x="155.1" y="281.6" width="2.9" height="166.4" style="fill:var(--ch-ink2)"><title>2019-11 Enbridge Mainline: 2,773.8 kb/d</title></rect>
-<rect x="155.1" y="246.6" width="2.9" height="35.0" style="fill:var(--ch-steel)"><title>2019-11 Keystone: 583.5 kb/d</title></rect>
-<rect x="155.1" y="227.3" width="2.9" height="19.2" style="fill:var(--ch-g3)"><title>2019-11 Trans Mountain: 320.8 kb/d</title></rect>
-<rect x="159.2" y="276.7" width="2.9" height="171.3" style="fill:var(--ch-ink2)"><title>2019-12 Enbridge Mainline: 2,855.6 kb/d</title></rect>
-<rect x="159.2" y="242.3" width="2.9" height="34.4" style="fill:var(--ch-steel)"><title>2019-12 Keystone: 573.3 kb/d</title></rect>
-<rect x="159.2" y="223.8" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2019-12 Trans Mountain: 308.2 kb/d</title></rect>
-<rect x="163.2" y="269.5" width="2.9" height="178.5" style="fill:var(--ch-ink2)"><title>2020-01 Enbridge Mainline: 2,975.1 kb/d</title></rect>
-<rect x="163.2" y="235.5" width="2.9" height="34.0" style="fill:var(--ch-steel)"><title>2020-01 Keystone: 566.3 kb/d</title></rect>
-<rect x="163.2" y="218.2" width="2.9" height="17.4" style="fill:var(--ch-g3)"><title>2020-01 Trans Mountain: 289.3 kb/d</title></rect>
-<rect x="167.2" y="273.6" width="2.9" height="174.4" style="fill:var(--ch-ink2)"><title>2020-02 Enbridge Mainline: 2,905.9 kb/d</title></rect>
-<rect x="167.2" y="238.5" width="2.9" height="35.1" style="fill:var(--ch-steel)"><title>2020-02 Keystone: 585.0 kb/d</title></rect>
-<rect x="167.2" y="220.1" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2020-02 Trans Mountain: 308.2 kb/d</title></rect>
-<rect x="171.2" y="268.7" width="2.9" height="179.3" style="fill:var(--ch-ink2)"><title>2020-03 Enbridge Mainline: 2,987.7 kb/d</title></rect>
-<rect x="171.2" y="233.7" width="2.9" height="35.0" style="fill:var(--ch-steel)"><title>2020-03 Keystone: 584.0 kb/d</title></rect>
-<rect x="171.2" y="214.1" width="2.9" height="19.6" style="fill:var(--ch-g3)"><title>2020-03 Trans Mountain: 327.1 kb/d</title></rect>
-<rect x="175.3" y="274.2" width="2.9" height="173.8" style="fill:var(--ch-ink2)"><title>2020-04 Enbridge Mainline: 2,896.3 kb/d</title></rect>
-<rect x="175.3" y="239.7" width="2.9" height="34.5" style="fill:var(--ch-steel)"><title>2020-04 Keystone: 575.0 kb/d</title></rect>
-<rect x="175.3" y="222.0" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2020-04 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="179.3" y="269.4" width="2.9" height="178.6" style="fill:var(--ch-ink2)"><title>2020-05 Enbridge Mainline: 2,977.2 kb/d</title></rect>
-<rect x="179.3" y="233.8" width="2.9" height="35.6" style="fill:var(--ch-steel)"><title>2020-05 Keystone: 593.3 kb/d</title></rect>
-<rect x="179.3" y="216.0" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2020-05 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="183.3" y="270.7" width="2.9" height="177.3" style="fill:var(--ch-ink2)"><title>2020-06 Enbridge Mainline: 2,954.9 kb/d</title></rect>
-<rect x="183.3" y="237.2" width="2.9" height="33.5" style="fill:var(--ch-steel)"><title>2020-06 Keystone: 559.0 kb/d</title></rect>
-<rect x="183.3" y="219.4" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2020-06 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="187.3" y="271.4" width="2.9" height="176.6" style="fill:var(--ch-ink2)"><title>2020-07 Enbridge Mainline: 2,944.0 kb/d</title></rect>
-<rect x="187.3" y="238.3" width="2.9" height="33.1" style="fill:var(--ch-steel)"><title>2020-07 Keystone: 551.6 kb/d</title></rect>
-<rect x="187.3" y="220.5" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2020-07 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="191.4" y="277.1" width="2.9" height="170.9" style="fill:var(--ch-ink2)"><title>2020-08 Enbridge Mainline: 2,848.6 kb/d</title></rect>
-<rect x="191.4" y="243.9" width="2.9" height="33.2" style="fill:var(--ch-steel)"><title>2020-08 Keystone: 553.4 kb/d</title></rect>
-<rect x="191.4" y="222.0" width="2.9" height="21.9" style="fill:var(--ch-g3)"><title>2020-08 Trans Mountain: 364.8 kb/d</title></rect>
-<rect x="195.4" y="279.4" width="2.9" height="168.6" style="fill:var(--ch-ink2)"><title>2020-09 Enbridge Mainline: 2,810.6 kb/d</title></rect>
-<rect x="195.4" y="245.0" width="2.9" height="34.3" style="fill:var(--ch-steel)"><title>2020-09 Keystone: 572.0 kb/d</title></rect>
-<rect x="195.4" y="225.8" width="2.9" height="19.2" style="fill:var(--ch-g3)"><title>2020-09 Trans Mountain: 320.8 kb/d</title></rect>
-<rect x="199.4" y="275.1" width="2.9" height="172.9" style="fill:var(--ch-ink2)"><title>2020-10 Enbridge Mainline: 2,881.0 kb/d</title></rect>
-<rect x="199.4" y="239.5" width="2.9" height="35.7" style="fill:var(--ch-steel)"><title>2020-10 Keystone: 594.8 kb/d</title></rect>
-<rect x="199.4" y="218.3" width="2.9" height="21.1" style="fill:var(--ch-g3)"><title>2020-10 Trans Mountain: 352.2 kb/d</title></rect>
-<rect x="203.4" y="275.4" width="2.9" height="172.6" style="fill:var(--ch-ink2)"><title>2020-11 Enbridge Mainline: 2,876.5 kb/d</title></rect>
-<rect x="203.4" y="240.1" width="2.9" height="35.3" style="fill:var(--ch-steel)"><title>2020-11 Keystone: 587.7 kb/d</title></rect>
-<rect x="203.4" y="222.4" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2020-11 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="207.5" y="275.0" width="2.9" height="173.0" style="fill:var(--ch-ink2)"><title>2020-12 Enbridge Mainline: 2,882.9 kb/d</title></rect>
-<rect x="207.5" y="239.2" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2020-12 Keystone: 597.7 kb/d</title></rect>
-<rect x="207.5" y="219.2" width="2.9" height="20.0" style="fill:var(--ch-g3)"><title>2020-12 Trans Mountain: 333.4 kb/d</title></rect>
-<rect x="211.5" y="271.2" width="2.9" height="176.8" style="fill:var(--ch-ink2)"><title>2021-01 Enbridge Mainline: 2,947.2 kb/d</title></rect>
-<rect x="211.5" y="234.1" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-01 Keystone: 617.8 kb/d</title></rect>
-<rect x="211.5" y="215.2" width="2.9" height="18.9" style="fill:var(--ch-g3)"><title>2021-01 Trans Mountain: 314.5 kb/d</title></rect>
-<rect x="215.5" y="274.6" width="2.9" height="173.4" style="fill:var(--ch-ink2)"><title>2021-02 Enbridge Mainline: 2,890.1 kb/d</title></rect>
-<rect x="215.5" y="238.6" width="2.9" height="36.0" style="fill:var(--ch-steel)"><title>2021-02 Keystone: 600.0 kb/d</title></rect>
-<rect x="215.5" y="219.7" width="2.9" height="18.9" style="fill:var(--ch-g3)"><title>2021-02 Trans Mountain: 314.5 kb/d</title></rect>
-<rect x="219.5" y="277.4" width="2.9" height="170.6" style="fill:var(--ch-ink2)"><title>2021-03 Enbridge Mainline: 2,843.7 kb/d</title></rect>
-<rect x="219.5" y="241.2" width="2.9" height="36.2" style="fill:var(--ch-steel)"><title>2021-03 Keystone: 603.0 kb/d</title></rect>
-<rect x="219.5" y="220.8" width="2.9" height="20.4" style="fill:var(--ch-g3)"><title>2021-03 Trans Mountain: 339.6 kb/d</title></rect>
-<rect x="223.6" y="277.0" width="2.9" height="171.0" style="fill:var(--ch-ink2)"><title>2021-04 Enbridge Mainline: 2,849.7 kb/d</title></rect>
-<rect x="223.6" y="240.6" width="2.9" height="36.4" style="fill:var(--ch-steel)"><title>2021-04 Keystone: 606.3 kb/d</title></rect>
-<rect x="223.6" y="220.6" width="2.9" height="20.0" style="fill:var(--ch-g3)"><title>2021-04 Trans Mountain: 333.4 kb/d</title></rect>
-<rect x="227.6" y="276.5" width="2.9" height="171.5" style="fill:var(--ch-ink2)"><title>2021-05 Enbridge Mainline: 2,858.5 kb/d</title></rect>
-<rect x="227.6" y="241.0" width="2.9" height="35.5" style="fill:var(--ch-steel)"><title>2021-05 Keystone: 591.8 kb/d</title></rect>
-<rect x="227.6" y="220.2" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2021-05 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="231.6" y="274.5" width="2.9" height="173.5" style="fill:var(--ch-ink2)"><title>2021-06 Enbridge Mainline: 2,891.4 kb/d</title></rect>
-<rect x="231.6" y="239.7" width="2.9" height="34.8" style="fill:var(--ch-steel)"><title>2021-06 Keystone: 580.0 kb/d</title></rect>
-<rect x="231.6" y="220.5" width="2.9" height="19.2" style="fill:var(--ch-g3)"><title>2021-06 Trans Mountain: 320.8 kb/d</title></rect>
-<rect x="235.6" y="273.9" width="2.9" height="174.1" style="fill:var(--ch-ink2)"><title>2021-07 Enbridge Mainline: 2,902.2 kb/d</title></rect>
-<rect x="235.6" y="237.6" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2021-07 Keystone: 605.1 kb/d</title></rect>
-<rect x="235.6" y="219.8" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2021-07 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="239.7" y="283.0" width="2.9" height="165.0" style="fill:var(--ch-ink2)"><title>2021-08 Enbridge Mainline: 2,750.4 kb/d</title></rect>
-<rect x="239.7" y="247.0" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2021-08 Keystone: 598.9 kb/d</title></rect>
-<rect x="239.7" y="227.0" width="2.9" height="20.0" style="fill:var(--ch-g3)"><title>2021-08 Trans Mountain: 333.4 kb/d</title></rect>
-<rect x="243.7" y="279.2" width="2.9" height="168.8" style="fill:var(--ch-ink2)"><title>2021-09 Enbridge Mainline: 2,812.5 kb/d</title></rect>
-<rect x="243.7" y="243.9" width="2.9" height="35.3" style="fill:var(--ch-steel)"><title>2021-09 Keystone: 589.0 kb/d</title></rect>
-<rect x="243.7" y="224.3" width="2.9" height="19.6" style="fill:var(--ch-g3)"><title>2021-09 Trans Mountain: 327.1 kb/d</title></rect>
-<rect x="247.7" y="268.2" width="2.9" height="179.8" style="fill:var(--ch-ink2)"><title>2021-10 Enbridge Mainline: 2,997.2 kb/d</title></rect>
-<rect x="247.7" y="232.9" width="2.9" height="35.3" style="fill:var(--ch-steel)"><title>2021-10 Keystone: 588.2 kb/d</title></rect>
-<rect x="247.7" y="215.1" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2021-10 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="251.7" y="253.0" width="2.9" height="195.0" style="fill:var(--ch-ink2)"><title>2021-11 Enbridge Mainline: 3,249.7 kb/d</title></rect>
-<rect x="251.7" y="215.6" width="2.9" height="37.4" style="fill:var(--ch-steel)"><title>2021-11 Keystone: 624.0 kb/d</title></rect>
-<rect x="251.7" y="206.6" width="2.9" height="9.0" style="fill:var(--ch-g3)"><title>2021-11 Trans Mountain: 149.3 kb/d</title></rect>
-<rect x="255.8" y="251.8" width="2.9" height="196.2" style="fill:var(--ch-ink2)"><title>2021-12 Enbridge Mainline: 3,270.3 kb/d</title></rect>
-<rect x="255.8" y="214.1" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2021-12 Keystone: 627.3 kb/d</title></rect>
-<rect x="255.8" y="201.6" width="2.9" height="12.6" style="fill:var(--ch-g3)"><title>2021-12 Trans Mountain: 209.3 kb/d</title></rect>
-<rect x="259.8" y="252.1" width="2.9" height="195.9" style="fill:var(--ch-ink2)"><title>2022-01 Enbridge Mainline: 3,264.9 kb/d</title></rect>
-<rect x="259.8" y="215.8" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2022-01 Keystone: 605.0 kb/d</title></rect>
-<rect x="259.8" y="198.8" width="2.9" height="17.0" style="fill:var(--ch-g3)"><title>2022-01 Trans Mountain: 283.0 kb/d</title></rect>
-<rect x="263.8" y="250.4" width="2.9" height="197.6" style="fill:var(--ch-ink2)"><title>2022-02 Enbridge Mainline: 3,293.3 kb/d</title></rect>
-<rect x="263.8" y="215.4" width="2.9" height="35.0" style="fill:var(--ch-steel)"><title>2022-02 Keystone: 583.3 kb/d</title></rect>
-<rect x="263.8" y="196.2" width="2.9" height="19.2" style="fill:var(--ch-g3)"><title>2022-02 Trans Mountain: 320.8 kb/d</title></rect>
-<rect x="267.8" y="251.4" width="2.9" height="196.6" style="fill:var(--ch-ink2)"><title>2022-03 Enbridge Mainline: 3,276.8 kb/d</title></rect>
-<rect x="267.8" y="214.7" width="2.9" height="36.7" style="fill:var(--ch-steel)"><title>2022-03 Keystone: 611.4 kb/d</title></rect>
-<rect x="267.8" y="194.3" width="2.9" height="20.4" style="fill:var(--ch-g3)"><title>2022-03 Trans Mountain: 339.6 kb/d</title></rect>
-<rect x="271.9" y="255.0" width="2.9" height="193.0" style="fill:var(--ch-ink2)"><title>2022-04 Enbridge Mainline: 3,216.7 kb/d</title></rect>
-<rect x="271.9" y="218.4" width="2.9" height="36.6" style="fill:var(--ch-steel)"><title>2022-04 Keystone: 610.0 kb/d</title></rect>
-<rect x="271.9" y="200.7" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2022-04 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="275.9" y="256.4" width="2.9" height="191.6" style="fill:var(--ch-ink2)"><title>2022-05 Enbridge Mainline: 3,193.2 kb/d</title></rect>
-<rect x="275.9" y="219.8" width="2.9" height="36.6" style="fill:var(--ch-steel)"><title>2022-05 Keystone: 610.0 kb/d</title></rect>
-<rect x="275.9" y="199.1" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2022-05 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="279.9" y="248.9" width="2.9" height="199.1" style="fill:var(--ch-ink2)"><title>2022-06 Enbridge Mainline: 3,318.2 kb/d</title></rect>
-<rect x="279.9" y="212.8" width="2.9" height="36.1" style="fill:var(--ch-steel)"><title>2022-06 Keystone: 602.0 kb/d</title></rect>
-<rect x="279.9" y="192.4" width="2.9" height="20.4" style="fill:var(--ch-g3)"><title>2022-06 Trans Mountain: 339.6 kb/d</title></rect>
-<rect x="283.9" y="251.5" width="2.9" height="196.5" style="fill:var(--ch-ink2)"><title>2022-07 Enbridge Mainline: 3,274.5 kb/d</title></rect>
-<rect x="283.9" y="215.2" width="2.9" height="36.4" style="fill:var(--ch-steel)"><title>2022-07 Keystone: 606.0 kb/d</title></rect>
-<rect x="283.9" y="195.5" width="2.9" height="19.6" style="fill:var(--ch-g3)"><title>2022-07 Trans Mountain: 327.1 kb/d</title></rect>
-<rect x="288.0" y="257.6" width="2.9" height="190.4" style="fill:var(--ch-ink2)"><title>2022-08 Enbridge Mainline: 3,173.2 kb/d</title></rect>
-<rect x="288.0" y="222.5" width="2.9" height="35.1" style="fill:var(--ch-steel)"><title>2022-08 Keystone: 584.9 kb/d</title></rect>
-<rect x="288.0" y="200.6" width="2.9" height="21.9" style="fill:var(--ch-g3)"><title>2022-08 Trans Mountain: 364.8 kb/d</title></rect>
-<rect x="292.0" y="254.9" width="2.9" height="193.1" style="fill:var(--ch-ink2)"><title>2022-09 Enbridge Mainline: 3,218.1 kb/d</title></rect>
-<rect x="292.0" y="216.3" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2022-09 Keystone: 643.0 kb/d</title></rect>
-<rect x="292.0" y="197.8" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2022-09 Trans Mountain: 308.2 kb/d</title></rect>
-<rect x="296.0" y="254.6" width="2.9" height="193.4" style="fill:var(--ch-ink2)"><title>2022-10 Enbridge Mainline: 3,222.5 kb/d</title></rect>
-<rect x="296.0" y="216.6" width="2.9" height="38.1" style="fill:var(--ch-steel)"><title>2022-10 Keystone: 634.3 kb/d</title></rect>
-<rect x="296.0" y="196.6" width="2.9" height="20.0" style="fill:var(--ch-g3)"><title>2022-10 Trans Mountain: 333.4 kb/d</title></rect>
-<rect x="300.1" y="250.9" width="2.9" height="197.1" style="fill:var(--ch-ink2)"><title>2022-11 Enbridge Mainline: 3,284.7 kb/d</title></rect>
-<rect x="300.1" y="213.3" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-11 Keystone: 627.0 kb/d</title></rect>
-<rect x="300.1" y="195.2" width="2.9" height="18.1" style="fill:var(--ch-g3)"><title>2022-11 Trans Mountain: 301.9 kb/d</title></rect>
-<rect x="304.1" y="256.4" width="2.9" height="191.6" style="fill:var(--ch-ink2)"><title>2022-12 Enbridge Mainline: 3,193.7 kb/d</title></rect>
-<rect x="304.1" y="219.1" width="2.9" height="37.3" style="fill:var(--ch-steel)"><title>2022-12 Keystone: 622.0 kb/d</title></rect>
-<rect x="304.1" y="198.3" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2022-12 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="308.1" y="251.1" width="2.9" height="196.9" style="fill:var(--ch-ink2)"><title>2023-01 Enbridge Mainline: 3,282.5 kb/d</title></rect>
-<rect x="308.1" y="216.0" width="2.9" height="35.1" style="fill:var(--ch-steel)"><title>2023-01 Keystone: 584.8 kb/d</title></rect>
-<rect x="308.1" y="195.6" width="2.9" height="20.4" style="fill:var(--ch-g3)"><title>2023-01 Trans Mountain: 339.6 kb/d</title></rect>
-<rect x="312.1" y="249.6" width="2.9" height="198.4" style="fill:var(--ch-ink2)"><title>2023-02 Enbridge Mainline: 3,306.8 kb/d</title></rect>
-<rect x="312.1" y="214.5" width="2.9" height="35.1" style="fill:var(--ch-steel)"><title>2023-02 Keystone: 584.8 kb/d</title></rect>
-<rect x="312.1" y="193.8" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2023-02 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="316.2" y="251.4" width="2.9" height="196.6" style="fill:var(--ch-ink2)"><title>2023-03 Enbridge Mainline: 3,276.4 kb/d</title></rect>
-<rect x="316.2" y="216.1" width="2.9" height="35.3" style="fill:var(--ch-steel)"><title>2023-03 Keystone: 589.0 kb/d</title></rect>
-<rect x="316.2" y="195.3" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2023-03 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="320.2" y="254.1" width="2.9" height="193.9" style="fill:var(--ch-ink2)"><title>2023-04 Enbridge Mainline: 3,232.4 kb/d</title></rect>
-<rect x="320.2" y="218.3" width="2.9" height="35.7" style="fill:var(--ch-steel)"><title>2023-04 Keystone: 595.5 kb/d</title></rect>
-<rect x="320.2" y="197.6" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2023-04 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="324.2" y="255.2" width="2.9" height="192.8" style="fill:var(--ch-ink2)"><title>2023-05 Enbridge Mainline: 3,212.6 kb/d</title></rect>
-<rect x="324.2" y="219.6" width="2.9" height="35.7" style="fill:var(--ch-steel)"><title>2023-05 Keystone: 594.5 kb/d</title></rect>
-<rect x="324.2" y="198.8" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2023-05 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="328.2" y="253.1" width="2.9" height="194.9" style="fill:var(--ch-ink2)"><title>2023-06 Enbridge Mainline: 3,247.7 kb/d</title></rect>
-<rect x="328.2" y="217.0" width="2.9" height="36.2" style="fill:var(--ch-steel)"><title>2023-06 Keystone: 603.0 kb/d</title></rect>
-<rect x="328.2" y="195.4" width="2.9" height="21.5" style="fill:var(--ch-g3)"><title>2023-06 Trans Mountain: 358.5 kb/d</title></rect>
-<rect x="332.3" y="254.3" width="2.9" height="193.7" style="fill:var(--ch-ink2)"><title>2023-07 Enbridge Mainline: 3,228.7 kb/d</title></rect>
-<rect x="332.3" y="218.4" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2023-07 Keystone: 598.0 kb/d</title></rect>
-<rect x="332.3" y="195.4" width="2.9" height="23.0" style="fill:var(--ch-g3)"><title>2023-07 Trans Mountain: 383.7 kb/d</title></rect>
-<rect x="336.3" y="257.1" width="2.9" height="190.9" style="fill:var(--ch-ink2)"><title>2023-08 Enbridge Mainline: 3,182.1 kb/d</title></rect>
-<rect x="336.3" y="221.2" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2023-08 Keystone: 597.8 kb/d</title></rect>
-<rect x="336.3" y="199.3" width="2.9" height="21.9" style="fill:var(--ch-g3)"><title>2023-08 Trans Mountain: 364.8 kb/d</title></rect>
-<rect x="340.3" y="257.1" width="2.9" height="190.9" style="fill:var(--ch-ink2)"><title>2023-09 Enbridge Mainline: 3,181.8 kb/d</title></rect>
-<rect x="340.3" y="220.8" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2023-09 Keystone: 604.4 kb/d</title></rect>
-<rect x="340.3" y="199.7" width="2.9" height="21.1" style="fill:var(--ch-g3)"><title>2023-09 Trans Mountain: 352.2 kb/d</title></rect>
-<rect x="344.3" y="252.3" width="2.9" height="195.7" style="fill:var(--ch-ink2)"><title>2023-10 Enbridge Mainline: 3,261.3 kb/d</title></rect>
-<rect x="344.3" y="215.9" width="2.9" height="36.4" style="fill:var(--ch-steel)"><title>2023-10 Keystone: 606.2 kb/d</title></rect>
-<rect x="344.3" y="195.2" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2023-10 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="348.4" y="252.7" width="2.9" height="195.3" style="fill:var(--ch-ink2)"><title>2023-11 Enbridge Mainline: 3,254.9 kb/d</title></rect>
-<rect x="348.4" y="215.9" width="2.9" height="36.8" style="fill:var(--ch-steel)"><title>2023-11 Keystone: 613.9 kb/d</title></rect>
-<rect x="348.4" y="195.1" width="2.9" height="20.8" style="fill:var(--ch-g3)"><title>2023-11 Trans Mountain: 345.9 kb/d</title></rect>
-<rect x="352.4" y="251.2" width="2.9" height="196.8" style="fill:var(--ch-ink2)"><title>2023-12 Enbridge Mainline: 3,279.5 kb/d</title></rect>
-<rect x="352.4" y="213.9" width="2.9" height="37.3" style="fill:var(--ch-steel)"><title>2023-12 Keystone: 622.1 kb/d</title></rect>
-<rect x="352.4" y="194.7" width="2.9" height="19.2" style="fill:var(--ch-g3)"><title>2023-12 Trans Mountain: 320.8 kb/d</title></rect>
-<rect x="356.4" y="252.3" width="2.9" height="195.7" style="fill:var(--ch-ink2)"><title>2024-01 Enbridge Mainline: 3,261.9 kb/d</title></rect>
-<rect x="356.4" y="213.9" width="2.9" height="38.4" style="fill:var(--ch-steel)"><title>2024-01 Keystone: 640.0 kb/d</title></rect>
-<rect x="356.4" y="195.8" width="2.9" height="18.1" style="fill:var(--ch-g3)"><title>2024-01 Trans Mountain: 301.9 kb/d</title></rect>
-<rect x="360.4" y="251.4" width="2.9" height="196.6" style="fill:var(--ch-ink2)"><title>2024-02 Enbridge Mainline: 3,276.9 kb/d</title></rect>
-<rect x="360.4" y="213.6" width="2.9" height="37.7" style="fill:var(--ch-steel)"><title>2024-02 Keystone: 629.1 kb/d</title></rect>
-<rect x="360.4" y="195.9" width="2.9" height="17.7" style="fill:var(--ch-g3)"><title>2024-02 Trans Mountain: 295.6 kb/d</title></rect>
-<rect x="364.5" y="251.1" width="2.9" height="196.9" style="fill:var(--ch-ink2)"><title>2024-03 Enbridge Mainline: 3,282.4 kb/d</title></rect>
-<rect x="364.5" y="212.6" width="2.9" height="38.4" style="fill:var(--ch-steel)"><title>2024-03 Keystone: 640.8 kb/d</title></rect>
-<rect x="364.5" y="193.7" width="2.9" height="18.9" style="fill:var(--ch-g3)"><title>2024-03 Trans Mountain: 314.5 kb/d</title></rect>
-<rect x="368.5" y="256.8" width="2.9" height="191.2" style="fill:var(--ch-ink2)"><title>2024-04 Enbridge Mainline: 3,187.3 kb/d</title></rect>
-<rect x="368.5" y="218.7" width="2.9" height="38.1" style="fill:var(--ch-steel)"><title>2024-04 Keystone: 634.9 kb/d</title></rect>
-<rect x="368.5" y="205.8" width="2.9" height="12.8" style="fill:var(--ch-g3)"><title>2024-04 Trans Mountain: 213.9 kb/d</title></rect>
-<rect x="372.5" y="254.3" width="2.9" height="193.7" style="fill:var(--ch-ink2)"><title>2024-05 Enbridge Mainline: 3,228.6 kb/d</title></rect>
-<rect x="372.5" y="218.0" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2024-05 Keystone: 604.8 kb/d</title></rect>
-<rect x="372.5" y="173.2" width="2.9" height="44.8" style="fill:var(--ch-g3)"><title>2024-05 Trans Mountain: 746.0 kb/d</title></rect>
-<rect x="376.5" y="251.8" width="2.9" height="196.2" style="fill:var(--ch-ink2)"><title>2024-06 Enbridge Mainline: 3,269.5 kb/d</title></rect>
-<rect x="376.5" y="214.8" width="2.9" height="37.0" style="fill:var(--ch-steel)"><title>2024-06 Keystone: 617.0 kb/d</title></rect>
-<rect x="376.5" y="162.9" width="2.9" height="51.9" style="fill:var(--ch-g3)"><title>2024-06 Trans Mountain: 865.5 kb/d</title></rect>
-<rect x="380.6" y="254.4" width="2.9" height="193.6" style="fill:var(--ch-ink2)"><title>2024-07 Enbridge Mainline: 3,226.7 kb/d</title></rect>
-<rect x="380.6" y="217.1" width="2.9" height="37.3" style="fill:var(--ch-steel)"><title>2024-07 Keystone: 622.0 kb/d</title></rect>
-<rect x="380.6" y="164.6" width="2.9" height="52.5" style="fill:var(--ch-g3)"><title>2024-07 Trans Mountain: 874.3 kb/d</title></rect>
-<rect x="384.6" y="257.8" width="2.9" height="190.2" style="fill:var(--ch-ink2)"><title>2024-08 Enbridge Mainline: 3,170.1 kb/d</title></rect>
-<rect x="384.6" y="220.4" width="2.9" height="37.4" style="fill:var(--ch-steel)"><title>2024-08 Keystone: 623.0 kb/d</title></rect>
-<rect x="384.6" y="168.0" width="2.9" height="52.5" style="fill:var(--ch-g3)"><title>2024-08 Trans Mountain: 874.3 kb/d</title></rect>
-<rect x="388.6" y="258.9" width="2.9" height="189.1" style="fill:var(--ch-ink2)"><title>2024-09 Enbridge Mainline: 3,151.2 kb/d</title></rect>
-<rect x="388.6" y="221.1" width="2.9" height="37.8" style="fill:var(--ch-steel)"><title>2024-09 Keystone: 629.7 kb/d</title></rect>
-<rect x="388.6" y="172.5" width="2.9" height="48.7" style="fill:var(--ch-g3)"><title>2024-09 Trans Mountain: 811.4 kb/d</title></rect>
-<rect x="392.6" y="251.4" width="2.9" height="196.6" style="fill:var(--ch-ink2)"><title>2024-10 Enbridge Mainline: 3,277.0 kb/d</title></rect>
-<rect x="392.6" y="214.1" width="2.9" height="37.3" style="fill:var(--ch-steel)"><title>2024-10 Keystone: 622.0 kb/d</title></rect>
-<rect x="392.6" y="162.7" width="2.9" height="51.3" style="fill:var(--ch-g3)"><title>2024-10 Trans Mountain: 855.4 kb/d</title></rect>
-<rect x="396.7" y="255.1" width="2.9" height="192.9" style="fill:var(--ch-ink2)"><title>2024-11 Enbridge Mainline: 3,215.6 kb/d</title></rect>
-<rect x="396.7" y="217.7" width="2.9" height="37.4" style="fill:var(--ch-steel)"><title>2024-11 Keystone: 623.1 kb/d</title></rect>
-<rect x="396.7" y="165.2" width="2.9" height="52.5" style="fill:var(--ch-g3)"><title>2024-11 Trans Mountain: 874.3 kb/d</title></rect>
-<rect x="400.7" y="251.2" width="2.9" height="196.8" style="fill:var(--ch-ink2)"><title>2024-12 Enbridge Mainline: 3,279.8 kb/d</title></rect>
-<rect x="400.7" y="213.9" width="2.9" height="37.3" style="fill:var(--ch-steel)"><title>2024-12 Keystone: 621.9 kb/d</title></rect>
-<rect x="400.7" y="159.9" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2024-12 Trans Mountain: 899.4 kb/d</title></rect>
-<rect x="404.7" y="254.7" width="2.9" height="193.3" style="fill:var(--ch-ink2)"><title>2025-01 Enbridge Mainline: 3,222.1 kb/d</title></rect>
-<rect x="404.7" y="216.1" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-01 Keystone: 643.0 kb/d</title></rect>
-<rect x="404.7" y="162.1" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2025-01 Trans Mountain: 899.4 kb/d</title></rect>
-<rect x="408.7" y="253.1" width="2.9" height="194.9" style="fill:var(--ch-ink2)"><title>2025-02 Enbridge Mainline: 3,248.0 kb/d</title></rect>
-<rect x="408.7" y="214.7" width="2.9" height="38.5" style="fill:var(--ch-steel)"><title>2025-02 Keystone: 641.0 kb/d</title></rect>
-<rect x="408.7" y="161.1" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-02 Trans Mountain: 893.2 kb/d</title></rect>
-<rect x="412.8" y="252.6" width="2.9" height="195.4" style="fill:var(--ch-ink2)"><title>2025-03 Enbridge Mainline: 3,256.8 kb/d</title></rect>
-<rect x="412.8" y="214.3" width="2.9" height="38.3" style="fill:var(--ch-steel)"><title>2025-03 Keystone: 639.0 kb/d</title></rect>
-<rect x="412.8" y="160.7" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-03 Trans Mountain: 893.2 kb/d</title></rect>
-<rect x="416.8" y="255.9" width="2.9" height="192.1" style="fill:var(--ch-ink2)"><title>2025-04 Enbridge Mainline: 3,202.1 kb/d</title></rect>
-<rect x="416.8" y="218.4" width="2.9" height="37.4" style="fill:var(--ch-steel)"><title>2025-04 Keystone: 624.0 kb/d</title></rect>
-<rect x="416.8" y="165.2" width="2.9" height="53.2" style="fill:var(--ch-g3)"><title>2025-04 Trans Mountain: 886.9 kb/d</title></rect>
-<rect x="420.8" y="254.7" width="2.9" height="193.3" style="fill:var(--ch-ink2)"><title>2025-05 Enbridge Mainline: 3,221.0 kb/d</title></rect>
-<rect x="420.8" y="220.0" width="2.9" height="34.8" style="fill:var(--ch-steel)"><title>2025-05 Keystone: 579.4 kb/d</title></rect>
-<rect x="420.8" y="166.4" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-05 Trans Mountain: 893.2 kb/d</title></rect>
-<rect x="424.8" y="252.2" width="2.9" height="195.8" style="fill:var(--ch-ink2)"><title>2025-06 Enbridge Mainline: 3,263.8 kb/d</title></rect>
-<rect x="424.8" y="216.1" width="2.9" height="36.1" style="fill:var(--ch-steel)"><title>2025-06 Keystone: 601.0 kb/d</title></rect>
-<rect x="424.8" y="162.5" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-06 Trans Mountain: 893.2 kb/d</title></rect>
-<rect x="428.9" y="257.0" width="2.9" height="191.0" style="fill:var(--ch-ink2)"><title>2025-07 Enbridge Mainline: 3,183.6 kb/d</title></rect>
-<rect x="428.9" y="221.8" width="2.9" height="35.2" style="fill:var(--ch-steel)"><title>2025-07 Keystone: 586.3 kb/d</title></rect>
-<rect x="428.9" y="168.2" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-07 Trans Mountain: 893.2 kb/d</title></rect>
-<rect x="432.9" y="256.2" width="2.9" height="191.8" style="fill:var(--ch-ink2)"><title>2025-08 Enbridge Mainline: 3,196.6 kb/d</title></rect>
-<rect x="432.9" y="220.9" width="2.9" height="35.3" style="fill:var(--ch-steel)"><title>2025-08 Keystone: 589.0 kb/d</title></rect>
-<rect x="432.9" y="166.5" width="2.9" height="54.3" style="fill:var(--ch-g3)"><title>2025-08 Trans Mountain: 905.7 kb/d</title></rect>
-<rect x="436.9" y="258.6" width="2.9" height="189.4" style="fill:var(--ch-ink2)"><title>2025-09 Enbridge Mainline: 3,157.2 kb/d</title></rect>
-<rect x="436.9" y="223.3" width="2.9" height="35.3" style="fill:var(--ch-steel)"><title>2025-09 Keystone: 588.5 kb/d</title></rect>
-<rect x="436.9" y="171.6" width="2.9" height="51.7" style="fill:var(--ch-g3)"><title>2025-09 Trans Mountain: 861.7 kb/d</title></rect>
-<rect x="440.9" y="251.8" width="2.9" height="196.2" style="fill:var(--ch-ink2)"><title>2025-10 Enbridge Mainline: 3,269.5 kb/d</title></rect>
-<rect x="440.9" y="216.6" width="2.9" height="35.2" style="fill:var(--ch-steel)"><title>2025-10 Keystone: 587.2 kb/d</title></rect>
-<rect x="440.9" y="162.6" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2025-10 Trans Mountain: 899.4 kb/d</title></rect>
-<rect x="445.0" y="251.5" width="2.9" height="196.5" style="fill:var(--ch-ink2)"><title>2025-11 Enbridge Mainline: 3,274.9 kb/d</title></rect>
-<rect x="445.0" y="215.9" width="2.9" height="35.6" style="fill:var(--ch-steel)"><title>2025-11 Keystone: 592.6 kb/d</title></rect>
-<rect x="445.0" y="162.7" width="2.9" height="53.2" style="fill:var(--ch-g3)"><title>2025-11 Trans Mountain: 886.9 kb/d</title></rect>
-<rect x="449.0" y="251.5" width="2.9" height="196.5" style="fill:var(--ch-ink2)"><title>2025-12 Enbridge Mainline: 3,275.5 kb/d</title></rect>
-<rect x="449.0" y="214.2" width="2.9" height="37.2" style="fill:var(--ch-steel)"><title>2025-12 Keystone: 620.8 kb/d</title></rect>
-<rect x="449.0" y="160.3" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2025-12 Trans Mountain: 899.4 kb/d</title></rect>
-<rect x="453.0" y="250.9" width="2.9" height="197.1" style="fill:var(--ch-ink2)"><title>2026-01 Enbridge Mainline: 3,284.9 kb/d</title></rect>
-<rect x="453.0" y="214.9" width="2.9" height="36.0" style="fill:var(--ch-steel)"><title>2026-01 Keystone: 600.1 kb/d</title></rect>
-<rect x="453.0" y="160.6" width="2.9" height="54.3" style="fill:var(--ch-g3)"><title>2026-01 Trans Mountain: 905.7 kb/d</title></rect>
-<rect x="457.1" y="251.8" width="2.9" height="196.2" style="fill:var(--ch-ink2)"><title>2026-02 Enbridge Mainline: 3,270.5 kb/d</title></rect>
-<rect x="457.1" y="215.2" width="2.9" height="36.5" style="fill:var(--ch-steel)"><title>2026-02 Keystone: 608.8 kb/d</title></rect>
-<rect x="457.1" y="161.3" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2026-02 Trans Mountain: 899.4 kb/d</title></rect>
-<rect x="461.1" y="251.1" width="2.9" height="196.9" style="fill:var(--ch-ink2)"><title>2026-03 Enbridge Mainline: 3,282.4 kb/d</title></rect>
-<rect x="461.1" y="213.5" width="2.9" height="37.5" style="fill:var(--ch-steel)"><title>2026-03 Keystone: 625.5 kb/d</title></rect>
-<rect x="461.1" y="159.6" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2026-03 Trans Mountain: 899.4 kb/d</title></rect>
-<rect x="465.1" y="259.7" width="2.9" height="188.3" style="fill:var(--ch-ink2)"><title>2026-04 Enbridge Mainline: 3,138.6 kb/d</title></rect>
-<rect x="465.1" y="222.2" width="2.9" height="37.5" style="fill:var(--ch-steel)"><title>2026-04 Keystone: 624.7 kb/d</title></rect>
-<rect x="465.1" y="170.5" width="2.9" height="51.7" style="fill:var(--ch-g3)"><title>2026-04 Trans Mountain: 861.7 kb/d</title></rect>
-<rect x="469.1" y="254.3" width="2.9" height="193.7" style="fill:var(--ch-ink2)"><title>2026-05 Enbridge Mainline: 3,228.3 kb/d</title></rect>
-<rect x="469.1" y="218.4" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2026-05 Keystone: 597.9 kb/d</title></rect>
-<rect x="469.1" y="164.1" width="2.9" height="54.3" style="fill:var(--ch-g3)"><title>2026-05 Trans Mountain: 905.7 kb/d</title></rect>
-<rect x="473.2" y="251.4" width="2.9" height="196.6" style="fill:var(--ch-ink2)"><title>2026-06 Enbridge Mainline: 3,277.4 kb/d</title></rect>
-<rect x="473.2" y="216.0" width="2.9" height="35.3" style="fill:var(--ch-steel)"><title>2026-06 Keystone: 588.5 kb/d</title></rect>
-<rect x="473.2" y="162.1" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2026-06 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="66.6" y="288.1" width="2.9" height="159.9" style="fill:var(--ch-ink2)"><title>2018-01 Enbridge Mainline: 2,665.7 kb/d</title></rect>
+<rect x="66.6" y="252.5" width="2.9" height="35.6" style="fill:var(--ch-steel)"><title>2018-01 Keystone: 592.8 kb/d</title></rect>
+<rect x="66.6" y="234.7" width="2.9" height="17.8" style="fill:var(--ch-g3)"><title>2018-01 Trans Mountain: 296.6 kb/d</title></rect>
+<rect x="66.6" y="216.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-01 Express: 310.0 kb/d</title></rect>
+<rect x="66.6" y="210.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="66.6" y="209.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="70.6" y="294.9" width="2.9" height="153.1" style="fill:var(--ch-ink2)"><title>2018-02 Enbridge Mainline: 2,552.5 kb/d</title></rect>
+<rect x="70.6" y="259.0" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2018-02 Keystone: 597.6 kb/d</title></rect>
+<rect x="70.6" y="240.5" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2018-02 Trans Mountain: 308.2 kb/d</title></rect>
+<rect x="70.6" y="221.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-02 Express: 310.0 kb/d</title></rect>
+<rect x="70.6" y="216.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="70.6" y="214.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="74.6" y="294.9" width="2.9" height="153.1" style="fill:var(--ch-ink2)"><title>2018-03 Enbridge Mainline: 2,552.5 kb/d</title></rect>
+<rect x="74.6" y="259.0" width="2.9" height="35.9" style="fill:var(--ch-steel)"><title>2018-03 Keystone: 597.5 kb/d</title></rect>
+<rect x="74.6" y="241.2" width="2.9" height="17.8" style="fill:var(--ch-g3)"><title>2018-03 Trans Mountain: 296.6 kb/d</title></rect>
+<rect x="74.6" y="222.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-03 Express: 310.0 kb/d</title></rect>
+<rect x="74.6" y="216.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="74.6" y="215.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="78.6" y="295.2" width="2.9" height="152.8" style="fill:var(--ch-ink2)"><title>2018-04 Enbridge Mainline: 2,546.2 kb/d</title></rect>
+<rect x="78.6" y="259.0" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-04 Keystone: 604.4 kb/d</title></rect>
+<rect x="78.6" y="241.2" width="2.9" height="17.8" style="fill:var(--ch-g3)"><title>2018-04 Trans Mountain: 296.6 kb/d</title></rect>
+<rect x="78.6" y="222.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-04 Express: 310.0 kb/d</title></rect>
+<rect x="78.6" y="216.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="78.6" y="215.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="82.7" y="295.2" width="2.9" height="152.8" style="fill:var(--ch-ink2)"><title>2018-05 Enbridge Mainline: 2,546.2 kb/d</title></rect>
+<rect x="82.7" y="259.0" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-05 Keystone: 604.4 kb/d</title></rect>
+<rect x="82.7" y="240.5" width="2.9" height="18.5" style="fill:var(--ch-g3)"><title>2018-05 Trans Mountain: 308.2 kb/d</title></rect>
+<rect x="82.7" y="221.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-05 Express: 310.0 kb/d</title></rect>
+<rect x="82.7" y="216.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="82.7" y="214.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="86.7" y="297.9" width="2.9" height="150.1" style="fill:var(--ch-ink2)"><title>2018-06 Enbridge Mainline: 2,502.2 kb/d</title></rect>
+<rect x="86.7" y="261.6" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-06 Keystone: 604.4 kb/d</title></rect>
+<rect x="86.7" y="243.7" width="2.9" height="17.9" style="fill:var(--ch-g3)"><title>2018-06 Trans Mountain: 297.8 kb/d</title></rect>
+<rect x="86.7" y="225.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-06 Express: 310.0 kb/d</title></rect>
+<rect x="86.7" y="219.3" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="86.7" y="218.1" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="90.7" y="296.0" width="2.9" height="152.0" style="fill:var(--ch-ink2)"><title>2018-07 Enbridge Mainline: 2,533.7 kb/d</title></rect>
+<rect x="90.7" y="259.7" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-07 Keystone: 604.4 kb/d</title></rect>
+<rect x="90.7" y="241.8" width="2.9" height="17.9" style="fill:var(--ch-g3)"><title>2018-07 Trans Mountain: 297.8 kb/d</title></rect>
+<rect x="90.7" y="223.2" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-07 Express: 310.0 kb/d</title></rect>
+<rect x="90.7" y="217.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="90.7" y="216.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="94.7" y="297.7" width="2.9" height="150.3" style="fill:var(--ch-ink2)"><title>2018-08 Enbridge Mainline: 2,504.6 kb/d</title></rect>
+<rect x="94.7" y="261.5" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-08 Keystone: 604.4 kb/d</title></rect>
+<rect x="94.7" y="243.3" width="2.9" height="18.1" style="fill:var(--ch-g3)"><title>2018-08 Trans Mountain: 301.9 kb/d</title></rect>
+<rect x="94.7" y="224.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-08 Express: 310.0 kb/d</title></rect>
+<rect x="94.7" y="218.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="94.7" y="217.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="98.8" y="298.3" width="2.9" height="149.7" style="fill:var(--ch-ink2)"><title>2018-09 Enbridge Mainline: 2,494.5 kb/d</title></rect>
+<rect x="98.8" y="262.1" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-09 Keystone: 604.4 kb/d</title></rect>
+<rect x="98.8" y="244.2" width="2.9" height="17.9" style="fill:var(--ch-g3)"><title>2018-09 Trans Mountain: 297.8 kb/d</title></rect>
+<rect x="98.8" y="225.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-09 Express: 310.0 kb/d</title></rect>
+<rect x="98.8" y="219.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="98.8" y="218.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="102.8" y="291.6" width="2.9" height="156.4" style="fill:var(--ch-ink2)"><title>2018-10 Enbridge Mainline: 2,606.5 kb/d</title></rect>
+<rect x="102.8" y="255.3" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-10 Keystone: 604.4 kb/d</title></rect>
+<rect x="102.8" y="237.5" width="2.9" height="17.9" style="fill:var(--ch-g3)"><title>2018-10 Trans Mountain: 297.8 kb/d</title></rect>
+<rect x="102.8" y="218.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-10 Express: 310.0 kb/d</title></rect>
+<rect x="102.8" y="213.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="102.8" y="211.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="106.8" y="291.8" width="2.9" height="156.2" style="fill:var(--ch-ink2)"><title>2018-11 Enbridge Mainline: 2,604.1 kb/d</title></rect>
+<rect x="106.8" y="255.5" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-11 Keystone: 604.4 kb/d</title></rect>
+<rect x="106.8" y="237.6" width="2.9" height="17.9" style="fill:var(--ch-g3)"><title>2018-11 Trans Mountain: 297.8 kb/d</title></rect>
+<rect x="106.8" y="219.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-11 Express: 310.0 kb/d</title></rect>
+<rect x="106.8" y="213.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="106.8" y="211.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="110.8" y="289.8" width="2.9" height="158.2" style="fill:var(--ch-ink2)"><title>2018-12 Enbridge Mainline: 2,636.9 kb/d</title></rect>
+<rect x="110.8" y="253.5" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2018-12 Keystone: 604.4 kb/d</title></rect>
+<rect x="110.8" y="234.7" width="2.9" height="18.9" style="fill:var(--ch-g3)"><title>2018-12 Trans Mountain: 314.5 kb/d</title></rect>
+<rect x="110.8" y="216.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2018-12 Express: 310.0 kb/d</title></rect>
+<rect x="110.8" y="210.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2018-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="110.8" y="209.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2018-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="114.9" y="292.6" width="2.9" height="155.4" style="fill:var(--ch-ink2)"><title>2019-01 Enbridge Mainline: 2,590.3 kb/d</title></rect>
+<rect x="114.9" y="256.3" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-01 Keystone: 604.4 kb/d</title></rect>
+<rect x="114.9" y="236.7" width="2.9" height="19.6" style="fill:var(--ch-g3)"><title>2019-01 Trans Mountain: 327.1 kb/d</title></rect>
+<rect x="114.9" y="218.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-01 Express: 310.0 kb/d</title></rect>
+<rect x="114.9" y="212.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="114.9" y="211.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="118.9" y="289.9" width="2.9" height="158.1" style="fill:var(--ch-ink2)"><title>2019-02 Enbridge Mainline: 2,634.3 kb/d</title></rect>
+<rect x="118.9" y="253.7" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-02 Keystone: 604.4 kb/d</title></rect>
+<rect x="118.9" y="233.7" width="2.9" height="20.0" style="fill:var(--ch-g3)"><title>2019-02 Trans Mountain: 333.4 kb/d</title></rect>
+<rect x="118.9" y="215.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-02 Express: 310.0 kb/d</title></rect>
+<rect x="118.9" y="209.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="118.9" y="208.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="122.9" y="292.6" width="2.9" height="155.4" style="fill:var(--ch-ink2)"><title>2019-03 Enbridge Mainline: 2,590.3 kb/d</title></rect>
+<rect x="122.9" y="256.3" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-03 Keystone: 604.4 kb/d</title></rect>
+<rect x="122.9" y="236.5" width="2.9" height="19.8" style="fill:var(--ch-g3)"><title>2019-03 Trans Mountain: 330.6 kb/d</title></rect>
+<rect x="122.9" y="217.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-03 Express: 310.0 kb/d</title></rect>
+<rect x="122.9" y="212.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="122.9" y="210.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="126.9" y="293.0" width="2.9" height="155.0" style="fill:var(--ch-ink2)"><title>2019-04 Enbridge Mainline: 2,584.0 kb/d</title></rect>
+<rect x="126.9" y="256.7" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-04 Keystone: 604.4 kb/d</title></rect>
+<rect x="126.9" y="236.9" width="2.9" height="19.8" style="fill:var(--ch-g3)"><title>2019-04 Trans Mountain: 330.6 kb/d</title></rect>
+<rect x="126.9" y="218.3" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-04 Express: 310.0 kb/d</title></rect>
+<rect x="126.9" y="212.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="126.9" y="211.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="131.0" y="293.7" width="2.9" height="154.3" style="fill:var(--ch-ink2)"><title>2019-05 Enbridge Mainline: 2,571.4 kb/d</title></rect>
+<rect x="131.0" y="257.5" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-05 Keystone: 604.4 kb/d</title></rect>
+<rect x="131.0" y="236.7" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-05 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="131.0" y="218.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-05 Express: 310.0 kb/d</title></rect>
+<rect x="131.0" y="212.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="131.0" y="211.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="135.0" y="288.1" width="2.9" height="159.9" style="fill:var(--ch-ink2)"><title>2019-06 Enbridge Mainline: 2,665.7 kb/d</title></rect>
+<rect x="135.0" y="251.8" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-06 Keystone: 604.4 kb/d</title></rect>
+<rect x="135.0" y="231.1" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-06 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="135.0" y="212.5" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-06 Express: 310.0 kb/d</title></rect>
+<rect x="135.0" y="206.6" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="135.0" y="205.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="139.0" y="287.0" width="2.9" height="161.0" style="fill:var(--ch-ink2)"><title>2019-07 Enbridge Mainline: 2,684.0 kb/d</title></rect>
+<rect x="139.0" y="250.7" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-07 Keystone: 604.4 kb/d</title></rect>
+<rect x="139.0" y="230.0" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-07 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="139.0" y="211.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-07 Express: 310.0 kb/d</title></rect>
+<rect x="139.0" y="205.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="139.0" y="204.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="143.1" y="292.3" width="2.9" height="155.7" style="fill:var(--ch-ink2)"><title>2019-08 Enbridge Mainline: 2,594.7 kb/d</title></rect>
+<rect x="143.1" y="256.1" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-08 Keystone: 604.4 kb/d</title></rect>
+<rect x="143.1" y="235.3" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-08 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="143.1" y="216.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-08 Express: 310.0 kb/d</title></rect>
+<rect x="143.1" y="210.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="143.1" y="209.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="147.1" y="289.9" width="2.9" height="158.1" style="fill:var(--ch-ink2)"><title>2019-09 Enbridge Mainline: 2,634.9 kb/d</title></rect>
+<rect x="147.1" y="253.6" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-09 Keystone: 604.4 kb/d</title></rect>
+<rect x="147.1" y="232.9" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-09 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="147.1" y="214.3" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-09 Express: 310.0 kb/d</title></rect>
+<rect x="147.1" y="208.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="147.1" y="207.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="151.1" y="293.7" width="2.9" height="154.3" style="fill:var(--ch-ink2)"><title>2019-10 Enbridge Mainline: 2,571.4 kb/d</title></rect>
+<rect x="151.1" y="257.5" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-10 Keystone: 604.4 kb/d</title></rect>
+<rect x="151.1" y="236.7" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-10 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="151.1" y="218.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-10 Express: 310.0 kb/d</title></rect>
+<rect x="151.1" y="212.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="151.1" y="211.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="155.1" y="294.5" width="2.9" height="153.5" style="fill:var(--ch-ink2)"><title>2019-11 Enbridge Mainline: 2,558.8 kb/d</title></rect>
+<rect x="155.1" y="258.2" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-11 Keystone: 604.4 kb/d</title></rect>
+<rect x="155.1" y="237.5" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-11 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="155.1" y="218.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-11 Express: 310.0 kb/d</title></rect>
+<rect x="155.1" y="213.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="155.1" y="211.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="159.2" y="289.6" width="2.9" height="158.4" style="fill:var(--ch-ink2)"><title>2019-12 Enbridge Mainline: 2,640.6 kb/d</title></rect>
+<rect x="159.2" y="253.3" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2019-12 Keystone: 604.4 kb/d</title></rect>
+<rect x="159.2" y="232.6" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2019-12 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="159.2" y="214.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2019-12 Express: 310.0 kb/d</title></rect>
+<rect x="159.2" y="208.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2019-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="159.2" y="206.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2019-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="163.2" y="282.4" width="2.9" height="165.6" style="fill:var(--ch-ink2)"><title>2020-01 Enbridge Mainline: 2,760.1 kb/d</title></rect>
+<rect x="163.2" y="246.1" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-01 Keystone: 604.4 kb/d</title></rect>
+<rect x="163.2" y="225.4" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2020-01 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="163.2" y="206.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-01 Express: 310.0 kb/d</title></rect>
+<rect x="163.2" y="200.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="163.2" y="199.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="167.2" y="286.5" width="2.9" height="161.5" style="fill:var(--ch-ink2)"><title>2020-02 Enbridge Mainline: 2,690.9 kb/d</title></rect>
+<rect x="167.2" y="250.3" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-02 Keystone: 604.4 kb/d</title></rect>
+<rect x="167.2" y="229.6" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2020-02 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="167.2" y="211.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-02 Express: 310.0 kb/d</title></rect>
+<rect x="167.2" y="205.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="167.2" y="203.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="171.2" y="281.6" width="2.9" height="166.4" style="fill:var(--ch-ink2)"><title>2020-03 Enbridge Mainline: 2,772.7 kb/d</title></rect>
+<rect x="171.2" y="245.4" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-03 Keystone: 604.4 kb/d</title></rect>
+<rect x="171.2" y="224.7" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2020-03 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="171.2" y="206.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-03 Express: 310.0 kb/d</title></rect>
+<rect x="171.2" y="200.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="171.2" y="199.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="175.3" y="287.1" width="2.9" height="160.9" style="fill:var(--ch-ink2)"><title>2020-04 Enbridge Mainline: 2,681.3 kb/d</title></rect>
+<rect x="175.3" y="250.9" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-04 Keystone: 604.4 kb/d</title></rect>
+<rect x="175.3" y="230.1" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2020-04 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="175.3" y="211.5" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-04 Express: 310.0 kb/d</title></rect>
+<rect x="175.3" y="205.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="175.3" y="204.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="179.3" y="282.3" width="2.9" height="165.7" style="fill:var(--ch-ink2)"><title>2020-05 Enbridge Mainline: 2,762.2 kb/d</title></rect>
+<rect x="179.3" y="246.0" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-05 Keystone: 604.4 kb/d</title></rect>
+<rect x="179.3" y="225.3" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2020-05 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="179.3" y="206.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-05 Express: 310.0 kb/d</title></rect>
+<rect x="179.3" y="200.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="179.3" y="199.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="183.3" y="283.6" width="2.9" height="164.4" style="fill:var(--ch-ink2)"><title>2020-06 Enbridge Mainline: 2,739.9 kb/d</title></rect>
+<rect x="183.3" y="247.3" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-06 Keystone: 604.4 kb/d</title></rect>
+<rect x="183.3" y="226.6" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2020-06 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="183.3" y="208.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-06 Express: 310.0 kb/d</title></rect>
+<rect x="183.3" y="202.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="183.3" y="200.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="187.3" y="284.3" width="2.9" height="163.7" style="fill:var(--ch-ink2)"><title>2020-07 Enbridge Mainline: 2,729.0 kb/d</title></rect>
+<rect x="187.3" y="248.0" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-07 Keystone: 604.4 kb/d</title></rect>
+<rect x="187.3" y="227.3" width="2.9" height="20.7" style="fill:var(--ch-g3)"><title>2020-07 Trans Mountain: 345.4 kb/d</title></rect>
+<rect x="187.3" y="208.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-07 Express: 310.0 kb/d</title></rect>
+<rect x="187.3" y="202.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="187.3" y="201.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="191.4" y="290.0" width="2.9" height="158.0" style="fill:var(--ch-ink2)"><title>2020-08 Enbridge Mainline: 2,633.6 kb/d</title></rect>
+<rect x="191.4" y="253.7" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-08 Keystone: 604.4 kb/d</title></rect>
+<rect x="191.4" y="231.8" width="2.9" height="21.9" style="fill:var(--ch-g3)"><title>2020-08 Trans Mountain: 364.8 kb/d</title></rect>
+<rect x="191.4" y="213.2" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-08 Express: 310.0 kb/d</title></rect>
+<rect x="191.4" y="207.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="191.4" y="206.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="195.4" y="290.9" width="2.9" height="157.1" style="fill:var(--ch-ink2)"><title>2020-09 Enbridge Mainline: 2,617.5 kb/d</title></rect>
+<rect x="195.4" y="254.7" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-09 Keystone: 604.4 kb/d</title></rect>
+<rect x="195.4" y="233.3" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2020-09 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="195.4" y="214.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-09 Express: 310.0 kb/d</title></rect>
+<rect x="195.4" y="208.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="195.4" y="207.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="199.4" y="288.0" width="2.9" height="160.0" style="fill:var(--ch-ink2)"><title>2020-10 Enbridge Mainline: 2,666.0 kb/d</title></rect>
+<rect x="199.4" y="251.8" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-10 Keystone: 604.4 kb/d</title></rect>
+<rect x="199.4" y="230.4" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2020-10 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="199.4" y="211.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-10 Express: 310.0 kb/d</title></rect>
+<rect x="199.4" y="205.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="199.4" y="204.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="203.4" y="288.3" width="2.9" height="159.7" style="fill:var(--ch-ink2)"><title>2020-11 Enbridge Mainline: 2,661.5 kb/d</title></rect>
+<rect x="203.4" y="252.0" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-11 Keystone: 604.4 kb/d</title></rect>
+<rect x="203.4" y="230.7" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2020-11 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="203.4" y="212.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-11 Express: 310.0 kb/d</title></rect>
+<rect x="203.4" y="206.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="203.4" y="205.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="207.5" y="287.9" width="2.9" height="160.1" style="fill:var(--ch-ink2)"><title>2020-12 Enbridge Mainline: 2,667.9 kb/d</title></rect>
+<rect x="207.5" y="251.7" width="2.9" height="36.3" style="fill:var(--ch-steel)"><title>2020-12 Keystone: 604.4 kb/d</title></rect>
+<rect x="207.5" y="230.3" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2020-12 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="207.5" y="211.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2020-12 Express: 310.0 kb/d</title></rect>
+<rect x="207.5" y="205.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2020-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="207.5" y="204.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2020-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="211.5" y="284.1" width="2.9" height="163.9" style="fill:var(--ch-ink2)"><title>2021-01 Enbridge Mainline: 2,732.2 kb/d</title></rect>
+<rect x="211.5" y="247.0" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-01 Keystone: 617.8 kb/d</title></rect>
+<rect x="211.5" y="225.7" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-01 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="211.5" y="207.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-01 Express: 310.0 kb/d</title></rect>
+<rect x="211.5" y="201.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="211.5" y="200.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="215.5" y="287.5" width="2.9" height="160.5" style="fill:var(--ch-ink2)"><title>2021-02 Enbridge Mainline: 2,675.1 kb/d</title></rect>
+<rect x="215.5" y="250.4" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-02 Keystone: 617.8 kb/d</title></rect>
+<rect x="215.5" y="229.1" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-02 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="215.5" y="210.5" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-02 Express: 310.0 kb/d</title></rect>
+<rect x="215.5" y="204.6" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="215.5" y="203.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="219.5" y="290.3" width="2.9" height="157.7" style="fill:var(--ch-ink2)"><title>2021-03 Enbridge Mainline: 2,628.7 kb/d</title></rect>
+<rect x="219.5" y="253.2" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-03 Keystone: 617.8 kb/d</title></rect>
+<rect x="219.5" y="231.9" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-03 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="219.5" y="213.3" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-03 Express: 310.0 kb/d</title></rect>
+<rect x="219.5" y="207.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="219.5" y="206.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="223.6" y="289.9" width="2.9" height="158.1" style="fill:var(--ch-ink2)"><title>2021-04 Enbridge Mainline: 2,634.7 kb/d</title></rect>
+<rect x="223.6" y="252.9" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-04 Keystone: 617.8 kb/d</title></rect>
+<rect x="223.6" y="231.5" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-04 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="223.6" y="212.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-04 Express: 310.0 kb/d</title></rect>
+<rect x="223.6" y="207.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="223.6" y="205.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="227.6" y="289.4" width="2.9" height="158.6" style="fill:var(--ch-ink2)"><title>2021-05 Enbridge Mainline: 2,643.5 kb/d</title></rect>
+<rect x="227.6" y="252.3" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-05 Keystone: 617.8 kb/d</title></rect>
+<rect x="227.6" y="231.0" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-05 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="227.6" y="212.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-05 Express: 310.0 kb/d</title></rect>
+<rect x="227.6" y="206.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="227.6" y="205.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="231.6" y="287.4" width="2.9" height="160.6" style="fill:var(--ch-ink2)"><title>2021-06 Enbridge Mainline: 2,676.4 kb/d</title></rect>
+<rect x="231.6" y="250.3" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-06 Keystone: 617.8 kb/d</title></rect>
+<rect x="231.6" y="229.0" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-06 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="231.6" y="210.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-06 Express: 310.0 kb/d</title></rect>
+<rect x="231.6" y="204.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="231.6" y="203.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="235.6" y="286.8" width="2.9" height="161.2" style="fill:var(--ch-ink2)"><title>2021-07 Enbridge Mainline: 2,687.2 kb/d</title></rect>
+<rect x="235.6" y="249.7" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-07 Keystone: 617.8 kb/d</title></rect>
+<rect x="235.6" y="228.4" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-07 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="235.6" y="209.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-07 Express: 310.0 kb/d</title></rect>
+<rect x="235.6" y="203.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="235.6" y="202.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="239.7" y="290.9" width="2.9" height="157.1" style="fill:var(--ch-ink2)"><title>2021-08 Enbridge Mainline: 2,617.5 kb/d</title></rect>
+<rect x="239.7" y="253.9" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-08 Keystone: 617.8 kb/d</title></rect>
+<rect x="239.7" y="232.5" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-08 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="239.7" y="213.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-08 Express: 310.0 kb/d</title></rect>
+<rect x="239.7" y="208.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="239.7" y="206.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="243.7" y="290.9" width="2.9" height="157.1" style="fill:var(--ch-ink2)"><title>2021-09 Enbridge Mainline: 2,617.5 kb/d</title></rect>
+<rect x="243.7" y="253.9" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-09 Keystone: 617.8 kb/d</title></rect>
+<rect x="243.7" y="232.5" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-09 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="243.7" y="213.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-09 Express: 310.0 kb/d</title></rect>
+<rect x="243.7" y="208.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="243.7" y="206.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="247.7" y="281.1" width="2.9" height="166.9" style="fill:var(--ch-ink2)"><title>2021-10 Enbridge Mainline: 2,782.2 kb/d</title></rect>
+<rect x="247.7" y="244.0" width="2.9" height="37.1" style="fill:var(--ch-steel)"><title>2021-10 Keystone: 617.8 kb/d</title></rect>
+<rect x="247.7" y="222.7" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-10 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="247.7" y="204.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-10 Express: 310.0 kb/d</title></rect>
+<rect x="247.7" y="198.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="247.7" y="197.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="251.7" y="265.9" width="2.9" height="182.1" style="fill:var(--ch-ink2)"><title>2021-11 Enbridge Mainline: 3,034.7 kb/d</title></rect>
+<rect x="251.7" y="228.5" width="2.9" height="37.4" style="fill:var(--ch-steel)"><title>2021-11 Keystone: 624.0 kb/d</title></rect>
+<rect x="251.7" y="207.1" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-11 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="251.7" y="188.5" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-11 Express: 310.0 kb/d</title></rect>
+<rect x="251.7" y="182.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="251.7" y="181.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="255.8" y="264.7" width="2.9" height="183.3" style="fill:var(--ch-ink2)"><title>2021-12 Enbridge Mainline: 3,055.3 kb/d</title></rect>
+<rect x="255.8" y="227.0" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2021-12 Keystone: 627.3 kb/d</title></rect>
+<rect x="255.8" y="205.7" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2021-12 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="255.8" y="187.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2021-12 Express: 310.0 kb/d</title></rect>
+<rect x="255.8" y="181.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2021-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="255.8" y="180.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2021-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="259.8" y="265.0" width="2.9" height="183.0" style="fill:var(--ch-ink2)"><title>2022-01 Enbridge Mainline: 3,049.9 kb/d</title></rect>
+<rect x="259.8" y="227.4" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-01 Keystone: 627.3 kb/d</title></rect>
+<rect x="259.8" y="206.0" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2022-01 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="259.8" y="187.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-01 Express: 310.0 kb/d</title></rect>
+<rect x="259.8" y="181.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="259.8" y="180.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="263.8" y="263.3" width="2.9" height="184.7" style="fill:var(--ch-ink2)"><title>2022-02 Enbridge Mainline: 3,078.3 kb/d</title></rect>
+<rect x="263.8" y="225.7" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-02 Keystone: 627.3 kb/d</title></rect>
+<rect x="263.8" y="204.3" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2022-02 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="263.8" y="185.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-02 Express: 310.0 kb/d</title></rect>
+<rect x="263.8" y="179.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="263.8" y="178.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="267.8" y="264.3" width="2.9" height="183.7" style="fill:var(--ch-ink2)"><title>2022-03 Enbridge Mainline: 3,061.8 kb/d</title></rect>
+<rect x="267.8" y="226.7" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-03 Keystone: 627.3 kb/d</title></rect>
+<rect x="267.8" y="205.3" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2022-03 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="267.8" y="186.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-03 Express: 310.0 kb/d</title></rect>
+<rect x="267.8" y="180.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="267.8" y="179.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="271.9" y="267.9" width="2.9" height="180.1" style="fill:var(--ch-ink2)"><title>2022-04 Enbridge Mainline: 3,001.7 kb/d</title></rect>
+<rect x="271.9" y="230.3" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-04 Keystone: 627.3 kb/d</title></rect>
+<rect x="271.9" y="208.9" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2022-04 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="271.9" y="190.3" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-04 Express: 310.0 kb/d</title></rect>
+<rect x="271.9" y="184.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="271.9" y="183.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="275.9" y="269.3" width="2.9" height="178.7" style="fill:var(--ch-ink2)"><title>2022-05 Enbridge Mainline: 2,978.2 kb/d</title></rect>
+<rect x="275.9" y="231.7" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-05 Keystone: 627.3 kb/d</title></rect>
+<rect x="275.9" y="210.3" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2022-05 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="275.9" y="191.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-05 Express: 310.0 kb/d</title></rect>
+<rect x="275.9" y="185.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="275.9" y="184.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="279.9" y="261.8" width="2.9" height="186.2" style="fill:var(--ch-ink2)"><title>2022-06 Enbridge Mainline: 3,103.2 kb/d</title></rect>
+<rect x="279.9" y="224.2" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-06 Keystone: 627.3 kb/d</title></rect>
+<rect x="279.9" y="202.8" width="2.9" height="21.3" style="fill:var(--ch-g3)"><title>2022-06 Trans Mountain: 355.8 kb/d</title></rect>
+<rect x="279.9" y="184.2" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-06 Express: 310.0 kb/d</title></rect>
+<rect x="279.9" y="178.3" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="279.9" y="177.1" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="283.9" y="264.4" width="2.9" height="183.6" style="fill:var(--ch-ink2)"><title>2022-07 Enbridge Mainline: 3,059.5 kb/d</title></rect>
+<rect x="283.9" y="226.8" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-07 Keystone: 627.3 kb/d</title></rect>
+<rect x="283.9" y="205.1" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2022-07 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="283.9" y="186.5" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-07 Express: 310.0 kb/d</title></rect>
+<rect x="283.9" y="180.6" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="283.9" y="179.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="288.0" y="270.5" width="2.9" height="177.5" style="fill:var(--ch-ink2)"><title>2022-08 Enbridge Mainline: 2,958.2 kb/d</title></rect>
+<rect x="288.0" y="232.9" width="2.9" height="37.6" style="fill:var(--ch-steel)"><title>2022-08 Keystone: 627.3 kb/d</title></rect>
+<rect x="288.0" y="211.0" width="2.9" height="21.9" style="fill:var(--ch-g3)"><title>2022-08 Trans Mountain: 364.8 kb/d</title></rect>
+<rect x="288.0" y="192.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-08 Express: 310.0 kb/d</title></rect>
+<rect x="288.0" y="186.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="288.0" y="185.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="292.0" y="267.8" width="2.9" height="180.2" style="fill:var(--ch-ink2)"><title>2022-09 Enbridge Mainline: 3,003.1 kb/d</title></rect>
+<rect x="292.0" y="229.2" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2022-09 Keystone: 643.0 kb/d</title></rect>
+<rect x="292.0" y="207.5" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2022-09 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="292.0" y="188.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-09 Express: 310.0 kb/d</title></rect>
+<rect x="292.0" y="183.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="292.0" y="181.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="296.0" y="267.6" width="2.9" height="180.4" style="fill:var(--ch-ink2)"><title>2022-10 Enbridge Mainline: 3,007.5 kb/d</title></rect>
+<rect x="296.0" y="229.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2022-10 Keystone: 643.0 kb/d</title></rect>
+<rect x="296.0" y="207.2" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2022-10 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="296.0" y="188.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-10 Express: 310.0 kb/d</title></rect>
+<rect x="296.0" y="182.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="296.0" y="181.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="300.1" y="263.8" width="2.9" height="184.2" style="fill:var(--ch-ink2)"><title>2022-11 Enbridge Mainline: 3,069.7 kb/d</title></rect>
+<rect x="300.1" y="225.2" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2022-11 Keystone: 643.0 kb/d</title></rect>
+<rect x="300.1" y="203.5" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2022-11 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="300.1" y="184.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-11 Express: 310.0 kb/d</title></rect>
+<rect x="300.1" y="179.0" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="300.1" y="177.8" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="304.1" y="269.3" width="2.9" height="178.7" style="fill:var(--ch-ink2)"><title>2022-12 Enbridge Mainline: 2,978.7 kb/d</title></rect>
+<rect x="304.1" y="230.7" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2022-12 Keystone: 643.0 kb/d</title></rect>
+<rect x="304.1" y="209.0" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2022-12 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="304.1" y="190.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2022-12 Express: 310.0 kb/d</title></rect>
+<rect x="304.1" y="184.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2022-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="304.1" y="183.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2022-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="308.1" y="264.0" width="2.9" height="184.0" style="fill:var(--ch-ink2)"><title>2023-01 Enbridge Mainline: 3,067.5 kb/d</title></rect>
+<rect x="308.1" y="225.4" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-01 Keystone: 643.0 kb/d</title></rect>
+<rect x="308.1" y="203.6" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2023-01 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="308.1" y="185.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-01 Express: 310.0 kb/d</title></rect>
+<rect x="308.1" y="179.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="308.1" y="178.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="312.1" y="262.5" width="2.9" height="185.5" style="fill:var(--ch-ink2)"><title>2023-02 Enbridge Mainline: 3,091.8 kb/d</title></rect>
+<rect x="312.1" y="223.9" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-02 Keystone: 643.0 kb/d</title></rect>
+<rect x="312.1" y="202.2" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2023-02 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="312.1" y="183.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-02 Express: 310.0 kb/d</title></rect>
+<rect x="312.1" y="177.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="312.1" y="176.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="316.2" y="264.3" width="2.9" height="183.7" style="fill:var(--ch-ink2)"><title>2023-03 Enbridge Mainline: 3,061.4 kb/d</title></rect>
+<rect x="316.2" y="225.7" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-03 Keystone: 643.0 kb/d</title></rect>
+<rect x="316.2" y="204.0" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2023-03 Trans Mountain: 362.0 kb/d</title></rect>
+<rect x="316.2" y="185.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-03 Express: 310.0 kb/d</title></rect>
+<rect x="316.2" y="179.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="316.2" y="178.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="320.2" y="267.0" width="2.9" height="181.0" style="fill:var(--ch-ink2)"><title>2023-04 Enbridge Mainline: 3,017.4 kb/d</title></rect>
+<rect x="320.2" y="228.4" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-04 Keystone: 643.0 kb/d</title></rect>
+<rect x="320.2" y="206.6" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2023-04 Trans Mountain: 362.3 kb/d</title></rect>
+<rect x="320.2" y="188.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-04 Express: 310.0 kb/d</title></rect>
+<rect x="320.2" y="182.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="320.2" y="181.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="324.2" y="268.1" width="2.9" height="179.9" style="fill:var(--ch-ink2)"><title>2023-05 Enbridge Mainline: 2,997.6 kb/d</title></rect>
+<rect x="324.2" y="229.6" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-05 Keystone: 643.0 kb/d</title></rect>
+<rect x="324.2" y="207.8" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2023-05 Trans Mountain: 362.3 kb/d</title></rect>
+<rect x="324.2" y="189.2" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-05 Express: 310.0 kb/d</title></rect>
+<rect x="324.2" y="183.3" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="324.2" y="182.1" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="328.2" y="266.0" width="2.9" height="182.0" style="fill:var(--ch-ink2)"><title>2023-06 Enbridge Mainline: 3,032.7 kb/d</title></rect>
+<rect x="328.2" y="227.5" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-06 Keystone: 643.0 kb/d</title></rect>
+<rect x="328.2" y="205.7" width="2.9" height="21.7" style="fill:var(--ch-g3)"><title>2023-06 Trans Mountain: 362.3 kb/d</title></rect>
+<rect x="328.2" y="187.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-06 Express: 310.0 kb/d</title></rect>
+<rect x="328.2" y="181.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="328.2" y="180.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="332.3" y="267.2" width="2.9" height="180.8" style="fill:var(--ch-ink2)"><title>2023-07 Enbridge Mainline: 3,013.7 kb/d</title></rect>
+<rect x="332.3" y="228.6" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-07 Keystone: 643.0 kb/d</title></rect>
+<rect x="332.3" y="205.6" width="2.9" height="23.0" style="fill:var(--ch-g3)"><title>2023-07 Trans Mountain: 383.7 kb/d</title></rect>
+<rect x="332.3" y="187.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-07 Express: 310.0 kb/d</title></rect>
+<rect x="332.3" y="181.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="332.3" y="179.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="336.3" y="269.8" width="2.9" height="178.2" style="fill:var(--ch-ink2)"><title>2023-08 Enbridge Mainline: 2,969.4 kb/d</title></rect>
+<rect x="336.3" y="231.3" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-08 Keystone: 643.0 kb/d</title></rect>
+<rect x="336.3" y="209.2" width="2.9" height="22.1" style="fill:var(--ch-g3)"><title>2023-08 Trans Mountain: 368.4 kb/d</title></rect>
+<rect x="336.3" y="190.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-08 Express: 310.0 kb/d</title></rect>
+<rect x="336.3" y="184.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="336.3" y="183.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="340.3" y="269.8" width="2.9" height="178.2" style="fill:var(--ch-ink2)"><title>2023-09 Enbridge Mainline: 2,969.4 kb/d</title></rect>
+<rect x="340.3" y="231.3" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-09 Keystone: 643.0 kb/d</title></rect>
+<rect x="340.3" y="209.0" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2023-09 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="340.3" y="190.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-09 Express: 310.0 kb/d</title></rect>
+<rect x="340.3" y="184.5" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="340.3" y="183.3" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="344.3" y="265.2" width="2.9" height="182.8" style="fill:var(--ch-ink2)"><title>2023-10 Enbridge Mainline: 3,046.3 kb/d</title></rect>
+<rect x="344.3" y="226.6" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-10 Keystone: 643.0 kb/d</title></rect>
+<rect x="344.3" y="204.3" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2023-10 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="344.3" y="185.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-10 Express: 310.0 kb/d</title></rect>
+<rect x="344.3" y="179.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="344.3" y="178.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="348.4" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2023-11 Enbridge Mainline: 3,039.9 kb/d</title></rect>
+<rect x="348.4" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-11 Keystone: 643.0 kb/d</title></rect>
+<rect x="348.4" y="204.7" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2023-11 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="348.4" y="186.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-11 Express: 310.0 kb/d</title></rect>
+<rect x="348.4" y="180.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="348.4" y="179.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="352.4" y="264.1" width="2.9" height="183.9" style="fill:var(--ch-ink2)"><title>2023-12 Enbridge Mainline: 3,064.5 kb/d</title></rect>
+<rect x="352.4" y="225.6" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2023-12 Keystone: 643.0 kb/d</title></rect>
+<rect x="352.4" y="203.2" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2023-12 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="352.4" y="184.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2023-12 Express: 310.0 kb/d</title></rect>
+<rect x="352.4" y="178.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2023-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="352.4" y="177.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2023-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="356.4" y="265.2" width="2.9" height="182.8" style="fill:var(--ch-ink2)"><title>2024-01 Enbridge Mainline: 3,046.9 kb/d</title></rect>
+<rect x="356.4" y="226.6" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-01 Keystone: 643.0 kb/d</title></rect>
+<rect x="356.4" y="204.3" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2024-01 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="356.4" y="185.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-01 Express: 310.0 kb/d</title></rect>
+<rect x="356.4" y="179.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="356.4" y="178.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="360.4" y="264.3" width="2.9" height="183.7" style="fill:var(--ch-ink2)"><title>2024-02 Enbridge Mainline: 3,061.9 kb/d</title></rect>
+<rect x="360.4" y="225.7" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-02 Keystone: 643.0 kb/d</title></rect>
+<rect x="360.4" y="203.4" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2024-02 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="360.4" y="184.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-02 Express: 310.0 kb/d</title></rect>
+<rect x="360.4" y="178.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="360.4" y="177.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="364.5" y="264.0" width="2.9" height="184.0" style="fill:var(--ch-ink2)"><title>2024-03 Enbridge Mainline: 3,067.4 kb/d</title></rect>
+<rect x="364.5" y="225.4" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-03 Keystone: 643.0 kb/d</title></rect>
+<rect x="364.5" y="203.1" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2024-03 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="364.5" y="184.5" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-03 Express: 310.0 kb/d</title></rect>
+<rect x="364.5" y="178.6" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="364.5" y="177.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="368.5" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2024-04 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="368.5" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-04 Keystone: 643.0 kb/d</title></rect>
+<rect x="368.5" y="204.7" width="2.9" height="22.3" style="fill:var(--ch-g3)"><title>2024-04 Trans Mountain: 371.7 kb/d</title></rect>
+<rect x="368.5" y="186.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-04 Express: 310.0 kb/d</title></rect>
+<rect x="368.5" y="180.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="368.5" y="179.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="372.5" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2024-05 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="372.5" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-05 Keystone: 643.0 kb/d</title></rect>
+<rect x="372.5" y="182.2" width="2.9" height="44.8" style="fill:var(--ch-g3)"><title>2024-05 Trans Mountain: 746.0 kb/d</title></rect>
+<rect x="372.5" y="163.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-05 Express: 310.0 kb/d</title></rect>
+<rect x="372.5" y="157.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="372.5" y="156.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="376.5" y="264.7" width="2.9" height="183.3" style="fill:var(--ch-ink2)"><title>2024-06 Enbridge Mainline: 3,054.5 kb/d</title></rect>
+<rect x="376.5" y="226.2" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-06 Keystone: 643.0 kb/d</title></rect>
+<rect x="376.5" y="174.2" width="2.9" height="51.9" style="fill:var(--ch-g3)"><title>2024-06 Trans Mountain: 865.5 kb/d</title></rect>
+<rect x="376.5" y="155.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-06 Express: 310.0 kb/d</title></rect>
+<rect x="376.5" y="149.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="376.5" y="148.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="380.6" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2024-07 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="380.6" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-07 Keystone: 643.0 kb/d</title></rect>
+<rect x="380.6" y="174.6" width="2.9" height="52.5" style="fill:var(--ch-g3)"><title>2024-07 Trans Mountain: 874.3 kb/d</title></rect>
+<rect x="380.6" y="155.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-07 Express: 310.0 kb/d</title></rect>
+<rect x="380.6" y="150.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="380.6" y="148.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="384.6" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2024-08 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="384.6" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-08 Keystone: 643.0 kb/d</title></rect>
+<rect x="384.6" y="174.6" width="2.9" height="52.5" style="fill:var(--ch-g3)"><title>2024-08 Trans Mountain: 874.3 kb/d</title></rect>
+<rect x="384.6" y="155.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-08 Express: 310.0 kb/d</title></rect>
+<rect x="384.6" y="150.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="384.6" y="148.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="388.6" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2024-09 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="388.6" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-09 Keystone: 643.0 kb/d</title></rect>
+<rect x="388.6" y="178.3" width="2.9" height="48.7" style="fill:var(--ch-g3)"><title>2024-09 Trans Mountain: 811.4 kb/d</title></rect>
+<rect x="388.6" y="159.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-09 Express: 310.0 kb/d</title></rect>
+<rect x="388.6" y="153.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="388.6" y="152.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="392.6" y="264.3" width="2.9" height="183.7" style="fill:var(--ch-ink2)"><title>2024-10 Enbridge Mainline: 3,062.0 kb/d</title></rect>
+<rect x="392.6" y="225.7" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-10 Keystone: 643.0 kb/d</title></rect>
+<rect x="392.6" y="174.4" width="2.9" height="51.3" style="fill:var(--ch-g3)"><title>2024-10 Trans Mountain: 855.4 kb/d</title></rect>
+<rect x="392.6" y="155.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-10 Express: 310.0 kb/d</title></rect>
+<rect x="392.6" y="149.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="392.6" y="148.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="396.7" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2024-11 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="396.7" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-11 Keystone: 643.0 kb/d</title></rect>
+<rect x="396.7" y="174.6" width="2.9" height="52.5" style="fill:var(--ch-g3)"><title>2024-11 Trans Mountain: 874.3 kb/d</title></rect>
+<rect x="396.7" y="155.9" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-11 Express: 310.0 kb/d</title></rect>
+<rect x="396.7" y="150.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="396.7" y="148.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="400.7" y="264.1" width="2.9" height="183.9" style="fill:var(--ch-ink2)"><title>2024-12 Enbridge Mainline: 3,064.8 kb/d</title></rect>
+<rect x="400.7" y="225.5" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2024-12 Keystone: 643.0 kb/d</title></rect>
+<rect x="400.7" y="171.6" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2024-12 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="400.7" y="153.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2024-12 Express: 310.0 kb/d</title></rect>
+<rect x="400.7" y="147.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2024-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="400.7" y="145.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2024-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="404.7" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2025-01 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="404.7" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-01 Keystone: 643.0 kb/d</title></rect>
+<rect x="404.7" y="173.0" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2025-01 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="404.7" y="154.4" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-01 Express: 310.0 kb/d</title></rect>
+<rect x="404.7" y="148.6" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="404.7" y="147.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="408.7" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2025-02 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="408.7" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-02 Keystone: 643.0 kb/d</title></rect>
+<rect x="408.7" y="173.4" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-02 Trans Mountain: 893.2 kb/d</title></rect>
+<rect x="408.7" y="154.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-02 Express: 310.0 kb/d</title></rect>
+<rect x="408.7" y="148.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="408.7" y="147.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="412.8" y="265.5" width="2.9" height="182.5" style="fill:var(--ch-ink2)"><title>2025-03 Enbridge Mainline: 3,041.8 kb/d</title></rect>
+<rect x="412.8" y="226.9" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-03 Keystone: 643.0 kb/d</title></rect>
+<rect x="412.8" y="173.3" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-03 Trans Mountain: 893.2 kb/d</title></rect>
+<rect x="412.8" y="154.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-03 Express: 310.0 kb/d</title></rect>
+<rect x="412.8" y="148.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="412.8" y="147.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="416.8" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2025-04 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="416.8" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-04 Keystone: 643.0 kb/d</title></rect>
+<rect x="416.8" y="173.8" width="2.9" height="53.2" style="fill:var(--ch-g3)"><title>2025-04 Trans Mountain: 886.9 kb/d</title></rect>
+<rect x="416.8" y="155.2" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-04 Express: 310.0 kb/d</title></rect>
+<rect x="416.8" y="149.3" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="416.8" y="148.1" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="420.8" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2025-05 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="420.8" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-05 Keystone: 643.0 kb/d</title></rect>
+<rect x="420.8" y="173.4" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-05 Trans Mountain: 893.2 kb/d</title></rect>
+<rect x="420.8" y="154.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-05 Express: 310.0 kb/d</title></rect>
+<rect x="420.8" y="148.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="420.8" y="147.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="424.8" y="265.1" width="2.9" height="182.9" style="fill:var(--ch-ink2)"><title>2025-06 Enbridge Mainline: 3,048.8 kb/d</title></rect>
+<rect x="424.8" y="226.5" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-06 Keystone: 643.0 kb/d</title></rect>
+<rect x="424.8" y="172.9" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-06 Trans Mountain: 893.2 kb/d</title></rect>
+<rect x="424.8" y="154.3" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-06 Express: 310.0 kb/d</title></rect>
+<rect x="424.8" y="148.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="424.8" y="147.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-06 Rangeland: 20.0 kb/d</title></rect>
+<rect x="428.9" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2025-07 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="428.9" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-07 Keystone: 643.0 kb/d</title></rect>
+<rect x="428.9" y="173.4" width="2.9" height="53.6" style="fill:var(--ch-g3)"><title>2025-07 Trans Mountain: 893.2 kb/d</title></rect>
+<rect x="428.9" y="154.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-07 Express: 310.0 kb/d</title></rect>
+<rect x="428.9" y="148.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-07 Milk River: 98.0 kb/d</title></rect>
+<rect x="428.9" y="147.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-07 Rangeland: 20.0 kb/d</title></rect>
+<rect x="432.9" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2025-08 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="432.9" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-08 Keystone: 643.0 kb/d</title></rect>
+<rect x="432.9" y="172.7" width="2.9" height="54.3" style="fill:var(--ch-g3)"><title>2025-08 Trans Mountain: 905.7 kb/d</title></rect>
+<rect x="432.9" y="154.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-08 Express: 310.0 kb/d</title></rect>
+<rect x="432.9" y="148.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-08 Milk River: 98.0 kb/d</title></rect>
+<rect x="432.9" y="147.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-08 Rangeland: 20.0 kb/d</title></rect>
+<rect x="436.9" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2025-09 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="436.9" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-09 Keystone: 643.0 kb/d</title></rect>
+<rect x="436.9" y="175.3" width="2.9" height="51.7" style="fill:var(--ch-g3)"><title>2025-09 Trans Mountain: 861.7 kb/d</title></rect>
+<rect x="436.9" y="156.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-09 Express: 310.0 kb/d</title></rect>
+<rect x="436.9" y="150.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-09 Milk River: 98.0 kb/d</title></rect>
+<rect x="436.9" y="149.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-09 Rangeland: 20.0 kb/d</title></rect>
+<rect x="440.9" y="264.7" width="2.9" height="183.3" style="fill:var(--ch-ink2)"><title>2025-10 Enbridge Mainline: 3,054.5 kb/d</title></rect>
+<rect x="440.9" y="226.2" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-10 Keystone: 643.0 kb/d</title></rect>
+<rect x="440.9" y="172.2" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2025-10 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="440.9" y="153.6" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-10 Express: 310.0 kb/d</title></rect>
+<rect x="440.9" y="147.7" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-10 Milk River: 98.0 kb/d</title></rect>
+<rect x="440.9" y="146.5" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-10 Rangeland: 20.0 kb/d</title></rect>
+<rect x="445.0" y="264.4" width="2.9" height="183.6" style="fill:var(--ch-ink2)"><title>2025-11 Enbridge Mainline: 3,059.9 kb/d</title></rect>
+<rect x="445.0" y="225.8" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-11 Keystone: 643.0 kb/d</title></rect>
+<rect x="445.0" y="172.6" width="2.9" height="53.2" style="fill:var(--ch-g3)"><title>2025-11 Trans Mountain: 886.9 kb/d</title></rect>
+<rect x="445.0" y="154.0" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-11 Express: 310.0 kb/d</title></rect>
+<rect x="445.0" y="148.1" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-11 Milk River: 98.0 kb/d</title></rect>
+<rect x="445.0" y="146.9" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-11 Rangeland: 20.0 kb/d</title></rect>
+<rect x="449.0" y="264.4" width="2.9" height="183.6" style="fill:var(--ch-ink2)"><title>2025-12 Enbridge Mainline: 3,060.5 kb/d</title></rect>
+<rect x="449.0" y="225.8" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2025-12 Keystone: 643.0 kb/d</title></rect>
+<rect x="449.0" y="171.8" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2025-12 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="449.0" y="153.2" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2025-12 Express: 310.0 kb/d</title></rect>
+<rect x="449.0" y="147.3" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2025-12 Milk River: 98.0 kb/d</title></rect>
+<rect x="449.0" y="146.1" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2025-12 Rangeland: 20.0 kb/d</title></rect>
+<rect x="453.0" y="263.8" width="2.9" height="184.2" style="fill:var(--ch-ink2)"><title>2026-01 Enbridge Mainline: 3,069.9 kb/d</title></rect>
+<rect x="453.0" y="225.2" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2026-01 Keystone: 643.0 kb/d</title></rect>
+<rect x="453.0" y="170.9" width="2.9" height="54.3" style="fill:var(--ch-g3)"><title>2026-01 Trans Mountain: 905.7 kb/d</title></rect>
+<rect x="453.0" y="152.3" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2026-01 Express: 310.0 kb/d</title></rect>
+<rect x="453.0" y="146.4" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2026-01 Milk River: 98.0 kb/d</title></rect>
+<rect x="453.0" y="145.2" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2026-01 Rangeland: 20.0 kb/d</title></rect>
+<rect x="457.1" y="264.7" width="2.9" height="183.3" style="fill:var(--ch-ink2)"><title>2026-02 Enbridge Mainline: 3,055.5 kb/d</title></rect>
+<rect x="457.1" y="226.1" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2026-02 Keystone: 643.0 kb/d</title></rect>
+<rect x="457.1" y="172.1" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2026-02 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="457.1" y="153.5" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2026-02 Express: 310.0 kb/d</title></rect>
+<rect x="457.1" y="147.6" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2026-02 Milk River: 98.0 kb/d</title></rect>
+<rect x="457.1" y="146.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2026-02 Rangeland: 20.0 kb/d</title></rect>
+<rect x="461.1" y="264.0" width="2.9" height="184.0" style="fill:var(--ch-ink2)"><title>2026-03 Enbridge Mainline: 3,067.4 kb/d</title></rect>
+<rect x="461.1" y="225.4" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2026-03 Keystone: 643.0 kb/d</title></rect>
+<rect x="461.1" y="171.4" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2026-03 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="461.1" y="152.8" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2026-03 Express: 310.0 kb/d</title></rect>
+<rect x="461.1" y="146.9" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2026-03 Milk River: 98.0 kb/d</title></rect>
+<rect x="461.1" y="145.7" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2026-03 Rangeland: 20.0 kb/d</title></rect>
+<rect x="465.1" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2026-04 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="465.1" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2026-04 Keystone: 643.0 kb/d</title></rect>
+<rect x="465.1" y="175.3" width="2.9" height="51.7" style="fill:var(--ch-g3)"><title>2026-04 Trans Mountain: 861.7 kb/d</title></rect>
+<rect x="465.1" y="156.7" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2026-04 Express: 310.0 kb/d</title></rect>
+<rect x="465.1" y="150.8" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2026-04 Milk River: 98.0 kb/d</title></rect>
+<rect x="465.1" y="149.6" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2026-04 Rangeland: 20.0 kb/d</title></rect>
+<rect x="469.1" y="265.6" width="2.9" height="182.4" style="fill:var(--ch-ink2)"><title>2026-05 Enbridge Mainline: 3,040.2 kb/d</title></rect>
+<rect x="469.1" y="227.0" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2026-05 Keystone: 643.0 kb/d</title></rect>
+<rect x="469.1" y="172.7" width="2.9" height="54.3" style="fill:var(--ch-g3)"><title>2026-05 Trans Mountain: 905.7 kb/d</title></rect>
+<rect x="469.1" y="154.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2026-05 Express: 310.0 kb/d</title></rect>
+<rect x="469.1" y="148.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2026-05 Milk River: 98.0 kb/d</title></rect>
+<rect x="469.1" y="147.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2026-05 Rangeland: 20.0 kb/d</title></rect>
+<rect x="473.2" y="264.3" width="2.9" height="183.7" style="fill:var(--ch-ink2)"><title>2026-06 Enbridge Mainline: 3,062.4 kb/d</title></rect>
+<rect x="473.2" y="225.7" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2026-06 Keystone: 643.0 kb/d</title></rect>
+<rect x="473.2" y="171.7" width="2.9" height="54.0" style="fill:var(--ch-g3)"><title>2026-06 Trans Mountain: 899.4 kb/d</title></rect>
+<rect x="473.2" y="153.1" width="2.9" height="18.6" style="fill:var(--ch-sand)"><title>2026-06 Express: 310.0 kb/d</title></rect>
+<rect x="473.2" y="147.2" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2026-06 Milk River: 98.0 kb/d</title></rect>
+<rect x="473.2" y="146.0" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2026-06 Rangeland: 20.0 kb/d</title></rect>
 <rect x="477.2" y="265.0" width="2.9" height="183.0" style="fill:var(--ch-ink2)"><title>2026-07 Enbridge Mainline: 3,050.4 kb/d</title></rect>
 <rect x="477.2" y="226.4" width="2.9" height="38.6" style="fill:var(--ch-steel)"><title>2026-07 Keystone: 643.0 kb/d</title></rect>
 <rect x="477.2" y="173.0" width="2.9" height="53.4" style="fill:var(--ch-g3)"><title>2026-07 Trans Mountain: 890.0 kb/d</title></rect>
@@ -1266,7 +1581,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <rect x="690.5" y="123.6" width="2.9" height="5.9" style="fill:var(--ch-gray)"><title>2030-12 Milk River: 98.0 kb/d</title></rect>
 <rect x="690.5" y="122.4" width="2.9" height="1.2" style="fill:var(--ch-g2)"><title>2030-12 Rangeland: 20.0 kb/d</title></rect>
 <line x1="476.6" y1="88" x2="476.6" y2="448" style="stroke:var(--mut)" stroke-width="1.5" stroke-dasharray="5,4" />
-<text x="476.6" y="20" text-anchor="middle" font-size="11.5" style="fill:var(--ink)">Measured through Jun 2026  |  Forecast from Jul 2026</text>
+<text x="393.9" y="20" text-anchor="middle" font-size="11.5" style="fill:var(--ink)">Measured through Jun 2026 (capacity), Jul 2026 (supply)  |  Forecast from Jul 2026</text>
 <line x1="374.0" y1="88" x2="374.0" y2="96" style="stroke:var(--mut)" stroke-width="1.5" />
 <text x="368.0" y="36" text-anchor="end" font-size="11" style="fill:var(--mut)">TMX in service</text>
 <line x1="502.8" y1="88" x2="502.8" y2="94" style="stroke:var(--mut)" stroke-width="1" />
@@ -1275,7 +1590,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <text x="502.8" y="36" text-anchor="middle" font-size="11" style="fill:var(--mut)">+90 kb/d Jan 2027: TMX drag-reducing agent</text>
 <text x="535.0" y="52" text-anchor="middle" font-size="11" style="fill:var(--mut)">+85 kb/d Sep 2027: Mainline optimization (effective)</text>
 <text x="587.3" y="68" text-anchor="middle" font-size="11" style="fill:var(--mut)">+210 kb/d Oct 2028: Trans Mountain optimization</text>
-<path d="M68.0,239.9 L72.0,241.9 L76.1,241.7 L80.1,238.1 L84.1,240.8 L88.1,240.6 L92.2,241.4 L96.2,245.0 L100.2,246.4 L104.2,246.0 L108.3,231.6 L112.3,234.9 L116.3,233.9 L120.3,239.5 L124.4,236.8 L128.4,240.8 L132.4,239.3 L136.4,233.2 L140.5,229.0 L144.5,234.6 L148.5,246.4 L152.6,248.4 L156.6,254.7 L160.6,230.9 L164.6,233.0 L168.7,225.4 L172.7,228.5 L176.7,256.3 L180.7,254.3 L184.8,253.3 L188.8,240.1 L192.8,241.5 L196.8,257.0 L200.9,242.0 L204.9,236.4 L208.9,231.1 L212.9,223.1 L217.0,226.7 L221.0,235.0 L225.0,244.9 L229.0,232.4 L233.1,230.9 L237.1,227.6 L241.1,236.1 L245.1,237.4 L249.2,227.1 L253.2,214.2 L257.2,209.3 L261.2,207.1 L265.3,215.9 L269.3,217.8 L273.3,233.4 L277.3,219.2 L281.4,223.4 L285.4,216.1 L289.4,217.8 L293.4,207.4 L297.5,210.6 L301.5,211.8 L305.5,216.4 L309.6,202.4 L313.6,207.8 L317.6,210.5 L321.6,215.4 L325.7,210.9 L329.7,210.2 L333.7,211.2 L337.7,210.5 L341.8,210.7 L345.8,204.9 L349.8,199.4 L353.8,195.6 L357.9,204.1 L361.9,201.7 L365.9,201.2 L369.9,214.0 L374.0,198.6 L378.0,181.4 L382.0,188.8 L386.0,190.6 L390.1,199.8 L394.1,192.8 L398.1,178.5 L402.1,182.0 L406.2,173.2 L410.2,175.0 L414.2,184.0 L418.2,201.3 L422.3,194.3 L426.3,197.8 L430.3,186.4 L434.3,180.2 L438.4,189.2 L442.4,186.1 L446.4,173.5 L450.4,173.6 L454.5,176.0 L458.5,180.4 L462.5,177.8 L466.6,178.3 L470.6,180.7 L474.6,178.4" fill="none" stroke="var(--ch-acc)" stroke-width="2.5" />
+<path d="M68.0,205.7 L72.0,206.7 L76.1,206.9 L80.1,204.3 L84.1,209.6 L88.1,202.6 L92.2,196.7 L96.2,198.9 L100.2,207.4 L104.2,187.0 L108.3,179.3 L112.3,178.0 L116.3,187.5 L120.3,209.8 L124.4,200.3 L128.4,194.5 L132.4,194.3 L136.4,191.1 L140.5,183.1 L144.5,191.9 L148.5,195.8 L152.6,201.9 L156.6,196.3 L160.6,180.6 L164.6,177.7 L168.7,177.1 L172.7,185.2 L176.7,223.6 L180.7,234.0 L184.8,213.2 L188.8,212.1 L192.8,216.7 L196.8,222.5 L200.9,208.6 L204.9,193.4 L208.9,185.4 L212.9,184.7 L217.0,186.0 L221.0,195.0 L225.0,201.0 L229.0,195.8 L233.1,191.5 L237.1,192.4 L241.1,188.0 L245.1,191.7 L249.2,177.8 L253.2,170.3 L257.2,175.6 L261.2,172.9 L265.3,178.6 L269.3,180.4 L273.3,185.0 L277.3,197.0 L281.4,185.9 L285.4,178.2 L289.4,179.7 L293.4,174.4 L297.5,177.0 L301.5,173.6 L305.5,184.7 L309.6,173.9 L313.6,172.3 L317.6,175.9 L321.6,191.0 L325.7,188.4 L329.7,178.5 L333.7,172.8 L337.7,172.9 L341.8,167.4 L345.8,169.3 L349.8,158.2 L353.8,152.3 L357.9,172.4 L361.9,160.0 L365.9,162.4 L369.9,167.5 L374.0,176.4 L378.0,155.4 L382.0,160.4 L386.0,156.6 L390.1,166.2 L394.1,160.0 L398.1,150.4 L402.1,143.9 L406.2,147.1 L410.2,147.9 L414.2,149.3 L418.2,164.6 L422.3,169.7 L426.3,156.8 L430.3,147.5 L434.3,145.1 L438.4,155.2 L442.4,150.2 L446.4,139.3 L450.4,138.8 L454.5,148.4 L458.5,151.2 L462.5,148.0 L466.6,144.3 L470.6,151.1 L474.6,158.8 L478.6,139.5" fill="none" stroke="var(--ch-acc)" stroke-width="2.5" />
 <path d="M478.6,139.5 L482.7,141.4 L486.7,143.3 L490.7,145.3 L494.7,142.2 L498.8,142.2 L502.8,140.8 L506.8,137.1 L510.8,140.8 L514.9,154.5 L518.9,159.6 L522.9,145.1 L526.9,142.5 L531.0,141.4 L535.0,147.6 L539.0,145.3 L543.0,135.0 L547.1,131.7 L551.1,129.9 L555.1,129.9 L559.1,129.9 L563.2,143.2 L567.2,148.5 L571.2,133.3 L575.2,130.7 L579.3,129.9 L583.3,135.8 L587.3,133.4 L591.3,122.7 L595.4,119.3 L599.4,128.6 L603.4,124.8 L607.4,128.6 L611.5,143.0 L615.5,148.3 L619.5,133.1 L623.6,130.4 L627.6,129.2 L631.6,135.6 L635.6,133.1 L639.7,122.4 L643.7,119.0 L647.7,128.4 L651.7,124.6 L655.8,128.3 L659.8,142.7 L663.8,148.0 L667.8,132.8 L671.9,130.1 L675.9,128.9 L679.9,135.3 L683.9,132.9 L688.0,122.1 L692.0,118.7" fill="none" stroke="var(--ch-acc)" stroke-width="2.5" stroke-dasharray="7,5" />
 <circle cx="478.6" cy="139.5" r="5" fill="none" stroke="#b3261e" stroke-width="2.5"><title>2026-07: modeled supply above total pipeline capacity</title></circle>
 <circle cx="482.7" cy="141.4" r="5" fill="none" stroke="#b3261e" stroke-width="2.5"><title>2026-08: modeled supply above total pipeline capacity</title></circle>
@@ -1320,9 +1635,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <text x="599.4" y="468" text-anchor="middle" font-size="11" style="fill:var(--faint)">2029</text>
 <text x="647.7" y="468" text-anchor="middle" font-size="11" style="fill:var(--faint)">2030</text>
 </svg>
-<figcaption>Stacked capacity vs flows. <b>History:</b> CER-reported available capacity and throughput (Enbridge Mainline, Keystone, Trans Mountain only). <b>Forecast:</b> per-pipeline capacity estimates for six pipelines: each pipeline's nameplate capacity or its highest observed throughput, whichever is higher, minus 215 kb/d of Mainline space that moves NGLs, refined products and re-exported US crude rather than Western Canadian crude. Compared against modeled marketable supply. Red rings mark forecast months when modeled supply is above total pipeline capacity. <b>Vintage:</b> CER open data (throughput + capacity), pulled 2026-09-22. <b>Forecast vintage:</b> egress scenario model build 2026-10-01 (AER ST3 actuals through 2026-07 (ST3 file vintage 27 August 2026; loaded 2026-09-28); marketable supply reformulated to the S&D accounting identity).</figcaption>
-<div class="lg"><span><span class="sw" style="background:var(--ch-ink2)"></span>Enbridge Mainline</span><span><span class="sw" style="background:var(--ch-steel)"></span>Keystone</span><span><span class="sw" style="background:var(--ch-g3)"></span>Trans Mountain</span><span><span class="sw" style="background:var(--ch-sand)"></span>Express</span><span><span class="sw" style="background:var(--ch-gray)"></span>Milk River</span><span><span class="sw" style="background:var(--ch-g2)"></span>Rangeland</span><span><svg width="20" height="10" style="vertical-align:-1px"><line x1="1" y1="5" x2="19" y2="5" stroke="var(--ch-acc)" stroke-width="2.5" /></svg> Throughput, reported (CER)</span><span><svg width="20" height="10" style="vertical-align:-1px"><line x1="1" y1="5" x2="19" y2="5" stroke="var(--ch-acc)" stroke-width="2.5" stroke-dasharray="4,3" /></svg> Marketable supply, modeled</span></div>
-</figure><p class="csvdl"><a href="../data/charts/egress-capacity-throughput.csv">Download CSV</a> <span class="vintageline">CSV · CER open data (throughput + capacity), pulled 2026-09-22; forecast model build 2026-10-01</span></p>
+<figcaption>Stacked capacity vs supply. <b>History:</b> measured capacity, all six systems: CER-reported available capacity for Enbridge Mainline (less 215 kb/d of non-crude space), Keystone and Trans Mountain, plus empirical capacity for Express, Milk River and Rangeland. Supply line is ST3 marketable supply (barrels leaving Alberta plus Saskatchewan and other receipts). <b>Forecast:</b> per-pipeline empirical capacity estimates for six pipelines: each pipeline's nameplate capacity or its highest observed throughput, whichever is higher, minus 215 kb/d of Mainline space that moves NGLs, refined products and re-exported US crude rather than Western Canadian crude. Compared against modeled marketable supply. Same barrel definition and supply concept on both sides of the boundary. Red rings mark forecast months when modeled supply is above total pipeline capacity. <b>Vintage:</b> CER open data (capacity), pulled 2026-09-22; AER ST3 removals_from_alberta + SK/other (supply line). <b>Forecast vintage:</b> egress scenario model build 2026-10-01 (AER ST3 actuals through 2026-07 (ST3 file vintage 27 August 2026; loaded 2026-09-28); marketable supply reformulated to the S&D accounting identity).</figcaption>
+<div class="lg"><span><span class="sw" style="background:var(--ch-ink2)"></span>Enbridge Mainline</span><span><span class="sw" style="background:var(--ch-steel)"></span>Keystone</span><span><span class="sw" style="background:var(--ch-g3)"></span>Trans Mountain</span><span><span class="sw" style="background:var(--ch-sand)"></span>Express</span><span><span class="sw" style="background:var(--ch-gray)"></span>Milk River</span><span><span class="sw" style="background:var(--ch-g2)"></span>Rangeland</span><span><svg width="20" height="10" style="vertical-align:-1px"><line x1="1" y1="5" x2="19" y2="5" stroke="var(--ch-acc)" stroke-width="2.5" /></svg> Supply, measured (ST3)</span><span><svg width="20" height="10" style="vertical-align:-1px"><line x1="1" y1="5" x2="19" y2="5" stroke="var(--ch-acc)" stroke-width="2.5" stroke-dasharray="4,3" /></svg> Supply, modeled</span></div>
+</figure><p class="csvdl"><a href="../data/charts/egress-capacity-throughput.csv">Download CSV</a> <span class="vintageline">CSV · CER open data (capacity), pulled 2026-09-22; AER ST3 removals_from_alberta + SK/other (supply line); forecast model build 2026-10-01</span></p>
 <h2 id="grades">Supply by type</h2>
 <p class="sub">What kind of barrel Western Canada produces: heavy, light, medium, and synthetic. The chart shows how each type changes over the next three months, with the long range as reference.</p>
 <h3 class="ctake">Sep 2026 estimate to Dec 2026: largest increase Synthetic +514 kb/d; largest decrease Heavy -26 kb/d</h3>
@@ -1370,6 +1685,89 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <figcaption>Change in Western Canadian crude supply by type, Sep 2026 estimate to Dec 2026. Total supply goes from 3,923 kb/d to 4,435 kb/d (net +512 kb/d). <b>Vintage:</b> AER ST3 actuals through 2026-07 (ST3 file vintage 27 August 2026; loaded 2026-09-28); Aug-Sep 2026 estimated ahead of official data; forecast seasonal baseline forecast, built 2026-10-01.<details class="prov"><summary>How the four types are defined</summary><p>Heavy = raw bitumen (before diluent is blended in) plus conventional heavy and ultra-heavy crude. Flowing dilbit is roughly 1.3-1.4x the printed number, since the diluent counted in Light is blended in so it flows; Synthetic = synthetic crude oil (SCO), the output of oil sands upgraders; Light = conventional light crude plus condensate production (~100 kb/d, mostly the diluent blended into bitumen so it flows); Medium = the density grade in the AER ST3 report. The ST3 does not split out sulfur content, so medium-sour crude cannot be separated here.</p></details></figcaption>
 <div class="lg"><span><span class="sw" style="background:var(--ch-ink2)"></span>Heavy</span><span><span class="sw" style="background:var(--ch-g1)"></span>Synthetic</span><span><span class="sw" style="background:var(--ch-g2)"></span>Light</span><span><span class="sw" style="background:var(--ch-g4)"></span>Medium</span><span><span class="sw" style="background:var(--ch-ink)"></span>Net change</span></div>
 </figure><p><b>Why these moves</b> (Sep 2026 estimate to Dec 2026, kb/d):<br><b>Heavy -26</b>: mined bitumen +152, in-situ bitumen +56 (drilled from underground, not surface-mined), bitumen sent to upgraders -230 (counted under Synthetic instead), conventional + ultra-heavy -4.1 kb/d.<br><b>Synthetic +515</b> (by upgrader, largest first): <a class="plink" href="../projects/cnq_horizon.html">Horizon</a> (Canadian Natural Resources) +266, <a class="plink" href="../projects/syncrude.html">Syncrude</a> Mildred Lake +150, <a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> +47, Scotford (Shell) +42, Sturgeon (North West Redwater) +10 kb/d. Sep 2026 estimate falls inside overlapping upgrader shutdowns (see the maintenance section below); Dec 2026 is back to full rates. A rebound, not new growth.<br><b>Light +28</b>: conventional light +25, condensate +2.8 kb/d.<br><b>Medium -4.0</b>: conventional medium crude (one line in the AER report).</p><table class="data"><thead><tr><th>Type</th><th>Oct 2026</th><th>Nov 2026</th><th>Dec 2026</th></tr></thead><tbody><tr><td>Heavy</td><td class="n dn">-86</td><td class="n up">+24</td><td class="n up">+36</td></tr><tr><td>Synthetic</td><td class="n up">+187</td><td class="n up">+326</td><td class="n up">+0.7</td></tr><tr><td>Light</td><td class="n up">+7.0</td><td class="n up">+17</td><td class="n up">+3.9</td></tr><tr><td>Medium</td><td class="n dn">-0.6</td><td class="n dn">-1.3</td><td class="n dn">-2.1</td></tr><tr><td style="font-weight:700">Net</td><td class="n up">+108</td><td class="n up">+366</td><td class="n up">+38</td></tr></tbody></table><p class="tblnote">Month-over-month change, kb/d: Oct 2026 vs Sep 2026 estimate; Nov 2026 vs Oct 2026; Dec 2026 vs Nov 2026.</p><p class="tblnote">Reference: calendar-year growth (2027 average vs 2026 average), kb/d: Heavy +28 · Synthetic +62 · Light +0.6 · Medium -0.2. Long view (Dec 2027 vs Sep 2026 estimate): net +564 kb/d, led by Synthetic +521.</p><p class="csvdl"><a href="../data/charts/supply-by-type.csv">Download CSV</a> <span class="vintageline">CSV · AER ST3 actuals through 2026-07 (ST3 file vintage 27 August 2026; loaded 2026-09-28); Aug-Sep 2026 estimated ahead of official data; forecast seasonal baseline forecast, built 2026-10-01</span></p>
+<h2 id="drivers">What moves supply next</h2>
+<p class="sub">Nowcast plus the next three months, one bar per material driver. Each bar names the facility or project and says whether the move is backed by company guidance or by the model.</p>
+<h3 class="ctake">What moves supply next</h3>
+<figure class="chart">
+<svg viewbox="0 0 680 402" role="img" aria-label="Near-term supply drivers, Sep 2026 nowcast to Dec 2026" style="width:100%;height:auto;display:block">
+<style>text{font-family:'Inter',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums;}.tick{font-size:13px;fill:var(--mut);}.xlab{font-size:12.5px;fill:var(--faint);}.elab{font-size:12.5px;font-weight:700;}.evt{font-size:11px;fill:var(--mut);}.val{font-size:13px;font-weight:700;fill:var(--ink);}.valinv{font-size:13px;fill:#fff;}</style>
+<rect x="0" y="0" width="680" height="402" fill="var(--paper)" />
+<line x1="56" y1="338.8" x2="666" y2="338.8" style="stroke:var(--ch-grid)" stroke-width="1" />
+<text x="50" y="342.8" text-anchor="end" font-size="11" style="fill:var(--mut)">3,800</text>
+<line x1="56" y1="298.1" x2="666" y2="298.1" style="stroke:var(--ch-grid)" stroke-width="1" />
+<text x="50" y="302.1" text-anchor="end" font-size="11" style="fill:var(--mut)">3,900</text>
+<line x1="56" y1="257.4" x2="666" y2="257.4" style="stroke:var(--ch-grid)" stroke-width="1" />
+<text x="50" y="261.4" text-anchor="end" font-size="11" style="fill:var(--mut)">4,000</text>
+<line x1="56" y1="216.7" x2="666" y2="216.7" style="stroke:var(--ch-grid)" stroke-width="1" />
+<text x="50" y="220.7" text-anchor="end" font-size="11" style="fill:var(--mut)">4,100</text>
+<line x1="56" y1="176.0" x2="666" y2="176.0" style="stroke:var(--ch-grid)" stroke-width="1" />
+<text x="50" y="180.0" text-anchor="end" font-size="11" style="fill:var(--mut)">4,200</text>
+<line x1="56" y1="135.3" x2="666" y2="135.3" style="stroke:var(--ch-grid)" stroke-width="1" />
+<text x="50" y="139.3" text-anchor="end" font-size="11" style="fill:var(--mut)">4,300</text>
+<line x1="56" y1="94.6" x2="666" y2="94.6" style="stroke:var(--ch-grid)" stroke-width="1" />
+<text x="50" y="98.6" text-anchor="end" font-size="11" style="fill:var(--mut)">4,400</text>
+<text x="56" y="20" font-size="12.5" style="fill:var(--mut)">kb/d, Sep 2026 nowcast to Dec 2026</text>
+<rect x="62.9" y="288.8" width="26.8" height="25.2" style="fill:#1a2b3c;fill-opacity:0.88"><title>Sep 2026 nowcast: 3,923 kb/d</title></rect>
+<text x="76.3" y="282.8" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink)">3,923</text>
+<text x="76.3" y="328.0" text-anchor="end" font-size="10" font-weight="700" transform="rotate(-45 76.3 328.0)" style="fill:var(--ink)">Sep 2026 nowcast</text>
+<line x1="89.8" y1="288.8" x2="103.6" y2="288.8" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="103.6" y="236.5" width="26.8" height="52.3" style="fill:#2e7d6b"><title>Horizon 35-day recovery: +129 kb/d (guided)</title></rect>
+<text x="117.0" y="230.5" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+129</text>
+<text x="117.0" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 117.0 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/cnq_horizon.html">Horizon</a> 35-day rec</text>
+<line x1="130.4" y1="236.5" x2="144.2" y2="236.5" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="144.2" y="212.6" width="26.8" height="23.9" style="fill:#2e7d6b"><title>Syncrude Coker 8-2 recovery: +59 kb/d (guided)</title></rect>
+<text x="157.7" y="206.6" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+59</text>
+<text x="157.7" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 157.7 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2</text>
+<line x1="171.1" y1="212.6" x2="184.9" y2="212.6" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="184.9" y="212.6" width="26.8" height="19.1" style="fill:#b07d2b"><title>Suncor Base Plant: -47 kb/d (modeled)</title></rect>
+<text x="198.3" y="245.6" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">-47</text>
+<text x="198.3" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 198.3 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a></text>
+<line x1="211.8" y1="231.6" x2="225.6" y2="231.6" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="225.6" y="231.6" width="26.8" height="12.1" style="fill:#b07d2b"><title>Kearl: -30 kb/d (modeled)</title></rect>
+<text x="239.0" y="257.7" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">-30</text>
+<text x="239.0" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 239.0 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/imo_kearl.html">Kearl</a></text>
+<rect x="266.2" y="243.7" width="26.8" height="70.3" style="fill:#1a2b3c;fill-opacity:0.88"><title>Oct 2026: 4,034 kb/d</title></rect>
+<text x="279.7" y="237.7" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink)">4,034</text>
+<text x="279.7" y="328.0" text-anchor="end" font-size="10" font-weight="700" transform="rotate(-45 279.7 328.0)" style="fill:var(--ink)">Oct 2026</text>
+<line x1="293.1" y1="243.7" x2="306.9" y2="243.7" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="306.9" y="185.9" width="26.8" height="57.8" style="fill:#2e7d6b"><title>Horizon 35-day recovery: +142 kb/d (guided)</title></rect>
+<text x="320.3" y="179.9" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+142</text>
+<text x="320.3" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 320.3 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/cnq_horizon.html">Horizon</a> 35-day rec</text>
+<line x1="333.8" y1="185.9" x2="347.6" y2="185.9" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="347.6" y="150.4" width="26.8" height="35.5" style="fill:#2e7d6b"><title>Syncrude Coker 8-2 recovery: +87 kb/d (guided)</title></rect>
+<text x="361.0" y="144.4" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+87</text>
+<text x="361.0" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 361.0 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2</text>
+<line x1="374.4" y1="150.4" x2="388.2" y2="150.4" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="388.2" y="126.4" width="26.8" height="24.1" style="fill:#2e7d6b"><title>Suncor Base Plant Q4 SCO and diesel maintenance: +59 kb/d (guided)</title></rect>
+<text x="401.7" y="120.4" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+59</text>
+<text x="401.7" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 401.7 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> </text>
+<line x1="415.1" y1="126.4" x2="428.9" y2="126.4" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="428.9" y="107.5" width="26.8" height="18.9" style="fill:#2e7d6b"><title>Suncor Base Plant Q4 bitumen maintenance: +46 kb/d (guided)</title></rect>
+<text x="442.3" y="101.5" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+46</text>
+<text x="442.3" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 442.3 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> </text>
+<line x1="455.8" y1="107.5" x2="469.6" y2="107.5" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="469.6" y="94.6" width="26.8" height="12.8" style="fill:#9aa4ad"><title>Other: +31 kb/d (modeled)</title></rect>
+<text x="483.0" y="88.6" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+31</text>
+<text x="483.0" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 483.0 328.0)" style="fill:var(--mut)">Other</text>
+<rect x="510.2" y="94.6" width="26.8" height="219.4" style="fill:#1a2b3c;fill-opacity:0.88"><title>Nov 2026: 4,400 kb/d</title></rect>
+<text x="523.7" y="88.6" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink)">4,400</text>
+<text x="523.7" y="328.0" text-anchor="end" font-size="10" font-weight="700" transform="rotate(-45 523.7 328.0)" style="fill:var(--ink)">Nov 2026</text>
+<line x1="537.1" y1="94.6" x2="550.9" y2="94.6" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="550.9" y="86.1" width="26.8" height="8.5" style="fill:#2e7d6b"><title>Suncor Base Plant Q4 bitumen recovery: +21 kb/d (guided)</title></rect>
+<text x="564.3" y="80.1" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+21</text>
+<text x="564.3" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 564.3 328.0)" style="fill:var(--mut)"><a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> </text>
+<line x1="577.8" y1="86.1" x2="591.6" y2="86.1" style="stroke:var(--faint)" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="591.6" y="79.2" width="26.8" height="7.0" style="fill:#9aa4ad"><title>Other: +17 kb/d (modeled)</title></rect>
+<text x="605.0" y="73.2" text-anchor="middle" font-size="11" font-weight="600" style="fill:var(--ink)">+17</text>
+<text x="605.0" y="328.0" text-anchor="end" font-size="10" transform="rotate(-45 605.0 328.0)" style="fill:var(--mut)">Other</text>
+<rect x="632.2" y="79.2" width="26.8" height="234.8" style="fill:#1a2b3c;fill-opacity:0.88"><title>Dec 2026: 4,438 kb/d</title></rect>
+<text x="645.7" y="73.2" text-anchor="middle" font-size="11" font-weight="700" style="fill:var(--ink)">4,438</text>
+<text x="645.7" y="328.0" text-anchor="end" font-size="10" font-weight="700" transform="rotate(-45 645.7 328.0)" style="fill:var(--ink)">Dec 2026</text>
+<text x="56" y="390" font-size="11" style="fill:var(--mut)"><tspan style="fill:#2e7d6b">■</tspan> guided (company) <tspan style="fill:#b07d2b">■</tspan> modeled <tspan style="fill:#1a2b3c">■</tspan> month total</text>
+</svg>
+<figcaption>Near-term supply drivers, Sep 2026 nowcast (3,923 kb/d) to Dec 2026 (4,435 kb/d). Each bar is a named facility or project move, tagged guided (company-confirmed maintenance) or modeled (seasonal baseline). <b>Vintage:</b> AER ST3 actuals through 2026-07 (ST3 file vintage 27 August 2026; loaded 2026-09-28); Aug-Sep 2026 estimated ahead of official data; forecast seasonal baseline forecast, built 2026-10-01.</figcaption>
+
+</figure><p><b>Oct 2026</b> (+108): <a class="plink" href="../projects/cnq_horizon.html">Horizon</a> 35-day recovery +129 (guided); <a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2 recovery +59 (guided); <a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> -47 (modeled); <a class="plink" href="../projects/imo_kearl.html">Kearl</a> -30 (modeled)<br><b>Nov 2026</b> (+366): <a class="plink" href="../projects/cnq_horizon.html">Horizon</a> 35-day recovery +142 (guided); <a class="plink" href="../projects/syncrude.html">Syncrude</a> Coker 8-2 recovery +87 (guided); <a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> Q4 SCO and diesel maintenance +59 (guided); <a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> Q4 bitumen maintenance +46 (guided); other +31<br><b>Dec 2026</b> (+38): <a class="plink" href="../projects/su_base_plant.html">Suncor Base Plant</a> Q4 bitumen recovery +21 (guided); other +17</p>
 <h2 id="movers">Biggest movers</h2>
 <p class="sub">The largest month-over-month changes in the latest published actuals. These are monthly figures, not a weekly movers table.</p>
 <table class="data movers"><thead><tr><th>Asset</th><th>Type</th><th>Jun 2026</th><th>Jul 2026</th><th>Change kb/d</th><th>Change %</th><th>z-score</th><th>Signal</th></tr></thead><tbody><tr><td><a class="plink" href="../projects/cve_foster_creek.html">Foster Creek</a> (Cenovus)</td><td class="k">Project</td><td class="n">185.9</td><td class="n">245.3</td><td class="n up">+59.4</td><td class="n">+32.0%</td><td class="n">+2.4</td><td class="sig">signal</td></tr><tr><td><a class="plink" href="../projects/cnq_primrose.html">Primrose and Wolf Lake</a> (CNRL)</td><td class="k">Project</td><td class="n">72.5</td><td class="n">89.6</td><td class="n up">+17.1</td><td class="n">+23.6%</td><td class="n">+2.3</td><td class="sig">signal</td></tr><tr><td><a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a> (Cenovus)</td><td class="k">Project</td><td class="n">187.5</td><td class="n">203.8</td><td class="n up">+16.3</td><td class="n">+8.7%</td><td class="n">+2.4</td><td class="sig">signal</td></tr><tr><td><a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a> (Imperial)</td><td class="k">Project</td><td class="n">160.4</td><td class="n">153.4</td><td class="n dn">-7.0</td><td class="n">-4.4%</td><td class="n">-0.7</td><td></td></tr><tr><td>Condensate</td><td class="k">ST3 line</td><td class="n">97.3</td><td class="n">91.7</td><td class="n dn">-5.6</td><td class="n">-5.8%</td><td class="n">-1.0</td><td></td></tr><tr><td><a class="plink" href="../projects/cve_sunrise.html">Sunrise</a> (Cenovus)</td><td class="k">Project</td><td class="n">63.6</td><td class="n">68.1</td><td class="n up">+4.5</td><td class="n">+7.1%</td><td class="n">+0.4</td><td></td></tr><tr><td><a class="plink" href="../projects/narrows_lake.html">Narrows Lake</a> (Cenovus)</td><td class="k">Project</td><td class="n">76.0</td><td class="n">80.2</td><td class="n up">+4.2</td><td class="n">+5.5%</td><td class="n">-0.8</td><td></td></tr><tr><td><a class="plink" href="../projects/cop_surmont.html">Surmont</a> (ConocoPhillips)</td><td class="k">Project</td><td class="n">135.9</td><td class="n">132.5</td><td class="n dn">-3.4</td><td class="n">-2.5%</td><td class="n">-0.3</td><td></td></tr><tr><td><a class="plink" href="../projects/cnq_kirby.html">Kirby</a> (CNRL)</td><td class="k">Project</td><td class="n">57.9</td><td class="n">55.4</td><td class="n dn">-2.5</td><td class="n">-4.3%</td><td class="n">-0.9</td><td></td></tr><tr><td><a class="plink" href="../projects/cnq_jackfish.html">Jackfish</a> (CNRL)</td><td class="k">Project</td><td class="n">104.1</td><td class="n">101.7</td><td class="n dn">-2.4</td><td class="n">-2.3%</td><td class="n">-0.0</td><td></td></tr></tbody></table><p class="tblnote">A z-score measures how unusual this month's move is for that asset: (this month's change minus the asset's average monthly change) divided by the asset's typical monthly swing over the past year. A score near 2 means the current move is about two standard deviations beyond the asset's own average monthly move. Big assets swing by big raw numbers all the time, so the raw figure alone misleads; the score separates a real signal from normal noise, and rows marked signal scored 2 or more. Methodology revised 2026-09-29: mean-centered, (change minus mean) over standard deviation.</p><p class="cap"><b>Vintage:</b> AER ST3 actuals, Jun 2026 to Jul 2026 (pulled 2026-09-22). These are month-over-month changes in published monthly actuals, not weekly moves. Coverage: 22 in-situ oil sands projects (bitumen drilled from underground), 13 mined and upgrader plants, and 5 conventional crude lines from the AER report. Aggregates and derived lines are excluded so no barrel is counted twice.</p>

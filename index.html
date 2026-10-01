@@ -472,6 +472,15 @@ details.sec > summary::before { content:"+ "; color:var(--faint); font-weight:70
 details.sec[open] > summary::before { content:"\2014  "; }
 details.sec > summary:hover { color:var(--acc-deep); }
 .nullnote { color:var(--mut); font-style:italic; }
+/* Guided vs modeled chip (2026-10-01): quiet, glanceable. Shared by
+   the maintenance page and any table distinguishing company guidance from
+   model estimates. */
+.basis-chip { display:inline-block; font-size:.68rem; font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; padding:.1rem .45rem;
+  border-radius:99px; margin-left:.5rem; vertical-align:1px;
+  border:1px solid var(--line2); color:var(--mut); }
+.basis-guided { border-color:#2e7d4f; color:#2e7d4f; }
+.basis-modeled { border-color:#b07d2b; color:#b07d2b; }
 .panel { margin:26px 0; }
 hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:76ch; }
 
@@ -651,6 +660,12 @@ details.now-det summary{cursor:pointer;color:var(--mut);font-size:.88rem;
   line-height:1.5}
 .cal-date{flex:0 0 7.2rem;color:var(--mut);font-size:.9rem}
 .cal-impact{color:var(--mut);font-size:.88rem}
+/* Guided vs modeled chip (2026-10-01): quiet, glanceable. */
+.basis-chip{display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;padding:.1rem .45rem;border-radius:99px;margin-left:.5rem;
+  vertical-align:1px;border:1px solid var(--line2);color:var(--mut)}
+.basis-guided{border-color:#2e7d4f;color:#2e7d4f}
+.basis-modeled{border-color:#b07d2b;color:#b07d2b}
 .levels{margin:0;padding:0;list-style:none}
 .levels li{padding:.7rem 0;border-top:1px solid var(--line2)}
 .levels li:first-child{border-top:none}
@@ -944,10 +959,10 @@ impact on the balance in kb/d, or says plainly when it cannot be
 quantified.</p>
 <div class="cal-group"><h3>This week</h3>
 <div class="cal-ev"><span class="cal-date"> ~Thu Oct 1</span>
-<span><b>Suncor Energy Inc. turnaround, bitumen (Oct 1–Dec 31)</b><br>
+<span><b>Suncor Energy Inc. turnaround, bitumen (Oct 1–Dec 31)</b> <span class="basis-chip basis-guided">guided</span><br>
 <span class="cal-impact">-15 kb/d, averaged over the event</span></span></div>
 <div class="cal-ev"><span class="cal-date"> ~Thu Oct 1</span>
-<span><b>Suncor Energy Inc. turnaround, synthetic crude (SCO) (Oct 1–Dec 31)</b><br>
+<span><b>Suncor Energy Inc. turnaround, synthetic crude (SCO) (Oct 1–Dec 31)</b> <span class="basis-chip basis-guided">guided</span><br>
 <span class="cal-impact">-5 kb/d, averaged over the event</span></span></div>
 <div class="cal-ev"><span class="cal-date">Sun Oct 4</span>
 <span><b>OPEC+ meeting</b><br>
