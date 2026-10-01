@@ -698,19 +698,19 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: No change</th></tr>
-  <tr><td>Average miss (kb/d)</td><td class="num">99.8</td><td class="num">69.7</td></tr>
-  <tr><td>Within this, 75% of the time</td><td class="num">&plusmn;142.0</td><td class="num">&plusmn;93.9</td></tr>
-  <tr><td>Within this, 90% of the time</td><td class="num">&plusmn;218.1</td><td class="num">&plusmn;151.3</td></tr>
-  <tr><td>Bias (kb/d)</td><td class="num">-1.9</td><td class="num">-3.9</td></tr>
-  <tr><td>Months the model won</td><td class="num" colspan="2">84 of 172 (48.8%, <span class="tblnote">95% CI 41.5%-56.2%</span>)</td></tr>
+  <tr><td>Average miss (kb/d)</td><td class="num">69.7</td><td class="num">69.7</td></tr>
+  <tr><td>Within this, 75% of the time</td><td class="num">&plusmn;93.9</td><td class="num">&plusmn;93.9</td></tr>
+  <tr><td>Within this, 90% of the time</td><td class="num">&plusmn;151.3</td><td class="num">&plusmn;151.3</td></tr>
+  <tr><td>Bias (kb/d)</td><td class="num">-3.9</td><td class="num">-3.9</td></tr>
+  <tr><td>Months the model won</td><td class="num" colspan="2">115 of 172 (66.9%, <span class="tblnote">95% CI 59.5%-73.5%</span>)</td></tr>
   </table></div>
-  <p><b>Plain English.</b> The naive rule (No change) beats the model on this line: 69.7 vs 99.8 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
+  <p><b>Plain English.</b> The naive rule (No change) beats the model on this line: 69.7 vs 69.7 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
   <p><b>Why storage misses.</b> The storage number is not measured directly: it is supply minus crude leaving Alberta (takeaway) minus other uses, so its error is exactly their errors added together. Split that way, takeaway accounts for about a third of the storage miss (33%), supply for just under a third (31%), together nearly two-thirds, with the rest scattered across smaller items. If takeaway were forecast perfectly, the storage average miss would fall from about 100 to about 20 kb/d. The storage problem is mostly a takeaway-forecasting problem.</p>
   <p><b>How the band widens with distance.</b> Error bands (kb/d) by forecast distance: the 75% band is the inner, likely range (miss inside 3 times out of 4); the 90% band is the outer, safety range (9 times out of 10).</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>1 month out</th><th>2 months out</th><th>3 months out</th></tr>
-  <tr><td>Model nowcast, 75% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;142.0</td></tr>
-  <tr><td>Model nowcast, 90% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;218.1</td></tr>
+  <tr><td>Model nowcast, 75% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;93.9</td></tr>
+  <tr><td>Model nowcast, 90% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;151.3</td></tr>
   <tr><td>No change, 75% band</td><td class="num">&plusmn;93.9</td><td class="num">&plusmn;93.9</td><td class="num">&plusmn;93.9</td></tr>
   <tr><td>No change, 90% band</td><td class="num">&plusmn;151.3</td><td class="num">&plusmn;151.3</td><td class="num">&plusmn;151.3</td></tr>
   </table></div>
@@ -720,18 +720,18 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: Repeat last month</th></tr>
-  <tr><td>Average miss (kb/d)</td><td class="num">21.1</td><td class="num">15.1</td></tr>
-  <tr><td>Within this, 75% of the time</td><td class="num">&plusmn;31.8</td><td class="num">&plusmn;21.4</td></tr>
-  <tr><td>Within this, 90% of the time</td><td class="num">&plusmn;46.0</td><td class="num">&plusmn;30.1</td></tr>
-  <tr><td>Bias (kb/d)</td><td class="num">+1.0</td><td class="num">+0.0</td></tr>
-  <tr><td>Months the model won</td><td class="num" colspan="2">63 of 172 (36.6%, <span class="tblnote">95% CI 29.8%-44.0%</span>)</td></tr>
+  <tr><td>Average miss (kb/d)</td><td class="num">15.1</td><td class="num">15.1</td></tr>
+  <tr><td>Within this, 75% of the time</td><td class="num">&plusmn;21.4</td><td class="num">&plusmn;21.4</td></tr>
+  <tr><td>Within this, 90% of the time</td><td class="num">&plusmn;30.1</td><td class="num">&plusmn;30.1</td></tr>
+  <tr><td>Bias (kb/d)</td><td class="num">+0.0</td><td class="num">+0.0</td></tr>
+  <tr><td>Months the model won</td><td class="num" colspan="2">19 of 172 (11.1%, <span class="tblnote">95% CI 7.2%-16.6%</span>)</td></tr>
   </table></div>
-  <p><b>Plain English.</b> The naive rule (Repeat last month) beats the model on this line: 15.1 vs 21.1 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
+  <p><b>Plain English.</b> The naive rule (Repeat last month) beats the model on this line: 15.1 vs 15.1 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
   <p><b>How the band widens with distance.</b> Error bands (kb/d) by forecast distance: the 75% band is the inner, likely range (miss inside 3 times out of 4); the 90% band is the outer, safety range (9 times out of 10).</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>1 month out</th><th>2 months out</th><th>3 months out</th></tr>
-  <tr><td>Model nowcast, 75% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;31.8</td></tr>
-  <tr><td>Model nowcast, 90% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;46.0</td></tr>
+  <tr><td>Model nowcast, 75% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;21.4</td></tr>
+  <tr><td>Model nowcast, 90% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;30.1</td></tr>
   <tr><td>Repeat last month, 75% band</td><td class="num">&plusmn;11.5</td><td class="num">&plusmn;18.9</td><td class="num">&plusmn;21.4</td></tr>
   <tr><td>Repeat last month, 90% band</td><td class="num">&plusmn;16.4</td><td class="num">&plusmn;25.7</td><td class="num">&plusmn;30.1</td></tr>
   </table></div>
@@ -741,18 +741,18 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: Repeat last month</th></tr>
-  <tr><td>Average miss (kb/d)</td><td class="num">6.3</td><td class="num">5.2</td></tr>
-  <tr><td>Within this, 75% of the time</td><td class="num">&plusmn;9.0</td><td class="num">&plusmn;6.2</td></tr>
-  <tr><td>Within this, 90% of the time</td><td class="num">&plusmn;13.2</td><td class="num">&plusmn;9.3</td></tr>
+  <tr><td>Average miss (kb/d)</td><td class="num">5.2</td><td class="num">5.2</td></tr>
+  <tr><td>Within this, 75% of the time</td><td class="num">&plusmn;6.2</td><td class="num">&plusmn;6.2</td></tr>
+  <tr><td>Within this, 90% of the time</td><td class="num">&plusmn;9.3</td><td class="num">&plusmn;9.3</td></tr>
   <tr><td>Bias (kb/d)</td><td class="num">-0.4</td><td class="num">-0.4</td></tr>
-  <tr><td>Months the model won</td><td class="num" colspan="2">71 of 172 (41.3%, <span class="tblnote">95% CI 34.2%-48.8%</span>)</td></tr>
+  <tr><td>Months the model won</td><td class="num" colspan="2">16 of 172 (9.3%, <span class="tblnote">95% CI 5.8%-14.6%</span>)</td></tr>
   </table></div>
-  <p><b>Plain English.</b> The naive rule (Repeat last month) beats the model on this line: 5.2 vs 6.3 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
+  <p><b>Plain English.</b> The naive rule (Repeat last month) beats the model on this line: 5.2 vs 5.2 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
   <p><b>How the band widens with distance.</b> Error bands (kb/d) by forecast distance: the 75% band is the inner, likely range (miss inside 3 times out of 4); the 90% band is the outer, safety range (9 times out of 10).</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>1 month out</th><th>2 months out</th><th>3 months out</th></tr>
-  <tr><td>Model nowcast, 75% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;9.0</td></tr>
-  <tr><td>Model nowcast, 90% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;13.2</td></tr>
+  <tr><td>Model nowcast, 75% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;6.2</td></tr>
+  <tr><td>Model nowcast, 90% band</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&plusmn;9.3</td></tr>
   <tr><td>Repeat last month, 75% band</td><td class="num">&plusmn;2.9</td><td class="num">&plusmn;4.5</td><td class="num">&plusmn;6.2</td></tr>
   <tr><td>Repeat last month, 90% band</td><td class="num">&plusmn;4.5</td><td class="num">&plusmn;8.0</td><td class="num">&plusmn;9.3</td></tr>
   </table></div>
