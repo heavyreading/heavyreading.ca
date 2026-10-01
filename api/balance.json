@@ -1,5 +1,5 @@
 {
- "vintage": "2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant)",
+ "vintage": "2026-09-27 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; barrel-conservation invariant)",
  "data": {
   "months": [
    {
@@ -27,18 +27,18 @@
     "data_quality": "model output (S&D leaves + pipe caps); not observed",
     "supply_side_kbd": 5311.3,
     "refinery_demand_kbd": 630.6,
-    "removals_wanted_kbd": 4681.2,
+    "removals_wanted_kbd": 4526.4,
     "removals_final_kbd": 4526.4,
     "pipe_cap_kbd": 5041.4,
     "pipe_cap_ab_kbd": 4441.4,
     "pipe_exports_kbd": 4441.4,
-    "pipe_spare_kbd": -154.8,
+    "pipe_spare_kbd": 0,
     "rail_baseload_kbd": 85.0,
-    "overflow_kbd": 154.8,
-    "requires_price_response_kbd": 154.8,
-    "storage_final_kbd": -0.5,
-    "inventory_kbbl": 52793.3,
-    "ullage_kbbl": 27822.7
+    "overflow_kbd": 0.0,
+    "requires_price_response_kbd": 0.0,
+    "storage_final_kbd": 154.3,
+    "inventory_kbbl": 57437.3,
+    "ullage_kbbl": 23178.7
    },
    {
     "month": "2026-12",
@@ -46,18 +46,18 @@
     "data_quality": "model output (S&D leaves + pipe caps); not observed",
     "supply_side_kbd": 5379.5,
     "refinery_demand_kbd": 635.1,
-    "removals_wanted_kbd": 4681.2,
+    "removals_wanted_kbd": 4526.4,
     "removals_final_kbd": 4526.4,
     "pipe_cap_kbd": 5041.4,
     "pipe_cap_ab_kbd": 4441.4,
     "pipe_exports_kbd": 4441.4,
-    "pipe_spare_kbd": -154.8,
+    "pipe_spare_kbd": 0,
     "rail_baseload_kbd": 85.0,
-    "overflow_kbd": 154.8,
-    "requires_price_response_kbd": 154.8,
-    "storage_final_kbd": 63.2,
-    "inventory_kbbl": 54752.5,
-    "ullage_kbbl": 25863.5
+    "overflow_kbd": 0.0,
+    "requires_price_response_kbd": 0.0,
+    "storage_final_kbd": 218.0,
+    "inventory_kbbl": 64195.3,
+    "ullage_kbbl": 16420.7
    },
    {
     "month": "2027-01",
@@ -75,8 +75,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": -85.7,
-    "inventory_kbbl": 52095.8,
-    "ullage_kbbl": 28520.2
+    "inventory_kbbl": 61538.6,
+    "ullage_kbbl": 19077.4
    },
    {
     "month": "2027-02",
@@ -94,8 +94,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": -102.2,
-    "inventory_kbbl": 49234.2,
-    "ullage_kbbl": 31381.8
+    "inventory_kbbl": 58677.0,
+    "ullage_kbbl": 21939.0
    },
    {
     "month": "2027-03",
@@ -113,8 +113,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": 44.3,
-    "inventory_kbbl": 50607.5,
-    "ullage_kbbl": 30008.5
+    "inventory_kbbl": 60050.3,
+    "ullage_kbbl": 20565.7
    },
    {
     "month": "2027-04",
@@ -132,8 +132,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": 67.2,
-    "inventory_kbbl": 52623.5,
-    "ullage_kbbl": 27992.5
+    "inventory_kbbl": 62066.3,
+    "ullage_kbbl": 18549.7
    },
    {
     "month": "2027-05",
@@ -151,8 +151,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": -161.8,
-    "inventory_kbbl": 47607.7,
-    "ullage_kbbl": 33008.3
+    "inventory_kbbl": 57050.5,
+    "ullage_kbbl": 23565.5
    },
    {
     "month": "2027-06",
@@ -170,8 +170,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": -188.6,
-    "inventory_kbbl": 41949.7,
-    "ullage_kbbl": 38666.3
+    "inventory_kbbl": 51392.5,
+    "ullage_kbbl": 29223.5
    },
    {
     "month": "2027-07",
@@ -189,8 +189,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": -29.0,
-    "inventory_kbbl": 41050.7,
-    "ullage_kbbl": 39565.3
+    "inventory_kbbl": 50493.5,
+    "ullage_kbbl": 30122.5
    },
    {
     "month": "2027-08",
@@ -208,8 +208,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": -105.6,
-    "inventory_kbbl": 37777.1,
-    "ullage_kbbl": 42838.9
+    "inventory_kbbl": 47219.9,
+    "ullage_kbbl": 33396.1
    },
    {
     "month": "2027-09",
@@ -218,17 +218,17 @@
     "supply_side_kbd": 4924.5,
     "refinery_demand_kbd": 566.9,
     "removals_wanted_kbd": 4451.3,
-    "removals_final_kbd": 4448.4,
+    "removals_final_kbd": 4451.3,
     "pipe_cap_kbd": 5216.0,
     "pipe_cap_ab_kbd": 4616.0,
-    "pipe_exports_kbd": 4363.4,
-    "pipe_spare_kbd": 252.6,
+    "pipe_exports_kbd": 4366.3,
+    "pipe_spare_kbd": 249.7,
     "rail_baseload_kbd": 85.0,
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
-    "storage_final_kbd": -90.8,
-    "inventory_kbbl": 35053.6,
-    "ullage_kbbl": 45562.4
+    "storage_final_kbd": -93.7,
+    "inventory_kbbl": 44408.9,
+    "ullage_kbbl": 36207.1
    },
    {
     "month": "2027-10",
@@ -237,17 +237,17 @@
     "supply_side_kbd": 5071.2,
     "refinery_demand_kbd": 590.3,
     "removals_wanted_kbd": 4507.2,
-    "removals_final_kbd": 4492.1,
+    "removals_final_kbd": 4507.2,
     "pipe_cap_kbd": 5216.0,
     "pipe_cap_ab_kbd": 4616.0,
-    "pipe_exports_kbd": 4407.1,
-    "pipe_spare_kbd": 208.9,
+    "pipe_exports_kbd": 4422.2,
+    "pipe_spare_kbd": 193.8,
     "rail_baseload_kbd": 85.0,
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
-    "storage_final_kbd": -11.2,
-    "inventory_kbbl": 34707.7,
-    "ullage_kbbl": 45908.3
+    "storage_final_kbd": -26.3,
+    "inventory_kbbl": 43593.6,
+    "ullage_kbbl": 37022.4
    },
    {
     "month": "2027-11",
@@ -265,8 +265,8 @@
     "overflow_kbd": 0.0,
     "requires_price_response_kbd": 0.0,
     "storage_final_kbd": 8.1,
-    "inventory_kbbl": 34950.7,
-    "ullage_kbbl": 45665.3
+    "inventory_kbbl": 43836.6,
+    "ullage_kbbl": 36779.4
    },
    {
     "month": "2027-12",
@@ -274,18 +274,18 @@
     "data_quality": "model output (S&D leaves + pipe caps); not observed",
     "supply_side_kbd": 5382.5,
     "refinery_demand_kbd": 635.1,
-    "removals_wanted_kbd": 4772.5,
-    "removals_final_kbd": 4686.0,
+    "removals_wanted_kbd": 4701.0,
+    "removals_final_kbd": 4701.0,
     "pipe_cap_kbd": 5216.0,
     "pipe_cap_ab_kbd": 4616.0,
-    "pipe_exports_kbd": 4601.0,
-    "pipe_spare_kbd": -56.5,
+    "pipe_exports_kbd": 4616.0,
+    "pipe_spare_kbd": 0,
     "rail_baseload_kbd": 85.0,
-    "overflow_kbd": 71.5,
-    "requires_price_response_kbd": 71.5,
-    "storage_final_kbd": -10.1,
-    "inventory_kbbl": 34636.7,
-    "ullage_kbbl": 45979.3
+    "overflow_kbd": 0.0,
+    "requires_price_response_kbd": 0.0,
+    "storage_final_kbd": 46.4,
+    "inventory_kbbl": 45275.0,
+    "ullage_kbbl": 35341.0
    }
   ],
   "sensitivity_overflow_vs_sk_other": {
@@ -308,8 +308,8 @@
    },
    "600": {
     "2026-10": 0.0,
-    "2026-11": 154.8,
-    "2026-12": 154.8,
+    "2026-11": 0.0,
+    "2026-12": 0.0,
     "2027-01": 0.0,
     "2027-02": 0.0,
     "2027-03": 0.0,
@@ -321,12 +321,12 @@
     "2027-09": 0.0,
     "2027-10": 0.0,
     "2027-11": 0.0,
-    "2027-12": 71.5
+    "2027-12": 0.0
    },
    "800": {
     "2026-10": 180.8,
-    "2026-11": 354.8,
-    "2026-12": 354.8,
+    "2026-11": 200.0,
+    "2026-12": 200.0,
     "2027-01": 0.0,
     "2027-02": 1.2,
     "2027-03": 0.0,
@@ -338,7 +338,7 @@
     "2027-09": 0.0,
     "2027-10": 6.2,
     "2027-11": 194.6,
-    "2027-12": 271.5
+    "2027-12": 200.0
    }
   }
  },

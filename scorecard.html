@@ -614,7 +614,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">The model grades itself: every prediction scored, with its uncertainty stated.</p>
   <p class="sub">Every published model nowcast, scored against the Alberta Energy Regulator (AER) Monthly Statistics (ST3) actuals when they land. Positive error means the nowcast ran high.</p>
   <p><b>Why the naive rule gets a column.</b> Every number on this page is measured against the simplest possible forecast: repeat last month (persistence), or predict no change at all. The naive rule is a valid forecast, not a straw man. A fancy model that cannot beat it gets cut, and the naive rule that wins gets used and scored like everything else. The scorecard does not care how clever the method is, only how accurate.</p>
-  <p class="vintage-inline">Nowcasts built 2026-09-23, 2026-09-28, 2026-09-29, 2026-09-30.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-08-27; loaded 2026-09-28).</p>
+  <p class="vintage-inline">Nowcasts built 2026-09-30, 2026-10-01.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-08-27; loaded 2026-09-28).</p>
   <h2>Supply nowcasts</h2>
   <p><b>How to read this.</b> Mean error is the average miss across scored months, in thousand barrels per day (kb/d); positive means the nowcast ran high, negative means it ran low. With no scored months yet, this section fills in automatically when the AER publishes ST3 actuals. "On the clock" lists frozen nowcasts: the numbers cannot be revised after the fact, so the score is against exactly what was published.</p>
   <h3>Bias so far</h3>
@@ -625,24 +625,24 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p>Published nowcasts awaiting ST3 actuals. These values are frozen: when the actuals land, the score is against exactly these numbers.</p>
   <div class="tblwrap"><table class="data">
   <tr><th>Line</th><th>2026-08 nowcast (kb/d)</th><th>2026-09 nowcast (kb/d)</th></tr>
-  <tr><td>In-situ bitumen</td><td class="num">1978.2</td><td class="num">1900.3</td></tr>
-  <tr><td>Mined bitumen</td><td class="num">1877.7</td><td class="num">1825.9</td></tr>
-  <tr><td>Upgraded production (SCO)</td><td class="num">1404.5</td><td class="num">965.1</td></tr>
-  <tr><td>Conventional light</td><td class="num">326.6</td><td class="num">322.4</td></tr>
-  <tr><td>Conventional medium</td><td class="num">71.4</td><td class="num">70.2</td></tr>
-  <tr><td>Conventional heavy</td><td class="num">34.4</td><td class="num">33.5</td></tr>
-  <tr><td>Conventional ultra-heavy</td><td class="num">135.4</td><td class="num">136.3</td></tr>
-  <tr><td>Condensate production</td><td class="num">97.9</td><td class="num">95.4</td></tr>
-  <tr><td>Condensate imports</td><td class="num">194.8</td><td class="num">209.0</td></tr>
-  <tr><td>Pentanes plus imports</td><td class="num">92.3</td><td class="num">76.5</td></tr>
-  <tr><td>Alberta refinery sales</td><td class="num">516.5</td><td class="num">469.8</td></tr>
-  <tr><td>Removals from Alberta</td><td class="num">4467.2</td><td class="num">4384.0</td></tr>
-  <tr><td>Total receipts</td><td class="num">1006.0</td><td class="num">981.2</td></tr>
-  <tr><td>ST3 adjustments</td><td class="num">-23.9</td><td class="num">-31.5</td></tr>
-  <tr><td>Total Alberta use</td><td class="num">610.3</td><td class="num">558.2</td></tr>
-  <tr><td>Losses: flare, fuel, shrinkage</td><td class="num">150.0</td><td class="num">148.2</td></tr>
-  <tr><td>Conventional crude</td><td class="num">665.7</td><td class="num">657.8</td></tr>
-  <tr><td>Total WCSB crude supply</td><td class="num">4260.3</td><td class="num">3865.9</td></tr>
+  <tr><td>In-situ bitumen</td><td class="num">1966.3</td><td class="num">1923.1</td></tr>
+  <tr><td>Mined bitumen</td><td class="num">1899.6</td><td class="num">1847.1</td></tr>
+  <tr><td>Upgraded production (SCO)</td><td class="num">1439.1</td><td class="num">995.7</td></tr>
+  <tr><td>Conventional light</td><td class="num">332.4</td><td class="num">328.2</td></tr>
+  <tr><td>Conventional medium</td><td class="num">69.5</td><td class="num">68.3</td></tr>
+  <tr><td>Conventional heavy</td><td class="num">33.8</td><td class="num">32.9</td></tr>
+  <tr><td>Conventional ultra-heavy</td><td class="num">140.1</td><td class="num">141.1</td></tr>
+  <tr><td>Condensate production</td><td class="num">99.6</td><td class="num">97.1</td></tr>
+  <tr><td>Condensate imports</td><td class="num">196.3</td><td class="num">210.6</td></tr>
+  <tr><td>Pentanes plus imports</td><td class="num">89.7</td><td class="num">74.3</td></tr>
+  <tr><td>Alberta refinery sales</td><td class="num">518.7</td><td class="num">471.9</td></tr>
+  <tr><td>Removals from Alberta</td><td class="num">4535.8</td><td class="num">4451.3</td></tr>
+  <tr><td>Total receipts</td><td class="num">1016.5</td><td class="num">991.4</td></tr>
+  <tr><td>ST3 adjustments</td><td class="num">-22.8</td><td class="num">-30.1</td></tr>
+  <tr><td>Total Alberta use</td><td class="num">619.9</td><td class="num">566.9</td></tr>
+  <tr><td>Losses: flare, fuel, shrinkage</td><td class="num">154.7</td><td class="num">153.0</td></tr>
+  <tr><td>Conventional crude</td><td class="num">675.4</td><td class="num">667.6</td></tr>
+  <tr><td>Total WCSB crude supply</td><td class="num">4273.7</td><td class="num">3913.9</td></tr>
   </table></div>
   <h3>How this is built</h3>
   <p><b>The nowcast.</b> Each month, before the AER publishes the Monthly Statistics (ST3), the model estimates each ST3 supply line from its seasonal pattern plus confirmed maintenance shutdowns. Totals are recomputed from the project-level forecasts so everything adds up.</p>
@@ -705,7 +705,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Months the model won</td><td class="num" colspan="2">84 of 172 (48.8%, <span class="tblnote">95% CI 41.5%-56.2%</span>)</td></tr>
   </table></div>
   <p><b>Plain English.</b> The naive rule (No change) beats the model on this line: 69.7 vs 99.8 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
-  <p><b>Why storage misses.</b> The storage number is not measured directly: it is supply minus crude leaving Alberta (takeaway) minus other uses, so its error is exactly their errors added together. Split that way, takeaway accounts for about a third of the storage miss (33%), supply for just under a third (31%) — together nearly two-thirds, with the rest scattered across smaller items. If takeaway were forecast perfectly, the storage average miss would fall from about 100 to about 20 kb/d. The storage problem is mostly a takeaway-forecasting problem.</p>
+  <p><b>Why storage misses.</b> The storage number is not measured directly: it is supply minus crude leaving Alberta (takeaway) minus other uses, so its error is exactly their errors added together. Split that way, takeaway accounts for about a third of the storage miss (33%), supply for just under a third (31%), together nearly two-thirds, with the rest scattered across smaller items. If takeaway were forecast perfectly, the storage average miss would fall from about 100 to about 20 kb/d. The storage problem is mostly a takeaway-forecasting problem.</p>
   <p><b>How the band widens with distance.</b> Error bands (kb/d) by forecast distance: the 75% band is the inner, likely range (miss inside 3 times out of 4); the 90% band is the outer, safety range (9 times out of 10).</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>1 month out</th><th>2 months out</th><th>3 months out</th></tr>
@@ -846,12 +846,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">Uncertainty: win-rate bands are Wilson 95% intervals; depth bands are empirical 90th percentiles of absolute error (no normality assumed). Turnaround windows are the observed production dips from the maintenance record, not the announcement dates: they measure where maintenance mattered, not what was knowable at the time.</p>
   <h3>Turnaround modeling at the big facilities</h3>
   <p><b>What it tests.</b> Most of the aggregate miss comes from a handful of large facilities that shut down for maintenance (Shell Scotford accounts for 86% of the SCO miss; four facilities account for about half the SAGD miss). The idea: modeling their shutdowns explicitly should shrink the error bands. Tested over 2015-2026, three ways: (1) a seasonal forecast that ignores shutdown months when learning the pattern; (2) the same, plus the public maintenance calendar (company announcements, news); (3) perfect knowledge of every shutdown, to show the upper bound of what shutdown modeling can do.</p>
-  <p><b>Verdict.</b> Ignoring shutdown months when learning the seasonal pattern beats the plain seasonal head-to-head on SCO (67.4%, 95% CI 59.2-74.6%) and SAGD (58.5%, CI 53.7-63.2%); mined is inconclusive. But against the naive rule the picture is honest: mined bottom-up beats naive (61.2%, CI 56.4-65.8%), SAGD loses to naive (41.5%), and SCO is a dead tie (50.0%) <b>even with perfect shutdown knowledge</b>. Perfect knowledge ties naive on SCO because shutdowns there are rare (every 4-5 years): repeat last month already captures the normal operating regime in the other 95% of months. So the prescriptions stand: mined uses the bottom-up model, SAGD and SCO use the naive rule, labeled. A fancier model that cannot beat naive does not get used. (The bottom-up vs naive contests were re-run September 2026 on pinned vintages — each forecast using only data actually published at the time — and the verdicts held, with mined slightly stronger. The shutdown-modeling figures are from the earlier backtest cut.)</p>
+  <p><b>Verdict.</b> Ignoring shutdown months when learning the seasonal pattern beats the plain seasonal head-to-head on SCO (67.4%, 95% CI 59.2-74.6%) and SAGD (58.5%, CI 53.7-63.2%); mined is inconclusive. But against the naive rule the picture is honest: mined bottom-up beats naive (61.2%, CI 56.4-65.8%), SAGD loses to naive (41.5%), and SCO is a dead tie (50.0%) <b>even with perfect shutdown knowledge</b>. Perfect knowledge ties naive on SCO because shutdowns there are rare (every 4-5 years): repeat last month already captures the normal operating regime in the other 95% of months. So the prescriptions stand: mined uses the bottom-up model, SAGD and SCO use the naive rule, labeled. A fancier model that cannot beat naive does not get used. (The bottom-up vs naive contests were re-run September 2026 on pinned vintages, each forecast using only data actually published at the time, and the verdicts held, with mined slightly stronger. The shutdown-modeling figures are from the earlier backtest cut.)</p>
   <p><b>Guidance overlay (adopted 2026-09-28).</b> Do not replace the naive rule; layer announced guidance on top of it. Start with repeat last month, then adjust in months where a company has announced a shutdown impact. Tested on Shell Scotford, the only facility with enough documented guidance (shutdowns in 2015, 2020, 2022): adjusting only at the start and end of a shutdown, not every month inside it, wins where guidance applies: 18 of 24 months (75.0%, 95% CI 55.1&ndash;88.0%), average miss 10% lower, tighter bands. (Adjusting every guided month loses to naive: it double-counts the dip when the starting month is already inside the shutdown.) But guidance applies to only about 6% of months, so the overall gain is small. Guidance pulled from earnings-call transcripts has no history to test against yet; its value is prospective. Two simpler rules were tested and <b>cut</b>: projecting shutdowns from the usual cycle between them loses decisively everywhere tested (Scotford 4 of 33 months, <a class="plink" href="projects/cnq_horizon.html">Horizon</a> 11 of 112, mined aggregate 13 of 168; all 95% CIs entirely below 50%), because it calls shutdowns that never happen. Adding it on top of guidance drags the guidance win rate from 75% to 38.6%. Prescription: SCO stays repeat-last-month first, adjusted in announced-guidance months. Wired into the live Scotford forecast 2026-09-28: the overlay applies only to approved guidance and currently applies to nothing, so the live numbers are unchanged until an announcement is on record.</p>
   <p class="tblnote">Data note: the 2026 ST39 months were briefly double-counted (two file versions loaded); fixed 2026-09-28 to read the latest version per month. Scotford still accounts for 85.6% of the SCO miss after the fix; the SCO 90% band corrected from &plusmn;236 to &plusmn;97 kb/d.</p>
   <h3>Blended forecasts</h3>
   <p><b>What it tests.</b> Whether averaging several forecasts beats trusting the best one alone. Three blends per line, tested on the vintage-pinned backtests only: a straight average of the competing forecasts, an average weighted toward whichever method was most accurate recently, and the middle value of the pack. A blend earns a place only if it beats the line&apos;s best single method more often than a coin flip, with the 95% band to prove it.</p>
-  <p><b>Verdict.</b> No blend earns a place on any line. The closest calls: mined bitumen, where the straight average beat the bottom-up model 53.8% of the time (95% CI 49.0%-58.6% — includes 50%, so a tie); total supply, 51.2% (CI 43.7%-58.5%, a tie); light crude, 50.0% (CI 42.3%-57.7%, a tie). Blending in the weaker guidance-based forecasts made things decisively worse, because the weak members drag the average down. The live forecasts stay as they are: the single best method per line, scored above. A blend that cannot beat the best single forecast does not get used.</p>
+  <p><b>Verdict.</b> No blend earns a place on any line. The closest calls: mined bitumen, where the straight average beat the bottom-up model 53.8% of the time (95% CI 49.0%-58.6%, which includes 50%, so a tie); total supply, 51.2% (CI 43.7%-58.5%, a tie); light crude, 50.0% (CI 42.3%-57.7%, a tie). Blending in the weaker guidance-based forecasts made things decisively worse, because the weak members drag the average down. The live forecasts stay as they are: the single best method per line, scored above. A blend that cannot beat the best single forecast does not get used.</p>
   <h2>Other scorecards</h2>
   <p>Every predictive component gets the same treatment: backtest accuracy with its uncertainty stated, live accuracy as predictions resolve, and an honest label when there is nothing to score yet.</p>
   <h3>Apportionment</h3>
@@ -868,7 +868,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p><b>On the clock.</b> November 2026 nowcast: 8% lights / 4% heavies at Kerrobert (baseline chosen by backtest: repeat last month). Frozen; scored when Enbridge publishes the November notice.</p>
   <p class="tblnote">Uncertainty: hit-rate bands are Wilson 95% intervals; depth bands are the empirical 75th and 90th percentiles of absolute error (no normality assumed).</p>
   <h3>Predicting turnaround months</h3>
-  <p><b>What it predicts.</b> Whether a facility will have a major maintenance shutdown in a given month — from its own production history alone, no company guidance. Two rules, tested walk-forward (each year predicted only from data before that year, 2015-2025): the <b>seasonal pattern</b> (months where this facility has repeatedly dipped before) and <b>cycle projection</b> (projecting the usual gap between past shutdowns forward). A predicted month scores a hit if a real shutdown started within one month of it.</p>
+  <p><b>What it predicts.</b> Whether a facility will have a major maintenance shutdown in a given month, from its own production history alone, no company guidance. Two rules, tested walk-forward (each year predicted only from data before that year, 2015-2025): the <b>seasonal pattern</b> (months where this facility has repeatedly dipped before) and <b>cycle projection</b> (projecting the usual gap between past shutdowns forward). A predicted month scores a hit if a real shutdown started within one month of it.</p>
   <p><b>How to read this.</b> Precision is the share of flagged months that actually had a shutdown nearby: how often the rule cries wolf. Recall is the share of real shutdowns the rules caught between them: how many slipped through. The bands are 95% intervals from the sample size.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Seasonal pattern precision</th><th>Cycle projection precision</th><th>Recall (either rule)</th></tr>
