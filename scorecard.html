@@ -625,7 +625,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p>Published nowcasts awaiting ST3 actuals. These values are frozen: when the actuals land, the score is against exactly these numbers.</p>
   <div class="tblwrap"><table class="data">
   <tr><th>Line</th><th>2026-08 nowcast (kb/d)</th><th>2026-09 nowcast (kb/d)</th></tr>
-  <tr><td>In-situ bitumen</td><td class="num">1966.3</td><td class="num">1923.1</td></tr>
+  <tr><td>In-situ bitumen</td><td class="num">1965.8</td><td class="num">1923.1</td></tr>
   <tr><td>Mined bitumen</td><td class="num">1899.6</td><td class="num">1847.1</td></tr>
   <tr><td>Upgraded production (SCO)</td><td class="num">1439.1</td><td class="num">995.7</td></tr>
   <tr><td>Conventional light</td><td class="num">332.4</td><td class="num">328.2</td></tr>
@@ -642,7 +642,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Total Alberta use</td><td class="num">619.9</td><td class="num">566.9</td></tr>
   <tr><td>Losses: flare, fuel, shrinkage</td><td class="num">154.7</td><td class="num">153.0</td></tr>
   <tr><td>Conventional crude</td><td class="num">675.4</td><td class="num">667.6</td></tr>
-  <tr><td>Total WCSB crude supply</td><td class="num">4273.7</td><td class="num">3913.9</td></tr>
+  <tr><td>Total WCSB crude supply</td><td class="num">4273.2</td><td class="num">3913.9</td></tr>
   </table></div>
   <h3>How this is built</h3>
   <p><b>The nowcast.</b> Each month, before the AER publishes the Monthly Statistics (ST3), the model estimates each ST3 supply line from its seasonal pattern plus confirmed maintenance shutdowns. Totals are recomputed from the project-level forecasts so everything adds up.</p>
@@ -694,7 +694,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </table></div>
   <p class="tblnote">The model nowcast is built for the 3-month ST3 publication lag, so it only has a 3-month band. Naive rules can be scored at any distance; that is what shows error growing with horizon. Near months are surer than far ones.</p>
   <h3>Storage build/draw</h3>
-  <p><b>What it predicts.</b> Change in stored crude, kb/d. Positive is a build (barrels going into tank); negative is a draw (barrels coming out).</p>
+  <p><b>What it predicts.</b> Change in stored crude, kb/d. Positive is a build (barrels going into tank); negative is a draw (barrels coming out). Accounting residual, not a forecast: read as the ST3 identity carried forward, shrunk toward zero, with the walk-forward error bands.</p>
   <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: No change</th></tr>
@@ -705,7 +705,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Months the model won</td><td class="num" colspan="2">84 of 172 (48.8%, <span class="tblnote">95% CI 41.5%-56.2%</span>)</td></tr>
   </table></div>
   <p><b>Plain English.</b> The naive rule (No change) beats the model on this line: 69.7 vs 99.8 kb/d average miss. We do not use the model for this line: if it has no predictive power we do not use it.</p>
-  <p><b>Why storage misses.</b> The storage number is not measured directly: it is supply minus crude leaving Alberta (takeaway) minus other uses, so its error is exactly their errors added together. Split that way, takeaway accounts for about a third of the storage miss (33%), supply for just under a third (31%), together nearly two-thirds, with the rest scattered across smaller items. If takeaway were forecast perfectly, the storage average miss would fall from about 100 to about 20 kb/d. The storage problem is mostly a takeaway-forecasting problem.</p>
+  <p><b>Why storage misses.</b> The storage number is not measured directly: it is supply minus crude leaving Alberta (takeaway) minus other uses, so its error is exactly their errors added together. Split that way, takeaway accounts for about a third of the storage miss (33%), supply for just under a third (31%), together nearly two-thirds, with the rest scattered across smaller items. If takeaway were forecast perfectly, the storage average miss would fall from about 100 to about 20 kb/d. About half of that miss is not model error at all: the Genscape-vs-ST3 inter-universe disagreement is 54.1 kb/d, so the attainable error level is about 55 kb/d, not zero. The storage problem is mostly a takeaway-forecasting problem; the remainder is measurement noise.</p>
   <p><b>How the band widens with distance.</b> Error bands (kb/d) by forecast distance: the 75% band is the inner, likely range (miss inside 3 times out of 4); the 90% band is the outer, safety range (9 times out of 10).</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>1 month out</th><th>2 months out</th><th>3 months out</th></tr>
