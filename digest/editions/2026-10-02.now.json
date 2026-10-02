@@ -1,0 +1,176 @@
+{
+  "edition": "2026-10-02",
+  "call_vintage": "as of Fri Oct 2 morning",
+  "calendar": [
+    {
+      "date": "2026-10-02",
+      "title": "Baker Hughes rigs (~11am MDT); CFTC COT (1:30pm MDT, vintage Sep 29)",
+      "impact": "New whale-flag vintage; check whether commercials extended the WCS 1A net-short into the -$2.15 prompt blowout."
+    },
+    {
+      "date": "2026-10-04",
+      "title": "OPEC+ meeting (virtual)",
+      "impact": "No change expected; 2027 quota/baseline review is the item to watch."
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Syncrude 50-day coker turnaround wraps",
+      "impact": "~35 kb/d of synthetic-crude supply restored (annualized); narrows the synthetic-crude premium over WCS."
+    },
+    {
+      "date": "2026-10-06",
+      "title": "SPR exchange bids due (11:00 AM CT)",
+      "impact": "Watch the awards, not the RFP: actual takeup decides whether USGC heavy diffs feel the barrels."
+    },
+    {
+      "date": "2026-10-15",
+      "title": "CNRL Horizon upgrader turnaround ends (~mid-Oct)",
+      "impact": "~29 kb/d of synthetic-crude supply restored (annualized)."
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Russia diesel-export ban extension ends",
+      "impact": "Structural distillate tightness into winter; constructive for synthetic crude over WCS while in force."
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Irving Saint John 'Osprey' turnaround ends",
+      "impact": "Demand for heavy crude returns."
+    },
+    {
+      "date": "2027-09-01",
+      "title": "Pacific Link conditions finalized (federal target)",
+      "impact": "Construction could start fall 2027; changes 2030s egress math, not the prompt."
+    }
+  ],
+  "changes": [
+    {
+      "title": "Oct 1 ICE settlements: TMW front blows out $2.15 while crude rallies",
+      "delta": "TMW Nov26 -$23.75 (-$2.15); Dec26 -$24.25 (-$1.85, widest)",
+      "confirmation": "confirmed",
+      "vintage": "Oct 1, 2026",
+      "source": "ICE Report Center end-of-day settlements, Oct 1, 2026",
+      "body": "The full six-contract Canadian strip settled Oct 1. WCS at Hardisty (TMW): Nov26 -$23.75 (-$2.15 on the day, 975 contracts traded), Dec26 -$24.25 (-$1.85, the widest point on the strip), then tightening about $6 into Oct27. The Jun-Oct27 tenors firmed $0.70-$1.10. WTI rallied $2.45 on the day while the TMW front blew out $2.15: WCS outright at Hardisty was $69.12, up $0.30. The weakness is 100% in the diff. WCS at Houston (ARV): Nov26 -$14.543 (-$0.771) - the Houston-Hardisty arb widened back to +$9.21 from +$7.83, so the constraint sits at the egress end, not the demand end. MSW (TMR) Nov26 -$0.1464 (+$0.85, tightening nearly a dollar); UHC (TMU) +$3.40; condensate (TMF) Nov26 +$3.8675 (+$1.12, firming into diluent season); synthetic (TMS) Nov26 +$6.29, so SYN-minus-WCS is $30.04.",
+      "balance": "The deferred heavies are not following the prompt down: this is a November-December physical crunch trading through the flat-price noise, not a structural repricing of Canadian heavy.",
+      "conditional": "November Mainline apportionment lands hot mid-month or the SPR awards are heavy -> December stays wide and the front underperforms into expiry. Joliet confirmed restarted -> the front snaps tighter first."
+    },
+    {
+      "title": "Third carrier group, expired Iranian ultimatum, Hormuz tanker struck",
+      "delta": "Brent +4.4% to $102.31; WTI +2.7% to $92.87 (Oct 1 settles)",
+      "confirmation": "confirmed",
+      "vintage": "Oct 1-2, 2026",
+      "source": "Wall Street Journal via Business Insider; Reuters/Dow Jones; UKMTO; Al Jazeera, Oct 1-2, 2026",
+      "body": "The Pentagon is sending a third carrier strike group (USS Theodore Roosevelt departed San Diego Sunday; Bush and George Washington already on station) plus up to 10,000 troops, arriving by end-November. Trump told Time he expects to resume bombing Iran after the midterms. Iran's Supreme National Security Council 45-day ultimatum expired Oct 1; Fars claimed a supertanker was hit ablaze 8 km off Oman while UKMTO confirmed a tanker struck by an unidentified projectile in Hormuz - fire extinguished, crew safe. Brent settled $102.31 (+4.4%), WTI $92.87 (+2.7%), both flat in Friday Asia trade. Gulf crude exports are at 98% of pre-war (JPMorgan) and Hormuz crude at 13.5 Mb/d on the 7-day average (Kpler).",
+      "balance": "The escalation premium is earned on the supply-chain side, not the barrel side: crude flows are recovered, products are not. The $100 level is now the psychological and positioning threshold.",
+      "conditional": "Confirmed renewed Iranian attacks on shipping or forces -> premium extends and product tightness deepens. No follow-through -> the premium leaks back out of the deferred curve."
+    },
+    {
+      "title": "Diesel crack $101.74, eighteen straight closes above $100",
+      "delta": "Diesel crack $101.74 (Oct 2); 18-day streak >$100; not a record (max $117.92 Sep 16)",
+      "confirmation": "confirmed",
+      "vintage": "Oct 2, 2026",
+      "source": "NYMEX front-month history, validated in-house record check",
+      "body": "The NYMEX diesel crack (heating oil x 42 minus WTI, front-month futures) closed at $101.74 on Oct 2 - eighteen consecutive closes above $100, the first sustained $100+ regime on record (running since Aug 17; 29 total $100+ days in the 2020+ history; pre-2026 prints were single-day expiry squeezes). Not a new record: the all-time maximum is $117.92 (Sep 16). The 3-2-1 crack stands at $67.01 against a $75.31 maximum (Aug 28). Fresh support: PetroChina canceled October gasoline/jet fuel export shipments and China froze refined product exports for October ex-Hong Kong/Macau; Ukraine struck the Volgograd Lukoil refinery (~14-15 Mt/yr) and the Samara Urals-blending station overnight; Putin acknowledged the strikes cost Russia 1% of GDP with domestic fuel queues.",
+      "balance": "The war is being fought in products now. Wide fuel margins pull refinery runs (good for barrels) but the distillate premium accrues to the upgrading barrel (bad for the diff).",
+      "conditional": "Product tightness persists into winter -> TMF (condensate) keeps firming and the SYN premium holds; distillate relief -> the upgrading arb narrows."
+    },
+    {
+      "title": "Pacific Link designated Canada's first project of national interest",
+      "delta": "Political designation, Oct 1; no prompt barrels",
+      "confirmation": "confirmed",
+      "vintage": "Oct 1, 2026",
+      "source": "Canadian Press; pm.gc.ca, Oct 1, 2026",
+      "body": "PM Carney and Premier Smith in Fort McMurray designated the proposed West Coast oil pipeline - now christened Pacific Link - as the first project of national interest under the Building Canada Act. About 1 Mb/d, ~1,250 km, Bruderheim to a port near Delta, B.C. on a southern route along the TMX corridor (northern coast tanker ban maintained; B.C. premier will not fight it in court). $35.2-43.7B; federal and Alberta governments 45% each, Pembina 10% (option to 20%), minimum 10% Indigenous ownership via loan guarantees. Trans Mountain Corp. leads development; conditions finalized by September 1, 2027, construction possibly starting that fall.",
+      "balance": "Long-dated and prompt-neutral, but it sits on top of Trans Mountain's own 1.19 Mb/d-by-late-2028 plan: the 2028+ egress math for Canadian heavy is improving structurally.",
+      "conditional": "Regulatory slippage or legal challenges -> the deferred TMW strip re-prices the Asia-exit option; on-schedule -> long-dated Canadian heavy differentials hold their floor."
+    },
+    {
+      "title": "TMX drag-reducing-agent capacity +90 kbd from October",
+      "delta": "+90 kbd TMX capacity, starting October",
+      "confirmation": "confirmed",
+      "vintage": "Sep 22, 2026",
+      "source": "oilsandsmagazine.com, Sep 22, 2026",
+      "body": "Federal regulators approved Trans Mountain's drag-reducing-agent project: chemical injection skids being installed at 12 pump stations (Hinton to Hope), DRA addition commencing in October, adding about 90 kb/d of incremental system capacity. Part of the broader Mainline Optimization Program targeting 1.19 Mb/d by end-2028 (11 new pump stations, 30 km of new pipe). TMX ran at 94% utilization in Q2 (~840 kb/d); the CER toll settlement approved Sep 28 lifts firm contracted capacity from 80% to 90% of nominal from Jan 1, 2027.",
+      "balance": "Incremental egress relief lands exactly in the window the allocator's base case shows going binding: every 90 kb/d matters when the Mainline is apportioned.",
+      "conditional": "DRA lands on schedule -> Q4 TMX spot availability improves at the margin; delays -> the November-December crunch thesis strengthens."
+    },
+    {
+      "title": "OPEC+ meets Oct 4; consensus is a roll of November quotas",
+      "delta": "Expected: quotas unchanged for November",
+      "confirmation": "confirmed",
+      "vintage": "Sep 30 - Oct 1, 2026",
+      "source": "Reuters (Wed sources); Bloomberg delegates, via Oct 1-2, 2026 reporting",
+      "body": "The seven core members (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, Oman) are expected to keep November quotas unchanged at Sunday's virtual meeting. The 1.65 Mb/d of 2023 cuts were fully unwound by September; a separate ~2 Mb/d of cuts stays through end-2026. Actual supply is the constraint, not quotas: the seven core producers pumped about 25 Mb/d in August, roughly 5 Mb/d below pre-war February levels. Focus is shifting to 2027 baselines, with the DeGolyer and MacNaughton capacity assessment expected soon.",
+      "balance": "A roll is priced; the meeting only matters on a surprise. The quota architecture has been largely irrelevant since March - flows, not targets, set the price.",
+      "conditional": "Surprise cut -> flat price spikes on an already-tight product market; surprise increase -> the market reads it as quotas chasing reality."
+    },
+    {
+      "title": "SPR: no new DOE action; bids due Oct 6",
+      "delta": "RFP stands; bids due Tue Oct 6, 11:00 AM CT",
+      "confirmation": "confirmed",
+      "vintage": "Oct 1-2, 2026",
+      "source": "DOE press release / energy.gov, Sep 29, 2026",
+      "body": "No new DOE announcement Oct 1-2. The Sep 29 RFP stands: up to 40 MMbbl, all sour, 20M from Bryan Mound and 20M from Big Hill, delivery Nov-Dec 2026, minimum interest 7.5%/9.5% - far cheaper than June's 18%, which is why Sparta expects takers this time (June's round placed only ~0.5M of 40M offered). SPR at ~283.8-286.6 Mbbl, lowest since 1982; a full 40M release pushes toward the 252.4 Mbbl statutory floor.",
+      "balance": "Actual takeup is the only thing that matters. Heavy takeup displaces imported heavy/medium sour on the Gulf Coast, including the ARV leg of WCS.",
+      "conditional": "Heavy awards -> December TMW and ARV weaken into year-end; June-like takeup -> no impact and the December width stays purely an egress story."
+    },
+    {
+      "title": "Joliet restart still unconfirmed",
+      "delta": "No public confirmation as of Oct 2",
+      "confirmation": "paywalled-single-source",
+      "vintage": "Oct 2, 2026",
+      "source": "Quantum Commodity Intelligence (paywalled); ExxonMobil last public statement Sep 18",
+      "body": "The 275 kb/d ExxonMobil Joliet CDU has been shut since the Sep 13 power outage. The only restart report remains paywalled (Quantum) and unconfirmed - treat as likely restarted, not confirmed. PADD 2 gasoline at a record low (~41.8 Mbbl) against refinery runs under pressure argues for WCS demand once Joliet is actually back.",
+      "balance": "The confirmation itself is the catalyst: the discount snaps tighter when it lands, stays under pressure while it does not. Per the diff-direction rule, the outage removes a WCS buyer - the diff goes wider while offline, snaps tighter on restart.",
+      "conditional": "Public confirmation -> prompt TMW tightens; Oct 7 EIA weekly PADD 2 runs print is the next public test."
+    },
+    {
+      "title": "October Mainline apportionment: 8% lights, 4% heavies",
+      "delta": "Standing; November notice ~mid-Oct",
+      "confirmation": "confirmed",
+      "vintage": "Sep 16, 2026 (Enbridge notice)",
+      "source": "Enbridge Mainline apportionment notice, Sep 16, 2026",
+      "body": "October 2026 Mainline apportionment stands at 8% lights / 4% heavies (Enbridge notice Sep 16). The November notice normally lands around mid-October. The in-house allocator's base case has the Mainline going binding from November 2026, Keystone and TMX at 100%, with a max modeled congestion rent of $8.65/bbl - modeled, not observed.",
+      "balance": "October's 8%/4% is the last calm reading before the modeled squeeze; the November notice is the next real data point on this cycle.",
+      "conditional": "Hot November notice -> the December width is validated and the front trades heavy into expiry; cool notice -> the prompt blowout was overdone."
+    }
+  ],
+  "flags": [
+    {
+      "title": "Joliet restart awaiting confirmation",
+      "body": "Quantum headlines Joliet back in service as of about Sep 28, but the article is paywalled and no public confirmation exists. ExxonMobil's last public statement (Sep 18): power restored, restart underway, no date given. The Oct 7 EIA weekly (PADD 2 runs) is the next public test.",
+      "trigger": "Public confirmation from ExxonMobil or a second source turns this into the top ranked change.",
+      "expires": "on public confirmation"
+    },
+    {
+      "title": "Whiting lockout continues after failed talks",
+      "body": "The Sep 29 session between BP and USW Local 7-1 failed: the union walked out without meaningfully engaging. The ~800-worker lockout (since Mar 19) continues and the strike tail stays live.",
+      "trigger": "A strike authorization or walkout turns this into a ranked change; a settlement ends it.",
+      "expires": "on settlement or walkout"
+    },
+    {
+      "title": "Synthetic crude (SCO) supply returns ~Oct 5 to mid-Oct",
+      "body": "Syncrude's 50-day coker turnaround wraps around Oct 5 and CNRL's Horizon upgrader turnaround ends around mid-October. Both restore synthetic-crude supply, narrowing the synthetic-crude premium over WCS.",
+      "trigger": "Confirmed completion dates on either turnaround move this into the ranked changes.",
+      "expires": "mid-October"
+    },
+    {
+      "title": "SPR exchange bids due Oct 6",
+      "body": "DOE's Sep 29 exchange RFP: 40 MMbbl all sour, Bryan Mound 20M + Big Hill 20M, delivery Nov-Dec 2026, interest 7.5%/9.5%, bids due Oct 6 11:00 AM CT. Awards are the real event; the June round took only ~0.5M bbl.",
+      "trigger": "Heavy award takeup turns this into a ranked bearish change for December heavy diffs.",
+      "expires": "on awards announcement"
+    },
+    {
+      "title": "Hormuz post-deadline: Iran's 45-day ultimatum expired Oct 1",
+      "body": "Fars claimed a supertanker ablaze 8 km off Oman; UKMTO confirmed a tanker struck by an unidentified projectile (fire out, crew safe). The Roosevelt carrier group plus up to 10,000 troops arrive by end-November; Trump expects to resume Iran strikes after the midterms. Crude flows are recovered (Gulf exports 98% pre-war); the premium is on the supply chain, not the barrels.",
+      "trigger": "Confirmed renewed Iranian attacks on shipping or US forces turns this into the top ranked change; quiet passage lets the premium leak.",
+      "expires": "on next confirmed escalation or Oct 16"
+    },
+    {
+      "title": "OPEC+ Sunday decision",
+      "body": "Seven core members expected to roll November quotas steady; the 2027 baseline review is the item to watch.",
+      "trigger": "Any surprise (cut or increase) becomes a ranked change.",
+      "expires": "Oct 4"
+    }
+  ]
+}
