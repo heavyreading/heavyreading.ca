@@ -1,6 +1,29 @@
 {
  "edition": "2026-10-01",
- "generated_at": "2026-10-01T23:47:44",
+ "generated_at": "2026-10-02T00:41:57",
  "generator": "change_engine v1",
- "changes": []
+ "changes": [
+  {
+   "title": "In-situ bitumen forecast revised up for Sep 2027",
+   "delta": "+28 kb/d",
+   "body": "In-situ bitumen for Sep 2027 moved from 2,018 to 2,047 kb/d in the latest ST3 dashboard build.",
+   "balance": "Looser: more supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-10-02; feed built 2026-10-02",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-in_situ-2027-09-2,047",
+   "auto_detected": true
+  },
+  {
+   "title": "New project on the roster: Albian Sands",
+   "delta": "added",
+   "body": "Albian Sands (Canadian Natural Resources Limited) added to the project roster as mined.",
+   "balance": "Watch: new supply entering the basin picture.",
+   "vintage": "Project roster",
+   "source": "Project roster (AER ST3/ST53 mapping)",
+   "confirmation": "confirmed",
+   "dedup_key": "project-new-cnq_albian",
+   "auto_detected": true
+  }
+ ]
 }
