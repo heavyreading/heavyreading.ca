@@ -537,6 +537,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   table.data thead th:first-child, table.data tbody th:first-child,
   table.data tbody td:first-child { position:sticky; left:0; background:var(--paper);
     z-index:1; box-shadow:1px 0 0 var(--line); }
+  /* sources tables: six columns squish under a sticky first column on
+     phones, burying the links. Keep the table's natural width, scroll
+     cleanly, and drop the sticky column. */
+  table.data.sources { min-width:640px; }
+  table.data.sources thead th:first-child,
+  table.data.sources tbody td:first-child { position:static; box-shadow:none; }
+  table.data.sources td a { word-break:break-all; }
   .stat .v { font-size:25px; }
   figure.chart { overflow-x:auto; -webkit-overflow-scrolling:touch; }
   figure.chart svg { min-width:600px; }
