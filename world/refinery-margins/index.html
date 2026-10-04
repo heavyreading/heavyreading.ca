@@ -299,6 +299,7 @@ table.data td { border-bottom:1px solid var(--line);
   font-variant-numeric:tabular-nums; }
 table.data tbody tr:last-child td { border-bottom:none; }
 table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.data td .mom { font-size:11px; color:var(--mut); font-variant-numeric:tabular-nums; }
 table.data tr.tot td { font-weight:700; }
 table.data td.n, table.data th.n { text-align:right; font-variant-numeric:tabular-nums; }
 table.data td.k { color:var(--faint); font-size:12px; white-space:nowrap; }
@@ -327,6 +328,17 @@ details.verbatim > summary { cursor:pointer; font-size:12px; color:var(--mut); }
 details.verbatim > summary::-webkit-details-marker { display:none; }
 details.verbatim > summary::before { content:"+ "; color:var(--faint); }
 details.verbatim[open] > summary::before { content:"2  "; }
+/* seasonal risk disclosure on Barrels: quiet, collapsed by default,
+   framing for the supply forecast without clutter. */
+details.riskfold { margin:20px 0 6px; border-top:1px solid var(--line); }
+details.riskfold > summary { cursor:pointer; padding:12px 0;
+  list-style:none; }
+details.riskfold > summary::-webkit-details-marker { display:none; }
+details.riskfold > summary::marker { content:""; }
+details.riskfold > summary::before { content:"+ "; color:var(--faint); }
+details.riskfold[open] > summary::before { content:"2  "; }
+details.riskfold > summary strong { font-size:15px; }
+details.riskfold .rs-sub { color:var(--mut); font-size:13px; }
 .wraw { font-size:13px; color:var(--mut); white-space:pre-wrap; max-width:66ch;
   border-left:2px solid var(--line); padding-left:12px; }
 table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
@@ -373,6 +385,15 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   text-transform:uppercase; color:var(--mut); }
 .jumplist a { text-decoration:none; color:var(--ink); font-weight:600; }
 .jumplist a:hover { color:var(--acc-deep); }
+
+/* changelog: dated "what changed" list. Quiet, compact, most recent first.
+   One line per change; the date is muted, the change is the point. */
+.changelog { margin:14px 0 0; padding:0; list-style:none; font-size:14px; }
+.changelog li { display:flex; gap:12px; padding:7px 2px;
+  border-top:1px solid var(--line); line-height:1.45; }
+.changelog li:last-child { border-bottom:1px solid var(--line); }
+.changelog .cl-date { flex:0 0 auto; min-width:92px; color:var(--mut);
+  font-variant-numeric:tabular-nums; }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
 
@@ -411,6 +432,12 @@ figure.chart figcaption b, figure.chart figcaption strong { color:var(--ink);
   margin-top:10px; }
 .lg .sw { display:inline-block; width:10px; height:10px; border-radius:2px;
   margin-right:6px; vertical-align:-1px; border:1px solid var(--line); }
+/* generic chart legend: flex-wrap so items do not jam together on phone */
+.legend { display:flex; flex-wrap:wrap; gap:8px 16px; font-size:12px;
+  color:var(--mut); margin:12px 0; align-items:center; }
+.legend > span { display:inline-flex; align-items:center; white-space:nowrap; }
+.legend .sw { display:inline-block; width:12px; height:12px; border-radius:2px;
+  margin-right:6px; border:1px solid var(--line); flex:0 0 auto; }
 /* chart takeaway title + csv download line */
 .ctake { font-size:1.04rem; letter-spacing:-.01em; margin:30px 0 4px;
   max-width:62ch; line-height:1.35; }
@@ -537,6 +564,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   table.data thead th:first-child, table.data tbody th:first-child,
   table.data tbody td:first-child { position:sticky; left:0; background:var(--paper);
     z-index:1; box-shadow:1px 0 0 var(--line); }
+  /* sources tables: six columns squish under a sticky first column on
+     phones, burying the links. Keep the table's natural width, scroll
+     cleanly, and drop the sticky column. */
+  table.data.sources { min-width:640px; }
+  table.data.sources thead th:first-child,
+  table.data.sources tbody td:first-child { position:static; box-shadow:none; }
+  table.data.sources td a { word-break:break-all; }
   .stat .v { font-size:25px; }
   figure.chart { overflow-x:auto; -webkit-overflow-scrolling:touch; }
   figure.chart svg { min-width:600px; }
@@ -598,7 +632,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-03/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-04/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Barrels</p><a class="nd-link" href="../../barrels/index.html">Barrels</a><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Maintenance</p><a class="nd-link" href="../../maintenance/index.html">Maintenance</a></div></div></div>
@@ -609,7 +643,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../../barrels/index.html">Barrels</a><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><a class="mg-link" href="../../maintenance/index.html">Maintenance</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-03/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-04/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><a class="mg-link" href="../../whale-watch.html">Whale watch</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
@@ -644,7 +678,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h2>PADD 2: the Midwest runs flat out</h2>
   <ul class="ev">
   <li>ExxonMobil entered Friday, September 18 with its 275,000 barrel-per-day Joliet, Illinois refinery still shut, roughly a week after the September 13 power outage and a subsequent flood that overwhelmed a pump, with no firm restart timetable given. The plant produces about 11 million gallons of gasoline and diesel per day and accounts for roughly 6 percent of Midwest refining capacity, making each extra offline day a material hole in regional supply.<br><span class="vintage-inline">Event: Sep 18, 2026; published Sep 21, 2026; accessed 2026-09-28 <a href="https://www.tradingview.com/news/gurufocus:499cf5225094b:0-exxon-s-275-000-barrel-a-day-joliet-refinery-remains-offline/">GuruFocus (via TradingView)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
-  <li>Several units at ExxonMobil's Joliet refinery returned to service on Wednesday, Sep 23, starting the restart of the full plant after the September 13 site-wide shutdown, and the refinery was reported back in service around Sep 27. Detail sits behind a paywall; the restart arc is confirmed by the publisher's own headlines and the public restart sequence.<br><span class="vintage-inline">Events: Sep 23-27, 2026; published Sep 24-27, 2026; accessed 2026-09-28 <a href="https://www.qcintel.com/article/exxonmobil-says-illinois-refinery-back-in-service-73941.html">Quantum Commodity Intelligence</a> <span class="age-chip">&middot; 6d old</span></span></li>
+  <li>Several units at ExxonMobil's Joliet refinery returned to service on Wednesday, Sep 23, starting the restart of the full plant after the September 13 site-wide shutdown, and the refinery was reported back in service around Sep 27. Detail sits behind a paywall; the restart arc is confirmed by the publisher's own headlines and the public restart sequence.<br><span class="vintage-inline">Events: Sep 23-27, 2026; published Sep 24-27, 2026; accessed 2026-09-28 <a href="https://www.qcintel.com/article/exxonmobil-says-illinois-refinery-back-in-service-73941.html">Quantum Commodity Intelligence</a> <span class="age-chip">&middot; 7d old</span></span></li>
   <li>In August, US refinery utilization was 97.4% nationally and 101.8% in the Midwest (PADD 2, the Petroleum Administration for Defense District covering the Midwest), per EIA and BloombergNEF data. Readings above 100% reflect the EIA measuring gross input against nominal operable capacity, with debottlenecking pushing actual throughput above it.<br><span class="vintage-inline">Aug 22, 2026; accessed 2026-09-24 <a href="https://github.com/oged/sevengatesresearch.com/blob/HEAD/content/research/the-middle-of-the-barrel-has-taken-hostages.md">Seven Gates Research (citing EIA and BloombergNEF)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>For the week ending September 18, 2026, US refiners processed less crude, and it was not seasonal maintenance: Exxon's Joliet refinery had been mostly offline since the prior Sunday after a power outage, with floodwater also an issue. The plant accounts for 6 to 8% of regional refining capacity, and the PADD 2 utilization drop pressured an already tight Midwest product market.<br><span class="vintage-inline">Week ending Sep 18, 2026; accessed 2026-09-24 <a href="https://timdallinger.substack.com/p/eia-wpsr-summary-for-week-ending-b3c">Tim Dallinger (EIA Weekly Petroleum Status Report summary)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>That same week, US gasoline inventories were about 6% below the five-year seasonal average and distillate about 12% below. Simple cracks moved back toward record high rates.<br><span class="vintage-inline">Week ending Sep 18, 2026; accessed 2026-09-24 <a href="https://timdallinger.substack.com/p/eia-wpsr-summary-for-week-ending-b3c">Tim Dallinger (EIA Weekly Petroleum Status Report summary)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>

@@ -299,6 +299,7 @@ table.data td { border-bottom:1px solid var(--line);
   font-variant-numeric:tabular-nums; }
 table.data tbody tr:last-child td { border-bottom:none; }
 table.data td.num, table.data th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.data td .mom { font-size:11px; color:var(--mut); font-variant-numeric:tabular-nums; }
 table.data tr.tot td { font-weight:700; }
 table.data td.n, table.data th.n { text-align:right; font-variant-numeric:tabular-nums; }
 table.data td.k { color:var(--faint); font-size:12px; white-space:nowrap; }
@@ -327,6 +328,17 @@ details.verbatim > summary { cursor:pointer; font-size:12px; color:var(--mut); }
 details.verbatim > summary::-webkit-details-marker { display:none; }
 details.verbatim > summary::before { content:"+ "; color:var(--faint); }
 details.verbatim[open] > summary::before { content:"2  "; }
+/* seasonal risk disclosure on Barrels: quiet, collapsed by default,
+   framing for the supply forecast without clutter. */
+details.riskfold { margin:20px 0 6px; border-top:1px solid var(--line); }
+details.riskfold > summary { cursor:pointer; padding:12px 0;
+  list-style:none; }
+details.riskfold > summary::-webkit-details-marker { display:none; }
+details.riskfold > summary::marker { content:""; }
+details.riskfold > summary::before { content:"+ "; color:var(--faint); }
+details.riskfold[open] > summary::before { content:"2  "; }
+details.riskfold > summary strong { font-size:15px; }
+details.riskfold .rs-sub { color:var(--mut); font-size:13px; }
 .wraw { font-size:13px; color:var(--mut); white-space:pre-wrap; max-width:66ch;
   border-left:2px solid var(--line); padding-left:12px; }
 table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
@@ -373,6 +385,15 @@ table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
   text-transform:uppercase; color:var(--mut); }
 .jumplist a { text-decoration:none; color:var(--ink); font-weight:600; }
 .jumplist a:hover { color:var(--acc-deep); }
+
+/* changelog: dated "what changed" list. Quiet, compact, most recent first.
+   One line per change; the date is muted, the change is the point. */
+.changelog { margin:14px 0 0; padding:0; list-style:none; font-size:14px; }
+.changelog li { display:flex; gap:12px; padding:7px 2px;
+  border-top:1px solid var(--line); line-height:1.45; }
+.changelog li:last-child { border-bottom:1px solid var(--line); }
+.changelog .cl-date { flex:0 0 auto; min-width:92px; color:var(--mut);
+  font-variant-numeric:tabular-nums; }
 .weeknav a:last-child { text-align:right; }
 .weeknav a:hover { color:var(--acc-deep); }
 
@@ -411,6 +432,12 @@ figure.chart figcaption b, figure.chart figcaption strong { color:var(--ink);
   margin-top:10px; }
 .lg .sw { display:inline-block; width:10px; height:10px; border-radius:2px;
   margin-right:6px; vertical-align:-1px; border:1px solid var(--line); }
+/* generic chart legend: flex-wrap so items do not jam together on phone */
+.legend { display:flex; flex-wrap:wrap; gap:8px 16px; font-size:12px;
+  color:var(--mut); margin:12px 0; align-items:center; }
+.legend > span { display:inline-flex; align-items:center; white-space:nowrap; }
+.legend .sw { display:inline-block; width:12px; height:12px; border-radius:2px;
+  margin-right:6px; border:1px solid var(--line); flex:0 0 auto; }
 /* chart takeaway title + csv download line */
 .ctake { font-size:1.04rem; letter-spacing:-.01em; margin:30px 0 4px;
   max-width:62ch; line-height:1.35; }
@@ -537,6 +564,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   table.data thead th:first-child, table.data tbody th:first-child,
   table.data tbody td:first-child { position:sticky; left:0; background:var(--paper);
     z-index:1; box-shadow:1px 0 0 var(--line); }
+  /* sources tables: six columns squish under a sticky first column on
+     phones, burying the links. Keep the table's natural width, scroll
+     cleanly, and drop the sticky column. */
+  table.data.sources { min-width:640px; }
+  table.data.sources thead th:first-child,
+  table.data.sources tbody td:first-child { position:static; box-shadow:none; }
+  table.data.sources td a { word-break:break-all; }
   .stat .v { font-size:25px; }
   figure.chart { overflow-x:auto; -webkit-overflow-scrolling:touch; }
   figure.chart svg { min-width:600px; }
@@ -598,7 +632,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-03/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-04/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop active"><a class="nd-top" href="barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Barrels</p><a class="nd-link" href="barrels/index.html">Barrels</a><a class="nd-link" href="projects/index.html">All projects</a><a class="nd-link" href="apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top" href="maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">Maintenance</p><a class="nd-link" href="maintenance/index.html">Maintenance</a></div></div></div>
@@ -609,7 +643,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="barrels/index.html">Barrels</a><a class="mg-link" href="projects/index.html">All projects</a><a class="mg-link" href="apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><a class="mg-link" href="maintenance/index.html">Maintenance</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="world/china-imports/index.html">China imports</a><a class="mg-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="world/sour/index.html">The global sour barrel</a><a class="mg-link" href="venezuela/index.html">Venezuela watch</a><a class="mg-link" href="world/trump/index.html">Trump watch</a><a class="mg-link" href="world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-03/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-04/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
       <div class="mnav-sec"><a class="mg-link" href="whale-watch.html">Whale watch</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="tolls/index.html">Toll search</a><a class="mg-link" href="commitments/index.html">Commitments grid</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
       </div>
@@ -622,7 +656,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">The model grades itself: every prediction scored, with its uncertainty stated.</p>
   <p class="sub">Every published model nowcast, scored against the Alberta Energy Regulator (AER) Monthly Statistics (ST3) actuals when they land. Positive error means the nowcast ran high.</p>
   <p><b>Why the naive rule gets a column.</b> Every number on this page is measured against the simplest possible forecast: repeat last month (persistence), or predict no change at all. The naive rule is a valid forecast, not a straw man. A fancy model that cannot beat it gets cut, and the naive rule that wins gets used and scored like everything else. The scorecard does not care how clever the method is, only how accurate.</p>
-  <p class="vintage-inline">Nowcasts built 2026-09-23, 2026-09-28, 2026-09-29, 2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-09-28; loaded 2026-10-02).</p>
+  <p class="vintage-inline">Nowcasts built 2026-09-23, 2026-09-28, 2026-09-29, 2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-09-28; loaded 2026-10-04).</p>
   <h2>Supply nowcasts</h2>
   <p><b>How to read this.</b> Mean error is the average miss across scored months, in thousand barrels per day (kb/d); positive means the nowcast ran high, negative means it ran low. With no scored months yet, this section fills in automatically when the AER publishes ST3 actuals. "On the clock" lists frozen nowcasts: the numbers cannot be revised after the fact, so the score is against exactly what was published.</p>
   <h3>Bias so far</h3>
@@ -693,6 +727,20 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Conventional crude</td><td class="num">657.8</td></tr>
   <tr><td>Total WCSB crude supply</td><td class="num">3865.9</td></tr>
   </table></div>
+  <h3>Vintage stability</h3>
+  <p><b>The falsification question.</b> If the nowcast jumps around between vintages by more than its own error band, the number is not stable enough to trust. Below: the largest revision of each line between any two consecutive published vintages, against the 75th-percentile absolute error band from the walk-forward backtest.</p>
+  <div class="tblwrap"><table class="data">
+  <tr><th>Line</th><th>Max vintage revision (kb/d)</th><th>p75 error band (kb/d)</th><th>Verdict</th></tr>
+  <tr><td>Total WCSB crude supply</td><td class="num">58.6</td><td class="num">220.3</td><td>stable across vintages</td></tr>
+  <tr><td>Removals from Alberta</td><td class="num">68.6</td><td class="num">250.1</td><td>stable across vintages</td></tr>
+  <tr><td>In-situ bitumen</td><td class="num">47.0</td><td class="num">-</td><td>no backtest band for this line</td></tr>
+  <tr><td>Mined bitumen</td><td class="num">21.9</td><td class="num">-</td><td>no backtest band for this line</td></tr>
+  <tr><td>Upgraded production (SCO)</td><td class="num">67.0</td><td class="num">-</td><td>no backtest band for this line</td></tr>
+  <tr><td>Conventional light</td><td class="num">5.8</td><td class="num">21.4</td><td>stable across vintages</td></tr>
+  <tr><td>Conventional heavy</td><td class="num">0.6</td><td class="num">6.2</td><td>stable across vintages</td></tr>
+  <tr><td>Conventional ultra-heavy</td><td class="num">4.8</td><td class="num">6.2</td><td>stable across vintages</td></tr>
+  </table></div>
+  <p><b>Stable across vintages.</b> Across 8 published vintages, the largest revision of the supply nowcast was 58.6 kb/d, inside the 220.3 kb/d p75 error band. Revisions are noise, not signal.</p>
   <h3>How this is built</h3>
   <p><b>The nowcast.</b> Each month, before the AER publishes the Monthly Statistics (ST3), the model estimates each ST3 supply line from its seasonal pattern plus confirmed maintenance shutdowns. Totals are recomputed from the project-level forecasts so everything adds up.</p>
   <p><b>The score.</b> When ST3 actuals publish, the frozen nowcast is compared project by project. Error is nowcast minus actual, in thousand barrels per day (kb/d) and percent. Actuals use the latest ST3 vintage in the model database; cubic metres convert at 6.2898 barrels per cubic metre.</p>
@@ -700,9 +748,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">This page scores the model. It does not change it: calibration is a separate decision, never an automatic one.</p>
   <h2>Line accuracy backtest</h2>
   <p>Every forecasted line, graded on its own terms. Backtest: for each of 172 forecast months (Mar 2012 to Jun 2026), each line forecasts its target month from history ending three months before (the ST3 publication lag), then gets scored against the actual. Positive error means the forecast ran high.</p>
+  <p><b>The verdict rule.</b> Verdicts are arithmetic, not judgment, and the driver is the average miss. <b>Tie</b> means the model and the best naive rule miss by the same amount (within 0.05 kb/d, half the published precision): identical average misses cannot read "loses". <b>Wins</b> means the model misses by less <i>and</i> beats the naive rule head-to-head more often than a coin flip (win-rate 95% band entirely above 50%), on enough months to say so with confidence. <b>Leading, not yet proven</b> means the model misses by less on average but we do not yet have enough months to claim the edge is statistically significant (win-rate band still includes 50%): the model is doing well, the data just has not caught up to the verdict. More months will resolve this one way or the other. <b>Loses</b> means the naive rule misses by less. The win rate is a secondary check: it only separates "wins" from "leading, not yet proven". Nobody trades a win rate; the economically real number is the average-miss edge in kb/d, which leads every card below.</p>
   <h3>Total supply</h3>
   <p><b>What it predicts.</b> Total WCSB crude supply for the target month, in thousand barrels per day (kb/d): the top-line number everything else hangs off.</p>
-  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
+  <p><b>The bottom line.</b> The model saves you <b>38.6 kb/d</b> over Repeat last month: average miss 162.1 vs 200.7 kb/d.</p>
+  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. That is the headline number on every card. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is a secondary check: how often the model beat repeat-last-month head-to-head across the 172 forecast months; it only separates a "wins" verdict from "leading, not yet proven".</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: Repeat last month</th></tr>
   <tr><td>Average miss (kb/d)</td><td class="num">162.1</td><td class="num">200.7</td></tr>
@@ -711,7 +761,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Bias (kb/d)</td><td class="num">-21.8</td><td class="num">-30.6</td></tr>
   <tr><td>Months the model won</td><td class="num" colspan="2">96 of 172 (55.8%, <span class="tblnote">95% CI 48.4%-63.0%</span>)</td></tr>
   </table></div>
-  <p><b>Plain English.</b> The model has the smaller average miss on this line (162.1 vs 200.7 kb/d for Repeat last month) and the tighter 90% band (&plusmn;351.4 vs &plusmn;428.4), mostly by avoiding big misses: it wins 96 of 172 months, about even month-to-month. Useful, with the band stated.</p>
+  <p><b>Plain English.</b> <b>Leading, not yet proven.</b> The model is beating the naive rule on this line: average miss 162.1 vs 200.7 kb/d for Repeat last month, and the tighter 90% band (&plusmn;351.4 vs &plusmn;428.4). It wins 96 of 172 months. The only reason this does not read "wins" is sample size: with 172 months we cannot yet claim the edge is statistically significant. This is not mediocrity, it is a good line waiting on more data. Useful, with the band stated.</p>
   <p><b>How the band widens with distance.</b> Error bands (kb/d) by forecast distance: the 75% band is the inner, likely range (miss inside 3 times out of 4); the 90% band is the outer, safety range (9 times out of 10).</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>1 month out</th><th>2 months out</th><th>3 months out</th></tr>
@@ -723,7 +773,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">The model nowcast is built for the 3-month ST3 publication lag, so it only has a 3-month band. Naive rules can be scored at any distance; that is what shows error growing with horizon. Near months are surer than far ones.</p>
   <h3>Takeaway (removals from Alberta)</h3>
   <p><b>What it predicts.</b> Crude leaving Alberta by pipeline, rail and truck, kb/d. The gap between supply and takeaway is what drives the spare-capacity number.</p>
-  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
+  <p><b>The bottom line.</b> The model saves you <b>23.8 kb/d</b> over Repeat last month: average miss 172.9 vs 196.7 kb/d.</p>
+  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. That is the headline number on every card. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is a secondary check: how often the model beat repeat-last-month head-to-head across the 172 forecast months; it only separates a "wins" verdict from "leading, not yet proven".</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: Repeat last month</th></tr>
   <tr><td>Average miss (kb/d)</td><td class="num">172.9</td><td class="num">196.7</td></tr>
@@ -732,7 +783,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Bias (kb/d)</td><td class="num">-25.3</td><td class="num">-37.4</td></tr>
   <tr><td>Months the model won</td><td class="num" colspan="2">93 of 172 (54.1%, <span class="tblnote">95% CI 46.6%-61.4%</span>)</td></tr>
   </table></div>
-  <p><b>Plain English.</b> The model has the smaller average miss on this line (172.9 vs 196.7 kb/d for Repeat last month) and the tighter 90% band (&plusmn;382.9 vs &plusmn;397.2), mostly by avoiding big misses: it wins 93 of 172 months, about even month-to-month. Useful, with the band stated.</p>
+  <p><b>Plain English.</b> <b>Leading, not yet proven.</b> The model is beating the naive rule on this line: average miss 172.9 vs 196.7 kb/d for Repeat last month, and the tighter 90% band (&plusmn;382.9 vs &plusmn;397.2). It wins 93 of 172 months. The only reason this does not read "wins" is sample size: with 172 months we cannot yet claim the edge is statistically significant. This is not mediocrity, it is a good line waiting on more data. Useful, with the band stated.</p>
   <p><b>How the band widens with distance.</b> Error bands (kb/d) by forecast distance: the 75% band is the inner, likely range (miss inside 3 times out of 4); the 90% band is the outer, safety range (9 times out of 10).</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>1 month out</th><th>2 months out</th><th>3 months out</th></tr>
@@ -744,7 +795,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">The model nowcast is built for the 3-month ST3 publication lag, so it only has a 3-month band. Naive rules can be scored at any distance; that is what shows error growing with horizon. Near months are surer than far ones.</p>
   <h3>Storage build/draw</h3>
   <p><b>What it predicts.</b> Change in stored crude, kb/d. Positive is a build (barrels going into tank); negative is a draw (barrels coming out).</p>
-  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
+  <p><b>The bottom line.</b> Dead even: the model and the best naive rule (No change) both miss by 69.7 kb/d on average.</p>
+  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. That is the headline number on every card. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is a secondary check: how often the model beat repeat-last-month head-to-head across the 172 forecast months; it only separates a "wins" verdict from "leading, not yet proven".</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: No change</th></tr>
   <tr><td>Average miss (kb/d)</td><td class="num">69.7</td><td class="num">69.7</td></tr>
@@ -766,7 +818,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">The model nowcast is built for the 3-month ST3 publication lag, so it only has a 3-month band. Naive rules can be scored at any distance; that is what shows error growing with horizon. Near months are surer than far ones.</p>
   <h3>Light crude</h3>
   <p><b>What it predicts.</b> Light and medium crude portion of supply, kb/d.</p>
-  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
+  <p><b>The bottom line.</b> Dead even: the model and the best naive rule (Repeat last month) both miss by 15.1 kb/d on average.</p>
+  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. That is the headline number on every card. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is a secondary check: how often the model beat repeat-last-month head-to-head across the 172 forecast months; it only separates a "wins" verdict from "leading, not yet proven".</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: Repeat last month</th></tr>
   <tr><td>Average miss (kb/d)</td><td class="num">15.1</td><td class="num">15.1</td></tr>
@@ -787,7 +840,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">The model nowcast is built for the 3-month ST3 publication lag, so it only has a 3-month band. Naive rules can be scored at any distance; that is what shows error growing with horizon. Near months are surer than far ones.</p>
   <h3>Heavy crude</h3>
   <p><b>What it predicts.</b> Heavy and ultra-heavy crude portion of supply, kb/d.</p>
-  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is how often the model beat the naive rule head-to-head across the 172 forecast months; if its 95% band includes 50%, we cannot claim the model wins more often than a coin flip.</p>
+  <p><b>The bottom line.</b> Dead even: the model and the best naive rule (Repeat last month) both miss by 5.2 kb/d on average.</p>
+  <p><b>How to read this.</b> Average miss is the mean absolute error: the typical size of the miss, ignoring direction. That is the headline number on every card. The bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. Bias is the average signed error: persistently positive means the forecast runs high. Win rate is a secondary check: how often the model beat repeat-last-month head-to-head across the 172 forecast months; it only separates a "wins" verdict from "leading, not yet proven".</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model nowcast</th><th>Best naive: Repeat last month</th></tr>
   <tr><td>Average miss (kb/d)</td><td class="num">5.2</td><td class="num">5.2</td></tr>
@@ -811,6 +865,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p>Two ways to forecast a total. <b>Bottom-up</b> forecasts each facility, then adds the forecasts up. <b>Top-down</b> forecasts the total directly with the same seasonal method. The backtest scores both against actuals, and both against the naive rule (repeat last month). Forecast months October 2014 to December 2025, scored 1, 2 and 3 months out; each forecast uses only history that had actually been published at the time (vintage-pinned, re-run September 2026), with no peeking at the future. SAGD is steam-assisted gravity drainage; SCO is synthetic crude oil; ST53 is the Alberta Energy Regulator (AER) monthly in-situ statistics release; ST39 is the AER monthly oil-sands plant statistics release.</p>
   <h3>SAGD</h3>
   <p><b>What it predicts.</b> Steam-assisted gravity drainage (SAGD) production from in-situ schemes, kb/d. Facility detail comes from ST53, the AER monthly in-situ statistics release.</p>
+  <p><b>The bottom line.</b> Bottom-up costs you <b>3.2 kb/d</b> against the naive rule: average miss 51.9 vs 48.7 kb/d. The naive rule wins.</p>
   <p><b>How to read this.</b> "Bottom-up vs top-down" is the head-to-head win rate: how often the summed facility forecasts beat the direct aggregate forecast across 405 forecast months. "Bottom-up vs naive" is the same contest against repeat-last-month. If a 95% band includes 50%, that contest is a statistical tie: we cannot claim a winner. The error bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. The rule is automatic: beat the naive rule cleanly and the model earns the live forecast; lose to it and the live forecast is the naive rule, labeled.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Bottom-up</th><th>Top-down</th><th>Naive</th></tr>
@@ -835,6 +890,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">12 facilities (median); forecast months Oct 2014 to Dec 2025.</p>
   <h3>Mined bitumen</h3>
   <p><b>What it predicts.</b> Oil-sands mined bitumen, kb/d. Facility detail from ST39 plant-level production (mines).</p>
+  <p><b>The bottom line.</b> Bottom-up saves you <b>28.3 kb/d</b> over the naive rule: average miss 123.1 vs 151.4 kb/d.</p>
   <p><b>How to read this.</b> "Bottom-up vs top-down" is the head-to-head win rate: how often the summed facility forecasts beat the direct aggregate forecast across 405 forecast months. "Bottom-up vs naive" is the same contest against repeat-last-month. If a 95% band includes 50%, that contest is a statistical tie: we cannot claim a winner. The error bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. The rule is automatic: beat the naive rule cleanly and the model earns the live forecast; lose to it and the live forecast is the naive rule, labeled.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Bottom-up</th><th>Top-down</th><th>Naive</th></tr>
@@ -859,6 +915,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">7 facilities (median); forecast months Oct 2014 to Dec 2025.</p>
   <h3>SCO</h3>
   <p><b>What it predicts.</b> SCO (synthetic crude oil) from upgraders, kb/d. Facility detail from ST39 upgrader production. Thin sample: only a handful of upgraders, so read the bands, not just the point estimate.</p>
+  <p><b>The bottom line.</b> Bottom-up costs you <b>6.1 kb/d</b> against the naive rule: average miss 43.9 vs 37.8 kb/d. The naive rule wins.</p>
   <p><b>How to read this.</b> "Bottom-up vs top-down" is the head-to-head win rate: how often the summed facility forecasts beat the direct aggregate forecast across 129 forecast months. "Bottom-up vs naive" is the same contest against repeat-last-month. If a 95% band includes 50%, that contest is a statistical tie: we cannot claim a winner. The error bands are the empirical 75th and 90th percentiles of the miss: the inner (75%) band is where the miss landed 3 times out of 4, the outer (90%) band 9 times out of 10. The rule is automatic: beat the naive rule cleanly and the model earns the live forecast; lose to it and the live forecast is the naive rule, labeled.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Bottom-up</th><th>Top-down</th><th>Naive</th></tr>
@@ -883,6 +940,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">2 facilities (median); forecast months Dec 2021 to Dec 2025.</p>
   <h3>The maintenance hypothesis</h3>
   <p><b>What it tests.</b> The hypothesis: facility-level forecasts should be good because they use the maintenance calendar. Backtest: facility seasonal forecasts vs repeat last month, across 29 projects, then restricted to the 65 documented turnaround months, where maintenance actually bites.</p>
+  <p><b>The bottom line.</b> On average miss, the facility seasonal forecast costs you <b>3.1 kb/d</b> vs repeat-last-month across all months (24.8 vs 21.7 kb/d), and saves you <b>9.6 kb/d</b> inside turnaround months (102.0 vs 111.6 kb/d).</p>
   <p><b>How to read this.</b> Overall, the facility seasonal forecasts lose to repeat last month: they win only 34.6% of head-to-head months. But inside turnaround months they win 61.5% (95% CI 49.4%-72.4%). That band just touches 50%, so read it as suggestive, not proven: the sample is 65 months. The honest reading is that the skill, if any, lives in maintenance windows, not in ordinary months.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Facility seasonal</th><th>Repeat last month</th></tr>
@@ -905,6 +963,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p>Every predictive component gets the same treatment: backtest accuracy with its uncertainty stated, live accuracy as predictions resolve, and an honest label when there is nothing to score yet.</p>
   <h3>Apportionment</h3>
   <p><b>What it predicts.</b> Whether each Mainline corridor will be apportioned (rationed) next month, and by how much. Walk-forward backtest: the model trains only on months before each forecast, 72 system forecasts scored.</p>
+  <p><b>The bottom line.</b> On depth, the model costs you <b>0.02 points</b> against repeat-last-month: average miss 0.10 vs 0.08 points. The naive rule wins on depth.</p>
   <p><b>How to read this.</b> "On/off calls correct" is the share of months the model got the direction right (apportionment or no apportionment). The 95% band around it is the uncertainty from the sample size: the true long-run rate could plausibly sit anywhere inside it. Depth is how much gets apportioned, in percentage points; the average miss and the two bands read the same way as the line cards above: the inner (75%) band is the likely range, the outer (90%) band the safety range. When the naive rule's band overlaps the model's, we do not claim the model is better, and the live nowcast uses the naive rule.</p>
   <div class="tblwrap"><table class="data">
   <tr><th></th><th>Model</th><th>Naive benchmark (repeat last month)</th></tr>
@@ -934,6 +993,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p><b>How to read this.</b> Spare inherits the error of the supply and takeaway lines: if those miss by their bands, the spare misses by about the combined band (the inner 75% band is the likely range, the outer 90% band the safety range). Read the line accuracy backtest above as this card's score.</p>
   <p><b>The honest scoring position.</b> Spare is computed, not observed: there is no meter that reads basin spare capacity. Its accuracy rides entirely on the supply and takeaway nowcasts scored in the line accuracy backtest above. When the supply and takeaway lines score against ST3 actuals, the spare error band follows from their error bands. We do not invent a separate accuracy number for a number nobody measures.</p>
   <p class="tblnote">Status: derived, not directly scored.</p>
+  <h3>The egress wall: on the clock</h3>
+  <p><b>The prediction, frozen.</b> When forward spare hits zero, the barrels have to go somewhere: storage. This is a logged prediction, not a scenario. It cannot be revised after the fact.</p>
+  <div class="tblwrap"><table class="data">
+  <tr><th>Target month</th><th>Logged</th><th>Spare, base (kb/d)</th><th>Spare, conservative (kb/d)</th><th>Implied storage build</th><th>Status</th></tr>
+  <tr><td>2026-11</td><td>2026-10-04</td><td class="num">+0.0</td><td class="num">-171.6</td><td class="num">5.1 MMbbl</td><td>on the clock: awaiting CER actuals</td></tr>
+  </table></div>
+  <p class="tblnote"><b>How it gets scored.</b> When the Canada Energy Regulator (CER) publishes realized pipeline throughput for the target month, actual spare = nameplate capacity minus realized throughput, and the error is predicted minus actual spare. The CER throughput feed is indexed monthly; this arm scores automatically when the actuals land.</p>
   <h3>Whale flags</h3>
   <p><b>What it predicts.</b> The whale detector flags probable unusually large builds in COT (Commitments of Traders) positioning: unusual managed-money or commercial flows that read as large-fund or large-producer activity.</p>
   <p><b>How to read this.</b> A backtest for flags needs real prices: the score is whether the market moved unusually in the 20 trading days after each flag, versus what a naive benchmark would have caught. Until the price feed is real, the honest entry is "no backtest yet". Every flag carries the exact rule that produced it, so the scoring can be audited when it starts.</p>
