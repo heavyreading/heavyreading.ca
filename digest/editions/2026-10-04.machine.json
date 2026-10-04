@@ -1,6 +1,51 @@
 {
  "edition": "2026-10-04",
- "generated_at": "2026-10-04T20:04:18",
+ "generated_at": "2026-10-04T21:06:52",
  "generator": "change_engine v1",
- "changes": []
+ "changes": [
+  {
+   "title": "Total WCSB crude supply forecast revised up for Dec 2027",
+   "delta": "+86 kb/d",
+   "body": "Total WCSB crude supply for Dec 2027 moved from 4,439 to 4,525 kb/d in the latest ST3 dashboard build.",
+   "balance": "Looser: more supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-10-04; feed built 2026-10-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-supply_total-2027-12-4,525",
+   "auto_detected": true
+  },
+  {
+   "title": "In-situ bitumen forecast revised up for Dec 2027",
+   "delta": "+86 kb/d",
+   "body": "In-situ bitumen for Dec 2027 moved from 2,085 to 2,171 kb/d in the latest ST3 dashboard build.",
+   "balance": "Looser: more supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-10-04; feed built 2026-10-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-in_situ-2027-12-2,171",
+   "auto_detected": true
+  },
+  {
+   "title": "Total WCSB crude supply forecast revised up for Nov 2027",
+   "delta": "+85 kb/d",
+   "body": "Total WCSB crude supply for Nov 2027 moved from 4,426 to 4,511 kb/d in the latest ST3 dashboard build.",
+   "balance": "Looser: more supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-10-04; feed built 2026-10-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-supply_total-2027-11-4,511",
+   "auto_detected": true
+  },
+  {
+   "title": "In-situ bitumen forecast revised up for Nov 2027",
+   "delta": "+85 kb/d",
+   "body": "In-situ bitumen for Nov 2027 moved from 2,083 to 2,168 kb/d in the latest ST3 dashboard build.",
+   "balance": "Looser: more supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-10-04; feed built 2026-10-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-in_situ-2027-11-2,168",
+   "auto_detected": true
+  }
+ ]
 }

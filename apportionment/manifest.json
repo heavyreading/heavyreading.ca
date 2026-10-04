@@ -1,7 +1,7 @@
 {
  "page": "/apportionment/",
  "title": "Apportionment",
- "dek": "Enbridge Mainline apportionment by line and location: the three-way read (rationing point, system, basin), a live system schematic, the monthly nowcast, 234 months of history, the nomination game mechanics, and the NOS-locked forecast.",
+ "dek": "Enbridge Mainline apportionment by line and location: the monthly nomination game, a live system schematic, the forward read on next cycle, 234 months of history, the nomination game mechanics, and the NOS-locked forecast.",
  "built_at": "2026-10-04",
  "generator": "heavyreading-manifest/1",
  "claims": [
@@ -48,7 +48,7 @@
    "source_url": ""
   },
   {
-   "text": "September 2026 (mid-month) announced: lights 25% downstream of Griffith (Line 5 outage), heavies n/a",
+   "text": "September 2026 (mid-month) announced: lights 25% downstream of Griffith, heavies n/a",
    "vintage": "Enbridge notice (Sep 8, 2026)",
    "source": "Enbridge notice, Sep 8, 2026 (Katie Robertson)",
    "source_url": ""
@@ -64,12 +64,6 @@
    "vintage": "Enbridge notice (Sep 16, 2026)",
    "source": "Enbridge Connecting Pipelines notice, Sep 16, 2026",
    "source_url": ""
-  },
-  {
-   "text": "Sep 2026 mid-month context: Line 5 unplanned outage from the Aug 25 Saxon WI NGL release (~1.3M gal), ~3-week shutdown, temporary bypass, back in service ~Sep 12-14",
-   "vintage": "Public news reports, Sep 2026 (secondary reporting, not notice text)",
-   "source": "WRCO; WBZH; RBN Energy; Zacks",
-   "source_url": "https://wrco.com/news/2026/09/15/line-5-reopens-after-spill-despite-dnr-warning"
   }
  ],
  "sources": [
@@ -82,11 +76,6 @@
    "publisher": "Enbridge apportionment notices (Nominations Planning)",
    "vintage": "May-Oct 2026, incl. Sep 2026 mid-month (via newswire, Sep 28, 2026)",
    "url": ""
-  },
-  {
-   "publisher": "Line 5 outage: WRCO, WBZH, RBN Energy, Zacks (news reports, secondary)",
-   "vintage": "Sep 2026",
-   "url": "https://wrco.com/news/2026/09/15/line-5-reopens-after-spill-despite-dnr-warning"
   }
  ]
 }
