@@ -1,40 +1,6 @@
 {
  "edition": "2026-10-05",
- "generated_at": "2026-10-05T14:14:06",
+ "generated_at": "2026-10-05T14:49:12",
  "generator": "change_engine v1",
- "changes": [
-  {
-   "title": "Implied storage change revised for Feb 2027",
-   "delta": "+199 kb/d",
-   "body": "Implied storage change for Feb 2027 moved from -199 to 0 kb/d in the reconciled balance.",
-   "balance": "Looser: more room before the pipes bind.",
-   "vintage": "2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant)",
-   "source": "WCSB supply/demand balance model",
-   "confirmation": "confirmed",
-   "dedup_key": "balance-storage_final_kbd-2027-02-0",
-   "auto_detected": true
-  },
-  {
-   "title": "Pipeline spare capacity revised for Feb 2027",
-   "delta": "+169 kb/d",
-   "body": "Pipeline spare capacity for Feb 2027 moved from 21 to 190 kb/d in the reconciled balance.",
-   "balance": "Looser: more room before the pipes bind.",
-   "vintage": "2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant)",
-   "source": "WCSB supply/demand balance model",
-   "confirmation": "confirmed",
-   "dedup_key": "balance-pipe_spare_kbd-2027-02-190",
-   "auto_detected": true
-  },
-  {
-   "title": "Implied storage change revised for Oct 2026",
-   "delta": "+152 kb/d",
-   "body": "Implied storage change for Oct 2026 moved from -152 to 0 kb/d in the reconciled balance.",
-   "balance": "Looser: more room before the pipes bind.",
-   "vintage": "2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant)",
-   "source": "WCSB supply/demand balance model",
-   "confirmation": "confirmed",
-   "dedup_key": "balance-storage_final_kbd-2026-10-0",
-   "auto_detected": true
-  }
- ]
+ "changes": []
 }
