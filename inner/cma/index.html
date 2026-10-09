@@ -904,22 +904,29 @@ get(R2+'/cma/manifest.json').then(function(man){
       var qq=cq+i, yy=cy+Math.floor(qq/4); qq=qq%4;
       strips.push({label:'Q'+(qq+1)+' '+n2(yy), months:qdef(yy,qq), sub:'quarter'});
     }
-    [cy,cy+1].forEach(function(yy){
+    [cy,cy+1,cy+2].forEach(function(yy){
       var ms=[]; for(var m=0;m<12;m++) ms.push(kk(yy,m));
       strips.push({label:'Cal '+n2(yy), months:ms, sub:'calendar '+yy});
     });
     var sh='', anyS=false;
     strips.forEach(function(s){
-      var sum=0,n=0, ok=true;
+      var sum=0,n=0, ok=true, fwd=false;
       s.months.forEach(function(k){
         var p=byKey[k]; if(!p){ok=false;return;}
-        var px=monthPrice(p); if(px==null){ok=false;return;}
+        var px=monthPrice(p);
+        if(px==null){
+          // Forward month: fall back to live futures for the prompt contract.
+          var rows=p.json.trading_days||[];
+          var sym=rows.length&&rows[0].prompt?rows[0].prompt:null;
+          if(sym&&live[sym]!=null){px=live[sym]; fwd=true;}
+          else {ok=false;return;}
+        }
         sum+=px; n++;
       });
       if(!ok||!n) return;
       sh+='<div class="cma-strip"><div class="k">'+esc(s.label)+'</div>'
         +'<div class="v">'+fmt(sum/n)+'</div>'
-        +'<div class="s">'+s.months.length+' mo avg</div></div>';
+        +'<div class="s">'+s.months.length+' mo avg'+(fwd?' · fwd':'')+'</div></div>';
       anyS=true;
     });
     if(anyS){
@@ -931,7 +938,8 @@ get(R2+'/cma/manifest.json').then(function(man){
   var upd=Date.parse(first.updated_utc), stale=(Date.now()-upd)>26*3600*1000;
   var pill=document.getElementById('asof-pill');
   pill.textContent=(stale?'STALE — ':'')+'as of '
-    +new Date(upd).toLocaleString('en-US',{timeZone:'America/Edmonton',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+    +new Date(upd).toLocaleString('en-US',{timeZone:'America/Edmonton',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})
+    +' MT';
   pill.className='pill '+(stale?'stale':'live');
   renderMonth(def);
 }).catch(function(e){
