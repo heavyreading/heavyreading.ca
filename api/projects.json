@@ -1,5 +1,5 @@
 {
- "vintage": "33 projects from projects.yaml + project_intel; production from AER ST3/ST53 actuals through Jul 2026; built 2026-10-05",
+ "vintage": "55 projects from projects.yaml + project_intel; production from AER ST3/ST53 actuals through Jul 2026; built 2026-10-09",
  "data": {
   "projects": [
    {
@@ -1311,6 +1311,930 @@
     "production_kbd": null,
     "production_vintage": null,
     "sections": []
+   },
+   {
+    "slug": "cve_lloydminster_upgrader",
+    "name": "Lloydminster Upgrader",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "Upgrading",
+    "region": null,
+    "dek": "The Lloydminster Upgrader converts heavy oil and bitumen into synthetic crude oil at Lloydminster (Saskatchewan/Alberta border). Cenovus owns and operates it 100%.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns and operates 100%. (Source: Cenovus Energy, corporate presentation, Q1 2026)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 78.5 kb/d operable throughput of heavy oil / bitumen; output is roughly 70% synthetic crude. (Source: Cenovus Energy, corporate presentation, Q1 2026)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• \"Rewire Alberta\" concept: debottlenecks plus a new vacuum distillation unit and coker expansion to take capacity up to 125 kb/d, with a feedstock shift toward Christina Lake and Foster Creek bitumen. This is 2021-vintage and does not appear in 2024–2026 company budgets; Carbon Tracker (May 2025) found no indication of expansion plans — treat as aspirational/unfunded. (Source: Cenovus Energy via OSM, 2021-12-10; Source: Carbon Tracker profile, 2025-05)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Q2 2024 turnaround completed. (Source: Cenovus Energy, corporate presentation, Q1 2026)\n• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for the upgrader specifically: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Heavy-oil upgrader producing synthetic crude from Lloydminster-area heavy oil and bitumen. (Source: Cenovus Energy, corporate presentation, Q1 2026)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "nwr_sturgeon",
+    "name": "Sturgeon Refinery",
+    "operator": "North West Redwater Partnership",
+    "ticker": null,
+    "method": "Upgrading",
+    "region": null,
+    "dek": "The Sturgeon Refinery processes diluted bitumen into ultra-low-sulphur diesel, vacuum gasoil, recovered diluent and NGLs. Owned 50/50 by Canadian Natural Resources and the Government of Alberta (since July 2021) through the North West Redwater Partnership. Commercial operations began June 1, 2020.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• North West Redwater Partnership: Canadian Natural Resources Limited 50%, Government of Alberta 50% (Alberta's stake held since July 2021). (Source: Government of Alberta, alberta.ca, 2021)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 79–80 kb/d diluted-bitumen feed. Products: roughly 40 kb/d ULSD, ~11 kb/d vacuum gasoil/NGLs, plus recovered diluent returned to producers. (Source: Oil Sands Magazine, 2021-02; Source: Oil Sands Magazine, 2019-08)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Phase 2 (50 kb/d expansion) proposal was withdrawn in 2018; no revival. (Source: hydrocarbonprocessing.com, 2024-01-11)\n• January 2024: the Government of Alberta was exploring a sale of or exit from its 50% stake; no expansion tied to that process. (Source: hydrocarbonprocessing.com, 2024-01-11)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• LC-FINING-type residue hydrocracker plus asphaltene gasification, hydrotreaters and diluent recovery; no delayed coker. 100% dilbit tolling (APMC 75%, CNRL 25%). (Source: Oil Sands Magazine, 2021-02; Source: Oil Sands Magazine, 2019-08)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating; commercial operations since June 1, 2020."
+     }
+    ]
+   },
+   {
+    "slug": "su_edmonton_refinery",
+    "name": "Edmonton Refinery",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "refining",
+    "region": null,
+    "dek": "Suncor's Edmonton refinery in Strathcona County, Alberta, runs entirely on oil-sands feedstocks.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. owns and operates 100%. (Source: Suncor Energy, 2026 Corporate Guidance, 2025-12)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 146 kb/d nameplate crude throughput. (Source: Suncor Energy, 2026 Corporate Guidance, 2025-12)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Crude distillation, vacuum distillation, fluid catalytic cracker, delayed coker (~30 kb/d), hydrotreater, sulphur unit and hydrogen plant. The coker allows roughly 25% heavy intake. (Source: Oil Sands Magazine, 2021-02)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating; 100% oil-sands feedstocks."
+     }
+    ]
+   },
+   {
+    "slug": "imo_strathcona",
+    "name": "Strathcona Refinery",
+    "operator": "Imperial Oil Limited",
+    "ticker": "IMO",
+    "method": "refining",
+    "region": null,
+    "dek": "Imperial's Strathcona refinery in Strathcona County, Alberta. Medium-conversion refinery running heavy and Cold Lake barrels plus dilbit; no coker and no hydrocracker.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Imperial Oil Limited owns and operates 100%. (Source: Imperial Oil, 2025-08)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 197 kb/d nameplate crude throughput (approximately 200 per some third-party compilations). (Source: Oil & Gas Journal, 2025-12)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• 20 kb/d renewable-diesel unit in service since August 2025. (Source: Imperial Oil, 2025-08)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Crude distillation ~189, vacuum distillation ~69, FCC ~64.5, reformer ~21, hydrotreaters ~130, alkylation ~15.5 kb/d — NO delayed coker, NO hydrocracker. Runs heavy/Cold Lake plus dilbit (diluent-recovery capability added 2015–2020). (Source: Oil & Gas Journal, 2018 refining survey; Source: Oil & Gas Journal, 2025-12)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cve_lloydminster_refinery",
+    "name": "Lloydminster Refinery",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "refining",
+    "region": null,
+    "dek": "Cenovus's Lloydminster asphalt refinery runs 100% Lloydminster heavy crude; Canada's largest asphalt supplier.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns and operates 100%. (Source: Cenovus Energy, corporate presentation, Q1 2026)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 29.5 kb/d operable throughput (asphalt refinery). (Source: Cenovus Energy, Downstream Disclosure, 2024)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Crude and vacuum distillation only — NO FCC, NO coker, NO hydrocracker. (Source: Cenovus Energy, Downstream Disclosure, 2024)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "shell_scotford_refinery",
+    "name": "Scotford Refinery",
+    "operator": "Shell Canada Limited",
+    "ticker": "SHEL",
+    "method": "refining",
+    "region": null,
+    "dek": "Shell's Scotford refinery sits adjacent to the Scotford upgrader in Strathcona County, Alberta, and runs heavy Canadian crude plus synthetic crude. It is a separate facility from the upgrader.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Shell Canada Limited owns and operates 100%. (Source: CFA refinery map, 2025-11)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate cited differently across sources: ~100 kb/d (OGJ, 2017) vs 114 kb/d (CFA, 2025-11). (Source: Oil & Gas Journal, 2017-12; Source: CFA refinery map, 2025-11)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Crude distillation ~100, hydrocracker ~76–83 (debottlenecked 2017) — NO coker, NO FCC. (Source: Oil & Gas Journal, 2017-12)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "bp_whiting",
+    "name": "Whiting Refinery",
+    "operator": "BP Products North America Inc.",
+    "ticker": "BP",
+    "method": "refining",
+    "region": null,
+    "dek": "BP's Whiting refinery in Indiana is the largest US refinery running Canadian heavy crude, modernized in 2013 specifically to process oil-sands barrels.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• BP Products North America Inc. owns and operates 100%. (Source: Oil & Gas Journal, 2025-08)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 435–440 kb/d nameplate crude throughput. (Source: Oil & Gas Journal, 2025-08)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Shut on flooding around August 2025; restarted. (Source: Heavy Reading project audit, 2026-10-08)\n• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• 102 kb/d delayed coker (2013 modernization), FCC, alkylation, two hydrogen plants. (Source: ENR, 2012–13)\n• Canadian intake: estimated 350–390 kb/d, derived from the 2013 design target of an 80–90% Canadian slate; no current company disclosure. (Source: ENR, 2012–13)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "xom_joliet",
+    "name": "Joliet Refinery",
+    "operator": "ExxonMobil Oil Corporation",
+    "ticker": "XOM",
+    "method": "refining",
+    "region": null,
+    "dek": "ExxonMobil's Joliet refinery in Illinois runs Canadian heavy crude alongside domestic grades.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• ExxonMobil Oil Corporation owns and operates 100%. (Source: ExxonMobil facility profile, 2026)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 275 kb/d nameplate crude throughput. (Source: ExxonMobil facility profile, 2026)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Lost power in a storm around September 2025; offline for weeks. (Source: Heavy Reading project audit, 2026-10-08)\n• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Crude distillation 275, FCC ~95, delayed coker ~56, reformer ~50 kb/d. (Source: ExxonMobil facility profile, 2026)\n• Canadian intake: estimated 150–200 kb/d (Argus 2015 anchor of ~150); no current company disclosure. (Source: Argus, 2015-03)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "citgo_lemont",
+    "name": "Lemont Refinery",
+    "operator": "Citgo Petroleum Corporation",
+    "ticker": null,
+    "method": "refining",
+    "region": null,
+    "dek": "Citgo's Lemont refinery in Illinois runs Canadian heavy crude. Ownership may change: PDVSA's Citgo is subject to a pending Delaware court auction.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Citgo Petroleum Corporation (PDVSA); Delaware auction pending — ownership may change. (Source: Oil & Gas Journal, 2026-08)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 183 kb/d nameplate crude throughput. (Source: Argus, 2020)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Bought Venezuelan crude in Q1 2026 under an OFAC license. (Source: Oil & Gas Journal, 2026-08)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Coker, FCC, two reformers, alkylation, vacuum distillation. (Source: Argus, 2020)\n• Canadian intake: ~90 kb/d Canadian heavy, company-sourced 2020 vintage. (Source: Argus, 2020)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "mpc_detroit",
+    "name": "Detroit Refinery",
+    "operator": "Marathon Petroleum Company LP",
+    "ticker": "MPC",
+    "method": "refining",
+    "region": null,
+    "dek": "Marathon's Detroit refinery in Michigan runs Canadian crude. The often-cited 180 kb/d figure is stale; Marathon's own site states 146 kb/d.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Marathon Petroleum Company LP owns and operates 100%. (Source: Marathon refinery page, 2025)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 146 kb/d nameplate crude throughput (barrels per calendar day; Marathon site, 2025). (Source: Marathon refinery page, 2025)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• 28 kb/d delayed coker (DHOUP, 2012), plus 80 kb/d heavy-sour capacity. Canadian intake split undisclosed. (Source: Marathon refinery page, 2025)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cve_toledo",
+    "name": "Toledo Refinery",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "refining",
+    "region": null,
+    "dek": "Cenovus's Toledo refinery in Ohio runs heavy crude including Canadian barrels. Cenovus bought BP's 50% in February 2023 and now owns 100%.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. 100% (acquired BP's 50% interest, closed February 2023). (Source: Cenovus Energy, 2023-02)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 160 kb/d nameplate / 150.8 kb/d operable crude throughput. (Source: Cenovus Energy, Downstream Disclosure, 2024)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Sour crude capability 110, isocracker 35, small coker 6.5 kb/d. Roughly 90 kb/d heavy including Canadian (~60% of operable) — derived from heavy-capacity share, not metered intake. (Source: Cenovus Energy, Downstream Disclosure, 2024)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cve_superior",
+    "name": "Superior Refinery",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "refining",
+    "region": null,
+    "dek": "Cenovus's Superior refinery in Wisconsin runs heavy crude including Canadian barrels. The FCC was rebuilt after the 2018 fire; the refinery restarted in 2023.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns and operates 100%. (Source: Cenovus Energy, Downstream Disclosure, 2024)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 49 kb/d nameplate / 44 kb/d operable crude throughput. (Source: Cenovus Energy, Downstream Disclosure, 2024)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• FCC rebuilt after the 2018 fire; restarted 2023. (Source: Argus, 2023-07)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• FCC. Estimated ~35 kb/d heavy (~80% of operable) — derived from heavy-capacity share, not metered intake. (Source: Cenovus Energy, Downstream Disclosure, 2024)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "fhr_pine_bend",
+    "name": "Pine Bend Refinery",
+    "operator": "Flint Hills Resources",
+    "ticker": null,
+    "method": "refining",
+    "region": null,
+    "dek": "Flint Hills Resources' Pine Bend refinery in Minnesota is a deep-conversion refinery running US and Canadian crude.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Flint Hills Resources (Koch) owns and operates 100%. (Source: Flint Hills Resources release, 2022)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Nameplate cited differently across sources: 320–392 kb/d (company 375, OGJ 335, EIA 392). (Source: Flint Hills Resources release, 2022; Source: Oil & Gas Journal, 2022-05)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Coker island (replaced 2006), deep-conversion. Canadian intake undisclosed (\"vast majority\" US + Canada, no split). (Source: Oil & Gas Journal, 2022-05)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "par_billings",
+    "name": "Billings Refinery (Par)",
+    "operator": "Par Pacific Holdings",
+    "ticker": "PARR",
+    "method": "refining",
+    "region": null,
+    "dek": "Par Pacific's Billings refinery in Montana runs Western Canadian and Rockies crude. Acquired June 2023.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Par Pacific Holdings owns and operates 100% (acquired June 2023). (Source: Par Pacific, 2023-06)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 63 kb/d nameplate crude throughput. (Source: Par Pacific, 2023-06)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• No expansion identified in reviewed sources."
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• High-conversion complex. Canadian intake undisclosed (\"low-cost Western Canadian + Rockies\", no split). (Source: Par Pacific, 2023-06)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "p66_billings",
+    "name": "Billings Refinery (Phillips 66)",
+    "operator": "Phillips 66 Company",
+    "ticker": "PSX",
+    "method": "refining",
+    "region": null,
+    "dek": "Phillips 66's Billings refinery in Montana; the 2015–2017 vacuum-tower (VIP) upgrade made it capable of running up to 100% heavy Canadian crude.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Phillips 66 Company owns and operates 100%. (Source: Billings Gazette, 2017-04)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 66 kb/d (2017); approximately 72.5 kb/d per the 2023 air permit. (Source: Billings Gazette, 2017-04; Source: Montana air permit #2619-45, 2023)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Vacuum-tower (VIP) upgrade 2015–2017 allows up to 100% heavy Canadian crude capability. (Source: Billings Gazette, 2017-04)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Planned turnaround frequency and duration: not disclosed."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• FCC plus upgraded vacuum tower. Canadian intake undisclosed. (Source: Montana air permit #2619-45, 2023)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cve_telephone_lake",
+    "name": "Telephone Lake",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "future",
+    "region": null,
+    "dek": "Cenovus's Telephone Lake is an AER-approved but unsanctioned SAGD project in the Athabasca region.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns and operates 100%. (Source: scandoil.com, 2018)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 90 kb/d initial (two 45 kb/d phases); ultimate potential above 300 kb/d. (Source: scandoil.com, 2018)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Project itself is the growth: approved, unsanctioned, timing unknown. (Source: mining.com)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Not applicable — not yet sanctioned."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: scandoil.com, 2018)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• AER approved; unsanctioned."
+     }
+    ]
+   },
+   {
+    "slug": "cve_grand_rapids",
+    "name": "Grand Rapids (Cenovus)",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "future",
+    "region": null,
+    "dek": "Cenovus's standalone Grand Rapids thermal project in the Athabasca region. AER-approved, unsanctioned; a SAGD pilot has operated for 3+ years with encouraging results. Not Imperial's Grand Rapids SA-SAGD phase at Cold Lake (operating, separate project).",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns and operates 100%. (Source: mining.com)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Approximately 180 kb/d maximum, multiple phases. (Source: mining.com)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Project itself is the growth: approved, unsanctioned, timing decision pending. (Source: mining.com)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Not applicable — not yet sanctioned."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD (pilot operating 3+ years). (Source: mining.com)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• AER approved; unsanctioned."
+     }
+    ]
+   },
+   {
+    "slug": "su_meadow_creek_east",
+    "name": "Meadow Creek East",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "future",
+    "region": null,
+    "dek": "Suncor's Meadow Creek East is an AER-approved but unsanctioned SAGD project; no activity in 2025 and none planned for 2026.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. 75%. (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 40 kb/d (up to 80 kb/d). (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Project itself is the growth: approved (East 2017-03-27), unsanctioned, \"under consideration\". (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Not applicable — not yet sanctioned."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• AER approved (2017-03-27); unsanctioned."
+     }
+    ]
+   },
+   {
+    "slug": "su_meadow_creek_west",
+    "name": "Meadow Creek West",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "future",
+    "region": null,
+    "dek": "Suncor's Meadow Creek West is an AER-approved but unsanctioned SAGD project; no activity in 2025 and none planned for 2026.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. 75%. (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• 40 kb/d. (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Project itself is the growth: approved (West 2020-02-21), unsanctioned, \"under consideration\". (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Not applicable — not yet sanctioned."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD. (Source: Suncor Energy, 2025 annual project reports, 2026-05-29)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• AER approved (2020-02-21); unsanctioned."
+     }
+    ]
+   },
+   {
+    "slug": "su_lewis",
+    "name": "Lewis",
+    "operator": "Suncor Energy Inc.",
+    "ticker": "SU",
+    "method": "future",
+    "region": null,
+    "dek": "Suncor's Lewis is an AER-approved long-term SAGD project intended as Base Plant feedstock replacement as the Millennium and North Steepbank mines wind down.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Suncor Energy Inc. owns and operates 100%. (Source: Suncor Energy, 2025 Annual Information Form, 2026-02-25)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Up to 160 kb/d. (Source: Suncor Energy, 2025 Annual Information Form, 2026-02-25)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Project itself is the growth: approved, long-term; 2032–2033 earliest start. (Source: Suncor Energy, 2025 Annual Information Form, 2026-02-25; Source: Oil Sands Magazine, 2026-09-10)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Not applicable — not yet sanctioned."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD (in-situ feedstock replacement for Base Plant). (Source: Oil Sands Magazine, 2026-09-10)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• AER approved; unsanctioned."
+     }
+    ]
+   },
+   {
+    "slug": "cve_lloydminster_thermal",
+    "name": "Lloydminster Thermal (aggregate)",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Cenovus's Lloydminster thermal operations: 12 SAGD facilities in northwest Saskatchewan (Rush Lake 1&2, Spruce Lake, Spruce Lake North, Vawn, Dee Valley, Pikes Peak, Pikes Peak South, Edam East, Edam West, Marsden). Largely Saskatchewan-side and absent from AER ST53.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns and operates 100%. (Source: Cenovus Energy, 2026 guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Approximately 103 kb/d in Q2 2026; company target of roughly +10 kb/d by 2028. (Source: Cenovus Energy, Q2 2026 results, 2026-07-29; Cenovus Energy, corporate presentation, 2026-05)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Thermal growth target of roughly +10 kb/d (2024→2028). (Source: Cenovus Energy, corporate presentation, 2026-05)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Rush Lake 1&2 (roughly 18 kb/d combined pre-incident) shut May 2025 after a casing-failure steam release; restart approved late November 2025, phased ramp, roughly 8 kb/d in 2026 guidance. (Source: pipelineonline, 2025-10; Cenovus Energy, 2026 guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost for the thermal aggregate: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• SAGD across 12 facilities. (Source: Cenovus Energy, 2026 guidance, 2025-12-11)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
+   },
+   {
+    "slug": "cve_lloydminster_conventional",
+    "name": "Lloydminster Conventional Heavy",
+    "operator": "Cenovus Energy Inc.",
+    "ticker": "CVE",
+    "method": "SAGD",
+    "region": null,
+    "dek": "Cenovus's Lloydminster-area conventional heavy oil production (CHOPS), separate from the thermal SAGD operations.",
+    "capacity_kbd": null,
+    "production_kbd": null,
+    "production_vintage": null,
+    "sections": [
+     {
+      "heading": "Operator and ownership",
+      "body": "• Cenovus Energy Inc. owns and operates 100%. (Source: Cenovus Energy, corporate presentation, 2026-05)"
+     },
+     {
+      "heading": "Capacity",
+      "body": "• Approximately 28 kb/d in Q2 2026; drilling program targeting roughly +20 kb/d through 2028 (7 net wells tied in during H1 2026). (Source: Cenovus Energy, Q2 2026 MD&A; Cenovus Energy, corporate presentation, 2026-05; Cenovus Energy, Q1 2026 6-K)"
+     },
+     {
+      "heading": "Growth and expansions",
+      "body": "• Active CHOPS drilling program; roughly +20 kb/d target through 2028. (Source: Cenovus Energy, corporate presentation, 2026-05)"
+     },
+     {
+      "heading": "Maintenance",
+      "body": "• Not applicable — drilling program, not a single facility."
+     },
+     {
+      "heading": "Operating costs",
+      "body": "• Per-barrel operating cost: not disclosed."
+     },
+     {
+      "heading": "Technology and process",
+      "body": "• Conventional heavy oil (CHOPS). (Source: Cenovus Energy, Q2 2026 MD&A)"
+     },
+     {
+      "heading": "Regulatory status",
+      "body": "• Operating."
+     }
+    ]
    }
   ]
  },

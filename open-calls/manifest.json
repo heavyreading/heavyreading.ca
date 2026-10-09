@@ -1,0 +1,34 @@
+{
+ "page": "/open-calls/",
+ "title": "Open Calls",
+ "dek": "Open Calls: the WCSB S&D model's live predictions with their scoring dates - the November egress wall, the Mainline apportionment nowcast, and the frozen nowcast vintages, each scored against actuals when they land.",
+ "built_at": "2026-10-09",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "November 2026: pipe spare 0 kb/d, required storage build +52.2 kb/d",
+   "vintage": "S&D balance, reconciled v2 (2026-09-27)",
+   "source": "WCSB S&D model (AER ST3, CER pipeline capacity)",
+   "source_url": "https://heavyreading.ca/balance/index.html"
+  },
+  {
+   "text": "November 2026 apportionment nowcast: 8% lights, 4% heavies, bias to the high side, partly offset by refinery maintenance and soft PADD 2 runs",
+   "vintage": "Nowcast built Oct 2026 (October announced notice, Sep 16)",
+   "source": "Apportionment page nowcast (build_apportionment.py)",
+   "source_url": "https://heavyreading.ca/apportionment/index.html"
+  },
+  {
+   "text": "13 nowcast vintages hold frozen September 2026 supply nowcasts (scoring ~late Nov 2026)",
+   "vintage": "Scorecard nowcasts, daily vintages 2026-09-23 to 2026-10-09",
+   "source": "Nowcast scorecard (scorecard_nowcast.json)",
+   "source_url": "https://heavyreading.ca/scorecard.html"
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "WCSB S&D model outputs (public data: AER, CER)",
+   "vintage": "October 2026 builds",
+   "url": "https://heavyreading.ca/sources/index.html"
+  }
+ ]
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cerebrum — Combined Signal</title>
+<script>(function(){try{var t=localStorage.getItem('hr-theme');if(t){document.documentElement.setAttribute('data-theme',t);}else if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:#faf8f4; --ink:#1e1b16; --mut:#6f675b; --faint:#a79d8d;
+    --line:#e6e1d4; --line2:#f0ece1;
+    --acc:#a13c22; --acc-deep:#7c2e1a;
+    --bull:#5c7a4e; --bull-deep:#47603c;
+    --serif:"Fraunces",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  [data-theme="dark"] {
+    --paper:#201d18; --ink:#ece6d9; --mut:#a89d89; --faint:#7e7565;
+    --line:#38332b; --line2:#2c2822;
+    --acc:#cf7150; --acc-deep:#e08a63;
+    --bull:#93a884; --bull-deep:#a9bd9a;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    background:var(--paper); color:var(--ink);
+    font-family:var(--sans); font-size:15px; line-height:1.55;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  .wrap { max-width:700px; margin:0 auto; padding:24px 20px 64px; }
+
+  /* Masthead */
+  .mast { display:flex; justify-content:space-between; align-items:center; margin-bottom:28px; }
+  .back { color:var(--mut); text-decoration:none; font-size:13px; font-weight:500; }
+  .back:hover { color:var(--ink); }
+  #themetoggle {
+    background:none; border:1px solid var(--line); border-radius:999px;
+    color:var(--mut); font-family:var(--sans); font-size:12px; font-weight:500;
+    padding:5px 14px; cursor:pointer;
+  }
+  #themetoggle:hover { color:var(--ink); border-color:var(--mut); }
+
+  h1 {
+    font-family:var(--serif); font-weight:600; font-size:30px; line-height:1.15;
+    letter-spacing:-0.01em; margin-bottom:6px;
+  }
+  .dateline { color:var(--mut); font-size:13px; margin-bottom:24px; }
+
+  /* Grade tabs — quiet segmented control */
+  .grade-tabs {
+    display:inline-flex; border:1px solid var(--line); border-radius:999px;
+    padding:3px; margin-bottom:28px; background:var(--paper);
+  }
+  .gtab {
+    border:none; background:transparent; color:var(--mut);
+    font-family:var(--sans); font-size:12px; font-weight:600;
+    letter-spacing:.08em; text-transform:uppercase;
+    padding:7px 20px; border-radius:999px; cursor:pointer;
+  }
+  .gtab.active { background:var(--ink); color:var(--paper); }
+
+  /* Net signal — the answer. Quiet, significant. */
+  .net {
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:32px 16px; text-align:center; margin-bottom:8px;
+  }
+  .net .lbl {
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--mut); font-weight:600;
+  }
+  .net .score {
+    font-family:var(--serif); font-weight:600; font-size:76px; line-height:1.1;
+    letter-spacing:-0.02em; margin:10px 0 4px;
+    font-variant-numeric:tabular-nums;
+  }
+  .net .verdict {
+    font-family:var(--serif); font-style:italic; font-size:20px; color:var(--ink);
+  }
+  .net .breakdown { color:var(--faint); font-size:12px; margin-top:10px; letter-spacing:.02em; }
+  .pos { color:var(--bull); }
+  .neg { color:var(--acc); }
+  .flat { color:var(--mut); }
+
+  /* Section headings */
+  .sect {
+    font-family:var(--serif); font-weight:600; font-size:19px;
+    margin:36px 0 4px; letter-spacing:-0.01em;
+  }
+  .sect-sub { color:var(--mut); font-size:13px; margin-bottom:8px; }
+
+  /* Factor rows — scannable, hairline-separated */
+  .factor { padding:14px 0; border-bottom:1px solid var(--line2); }
+  .factor:last-child { border-bottom:none; }
+  .factor .top { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+  .factor .fname { font-weight:600; font-size:15px; display:flex; align-items:center; gap:9px; }
+  .dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .dot.bull { background:var(--bull); }
+  .dot.bear { background:var(--acc); }
+  .dot.flat { background:var(--faint); }
+  .factor .fscore {
+    font-weight:700; font-size:16px; font-variant-numeric:tabular-nums; white-space:nowrap;
+  }
+  .factor .src {
+    font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--faint); margin-top:5px; font-weight:500;
+  }
+  .factor .src .you { color:var(--ink); }
+  .factor .why { font-size:13.5px; color:var(--mut); margin-top:6px; line-height:1.55; max-width:60ch; }
+  .factor .note {
+    font-family:var(--serif); font-style:italic; font-size:14.5px; color:var(--ink);
+    margin-top:6px;
+  }
+  .factor .note::before { content:"“"; color:var(--faint); }
+  .factor .note::after { content:"”"; color:var(--faint); }
+  .empty { color:var(--faint); font-size:14px; padding:16px 0; font-style:italic; font-family:var(--serif); }
+
+  /* Threshold */
+  .threshold {
+    border:1px solid var(--line); border-radius:6px; padding:18px 20px;
+    font-size:14px; margin-top:12px;
+  }
+  .threshold.hit { border-color:var(--bull); }
+  .threshold .t-head { font-family:var(--serif); font-weight:600; font-size:17px; margin-bottom:4px; }
+  .threshold .t-sub { color:var(--mut); font-size:13px; }
+  .threshold a { color:var(--acc); text-decoration:none; font-weight:600; }
+  .threshold a:hover { text-decoration:underline; }
+
+  /* Colophon */
+  .colophon {
+    margin-top:48px; padding-top:16px; border-top:1px solid var(--line);
+    color:var(--faint); font-size:12px; line-height:1.6;
+  }
+  .colophon .priv { font-weight:600; letter-spacing:.08em; text-transform:uppercase; font-size:11px; color:var(--mut); }
+
+  @media (max-width:480px) {
+    h1 { font-size:26px; }
+    .net .score { font-size:64px; }
+    .wrap { padding:20px 16px 56px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mast">
+    <a href="index.html" class="back">&larr; Cerebrum</a>
+    <button id="themetoggle">Dark</button>
+  </div>
+
+  <h1>Combined signal</h1>
+  <p class="dateline" id="dateLine">Your judgments + machine data</p>
+
+  <div class="grade-tabs" role="tablist" aria-label="Grade">
+    <button class="gtab active" onclick="setGrade('WCS')" role="tab">WCS</button>
+    <button class="gtab" onclick="setGrade('SCO')" role="tab">SCO</button>
+    <button class="gtab" onclick="setGrade('ALL')" role="tab">All</button>
+  </div>
+
+  <section class="net" aria-live="polite">
+    <div class="lbl">Net signal &mdash; <span id="gradeLbl">WCS</span></div>
+    <div class="score" id="netScore">&ndash;</div>
+    <div class="verdict" id="verdict">&ndash;</div>
+    <div class="breakdown" id="breakdown">&ndash;</div>
+  </section>
+
+  <h2 class="sect">Ranked factors</h2>
+  <p class="sect-sub">Ordered by absolute weighted contribution. Direction &times; impact.</p>
+  <div id="factors"></div>
+
+  <h2 class="sect">Conviction threshold</h2>
+  <div class="threshold" id="threshold"></div>
+
+  <footer class="colophon">
+    <div class="priv">Private &mdash; unscored, unvalidated</div>
+    <p>Structured reasoning, not tested signals. Machine factors score from live datasets;
+    judgment factors are yours, carried day to day. Nothing here is a trade recommendation.</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('themetoggle');
+  if (!btn) return;
+  function label(){
+    btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'Light' : 'Dark';
+  }
+  label();
+  btn.addEventListener('click', function(){
+    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    try {
+      if (dark) { document.documentElement.removeAttribute('data-theme'); localStorage.setItem('hr-theme','light'); }
+      else { document.documentElement.setAttribute('data-theme','dark'); localStorage.setItem('hr-theme','dark'); }
+    } catch (e) {
+      if (dark) document.documentElement.removeAttribute('data-theme');
+      else document.documentElement.setAttribute('data-theme','dark');
+    }
+    label();
+  });
+})();
+</script>
+
+<script>
+// Automated scores (from scorer.py — in production this comes from API)
+var autoScores = [
+  { id:"curve_roll", name:"Curve Roll (Dec–Nov)", dir:1, imp:3,
+    why:"Dec $0.81 wider than Nov, no fundamental driver. Roll-up candidate.",
+    grades:["WCS"] },
+  { id:"cracks", name:"Crack Spreads", dir:-1, imp:3,
+    why:"3-2-1 crack $63.9, down $3.5 over 5 days. Refinery margins weakening.",
+    grades:["WCS","SCO"] },
+  { id:"seasonality", name:"Seasonality", dir:-1, imp:2,
+    why:"October: fall turnaround season. Historically wide bias for WCS.",
+    grades:["WCS"] },
+  { id:"wcs_momentum", name:"WCS Momentum", dir:0, imp:1,
+    why:"Nov TMW –$0.08 — noise.", grades:["WCS"] },
+  { id:"inventories", name:"Inventories", dir:0, imp:1,
+    why:"EIA +0.9 MMbbl WoW — noise.", grades:["WCS"] },
+  { id:"wti_structure", name:"WTI Structure", dir:0, imp:1,
+    why:"Flat.", grades:["FLAT"] },
+  { id:"trump", name:"Trump Wildcard", dir:0, imp:2,
+    why:"No oil-relevant Trump news in 24h.", grades:["WCS","SCO","FLAT"] },
+  { id:"china", name:"China / Xi", dir:0, imp:3,
+    why:"No SPR/quota signals.", grades:["WCS","SCO","FLAT"] },
+  { id:"venezuela", name:"Venezuela", dir:0, imp:2,
+    why:"No flow change detected.", grades:["WCS"] },
+  { id:"opec", name:"OPEC+", dir:0, imp:1,
+    why:"Indirect for WCS. Not overweighted.", grades:["FLAT"] },
+];
+
+var currentGrade = 'WCS';
+var THRESHOLD = 10;
+
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function getManual() {
+  try {
+    if (typeof localStorage === 'undefined') return [];
+    var out = [];
+    for (var i = 0; i < localStorage.length; i++) {
+      var k = localStorage.key(i);
+      if (k.indexOf('tm_20') !== 0) continue;
+      var data = JSON.parse(localStorage.getItem(k));
+      Object.keys(data).forEach(function (fname) {
+        var r = data[fname];
+        if (r.direction !== 0) out.push({
+          name: r.factor + ' — your call',
+          dir: r.direction, imp: 3,
+          grades: r.grades && r.grades.length ? r.grades : ['WCS'],
+          note: r.note, manual: true,
+          date: k.replace('tm_','')
+        });
+      });
+    }
+    return out;
+  } catch (e) { return []; }
+}
+
+function setGrade(g) {
+  currentGrade = g;
+  document.querySelectorAll('.gtab').forEach(function (b) {
+    b.classList.toggle('active', b.textContent.trim().toUpperCase() === g ||
+      (g === 'ALL' && b.textContent.trim().toLowerCase() === 'all'));
+  });
+  render();
+}
+
+function matchesGrade(f) {
+  if (currentGrade === 'ALL') return true;
+  return f.grades.indexOf(currentGrade) !== -1 || f.grades.indexOf('ALL') !== -1;
+}
+
+function render() {
+  var manual = getManual();
+  var all = autoScores.concat(manual).filter(matchesGrade);
+  // Sort by absolute weighted score
+  all.sort(function (a, b) {
+    return Math.abs(b.dir * b.imp) - Math.abs(a.dir * a.imp);
+  });
+  var net = all.reduce(function (s, f) { return s + f.dir * f.imp; }, 0);
+
+  var sc = document.getElementById('netScore');
+  sc.textContent = (net >= 0 ? '+' : '') + net;
+  sc.className = 'score ' + (net > 3 ? 'pos' : net < -3 ? 'neg' : 'flat');
+  document.getElementById('gradeLbl').textContent = currentGrade === 'ALL' ? 'All grades' : currentGrade;
+  var v = document.getElementById('verdict');
+  var glabel = currentGrade === 'ALL' ? '' : ' ' + currentGrade;
+  v.textContent = net > 3 ? 'Bullish' + glabel : net < -3 ? 'Bearish' + glabel : 'Neutral / mixed';
+  v.className = 'verdict ' + (net > 3 ? 'pos' : net < -3 ? 'neg' : 'flat');
+
+  var nAuto = all.filter(function (f) { return !f.manual; }).length;
+  var nMan = all.filter(function (f) { return f.manual; }).length;
+  document.getElementById('breakdown').textContent =
+    all.length + ' factors · ' + nAuto + ' machine · ' + nMan + ' your calls';
+  document.getElementById('dateLine').textContent =
+    new Date().toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric' })
+    + ' — your judgments + machine data';
+
+  var fh = all.map(function (f) {
+    var w = f.dir * f.imp;
+    var dcls = f.dir > 0 ? 'bull' : f.dir < 0 ? 'bear' : 'flat';
+    var sc2 = f.dir > 0 ? 'pos' : f.dir < 0 ? 'neg' : 'flat';
+    var dirWord = f.dir > 0 ? 'Bullish' : f.dir < 0 ? 'Bearish' : 'Neutral';
+    return '<div class="factor"><div class="top">'
+      + '<span class="fname"><span class="dot ' + dcls + '" aria-hidden="true"></span>' + esc(f.name) + '</span>'
+      + '<span class="fscore ' + sc2 + '">' + (w >= 0 ? '+' : '') + w + '</span></div>'
+      + '<div class="src">' + (f.manual ? '<span class="you">Your call</span>' + (f.date ? ' · ' + esc(f.date) : '') : 'Machine')
+      + ' · ' + dirWord + ' · weight ' + f.imp
+      + ' · ' + f.grades.map(esc).join(', ') + '</div>'
+      + (f.why ? '<div class="why">' + esc(f.why) + '</div>' : '')
+      + (f.note ? '<div class="note">' + esc(f.note) + '</div>' : '')
+      + '</div>';
+  }).join('');
+  document.getElementById('factors').innerHTML = fh || '<p class="empty">No factors scored for this grade yet.</p>';
+
+  var th = document.getElementById('threshold');
+  var anet = Math.abs(net);
+  if (anet >= THRESHOLD) {
+    th.classList.add('hit');
+    th.innerHTML = '<div class="t-head ' + (net > 0 ? 'pos' : 'neg') + '">Threshold crossed</div>'
+      + '<div class="t-sub">' + (net >= 0 ? '+' : '') + net + ' vs ±' + THRESHOLD
+      + ' — this meets the big-trade bar. '
+      + '<a href="calls/index.html">View suggested ticket &rarr;</a></div>';
+  } else {
+    th.classList.remove('hit');
+    th.innerHTML = '<div class="t-head">Below threshold</div>'
+      + '<div class="t-sub">Net ' + (net >= 0 ? '+' : '') + net + ' vs ±' + THRESHOLD
+      + ' — no high-conviction setup. ' + (THRESHOLD - anet) + ' points away.</div>';
+  }
+}
+
+render();
+</script>
+</body>
+</html>

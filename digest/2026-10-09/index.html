@@ -344,11 +344,6 @@ details.riskfold .rs-sub { color:var(--mut); font-size:13px; }
 table.facts td:first-child { font-weight:600; width:34%; color:#3a352c; }
 .tblnote { font-size:12px; color:var(--mut); margin:8px 0 0; max-width:68ch;
   line-height:1.6; }
-/* thin-sample badge: quiet pill flagging stats computed from n < 30.
-   Sits muted until needed - a reader should not over-read a thin number. */
-.nbadge { font-size:11px; color:var(--faint); border:1px solid var(--line);
-  border-radius:999px; padding:1px 8px; margin-left:6px; white-space:nowrap;
-  font-weight:400; }
 
 /* executive call: a red hairline, not a box */
 .exec { margin:28px 0; padding:2px 0 2px 20px; border-left:2px solid var(--acc); }
@@ -625,73 +620,6 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
-
-/* Arb Watch: spot arb table. Shared stylesheet, not a fork. */
-.arb-table { border-collapse:collapse; width:100%; margin:18px 0; font-size:13px; }
-.arb-table th, .arb-table td { border-bottom:1px solid var(--line); padding:8px 10px; text-align:right; }
-.arb-table th { color:var(--mut); font-weight:600; font-size:12px; }
-.arb-table td:first-child, .arb-table th:first-child { text-align:left; }
-.arb-table td.allin { font-weight:600; }
-.arb-table tr.arb-open td { background:color-mix(in srgb, var(--ch-green) 8%, transparent); }
-.arb-table tr.arb-shut td { background:color-mix(in srgb, var(--ch-red) 6%, transparent); }
-.arb-flag { font-weight:700; font-size:11px; padding:3px 8px; border-radius:4px; }
-tr.arb-open .arb-flag { background:var(--ch-green); color:#fff; }
-tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
-.alert-banner { border:1px solid var(--ch-green); border-left:4px solid var(--ch-green);
-  padding:12px 16px; margin:18px 0; background:color-mix(in srgb, var(--ch-green) 6%, transparent); }
-.quiet-banner { border:1px solid var(--line); border-left:4px solid var(--mut);
-  padding:12px 16px; margin:18px 0; }
-
-/* Arb Watch: daily update badge. */
-.daily-badge { display:flex; align-items:center; gap:8px; font-size:13px;
-  color:var(--mut); margin:0 0 16px; }
-.daily-dot { width:8px; height:8px; border-radius:50%; background:var(--ch-green);
-  flex-shrink:0; }
-
-/* Arb Watch: horizontal scroll on narrow screens. */
-.arb-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:18px -16px; padding:0 16px; }
-.arb-scroll table { min-width:640px; }
-@media (min-width:760px) { .arb-scroll { margin:18px 0; padding:0; } .arb-scroll table { min-width:0; } }
-
-/* Arb Watch: pipeline status map. */
-.pipe-map-wrap { margin:24px 0; }
-.pipe-map { width:100%; height:auto; display:block; }
-.map-region { font-size:11px; fill:#94a3b8; letter-spacing:2px; font-weight:600; }
-.map-grid-label { font-size:10px; fill:#cbd5e1; }
-.node-label { font-size:13px; fill:#1e293b; font-weight:600; }
-.badge-text { font-size:12px; fill:#1e293b; font-weight:600; }
-.pipe { transition:stroke 0.3s; }
-.map-controls { display:flex; align-items:center; gap:12px; margin-top:12px; }
-.slider-label { font-size:13px; color:var(--mut); font-weight:600; }
-.tenor-slider { flex:1; accent-color:var(--acc); }
-.tenor-display { font-size:13px; font-weight:600; min-width:140px; }
-
-/* Trade calls (private): checklist and banners. */
-.private-banner { background:#1e293b; color:#f8fafc; padding:12px 16px;
-  border-radius:8px; margin:0 0 20px; font-size:13px; }
-.private-banner strong { color:#fbbf24; }
-.checklist { display:grid; gap:16px; margin:20px 0; }
-.check-item { border:1px solid var(--line); border-radius:8px; padding:14px 16px; }
-.check-item h4 { margin:0 0 6px; font-size:14px; display:flex; align-items:center; gap:8px; }
-.check-item .flag { font-size:10px; padding:2px 8px; border-radius:4px; font-weight:700;
-  background:var(--line); color:var(--mut); }
-.check-item .flag.on { background:var(--ch-green); color:#fff; }
-.no-calls { border:1px dashed var(--line); border-radius:8px; padding:20px;
-  margin:16px 0; text-align:center; }
-
-.framework-box { background:var(--bg-subtle, #f8fafc); border:1px solid var(--line);
-  border-left:4px solid var(--acc); border-radius:0 8px 8px 0;
-  padding:16px 20px; margin:20px 0; }
-.framework-box h3 { margin:0 0 10px; font-size:15px; }
-.framework-box p { margin:8px 0; }
-.grade-tag { font-size:10px; padding:2px 6px; border-radius:3px; font-weight:600; background:#dbeafe; color:#1e40af; }
-.machine-nav { margin: 24px 0; }
-.machine-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 12px; }
-.machine-link { display: block; padding: 16px; border: 1px solid var(--ch-border); border-radius: 8px; text-decoration: none; color: inherit; transition: border-color 0.2s; }
-.machine-link:hover { border-color: var(--ch-blue); }
-.machine-link strong { display: block; font-size: 16px; margin-bottom: 4px; }
-.machine-link span { font-size: 13px; color: var(--ch-muted); }
-@media (max-width: 600px) { .machine-links { grid-template-columns: 1fr 1fr; } }
 </style>
 </head>
 <body>
