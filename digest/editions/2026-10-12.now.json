@@ -1,0 +1,86 @@
+{
+ "calendar": [
+  {
+   "date": "2026-10-12",
+   "impact": "Next physical number on the Isaias restart; ~1.5 Mb/d of Gulf oil comes back over days if power restoration allows. Florida Power & Light aims for 95% restoration by end of Monday.",
+   "title": "BSEE Gulf shut-in update (Monday)"
+  },
+  {
+   "date": "2026-10-06",
+   "impact": "Bids went in Oct 6 (11:00 a.m. CT); a clean award prices 40 Mbbl of medium sour into the Gulf for Nov-Dec delivery. No award announced yet. Separately, DOE authorized a 4 Mbbl emergency SPR exchange Oct 10 (2 Mbbl each to ExxonMobil, BP America) for Isaias disruptions.",
+   "title": "SPR 40-million-barrel exchange award (pending)"
+  },
+  {
+   "date": "2026-10-14",
+   "impact": "First EIA weekly print with the Isaias shut-in week in it; w/e Oct 2 showed a surprise 3.19 Mb crude draw.",
+   "title": "EIA Weekly Petroleum Status Report (w/e Oct 9)"
+  },
+  {
+   "date": "2026-10-19",
+   "impact": "Decides whether the binding-from-November base case is right; December TMW already pricing the seasonal wide (-$25.60).",
+   "title": "November Mainline apportionment notice (~mid-October)"
+  },
+  {
+   "date": "2026-11-01",
+   "impact": "Next scheduled OPEC+ meeting; quotas are not the constraint, actual supply is.",
+   "title": "OPEC+ meeting"
+  }
+ ],
+ "call_vintage": "as of Mon Oct 12, 02:40 MDT",
+ "changes": [
+  {
+   "balance": "The war premium has two-way risk. The market sold ~$1.50 on the ceasefire announcement, but the announcement has no terms, Russia is silent, and Zelenskiy is awaiting details - the pullback is an announcement trade, not loadings. Against it, the Hormuz incident rate is accelerating (second straight night of US strikes, three more tanker hits Sunday) and the Houthi airport campaign is now lethal - a premium-carrying market with catch-up fuel if escalation surprises, and a flush risk concentrated on any confirmed de-escalation. WTI specs are light (29th percentile) into the two-way risk.",
+   "body": "Sunday's double move. Trump posted on Truth Social that Russia and Ukraine had agreed to an energy ceasefire effective immediately - no terms, the White House did not clarify, Russia has not commented, and Zelenskiy said he is still awaiting details while offering to halt refinery strikes if Moscow stops hitting Ukrainian energy infrastructure. The overnight tape sold the announcement: WTI Nov26 $90.83 (-$1.02), Brent Dec26 $103.87 (-$0.85) as of ~01:51 MDT, with Reuters naming the ceasefire as the driver. But the Gulf war widened Sunday: US forces struck Iranian military sites near the Strait (Bandar Abbas, Qeshm Island, Jask, Sirik) - the second consecutive night after ~140 targets hit the night before (CENTCOM via CBS) - while the IRGC's tanker campaign accelerated: the MT Petro Dolphin hit by drone at Sohar Anchorage (two Indian seafarers missing, 11 of 13 rescued), the VLCC Angola Prosperity hit port-side in the Strait (crew safe), and a Cyprus-flagged container ship attacked. The Houthi airport campaign is now lethal: Saturday's missile on Riyadh's King Khalid airport killed 12 and injured 309 (Saudi GACA), a second attack hit the airport Sunday, Dammam airport was hit too, and Trump said Saturday the US is considering joining Saudi strikes against the Houthis.",
+   "conditional": "Russia confirms ceasefire terms -> diesel leg breaks, pullback extends; escalation on Saudi oil facilities -> premium rebuilds fast",
+   "confirmation": "single-source",
+   "date": "2026-10-12",
+   "delta": "Trump announced a Russia-Ukraine energy ceasefire Sunday (no terms, Russia silent, Zelenskiy conditional); overnight tape sold ~$1.50 on both legs; second straight night of US strikes on Iran (Bandar Abbas, Qeshm, Jask, Sirik); three more tanker hits Sunday (Petro Dolphin drone strike at Sohar with 2 missing, Angola Prosperity in Hormuz); Houthi airport campaign lethal (Riyadh airport Sat: 12 dead/309 injured, 2nd attack Sun, Dammam hit)",
+   "source": "Truth Social/TNND, Oct 11, 2026; Reuters, Oct 11-12, 2026; CENTCOM via CBS, Oct 11-12, 2026; oilprice.com citing Argus, Oct 11, 2026; Seatrade Maritime, Oct 11, 2026; Reuters via tbsnews, Oct 12, 2026",
+   "title": "Energy ceasefire announced, unverified; tape sells the announcement as Gulf war widens",
+   "vintage": "Oct 11-12, 2026"
+  },
+  {
+   "balance": "The diesel deal's paper is weaker than the headline: GL-135 names no volumes or buyers, does not expressly repeal the 2022 statutory import ban (Congress objecting), Moscow's own export ban runs through October, Kyiv says strikes continue unless Moscow stops. Trump's tonnage terms (300k+ tons immediate, 500k November, 1M after) are the only concrete numbers, and nothing has loaded. The crack leg is the fragile one: the diesel paper sells into physical diesel stocks at a 44-year seasonal low.",
+   "body": "The diesel crack held above $100 at $102.73 in the overnight session (validated history, refreshed Oct 12) - the sixth day above $100 (34 total days; all-time max $117.92, Sep 16). The 3-2-1 reads $61.05 (max $75.31, Aug 28). ICE gasoil fell 3% to $1,436/tonne on the Russian diesel-supply announcement (Reuters). No loading reports as of this run - announcements are not loadings.",
+   "conditional": "First Russian diesel loading -> crack leg breaks; no loadings plus escalation -> $100+ regime extends",
+   "confirmation": "confirmed",
+   "date": "2026-10-12",
+   "delta": "Diesel crack $102.73 (overnight session, 6th day above $100, not a record); ICE gasoil -3% to $1,436/t on the Russian diesel-supply announcement; no loadings reported",
+   "source": "Validated crack history, refreshed Oct 12, 2026; MM News citing Reuters, Oct 12, 2026",
+   "title": "Diesel crack holds $100+ but prices the ceasefire before loadings",
+   "vintage": "Oct 12, 2026"
+  },
+  {
+   "balance": "The Joliet restart did not rebound the diff, so the outage was not the driver - freight is the measurable fact (TD3C WS 1058, TD9 WS 681, age-labeled). Barrels that cannot clear east at extreme freight have to price down to clear at a long USGC: arb-clearing dynamics, not a refinery story. The November Mainline apportionment notice (~Oct 19) is the next real observation for the binding-from-November base case.",
+   "body": "Canadian diffs (ICE, Oct 9): TMW Nov26 -$24.78, Dec26 -$25.60 still the widest tenor; ARV Nov26 -$16.04; ARV-TMW November +$8.74, the implied export arb, still healthy. Physical WCS Nov26 traded -25.25 to -25.55 on 210,000 m3 Friday: the screen is flattering November while the physical prices the seasonal wide. The strip move of the day: C5 Dec26 +$6.00 (+$2.15) - the winter diluent bid showing up hard in the condensate strip. EIA w/e Oct 2 (released Oct 7): US crude -3.19 Mb to 424.1M (vs +1.7M expected), Cushing +0.44M to 24.7M, util 92.7%, PADD 2 crude 107.0M. The Sep 25 row was backfilled this run from the EIA Table 4 archive (PADD 2 crude 105.1M +1.0).",
+   "conditional": "November apportionment notice (~Oct 19) binds -> December wide extends; SPR 40 Mbbl award -> Gulf sour repriced for Nov-Dec",
+   "confirmation": "confirmed",
+   "date": "2026-10-12",
+   "delta": "TMW Nov26 -$24.78 / Dec26 -$25.60 (ICE, Oct 9); physical WCS Nov26 -$25.55 (Oct 9), 77c wider than the thin screen; C5 Dec26 +$6.00 (+$2.15); EIA w/e Oct 2 surprise 3.19M crude draw; DOE authorized 4 Mbbl emergency SPR exchange Oct 10",
+   "source": "ICE Report Center EOD, Oct 9, 2026; EIA WPSR released Oct 7, 2026; energy.gov, Oct 10, 2026",
+   "title": "WCS physical wider than screen; freight still the driver; C5 Dec jumps",
+   "vintage": "Oct 9-12, 2026"
+  }
+ ],
+ "edition": "2026-10-12",
+ "flags": [
+  {
+   "title": "Energy ceasefire unconfirmed; no diesel loadings",
+   "body": "The ceasefire has no published terms; Russia has not commented; Zelenskiy is awaiting details. No Russian diesel loadings reported under GL-135. The overnight tape sold ~$1.50 on the announcement, but the pullback is an announcement trade. Nuttall weekly inventory numbers unlocatable for the seventh straight run.",
+   "trigger": "Russia confirms ceasefire terms, or a Russian diesel cargo loads",
+   "expires": "2026-10-19"
+  },
+  {
+   "title": "Crack vintage is the overnight session, not a closed day",
+   "body": "The validated crack historys latest row is the Sunday-evening/Monday-overnight session (bars stamped Oct 12, 04:00 UTC): diesel $102.73, sixth day above $100, all-time max $117.92 (Sep 16). No Monday BSEE shut-in data was available in this runs window; Fridays read (~71.5% of Gulf oil, ~1.5 Mb/d) stands.",
+   "trigger": "Mondays NYMEX close and BSEE update",
+   "expires": "2026-10-13"
+  },
+  {
+   "title": "Weekend marks carry; no new settles",
+   "body": "No new ICE settles or CalRock marks over the weekend - Oct 9 marks carry (TMW Nov26 -$24.78, Dec26 -$25.60; physical WCS Nov26 -$25.55). The IRGC mine-strike claim on an unidentified supertanker is unconfirmed (the US says all mines were cleared); the warning to vessels with navigation systems off is on the record. August ST53 data still unpublished (was due the first week of October).",
+   "trigger": "New ICE settles or CalRock marks publish",
+   "expires": "2026-10-13"
+  }
+ ]
+}
