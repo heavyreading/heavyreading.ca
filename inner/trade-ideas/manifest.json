@@ -1,7 +1,7 @@
 {
  "page": "/inner/trade-ideas/",
  "title": "Trade ideas",
- "dek": "Inner trade ideas: five trades on one freight regime, with contract selection, carry math, expected moves, and drawdown-capped sizing.",
+ "dek": "Inner trade ideas: five trades on one freight regime, sized from a framework that requires 3 to 5 carrier trades a year, plus the bigger-trades candidate pipeline.",
  "built_at": "2026-10-12",
  "generator": "heavyreading-manifest/1",
  "claims": [
@@ -24,7 +24,7 @@
    "source_url": ""
   },
   {
-   "text": "TMW December 2026 to January 2027 roll on ICE settles: +0.95 on September 30, 2026, +1.30 on October 9 (full series printed on the page; October 12 file carries October 9 values at zero volume), against roughly $0.90/bbl of full carry. Synthetic crude minus WCS spread: +27.15 (September 30) to +31.24 (October 9) on ICE November settles; +30.30 (October 2) to +35.30 (October 9) on November CalRock marks.",
+   "text": "TMW December 2026 to January 2027 calendar spread on ICE settles: +0.95 on September 30, 2026, +1.30 on October 9 (full series printed on the page; October 12 file carries October 9 values at zero volume), against roughly $0.90/bbl of full carry. Synthetic crude minus WCS spread: +27.15 (September 30) to +31.24 (October 9) on ICE November settles; +30.30 (October 2) to +35.30 (October 9) on November CalRock marks.",
    "vintage": "ICE settlements and CalRock marks, September 30 to October 9, 2026",
    "source": "ICE Endex report center; CalRock broker marks (private)",
    "source_url": ""
@@ -39,6 +39,24 @@
    "text": "OFAC General License 135 issued October 9, 2026, expires April 7, 2027, names no volumes, buyers, or counterparties.",
    "vintage": "OFAC index, verified October 12, 2026",
    "source": "United States Office of Foreign Assets Control",
+   "source_url": ""
+  },
+  {
+   "text": "Egress strip candidate: short TMW December 2026 to February 2027 (settles -25.60, -24.30, -22.45; 1,560 lots combined volume, October 9, 2026). Static sizing caps near 120 lots per month at the $1M risk ceiling; carrier scale ($3.0M expected) exists only as a staged build to 450 lots per month. The balance model shows pipeline spare capacity positive in every month of 2027, so the candidate is a winter 2026-27 trade.",
+   "vintage": "ICE settlements October 9, 2026; balance model vintage September 28, 2026",
+   "source": "ICE Endex report center; WCSB S&D model (Heavy Reading)",
+   "source_url": ""
+  },
+  {
+   "text": "Diesel crack $102.73 on October 12, 2026, sixth straight day above $100; 34 days above $100 in the validated history; all-time maximum $117.92 (September 16, 2026). The crack ladder candidate arms only on ceasefire confirmation rungs; at 150 to 200 lots and a $20 to $25 realized compression it pays $3.0M to $5.0M.",
+   "vintage": "Daily digest validated crack history, October 12, 2026",
+   "source": "Heavy Reading daily digest; projections log EXP-2026-001 and EXP-2026-002",
+   "source_url": ""
+  },
+  {
+   "text": "Storage event candidate examined and dropped: the balance model holds inventory flat at 58,720 thousand barrels with 21,896 thousand barrels of ullage in every forecast month through December 2027; no month approaches tank tops.",
+   "vintage": "Balance model vintage September 28, 2026",
+   "source": "WCSB S&D model (Heavy Reading)",
    "source_url": ""
   }
  ],
@@ -66,6 +84,16 @@
   {
    "publisher": "United States Office of Foreign Assets Control",
    "vintage": "General License 135, October 9, 2026",
+   "url": ""
+  },
+  {
+   "publisher": "Heavy Reading daily digest",
+   "vintage": "validated diesel crack history, October 12, 2026",
+   "url": ""
+  },
+  {
+   "publisher": "WCSB apportionment scorecard (Heavy Reading)",
+   "vintage": "walk-forward backtest, October 2026",
    "url": ""
   }
  ]
