@@ -734,6 +734,18 @@ table.data.ti-book td.ti-status.down{color:var(--mut);font-weight:400}
 </tbody>
 </table></div>
 <p>The sensitivity, stated plainly: if the year's biggest trades reach only $2M each, the same calendar nets roughly $12M. If no trade exceeds $1M, it nets in the mid single digits however well the small trades are run. That is why the candidates section of this page exists, and why carrier candidates are designed in advance: their arming windows are short, and a $3M to $5M trade cannot be improvised inside one.</p>
+<h3>The targeting solve</h3>
+<p>The solve runs on plan-case inputs, stated as what they are: <strong>starting assumptions</strong>. A hit rate of 55 percent, an average win of about $2.5M, an average loss of about $450,000, and about 18 trades a year. The book opens on assumptions because it has to size tonight's positions with no closed trades behind it; they are not results, and nothing on this page treats them as measured. As trades close, the trailing measured rates replace them, and the basis of the solve flips from assumed to measured at ten closes.</p>
+<div class="tblwrap"><table class="data">
+<thead><tr><th>Hit rate</th><th>Expectancy per trade</th><th>Trades for $15M</th><th>Trades for $20M</th></tr></thead>
+<tbody>
+<tr><td>55 percent (plan case)</td><td class="num">$1.17M</td><td>about 13</td><td>about 17</td></tr>
+<tr><td>50 percent</td><td class="num">$1.03M</td><td>about 15</td><td>about 20</td></tr>
+<tr><td>45 percent</td><td class="num">$0.88M</td><td>about 17</td><td>about 23</td></tr>
+</tbody>
+</table></div>
+<p>Expectancy is the hit rate times the average win, less the miss rate times the average loss, at the plan-case win and loss sizes. On the plan case the verdict is <strong>on plan</strong>: about 17 trades reaches $20M, inside the 15 to 20 a year offers. At a 45 percent hit rate the bottom of the range still fits the flow but the top needs about 23 trades, more than the year offers; the gap is then closed in size, roughly 1.15 to 1.3 times on the same structures and only while that size stays inside the risk caps, or the achievable range restates.</p>
+<p>The calibration rule: the $15-25M target is <strong>fixed</strong>. It changes only by explicit decision, never by drift, and the assumptions retire as the measured rates accumulate. Each monthly vintage recomputes the solve on trailing closed trades, and when the solve falls short the levers move in order: trade count first, up to what the year actually offers; then size, within the caps, toward mechanisms with measured expectancy; then an honest restatement of the achievable range. Recalibration happens at vintages, never by sizing up mid-drawdown, and the drawdown governor overrides the targeting math: at a book drawdown of $1.5M, all new risk halves whatever the solve says. The live solve, on measured figures as trades close, is kept in the <a href="../trade-log/index.html#targeting">trade log's targeting box</a>.</p>
 <h3>The tiers</h3>
 <div class="tblwrap"><table class="data">
 <tbody>
