@@ -1,0 +1,66 @@
+{
+ "page": "/inner/trade-ideas/",
+ "title": "Trade ideas",
+ "dek": "Inner trade ideas: five trades on one freight regime, with contract selection, carry math, expected moves, and drawdown-capped sizing.",
+ "built_at": "2026-10-12",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "ICE December 2026, October 9, 2026 settles: TMW -25.60 (180 lots), TMR -2.50 (30 lots), TMS +4.65 (0 lots). November contracts are in their settlement window and traded zero volume.",
+   "vintage": "ICE end-of-day settlements, October 9, 2026",
+   "source": "ICE Endex report center",
+   "source_url": ""
+  },
+  {
+   "text": "WCS carry math on October 9, 2026 marks: implied WCS outright December $65.16, January $65.23, a $0.07 deferral premium against roughly $0.90/bbl full carry (storage plus financing). Gap about $0.85/bbl.",
+   "vintage": "CalRock marks, October 9, 2026",
+   "source": "CalRock broker marks (private); house carry construction",
+   "source_url": ""
+  },
+  {
+   "text": "S&D model: supply 4,866 kb/d October 2026 rising to 5,167 November and 5,213 December; 52 kb/d (November) and 95 kb/d (December) carried as requiring a price response; pipeline spare capacity zero.",
+   "vintage": "Model build of September 27-28, 2026",
+   "source": "WCSB S&D model (Heavy Reading)",
+   "source_url": ""
+  },
+  {
+   "text": "SYN minus WCS reversion test on 2025 CalRock marks: Sharpe 1.10 net, hit rate 43.2 percent, half-life about 9.5 trading days, max drawdown -$2.75 against +$4.85 total. Spread at +31.24 (ICE, October 9, 2026) against a 2025 range of +7.25 to +15.00; rule stood down, no current-regime 60-day band exists.",
+   "vintage": "2025 marks; refreshed October 12, 2026",
+   "source": "CalRock broker marks (private)",
+   "source_url": ""
+  },
+  {
+   "text": "OFAC General License 135 issued October 9, 2026, expires April 7, 2027, names no volumes, buyers, or counterparties.",
+   "vintage": "OFAC index, verified October 12, 2026",
+   "source": "United States Office of Foreign Assets Control",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "ICE Endex",
+   "vintage": "settlements, October 9, 2026",
+   "url": ""
+  },
+  {
+   "publisher": "CalRock broker marks (private)",
+   "vintage": "marks, October 9, 2026",
+   "url": ""
+  },
+  {
+   "publisher": "WCSB S&D model (Heavy Reading)",
+   "vintage": "build of September 27-28, 2026",
+   "url": ""
+  },
+  {
+   "publisher": "TMX waterfall model (Heavy Reading)",
+   "vintage": "model read, October 10, 2026",
+   "url": ""
+  },
+  {
+   "publisher": "United States Office of Foreign Assets Control",
+   "vintage": "General License 135, October 9, 2026",
+   "url": ""
+  }
+ ]
+}
