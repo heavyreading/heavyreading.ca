@@ -2,9 +2,15 @@
  "page": "/world/sour/",
  "title": "The Global Sour Barrel",
  "dek": "The sour grades WCS competes with, Dubai, Mars, Merey: how they are priced, and what moves the arb.",
- "built_at": "2026-10-10",
+ "built_at": "2026-10-12",
  "generator": "heavyreading-manifest/1",
  "claims": [
+  {
+   "text": "CME public settlement data for the Mars (Argus) vs WTI trade-month spread showed November 2026 settling at a $1.90 per barrel premium on Oct 8, up 18 cents on the day, with October 2026 at $1.75. The positive premium is a partial unwind of the late-September freight-driven softness against WTI, but it remains well off the March crisis premium above $4, per the watch's earlier Argus-cited readings.",
+   "vintage": "Data: settlements through Oct 8, 2026; accessed 2026-10-12",
+   "source": "CME Group",
+   "source_url": "https://www.cmegroup.com/markets/energy/crude-oil/mars-crude-oil-argus-vs-wti-trade-month-spread-swap-futures.settlements.html"
+  },
   {
    "text": "Mars crude, the Louisiana medium sour grade, weakened further against West Texas Intermediate (WTI) as rising shipping costs for US-to-Asia routes narrowed the export arb, per Bloomberg reporting on Sep 24. The move makes freight the deciding variable on whether US Gulf sours clear locally or sail to Asia.",
    "vintage": "Sep 24, 2026; published Sep 24, 2026; accessed 2026-09-28",
@@ -34,6 +40,12 @@
    "vintage": "Aug/Sep 2026 issue; accessed 2026-09-24",
    "source": "Petroleum Economist (Aug/Sep 2026 issue)",
    "source_url": "https://www.petroleum-economist.com/magazine/2026/augustseptember-2026/forward-intelligence/why-all-eyes-should-be-on-the-brent-dubai-spread/"
+  },
+  {
+   "text": "Quantum Commodity Intelligence reported Dubai crude racing higher midweek with Asia distillate cracks rising (its Oct 8 East of Suez note), then easing from its weekly highs on Friday as fears over US military strikes receded. Per QCI's two notes, Dubai premiums are still trading headlines on Middle East security rather than physical spot demand.",
+   "vintage": "Published Oct 8-9, 2026; accessed 2026-10-12",
+   "source": "Quantum Commodity Intelligence",
+   "source_url": "https://www.qcintel.com/article/east-of-suez-dubai-eases-from-oct-highs-asia-naphtha-extends-run-74867.html"
   },
   {
    "text": "Reuters reported on Oct 5 that Saudi Aramco set the November Arab Light official selling price (OSP) to Asia at $5.00 per barrel below the Oman/Dubai average, a $3 per barrel cut from October and the widest discount since June 2020, against expectations of a $3 per barrel hike in a Reuters survey. Arab Medium and Arab Heavy were cut by $5 each, while November OSPs for northwest Europe were raised $3 across all grades after exports resumed from the Red Sea port of Yanbu, and US prices were left unchanged. Aramco had looked at offering discounts to compensate buyers for record freight rates and protect market share after the regional conflict hit exports, per people familiar with the matter. This reverses the early-September announcement that had set November Arab Light to Asia at $4.00 per barrel over Oman/Dubai.",
@@ -76,6 +88,12 @@
    "vintage": "Reported Aug 28, 2026; accessed 2026-09-24",
    "source": "Rigzone (citing Bloomberg)",
    "source_url": "https://www.rigzone.com/news/wire/iraq_to_deliver_oil_beyond_hormuz-28-aug-2026-184479-article/"
+  },
+  {
+   "text": "Reuters reported on Oct 9 that record tanker freight rates are putting US crude out of reach for Asian refiners, with a very large crude carrier (VLCC) from the Gulf of Mexico to China for November quoted at $80 million this week (Simpson, Spence & Young data on LSEG), closing the US-to-Asia arb. Asian refiners are switching to alternatives from the Middle East and Latin America, and the Murban premium rebounded to over $11 a barrel to Dubai quotes on Thursday, per Reuters. Japanese refiner Cosmo Oil provisionally chartered a VLCC for $81 million to load US oil on Nov 19-21, one of the priciest fixtures on record.",
+   "vintage": "Published Oct 9, 2026; accessed 2026-10-12",
+   "source": "Reuters (via BOE Report)",
+   "source_url": "https://boereport.com/2026/10/08/soaring-freight-rates-threaten-asias-appetite-for-us-crude/"
   },
   {
    "text": "Sparta Commodities' market outlook dated Sep 30 reported that the US Strategic Petroleum Reserve (SPR) offered 40 million barrels of sour grades under FY26 RFP #4 for delivery in November and December 2026, split 20 million each from Bryan Mound and Big Hill, with bids due Oct 6. The first replacement window for Bryan Mound is Q2 2027 at a 7.5% volumetric interest rate, and Jun-Sep 2027 at 9.5% for Big Hill, versus a minimum 18% on the earlier FY26 Release #2. Sparta's read is that the release should keep US Gulf Coast medium grades under pressure for the balance of the year, and it looks for Mars December FOB to drop below $1 per barrel, revisiting levels last seen in early August. Treat as a trader outlook, not a newsroom report.",
@@ -158,6 +176,11 @@
  ],
  "sources": [
   {
+   "publisher": "CME Group",
+   "vintage": "",
+   "url": "https://www.cmegroup.com/markets/energy/crude-oil/mars-crude-oil-argus-vs-wti-trade-month-spread-swap-futures.settlements.html"
+  },
+  {
    "publisher": "MNI (carrying Bloomberg)",
    "vintage": "",
    "url": "https://www.mnimarkets.com/articles/mars-crude-wti-discount-widens-as-us-to-asia-shipping-costs-rise-1790278711854"
@@ -176,6 +199,11 @@
    "publisher": "Petroleum Economist (Aug/Sep 2026 issue)",
    "vintage": "",
    "url": "https://www.petroleum-economist.com/magazine/2026/augustseptember-2026/forward-intelligence/why-all-eyes-should-be-on-the-brent-dubai-spread/"
+  },
+  {
+   "publisher": "Quantum Commodity Intelligence",
+   "vintage": "",
+   "url": "https://www.qcintel.com/article/east-of-suez-dubai-eases-from-oct-highs-asia-naphtha-extends-run-74867.html"
   },
   {
    "publisher": "Reuters (via gCaptain)",
@@ -211,6 +239,11 @@
    "publisher": "Rigzone (citing Bloomberg)",
    "vintage": "",
    "url": "https://www.rigzone.com/news/wire/iraq_to_deliver_oil_beyond_hormuz-28-aug-2026-184479-article/"
+  },
+  {
+   "publisher": "Reuters (via BOE Report)",
+   "vintage": "",
+   "url": "https://boereport.com/2026/10/08/soaring-freight-rates-threaten-asias-appetite-for-us-crude/"
   },
   {
    "publisher": "Sparta Commodities",

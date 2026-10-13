@@ -1,0 +1,55 @@
+{
+ "page": "/inner/tmx-waterfall/",
+ "title": "TMX waterfall",
+ "dek": "TMX waterfall: monthly allocation of Trans Mountain heavy barrels to California, China, South Korea, Japan, and India, plus the Pacific Northwest sweet toggle, ranked by refinery netback. Marginal barrel economics and tripwires for the next trading cycle.",
+ "built_at": "2026-10-12",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "October 2026: California netback $46.33/bbl (50 kbd cap), China $35.38/bbl (no demand cap; availability binds). PNW excluded from heavy: PNW refineries cannot run heavy, modeled as sweet toggle.",
+   "vintage": "October 2026 model read, built 2026-10-10",
+   "source": "TMX waterfall model v5",
+   "source_url": ""
+  },
+  {
+   "text": "California's edge over Maya is $1.91/bbl; a $2 move flips California demand to Maya.",
+   "vintage": "October 2026 model read, built 2026-10-10",
+   "source": "TMX waterfall model v3",
+   "source_url": ""
+  },
+  {
+   "text": "December 2026 PROJECTION: California $47.00/bbl, China/Korea $34.50/bbl. Winter diesel strength lifts West Coast; winter freight premium widens the Asia gap. Explicitly a projection from October 2026 base, not a read.",
+   "vintage": "December 2026 projection, built 2026-10-10",
+   "source": "TMX waterfall model v3 (projected)",
+   "source_url": ""
+  },
+  {
+   "text": "January 2027 PROJECTION: California $46.50/bbl, China/Korea $34.00/bbl. Post-holiday diesel fade narrows the West Coast edge; Chinese New Year (late Jan 2027) front-loads Asia demand then shuts it. Explicitly a projection from December 2026 base, not a read.",
+   "vintage": "January 2027 projection, built 2026-10-10",
+   "source": "TMX waterfall model v3 (projected)",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "TMX waterfall model (Heavy Reading)",
+   "vintage": "v5, built 2026-10-10",
+   "url": ""
+  },
+  {
+   "publisher": "US Energy Information Administration (EIA)",
+   "vintage": "product spot prices, Oct 2026",
+   "url": ""
+  },
+  {
+   "publisher": "Baltic Exchange (via thedcn.com.au)",
+   "vintage": "freight, Oct 2026",
+   "url": ""
+  },
+  {
+   "publisher": "ICE Endex",
+   "vintage": "TMW settles, Oct 2026",
+   "url": ""
+  }
+ ]
+}
