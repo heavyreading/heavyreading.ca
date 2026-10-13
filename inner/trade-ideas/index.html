@@ -658,38 +658,61 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>Trade ideas</h1>
   <p class="sub">The working trade book: exact contracts, quantified reasoning, expected moves, and sizing set by drawdown.</p>
 <style>
-.ti-flag{border-left:3px solid var(--ch-red,#c0392b);padding:8px 12px;
-  background:var(--ch-wash,#fafafa);margin:10px 0}
-.ti-note{border-left:3px solid var(--ch-amber,#d97706);padding:8px 12px;
-  background:var(--ch-wash,#fafafa);margin:10px 0}
-section h3{margin:18px 0 6px;font-size:15px}
+/* Page craft (design pass, 2026-10-12): house tokens only, no hardcoded
+   color, no page-private palette, so the page inherits the site palette
+   in both themes. Sections ride the house h2 rhythm; the strip under
+   each trade head (.ti-band) is the instrument panel: identical slots,
+   identical order, every trade. */
+section[id]{scroll-margin-top:64px}
 ol.ti-chain{margin:6px 0 10px;padding-left:22px}
 ol.ti-chain li{margin-bottom:5px}
-.ti-sec{border-top:1px solid #e2e2e2;margin-top:30px;padding-top:4px}
-.ti-toc{font-size:13px;color:#555;margin:2px 0 6px}
-.ti-toc a{white-space:nowrap}
-@media (max-width:560px){.ti-toc{font-size:12px}}
+ol.ti-chain li::marker{color:var(--acc)}
+.ti-flag{border-left:2px solid var(--acc);padding:2px 0 2px 16px;
+  margin:14px 0;max-width:72ch}
+.ti-note{border-left:2px solid var(--faint);padding:2px 0 2px 16px;
+  margin:14px 0;max-width:72ch}
+.ti-band{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:10px 22px;border-top:1px solid var(--ink);
+  border-bottom:1px solid var(--line);padding:10px 0 12px;
+  margin:16px 0 22px}
+.ti-band .b-lab{font-size:10.5px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--mut);margin:0 0 3px}
+.ti-band .b-val{font-size:14.5px;font-weight:600;line-height:1.35;
+  font-variant-numeric:tabular-nums}
+.ti-band .b-val.down{color:var(--mut);font-weight:400}
+table.data.ti-book td.ti-status{font-weight:600;white-space:nowrap}
+table.data.ti-book td.ti-status.down{color:var(--mut);font-weight:400}
+@media (max-width:900px){
+  .ti-band{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){
+  .ti-band{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{
+  .jumplist{display:none}
+  section[id]{scroll-margin-top:0}
+  #t1,#t2,#t3,#t4,#t5,#candidates{break-before:page}
+  .ti-band{break-inside:avoid}
+}
 </style>
 
-<p class="ti-toc">Contents: <a href="#regime">Regime</a> &middot; <a href="#book">The book at a glance</a> &middot; <a href="#sizing-framework">Sizing framework</a> &middot; <a href="#t1">Trade 1</a> &middot; <a href="#t2">Trade 2</a> &middot; <a href="#t3">Trade 3</a> &middot; <a href="#t4">Trade 4</a> &middot; <a href="#t5">Trade 5</a> &middot; <a href="#candidates">Candidates</a></p>
+<nav class="jumplist" aria-label="Page sections"><span class="jl-cap">Contents</span><a href="#regime">Regime</a><a href="#book">The book at a glance</a><a href="#sizing-framework">Sizing framework</a><a href="#t1">Trade 1</a><a href="#t2">Trade 2</a><a href="#t3">Trade 3</a><a href="#t4">Trade 4</a><a href="#t5">Trade 5</a><a href="#candidates">Candidates</a></nav>
 <section id="regime">
 <h2>One regime, five trades</h2>
 <p>These five trades are not five independent ideas. They are five expressions of a single market regime, and they will mostly win or lose together. The chain, link by link:</p>
 <ol class="ti-chain"><li><strong>The Strait of Hormuz is contested but not closed.</strong> Tankers have been struck and a blockade runner disabled, yet barrels keep moving: flows through the strait fell about 27 percent to 10.1 million barrels per day (b/d) in the post-attack week (weekly watches refresh, October 12, 2026). An announced energy ceasefire has no published terms and no confirmed change in loadings. The working description is stalemate: the risk stays, the barrels move.</li><li><strong>Freight prices the risk, at extremes.</strong> TD3C (the Baltic Exchange very large crude carrier route from the Middle East Gulf to China) printed Worldscale (WS) 1058 on October 1, 2026 (Gibson), against 677 in early September. TD9 (the Aframax route from the Caribbean to the United States Gulf Coast) printed WS 681 on October 2, 2026 (Baltic Exchange), against about 324 a month earlier. These prints are 11 and 10 days old respectively; they are the freshest free prints available and are labeled, not fresh. The full series is on the <a href="../../freight-watch.html">freight watch</a>.</li><li><strong>Extreme freight caps transmission.</strong> Crude moves to whichever refinery bids the most after freight. When freight rises enough, the delivered cost of a barrel rises past what distant buyers will pay, and the adjustment lands on the origin price: the barrel is trapped, or it prices down until it clears. That is why heavy crude is likely trading weak while the diesel crack holds above $100 (sixth consecutive day above $100 on October 12): the demand exists, the transmission is capped.</li><li><strong>Supply is stepping into the cap.</strong> The supply and demand (S&amp;D) model has Western Canadian supply rising from 4,866 thousand barrels per day (kb/d) in October 2026 to 5,167 kb/d in November and 5,213 kb/d in December (+301 kb/d in November and +346 kb/d in December, both measured against October; December adds only about 45 kb/d on top of November, so the step is November's), while pipeline spare capacity goes negative: the model carries 52 kb/d in November and 95 kb/d in December as barrels that require a price response, meaning they cannot move at current prices (model build of September 27-28, 2026; detail on the <a href="../../index.html">Now page</a>). Heavy barrels accumulate; sweet barrels are simultaneously pulled toward the Westridge marine terminal in Burnaby, British Columbia (trade 2). One regime pushes the two ends of the quality spectrum in opposite directions.</li><li><strong>Each trade maps to one link.</strong> Short the trapped barrel in the deepest pinch month (trade 1). Long the pulled barrel, twice, on two different mechanisms (trades 2 and 4). Harvest the synthetic crude front premium while the pull lasts (trade 3). Trade 5 bets the quality spread reverts, which is a bet against this chain, and it is stood down for exactly that reason.</li></ol>
 <p><strong>Complex-wide invalidation.</strong> Two developments break the regime and therefore most of this page at once. First, a hard freight break: if TD3C and TD9 collapse, arbitrage windows reopen, trapped barrels clear, and heavy differentials snap tighter. Second, the first confirmed cargo loading under United States Office of Foreign Assets Control (OFAC) General License 135 (GL-135, issued October 9, 2026, authorizing transactions in Russian-origin diesel fuel; it expires 12:01 a.m. Eastern Daylight Time on April 7, 2027 and names no volumes, buyers, or counterparties): the stalemate cracking on the supply side would hit the diesel crack first, freight second, and differentials third. Until one of those prints, stalemate is the base case, and in a stalemate, what is working tends to keep working.</p>
-<b>Vintage:</b> Regime note: written October 12, 2026. Freight prints as labeled; Hormuz flows from the October 12 weekly watches refresh; S&amp;D figures from the model build of September 27-28, 2026.
+<p class="vintage"><b>Vintage:</b> Regime note: written October 12, 2026. Freight prints as labeled; Hormuz flows from the October 12 weekly watches refresh; S&amp;D figures from the model build of September 27-28, 2026.</p>
 </section>
 <section id="book" class="ti-sec">
 <h2>The book at a glance</h2>
 <p>One row per trade. Sizes are the recommendations derived in each trade's sizing section from the <a href="#sizing-framework">sizing framework</a>: risk units, the drawdown scenario, and the liquidity cap. Expected figures are central cases, not targets.</p>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data ti-book">
 <thead><tr><th>Trade</th><th>Structure</th><th>Contract</th><th>Recommended size</th><th>Expected (central)</th><th>Risk</th><th>Status</th></tr></thead>
 <tbody>
-<tr><td><a href="#t1">1. Short TMW</a></td><td>Roll down trade</td><td>Short Dec 2026 TMW</td><td class="num">75 lots</td><td class="num">+$2.90/bbl, about $218k</td><td class="num">about $281k (1.1R)</td><td>On</td></tr>
-<tr><td><a href="#t2">2. Long TMR, grade flip</a></td><td>Roll up trade</td><td>Long TMR strip, Dec 2026 to Feb 2027</td><td class="num">80 lots starter; 160 full pace</td><td class="num">about $340k at full pace</td><td class="num">about $400k full pace (1.6R)</td><td>On, staged</td></tr>
-<tr><td><a href="#t3">3. Long SYN</a></td><td>Roll up trade</td><td>Long Dec 2026 TMS (M+1 rides)</td><td class="num">35 lots-equivalent per ride</td><td class="num">about $70k per ride</td><td class="num">about $96k (0.4R)</td><td>On, program</td></tr>
-<tr><td><a href="#t4">4. Switching bid</a></td><td>Roll up trade (underwriting)</td><td>Participation in the trade 2 strip</td><td class="num">+20 lots/month, Jan-Feb</td><td class="num">about $80k contribution</td><td>Included in trade 2</td><td>On, folded in</td></tr>
-<tr><td><a href="#t5">5. SYN-WCS reversion</a></td><td>Quality-spread reversion</td><td>Front tenors, when armed</td><td class="num">Zero</td><td class="num">Not applicable</td><td class="num">Zero</td><td>Stood down</td></tr>
+<tr><td><a href="#t1">1. Short TMW</a></td><td>Roll down trade</td><td>Short Dec 2026 TMW</td><td class="num">75 lots</td><td class="num">+$2.90/bbl, about $218k</td><td class="num">about $281k (1.1R)</td><td class="ti-status">On</td></tr>
+<tr><td><a href="#t2">2. Long TMR, grade flip</a></td><td>Roll up trade</td><td>Long TMR strip, Dec 2026 to Feb 2027</td><td class="num">80 lots starter; 160 full pace</td><td class="num">about $340k at full pace</td><td class="num">about $400k full pace (1.6R)</td><td class="ti-status">On, staged</td></tr>
+<tr><td><a href="#t3">3. Long SYN</a></td><td>Roll up trade</td><td>Long Dec 2026 TMS (M+1 rides)</td><td class="num">35 lots-equivalent per ride</td><td class="num">about $70k per ride</td><td class="num">about $96k (0.4R)</td><td class="ti-status">On, program</td></tr>
+<tr><td><a href="#t4">4. Switching bid</a></td><td>Roll up trade (underwriting)</td><td>Participation in the trade 2 strip</td><td class="num">+20 lots/month, Jan-Feb</td><td class="num">about $80k contribution</td><td>Included in trade 2</td><td class="ti-status">On, folded in</td></tr>
+<tr><td><a href="#t5">5. SYN-WCS reversion</a></td><td>Quality-spread reversion</td><td>Front tenors, when armed</td><td class="num">Zero</td><td class="num">Not applicable</td><td class="num">Zero</td><td class="ti-status down">Stood down</td></tr>
 </tbody>
 </table></div>
 <p>The pipeline of larger trades designed against the same framework is in the <a href="#candidates">candidates section</a>: two carrier candidates, one supporting candidate, and one examined and dropped.</p>
@@ -702,7 +725,7 @@ ol.ti-chain li{margin-bottom:5px}
 <p>One risk unit, 1R, is <strong>$250,000</strong>, which is 1.25 percent of the $20M mid-target. The standard cap: no single idea risks more than about <strong>1.5R ($375,000)</strong> at its hard invalidation. Tier A (below) is the governed exception, with a hard ceiling of $1M of risk per idea. Positions that share one regime share one budget: a correlated complex gets about <strong>2R ($500,000) combined</strong>, because correlation counts once. The five trades on this page are one complex by that definition.</p>
 <h3>The trade count, and what it forces</h3>
 <p>Fifty trades a year are not on offer. The book gets roughly <strong>15 to 20 real ones</strong>: setups where the mechanism, the evidence, and the liquidity are present at the same time. The rest of the calendar is research, monitoring, and small grinder positions. Run the framework on 18 trades:</p>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Losers</strong></td><td>At a hit rate near 50 percent, about 9 of the 18 trades lose. At $400,000 to $500,000 realized per loser, the year's losses total about <strong>$4M</strong>.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Winners must gross</strong></td><td>The $20M target plus the $4M of losses: about <strong>$24M</strong> of gross winnings across about 9 winning trades.</td></tr>
@@ -712,7 +735,7 @@ ol.ti-chain li{margin-bottom:5px}
 </table></div>
 <p>The sensitivity, stated plainly: if the year's biggest trades reach only $2M each, the same calendar nets roughly $12M. If no trade exceeds $1M, it nets in the mid single digits however well the small trades are run. That is why the candidates section of this page exists, and why carrier candidates are designed in advance: their arming windows are short, and a $3M to $5M trade cannot be improvised inside one.</p>
 <h3>The tiers</h3>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Tier A: carriers</strong></td><td>3 to 5 trades a year. The trades that carry the year. Risk up to the $1M hard ceiling per idea; profit class $3M to $5M. Entry requirements, all three: an expected move of roughly $4 to $5/bbl or its equivalent, liquidity that carries several hundred lots without moving the price, and a structural mechanism that runs for months, not days.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Tier B: supporting</strong></td><td>6 to 9 trades a year. A real mechanism with partial evidence or partial liquidity. Risk $250,000 to $400,000; profit class $400,000 to $1M.</td></tr>
@@ -724,7 +747,7 @@ ol.ti-chain li{margin-bottom:5px}
 <h3>Drawdown governance</h3>
 <p>The book drawdown budget is <strong>$2.5M</strong> (12.5 percent of the $20M target). At a book drawdown of $1.5M, all new risk halves until the book recovers. The first cuts are always grinders and strip tails, never a carrier mid-thesis. Liquidity caps override target math, always: a contract trading 30 lots a day cannot carry carrier size no matter how good the mechanism is.</p>
 <h3>Where the current five trades sit</h3>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Trade 1 (roll down trade, short December TMW)</strong></td><td>Risk about $281,000 at the recommended 75 lots, about 1.1R: <strong>Tier B today</strong>. It is also the starter leg of candidate 1 (the egress strip), whose staged build is this mechanism's Tier A path.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Trades 2 and 4 (the TMR strip)</strong></td><td>One position at strip scale: trade 2's base strip plus trade 4's participation on the deferred months. Full pace risk about $400,000, about 1.6R: <strong>Tier B</strong>. At starter pace (while trade 1 is on) risk is about $200,000.</td></tr>
@@ -733,10 +756,11 @@ ol.ti-chain li{margin-bottom:5px}
 <tr><td style="white-space:nowrap"><strong>Complex total</strong></td><td>Trade 1 ($281k) plus the TMR strip at starter pace (about $200k), with the trade 3 rides paused while both run: about <strong>$481,000, about 1.9R, inside the 2R complex budget</strong>. When trade 1 exits, the strip steps to full pace (about $400k) and the rides resume (about $96k): about $496,000, about 2.0R. The complex sequences its risk rather than stacking it: the front trade funds the strips' room as it comes off.</td></tr>
 </tbody>
 </table></div>
-<b>Vintage:</b> Sizing framework: written October 12, 2026. Risk figures are the per-trade invalidation losses from the sizing sections below; volumes from ICE settlements, October 9, 2026.
+<p class="vintage"><b>Vintage:</b> Sizing framework: written October 12, 2026. Risk figures are the per-trade invalidation losses from the sizing sections below; volumes from ICE settlements, October 9, 2026.</p>
 </section>
 <section id="t1" class="ti-sec">
 <h2>1. Roll down trade: short December TMW, the trapped heavy barrel</h2>
+<div class="ti-band"><div><div class="b-lab">Structure</div><div class="b-val">Roll down trade</div></div><div><div class="b-lab">Contract</div><div class="b-val">Short Dec 2026 TMW</div></div><div><div class="b-lab">Recommended size</div><div class="b-val">75 lots</div></div><div><div class="b-lab">Expected (central)</div><div class="b-val">+$2.90/bbl, about $218k</div></div><div><div class="b-lab">Risk</div><div class="b-val">about $281k (1.1R)</div></div><div><div class="b-lab">Status</div><div class="b-val">On</div></div></div>
 <h3>Structure</h3>
 <p><strong>Short ICE TMW December 2026, not November.</strong> TMW is the Intercontinental Exchange (ICE) contract for the Western Canadian Select (WCS) differential at Hardisty, Alberta, against West Texas Intermediate (WTI). November 2026 is already inside its settlement window (the contract settles against a calendar monthly average that is part-filled) and it traded zero volume on October 9, 2026. December is the front tradeable month (180 lots on October 9; January traded 690) and, on the S&amp;D model, the deepest pinch month of the winter. One lot is 1,000 barrels: $1,000 per lot per $1/bbl.</p>
 <p>Structure type: a <strong>roll down trade</strong>. Short the front tradeable month and ride its roll down: as December becomes the prompt and then the cash month, its price converges down to the cash clearing level of a barrel that is long, trapped, and unpaid to wait.</p>
@@ -755,7 +779,7 @@ ol.ti-chain li{margin-bottom:5px}
 <h3>Where we are in the move</h3>
 <p>November TMW settled -21.60 on September 30 and -24.78 on October 9 (ICE settlements): $3.18 of widening in eight settle days, and December moved with it, -22.40 to -25.60. On broker marks the November differential widened every mark day last week, -24.65 (October 2) to -25.55 (October 9, CalRock marks), the widest print of the week on the final day. The synthetic crude minus WCS spread (trade 5) widened from +27.15 (September 30) to +31.24 (October 9) on settles and to +35.30 on marks. Momentum confirms the freight mechanism is actively pricing; it is not a stale level. But about $4 to $5 of widening is already in the tape, so at Friday's level the expected remaining move (about $2.90) against the snap-back (about $3.75) is worse than one-for-one.</p>
 <p>The December to January calendar spread (the roll), printed across the whole settle history as evidence (ICE settlements; the position is the outright December short, not this spread):</p>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <thead><tr><th>Settle date</th><th>Dec 2026 TMW</th><th>Jan 2027 TMW</th><th>Calendar spread (Jan minus Dec)</th></tr></thead>
 <tbody>
 <tr><td>Sep 30</td><td class="num">-22.40</td><td class="num">-21.45</td><td class="num">+0.95</td></tr>
@@ -770,7 +794,7 @@ ol.ti-chain li{margin-bottom:5px}
 </table></div>
 <p>The October 12 settle file carries the October 9 values at zero volume. Note what the series shows: as December fell $3.20 across the run, the market paid <em>more</em> for the January recovery (the spread +0.95 to +1.30), not less. <strong>Sizing consequence: CUT.</strong> The size below is set on the worse remaining ratio, entries add on tightening days, and weakness is not chased.</p>
 <h3>Sizing</h3>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Recommended size</strong></td><td><strong>75 lots (75,000 barrels).</strong> Set by the drawdown scenario inside the framework: at the adverse snap-back below, the loss is about $281,000, about 1.1R, inside the Tier B risk band and inside the complex's 2R budget alongside the light strips at starter pace.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Expected profit</strong></td><td>About $218,000 at the $2.90 expected move ($293,000 at $3.90). A Tier B outcome; the carrier expression of this mechanism is the staged egress strip in candidate 1.</td></tr>
@@ -780,13 +804,14 @@ ol.ti-chain li{margin-bottom:5px}
 </tbody>
 </table></div>
 <h3>Risks and watch list</h3>
-<ul class="tripwires"><li><strong>Freight prints (the trigger variable).</strong> TD3C and TD9 as they print (Baltic Exchange, carried on the <a href="../../freight-watch.html">freight watch</a>); TD28, the Vancouver to Ningbo Aframax route, is the direct read on the Asia leg. A sustained collapse in any two of the three is the regime softening.</li><li><strong>EIA weekly petroleum status (Wednesdays).</strong> Refinery runs and crude stocks, now pulled for all Petroleum Administration for Defense Districts: destination builds confirm link 2; draws while egress stays full break it.</li><li><strong>Apportionment and loadings.</strong> Enbridge monthly apportionment notices (current vintage September 16, 2026) and Trans Mountain nominations: apportionment rising into the supply step confirms the pinch. Westridge loadings are tracked daily in the Narrows watch.</li><li><strong>Producer guidance.</strong> Third-quarter reporting (late October into November) is where the model's +301 kb/d November step gets confirmed or walked back.</li><li><strong>GL-135 first cargo.</strong> A confirmed Russian diesel loading under the license is the complex-wide regime break (see top note).</li><li><strong>ICE managed-money positioning in TMW.</strong> Open check, not yet pulled. It gates the scale-up above.</li></ul>
+<ul class="tripwires"><li><strong>Freight prints (the trigger variable).</strong> TD3C and TD9 as they print (Baltic Exchange, carried on the <a href="../../freight-watch.html">freight watch</a>); TD28, the Vancouver to Ningbo Aframax route, is the direct read on the Asia leg. A sustained collapse in any two of the three is the regime softening.</li><li><strong>EIA weekly petroleum status (Wednesdays).</strong> Refinery runs and crude stocks, now pulled for all Petroleum Administration for Defense Districts: destination builds confirm link 2; draws while egress stays full break it.</li><li><strong>Apportionment and loadings.</strong> Enbridge monthly apportionment notices (current vintage September 16, 2026) and Trans Mountain nominations: apportionment rising into the supply step confirms the pinch. Westridge loadings are tracked daily in the Narrows watch.</li><li><strong>Apportionment gaming.</strong> If Mainline apportionment tightens, nomination gaming can bid for WCS in the trading cycle and print a higher monthly index than physical balances warrant. That prices the roll in early, on gaming demand rather than fundamentals, and the December paper short does not benefit from an index print it cannot capture: the convergence the trade is riding gets competed away in the print. Watch nomination behaviour and the cycle index prints as apportionment lands. <a href="../../fieldguide/apportionment-price-signature.html">Field guide: apportionment</a>.</li><li><strong>Producer guidance.</strong> Third-quarter reporting (late October into November) is where the model's +301 kb/d November step gets confirmed or walked back.</li><li><strong>GL-135 first cargo.</strong> A confirmed Russian diesel loading under the license is the complex-wide regime break (see top note).</li><li><strong>ICE managed-money positioning in TMW.</strong> Open check, not yet pulled. It gates the scale-up above.</li></ul>
 <h3>Invalidation</h3>
 <p><strong>Hard invalidation:</strong> a hard freight break (sustained collapse in TD3C or TD28). Exit on the freight print, regardless of price. Secondary: evidence that destination inventories are drawing while egress stays full, which falsifies link 2 of the mechanism.</p>
-<b>Vintage:</b> Trade 1 written October 12, 2026. Levels: ICE settles and CalRock marks, October 9, 2026. S&amp;D: model build of September 27-28, 2026.
+<p class="vintage"><b>Vintage:</b> Trade 1 written October 12, 2026. Levels: ICE settles and CalRock marks, October 9, 2026. S&amp;D: model build of September 27-28, 2026.</p>
 </section>
 <section id="t2" class="ti-sec">
 <h2>2. Roll up trade: long the December TMR M+1 and ride to cash (the grade flip)</h2>
+<div class="ti-band"><div><div class="b-lab">Structure</div><div class="b-val">Roll up trade</div></div><div><div class="b-lab">Contract</div><div class="b-val">Long TMR strip, Dec 2026 to Feb 2027</div></div><div><div class="b-lab">Recommended size</div><div class="b-val">80 lots starter; 160 full pace</div></div><div><div class="b-lab">Expected (central)</div><div class="b-val">about $340k at full pace</div></div><div><div class="b-lab">Risk</div><div class="b-val">about $400k full pace (1.6R)</div></div><div><div class="b-lab">Status</div><div class="b-val">On, staged</div></div></div>
 <h3>Structure</h3>
 <p><strong>Long the deferred M+1 and ride to cash.</strong> Long ICE TMR December 2026 (December is M+1, the month behind the front, with November in its settlement window), held as it becomes the front month and converges up toward the pulled cash price; exit into the cash window. TMR tracks the Canadian sweet differential (the Mixed Sweet Blend, or MSW, complex priced at Edmonton). November traded zero volume on October 9, 2026; December traded 30 lots. One lot is 1,000 barrels: $1,000 per lot per $1/bbl. The working size is the front-quarter strip (sizing, below).</p>
 <h3>Reasoning</h3>
@@ -800,7 +825,7 @@ ol.ti-chain li{margin-bottom:5px}
 <h3>Where we are in the move</h3>
 <p>The physical leg moved vertically: Edmonton sweet's November mark jumped $2.00 in the final day of the week, from -1.00 (October 8) to +1.00 (October 9) (CalRock marks), and the Westridge location premium stands at +10.15 for November and +10.25 for December (marks, October 9), near the top of its 2025 range. That is cargo-switch buying happening now, not a forecast. December TMR has not followed: its settles ran -1.50 (September 30), down to -3.25 (October 7), back to -2.50 (October 9) (ICE settlements). The gap this trade exists to close is intact. The risk runs the other way on exit: a market thin enough to jump $2.00 in a day crowds the door when the buying stops. <strong>Sizing consequence: STAGE the strip.</strong> The strip is worked across the cycle at starter pace while trade 1 is on, never in one clip; December traded 30 lots on October 9 and the deferred strip months traded none.</p>
 <h3>Sizing</h3>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Recommended size (working form)</strong></td><td><strong>The front-quarter strip: December 2026, January and February 2027 TMR.</strong> Base 40 lots per month under this trade, plus trade 4's participation of 20 lots per month on January and February: December 40, January 60, February 60, 160 lots in total. <strong>Starter pace while trade 1 is on: half (80 lots)</strong>, stepping to full pace when trade 1 exits, per the framework's complex budget.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Strip levels</strong></td><td>ICE settles, October 9, 2026: December -2.50 (30 lots traded), January -3.00 (zero), February -2.90 (zero). Two of the three strip months have no screen market at all: the strip is broker-worked paper, built and exited over days, with slippage wider than the marks. That execution reality is part of the size, not a footnote to it.</td></tr>
@@ -814,10 +839,11 @@ ol.ti-chain li{margin-bottom:5px}
 <ul class="tripwires"><li><strong>Westridge premium prints</strong> (marks, daily): the premium fading below its range highs without a loading is the thesis dying at link 1.</li><li><strong>Westridge loadings</strong> (Narrows watch, daily): a confirmed sweet cargo is confirmation; heavy-only loadings through the cycle are not.</li><li><strong>Inland sweet offers</strong>: a quick supply response (offers building at Edmonton) caps the differential before convergence.</li></ul>
 <h3>Invalidation</h3>
 <p><strong>Hard invalidation:</strong> the Westridge premium fades with no confirmed sweet loading inside the cycle. This is a trading-cycle trade, not a hold: out before the cargo window closes either way.</p>
-<b>Vintage:</b> Trade 2 written October 12, 2026. Levels: ICE settles and CalRock marks, October 9, 2026.
+<p class="vintage"><b>Vintage:</b> Trade 2 written October 12, 2026. Levels: ICE settles and CalRock marks, October 9, 2026.</p>
 </section>
 <section id="t3" class="ti-sec">
 <h2>3. Roll up trade: long deferred SYN (December TMS), ride to cash</h2>
+<div class="ti-band"><div><div class="b-lab">Structure</div><div class="b-val">Roll up trade</div></div><div><div class="b-lab">Contract</div><div class="b-val">Long Dec 2026 TMS (M+1 rides)</div></div><div><div class="b-lab">Recommended size</div><div class="b-val">35 lots-equivalent per ride</div></div><div><div class="b-lab">Expected (central)</div><div class="b-val">about $70k per ride</div></div><div><div class="b-lab">Risk</div><div class="b-val">about $96k (0.4R)</div></div><div><div class="b-lab">Status</div><div class="b-val">On, program</div></div></div>
 <h3>Structure</h3>
 <p><strong>Long the deferred M+1 and ride to cash.</strong> Long synthetic crude (SYN) through December 2026, the deferred month behind the front: ICE TMS December 2026 as the pricing reference, worked in the broker and physical market (execution, below). November TMS is in its settlement window. Hold December as it becomes the front month and re-prices toward the front premium; exit into the cash window, and in all cases before year-end supply. One lot is 1,000 barrels: $1,000 per lot per $1/bbl.</p>
 <div class="ti-flag"><strong>Execution reality:</strong> the entire ICE TMS strip traded zero volume on October 9, 2026. These are settlement marks, not a book you can lift. The position is realistically worked in the broker and physical SYN market with TMS as the reference price, or in small staged ICE clips accepting mark-to-settlement exposure. Size is set accordingly.</div>
@@ -835,7 +861,7 @@ ol.ti-chain li{margin-bottom:5px}
 <h3>Sizing</h3>
 <p><strong>The strip form, considered and not used.</strong> A static December to February strip at 35 lots-equivalent per month (105 in total; strip levels on marks, October 9: December +4.25, January +3.75, February +3.85) would earn a decaying capture path, about $2.00, $1.50 and $1.25 by month, roughly $166,000 in total, while a single regime break hits all three months at once: the -$2.75 adverse scenario costs about $289,000, about 1.2R. That is Tier B risk for Tier C capture, and the February month would be held into the year-end supply this trade's own exit rule exists to avoid. The strip form is therefore printed and set aside.</p>
 <p><strong>The program form, used instead.</strong> Sequential M+1 rides: one deferred month at a time, 35 lots-equivalent, bought as the M+1 and ridden to cash, then re-established at the new M+1 while the curve keeps its front-premium shape. While that shape holds, the trade repeats monthly; that repeatability is what makes it a Tier C grinder rather than a one-off. February is the last ride without re-underwriting the supply side. Risk at any one time is one month's: about $96,000, about 0.4R, inside the framework's Tier C aggregate cap.</p>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Recommended size</strong></td><td><strong>35 lots-equivalent per monthly ride</strong>, staged, worked through the broker and physical market.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Expected profit</strong></td><td>About $70,000 per ride at the $2.00 central re-pricing.</td></tr>
@@ -847,10 +873,11 @@ ol.ti-chain li{margin-bottom:5px}
 <ul class="tripwires"><li><strong>Consecutive-month premiums</strong> (marks, daily): the premium failing to re-form as December becomes the front month is the exit signal, at the month's turn, not after.</li><li><strong>Upgrader supply notices</strong>: any acceleration of year-end synthetic supply pulls the hard exit earlier.</li><li><strong>The regime tells</strong>: freight prints and the Westridge premium (trades 1 and 2 watch lists).</li></ul>
 <h3>Invalidation</h3>
 <p><strong>Hard invalidation:</strong> the front premium fails to re-form at the month's turn, or the freight regime breaks. Plus the standing calendar exit before year-end supply, regardless of profit.</p>
-<b>Vintage:</b> Trade 3 written October 12, 2026. Levels: ICE settles and CalRock marks, October 9, 2026.
+<p class="vintage"><b>Vintage:</b> Trade 3 written October 12, 2026. Levels: ICE settles and CalRock marks, October 9, 2026.</p>
 </section>
 <section id="t4" class="ti-sec">
 <h2>4. Roll up trade: the switching bid that underwrites the TMR strip</h2>
+<div class="ti-band"><div><div class="b-lab">Structure</div><div class="b-val">Roll up trade (underwriting)</div></div><div><div class="b-lab">Contract</div><div class="b-val">Participation in the trade 2 strip</div></div><div><div class="b-lab">Recommended size</div><div class="b-val">+20 lots/month, Jan-Feb</div></div><div><div class="b-lab">Expected (central)</div><div class="b-val">about $80k contribution</div></div><div><div class="b-lab">Risk</div><div class="b-val">Included in trade 2</div></div><div><div class="b-lab">Status</div><div class="b-val">On, folded in</div></div></div>
 <h3>Structure</h3>
 <p><strong>Long the deferred M+1 and ride to cash</strong>, the same outright structure as trade 2, in the same contract (ICE TMR December 2026 and its strip months), on a different mechanism: standing refinery demand instead of the episodic cargo flip. <strong>This mechanism no longer carries a standalone position.</strong> At strip scale, a second position in the same contract is not a separate trade; it is the same position with a second story. Trade 4's role is underwriting: the standing Pacific Northwest bid is what is expected to carry the strip's January and February months after the flip window closes. Its size is expressed as participation in the trade 2 strip (sizing, below), held across the slate cycle and re-underwritten monthly.</p>
 <h3>Reasoning</h3>
@@ -864,7 +891,7 @@ ol.ti-chain li{margin-bottom:5px}
 <h3>Where we are in the move</h3>
 <p>This mechanism has no momentum to chase: its input is a standing delivered-cost edge, $93.66 against $96.81 on October 9 marks, steady in character while the prompt complex moved around it. The tape fact that matters is negative: December TMR settled -2.50 on October 9 (ICE settlements) while November physical marked +1.00 (CalRock marks), so the standing Pacific Northwest bid has not yet pulled the deferred months up. That gap is the entry condition, not a warning. <strong>Sizing consequence:</strong> participation at the strip pace set in trade 2, and this underwriting is the first element cut if the strip needs room.</p>
 <h3>Sizing</h3>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Participation</strong></td><td><strong>+20 lots per month on January and February 2027 TMR</strong>, inside the trade 2 strip totals (January 60, February 60). Not additive length outside the strip.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Expected contribution</strong></td><td>About $80,000: 40 lot-months at the $2.00 central convergence.</td></tr>
@@ -876,10 +903,11 @@ ol.ti-chain li{margin-bottom:5px}
 <ul class="tripwires"><li><strong>Puget Sound spur apportionment</strong> (monthly nominations): the cheap path closing is the kill switch. On apportionment, the Burnaby reroute ($104.31) trails ANS by $7.50 and PNW flips to ANS.</li><li><strong>ANS pricing</strong> (Energy Information Administration, two-month lag): each fresh read re-underwrites the toggle; an ANS drop of about $3 erases the edge.</li><li><strong>PNW refinery runs and turnarounds</strong> (EIA weekly, Pacific Northwest district): slate demand is only real if the refineries are running.</li></ul>
 <h3>Invalidation</h3>
 <p><strong>Hard invalidation:</strong> a Puget Sound spur apportionment print, or ANS retaking the delivered-cost toggle on a fresh read.</p>
-<b>Vintage:</b> Trade 4 written October 12, 2026. Toggle and levels: CalRock marks, October 9, 2026; model read October 10, 2026.
+<p class="vintage"><b>Vintage:</b> Trade 4 written October 12, 2026. Toggle and levels: CalRock marks, October 9, 2026; model read October 10, 2026.</p>
 </section>
 <section id="t5" class="ti-sec">
 <h2>5. TMW-TMS reversion: the statistics are real, the signal is not live</h2>
+<div class="ti-band"><div><div class="b-lab">Structure</div><div class="b-val">Quality-spread reversion</div></div><div><div class="b-lab">Contract</div><div class="b-val">Front tenors, when armed</div></div><div><div class="b-lab">Recommended size</div><div class="b-val">Zero</div></div><div><div class="b-lab">Expected (central)</div><div class="b-val">Not applicable</div></div><div><div class="b-lab">Risk</div><div class="b-val">Zero</div></div><div><div class="b-lab">Status</div><div class="b-val down">Stood down</div></div></div>
 <h3>Structure</h3>
 <p><strong>No position today.</strong> When armed, the trade is the SYN minus WCS spread in the front tradeable tenors (long one leg, short the other, 1,000 barrels per lot per side), scaled in strip form (sizing, below). This section exists so the statistics are on the record and the stand-down is a decision, not an oversight.</p>
 <h3>Reasoning</h3>
@@ -893,7 +921,7 @@ ol.ti-chain li{margin-bottom:5px}
 <h3>Where we are in the move</h3>
 <p>The spread widened on every mark day last week, on November marks (CalRock): +30.30 (October 2), +30.45, +30.95, +31.40, +33.20, +35.30 (October 9). On ICE settles the run is +27.15 (September 30), +30.04, +30.11, +30.24, +30.26, +30.49, +30.91, +31.24 (October 9). A reversion entry here shorts into a series that has moved one way for six straight mark days on a named driver. Momentum does not disprove the blending economics; it says the deviation is still being driven, and the tested rule keys off a band that does not yet exist in this regime. <strong>Sizing consequence: STAND DOWN confirmed.</strong> Zero size; the re-arming conditions in the sizing section are unchanged.</p>
 <h3>Sizing</h3>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Expected move (when armed)</strong></td><td>Per the 2025 record: full excursions of $3 to $5/bbl from extreme to exit, decaying with a half-life near 9.5 trading days. Not applicable today.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Drawdown math</strong></td><td>The tearsheet drawdown is $2.75 per barrel-unit. A $100,000 drawdown budget therefore caps size at about 36 lots per side (36,000 barrels) in a single tenor.</td></tr>
@@ -906,12 +934,12 @@ ol.ti-chain li{margin-bottom:5px}
 <ul class="tripwires"><li><strong>The band itself</strong>: daily marks accumulating toward a computable 60-day window is the re-arming clock.</li><li><strong>The regime tells</strong>: if freight normalizes and the spread still holds above about +25, the blending anchor has repriced structurally and the 2025 statistics describe a dead regime. If it collapses through +20 toward the teens on the freight break, the anchor held and the fade was always a freight trade.</li></ul>
 <h3>Invalidation</h3>
 <p><strong>Hard invalidation (of the stand-down):</strong> none needed; no position. The stand-down itself is reviewed when either re-arming condition prints.</p>
-<b>Vintage:</b> Trade 5 written October 12, 2026. Statistics: quant vault tearsheet qual_SYN-HAR, refreshed 2026-10-12. Marks are indicative, not executable prints.
+<p class="vintage"><b>Vintage:</b> Trade 5 written October 12, 2026. Statistics: quant vault tearsheet qual_SYN-HAR, refreshed 2026-10-12. Marks are indicative, not executable prints.</p>
 </section>
 <section id="candidates" class="ti-sec">
 <h2>Candidates: the bigger-trades pipeline</h2>
 <div class="ti-flag"><strong>Status: CANDIDATES.</strong> Nothing in this section is an active recommendation. Each candidate is designed to the same standard as the trades above (mechanism, data support, expected move, sizing against drawdown) and carries an explicit arming condition: what has to print before it becomes a trade. The framework above requires 3 to 5 trades a year in the $3M to $5M class; these are the designs that could fill those slots, built before their windows open.</div>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <thead><tr><th>Candidate</th><th>Structure</th><th>Arms on</th><th>Potential</th><th>Class</th></tr></thead>
 <tbody>
 <tr><td>C1. Egress strip</td><td>Roll down trade, strip form</td><td>Apportionment deepens; December holds at or wider than -24</td><td class="num">About $3.0M, staged build</td><td>Carrier candidate</td></tr>
@@ -923,7 +951,7 @@ ol.ti-chain li{margin-bottom:5px}
 <h3>Candidate 1: the egress strip (carrier candidate)</h3>
 <p><strong>Structure.</strong> Short the TMW front quarter in strip form: December 2026, January and February 2027, the same roll down mechanism as trade 1 extended across the winter pinch. Trade 1's 75 December lots count as the starter inside this strip's December leg; the two are one position, never additive.</p>
 <p><strong>Why this strip, from the data.</strong> It is the only Canadian differential strip that can carry size: on October 9, 2026 the three months traded 1,560 lots combined (December 180, January 690, February 690; ICE settlements). The balance model (vintage September 28, 2026) puts the pinch in these months: pipeline spare capacity of -52 kb/d in November and -95 kb/d in December, with 52 and 95 kb/d of supply requiring a price response, and the January capacity step-up (about +90 kb/d) only partly relieving a January supply line of 5,029 kb/d. The model's apportionment nowcast, the one adjustment in the stack that has beaten its naive benchmark in walk-forward testing, carries November 2026 heavy apportionment at Kerrobert at 4 percent (persistence baseline); the model's system apportionment hit rate is 0.958 against 0.931 for persistence, and 0.975 on the Kerrobert heavy lines (walk-forward scorecard, October 2026).</p>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <thead><tr><th>Strip month</th><th>Settle, Oct 9 2026</th><th>Volume, Oct 9</th><th>Expected capture</th></tr></thead>
 <tbody>
 <tr><td>Dec 2026 TMW</td><td class="num">-25.60</td><td class="num">180 lots</td><td class="num">$2.90</td></tr>
@@ -940,7 +968,7 @@ ol.ti-chain li{margin-bottom:5px}
 <p><strong>Structure.</strong> Short the New York Mercantile Exchange (NYMEX) ultra-low sulfur diesel (ULSD, the heating oil contract) crack spread against WTI, 1,000 barrels per lot per side ($1,000 per lot per $1/bbl of crack). NYMEX depth is what carries this size; no Canadian contract could. The trade is against the current regime, deliberately: it is designed now, armed only on confirmation, and sized at <strong>zero today</strong>. Shorting a $100-plus crack into record-low stocks with no confirmation is shorting the regime the rest of this page is long; the ladder exists so the size is pre-committed when the confirmation prints, not improvised after the first $10 of the move is gone.</p>
 <p><strong>The level, verified.</strong> The diesel crack read $102.73 on October 12, 2026, its sixth straight day above $100. In the entire validated history there have been 34 days above $100; the all-time maximum is $117.92 (September 16, 2026); the first $100 cross was April 28, 2022 and the first sustained cross August 17, 2026 (daily digest validated crack history, October 12, 2026). United States diesel stocks sit at a record seasonal low dating to 1982. What cannot be printed: a full percentile table. The validated daily series is maintained in the digest chain and is not reproduced here; the summary statistics above are the verified record available to this page, and they are enough to establish that the level is historically extreme.</p>
 <p><strong>The event and the move.</strong> A genuine ceasefire with loadings: cargoes actually moving under GL-135 (issued October 9, 2026; expires April 7, 2027; it names no volumes, buyers, or counterparties, and the 2022 statutory import ban remains in force) and Russian diesel exports resuming (Moscow's own export ban runs through October). The scenario move is a <strong>$20 to $40 crack compression</strong> (scenario framing logged in the projections log, EXP-2026-001 and EXP-2026-002, October 2026). The tape has already shown the sensitivity: ICE gasoil fell 3 percent to $1,436 per tonne on the ceasefire announcement alone, with no terms and no loadings.</p>
-<div class="tblwrap"><table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td style="white-space:nowrap"><strong>Ladder rung 0 (today)</strong></td><td>Zero. Terms are published in advance; no position into an unconfirmed event.</td></tr>
 <tr><td style="white-space:nowrap"><strong>Rung 1: ceasefire terms published</strong></td><td>Short 25 lots.</td></tr>
@@ -958,7 +986,7 @@ ol.ti-chain li{margin-bottom:5px}
 <p><strong>Status: disarmed today</strong>, for the same reason as trade 5: the current displacement is regime-driven, there is no current-regime band to trigger from, and fading it is a position against trades 1 to 3. <strong>What arms it:</strong> a computable trailing band in the current regime and a band trigger printing against it.</p>
 <h3>Candidate 4: the storage event trade (examined and dropped)</h3>
 <p><strong>Dropped, with the examination on the record.</strong> The design was a conditional differential-gap trade for any forecast month in which the balance model's storage trajectory approaches tank tops and its overflow (Required) state fires. No month qualifies. The model holds commercial inventory flat at 58,720 thousand barrels, with 21,896 thousand barrels of ullage, in every forecast month through December 2027, because the model routes overflow to a price response by construction rather than accumulating it in tanks (balance model file note, vintage September 28, 2026). There is no modeled month in which storage approaches capacity, so there is no event to design against. <strong>Watch condition that would reopen it:</strong> observed weekly commercial storage climbing toward capacity into a month the model carries as requiring a price response. Until that prints, candidate 4 stays dropped.</p>
-<b>Vintage:</b> Candidates written October 12, 2026. Strip levels: ICE settlements, October 9, 2026. Balances: balance model vintage September 28, 2026. Crack statistics: daily digest validated history, October 12, 2026.
+<p class="vintage"><b>Vintage:</b> Candidates written October 12, 2026. Strip levels: ICE settlements, October 9, 2026. Balances: balance model vintage September 28, 2026. Crack statistics: daily digest validated history, October 12, 2026.</p>
 </section>
   <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../balance/index.html">S&amp;D balance</a><a href="../../st3-dashboard.html">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../supply/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../egress/index.html">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
