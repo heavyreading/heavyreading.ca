@@ -629,7 +629,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <div class="wrap">
   <header class="masthead">
     <button class="themetoggle" id="themetoggle" type="button" aria-label="Toggle dark mode">Dark</button>
-    <div class="brandlock"><a class="brandlink" href="../../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d"/><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8"/><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8"/><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22"/></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
+    <div class="brandlock"><a class="brandlink" href="../../index.html" aria-label="Heavy Reading: home"><svg class="mark" viewbox="0 0 44 44" aria-hidden="true" focusable="false"><rect x="1.5" y="1.5" width="41" height="41" rx="9" fill="#17191d" /><rect x="10" y="25" width="6.5" height="8" fill="#f4f1e8" /><rect x="18.75" y="18" width="6.5" height="15" fill="#f4f1e8" /><rect x="27.5" y="11" width="6.5" height="22" fill="#a13c22" /></svg><span class="wordstack"><span class="wordmark">Heavy Reading</span><span class="wordsub">The WCSB supply letter</span></span></a></div>
     <details class="mnav">
       <summary class="navburger" aria-label="Sections menu"><span class="nb-ic" aria-hidden="true"><span></span><span></span><span></span></span><span class="nb-tx">Sections</span></summary>
       <nav class="sitenav" aria-label="Sections">
@@ -685,6 +685,18 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </table>
 <p>The marked series has 1 date(s). It is shown as a table, not a curve: a drawdown chart on this little history would be decoration, not information.
 </section>
+<section id="targeting">
+<h2>Targeting: the fixed target, solved</h2>
+<p>The profit target is fixed at $15 to $20M. What flexes is the trade count and the size, solved from the book's expectancy per trade inside the risk budgets: a single idea capped near 1.5R, the complex at 2R. The book calibrates its hit rate, average win, and average loss from closed trades over time. Until 10 trades have closed, the plan-case line from the framework assumptions is the operative basis and the measured line prints beside it as it builds; the two bases are never blended. The lever order is count first, up to the realistic flow of about 20 trades a year, then size within the caps toward mechanisms with measured expectancy, then an honest restatement of the range.</p>
+<div class="tblwrap"><table class="data">
+<thead><tr><th>Basis</th><th>Trades closed</th><th>Hit rate</th><th>Average win</th><th>Average loss</th><th>Expectancy per trade</th><th>Trades for $15M</th><th>Trades for $20M</th><th>Size scale at 18 trades (for $17.5M)</th></tr></thead>
+<tbody>
+<tr><td><strong>Plan case (assumed), operative</strong></td><td class="num">0</td><td class="num">55 percent</td><td class="num">$2,500,000</td><td class="num">$450,000</td><td class="num">$+1,172,500</td><td class="num">about 13 (12.8)</td><td class="num">about 17 (17.1)</td><td class="num">0.83x</td></tr>
+</tbody>
+</table></div>
+<p><strong>Verdict: ON PLAN</strong>, on the plan-case basis (framework assumptions; 0 trades have closed). At this expectancy, about 17 trades at the current size reach $20M, inside the realistic flow, and the size scale required to land $17.5M at 18 trades is 0.83x, no increase. Nothing past the risk caps is required.</p>
+<p>Recalibration happens at the monthly vintage, on trailing data. The book never sizes up mid-drawdown to chase the target, and the drawdown governor (at a $1.5M book drawdown, all new risk halves) overrides this arithmetic.</p>
+</section>
 <section id="mechanisms">
 <h2>By mechanism</h2>
 <p>The feedback loop promotes and demotes mechanisms, not just trades, so the book is also cut by structure. A roll up trade is long the deferred month behind the front (M+1) and rides it to cash; a roll down trade is short the front and rides its roll down into cash convergence.</p>
@@ -718,7 +730,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <ul>
 <li><strong>October 12, 2026:</strong> Booked as published: short 75 lots ICE TMW December 2026, entry reference -25.60 (ICE settle, October 9, 2026). Expected move about +$2.90 toward -28.50 over four to seven weeks. Risk at invalidation about $281,000 (1.1R).</li>
 <li><strong>October 12, 2026:</strong> Scale-up toward 125 to 170 lots is gated on the TMW managed-money positioning check, which is still open and unverified. Positioning in TMW itself is the gauge; WTI spec positioning is not used.</li>
-<li><strong>October 12, 2026:</strong> Discussion, risk list amended: a new risk was identified in desk discussion and added to this trade's risk list on the ideas page. Apportionment gaming can bid Western Canadian Select (WCS) inside the trading cycle, print a higher index, and price the roll in early; once the roll is priced in by the index print, the paper short does not benefit from the convergence it is positioned for. The ideas-page risk entry carries the field-guide link for the mechanism. No change to size, expected move, or invalidation was booked with the addition.</li>
+<li><strong>October 12, 2026:</strong> Discussion, risk list amended: a new risk was identified in discussion and added to this trade's risk list on the ideas page. Apportionment gaming can bid Western Canadian Select (WCS) inside the trading cycle, print a higher index, and price the roll in early; once the roll is priced in by the index print, the paper short does not benefit from the convergence it is positioned for. The ideas-page risk entry carries the field-guide link for the mechanism. No change to size, expected move, or invalidation was booked with the addition.</li>
 </ul>
 </section>
 <section id="t2">
