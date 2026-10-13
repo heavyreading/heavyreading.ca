@@ -659,11 +659,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">The book: booked trades, marks, scores, and what they changed.</p>
 <section id="top">
 <p>This page is the book behind the <a href="../trade-ideas/index.html">trade ideas</a>: every trade booked as published, marked against ICE (Intercontinental Exchange) end-of-day settlements, and scored when it closes. Discussions and decisions are booked in the open, dated, and never rewritten. Stood-down trades are shadow-marked, so the passes are graded too. One risk unit, 1R, is $250,000.</p>
-<b>Vintage:</b> Latest marks: ICE settlements file 2026-10-12 (October 12, 2026). Entry references are the October 9, 2026 settles; that file is the last trading day before booking, and the October 12 file carries the same settles at zero volume, so the book marks flat at inception levels.
+<p class="vintage"><b>Vintage:</b> Latest marks: ICE settlements file 2026-10-12 (October 12, 2026). Entry references are the October 9, 2026 settles; that file is the last trading day before booking, and the October 12 file carries the same settles at zero volume, so the book marks flat at inception levels.</p>
 </section>
 <section id="scoreboard">
 <h2>Scoreboard</h2>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Booked</strong></td><td>5 trades: 2 with risk running, 1 sequenced, 1 folded into another trade, 1 stood down, 0 candidate, 0 closed</td></tr>
 <tr><td><strong>Hit rate (closed)</strong></td><td>No closed trades yet. The first close starts the record.</td></tr>
@@ -675,14 +675,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Book drawdown (marked, active trades)</strong></td><td>$0 peak to trough on 1 mark date(s), against the $2,500,000 book drawdown budget</td></tr>
 <tr><td><strong>Shadow book (stood down)</strong></td><td>T5: $+0 at 36 lots per side</td></tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Marks by date</strong> (unrealized, active trades; inception references are the October 9, 2026 settles, where unrealized is zero by construction):</p>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <thead><tr><th>Mark date</th><th>Per trade</th><th>Book total</th></tr></thead>
 <tbody>
 <tr><td>October 12, 2026</td><td>T1 $+0; T2 $+0; T3 $+0; T4 $+0</td><td class="num">$+0</td></tr>
 </tbody>
-</table>
+</table></div>
 <p>The marked series has 1 date(s). It is shown as a table, not a curve: a drawdown chart on this little history would be decoration, not information.
 </section>
 <section id="targeting">
@@ -701,7 +701,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <section id="mechanisms">
 <h2>By mechanism</h2>
 <p>The feedback loop promotes and demotes mechanisms, not just trades, so the book is also cut by structure. A roll up trade is long the deferred month behind the front (M+1) and rides it to cash; a roll down trade is short the front and rides its roll down into cash convergence.</p>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <thead><tr><th>Mechanism</th><th>Trades</th><th>Open risk</th><th>Unrealized</th><th>Closed</th><th>Hit rate</th></tr></thead>
 <tbody>
 <tr><td><strong>roll down trade</strong></td><td>T1</td><td class="num">$281,000</td><td class="num">$+0</td><td class="num">0</td><td>no closes yet</td></tr>
@@ -709,12 +709,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>switching</strong></td><td>T4</td><td class="num">$0</td><td class="num">$+0</td><td class="num">0</td><td>no closes yet</td></tr>
 <tr><td><strong>reversion</strong></td><td>T5</td><td class="num">$0</td><td class="num">$+0</td><td class="num">0</td><td>no closes yet</td></tr>
 </tbody>
-</table>
+</table></div>
 </section>
 <section id="t1">
 <h2>T1. Short December TMW: the trapped heavy barrel</h2>
 <p><strong>Status:</strong> Active, booked October 12, 2026. <strong>Structure:</strong> roll down trade.</p>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Contracts</strong></td><td>ICE TMW Dec 2026</td></tr>
 <tr><td><strong>Direction</strong></td><td>short</td></tr>
@@ -725,7 +725,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Risk at invalidation</strong></td><td>$281,000 (1.1R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Hard freight break (sustained collapse in TD3C or TD28); secondary: destination inventories drawing while egress stays full</td></tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> Managed money in TMW itself is positioned to cover (that check is still open), and December snaps back toward the pre-spike curve before the storage pricing has time to bind.</p>
 <p><strong>Book entries</strong></p>
 <ul>
@@ -737,7 +737,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <section id="t2">
 <h2>T2. Long December TMR: the grade flip pulls sweet inland</h2>
 <p><strong>Status:</strong> Active, booked October 12, 2026. <strong>Structure:</strong> roll up trade.</p>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Contracts</strong></td><td>ICE TMR strip Dec 2026, Jan 2027, Feb 2027 (Dec 2026 is the marking reference; strip settles Oct 9 2026: Dec -2.50, Jan -3.00, Feb -2.90)</td></tr>
 <tr><td><strong>Direction</strong></td><td>long</td></tr>
@@ -748,7 +748,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Risk at invalidation</strong></td><td>$200,000 (0.8R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Westridge premium fades with no confirmed sweet loading inside the cycle</td></tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> No cargo actually fixes. The Westridge premium fades on its own and December follows the January shape down through -3.00 toward -5.00.</p>
 <p><strong>Book entries</strong></p>
 <ul>
@@ -765,7 +765,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <section id="t3">
 <h2>T3. Long SYN into year-end, hard exit: the front premium, not the spread</h2>
 <p><strong>Status:</strong> Sequenced, booked October 12, 2026: the program is live but its risk is held behind trade 1's exit and is not currently running. <strong>Structure:</strong> roll up trade.</p>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Contracts</strong></td><td>ICE TMS Dec 2026 (pricing reference for the current ride; worked in broker and physical SYN market)</td></tr>
 <tr><td><strong>Direction</strong></td><td>long</td></tr>
@@ -775,7 +775,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Risk at invalidation</strong></td><td>$96,000 (0.4R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Prompt premium fails to re-form at the roll, or the freight regime breaks; standing calendar exit before year-end supply regardless of profit</td></tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> The prompt premium fails to re-form as December becomes the front month: the premium was the previous month's story, and year-end synthetic supply arrives early.</p>
 <p><strong>Book entries</strong></p>
 <ul>
@@ -791,7 +791,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <section id="t4">
 <h2>T4. Long December TMR on switching economics: the refinery-slate bid</h2>
 <p><strong>Status:</strong> Booked October 12, 2026 as a standalone trade; folded into the trade 2 strip at the October 12, 2026 re-booking (see the book entries). <strong>Structure:</strong> switching.</p>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Contracts</strong></td><td>ICE TMR Dec 2026</td></tr>
 <tr><td><strong>Direction</strong></td><td>long</td></tr>
@@ -801,7 +801,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Risk at invalidation</strong></td><td>None standalone: the participation's adverse share is about $100,000 of the trade 2 strip's $400,000 full-pace risk</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Puget Sound spur apportionment print, or ANS retakes the delivered-cost toggle on a fresh EIA read</td></tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> The switching bid is inferred, not observed. The Puget Sound spur apportions or ANS retakes the delivered-cost toggle, and the standing bid was never really there.</p>
 <p><strong>Book entries</strong></p>
 <ul>
@@ -814,7 +814,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <section id="t5">
 <h2>T5. TMW-TMS reversion: the statistics are real, the signal is not live</h2>
 <p><strong>Status:</strong> Stood down at booking, October 12, 2026; shadow-marked. <strong>Structure:</strong> reversion.</p>
-<table class="data-table">
+<div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Contracts</strong></td><td>ICE TMS minus TMW spread, front tradeable (Dec 2026) tenors</td></tr>
 <tr><td><strong>Direction</strong></td><td>none (stood down)</td></tr>
@@ -825,7 +825,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Risk at invalidation</strong></td><td>$100,000 (0.4R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Stand-down reviewed when a fresh 60-mark-day band exists in the current regime, or on a freight break</td></tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> The pass is what gets graded here: a band forms in the new regime and the spread reverts without us. The cost of standing down is a missed fade, booked so it is scored like a position.</p>
 <p><strong>Book entries</strong></p>
 <ul>
