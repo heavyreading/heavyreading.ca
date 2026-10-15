@@ -2,18 +2,18 @@
  "page": "/inner/trade-ideas/",
  "title": "Trade ideas",
  "dek": "Inner trade ideas: five trades on one freight regime, sized from a framework that requires 3 to 5 carrier trades a year, plus the bigger-trades candidate pipeline.",
- "built_at": "2026-10-14",
+ "built_at": "2026-10-15",
  "generator": "heavyreading-manifest/1",
  "claims": [
   {
-   "text": "ICE December 2026 settles on October 13, 2026 (last TMW trading day): TMW -25.55 (780 lots), TMR -2.45 (40 lots), TMS 4.55 (40 lots).",
-   "vintage": "ICE end-of-day settlements, October 13, 2026",
+   "text": "ICE December 2026 settles on October 14, 2026 (last TMW trading day): TMW -26.25 (110 lots), TMR -2.00 (0 lots), TMS 4.95 (0 lots).",
+   "vintage": "ICE end-of-day settlements, October 14, 2026",
    "source": "ICE Endex report center",
    "source_url": ""
   },
   {
-   "text": "WCS carry construction on the real daily settles, per day (window September 30, 2026 to October 13, 2026, 9 days with both legs): window-average implied WCS outright December $63.79, January $63.71, a deferral premium of -0.08 against full carry near $0.89/bbl (storage plus financing). Gap about $0.97/bbl. Latest settle day: December $66.89, January $66.95, premium +0.06.",
-   "vintage": "ICE settlements and WTI strip snapshots, September 30, 2026 to October 13, 2026",
+   "text": "WCS carry construction on the real daily settles, per day (window September 30, 2026 to October 14, 2026, 10 days with both legs): window-average implied WCS outright December $64.03, January $63.91, a deferral premium of -0.12 against full carry near $0.89/bbl (storage plus financing). Gap about $1.01/bbl. Latest settle day: December $66.21, January $65.69, premium -0.53.",
+   "vintage": "ICE settlements and WTI strip snapshots, September 30, 2026 to October 14, 2026",
    "source": "ICE Endex report center; house CMA-window construction on daily WTI strips",
    "source_url": ""
   },
@@ -24,13 +24,13 @@
    "source_url": ""
   },
   {
-   "text": "TMW December 2026 to January 2027 calendar spread on ICE settles: +0.95 on September 30, 2026, +1.30 on October 13, 2026 (full series printed on the page), against roughly $0.90/bbl of full carry. Synthetic crude minus WCS spread: +27.15 (September 30, 2026) to +31.87 (October 13, 2026) on ICE November settles; +30.30 (October 2, 2026) to +38.75 (October 13, 2026) on November CalRock marks.",
-   "vintage": "ICE settlements and CalRock marks, September 30, 2026 to October 13, 2026",
+   "text": "TMW December 2026 to January 2027 calendar spread on ICE settles: +0.95 on September 30, 2026, +0.90 on October 14, 2026 (full series printed on the page), against roughly $0.90/bbl of full carry. Synthetic crude minus WCS spread: +27.15 (September 30, 2026) to +32.35 (October 14, 2026) on ICE November settles; +30.30 (October 2, 2026) to +37.55 (October 14, 2026) on November CalRock marks.",
+   "vintage": "ICE settlements and CalRock marks, September 30, 2026 to October 14, 2026",
    "source": "ICE Endex report center; CalRock broker marks (private)",
    "source_url": ""
   },
   {
-   "text": "SYN minus WCS reversion test on 2025 CalRock marks: Sharpe 1.10 net, hit rate 43.2 percent, half-life about 9.5 trading days, max drawdown -$2.75 against +$4.85 total. Spread at +31.87 (ICE, October 13, 2026) against a 2025 range of +7.25 to +15.00; rule stood down, no current-regime 60-day band exists.",
+   "text": "SYN minus WCS reversion test on 2025 CalRock marks: Sharpe 1.10 net, hit rate 43.2 percent, half-life about 9.5 trading days, max drawdown -$2.75 against +$4.85 total. Spread at +32.35 (ICE, October 14, 2026) against a 2025 range of +7.25 to +15.00; rule stood down, no current-regime 60-day band exists.",
    "vintage": "2025 marks; refreshed October 12, 2026",
    "source": "CalRock broker marks (private)",
    "source_url": ""
@@ -42,8 +42,8 @@
    "source_url": ""
   },
   {
-   "text": "Egress strip candidate: short TMW December 2026 to February 2027 (settles -25.55, -24.25, -22.45; 925 lots combined volume, October 13, 2026). Static sizing caps near 120 lots per month at the $1M risk ceiling; carrier scale exists only as a staged build to 425 lots total. The balance model shows pipeline spare capacity positive in every month of 2027, so the candidate is a winter 2026-27 trade.",
-   "vintage": "ICE settlements October 13, 2026; balance model vintage September 28, 2026",
+   "text": "Egress strip candidate: short TMW December 2026 to February 2027 (settles -26.25, -25.35, -22.70; 112 lots combined volume, October 14, 2026). Static sizing caps near 120 lots per month at the $1M risk ceiling; carrier scale exists only as a staged build to 425 lots total. The balance model shows pipeline spare capacity positive in every month of 2027, so the candidate is a winter 2026-27 trade.",
+   "vintage": "ICE settlements October 14, 2026; balance model vintage September 28, 2026",
    "source": "ICE Endex report center; WCSB S&D model (Heavy Reading)",
    "source_url": ""
   },
@@ -69,12 +69,12 @@
  "sources": [
   {
    "publisher": "ICE Endex",
-   "vintage": "settlements, September 30, 2026 to October 13, 2026",
+   "vintage": "settlements, September 30, 2026 to October 14, 2026",
    "url": ""
   },
   {
    "publisher": "CalRock broker marks (private)",
-   "vintage": "marks, to October 13, 2026",
+   "vintage": "marks, to October 14, 2026",
    "url": ""
   },
   {
