@@ -2,9 +2,15 @@
  "page": "/world/spr-storage/",
  "title": "US SPR & Storage Watch",
  "dek": "US Strategic Petroleum Reserve (SPR) and commercial crude stocks, SPR inventory, the 2026 exchange/refill mechanics, and Cushing.",
- "built_at": "2026-10-13",
+ "built_at": "2026-10-14",
  "generator": "heavyreading-manifest/1",
  "claims": [
+  {
+   "text": "Status check on Oct 14: no DOE award announcement for the sixth and final 40-million-barrel SPR exchange had been published since the Oct 13 check, and no new SPR exchange or sale authorization had followed the Oct 10 emergency 4-million-barrel Hurricane Isaias exchange. The ledger therefore still stands at up to 44 million barrels committed for November and December delivery, with returns plus premium barrels due from 2027.",
+   "vintage": "Oct 14, 2026",
+   "source": "U.S. Department of Energy",
+   "source_url": "https://www.energy.gov/articles/energy-department-authorizes-strategic-petroleum-reserve-exchange-address-supply"
+  },
   {
    "text": "Status check on Oct 13: no DOE award announcement for the sixth and final 40-million-barrel SPR exchange had been published since bids closed Oct 6, and no new SPR exchange or sale authorization had followed the Oct 10 emergency 4-million-barrel Hurricane Isaias exchange. The ledger therefore still stands at up to 44 million barrels committed for November and December delivery, with returns plus premium barrels due from 2027.",
    "vintage": "Oct 13, 2026",
@@ -96,12 +102,6 @@
    "source_url": "https://www.zerohedge.com/markets/oil-drops-despite-31-million-drop-crude-inventories-diesel-spikes"
   },
   {
-   "text": "PADD 5 crude imports surged to about 1.6 million b/d, the highest since August 2025 and the largest weekly increase since April 2021.",
-   "vintage": "Oct 7, 2026",
-   "source": "ZeroHedge",
-   "source_url": "https://www.zerohedge.com/markets/oil-drops-despite-31-million-drop-crude-inventories-diesel-spikes"
-  },
-  {
    "text": "Details of the Oct 9 Trump-Putin diesel deal now total 4.8 million tons: 300,000 tons immediately, 500,000 in November, 1 million after that, and up to 3 million more depending on Russian refinery condition; US diesel futures fell almost 5% to about $4.64 a gallon on the news while AAA's national average sat near a record $6.28.",
    "vintage": "Oct 9-10, 2026",
    "source": "Reuters (via Global Banking & Finance)",
@@ -156,12 +156,6 @@
    "source_url": "https://oilprice.com/Energy/Crude-Oil/US-Crude-Stocks-Dip-But-Distillates-Hold-Steady.html"
   },
   {
-   "text": "IEA members agreed to accelerate the March collective stock release and prioritize diesel, which could put up to about 100 million barrels of still-unreleased pledged stocks on the market; France will release 10 million barrels of diesel from its strategic stocks, Franceinfo reported.",
-   "vintage": "Oct 7, 2026",
-   "source": "Reuters (via LAPOST)",
-   "source_url": "https://www.lapost.com/content/oil-prices-rise-as-storms-and-air-strikes-threaten-supply"
-  },
-  {
    "text": "The DOE authorized an emergency SPR exchange of up to 4 million barrels (2 million each for ExxonMobil and BP America) to address supply disruptions from Hurricane Isaias, with the borrowed crude plus premium barrels to be returned in 2027. ExxonMobil's share accelerates deliveries of previously awarded SPR crude to keep Gulf Coast refineries running.",
    "vintage": "Oct 10, 2026",
    "source": "U.S. Department of Energy",
@@ -208,6 +202,12 @@
    "vintage": "Sep 29, 2026",
    "source": "OilPrice.com",
    "source_url": "https://oilprice.com/Latest-Energy-News/World-News/US-Taps-Strategic-Oil-Reserve-Again-as-Diesel-Tops-6.html"
+  },
+  {
+   "text": "DOE data released on Oct 13 put the SPR at 283 million barrels as of Oct 9, unchanged from the prior week and still the lowest since October 1982, about 13 million barrels above the first reading in August 1982. Senator Martin Heinrich raised concerns about salt cavern integrity at current low levels, while the administration said the caverns can be managed safely.",
+   "vintage": "Oct 9, 2026",
+   "source": "SKN (citing U.S. Department of Energy)",
+   "source_url": "https://skn-finance.com/skn-u-s-strategic-petroleum-reserve-holds-at-283-million-barrels-as-hurricane-and-iran-related-withdrawals-loom/"
   },
   {
    "text": "The SPR fell another 784,000 barrels to 283.0 million barrels, taking cumulative withdrawals since late March to 132.5 million barrels; combined commercial and SPR crude stocks drew 3.97 million barrels in the week.",
@@ -372,11 +372,6 @@
    "url": "https://q1019fm.com/2026/10/07/iea-to-meet-wednesday-over-proposed-release-of-reserves-say-two-eu-diplomats/"
   },
   {
-   "publisher": "Reuters (via LAPOST)",
-   "vintage": "",
-   "url": "https://www.lapost.com/content/oil-prices-rise-as-storms-and-air-strikes-threaten-supply"
-  },
-  {
    "publisher": "Agence France-Presse (via EuropeSays)",
    "vintage": "",
    "url": "https://www.europesays.com/turkiye/57447/"
@@ -400,6 +395,11 @@
    "publisher": "OilPrice.com",
    "vintage": "",
    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Taps-Strategic-Oil-Reserve-Again-as-Diesel-Tops-6.html"
+  },
+  {
+   "publisher": "SKN (citing U.S. Department of Energy)",
+   "vintage": "",
+   "url": "https://skn-finance.com/skn-u-s-strategic-petroleum-reserve-holds-at-283-million-barrels-as-hurricane-and-iran-related-withdrawals-loom/"
   },
   {
    "publisher": "Reuters (via BOE Report)",
