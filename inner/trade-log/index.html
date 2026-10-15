@@ -661,6 +661,21 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p>This page is the book behind the <a href="../trade-ideas/index.html">trade ideas</a>: every trade booked as published, marked against ICE (Intercontinental Exchange) end-of-day settlements, and scored when it closes. Discussions and decisions are booked in the open, dated, and never rewritten. Stood-down trades are shadow-marked, so the passes are graded too. One risk unit, 1R, is $250,000.</p>
 <p class="vintage"><b>Vintage:</b> Latest marks: ICE settlements file 2026-10-14 (October 14, 2026). Entry references are the October 9, 2026 settles; that file is the last trading day before booking, and the October 12 file carries the same settles at zero volume, so the book marks flat at inception levels.</p>
 </section>
+<section id="book-today">
+<h2>The book today</h2>
+<div class="tblwrap"><table class="data">
+<tbody>
+<tr><td><strong>Marked to</strong></td><td>October 14, 2026 (ICE settlements file 2026-10-14)</td></tr>
+<tr><td><strong>Unrealized profit and loss (open trades)</strong></td><td>$+88,750 ($+88,500 on the day)</td></tr>
+<tr><td><strong>Profit by trade (unrealized)</strong></td><td>T1 $+48,750; T2 $+40,000</td></tr>
+<tr><td><strong>Realized profit and loss</strong></td><td>$0 (no closed trades)</td></tr>
+<tr><td><strong>Book cost (open risk at invalidation)</strong></td><td>$481,000, about 1.9R, against the 2R ($500,000) complex budget</td></tr>
+<tr><td><strong>Expected profit, open trades at their printed targets</strong></td><td>$383,000</td></tr>
+<tr><td><strong>Book drawdown (marked)</strong></td><td>$0 peak to trough, against the $2,500,000 budget</td></tr>
+<tr><td><strong>Shadow book: T5 (stood down, graded as a pass)</strong></td><td>$-34,200 at 36 lots per side</td></tr>
+</tbody>
+</table></div>
+</section>
 <section id="scoreboard">
 <h2>Scoreboard</h2>
 <div class="tblwrap"><table class="data">
@@ -670,6 +685,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Average win / average loss</strong></td><td>Not applicable until trades close.</td></tr>
 <tr><td><strong>Calibration: expected vs realized moves</strong></td><td>Defined as the mean signed error of the printed expected moves (realized minus expected) across closed trades. Nothing to score yet.</td></tr>
 <tr><td><strong>Realized profit and loss</strong></td><td>$0 (no closed trades)</td></tr>
+<tr><td><strong>Unrealized profit and loss (marked)</strong></td><td>$+88,750 at the October 14, 2026 marks ($+88,500 on the day)</td></tr>
 <tr><td><strong>Open risk</strong></td><td>$481,000, about 1.9R, against the 2R ($500,000) complex budget: inside budget</td></tr>
 <tr><td><strong>Sequenced complex</strong></td><td>About $496,000, about 2.0R, when trade 1 exits: the TMR strip steps to full pace (about $400,000) and the sequenced trade 3 rides resume ($96,000). Risk is sequenced, not stacked (trade-ideas sizing framework, October 12, 2026).</td></tr>
 <tr><td><strong>Book drawdown (marked, active trades)</strong></td><td>$0 peak to trough on 3 mark date(s), against the $2,500,000 book drawdown budget</td></tr>
@@ -722,10 +738,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Direction</strong></td><td>short</td></tr>
 <tr><td><strong>Size</strong></td><td>75 lots</td></tr>
 <tr><td><strong>Entry reference</strong></td><td>-25.60 (ICE settle, Oct 9 2026)</td></tr>
-<tr><td><strong>Latest mark (October 14, 2026)</strong></td><td>-26.25; unrealized move +0.65/bbl, unrealized $+48,750; progress to expected move 22.4 percent; distance to the adverse level 3.75/bbl</td></tr>
 <tr><td><strong>Expected move</strong></td><td>2.90/bbl; expected profit $218,000</td></tr>
 <tr><td><strong>Risk at invalidation</strong></td><td>$281,000 (1.1R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Hard freight break (sustained collapse in TD3C or TD28); secondary: destination inventories drawing while egress stays full</td></tr>
+</tbody>
+</table></div>
+<div class="tblwrap"><table class="data">
+<thead><tr><th>Entry (cost)</th><th>Mark (October 14, 2026)</th><th>Move</th><th>Unrealized P&amp;L</th><th>Progress to expected</th><th>To adverse</th></tr></thead>
+<tbody><tr><td class="num">-25.60</td><td class="num">-26.25</td><td class="num">+0.65/bbl</td><td class="num"><strong>$+48,750</strong></td><td class="num">22.4 percent</td><td class="num">3.75/bbl</td></tr>
 </tbody>
 </table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> Managed money in TMW itself is positioned to cover (that check is still open), and December snaps back toward the pre-spike curve before the storage pricing has time to bind.</p>
@@ -745,10 +765,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Direction</strong></td><td>long</td></tr>
 <tr><td><strong>Size</strong></td><td>80 lots</td></tr>
 <tr><td><strong>Entry reference</strong></td><td>-2.50 (ICE settle, Oct 9 2026 (December marking reference))</td></tr>
-<tr><td><strong>Latest mark (October 14, 2026)</strong></td><td>-2.00; unrealized move +0.50/bbl, unrealized $+40,000; progress to expected move 20.0 percent; distance to the adverse level 2.50/bbl</td></tr>
 <tr><td><strong>Expected move</strong></td><td>2.50/bbl; expected profit $165,000</td></tr>
 <tr><td><strong>Risk at invalidation</strong></td><td>$200,000 (0.8R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Westridge premium fades with no confirmed sweet loading inside the cycle</td></tr>
+</tbody>
+</table></div>
+<div class="tblwrap"><table class="data">
+<thead><tr><th>Entry (cost)</th><th>Mark (October 14, 2026)</th><th>Move</th><th>Unrealized P&amp;L</th><th>Progress to expected</th><th>To adverse</th></tr></thead>
+<tbody><tr><td class="num">-2.50</td><td class="num">-2.00</td><td class="num">+0.50/bbl</td><td class="num"><strong>$+40,000</strong></td><td class="num">20.0 percent</td><td class="num">2.50/bbl</td></tr>
 </tbody>
 </table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> No cargo actually fixes. The Westridge premium fades on its own and December follows the January shape down through -3.00 toward -5.00.</p>
@@ -822,10 +846,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Direction</strong></td><td>none (stood down)</td></tr>
 <tr><td><strong>Size</strong></td><td>Zero today (when armed: see notes in the log)</td></tr>
 <tr><td><strong>Entry reference</strong></td><td>30.25 (ICE settles, Oct 9 2026 (Dec tenors: TMS 4.65 minus TMW -25.60))</td></tr>
-<tr><td><strong>Shadow mark (October 14, 2026)</strong></td><td>Spread 31.20 (entry 30.25); a fade at 36 lots per side would show $-34,200</td></tr>
 <tr><td><strong>Expected move</strong></td><td>4.00/bbl; expected profit not printed as a single-trade forecast (see the log)</td></tr>
 <tr><td><strong>Risk at invalidation</strong></td><td>$100,000 (0.4R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Stand-down reviewed when a fresh 60-mark-day band exists in the current regime, or on a freight break</td></tr>
+</tbody>
+</table></div>
+<div class="tblwrap"><table class="data">
+<thead><tr><th>Entry spread (cost)</th><th>Mark (October 14, 2026)</th><th>Move</th><th>Shadow size</th><th>Shadow P&amp;L</th></tr></thead>
+<tbody><tr><td class="num">30.25</td><td class="num">31.20</td><td class="num">-0.95/bbl</td><td class="num">36 lots per side</td><td class="num"><strong>$-34,200</strong></td></tr>
 </tbody>
 </table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> The pass is what gets graded here: a band forms in the new regime and the spread reverts without us. The cost of standing down is a missed fade, booked so it is scored like a position.</p>
@@ -849,6 +877,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <li><strong>October 13, 2026:</strong> Complex totals unchanged: open risk about $481,000 (about 1.9R); sequenced about $496,000 (about 2.0R). Only trade 2's expectancy moved (about $5,000 at starter pace, about $10,000 at full pace).</li>
 <li><strong>October 13, 2026:</strong> Channel check on the rest of the book for the synthetic step: trade 1 has no channel (the step is light supply; trade 1 is the heavy short, and its mechanism runs on egress and heavy balances). Trade 4 inherits trade 2's treatment inside the strip; its January and February captures are unchanged, so its expected contribution stands at about $80,000. Trade 5's spread contains the synthetic leg, but the trade is stood down at zero size and shadow-marked only: no risk, no action; the step is noted against its when-armed read, nothing more.</li>
 <li><strong>October 13, 2026:</strong> Candidate 3's entry ticket was run October 13, 2026 and failed: the quality pairs in quarter-strip form do not hold the pair edge (SW-WCS and SW-CLK killed at leg-counted Sharpes -0.09 and -0.12; SW-SSP degraded to the 0.50 burial line; SW-SYN untestable on marks depth). C3 does not arm and stays a design; the ideas page prints the test, the mechanism, and the reproduced pair Sharpes (1.72, 1.73, 1.45, 1.28) in place of the stale cited levels. Detail booked under C3 above; full test in goals/wcsb-s-d-model/references/c3_strip_backtest_2026-10-13.md.</li>
+<li><strong>October 15, 2026:</strong> Two-engine framework set (October 15, 2026): the book runs a grinder engine and an episodic engine. The grinder engine is repeatable small-edge programs (roll rides, strip rotations, reversion, carry when it arms); its job is about $5M in a year with no big move, the survival base case for the book. The episodic engine is the rare stacked-evidence blowout trade (egress stress compounding into a $10+/bbl diff move at 200+ lots), which carries the year toward the $15-20M target when the regime offers it. The standing caps do not change: single idea near 1.5R, complex 2R, no sizing up mid-drawdown, and the -$1.5M governor still overrides.</li>
+<li><strong>October 15, 2026:</strong> Grinder capacity from printed figures only: synthetic rides about $105,000 per ride probability-weighted (about $70,000 central plus outage optionality), monthly cadence when running; the TMR strip at about $165,000 central at starter pace for this strip; trade 1's roll-down at about $218,000 on this instance; trade 5's strip-form figure about $525,000 a year, printed as a scaling estimate on a stood-down trade whose tested form was the single-tenor pair. The demonstrated pieces sum to roughly $2.5M a year, so a $5M grinder needs roughly double: ride and strip size stepped up inside the caps, plus two to three more program lines, each earning its place with a backtest and a scorecard arm before its capacity counts. The targeting box gets a second solved line: program-set grinder capacity in a no-blowout year, printed against the $5M line.</li>
 </ul>
 </section>
 <section id="feedback">
