@@ -672,9 +672,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Book cost (open risk at invalidation)</strong></td><td>$481,000, about 1.9R, against the 4R ($1,000,000) complex budget</td></tr>
 <tr><td><strong>Expected profit, open trades at their printed targets</strong></td><td>$383,000</td></tr>
 <tr><td><strong>Book drawdown (marked)</strong></td><td>$0 peak to trough, against the $2,500,000 budget</td></tr>
+<tr><td><strong>Stress loss at booked adverse levels</strong></td><td>$481,000 if every live trade runs to its adverse level together; a scenario, not a probability</td></tr>
+<tr><td><strong>Value at risk (ICE settlements basis)</strong></td><td>1-day 95 percent $95,815, 99 percent $135,481; 10-day 99 percent $428,427; indicative only on 10 mark days (the line firms up as the settlements archive builds; the stress line governs until then)</td></tr>
 <tr><td><strong>Shadow book: T5 (stood down, graded as a pass)</strong></td><td>$-34,200 at 36 lots per side</td></tr>
 </tbody>
 </table></div>
+<p>VaR basis: parametric, from daily changes in the ICE end-of-day settlements of the live marking tenors, at booked sizes. Settlements are public data; no broker marks are used anywhere on this page. Two limits ride with the figure: the archive starts October 1, 2026, so the sample is short, and traded settles understate gap risk in a freight shock. The booked adverse stress above is the harder bound.</p>
 </section>
 <section id="scoreboard">
 <h2>Scoreboard</h2>
