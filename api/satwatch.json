@@ -1,30 +1,41 @@
 {
- "vintage": "Sat Watch: Meteosat IODC geostationary hotspot polls (EUMETView public WMS, 15-min frames, styled-render palette-gray step detection) + NASA FIRMS rechecks, built 2026-10-16T17:55:14.814929Z",
+ "vintage": "Sat Watch: Meteosat IODC geostationary hotspot polls (EUMETView public WMS, 15-min frames, styled-render palette-gray step detection) + NASA FIRMS rechecks, built 2026-10-16T18:23:55.164910Z",
  "data": {
-  "updated_at": "2026-10-16T17:53:54.256002Z",
+  "updated_at": "2026-10-16T18:08:53.781469Z",
   "assets": [
    {
     "key": "yanbu",
     "label": "Yanbu \u2014 Samref refinery, crude terminal, Petroline end",
     "lat": 24.05,
     "lon": 38.25,
+    "region": "gulf",
+    "geo_source": "Meteosat IODC (EUMETView)",
+    "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T17:53:54.256002Z",
-    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 13.0,
      "baseline_diff_med": 103.0,
      "delta_vs_baseline": -90.0,
      "fire_px": 0,
-     "baseline_samples": 9
+     "baseline_samples": 11
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
     },
     "firms": {
      "last_pass_utc": "2026-10-16T11:38:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:10:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
-      "~2026-10-16T19:06:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
-     ]
+      "~2026-10-16T18:17:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:14:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ],
+     "looks_per_day": 9.5
     }
    },
    {
@@ -32,23 +43,34 @@
     "label": "East-West pipeline (Petroline) \u2014 mid-line corridor segment",
     "lat": 24.9,
     "lon": 42.8,
-    "status": "BLIND_CLOUD",
-    "status_reason": "cloud fraction 0.66 >= 0.6 \u2014 IR blind this frame",
-    "last_check_utc": "2026-10-16T17:53:54.256002Z",
-    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "region": "gulf",
+    "geo_source": "Meteosat IODC (EUMETView)",
+    "direction": "up",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (11/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
-     "diff_p995": 10.0,
+     "diff_p995": 11.0,
      "baseline_diff_med": null,
      "delta_vs_baseline": null,
      "fire_px": 0,
      "baseline_samples": 0
     },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
     "firms": {
-     "last_pass_utc": "2026-10-16T11:38:00Z",
+     "last_pass_utc": "2026-10-16T16:48:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:26:00Z (\u00b10.8 h, region-cluster cadence 0.8 h)",
-      "~2026-10-16T19:17:00Z (\u00b10.8 h, region-cluster cadence 0.8 h)"
-     ]
+      "~2026-10-16T18:39:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:34:30Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ],
+     "looks_per_day": 18.0
     }
    },
    {
@@ -56,23 +78,34 @@
     "label": "Ras Tanura / Ju'aymah \u2014 crude terminals",
     "lat": 26.65,
     "lon": 50.15,
+    "region": "gulf",
+    "geo_source": "Meteosat IODC (EUMETView)",
+    "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T17:53:54.256002Z",
-    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 12.0,
-     "baseline_diff_med": 59.0,
-     "delta_vs_baseline": -47.0,
+     "baseline_diff_med": 36.0,
+     "delta_vs_baseline": -24.0,
      "fire_px": 0,
-     "baseline_samples": 9
+     "baseline_samples": 11
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": "2026-10-16T10:51:00Z",
+     "last_pass_utc": "2026-10-16T16:48:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:19:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
-      "~2026-10-16T19:15:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
-     ]
+      "~2026-10-16T18:22:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)",
+      "~2026-10-16T19:56:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)"
+     ],
+     "looks_per_day": 15.5
     }
    },
    {
@@ -80,23 +113,34 @@
     "label": "Kharg Island \u2014 Iranian crude export terminal",
     "lat": 29.23,
     "lon": 50.32,
+    "region": "gulf",
+    "geo_source": "Meteosat IODC (EUMETView)",
+    "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T17:53:54.256002Z",
-    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 10.0,
-     "baseline_diff_med": 55.0,
-     "delta_vs_baseline": -45.0,
+     "baseline_diff_med": 31.0,
+     "delta_vs_baseline": -21.0,
      "fire_px": 0,
-     "baseline_samples": 9
+     "baseline_samples": 11
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": "2026-10-16T10:51:00Z",
+     "last_pass_utc": "2026-10-16T16:50:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:11:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
-      "~2026-10-16T19:06:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
-     ]
+      "~2026-10-16T18:24:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)",
+      "~2026-10-16T19:58:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)"
+     ],
+     "looks_per_day": 16.0
     }
    },
    {
@@ -104,23 +148,258 @@
     "label": "Strait of Hormuz \u2014 shipping lane",
     "lat": 26.5,
     "lon": 56.35,
+    "region": "gulf",
+    "geo_source": "Meteosat IODC (EUMETView)",
+    "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T17:53:54.256002Z",
-    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
-     "diff_p995": 10.0,
-     "baseline_diff_med": 19.0,
-     "delta_vs_baseline": -9.0,
+     "diff_p995": 9.0,
+     "baseline_diff_med": 11.0,
+     "delta_vs_baseline": -2.0,
      "fire_px": 0,
-     "baseline_samples": 9
+     "baseline_samples": 11
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": "2026-10-16T10:51:00Z",
+     "last_pass_utc": "2026-10-16T16:48:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:19:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
-      "~2026-10-16T19:15:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
-     ]
+      "~2026-10-16T19:14:00Z (\u00b10.8 h, region-cluster cadence 1.2 h)",
+      "~2026-10-16T20:27:00Z (\u00b10.8 h, region-cluster cadence 1.2 h)"
+     ],
+     "looks_per_day": 14.0
+    }
+   },
+   {
+    "key": "syncrude",
+    "label": "Syncrude Mildred Lake upgrader (oil sands)",
+    "lat": 57.05,
+    "lon": -111.65,
+    "region": "canada",
+    "geo_source": "GOES-West (NASA GIBS)",
+    "direction": "both",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:50:00Z",
+    "thermal": {
+     "diff_p995": 196.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
+    "firms": {
+     "last_pass_utc": null,
+     "next_pass_windows": [],
+     "looks_per_day": null
+    }
+   },
+   {
+    "key": "suncor",
+    "label": "Suncor Base Plant upgrader (oil sands)",
+    "lat": 56.99,
+    "lon": -111.47,
+    "region": "canada",
+    "geo_source": "GOES-West (NASA GIBS)",
+    "direction": "both",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:50:00Z",
+    "thermal": {
+     "diff_p995": 170.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
+    "firms": {
+     "last_pass_utc": null,
+     "next_pass_windows": [],
+     "looks_per_day": null
+    }
+   },
+   {
+    "key": "horizon",
+    "label": "CNRL Horizon upgrader (oil sands)",
+    "lat": 57.28,
+    "lon": -111.74,
+    "region": "canada",
+    "geo_source": "GOES-West (NASA GIBS)",
+    "direction": "both",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:50:00Z",
+    "thermal": {
+     "diff_p995": 0.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
+    "firms": {
+     "last_pass_utc": null,
+     "next_pass_windows": [],
+     "looks_per_day": null
+    }
+   },
+   {
+    "key": "kearl",
+    "label": "Imperial Kearl oil sands (froth treatment; no upgrader)",
+    "lat": 57.39,
+    "lon": -110.86,
+    "region": "canada",
+    "geo_source": "GOES-West (NASA GIBS)",
+    "direction": "both",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:50:00Z",
+    "thermal": {
+     "diff_p995": 139.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
+    "firms": {
+     "last_pass_utc": null,
+     "next_pass_windows": [],
+     "looks_per_day": null
+    }
+   },
+   {
+    "key": "scotford",
+    "label": "Scotford upgrader (Shell, Fort Saskatchewan)",
+    "lat": 53.79,
+    "lon": -113.03,
+    "region": "canada",
+    "geo_source": "GOES-West (NASA GIBS)",
+    "direction": "both",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:50:00Z",
+    "thermal": {
+     "diff_p995": 0.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
+    "firms": {
+     "last_pass_utc": null,
+     "next_pass_windows": [],
+     "looks_per_day": null
+    }
+   },
+   {
+    "key": "strathcona",
+    "label": "Imperial Strathcona refinery (Edmonton)",
+    "lat": 53.55,
+    "lon": -113.39,
+    "region": "canada",
+    "geo_source": "GOES-West (NASA GIBS)",
+    "direction": "both",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:50:00Z",
+    "thermal": {
+     "diff_p995": 170.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
+    "firms": {
+     "last_pass_utc": null,
+     "next_pass_windows": [],
+     "looks_per_day": null
+    }
+   },
+   {
+    "key": "westridge",
+    "label": "Westridge marine terminal (TMX, Burnaby) \u2014 thermal only; AIS is covered by the Narrows stack",
+    "lat": 49.29,
+    "lon": -122.95,
+    "region": "canada",
+    "geo_source": "GOES-West (NASA GIBS)",
+    "direction": "up",
+    "status": "LEARNING",
+    "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
+    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_frame_utc": "2026-10-16T17:50:00Z",
+    "thermal": {
+     "diff_p995": 191.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "baseline": {
+     "looks_total": 2,
+     "looks_clear": 2,
+     "mature": false,
+     "mature_looks": 672,
+     "maturity_pct": 0.3
+    },
+    "firms": {
+     "last_pass_utc": null,
+     "next_pass_windows": [],
+     "looks_per_day": null
     }
    }
   ],

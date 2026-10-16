@@ -1,5 +1,5 @@
 {
- "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-16T17:55:14.821223Z",
+ "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-16T18:24:44.222563Z",
  "data": {
   "updated_at": "2026-10-16T16:49:40.867052Z",
   "events": [
@@ -245,7 +245,7 @@
     ],
     "adjudication": {
      "claim_id": "claim-20261016T162816-east-west",
-     "generated_at": "2026-10-16T17:55:14.814929Z",
+     "generated_at": "2026-10-16T18:23:55.164910Z",
      "claims": [
       {
        "source": "IRIB via Newsquawk",
@@ -281,19 +281,19 @@
        "anomalous": []
       },
       "geostationary": {
-       "status": "BLIND_CLOUD",
+       "status": "NORMAL",
        "per_asset": [
         {
          "asset": "east-west",
-         "status": "BLIND_CLOUD",
-         "last_frame_utc": "2026-10-16T16:45:00Z",
+         "status": "LEARNING",
+         "last_frame_utc": "2026-10-16T17:15:00Z",
          "delta_vs_baseline": null,
-         "detail": "cloud fraction 0.66 >= 0.6 \u2014 IR blind this frame"
+         "detail": "baseline still accumulating (11/8 clear samples) \u2014 no step verdict yet"
         },
         {
          "asset": "yanbu",
          "status": "NORMAL",
-         "last_frame_utc": "2026-10-16T16:45:00Z",
+         "last_frame_utc": "2026-10-16T17:15:00Z",
          "delta_vs_baseline": -90.0,
          "detail": "no step change"
         }
@@ -306,7 +306,7 @@
       }
      },
      "silence": {
-      "minutes_since_claim": 86,
+      "minutes_since_claim": 115,
       "confirmations": 0,
       "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
      },
@@ -326,7 +326,7 @@
        }
       }
      },
-     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 86 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: blind_cloud."
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 115 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
     }
    },
    {
@@ -571,7 +571,7 @@
     ],
     "adjudication": {
      "claim_id": "claim-20261016T162816-east-west",
-     "generated_at": "2026-10-16T17:55:14.814929Z",
+     "generated_at": "2026-10-16T18:23:55.164910Z",
      "claims": [
       {
        "source": "IRIB via Newsquawk",
@@ -607,19 +607,19 @@
        "anomalous": []
       },
       "geostationary": {
-       "status": "BLIND_CLOUD",
+       "status": "NORMAL",
        "per_asset": [
         {
          "asset": "east-west",
-         "status": "BLIND_CLOUD",
-         "last_frame_utc": "2026-10-16T16:45:00Z",
+         "status": "LEARNING",
+         "last_frame_utc": "2026-10-16T17:15:00Z",
          "delta_vs_baseline": null,
-         "detail": "cloud fraction 0.66 >= 0.6 \u2014 IR blind this frame"
+         "detail": "baseline still accumulating (11/8 clear samples) \u2014 no step verdict yet"
         },
         {
          "asset": "yanbu",
          "status": "NORMAL",
-         "last_frame_utc": "2026-10-16T16:45:00Z",
+         "last_frame_utc": "2026-10-16T17:15:00Z",
          "delta_vs_baseline": -90.0,
          "detail": "no step change"
         }
@@ -632,7 +632,7 @@
       }
      },
      "silence": {
-      "minutes_since_claim": 86,
+      "minutes_since_claim": 115,
       "confirmations": 0,
       "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
      },
@@ -652,7 +652,7 @@
        }
       }
      },
-     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 86 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: blind_cloud."
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 115 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
     }
    }
   ]
