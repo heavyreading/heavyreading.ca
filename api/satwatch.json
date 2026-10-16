@@ -1,0 +1,142 @@
+{
+ "vintage": "Sat Watch: Meteosat IODC geostationary hotspot polls (EUMETView public WMS, 15-min frames, styled-render palette-gray step detection) + NASA FIRMS rechecks, built 2026-10-16T17:55:14.814929Z",
+ "data": {
+  "updated_at": "2026-10-16T17:53:54.256002Z",
+  "assets": [
+   {
+    "key": "yanbu",
+    "label": "Yanbu \u2014 Samref refinery, crude terminal, Petroline end",
+    "lat": 24.05,
+    "lon": 38.25,
+    "status": "NORMAL",
+    "status_reason": "no step change",
+    "last_check_utc": "2026-10-16T17:53:54.256002Z",
+    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "thermal": {
+     "diff_p995": 13.0,
+     "baseline_diff_med": 103.0,
+     "delta_vs_baseline": -90.0,
+     "fire_px": 0,
+     "baseline_samples": 9
+    },
+    "firms": {
+     "last_pass_utc": "2026-10-16T11:38:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:10:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:06:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ]
+    }
+   },
+   {
+    "key": "east-west",
+    "label": "East-West pipeline (Petroline) \u2014 mid-line corridor segment",
+    "lat": 24.9,
+    "lon": 42.8,
+    "status": "BLIND_CLOUD",
+    "status_reason": "cloud fraction 0.66 >= 0.6 \u2014 IR blind this frame",
+    "last_check_utc": "2026-10-16T17:53:54.256002Z",
+    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "thermal": {
+     "diff_p995": 10.0,
+     "baseline_diff_med": null,
+     "delta_vs_baseline": null,
+     "fire_px": 0,
+     "baseline_samples": 0
+    },
+    "firms": {
+     "last_pass_utc": "2026-10-16T11:38:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:26:00Z (\u00b10.8 h, region-cluster cadence 0.8 h)",
+      "~2026-10-16T19:17:00Z (\u00b10.8 h, region-cluster cadence 0.8 h)"
+     ]
+    }
+   },
+   {
+    "key": "ras-tanura",
+    "label": "Ras Tanura / Ju'aymah \u2014 crude terminals",
+    "lat": 26.65,
+    "lon": 50.15,
+    "status": "NORMAL",
+    "status_reason": "no step change",
+    "last_check_utc": "2026-10-16T17:53:54.256002Z",
+    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "thermal": {
+     "diff_p995": 12.0,
+     "baseline_diff_med": 59.0,
+     "delta_vs_baseline": -47.0,
+     "fire_px": 0,
+     "baseline_samples": 9
+    },
+    "firms": {
+     "last_pass_utc": "2026-10-16T10:51:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:19:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:15:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ]
+    }
+   },
+   {
+    "key": "kharg",
+    "label": "Kharg Island \u2014 Iranian crude export terminal",
+    "lat": 29.23,
+    "lon": 50.32,
+    "status": "NORMAL",
+    "status_reason": "no step change",
+    "last_check_utc": "2026-10-16T17:53:54.256002Z",
+    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "thermal": {
+     "diff_p995": 10.0,
+     "baseline_diff_med": 55.0,
+     "delta_vs_baseline": -45.0,
+     "fire_px": 0,
+     "baseline_samples": 9
+    },
+    "firms": {
+     "last_pass_utc": "2026-10-16T10:51:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:11:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:06:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ]
+    }
+   },
+   {
+    "key": "hormuz",
+    "label": "Strait of Hormuz \u2014 shipping lane",
+    "lat": 26.5,
+    "lon": 56.35,
+    "status": "NORMAL",
+    "status_reason": "no step change",
+    "last_check_utc": "2026-10-16T17:53:54.256002Z",
+    "last_frame_utc": "2026-10-16T16:45:00Z",
+    "thermal": {
+     "diff_p995": 10.0,
+     "baseline_diff_med": 19.0,
+     "delta_vs_baseline": -9.0,
+     "fire_px": 0,
+     "baseline_samples": 9
+    },
+    "firms": {
+     "last_pass_utc": "2026-10-16T10:51:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:19:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:15:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ]
+    }
+   }
+  ],
+  "event_log": [],
+  "claims_open": [
+   "claim-20261016T162816-east-west"
+  ]
+ },
+ "meta": {
+  "units": {
+   "diff_p995": "palette-gray levels (rendered, not Kelvin)"
+  },
+  "sources": [
+   "EUMETView WMS msg_iodc layers (public, no key)",
+   "NASA FIRMS active-fire CSV feeds (public, no key)"
+  ],
+  "notes": "Statuses: NORMAL, ANOMALY (sensor step-change vs the asset's own baseline), BLIND_CLOUD, BLIND_ERROR, LEARNING (baseline accumulating). FIRMS pass times are inferred from regional detection clusters, labeled where used."
+ }
+}
