@@ -1,7 +1,7 @@
 {
- "vintage": "Sat Watch: Meteosat IODC geostationary hotspot polls (EUMETView public WMS, 15-min frames, styled-render palette-gray step detection) + NASA FIRMS rechecks, built 2026-10-16T18:23:55.164910Z",
+ "vintage": "Sat Watch: Meteosat IODC geostationary hotspot polls (EUMETView public WMS, 15-min frames, styled-render palette-gray step detection) + NASA FIRMS rechecks, built 2026-10-16T18:28:11.670780Z",
  "data": {
-  "updated_at": "2026-10-16T18:08:53.781469Z",
+  "updated_at": "2026-10-16T18:23:55.164910Z",
   "assets": [
    {
     "key": "yanbu",
@@ -13,7 +13,7 @@
     "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 13.0,
@@ -23,17 +23,17 @@
      "baseline_samples": 11
     },
     "baseline": {
-     "looks_total": 2,
-     "looks_clear": 2,
+     "looks_total": 11,
+     "looks_clear": 11,
      "mature": false,
      "mature_looks": 672,
-     "maturity_pct": 0.3
+     "maturity_pct": 1.6
     },
     "firms": {
      "last_pass_utc": "2026-10-16T11:38:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:17:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
-      "~2026-10-16T19:14:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+      "~2026-10-16T19:14:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T20:11:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
      ],
      "looks_per_day": 9.5
     }
@@ -48,7 +48,7 @@
     "direction": "up",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (11/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 11.0,
@@ -58,11 +58,11 @@
      "baseline_samples": 0
     },
     "baseline": {
-     "looks_total": 2,
-     "looks_clear": 2,
+     "looks_total": 11,
+     "looks_clear": 7,
      "mature": false,
      "mature_looks": 672,
-     "maturity_pct": 0.3
+     "maturity_pct": 1.0
     },
     "firms": {
      "last_pass_utc": "2026-10-16T16:48:00Z",
@@ -83,7 +83,7 @@
     "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 12.0,
@@ -93,17 +93,17 @@
      "baseline_samples": 11
     },
     "baseline": {
-     "looks_total": 2,
-     "looks_clear": 2,
+     "looks_total": 11,
+     "looks_clear": 11,
      "mature": false,
      "mature_looks": 672,
-     "maturity_pct": 0.3
+     "maturity_pct": 1.6
     },
     "firms": {
      "last_pass_utc": "2026-10-16T16:48:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:22:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)",
-      "~2026-10-16T19:56:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)"
+      "~2026-10-16T19:56:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)",
+      "~2026-10-16T21:30:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)"
      ],
      "looks_per_day": 15.5
     }
@@ -118,7 +118,7 @@
     "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 10.0,
@@ -128,17 +128,17 @@
      "baseline_samples": 11
     },
     "baseline": {
-     "looks_total": 2,
-     "looks_clear": 2,
+     "looks_total": 11,
+     "looks_clear": 11,
      "mature": false,
      "mature_looks": 672,
-     "maturity_pct": 0.3
+     "maturity_pct": 1.6
     },
     "firms": {
      "last_pass_utc": "2026-10-16T16:50:00Z",
      "next_pass_windows": [
-      "~2026-10-16T18:24:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)",
-      "~2026-10-16T19:58:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)"
+      "~2026-10-16T19:58:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)",
+      "~2026-10-16T21:32:00Z (\u00b10.8 h, region-cluster cadence 1.6 h)"
      ],
      "looks_per_day": 16.0
     }
@@ -153,7 +153,7 @@
     "direction": "up",
     "status": "NORMAL",
     "status_reason": "no step change",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:15:00Z",
     "thermal": {
      "diff_p995": 9.0,
@@ -163,11 +163,11 @@
      "baseline_samples": 11
     },
     "baseline": {
-     "looks_total": 2,
-     "looks_clear": 2,
+     "looks_total": 11,
+     "looks_clear": 11,
      "mature": false,
      "mature_looks": 672,
-     "maturity_pct": 0.3
+     "maturity_pct": 1.6
     },
     "firms": {
      "last_pass_utc": "2026-10-16T16:48:00Z",
@@ -188,7 +188,7 @@
     "direction": "both",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:50:00Z",
     "thermal": {
      "diff_p995": 196.0,
@@ -205,9 +205,12 @@
      "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": null,
-     "next_pass_windows": [],
-     "looks_per_day": null
+     "last_pass_utc": "2026-10-16T11:19:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:55:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:52:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ],
+     "looks_per_day": 15.0
     }
    },
    {
@@ -220,7 +223,7 @@
     "direction": "both",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:50:00Z",
     "thermal": {
      "diff_p995": 170.0,
@@ -237,9 +240,12 @@
      "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": null,
-     "next_pass_windows": [],
-     "looks_per_day": null
+     "last_pass_utc": "2026-10-16T11:19:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:55:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:52:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ],
+     "looks_per_day": 15.0
     }
    },
    {
@@ -252,7 +258,7 @@
     "direction": "both",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:50:00Z",
     "thermal": {
      "diff_p995": 0.0,
@@ -269,9 +275,12 @@
      "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": null,
-     "next_pass_windows": [],
-     "looks_per_day": null
+     "last_pass_utc": "2026-10-16T11:19:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T19:03:00Z (\u00b10.8 h, region-cluster cadence 1.0 h)",
+      "~2026-10-16T20:01:00Z (\u00b10.8 h, region-cluster cadence 1.0 h)"
+     ],
+     "looks_per_day": 14.5
     }
    },
    {
@@ -284,7 +293,7 @@
     "direction": "both",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:50:00Z",
     "thermal": {
      "diff_p995": 139.0,
@@ -301,9 +310,12 @@
      "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": null,
-     "next_pass_windows": [],
-     "looks_per_day": null
+     "last_pass_utc": "2026-10-16T11:19:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T19:03:00Z (\u00b10.8 h, region-cluster cadence 1.0 h)",
+      "~2026-10-16T20:01:00Z (\u00b10.8 h, region-cluster cadence 1.0 h)"
+     ],
+     "looks_per_day": 14.5
     }
    },
    {
@@ -316,7 +328,7 @@
     "direction": "both",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:50:00Z",
     "thermal": {
      "diff_p995": 0.0,
@@ -333,9 +345,12 @@
      "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": null,
-     "next_pass_windows": [],
-     "looks_per_day": null
+     "last_pass_utc": "2026-10-16T11:19:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:47:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:43:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ],
+     "looks_per_day": 18.0
     }
    },
    {
@@ -348,7 +363,7 @@
     "direction": "both",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:50:00Z",
     "thermal": {
      "diff_p995": 170.0,
@@ -365,9 +380,12 @@
      "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": null,
-     "next_pass_windows": [],
-     "looks_per_day": null
+     "last_pass_utc": "2026-10-16T11:19:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:47:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)",
+      "~2026-10-16T19:43:00Z (\u00b10.8 h, region-cluster cadence 0.9 h)"
+     ],
+     "looks_per_day": 18.0
     }
    },
    {
@@ -380,7 +398,7 @@
     "direction": "up",
     "status": "LEARNING",
     "status_reason": "baseline still accumulating (2/8 clear samples) \u2014 no step verdict yet",
-    "last_check_utc": "2026-10-16T18:08:53.781469Z",
+    "last_check_utc": "2026-10-16T18:23:55.164910Z",
     "last_frame_utc": "2026-10-16T17:50:00Z",
     "thermal": {
      "diff_p995": 191.0,
@@ -397,9 +415,12 @@
      "maturity_pct": 0.3
     },
     "firms": {
-     "last_pass_utc": null,
-     "next_pass_windows": [],
-     "looks_per_day": null
+     "last_pass_utc": "2026-10-16T12:44:00Z",
+     "next_pass_windows": [
+      "~2026-10-16T18:32:00Z (\u00b10.8 h, region-cluster cadence 1.0 h)",
+      "~2026-10-16T19:30:00Z (\u00b10.8 h, region-cluster cadence 1.0 h)"
+     ],
+     "looks_per_day": 16.0
     }
    }
   ],

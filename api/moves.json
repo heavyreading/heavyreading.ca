@@ -1,5 +1,5 @@
 {
- "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-16T18:24:44.222563Z",
+ "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-16T18:28:11.681741Z",
  "data": {
   "updated_at": "2026-10-16T16:49:40.867052Z",
   "events": [
@@ -245,7 +245,7 @@
     ],
     "adjudication": {
      "claim_id": "claim-20261016T162816-east-west",
-     "generated_at": "2026-10-16T18:23:55.164910Z",
+     "generated_at": "2026-10-16T18:28:11.670780Z",
      "claims": [
       {
        "source": "IRIB via Newsquawk",
@@ -306,7 +306,7 @@
       }
      },
      "silence": {
-      "minutes_since_claim": 115,
+      "minutes_since_claim": 119,
       "confirmations": 0,
       "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
      },
@@ -326,7 +326,7 @@
        }
       }
      },
-     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 115 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 119 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
     }
    },
    {
@@ -571,7 +571,7 @@
     ],
     "adjudication": {
      "claim_id": "claim-20261016T162816-east-west",
-     "generated_at": "2026-10-16T18:23:55.164910Z",
+     "generated_at": "2026-10-16T18:28:11.670780Z",
      "claims": [
       {
        "source": "IRIB via Newsquawk",
@@ -632,7 +632,7 @@
       }
      },
      "silence": {
-      "minutes_since_claim": 115,
+      "minutes_since_claim": 119,
       "confirmations": 0,
       "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
      },
@@ -652,7 +652,7 @@
        }
       }
      },
-     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 115 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 119 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T12:19:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
     }
    }
   ]
