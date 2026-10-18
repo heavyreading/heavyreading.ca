@@ -1,13 +1,39 @@
 {
- "generated": "October 16, 2026",
- "cot_vintage": "2026-10-06",
- "cot_retrieved": "2026-10-13",
+ "generated": "October 18, 2026",
+ "cot_vintage": "2026-10-13",
+ "cot_retrieved": "2026-10-16",
  "cot_sources": "CFTC Commitments of Traders (WTI + Canadian diffs); ICE weekly COT PDFs direct (Brent, Gasoil)",
  "oi_provenance": "real ICE EOD (Report Center 142) for TMW/TMR from 2026-09-21, history accumulating; synthetic stand-in elsewhere",
  "price_provenance": "synthetic (stand-in until real settlement prices)",
  "threshold_rule": "whale = |z| >= 2.5 of weekly category d(net) vs trailing 52w of that leg; 2.0 <= |z| < 2.5 is the watch tier (sub_whale); per-market, no absolute lot floor",
- "n_flags": 208,
+ "n_flags": 209,
  "flags": [
+  {
+   "flag_id": "2026-10-13|ICE WCS 1A diff|cot_attribution|1|sub_whale|weekly d(commercial_net)=850 lots (4w -8909), z=+0.5 vs trailing 52w (|z|>=2.5 whale, >=2.0 watch); velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
+   "date": "2026-10-13",
+   "market": "ICE WCS 1A diff",
+   "source": "CFTC",
+   "instrument": "TMW:M1",
+   "stage": "cot_attribution",
+   "direction": 1,
+   "category": "commercial",
+   "size_tier": "sub_whale",
+   "velocity": "multi_week",
+   "confidence": "low",
+   "attribution": "withheld (sub-whale)",
+   "rule": "weekly d(commercial_net)=850 lots (4w -8909), z=+0.5 vs trailing 52w (|z|>=2.5 whale, >=2.0 watch); velocity multi_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
+   "synthetic": false,
+   "d1_lots": 850.0,
+   "d4_lots": -8909.0,
+   "threshold_lots": 6022.280015267067,
+   "oi_z": 0.45932194143498817,
+   "post_diff": {
+    "7": null,
+    "14": null,
+    "28": null
+   },
+   "aligned_2w": null
+  },
   {
    "flag_id": "2026-09-29|ICE WCS 1A diff|cot_attribution|1|sub_whale|weekly d(managed_money_net)=2905 lots (4w 3785), z=+2.4 vs trailing 52w (|z|>=2.5 whale, >=2.0 watch); velocity single_week; sub-whale accumulation (attribution withheld), OR OI spike with ambiguous direction (liquidation / position squaring)",
    "date": "2026-09-29",

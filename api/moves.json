@@ -1,8 +1,1735 @@
 {
- "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-16T21:28:53.031422Z",
+ "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-18T03:07:56.459242Z",
  "data": {
-  "updated_at": "2026-10-16T16:49:40.867052Z",
+  "updated_at": "2026-10-17T23:14:44.647748Z",
   "events": [
+   {
+    "id": "sensor-claim-20261017T231444-sensor-horizon",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T23:14:44.647748Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "horizon",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 230 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T20:49:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T231444-sensor-horizon",
+     "generated_at": "2026-10-18T03:05:35.278827Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T23:14:44.647748Z",
+       "published_local": "2026-10-17 17:14 MDT",
+       "text": "abnormal QUIET: thermal level 38 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "CNRL Horizon upgrader (oil sands)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T20:49:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "horizon",
+         "status": "BLIND_ERROR",
+         "last_frame_utc": "2026-10-18T02:00:00Z",
+         "delta_vs_baseline": -0.67,
+         "detail": "geo fetch failed: ValueError"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 230,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T23:29:44.647748Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       },
+       "+60": {
+        "ts": "2026-10-18T00:14:44.647748Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 230 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T20:49:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T225944-sensor-strathcona",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T22:59:44.540492Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "strathcona",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 245 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T20:46:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T225944-sensor-strathcona",
+     "generated_at": "2026-10-18T03:05:35.278827Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T22:59:44.540492Z",
+       "published_local": "2026-10-17 16:59 MDT",
+       "text": "abnormal QUIET: thermal level 65 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Imperial Strathcona refinery (Edmonton)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T20:46:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "strathcona",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-18T02:30:00Z",
+         "delta_vs_baseline": 3.5,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 245,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.04,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T23:14:44.540492Z",
+        "price": 99.02,
+        "pct_vs_claim": -0.02
+       },
+       "+60": {
+        "ts": "2026-10-17T23:59:44.540492Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.0
+       },
+       "+240": {
+        "ts": "2026-10-18T02:59:44.540492Z",
+        "price": 99.02,
+        "pct_vs_claim": -0.02
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 245 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T20:46:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T225944-sensor-scotford",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T22:59:44.540492Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "scotford",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 245 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T20:46:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T225944-sensor-scotford",
+     "generated_at": "2026-10-18T03:05:35.278827Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T22:59:44.540492Z",
+       "published_local": "2026-10-17 16:59 MDT",
+       "text": "abnormal QUIET: thermal level 69 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Scotford upgrader (Shell, Fort Saskatchewan)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T20:46:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "scotford",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-18T02:30:00Z",
+         "delta_vs_baseline": 2.5,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 245,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.04,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T23:14:44.540492Z",
+        "price": 99.02,
+        "pct_vs_claim": -0.02
+       },
+       "+60": {
+        "ts": "2026-10-17T23:59:44.540492Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.0
+       },
+       "+240": {
+        "ts": "2026-10-18T02:59:44.540492Z",
+        "price": 99.02,
+        "pct_vs_claim": -0.02
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 245 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T20:46:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T185751-sensor-lloydminster",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T18:57:51.380893Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "lloydminster",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 166 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T16:18:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T185751-sensor-lloydminster",
+     "generated_at": "2026-10-17T21:44:42.838168Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T18:57:51.380893Z",
+       "published_local": "2026-10-17 12:57 MDT",
+       "text": "abnormal QUIET: thermal level 65 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Lloydminster upgrader (Cenovus, Saskatchewan)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T16:18:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "lloydminster",
+         "status": "BLIND_ERROR",
+         "last_frame_utc": "2026-10-17T20:50:00Z",
+         "delta_vs_baseline": 0.0,
+         "detail": "geo fetch failed: ValueError"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 166,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T19:12:51.380893Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       },
+       "+60": {
+        "ts": "2026-10-17T19:57:51.380893Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 166 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T16:18:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T185751-sensor-kearl",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T18:57:51.380893Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "kearl",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 166 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T16:18:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T185751-sensor-kearl",
+     "generated_at": "2026-10-17T21:44:42.838168Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T18:57:51.380893Z",
+       "published_local": "2026-10-17 12:57 MDT",
+       "text": "abnormal QUIET: thermal level 28 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Imperial Kearl oil sands (froth treatment; no upgrader)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T16:18:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "kearl",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T21:10:00Z",
+         "delta_vs_baseline": -2.67,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 166,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T19:12:51.380893Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       },
+       "+60": {
+        "ts": "2026-10-17T19:57:51.380893Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 166 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T16:18:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T145016-sensor-kearl",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T14:50:16.962003Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "kearl",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 172 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: anomaly.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T145016-sensor-kearl",
+     "generated_at": "2026-10-17T17:42:49.825856Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T14:50:16.962003Z",
+       "published_local": "2026-10-17 08:50 MDT",
+       "text": "abnormal QUIET: thermal level 58 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Imperial Kearl oil sands (froth treatment; no upgrader)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T11:00:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "ANOMALY",
+       "per_asset": [
+        {
+         "asset": "kearl",
+         "status": "ANOMALY",
+         "last_frame_utc": "2026-10-17T17:10:00Z",
+         "delta_vs_baseline": -11.01,
+         "detail": "abnormal QUIET: thermal level 50 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 172,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T15:05:16.962003Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T15:50:16.962003Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 172 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: anomaly."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T143516-sensor-horizon",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T14:35:16.120816Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "horizon",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 294 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T143516-sensor-horizon",
+     "generated_at": "2026-10-17T19:29:38.639134Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T14:35:16.120816Z",
+       "published_local": "2026-10-17 08:35 MDT",
+       "text": "abnormal QUIET: thermal level 53 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "CNRL Horizon upgrader (oil sands)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T11:00:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "horizon",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T18:50:00Z",
+         "delta_vs_baseline": 0.67,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 294,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T14:50:16.120816Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T15:35:16.120816Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       },
+       "+240": {
+        "ts": "2026-10-17T18:35:16.120816Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 294 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T143516-sensor-syncrude",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T14:35:16.120816Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "syncrude",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 294 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T143516-sensor-syncrude",
+     "generated_at": "2026-10-17T19:29:38.639134Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T14:35:16.120816Z",
+       "published_local": "2026-10-17 08:35 MDT",
+       "text": "abnormal QUIET: thermal level 25 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Syncrude Mildred Lake upgrader (oil sands)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T11:00:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "syncrude",
+         "status": "BLIND_ERROR",
+         "last_frame_utc": "2026-10-17T18:40:00Z",
+         "delta_vs_baseline": 0.0,
+         "detail": "geo fetch failed: ValueError"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 294,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T14:50:16.120816Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T15:35:16.120816Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       },
+       "+240": {
+        "ts": "2026-10-17T18:35:16.120816Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 294 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T142024-sensor-strathcona",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T14:20:24.561624Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "strathcona",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 294 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T142024-sensor-strathcona",
+     "generated_at": "2026-10-17T19:14:38.487087Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T14:20:24.561624Z",
+       "published_local": "2026-10-17 08:20 MDT",
+       "text": "abnormal QUIET: thermal level 54 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Imperial Strathcona refinery (Edmonton)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T11:00:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "strathcona",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T18:40:00Z",
+         "delta_vs_baseline": -16.66,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 294,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T14:35:24.561624Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T15:20:24.561624Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.02
+       },
+       "+240": {
+        "ts": "2026-10-17T18:20:24.561624Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 294 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T135536-sensor-scotford",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T13:55:36.243380Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "scotford",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 287 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T135536-sensor-scotford",
+     "generated_at": "2026-10-17T18:42:50.535638Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T13:55:36.243380Z",
+       "published_local": "2026-10-17 07:55 MDT",
+       "text": "abnormal QUIET: thermal level 50 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Scotford upgrader (Shell, Fort Saskatchewan)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T11:00:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "scotford",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T18:10:00Z",
+         "delta_vs_baseline": -68.17,
+         "detail": "sub-threshold deviation logged (baseline immature or single-frame); not alerted"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 287,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.02,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T14:10:36.243380Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T14:55:36.243380Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       },
+       "+240": {
+        "ts": "2026-10-17T17:55:36.243380Z",
+        "price": 99.02,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 287 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:00:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T132535-sensor-east-west",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T13:25:35.640547Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "east-west",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 469 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:17:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T132535-sensor-east-west",
+     "generated_at": "2026-10-17T21:14:41.848412Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T13:25:35.640547Z",
+       "published_local": "2026-10-17 07:25 MDT",
+       "text": "IR fire-channel differential stepped +77.0 palette-gray levels vs baseline median 10.0",
+       "wording_class": "FIRE",
+       "wording_quote": "IR fire-channel differential stepped",
+       "assets": [
+        "East-West pipeline (Petroline) \u2014 mid-line corridor segment"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T11:17:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "east-west",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T20:45:00Z",
+         "delta_vs_baseline": 0.0,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 469,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "Brent",
+      "at_claim": 109.86,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T13:40:35.640547Z",
+        "price": 109.86,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T14:25:35.640547Z",
+        "price": 109.86,
+        "pct_vs_claim": 0.0
+       },
+       "+240": {
+        "ts": "2026-10-17T17:25:35.640547Z",
+        "price": 109.86,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 469 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T11:17:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T042827-sensor-yanbu",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T04:28:27.431201Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "yanbu",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 114 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T23:18:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T042827-sensor-yanbu",
+     "generated_at": "2026-10-17T06:22:48.298598Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T04:28:27.431201Z",
+       "published_local": "2026-10-16 22:28 MDT",
+       "text": "IR fire-channel differential stepped +90.5 palette-gray levels vs baseline median 9.5",
+       "wording_class": "FIRE",
+       "wording_quote": "IR fire-channel differential stepped",
+       "assets": [
+        "Yanbu \u2014 Samref refinery, crude terminal, Petroline end"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-16T23:18:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "yanbu",
+         "status": "BLIND_ERROR",
+         "last_frame_utc": "2026-10-17T04:45:00Z",
+         "delta_vs_baseline": 84.5,
+         "detail": "IR fire-channel differential stepped +84.5 palette-gray levels vs baseline median 18.5"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 114,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "Brent",
+      "at_claim": 109.69,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T04:43:27.431201Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T05:28:27.431201Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 114 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T23:18:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T041327-sensor-east-west",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T04:13:27.274796Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "east-west",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 129 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T00:22:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T041327-sensor-east-west",
+     "generated_at": "2026-10-17T06:22:48.298598Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T04:13:27.274796Z",
+       "published_local": "2026-10-16 22:13 MDT",
+       "text": "IR fire-channel differential stepped +94.0 palette-gray levels vs baseline median 9.0",
+       "wording_class": "FIRE",
+       "wording_quote": "IR fire-channel differential stepped",
+       "assets": [
+        "East-West pipeline (Petroline) \u2014 mid-line corridor segment"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T00:22:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "east-west",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T05:30:00Z",
+         "delta_vs_baseline": 2.0,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 129,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "Brent",
+      "at_claim": 109.69,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T04:28:27.274796Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T05:13:27.274796Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 129 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T00:22:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T035828-sensor-hormuz",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T03:58:28.164415Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "hormuz",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 144 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T00:22:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: anomaly.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T035828-sensor-hormuz",
+     "generated_at": "2026-10-17T06:22:48.298598Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T03:58:28.164415Z",
+       "published_local": "2026-10-16 21:58 MDT",
+       "text": "IR fire-channel differential stepped +89.5 palette-gray levels vs baseline median 12.5",
+       "wording_class": "FIRE",
+       "wording_quote": "IR fire-channel differential stepped",
+       "assets": [
+        "Strait of Hormuz \u2014 shipping lane"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-17T00:22:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "ANOMALY",
+       "per_asset": [
+        {
+         "asset": "hormuz",
+         "status": "ANOMALY",
+         "last_frame_utc": "2026-10-17T05:30:00Z",
+         "delta_vs_baseline": 93.0,
+         "detail": "IR fire-channel differential stepped +93.0 palette-gray levels vs baseline median 9.0"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 144,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "Brent",
+      "at_claim": 109.69,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T04:13:28.164415Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T04:58:28.164415Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 144 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-17T00:22:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: anomaly."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T034326-sensor-kharg",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T03:43:26.762321Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "kharg",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 159 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T23:16:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T034326-sensor-kharg",
+     "generated_at": "2026-10-17T06:22:48.298598Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T03:43:26.762321Z",
+       "published_local": "2026-10-16 21:43 MDT",
+       "text": "IR fire-channel differential stepped +87.0 palette-gray levels vs baseline median 9.0",
+       "wording_class": "FIRE",
+       "wording_quote": "IR fire-channel differential stepped",
+       "assets": [
+        "Kharg Island \u2014 Iranian crude export terminal"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-16T23:16:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "kharg",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T05:30:00Z",
+         "delta_vs_baseline": -1.0,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 159,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "Brent",
+      "at_claim": 109.69,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T03:58:26.762321Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T04:43:26.762321Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 159 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T23:16:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T034326-sensor-ras-tanura",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T03:43:26.762321Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "ras-tanura",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 159 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T23:16:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T034326-sensor-ras-tanura",
+     "generated_at": "2026-10-17T06:22:48.298598Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T03:43:26.762321Z",
+       "published_local": "2026-10-16 21:43 MDT",
+       "text": "IR fire-channel differential stepped +90.0 palette-gray levels vs baseline median 9.0",
+       "wording_class": "FIRE",
+       "wording_quote": "IR fire-channel differential stepped",
+       "assets": [
+        "Ras Tanura / Ju'aymah \u2014 crude terminals"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-16T23:16:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "ras-tanura",
+         "status": "BLIND_ERROR",
+         "last_frame_utc": "2026-10-17T04:45:00Z",
+         "delta_vs_baseline": 11.0,
+         "detail": "geo fetch failed: RuntimeError"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 159,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "Brent",
+      "at_claim": 109.69,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T03:58:26.762321Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T04:43:26.762321Z",
+        "price": 109.69,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 159 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T23:16:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T021324-sensor-kearl",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T02:13:24.758445Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "kearl",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 174 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T21:53:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T021324-sensor-kearl",
+     "generated_at": "2026-10-17T05:07:47.090536Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T02:13:24.758445Z",
+       "published_local": "2026-10-16 20:13 MDT",
+       "text": "abnormal QUIET: thermal level 39 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Imperial Kearl oil sands (froth treatment; no upgrader)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-16T21:53:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "kearl",
+         "status": "BLIND_ERROR",
+         "last_frame_utc": "2026-10-17T03:40:00Z",
+         "delta_vs_baseline": -19.0,
+         "detail": "geo fetch failed: ValueError"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 174,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.04,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T02:28:24.758445Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T03:13:24.758445Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 174 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T21:53:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
+   {
+    "id": "sensor-claim-20261017T021324-sensor-horizon",
+    "kind": "sensor",
+    "detected_at": "2026-10-17T02:13:24.758445Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "horizon",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 174 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T21:53:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261017T021324-sensor-horizon",
+     "generated_at": "2026-10-17T05:07:47.090536Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-17T02:13:24.758445Z",
+       "published_local": "2026-10-16 20:13 MDT",
+       "text": "abnormal QUIET: thermal level 25 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "CNRL Horizon upgrader (oil sands)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-16T21:53:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "horizon",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-17T04:10:00Z",
+         "delta_vs_baseline": 26.0,
+         "detail": "sub-threshold deviation logged (baseline immature or single-frame); not alerted"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 174,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.04,
+      "path": {
+       "+15": {
+        "ts": "2026-10-17T02:28:24.758445Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.0
+       },
+       "+60": {
+        "ts": "2026-10-17T03:13:24.758445Z",
+        "price": 99.04,
+        "pct_vs_claim": 0.0
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 174 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T21:53:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
    {
     "id": "brent-1792168781",
     "detected_at": "2026-10-16T16:49:40.867052Z",
