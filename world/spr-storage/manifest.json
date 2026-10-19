@@ -2,9 +2,15 @@
  "page": "/world/spr-storage/",
  "title": "US SPR & Storage Watch",
  "dek": "US Strategic Petroleum Reserve (SPR) and commercial crude stocks, SPR inventory, the 2026 exchange/refill mechanics, and Cushing.",
- "built_at": "2026-10-17",
+ "built_at": "2026-10-19",
  "generator": "heavyreading-manifest/1",
  "claims": [
+  {
+   "text": "Status check on Oct 18: no DOE award announcement for the 17-million-barrel SPR exchange solicitation issued Oct 16 had been published, and no new SPR exchange or sale authorization had followed it. The round, FY27 SPR Oil Release No. 1, is still open, with proposals due by 11:00 a.m. Central Time on Oct 21, 2026. The earlier 40-million-barrel round, FY26 SPR Oil Release No. 4, whose bids closed Oct 6, also still shows no award information on DOE's exchange archive, unlike the three earlier FY26 rounds. The award announcements are the next dated events on the ledger.",
+   "vintage": "Oct 18, 2026",
+   "source": "U.S. Department of Energy",
+   "source_url": "https://www.spr.doe.gov/doeec/ActiveDocs.htm?type=exchange"
+  },
   {
    "text": "The Department of Energy issued a request for proposals on Oct 16 for an exchange of up to 17 million barrels of crude oil from the Strategic Petroleum Reserve (SPR), Reuters reported. The round is a portion of the pending 40 million barrels that form the last batch of the US 172-million-barrel commitment under the March IEA coordinated release of 400 million barrels. The US has released about 132.5 million barrels from the SPR since the war began. DOE has not published awards from the late September re-offer of the 40 million barrels, but Friday's 17-million-barrel figure implies about 23 million barrels were awarded in that round, Energy Aspects wrote in a note cited by Reuters.",
    "vintage": "Oct 16, 2026",
@@ -20,12 +26,6 @@
   {
    "text": "Status check on Oct 15: no DOE award announcement for the sixth and final 40-million-barrel SPR exchange had been published since bids closed Oct 6, and no new SPR exchange or sale authorization had followed the Oct 10 emergency 4-million-barrel Hurricane Isaias exchange. The ledger therefore still stands at up to 44 million barrels committed for November and December delivery, with returns plus premium barrels due from 2027.",
    "vintage": "Oct 15, 2026",
-   "source": "U.S. Department of Energy",
-   "source_url": "https://www.energy.gov/articles/energy-department-authorizes-strategic-petroleum-reserve-exchange-address-supply"
-  },
-  {
-   "text": "Status check on Oct 14: no DOE award announcement for the sixth and final 40-million-barrel SPR exchange had been published since the Oct 13 check, and no new SPR exchange or sale authorization had followed the Oct 10 emergency 4-million-barrel Hurricane Isaias exchange. The ledger therefore still stands at up to 44 million barrels committed for November and December delivery, with returns plus premium barrels due from 2027.",
-   "vintage": "Oct 14, 2026",
    "source": "U.S. Department of Energy",
    "source_url": "https://www.energy.gov/articles/energy-department-authorizes-strategic-petroleum-reserve-exchange-address-supply"
   },
@@ -168,6 +168,12 @@
    "source_url": "https://oilprice.com/Energy/Crude-Oil/US-Crude-Stocks-Dip-But-Distillates-Hold-Steady.html"
   },
   {
+   "text": "OilPrice.com reported on Oct 16 that if companies take the full 17 million barrels in the new solicitation before any repayments arrive, SPR inventories would fall from about 283 million barrels to roughly 266 million, inside the 250 to 300 million barrel range generally considered the reserve's operational minimum zone. The June offer of the same final tranche drew agreement to borrow only about 500,000 barrels against premiums of up to 24 percent in extra barrels returned.",
+   "vintage": "Oct 16, 2026",
+   "source": "OilPrice.com",
+   "source_url": "https://oilprice.com/Latest-Energy-News/World-News/US-Offers-Another-17-Million-SPR-Barrels-as-Fuel-Crisis-Deepens.html"
+  },
+  {
    "text": "The Oct 16 solicitation re-offers the remainder of the final SPR exchange tranche first offered in June, when companies agreed to borrow only about 500,000 barrels against premiums of up to 24 percent in extra barrels returned to the SPR, Reuters reported. Borrowers under an exchange return the crude plus premium barrels at a later date.",
    "vintage": "Oct 16, 2026",
    "source": "Reuters (via BOE Report)",
@@ -290,6 +296,11 @@
  ],
  "sources": [
   {
+   "publisher": "U.S. Department of Energy",
+   "vintage": "",
+   "url": "https://www.spr.doe.gov/doeec/ActiveDocs.htm?type=exchange"
+  },
+  {
    "publisher": "Reuters (via Devdiscourse)",
    "vintage": "",
    "url": "https://www.devdiscourse.com/article/international/3993879-us-solicits-exchange-of-up-to-17-million-barrels-of-oil-from-strategic-reserve"
@@ -398,6 +409,11 @@
    "publisher": "OilPrice.com",
    "vintage": "",
    "url": "https://oilprice.com/Energy/Crude-Oil/US-Crude-Stocks-Dip-But-Distillates-Hold-Steady.html"
+  },
+  {
+   "publisher": "OilPrice.com",
+   "vintage": "",
+   "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Offers-Another-17-Million-SPR-Barrels-as-Fuel-Crisis-Deepens.html"
   },
   {
    "publisher": "Reuters (via BOE Report)",
