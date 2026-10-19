@@ -4,6 +4,29 @@
   "as_of": "2026-10-19",
   "edition": "2026-10-19",
   "call_vintage": "as of Mon Oct 19, 02:10 MDT",
+  "flash": {
+   "body": "November nominations are due today, Mon Oct 19. Enbridge announces Mainline apportionment after nominations close, so the notice is a later-this-week print, not a today print. When it lands, this block carries the announced percentages, both registered calls scored on depth error, and what the print does to the December read: the same day, not in the next morning's edition.",
+   "calls": [
+    {
+     "detail": "Light 8% / Heavy 4% at Kerrobert: the current month's announced figures, carried forward. The backtest-selected baseline; no model has beaten naive persistence on apportionment depth.",
+     "label": "Persistence baseline, for November"
+    },
+    {
+     "detail": "Light 12% / Heavy 8% at Kerrobert: 4 points deeper than persistence on each class, registered in the predlog before the notice. It earns its keep only if it beats the baseline on depth error.",
+     "label": "Registered judgment call, for November"
+    }
+   ],
+   "errors": null,
+   "expires": "2026-10-26",
+   "headline": "On the clock: November Mainline apportionment",
+   "id": "apportionment-2026-11",
+   "impact": "The December ticket's one registered checkpoint. The December WCS differential settled -$27.40 on Oct 16 against the printed December fair value of -$27.83; this notice is the print the December read is waiting on.",
+   "kind": "apportionment_notice",
+   "print": null,
+   "source": "Enbridge Mainline November notice, pending (nominations close Oct 19); calls registered in the predlog, Sep 28 and Oct 16, 2026",
+   "status": "awaiting_print",
+   "set_at": "2026-10-19T09:50:47-06:00"
+  },
   "changes": [
    {
     "headline": "Overnight fade on the Russia sanctions waiver, against a physically bullish weekend",
@@ -112,13 +135,13 @@
   "balance_highlights": [
    {
     "month": "2026-11",
-    "requires_price_response_kbd": 52.2,
-    "pipe_spare_kbd": -52.2
+    "requires_price_response_kbd": 30.8,
+    "pipe_spare_kbd": -30.8
    },
    {
     "month": "2026-12",
-    "requires_price_response_kbd": 94.6,
-    "pipe_spare_kbd": -94.6
+    "requires_price_response_kbd": 73.7,
+    "pipe_spare_kbd": -73.7
    }
   ],
   "latest_digest": "2026-10-16"
@@ -136,7 +159,7 @@
    "CER",
    "annotations/maintenance_forward.yaml"
   ],
-  "notes": "Snapshot for the app home tab, mirroring the Now page's data: overnight changes ranked by balance impact, flags forming, the forward calendar, and current apportionment. kbpd change figures are the publication's own arithmetic on public inputs, stated as estimates.",
+  "notes": "Snapshot for the app home tab, mirroring the Now page's data: overnight changes ranked by balance impact, flags forming, the forward calendar, and current apportionment. flash is the same-day print block (docs/FLASH.md): the object while a pre-registered print is on the clock or has just landed, null otherwise. kbpd change figures are the publication's own arithmetic on public inputs, stated as estimates.",
   "blindsided": [
    "Apportionment announcements are newswire-based; CER Guide BB.2 filings trail ~1 quarter",
    "Oct 2026 numbers are announced (Enbridge notice Sep 16), not yet in CER filings",
