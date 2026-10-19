@@ -1,8 +1,102 @@
 {
- "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-19T15:04:13.876544Z",
+ "vintage": "Big-move events from bin/move_watch.py + sensor adjudications from bin/sensor_watch.py; built 2026-10-19T21:27:32.713188Z",
  "data": {
-  "updated_at": "2026-10-19T14:55:43.112071Z",
+  "updated_at": "2026-10-19T18:12:38.264603Z",
   "events": [
+   {
+    "id": "sensor-claim-20261019T181238-sensor-scotford",
+    "kind": "sensor",
+    "detected_at": "2026-10-19T18:12:38.264603Z",
+    "benchmark": null,
+    "symbol": null,
+    "asset": "scotford",
+    "window_min": null,
+    "from_ts": null,
+    "to_ts": null,
+    "from_price": null,
+    "to_price": null,
+    "move_usd": null,
+    "move_pct": null,
+    "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 175 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-19T17:34:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal.",
+    "headlines": [],
+    "adjudication": {
+     "claim_id": "claim-20261019T181238-sensor-scotford",
+     "generated_at": "2026-10-19T21:07:55.167067Z",
+     "claims": [
+      {
+       "source": "SENSOR (Meteosat IODC)",
+       "published_utc": "2026-10-19T18:12:38.264603Z",
+       "published_local": "2026-10-19 12:12 MDT",
+       "text": "abnormal QUIET: thermal level 46 palette-gray below baseline median for two consecutive frames (plant signature gone, not just a flare spike)",
+       "wording_class": "UNSPECIFIED",
+       "wording_quote": "",
+       "assets": [
+        "Scotford upgrader (Shell, Fort Saskatchewan)"
+       ]
+      }
+     ],
+     "channels": {
+      "saudi_official": {
+       "status": "SILENT",
+       "detail": ""
+      },
+      "wire": {
+       "status": "SEE MOVE EVENT HEADLINES",
+       "detail": "wire corroboration is classified in the linked move event (CONFIRMED_FRESH scan)"
+      },
+      "osint_video": {
+       "status": "NOT MONITORED BY SCRIPT",
+       "detail": "verified/geolocated footage is an agent-verification step on wake"
+      },
+      "firms": {
+       "verdict": "STILL_BLIND",
+       "coverage_end_at_claim": "2026-10-19T17:34:00Z",
+       "claim_window_covered": false,
+       "first_post_claim_pass": null,
+       "anomalous": []
+      },
+      "geostationary": {
+       "status": "NORMAL",
+       "per_asset": [
+        {
+         "asset": "scotford",
+         "status": "NORMAL",
+         "last_frame_utc": "2026-10-19T20:30:00Z",
+         "delta_vs_baseline": -2.0,
+         "detail": "no step change"
+        }
+       ],
+       "note": "Meteosat IODC via EUMETView WMS, 15-min frames, styled-render palette-gray metrics"
+      },
+      "ais_adsb": {
+       "status": "NOT AVAILABLE",
+       "detail": "no clean public no-credential feed for Gulf/Red Sea anchorages or Saudi airspace \u2014 documented gap, not faked"
+      }
+     },
+     "silence": {
+      "minutes_since_claim": 175,
+      "confirmations": 0,
+      "half_life_note": "Every confirmed hit on these assets this war drew official and wire confirmation within about an hour. On a hyper-watched asset, silence past that window is evidence, weighted accordingly \u2014 it is not proof."
+     },
+     "price": {
+      "benchmark": "WTI",
+      "at_claim": 99.45,
+      "path": {
+       "+15": {
+        "ts": "2026-10-19T18:27:38.264603Z",
+        "price": 99.07,
+        "pct_vs_claim": -0.38
+       },
+       "+60": {
+        "ts": "2026-10-19T19:12:38.264603Z",
+        "price": 98.32,
+        "pct_vs_claim": -1.14
+       }
+      }
+     },
+     "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 175 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-19T17:34:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
+    }
+   },
    {
     "id": "sensor-claim-20261019T145543-sensor-lloydminster",
     "kind": "sensor",
@@ -2896,6 +2990,247 @@
      },
      "verdict": "CLAIM ONLY \u2014 UNCONFIRMED 174 min after the claim with no confirmation on any channel. FIRMS coverage of the claim window ends 2026-10-16T21:53:00Z \u2014 BEFORE the claim; satellites were blind at claim time, not contradicting. Geostationary layer: normal."
     }
+   },
+   {
+    "id": "brent-1792426325",
+    "detected_at": "2026-10-19T16:22:22.296723Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-10-19T15:10:00Z",
+    "to_ts": "2026-10-19T16:12:05Z",
+    "from_price": 108.02,
+    "to_price": 109.64,
+    "move_usd": 1.62,
+    "move_pct": 1.5,
+    "verdict": "CLAIM ONLY: a state-media/social claim with NO wire corroboration in the candidate set \u2014 unconfirmed; do not trade it as fact.",
+    "headlines": [
+     {
+      "title": "Crude Oil slips from a one-month high on Trump's Russia waiver - FXStreet",
+      "source": "FXStreet",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ1hna29ZQVF3aFBkSWZkYWFxUUUyZ0hKX1hPUXgzb0d5aVVKVThrSVJaTVlTZXlGTHBpTE45b0IxWFk5TVNFOUtOSUx1VTgtSDlRaVFQWjItVjB6VmR0R2xCbzVaaXpKVEJpT2pSVThfc216Mi1HM0s0aE4zRmpzWWwxaHQ3YWUyQS1ud1Q3LVozcVRNM2NXOXRPeEE4LU96c1dDV3ZwYw?oc=5",
+      "published": "2026-10-19T16:10:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil slips from a one-month high on Trump's Russia waiver &nbsp;&nbsp; FXStreet"
+     },
+     {
+      "title": "Crude pullback tests U.S. producer economics - Oil & Gas 360",
+      "source": "Oil & Gas 360",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE10WXRPV0ZpR0Fwa3EzLU1TcDJ6ZDFGLXNPZjZvLU9feWhmRHAzRE1CVHBTSFYxU1MzXzNxS0pSeDBZVUdPcFpIdi1TNklPVlR4bDFmV3FmcmlLWG5mWDJUNzFJeURZc3FrY1owRzVXS3B4MW15eXY2cjB0blRDZw?oc=5",
+      "published": "2026-10-19T16:07:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude pullback tests U.S. producer economics &nbsp;&nbsp; Oil & Gas 360"
+     },
+     {
+      "title": "TSX slips as hotter inflation revives rate concerns, oil prices retreat - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONHd0ZF82SlpKMGdRcWh4QklhZExTdG8wT2MyVzRDTTJ1cVJFaDc2N3FaR3VZSS1Ec2FmTUVNLVBkYzR4NENSbVBXMG9vWFJMY2xDcW4zQXVYMVVtdGNGV3NyWllrSkVWcEppYnJqZXIyTXN3RWNPZVdLZlNWeGRKU2ZucGU5ZGhEN0RSS3Exb253Y20zMkJGNXZrdHNkT1JwMDZUSkFncm01dmswd1E1YzIwd2h1dXRKSWU0MzhVaw?oc=5",
+      "published": "2026-10-19T16:06:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "TSX slips as hotter inflation revives rate concerns, oil prices retreat &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Oil Prices Fall as Traders Weigh Russia Sanctions Waiver, Middle East Risks -- Commodities Roundup - www.marketscreener.com",
+      "source": "www.marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVUd2T2pOZXhwYUNxbTgyamYwcERYemNQV0QweDRnYlVVV3pNS010Ni1XU1p4TkxGM1dRVElEU09Ud0xyNUtxUF9UQlhwVHZyb0pYWjJvdW5sSVZPeHRYUUVhUFpEQTJYSkhoU2xfUTQtUm1OQzNmN01weWpQR1VVVjNMMXhzYWdQWlY2WFJsOUZSUUZDLVVNajA2LUZBeXdPSzhHSHlsay1zNzZEZ1ZPcnFpTGdiS2RyNXM0SEZ3RVJoaFk5bFdNSEVvc0FBVG9vLVpxVmJUS1J2RFdMcmo1Ng?oc=5",
+      "published": "2026-10-19T15:40:40Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Fall as Traders Weigh Russia Sanctions Waiver, Middle East Risks -- Commodities Roundup &nbsp;&nbsp; www.marketscreener.com"
+     },
+     {
+      "title": "People scour strait of Hormuz for spilt cargo after Iran attacks container ships - The Guardian",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMVd5NTdZejdJLW9KZFpNUFVhVFpHaUxWU09tMU9lTXMxNGl3aG8ydFhmekpmcEZEdHNWRWs1MEVrUU1JamVKN1NVVWxyTXUyVmpQOC1lcUJTWUtFSkNEU2hweGJ3cFVaa2hfQ0xEZ1hTbEFKcTlPMGY0RTRXS3dpWXpIdWVXUWdvcV9MRnBqaEJlS2pySWNhbXBiWTRYVXktMFpmWjVn?oc=5",
+      "published": "2026-10-19T15:40:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "People scour strait of Hormuz for spilt cargo after Iran attacks container ships &nbsp;&nbsp; The Guardian"
+     },
+     {
+      "title": "Crude Oil Price Analysis \u2013 Oil Prices Eye Higher Levels as US Crude Inventories Fall and Refinery Runs Rise - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOUU41WXdwbDZTWUQzRkY2czhJVHlBckV5NG5kSElpNXUxWTdGRDdKT3JzczlwY2FUaGMwU2U2a2Q5OERWcWwzMUxsZ3ZxQ3JPSklQeE9BSlBQMFJTZF9wWXI3ZU5oNXJXWnFPM0dKdEZmMTBxSWI1cEx0cUNDNGRUbHQ0cTVmSURPeDBwWmU4anNlWkYyaWYtdlNRYkRRS3M1RE9YeHRMbkpMT1I2RHJ4ZjlETVBZYm9zTWJCTnZtLVN3Y25nb3ZIY2NOdXVzQ0FQWTN1TElKN0ppajVSTk9EbDNUa0JVQ2hlVHhlTg?oc=5",
+      "published": "2026-10-19T15:17:11Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Price Analysis \u2013 Oil Prices Eye Higher Levels as US Crude Inventories Fall and Refinery Runs Rise &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "At Least 15 Ships Attacked in the Strait of Hormuz \u2014 The Guardian - UA.NEWS",
+      "source": "UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTFRCWEVUd0h3Y2ZPZWF4dmVlRG40QldwdjB6dXdvMldOTWszSVQyYV9ZSDJtdWo3Um05MjA1U2VNM0Q1b3FBRU51U3o5TktqbGpNMmlNZTJQQVRLcTVMRlk0TjZLVHgzUDEwWm1JMWJfY2lYZGd2TW1ZMW8yUi1WblJNNkhURHg1VlUwVDRNUW5PRFNJZkE?oc=5",
+      "published": "2026-10-19T15:16:41Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "At Least 15 Ships Attacked in the Strait of Hormuz \u2014 The Guardian &nbsp;&nbsp; UA.NEWS"
+     },
+     {
+      "title": "Egypt pledges Saudi support to fight Houthis - Quantum Commodity Intelligence",
+      "source": "Quantum Commodity Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYUY0RXhfNGF5SzNHMnZXZFplN1NXWW5sMWZmYkstX3VZWWU0azZKM3o0b1BsZERxcWVPdFBxRXFNVmIxRW45dklMY1RyNVhiSkJoX2x6aWVxQ1J4Mzk4b1JaLVZEbUhrQXlCUGFuSzRfTlN3X0kwem1CQ20wZDA3X1RFMWotbVRNX0dSR0M3dEg?oc=5",
+      "published": "2026-10-19T15:02:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Egypt pledges Saudi support to fight Houthis &nbsp;&nbsp; Quantum Commodity Intelligence"
+     },
+     {
+      "title": "Apache Strike Could Shut Down Britain's Critical Forties Pipeline - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdUswUDE3c2JNOE1HTEFFQklEOFNSazRmUU1WNzlYdERCOVk2R2dNVVFRWVJscElMdnRSTVVCaWhYbFR5Q3lKd24teHVkZUdnOVpvWjN3bHh5MXlVV3k2MUNuQ2JHR2lUSEdzaDgwUnBlNllrNE5lMGJNblZZQzJScXZ6a09QZXFkQ1JmbzE0My1nWU1RSkM0ZzhGQW1OWlJ3N05EcnV2dDJpZU3SAasBQVVfeXFMT3VLMFAxN3NiTThNR0xBRUJJRDhTUms0ZlFNVjc5WHREQjlZNkdnTVVRUVlSbHBJTHZ0Uk1VQmloWGxUeUN5SnduLXh1ZGVHZzlab1ozd2x4eTF5VVd5NjFDbkNiR0dpVEhHc2g4MFJwZTZZazROZTBiTW5WWUMyUnF2emtPUGVxZENSZm8xNDMtZ1lNUUpDNGc4RkFtTlpSdzdORHJ1dnQyaWVN?oc=5",
+      "published": "2026-10-19T15:01:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Apache Strike Could Shut Down Britain's Critical Forties Pipeline &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "How Oil Prices Affect Tires and Tire Shop Costs - Tire Review Magazine",
+      "source": "Tire Review Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13MDdyMVNXeFpVeG4ycEwwYkQ2aGd4WV9GZUZMNkFHb21XOUthTEp3UmxtZi1uaW1BcHZXX3ZRSTNLNEVsSGo3X0dCOHc4OU5yX2FOSjhjczU3TFczeEpkT1lOa3ZCUQ?oc=5",
+      "published": "2026-10-19T15:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "How Oil Prices Affect Tires and Tire Shop Costs &nbsp;&nbsp; Tire Review Magazine"
+     },
+     {
+      "title": "Iran had a plan, Saudi Arabia had a better one - Arab News",
+      "source": "Arab News",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM29DRFVSVFhVeWJHMkdVSE9ZUWVnYjlyTnpYcHVyTG5CZ250dHBkNWxLWDZYRm05Y2RQcXpxaXhzMldGaDBza2Y2WVQ4QlZKUFptdms5WUVJUndXVHFXblZWYzlLX2NLYzYweENESkVJNmtmZ0pVTXVOVnRjZklyczRjRy15andJa3NxbkhFcnY5Zw?oc=5",
+      "published": "2026-10-19T14:47:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran had a plan, Saudi Arabia had a better one &nbsp;&nbsp; Arab News"
+     },
+     {
+      "title": "Russia ships 20 million barrels of oil to Asia via Arctic route amid shipping disruptions: Report - The Times of India",
+      "source": "The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOdmRESlBkZ0dORzh1bTJaYzc0ZHRPLVFRQlRnUms2OGt3RE13YzB2UFFveHg2UU5zeFNCRnZoZFRadHJ6VTRJT0o4d1FfdDBVQlJPWVNCd0V4aURZMXFIYVp5OGZ1SzdVS2xHaU93b3Fxd0tnX0dBMkF6Qm5CazdDXzZYNjJhdDRkOU9ESFRnM3AwQUM1SHVvUFhWcmFqMHlyRHNDNHNESVBhaXJiN1hKV09LZXJqSW4ySkp2TS1ZQ0g0RVZVcWxGbWxyaHNONGYyNk1NaTBSZE00LXI4Ni1COFNTaTJoTUMzYnVQRWg0RV9GQjV0OFE5NXVVNl9jUE15a1VxQ09sODUtcWZudmtFWW9HQTVkNk5kbWfSAZ8CQVVfeXFMUFQ2VE4wSDhCS0wyV2EyYVowck1mclVDeWlEbW9WWllCcS1LMWFkQkF6NGFxb3JYOFJHREs2by1OVXFMdWJzTUkzZW9Lb2x5LUdmcGtOUHdMNGtBczgzSkRfY29uTHpMa2RDWEhkbVRZV0FPSHFXbmNRSmVCbEJaTWdZelZCQkI2enJiMjhqaW5xRkV6ajJ2YkRSb2Z4a2dWVmY3dTRmYWpUX3EzLVJMaVR4VXNOSmc0WHVpSHdpaTRRb1c1eGRKdWNTNXhPSk00WGZKUG1taV9LbC1oeWowQjVwaUM4eDdsU09wempHZG1uZ3p6aFpramZXLTh3UnJMX0hyUVlRaWN4M1RYaHE4N1liRkhFVmNhZTREbDZHT1k?oc=5",
+      "published": "2026-10-19T14:43:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Russia ships 20 million barrels of oil to Asia via Arctic route amid shipping disruptions: Report &nbsp;&nbsp; The Times of India"
+     },
+     {
+      "title": "Oil prices slip after Trump waives sanctions against Russian crude (CL1:COM:Commodity) - Seeking Alpha",
+      "source": "Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaGx3TUpfQ01WM2ZyUFJ6b0YxTUUwdmk5V1dObUM0a3RJc2F1TXgxWVhvejdITi1RckdFTEctMWR2V0VFdjBpbDZvenRfM2pMYk00R0M0OXpUR19Rbk1zc203RnBNWkEyZDJ3NE93VnVqWnJjYjV3eE1Oemh6R1pBajJ0aW1EbDZYMVRlUXRZTF9RMFlWb240U2RaYV9ubDVRU0tEclpCTQ?oc=5",
+      "published": "2026-10-19T14:40:29Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices slip after Trump waives sanctions against Russian crude (CL1:COM:Commodity) &nbsp;&nbsp; Seeking Alpha"
+     },
+     {
+      "title": "Mozambique Pitches Sasol and ROMPCO on $250 Million Gas Project - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVDhwVG9HeFh1d2tITDQ1RHRjc1VNNmh6dXZWNjhvMUkyUlF5akJ5S2ZweGNvTjk5UWhRa3E5czh0RUNwcEVORXlyUFFxWGYtb1dBb0h3cmVUa3NNRFFFd2Z5cS1xM191V0xKOVN3RGZPYnFVUmNrM1VnMG8taVhQdGgyYUp2WEFMXzJsWEV1UE4zbUU3LWZWM0R6VnlNYTZRLU9pNFREbV9GSmdQdXZoNmxBOHNSa2J4Y3fSAb8BQVVfeXFMT3VGc3JHTC1nTWJSLUF5MnJEcnZxSEpoMFM2MXVTUnpMVlJBTk9CRTMtd1FvbGVSd2pLellkRllOSTlIODRRdkV2cldxQ3ptMk9FaUxlcTd3UmtyLVlnenpNTDhhcGd0dGtjWEhNNmV1OENhNVJfUzJ0RTA1MlRxbmtYRFNiM1FCWkh3TG9qSkxFY3BXbHNtX2xzTk05MXY3NHBzNnZZdG5hUTBzVWZ0eGl5ZE96YXFONDV4cE14YTg?oc=5",
+      "published": "2026-10-19T14:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Mozambique Pitches Sasol and ROMPCO on $250 Million Gas Project &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices dip, but remain elevated on war uncertainty - Transport Topics",
+      "source": "Transport Topics",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE14SkpIZEFIV2RDUXQtVUhYMC1zcTZDX0N3TmRnUkNac0NCeWR0c3ZvMjNUNzd3cWxRR2JHUkVoS0RqbVQ4MXNYa0dBN1lxQm1kWl9hSU10WS1fRWtiaEZmSFE4WHhmMUlOSkl2SHhR?oc=5",
+      "published": "2026-10-19T14:26:23Z",
+      "event_date": null,
+      "classification": "CLAIM_ONLY",
+      "summary": "Oil prices dip, but remain elevated on war uncertainty &nbsp;&nbsp; Transport Topics"
+     },
+     {
+      "title": "Iran Is Being Forced to Do the Unthinkable: Tehran Can't Ship Oil Out Thanks to Donald Trump's Blockade - National Security Journal",
+      "source": "National Security Journal",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQlIxRTdrZ01HMEcxQlNuSmxrU0RqYVp6SVNXWERYZGxyWkxTZzNEWG1pS1AzZUt6QmxSZjgxaHdpQ0dXOGNjZ0NQV2U1Y1BIQkRlTlYyOWcxeExaTkNldXc1RERwNHNETklISlI4VU5sRENhdkRJMkVZcTVodkRmcmpfUE5RSUlXcXhBVi10ZS05eURPejF1Zkgyb0RYczdUMVNyTThaNXR1V2I1bHBST2xFbkZZd2FmeWkwVVo4ak1ncnhyVlhsdGpKS3hqYVdZWHdB?oc=5",
+      "published": "2026-10-19T14:23:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran Is Being Forced to Do the Unthinkable: Tehran Can't Ship Oil Out Thanks to Donald Trump's Blockade &nbsp;&nbsp; National Security Journal"
+     },
+     {
+      "title": "Russia Sanctions Waiver Cuts Crude Prices as Low US Reserves Limit Downside - Crux Investor",
+      "source": "Crux Investor",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWm1aYTVTMGpzdVVkMFo0ZzduaUNUMDVpb2hsUXFOQUNHcjF5VlFjeEpYbTdJMUxlYVIyVFFyeWI4WGZ3UjhzcTBkbjJmdUwtWlB3eUFlbDQ5VnpJZVhiQ1lmRWNJVjJ3Vjh6OExnY2tfSjAzRlpFem5zUnR4MTdyS0RxWTVKTDFOSW5yc2EtUENDLXZEaExuZld6UEl1Ni1QR2M5WWNOb1NwRndWaGtr?oc=5",
+      "published": "2026-10-19T14:04:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Russia Sanctions Waiver Cuts Crude Prices as Low US Reserves Limit Downside &nbsp;&nbsp; Crux Investor"
+     },
+     {
+      "title": "Government staff in Saudi capital told to work from home - The Economic Times",
+      "source": "The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSVpyZEdHS1pMNEc5TzlfUWhZWmdyODZRWnhZX19XZUcwQTVzQ1NwS1AyQlZFSDZENU5HVzJBalBJQTVjbjBNZXpTa3QwWWlfdFVfNEptMkU5ZkNPalQ3OXk3UnBnZl9ra0p5dmhmMmpQVi0tWWUtSENxeHB5dGtTUWUtR2pEN0lnRFVIWGIxME4yT0Fud2xvOXV3UE1hTzlieE9BN3FVaG1GLWNqeHBzaUduVzN1bFFXWGNad1pOYzB2d0ZtR25zX2ZPcThxQVRtbUx0QURwekl3UdIB3wFBVV95cUxNZ0h3MEpYTHRIRVRZdkdheEREbUtXTTlZbUZqSEhQOFBuZzU4ZEpTdjY3bmR6RnhCQW9pUUdRVGFIMDZUcENoU2gzLTA0ME9aRnAyWE5aZTlnSHk3elpJUXJBUjRsTlBlRnptSHhUMzFkR1ZRYmRXYkZSXzE4YmVtcHlVdWFMYlUySHlCVjBHYlM4bUE5cDlHWnFkRnJCaUl5Y3hZOW5GQjM0VGk1WnRKbXNjM1p1Z1dER2dpZkhGNlQ3Z3p5ZUIyRldQNXZpd0hYX2NYSlpfYUhzQmpLRnFV?oc=5",
+      "published": "2026-10-19T14:01:32Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Government staff in Saudi capital told to work from home &nbsp;&nbsp; The Economic Times"
+     },
+     {
+      "title": "Bitcoin\u2019s $80,000 Threshold Under Threat: Dual Pressure from Surging Crude Oil and Inflation Data - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYXhiekxkeF82bEpNWnFLb0VGQWFZcmpfNjJoNDVHS0Q1OVJzaXVBOHVqYmVETDVEeE0xa0JqeFdXR0luTDNIYTN3UHZ6cFpvTDRKakN3ZEJzTW9PSGhIRXVSdlZHZVFfdEFFVFBDSkoxSlduNWR3TEVsNWZmN2o5cjlrWHMwVjNyVEpLekNUU185d3d2V3dnZHFyMzRKeEFCVzVtUGlkdlA0Sm4zMmc?oc=5",
+      "published": "2026-10-19T13:56:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Bitcoin\u2019s $80,000 Threshold Under Threat: Dual Pressure from Surging Crude Oil and Inflation Data &nbsp;&nbsp; Moomoo"
+     },
+     {
+      "title": "Crude Oil Futures (DEC6) Price Trend Today | Quotes & News - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNQmZ1dHppNExGUm9taGxFdkpXdExGaGZObUF4clVDQV9tTnljMzFQNXUxekRiZ21nSGJnRF9DdkVJMzd2YW5KX3c3XzNMYXFrenRkVlNXT1h6bnd3cXFGQkRaZnBtenVSMXlJOWNWRndhTk5oSlFhY1VWNUxKaEVQeXA1bmR3VnlacTJuVEtrQmF0UHZzOUFidkN5WGR6dFFMLUd2UGtVeURlZ2hqRzhVNUV0TmljWHRzS3hpMTZkOW96dHlrTkVzSW1DbGVwbE1MLVgzblFFN1Z0dkhfUGtPUW5tSmxnakhNZUtaeWpTTGptNnJKdnBCcF9rTlpibklrVTFCZFctWW1WakwtdVIwY1poUFlsUk5hSVp3OHlfeGc?oc=5",
+      "published": "2026-10-19T13:53:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Futures (DEC6) Price Trend Today | Quotes & News &nbsp;&nbsp; Moomoo"
+     },
+     {
+      "title": "Florida gas prices, now averaging $4.23 per gallon, could climb again as oil tops $100 a barrel - Florida Politics",
+      "source": "Florida Politics",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVzVpcHpyU3FYdmpxU2l6U24tclY3WWYwU042aHk1MVdEM2RMLUFPR3djNld0YjdyLVdkcXBrVFpHdWZTMXZxbE12VV9wTExQcGJlX1FQRzdkZHRzYjREb0R4LUtLdkNzX3FhaU5jcEZOUDRrb1pYdGR2cFlfdWJIT3VCNGFJbHU5U3lwYi0xaEtBT191eXNOcGxLNm1KRG1sVlFYVWdvQzluMjlBc0xjR2lITVl6ejhULS1KVlFrZEtNNkdnc3FSMlVfNDNSWkFRbmc?oc=5",
+      "published": "2026-10-19T13:52:14Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Florida gas prices, now averaging $4.23 per gallon, could climb again as oil tops $100 a barrel &nbsp;&nbsp; Florida Politics"
+     },
+     {
+      "title": "Omani Oil Price Rises - Fana News -",
+      "source": "Fana News -",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05MDlONUo3X0JCcUlIMFZ3Nnd0dFdLUXZEMnJKZ1liT3BEamxnYVdXS094c3E0eElxWkktUWlXNF9UMWhSeXRMTWpNUG8td0pxSXk3M01DbGlBazF2NXpweC1lQmwtbThlZGJMc3BR?oc=5",
+      "published": "2026-10-19T13:45:06Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Omani Oil Price Rises &nbsp;&nbsp; Fana News -"
+     },
+     {
+      "title": "Natrona County gas prices hold as state, national averages drop - Oil City News",
+      "source": "Oil City News",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZTZ3Tko1ZlVBSzFpbmRvZk5yUlZEMEhIMG9xcUdVSDZ4YkVhbkxXX19sMDg0X0RRMTd2WFdJdUpnTmVwZFd0VkVZb051bGMtZ3d1Uk5TWXJ3ODFDclBhUlM0RW5QSUZRLUt1Ym1CNE4tRXo4NjFzV2p4UWtmdjJXMHRjeV81emM3TTJRR19UX1RDdzM5TXJnc3JnRlJ6QnJMVUFldjdfZWo4cVZEdFd0R1RDazZLZw?oc=5",
+      "published": "2026-10-19T13:36:11Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Natrona County gas prices hold as state, national averages drop &nbsp;&nbsp; Oil City News"
+     },
+     {
+      "title": "Exxon just showed why gas prices didn\u2019t fall with oil - TheStreet",
+      "source": "TheStreet",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNTRLYnBGSC1CcDVyXy1lbHhYNW1pZ0dLTlpmSmRUR3Y1U0hMWXZBZEp1cHVGdFJuWUUxRlpjM19rYm1ocG55ZzFVNmZOVVlMYUZ0cVg3NW9Ba1Z3ZlRhTUdYdnpmMnQzNjg2QWUzM0prSlBYODFyNTNjZUE2c0lsTG92V1czOEhZOXE0WVBhUQ?oc=5",
+      "published": "2026-10-19T13:33:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Exxon just showed why gas prices didn\u2019t fall with oil &nbsp;&nbsp; TheStreet"
+     },
+     {
+      "title": "Gold slips, silver gains as oil retreats and Fed-pause expectations hold - Kitco AM Report - Kitco",
+      "source": "Kitco",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVHAxSkVNZzdnQVVURTNYaDRUNFB6VGJBaVpaMEtwUVBLZ2JKSWxMZTl6dHppb0hvNFJJb2hhY2tBdERYdzRWOWF3R2tUMDFubTFacEhBWldUaEh1WmRPTUpiemVVZUVWM3ppRnAzLWVhMkh0NnRzckd5MkZQZjdrZHlzSTZTV3FaOHphS1dzZVN5Zi1kVWpWVUpyZmJ2bHA2UjlhZ3ZyN0Nod2xmMFhQR1RUbXZEajZmSktZZQ?oc=5",
+      "published": "2026-10-19T13:30:45Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold slips, silver gains as oil retreats and Fed-pause expectations hold - Kitco AM Report &nbsp;&nbsp; Kitco"
+     }
+    ]
    },
    {
     "id": "brent-1792168781",
