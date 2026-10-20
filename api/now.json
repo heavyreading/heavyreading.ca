@@ -5,7 +5,7 @@
   "edition": "2026-10-20",
   "call_vintage": "as of Tue Oct 20, 02:10 MDT",
   "flash": {
-   "body": "November nominations are due today, Mon Oct 19. Enbridge announces Mainline apportionment after nominations close, so the notice is a later-this-week print, not a today print. When it lands, this block carries the announced percentages, both registered calls scored on depth error, and what the print does to the December read: the same day, not in the next morning's edition.",
+   "body": "The November notice landed Tue Oct 20, the day after nominations closed. November apportionment: Light 19% and Heavy 7% at Kerrobert, Light 13% at Cromer, Heavy 16% at Superior. Both registered calls are scored below on depth error, the way they were registered: the calls are Kerrobert figures, so they score against the Kerrobert prints, and the Cromer and Superior prints ride in the print line.",
    "calls": [
     {
      "detail": "Light 8% / Heavy 4% at Kerrobert: the current month's announced figures, carried forward. The backtest-selected baseline; no model has beaten naive persistence on apportionment depth.",
@@ -16,15 +16,22 @@
      "label": "Registered judgment call, for November"
     }
    ],
-   "errors": null,
+   "errors": [
+    "Persistence baseline, for November: 11 points light on Light (called 8%, announced 19%), 3 points light on Heavy (called 4%, announced 7%); headline depth error 7.0 points.",
+    "Registered judgment call, for November: 7 points light on Light (called 12%, announced 19%), 1 point deep on Heavy (called 8%, announced 7%); headline depth error 4.0 points. Direction (deeper on both classes) right on both; the call beat the baseline on both segments."
+   ],
    "expires": "2026-10-26",
-   "headline": "On the clock: November Mainline apportionment",
+   "headline": "Printed: November Mainline apportionment",
    "id": "apportionment-2026-11",
-   "impact": "The December ticket's one registered checkpoint. The December WCS differential settled -$27.40 on Oct 16 against the printed December fair value of -$27.83; this notice is the print the December read is waiting on.",
+   "impact": "The December ticket's registered checkpoint has printed. December fair value stands as printed at -$27.83; December TMW settled -$27.40 on Oct 16 and -$27.50 on Oct 19. On the heavy line, the class the December short trades, the print lands between the two calls: direction right, magnitude short of the judgment call. The notice therefore adds no new balance underwriting past fair value and does not invalidate the short; the balance-underwritten slice remains the $0.43 from the Oct 16 settle to fair value, and the -$28.50 target still sits $0.67 beyond fair value, riding freight and regime from here. On lights the print beat the judgment call outright, and Superior heavies apportioned 16% for November where October had none: the system printed tighter than either call carried.",
    "kind": "apportionment_notice",
-   "print": null,
-   "source": "Enbridge Mainline November notice, pending (nominations close Oct 19); calls registered in the predlog, Sep 28 and Oct 16, 2026",
-   "status": "awaiting_print",
+   "print": {
+    "text": "November: Light 19%, Heavy 7% at Kerrobert; Light 13% at Cromer (Line 2/93/65); Heavy 16% at Superior (Line 6/61).",
+    "at": "2026-10-20T15:03:34-06:00",
+    "source": "Enbridge notice, Oct 20, 2026"
+   },
+   "source": "Enbridge Mainline November notice, Oct 20, 2026 (nominations closed Oct 19); announced figures filed in data/raw/enbridge/apportionment_announced_2026-11.yaml; calls registered in the predlog, Sep 28 and Oct 16, 2026, and scored Oct 20, 2026",
+   "status": "printed",
    "set_at": "2026-10-19T09:50:47-06:00"
   },
   "changes": [
@@ -123,8 +130,12 @@
     "light_pct": 0.0,
     "heavy_pct": 0.0
    },
-   "source": "Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
-   "note": "Mainline back into apportionment after zero in September"
+   "source": "Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
+   "note": "November: Light 19% / Heavy 7% at Kerrobert (plus Light 13% at Cromer, Heavy 16% at Superior), up from October 8% / 4%",
+   "november_2026": {
+    "light_pct": 19.0,
+    "heavy_pct": 7.0
+   }
   },
   "breaking": {
    "headline": "Mainline back into apportionment for October 2026: light 8% (heavy 4%) (was zero)",
