@@ -1,0 +1,97 @@
+{
+ "calendar": [
+  {
+   "date": "2026-10-20",
+   "impact": "WTI Nov26 expires today; from Wednesday Dec26 is the front month and the Brent-WTI comparison cleans up. The Nov-Dec gap settled at $5.12 on Monday, expiry mechanics on top of backwardation.",
+   "title": "WTI Nov26 expiry"
+  },
+  {
+   "date": "2026-10-21",
+   "impact": "Proposals for the Oct 16 re-offer of up to 17 Mbbl are due at 11:00 a.m. CT. A taken re-offer extends the exchange program; a passed one says the premium structure is the binding constraint. No award has been published for the Sep 29 40 Mbbl round.",
+   "title": "SPR re-offer proposal deadline (11:00 a.m. CT)"
+  },
+  {
+   "date": "2026-10-21",
+   "impact": "Production should rebound mechanically after the hurricane shut-in week (13,679 kb/d in the last print). The distillate line arbitrates the diesel crack's close back above $100 on Monday.",
+   "title": "EIA weekly report, week ending Oct 16"
+  },
+  {
+   "date": "2026-10-23",
+   "impact": "SYN Nov26 settled at +$7.57 on Oct 16 after the coker window wrapped. The pre-registered lines are +$7.00 (premium was priced for the return, or the return slipped) and +$6.50 (supply-return read confirmed). The COT vintage as of Oct 20 is the first that can show whether Friday's escalation buying was short covering or new length.",
+   "title": "Syncrude return verdict (SYN Nov26) and next COT vintage"
+  },
+  {
+   "date": "2026-10-26",
+   "impact": "The DNR's formal Notice of Violation of Oct 13 reaches its enforcement conference. Line 5 is operating via its temporary bypass; the conference is a regulatory-track event for the reroute, not a flow event today. Egypt's parliament also votes on authorizing support for Saudi Arabia.",
+   "title": "Line 5 enforcement conference (Wisconsin DNR)"
+  },
+  {
+   "date": "2026-11-01",
+   "impact": "The roll of November targets was the consensus at the last meeting. Any change in the production path lands directly on the global balance framing.",
+   "title": "OPEC+ meeting"
+  }
+ ],
+ "call_vintage": "as of Tue Oct 20, 02:10 MDT",
+ "changes": [
+  {
+   "balance": "The contract that actually clears went down on Monday and the overnight recovery prices claims with no confirmation behind them. The Strait flow print is the structural bid; the Saudi claims are a premium that confirmation would convert into supply and silence would fade.",
+   "body": "WTI's expiring November contract settled at its highest since Sep 15 in thin trade, while the December contract that becomes the front month on Wednesday settled lower; the $5.12 gap between them is expiry mechanics on top of backwardation. Overnight, Brent dipped to $109.06 at 0010 GMT on waiver uncertainty, then recovered to $110.10 by 0319 GMT after Yemen's Houthis claimed attacks on an Aramco site at Yanbu, the Shaybah oilfield and airports in Riyadh and Abha. Saudi authorities did not confirm the claims and Reuters could not independently verify them. Riyadh airport was not operating normal scheduled service on Monday, and its status is contested between a continued closure and a permission-only reopening.",
+   "conditional": "Saudi confirmation or credible damage evidence from Yanbu or Shaybah -> the premium becomes a supply event. Silence through Tuesday -> the claims retrace and December's lower settle is the honest price.",
+   "confirmation": "confirmed",
+   "date": "2026-10-20",
+   "delta": "Monday settles: Brent Dec26 $109.55 (-$0.31, intraday high $110.70, the highest since May 20); WTI Nov26 $103.66 (+$2.25); WTI Dec26 $98.54 (-0.5 percent). Overnight: Brent $110.10 (+0.50 percent) and WTI Nov26 $103.91 at 0319 GMT (Reuters).",
+   "source": "Reuters, Oct 19 to 20, 2026 (Monday settles; overnight marks at 0010 and 0319 GMT; Houthi claims unconfirmed; ING risk-premium note)",
+   "title": "Monday settles split on the WTI expiry; Brent back above $110 overnight on unverified Saudi claims",
+   "vintage": "Oct 19 to 20, 2026"
+  },
+  {
+   "balance": "A sustained two-fifths shortfall through the Strait with bypasses at capacity is a structural bid under Brent that does not depend on any single incident claim being true. It is also a known quantity now, so the marginal mover is a step down or a recovery, not the level itself.",
+   "body": "Kpler's Monday series measures the Strait itself, distinct from the Gulf crude flows series published last week: Saturday's confirmed flow was 9.87 Mb/d and the seven-day average sits 41 percent below the prewar baseline, while the bypass routes through Fujairah, Oman and the Red Sea run above prewar levels, taking the broader total to 19.04 Mb/d, 19 percent below baseline. Kpler also counts at least 18 vessels reportedly attacked over two weeks. The barrels exist; the route is the constraint, and the bypasses are carrying the difference.",
+   "conditional": "A further step down in the seven-day average, or confirmed damage at a bypass terminus -> the shortfall deepens beyond the bypasses' capacity to absorb it. A recovery week toward prewar levels -> the structural bid erodes.",
+   "confirmation": "confirmed",
+   "date": "2026-10-20",
+   "delta": "Kpler via Dow Jones, Oct 19: confirmed Hormuz flows 9.87 Mb/d on Saturday, seven-day average 10.17 Mb/d, 41 percent below the prewar baseline; broader total 19.04 Mb/d, 19 percent below baseline.",
+   "source": "Kpler via Dow Jones Market Talk, Oct 19, 2026; Reuters, Oct 20, 2026 (Kpler Monday note: at least 18 vessels attacked over two weeks)",
+   "title": "Hormuz flows at 10.17 Mb/d on a seven-day average, 41 percent below prewar",
+   "vintage": "Oct 19 to 20, 2026"
+  },
+  {
+   "balance": "The crack's level says physical distillate tightness persists while the only relief channel remains a legal document with no cargo in it. Wednesday's distillate line and the SPR bid deadline are the evidence that can change the level's meaning.",
+   "body": "Monday's completed close puts the diesel crack back above $100 on the refreshed validated history, with the 3-2-1 at $54.58. The front-month roll revised the spliced series' recent prints between refreshes, so no streak count is carried; the series maximum stands at $117.92 (Sep 16). The waiver channel above the crack stayed rhetorical on Monday: the president defended it, its final terms are officially undecided, and no Russian diesel loading, named buyer or US-bound schedule was reported. The SPR re-offer of up to 17 Mbbl takes proposals at 11:00 a.m. CT on Wednesday Oct 21, the next hard datum on the release program.",
+   "conditional": "A Wednesday distillate build or published IEA arrival timing -> the break lower resumes. Another draw at a $100-plus crack -> the physical market has not loosened and the waiver remains paper.",
+   "confirmation": "confirmed",
+   "date": "2026-10-20",
+   "delta": "Diesel crack $102.98 on the completed Oct 19 close (validated history refreshed Oct 20); 3-2-1 crack $54.58; maximum $117.92 (Sep 16).",
+   "source": "Validated crack history, refreshed Oct 20, 2026; Reuters, Oct 19 to 20, 2026 (waiver defense and assessment window; no loading reported); DOE solicitation, Oct 16, 2026",
+   "title": "Diesel crack closed back above $100 on Monday; SPR re-offer bids due Wednesday",
+   "vintage": "Oct 16 to 20, 2026"
+  }
+ ],
+ "edition": "2026-10-20",
+ "flags": [
+  {
+   "body": "Kpler puts confirmed Hormuz flows at a seven-day average of 10.17 Mb/d, 41 percent below the prewar baseline, with at least 18 vessels reportedly attacked over two weeks. The IRGC's Sunday mine claim remains unnamed and unconfirmed. The Houthis claimed Saudi Arabia's Yanbu terminal site, Shaybah field and two airports on Monday; Saudi authorities did not confirm and the claims are unverified. Trade the flow prints and confirmed incidents, not the claims.",
+   "expires": "2026-10-27",
+   "title": "Hormuz flows 41 percent below prewar; Saudi attack claims unverified",
+   "trigger": "Saudi confirmation of any Monday claim, a Kpler flow print stepping down again, or independent confirmation of the mine claim"
+  },
+  {
+   "body": "The Oct 16 executive order waived the Graham Act sanctions, restrictions and duties under the Section 115 national-interest waiver. On Monday the president defended the waiver while noting a final decision is still to be announced, and the Secretary of State cited up to 60 days to assess the impact. Still missing: a reported loading, a named buyer, and a shipment schedule, with Moscow's export ban running through October and Ryazan's CDU-6 suspended. The waiver raises the probability the barrels eventually move; it does not schedule them.",
+   "expires": "2026-10-27",
+   "title": "Sanctions waiver: defended Monday, terms undecided, no cargo reported",
+   "trigger": "A reported Russian diesel loading, a named buyer, or a move in Congress to block the arrangement"
+  },
+  {
+   "body": "WCS Dec26 settled at -$27.50 (ICE TMW settle, Oct 19), down $0.10 on zero lots: the widest marker of the episode still has not traded, while the January to March tenors each firmed $0.05 on 50 lots. October apportionment stands at 8 percent lights and 4 percent heavies at Kerrobert. The November notice, expected Oct 19, had not been published as of this edition; it is a day overdue and remains the print that tests whether the winter-wide strip is underwritten by nominations or by positioning.",
+   "expires": "2026-10-27",
+   "title": "November apportionment overdue; December's marker still untested on volume",
+   "trigger": "Publication of the November Mainline apportionment notice, or the next ICE file settling December on real volume"
+  },
+  {
+   "body": "The latest Baltic weekly in the stack (Week 42 VLCC prints, Oct 16) showed the first broad VLCC pullback of this run: TD3C at WS 1281.25 and the USGC to China TCE at $559,334 per day, framed as a crack rather than a normalization. No Week 42 TD9 print is public yet; TD9 (Caribbean to US Gulf Coast) stands at WS 1030 on the Oct 9 print, up about 51 percent on that week. High Caribbean to Gulf freight makes competing heavy sellers captive to the Gulf, so their length is offered at deeper FOB discounts and pressures WCS Houston pricing whether it fills or not.",
+   "expires": "2026-10-27",
+   "title": "Freight wall: VLCCs cracked, TD9 untested at extreme levels",
+   "trigger": "A fresh competing-grade FOB discount print, a TD9 move of 20 percent or more, or a WCS Houston response to a freight turn"
+  }
+ ]
+}
