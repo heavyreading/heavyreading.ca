@@ -1,8 +1,490 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-20T14:11:27Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-21T11:41:24Z",
  "data": {
-  "updated_at": "2026-10-20T14:11:16.496927Z",
+  "updated_at": "2026-10-21T11:41:00.760750Z",
   "events": [
+   {
+    "id": "brent-1792582261",
+    "detected_at": "2026-10-21T11:41:00.760750Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-10-21T10:30:00Z",
+    "to_ts": "2026-10-21T11:31:01Z",
+    "from_price": 110.98,
+    "to_price": 109.38,
+    "move_usd": -1.6,
+    "move_pct": -1.44,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Morgan Stanley Global Fuel Market Will Stay Tight Through Mid-2027 - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZDNxeWQyblVuTWhVN3BhbzdxLVctZFp2a0NnWkxCSDNtT3Y4NXdjSkZUbkJVUnlJd1NCbTRBWm5QSE9tVlZWV19HZG0xQ2k4UWRCTWFkdFg2NFhRTXczajBWdHU2akl1amhJaF9XWEEyUzlreHJPcUg4bFhiNDlTc3g5dVFnQVNPd0dwclJ2M05MR1ZGX2FyNU5zcDA4RXNEN2tQbDN2TUdfVEhId3EtYkxSTkxtamlXQlZYREJDVdIBxAFBVV95cUxPYUZmYXFsaDhWdjk2al93cU5GMTNnckhGMF9Fb1lxQVYzSnR3NHpZQldpR1RzRnE3ZFRnNTBvc1djMWRBVk9EME05N1dxdkVNZ0h3RmRON2VJMjF6QllZMmRGNjJPVnVob1FEYkFFanhxTXRTWUkxNkZaZDh0QndmNlpocVZHRWI2ZnhFR0tMWUJtOUpmZDUtMEpDYjlpRmN3TnR4bTlWaC0wMzQtTEpzeWhkbGNLUTJ4RGd0OWJ0M0duLWR5?oc=5",
+      "published": "2026-10-21T11:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Morgan Stanley Global Fuel Market Will Stay Tight Through Mid-2027 &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress - The Lufkin Daily News",
+      "source": "The Lufkin Daily News",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPeG5FSGVnb3BOUUo2M0M1UVVSVHh4NXl4RzdhYURWbHN2dlhwRVduWVRva2VOclZXX3RYTnFpclV2X2IwZGxMeWkxX213Tk52ZjBYUGN3WDFBcHlhanYyYi1aT3NmS200NUJpSW5rUlJuWC1xa0k3a0VLaXJua3I5YkZnTWs4YkVxNTAzeGVyX2dJMjAzMGU2dWpmMTRqN1F4TWNPTTFSdTNhOFcwYlZJQnJlUHVPakVVMFlOQ3JGN3pDbHpuRm9Nblp3UlFwMXF2VDZUODVQdW9tcE5tZzRHSTlYaC15bHlYVzdUcXgwTGdGQVk?oc=5",
+      "published": "2026-10-21T11:10:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress &nbsp;&nbsp; The Lufkin Daily News"
+     },
+     {
+      "title": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress - Euronext Markets: Real-time Stock Market Data | live",
+      "source": "Euronext Markets: Real-time Stock Market Data | live",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUFplSlVJaElqcFdWWl8yRXlhaThuMUVEaE1lcHlqeENzTmxUeXljM1FxRS1Wenhpb25hRVplTkxEdHYyakRoRHF0ZkFDc05RUEhsSV9YcHYxdnVfd2QtM09rZ0RwcXRrQjFyLXF3UG1vbWVBV3RHdWxueXctSVNKU2NxckxZOGYwb01GbVQ1ekc4cldvYm1wRndTakFyVl9M?oc=5",
+      "published": "2026-10-21T11:10:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress &nbsp;&nbsp; Euronext Markets: Real-time Stock Market Data | live"
+     },
+     {
+      "title": "Oil Futures Pull Back as U.S. Waives Some Russia Sanctions - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTjUxeXdZWDd5c3MxTHBocWZqajJlQ2UwRTF6dW9KMXh6Q1ROdllKRGZiMV9kWUhvRW9CQzNQMU1LYk80U04zc0dLU2ppcFkySWRjenZFSm8wQjA5QmRPVXhPN3dhMTZPdnFiWjh1QjZ6VDR1ZDg5dFFlZ0t0STJzZlBrUzBMQ0N1R1RTQ2FkekRVaTlPN3lPYU94ZjZRdktUTlJEeTVqSEVFamNkc1FWelQ2MnRNb25OemZ5aUx3dl8?oc=5",
+      "published": "2026-10-21T10:43:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Futures Pull Back as U.S. Waives Some Russia Sanctions &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Gold inches down amid higher oil prices; Fed rate outlook in focus - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMFJzUm9KTHNGZURyZlpkSmFaM0x2Z0RrREpndGtnbVN1eGRrNVZEZjA4TDNPNHA0Q2gwOG9hR1ZfVWluZ1RzdjNySHRVT0F4ZFdzanRpdHlqM0xwZ2VmamV3T040SnFzSGJjZUZLOGxSbDA3OHd6VG1wMlBXdFUtNHVPU3FHdno1MW0tS1k2LTB3THpXd29UUjN1Q3l1ZTV2SGlraHZRN3pHNm9CTkY2d0NjdnEyY1VPWENVdktYa0dCTlpNeHgzbjJ1X2c?oc=5",
+      "published": "2026-10-21T10:42:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold inches down amid higher oil prices; Fed rate outlook in focus &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Lies About Oil - The Daily Reckoning",
+      "source": "The Daily Reckoning",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ISnYtUnRPZ1kyTzBjUnBlbDZKR2o2SFFwZW8zNDlUZ2ZpR1EwSXpHNVhnbGU2bWlXa2UtQy00RlBqSHNFMHBQMUpaTjNORGtrS3dIT1FhWXB6QQ?oc=5",
+      "published": "2026-10-21T10:42:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Lies About Oil &nbsp;&nbsp; The Daily Reckoning"
+     },
+     {
+      "title": "Saudi Arabia Leads G20 with 7.9% Growth Forecast in 2027 - \u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
+      "source": "\u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1tRHJuOEV4S3BJNlBVYi1wTTFSOVQwWGE4RGRoaDlqOHRMNjZodHMxdlJybEk1TVdnZ1RMV3VLTjhOV0tKQ3djejFXMWg5SjV5aGxZ?oc=5",
+      "published": "2026-10-21T10:41:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia Leads G20 with 7.9% Growth Forecast in 2027 &nbsp;&nbsp; \u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629"
+     },
+     {
+      "title": "Oil News: WTI and Brent Rebound as Gulf Risk Keeps the Bid Under Crude - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQjJuQ19MLXVBWldaV3R1b2xDNVBsNTc5RUhjbFBTQnFWYWV5SnhRcFBDUWsxOC1nTjNISXFtYTVSMTZ5bDYwbWtCV3VXamxDenI2TTVJX3BlSG5UN2xUdjg1Sm5vZENpUnREZ2FBNXRVSklaNE1sVERnVFU0bEFOX19qbWFCd2RvV1ZEV1NLdEcycE5fR2x5YTFMME1NZ1RuMEdXLW5HeXgtWGpfZ0o4MVJpeFNvTzA0SnM0cg?oc=5",
+      "published": "2026-10-21T10:34:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil News: WTI and Brent Rebound as Gulf Risk Keeps the Bid Under Crude &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Iran Expresses Shock Over Iraq\u2019s Closure of Al-Sheeb Border Crossing - Kurdistan24",
+      "source": "Kurdistan24",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQclRibUx5LWxkSTdTNjVBeDllRnhxRHJTMUM1SGxiVG5ZMGhzbWtzYzhXZVdzb0s3ZkhfaTl4bHV6Ykl4TU1SdjFmVmRmblpVUk1McGs0U1BLTlI4Nklsdk5oWDk2clFRRGx2Qjc0LXZwSGlqNkl2aU92U3U2OWRVNjY0alBnQ0dxOHlVZEFObTNSbjkwTUhVZzh0OFM1RGEwOUktY2t0REQ3N1BoY2FoQw?oc=5",
+      "published": "2026-10-21T10:27:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran Expresses Shock Over Iraq\u2019s Closure of Al-Sheeb Border Crossing &nbsp;&nbsp; Kurdistan24"
+     },
+     {
+      "title": "Commmerzbank Says Brent Oil Prices Rise, US Equity Futures Edge Higher, Euro Slightly Weaker - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQUhoX2lNUVMzTlBKaHBVdW9US1NsVEJjWWFPNmFkTzI2UHV6QkFSanVhOTl6WGs1RXQ2MWpScDVzS0R2czJrbHJhRXlZMkoyaUpzMHBpS19wblgtQ3lvUlJ5bTloOE1fOUFRSTZQM1RSeXNjQ3AxUGdOX2QtVzcyNnZvNUtGNVJXaTRWZ1BQcWFIek5JNlE?oc=5",
+      "published": "2026-10-21T10:18:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Commmerzbank Says Brent Oil Prices Rise, US Equity Futures Edge Higher, Euro Slightly Weaker &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "Oil prices rise as Mideast tensions propel supply worries - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNXVnZW1aUExZQ3NSMVBJbkVsN3BqZ2hWVTlfcGY5U2Z1Wnh4T3M4ZF9jb1NTQVY4UXczZGdDczlwckNQRnpFOXM2YXJVT1NtRXR5T3BmUHBMakdkQ0UwUUJOcHFZOXRlanJydXlWZGhBZlJJanJTSlZMZGR4S01vYnJ5WGJZSEFfbi1CaHBQdDhLTFY5RG02NWI3elNBeHBGaWl6UGRkb0JWV2c?oc=5",
+      "published": "2026-10-21T10:14:06Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rise as Mideast tensions propel supply worries &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Jio Platforms' IPO-linked inflows boost rupee; elevated oil prices spur caution - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMFFMSF9nLXRwYy1COGJKYnBBYXkzOTFESWIxSnROTmJGa2hQZ3BTTExjMEUtTXhrUVFka3kzdXBjQXBqV1d6WW9wcDV0Z2NHbEhnellaWHpwMEx0d19NOHdaaGxyTUd5NEV0VHozczYxeVlVNU1NMjNRaEc0ZVFEMTFpamJVNWl1N0swSkdRbERORjN2c3dlVGhMMXVTQjFJUDVWZnhhMnY4MzZvMW1kQ25QSGY5dmhLc1d5aTNrRGR6N2c?oc=5",
+      "published": "2026-10-21T10:12:15Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Jio Platforms' IPO-linked inflows boost rupee; elevated oil prices spur caution &nbsp;&nbsp; Reuters"
+     },
+     {
+      "title": "EXCLUSIVE: US aims to loan about a third of heating oil reserve in bid to tame prices - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUzkxVzJaMlBtRGhfVVdxVERodk94eEllV09nNDlZVFV5MnZxMUttc2d5djloZTFuVEN6UUlfbFo4aGFNZk83RGQ4MzNZV0ZzMXU1RjM0bnhNelR3Tmd6cUNacEJjdko4dnd5Q081U3dheFNZVm9aVmM1aHc1a2xJaVZadUFEX1YyWm9XSTNOT29RYk1wckVnZllWLUU2aUFkclNYS3NQQmpkUnMxakhDcUNR?oc=5",
+      "published": "2026-10-21T10:09:08Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "EXCLUSIVE: US aims to loan about a third of heating oil reserve in bid to tame prices &nbsp;&nbsp; Reuters"
+     },
+     {
+      "title": "Momentum behind WTI and Brent crude oil price gains is waning - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMHdFQnl2Sk43V0V2OEp3SzZrMUItcXh6QWlQRG9hakFILUpzWGxGUnRZdzlfblREQjVPeFhjbUNxQS11TnRWTURlb1dhUzZjWUhCUnQyQVJZc3p3RHJxREhnNkRJQlNLckRuaFhweXhfWVAzcV9yTDFMSjRDcDBlb21Hdk80OVZuZzdXYldCcERHcVRqdVZWQmpzMUg1T1U?oc=5",
+      "published": "2026-10-21T10:04:35Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Momentum behind WTI and Brent crude oil price gains is waning &nbsp;&nbsp; Moomoo"
+     },
+     {
+      "title": "Oil Prices Rise as Middle East Supply Concerns and US Inventory Decline Support Crude - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ1Y3aHk2TEpMc2d0SlRteFJReFNYRXVjZEp5MnFEaDZ5b09Ea21yRzBvazRZb0QyMG1aZ3laQVF6ZnpUNVRVTWRIVkI3bFc4NExqNDBlUkVaNTAyQWljd3F6YTZXdjdUWkVPNTRBRklUUW5FTURRNVRYMzdHRWRQeEIwY0dlX0trS2RTZw?oc=5",
+      "published": "2026-10-21T10:00:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rise as Middle East Supply Concerns and US Inventory Decline Support Crude &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "A new surge: Oil climbs above $110 amid threats in the Strait of Hormuz - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ3A4VGdVQTVqUTBvaXl1cWJnV3Jfc2xBV2loS2NpRUVNamNjQ0luTEhrRUx5enNkdTV3MzRiMDU2QjFGRUkteG42NkNqLVp3ZWM1NElISDNIaHNvRDlMV01yNUl6cUNsM21HYjVLaFhldi1QR3VJd0x0cDBnODdoV1dNTWNVMlRMMWhiSHZ0cDJnZUg5dFZQa1c1QWdSd29udldUVlF2cS1tYndkSHJTR3VVQm9QMUo3TDhxd2ZYVlpLVVE?oc=5",
+      "published": "2026-10-21T09:48:15Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "A new surge: Oil climbs above $110 amid threats in the Strait of Hormuz &nbsp;&nbsp; \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a"
+     },
+     {
+      "title": "Ship attacked near Strait of Hormuz: maritime agency - Arab News",
+      "source": "Arab News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdUw2eWxROXhkM3JtcElwMmtOQjQ4SU9ib1RjbkU2eUVPa2hhR3BVSnlJZXpUTkhzdmwzVHZkZjBMdTdrUERWT0pvNlBKUjhXb3hUdHFMakdHSjVHejNMTFo0LVZjZVZNUE50MVJ5RHQzQTJRdE55N2dhc2dNbF9weG9ZaTFwb1RGRjVwamhQWGdmT3BybGhVcW1pR0M?oc=5",
+      "published": "2026-10-21T09:46:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Ship attacked near Strait of Hormuz: maritime agency &nbsp;&nbsp; Arab News"
+     },
+     {
+      "title": "Revived Eilat-Ashkelon pipeline could introduce new dynamics in the politics of the Middle East - Middle East Monitor",
+      "source": "Middle East Monitor",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQ0xQc1hsc2lNa2J3OWVkb3pseHN3c2xJWlV5YXV3aTRBSFdqaGZ0NEFlOExxd0pDY1hYVlhYZlBINngyblhrTUJtaVpVTHdKQ0RfbnZmOVlhd21EZFFKWl9GTy1kMEh0WE16ZmF5SDJWUF8xVm1yLXVRTWo1eFRCT1JkWnJEV3B0SzNSTXRHZUN3Q1JISzdpUmxWdVFsdFkzUjU5OVhLdF9KV2VpanM2RG1NTUF6TkI5QVU5RFI0TEh6Nmc3SU10Rk84QWxMSUItZDJNNC1R0gHbAUFVX3lxTFBzMElBaHM5SDEtZFNaVlExcTNkRHpwT3pqcEJPZTUzaHB6anF0cnNQQUs1OEwwZ2dSNUkwaWFrZlhjNm9SbEdJTVRLbHFXdHhhX2NQM2d5N3hIWUVFUVh3b3NlSERLV2k5eTA5YzhoV0gwSThwTDAxeDlFdXdQaXBMcGV1QU1MalBKMW1JTUxfVGtNTmQ4MjNvQ3BwYkhwUDlBZXAwLVlUMVNSWDNFTFY2S1M3T2tPbWI4LXZBTXVndDdOVW1QTXZzeXV5TGFweHl3Tzk2SUF1UWdBTQ?oc=5",
+      "published": "2026-10-21T09:43:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Revived Eilat-Ashkelon pipeline could introduce new dynamics in the politics of the Middle East &nbsp;&nbsp; Middle East Monitor"
+     },
+     {
+      "title": "Yemen's Houthis deny launching drones towards Saudi Medina on Wednesday - marketscreener.com",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUmlwQ1VUMHdwdE90Q3BTbzdfTU9GeVkzU09XM2RkZlpZdzdPenA3MzN2M3NJN0YzZFI2OTFfS0ZpOU8tdDBha0NqX2J3c0lHaElrQXIzeFpzT2Q3Zk9RSHU0ZWZUaDhDWU1TeU1HUjR4QmJvWmlRQjVNbGlRSlFDS1hzRjN5dzJEYjRZRkNOVkRJX2xsbWU0VXlSZXRxRzczZmg2R3dzOTcwc3RTT2hiWFBvbUhEM0RYV2ljZm5SZjVrdw?oc=5",
+      "published": "2026-10-21T09:40:41Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Yemen's Houthis deny launching drones towards Saudi Medina on Wednesday &nbsp;&nbsp; marketscreener.com"
+     },
+     {
+      "title": "Brent Crude Crosses $109 as Tanker Attacks Threaten Oil Supply - Bloom Pakistan",
+      "source": "Bloom Pakistan",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOd3ZsUk5sWUhfS0RwWHZ5UnNXNFV1NUFVWVFWTllYWGhuZTJsT1h0Ymdid2lwREhob1M1WDRxajEtTDFuRU5ENUxEUWl4S1NGV0NUVXNxMEp1NkF2eDZEM01neEVwWUdERUFBcC1lalEyV0tYV3pNblliN0FVWVIwdHdrSW1Ocmg1SkZTU3hMRElLdw?oc=5",
+      "published": "2026-10-21T09:38:48Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Crude Crosses $109 as Tanker Attacks Threaten Oil Supply &nbsp;&nbsp; Bloom Pakistan"
+     },
+     {
+      "title": "Goldman Sachs Warns of New Oil Price Shock as Tanker Rates Soar - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbXhWb25qWV9nYlVVUDBQcVBybzFSN2U5QlBwaEN3RDlmcG5IMnpfVkgxYWViTVNGYXRHSEVWLVhxNEF1Y3FlQXBBd3RNVG9MSWROQUdZRGh0UWwwRXNEcU9XOFVISlMxYlpHckg1bS1WQW1MZVowVUE4cTlrMEM0S1ZwQTlPMFhubEVqYkdYaw?oc=5",
+      "published": "2026-10-21T09:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs Warns of New Oil Price Shock as Tanker Rates Soar &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "Brent oil prices near 5-month high on Middle East supply fears, US inventory drawdowns - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQnJpenFuZUhfbHFpWk9ZXzBXWDhFSVRSR0lOc3loMG5ZVXZOWTNrR1M5dEE4VU8xcGI2ZWlaUGJlUW80YTdIOUZ2OE04bHJJNy0zZGppcTBVM21LTm1haFUtNHRKZWhaVm5IT0VTdmh2T3hwc0VBVzM0QkZ0UkVZR3BJZmdnNjNjYmJTRjF3?oc=5",
+      "published": "2026-10-21T09:28:46Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent oil prices near 5-month high on Middle East supply fears, US inventory drawdowns &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "CENTCOM Declared Hormuz Open. UKMTO Logged 15 Attacks in 9 Days - https://houseofsaud.com/",
+      "source": "https://houseofsaud.com/",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXLTk1a2tSbW1pbWtBdjcwUXB1TDE2a3FRZ1JHUEJDLVhzaHZIMjNvVHdZSkhiTjZWQWhQNHJPN1EzQUFCdFJndXNqd2ZMUVBjV0I3UU1Fc0JkVDRR?oc=5",
+      "published": "2026-10-21T09:14:11Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "CENTCOM Declared Hormuz Open. UKMTO Logged 15 Attacks in 9 Days &nbsp;&nbsp; https://houseofsaud.com/"
+     },
+     {
+      "title": "AFP: Iraq Closes Most Iran Border Crossings Under US Pressure - Kurdistan24",
+      "source": "Kurdistan24",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmQ2aEM5R21GQjJ5OEk2S0RJMHJ5ZHd2amFhUVoyT1VaNDNMTXZCRzZEeURyZ2dEWGFmYVg3b0NIeUhnQXVKbHdzbmMzYlNQMDlmZ0t5T21ISWxiLVVLS2FtVldITFlpUnVlUXdlTDZwYm9FMy1xWHRjZ19XQlFoWVJnQTJBWkZaSnpUNFhkNEl0Wnl5MENKcVRLV0ZTUDZIRTNsT2pqaw?oc=5",
+      "published": "2026-10-21T09:10:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AFP: Iraq Closes Most Iran Border Crossings Under US Pressure &nbsp;&nbsp; Kurdistan24"
+     },
+     {
+      "title": "Rumors of US-Iran negotiations trigger oil price volatility; tanker attack raises risk premium again - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV1Q4c2N5aWJVdXMwd1VOZlZvNVhFbC1heHBFZ2kxWFJPOE1TTE9UQlB0ZXloN3JWZmpDZFpUMTYyTTZkaUt1MkFGLW9JOGlxSmdMRnY5X0VMQkplZEl5TWpfbkNwbmRWb1VSMlZvdGNlUnpRM2MwQ3pVZ085RVZCaTNCRGhuaGt3NkJZUkM3ajhUSldobmx1cEdyZU84UlpmZkhrY1VZOXpPYTVSNDVv?oc=5",
+      "published": "2026-10-21T09:06:17Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Rumors of US-Iran negotiations trigger oil price volatility; tanker attack raises risk premium again &nbsp;&nbsp; Moomoo"
+     }
+    ]
+   },
+   {
+    "id": "wti-1792582260",
+    "detected_at": "2026-10-21T11:41:00.760750Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-10-21T10:30:00Z",
+    "to_ts": "2026-10-21T11:31:00Z",
+    "from_price": 100.03,
+    "to_price": 98.53,
+    "move_usd": -1.5,
+    "move_pct": -1.5,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Morgan Stanley Global Fuel Market Will Stay Tight Through Mid-2027 - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZDNxeWQyblVuTWhVN3BhbzdxLVctZFp2a0NnWkxCSDNtT3Y4NXdjSkZUbkJVUnlJd1NCbTRBWm5QSE9tVlZWV19HZG0xQ2k4UWRCTWFkdFg2NFhRTXczajBWdHU2akl1amhJaF9XWEEyUzlreHJPcUg4bFhiNDlTc3g5dVFnQVNPd0dwclJ2M05MR1ZGX2FyNU5zcDA4RXNEN2tQbDN2TUdfVEhId3EtYkxSTkxtamlXQlZYREJDVdIBxAFBVV95cUxPYUZmYXFsaDhWdjk2al93cU5GMTNnckhGMF9Fb1lxQVYzSnR3NHpZQldpR1RzRnE3ZFRnNTBvc1djMWRBVk9EME05N1dxdkVNZ0h3RmRON2VJMjF6QllZMmRGNjJPVnVob1FEYkFFanhxTXRTWUkxNkZaZDh0QndmNlpocVZHRWI2ZnhFR0tMWUJtOUpmZDUtMEpDYjlpRmN3TnR4bTlWaC0wMzQtTEpzeWhkbGNLUTJ4RGd0OWJ0M0duLWR5?oc=5",
+      "published": "2026-10-21T11:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Morgan Stanley Global Fuel Market Will Stay Tight Through Mid-2027 &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress - The Lufkin Daily News",
+      "source": "The Lufkin Daily News",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPeG5FSGVnb3BOUUo2M0M1UVVSVHh4NXl4RzdhYURWbHN2dlhwRVduWVRva2VOclZXX3RYTnFpclV2X2IwZGxMeWkxX213Tk52ZjBYUGN3WDFBcHlhanYyYi1aT3NmS200NUJpSW5rUlJuWC1xa0k3a0VLaXJua3I5YkZnTWs4YkVxNTAzeGVyX2dJMjAzMGU2dWpmMTRqN1F4TWNPTTFSdTNhOFcwYlZJQnJlUHVPakVVMFlOQ3JGN3pDbHpuRm9Nblp3UlFwMXF2VDZUODVQdW9tcE5tZzRHSTlYaC15bHlYVzdUcXgwTGdGQVk?oc=5",
+      "published": "2026-10-21T11:10:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress &nbsp;&nbsp; The Lufkin Daily News"
+     },
+     {
+      "title": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress - Euronext Markets: Real-time Stock Market Data | live",
+      "source": "Euronext Markets: Real-time Stock Market Data | live",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUFplSlVJaElqcFdWWl8yRXlhaThuMUVEaE1lcHlqeENzTmxUeXljM1FxRS1Wenhpb25hRVplTkxEdHYyakRoRHF0ZkFDc05RUEhsSV9YcHYxdnVfd2QtM09rZ0RwcXRrQjFyLXF3UG1vbWVBV3RHdWxueXctSVNKU2NxckxZOGYwb01GbVQ1ekc4cldvYm1wRndTakFyVl9M?oc=5",
+      "published": "2026-10-21T11:10:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices jump $2 as Iran knocks hopes of diplomatic progress &nbsp;&nbsp; Euronext Markets: Real-time Stock Market Data | live"
+     },
+     {
+      "title": "Oil Futures Pull Back as U.S. Waives Some Russia Sanctions - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTjUxeXdZWDd5c3MxTHBocWZqajJlQ2UwRTF6dW9KMXh6Q1ROdllKRGZiMV9kWUhvRW9CQzNQMU1LYk80U04zc0dLU2ppcFkySWRjenZFSm8wQjA5QmRPVXhPN3dhMTZPdnFiWjh1QjZ6VDR1ZDg5dFFlZ0t0STJzZlBrUzBMQ0N1R1RTQ2FkekRVaTlPN3lPYU94ZjZRdktUTlJEeTVqSEVFamNkc1FWelQ2MnRNb25OemZ5aUx3dl8?oc=5",
+      "published": "2026-10-21T10:43:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Futures Pull Back as U.S. Waives Some Russia Sanctions &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Gold inches down amid higher oil prices; Fed rate outlook in focus - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMFJzUm9KTHNGZURyZlpkSmFaM0x2Z0RrREpndGtnbVN1eGRrNVZEZjA4TDNPNHA0Q2gwOG9hR1ZfVWluZ1RzdjNySHRVT0F4ZFdzanRpdHlqM0xwZ2VmamV3T040SnFzSGJjZUZLOGxSbDA3OHd6VG1wMlBXdFUtNHVPU3FHdno1MW0tS1k2LTB3THpXd29UUjN1Q3l1ZTV2SGlraHZRN3pHNm9CTkY2d0NjdnEyY1VPWENVdktYa0dCTlpNeHgzbjJ1X2c?oc=5",
+      "published": "2026-10-21T10:42:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold inches down amid higher oil prices; Fed rate outlook in focus &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Lies About Oil - The Daily Reckoning",
+      "source": "The Daily Reckoning",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ISnYtUnRPZ1kyTzBjUnBlbDZKR2o2SFFwZW8zNDlUZ2ZpR1EwSXpHNVhnbGU2bWlXa2UtQy00RlBqSHNFMHBQMUpaTjNORGtrS3dIT1FhWXB6QQ?oc=5",
+      "published": "2026-10-21T10:42:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Lies About Oil &nbsp;&nbsp; The Daily Reckoning"
+     },
+     {
+      "title": "Saudi Arabia Leads G20 with 7.9% Growth Forecast in 2027 - \u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
+      "source": "\u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1tRHJuOEV4S3BJNlBVYi1wTTFSOVQwWGE4RGRoaDlqOHRMNjZodHMxdlJybEk1TVdnZ1RMV3VLTjhOV0tKQ3djejFXMWg5SjV5aGxZ?oc=5",
+      "published": "2026-10-21T10:41:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia Leads G20 with 7.9% Growth Forecast in 2027 &nbsp;&nbsp; \u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629"
+     },
+     {
+      "title": "Oil News: WTI and Brent Rebound as Gulf Risk Keeps the Bid Under Crude - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQjJuQ19MLXVBWldaV3R1b2xDNVBsNTc5RUhjbFBTQnFWYWV5SnhRcFBDUWsxOC1nTjNISXFtYTVSMTZ5bDYwbWtCV3VXamxDenI2TTVJX3BlSG5UN2xUdjg1Sm5vZENpUnREZ2FBNXRVSklaNE1sVERnVFU0bEFOX19qbWFCd2RvV1ZEV1NLdEcycE5fR2x5YTFMME1NZ1RuMEdXLW5HeXgtWGpfZ0o4MVJpeFNvTzA0SnM0cg?oc=5",
+      "published": "2026-10-21T10:34:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil News: WTI and Brent Rebound as Gulf Risk Keeps the Bid Under Crude &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Iran Expresses Shock Over Iraq\u2019s Closure of Al-Sheeb Border Crossing - Kurdistan24",
+      "source": "Kurdistan24",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQclRibUx5LWxkSTdTNjVBeDllRnhxRHJTMUM1SGxiVG5ZMGhzbWtzYzhXZVdzb0s3ZkhfaTl4bHV6Ykl4TU1SdjFmVmRmblpVUk1McGs0U1BLTlI4Nklsdk5oWDk2clFRRGx2Qjc0LXZwSGlqNkl2aU92U3U2OWRVNjY0alBnQ0dxOHlVZEFObTNSbjkwTUhVZzh0OFM1RGEwOUktY2t0REQ3N1BoY2FoQw?oc=5",
+      "published": "2026-10-21T10:27:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran Expresses Shock Over Iraq\u2019s Closure of Al-Sheeb Border Crossing &nbsp;&nbsp; Kurdistan24"
+     },
+     {
+      "title": "Commmerzbank Says Brent Oil Prices Rise, US Equity Futures Edge Higher, Euro Slightly Weaker - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQUhoX2lNUVMzTlBKaHBVdW9US1NsVEJjWWFPNmFkTzI2UHV6QkFSanVhOTl6WGs1RXQ2MWpScDVzS0R2czJrbHJhRXlZMkoyaUpzMHBpS19wblgtQ3lvUlJ5bTloOE1fOUFRSTZQM1RSeXNjQ3AxUGdOX2QtVzcyNnZvNUtGNVJXaTRWZ1BQcWFIek5JNlE?oc=5",
+      "published": "2026-10-21T10:18:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Commmerzbank Says Brent Oil Prices Rise, US Equity Futures Edge Higher, Euro Slightly Weaker &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "Oil prices rise as Mideast tensions propel supply worries - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNXVnZW1aUExZQ3NSMVBJbkVsN3BqZ2hWVTlfcGY5U2Z1Wnh4T3M4ZF9jb1NTQVY4UXczZGdDczlwckNQRnpFOXM2YXJVT1NtRXR5T3BmUHBMakdkQ0UwUUJOcHFZOXRlanJydXlWZGhBZlJJanJTSlZMZGR4S01vYnJ5WGJZSEFfbi1CaHBQdDhLTFY5RG02NWI3elNBeHBGaWl6UGRkb0JWV2c?oc=5",
+      "published": "2026-10-21T10:14:06Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rise as Mideast tensions propel supply worries &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Jio Platforms' IPO-linked inflows boost rupee; elevated oil prices spur caution - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMFFMSF9nLXRwYy1COGJKYnBBYXkzOTFESWIxSnROTmJGa2hQZ3BTTExjMEUtTXhrUVFka3kzdXBjQXBqV1d6WW9wcDV0Z2NHbEhnellaWHpwMEx0d19NOHdaaGxyTUd5NEV0VHozczYxeVlVNU1NMjNRaEc0ZVFEMTFpamJVNWl1N0swSkdRbERORjN2c3dlVGhMMXVTQjFJUDVWZnhhMnY4MzZvMW1kQ25QSGY5dmhLc1d5aTNrRGR6N2c?oc=5",
+      "published": "2026-10-21T10:12:15Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Jio Platforms' IPO-linked inflows boost rupee; elevated oil prices spur caution &nbsp;&nbsp; Reuters"
+     },
+     {
+      "title": "EXCLUSIVE: US aims to loan about a third of heating oil reserve in bid to tame prices - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUzkxVzJaMlBtRGhfVVdxVERodk94eEllV09nNDlZVFV5MnZxMUttc2d5djloZTFuVEN6UUlfbFo4aGFNZk83RGQ4MzNZV0ZzMXU1RjM0bnhNelR3Tmd6cUNacEJjdko4dnd5Q081U3dheFNZVm9aVmM1aHc1a2xJaVZadUFEX1YyWm9XSTNOT29RYk1wckVnZllWLUU2aUFkclNYS3NQQmpkUnMxakhDcUNR?oc=5",
+      "published": "2026-10-21T10:09:08Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "EXCLUSIVE: US aims to loan about a third of heating oil reserve in bid to tame prices &nbsp;&nbsp; Reuters"
+     },
+     {
+      "title": "Momentum behind WTI and Brent crude oil price gains is waning - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMHdFQnl2Sk43V0V2OEp3SzZrMUItcXh6QWlQRG9hakFILUpzWGxGUnRZdzlfblREQjVPeFhjbUNxQS11TnRWTURlb1dhUzZjWUhCUnQyQVJZc3p3RHJxREhnNkRJQlNLckRuaFhweXhfWVAzcV9yTDFMSjRDcDBlb21Hdk80OVZuZzdXYldCcERHcVRqdVZWQmpzMUg1T1U?oc=5",
+      "published": "2026-10-21T10:04:35Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Momentum behind WTI and Brent crude oil price gains is waning &nbsp;&nbsp; Moomoo"
+     },
+     {
+      "title": "Oil Prices Rise as Middle East Supply Concerns and US Inventory Decline Support Crude - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ1Y3aHk2TEpMc2d0SlRteFJReFNYRXVjZEp5MnFEaDZ5b09Ea21yRzBvazRZb0QyMG1aZ3laQVF6ZnpUNVRVTWRIVkI3bFc4NExqNDBlUkVaNTAyQWljd3F6YTZXdjdUWkVPNTRBRklUUW5FTURRNVRYMzdHRWRQeEIwY0dlX0trS2RTZw?oc=5",
+      "published": "2026-10-21T10:00:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rise as Middle East Supply Concerns and US Inventory Decline Support Crude &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "A new surge: Oil climbs above $110 amid threats in the Strait of Hormuz - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ3A4VGdVQTVqUTBvaXl1cWJnV3Jfc2xBV2loS2NpRUVNamNjQ0luTEhrRUx5enNkdTV3MzRiMDU2QjFGRUkteG42NkNqLVp3ZWM1NElISDNIaHNvRDlMV01yNUl6cUNsM21HYjVLaFhldi1QR3VJd0x0cDBnODdoV1dNTWNVMlRMMWhiSHZ0cDJnZUg5dFZQa1c1QWdSd29udldUVlF2cS1tYndkSHJTR3VVQm9QMUo3TDhxd2ZYVlpLVVE?oc=5",
+      "published": "2026-10-21T09:48:15Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "A new surge: Oil climbs above $110 amid threats in the Strait of Hormuz &nbsp;&nbsp; \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a"
+     },
+     {
+      "title": "Ship attacked near Strait of Hormuz: maritime agency - Arab News",
+      "source": "Arab News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdUw2eWxROXhkM3JtcElwMmtOQjQ4SU9ib1RjbkU2eUVPa2hhR3BVSnlJZXpUTkhzdmwzVHZkZjBMdTdrUERWT0pvNlBKUjhXb3hUdHFMakdHSjVHejNMTFo0LVZjZVZNUE50MVJ5RHQzQTJRdE55N2dhc2dNbF9weG9ZaTFwb1RGRjVwamhQWGdmT3BybGhVcW1pR0M?oc=5",
+      "published": "2026-10-21T09:46:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Ship attacked near Strait of Hormuz: maritime agency &nbsp;&nbsp; Arab News"
+     },
+     {
+      "title": "Revived Eilat-Ashkelon pipeline could introduce new dynamics in the politics of the Middle East - Middle East Monitor",
+      "source": "Middle East Monitor",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQ0xQc1hsc2lNa2J3OWVkb3pseHN3c2xJWlV5YXV3aTRBSFdqaGZ0NEFlOExxd0pDY1hYVlhYZlBINngyblhrTUJtaVpVTHdKQ0RfbnZmOVlhd21EZFFKWl9GTy1kMEh0WE16ZmF5SDJWUF8xVm1yLXVRTWo1eFRCT1JkWnJEV3B0SzNSTXRHZUN3Q1JISzdpUmxWdVFsdFkzUjU5OVhLdF9KV2VpanM2RG1NTUF6TkI5QVU5RFI0TEh6Nmc3SU10Rk84QWxMSUItZDJNNC1R0gHbAUFVX3lxTFBzMElBaHM5SDEtZFNaVlExcTNkRHpwT3pqcEJPZTUzaHB6anF0cnNQQUs1OEwwZ2dSNUkwaWFrZlhjNm9SbEdJTVRLbHFXdHhhX2NQM2d5N3hIWUVFUVh3b3NlSERLV2k5eTA5YzhoV0gwSThwTDAxeDlFdXdQaXBMcGV1QU1MalBKMW1JTUxfVGtNTmQ4MjNvQ3BwYkhwUDlBZXAwLVlUMVNSWDNFTFY2S1M3T2tPbWI4LXZBTXVndDdOVW1QTXZzeXV5TGFweHl3Tzk2SUF1UWdBTQ?oc=5",
+      "published": "2026-10-21T09:43:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Revived Eilat-Ashkelon pipeline could introduce new dynamics in the politics of the Middle East &nbsp;&nbsp; Middle East Monitor"
+     },
+     {
+      "title": "Yemen's Houthis deny launching drones towards Saudi Medina on Wednesday - marketscreener.com",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUmlwQ1VUMHdwdE90Q3BTbzdfTU9GeVkzU09XM2RkZlpZdzdPenA3MzN2M3NJN0YzZFI2OTFfS0ZpOU8tdDBha0NqX2J3c0lHaElrQXIzeFpzT2Q3Zk9RSHU0ZWZUaDhDWU1TeU1HUjR4QmJvWmlRQjVNbGlRSlFDS1hzRjN5dzJEYjRZRkNOVkRJX2xsbWU0VXlSZXRxRzczZmg2R3dzOTcwc3RTT2hiWFBvbUhEM0RYV2ljZm5SZjVrdw?oc=5",
+      "published": "2026-10-21T09:40:41Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Yemen's Houthis deny launching drones towards Saudi Medina on Wednesday &nbsp;&nbsp; marketscreener.com"
+     },
+     {
+      "title": "Brent Crude Crosses $109 as Tanker Attacks Threaten Oil Supply - Bloom Pakistan",
+      "source": "Bloom Pakistan",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOd3ZsUk5sWUhfS0RwWHZ5UnNXNFV1NUFVWVFWTllYWGhuZTJsT1h0Ymdid2lwREhob1M1WDRxajEtTDFuRU5ENUxEUWl4S1NGV0NUVXNxMEp1NkF2eDZEM01neEVwWUdERUFBcC1lalEyV0tYV3pNblliN0FVWVIwdHdrSW1Ocmg1SkZTU3hMRElLdw?oc=5",
+      "published": "2026-10-21T09:38:48Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Crude Crosses $109 as Tanker Attacks Threaten Oil Supply &nbsp;&nbsp; Bloom Pakistan"
+     },
+     {
+      "title": "Goldman Sachs Warns of New Oil Price Shock as Tanker Rates Soar - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbXhWb25qWV9nYlVVUDBQcVBybzFSN2U5QlBwaEN3RDlmcG5IMnpfVkgxYWViTVNGYXRHSEVWLVhxNEF1Y3FlQXBBd3RNVG9MSWROQUdZRGh0UWwwRXNEcU9XOFVISlMxYlpHckg1bS1WQW1MZVowVUE4cTlrMEM0S1ZwQTlPMFhubEVqYkdYaw?oc=5",
+      "published": "2026-10-21T09:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs Warns of New Oil Price Shock as Tanker Rates Soar &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "Brent oil prices near 5-month high on Middle East supply fears, US inventory drawdowns - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQnJpenFuZUhfbHFpWk9ZXzBXWDhFSVRSR0lOc3loMG5ZVXZOWTNrR1M5dEE4VU8xcGI2ZWlaUGJlUW80YTdIOUZ2OE04bHJJNy0zZGppcTBVM21LTm1haFUtNHRKZWhaVm5IT0VTdmh2T3hwc0VBVzM0QkZ0UkVZR3BJZmdnNjNjYmJTRjF3?oc=5",
+      "published": "2026-10-21T09:28:46Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent oil prices near 5-month high on Middle East supply fears, US inventory drawdowns &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "CENTCOM Declared Hormuz Open. UKMTO Logged 15 Attacks in 9 Days - https://houseofsaud.com/",
+      "source": "https://houseofsaud.com/",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXLTk1a2tSbW1pbWtBdjcwUXB1TDE2a3FRZ1JHUEJDLVhzaHZIMjNvVHdZSkhiTjZWQWhQNHJPN1EzQUFCdFJndXNqd2ZMUVBjV0I3UU1Fc0JkVDRR?oc=5",
+      "published": "2026-10-21T09:14:11Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "CENTCOM Declared Hormuz Open. UKMTO Logged 15 Attacks in 9 Days &nbsp;&nbsp; https://houseofsaud.com/"
+     },
+     {
+      "title": "AFP: Iraq Closes Most Iran Border Crossings Under US Pressure - Kurdistan24",
+      "source": "Kurdistan24",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSmQ2aEM5R21GQjJ5OEk2S0RJMHJ5ZHd2amFhUVoyT1VaNDNMTXZCRzZEeURyZ2dEWGFmYVg3b0NIeUhnQXVKbHdzbmMzYlNQMDlmZ0t5T21ISWxiLVVLS2FtVldITFlpUnVlUXdlTDZwYm9FMy1xWHRjZ19XQlFoWVJnQTJBWkZaSnpUNFhkNEl0Wnl5MENKcVRLV0ZTUDZIRTNsT2pqaw?oc=5",
+      "published": "2026-10-21T09:10:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AFP: Iraq Closes Most Iran Border Crossings Under US Pressure &nbsp;&nbsp; Kurdistan24"
+     },
+     {
+      "title": "Rumors of US-Iran negotiations trigger oil price volatility; tanker attack raises risk premium again - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV1Q4c2N5aWJVdXMwd1VOZlZvNVhFbC1heHBFZ2kxWFJPOE1TTE9UQlB0ZXloN3JWZmpDZFpUMTYyTTZkaUt1MkFGLW9JOGlxSmdMRnY5X0VMQkplZEl5TWpfbkNwbmRWb1VSMlZvdGNlUnpRM2MwQ3pVZ085RVZCaTNCRGhuaGt3NkJZUkM3ajhUSldobmx1cEdyZU84UlpmZkhrY1VZOXpPYTVSNDVv?oc=5",
+      "published": "2026-10-21T09:06:17Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Rumors of US-Iran negotiations trigger oil price volatility; tanker attack raises risk premium again &nbsp;&nbsp; Moomoo"
+     }
+    ]
+   },
    {
     "id": "brent-1792504875",
     "detected_at": "2026-10-20T14:11:16.496927Z",
