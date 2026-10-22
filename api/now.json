@@ -1,114 +1,85 @@
 {
- "vintage": "Now-page data from the 2026-10-21 edition sidecar (3 changes, 4 flags); apportionment Enbridge notice Sep 16 2026; balance reconciled 2026-09-27; built 2026-10-21",
+ "vintage": "Now-page data from the 2026-10-22 edition sidecar (3 changes, 4 flags); apportionment Enbridge notice Sep 16 2026; balance reconciled 2026-09-27; built 2026-10-22",
  "data": {
-  "as_of": "2026-10-21",
-  "edition": "2026-10-21",
-  "call_vintage": "as of Wed Oct 21, 02:10 MDT",
-  "flash": {
-   "body": "The November notice landed Tue Oct 20, the day after nominations closed. November apportionment: Light 19% and Heavy 7% at Kerrobert, 13% at Cromer on Line 2/93/65, 16% at Superior on Line 6/61. Both registered calls are scored below on depth error, the way they were registered: the calls are Kerrobert figures, so they score against the Kerrobert prints, and the Cromer and Superior prints ride in the print line.",
-   "calls": [
-    {
-     "label": "Persistence baseline, for November",
-     "detail": "October's announced Kerrobert figures, carried forward unchanged. The backtest-selected baseline; no model has beaten naive persistence on apportionment depth."
-    },
-    {
-     "label": "Registered judgment call, for November",
-     "detail": "Four points deeper than persistence on each class, direction deeper on both, registered in the predlog before the notice. It earns its keep only if it beats the baseline on depth error."
-    }
-   ],
-   "errors": [
-    "Persistence baseline: 11 points light on Light, 3 points light on Heavy; headline depth error 7.0 points.",
-    "Registered judgment call: 7 points light on Light, 1 point deep on Heavy; headline depth error 4.0 points. Direction (deeper on both classes) right on both; the call beat the baseline on both segments."
-   ],
-   "expires": "2026-10-26",
-   "headline": "Printed: November Mainline apportionment",
-   "id": "apportionment-2026-11",
-   "impact": "The December ticket's registered checkpoint has printed. December fair value stands as printed at -$27.83; December TMW settled -$27.40 on Oct 16 and -$27.50 on Oct 19. On the heavy line, the class the December short trades, the print lands between the two calls: direction right, magnitude short of the judgment call. The notice therefore adds no new balance underwriting past fair value and does not invalidate the short; the balance-underwritten slice remains the $0.43 from the Oct 16 settle to fair value, and the -$28.50 target still sits $0.67 beyond fair value, riding freight and regime from here. On lights the print beat the judgment call outright, and Superior heavies apportioned 16% for November where October had none: the system printed tighter than either call carried.",
-   "kind": "apportionment_notice",
-   "print": {
-    "text": "November: Light 19%, Heavy 7% at Kerrobert; 13% at Cromer (Line 2/93/65); 16% at Superior (Line 6/61).",
-    "at": "2026-10-20T15:03:34-06:00",
-    "source": "Enbridge notice, Oct 20, 2026"
-   },
-   "source": "Enbridge Mainline November notice, Oct 20, 2026 (nominations closed Oct 19); announced figures filed in data/raw/enbridge/apportionment_announced_2026-11.yaml; calls registered in the predlog, Sep 28 and Oct 16, 2026, and scored Oct 20, 2026",
-   "status": "printed",
-   "set_at": "2026-10-19T09:50:47-06:00"
-  },
+  "as_of": "2026-10-22",
+  "edition": "2026-10-22",
+  "call_vintage": "as of Thu Oct 22, 02:35 MDT",
+  "flash": null,
   "changes": [
    {
-    "headline": "November apportionment lands at 19 percent lights; December WCS trades wider on its first volume",
-    "dek": "November apportionment: Light 19 percent / Heavy 7 percent at Kerrobert (Enbridge notice, Oct 20). WCS Dec26 -$27.95 (ICE TMW settle, Oct 20), down $0.45 on 569 lots; ARV Dec26 -$19.00; ARV to TMW December spread +$8.95.. The November Mainline apportionment notice landed Tuesday, a day after its expected date: Light 19 percent and Heavy 7 percent at Kerrobert, with further cuts at Cromer, Superior and Clearbrook, up from October's 8 and 4 percent. Persistence (carrying October forward) missed by 11 and 3 points, a depth MAE of 7.0; the judgment call registered ahead of the notice (12 percent lights, 8 percent heavies) missed by 7 and 1, a depth MAE of 4.0, direction right on both classes. The same day, December WCS settled on real volume for the first time in this episode: 569 lots at a wider level.",
-    "balance_read": "A fifth of light nominations cut at Kerrobert is a physical statement, and the strip's first traded December settle agreed with it on volume. The judgment call beat persistence on depth, and both missed the light side, which is the blind spot December's persistence nowcast inherits.",
-    "vintage": "Oct 20 to 21, 2026",
-    "publishers": "Enbridge apportionment notice, Oct 20, 2026; ICE Report Center EOD, Oct 20, 2026"
+    "headline": "Saudi attacks confirmed at Shaybah and Dammam; Brent bids to $111.64 overnight on an unconfirmed vessel claim",
+    "dek": "Wednesday settles: Brent Dec26 $108.82 (+$0.03); WTI Dec26 $97.15 (-$0.67). Overnight: Brent $111.64 (+2.59 percent), WTI Dec26 $99.39 (+2.31 percent) at 0626 GMT (Reuters). Shaybah: 2 killed, 2 injured, operations not affected. Dammam airport: 1 killed, 8 injured.. Saudi authorities confirmed two attacks on Wednesday. Air defences intercepted a drone targeting a processing facility at the Shaybah oilfield; debris killed two contractor workers and injured two outside the perimeter, and the Energy Ministry said operations were not affected. In the evening Dammam's King Fahd International Airport was attacked, killing one and injuring eight (GACA). The US State Department ordered non-emergency staff and families to depart the Saudi mission, with withdrawals from other regional missions being prepared. Brent settled Wednesday up $0.03 at $108.82 after an early gain of more than $2 faded on a Kremlin Ukraine-talks headline, then bid overnight to $111.64 at 0626 GMT. The Revolutionary Guards said Thursday four vessels were hit in the northern Gulf and three struck mines west of the Strait; no vessel is named and no independent corroboration was found.",
+    "balance_read": "The confirmed barrel impact of Wednesday's attacks is zero (Shaybah operations explicitly unaffected, Dammam is an airport) and the risk impact is real (fatalities, an ordered US departure). The overnight premium also prices an unconfirmed seven-vessel claim at the same weight; its composition shows only if corroboration never comes and the premium refunds.",
+    "vintage": "Oct 21 to 22, 2026",
+    "publishers": "Reuters, Oct 21 to 22, 2026 (settles; overnight marks; ordered departure); Saudi Ministry of Energy via SPA, Oct 21; Saudi GACA, Oct 22"
    },
    {
-    "headline": "Brent round-trips a five-month high on mediation talk, recovers overnight on draws and a mine claim",
-    "dek": "Tuesday settles: Brent Dec26 $108.79 (-$0.76, intraday high $111.99, highest in five months); WTI Nov26 expiry $101.79 (-$1.87); WTI Dec26 $97.82. Overnight: Brent $110.38 (+1.5 percent), WTI Dec26 $99.18 (+1.4 percent) at 0350 GMT (Reuters). Diesel crack $105.06 on the completed Oct 20 close (validated history).. Brent touched $111.99 intraday on Tuesday, its highest in five months, then settled down $0.76 at $108.79 after Iran's president discussed mediation efforts with Pakistan's army chief in Tehran; the expiring November WTI settled at $101.79 and December WTI at $97.82, the front month from today. Overnight Brent recovered to $110.38 and WTI December to $99.18 at 0350 GMT (Reuters). The Revolutionary Guards Navy said a supertanker struck a sea mine south of the Strait and caught fire; the vessel is unnamed and the strike unconfirmed, and LSEG warns attacks have expanded into the Gulf of Oman against the ship-to-ship transfer system. The API reported crude down 4.93 Mbbl and distillates down 2.6 Mbbl for the week ending Oct 16, and two Energy Department officials said they are working with world refiners to boost fuel output amid the diesel shortage.",
-    "balance_read": "The premium is rented, not owned: Brent made a five-month high and closed lower on a mediation discussion, then recovered overnight on a mine claim that names no vessel. The inventory draws are the firmer leg; today's EIA distillate line and the SPR bid deadline are evidence, and everything since Monday is positioning around evidence.",
-    "vintage": "Oct 20 to 21, 2026",
-    "publishers": "Reuters, Oct 20 to 21, 2026 (Tuesday settles; overnight marks at 0350 GMT; mediation discussion; mine claim via Iranian media; LSEG Gulf of Oman warning; API via market sources)"
+    "headline": "EIA builds distillates against every expectation; DOE lends heating oil from the Northeast reserve",
+    "dek": "EIA w/e Oct 16: crude -3.06 Mbbl to 412.5; distillates +1.68 to 104.3 (poll -1.4, API -2.6); Cushing +0.99 to 27.59; production 13,269 kb/d (-410); PADD 2 utilization 90.2 percent. Diesel crack $102.91 on the completed Oct 21 close (validated history), 3-2-1 $56.91.. The EIA report for the week ending Oct 16 (released Wednesday) showed crude down 3.06 Mbbl to 412.5 (poll down 0.8; API down 4.93), gasoline down 3.0 to 205.3, and distillates UP 1.68 Mbbl to 104.3 against a poll of down 1.4 and the API's down 2.6, with distillate demand down 591 kb/d on the week. Cushing rose 0.99 to 27.59; utilization was 93.4 percent nationally and 90.2 percent in PADD 2; production fell 410 kb/d to 13,269 on hurricane shut-ins; the SPR drew 0.3 to 282.7. The same day, DOE announced an exchange of up to 315,000 barrels from the Northeast Home Heating Oil Reserve, the first use since Hurricane Sandy in 2012, deliveries by Nov 13. The SPR re-offer of up to 17 Mbbl took proposals Wednesday with no award published; posted contracts stand at 133.56 Mbbl to 13 companies.",
+    "balance_read": "The official print arbitrated against the private one: crude and gasoline drew, distillates built, and the crack faded on the build. Distillates remain about 9 percent below the five-year average, which is why Washington is lending heating oil from a 1.0 Mbbl reserve; tight is not the same as tightening, and the level, not the direction, is now the bull case.",
+    "vintage": "Oct 21 to 22, 2026",
+    "publishers": "EIA Weekly Petroleum Status Report, released Oct 21, 2026; DOE, Oct 21, 2026; validated crack history refreshed Oct 22"
    },
    {
-    "headline": "Freight peaked in Week 42: TD9 printed WS 830 and the easing extended into Oct 19",
-    "dek": "Baltic Week 42 (Oct 16): TD9 WS 830 (-198 points); TD3C WS 1281.25, TCE $1,370,193 per day; TD22 $80.58 million lumpsum, TCE $559,334 per day; TD25 WS 755. RBN/McQuilling, Oct 19: VLCC USGC to Asia $65.39 million; Aframax USGC to Europe WS 648.89.. The Baltic Week 42 weekly (Oct 16) shows the first broad pullback of the freight episode on every major route, and it carries the TD9 print this digest had been missing: TD9 (Caribbean to US Gulf Coast) at WS 830, down 198 points on the week, replacing the Oct 9 level of WS 1030 carried until now. TD3C eased to WS 1281.25, TD22 (US Gulf Coast to China) to an $80.58 million lumpsum, TD25 to WS 755. RBN's freight series opener, with McQuilling data, has the easing continuing past the weekly: the VLCC US Gulf Coast to Asia voyage at $65.39 million as of Oct 19 and the Aframax US Gulf Coast to Europe voyage at WS 648.89, off WS 1000 on Oct 6.",
-    "balance_read": "Freight stays a headwind at record-extreme levels and the export arb stays closed, but the tightening impulse has reversed: the trapped-barrel pressure on Houston pricing now eases at the margin if Friday's weekly confirms the turn. The FOB discount gauge itself has not printed since late September, so the relief is unconfirmed in prices.",
-    "vintage": "Oct 16 to 21, 2026",
-    "publishers": "Baltic Exchange weekly, Oct 16, 2026, via shipping-press republications; RBN Energy, Oct 21, 2026"
+    "headline": "December WCS at a new widest -$28.35; the traded winter strip widens on volume, Houston faster than Hardisty",
+    "dek": "WCS Dec26 -$28.35 (ICE TMW settle, Oct 21), down $0.40 on 1 lot; Jan27 -$27.20 on 825 lots; ARV Dec26 -$19.75 on 265 lots; ARV to TMW December spread +$8.60; TMS Dec26 +$5.55 on zero lots; TMF Dec26 +$4.00 on 120 lots.. WCS Dec26 settled at -$28.35 (ICE TMW, Oct 21), down $0.40 on 1 lot, a new widest for the episode. The traded strip behind it widened on volume: Jan27 -$27.20 on 825 lots, Feb27 -$26.10 and Mar27 -$25.05 on 725 lots each, Apr27 -$22.35 on 960 lots. WCS Houston Dec26 settled at -$19.75 (ICE ARV, Oct 21), down $0.75 on 265 lots, narrowing the ARV to TMW December spread to +$8.60 from +$8.95. SYN Dec26 held at +$5.55 on zero volume into Friday's verdict date. Freight eased a further read (Monday TCE indexes down 11 to 19 percent from peaks; a Petrobras Brazil to China VLCC fixed Wednesday at $50 million), and the competing-grade FOB discount gauge has still not printed since Sep 22 to 24.",
+    "balance_read": "December's marker is still a one-lot print, so the widest label rests on the traded tenors behind it, which did widen on 725 to 960 lots. Houston weakening faster than Hardisty, with Venezuelan deliveries into the Gulf at about 600 kb/d in October, says the binding pressure on the Houston leg is competing heavy supply plus freight, not the Mainline print alone.",
+    "vintage": "Oct 21 to 22, 2026",
+    "publishers": "ICE Report Center EOD, Oct 21, 2026; Lloyd's List, Oct 20, 2026; TradeWinds, Oct 21, 2026"
    }
   ],
   "flags": [
    {
-    "title": "Hormuz flows 41 percent below prewar; mine claim unnamed, attacks spreading to the Gulf of Oman",
-    "detail": "Kpler puts confirmed Hormuz flows at a seven-day average of 10.17 Mb/d, 41 percent below the prewar baseline, with at least 18 vessels reportedly attacked over two weeks. The Revolutionary Guards Navy said Tuesday a supertanker struck a sea mine south of the Strait and caught fire; the vessel is unnamed and the strike is unconfirmed, and LSEG warns targeting has expanded into the Gulf of Oman against the ship-to-ship transfers that support loadings. The Houthis claimed Saudi Arabia's Yanbu terminal site, Shaybah field and two airports on Monday; Saudi authorities have not confirmed and the claims are unverified. Trade the flow prints and confirmed incidents, not the claims. Trigger: Saudi confirmation of any Monday claim, a named vessel or independent confirmation for the mine claim, or a Kpler flow print stepping down again",
-    "vintage": "expires 2026-10-28"
+    "title": "Hormuz flows recovering to 82 percent of pre-war; attack tempo at a record; seven-vessel claim unconfirmed",
+    "detail": "Kpler puts Hormuz flows at 11.7 Mb/d in October, about 82 percent of the pre-war level and up from 9.75 in September, with total Middle East crude exports at 17.3 Mb/d, above the 16.9 pre-war average. UKMTO counted 12 attacks in and around the Strait last week, a record high, and a Kuwaiti products tanker was hit on Wednesday with all crew safe. The Revolutionary Guards said Thursday four vessels were hit in the northern Gulf and three struck mines west of the Strait; no vessel is named and no independent corroboration was found. Saudi authorities confirmed Wednesday attacks at Shaybah (operations not affected) and Dammam airport, and the US ordered families out of its Saudi mission. Trade the flow prints and confirmed incidents, not the claims. Trigger: Independent corroboration of any claimed incident, a named vessel, a Kpler flow print stepping down, or a Saudi statement of facility damage",
+    "vintage": "expires 2026-10-29"
    },
    {
-    "title": "Sanctions waiver: terms undecided, no cargo reported, DOE working the refiner channel",
-    "detail": "The Oct 16 executive order waived the Graham Act sanctions, restrictions and duties under the Section 115 national-interest waiver. The president defended the waiver on Monday while noting a final decision is still to be announced, and the Secretary of State cited up to 60 days to assess the impact. Still missing: a reported loading, a named buyer, and a shipment schedule, with Moscow's export ban running through October and Ryazan's CDU-6 suspended. On Tuesday two Energy Department officials said they are working with refiners worldwide to boost fuel output instead. The waiver raises the probability the barrels eventually move; it does not schedule them. Trigger: A reported Russian diesel loading, a named buyer, or a move in Congress to block the arrangement",
-    "vintage": "expires 2026-10-28"
+    "title": "Sanctions waiver: loadings verified to legacy buyers; first US cargo announced with two sailing dates",
+    "detail": "The Oct 16 executive order waived the Graham Act sanctions under the Section 115 national-interest waiver, and the import licence runs to Apr 7, 2027. Post-ban loadings are now verified: Primorsk cargoes on Oct 13 (Morocco), Oct 14 (Turkey) and Oct 16 (Brazil), each about 300,000 barrels, none US-bound. On Wednesday the deputy prime minister said the first 40 kt tanker for the US sails Oct 22 while the president told the US envoy it departs in two to three days, with contracts and financial arrangements still being finalised. Ryazan's CDU-6 remains halted since Oct 15. The waiver raises the probability the barrels eventually move; the sailing date is its first physical test. Trigger: A confirmed sailing of the US-bound cargo, a named US buyer or port, or a move in Congress to block the arrangement",
+    "vintage": "expires 2026-10-29"
    },
    {
-    "title": "November apportionment at 19 percent lights; December traded wider on volume",
-    "detail": "November Mainline apportionment is Light 19 percent and Heavy 7 percent at Kerrobert (Enbridge notice, Oct 20), up from October's 8 and 4 percent. WCS Dec26 settled at -$27.95 (ICE TMW settle, Oct 20), down $0.45 on 569 lots, the widest marker of the episode on its first traded volume. December's nowcast opens at persistence on November's levels; no December judgment call is registered yet, and December nominations close Nov 17. Trigger: A December settle that retraces or extends on volume, or registration of a December judgment call ahead of the Nov 17 nominations close",
-    "vintage": "expires 2026-10-28"
+    "title": "November apportionment at 19 percent lights; December at a new widest on a widening traded strip",
+    "detail": "November Mainline apportionment is Light 19 percent and Heavy 7 percent at Kerrobert (Enbridge notice, Oct 20). WCS Dec26 settled at -$28.35 (ICE TMW settle, Oct 21), down $0.40 on 1 lot, the widest of the episode, with the traded January to April tenors widening on 725 to 960 lots each. December's nowcast opens at persistence on November's levels; no December judgment call is registered yet, and December nominations close Nov 17. Trigger: A December settle that retraces or extends on volume in the front tenor itself, or registration of a December judgment call ahead of the Nov 17 nominations close",
+    "vintage": "expires 2026-10-29"
    },
    {
-    "title": "Freight peaked in Week 42; the turn is unconfirmed until Week 43",
-    "detail": "The Baltic Week 42 weekly (Oct 16) showed the first broad pullback of the freight episode: TD3C at WS 1281.25, TD22 (US Gulf Coast to China) TCE at $559,334 per day, TD25 at WS 755, and TD9 (Caribbean to US Gulf Coast) at WS 830, down 198 points from WS 1030. RBN/McQuilling data to Oct 19 shows the easing continuing (VLCC US Gulf Coast to Asia $65.39 million; Aframax to Europe WS 648.89). Levels remain record-extreme and the export arb stays closed. High Caribbean to Gulf freight makes competing heavy sellers captive to the Gulf, so their length is offered at deeper FOB discounts and pressures WCS Houston pricing whether it fills or not; that discount gauge has not printed since late September. Trigger: The Week 43 Baltic weekly on Friday, a fresh competing-grade FOB discount print, or a WCS Houston response to the freight turn",
-    "vintage": "expires 2026-10-28"
+    "title": "Freight easing extends a third read; the turn is unconfirmed until Week 43",
+    "detail": "Freight peaked in Week 42 and has eased since on every read: the Baltic weekly (Oct 16) at TD9 WS 830, Monday's TCE indexes down 11 to 19 percent from their peaks, and a Brazil to China VLCC fixed Wednesday at $50 million, the route's first sub-$600,000 per day print since early October. Levels remain extreme (average global crude freight above $20 per barrel against about $3 a year ago) and the export arb stays closed. High Caribbean to Gulf freight makes competing heavy sellers captive to the Gulf, so their length is offered at deeper FOB discounts and pressures WCS Houston pricing whether it fills or not; that discount gauge has not printed since late September. Trigger: The Week 43 Baltic weekly on Friday, a fresh competing-grade FOB discount print, or a WCS Houston response to the freight turn",
+    "vintage": "expires 2026-10-29"
    }
   ],
   "forward_calendar": [
    {
-    "when": "Wed Oct 21",
-    "what": "EIA weekly report, week ending Oct 16 (08:30 MDT)",
-    "detail": "The API reported crude down 4.93 Mbbl and distillates down 2.6 Mbbl for the week ending Oct 16; the Reuters poll expects crude down 0.8 and distillates down 1.4. Production should rebound mechanically after the hurricane shut-in week (13,679 kb/d in the last print). The distillate line arbitrates the diesel crack's Tuesday close at $105.06."
-   },
-   {
-    "when": "Wed Oct 21",
-    "what": "SPR re-offer proposal deadline (11:00 a.m. CT)",
-    "detail": "Proposals for the Oct 16 re-offer of up to 17 Mbbl are due at 11:00 a.m. CT. A taken re-offer extends the exchange program on premium terms; a passed one says the premium structure is the binding constraint. No award has been published for the Sep 29 40 Mbbl round; posted contracts stand at 133.56 Mbbl to 13 companies."
-   },
-   {
     "when": "Fri Oct 23",
     "what": "Syncrude return verdict (SYN), next COT vintage, Baltic Week 43",
-    "detail": "The November SYN tenor has rolled out of the ICE settlements file; Dec26 settled at +$5.55 on Oct 20 on zero volume. The pre-registered lines are +$7.00 (premium was priced for the return, or the return slipped) and +$6.50 (supply-return read confirmed); a scoring settle needs traded volume, and a zero-volume settle extends the window. The COT vintage as of Oct 20 is the first that can show whether Friday's escalation buying was short covering or new length, and the Week 43 Baltic weekly confirms or reverses the freight peak."
+    "detail": "Dec26 SYN settled at +$5.55 on Oct 21 on zero volume. The pre-registered lines are +$7.00 (premium was priced for the return, or the return slipped) and +$6.50 (supply-return read confirmed); a scoring settle needs traded volume, and a zero-volume settle extends the window to the first settle that actually traded. The COT vintage as of Oct 20 is the first that can show whether the recent escalation buying was short covering or new length, and the Week 43 Baltic weekly extends or reverses the freight easing."
    },
    {
     "when": "Mon Oct 26",
     "what": "Line 5 enforcement conference (Wisconsin DNR)",
-    "detail": "The DNR's formal Notice of Violation of Oct 13 reaches its enforcement conference. Line 5 is operating via its temporary bypass; the conference is a regulatory-track event for the reroute, not a flow event today. Egypt's parliament also votes on authorizing support for Saudi Arabia."
+    "detail": "The DNR's formal Notice of Violation of Oct 13 reaches its enforcement conference. Line 5 is operating via its temporary bypass; the conference is a regulatory-track event for the reroute, not a flow event today."
    },
    {
     "when": "Fri Oct 30",
-    "what": "Imperial Oil Q3 results",
+    "what": "Imperial Oil and Cenovus Q3 results",
     "detail": "The first of the Canadian majors to report the quarter that contains the fall turnaround windows. Upstream volumes are the first public test of whether Syncrude, Horizon and the Suncor plants returned on their guided schedules; no completion notices have been published for any of them."
    },
    {
     "when": "Sun Nov 1",
     "what": "OPEC+ meeting",
     "detail": "The roll of November targets was the consensus at the last meeting, and the standing pause held through October with no delegate news ahead of the meeting. Any change in the production path lands directly on the global balance framing."
+   },
+   {
+    "when": "Tue Nov 3",
+    "what": "Suncor Q3 results",
+    "detail": "Suncor operates Syncrude and the Base Plant and Edmonton refinery windows that ended in mid-October; its Q3 volumes are the closest public read on those returns ahead of September AER data."
+   },
+   {
+    "when": "Fri Nov 13",
+    "what": "NEHHOR exchange deliveries complete",
+    "detail": "Deliveries under the Oct 21 Northeast Home Heating Oil Reserve exchange (up to 315,000 barrels, the first use of the reserve since Hurricane Sandy in 2012) are to complete by this date. The exchange is a dated measure of how tight the US Northeast distillate balance remains into winter."
    },
    {
     "when": "Tue Nov 17",
