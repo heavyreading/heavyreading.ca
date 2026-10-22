@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-21T19:16:20Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-22T14:41:21Z",
  "data": {
-  "updated_at": "2026-10-21T19:16:06.502438Z",
+  "updated_at": "2026-10-22T14:41:08.719745Z",
   "events": [
+   {
+    "id": "wti-1792679469",
+    "detected_at": "2026-10-22T14:41:08.719745Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-10-22T13:30:00Z",
+    "to_ts": "2026-10-22T14:31:09Z",
+    "from_price": 99.96,
+    "to_price": 98.29,
+    "move_usd": -1.67,
+    "move_pct": -1.67,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Oil News: Saudi Attacks Keep Crude Futures Bid Despite Strong Exports - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ2ZyM1lBQUd5ODBpWWdfYUgzYWFnd09ybmctMFJIcUVDWlFTNFBUQkRYWnNWQTBOM0VxTkEtWEdFcXZoNTFZaF9tV2xBMVJyaFlyV2R0ZVE3S0FGbHhscnJKbnFaengwMTlSNjBCTkdWRVJZUkZZRzNINGZWa2F2NkY3TEZXYWhfVEJOV0stRDB2bklaRW0tY20weGpUUktzVUxGQk1CUGt1REhBRHV6NGNQbG5laV93NFNj?oc=5",
+      "published": "2026-10-22T14:27:50Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil News: Saudi Attacks Keep Crude Futures Bid Despite Strong Exports &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "WTI Tests $100 as U.S. Crude Draw Raises Tightness Questions - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTElLVlFjQnN3eHZnNl9uelprdUpfeGhuYXlEUzhKV29OTWdQOW1jd0RxR0M4S3l1MUtlSjFBT3FMM1NIMjZ0ZHBwZEZFeFB6TURnUkktNmI5cDljSjZ6dkJlUmo4aWxHR2trcXlpTEJGUE9IWmVJczNCUnJGYzNLeDg4aFhmcWtVWFlkSlZCR2hCT2pYRnYzWmtHX3VzWk1JdXVKSllCWHRWWVVDamc?oc=5",
+      "published": "2026-10-22T14:23:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI Tests $100 as U.S. Crude Draw Raises Tightness Questions &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Oil Prices Surge on Renewed Iran Tensions, Rekindling Inflation Fears - Barron's",
+      "source": "Barron's",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95SzRUM0lIai1jTlF3eW1rd2pwUUxfUGN4WlZTMDZZUVhFZmFNb3NTS1JfRHpxSHFzUVdVZTZZLXdPSWlvWmc5emdnQTVuSEdCR05SNExlY0NpdVBnZmhfdGVzSWJGTTZkUWlKRzlhdHloR3dvRXk4eTZRSQ?oc=5",
+      "published": "2026-10-22T14:20:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Surge on Renewed Iran Tensions, Rekindling Inflation Fears &nbsp;&nbsp; Barron's"
+     },
+     {
+      "title": "Oil Prices Climb: 3 Energy Stocks Poised to Benefit From the Rally - Zacks Investment Research",
+      "source": "Zacks Investment Research",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS2xVdWxpLXB2cTUtc0ZXYndubll0QUNBNFFxNS10MlNSZGpzMVFfci1ySGo0VEFoek9wRjNtTDBJdDFqNEpORUlQSjhPaE85UzRLZnJIMXJpR1AxZFFuVDQ2elB3c2d5T01RZ2pFQ29WY1FwbHJOSnhuNU96SktLaG5QOTMydDRPWHJVdkwtZmF3Q3g1YjFGcWpFdDljMmRHemRPY05IWXhvZw?oc=5",
+      "published": "2026-10-22T14:15:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Climb: 3 Energy Stocks Poised to Benefit From the Rally &nbsp;&nbsp; Zacks Investment Research"
+     },
+     {
+      "title": "Aramco Chief: Oil demand to surge by 3 million barrels per day as normalcy returns - Saudi Gazette",
+      "source": "Saudi Gazette",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZllBVmVjSnNEM25zTUlTWVBpM2ZSak9wYVg0TTlUdGxMSTcteHpYRmFoUzhtbk04UVF5Y3VXQTJWTC10QkszMXk0RWFzU0F4R09WYU1NbWstZHVWZURDdl9NQmFNUzJ0VE9RTTZUOXRrcXVBdHFrck0tM3E4SGtwZ0JFemlIbXEzYTY1bXVmUy1jMGlSQkJtZC1wTm5VWkFQQ3BiZzdiU1JBYmZSTUFJNkc4VDFEYTI0UmczcFVVNmpDMUxqclQ5MVpBRjhNR2xsVi1r?oc=5",
+      "published": "2026-10-22T14:12:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco Chief: Oil demand to surge by 3 million barrels per day as normalcy returns &nbsp;&nbsp; Saudi Gazette"
+     },
+     {
+      "title": "AI stocks drag markets down worldwide as oil prices climb to their highest since May - The Killeen Daily Herald",
+      "source": "The Killeen Daily Herald",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNbmFQZmtBaTdiTzlfUU9NRDY2NURMVENob3BFSWpqMGtjbW9iYW1mYW1PT05UQVFxUVpwTTNyZWNTR1NGbW94bHZPeEZYcGFSWkJHQ0szV3hQaEdkTEdmZ21QNjloNDFOSVhoTmdrM3pZQnJzZGh3RFRmUHZuSEkwbXp4UnpFMTVPSXB6TE8wLXVjRU9LTXRKNk9IeWNCYnNlbFh3S2owUndaR0lObHRjRl92X0dYeGt3RWxpV1MtQXhuXzBKQ2JpWU1RdEFsTUJnSVJpY0ZzSkNUNUZiQ3BBN1ZmUWtQVnNiVVhqS3hhWnRTWF9IcHloOXptUHNvY1BPS3R1cw?oc=5",
+      "published": "2026-10-22T14:11:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AI stocks drag markets down worldwide as oil prices climb to their highest since May &nbsp;&nbsp; The Killeen Daily Herald"
+     },
+     {
+      "title": "AI stocks tumble and drag down markets worldwide as oil prices climb - Castanet",
+      "source": "Castanet",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQb2FwYXdkbmtxcVZvbFhMdzhES1pNVGFESHR5NktmSDNDaXhibW9rQ2JEV0RGbm16VnZtaXZvUXd1WXB4S2E1OVBMMWhvbUZhTU1jLVBMNHAwa1k1cHZwQXYzemFsQ3gyZjB6RHhBRVMyRkJOSkNDank2aXljZ3ByUHVubzdPV1JtNUVQSk5BLWpQSFMyREk5OW1FcGxvZUNrcWdKRFZ1cmJva2dyQm1wZVNXV18?oc=5",
+      "published": "2026-10-22T14:11:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AI stocks tumble and drag down markets worldwide as oil prices climb &nbsp;&nbsp; Castanet"
+     },
+     {
+      "title": "Can Saudi Arabia Design Nuclear Power Plants That Can Withstand War? - The National Interest",
+      "source": "The National Interest",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUzJnY2RtbFJaQ0M5X19zWUJEcnB1UnplQjhRNEtEU1lYdy03dEVvM2d4UGUwWDVLNlpTaHB4cDE4Vjk1MjRDY3lEUjdCNnFrZWxJT0hrSkt0OFJxaFZCSG9QN1R5eEtCcE4tUngya2RPdzdQdlBDSHVTdnhXbVlpU01BVVFVRGhkR1BVNGs3UjNTMy1WLTNTbVJUVFNyQVkyUUpRUWhtd0VlT1BNYWJ4OTBXWkJXdU9zaFlB?oc=5",
+      "published": "2026-10-22T14:09:17Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Can Saudi Arabia Design Nuclear Power Plants That Can Withstand War? &nbsp;&nbsp; The National Interest"
+     },
+     {
+      "title": "'Action Against Us Has A Cost: Iran Says 7 Oil Tankers Attacked In Hormuz As Tensions Flare - Times Now",
+      "source": "Times Now",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYWZWOUpadEo5Q05IOHdXSjhZZ3FmM1Rtakh5QldJaDI3Q19RMzFHSFA0bTBsQ1FUOFNMVmRsYXI4MlpvRG9ydUZrSEdDQm8zY3Bta3A4cGx5ajJtSnFkTlFLY29PNS15bkd5ckk4SWRLejA0YUU1NkdMaVdSU1RBaEU3c2w0Vm12MF9mcndBbnNKZmlSNXdrUlVmX1lTSERrT3dwZVlsVjhUeVB6T1I1LXB2V0xYT1J6MDJsZlRfNFFPU3lWdmxWZDdIeGlNU0R2NnhMblBZOFBMSy1FMUs3YWhwRnAtRl9aOXfSAe8BQVVfeXFMTVFRakx6ZzlQZTlYNkpoY3BDc2hRMUlIbG1pNmcteG1XQTdvQTJCZFl5cFpCeUgyMG9yOHBtV0NLVDltcjVEQ1c2Q1RlYW9XZy1KaEp6M1FvWEkxcUROZjRZQUhhekFua2RNTDRYY01QVnM1QmdlTkkwcmtMZHhhaVp4SloySXVEaDJ2N1g4VU9NUEdQY0d2VWMwQ2tnMmdseTY5Rk40Y1BKYVVaSUU0OGxraldhbE9JTGVfUDlPbnU3SVlYNFlHeFpVYTY2YmtiNVFQTHN2Q2ZpSXJ5c19hMG5TaEMwVlcyVkpIMV9xSjQ?oc=5",
+      "published": "2026-10-22T14:07:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "'Action Against Us Has A Cost: Iran Says 7 Oil Tankers Attacked In Hormuz As Tensions Flare &nbsp;&nbsp; Times Now"
+     },
+     {
+      "title": "Surging oil prices and fresh tech jitters are hammering stocks - Business Insider",
+      "source": "Business Insider",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWXp3YnNZOEN0MWQzbzVpYVNUWjFYZUs1aDVrbF9DVlktUm4wYUdHUUo0cmZFSXB6WUhtek1hNVRVd1F6MExBLWZmR3Riblp2UVRxZXg1Wi1yckx6UVJwVUxITUZxd1N4MzVRc19MYm9XdEtDVnExMHVCTU9KZUZ6Z1I2eFBCcE4tTld6Yk5hWUxqMTlFbERXV0xB?oc=5",
+      "published": "2026-10-22T14:06:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Surging oil prices and fresh tech jitters are hammering stocks &nbsp;&nbsp; Business Insider"
+     },
+     {
+      "title": "Oil Prices Surge to $112 After Saudi Aramco Oilfield Attack Kills Two - CryptoRank",
+      "source": "CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWVFWLXBfVFdENzAyeWRPaGQ3MzV1WmNVcmptZWhhdVFDdEdZTmpWSFhubTBkYlR2eGk5c2prekM2QjNTREFKZEF3dTU0UHNIVld2ZnNZelRYaTdkUy1GN09YZHAySkJabzBfLUNNcVBJMHQ0ZDlRdW1GOGRaTkREX3p5WlBhclRxcm1oNmgwbHZidlVvVHVkZENoVS15M3Fac0dBbjFOVlRVUQ?oc=5",
+      "published": "2026-10-22T14:03:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Surge to $112 After Saudi Aramco Oilfield Attack Kills Two &nbsp;&nbsp; CryptoRank"
+     },
+     {
+      "title": "Three killed in Houthi attacks in Saudi Arabia - Al-Monitor",
+      "source": "Al-Monitor",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbWhrZ1ZmaTV0a1N5cFczME9DdGlDckVWTmlkdFpyZHBZVkhyUU04aDFnQlZmX0VvdGZoVFBLQUQwX2JEQWNNUExDOVVmRXg5YUIxS2NDS20xQlljQmlwc0MyLVJSTzhCeTZNZmxRNDRqbElUS0xxX2ZvTnR3SjdZRTNTR2hjeERYdjhobmFtOXlWTGs?oc=5",
+      "published": "2026-10-22T13:59:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Three killed in Houthi attacks in Saudi Arabia &nbsp;&nbsp; Al-Monitor"
+     },
+     {
+      "title": "Oil Prices Surge to $112 After Saudi Aramco Oilfield Attack Kills Two - Coinpaper",
+      "source": "Coinpaper",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRUU2N1EwTXkwcEdKXzllTWdlS2J5VndfMTNUWi16MkFESkpSOW9tRlptZ3R5VmdJUVI4UjVETnhPSFJvcmc4ckNkOUhYR203MDNrUjUxa3FheGdGZ2dZMVNKU3YwSXpockJnQUQwbDlrbXE0eWpBakZaaXhPWExaMEJUT0xQVTRuX05PdWhFemtlNDIxbklPcnIwZ24?oc=5",
+      "published": "2026-10-22T13:47:42Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Surge to $112 After Saudi Aramco Oilfield Attack Kills Two &nbsp;&nbsp; Coinpaper"
+     },
+     {
+      "title": "AI stocks tumble and drag down markets worldwide as oil prices climb - BNN Bloomberg",
+      "source": "BNN Bloomberg",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNmRwS0szcjVlQzJyYXhVQ2ZBbHlqX3E3NF95V0xTSTVXcHJHdDlOY2FfQ1BBUll6a2JCYUtHaVQ5NEUzM01mNThuaHlUMEI4a3dqUFVkX0hNWWxZWnlrbEd1am1CMUVDZTBpdVNobzIzSWV5UVNSR0FYbEVsR05EUndEWUI1Vzg5dnlBQlc0R0dyWUZIMHlieUdoZHBJR3BySWlIdlNhMzU5M001cWVXbmNFcUR3OVR5WUExRzNPU0RrWEp5ckNJ?oc=5",
+      "published": "2026-10-22T13:47:27Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AI stocks tumble and drag down markets worldwide as oil prices climb &nbsp;&nbsp; BNN Bloomberg"
+     },
+     {
+      "title": "Middle East latest: UAE condemns Houthi attack on Saudi Arabia\u2019s Dammam airport - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQ2R1cnowWHhzQXdZcXRMWGVEZU83YmJaLUE3bHk1b1hleDhCNmpwcVJDbEg0Zll0LWpjTkhwdE1qc3hUdTJYSjdmMFlMaml2eTBPeHVwWll2bVFsVDJ5REx0RHk3YllpeXZuVVc5enVhS2ZyazlYQ0xGQl9WV0NMM1l0eHM0QQ?oc=5",
+      "published": "2026-10-22T13:47:11Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East latest: UAE condemns Houthi attack on Saudi Arabia\u2019s Dammam airport &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "AI stocks tumble and drag down markets worldwide as oil prices climb - Durango Herald",
+      "source": "Durango Herald",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQam81bjZlRG51UDEyc3ZxMkpBdXdEcURPYTlPdzFnMkpONkNiNENUN0VhUm1YbWNsd2IzQ0JveDlwdERTQWpvdmxKY0ZoUHFPaVVHTEpuc2VuclFKUTlwQXB3WmxzcmNJanI1cVRCNmFweWE1RHhqa1kxeWhaeWE1TFlUQUE0Q0h0bUJ3RXgwdEhDd1RnYWF3dzR4UVRxTmFiYTFwUF91eG51dTFNa1BPRHVDNS1PNlNoNlBlSld6ZnA1TnpUUnlDVzZmUUlxOC1RT1E?oc=5",
+      "published": "2026-10-22T13:41:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AI stocks tumble and drag down markets worldwide as oil prices climb &nbsp;&nbsp; Durango Herald"
+     },
+     {
+      "title": "US withdraws diplomats from Saudi Arabia amid deadly Houthi attacks - The Times",
+      "source": "The Times",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbUxKOG8xb1d6MW00ZGNJckFYSjdZSVJtZE12RGtfcHRxUWZUZ3NRTDllNlhMNktzNjY2R3Z1OTRYNEN0Zm9fS29vZkZvWDVHd3VFSnFWMzUxVU5sM29LTlFiaV9Pa21IdVlRYm50WHp2NXVXUzVFc29YN3lhcFVGbDNzc21kbHV0QWpQcVNxOXhqSTZ1N0l3TDhjbnh4NVplTGtlZk0yUjI?oc=5",
+      "published": "2026-10-22T13:40:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US withdraws diplomats from Saudi Arabia amid deadly Houthi attacks &nbsp;&nbsp; The Times"
+     },
+     {
+      "title": "AI stocks tumble and drag down markets worldwide as oil prices climb - Clinton Herald",
+      "source": "Clinton Herald",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOU1U1eElCcU9NYkFhVjY0UWZaNUxwbVJDa0gtal9iVGZ1N1pwRjkydFRMUFhMRkNPQjFFcHBvQTk0Qm5vbmJwVW03QWRlM2xWS0p6cHpvWmlPdlF6c0Vac3AwcHZLLXU4NU8zaE5pLTJpRTVxZFBlNUdXSWRzNVJ5cElWdF9FYm84Z2ZQdE84VzBwcUdNelVJdmtabG1SdnJkcnM3dXcxV0xjYXh4bGN5ZlNEekltUTFuSjZVRGVKY0VVT1E3QkdEZDlKNUhWQXlGMmlJTEF6ZkRhaWNrbERZS0xDMkhvTThsUUlRMVRIbUhTYUlrMHFYWndFWQ?oc=5",
+      "published": "2026-10-22T13:32:59Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AI stocks tumble and drag down markets worldwide as oil prices climb &nbsp;&nbsp; Clinton Herald"
+     },
+     {
+      "title": "AI stocks tumble and drag down markets worldwide as oil prices climb - Rocky Mount Telegram",
+      "source": "Rocky Mount Telegram",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNYVdhVTAza0FLZFUzWnJYUXJLRWlkSUYtcEtrcXduNEJLR3htNndLVFE5a3h5QUYyaUpPX2hyc01HVXJ3SUVRblhpUTRpbHF5VlZIMGtjQ2hFX1pkUFFHbWVCYXFYU0RzWl9UUVR6NE5lYWVpMzNNQjFSd1NPMnowdTZLM0VXSXQxSmE2YlZBZktXWWRjT0Z4TUp2bEJLWXYta2dnSk1yb09qMXR1VTA5NHhkd0NveVpTREEydGJxUFZFY1lySWJZcnBZcE00TnlpekRlSHdlVmVPT0tJZmY4T3g4cmU3M2xLSTZraFdVeTlVLXdyeE56YklB?oc=5",
+      "published": "2026-10-22T13:32:59Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AI stocks tumble and drag down markets worldwide as oil prices climb &nbsp;&nbsp; Rocky Mount Telegram"
+     },
+     {
+      "title": "Oil price uncertainty bigger influence than actual increases on BSP policy, inflation, study finds - BusinessWorld Online",
+      "source": "BusinessWorld Online",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOTlowTlJObnZibDU0UG42QlFwX2xpTkpuMEdjZ0o0SXgwNnI0dVIyZEtORDVxcmhDektYb0JrX1pCM3dnbXkwSEw3RU5fNThtcUtDMUQza2Q1aGlPelNUMVg0YmJENmZCOFpCWVYxWXAtNUxHOXhOQXgyTWQ1eXZmZEpaYlVhVURoeDNCNDhNZG0teXdYbTlsUjZKWHEzNVp4aVNYSF9qTnlSeEtNUmlORWdpZkQxcXBlNk8tZjhLVERpOHdpbmtkaHdWaUJ3U0hSUUV4R0R1bzJGTlpNSG1YcUJn?oc=5",
+      "published": "2026-10-22T13:31:28Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil price uncertainty bigger influence than actual increases on BSP policy, inflation, study finds &nbsp;&nbsp; BusinessWorld Online"
+     },
+     {
+      "title": "Oil Prices Today: Brent Surge to $112 per Barrel Following Houthi Attacks on Saudi - Arbiterz",
+      "source": "Arbiterz",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY0JBUEVOUFNFQjR0d0F2ZFlSclN0SmZyamxkajM3aHM1aFhsZ3hxbkR1ZEtxMHphUkU0b2dWRjluZ2UzaWR4T3hUQVo0NTJVMVpYeGlCQ0JxdThPR21VLW1FSHNCUjBrajdYdE1TbVdJYnAybloyS1VNcENUemtEY3Fhako3TlE0R01faS0xOU91RGtQYUprbHJXbll4bFl5ZENpRQ?oc=5",
+      "published": "2026-10-22T13:31:25Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Today: Brent Surge to $112 per Barrel Following Houthi Attacks on Saudi &nbsp;&nbsp; Arbiterz"
+     },
+     {
+      "title": "More Oil Is Now Coming Out of the Persian Gulf Than Before the Iran War - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQ25MSXRodmt6X1ZwZFZ1b01nR01ZTE1PWDU0SGVaWTRKMXJLdl9FbXVHSnZTMGxiV1pMbGtOZTVUMjZER01kVHQ1TmtIczlGZ3Z3X2djQng0b0RrOEQtZkk4REEtYTE2U1JxVlpLMzAtUnNycVhiQXVqV3BET09SZDZLbWtfZGp3NFl6eDZPakRzeDk4N3VydmJucDB6SlgwNmNNWVlrVTVRdGQ2RTVVOUpqTXBJa3RWaXc?oc=5",
+      "published": "2026-10-22T13:31:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "More Oil Is Now Coming Out of the Persian Gulf Than Before the Iran War &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Market Braces for Even Higher Oil Prices: 8 Key Items Shaping the Stock Market Thursday - TheStreet Pro",
+      "source": "TheStreet Pro",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdFJxS1hodldQQlBzNGhkQjMxMFRtQVQ4STJsZGV2Uk81QTFQM1hKYV96eXNjM1lTdHBHV2RUZHp0TkUxRWoxQjVEdlUyV3psZmltRDdDMzNucmJMakFTVnBvUU9tRWZuNFlJMm9TVTNuQ19YeE1SV0VLTllla083MnlUV05mNWRPMW9GU1ppUE5GOEZkdG1jUjdUbV93Q1FYLWlWTDJYQnpxUHJjMkt6M0kxeHA5cWdvcXFMTU1pMA?oc=5",
+      "published": "2026-10-22T13:22:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Market Braces for Even Higher Oil Prices: 8 Key Items Shaping the Stock Market Thursday &nbsp;&nbsp; TheStreet Pro"
+     },
+     {
+      "title": "EV Fleets Offset Oil Import Costs as Brent Crude Nears $100 - News and Statistics - IndexBox",
+      "source": "IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObzU0R0Q5UTBwTC1nTGN3YkN3YnJzRFBtYk8tV1dZRG1nWnkxSjJWTU1KMDBTUUhIbE5ReUR3dWNmMTVIdGVzX0Nwa3c3T1p5cTNEWFpsT1JrZU1ZMzZzcDVFYThpR1RvbTJHaWE1Skx1Rll3N2Fpa2lhYnUxTDY4UEpKd1NVS2owR1RwQVl1ckU?oc=5",
+      "published": "2026-10-22T13:02:28Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "EV Fleets Offset Oil Import Costs as Brent Crude Nears $100 - News and Statistics &nbsp;&nbsp; IndexBox"
+     },
+     {
+      "title": "Yemen\u2019s Houthis claim attack on Saudi Arabia\u2019s King Fahd International Airport in Dammam - Business Upturn",
+      "source": "Business Upturn",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNb1VMc3V3cU9PSWJheklOZEh4Q1o3M25LODZ2dTNHUGFDUDhOcHp1S2doY1NaYTFoU2JtTG9JUEl6TVZfTTBSaG5OaVZScjc0dUNuTzZSLTV0RGYwd2ItdEdOYVhrdEpHUFgtanpKaExKSEJTRFNHTHZ6Ym9DQzdHOWFDYlhUSVhBQndXai01LUxWM2FNUWtNbXMtSzAwaHdkekZNSU5BbGlKb3dCM1UwSlBrRC1jcDUxYmhJVzVVQ2NMX3hqNzRpcEMtOXN6OXFSVGVzZFVFaXpyY3pDSWVZ?oc=5",
+      "published": "2026-10-22T12:59:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Yemen\u2019s Houthis claim attack on Saudi Arabia\u2019s King Fahd International Airport in Dammam &nbsp;&nbsp; Business Upturn"
+     }
+    ]
+   },
    {
     "id": "brent-1792609564",
     "detected_at": "2026-10-21T19:16:06.502438Z",
