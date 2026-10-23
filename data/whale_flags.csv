@@ -138,73 +138,101 @@ date,market,direction,category,confidence,size_tier,velocity,stage,d1_lots,d4_lo
 2025-01-14,ICE WTI,1,managed_money,high,whale,single_week,cot_attribution,23710.0,35781.0,12295.801123318877,4.83743264206983,False,,,,
 2025-01-07,ICE WCS 1A diff,-1,managed_money,low,sub_whale,single_week,cot_attribution,-790.0,-185.0,-938.4474815535654,-2.1360845067066445,False,0.87,2.01,1.46,True
 2025-01-07,ICE WCS Houston diff,1,managed_money,high,whale,single_week,cot_attribution,1450.0,1115.0,1084.5243788425107,3.2943094226196044,False,0.87,2.01,1.46,False
-2024-12-31,ICE C5 1A diff,1,managed_money,medium,whale,multi_week,cot_attribution,0.0,1360.0,427.60510830943065,-0.16627656453572653,False,-0.53,0.34,2.31,False
-2024-12-24,ICE WCS Houston diff,1,commercial,medium,whale,multi_week,cot_attribution,375.0,4660.0,2396.9038301565615,0.28737093426322197,False,-0.84,-1.37,0.64,True
-2024-12-24,ICE C5 1A diff,1,managed_money,medium,whale,multi_week,cot_attribution,0.0,1360.0,432.0160075886328,-0.16797754714556756,False,-0.84,-1.37,0.64,True
-2024-12-24,ICE WTI,1,managed_money,high,whale,single_week,cot_attribution,12028.0,11288.0,11590.549904672323,2.5922590759216657,False,,,,
-2024-12-17,ICE WCS 1A diff,-1,commercial,high,whale,single_week,cot_attribution,-4857.0,-372.0,-4847.1227306243745,-2.504727701737066,False,-0.13,-0.97,-0.63,False
-2024-12-17,ICE SW 1A diff,-1,managed_money,high,whale,single_week,cot_attribution,-535.0,-1705.0,-437.44886629705843,-3.0896874982594396,False,-0.13,-0.97,-0.63,False
-2024-12-17,ICE C5 1A diff,-1,commercial,medium,whale,multi_week,cot_attribution,-395.0,-1595.0,-645.7822162253724,-1.5458284273959821,False,-0.13,-0.97,-0.63,False
-2024-12-10,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,1270.0,2845.0,1005.7517245974851,3.190527991244215,False,1.76,1.63,0.26,False
-2024-12-10,ICE C5 1A diff,-1,commercial,high,whale,single_week,cot_attribution,-1200.0,-1057.0,-459.1699697761519,-6.236351499647543,False,1.76,1.63,0.26,True
-2024-12-03,ICE WCS 1A diff,-1,managed_money,medium,whale,multi_week,cot_attribution,-390.0,3425.0,-894.7731939980423,-1.1760775909049344,False,-0.06,1.7,0.73,True
-2024-12-03,ICE WCS Houston diff,1,managed_money,low,sub_whale,single_week,cot_attribution,1005.0,-1445.0,1016.785699234898,2.4730049005357233,False,-0.06,1.7,0.73,False
-2024-11-26,ICE WCS 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,4985.0,1034.0,5344.216772459943,2.3218608524303783,False,-0.06,-0.12,1.51,True
-2024-11-26,ICE WCS Houston diff,-1,commercial,high,whale,single_week,cot_attribution,-2765.0,1465.0,-1846.5828092782242,-3.6861483015881467,False,-0.06,-0.12,1.51,False
-2024-11-19,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,1115.0,3235.0,851.7784250626281,3.288612628758696,False,0.07,0.01,1.71,False
-2024-11-19,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-2000.0,-3975.0,-878.3664833545978,-5.84558610211689,False,0.07,0.01,1.71,True
-2024-11-19,ICE SW 1A diff,-1,commercial,low,sub_whale,single_week,cot_attribution,-1451.0,-716.0,-1615.032505596879,-2.267241628991702,False,0.07,0.01,1.71,True
-2024-11-12,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,1850.0,2350.0,449.1766741366664,9.896190836320901,False,1.03,1.1,0.98,False
-2024-11-12,ICE WCS Houston diff,-1,managed_money,medium,whale,multi_week,cot_attribution,-750.0,-1975.0,-827.3746205368591,-2.2591927377763548,False,1.03,1.1,0.98,True
-2024-11-12,ICE C5 1A diff,1,commercial,low,sub_whale,multi_week,cot_attribution,135.0,1053.0,547.938351327532,0.49316772266457026,False,1.03,1.1,0.98,False
-2024-11-05,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,600.0,515.0,375.2167453861734,3.857209924386156,False,-0.84,0.19,0.2,False
-2024-11-05,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-1255.0,-1225.0,-654.9542924595349,-4.7746609391518895,False,-0.84,0.19,0.2,True
-2024-11-05,ICE C5 1A diff,1,commercial,low,sub_whale,multi_week,cot_attribution,0.0,918.0,554.5045265648769,-0.16485092487375205,False,-0.84,0.19,0.2,False
-2024-11-05,NYMEX WTI,1,managed_money,low,sub_whale,single_week,cot_attribution,44211.0,5451.0,54156.32885702287,2.04322196700815,False,,,,
+2024-12-31,ICE C5 1A diff,1,managed_money,medium,whale,multi_week,cot_attribution,0.0,1360.0,423.32393923769945,-0.1646262307338708,False,-0.53,0.34,2.31,False
+2024-12-24,ICE WCS Houston diff,1,commercial,medium,whale,multi_week,cot_attribution,375.0,4660.0,2396.1976762865384,0.2866173595417502,False,-0.84,-1.37,0.64,True
+2024-12-24,ICE C5 1A diff,1,managed_money,medium,whale,multi_week,cot_attribution,0.0,1360.0,423.32393923769945,-0.1646262307338708,False,-0.84,-1.37,0.64,True
+2024-12-24,ICE WTI,1,managed_money,high,whale,single_week,cot_attribution,12028.0,11288.0,11484.20836776281,2.61645341873761,False,,,,
+2024-12-17,ICE WCS 1A diff,-1,commercial,high,whale,single_week,cot_attribution,-4857.0,-372.0,-4709.441534145705,-2.5726699100430865,False,-0.13,-0.97,-0.63,False
+2024-12-17,ICE WCS Houston diff,1,commercial,low,sub_whale,single_week,cot_attribution,1845.0,1520.0,2279.97943547458,2.008877437934508,False,-0.13,-0.97,-0.63,True
+2024-12-17,ICE SW 1A diff,-1,managed_money,high,whale,single_week,cot_attribution,-535.0,-1705.0,-424.20534910553533,-3.1895268580638,False,-0.13,-0.97,-0.63,False
+2024-12-17,ICE C5 1A diff,-1,commercial,medium,whale,multi_week,cot_attribution,-395.0,-1595.0,-643.9698321723299,-1.564629940969084,False,-0.13,-0.97,-0.63,False
+2024-12-10,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,1270.0,2845.0,964.1980433205015,3.326263337000222,False,1.76,1.63,0.26,False
+2024-12-10,ICE C5 1A diff,-1,commercial,high,whale,single_week,cot_attribution,-1200.0,-1057.0,-465.5622688839863,-6.09947402206118,False,1.76,1.63,0.26,True
+2024-12-03,ICE WCS 1A diff,-1,managed_money,medium,whale,multi_week,cot_attribution,-390.0,3425.0,-866.6921415903354,-1.1949015504649287,False,-0.06,1.7,0.73,True
+2024-12-03,ICE WCS Houston diff,1,managed_money,high,whale,single_week,cot_attribution,1005.0,-1445.0,972.6407107702441,2.577826591651515,False,-0.06,1.7,0.73,False
+2024-11-26,ICE WCS 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,4985.0,1034.0,5077.684231120542,2.451375640274042,False,-0.06,-0.12,1.51,True
+2024-11-26,ICE WCS Houston diff,-1,commercial,high,whale,single_week,cot_attribution,-2765.0,1465.0,-1811.495292330218,-3.755605836266583,False,-0.06,-0.12,1.51,False
+2024-11-19,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,1115.0,3235.0,791.1559096140882,3.5295823251664085,False,0.07,0.01,1.71,False
+2024-11-19,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-2000.0,-3975.0,-818.0952718865371,-6.272256700243303,False,0.07,0.01,1.71,True
+2024-11-19,ICE SW 1A diff,-1,commercial,low,sub_whale,single_week,cot_attribution,-1451.0,-716.0,-1504.8591728877975,-2.418139188639798,False,0.07,0.01,1.71,True
+2024-11-12,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,1850.0,2350.0,417.798097431335,10.48208993683269,False,1.03,1.1,0.98,False
+2024-11-12,ICE WCS Houston diff,-1,managed_money,medium,whale,multi_week,cot_attribution,-750.0,-1975.0,-762.615393085772,-2.4575085220635673,False,1.03,1.1,0.98,True
+2024-11-12,ICE C5 1A diff,1,commercial,low,sub_whale,multi_week,cot_attribution,135.0,1053.0,569.5592968148356,0.4217696652287489,False,1.03,1.1,0.98,False
+2024-11-05,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,600.0,515.0,348.4268041800918,4.10961725980965,False,-0.84,0.19,0.2,False
+2024-11-05,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-1255.0,-1225.0,-599.6651354756971,-5.215107833712505,False,-0.84,0.19,0.2,True
+2024-11-05,ICE C5 1A diff,1,commercial,low,sub_whale,multi_week,cot_attribution,0.0,918.0,569.4120037849983,-0.2191127742371512,False,-0.84,0.19,0.2,False
+2024-11-05,NYMEX WTI,1,managed_money,low,sub_whale,single_week,cot_attribution,44211.0,5451.0,52604.75333411387,2.116565770328598,False,,,,
 2024-11-05,ICE Gasoil,1,managed_money,low,sub_whale,single_week,cot_attribution,36774.0,4600.0,39487.908901073046,2.3344801945508946,False,,,,
-2024-10-29,ICE WCS 1A diff,1,commercial,high,whale,single_week,cot_attribution,9010.0,16567.0,4067.5791538691747,5.704205663121385,False,0.3,-0.54,0.56,True
-2024-10-29,ICE C5 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,430.0,948.0,528.0693585840248,2.0127602436032337,False,0.3,-0.54,0.56,True
-2024-10-22,ICE SW 1A diff,-1,commercial,low,sub_whale,single_week,cot_attribution,-1301.0,-342.0,-1567.8564953414461,-2.117197830084237,False,-0.79,-0.49,-0.3,False
-2024-10-22,ICE C5 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,488.0,503.0,488.8554994419403,2.495499930558011,False,-0.79,-0.49,-0.3,True
-2024-10-08,ICE WCS Houston diff,-1,commercial,high,whale,single_week,cot_attribution,-1765.0,-200.0,-1585.440814163505,-2.776257142682803,False,-0.49,0.48,-0.01,True
+2024-10-29,ICE WCS 1A diff,1,commercial,high,whale,single_week,cot_attribution,9010.0,16567.0,3834.376494692181,6.0170855856169885,False,0.3,-0.54,0.56,True
+2024-10-29,ICE C5 1A diff,1,commercial,low,sub_whale,multi_week,cot_attribution,430.0,948.0,543.750617058958,1.9381411835835813,False,0.3,-0.54,0.56,True
+2024-10-22,ICE SW 1A diff,-1,commercial,low,sub_whale,single_week,cot_attribution,-1301.0,-342.0,-1413.3656585516312,-2.320524228343331,False,-0.79,-0.49,-0.3,False
+2024-10-22,ICE C5 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,488.0,503.0,527.7293653360979,2.2984927547021177,False,-0.79,-0.49,-0.3,True
+2024-10-08,ICE WCS 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,2869.0,2572.0,3441.973566269551,2.086297515848713,False,-0.49,0.48,-0.01,False
+2024-10-08,ICE WCS Houston diff,-1,commercial,high,whale,single_week,cot_attribution,-1765.0,-200.0,-1485.9053874959204,-2.952442430197096,False,-0.49,0.48,-0.01,True
+2024-10-08,NYMEX WTI,-1,commercial,low,sub_whale,single_week,cot_attribution,-39215.0,-49985.0,-49295.73824359612,-2.0270197682062108,False,,,,
 2024-10-08,ICE Brent,1,managed_money,high,whale,single_week,cot_attribution,123226.0,177688.0,93625.2359127638,3.262745202952596,False,,,,
 2024-10-08,ICE Gasoil,1,managed_money,low,sub_whale,single_week,cot_attribution,31789.0,40240.0,37288.85579448619,2.150192116677536,False,,,,
-2024-10-01,ICE WCS Houston diff,1,commercial,low,sub_whale,single_week,cot_attribution,1525.0,1525.0,1529.2412167207738,2.493064678539355,False,-0.62,-1.11,-0.93,True
-2024-10-01,ICE WTI,1,commercial,high,whale,single_week,cot_attribution,41412.0,14773.0,38075.080347016665,2.7211332609298564,False,,,,
-2024-09-24,ICE WCS 1A diff,-1,managed_money,high,whale,single_week,cot_attribution,-510.0,-655.0,-386.4148443081761,-3.368509617361637,False,-1.84,-2.46,-1.98,False
-2024-09-24,ICE WCS Houston diff,1,managed_money,low,sub_whale,single_week,cot_attribution,600.0,440.0,652.96168846736,2.298600605432397,False,-1.84,-2.46,-1.98,True
-2024-09-10,NYMEX WTI,1,commercial,low,sub_whale,multi_week,cot_attribution,40672.0,95752.0,52902.48903933391,1.9289054877425345,False,,,,
-2024-09-03,NYMEX WTI,-1,managed_money,low,sub_whale,single_week,cot_attribution,-49664.0,-45307.0,-50016.38079686832,-2.483015644993023,False,,,,
-2024-08-27,ICE WCS 1A diff,-1,managed_money,medium,whale,multi_week,cot_attribution,-80.0,-920.0,-401.482259370633,-0.350517055551245,False,-0.06,0.02,0.5,True
-2024-08-20,ICE SW 1A diff,-1,commercial,low,sub_whale,single_week,cot_attribution,-1281.0,-86.0,-1535.9198455043252,-2.1295404735843517,False,-1.73,-1.79,-0.3,False
-2024-08-13,ICE WCS 1A diff,1,commercial,high,whale,single_week,cot_attribution,4190.0,2419.0,3399.1881232085525,3.0789316275255794,False,1.82,0.09,0.11,False
-2024-08-13,ICE WCS Houston diff,-1,managed_money,low,sub_whale,single_week,cot_attribution,-555.0,-1190.0,-631.8423028940085,-2.2083192445486772,False,1.82,0.09,0.11,True
-2024-08-06,ICE WCS 1A diff,-1,managed_money,high,whale,single_week,cot_attribution,-600.0,-195.0,-275.47350898597426,-5.4703291564359064,False,-0.21,1.61,-0.18,True
-2024-08-06,NYMEX WTI,1,commercial,low,sub_whale,multi_week,cot_attribution,30790.0,78023.0,47810.36370598299,1.665837955788449,False,,,,
+2024-10-01,ICE WCS Houston diff,1,commercial,low,sub_whale,single_week,cot_attribution,1525.0,1525.0,1630.1789630791939,2.332475110890144,False,-0.62,-1.11,-0.93,True
+2024-10-01,ICE WTI,1,commercial,high,whale,single_week,cot_attribution,41412.0,14773.0,38847.201505773846,2.6696312147634536,False,,,,
+2024-09-24,ICE WCS 1A diff,-1,managed_money,high,whale,single_week,cot_attribution,-510.0,-655.0,-353.03127283146296,-3.7156066564123367,False,-1.84,-2.46,-1.98,False
+2024-09-24,ICE WCS Houston diff,1,managed_money,high,whale,single_week,cot_attribution,600.0,440.0,553.8232105638098,2.705343855390163,False,-1.84,-2.46,-1.98,True
+2024-09-10,ICE SW 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,1335.0,744.0,1598.6215866019722,2.057014808189069,False,1.41,0.48,-1.98,False
+2024-09-03,NYMEX WTI,-1,managed_money,low,sub_whale,single_week,cot_attribution,-49664.0,-45307.0,-56895.213066978315,-2.180724346728989,False,,,,
+2024-08-27,ICE WCS 1A diff,-1,managed_money,medium,whale,multi_week,cot_attribution,-80.0,-920.0,-351.3004732606153,-0.4040974384548644,False,-0.06,0.02,0.5,True
+2024-08-20,ICE SW 1A diff,-1,commercial,low,sub_whale,single_week,cot_attribution,-1281.0,-86.0,-1294.1803046356363,-2.4768702208518993,False,-1.73,-1.79,-0.3,False
+2024-08-13,ICE WCS 1A diff,1,commercial,high,whale,single_week,cot_attribution,4190.0,2419.0,3143.722107816354,3.3052362943321008,False,1.82,0.09,0.11,False
+2024-08-13,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-555.0,-1190.0,-543.8880001175924,-2.5512034231035527,False,1.82,0.09,0.11,True
+2024-08-06,ICE WCS 1A diff,-1,managed_money,high,whale,single_week,cot_attribution,-600.0,-195.0,-259.52038752535236,-5.894336307354331,False,-0.21,1.61,-0.18,True
 2024-08-06,ICE Brent,-1,managed_money,low,sub_whale,multi_week,cot_attribution,-52552.0,-174811.0,-94989.92616105378,-1.3511416850116194,False,,,,
-2024-07-30,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,300.0,405.0,225.5676689490185,3.2807817925146687,False,-2.04,-2.25,-2.16,True
-2024-07-30,ICE WCS Houston diff,-1,managed_money,low,sub_whale,multi_week,cot_attribution,-275.0,-1110.0,-618.6609475701047,-1.163419620783498,False,-2.04,-2.25,-2.16,False
+2024-07-30,ICE WCS 1A diff,1,managed_money,high,whale,single_week,cot_attribution,300.0,405.0,211.81999429791063,3.473980600091871,False,-2.04,-2.25,-2.16,True
+2024-07-30,ICE WCS Houston diff,-1,managed_money,low,sub_whale,multi_week,cot_attribution,-275.0,-1110.0,-527.7559001819071,-1.307032603203496,False,-2.04,-2.25,-2.16,False
 2024-07-30,ICE Gasoil,-1,managed_money,low,sub_whale,multi_week,cot_attribution,-11422.0,-81207.0,-38672.46256439692,-0.7119318087621713,False,,,,
-2024-07-23,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-765.0,-1155.0,-480.57499226885795,-3.834335325815533,False,-1.04,-3.08,-1.47,False
+2024-07-23,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-765.0,-1155.0,-444.4190539912218,-4.216823156646535,False,-1.04,-3.08,-1.47,False
 2024-07-23,ICE Gasoil,1,commercial,low,sub_whale,single_week,cot_attribution,21541.0,40039.0,25976.79167835029,2.0758683037763523,False,,,,
 2024-07-16,ICE Gasoil,-1,managed_money,low,sub_whale,single_week,cot_attribution,-29736.0,-26886.0,-34835.37967904944,-2.1438369866238856,False,,,,
+2024-07-09,ICE SW 1A diff,-1,commercial,low,sub_whale,multi_week,cot_attribution,-810.0,-1681.0,-1197.032015645083,-1.7858343068681053,False,0.32,2.77,-0.31,True
+2024-07-09,ICE C5 1A diff,-1,commercial,low,sub_whale,multi_week,cot_attribution,0.0,-992.0,715.8691151025009,-0.0670993871704522,False,0.32,2.77,-0.31,True
+2024-07-02,ICE C5 1A diff,-1,commercial,high,whale,single_week,cot_attribution,-720.0,-782.0,-614.9639166021399,-2.905531189818896,False,-1.86,-1.54,-0.13,False
 2024-07-02,ICE Gasoil,1,commercial,medium,whale,multi_week,cot_attribution,3723.0,-58079.0,25292.930120964083,0.4494035511238894,False,,,,
 2024-06-25,ICE Gasoil,-1,commercial,medium,whale,multi_week,cot_attribution,-20108.0,-65429.0,-26166.18936054082,-1.9122611965734237,False,,,,
+2024-06-18,ICE WCS 1A diff,-1,commercial,high,whale,single_week,cot_attribution,-4081.0,-5056.0,-2993.7680293051185,-3.3852408604170097,False,0.47,1.71,0.17,True
+2024-06-18,ICE SW 1A diff,-1,commercial,low,sub_whale,single_week,cot_attribution,-1116.0,-781.0,-1116.3281141037176,-2.4993629714597003,False,0.47,1.71,0.17,True
 2024-06-18,ICE Brent,1,managed_money,low,sub_whale,single_week,cot_attribution,68535.0,-6029.0,86041.82510319863,2.0027294837953327,False,,,,
 2024-06-18,ICE Gasoil,1,managed_money,high,whale,single_week,cot_attribution,38041.0,25902.0,34328.042059335465,2.7762787996274083,False,,,,
 2024-06-11,ICE Gasoil,-1,commercial,high,whale,single_week,cot_attribution,-25265.0,-23383.0,-23675.832030440375,-2.6654584824466143,False,,,,
+2024-06-04,ICE WCS Houston diff,1,commercial,low,sub_whale,single_week,cot_attribution,1350.0,-785.0,1510.863201490351,2.2458404831481547,False,0.46,1.72,3.43,False
 2024-06-04,ICE Brent,-1,managed_money,high,whale,single_week,cot_attribution,-102075.0,-214970.0,-80870.72376938164,-3.157460769434278,False,,,,
+2024-05-28,ICE WCS Houston diff,-1,commercial,high,whale,single_week,cot_attribution,-1845.0,-2805.0,-1493.1363907428993,-3.09979562607178,False,1.44,1.9,3.63,True
 2024-05-28,ICE Brent,-1,commercial,low,sub_whale,multi_week,cot_attribution,-2729.0,107506.0,-79441.28753868019,-0.08081068646036077,False,,,,
+2024-05-21,ICE SW 1A diff,-1,commercial,high,whale,single_week,cot_attribution,-1106.0,-316.0,-1050.1748647441766,-2.613825041584097,False,-0.43,1.01,2.73,True
 2024-05-21,ICE Brent,-1,managed_money,medium,whale,multi_week,cot_attribution,-67252.0,-149581.0,-76090.42303829573,-2.2172388125389983,False,,,,
+2024-05-14,ICE WCS Houston diff,1,managed_money,high,whale,single_week,cot_attribution,600.0,1320.0,413.58025555753636,3.6658984287576697,False,-0.63,-1.06,0.84,True
+2024-05-14,ICE WTI,-1,commercial,low,sub_whale,single_week,cot_attribution,-28131.0,-21188.0,-33736.722400755156,-2.092915874792366,False,,,,
 2024-05-14,ICE Brent,1,commercial,medium,whale,multi_week,cot_attribution,54838.0,125841.0,72159.63343436849,1.921350903082749,False,,,,
 2024-05-14,ICE Gasoil,-1,commercial,medium,whale,multi_week,cot_attribution,-6145.0,49113.0,-23564.056245692063,-0.660911155747394,False,,,,
+2024-05-07,ICE WCS Houston diff,1,managed_money,low,sub_whale,single_week,cot_attribution,380.0,720.0,385.17101553606165,2.465857296992387,False,0.97,0.34,1.35,False
+2024-05-07,NYMEX WTI,-1,managed_money,low,sub_whale,single_week,cot_attribution,-50017.0,-81693.0,-53769.728206953965,-2.3286209893136265,False,,,,
 2024-05-07,ICE Brent,-1,managed_money,low,sub_whale,single_week,cot_attribution,-60125.0,-43287.0,-70196.67566860795,-2.158423748400638,False,,,,
 2024-05-07,ICE Gasoil,1,commercial,medium,whale,multi_week,cot_attribution,20096.0,58262.0,22404.26012412352,2.2450715901690876,False,,,,
 2024-04-30,ICE Gasoil,1,commercial,medium,whale,multi_week,cot_attribution,1203.0,37862.0,23096.883041063018,0.13034456660377056,False,,,,
+2024-04-23,ICE WCS Houston diff,1,managed_money,low,sub_whale,single_week,cot_attribution,340.0,340.0,360.1882520614421,2.3598770785422625,False,-1.6,-2.72,-2.38,True
 2024-04-23,ICE Gasoil,1,commercial,high,whale,single_week,cot_attribution,33959.0,19342.0,19255.97838051151,4.351902523887261,False,,,,
+2024-04-16,ICE WTI,1,commercial,low,sub_whale,single_week,cot_attribution,26552.0,60035.0,32059.13445268702,2.070048384973698,False,,,,
 2024-04-02,ICE Gasoil,-1,commercial,low,sub_whale,single_week,cot_attribution,-17317.0,-16097.0,-19353.965540413436,-2.234166824008151,False,,,,
+2024-03-26,ICE SW 1A diff,1,commercial,medium,whale,multi_week,cot_attribution,140.0,3945.0,1403.9299425442841,-0.02598067157453901,False,0.31,1.4,1.34,False
+2024-03-19,ICE WCS Houston diff,-1,managed_money,high,whale,single_week,cot_attribution,-570.0,-675.0,-288.92865039068545,-4.843118915335851,False,-0.49,-0.18,-0.75,False
+2024-03-19,ICE SW 1A diff,1,commercial,medium,whale,multi_week,cot_attribution,243.0,4195.0,1444.555751843818,0.15034845847228623,False,-0.49,-0.18,-0.75,True
 2024-03-19,ICE Brent,-1,commercial,low,sub_whale,single_week,cot_attribution,-71061.0,-62620.0,-81300.07357520798,-2.1795927676169575,False,,,,
 2024-03-19,ICE Gasoil,1,managed_money,low,sub_whale,single_week,cot_attribution,24651.0,6869.0,30056.63311592434,2.0437001502864836,False,,,,
+2024-03-12,ICE SW 1A diff,1,commercial,medium,whale,multi_week,cot_attribution,770.0,3589.0,1413.5109071903885,1.2246829896910214,False,-1.7,-2.19,-0.79,True
+2024-03-05,ICE SW 1A diff,1,commercial,high,whale,single_week,cot_attribution,2792.0,3215.0,957.9049981860186,7.820955846471251,False,-1.04,-2.74,-2.92,True
+2024-02-13,ICE WCS Houston diff,1,managed_money,low,sub_whale,multi_week,cot_attribution,225.0,675.0,402.05020472746406,1.419239920504481,False,-1.04,-2.01,-4.4,True
 2024-02-13,ICE Gasoil,1,managed_money,medium,whale,multi_week,cot_attribution,14837.0,71091.0,29605.119185873333,1.2310182077389118,False,,,,
+2024-02-06,ICE WCS 1A diff,-1,commercial,low,sub_whale,multi_week,cot_attribution,-60.0,6882.0,-2952.032896260994,-0.29989517387712433,False,0.61,-0.43,-2.75,False
 2024-02-06,ICE Gasoil,1,managed_money,low,sub_whale,multi_week,cot_attribution,23409.0,58365.0,29536.093757257295,1.9910563548325364,False,,,,
+2024-01-30,ICE WCS 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,2855.0,7087.0,3447.6667181533667,2.0320142855271737,False,1.18,1.79,-0.22,False
+2024-01-30,ICE WCS Houston diff,-1,commercial,high,whale,single_week,cot_attribution,-1530.0,-2130.0,-1232.5237970939563,-3.0622449931425617,False,1.18,1.79,-0.22,True
+2024-01-30,ICE SW 1A diff,1,commercial,low,sub_whale,single_week,cot_attribution,755.0,1737.0,878.6959877214459,2.117688470457802,False,1.18,1.79,-0.22,False
 2024-01-30,ICE Gasoil,1,managed_money,low,sub_whale,single_week,cot_attribution,23355.0,34393.0,27843.840741655076,2.1131291553314084,False,,,,
+2024-01-23,ICE WTI,-1,commercial,high,whale,single_week,cot_attribution,-36987.0,-33119.0,-29261.751340251434,-3.1471378838909145,False,,,,
+2024-01-16,ICE WCS 1A diff,1,commercial,high,whale,single_week,cot_attribution,3335.0,4310.0,3178.4980704633026,2.6308469664633503,False,1.54,0.86,2.65,False

@@ -1,0 +1,25 @@
+{
+ "page": "/tank-watch.html",
+ "title": "Tank Watch",
+ "dek": "Measured crude storage at Edmonton and Hardisty from Sentinel-1 radar: build/draw episodes per hub, scored against the AER ST3 print, weeks before it publishes.",
+ "built_at": "2026-10-22",
+ "generator": "tank-watch-demo-phase0+extension",
+ "claims": [],
+ "sources": [
+  {
+   "publisher": "Copernicus / Microsoft Planetary Computer (Sentinel-1 GRD, Sentinel-2 L2A)",
+   "vintage": "passes Jan 2017 \u2013 Oct 2026; Jul\u2013Aug 2015 brackets",
+   "url": ""
+  },
+  {
+   "publisher": "Alberta Energy Regulator (ST3)",
+   "vintage": "in-stack model series Jan 2010 \u2013 Aug 2026, vintage 28 Sep 2026",
+   "url": ""
+  },
+  {
+   "publisher": "OpenStreetMap contributors",
+   "vintage": "tank polygons pulled 2026-10-22",
+   "url": ""
+  }
+ ]
+}

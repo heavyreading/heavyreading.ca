@@ -1,0 +1,141 @@
+{
+ "page": "/chartbook.html",
+ "title": "Chartbook",
+ "dek": "Heavy Reading's standing chartbook: fund positioning, U.S. inventories in seasonal standard deviations, prices and the WCS differential, crack spreads, Alberta storage, egress, apportionment, and a rotating bench for whatever has gone extreme.",
+ "built_at": "2026-10-22",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "Noncommercial traders, the speculative category in the legacy Commitments of Traders report, hold a net long of 100,343 contracts in NYMEX WTI futures as of October 13, 2026, in the 4th percentile of weekly readings since 2015.",
+   "vintage": "CFTC legacy Commitments of Traders, NYMEX WTI futures. Data through October 13, 2026.",
+   "source": "CFTC Commitments of Traders (legacy)",
+   "source_url": ""
+  },
+  {
+   "text": "Managed money holds a net long of 206,930 contracts in ICE Brent futures as of October 13, 2026, in the 55th percentile of weekly readings since 2020, up 20,642 contracts on the week.",
+   "vintage": "ICE Futures Europe Commitments of Traders, Brent futures only. Data through October 13, 2026.",
+   "source": "ICE Futures Europe Commitments of Traders",
+   "source_url": ""
+  },
+  {
+   "text": "U.S.",
+   "vintage": "EIA Weekly Petroleum Status Report. Data through October 16, 2026.",
+   "source": "U.S. Energy Information Administration",
+   "source_url": ""
+  },
+  {
+   "text": "Cushing inventories stand at 27.6 million barrels, 10.5 million barrels (27.6 percent) below the ten-year seasonal average, a gap of 0.6 standard deviations, and in the 36th percentile of readings for this part of the year since 2010.",
+   "vintage": "EIA Weekly Petroleum Status Report. Data through October 16, 2026.",
+   "source": "U.S. Energy Information Administration",
+   "source_url": ""
+  },
+  {
+   "text": "U.S.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "source": "U.S. Energy Information Administration",
+   "source_url": ""
+  },
+  {
+   "text": "U.S.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "source": "U.S. Energy Information Administration",
+   "source_url": ""
+  },
+  {
+   "text": "U.S.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "source": "U.S. Energy Information Administration",
+   "source_url": ""
+  },
+  {
+   "text": "WTI front month closed at $99.88 on October 22, 2026, in the 94th percentile of daily closes since 2020 and +5.29 dollars over the last thirty days.",
+   "vintage": "Exchange front-month futures, via the daily crack file. Data through October 22, 2026.",
+   "source": "Exchange futures (via crack_321 daily file)",
+   "source_url": ""
+  },
+  {
+   "text": "The assessed WCS discount at Hardisty was $18.57 a barrel in the last published reading, August 31, 2026 (Natural Resources Canada publishes monthly, about two months in arrears), in the 73rd percentile of daily assessments since 2021.",
+   "vintage": "Natural Resources Canada selected crude prices. Data through August 31, 2026; TMW settle from ICE daily settlements.",
+   "source": "Natural Resources Canada; ICE settlements",
+   "source_url": ""
+  },
+  {
+   "text": "The 3-2-1 crack spread printed $52.30 a barrel on October 22, 2026, in the 91st percentile of daily readings since 2020.",
+   "vintage": "Computed daily from front-month WTI, RBOB gasoline, and heating oil futures. Data through October 22, 2026.",
+   "source": "Exchange futures (computed)",
+   "source_url": ""
+  },
+  {
+   "text": "Alberta crude inventories stand at 60.0 million barrels, 3.4 million barrels (5.3 percent) below the ten-year seasonal average, a gap of 0.5 standard deviations, and in the 62nd percentile of readings for this part of the year since 2010.",
+   "vintage": "AER ST3, Alberta crude closing inventories. Data through August 2026.",
+   "source": "Alberta Energy Regulator (ST3)",
+   "source_url": ""
+  },
+  {
+   "text": "Canadian crude exports averaged 4,616 thousand barrels a day in June 2026, the latest Canada Energy Regulator print, against a demonstrated egress capacity stack of 4,984 thousand barrels a day in the site's egress model: roughly 368 thousand barrels a day of headroom.",
+   "vintage": "CER crude oil exports by type (total). Data through June 2026; capacity from the site egress model's demonstrated stack.",
+   "source": "Canada Energy Regulator; site egress model",
+   "source_url": ""
+  },
+  {
+   "text": "Enbridge set November 2026 Mainline apportionment at 19 percent for light crude and 7 percent for heavy at Kerrobert, against 8 and 4 percent in October.",
+   "vintage": "Enbridge apportionment notices, as pinned in apportionment_seen.json. Latest: November 2026.",
+   "source": "Enbridge apportionment notices",
+   "source_url": ""
+  },
+  {
+   "text": "Managed money is net short 19,415 contracts in the ICE WCS 1A index future (TMW) as of October 13, 2026, in the 3rd percentile of weekly readings since 2024, with speculative shorts at 25.0 percent of open interest.",
+   "vintage": "CFTC Disaggregated Commitments of Traders, ICE WCS 1A index future. Data through October 13, 2026.",
+   "source": "CFTC Disaggregated Commitments of Traders",
+   "source_url": ""
+  },
+  {
+   "text": "Very large crude carrier (VLCC) earnings on the Middle East to China route, TD3C, printed $1,412,594 a day in the week of October 09, 2026 (Worldscale 1,319), in the 100th percentile of weekly readings since March 2024.",
+   "vintage": "Baltic Exchange via freight pull. Data through October 09, 2026.",
+   "source": "Baltic Exchange (via thedcn.com.au)",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "CFTC Commitments of Traders",
+   "vintage": "weekly, Fridays",
+   "url": ""
+  },
+  {
+   "publisher": "ICE Futures Europe Commitments of Traders",
+   "vintage": "weekly, Fridays",
+   "url": ""
+  },
+  {
+   "publisher": "U.S. Energy Information Administration",
+   "vintage": "Weekly Petroleum Status Report, Wednesdays",
+   "url": ""
+  },
+  {
+   "publisher": "Alberta Energy Regulator",
+   "vintage": "ST3, monthly",
+   "url": ""
+  },
+  {
+   "publisher": "Canada Energy Regulator",
+   "vintage": "crude exports, monthly",
+   "url": ""
+  },
+  {
+   "publisher": "Enbridge",
+   "vintage": "apportionment notices, monthly",
+   "url": ""
+  },
+  {
+   "publisher": "Baltic Exchange",
+   "vintage": "weekly assessments",
+   "url": ""
+  },
+  {
+   "publisher": "Natural Resources Canada",
+   "vintage": "selected crude prices, monthly",
+   "url": ""
+  }
+ ]
+}
