@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-23T07:46:31Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-25T22:21:10Z",
  "data": {
-  "updated_at": "2026-10-23T07:45:58.637298Z",
+  "updated_at": "2026-10-25T22:20:56.703696Z",
   "events": [
+   {
+    "id": "wti-1792966249",
+    "detected_at": "2026-10-25T22:20:56.703696Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-10-23T20:55:00Z",
+    "to_ts": "2026-10-25T22:10:49Z",
+    "from_price": 103.44,
+    "to_price": 101.79,
+    "move_usd": -1.65,
+    "move_pct": -1.6,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Morning Wrap: ASX 200 to fall, S&P 500 and Nasdaq slip as Brent oil hits six-month high - Market Index",
+      "source": "Market Index",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbjhpTF9wTHpLcnVkX1htYXVMV2FBTXJGcmJhaFRHNDdyZHRXSzV3VHlmWUxPbVNLQW9RU21tcF9xRVcxZ0tsanEwZUZsbi1SZFQ1a2ZmYnlPVzRtNDJiTDBZcEp0MUpCYU1jZk5uZXF6NTB1djhWQ213cEU0dDBDR18xUGdfWkYtOHpKQmpUWk42NDdmaG1zdnM2UHRjYmpsN1NMcEJ0WEhhMUhYQnVB?oc=5",
+      "published": "2026-10-25T21:48:06Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Morning Wrap: ASX 200 to fall, S&P 500 and Nasdaq slip as Brent oil hits six-month high &nbsp;&nbsp; Market Index"
+     },
+     {
+      "title": "Rising crude prices, West Asia tensions to weigh on Indian markets - Deccan Herald",
+      "source": "Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZW1tWXFRc3c5N3NpOFJ3SmxTUm1fLTJUb2YtSGJSQjd2UVdWb2lySWxvdWg0N2dJdmN6YkVlbXNkU0xteGhLWTVFbjJEUVVzVGRibkF5cUF6My1tLVIySlZ4dVUxbUNadjlNNHhZVUVxc1ZwSFd5WnNoWFAyS01LRkU1VmlaZEFDUi1DbHZfT3c3QTRYWUcyLXN4b2E4SS1qX0U3VVlsMFdsb1Zrd2xkNS15NTJISi0wWm5z?oc=5",
+      "published": "2026-10-25T21:47:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Rising crude prices, West Asia tensions to weigh on Indian markets &nbsp;&nbsp; Deccan Herald"
+     },
+     {
+      "title": "IEA\u2019s Chief Says Cutting Oil Reliance Drives EV Growth in Europe, Brazil - Electric Vehicles",
+      "source": "Electric Vehicles",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSEVRS0V0ODYtQzFqNW0tV0x3Wl9QS2lWUU1lUXpieHdPWFFXcTN2dDJNNjlVOFIzdmhVS0o5M0ZtV1VGd0FRc05XcTJrYzBqM3RUS29OZHJGbkhSUzMwMHVUSzl2RlRwTGdFM3B5aEQ3X0tyTUxRdG85cHZQSVh0UW9jcUIyOG5NbmI3S01ZMkFoZWV4LUNDN1lNS0R0RHlqRkp0c3ZmdHJfMDVi?oc=5",
+      "published": "2026-10-25T21:41:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "IEA\u2019s Chief Says Cutting Oil Reliance Drives EV Growth in Europe, Brazil &nbsp;&nbsp; Electric Vehicles"
+     },
+     {
+      "title": "No sign of oil prices slowing down as US continues in Middle East - Newstalk ZB",
+      "source": "Newstalk ZB",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVG91YWx6c244bURlUy13aHJ5STQ2bzhQUDZvbFg1X3poMWJIeU1HYmdnLXlyM19pSFl3UEt3RG5tdWlTUThOYmF1WlEwWFFvaDhGZ2dULS1vMXJwcHBLWkVKNExQWkZFN0R0aC16TGU4ZHF1ZFBza193LXFPRnMxWEQyYmZIS051SEpCd3ZzZm50YlUycHhpUTQ5d1FZWk1SdG9oOVJ4QXRLaHNreExqdlhnQkdVeUo5ekRsdWI1bnA4UXFlS3BKY0RueEpQRjVDc0FiUGpLMA?oc=5",
+      "published": "2026-10-25T20:58:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "No sign of oil prices slowing down as US continues in Middle East &nbsp;&nbsp; Newstalk ZB"
+     },
+     {
+      "title": "Brent oil prices near 5-month high - The Daily Star",
+      "source": "The Daily Star",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWnB6eGxnaEVmaFdwZ012Nm0ybURGWlQtT1gxdXF4R1FDMW5xajhaTXYteXc5RkZiVDd5d01qY29sY1VxbDE0aHBfQVpkYTNhcVhZTXJCdGswcjdmQ25WX0t1d1JaS0xwMlVfWjJxNXNOYXpRRWtFazdYUHZPcUhBRE5LcElmTk9WMmo2UHVtdlRLOEJSaUJTVnNvWExvM1BaQmc?oc=5",
+      "published": "2026-10-25T20:45:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent oil prices near 5-month high &nbsp;&nbsp; The Daily Star"
+     },
+     {
+      "title": "CENTCOM's Commander Conducts an Inspection Flight in Strait of Hormuz - The Maritime Executive",
+      "source": "The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeTN6SHBkZGc1TnhxSHpvNEE4LXZFQm1ROGdiYXU3dlFDUXpYSWpnUjZDSXUyRjl6UzJ6QlZ2RXNhdk5POVhKM0ctdGwxYXdHMlZFNnFvaXhMSEpqZlFlLS1paXNpMEZwTVFlU3JLY0xGbkp2amdidFlqQjdSZWdKa1BDcW9TMU5qZjZWaUJ0c0JKLTAzVjkzVkRBbDZXMWdsSlpOODlOOGdVcVVT?oc=5",
+      "published": "2026-10-25T20:33:41Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "CENTCOM's Commander Conducts an Inspection Flight in Strait of Hormuz &nbsp;&nbsp; The Maritime Executive"
+     },
+     {
+      "title": "Maritime Crisis Deepens In Strait Of Hormuz As Nearly 500 Ships Stranded, Another Oil Tanker Attacked Near Oman - UrduPoint",
+      "source": "UrduPoint",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOUp0Nkd5a1kzRFdEcW00amlTUG9GczlhbkFEMVliUi1kY1hpR0RRUFV6M3hTR2FjdlBJTm1GdTBOQjliVFhuOERzN3dkcEJ2Q0dlYkFZU3Vwa1BRZnl5MTZ0Vk9BOFc4N2hVT1RUZlc1RXRtd09zUzJVMGpPREhfa0FUUklSaHRfNXN4aFhnaWlOY1pBMGRyZXNvd1Z5VlpfU1JmSVZvcw?oc=5",
+      "published": "2026-10-25T19:33:36Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Maritime Crisis Deepens In Strait Of Hormuz As Nearly 500 Ships Stranded, Another Oil Tanker Attacked Near Oman &nbsp;&nbsp; UrduPoint"
+     },
+     {
+      "title": "Middle East latest: US tells staff not to use Saudi airports without 'special authorisation' - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNnVfUnYtWklMbWF4TjRLaWdIdHpPZ0h0TThQUzRsT2JNdlIxNjFLdEFQb0sxa21kMXFnLTVSUndXOUstVHR6T2kyMjJpQnd3RHFOSWdTVExKd2ZGYV82MDdpc19uOENyLWhaNlZyVEhuVU5nM3pJdTNJd0hYY3FTc0VMUmxxX3lZV2I0WUZjcw?oc=5",
+      "published": "2026-10-25T19:27:15Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East latest: US tells staff not to use Saudi airports without 'special authorisation' &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "BoC expected to raise benchmark rate for first time in three years as oil shock persists - The Globe and Mail",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaXE2QnRrQzFtRXlqekM5TjZMSndlUU5ua3dCMHhtR2Q0ZGJXTGNYZDR6UmswMklwRlFBdGFOc0dPaXRnYU1MSmxjN2cyMERPQ284SXlJT18yUUtMNFlFVzFVQ3dUbWVoNS1hQXM0Rk9ncHNmWng2Wno3ZGE1NlF4U2pWdHppaVVsZGpoVHY5MzVmc3ZpS1JEX3NJUGhna2tr?oc=5",
+      "published": "2026-10-25T19:20:31Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "BoC expected to raise benchmark rate for first time in three years as oil shock persists &nbsp;&nbsp; The Globe and Mail"
+     },
+     {
+      "title": "Brent Crude Oil Price Nears Crucial Level as Trump Prepares Iran Attack - Benzinga",
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMVhmaGZOUENWa2Fmel9aclY3SnlaMV9SUmZ6bzdmWHMtX2lyVmx4RGJJSkptTVJkYjkwY2xxU2hpNlR0a0o5VGxYMHNsWFV1ZXB0dDlVVnhWT3BJMWpGeDRkbmo4aDdOY2s4S2JkTFZDc003YmNPel9HVWFjb2JhZkdPLXdvT3pEZF81eVh4MVEyNGVmYWhWSkdubU5vc1BES0NWMHJkX3l0d3UyR3BKTVVlRkNDM3A5c1ZuWEtEaGp2aDlnaWh3VS1QWQ?oc=5",
+      "published": "2026-10-25T19:15:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Crude Oil Price Nears Crucial Level as Trump Prepares Iran Attack &nbsp;&nbsp; Benzinga"
+     },
+     {
+      "title": "Live Updates: War returns to Iran with Israel, US strikes - Dawn",
+      "source": "Dawn",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wWU1XcTJjVkhydDJ6REhTa1RGZHp5eHJhYXVpQlRoNndhUjBOamFNWlRERkdMYk53LWc4LVhDbktnSXZ3RkJyWmtEMEgycjRFNmJN?oc=5",
+      "published": "2026-10-25T19:02:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Live Updates: War returns to Iran with Israel, US strikes &nbsp;&nbsp; Dawn"
+     },
+     {
+      "title": "US Interest Rate Forecast: Oil Rally Fuels December Fed Hike Risks - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVjE0dGZiWG5BVFM3OHRuV0hGMzVSNFF1SzJNODdRTTdQY0hnOEc4Z05aODNiU3EtdkhoNmFCVUp6SG01VHBQTDcwVVBCZzk0NWVmakJSQ2ZhS2FQVzBlMnBFMWNFX3E2MDdYMlcyWHljRkQ0clFuZUVvaE5xSnVCQUdmNmJaNEVYMzlNZHY4TTVNWTcwZFVuYTg3RlRkQ2JwcE5ybTNsY3NqYV9XSFJ0aHFZZHhFUGs?oc=5",
+      "published": "2026-10-25T18:53:44Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US Interest Rate Forecast: Oil Rally Fuels December Fed Hike Risks &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Houthis ramp up attacks vs Saudi, Yemen - Daily Tribune",
+      "source": "Daily Tribune",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZk1FdWs2RnpxR05LNEhHTmxqV3hkbHYwZWRMaFBlZVp5U29NWHhRSHZUYWFFc0xqd2tpSl9yWHNNdnBhcXAtRldjYk53endwLThYX2FRMHJtNHhJSGhSWE9uVVJLSzlZZE5xZXFoSnBnRTlOb2Z6TWx2RGJaQWxLaHdFMTBocm41OTF6dzUxSWxXS09KaUMyTzFGWDMtanhvektLcEloNlhTUEZjTW9B?oc=5",
+      "published": "2026-10-25T18:40:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Houthis ramp up attacks vs Saudi, Yemen &nbsp;&nbsp; Daily Tribune"
+     },
+     {
+      "title": "Saudi Arabia redraws its economic map to escape geography - \u0646\u0648\u0646 \u0628\u0648\u0633\u062a",
+      "source": "\u0646\u0648\u0646 \u0628\u0648\u0633\u062a",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5uaURmTXQ2QjlOZ0JJU09nZlRHcnNNTVo5c0hnMkdKOC1aNkd0SHN6Vl9PaUtaeDBaejkxd3hlZXRDVWZLVEstc1NqYzFSM2Focjln0gFTQVVfeXFMTm5pRGZNdDZCOU5nQklTT2dmVEdyc01NWjlzSGcyR0o4LVo2R3RIc3pWX09pS1p4MFp6OTF3eGVldENVZktUSy1zU2pjMVIzYWhyOWc?oc=5",
+      "published": "2026-10-25T18:31:31Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia redraws its economic map to escape geography &nbsp;&nbsp; \u0646\u0648\u0646 \u0628\u0648\u0633\u062a"
+     },
+     {
+      "title": "Gold prices are under pressure from oil prices and interest rate expectations. - Vietnam.vn",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbk41cEFld1pMbll4TjdvU09YWmZWOWhZQ3ljT2ZBX3ViOGYxbmk1QTFTdEp1OS10OFdwZzBKbjF5eV9MNDZzUHpCQWctU1l3LWs1VDczZTd6d2hVV0Q5S1ktNGxwZ0tsMzdiaG83MjBZOU1MWUhqdElWd0lKR0ZFRnllNA?oc=5",
+      "published": "2026-10-25T18:28:42Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold prices are under pressure from oil prices and interest rate expectations. &nbsp;&nbsp; Vietnam.vn"
+     },
+     {
+      "title": "ASX set to fall, Wall Street loses ground as oil prices rise - SMH.com.au",
+      "source": "SMH.com.au",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSFRfeHg0ZmUxVERrbEdhbkwxS1F5RFFNYV9tMDRJQVJOMWVWTm4yU2M1Q042OFFscEszdXlvaXEyaHlwQ2R6U1pnSFlKNHE5V2tnc2dQc3piY1NrdnUtSkxFVk9BUy16dW5vekZydUxydE1aanlQUS1FZWpvV3l6b3R5WHAxUkFscS1mOUhRbV9rdjdhTkYxUzZYM3Rza1RpRlhhZWFmNC13YXRibUdCUFQ0STJoVGhyVGhBSA?oc=5",
+      "published": "2026-10-25T18:20:29Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "ASX set to fall, Wall Street loses ground as oil prices rise &nbsp;&nbsp; SMH.com.au"
+     },
+     {
+      "title": "Oil Prices Could Top $150 if War Resumes - WANA News Agency",
+      "source": "WANA News Agency",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB0c0lGaU55Y0VMbXptTEN6emV2bXRXWDNsRVdBbEhZQkJMR3lzQ0x5ZWczWjgwbkVLNUZpbl9aOUVYTFhzckN5NGQwR3VrOEpTMFExaEVqVEl4d2o5eTZTSzM1Y0Jza1IzYktn?oc=5",
+      "published": "2026-10-25T17:53:44Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Could Top $150 if War Resumes &nbsp;&nbsp; WANA News Agency"
+     },
+     {
+      "title": "Avg India oil prices hit 15-year high: Threaten OMC margins, strain Centre - Business Standard",
+      "source": "Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPOWl6MDJXcG9hd0tndGpnbVFrYTc3RC1LNXZDUm0zUFRqWnN3cDg0bkFpMlFidXNBUzI1YnBTYzVVR1RTTHZIdjd1dF9IRGdYTzlsNmxvcHhHbFQ0eFpWMG5vdVIyMVRFMk85RzVSOGZiVDhEajJhNXl4QzdLbllYMGphQ2otVW1EdnloQU9ocWN2Y0ZjVnhWZFJJSkdoMFlBUGNRcG5Vd2xvcnB4MnZmVUNSaFA2eDNiZ201Q3NBR1BJWmw2NFYtaHJjYW1ZTlFVV21faml30gHbAUFVX3lxTE44anYzRGJEWVdxV1ZPVHhYMlBxaU1ZU3hlWmZNbGpJTGpjeHItdU5nV1lyYnFCV3RfRENCbUZtbWZHVDU4ZEdRSXB5aTljWlRKZERYRlRvQi1HU25WampQTWJsQ3k2ckltTFE3LS1nT1YzRVc3ZXJXeVZ3LWpjNVVUc3h0elM4OUphSkx2eENzejhYVVJRRE5fR3RGMU1KUWFHNlc3eUpacWNFU3ZJRFlCaTRjcFBSNldXa2owR19sXzZlU2o2WURVWFlUbGlYb3E4eTR5emM0VDZDYw?oc=5",
+      "published": "2026-10-25T17:50:32Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Avg India oil prices hit 15-year high: Threaten OMC margins, strain Centre &nbsp;&nbsp; Business Standard"
+     },
+     {
+      "title": "Hormuz Negotiations Between Iran and US Stall as Oil Remains Above $116 - Energi.Media",
+      "source": "Energi.Media",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FZEU0NnRUQmlMaXpjRko3NDk0Y1huQTNKT1ktVlNTeDRlVVdJeHk4d2xxRWdxTlhjd3JLbWJFQk92dnRNR2E4dUhSTENsT1NFbmY2eEthUjhSRG9hM2RzWi1QQXp3dldFQUhkS1lobmwxS1pm?oc=5",
+      "published": "2026-10-25T17:17:20Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Hormuz Negotiations Between Iran and US Stall as Oil Remains Above $116 &nbsp;&nbsp; Energi.Media"
+     },
+     {
+      "title": "World Is on Track for Up to 2.8 Degrees of Warming Despite Clean Energy Boom - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSGFSa0ZjMDBvaGRFM0FwTnFHbm9PVklTOUo3S2tualJCS0lqalNwRWJWV3VlSS1VSEtmdjlXMmFrbWNuT0JDeHR0U3dfakMzV0FGcUwxRUo0YVc3UEEwOVVsZ2ZNeTN3ZW9UNVRDVmg3NDBONTN5andLVW1VTGlBU01pVGhyWDVmNHlYWWZ6Vzk4RldULVQ5bENIejZLME9JczlqeE16cHV6UGEtcFVsQUNCampHYnpEOEZYNEtJV3VkUnRBd1HSAcYBQVVfeXFMUEhhUmtGYzAwb2hkRTNBcE5xR25vT1ZJUzlKN0trbmpSQktJampTcEViVld1ZUktVUhLZnY5VzJha21jbk9CQ3h0dFN3X2pDM1dBRnFMMUVKNGFXN1BBMDlVbGdmTXkzd2VvVDVUQ1ZoNzQwTjUzeWp3S1VtVUxpQVNNaVRoclg1ZjR5WFlmelc5OEZXVC1UOWxDSHo2SzBPSXM5anhNenB1elBhLXBVbEFDQmpqR2J6RDhGWDRLSVd1ZFJ0QXdR?oc=5",
+      "published": "2026-10-25T17:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "World Is on Track for Up to 2.8 Degrees of Warming Despite Clean Energy Boom &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil Tanker Rates Hit Record Highs Following Iran, US Shipping Attacks - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNT201NUtENmNmeVh1X1lYa01nWDR5TjZzd2t1ZGQwRVRlZ0RPamdVdDBydlp6U2pVX0FBOVRfQUd2aXdtUFB3eVVFUVFyMjhXTy02blNRVDdkRERoTk96RVNEZWNhZTBnNHFSTkhLWjZoZlhKOTlZWERLXzVyNFpoVG5tZ3pTT3BwY2V2c2tKNnlSeVpGdy1SRE9VQkI2Nmlm?oc=5",
+      "published": "2026-10-25T16:52:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Tanker Rates Hit Record Highs Following Iran, US Shipping Attacks &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "US Energy Chief Says Saudi Arabia Oil Pipeline Should Be Back Online Within Days - EnergyNow",
+      "source": "EnergyNow",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdXZlM1pyT2tNWVB3NW5wYVpyWGFBV1ZRRDJCLXphLURBcUNNZmEtRk9uVXMwZzdyb0dwaGJMQU9DYTFRZmhaekFkakxybVRYQ0RSTWg2RGN5c0c2MEl1M19WQXdTd1FscFRGQllBVTNXU2JhSjl5cmE0alVONFNJWWlSTzJWV2VzQ3plSVdUcDNZX2FBQm41LWU4VkdZcTRQRTJxaVhNMWliNGxpbXEw?oc=5",
+      "published": "2026-10-25T16:49:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US Energy Chief Says Saudi Arabia Oil Pipeline Should Be Back Online Within Days &nbsp;&nbsp; EnergyNow"
+     },
+     {
+      "title": "Iran War Boosts US Shale Oil But Only So Much: Bousso - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNVJqcXRlenVQSDlfU1pJYmpid1BPc2V5UUViYXhac0N4ZU9zWDg4YmkwcjR5R2Mxb1Bjcmlvc21XbkYtRGg1bXBkWUlLMlhrakM1blFOSm9zMUdFSlM1TzlPTDBENDVNcVlvWEV2bFR3NlV1eEFPWFJGSV91Ny1KaUdiTkVoWmE2MEZR?oc=5",
+      "published": "2026-10-25T16:41:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran War Boosts US Shale Oil But Only So Much: Bousso &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "Adnoc Gas Exploring New LNG Export Plant to Avoid Hormuz - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdWx1RFpvTnpJei1USFNPWWVzcmRHVlE5WVQzb3cyYzN0S3RSOW1YM1ItdTdUVGo5Skp3VjZka2JucXV5UUNSeXNJMThBQzZkUHIwWkgwTkIxM0RpV0FFY3QwSEVqN2ZESmR3cFJndVZmLWdla2NsaVRhYms2VEVfbFFfMFhVbUdNNWNOLWxDYzA?oc=5",
+      "published": "2026-10-25T16:40:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Adnoc Gas Exploring New LNG Export Plant to Avoid Hormuz &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "Oil & Gas Dealmaking Heats Up With $20 Billion of Assets in Play - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX0JPTkxMeEdxcUc1TTUwOW5oZGZXek1na3hzZlhaWFczenZBbHdOTXRXOHdEYTBNRk5EZWhGeXBvTHc2VDlOSWRjdFlvU2VBaFJHUU1iX084dzBPSlBVUk9uVUVXbTgteEJlOHVFZ0dfT0dVV0NCeURKNFVPN1pTWHhjRlZyel91M2ctVWY0ZkhWUUpsQVdz?oc=5",
+      "published": "2026-10-25T16:39:34Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil & Gas Dealmaking Heats Up With $20 Billion of Assets in Play &nbsp;&nbsp; EnergyNow.com"
+     }
+    ]
+   },
    {
     "id": "brent-1792740957",
     "detected_at": "2026-10-23T07:45:58.637298Z",
