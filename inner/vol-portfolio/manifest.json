@@ -1,0 +1,33 @@
+{
+ "page": "/inner/vol-portfolio/",
+ "title": "Vol portfolio",
+ "dek": "",
+ "built_at": "2026-10-26",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "On the October 23, 2026 marks, the paper vol book sizes off the worst loss on its shock grid, not the normal-day yardstick. Both numbers print on the page.",
+   "vintage": "Marks 2026-10-23",
+   "source": "Portfolio stacker (portfolio/risk_2026-10-23.csv)",
+   "source_url": ""
+  },
+  {
+   "text": "Bogey bridge at the 2026-10-23 marks: the grinder rows (S3 fade, S5 overwrite, S6 condor candidate, S8 capped straddle candidate), each sized to a 0.5R shock budget inside a 1R worst-case cap, carry about $581,920 a month of GROSS rent against the $500,000 bogey. Gross means cycles complete; no expected-rent figure is claimed, because the record is 1 marked day(s) long and the stay-inside share is unmeasured.",
+   "vintage": "Marks 2026-10-23",
+   "source": "Structures risk file (structure_risk.csv)",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "ICE Futures Europe options EOD (report 166), inverted in-stack",
+   "vintage": "settlements to 2026-10-23",
+   "url": ""
+  },
+  {
+   "publisher": "Global barrels ledger (IMF PortWatch visible layer)",
+   "vintage": "seeded 2026-10-25",
+   "url": ""
+  }
+ ]
+}

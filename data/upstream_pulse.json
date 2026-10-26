@@ -1,29 +1,104 @@
 {
  "meta": {
-  "vintage": "Petrinex public volumetrics 2022-01 to 2026-08; page built 2026-10-23",
-  "max_month": "2026-08",
-  "radar_latest": "2026-08",
+  "vintage": "Petrinex public volumetrics 2022-01 to 2026-09; page built 2026-10-26",
+  "max_month": "2026-09",
+  "radar_latest": "2026-09",
   "radar_trail": [
-   "2026-05",
    "2026-06",
-   "2026-07"
+   "2026-07",
+   "2026-08"
   ],
   "licensing": "Republication licensing cleared 2026-09-24: Petrinex staff confirmed verbally that the public data is government open data. No written terms on file."
  },
- "turnarounds": [],
+ "turnarounds": [
+  {
+   "facility_id": "ABBT0164475",
+   "facility_name": "WMAR 15-15-076-05W5 MWPB",
+   "operator": "TAMARACK VALLEY ENERGY LTD.",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "trail3_kbd": 3.1,
+   "latest_kbd": 0.0,
+   "drop_kbd": 3.1,
+   "drop_pct": 100.0,
+   "near_zero": true,
+   "history": {
+    "2025-09": 8.2,
+    "2025-10": 8.6,
+    "2025-11": 8.4,
+    "2025-12": 8.1,
+    "2026-01": 8.4,
+    "2026-02": 8.7,
+    "2026-03": 8.9,
+    "2026-04": 9.0,
+    "2026-05": 9.2,
+    "2026-06": 9.2,
+    "2026-07": 0.0,
+    "2026-08": 0.0
+   }
+  },
+  {
+   "facility_id": "ABBT0146757",
+   "facility_name": "Atlee-Buffalo 05-20-021-05W4",
+   "operator": "HEMISPHERE ENERGY CORPORATION",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "trail3_kbd": 2.3,
+   "latest_kbd": 0.0,
+   "drop_kbd": 2.3,
+   "drop_pct": 100.0,
+   "near_zero": true,
+   "history": {
+    "2025-09": 2.7,
+    "2025-10": 1.7,
+    "2025-11": 2.6,
+    "2025-12": 2.5,
+    "2026-01": 2.9,
+    "2026-02": 2.8,
+    "2026-03": 2.7,
+    "2026-04": 2.6,
+    "2026-05": 2.7,
+    "2026-06": 2.5,
+    "2026-07": 2.5,
+    "2026-08": 1.9
+   }
+  }
+ ],
  "largest_drops": [
+  {
+   "facility_id": "ABBT0067303",
+   "facility_name": "CVE CHRISTINA LAKE LEISMER 08-17",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "IN-SITU OIL SANDS",
+   "trail3_kbd": 277.0,
+   "latest_kbd": 228.8,
+   "drop_kbd": 48.2,
+   "drop_pct": 17.4,
+   "near_zero": false,
+   "history": {
+    "2025-09": 249.9,
+    "2025-10": 249.9,
+    "2025-11": 249.6,
+    "2025-12": 247.4,
+    "2026-01": 248.1,
+    "2026-02": 247.2,
+    "2026-03": 260.0,
+    "2026-04": 259.9,
+    "2026-05": 269.9,
+    "2026-06": 263.4,
+    "2026-07": 284.0,
+    "2026-08": 283.5
+   }
+  },
   {
    "facility_id": "ABBT0051212",
    "facility_name": "IMPERIAL MAHIHKAN BATTERY 02-21",
    "operator": "IMPERIAL OIL RESOURCES LIMITED",
    "subtype": "IN-SITU OIL SANDS",
-   "trail3_kbd": 54.5,
-   "latest_kbd": 48.1,
-   "drop_kbd": 6.4,
-   "drop_pct": 11.8,
+   "trail3_kbd": 53.0,
+   "latest_kbd": 27.4,
+   "drop_kbd": 25.6,
+   "drop_pct": 48.4,
    "near_zero": false,
    "history": {
-    "2025-08": 51.1,
     "2025-09": 49.8,
     "2025-10": 44.2,
     "2025-11": 48.5,
@@ -34,32 +109,58 @@
     "2026-04": 45.5,
     "2026-05": 52.6,
     "2026-06": 55.9,
-    "2026-07": 54.9
+    "2026-07": 54.9,
+    "2026-08": 48.1
    }
   },
   {
-   "facility_id": "ABBT0114300",
-   "facility_name": "JACKFISH 7-27-75-7w4",
-   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "facility_id": "ABBT0067097",
+   "facility_name": "PC MACKAY RIVER PAD 20/PAD 21 ATHABA",
+   "operator": "SUNCOR ENERGY INC.",
    "subtype": "IN-SITU OIL SANDS",
-   "trail3_kbd": 47.4,
-   "latest_kbd": 43.8,
-   "drop_kbd": 3.6,
-   "drop_pct": 7.6,
+   "trail3_kbd": 33.9,
+   "latest_kbd": 22.9,
+   "drop_kbd": 10.9,
+   "drop_pct": 32.3,
    "near_zero": false,
    "history": {
-    "2025-08": 51.2,
-    "2025-09": 51.9,
-    "2025-10": 51.1,
-    "2025-11": 49.4,
-    "2025-12": 47.2,
-    "2026-01": 48.2,
-    "2026-02": 46.8,
-    "2026-03": 43.8,
-    "2026-04": 43.3,
-    "2026-05": 47.6,
-    "2026-06": 47.5,
-    "2026-07": 47.0
+    "2025-09": 21.4,
+    "2025-10": 25.6,
+    "2025-11": 34.9,
+    "2025-12": 34.6,
+    "2026-01": 34.9,
+    "2026-02": 35.3,
+    "2026-03": 32.9,
+    "2026-04": 34.9,
+    "2026-05": 36.5,
+    "2026-06": 34.7,
+    "2026-07": 32.9,
+    "2026-08": 34.0
+   }
+  },
+  {
+   "facility_id": "ABBT0164475",
+   "facility_name": "WMAR 15-15-076-05W5 MWPB",
+   "operator": "TAMARACK VALLEY ENERGY LTD.",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "trail3_kbd": 3.1,
+   "latest_kbd": 0.0,
+   "drop_kbd": 3.1,
+   "drop_pct": 100.0,
+   "near_zero": true,
+   "history": {
+    "2025-09": 8.2,
+    "2025-10": 8.6,
+    "2025-11": 8.4,
+    "2025-12": 8.1,
+    "2026-01": 8.4,
+    "2026-02": 8.7,
+    "2026-03": 8.9,
+    "2026-04": 9.0,
+    "2026-05": 9.2,
+    "2026-06": 9.2,
+    "2026-07": 0.0,
+    "2026-08": 0.0
    }
   },
   {
@@ -67,13 +168,12 @@
    "facility_name": "JACKFISH 10-28-75-6w4",
    "operator": "CANADIAN NATURAL RESOURCES LIMITED",
    "subtype": "IN-SITU OIL SANDS",
-   "trail3_kbd": 41.5,
-   "latest_kbd": 38.5,
-   "drop_kbd": 3.0,
-   "drop_pct": 7.2,
+   "trail3_kbd": 41.0,
+   "latest_kbd": 38.3,
+   "drop_kbd": 2.7,
+   "drop_pct": 6.6,
    "near_zero": false,
    "history": {
-    "2025-08": 37.3,
     "2025-09": 37.6,
     "2025-10": 37.2,
     "2025-11": 36.5,
@@ -84,107 +184,58 @@
     "2026-04": 10.8,
     "2026-05": 40.0,
     "2026-06": 43.5,
-    "2026-07": 41.0
+    "2026-07": 41.0,
+    "2026-08": 38.5
    }
   },
   {
-   "facility_id": "ABBT0119087",
-   "facility_name": "IMPERIAL NABIYE 11-23",
-   "operator": "IMPERIAL OIL RESOURCES LIMITED",
+   "facility_id": "ABBT0133629",
+   "facility_name": "Black Gold-06-14-076-07 W4M",
+   "operator": "HARVEST OPERATIONS CORP.",
    "subtype": "IN-SITU OIL SANDS",
-   "trail3_kbd": 35.2,
-   "latest_kbd": 32.3,
-   "drop_kbd": 2.9,
-   "drop_pct": 8.2,
+   "trail3_kbd": 10.5,
+   "latest_kbd": 8.1,
+   "drop_kbd": 2.4,
+   "drop_pct": 22.6,
    "near_zero": false,
    "history": {
-    "2025-08": 42.8,
-    "2025-09": 42.4,
-    "2025-10": 39.7,
-    "2025-11": 42.3,
-    "2025-12": 42.0,
-    "2026-01": 41.1,
-    "2026-02": 42.5,
-    "2026-03": 41.1,
-    "2026-04": 40.3,
-    "2026-05": 29.5,
-    "2026-06": 38.5,
-    "2026-07": 37.6
+    "2025-09": 0.4,
+    "2025-10": 6.9,
+    "2025-11": 10.8,
+    "2025-12": 10.1,
+    "2026-01": 10.7,
+    "2026-02": 10.6,
+    "2026-03": 10.5,
+    "2026-04": 10.4,
+    "2026-05": 10.6,
+    "2026-06": 10.2,
+    "2026-07": 10.6,
+    "2026-08": 10.8
    }
   },
   {
-   "facility_id": "ABBT0051211",
-   "facility_name": "IMPERIAL MASKWA BATTERY 10-12",
-   "operator": "IMPERIAL OIL RESOURCES LIMITED",
-   "subtype": "IN-SITU OIL SANDS",
-   "trail3_kbd": 26.3,
-   "latest_kbd": 24.1,
-   "drop_kbd": 2.2,
-   "drop_pct": 8.4,
-   "near_zero": false,
+   "facility_id": "ABBT0146757",
+   "facility_name": "Atlee-Buffalo 05-20-021-05W4",
+   "operator": "HEMISPHERE ENERGY CORPORATION",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "trail3_kbd": 2.3,
+   "latest_kbd": 0.0,
+   "drop_kbd": 2.3,
+   "drop_pct": 100.0,
+   "near_zero": true,
    "history": {
-    "2025-08": 31.8,
-    "2025-09": 29.1,
-    "2025-10": 30.4,
-    "2025-11": 32.7,
-    "2025-12": 32.2,
-    "2026-01": 28.1,
-    "2026-02": 30.3,
-    "2026-03": 30.2,
-    "2026-04": 29.1,
-    "2026-05": 27.4,
-    "2026-06": 26.7,
-    "2026-07": 24.9
-   }
-  },
-  {
-   "facility_id": "ABBT0126615",
-   "facility_name": "Brintnell Central 1-36-80-22w4 ",
-   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
-   "subtype": "CRUDE BITUMEN MULTIWELL PRORATION BATTERY",
-   "trail3_kbd": 21.7,
-   "latest_kbd": 19.7,
-   "drop_kbd": 2.0,
-   "drop_pct": 9.4,
-   "near_zero": false,
-   "history": {
-    "2025-08": 24.6,
-    "2025-09": 24.0,
-    "2025-10": 24.7,
-    "2025-11": 24.4,
-    "2025-12": 24.4,
-    "2026-01": 24.0,
-    "2026-02": 21.9,
-    "2026-03": 21.7,
-    "2026-04": 21.9,
-    "2026-05": 21.8,
-    "2026-06": 22.2,
-    "2026-07": 21.3
-   }
-  },
-  {
-   "facility_id": "SKBT0005295",
-   "facility_name": "Husky Pikes Peak SAGD 5-7-49-23 ",
-   "operator": "CENOVUS ENERGY INC.",
-   "subtype": "THERMAL IN-SITU BATTERY",
-   "trail3_kbd": 18.8,
-   "latest_kbd": 16.8,
-   "drop_kbd": 2.0,
-   "drop_pct": 10.8,
-   "near_zero": false,
-   "history": {
-    "2025-08": 20.0,
-    "2025-09": 19.9,
-    "2025-10": 20.4,
-    "2025-11": 20.6,
-    "2025-12": 18.4,
-    "2026-01": 19.5,
-    "2026-02": 19.2,
-    "2026-03": 19.7,
-    "2026-04": 21.2,
-    "2026-05": 20.0,
-    "2026-06": 18.6,
-    "2026-07": 17.9
+    "2025-09": 2.7,
+    "2025-10": 1.7,
+    "2025-11": 2.6,
+    "2025-12": 2.5,
+    "2026-01": 2.9,
+    "2026-02": 2.8,
+    "2026-03": 2.7,
+    "2026-04": 2.6,
+    "2026-05": 2.7,
+    "2026-06": 2.5,
+    "2026-07": 2.5,
+    "2026-08": 1.9
    }
   },
   {
@@ -192,13 +243,12 @@
    "facility_name": "Inception 03-26-69-05w6 prorated bty",
    "operator": "WHITECAP PARTNERSHIP",
    "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
-   "trail3_kbd": 11.1,
-   "latest_kbd": 9.7,
-   "drop_kbd": 1.4,
-   "drop_pct": 12.9,
+   "trail3_kbd": 10.3,
+   "latest_kbd": 8.3,
+   "drop_kbd": 2.0,
+   "drop_pct": 19.1,
    "near_zero": false,
    "history": {
-    "2025-08": 9.2,
     "2025-09": 8.9,
     "2025-10": 8.8,
     "2025-11": 13.1,
@@ -209,32 +259,8 @@
     "2026-04": 12.4,
     "2026-05": 12.1,
     "2026-06": 11.0,
-    "2026-07": 10.2
-   }
-  },
-  {
-   "facility_id": "SKBT0017658",
-   "facility_name": "HUSKY EDAM EAST 05-08-048-19W3 OIL",
-   "operator": "CENOVUS ENERGY INC.",
-   "subtype": "THERMAL IN-SITU BATTERY",
-   "trail3_kbd": 12.0,
-   "latest_kbd": 10.7,
-   "drop_kbd": 1.3,
-   "drop_pct": 10.6,
-   "near_zero": false,
-   "history": {
-    "2025-08": 12.4,
-    "2025-09": 9.1,
-    "2025-10": 11.4,
-    "2025-11": 16.7,
-    "2025-12": 17.1,
-    "2026-01": 15.7,
-    "2026-02": 15.5,
-    "2026-03": 14.6,
-    "2026-04": 12.0,
-    "2026-05": 12.0,
-    "2026-06": 12.5,
-    "2026-07": 11.4
+    "2026-07": 10.2,
+    "2026-08": 9.7
    }
   },
   {
@@ -242,13 +268,12 @@
    "facility_name": "Kirby 14-21-73-7W4",
    "operator": "CANADIAN NATURAL RESOURCES LIMITED",
    "subtype": "IN-SITU OIL SANDS",
-   "trail3_kbd": 37.9,
-   "latest_kbd": 36.9,
-   "drop_kbd": 1.0,
-   "drop_pct": 2.7,
+   "trail3_kbd": 36.9,
+   "latest_kbd": 35.1,
+   "drop_kbd": 1.9,
+   "drop_pct": 5.1,
    "near_zero": false,
    "history": {
-    "2025-08": 32.8,
     "2025-09": 31.9,
     "2025-10": 29.2,
     "2025-11": 34.2,
@@ -259,7 +284,33 @@
     "2026-04": 38.3,
     "2026-05": 39.6,
     "2026-06": 38.0,
-    "2026-07": 35.9
+    "2026-07": 35.9,
+    "2026-08": 36.9
+   }
+  },
+  {
+   "facility_id": "ABBT0166788",
+   "facility_name": "HHR KARR 01-15-064-03W600",
+   "operator": "WHITECAP PARTNERSHIP",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "trail3_kbd": 5.8,
+   "latest_kbd": 4.0,
+   "drop_kbd": 1.8,
+   "drop_pct": 31.3,
+   "near_zero": false,
+   "history": {
+    "2025-09": 9.0,
+    "2025-10": 7.9,
+    "2025-11": 7.2,
+    "2025-12": 6.5,
+    "2026-01": 6.3,
+    "2026-02": 6.1,
+    "2026-03": 7.5,
+    "2026-04": 7.1,
+    "2026-05": 6.6,
+    "2026-06": 6.2,
+    "2026-07": 5.8,
+    "2026-08": 5.5
    }
   }
  ],
@@ -487,7 +538,11 @@
    },
    {
     "month": "2026-08",
-    "kbd": 30.4
+    "kbd": 40.1
+   },
+   {
+    "month": "2026-09",
+    "kbd": 30.8
    }
   ],
   "terminals": [
@@ -499,7 +554,7 @@
    {
     "name": "HAMLIN RAILCAR OIL TERMINAL",
     "operator": "STRATHCONA RESOURCES LTD.",
-    "avg_kbd": 27.3
+    "avg_kbd": 27.4
    },
    {
     "name": "ALTEX NEW LASHBURN TERMINAL",
@@ -576,7 +631,7 @@
     "operator": "SPARTAN DELTA CORP.",
     "latest_kbd": 9.0,
     "change_kbd": 3.8,
-    "change_pct": 72.3,
+    "change_pct": 71.6,
     "insitu_share_pct": 0.0
    },
    {
@@ -627,7 +682,7 @@
     "operator": "HWN ENERGY LTD.",
     "latest_kbd": 5.8,
     "change_kbd": -3.1,
-    "change_pct": -35.0,
+    "change_pct": -34.9,
     "insitu_share_pct": 0.0
    },
    {
@@ -652,7 +707,7 @@
    "operator": "CENOVUS ENERGY INC.",
    "subtype": "SULPHUR REPORTING AT OIL SANDS",
    "first_month": "2026-05",
-   "latest_kbd": 248.9,
+   "latest_kbd": 250.0,
    "likely_rereport": true
   },
   {
@@ -660,55 +715,15 @@
    "operator": "CENOVUS ENERGY INC.",
    "subtype": "SULPHUR REPORTING AT OIL SANDS",
    "first_month": "2026-01",
-   "latest_kbd": 115.1,
+   "latest_kbd": 116.8,
    "likely_rereport": true
   },
   {
-   "facility_name": "HUSKY VAWN 16-01-048-19W3 OIL",
-   "operator": "STRATHCONA RESOURCES LTD.",
-   "subtype": "THERMAL IN-SITU BATTERY",
-   "first_month": "2026-01",
-   "latest_kbd": 7.4,
-   "likely_rereport": false
-  },
-  {
-   "facility_name": "WCP Gold Creek 04-17-069-03W6",
-   "operator": "WHITECAP PARTNERSHIP",
+   "facility_name": "MCRK 15-15-076-05W5 MWPB",
+   "operator": "TAMARACK VALLEY ENERGY LTD.",
    "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
-   "first_month": "2026-06",
-   "latest_kbd": 6.3,
-   "likely_rereport": false
-  },
-  {
-   "facility_name": "Cardinal Thermal Battery 14-6-38-19",
-   "operator": "CARDINAL ENERGY LTD.",
-   "subtype": "THERMAL IN-SITU BATTERY",
-   "first_month": "2025-09",
-   "latest_kbd": 5.8,
-   "likely_rereport": false
-  },
-  {
-   "facility_name": "PEAVINE 14-36-078-16W5 MWPB",
-   "operator": "BAYTEX ENERGY LTD.",
-   "subtype": "CRUDE BITUMEN MULTIWELL PRORATION BATTERY",
-   "first_month": "2026-02",
-   "latest_kbd": 5.1,
-   "likely_rereport": false
-  },
-  {
-   "facility_name": "Spirit River 6-3-78-7w6",
-   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
-   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
-   "first_month": "2026-02",
-   "latest_kbd": 5.0,
-   "likely_rereport": false
-  },
-  {
-   "facility_name": "MANATOKAN 03-23-062-07W4",
-   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
-   "subtype": "CRUDE BITUMEN MULTIWELL GROUP BATTERY",
-   "first_month": "2026-05",
-   "latest_kbd": 4.4,
+   "first_month": "2026-07",
+   "latest_kbd": 7.8,
    "likely_rereport": false
   },
   {
@@ -716,31 +731,71 @@
    "operator": "SPARTAN DELTA CORP.",
    "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
    "first_month": "2025-12",
-   "latest_kbd": 3.9,
+   "latest_kbd": 7.7,
    "likely_rereport": false
   },
   {
-   "facility_name": "Spirit River 6-9-77-7W6 Oil Battery",
+   "facility_name": "HUSKY VAWN 16-01-048-19W3 OIL",
+   "operator": "STRATHCONA RESOURCES LTD.",
+   "subtype": "THERMAL IN-SITU BATTERY",
+   "first_month": "2026-01",
+   "latest_kbd": 7.3,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "IPC BLACKROD CPF 11-25-076-18W4",
+   "operator": "IPC CANADA LTD.",
+   "subtype": "IN-SITU OIL SANDS",
+   "first_month": "2026-05",
+   "latest_kbd": 7.1,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "Cardinal Thermal Battery 14-6-38-19",
+   "operator": "CARDINAL ENERGY LTD.",
+   "subtype": "THERMAL IN-SITU BATTERY",
+   "first_month": "2025-09",
+   "latest_kbd": 6.6,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "WCP Gold Creek 04-17-069-03W6",
+   "operator": "WHITECAP PARTNERSHIP",
+   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
+   "first_month": "2026-06",
+   "latest_kbd": 6.4,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "Driftwood 16-26-78-23w4",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "CRUDE BITUMEN MULTIWELL PRORATION BATTERY",
+   "first_month": "2026-06",
+   "latest_kbd": 5.9,
+   "likely_rereport": false
+  },
+  {
+   "facility_name": "Spirit River 6-3-78-7w6",
    "operator": "CANADIAN NATURAL RESOURCES LIMITED",
    "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
    "first_month": "2026-02",
-   "latest_kbd": 3.5,
+   "latest_kbd": 5.3,
    "likely_rereport": false
   },
   {
-   "facility_name": "MEOTA CENTRAL 1 MULTIWELL",
-   "operator": "STRATHCONA RESOURCES LTD.",
-   "subtype": "THERMAL IN-SITU BATTERY",
-   "first_month": "2026-07",
-   "latest_kbd": 3.3,
+   "facility_name": "PEAVINE 14-36-078-16W5 MWPB",
+   "operator": "BAYTEX ENERGY LTD.",
+   "subtype": "CRUDE BITUMEN MULTIWELL PRORATION BATTERY",
+   "first_month": "2026-02",
+   "latest_kbd": 4.5,
    "likely_rereport": false
   },
   {
-   "facility_name": "PRTL CECIL 15-07-085-06W6 mwb",
-   "operator": "PRAIRIE THUNDER RESOURCES LTD.",
-   "subtype": "CRUDE OIL MULTIWELL PRORATION BATTERY",
-   "first_month": "2025-08",
-   "latest_kbd": 3.3,
+   "facility_name": "MANATOKAN 03-23-062-07W4",
+   "operator": "CANADIAN NATURAL RESOURCES LIMITED",
+   "subtype": "CRUDE BITUMEN MULTIWELL GROUP BATTERY",
+   "first_month": "2026-05",
+   "latest_kbd": 4.2,
    "likely_rereport": false
   }
  ],
@@ -1077,9 +1132,15 @@
   },
   {
    "month": "2026-08",
-   "bitumen_kbd": 2266.1,
-   "condensate_kbd": 702.1,
+   "bitumen_kbd": 2266.0,
+   "condensate_kbd": 702.3,
    "blend_ratio": 0.31
+  },
+  {
+   "month": "2026-09",
+   "bitumen_kbd": 2214.0,
+   "condensate_kbd": 678.6,
+   "blend_ratio": 0.306
   }
  ],
  "declines": [
@@ -1311,228 +1372,16 @@
     [
      "2026-08",
      283.5
+    ],
+    [
+     "2026-09",
+     228.8
     ]
    ],
    "tieins": [
     "2024-10",
     "2025-07"
    ]
-  },
-  {
-   "facility_name": "CVE FOSTER CREEK COMMERCIAL OIL BTTY",
-   "operator": "CENOVUS ENERGY INC.",
-   "subtype": "IN-SITU OIL SANDS",
-   "series": [
-    [
-     "2022-01",
-     203.0
-    ],
-    [
-     "2022-02",
-     197.3
-    ],
-    [
-     "2022-03",
-     193.0
-    ],
-    [
-     "2022-04",
-     190.9
-    ],
-    [
-     "2022-05",
-     184.8
-    ],
-    [
-     "2022-06",
-     187.7
-    ],
-    [
-     "2022-07",
-     193.6
-    ],
-    [
-     "2022-08",
-     168.1
-    ],
-    [
-     "2022-09",
-     185.2
-    ],
-    [
-     "2022-10",
-     194.8
-    ],
-    [
-     "2022-11",
-     196.7
-    ],
-    [
-     "2022-12",
-     195.8
-    ],
-    [
-     "2023-01",
-     193.7
-    ],
-    [
-     "2023-02",
-     189.5
-    ],
-    [
-     "2023-03",
-     186.5
-    ],
-    [
-     "2023-04",
-     145.3
-    ],
-    [
-     "2023-05",
-     169.8
-    ],
-    [
-     "2023-06",
-     186.0
-    ],
-    [
-     "2023-07",
-     183.4
-    ],
-    [
-     "2023-08",
-     189.5
-    ],
-    [
-     "2023-09",
-     195.3
-    ],
-    [
-     "2023-10",
-     195.6
-    ],
-    [
-     "2023-11",
-     201.9
-    ],
-    [
-     "2023-12",
-     198.1
-    ],
-    [
-     "2024-01",
-     196.4
-    ],
-    [
-     "2024-02",
-     199.6
-    ],
-    [
-     "2024-03",
-     192.1
-    ],
-    [
-     "2024-04",
-     190.7
-    ],
-    [
-     "2024-05",
-     197.9
-    ],
-    [
-     "2024-06",
-     195.7
-    ],
-    [
-     "2024-07",
-     204.8
-    ],
-    [
-     "2024-08",
-     196.8
-    ],
-    [
-     "2024-09",
-     191.9
-    ],
-    [
-     "2024-10",
-     190.5
-    ],
-    [
-     "2024-11",
-     199.5
-    ],
-    [
-     "2024-12",
-     195.9
-    ],
-    [
-     "2025-01",
-     207.6
-    ],
-    [
-     "2025-02",
-     203.0
-    ],
-    [
-     "2025-03",
-     198.0
-    ],
-    [
-     "2025-04",
-     166.6
-    ],
-    [
-     "2025-05",
-     183.3
-    ],
-    [
-     "2025-06",
-     208.5
-    ],
-    [
-     "2025-07",
-     217.0
-    ],
-    [
-     "2025-08",
-     210.3
-    ],
-    [
-     "2025-09",
-     218.5
-    ],
-    [
-     "2025-10",
-     217.9
-    ],
-    [
-     "2025-11",
-     212.2
-    ],
-    [
-     "2025-12",
-     230.2
-    ],
-    [
-     "2026-01",
-     219.2
-    ],
-    [
-     "2026-02",
-     223.2
-    ],
-    [
-     "2026-03",
-     227.0
-    ],
-    [
-     "2026-04",
-     234.3
-    ]
-   ],
-   "tieins": []
   },
   {
    "facility_name": "SURMONT IN-SITU PHASE #1 05-18",
@@ -1762,6 +1611,10 @@
     [
      "2026-08",
      142.6
+    ],
+    [
+     "2026-09",
+     157.4
     ]
    ],
    "tieins": [
@@ -1769,6 +1622,222 @@
     "2024-09",
     "2024-10"
    ]
+  },
+  {
+   "facility_name": "CVE FOSTER CREEK COMMERCIAL OIL BTTY",
+   "operator": "CENOVUS ENERGY INC.",
+   "subtype": "IN-SITU OIL SANDS",
+   "series": [
+    [
+     "2022-01",
+     203.0
+    ],
+    [
+     "2022-02",
+     197.3
+    ],
+    [
+     "2022-03",
+     193.0
+    ],
+    [
+     "2022-04",
+     190.9
+    ],
+    [
+     "2022-05",
+     184.8
+    ],
+    [
+     "2022-06",
+     187.7
+    ],
+    [
+     "2022-07",
+     193.6
+    ],
+    [
+     "2022-08",
+     168.1
+    ],
+    [
+     "2022-09",
+     185.2
+    ],
+    [
+     "2022-10",
+     194.8
+    ],
+    [
+     "2022-11",
+     196.7
+    ],
+    [
+     "2022-12",
+     195.8
+    ],
+    [
+     "2023-01",
+     193.7
+    ],
+    [
+     "2023-02",
+     189.5
+    ],
+    [
+     "2023-03",
+     186.5
+    ],
+    [
+     "2023-04",
+     145.3
+    ],
+    [
+     "2023-05",
+     169.8
+    ],
+    [
+     "2023-06",
+     186.0
+    ],
+    [
+     "2023-07",
+     183.4
+    ],
+    [
+     "2023-08",
+     189.5
+    ],
+    [
+     "2023-09",
+     195.3
+    ],
+    [
+     "2023-10",
+     195.6
+    ],
+    [
+     "2023-11",
+     201.9
+    ],
+    [
+     "2023-12",
+     198.1
+    ],
+    [
+     "2024-01",
+     196.4
+    ],
+    [
+     "2024-02",
+     199.6
+    ],
+    [
+     "2024-03",
+     192.1
+    ],
+    [
+     "2024-04",
+     190.7
+    ],
+    [
+     "2024-05",
+     197.9
+    ],
+    [
+     "2024-06",
+     195.7
+    ],
+    [
+     "2024-07",
+     204.8
+    ],
+    [
+     "2024-08",
+     196.8
+    ],
+    [
+     "2024-09",
+     191.9
+    ],
+    [
+     "2024-10",
+     190.5
+    ],
+    [
+     "2024-11",
+     199.5
+    ],
+    [
+     "2024-12",
+     195.9
+    ],
+    [
+     "2025-01",
+     207.6
+    ],
+    [
+     "2025-02",
+     203.0
+    ],
+    [
+     "2025-03",
+     198.0
+    ],
+    [
+     "2025-04",
+     166.6
+    ],
+    [
+     "2025-05",
+     183.3
+    ],
+    [
+     "2025-06",
+     208.5
+    ],
+    [
+     "2025-07",
+     217.0
+    ],
+    [
+     "2025-08",
+     210.3
+    ],
+    [
+     "2025-09",
+     218.5
+    ],
+    [
+     "2025-10",
+     217.9
+    ],
+    [
+     "2025-11",
+     212.2
+    ],
+    [
+     "2025-12",
+     230.2
+    ],
+    [
+     "2026-01",
+     219.2
+    ],
+    [
+     "2026-02",
+     223.2
+    ],
+    [
+     "2026-03",
+     227.0
+    ],
+    [
+     "2026-04",
+     234.3
+    ]
+   ],
+   "tieins": []
   },
   {
    "facility_name": "WOLF LAKE 8-8-66-5w4",
@@ -1998,6 +2067,10 @@
     [
      "2026-08",
      97.9
+    ],
+    [
+     "2026-09",
+     95.6
     ]
    ],
    "tieins": [
@@ -2233,6 +2306,10 @@
     [
      "2026-08",
      69.9
+    ],
+    [
+     "2026-09",
+     68.8
     ]
    ],
    "tieins": [
@@ -2468,6 +2545,10 @@
     [
      "2026-08",
      19.8
+    ],
+    [
+     "2026-09",
+     19.8
     ]
    ],
    "tieins": []
@@ -2486,9 +2567,9 @@
      "KINGSTON MIDSTREAM WESTPUR PIPELINE",
      "KINGSTON MIDSTREAM WEYBURN PIPELINE"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 275.7,
-    "avg12_kbd": 276.0,
+    "latest_month": "2026-09",
+    "latest_kbd": 281.5,
+    "avg12_kbd": 277.1,
     "peak_kbd": 294.2,
     "peak_month": "2025-03"
    },
@@ -2499,9 +2580,9 @@
     "facilities": [
      "HUSKY PIPELINE"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 183.2,
-    "avg12_kbd": 172.3,
+    "latest_month": "2026-09",
+    "latest_kbd": 180.7,
+    "avg12_kbd": 174.1,
     "peak_kbd": 199.7,
     "peak_month": "2023-12"
    },
@@ -2513,8 +2594,8 @@
      "SOUTH SASKATCHEWAN PIPELINE",
      "WASCANA PIPELINE"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 78.2,
+    "latest_month": "2026-09",
+    "latest_kbd": 80.9,
     "avg12_kbd": 80.0,
     "peak_kbd": 100.8,
     "peak_month": "2024-04"
@@ -2527,9 +2608,9 @@
      "MID SASKATCHEWAN PIPELINE-LIGHT",
      "MID SASKTCHEWAN PIPELINE-HEAVY"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 33.5,
-    "avg12_kbd": 32.2,
+    "latest_month": "2026-09",
+    "latest_kbd": 33.0,
+    "avg12_kbd": 32.4,
     "peak_kbd": 50.0,
     "peak_month": "2023-09"
    },
@@ -2540,9 +2621,9 @@
     "facilities": [
      "KERROBERT LIGHT PIPELINE SYSTEM"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 24.9,
-    "avg12_kbd": 27.2,
+    "latest_month": "2026-09",
+    "latest_kbd": 24.6,
+    "avg12_kbd": 25.9,
     "peak_kbd": 40.9,
     "peak_month": "2022-10"
    },
@@ -2554,9 +2635,9 @@
      "CACTUS LAKE PIPELINE",
      "MANITO PIPELINE"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 20.4,
-    "avg12_kbd": 24.2,
+    "latest_month": "2026-09",
+    "latest_kbd": 23.6,
+    "avg12_kbd": 23.2,
     "peak_kbd": 64.8,
     "peak_month": "2022-12"
    },
@@ -2567,8 +2648,8 @@
     "facilities": [
      "BROADBILL ENERGY PLATO PIPELINE"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 6.4,
+    "latest_month": "2026-09",
+    "latest_kbd": 6.5,
     "avg12_kbd": 6.3,
     "peak_kbd": 8.7,
     "peak_month": "2024-10"
@@ -2581,9 +2662,9 @@
      "COURT PIPELINE",
      "WINTER PIPELINE"
     ],
-    "latest_month": "2026-08",
-    "latest_kbd": 4.2,
-    "avg12_kbd": 4.3,
+    "latest_month": "2026-09",
+    "latest_kbd": 4.3,
+    "avg12_kbd": 4.2,
     "peak_kbd": 6.4,
     "peak_month": "2023-03"
    }
@@ -2870,6 +2951,11 @@
     "kbd": 20.4
    },
    {
+    "month": "2026-09",
+    "system": "Cactus Lake / Manito",
+    "kbd": 23.6
+   },
+   {
     "month": "2022-01",
     "system": "Court / Winter",
     "kbd": 4.9
@@ -3148,6 +3234,11 @@
     "month": "2026-08",
     "system": "Court / Winter",
     "kbd": 4.2
+   },
+   {
+    "month": "2026-09",
+    "system": "Court / Winter",
+    "kbd": 4.3
    },
    {
     "month": "2022-01",
@@ -3430,6 +3521,11 @@
     "kbd": 183.2
    },
    {
+    "month": "2026-09",
+    "system": "Husky",
+    "kbd": 180.7
+   },
+   {
     "month": "2022-01",
     "system": "Kerrobert Light",
     "kbd": 31.8
@@ -3708,6 +3804,11 @@
     "month": "2026-08",
     "system": "Kerrobert Light",
     "kbd": 24.9
+   },
+   {
+    "month": "2026-09",
+    "system": "Kerrobert Light",
+    "kbd": 24.6
    },
    {
     "month": "2022-01",
@@ -3990,6 +4091,11 @@
     "kbd": 275.7
    },
    {
+    "month": "2026-09",
+    "system": "Kingston Midstream",
+    "kbd": 281.5
+   },
+   {
     "month": "2022-01",
     "system": "Mid Saskatchewan",
     "kbd": 42.1
@@ -4268,6 +4374,11 @@
     "month": "2026-08",
     "system": "Mid Saskatchewan",
     "kbd": 33.5
+   },
+   {
+    "month": "2026-09",
+    "system": "Mid Saskatchewan",
+    "kbd": 33.0
    },
    {
     "month": "2022-01",
@@ -4550,6 +4661,11 @@
     "kbd": 6.4
    },
    {
+    "month": "2026-09",
+    "system": "Plato",
+    "kbd": 6.5
+   },
+   {
     "month": "2022-01",
     "system": "South Saskatchewan / Wascana",
     "kbd": 96.4
@@ -4828,6 +4944,11 @@
     "month": "2026-08",
     "system": "South Saskatchewan / Wascana",
     "kbd": 78.2
+   },
+   {
+    "month": "2026-09",
+    "system": "South Saskatchewan / Wascana",
+    "kbd": 80.9
    }
   ],
   "total_monthly": [
@@ -5054,6 +5175,10 @@
    {
     "month": "2026-08",
     "kbd": 626.5
+   },
+   {
+    "month": "2026-09",
+    "kbd": 635.1
    }
   ],
   "alberta_roster": [

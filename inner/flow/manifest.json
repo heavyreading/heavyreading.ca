@@ -1,0 +1,33 @@
+{
+ "page": "/inner/flow/",
+ "title": "The Block Board",
+ "dek": "Inner: The Block Board. Big ICE crude options trades ranked by money, counted by new positions, with one selective follow rule and the first test record kept separate.",
+ "built_at": "2026-10-26",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "Block Board v2, 2026-10-15 to 2026-10-23 (7 sessions): last-week counted new money was calls $181,338,020 and puts $528,272,280 of $709,610,300 counted. Seed test would have picked CX-20261020-B-202612-P. Official v2 follows: 0.",
+   "vintage": "marks to 2026-10-23",
+   "source": "Flow Rank v2 tallies and signals",
+   "source_url": ""
+  },
+  {
+   "text": "First test record, kept separate: 35 cards, 17 paper positions, paper P&L -$63,071. First test - broad cloning. We cloned every confirmed new position. That was too broad, so new trades under that rule stopped after Oct 23, 2026.",
+   "vintage": "marks to 2026-10-23",
+   "source": "Flow Rank v1 scoreboard (flow_recs.csv)",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "ICE Endex (Report Center report 166)",
+   "vintage": "options settlements to 2026-10-23",
+   "url": ""
+  },
+  {
+   "publisher": "Flow Rank (Heavy Reading)",
+   "vintage": "run run_20261026T135250Z_8baad471",
+   "url": ""
+  }
+ ]
+}

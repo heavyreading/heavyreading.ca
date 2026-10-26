@@ -1,0 +1,50 @@
+{
+ "page": "/inner/vol/",
+ "title": "Vol structures",
+ "dek": "Inner vol book: five standing Brent options trades, the capped-grinder candidate structures, the house view expressed as trades, a candidate put spread, and the pre-committed strike plan. For each trade: what happens if Brent moves $1, what time passing does, what fear does, and the most it can lose.",
+ "built_at": "2026-10-26",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "At the October 23, 2026 ICE Brent settlements (January 2027 expiry, futures 111.70), the five standing vol structures mark: own the tail premium paid 2.41 per barrel, call spread paid 2.07, fade the wing collected 0.32, risk reversal collected 0.09, covered call collected 3.08. The covered call collects $105 per lot per day in rent (theta) at those marks.",
+   "vintage": "ICE settlements 2026-10-23",
+   "source": "Vol structures tracker (structure_marks.csv)",
+   "source_url": ""
+  },
+  {
+   "text": "What a $1 Brent rise does at the same marks, per 1,000-barrel lot: covered call gains about $746, tail call gains about $206, risk reversal gains about $506. If fear jumps one point, the tail call gains about $97.",
+   "vintage": "ICE settlements 2026-10-23",
+   "source": "Vol structures tracker (structure_marks.csv)",
+   "source_url": ""
+  },
+  {
+   "text": "Candidate structures at the same marks, tracked, not corpus plays: the lopsided condor collects collected 3.56 per barrel with the most it can lose at $11,440 per lot; the capped straddle collects collected 10.56 per barrel, about three times the condor's rent, worst case $5,940 per lot; the capped risk reversal cuts S4's crash loss from $100,910 to $11,960 per lot.",
+   "vintage": "ICE settlements 2026-10-23",
+   "source": "Vol structures tracker (structure_marks.csv)",
+   "source_url": ""
+  },
+  {
+   "text": "House view dated October 25, 2026, rendered on this page as expressions: S3 call-spread fade (the grinder), S5 covered overwrite, S1 and S2 as the convex side, and a wingy put spread marked CANDIDATE (unnumbered, not in the tracker, no marks). Strike plan: on a strike headline plus a fear spike, run the barrels-still-moving check first; if the barrels still move, sell out-of-the-money call spreads at probation size (0.25R shock budget); if the barrels stop, stand down.",
+   "vintage": "house view 2026-10-25",
+   "source": "House view file (house_view.yaml)",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "ICE Endex (Report Center report 166)",
+   "vintage": "options settlements to 2026-10-23",
+   "url": ""
+  },
+  {
+   "publisher": "Vol structures tracker (Heavy Reading)",
+   "vintage": "seeded 2026-10-23",
+   "url": ""
+  },
+  {
+   "publisher": "House view (Heavy Reading)",
+   "vintage": "view date 2026-10-25",
+   "url": ""
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "page": "/options/",
+ "title": "The Wing",
+ "dek": "The Wing: Heavy Reading's options section. What traders pay for spike insurance versus crash insurance, off ICE end-of-day settlements, our dated house view, and lesson one: expensive insurance is not a forecast.",
+ "built_at": "2026-10-26",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "At the October 23, 2026 ICE Brent settlements (front expiry October 28, 2026), RR25 printed +9.17 points and the 20 percent out-of-the-money call implied volatility 90.37 percent, a tail premium of +43.64 points over at-the-money. Series n = 7 prints from October 15, 2026.",
+   "vintage": "ICE settlements 2026-10-23",
+   "source": "Skew gauges (skew_timeseries.csv)",
+   "source_url": ""
+  },
+  {
+   "text": "House view, dated October 25, 2026 and labelled a view on the page: crude looks roughly balanced on the big agencies' current flow numbers; Hormuz-linked flow runs at roughly 70 to 82 percent of its pre-war pace; the front price carries a priced-in outage of about 5.1 million barrels a day against a best physical read near 3.1, a fear gap of about 2.0. The products line was checked on Oct 25 against our own crack series, Reuters and the IEA October report: diesel crack $97.78 on Oct 23, first close under $100 since Aug 17; Russia about 900,000 barrels a day of refining capacity idle in October, exact size unverifiable; diesel short into 2027.",
+   "vintage": "house view 2026-10-25",
+   "source": "House view file (house_view.yaml), seeded from the global barrels ledger and the Chartbook priced-in gauge",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "ICE Endex (Report Center report 166)",
+   "vintage": "options settlements to 2026-10-23",
+   "url": ""
+  },
+  {
+   "publisher": "Skew pipeline (Heavy Reading)",
+   "vintage": "series starts 2026-10-15",
+   "url": ""
+  },
+  {
+   "publisher": "House view (Heavy Reading)",
+   "vintage": "view date 2026-10-25",
+   "url": ""
+  },
+  {
+   "publisher": "Global barrels ledger",
+   "vintage": "ledger lines to October 2026",
+   "url": ""
+  }
+ ]
+}

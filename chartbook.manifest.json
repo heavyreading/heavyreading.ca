@@ -1,19 +1,19 @@
 {
  "page": "/chartbook.html",
  "title": "Chartbook",
- "dek": "Heavy Reading's standing chartbook: fund positioning, U.S. inventories in seasonal standard deviations, prices and the WCS differential, crack spreads, Alberta storage, egress, apportionment, and a rotating bench for whatever has gone extreme.",
- "built_at": "2026-10-22",
+ "dek": "Heavy Reading's standing chartbook: fund positioning, U.S. inventories in seasonal standard deviations, prices and the WCS differential, crack spreads, crude options skew, Alberta storage, egress, apportionment, and a rotating bench for whatever has gone extreme.",
+ "built_at": "2026-10-26",
  "generator": "heavyreading-manifest/1",
  "claims": [
   {
-   "text": "Noncommercial traders, the speculative category in the legacy Commitments of Traders report, hold a net long of 100,343 contracts in NYMEX WTI futures as of October 13, 2026, in the 4th percentile of weekly readings since 2015.",
-   "vintage": "CFTC legacy Commitments of Traders, NYMEX WTI futures. Data through October 13, 2026.",
+   "text": "Noncommercial traders, the speculative category in the legacy Commitments of Traders report, hold a net long of 89,325 contracts in NYMEX WTI futures as of October 20, 2026, in the 3rd percentile of weekly readings since 2015.",
+   "vintage": "CFTC legacy Commitments of Traders, NYMEX WTI futures. Data through October 20, 2026.",
    "source": "CFTC Commitments of Traders (legacy)",
    "source_url": ""
   },
   {
-   "text": "Managed money holds a net long of 206,930 contracts in ICE Brent futures as of October 13, 2026, in the 55th percentile of weekly readings since 2020, up 20,642 contracts on the week.",
-   "vintage": "ICE Futures Europe Commitments of Traders, Brent futures only. Data through October 13, 2026.",
+   "text": "Managed money holds a net long of 221,344 contracts in ICE Brent futures as of October 20, 2026, in the 61st percentile of weekly readings since 2020, up 14,414 contracts on the week.",
+   "vintage": "ICE Futures Europe Commitments of Traders, Brent futures only. Data through October 20, 2026.",
    "source": "ICE Futures Europe Commitments of Traders",
    "source_url": ""
   },
@@ -48,8 +48,8 @@
    "source_url": ""
   },
   {
-   "text": "WTI front month closed at $99.88 on October 22, 2026, in the 94th percentile of daily closes since 2020 and +5.29 dollars over the last thirty days.",
-   "vintage": "Exchange front-month futures, via the daily crack file. Data through October 22, 2026.",
+   "text": "WTI front month closed at $101.56 on October 26, 2026, in the 94th percentile of daily closes since 2020 and +9.15 dollars over the last thirty days.",
+   "vintage": "Exchange front-month futures, via the daily crack file. Data through October 26, 2026.",
    "source": "Exchange futures (via crack_321 daily file)",
    "source_url": ""
   },
@@ -60,8 +60,8 @@
    "source_url": ""
   },
   {
-   "text": "The 3-2-1 crack spread printed $52.30 a barrel on October 22, 2026, in the 91st percentile of daily readings since 2020.",
-   "vintage": "Computed daily from front-month WTI, RBOB gasoline, and heating oil futures. Data through October 22, 2026.",
+   "text": "The 3-2-1 crack spread printed $52.07 a barrel on October 26, 2026, in the 91st percentile of daily readings since 2020.",
+   "vintage": "Computed daily from front-month WTI, RBOB gasoline, and heating oil futures. Data through October 26, 2026.",
    "source": "Exchange futures (computed)",
    "source_url": ""
   },
@@ -84,14 +84,32 @@
    "source_url": ""
   },
   {
-   "text": "Managed money is net short 19,415 contracts in the ICE WCS 1A index future (TMW) as of October 13, 2026, in the 3rd percentile of weekly readings since 2024, with speculative shorts at 25.0 percent of open interest.",
-   "vintage": "CFTC Disaggregated Commitments of Traders, ICE WCS 1A index future. Data through October 13, 2026.",
+   "text": "Managed money is net short 15,165 contracts in the ICE WCS 1A index future (TMW) as of October 20, 2026, in the 7th percentile of weekly readings since 2024, with speculative shorts at 23.6 percent of open interest.",
+   "vintage": "CFTC Disaggregated Commitments of Traders, ICE WCS 1A index future. Data through October 20, 2026.",
    "source": "CFTC Disaggregated Commitments of Traders",
    "source_url": ""
   },
   {
-   "text": "Very large crude carrier (VLCC) earnings on the Middle East to China route, TD3C, printed $1,412,594 a day in the week of October 09, 2026 (Worldscale 1,319), in the 100th percentile of weekly readings since March 2024.",
-   "vintage": "Baltic Exchange via freight pull. Data through October 09, 2026.",
+   "text": "Brent options charge for a price spike, not a crash.",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
+   "source": "ICE Futures Europe options EOD (report 166)",
+   "source_url": ""
+  },
+  {
+   "text": "The fear gauges through October 23, 2026.",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
+   "source": "ICE Futures Europe options EOD (report 166)",
+   "source_url": ""
+  },
+  {
+   "text": "The options market charges for a price spike.",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
+   "source": "ICE options EOD (report 166); global barrels ledger",
+   "source_url": ""
+  },
+  {
+   "text": "Very large crude carrier (VLCC) earnings on the Middle East to China route, TD3C, printed $1,370,193 a day in the week of October 16, 2026 (Worldscale 1,281), in the 97th percentile of weekly readings since March 2024.",
+   "vintage": "Baltic Exchange via freight pull. Data through October 16, 2026.",
    "source": "Baltic Exchange (via thedcn.com.au)",
    "source_url": ""
   }
@@ -135,6 +153,21 @@
   {
    "publisher": "Natural Resources Canada",
    "vintage": "selected crude prices, monthly",
+   "url": ""
+  },
+  {
+   "publisher": "ICE Futures Europe options EOD (report 166)",
+   "vintage": "daily",
+   "url": ""
+  },
+  {
+   "publisher": "IMF PortWatch",
+   "vintage": "daily tanker transits and port calls, pulled weekly",
+   "url": ""
+  },
+  {
+   "publisher": "Global barrels ledger",
+   "vintage": "official hub prints and tracker claims, weekly and monthly",
    "url": ""
   }
  ]

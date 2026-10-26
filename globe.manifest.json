@@ -1,0 +1,45 @@
+{
+ "page": "/globe.html",
+ "title": "The Globe",
+ "dek": "Heavy Reading's live globe for oil traders: AIS tanker tracking at Westridge and the discharge docks, Tank Watch satellite storage at Edmonton and Hardisty, Sat Watch plant state, the pipeline network with flows, apportionment and filed tolls, refineries, freight arcs and PortWatch chokepoints.",
+ "built_at": "2026-10-26",
+ "generator": "heavyreading-manifest/1",
+ "claims": [],
+ "sources": [
+  {
+   "publisher": "aisstream.io (The Narrows collector)",
+   "vintage": "fix snapshot 2026-10-26T15:54:27.293417+00:00",
+   "url": ""
+  },
+  {
+   "publisher": "Tank Watch (Sentinel-1, own reader)",
+   "vintage": "2026-10-19, 2026-10-19",
+   "url": ""
+  },
+  {
+   "publisher": "Canada Energy Regulator (CER)",
+   "vintage": "throughput and apportionment, latest held",
+   "url": ""
+  },
+  {
+   "publisher": "EIA",
+   "vintage": "refinery capacity 2026; weekly storage",
+   "url": ""
+  },
+  {
+   "publisher": "IMF PortWatch",
+   "vintage": "daily chokepoints, latest held",
+   "url": ""
+  },
+  {
+   "publisher": "CelesTrak",
+   "vintage": "TLE at build",
+   "url": ""
+  },
+  {
+   "publisher": "NHC",
+   "vintage": "nowcast snapshot",
+   "url": ""
+  }
+ ]
+}

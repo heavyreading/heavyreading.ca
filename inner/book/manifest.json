@@ -1,0 +1,39 @@
+{
+ "page": "/inner/book/",
+ "title": "The Book",
+ "dek": "",
+ "built_at": "2026-10-25",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "Whole paper book at the October 23, 2026 marks: P&L +$261,500 (diffs), worst priced day $610,283 with every running position's own worst day added and no offsets between families.",
+   "vintage": "Marks 2026-10-23",
+   "source": "bin/size_ladder.py over the trade ledger and the Wing corpus files",
+   "source_url": ""
+  },
+  {
+   "text": "Size ladder verdict, net of execution costs: Rung 3 (1R = $1,000,000) is the first rung whose central-case normal year lands inside the $10-15M normal-year band ($13,922,594 net; Rung 2 reaches the band gross at $10,532,778 but nets $7,013,472); the diversification and earning gates are not met today (3 live drivers, top driver about 100% of expected normal-year P&L net of costs, 0 scored months), so the book may not climb yet.",
+   "vintage": "Computed 2026-10-25",
+   "source": "bin/size_ladder.py with bin/execution_costs.py; assumptions printed on the page",
+   "source_url": ""
+  },
+  {
+   "text": "Boss strip at the 2026-10-23 marks: the booked Wing book runs delta -41 bbl, gamma +125 bbl per $1, theta -$416 a day, vega +$667 per vol point; the dressed 25-lot length runs delta +19,959 bbl. The stacked expiry payoff's worst point on the $60-160 chart is -$91,100; the diffs add delta only, per contract. Refreshed nightly by bin/book_greeks.py, chained from the stacker.",
+   "vintage": "Marks 2026-10-23",
+   "source": "bin/book_greeks.py over the corpus ledger, the trade ledger and the ICE options surface",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "ICE settlements (TMW/TMR/TMS daily files) and ICE options EOD report 166",
+   "vintage": "settlements to 2026-10-23",
+   "url": ""
+  },
+  {
+   "publisher": "CFTC COT (TMW open interest) and Enbridge apportionment notice, November 2026",
+   "vintage": "COT 2026-10-20; notice 2026-10-20",
+   "url": ""
+  }
+ ]
+}
