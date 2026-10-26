@@ -1,8 +1,490 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-25T22:21:10Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-26T15:41:08Z",
  "data": {
-  "updated_at": "2026-10-25T22:20:56.703696Z",
+  "updated_at": "2026-10-26T15:40:54.332546Z",
   "events": [
+   {
+    "id": "brent-1793028655",
+    "detected_at": "2026-10-26T15:40:54.332546Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-10-26T14:30:00Z",
+    "to_ts": "2026-10-26T15:30:55Z",
+    "from_price": 109.71,
+    "to_price": 111.33,
+    "move_usd": 1.62,
+    "move_pct": 1.48,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Oil Prices Face Fed, GDP and Spending Data as Demand Outlook Takes Focus - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSUcwRFJtX0JyQ2JHZGFOZ0drTTdaM3pzcXVyZUtLOUI2OUswSVFCczZURDVZT0hJa00tTW9PX3N6MmxCaHhhQ3JZckJqZGxDSDhHdl9hTGNfTXZiTFRqOWczUDRwS3Z4ZEFyVzJpN3JPUWx1M2ZyOXVCVU1RYnprb1NzdE1YQkp0UE5EcFNvV0V2ZXNtMW45em51WDI1Tjk4b3NyaFRxd2pPMUZVdEhtMXlxTGtvalMzUmZkWlRDWQ?oc=5",
+      "published": "2026-10-26T15:32:46Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Face Fed, GDP and Spending Data as Demand Outlook Takes Focus &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Russian Refiners Ramp Up Diesel Output to Supply Trump Deal - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOWUycEdiaFV0VlEtX3NhTk0wcV9BeDlQMWRIZWdXUG1DcmJYQzh5NDJ0UDJLdVJFYWgtVzcxMC05UU9VbFVrR0RTMDlvQ0NBNDB2eVluekVhcFdYQ1B5Q2tTVTk1ZjEydFBlWnRDQVlSajNCZ29jTG1IUmtxaVg2eGZLTkFTRDVRMUMzTmFsa0pLc19kWm55RlVYSWVNNFlnT1loOXY5QkdvOHJMWnVINEY3ZDBfQdIBuwFBVV95cUxQbG14Zy1QVFYxVEd3TzJ0TlVBaC1DMWtuZ09zVTVJbUpURU5ocFBWa0t6am5VWURwOHljQ3VaZ0QxTTR2V3Jmd2hBNVJqZW5CU2N6TXJXbmV6Y1hfMzNzTElrQ0JZd0trQmhsWmhZVXZ0X2lwS2FtYTRvY3FNd0pTOURlRHZFeVoyYVRNNTdzd1VOTGxweFlOd1hwM1ZWUk9WalhfNDNvWE9KMzJPWnNBYW9Ec082X2VTZ2hz?oc=5",
+      "published": "2026-10-26T15:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Russian Refiners Ramp Up Diesel Output to Supply Trump Deal &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "US stocks rise after oil prices give back some of their big gains - Union-Bulletin",
+      "source": "Union-Bulletin",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQRDFxc2NwRWswbGZLWlNjdnF6alJUelFnSlpSRVJvYml6bHBsQWpPWlYyalBhUkhqcE1Yd1I3QlZKUHZZT1pHb0lzZkYtV2hFa2kteVBVcVBPT0hsLVA0UC1HaDAxZDE5ejZLWHhTWllrMm5SM1IyX1NOVFdFcl95NTF5cWRhUFhYSnAwZmRpSm5lYVBUeEhoODA1SDFhQnIzc2VCRTFsWnR2cU1nVlIyMVFHalZPZWJBNGQyWWU2cjJkcnF6S2pTRlBEcWR6dm81cEUwT1otR2gyRS1YZ3o0b0M3VTdqUlplRjRiNURIXzlMdw?oc=5",
+      "published": "2026-10-26T15:29:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US stocks rise after oil prices give back some of their big gains &nbsp;&nbsp; Union-Bulletin"
+     },
+     {
+      "title": "Oil amid attacks in Saudi Arabia remains near six-month highs - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "source": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNakZ6bi1ET2NfVkx4XzlHakdKdkdyalRpakVTYm9DNmpDR0Jhb05la0dPcjlHLTN6dC1fYjVFMXRkMTNneTA5WlNPTnhRRmMxM3dVOGhVRUFnWGxlVXVPYVRHUFRyd05CRkFMMGRFYWNwb2t6TTNFNDZheWM3NXdDM0hrYnI2Z2U1NUw5NtIBiwFBVV95cUxOMmluankzYUw5NWVIdmVDWHUwVDJxaG1PTjU0Y2plUXdRdEVOV2UzbDRxc0FZd1hEWThnTzBlVFc5V0hmU1pBUzJpaVBMMGFaSlBYNWF6cG8xajM5MWstZXFWcW1kOUFMT1ZQLVQ3NmdTRHJjX1RKOVBaZkk4dnJ5VjFvVGxGbGVVYllz?oc=5",
+      "published": "2026-10-26T14:51:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil amid attacks in Saudi Arabia remains near six-month highs &nbsp;&nbsp; \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
+     },
+     {
+      "title": "Catalyst-filled trading week ahead; oil prices ease - what\u2019s moving markets - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUDlZdkpYX1RINjhtR0pPR0Noc3pEUW9fWlcxY2xWX1liVmNtOTc3SlBvYjFlNEFiNnI2WUZITFlNZUh1Z3B4bGxpd3VLaXJENGxkNkdwWjhBUi1LSHdsYkU1QXNKYk80X0dxMVlOU1N0X2xIWVZpczIyWWVfeFJfZ21uSE9xRUdrUmxyVmpUcGlxUUFjTy1SQXJfVThGbzUwbl9lZTN3ZnhSM2RmMHE2c2NCa1NlaGlRY0NiWFZTSkc?oc=5",
+      "published": "2026-10-26T14:43:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Catalyst-filled trading week ahead; oil prices ease - what\u2019s moving markets &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Saudi Arabia reportedly offers Houthis $1 billion in Iran-brokered deal to halt attacks - www.israelhayom.com",
+      "source": "www.israelhayom.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOU2tPRUpidFpaZlota3VZNFlrZ2tJajB3anRVbjEtWElBQkx3Zi1pMmtKN05HU2VBeWc0dWNFMUNXSUtoc2dYdVVudTBCQVdpWUQwb2gtNThld3NEWFl3Yy0wenRhTjBPazZYcmE1aldyRnNaMzV0aC1TQnZCVENhQzFLeXlqR19DVmtZUXRYVWNOTV8wMy1OX2JBN1V0TWRGQklmNlE5RkYyeXhwUmZjLTVqMkZpd1ZCRTVIc2FiaTNMWTlv?oc=5",
+      "published": "2026-10-26T14:42:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia reportedly offers Houthis $1 billion in Iran-brokered deal to halt attacks &nbsp;&nbsp; www.israelhayom.com"
+     },
+     {
+      "title": "Saudi Oil Exports Exceed 5.5 Mmbbl/d in October Despite Attack - Egypt Oil & Gas",
+      "source": "Egypt Oil & Gas",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRVR2dWI5bUxwX3B1alRHRDU4ZzUycGlPZkdwUEppS2VfOU5zV3lVUnFyVVlvb3ZHYW5Mb0RiMHREVFpNYzNEaHVtcjNMclQ0d29MRzV4R01yY2FxWUoxNmlSOVZrQ05NNFNHeXg0alZTSl9majJ4blZSZjh6cTFtMVRKeld0VEhPc25QX2lyV3Fmc1UzcXhrbg?oc=5",
+      "published": "2026-10-26T14:38:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Oil Exports Exceed 5.5 Mmbbl/d in October Despite Attack &nbsp;&nbsp; Egypt Oil & Gas"
+     },
+     {
+      "title": "US Military Declares Strait of Hormuz Cleared of Mines After Safeguarding 1.5 Billion Barrels of Oil, Yet Fresh Tanker Strikes Expose the Fragile Reality Behind Global Energy Supplies - Istituto Impariamo",
+      "source": "Istituto Impariamo",
+      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNeUxxVmtJOUFmMHNuNURHZXJ6eHV2aTZVaE5WU2lBc1B4cVJiWnBKNlNwTW5ETUxZSkdaU0lmWk5HRlMxQjl4TThuczZDSnlXWGw1a3ZERUpkUkFSbjVpelZ2NTFubnU2WkJZcTJaLUhHVkVwRUlNdFlvM1NqMUhwZnhpblJaU1dTQTdyYVV0QnE2Wkt0LXNtYm0tck1LbjkxT1R5bXliRHJpcnJ0blJLN2JLSjU1bU1Bc3F0UEtJQ3JRckxsMTQ2NUplU21XTWFSamZYV1BLZ2ZNSm9BNEk2TV92QU56Ui1jdk4tWGVZM21JZkNqZWp5aFlNVW4wSG5Jd3R3NHJQZ2V6czdjVnpvdHhqbWdqbWlHUVNiV1ZaVU1LYjVlMzFRelZYUDZDQlZ1cEFFbFpFRXlkYlhY?oc=5",
+      "published": "2026-10-26T14:37:01Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US Military Declares Strait of Hormuz Cleared of Mines After Safeguarding 1.5 Billion Barrels of Oil, Yet Fresh Tanker Strikes Expose the Fragile Reality Behind Global Energy Supplies &nbsp;&nbsp; Istituto Impariamo"
+     },
+     {
+      "title": "India's BPCL to Cut Russian Oil Imports Due to Higher Prices - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSC1EZUxMN2xiRnpHbk5XdTV2aFdjYm8xU3Y4aloyc2JtTDJ5X1ZTWVpSck9qR3VIZmZ2clNhcW5VWmZQeUVfOXFfdEotaGpwNUZBcGN5VlBIUkZta0VULXZsS1BKaGhHa0dVWldxMTlZWWdENDVmUWhjdGIzTVB5THY1MHNRZkF1ejVHVzFyaTNIN0hwMWtwMlc5VHFZSWtGS25FYXNkQXNzMjRxSm9TUnFqT3pIUdIBuwFBVV95cUxQUmFsRzdHLWlteTVLem5qZEdfX09YQ3Q4VVNUX1BOQjlnUE9YQ01hN2FIbEFyWV94dEtwakhIV1RmSURyajJXOU1NblQ1LXpmdGNfT191V0o2OVp1UWp0UkZLM1JjZGhmemlqWEFkV05mRVVmYVRobGZrOS16UUN1MlB3TGl2aHl3UjBhMTdBRjFtQ2dPSUJ3VmR1MmNSUEFXYkFFcmV2dVAxMFdKR21JSXQzc2JzLW1OdkRN?oc=5",
+      "published": "2026-10-26T14:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "India's BPCL to Cut Russian Oil Imports Due to Higher Prices &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "UKMTO reports more tankers struck in Hormuz - Quantum Commodity Intelligence",
+      "source": "Quantum Commodity Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTjd1SjFyMDRfc0hZNzBtbjNzemE3UmFoa3BhalM5akphSmZ5V1RSZUdXeDdQbGJmX3VDYm95SUFDNk5ZdHpfMjFMSUEwOWVXcGJoMF9BUktyd0dwR0RPR0E0OGhESnI2WXFZT2dfc3YyR2RhSWtFRXV5aHpqcDgxcHBoWl90dHBYdmFEdXRIVQ?oc=5",
+      "published": "2026-10-26T14:22:21Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "UKMTO reports more tankers struck in Hormuz &nbsp;&nbsp; Quantum Commodity Intelligence"
+     },
+     {
+      "title": "Houthis claim Fresh Strikes on Riyadh Airport, Saudi Arabia\u2019s Key Oil Pipeline - Daily Pakistan",
+      "source": "Daily Pakistan",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWVJGdVRFdno5SmxxNjU5NGFYMFZYM3U0aWZhcVh0MF9QQW03Vlo0WDFILU1VcFBfX1l1Umd6WjlJSlNJdXp1d2hsc0w2LUFUN1FlU0xvSjd1d0Y3SEZINjJ3X2R2STdISUhqRzZldmRybjFjREtsTXZLb2dhT0o1YV9WSnNyM0hVZEVkY0Q3ZFRSVEdNaFRmUi1veHRLbUlRdVNyX1JCSF9jRzRydXc4M2NvNVVzYVNYbl96Zg?oc=5",
+      "published": "2026-10-26T14:19:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Houthis claim Fresh Strikes on Riyadh Airport, Saudi Arabia\u2019s Key Oil Pipeline &nbsp;&nbsp; Daily Pakistan"
+     },
+     {
+      "title": "Oil Edges Lower From Six-Month High as Traders Assess Iran Risks - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNFpHYTlFcXR2RGt0NHhpMWtQcTRwdTktRHJKZGJIODZ4RldHbUFZODFIMXBRZkRObXAzN3lxZE1NV0QtOVlmaDc3S0R1YWV0S2ExZmpJTWlYb1RITGIzZTYyR0xkT0c0WXdvNHExUVZJUURPbEZ2MWoyc3NyNkRWNzB5c3VUVVFwMHppaWRIWmxoaDVNRjM5dndha3hTZw?oc=5",
+      "published": "2026-10-26T14:10:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Edges Lower From Six-Month High as Traders Assess Iran Risks &nbsp;&nbsp; Bloomberg.com"
+     },
+     {
+      "title": "Stocks See Support Ahead of Busy Week as Crude Oil Prices Ease - Barchart.com",
+      "source": "Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZEpKXzdpd3ZhMEloazZjLWxVMllRYjJTOHcyT1l3em1TVEFrWmE3MnJkUGZKQXgtTWhFN0ZvdUNXQjdVRDhlX0dmY2EwVWFBV19yU2hUUGJyT1dQMFQwRmNhY1ViX1M4UnVUWS1NM1Z3ckNFOEs1eHVRN1RtWlk3dlBLV0tvVnBiRGduZ29tdVR3ekx3ZG5VOHJPU1BqMXU4Y1FZWUxSSDhQUQ?oc=5",
+      "published": "2026-10-26T14:01:42Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Stocks See Support Ahead of Busy Week as Crude Oil Prices Ease &nbsp;&nbsp; Barchart.com"
+     },
+     {
+      "title": "Super El Nio May Soften Winter Energy Squeeze - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNajBnU01DYzB3dm1MdGU0OEd3b3dwelF1dll4UXpnRkN2S1RqdWxmU3c5LWo5MHNudnFvRTFFLVhURHdzWGVFNlU1SXJLdkl3NkZPN3oxRVNJaW5WSk1qelQwVnFqOWZ2a29vU0JvdFI0X3ZhcEpHT3hydVZrU051TmZDeDRPQ0tmS0ZHZWh3Q0FXSmJpZk9QatIBngFBVV95cUxNTmhIejdDSEs4d3lhQVNkcnA5WXgtQndZdkFWTmU2ampnYnk5OUQwenkyR1Z2dUVIczlnTHhWY1ZmVDN2dnJVMmNkV2libjBOcGQ4YzNWMVlsRkk4bTFyUW5fNl9Td1ljOTFEdUkzYkNBUmdLLS1Wd1JqQ1A4TDhUU3JrdWo2OFotTk5Xem1MbWJlMzdjTkJBQWxJQVNSUQ?oc=5",
+      "published": "2026-10-26T14:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Super El Nio May Soften Winter Energy Squeeze &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices fall despite Saudi attacks and rising strait of Hormuz risks - Nairametrics",
+      "source": "Nairametrics",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMWV2dTkwdVB3bkZhdDM3akFTdXpZV1dtOWduYjM0eDc0a3dJbEV3N2JSREFZeXpIU3h4ZmctTFI1bWZZXzRlY2MxelFzZ056OTB3QXVGa09yT2FUSUQwak1sZXh5eXhZVlFJQmVFZ2VkOFh2WThXWDM3RWhQS1p6UEh2R1k2MVlaSU9FNWQ5VUFZNU9NVmFpQlRRNFdBZ0dHMlhfWjlhM2ZPUVpF?oc=5",
+      "published": "2026-10-26T13:56:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices fall despite Saudi attacks and rising strait of Hormuz risks &nbsp;&nbsp; Nairametrics"
+     },
+     {
+      "title": "Stocks Gain Before Tech Earnings as Oil Declines: Markets Wrap - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeGVmU0kxdjhvRF9ZU0VaeFFkODlaUTRlN1dQaHNSV1JiOTBwSV9nb1RKejQ2clRzQ0doN3VjVEtHb0RaTlVBNUdhMFI3aUtTRHB1dEE3NWdXZS1ZbktuMVUtYnE0ellyLWlNa29aWThtQkdSQW5FRzFIVUZlb3hEUlg1czdXd3FyV0VwNW0wVEMyTUg4ZEpoTVg0SzIyZ0VmLTAxOUlPTUtLXy1kS0ozbw?oc=5",
+      "published": "2026-10-26T13:51:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Stocks Gain Before Tech Earnings as Oil Declines: Markets Wrap &nbsp;&nbsp; Bloomberg.com"
+     },
+     {
+      "title": "Market Wrap: Clear rebound in Europe against falling oil price. Assets related to Brazil in retreat - XTB.com",
+      "source": "XTB.com",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNOHQ1Mk5yUUpNZXZ2aXg0WkJfazh2eC0wckVudjFEUXJfYlhsRHNtQW1CV1FtQmtrSzRrTWNPQTI3blVxUjE5YkVIZzVOLWd1ZmswblRWVFV3MmhIcGlsRUZ6UU1jSmpxdjNlT1BiOUx0SFoxV2NHRG9XN0owek1CZnZEcVRLSkh0Rl9XNEFvV1l4ZWkwbTJHbW1sSU9VOGdCa1lsTmtVclZoOTdZUkRyQzRtdzA1cXJZbzNRcUJ5bDFDOWZCQ1Z4VXd0WVNZWEpLYnVESUNjcDNXT092N3hLS2xaT0F3T3lFd1pZ?oc=5",
+      "published": "2026-10-26T13:46:40Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Market Wrap: Clear rebound in Europe against falling oil price. Assets related to Brazil in retreat &nbsp;&nbsp; XTB.com"
+     },
+     {
+      "title": "IEA's Birol Energy Prices Won't Return to Pre-War Levels in 2027 - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUkpHQ0xiTXZhV3czZEFKdTQzV0F0YW8yTUdRMmlkS3JxQ3FFWTRjZVZNTHhIeTdxek81QVFad1FacFUxLVhGSElZZHV4VVlOZ3JsY284dVFYeE9NTUNxTk1vNVdiUlQtMGwtMGR1Rll4aXFJOHRYNEVobU9xSzN5cUZMM1c5YjNKbnFEeU1DQjFISGh4bzRXTjItVXUtTVdkS3VnXzVQMUhUZXV2b2d1MDZaYl8xend4X2fSAb8BQVVfeXFMTUx3Ny1XVmpMSWg4aGw1RGJfOWJZTmk5eUFnTGNlWWRfa3RnSHZJaEdOUDlyZlNBV29wVUw3b1Z5U0phMTZUb2N2NEd5ODZmUWp5UHJzc0xkVlNEdWdyUmhMeTNvX1hBWHBiQnN2Q2Jnb2dsM2czdk1iY2lQaUpNV1V2WVI5a0FGV0FLTVJpRVRDUDBnb05qNV8xdlI2emdsZkpxRHFTVTBIREw0TjM0SXU0LXF2VlJQblRBTXdoQk0?oc=5",
+      "published": "2026-10-26T13:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "IEA's Birol Energy Prices Won't Return to Pre-War Levels in 2027 &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "As Trump brags about U.S. oil and gas company profits, his stocks gained millions during Iran war - CBS News",
+      "source": "CBS News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNU1NNM0tTeE1oc2ZkTUdxRUlwZ2h1OFpGdWd0bjZqbmYxb0NkM1JpVEF6Sm0tQzBfU05IZ2pnb2FkaXVGQUc2Y213MWJWclA3cl9tT3BlZlplek9rTlhGLXNrdzZPNHEtc2ZCU0pxWXJ3NHowTXgxN2JVekgyM2RRYlBmM2YzbW5jdTJMWGFLODZYSnkyb3BxNHhtYWY3dw?oc=5",
+      "published": "2026-10-26T13:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "As Trump brags about U.S. oil and gas company profits, his stocks gained millions during Iran war &nbsp;&nbsp; CBS News"
+     },
+     {
+      "title": "Middle East latest: Egypt's parliament approves military support for Saudi Arabia - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYXpXeGJySlQxeV9XYjNxYnlSSUVtSEZibERTbTVKcG1seloyZXYyc3JvbEtUT0JtamQ1N2YtbEYxZWR4MW1CTDJrbDUyYzVhOVFocDk1RURYWl82TFZFWmxNRW1UT1EtVE1INjR1bkNrbWhZN1lPSWZtclU0VFA3SXQtdU9Kay11UWI5YzZJaUU3R3MtSnBHdg?oc=5",
+      "published": "2026-10-26T13:29:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East latest: Egypt's parliament approves military support for Saudi Arabia &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Gold prices squeezed between rising oil and falling yields, Fresnillo silver output declines in 2026 \u2013 Heraeus - Kitco",
+      "source": "Kitco",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcVNMQnZQS3ZmcmtSNElycE9ZX21HblVQbGlDdTI3czFYaGcydnFqV0lmbG9sYTBxMzdXbFlmV01oVUg3alZxcE5UZl9lVVZUN25idXNPNGxWekZPenktaTNiR0xKVW5PT2djQVdsX3hMQUc4TWhhZEtqa0szQjU3aVNJaVVtV05JN1o3UmdkcWhoY2Z2bmdnVl9SY2NfaUxwakJhSDRtZkZVYWNkVV9UaFg4WktLVFItRllRM2NB?oc=5",
+      "published": "2026-10-26T13:26:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold prices squeezed between rising oil and falling yields, Fresnillo silver output declines in 2026 \u2013 Heraeus &nbsp;&nbsp; Kitco"
+     },
+     {
+      "title": "Oil Futures Post Weekly Gains on Middle East Escalation Fears - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUUprNnpxZE5idzlOR3htMEsyS0FmSHFfUi1EZ2dpZEVzNGd5ckRsQnVob0daYXdVMzZBbm9YdFBHQk5fV0NIeU5oZjZZdDdCY0FGbXRoUXNtblo4UmF2OUR6VG54LW95ekJ0eFNPbjBRUGp6R1F0S0xsdEc3MmZReXpCT0lIUmxyR1Npd2pYMlRFb3RndXBjU05OTXM0bFBmazFkY09lcnVJUG1LU3ItNlJpYnl5X01x?oc=5",
+      "published": "2026-10-26T13:25:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Futures Post Weekly Gains on Middle East Escalation Fears &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Singapore, Saudi Aramco agree to store crude oil in rock caverns - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTndRNDRPTVVYRWFnMktsQ3RUUS04d2lPSGcwVlhhNFpPMjB2TXRMeFVwcGVQUjRkRmprQlpPUi1KRmpWc3JIdmRpY0JYc3R6dUZOMXh6RnIybGhadXgyZnQ0YS1UTzl3RXl3Z3A0SjdCU3JwenIzY3MwUVprTlJhcndtMzN4SzRTV2lUT0VJX0tEZjMtZlYtZHVBa0pRTEhVcldneFZFRTg?oc=5",
+      "published": "2026-10-26T13:22:14Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Singapore, Saudi Aramco agree to store crude oil in rock caverns &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "Oil prices steady after six-month surge as geopolitical risks persist - rajasthan.economictimes.indiatimes.com",
+      "source": "rajasthan.economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPOE13Yk45aGtfSXdWOE5kejNOZmQ4QW45X0NlMW9xR2FlYzFNUGtLYTM2ZnVVM0s5WThKb0RsYkg3MmpSTWdwWUJRY2p3aGdFZmZhWjQzN0Q3R0cxWXBUbW9pNFZXM1lvTUN5Q2duWWxtQ1dHRFZCS3J6NGNXZjEtaTJnUnFNSDNnZktDVTAxNGVjandlUVlVSUoyWGtHQkpSM1NvUjV6SmRfSUNNdGtiMEdkengwNVBVc1N5WXQ4M09FbWo0V0Z5SU9QS3AyZE9KWTZfNGln0gHaAUFVX3lxTE5adEZKZU44Nm16aDdTcHhaUEFHOWRmdlZYSzRkNTltSXYwRGtzc20zdldzc2xzdl9JaWh4cEN5dXRVNHQ0ckNLc0FiWEZMNzlPcXRoZ2FMU0Q0T29hcFFaQlRXdVd6TUlzazQ4YTdCNGlmaGRmR2V4RVpQVTF3ejZ2S1hSVXp3NzlBcHo0bEVHSjdxRHVEREFtd3IweWVIcEprMjAtMk5DdllBbmljVWNkY0pRYkZHM3VETzdrN0lDSjBuMEYtWU5QMFZoUHpGT2N6OWNySG42NWZR?oc=5",
+      "published": "2026-10-26T13:20:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices steady after six-month surge as geopolitical risks persist &nbsp;&nbsp; rajasthan.economictimes.indiatimes.com"
+     },
+     {
+      "title": "US Stock Futures Point Higher as Crude Oil Retreats and Investors Await Fed Meeting: Dow Jones, S&P, Nasdaq, Wall Street - Yahoo Finance UK",
+      "source": "Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaTR4cGxWcm92cG9jSmt5Wm1MdWhBQmp0ZkpLVUV4WGlabUlqWDF4VXRWUER2TEZUT055OVdtWFNWbzhSWklZdXFYcEtNMjV0X0JkLVlsSGVQeC0yZGxYMktMR1Z1WmxGaFNfMmtzTGNrUnFlbUxwSW5QZy1KNy1mZ25oZUo?oc=5",
+      "published": "2026-10-26T13:18:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US Stock Futures Point Higher as Crude Oil Retreats and Investors Await Fed Meeting: Dow Jones, S&P, Nasdaq, Wall Street &nbsp;&nbsp; Yahoo Finance UK"
+     }
+    ]
+   },
+   {
+    "id": "wti-1793028655",
+    "detected_at": "2026-10-26T15:40:54.332546Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-10-26T14:30:00Z",
+    "to_ts": "2026-10-26T15:30:55Z",
+    "from_price": 100.53,
+    "to_price": 102.26,
+    "move_usd": 1.73,
+    "move_pct": 1.72,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Oil Prices Face Fed, GDP and Spending Data as Demand Outlook Takes Focus - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSUcwRFJtX0JyQ2JHZGFOZ0drTTdaM3pzcXVyZUtLOUI2OUswSVFCczZURDVZT0hJa00tTW9PX3N6MmxCaHhhQ3JZckJqZGxDSDhHdl9hTGNfTXZiTFRqOWczUDRwS3Z4ZEFyVzJpN3JPUWx1M2ZyOXVCVU1RYnprb1NzdE1YQkp0UE5EcFNvV0V2ZXNtMW45em51WDI1Tjk4b3NyaFRxd2pPMUZVdEhtMXlxTGtvalMzUmZkWlRDWQ?oc=5",
+      "published": "2026-10-26T15:32:46Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Face Fed, GDP and Spending Data as Demand Outlook Takes Focus &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Russian Refiners Ramp Up Diesel Output to Supply Trump Deal - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOWUycEdiaFV0VlEtX3NhTk0wcV9BeDlQMWRIZWdXUG1DcmJYQzh5NDJ0UDJLdVJFYWgtVzcxMC05UU9VbFVrR0RTMDlvQ0NBNDB2eVluekVhcFdYQ1B5Q2tTVTk1ZjEydFBlWnRDQVlSajNCZ29jTG1IUmtxaVg2eGZLTkFTRDVRMUMzTmFsa0pLc19kWm55RlVYSWVNNFlnT1loOXY5QkdvOHJMWnVINEY3ZDBfQdIBuwFBVV95cUxQbG14Zy1QVFYxVEd3TzJ0TlVBaC1DMWtuZ09zVTVJbUpURU5ocFBWa0t6am5VWURwOHljQ3VaZ0QxTTR2V3Jmd2hBNVJqZW5CU2N6TXJXbmV6Y1hfMzNzTElrQ0JZd0trQmhsWmhZVXZ0X2lwS2FtYTRvY3FNd0pTOURlRHZFeVoyYVRNNTdzd1VOTGxweFlOd1hwM1ZWUk9WalhfNDNvWE9KMzJPWnNBYW9Ec082X2VTZ2hz?oc=5",
+      "published": "2026-10-26T15:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Russian Refiners Ramp Up Diesel Output to Supply Trump Deal &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "US stocks rise after oil prices give back some of their big gains - Union-Bulletin",
+      "source": "Union-Bulletin",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQRDFxc2NwRWswbGZLWlNjdnF6alJUelFnSlpSRVJvYml6bHBsQWpPWlYyalBhUkhqcE1Yd1I3QlZKUHZZT1pHb0lzZkYtV2hFa2kteVBVcVBPT0hsLVA0UC1HaDAxZDE5ejZLWHhTWllrMm5SM1IyX1NOVFdFcl95NTF5cWRhUFhYSnAwZmRpSm5lYVBUeEhoODA1SDFhQnIzc2VCRTFsWnR2cU1nVlIyMVFHalZPZWJBNGQyWWU2cjJkcnF6S2pTRlBEcWR6dm81cEUwT1otR2gyRS1YZ3o0b0M3VTdqUlplRjRiNURIXzlMdw?oc=5",
+      "published": "2026-10-26T15:29:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US stocks rise after oil prices give back some of their big gains &nbsp;&nbsp; Union-Bulletin"
+     },
+     {
+      "title": "Oil amid attacks in Saudi Arabia remains near six-month highs - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "source": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNakZ6bi1ET2NfVkx4XzlHakdKdkdyalRpakVTYm9DNmpDR0Jhb05la0dPcjlHLTN6dC1fYjVFMXRkMTNneTA5WlNPTnhRRmMxM3dVOGhVRUFnWGxlVXVPYVRHUFRyd05CRkFMMGRFYWNwb2t6TTNFNDZheWM3NXdDM0hrYnI2Z2U1NUw5NtIBiwFBVV95cUxOMmluankzYUw5NWVIdmVDWHUwVDJxaG1PTjU0Y2plUXdRdEVOV2UzbDRxc0FZd1hEWThnTzBlVFc5V0hmU1pBUzJpaVBMMGFaSlBYNWF6cG8xajM5MWstZXFWcW1kOUFMT1ZQLVQ3NmdTRHJjX1RKOVBaZkk4dnJ5VjFvVGxGbGVVYllz?oc=5",
+      "published": "2026-10-26T14:51:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil amid attacks in Saudi Arabia remains near six-month highs &nbsp;&nbsp; \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
+     },
+     {
+      "title": "Catalyst-filled trading week ahead; oil prices ease - what\u2019s moving markets - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUDlZdkpYX1RINjhtR0pPR0Noc3pEUW9fWlcxY2xWX1liVmNtOTc3SlBvYjFlNEFiNnI2WUZITFlNZUh1Z3B4bGxpd3VLaXJENGxkNkdwWjhBUi1LSHdsYkU1QXNKYk80X0dxMVlOU1N0X2xIWVZpczIyWWVfeFJfZ21uSE9xRUdrUmxyVmpUcGlxUUFjTy1SQXJfVThGbzUwbl9lZTN3ZnhSM2RmMHE2c2NCa1NlaGlRY0NiWFZTSkc?oc=5",
+      "published": "2026-10-26T14:43:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Catalyst-filled trading week ahead; oil prices ease - what\u2019s moving markets &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Saudi Arabia reportedly offers Houthis $1 billion in Iran-brokered deal to halt attacks - www.israelhayom.com",
+      "source": "www.israelhayom.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOU2tPRUpidFpaZlota3VZNFlrZ2tJajB3anRVbjEtWElBQkx3Zi1pMmtKN05HU2VBeWc0dWNFMUNXSUtoc2dYdVVudTBCQVdpWUQwb2gtNThld3NEWFl3Yy0wenRhTjBPazZYcmE1aldyRnNaMzV0aC1TQnZCVENhQzFLeXlqR19DVmtZUXRYVWNOTV8wMy1OX2JBN1V0TWRGQklmNlE5RkYyeXhwUmZjLTVqMkZpd1ZCRTVIc2FiaTNMWTlv?oc=5",
+      "published": "2026-10-26T14:42:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia reportedly offers Houthis $1 billion in Iran-brokered deal to halt attacks &nbsp;&nbsp; www.israelhayom.com"
+     },
+     {
+      "title": "Saudi Oil Exports Exceed 5.5 Mmbbl/d in October Despite Attack - Egypt Oil & Gas",
+      "source": "Egypt Oil & Gas",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRVR2dWI5bUxwX3B1alRHRDU4ZzUycGlPZkdwUEppS2VfOU5zV3lVUnFyVVlvb3ZHYW5Mb0RiMHREVFpNYzNEaHVtcjNMclQ0d29MRzV4R01yY2FxWUoxNmlSOVZrQ05NNFNHeXg0alZTSl9majJ4blZSZjh6cTFtMVRKeld0VEhPc25QX2lyV3Fmc1UzcXhrbg?oc=5",
+      "published": "2026-10-26T14:38:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Oil Exports Exceed 5.5 Mmbbl/d in October Despite Attack &nbsp;&nbsp; Egypt Oil & Gas"
+     },
+     {
+      "title": "US Military Declares Strait of Hormuz Cleared of Mines After Safeguarding 1.5 Billion Barrels of Oil, Yet Fresh Tanker Strikes Expose the Fragile Reality Behind Global Energy Supplies - Istituto Impariamo",
+      "source": "Istituto Impariamo",
+      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNeUxxVmtJOUFmMHNuNURHZXJ6eHV2aTZVaE5WU2lBc1B4cVJiWnBKNlNwTW5ETUxZSkdaU0lmWk5HRlMxQjl4TThuczZDSnlXWGw1a3ZERUpkUkFSbjVpelZ2NTFubnU2WkJZcTJaLUhHVkVwRUlNdFlvM1NqMUhwZnhpblJaU1dTQTdyYVV0QnE2Wkt0LXNtYm0tck1LbjkxT1R5bXliRHJpcnJ0blJLN2JLSjU1bU1Bc3F0UEtJQ3JRckxsMTQ2NUplU21XTWFSamZYV1BLZ2ZNSm9BNEk2TV92QU56Ui1jdk4tWGVZM21JZkNqZWp5aFlNVW4wSG5Jd3R3NHJQZ2V6czdjVnpvdHhqbWdqbWlHUVNiV1ZaVU1LYjVlMzFRelZYUDZDQlZ1cEFFbFpFRXlkYlhY?oc=5",
+      "published": "2026-10-26T14:37:01Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US Military Declares Strait of Hormuz Cleared of Mines After Safeguarding 1.5 Billion Barrels of Oil, Yet Fresh Tanker Strikes Expose the Fragile Reality Behind Global Energy Supplies &nbsp;&nbsp; Istituto Impariamo"
+     },
+     {
+      "title": "India's BPCL to Cut Russian Oil Imports Due to Higher Prices - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSC1EZUxMN2xiRnpHbk5XdTV2aFdjYm8xU3Y4aloyc2JtTDJ5X1ZTWVpSck9qR3VIZmZ2clNhcW5VWmZQeUVfOXFfdEotaGpwNUZBcGN5VlBIUkZta0VULXZsS1BKaGhHa0dVWldxMTlZWWdENDVmUWhjdGIzTVB5THY1MHNRZkF1ejVHVzFyaTNIN0hwMWtwMlc5VHFZSWtGS25FYXNkQXNzMjRxSm9TUnFqT3pIUdIBuwFBVV95cUxQUmFsRzdHLWlteTVLem5qZEdfX09YQ3Q4VVNUX1BOQjlnUE9YQ01hN2FIbEFyWV94dEtwakhIV1RmSURyajJXOU1NblQ1LXpmdGNfT191V0o2OVp1UWp0UkZLM1JjZGhmemlqWEFkV05mRVVmYVRobGZrOS16UUN1MlB3TGl2aHl3UjBhMTdBRjFtQ2dPSUJ3VmR1MmNSUEFXYkFFcmV2dVAxMFdKR21JSXQzc2JzLW1OdkRN?oc=5",
+      "published": "2026-10-26T14:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "India's BPCL to Cut Russian Oil Imports Due to Higher Prices &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "UKMTO reports more tankers struck in Hormuz - Quantum Commodity Intelligence",
+      "source": "Quantum Commodity Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTjd1SjFyMDRfc0hZNzBtbjNzemE3UmFoa3BhalM5akphSmZ5V1RSZUdXeDdQbGJmX3VDYm95SUFDNk5ZdHpfMjFMSUEwOWVXcGJoMF9BUktyd0dwR0RPR0E0OGhESnI2WXFZT2dfc3YyR2RhSWtFRXV5aHpqcDgxcHBoWl90dHBYdmFEdXRIVQ?oc=5",
+      "published": "2026-10-26T14:22:21Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "UKMTO reports more tankers struck in Hormuz &nbsp;&nbsp; Quantum Commodity Intelligence"
+     },
+     {
+      "title": "Houthis claim Fresh Strikes on Riyadh Airport, Saudi Arabia\u2019s Key Oil Pipeline - Daily Pakistan",
+      "source": "Daily Pakistan",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWVJGdVRFdno5SmxxNjU5NGFYMFZYM3U0aWZhcVh0MF9QQW03Vlo0WDFILU1VcFBfX1l1Umd6WjlJSlNJdXp1d2hsc0w2LUFUN1FlU0xvSjd1d0Y3SEZINjJ3X2R2STdISUhqRzZldmRybjFjREtsTXZLb2dhT0o1YV9WSnNyM0hVZEVkY0Q3ZFRSVEdNaFRmUi1veHRLbUlRdVNyX1JCSF9jRzRydXc4M2NvNVVzYVNYbl96Zg?oc=5",
+      "published": "2026-10-26T14:19:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Houthis claim Fresh Strikes on Riyadh Airport, Saudi Arabia\u2019s Key Oil Pipeline &nbsp;&nbsp; Daily Pakistan"
+     },
+     {
+      "title": "Oil Edges Lower From Six-Month High as Traders Assess Iran Risks - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNFpHYTlFcXR2RGt0NHhpMWtQcTRwdTktRHJKZGJIODZ4RldHbUFZODFIMXBRZkRObXAzN3lxZE1NV0QtOVlmaDc3S0R1YWV0S2ExZmpJTWlYb1RITGIzZTYyR0xkT0c0WXdvNHExUVZJUURPbEZ2MWoyc3NyNkRWNzB5c3VUVVFwMHppaWRIWmxoaDVNRjM5dndha3hTZw?oc=5",
+      "published": "2026-10-26T14:10:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Edges Lower From Six-Month High as Traders Assess Iran Risks &nbsp;&nbsp; Bloomberg.com"
+     },
+     {
+      "title": "Stocks See Support Ahead of Busy Week as Crude Oil Prices Ease - Barchart.com",
+      "source": "Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZEpKXzdpd3ZhMEloazZjLWxVMllRYjJTOHcyT1l3em1TVEFrWmE3MnJkUGZKQXgtTWhFN0ZvdUNXQjdVRDhlX0dmY2EwVWFBV19yU2hUUGJyT1dQMFQwRmNhY1ViX1M4UnVUWS1NM1Z3ckNFOEs1eHVRN1RtWlk3dlBLV0tvVnBiRGduZ29tdVR3ekx3ZG5VOHJPU1BqMXU4Y1FZWUxSSDhQUQ?oc=5",
+      "published": "2026-10-26T14:01:42Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Stocks See Support Ahead of Busy Week as Crude Oil Prices Ease &nbsp;&nbsp; Barchart.com"
+     },
+     {
+      "title": "Super El Nio May Soften Winter Energy Squeeze - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNajBnU01DYzB3dm1MdGU0OEd3b3dwelF1dll4UXpnRkN2S1RqdWxmU3c5LWo5MHNudnFvRTFFLVhURHdzWGVFNlU1SXJLdkl3NkZPN3oxRVNJaW5WSk1qelQwVnFqOWZ2a29vU0JvdFI0X3ZhcEpHT3hydVZrU051TmZDeDRPQ0tmS0ZHZWh3Q0FXSmJpZk9QatIBngFBVV95cUxNTmhIejdDSEs4d3lhQVNkcnA5WXgtQndZdkFWTmU2ampnYnk5OUQwenkyR1Z2dUVIczlnTHhWY1ZmVDN2dnJVMmNkV2libjBOcGQ4YzNWMVlsRkk4bTFyUW5fNl9Td1ljOTFEdUkzYkNBUmdLLS1Wd1JqQ1A4TDhUU3JrdWo2OFotTk5Xem1MbWJlMzdjTkJBQWxJQVNSUQ?oc=5",
+      "published": "2026-10-26T14:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Super El Nio May Soften Winter Energy Squeeze &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices fall despite Saudi attacks and rising strait of Hormuz risks - Nairametrics",
+      "source": "Nairametrics",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMWV2dTkwdVB3bkZhdDM3akFTdXpZV1dtOWduYjM0eDc0a3dJbEV3N2JSREFZeXpIU3h4ZmctTFI1bWZZXzRlY2MxelFzZ056OTB3QXVGa09yT2FUSUQwak1sZXh5eXhZVlFJQmVFZ2VkOFh2WThXWDM3RWhQS1p6UEh2R1k2MVlaSU9FNWQ5VUFZNU9NVmFpQlRRNFdBZ0dHMlhfWjlhM2ZPUVpF?oc=5",
+      "published": "2026-10-26T13:56:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices fall despite Saudi attacks and rising strait of Hormuz risks &nbsp;&nbsp; Nairametrics"
+     },
+     {
+      "title": "Stocks Gain Before Tech Earnings as Oil Declines: Markets Wrap - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeGVmU0kxdjhvRF9ZU0VaeFFkODlaUTRlN1dQaHNSV1JiOTBwSV9nb1RKejQ2clRzQ0doN3VjVEtHb0RaTlVBNUdhMFI3aUtTRHB1dEE3NWdXZS1ZbktuMVUtYnE0ellyLWlNa29aWThtQkdSQW5FRzFIVUZlb3hEUlg1czdXd3FyV0VwNW0wVEMyTUg4ZEpoTVg0SzIyZ0VmLTAxOUlPTUtLXy1kS0ozbw?oc=5",
+      "published": "2026-10-26T13:51:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Stocks Gain Before Tech Earnings as Oil Declines: Markets Wrap &nbsp;&nbsp; Bloomberg.com"
+     },
+     {
+      "title": "Market Wrap: Clear rebound in Europe against falling oil price. Assets related to Brazil in retreat - XTB.com",
+      "source": "XTB.com",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNOHQ1Mk5yUUpNZXZ2aXg0WkJfazh2eC0wckVudjFEUXJfYlhsRHNtQW1CV1FtQmtrSzRrTWNPQTI3blVxUjE5YkVIZzVOLWd1ZmswblRWVFV3MmhIcGlsRUZ6UU1jSmpxdjNlT1BiOUx0SFoxV2NHRG9XN0owek1CZnZEcVRLSkh0Rl9XNEFvV1l4ZWkwbTJHbW1sSU9VOGdCa1lsTmtVclZoOTdZUkRyQzRtdzA1cXJZbzNRcUJ5bDFDOWZCQ1Z4VXd0WVNZWEpLYnVESUNjcDNXT092N3hLS2xaT0F3T3lFd1pZ?oc=5",
+      "published": "2026-10-26T13:46:40Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Market Wrap: Clear rebound in Europe against falling oil price. Assets related to Brazil in retreat &nbsp;&nbsp; XTB.com"
+     },
+     {
+      "title": "IEA's Birol Energy Prices Won't Return to Pre-War Levels in 2027 - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUkpHQ0xiTXZhV3czZEFKdTQzV0F0YW8yTUdRMmlkS3JxQ3FFWTRjZVZNTHhIeTdxek81QVFad1FacFUxLVhGSElZZHV4VVlOZ3JsY284dVFYeE9NTUNxTk1vNVdiUlQtMGwtMGR1Rll4aXFJOHRYNEVobU9xSzN5cUZMM1c5YjNKbnFEeU1DQjFISGh4bzRXTjItVXUtTVdkS3VnXzVQMUhUZXV2b2d1MDZaYl8xend4X2fSAb8BQVVfeXFMTUx3Ny1XVmpMSWg4aGw1RGJfOWJZTmk5eUFnTGNlWWRfa3RnSHZJaEdOUDlyZlNBV29wVUw3b1Z5U0phMTZUb2N2NEd5ODZmUWp5UHJzc0xkVlNEdWdyUmhMeTNvX1hBWHBiQnN2Q2Jnb2dsM2czdk1iY2lQaUpNV1V2WVI5a0FGV0FLTVJpRVRDUDBnb05qNV8xdlI2emdsZkpxRHFTVTBIREw0TjM0SXU0LXF2VlJQblRBTXdoQk0?oc=5",
+      "published": "2026-10-26T13:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "IEA's Birol Energy Prices Won't Return to Pre-War Levels in 2027 &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "As Trump brags about U.S. oil and gas company profits, his stocks gained millions during Iran war - CBS News",
+      "source": "CBS News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNU1NNM0tTeE1oc2ZkTUdxRUlwZ2h1OFpGdWd0bjZqbmYxb0NkM1JpVEF6Sm0tQzBfU05IZ2pnb2FkaXVGQUc2Y213MWJWclA3cl9tT3BlZlplek9rTlhGLXNrdzZPNHEtc2ZCU0pxWXJ3NHowTXgxN2JVekgyM2RRYlBmM2YzbW5jdTJMWGFLODZYSnkyb3BxNHhtYWY3dw?oc=5",
+      "published": "2026-10-26T13:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "As Trump brags about U.S. oil and gas company profits, his stocks gained millions during Iran war &nbsp;&nbsp; CBS News"
+     },
+     {
+      "title": "Middle East latest: Egypt's parliament approves military support for Saudi Arabia - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYXpXeGJySlQxeV9XYjNxYnlSSUVtSEZibERTbTVKcG1seloyZXYyc3JvbEtUT0JtamQ1N2YtbEYxZWR4MW1CTDJrbDUyYzVhOVFocDk1RURYWl82TFZFWmxNRW1UT1EtVE1INjR1bkNrbWhZN1lPSWZtclU0VFA3SXQtdU9Kay11UWI5YzZJaUU3R3MtSnBHdg?oc=5",
+      "published": "2026-10-26T13:29:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East latest: Egypt's parliament approves military support for Saudi Arabia &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Gold prices squeezed between rising oil and falling yields, Fresnillo silver output declines in 2026 \u2013 Heraeus - Kitco",
+      "source": "Kitco",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcVNMQnZQS3ZmcmtSNElycE9ZX21HblVQbGlDdTI3czFYaGcydnFqV0lmbG9sYTBxMzdXbFlmV01oVUg3alZxcE5UZl9lVVZUN25idXNPNGxWekZPenktaTNiR0xKVW5PT2djQVdsX3hMQUc4TWhhZEtqa0szQjU3aVNJaVVtV05JN1o3UmdkcWhoY2Z2bmdnVl9SY2NfaUxwakJhSDRtZkZVYWNkVV9UaFg4WktLVFItRllRM2NB?oc=5",
+      "published": "2026-10-26T13:26:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold prices squeezed between rising oil and falling yields, Fresnillo silver output declines in 2026 \u2013 Heraeus &nbsp;&nbsp; Kitco"
+     },
+     {
+      "title": "Oil Futures Post Weekly Gains on Middle East Escalation Fears - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUUprNnpxZE5idzlOR3htMEsyS0FmSHFfUi1EZ2dpZEVzNGd5ckRsQnVob0daYXdVMzZBbm9YdFBHQk5fV0NIeU5oZjZZdDdCY0FGbXRoUXNtblo4UmF2OUR6VG54LW95ekJ0eFNPbjBRUGp6R1F0S0xsdEc3MmZReXpCT0lIUmxyR1Npd2pYMlRFb3RndXBjU05OTXM0bFBmazFkY09lcnVJUG1LU3ItNlJpYnl5X01x?oc=5",
+      "published": "2026-10-26T13:25:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Futures Post Weekly Gains on Middle East Escalation Fears &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Singapore, Saudi Aramco agree to store crude oil in rock caverns - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTndRNDRPTVVYRWFnMktsQ3RUUS04d2lPSGcwVlhhNFpPMjB2TXRMeFVwcGVQUjRkRmprQlpPUi1KRmpWc3JIdmRpY0JYc3R6dUZOMXh6RnIybGhadXgyZnQ0YS1UTzl3RXl3Z3A0SjdCU3JwenIzY3MwUVprTlJhcndtMzN4SzRTV2lUT0VJX0tEZjMtZlYtZHVBa0pRTEhVcldneFZFRTg?oc=5",
+      "published": "2026-10-26T13:22:14Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Singapore, Saudi Aramco agree to store crude oil in rock caverns &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "Oil prices steady after six-month surge as geopolitical risks persist - rajasthan.economictimes.indiatimes.com",
+      "source": "rajasthan.economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPOE13Yk45aGtfSXdWOE5kejNOZmQ4QW45X0NlMW9xR2FlYzFNUGtLYTM2ZnVVM0s5WThKb0RsYkg3MmpSTWdwWUJRY2p3aGdFZmZhWjQzN0Q3R0cxWXBUbW9pNFZXM1lvTUN5Q2duWWxtQ1dHRFZCS3J6NGNXZjEtaTJnUnFNSDNnZktDVTAxNGVjandlUVlVSUoyWGtHQkpSM1NvUjV6SmRfSUNNdGtiMEdkengwNVBVc1N5WXQ4M09FbWo0V0Z5SU9QS3AyZE9KWTZfNGln0gHaAUFVX3lxTE5adEZKZU44Nm16aDdTcHhaUEFHOWRmdlZYSzRkNTltSXYwRGtzc20zdldzc2xzdl9JaWh4cEN5dXRVNHQ0ckNLc0FiWEZMNzlPcXRoZ2FMU0Q0T29hcFFaQlRXdVd6TUlzazQ4YTdCNGlmaGRmR2V4RVpQVTF3ejZ2S1hSVXp3NzlBcHo0bEVHSjdxRHVEREFtd3IweWVIcEprMjAtMk5DdllBbmljVWNkY0pRYkZHM3VETzdrN0lDSjBuMEYtWU5QMFZoUHpGT2N6OWNySG42NWZR?oc=5",
+      "published": "2026-10-26T13:20:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices steady after six-month surge as geopolitical risks persist &nbsp;&nbsp; rajasthan.economictimes.indiatimes.com"
+     },
+     {
+      "title": "US Stock Futures Point Higher as Crude Oil Retreats and Investors Await Fed Meeting: Dow Jones, S&P, Nasdaq, Wall Street - Yahoo Finance UK",
+      "source": "Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaTR4cGxWcm92cG9jSmt5Wm1MdWhBQmp0ZkpLVUV4WGlabUlqWDF4VXRWUER2TEZUT055OVdtWFNWbzhSWklZdXFYcEtNMjV0X0JkLVlsSGVQeC0yZGxYMktMR1Z1WmxGaFNfMmtzTGNrUnFlbUxwSW5QZy1KNy1mZ25oZUo?oc=5",
+      "published": "2026-10-26T13:18:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US Stock Futures Point Higher as Crude Oil Retreats and Investors Await Fed Meeting: Dow Jones, S&P, Nasdaq, Wall Street &nbsp;&nbsp; Yahoo Finance UK"
+     }
+    ]
+   },
    {
     "id": "wti-1792966249",
     "detected_at": "2026-10-25T22:20:56.703696Z",
