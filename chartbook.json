@@ -1,6 +1,6 @@
 {
  "page": "chartbook.html",
- "built_at": "2026-10-26T09:54:51-06:00",
+ "built_at": "2026-10-30T11:53:11-06:00",
  "generator": "builders/site/build_chartbook.py",
  "series": [
   {
@@ -2698,20 +2698,16 @@
    "source": "U.S. Energy Information Administration",
    "pull": "wcsb-weekly-pull-wednesday (bin/pull_eia_wpsr.py)",
    "cadence": "weekly",
-   "vintage": "EIA Weekly Petroleum Status Report. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report. Data through October 23, 2026.",
    "stats": {
-    "level": 412.517,
-    "seasonal_mean": 441.0972333333333,
-    "z": -1.212369040580285,
+    "level": 410.625,
+    "seasonal_mean": 443.4978333333333,
+    "z": -1.4259083652134974,
     "seasonal_pct": 32.0,
-    "date": "2026-10-16"
+    "date": "2026-10-23"
    },
-   "narrative_text": "U.S. crude oil inventories stand at 412.5 million barrels, 28.6 million barrels (6.5 percent) below the ten-year seasonal average, a gap of 1.2 standard deviations, and in the 32nd percentile of readings for this part of the year since 2010. Stocks drew 3.1 million barrels on the week. Crude is the master stock: sustained draws against the seasonal average are the tightening signal the whole complex prices off, and the level behind every prompt spread. Two or three weekly builds back toward the average would retire the tightening read.",
+   "narrative_text": "U.S. crude oil inventories stand at 410.6 million barrels, 32.9 million barrels (7.4 percent) below the ten-year seasonal average, a gap of 1.4 standard deviations, and in the 32nd percentile of readings for this part of the year since 2010. Stocks drew 1.9 million barrels on the week. Crude is the master stock: sustained draws against the seasonal average are the tightening signal the whole complex prices off, and the level behind every prompt spread. Two or three weekly builds back toward the average would retire the tightening read.",
    "points": [
-    [
-     "2021-10-22",
-     430.812
-    ],
     [
      "2021-10-29",
      434.102
@@ -3751,6 +3747,10 @@
     [
      "2026-10-16",
      412.517
+    ],
+    [
+     "2026-10-23",
+     410.625
     ]
    ]
   },
@@ -3762,20 +3762,16 @@
    "source": "U.S. Energy Information Administration",
    "pull": "wcsb-weekly-pull-wednesday (bin/pull_eia_wpsr.py)",
    "cadence": "weekly",
-   "vintage": "EIA Weekly Petroleum Status Report. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report. Data through October 23, 2026.",
    "stats": {
-    "level": 27.594,
-    "seasonal_mean": 38.09153333333334,
-    "z": -0.6379899486415472,
-    "seasonal_pct": 36.0,
-    "date": "2026-10-16"
+    "level": 26.97,
+    "seasonal_mean": 38.466766666666665,
+    "z": -0.699314395692573,
+    "seasonal_pct": 32.0,
+    "date": "2026-10-23"
    },
-   "narrative_text": "Cushing inventories stand at 27.6 million barrels, 10.5 million barrels (27.6 percent) below the ten-year seasonal average, a gap of 0.6 standard deviations, and in the 36th percentile of readings for this part of the year since 2010. Stocks built 1.0 million barrels on the week. Cushing, Oklahoma is the WTI delivery point: its level against the seasonal average is the prompt WTI spread story in one number, and it caps how bearish the outright can trade. A rebuild toward the seasonal average would ease the prompt tightness a low reading implies.",
+   "narrative_text": "Cushing inventories stand at 27.0 million barrels, 11.5 million barrels (29.9 percent) below the ten-year seasonal average, a gap of 0.7 standard deviations, and in the 32nd percentile of readings for this part of the year since 2010. Stocks drew 0.6 million barrels on the week. Cushing, Oklahoma is the WTI delivery point: its level against the seasonal average is the prompt WTI spread story in one number, and it caps how bearish the outright can trade. A rebuild toward the seasonal average would ease the prompt tightness a low reading implies.",
    "points": [
-    [
-     "2021-10-22",
-     27.332
-    ],
     [
      "2021-10-29",
      26.416
@@ -4815,6 +4811,10 @@
     [
      "2026-10-16",
      27.594
+    ],
+    [
+     "2026-10-23",
+     26.97
     ]
    ]
   },
@@ -4826,20 +4826,16 @@
    "source": "U.S. Energy Information Administration",
    "pull": "build_chartbook EIA products step (bin/eia_api.py, same connector as the Wednesday WPSR pull)",
    "cadence": "weekly",
-   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 23, 2026.",
    "stats": {
-    "level": 205.31,
-    "seasonal_mean": 219.74663333333334,
-    "z": -2.027012237300307,
-    "seasonal_pct": 14.0,
-    "date": "2026-10-16"
+    "level": 209.18,
+    "seasonal_mean": 217.7013,
+    "z": -1.1565768682404909,
+    "seasonal_pct": 30.0,
+    "date": "2026-10-23"
    },
-   "narrative_text": "U.S. gasoline inventories stand at 205.3 million barrels, 14.4 million barrels (6.6 percent) below the ten-year seasonal average, a gap of 2.0 standard deviations, and in the 14th percentile of readings for this part of the year since 2010. Stocks drew 3.0 million barrels on the week. Gasoline stocks set the summer crack tone and, into the autumn shoulder, the pace at which refiners can ease runs: a low seasonal percentile is refinery-margin support. A seasonal build through the shoulder months would close the tightness case.",
+   "narrative_text": "U.S. gasoline inventories stand at 209.2 million barrels, 8.5 million barrels (3.9 percent) below the ten-year seasonal average, a gap of 1.2 standard deviations, and in the 30th percentile of readings for this part of the year since 2010. Stocks built 3.9 million barrels on the week. Gasoline stocks set the summer crack tone and, into the autumn shoulder, the pace at which refiners can ease runs: a low seasonal percentile is refinery-margin support. A seasonal build through the shoulder months would close the tightness case.",
    "points": [
-    [
-     "2021-10-22",
-     215.746
-    ],
     [
      "2021-10-29",
      214.258
@@ -5879,6 +5875,10 @@
     [
      "2026-10-16",
      205.31
+    ],
+    [
+     "2026-10-23",
+     209.18
     ]
    ]
   },
@@ -5890,20 +5890,16 @@
    "source": "U.S. Energy Information Administration",
    "pull": "build_chartbook EIA products step (bin/eia_api.py, same connector as the Wednesday WPSR pull)",
    "cadence": "weekly",
-   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 23, 2026.",
    "stats": {
-    "level": 104.286,
-    "seasonal_mean": 126.8865,
-    "z": -1.3183139597409996,
-    "seasonal_pct": 4.0,
-    "date": "2026-10-16"
+    "level": 102.824,
+    "seasonal_mean": 125.17493333333333,
+    "z": -1.371094164989134,
+    "seasonal_pct": 2.0,
+    "date": "2026-10-23"
    },
-   "narrative_text": "U.S. distillate inventories stand at 104.3 million barrels, 22.6 million barrels (17.8 percent) below the ten-year seasonal average, a gap of 1.3 standard deviations, and in the 4th percentile of readings for this part of the year since 2010. Stocks built 1.7 million barrels on the week. Distillate is the winter product and the freight economy's fuel: low stocks into winter are heating-season upside for cracks and a squeeze risk in the heating oil leg. A mild winter, or a demand miss that rebuilds stocks, would unwind the tightness.",
+   "narrative_text": "U.S. distillate inventories stand at 102.8 million barrels, 22.4 million barrels (17.9 percent) below the ten-year seasonal average, a gap of 1.4 standard deviations, and in the 2nd percentile of readings for this part of the year since 2010. Stocks drew 1.5 million barrels on the week. Distillate is the winter product and the freight economy's fuel: low stocks into winter are heating-season upside for cracks and a squeeze risk in the heating oil leg. A mild winter, or a demand miss that rebuilds stocks, would unwind the tightness.",
    "points": [
-    [
-     "2021-10-22",
-     124.962
-    ],
     [
      "2021-10-29",
      127.122
@@ -6943,6 +6939,10 @@
     [
      "2026-10-16",
      104.286
+    ],
+    [
+     "2026-10-23",
+     102.824
     ]
    ]
   },
@@ -6954,20 +6954,16 @@
    "source": "U.S. Energy Information Administration",
    "pull": "build_chartbook EIA products step (bin/eia_api.py, same connector as the Wednesday WPSR pull)",
    "cadence": "weekly",
-   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 23, 2026.",
    "stats": {
-    "level": 105.846,
-    "seasonal_mean": 91.73126666666667,
-    "z": 1.2806643793909138,
-    "seasonal_pct": 98.0,
-    "date": "2026-10-16"
+    "level": 105.735,
+    "seasonal_mean": 91.45396666666667,
+    "z": 1.3265220764125842,
+    "seasonal_pct": 96.0,
+    "date": "2026-10-23"
    },
-   "narrative_text": "U.S. propane inventories stand at 105.8 million barrels, 14.1 million barrels (15.4 percent) above the ten-year seasonal average, a gap of 1.3 standard deviations, and in the 98th percentile of readings for this part of the year since 2010. Stocks drew 0.5 million barrels on the week. Propane is a heating fuel and a Canadian export staple: U.S. stocks against the seasonal average frame the winter pull on western Canadian supply. A warm winter that leaves stocks high into spring would change the read.",
+   "narrative_text": "U.S. propane inventories stand at 105.7 million barrels, 14.3 million barrels (15.6 percent) above the ten-year seasonal average, a gap of 1.3 standard deviations, and in the 96th percentile of readings for this part of the year since 2010. Stocks drew 0.1 million barrels on the week. Propane is a heating fuel and a Canadian export staple: U.S. stocks against the seasonal average frame the winter pull on western Canadian supply. A warm winter that leaves stocks high into spring would change the read.",
    "points": [
-    [
-     "2021-10-22",
-     75.666
-    ],
     [
      "2021-10-29",
      76.098
@@ -8007,6 +8003,10 @@
     [
      "2026-10-16",
      105.846
+    ],
+    [
+     "2026-10-23",
+     105.735
     ]
    ]
   },
@@ -8018,19 +8018,15 @@
    "source": "Exchange futures (via crack_321 daily file)",
    "pull": "crude-oil-morning-digest (src/ingest/build_crack_321.py)",
    "cadence": "daily",
-   "vintage": "Exchange front-month futures, via the daily crack file. Data through October 26, 2026.",
+   "vintage": "Exchange front-month futures, via the daily crack file. Data through October 30, 2026.",
    "stats": {
-    "level": 101.56,
-    "percentile_since_2020": 94.11078717201165,
-    "chg_30d": 9.150000000000006,
-    "date": "2026-10-26"
+    "level": 103.79,
+    "percentile_since_2020": 95.63699825479931,
+    "chg_30d": 13.370000000000005,
+    "date": "2026-10-30"
    },
-   "narrative_text": "WTI front month closed at $101.56 on October 26, 2026, in the 94th percentile of daily closes since 2020 and +9.15 dollars over the last thirty days. The outright is context rather than the trade: the differentials and calendar spreads this site follows are struck off this level, and its trend sets the tone they trade in. A sustained break of the recent range, either way, would reset that context.",
+   "narrative_text": "WTI front month closed at $103.79 on October 30, 2026, in the 96th percentile of daily closes since 2020 and +13.37 dollars over the last thirty days. The outright is context rather than the trade: the differentials and calendar spreads this site follows are struck off this level, and its trend sets the tone they trade in. A sustained break of the recent range, either way, would reset that context.",
    "points": [
-    [
-     "2023-10-26",
-     83.21
-    ],
     [
      "2023-10-30",
      82.31
@@ -9536,8 +9532,16 @@
      103.27
     ],
     [
-     "2026-10-26",
-     101.56
+     "2026-10-27",
+     99.9
+    ],
+    [
+     "2026-10-29",
+     102.0
+    ],
+    [
+     "2026-10-30",
+     103.79
     ]
    ]
   },
@@ -9555,10 +9559,10 @@
     "percentile_since_2021": 73.35398915569326,
     "date": "2026-08-31",
     "tmw_tenor": "2026-12",
-    "tmw_settle": -28.5,
-    "tmw_settle_date": "2026-10-23"
+    "tmw_settle": -30.5,
+    "tmw_settle_date": "2026-10-29"
    },
-   "narrative_text": "The assessed WCS discount at Hardisty was $18.57 a barrel in the last published reading, August 31, 2026 (Natural Resources Canada publishes monthly, about two months in arrears), in the 73rd percentile of daily assessments since 2021. The tradable edge moves faster: the ICE WCS 1A index future (TMW) for December 2026 settled at -$28.50 on October 23, 2026. The assessed series is the slow, official record of what the basis did; the TMW settle is what it costs to trade it now. A narrowing of the assessed discount toward twelve dollars, or a blowout past twenty-five, would each rewrite this block.",
+   "narrative_text": "The assessed WCS discount at Hardisty was $18.57 a barrel in the last published reading, August 31, 2026 (Natural Resources Canada publishes monthly, about two months in arrears), in the 73rd percentile of daily assessments since 2021. The tradable edge moves faster: the ICE WCS 1A index future (TMW) for December 2026 settled at -$30.50 on October 29, 2026. The assessed series is the slow, official record of what the basis did; the TMW settle is what it costs to trade it now. A narrowing of the assessed discount toward twelve dollars, or a blowout past twenty-five, would each rewrite this block.",
    "points": [
     [
      "2021-08-02",
@@ -10866,20 +10870,16 @@
    "source": "Exchange futures (computed)",
    "pull": "crude-oil-morning-digest (src/ingest/build_crack_321.py)",
    "cadence": "daily",
-   "vintage": "Computed daily from front-month WTI, RBOB gasoline, and heating oil futures. Data through October 26, 2026.",
+   "vintage": "Computed daily from front-month WTI, RBOB gasoline, and heating oil futures. Data through October 30, 2026.",
    "stats": {
-    "level": 52.0662,
-    "percentile_since_2020": 91.13702623906705,
+    "level": 48.3326,
+    "percentile_since_2020": 89.12158231529959,
     "series_high": 75.311,
     "series_high_date": "2026-08-28",
-    "date": "2026-10-26"
+    "date": "2026-10-30"
    },
-   "narrative_text": "The 3-2-1 crack spread printed $52.07 a barrel on October 26, 2026, in the 91st percentile of daily readings since 2020. The crack is the refining system's margin: at this level refiners run as hard as equipment allows, which is crude demand support, and product supply eventually answers. A crack back under twenty-five dollars would signal margin-driven run cuts and soften the crude bid.",
+   "narrative_text": "The 3-2-1 crack spread printed $48.33 a barrel on October 30, 2026, in the 89th percentile of daily readings since 2020. The crack is the refining system's margin: at this level refiners run as hard as equipment allows, which is crude demand support, and product supply eventually answers. A crack back under twenty-five dollars would signal margin-driven run cuts and soften the crude bid.",
    "points": [
-    [
-     "2023-10-26",
-     22.5754
-    ],
     [
      "2023-10-30",
      21.3782
@@ -12385,8 +12385,16 @@
      56.4336
     ],
     [
-     "2026-10-26",
-     52.0662
+     "2026-10-27",
+     54.8056
+    ],
+    [
+     "2026-10-29",
+     53.484
+    ],
+    [
+     "2026-10-30",
+     48.3326
     ]
    ]
   },
@@ -13913,72 +13921,6 @@
    ]
   },
   {
-   "id": "brent_smile",
-   "title": "The Brent smile",
-   "section": "Volatility & skew",
-   "unit": "percent implied volatility",
-   "source": "ICE Futures Europe options EOD (report 166)",
-   "pull": "broker-marks-pull (ICE options reports)",
-   "cadence": "daily",
-   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
-   "stats": {
-    "futures_ref_far": 111.7,
-    "futures_ref_near": 116.72,
-    "date": "2026-10-23"
-   },
-   "narrative_text": "Brent options charge for a price spike, not a crash. On October 23, 2026 the fear curve for the November 26 expiry sits lowest near the futures price of $111.70 and climbs hard to the right. Calls struck far above the market carry much higher fear prices than puts the same distance below it. The front expiry is stronger still: the call struck about twenty percent above the future, at 141, trades at 90.4 percent fear. That is 43.6 points over the middle. In stock markets, the expensive side is crash insurance. In crude during a supply scare it flips. Supply can vanish overnight. Demand only fades. So the market pays up for the right to buy barrels at a fixed price. This curve is that fear, drawn.",
-   "points": []
-  },
-  {
-   "id": "fear_gauges",
-   "title": "The fear gauges",
-   "section": "Volatility & skew",
-   "unit": "points of implied volatility",
-   "source": "ICE Futures Europe options EOD (report 166)",
-   "pull": "broker-marks-pull (ICE options reports)",
-   "cadence": "daily",
-   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
-   "stats": {
-    "dates": 7,
-    "brent_rr25": 8.87,
-    "brent_tail_prem": 8.02,
-    "wti_rr25": 7.49,
-    "date": "2026-10-23"
-   },
-   "narrative_text": "The fear gauges through October 23, 2026. Traders pay more for spike protection than crash protection in both Brent and WTI. The dashed lines show how far that fear runs: far-out spike insurance against the middle of the market. The series starts October 15, 2026. Read the shift in these lines, not one day's level. That is the tradeable part. <span class=\"dim\">(Technical names: risk reversal and tail premium.)</span>",
-   "points": []
-  },
-  {
-   "id": "episode_vol",
-   "title": "Is the fear backed by missing barrels?",
-   "section": "Volatility & skew",
-   "unit": "",
-   "source": "ICE options EOD (report 166); global barrels ledger",
-   "pull": "broker-marks-pull; global-barrels-ledger crons",
-   "cadence": "daily; weekly and monthly",
-   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
-   "stats": {
-    "live_episode": true,
-    "brent_rr25_1m": 8.87,
-    "brent_tail_premium_front": 43.64,
-    "hormuz_transits_visible_per_day": 0.44,
-    "hormuz_transits_prewar_per_day": 36.98,
-    "options_date": "2026-10-23",
-    "front_brent": 116.72,
-    "back_brent": 86.74,
-    "front_premium_usd": 29.980000000000004,
-    "implied_outage_e015_mbd": 5.339993082776114,
-    "implied_outage_e010_mbd": 3.559995388517409,
-    "implied_outage_e020_mbd": 7.119990777034818,
-    "ledger_outage_mbd": 3.073170731707318,
-    "premium_gap_mbd": 2.2668223510687957,
-    "front_move_pct_window": 10.196374622356497,
-    "back_move_pct_window": 1.9511048425011612
-   },
-   "narrative_text": "The options market charges for a price spike. The barrels only partly back it. The options market is pricing a violent jump. Traders are paying 8.9 points more for protection against a price spike than against a crash. The fear is on the upside. One month out, far-out spike insurance costs 8.0 points more than middle-of-the-market insurance. At the front expiry it is stronger: the 141 call trades at 90.4 percent, 43.6 points over the middle. Nobody is paying up for crash protection. One day's far-out read rests on one strike's settlement. Treat it as rough; the gauges above carry the cleaner levels. Mostly, the barrels still move. They just move where the tracking cannot see them. What we can see: ships crossing Hormuz that broadcast their position averaged 0.44 a day in the latest window (as of 2026-10-18), against 36.98 a day before the war. That counts ships we can see. It does not count barrels. Ships run dark in a scare. Kharg Island: no export ship capacity showed in the latest window. That is ships seen, not cargo counted. What the tracking firms say: Kpler puts Hormuz flows, including ship-to-ship transfers in the Gulf of Oman, at about 14 million barrels a day, roughly 82 percent of before the war. It is their claim, not our count. The same firm puts Middle East exports at 24.6 million barrels a day in the week to 2026-10-18. The part we cannot see: about 29.9 shiploads a day move where the tracking cannot see them. That is an estimate built from the two lines above. It is not a count. A hard print: Fujairah product stocks were 6.8 million barrels in the week ended 2026-10-12, against about 20.7 million before the war. Fujairah, the bypass port, moved 72,586 deadweight tons a day of ship capacity. Front Brent (December 2026) settled at $116.72 on October 23, 2026, $29.98 over the December 2027 contract at $86.74. The back contract is the market's own price for Brent after the scare passes. So the gap is what the market pays for the scare itself. One rule of thumb turns that gap into missing barrels: a 34.6 percent front gap prices a supply loss of about 5.3 million barrels a day. The setting matters, so we print it: 3.6 million at the soft setting and 7.1 million at the hard one, on about 103 million barrels a day of world supply. <span class=\"dim\">(The rule of thumb is the one Robin Brooks publishes: a short-run price response of 0.15.)</span> The best physical read is smaller. Tracking firms put Hormuz flows at about 14 million barrels a day, roughly 82 percent of before the war (Kpler). That is an outage of about 3.1 million barrels a day. The difference, about 2.3 million barrels a day, is the part price is paying for that the physical record does not confirm. Since October 15, 2026: the front moved +10.2 percent and the December 2027 contract +2.0 percent. Read: the front ran and the back sat still. That is a scare premium, not the whole curve repricing. Fade the wing if the tracking firms hold: Hormuz flows stay near 82 percent of before the war, Kharg loadings show up again, and Fujairah stocks build back from 6.8 million barrels toward pre-war levels. Every quiet week with barrels moving takes money out of spike insurance. Own the tail if the claims break: the tracking firms cut their Middle East export figures from 24.6 million barrels a day, the ships we can see stay near 0.44 crossings a day, Kharg stays empty, and Fujairah stocks draw further. Claims rolling over is the sign the shortage is physical. Then spike insurance reprices faster than the flat price.",
-   "points": []
-  },
-  {
    "id": "td3c_freight",
    "title": "TD3C tanker earnings",
    "section": "On the bench",
@@ -13986,16 +13928,16 @@
    "source": "Baltic Exchange (via thedcn.com.au)",
    "pull": "freight-watch-weekly",
    "cadence": "weekly",
-   "vintage": "Baltic Exchange via freight pull. Data through October 16, 2026.",
+   "vintage": "Baltic Exchange via freight pull. Data through October 23, 2026.",
    "stats": {
-    "level": 1370193.0,
-    "percentile": 97.43589743589743,
+    "level": 1287851.0,
+    "percentile": 95.0,
     "series_record": false,
-    "worldscale": 1281.25,
-    "trigger": "In rotation: TD3C earnings in the 97th percentile of the series",
-    "date": "2026-10-16"
+    "worldscale": 1208.13,
+    "trigger": "In rotation: TD3C earnings in the 95th percentile of the series",
+    "date": "2026-10-23"
    },
-   "narrative_text": "Very large crude carrier (VLCC) earnings on the Middle East to China route, TD3C, printed $1,370,193 a day in the week of October 16, 2026 (Worldscale 1,281), in the 97th percentile of weekly readings since March 2024. Freight at this level is a tax on every long-haul barrel and reshuffles which grades can travel; the Freight Watch page tracks it route by route, including the Vancouver to Asia leg that prices TMX barrels. Four consecutive weeks back inside the normal band retires this chart to the archive below.",
+   "narrative_text": "Very large crude carrier (VLCC) earnings on the Middle East to China route, TD3C, printed $1,287,851 a day in the week of October 23, 2026 (Worldscale 1,208), in the 95th percentile of weekly readings since March 2024. Freight at this level is a tax on every long-haul barrel and reshuffles which grades can travel; the Freight Watch page tracks it route by route, including the Vancouver to Asia leg that prices TMX barrels. Four consecutive weeks back inside the normal band retires this chart to the archive below.",
    "points": [
     [
      "2025-07-04",
@@ -14152,6 +14094,10 @@
     [
      "2026-10-16",
      1370193.0
+    ],
+    [
+     "2026-10-23",
+     1287851.0
     ]
    ]
   }

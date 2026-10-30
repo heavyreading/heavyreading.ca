@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="inner/trade-log/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -623,6 +624,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -653,7 +706,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">The whole book</p><a class="mg-link" href="../../inner/book/index.html">The Book</a><a class="mg-link" href="../../inner/trade-ideas/index.html">Trade ideas</a><a class="mg-link" href="../../inner/vol-portfolio/index.html">Vol portfolio</a><a class="mg-link" href="../../inner/trade-log/index.html" aria-current="page">Trade log</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../maps/index.html">Maps</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -665,7 +718,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p class="vintage"><b>Vintage:</b> Latest marks: ICE settlements file 2026-10-29 (October 29, 2026). Entry references are the October 9, 2026 settles; that file is the last trading day before booking, and the October 12 file carries the same settles at zero volume, so the book marks flat at inception levels.</p>
 </section>
 <section id="book-today">
-<h2>The book today</h2>
+<h2>The book today<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Marked to</strong></td><td>October 29, 2026 (ICE settlements file 2026-10-29)</td></tr>
@@ -683,7 +736,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p>VaR basis: parametric, from daily changes in the ICE end-of-day settlements of the live marking tenors, at booked sizes. Settlements are public data; no broker marks are used anywhere on this page. Two limits ride with the figure: the archive starts October 1, 2026, so the sample is short, and traded settles understate gap risk in a freight shock. The booked adverse stress above is the harder bound.</p>
 </section>
 <section id="scoreboard">
-<h2>Scoreboard</h2>
+<h2>Scoreboard<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Booked</strong></td><td>5 trades: 2 with risk running, 1 sequenced, 1 folded into another trade, 1 stood down, 0 candidate, 0 closed</td></tr>
@@ -721,7 +774,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p>The marked series has 14 date(s). It is shown as a table, not a curve: a drawdown chart on this little history would be decoration, not information.
 </section>
 <section id="process-grades">
-<h2>Process grades: the traders, not the trades</h2>
+<h2>Process grades: the traders, not the trades<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p>The scoreboard above grades trades. This panel grades decisions, against what the cards said at the time: exits against the printed stop, size against the framework, conviction against outcomes, and the house view against its own printed triggers. Several cells are empty today, and the emptiness is the finding: the book has not yet frozen the entry data these grades need. Definitions and blind spots live in docs/PROCESS_GRADES.md; the engine is bin/process_grades.py, over the ledger, the marks history, and the view file's git history.</p>
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Grade</th><th>Graded</th><th>The grade</th></tr></thead>
@@ -734,7 +787,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </table></div>
 </section>
 <section id="targeting">
-<h2>Targeting: the fixed target, solved</h2>
+<h2>Targeting: the fixed target, solved<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p>The profit target is fixed at $15 to $20M. What flexes is the trade count and the size, solved from the book's expectancy per trade inside the risk budgets: a single idea capped near 2.5R, the complex at 4R, plus one gated episodic allowance at 4R. The book calibrates its hit rate, average win, and average loss from closed trades over time. Until 25 trades have closed, the box prints both bases side by side: the plan-case line from the framework assumptions, and the measured line from the closes so far, which carries wide uncertainty at this sample size. The verdict is keyed to the plan-case line until 25 trades have closed, and to the measured line from then on; the two bases are never blended. The lever order is count first, up to the realistic flow of about 20 trades a year, then size within the caps toward mechanisms with measured expectancy, then an honest restatement of the range.</p>
 <p>The book runs two engines. The grinder engine is the repeatable programs (roll rides, strip rotations, reversion, carry when it arms); its base case is about $5M of expectancy in a year with no big move, the survival line for the book. The episodic engine is the rare stacked-evidence trade in the $3M to $5M class, which carries the year toward the target when the regime offers it. Grinder capacity from printed figures: about $1.5M a year on hard evidence (rides in season, the current strip form, roll-down instances, the reversion in its tested form), about $2.5M counting the stood-down strip scaling estimate. Against the $5M line that is a named shortfall of about half. It closes by size inside the caps as raised October 15, 2026 and by programs that pass their entry tests, or the monthly vintage restates the range.</p>
 <div class="tblwrap"><table class="data">
@@ -748,7 +801,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p>Recalibration happens at the monthly vintage, on trailing data. The book never sizes up mid-drawdown to chase the target, and the drawdown governor (at a $1.5M book drawdown, all new risk halves) overrides this arithmetic.</p>
 </section>
 <section id="mechanisms">
-<h2>By mechanism</h2>
+<h2>By mechanism<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p>The feedback loop promotes and demotes mechanisms, not just trades, so the book is also cut by structure. A roll up trade is long the deferred month behind the front (M+1) and rides it to cash; a roll down trade is short the front and rides its roll down into cash convergence.</p>
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Mechanism</th><th>Trades</th><th>Open risk</th><th>Unrealized</th><th>Closed</th><th>Hit rate</th></tr></thead>
@@ -761,7 +814,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </table></div>
 </section>
 <section id="t1">
-<h2>T1. Short December TMW: the trapped heavy barrel</h2>
+<h2>T1. Short December TMW: the trapped heavy barrel<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p><strong>Status:</strong> Active, booked October 12, 2026. <strong>Structure:</strong> roll down trade.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
@@ -788,7 +841,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </ul>
 </section>
 <section id="t2">
-<h2>T2. Long December TMR: the grade flip pulls sweet inland</h2>
+<h2>T2. Long December TMR: the grade flip pulls sweet inland<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p><strong>Status:</strong> Active, booked October 12, 2026. <strong>Structure:</strong> roll up trade.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
@@ -820,7 +873,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </ul>
 </section>
 <section id="t3">
-<h2>T3. Long SYN into year-end, hard exit: the front premium, not the spread</h2>
+<h2>T3. Long SYN into year-end, hard exit: the front premium, not the spread<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p><strong>Status:</strong> Sequenced, booked October 12, 2026: the program is live but its risk is held behind trade 1's exit and is not currently running. <strong>Structure:</strong> roll up trade.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
@@ -846,7 +899,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </ul>
 </section>
 <section id="t4">
-<h2>T4. Long December TMR on switching economics: the refinery-slate bid</h2>
+<h2>T4. Long December TMR on switching economics: the refinery-slate bid<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p><strong>Status:</strong> Booked October 12, 2026 as a standalone trade; folded into the trade 2 strip at the October 12, 2026 re-booking (see the book entries). <strong>Structure:</strong> switching.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
@@ -869,7 +922,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </ul>
 </section>
 <section id="t5">
-<h2>T5. TMW-TMS reversion: the statistics are real, the signal is not live</h2>
+<h2>T5. TMW-TMS reversion: the statistics are real, the signal is not live<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p><strong>Status:</strong> Stood down at booking, October 12, 2026; shadow-marked. <strong>Structure:</strong> reversion.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
@@ -897,7 +950,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </ul>
 </section>
 <section id="book-notes">
-<h2>Entries for the whole book</h2>
+<h2>Entries for the whole book<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <ul>
 <li><strong>October 12, 2026:</strong> Book opened: five trades booked as published on the trade-ideas page (inner tier), October 12, 2026. Entry references are the October 9, 2026 ICE settles, the last trading day; the October 12 settlements file carries them unchanged at zero volume.</li>
 <li><strong>October 12, 2026:</strong> Complex risk, decision pending: open risk is about $577,000, about 2.3R, against the 2R ($500,000) complex budget, roughly $77,000 over. The resolution is pending between two printed options: drop T4 (thinnest support) to land at about 2.0R, or run T1 nearer 65 lots until the TMW managed-money positioning check clears.</li>
@@ -914,7 +967,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </ul>
 </section>
 <section id="feedback">
-<h2>What it changed: the feedback loop</h2>
+<h2>What it changed: the feedback loop<span class="chg-stamp chg-week" data-chg="2026-10-29" title="This section last changed October 29, 2026">changed Oct 29</span></h2>
 <p>Every scored trade ends with one line: what it changed. A mechanism earns more size, a sizing rule is adjusted, a watch item is added, a strategy is demoted. Those revisions are booked here, dated, so the framework's history is part of the record.</p>
 <ul>
 <li>2026-10-12: Framework rewritten around big trades, before the first close. The calendar ruling is 15 to 20 real trades a year, not 50; at that count and a realistic hit rate, winners must average about $2.5M, so 3 to 5 trades a year in the $3 to $5M class must carry the year. Grinder risk is sized so it can never eat a carrier trade's budget. This entry records a framework decision, not a lesson from a scored trade: no trade has closed yet.</li>
@@ -922,7 +975,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </ul>
 <p>That is the whole of the feedback record so far: framework-level entries only, all made before the first close. No scored trade has revised anything yet, because no trade has closed.</p>
 </section>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a><a href="../../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -1023,5 +1076,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

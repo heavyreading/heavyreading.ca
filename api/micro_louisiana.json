@@ -1,0 +1,672 @@
+{
+ "as_of": "October 2026",
+ "as_of_note": "Snapshot with mixed vintages, labelled per item. Refining capacity Jan 1, 2026 (EIA). SPR stocks Oct 16, 2026 (DOE). EIA state production, district runs and PADD 3 trade latest prints run to July 2026. SONRIS onshore split is 2022, the last year in the library series.",
+ "built": "2026-10-28",
+ "cards": {
+  "balance_kbd": null,
+  "current_demand_high_kbd": 3050.0,
+  "current_demand_low_kbd": 2900.0,
+  "current_supply_into_hub_high_kbd": 2600.0,
+  "current_supply_into_hub_low_kbd": 2300.0,
+  "demand_kbd": null,
+  "effective_kbd": null,
+  "exports_kbd": null,
+  "imports_kbd": null,
+  "in_region_demand_kbd": null,
+  "in_region_production_kbd": 71.0,
+  "marine_egress_nameplate_kbd": 1200.0,
+  "nameplate_kbd": 3005.4,
+  "offshore_gom_2025_oct_steo_kbd": 1890.0,
+  "offshore_gom_production_2024_kbd": 1770.0,
+  "refining_effective_high_kbd": 2950.0,
+  "refining_effective_low_kbd": 2850.0,
+  "spr_louisiana_capacity_mmbbl": 296.4,
+  "spr_louisiana_held_mmbbl": 55.1,
+  "supply_kbd": null,
+  "utilization_pct": null
+ },
+ "corridors": [
+  {
+   "from": "Mississippi Canyon area, Gulf of Mexico",
+   "id": "mars_offshore_to_clovelly",
+   "items": [
+    "mars_system_clovelly"
+   ],
+   "label": "Mars system, Mississippi Canyon to Clovelly",
+   "note": "163 mile offshore pipeline into dedicated salt caverns at Clovelly. Amberjack feeds Green Canyon crude into this system.",
+   "to": "Clovelly, Louisiana"
+  },
+  {
+   "from": "Patoka, Illinois",
+   "id": "capline_patoka_to_st_james",
+   "items": [
+    "capline_southbound"
+   ],
+   "label": "Capline southbound, Patoka to St. James",
+   "note": "About 632 miles, 40 inch. Southbound since Jan 2022 after half a century running north.",
+   "to": "St. James, Louisiana"
+  },
+  {
+   "from": "Nederland, Texas",
+   "id": "bayou_bridge_nederland_to_st_james",
+   "items": [
+    "bayou_bridge"
+   ],
+   "label": "Bayou Bridge, Nederland to St. James",
+   "note": "Two segments: Nederland to Lake Charles (2016) and the 162.5 mile Lake Charles to St. James segment in service Mar to Apr 2019. Tail end of the Dakota Access system.",
+   "to": "St. James, Louisiana"
+  },
+  {
+   "from": "Houston and Beaumont, Texas",
+   "id": "zydeco_houston_to_clovelly",
+   "items": [
+    "zydeco"
+   ],
+   "label": "Zydeco, Houston side to Houma and Clovelly",
+   "note": "Eastbound since the 2013 reversal. Houma, Louisiana is an intermediate delivery point on this route. The Texas to Louisiana equalizer when Houston is long and Louisiana is short.",
+   "to": "Clovelly, Louisiana"
+  },
+  {
+   "from": "Clovelly, Louisiana",
+   "id": "loop_clovelly_to_st_james_locap",
+   "items": [
+    "exports_loop",
+    "mars_system_clovelly"
+   ],
+   "label": "LOCAP, Clovelly to St. James",
+   "note": "LOOP onshore line, 53 miles, 48 inch, from Clovelly to St. James. It links the water door to the marketplace and, through St. James, to the SPR distribution system. LOCAP has no separate template item; the items listed are the LOOP and Mars items it physically connects.",
+   "to": "St. James, Louisiana"
+  },
+  {
+   "from": "LOOP marine terminal, 18 miles offshore",
+   "id": "loop_marine_to_clovelly",
+   "items": [
+    "exports_loop",
+    "waterborne_imports_loop_river"
+   ],
+   "label": "LOOP marine terminal to Clovelly",
+   "note": "48 inch line, 25 miles inland, design throughput about 1,200 kb/d, bidirectional for import discharge and export loading by VLCC and ULCC class ships.",
+   "to": "Clovelly, Louisiana"
+  }
+ ],
+ "demand": [
+  {
+   "basis": "capacity",
+   "dest": "Mississippi River corridor, Louisiana",
+   "effective_kbd": null,
+   "group": "river_refining",
+   "id": "refineries_river_corridor",
+   "kind": "refinery",
+   "label": "Refineries, Mississippi River corridor",
+   "memo": false,
+   "nameplate_kbd": 1977.0,
+   "note": "Nameplate is capacity, not runs. Plants in b/cd: Marathon Garyville 617,000; ExxonMobil Baton Rouge 523,500; Shell Norco 231,153; Valero St. Charles 215,000 (some industry lists print higher figures for St. Charles; the EIA derived value is used here and flagged); PBF Chalmette 190,000; Valero Meraux 125,000; Placid Port Allen 75,000. Those plant figures sum to 1,976.7 kb/d; the dossier rounds the segment to 1,977. Plant level monthly runs do not exist publicly. EIA publishes runs at refining district grain only, and the district boundary is not the state boundary.",
+   "range_kbd": null,
+   "source": "EIA Refinery Capacity Report, EIA-820 plant data",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Jan 1, 2026"
+  },
+  {
+   "basis": "capacity",
+   "dest": "Lake Charles, Louisiana",
+   "effective_kbd": null,
+   "group": "lake_charles",
+   "id": "refineries_lake_charles",
+   "kind": "refinery",
+   "label": "Refineries, Lake Charles cluster",
+   "memo": false,
+   "nameplate_kbd": 870.0,
+   "note": "Nameplate is capacity, not runs. Plants in b/cd: Citgo Lake Charles 471,200; Phillips 66 Westlake 263,700; Calcasieu Refining 135,500. Those plant figures sum to 870.4 kb/d; the dossier rounds the segment to 870. Plant level monthly runs do not exist publicly, as with the river corridor.",
+   "range_kbd": null,
+   "source": "EIA Refinery Capacity Report, EIA-820 plant data",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Jan 1, 2026"
+  },
+  {
+   "basis": "capacity",
+   "dest": "Inland and north Louisiana",
+   "effective_kbd": null,
+   "group": null,
+   "id": "refineries_inland_north",
+   "kind": "refinery",
+   "label": "Refineries, inland and north",
+   "memo": false,
+   "nameplate_kbd": 163.0,
+   "note": "Delek Krotz Springs 80,000 b/cd plus small plants in the Shreveport area and elsewhere at about 83,000 b/cd combined, about 163 kb/d in total as the dossier gives the segment. The smalls figure is a balance to the state total and is approximate, which is part of why the three refinery segments sum above the state total. See the top level notes for the named difference.",
+   "range_kbd": null,
+   "source": "EIA Refinery Capacity Report, EIA-820 plant data and state total balance",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Jan 1, 2026"
+  },
+  {
+   "basis": "capacity",
+   "dest": "Marine export via LOOP",
+   "effective_kbd": null,
+   "group": "export_complex",
+   "id": "exports_loop",
+   "kind": "export",
+   "label": "Exports via LOOP",
+   "memo": false,
+   "nameplate_kbd": 1200.0,
+   "note": "LOOP marine terminal, 18 miles offshore, design throughput about 1,200 kb/d on a 48 inch line to Clovelly. The rate is bidirectional design, covering the import service the port was built for as well as export loading. LOOP is the only US port that can fully load and unload a VLCC as of Q1 2026. Actual export cadence is a small number of VLCC loadings per month in the sources pulled, unquantified, and Louisiana export volumes are not published at monthly grain, so no flow value is carried.",
+   "range_kbd": null,
+   "source": "LOOP LLC; MMCG, Q1 2026",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Q1 2026"
+  },
+  {
+   "basis": "measured",
+   "dest": "Marine export via Mississippi River terminals",
+   "effective_kbd": null,
+   "group": "export_complex",
+   "id": "exports_river_terminals",
+   "kind": "export",
+   "label": "Exports and coastwise via river terminals",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "Mississippi River terminals at St. James and below load Aframax class ships, up to about 800,000 barrels per cargo, plus barges. Draft, air draft, fog and high water limit this leg and every river cargo is a partial VLCC at best. No volume series is held for Louisiana river exports. PADD 3 total crude exports of 3,470 to 5,600 kb/d across Apr to Jul 2026 are held in the library, but Corpus Christi and Houston dominate that total and none of it is assigned to Louisiana here.",
+   "range_kbd": null,
+   "source": "Plains and Marathon Capline project materials for ship class; EIA trade series in the library at PADD 3 grain",
+   "state": "missing",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Oct 2026 dossier"
+  },
+  {
+   "basis": "measured",
+   "dest": "SPR caverns, West Hackberry and Bayou Choctaw",
+   "effective_kbd": null,
+   "group": "government_position",
+   "id": "spr_injection_refill",
+   "kind": "storage",
+   "label": "SPR injection and refill, Louisiana sites",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "Episodic sink, active only when DOE is refilling or taking exchange returns, and zero flow only when no program is active. The dossier carries this item by cavern headroom in MMbbl, not by a kb/d rate: West Hackberry had 196.7 MMbbl empty (220.4 capacity, 23.7 held) and Bayou Choctaw had 44.6 MMbbl empty (76.0 capacity, 31.4 held) on Oct 16, 2026, 241.3 MMbbl of combined headroom. No Louisiana kb/d injection rate is published in the dossier, so no flow value and no kb/d nameplate are carried. Site stocks and capacities are in the storage object.",
+   "range_kbd": null,
+   "source": "DOE SPR Quick Facts, updated Oct 2026",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Site stocks Oct 16, 2026"
+  },
+  {
+   "basis": "measured",
+   "dest": "Northbound out of Louisiana",
+   "effective_kbd": 0.0,
+   "group": null,
+   "id": "northbound_pipeline_egress",
+   "kind": "pipeline",
+   "label": "Northbound pipeline egress out of hub",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "Structural zero, printed as a fact and not as a gap. Northbound egress has been effectively nil since Capline reversed to southbound service in Jan 2022. The heritage northbound nameplate of 1,200 kb/d is not a current capacity and is deliberately not carried in the nameplate field.",
+   "range_kbd": null,
+   "source": "Marathon Pipeline Capline reversal record; dossier section 4",
+   "state": "value",
+   "util_pct": null,
+   "value_kbd": 0.0,
+   "vintage": "Structural, from Jan 2022"
+  }
+ ],
+ "gaps": [
+  {
+   "item": "mars_system_clovelly",
+   "reason": "No public monthly throughput series exists for the Mars system. Only the 600 kb/d capacity and the RBN combined Mars plus Endymion delivery figure of well over 500 kb/d are held.",
+   "route": "EIA federal offshore series pull plus BOEM production data by block and field, anchored to FERC Form 6 annual throughput.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "offshore_other_landfalls",
+   "reason": "The Louisiana versus Texas landing split of federal Gulf production is not published monthly, and the federal offshore series is not yet in the library. Eugene Island, Ship Shoal, Poseidon and Endymion capacities were unverified in the sources pulled.",
+   "route": "Pull the EIA federal offshore production series into the library, add BOEM production by block and field mapped to landfall, and anchor system deliveries to Form 6 annual filings.",
+   "state": "missing"
+  },
+  {
+   "item": "onshore_south",
+   "reason": "The item carries a value, but only at 2022 vintage. The library SONRIS derived series ends Dec 2022, so no current North and South split exists. This gap entry covers the missing current vintage, not the 2022 value itself.",
+   "route": "Live SONRIS pull from Louisiana DNR (LDENR) to extend la_oil_production_monthly.csv past Dec 2022. The EIA state total bridges at coarser grain in the meantime.",
+   "state": "missing"
+  },
+  {
+   "item": "onshore_north_state_waters",
+   "reason": "Same SONRIS currency limit as onshore_south: the split is held to Dec 2022 only.",
+   "route": "Live SONRIS pull from Louisiana DNR (LDENR), same pull as onshore_south.",
+   "state": "missing"
+  },
+  {
+   "item": "capline_southbound",
+   "reason": "Monthly flows are not public at any useful grain. FERC Form 6 reports annually.",
+   "route": "Form 6 workstream for annual anchoring, plus tariff and nomination watching for direction between filings.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "bayou_bridge",
+   "reason": "Monthly flows are not public. Nameplate of 480 kb/d is held from the owners joint release.",
+   "route": "Form 6 workstream where coverage exists, plus tariff and nomination watching. Coverage is thinner for intrastate and short haul systems.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "zydeco",
+   "reason": "Monthly flows are not public and the 350 kb/d capacity is single source (RBN).",
+   "route": "Shell midstream disclosures and Form 6 where filed, to confirm capacity and anchor annual throughput.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "waterborne_imports_loop_river",
+   "reason": "Louisiana import receipts are not published monthly. Only the PADD 3 total is held, at 1,230 to 1,380 kb/d across Apr to Jul 2026.",
+   "route": "EIA company level import data by port of entry, plus our own AIS stack for LOOP and river receipts.",
+   "state": "missing"
+  },
+  {
+   "item": "spr_release_flow",
+   "reason": "The Louisiana SPR sites are held by stock level (DOE, Oct 16, 2026), but no Louisiana kb/d release or exchange rate is published in the dossier for the 2026 program.",
+   "route": "DOE SPR delivery and exchange notices per program, which state volumes and delivery windows, converted to a rate only when a notice gives both.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "rail_receipts_st_james",
+   "reason": "Unloading capacity of about 130 to 140 kb/d is held from 2011 to 2012 releases. Louisiana specific current rail receipts are not observed; EIA crude by rail is held at PADD grain only.",
+   "route": "EIA crude by rail at PADD grain with the East Daley back into method, plus terminal operator disclosures for St James receipts.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "refineries_river_corridor",
+   "reason": "Plant level monthly runs do not exist publicly. EIA publishes runs at refining district grain only and the district does not match the state boundary.",
+   "route": "EIA Louisiana Gulf Coast district runs table as the standing proxy, labelled district grain, with company earnings and turnaround reporting for plant level events.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "refineries_lake_charles",
+   "reason": "Plant level monthly runs do not exist publicly, as with the river corridor.",
+   "route": "EIA district runs proxy plus company earnings and turnaround reporting for Citgo, Phillips 66 Westlake and Calcasieu.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "refineries_inland_north",
+   "reason": "Plant level monthly runs do not exist publicly, and the smalls capacity figure is an approximate balance to the state total.",
+   "route": "EIA district runs proxy, and EIA-820 plant level capacity verification in the next capacity pass.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "exports_loop",
+   "reason": "LOOP infrastructure and design rate are held, but Louisiana export volumes are not published at monthly grain. Actual cadence is an unquantified small number of VLCC loadings per month in the sources pulled.",
+   "route": "Our own AIS stack, counting VLCC loadings at the LOOP buoys at cargo grain, cross checked against EIA export data.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "exports_river_terminals",
+   "reason": "No Louisiana river export volume series is held. Ship class and cargo size are known, volumes are not.",
+   "route": "Our own AIS stack for Aframax and barge movements at St James and Plaquemines area terminals, cross checked against EIA export data.",
+   "state": "missing"
+  },
+  {
+   "item": "spr_injection_refill",
+   "reason": "Cavern headroom is held in MMbbl from DOE site stocks, but no Louisiana kb/d injection rate is published in the dossier.",
+   "route": "DOE SPR purchase and exchange return notices per program, which state volumes and delivery windows.",
+   "state": "capacity_only"
+  },
+  {
+   "item": "in_region_demand_kbd",
+   "reason": "State level refinery runs are not published, so in region demand cannot be separated from capacity at state grain.",
+   "route": "EIA district runs as a labelled proxy until a state grain runs source exists. No proxy value is carried in the card.",
+   "state": "missing"
+  },
+  {
+   "item": "imports_kbd",
+   "reason": "Louisiana share of PADD 3 imports is not published monthly.",
+   "route": "EIA company level imports by port of entry, plus AIS receipts at LOOP and river terminals.",
+   "state": "missing"
+  },
+  {
+   "item": "exports_kbd",
+   "reason": "Louisiana share of PADD 3 exports is not published monthly, and LOOP plus river exports are a minority share of PADD 3 volume.",
+   "route": "AIS cargo counting at LOOP and river terminals, cross checked against EIA export data.",
+   "state": "missing"
+  },
+  {
+   "item": "effective_kbd",
+   "reason": "Effective refining capacity is supported only as a range, about 2,850 to 2,950 kb/d, on a district utilization basis. The card is null and the range sits in refining_effective_low_kbd and refining_effective_high_kbd.",
+   "route": "A state grain runs series, or a full year of district prints reconciled to the state plant list, would support a single effective figure.",
+   "state": "range"
+  },
+  {
+   "item": "st_james_storage",
+   "reason": "St James commercial storage is about 36 MMbbl on the RBN figure and 18 plus MMbbl in a second commercial source. The range is unresolved and no single value is carried in the storage object, which covers the SPR caverns only.",
+   "route": "Terminal by terminal tank capacity build from operator disclosures and EIA bulk terminal data for the St James complex.",
+   "state": "range"
+  },
+  {
+   "item": "plant_level_coker_capacity",
+   "reason": "Plant level heavy capability, coker capacities for the river and Lake Charles plants, was not individually re-verified in the dossier pass. System level EIA data place the bulk of US coking capacity in PADD 3 only.",
+   "route": "EIA-820 plant level downstream unit capacity tables, verified plant by plant, before any WCS to Louisiana arb work leans on slate claims.",
+   "state": "missing"
+  }
+ ],
+ "groups": [
+  {
+   "basis": "capacity",
+   "id": "offshore_complex",
+   "label": "Offshore complex",
+   "members": [
+    "mars_system_clovelly",
+    "offshore_other_landfalls"
+   ],
+   "note": "Value is null because the members carry mixed states, one capacity only and one missing, and the Louisiana landing split of the Gulf total is not published. The group also covers Clovelly storage and the Mars price, which are not supply items. Gulf totals by vintage are in the offshore_other_landfalls note and in the cards.",
+   "source": "EIA STEO; Shell Midstream Partners; RBN Energy",
+   "value_kbd": null,
+   "vintage": "2024 actual and 2025 STEO vintages; capacities Oct 2026 dossier"
+  },
+  {
+   "basis": "capacity",
+   "id": "st_james_marketplace",
+   "label": "St. James marketplace",
+   "members": [
+    "capline_southbound",
+    "bayou_bridge",
+    "rail_receipts_st_james",
+    "exports_river_terminals"
+   ],
+   "note": "Value is null because every member is capacity only or missing, with no public monthly flows. The group also covers St. James storage, about 36 MMbbl on the RBN figure with a second commercial source at 18 plus MMbbl, a range that is unresolved, and the LLS price.",
+   "source": "Marathon Pipeline; Energy Transfer and Phillips 66; USD Group and Plains; RBN Energy",
+   "value_kbd": null,
+   "vintage": "Oct 2026 dossier"
+  },
+  {
+   "basis": "capacity",
+   "id": "river_refining",
+   "label": "River refining",
+   "members": [
+    "refineries_river_corridor",
+    "waterborne_imports_loop_river"
+   ],
+   "note": "Value is null because the refinery member is capacity only and the import member is missing at Louisiana grain. The refinery member carries 1,977.0 kb/d of nameplate. The import member is the river leg of waterborne imports only; LOOP receipts that move on LOCAP are part of the same item and are not split out in any public source.",
+   "source": "EIA Refinery Capacity Report, Jan 1, 2026; EIA trade series at PADD 3 grain",
+   "value_kbd": null,
+   "vintage": "Jan 1, 2026 capacity; Apr to Jul 2026 PADD 3 trade"
+  },
+  {
+   "basis": "capacity",
+   "id": "lake_charles",
+   "label": "Lake Charles",
+   "members": [
+    "refineries_lake_charles",
+    "bayou_bridge",
+    "spr_release_flow"
+   ],
+   "note": "Value is null because the members carry mixed states. Bayou Bridge enters this group on its first segment only, Nederland to Lake Charles; the same item is also a member of the St. James marketplace group, which is expected because groups overlap. The West Hackberry SPR site sits in this cluster and is represented here by the statewide SPR release item; site stocks are in the storage object.",
+   "source": "EIA Refinery Capacity Report, Jan 1, 2026; Energy Transfer and Phillips 66; DOE SPR Quick Facts, Oct 16, 2026",
+   "value_kbd": null,
+   "vintage": "Jan 1, 2026 capacity; stocks Oct 16, 2026"
+  },
+  {
+   "basis": "measured",
+   "id": "government_position",
+   "label": "The government's position",
+   "members": [
+    "spr_release_flow",
+    "spr_injection_refill"
+   ],
+   "note": "Value is null because both SPR flow items are carried by stock state and headroom, not by a kb/d rate. The group covers both Louisiana SPR sites and the DOE marine terminal at St. James, which connects to all four SPR sites and to Capline and LOCAP. Louisiana SPR capacity is 296.4 MMbbl and 55.1 MMbbl was held on Oct 16, 2026.",
+   "source": "DOE SPR Quick Facts, updated Oct 2026; EIA weekly SPR stocks in the library",
+   "value_kbd": null,
+   "vintage": "Oct 16, 2026"
+  },
+  {
+   "basis": "capacity",
+   "id": "export_complex",
+   "label": "Export complex",
+   "members": [
+    "exports_loop",
+    "exports_river_terminals"
+   ],
+   "note": "Value is null because the LOOP member is capacity only and the river member is missing as a series. The group also covers LOOP and Clovelly storage: Clovelly holds 72 plus MMbbl in eight salt caverns plus above ground tanks, one cavern dedicated to Mars since 1996.",
+   "source": "LOOP LLC; MMCG, Q1 2026; Plains and Marathon Capline project materials",
+   "value_kbd": null,
+   "vintage": "Q1 2026"
+  }
+ ],
+ "notes": [
+  "Cards footing, stated plainly. The primary supply_kbd and demand_kbd cards are null on purpose: the only supply items carrying point values are the two SONRIS 2022 onshore items (50.0 and 23.0), and no demand item carries a cleared flow, so valued-item sums (73.0 and 0.0) would badly misstate this hub. The hub's working frame is the range cards: current supply into the hub about 2,300 to 2,600, current demand about 2,900 to 3,050. Item values below are what they are labelled: capacities, dated prints, and stateful SPR figures.",
+  "nameplate_kbd 3005.4 is refining nameplate for the state of Louisiana, 3,005,373 b/cd of operable capacity across 15 refineries (EIA Refinery Capacity Report, Jan 1, 2026). Marine egress nameplate is separate, in marine_egress_nameplate_kbd at 1,200.0 for LOOP, with river egress unquantified. The three refinery demand segments carry nameplates of 1,977.0, 870.0 and 163.0, which sum to 3,010.0. That is 4.6 kb/d above the state total of 3,005.4. The difference is rounding in the segment figures plus the smalls figure in the inland and north segment, which is an approximate balance to the state total. It is named here rather than adjusted away.",
+  "effective_kbd is null. The dossier supports only a range for effective refining capacity, about 2,850 to 2,950 kb/d, carried in refining_effective_low_kbd and refining_effective_high_kbd. That range is the state nameplate read against the 95 to 98 percent district utilization EIA printed for 2026 months, so it is district based and flagged as such, not a measured state figure.",
+  "utilization_pct is null for the same reason. EIA printed Louisiana Gulf Coast gross inputs of 3,237 to 3,429 kb/d across Feb to Jul 2026, near full utilization, but at district grain. The district prints operable capacity of about 3,386 kb/d for mid 2026, higher than the state total, because the district boundary and the state boundary are not the same thing. No state level utilization is computed from a district numerator and a state denominator.",
+  "in_region_production_kbd 71.0 is Louisiana onshore field production averaged over 2025 from the EIA state series, with 65 kb/d printed in Jul 2026. It differs from the SONRIS 2022 supply-item split (50.0 plus 23.0) because the items carry the SONRIS 2022 split and the card carries the EIA 2025 average. The difference is vintagee and source, and both are labelled where they sit.",
+  "in_region_demand_kbd, imports_kbd and exports_kbd are null. Refinery runs are not published at state grain, Louisiana imports and exports are not published separately from PADD 3, and no defensible state number exists for any of the three. Each null has a matching entry in gaps.",
+  "balance_kbd is null and there is no plug item. The dossier does not copy the East Daley plug. Our rule, carried from the dossier: the residual is printed as stock change at Clovelly plus St. James plus PADD 3 commercial stocks, and it must foot or the page does not build. Partial valued sums (73.0 on the supply side, 0.0 on the demand side) and 0.0 would give a balance number with no meaning, so none is printed.",
+  "Demand in this feed means refinery capacity by cluster plus water egress plus the SPR sink, because Louisiana is a processing and transshipment hub. The refinery items are nameplate capacity, not cleared runs and not nominations. Anyone reading a refinery item value as demand flow would be reading a number this feed does not carry, since those items are capacity only with null values.",
+  "Storm state filter, Louisiana specific, carried in notes and not as an item. The dossier template addition is a storm state toggle with three states, normal, shut in and restoring, applied to the offshore supply items and to the two refinery cluster items, because this hub has a discrete weather regime. Evidence for the scale: Hurricane Ida made landfall on Aug 29, 2021 as a Category 4 storm, BSEE reported 95.65 percent of Gulf oil production shut in, 1.74 million barrels a day, about 75 percent of Louisiana refining capacity was offline the next day, roughly 2.2 million barrels a day, and the IEA put total supply loss at roughly 30 million barrels with about 30 percent of production still shut in mid September 2021.",
+  "Permanent demand losses, in notes and not in any item, because both plants are already out of the Jan 1, 2026 state total. Shell Convent, St. James Parish, 211,146 b/cd, closed at the end of 2020 after failing to sell. Phillips 66 Alliance, Belle Chasse, 255,600 b/cd, flooded in Hurricane Ida, never restarted, converted to a terminal and sold to Harvest Midstream in 2023. Together about 467 kb/d of river corridor refining demand has been lost since 2020.",
+  "Offshore vintages are not blended anywhere in this feed. Federal Gulf production averaged 1.77 million barrels a day in 2024 (EIA actual). The May 2025 STEO forecast 1.80 for 2025 and 1.81 for 2026. The Oct 2025 STEO raised the 2025 figure to about 1.89 on early project start ups. The cards carry the 2024 actual and the Oct 2025 STEO figure in separate fields, and the offshore_other_landfalls note carries all three.",
+  "Extra cards are region specific and all end in _kbd, _mmbbl or _pct as the schema requires: marine_egress_nameplate_kbd, refining_effective_low_kbd, refining_effective_high_kbd, current_supply_into_hub_low_kbd, current_supply_into_hub_high_kbd, current_demand_low_kbd, current_demand_high_kbd, offshore_gom_production_2024_kbd, offshore_gom_2025_oct_steo_kbd, spr_louisiana_capacity_mmbbl and spr_louisiana_held_mmbbl.",
+  "What binds this balance, from the dossier: offshore uptime, refinery uptime in two clusters, and the St James clearing price shown first in LLS. Nameplate pipe capacity into the hub does not bind, because there is far more of it than flow. Onshore Louisiana production does not bind at this size. LOOP physical rate does not bind at 1,200 kb/d against a much smaller actual export cadence.",
+  "Prices in this feed are dated prints only. Both differentials are March 2024 monthly averages from OPEC MOMR, April 2024. Neither is a current assessment, and no current LLS or Mars print is held or invented."
+ ],
+ "prices": [
+  {
+   "basis": "measured",
+   "id": "lls_diff_wti",
+   "label": "LLS differential to WTI at St. James",
+   "note": "Dated print only. The value carried is the March 2024 monthly average premium of plus $3.01 per barrel to WTI. It is not a current print and no current print is held. Other dated points from the dossier, each as sourced there: about plus $2.50 over WTI delivered Houston in April 2015 (RBN); the LLS to Houston spread at about $0.30 in Q1 2016 after the export ban ended (RBN); plus $2.40 to $2.55 in February 2016 (Genscape, via Storage Terminals Magazine, March 2016); a $16.01 discount to Brent in November 2013, a 20 year record in Reuters data (FT via Sober Look); and a premium to WTI that moved from $4.40 to $12.55 during the 2011 Brent and WTI blowout (trade press, 2011).",
+   "source": "OPEC MOMR, April 2024",
+   "state": "value",
+   "unit": "$/bbl",
+   "value": 3.01,
+   "vintage": "March 2024 average"
+  },
+  {
+   "basis": "measured",
+   "id": "mars_diff_wti",
+   "label": "Mars differential to WTI at Clovelly",
+   "note": "Dated print only. The value carried is the March 2024 monthly average discount of minus $0.27 per barrel to WTI for Mars, the offshore medium sour benchmark deliverable at LOOP Clovelly caverns, where CME lists a Mars futures contract. It is not a current print and no current print is held. Mars was the grade most directly repriced by the Capline reversal, because its northbound route to Midwest refiners ended and its LOOP export route opened (CME Group, 2022).",
+   "source": "OPEC MOMR, April 2024",
+   "state": "value",
+   "unit": "$/bbl",
+   "value": -0.27,
+   "vintage": "March 2024 average"
+  }
+ ],
+ "region": "louisiana",
+ "schema": "micro-balance/1",
+ "storage": {
+  "basis": "measured",
+  "capacity_mmbbl": 296.4,
+  "level_mmbbl": 55.1,
+  "note": "This storage object is the Louisiana SPR caverns only, as the dossier carries them. West Hackberry: 220.4 MMbbl capacity, 23.7 MMbbl held (10.2 sweet, 13.5 sour), 21 to 22 caverns, with DOE pages differing on the cavern count. Bayou Choctaw: 76.0 MMbbl capacity, 31.4 MMbbl held (2.7 sweet, 28.7 sour), 6 caverns. Combined 296.4 MMbbl capacity and 55.1 MMbbl held, 18.6 percent full. Total SPR system context: 282.2 MMbbl held against 714 MMbbl authorized capacity on Oct 16, 2026 (DOE), and the library EIA weekly series prints 282,583 thousand barrels for the week ending Oct 23, 2026. Commercial storage is separate and is not in these totals: Clovelly holds 72 plus MMbbl and St. James holds about 36 MMbbl on the RBN figure, with a second commercial source at 18 plus MMbbl, so the St. James figure is an unresolved range and no single value is carried.",
+  "pct_full": 18.6,
+  "source": "DOE SPR Quick Facts, updated Oct 2026",
+  "vintage": "Oct 16, 2026"
+ },
+ "supply": [
+  {
+   "basis": "capacity",
+   "dest": null,
+   "effective_kbd": null,
+   "group": "offshore_complex",
+   "id": "mars_system_clovelly",
+   "kind": "pipeline",
+   "label": "Offshore, Mars system into Clovelly",
+   "memo": false,
+   "nameplate_kbd": 600.0,
+   "note": "Mars pipeline, 163 miles from the Mississippi Canyon area to Clovelly, capacity up to 600 kb/d, owned Shell Midstream Partners 71.5 percent and BP 28.5 percent. Carries Mars, Ursa and Medusa, and Green Canyon and Walker Ridge via Amberjack. RBN puts Mars plus Endymion deliveries to Clovelly at well over 500 kb/d combined. No public monthly throughput series exists for this system, so capacity ships and flow does not.",
+   "range_kbd": null,
+   "source": "Shell Midstream Partners; RBN Energy",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Oct 2026 dossier"
+  },
+  {
+   "basis": "measured",
+   "dest": null,
+   "effective_kbd": null,
+   "group": "offshore_complex",
+   "id": "offshore_other_landfalls",
+   "kind": "production",
+   "label": "Offshore, other systems into Louisiana landfalls",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "Eugene Island, Ship Shoal, Poseidon and Endymion landing at Empire, Fourchon, Houma, Clovelly and St. James. Capacities were unverified in the sources pulled and no Louisiana value is carried. The federal Gulf of Mexico total behind these systems is 1,770.0 kb/d actual for 2024 (EIA) and about 1,890.0 kb/d for 2025 in the Oct 2025 STEO, raised from 1,800.0 kb/d for 2025 in the May 2025 STEO. The vintages are carried separately and are not blended. The Louisiana versus Texas landing split is not published monthly, and a western share lands in Texas, so no part of the Gulf total is assigned to this item.",
+   "range_kbd": null,
+   "source": "EIA STEO (May 2025 and Oct 2025 vintages); RBN Energy for system names",
+   "state": "missing",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "2024 actual; 2025 STEO vintages"
+  },
+  {
+   "basis": "measured",
+   "dest": null,
+   "effective_kbd": null,
+   "group": null,
+   "id": "onshore_south",
+   "kind": "production",
+   "label": "Louisiana onshore production, South",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "South Louisiana coastal conventional production, about 50 kb/d in the 2022 SONRIS split. Vintage warning: the library SONRIS derived series ends Dec 2022, so this is the last split available, not a current print. The EIA state total that bridges to the present is about 71 kb/d averaged over 2025 and 65 kb/d in Jul 2026, with no published North and South split at that grain.",
+   "range_kbd": null,
+   "source": "Louisiana DNR SONRIS, via Louisiana Energy Facts compilation in the library, la_oil_production_monthly.csv",
+   "state": "value",
+   "util_pct": null,
+   "value_kbd": 50.0,
+   "vintage": "2022"
+  },
+  {
+   "basis": "measured",
+   "dest": null,
+   "effective_kbd": null,
+   "group": null,
+   "id": "onshore_north_state_waters",
+   "kind": "production",
+   "label": "Louisiana onshore production, North plus state waters",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "North Louisiana about 17 kb/d plus state waters offshore about 6 kb/d in the 2022 SONRIS split, combined here as one item at 23.0 kb/d. Vintage warning: the library SONRIS derived series ends Dec 2022. The split items S3 and S4 sum to 73.0 kb/d, below the 79.8 kb/d state total the same file prints for Dec 2022; the split figures are approximate as the dossier gives them and are not forced to that month end total.",
+   "range_kbd": null,
+   "source": "Louisiana DNR SONRIS, via Louisiana Energy Facts compilation in the library, la_oil_production_monthly.csv",
+   "state": "value",
+   "util_pct": null,
+   "value_kbd": 23.0,
+   "vintage": "2022"
+  },
+  {
+   "basis": "capacity",
+   "dest": null,
+   "effective_kbd": null,
+   "group": "st_james_marketplace",
+   "id": "capline_southbound",
+   "kind": "pipeline",
+   "label": "Capline southbound ex Patoka",
+   "memo": false,
+   "nameplate_kbd": 417.0,
+   "note": "Reversed Capline, Patoka, Illinois to St. James, owned Plains 54 percent, Marathon 33 percent and BP 13 percent, operated by Marathon Pipe Line. Southbound service began at the start of Jan 2022. Current configuration is 417 kb/d of light crude equivalent, roughly 300 kb/d on heavy and light blends, expandable above 800 kb/d with shipper support. Effective capacity is left null because the figure depends on the blend. The heritage northbound nameplate of 1,200 kb/d is not a current capacity and is not carried. Monthly flows are not public; FERC Form 6 is annual grain only. The planned Cushing feeder, the Diamond Extension, was cancelled in mid 2021, so the line lives mostly on Canadian and Bakken barrels reaching Patoka.",
+   "range_kbd": null,
+   "source": "Marathon Pipeline Capline page; CME Group, 2022",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Current configuration, Oct 2026 dossier"
+  },
+  {
+   "basis": "capacity",
+   "dest": null,
+   "effective_kbd": null,
+   "group": "st_james_marketplace",
+   "id": "bayou_bridge",
+   "kind": "pipeline",
+   "label": "Bayou Bridge ex Nederland and Lake Charles",
+   "memo": false,
+   "nameplate_kbd": 480.0,
+   "note": "Nederland, Texas to St. James, system capacity about 480 kb/d, owned Energy Transfer 60 percent and Phillips 66 Partners 40 percent. It is the tail end of the Dakota Access system, so Bakken barrels can ride one connected network to St. James. It delivers into the Lake Charles refineries on its first segment and into St. James at the end. Monthly flows are not public.",
+   "range_kbd": null,
+   "source": "Energy Transfer and Phillips 66 joint release; GEM",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "In service Mar to Apr 2019; capacity as of Oct 2026 dossier"
+  },
+  {
+   "basis": "capacity",
+   "dest": null,
+   "effective_kbd": null,
+   "group": null,
+   "id": "zydeco",
+   "kind": "pipeline",
+   "label": "Zydeco ex Houston and Beaumont",
+   "memo": false,
+   "nameplate_kbd": 350.0,
+   "note": "Shell Zydeco, the old Ho-Ho, from the Houston and Beaumont side east to Houma and Clovelly, capacity up to about 350 kb/d, reversed to eastbound in 2013. Capacity is single source (RBN) and is carried as about 350. Monthly flows are not public.",
+   "range_kbd": null,
+   "source": "RBN Energy",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Oct 2026 dossier"
+  },
+  {
+   "basis": "measured",
+   "dest": null,
+   "effective_kbd": null,
+   "group": "river_refining",
+   "id": "waterborne_imports_loop_river",
+   "kind": "import",
+   "label": "Waterborne imports via LOOP and river",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "Foreign crude received at LOOP and at Mississippi River terminals for the river refineries. No Louisiana value is carried because the state split is not published monthly. The only held figure is PADD 3 total crude imports of 1,230 to 1,380 kb/d across Apr to Jul 2026, which covers Texas as well and must not be read as a Louisiana number.",
+   "range_kbd": null,
+   "source": "EIA crude trade series in the library, eia_crude_trade_monthly.csv, PADD 3 grain",
+   "state": "missing",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Apr to Jul 2026 for the PADD 3 range in the note"
+  },
+  {
+   "basis": "measured",
+   "dest": null,
+   "effective_kbd": null,
+   "group": "government_position",
+   "id": "spr_release_flow",
+   "kind": "storage",
+   "label": "SPR release and exchange flow, Louisiana sites",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "Episodic supply from the two Louisiana SPR sites when a release or exchange is active, and zero flow only when no program is active. The dossier carries this item by its stock state, not by a flow rate: West Hackberry held 23.7 MMbbl and Bayou Choctaw held 31.4 MMbbl on Oct 16, 2026, 55.1 MMbbl combined, after the 2026 exchange program drew the sites hard. A further DOE authorization for an SPR exchange was announced Oct 23, 2026. No Louisiana kb/d release rate is published in the dossier, so no flow value is carried. System wide SPR drawdown capability of 4,400 kb/d maximum nominal is a four site DOE figure and is not assigned to Louisiana. Site stocks and capacities are in the storage object.",
+   "range_kbd": null,
+   "source": "DOE SPR Quick Facts, updated Oct 2026; EIA weekly SPR stocks in the library, eia_spr_stocks.csv",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Site stocks Oct 16, 2026"
+  },
+  {
+   "basis": "capacity",
+   "dest": null,
+   "effective_kbd": null,
+   "group": "st_james_marketplace",
+   "id": "rail_receipts_st_james",
+   "kind": "rail",
+   "label": "Rail receipts at St. James",
+   "memo": false,
+   "nameplate_kbd": null,
+   "note": "Residual supply leg. St. James built about 130 to 140 kb/d of unit train unloading capacity in the shale era. The range is carried in this note instead of a single nameplate because the sources give a range. Current Louisiana rail receipts are not observed directly; the East Daley method backs into them from EIA data at PADD grain, and no Louisiana specific flow is held.",
+   "range_kbd": null,
+   "source": "USD Group and Plains releases, 2011 to 2012; EIA crude by rail series in the library at PADD grain",
+   "state": "capacity_only",
+   "util_pct": null,
+   "value_kbd": null,
+   "vintage": "Unloading capacity 2011 to 2012 releases"
+  }
+ ],
+ "title": "Louisiana micro-balance",
+ "units": "kb/d unless a field name says otherwise"
+}

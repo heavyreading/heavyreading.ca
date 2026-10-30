@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="fieldguide/tmx.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,19 +710,19 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>Trans Mountain: where it is and how it works</h1>
   <p class="sub">Canada's only pipeline to the Pacific coast: 890,000 barrels per day from Edmonton to Burnaby, a twinned system with its toll fight settled and more capacity coming.</p>
   <p class="vintage">Field guide entry &middot; written September 29, 2026.</p>
-  <h2>The route</h2>
+  <h2>The route<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Trans Mountain runs about 1,180 km from Edmonton (Strathcona County), Alberta to Burnaby, British Columbia, on the Pacific coast. It is a twinned system: Line 1, the original 1953 pipeline, carries refined products, synthetic crude and light crude; Line 2 entered commercial service on May 1, 2024 and carries the heavier oils. Nominal capacity is 890,000 barrels per day, up from about 300,000 before the expansion, moved by 33 active pump stations. Storage terminals sit at Edmonton, Kamloops, Abbotsford (Sumas) and Burnaby. At Sumas, the Puget Sound branch runs 111 km to Washington refineries (Anacortes, Cherry Point, Ferndale), capacity up to about 240,000 barrels per day depending on product mix, shipping since 1954.</p>
-  <h2>Westridge: the dock</h2>
+  <h2>Westridge: the dock<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Westridge Marine Terminal in Burnaby is the export dock: three berths, loading about 34 Aframax tankers per month. Trans Mountain's own count covers 581 cargoes from May 2024 to May 2026: China 337, California 148, Washington 55, Korea 25, with the rest to India, Singapore, Japan, Alaska and a handful unassigned. In 2025, more than 65 percent of Westridge exports went to Asia, and roughly three quarters of the crude loaded is heavy sour oil suited to complex Asian refineries. Aframaxes currently load only about 75 percent full because the Second Narrows channel is too shallow; dredging led by the Vancouver Fraser Port Authority is targeted to finish in early 2027, allowing full loads.</p>
-  <h2>The toll fight is over</h2>
+  <h2>The toll fight is over<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>The expansion's cost ballooned from a $5.4 billion estimate in 2013 to a final figure near C$34 billion, and shippers fought the tolls for years; the interim benchmark was set at $11.46 per barrel Edmonton to Burnaby. On September 28, 2026 the Canada Energy Regulator approved a negotiated settlement: the RH-002-2023 final-tolls hearing was cancelled, the new framework takes effect January 1, 2027, and long-term contracting rises from 80 to 90 percent. The regulator approved 90 percent contracting on Trans Mountain five years after rejecting the same level on the Enbridge Mainline (RH-001-2020, November 2021); the difference was shipper consensus.</p>
-  <h2>More capacity coming</h2>
+  <h2>More capacity coming<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Three near-term additions, per the company's May 2026 fact sheet: drag-reducing agent injection adds about 90,000 barrels per day by early 2027; the Mainline Optimization Project adds 210,000 barrels per day, taking the system to 1.19 million barrels per day by the fourth quarter of 2028; and Second Narrows dredging takes Aframax loadings from 75 to 100 percent. The 210,000 figure supersedes the chief executive's earlier framing of roughly 360,000 barrels per day; the fact sheet is current.</p>
-  <h2>Ownership and brief history</h2>
+  <h2>Ownership and brief history<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Trans Mountain Corporation is owned by the Canada Development Investment Corporation, a federal Crown corporation, after Ottawa bought the pipeline from Kinder Morgan Canada for C$4.5 billion in a deal that closed August 31, 2018. The government has promised a sale ever since and never executed one; in September 2026 it offered Indigenous groups along the route a collective 15 percent equity stake. The line's history in brief: parliamentary charter in 1951, startup in 1953, federal approval of the expansion in November 2016, the Federal Court of Appeal quashing that approval in August 2018, re-approval in June 2019 with 156 conditions, golden weld in April 2024, commercial service May 1, 2024.</p>
-<div class="exec"><h2>Why it matters</h2><p>Trans Mountain is the only non-US export route for Western Canadian crude and the swing outlet when the Mainline fills. Its tolls, utilization and expansion path set the ceiling on Canadian egress economics.</p></div>
-<h2>Sources</h2><ul class="ev"><li>Canada Energy Regulator, CER approves Trans Mountain settlement establishing a new framework for tolls (Sept 28, 2026) (<a href="https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html">https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html</a>)</li><li>Trans Mountain, Terminals page (pipeline route, pump stations, Puget Sound) (<a href="https://www.transmountain.com/terminals">https://www.transmountain.com/terminals</a>)</li><li>Trans Mountain, Fact sheet (May 2026) (<a href="https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf">https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf</a>)</li><li>Trans Mountain, Puget Sound pipeline: shipping products to Washington-state refineries since 1954 (<a href="https://www.transmountain.com/news/trans-mountains-puget-sound-pipeline-shipping-products-to-washington-state-refineries-since-1954">https://www.transmountain.com/news/trans-mountains-puget-sound-pipeline-shipping-products-to-washington-state-refineries-since-1954</a>)</li><li>Trans Mountain, Past project: Trans Mountain Expansion Project (<a href="https://www.transmountain.com/past-project-tmep">https://www.transmountain.com/past-project-tmep</a>)</li><li>Canadian Press via Barchart, Trans Mountain reaches toll settlement with oil shippers after prolonged negotiations (July 7, 2026) (<a href="https://www.barchart.com/story/news/3173794/trans-mountain-reaches-toll-settlement-with-oil-shippers-after-prolonged-negotiations">https://www.barchart.com/story/news/3173794/trans-mountain-reaches-toll-settlement-with-oil-shippers-after-prolonged-negotiations</a>)</li><li>Pipeline &amp; Gas Journal, Canadian regulators approve preliminary interim tolls on expanded Trans Mountain pipeline (Dec 2023) (<a href="https://pgjonline.com/news/2023/december/canadian-regulators-approve-preliminary-interim-tolls-on-expanded-trans-mountain-pipeline">https://pgjonline.com/news/2023/december/canadian-regulators-approve-preliminary-interim-tolls-on-expanded-trans-mountain-pipeline</a>)</li><li>Kinder Morgan Canada, Transaction closes: Trans Mountain pipeline and expansion project (Aug 31, 2018) (<a href="https://www.newswire.ca/news-releases/kinder-morgan-canada-limited---trans-mountain-pipeline-and-expansion-project-transaction-closes-692175841.html">https://www.newswire.ca/news-releases/kinder-morgan-canada-limited---trans-mountain-pipeline-and-expansion-project-transaction-closes-692175841.html</a>)</li><li>Government of Canada, Backgrounder: details of agreement for the completion of the Trans Mountain Expansion Project (May 2018) (<a href="https://www.canada.ca/en/department-finance/news/2018/05/backgrounder-details-of-agreement-for-the-completion-of-the-trans-mountain-expansion-project.html">https://www.canada.ca/en/department-finance/news/2018/05/backgrounder-details-of-agreement-for-the-completion-of-the-trans-mountain-expansion-project.html</a>)</li><li>Canadian Press via EuropeSays, Ottawa offers Indigenous groups 15% equity stake in Trans Mountain (Sept 22, 2026) (<a href="https://www.europesays.com/canada/220854/">https://www.europesays.com/canada/220854/</a>)</li></ul>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+<div class="exec"><h2>Why it matters<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p>Trans Mountain is the only non-US export route for Western Canadian crude and the swing outlet when the Mainline fills. Its tolls, utilization and expansion path set the ceiling on Canadian egress economics.</p></div>
+<h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><ul class="ev"><li>Canada Energy Regulator, CER approves Trans Mountain settlement establishing a new framework for tolls (Sept 28, 2026) (<a href="https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html">https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html</a>)</li><li>Trans Mountain, Terminals page (pipeline route, pump stations, Puget Sound) (<a href="https://www.transmountain.com/terminals">https://www.transmountain.com/terminals</a>)</li><li>Trans Mountain, Fact sheet (May 2026) (<a href="https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf">https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf</a>)</li><li>Trans Mountain, Puget Sound pipeline: shipping products to Washington-state refineries since 1954 (<a href="https://www.transmountain.com/news/trans-mountains-puget-sound-pipeline-shipping-products-to-washington-state-refineries-since-1954">https://www.transmountain.com/news/trans-mountains-puget-sound-pipeline-shipping-products-to-washington-state-refineries-since-1954</a>)</li><li>Trans Mountain, Past project: Trans Mountain Expansion Project (<a href="https://www.transmountain.com/past-project-tmep">https://www.transmountain.com/past-project-tmep</a>)</li><li>Canadian Press via Barchart, Trans Mountain reaches toll settlement with oil shippers after prolonged negotiations (July 7, 2026) (<a href="https://www.barchart.com/story/news/3173794/trans-mountain-reaches-toll-settlement-with-oil-shippers-after-prolonged-negotiations">https://www.barchart.com/story/news/3173794/trans-mountain-reaches-toll-settlement-with-oil-shippers-after-prolonged-negotiations</a>)</li><li>Pipeline &amp; Gas Journal, Canadian regulators approve preliminary interim tolls on expanded Trans Mountain pipeline (Dec 2023) (<a href="https://pgjonline.com/news/2023/december/canadian-regulators-approve-preliminary-interim-tolls-on-expanded-trans-mountain-pipeline">https://pgjonline.com/news/2023/december/canadian-regulators-approve-preliminary-interim-tolls-on-expanded-trans-mountain-pipeline</a>)</li><li>Kinder Morgan Canada, Transaction closes: Trans Mountain pipeline and expansion project (Aug 31, 2018) (<a href="https://www.newswire.ca/news-releases/kinder-morgan-canada-limited---trans-mountain-pipeline-and-expansion-project-transaction-closes-692175841.html">https://www.newswire.ca/news-releases/kinder-morgan-canada-limited---trans-mountain-pipeline-and-expansion-project-transaction-closes-692175841.html</a>)</li><li>Government of Canada, Backgrounder: details of agreement for the completion of the Trans Mountain Expansion Project (May 2018) (<a href="https://www.canada.ca/en/department-finance/news/2018/05/backgrounder-details-of-agreement-for-the-completion-of-the-trans-mountain-expansion-project.html">https://www.canada.ca/en/department-finance/news/2018/05/backgrounder-details-of-agreement-for-the-completion-of-the-trans-mountain-expansion-project.html</a>)</li><li>Canadian Press via EuropeSays, Ottawa offers Indigenous groups 15% equity stake in Trans Mountain (Sept 22, 2026) (<a href="https://www.europesays.com/canada/220854/">https://www.europesays.com/canada/220854/</a>)</li></ul>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -769,5 +823,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

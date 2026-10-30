@@ -1,0 +1,814 @@
+{
+ "schema": "micro-balance/1",
+ "level": "rollup",
+ "region": "rollup_asia_pacific",
+ "title": "Asia-Pacific balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Each country enters on its declared headline spine per leg (the same declaration as its country page). Totals are sums of those declared reads; coverage counts print beside every total.",
+ "units": "kb/d unless a field name says otherwise",
+ "grain": {
+  "capture": "Country grain from the agency panel, built up from states and basins for the US and from the house balance for Canada.",
+  "display": "Asia-Pacific"
+ },
+ "totals": {
+  "production_crude": 6797.2,
+  "production_liquids": 9394.6,
+  "consumption_products": 33119.6
+ },
+ "coverage": {
+  "production_crude": 43,
+  "production_liquids": 43,
+  "consumption_products": 9
+ },
+ "n_members": 43,
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "declared_total": 6797.2,
+   "per_spine": {
+    "EIA_international": {
+     "total": 6797.2,
+     "n": 43
+    },
+    "JODI": {
+     "total": 6477.9,
+     "n": 10
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "declared_total": 9394.6,
+   "per_spine": {
+    "EIA_international": {
+     "total": 9394.6,
+     "n": 43
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "declared_total": 33119.6,
+   "per_spine": {
+    "JODI": {
+     "total": 33119.6,
+     "n": 9
+    },
+    "EIA_international": {
+     "total": 5561.1,
+     "n": 2
+    }
+   },
+   "missing_members": 34
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "declared_total": null,
+   "per_spine": {},
+   "missing_members": 43
+  }
+ ],
+ "trade": [
+  {
+   "kind": "imports_by_origin",
+   "title": "Imports by origin region",
+   "source": "EIA, imports by source (OECD reporting)",
+   "period": "2025 average, kb/d",
+   "note": "Itemized country sources. Largest: United Arab Emirates 1,173 \u00b7 Saudi Arabia 971 \u00b7 Kuwait 224.",
+   "rows": [
+    {
+     "region": "Middle East",
+     "kbd": 2583.4,
+     "share": 99.7
+    },
+    {
+     "region": "Africa",
+     "kbd": 8.6,
+     "share": 0.3
+    }
+   ],
+   "total": 2592.0,
+   "country": "Japan"
+  },
+  {
+   "kind": "imports_by_origin",
+   "title": "Imports by origin region",
+   "source": "EIA, imports by source (OECD reporting)",
+   "period": "2025 average, kb/d",
+   "note": "Itemized country sources. Largest: Saudi Arabia 980 \u00b7 United Arab Emirates 498 \u00b7 Iraq 341.",
+   "rows": [
+    {
+     "region": "Middle East",
+     "kbd": 2347.0,
+     "share": 90.3
+    },
+    {
+     "region": "Africa",
+     "kbd": 252.1,
+     "share": 9.7
+    }
+   ],
+   "total": 2599.2,
+   "country": "South Korea"
+  }
+ ],
+ "members": [
+  {
+   "country": "China",
+   "code": "CHN",
+   "slug": "china",
+   "legs": {
+    "production_crude": {
+     "value": 4325.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 5446.5,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 16634.8,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Indonesia",
+   "code": "IDN",
+   "slug": "indonesia",
+   "legs": {
+    "production_crude": {
+     "value": 581.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 852.6,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 2154.1,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "India",
+   "code": "IND",
+   "slug": "india",
+   "legs": {
+    "production_crude": {
+     "value": 580.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 988.5,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 5479.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Malaysia",
+   "code": "MYS",
+   "slug": "malaysia",
+   "legs": {
+    "production_crude": {
+     "value": 512.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 604.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Australia",
+   "code": "AUS",
+   "slug": "australia",
+   "legs": {
+    "production_crude": {
+     "value": 245.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 363.2,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1107.8,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Vietnam",
+   "code": "VNM",
+   "slug": "vietnam",
+   "legs": {
+    "production_crude": {
+     "value": 164.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 199.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Thailand",
+   "code": "THA",
+   "slug": "thailand",
+   "legs": {
+    "production_crude": {
+     "value": 161.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 395.8,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1150.3,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Brunei",
+   "code": "BRN",
+   "slug": "brunei",
+   "legs": {
+    "production_crude": {
+     "value": 100.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 109.8,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 13.5,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Pakistan",
+   "code": "PAK",
+   "slug": "pakistan",
+   "legs": {
+    "production_crude": {
+     "value": 57.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 79.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Papua New Guinea",
+   "code": "PNG",
+   "slug": "papua_new_guinea",
+   "legs": {
+    "production_crude": {
+     "value": 31.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 31.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Mongolia",
+   "code": "MNG",
+   "slug": "mongolia",
+   "legs": {
+    "production_crude": {
+     "value": 13.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 13.7,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "New Zealand",
+   "code": "NZL",
+   "slug": "new_zealand",
+   "legs": {
+    "production_crude": {
+     "value": 7.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 19.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Myanmar",
+   "code": "MMR",
+   "slug": "myanmar",
+   "legs": {
+    "production_crude": {
+     "value": 5.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 6.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Japan",
+   "code": "JPN",
+   "slug": "japan",
+   "legs": {
+    "production_crude": {
+     "value": 3.1,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 102.9,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 3254.3,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Bangladesh",
+   "code": "BGD",
+   "slug": "bangladesh",
+   "legs": {
+    "production_crude": {
+     "value": 3.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 9.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Timor-Leste",
+   "code": "TLS",
+   "slug": "timor_leste",
+   "legs": {
+    "production_crude": {
+     "value": 2.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 2.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Philippines",
+   "code": "PHL",
+   "slug": "philippines",
+   "legs": {
+    "production_crude": {
+     "value": 0.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 14.3,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 493.4,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Taiwan",
+   "code": "TWN",
+   "slug": "taiwan",
+   "legs": {
+    "production_crude": {
+     "value": 0.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 25.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Afghanistan",
+   "code": "AFG",
+   "slug": "afghanistan",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "American Samoa",
+   "code": "ASM",
+   "slug": "american_samoa",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Bhutan",
+   "code": "BTN",
+   "slug": "bhutan",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cambodia",
+   "code": "KHM",
+   "slug": "cambodia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cook Islands",
+   "code": "COK",
+   "slug": "cook_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Fiji",
+   "code": "FJI",
+   "slug": "fiji",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "French Polynesia",
+   "code": "PYF",
+   "slug": "french_polynesia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Guam",
+   "code": "GUM",
+   "slug": "guam",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Hong Kong",
+   "code": "HKG",
+   "slug": "hong_kong",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Kiribati",
+   "code": "KIR",
+   "slug": "kiribati",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Laos",
+   "code": "LAO",
+   "slug": "laos",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Macau",
+   "code": "MAC",
+   "slug": "macau",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Maldives",
+   "code": "MDV",
+   "slug": "maldives",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Nauru",
+   "code": "NRU",
+   "slug": "nauru",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Nepal",
+   "code": "NPL",
+   "slug": "nepal",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "New Caledonia",
+   "code": "NCL",
+   "slug": "new_caledonia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Niue",
+   "code": "NIU",
+   "slug": "niue",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "North Korea",
+   "code": "PRK",
+   "slug": "north_korea",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Samoa",
+   "code": "WSM",
+   "slug": "samoa",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Singapore",
+   "code": "SGP",
+   "slug": "singapore",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 20.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Solomon Islands",
+   "code": "SLB",
+   "slug": "solomon_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "South Korea",
+   "code": "KOR",
+   "slug": "south_korea",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 110.6,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 2832.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Sri Lanka",
+   "code": "LKA",
+   "slug": "sri_lanka",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": -0.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Tonga",
+   "code": "TON",
+   "slug": "tonga",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Vanuatu",
+   "code": "VUT",
+   "slug": "vanuatu",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "gaps": [],
+ "supply": [],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "cards": {}
+}

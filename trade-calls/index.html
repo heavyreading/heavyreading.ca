@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="trade-calls/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -714,7 +715,7 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
       <div class="mnav-sec"><a class="mg-link" href="../whale-watch.html">Whale watch</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -722,10 +723,10 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
   <h1>Trade calls</h1>
   <p class="sub">Private WCSB crude trade call framework. Unscored.</p>
 <div class="private-banner"><strong>PRIVATE.</strong> This page is not linked in navigation. Trade calls are unscored and unvalidated.</div>
-<div class="machine-nav"><h2>🧠 Cerebrum</h2><p class="note">Your thinking machine — live interfaces, same data on web and app.</p><div class="machine-links"><a href="machine/brief/index.html" class="machine-link"><strong>📊 Morning Brief</strong><span>Net signal, overnight movers, top factors</span></a><a href="machine/score/index.html" class="machine-link"><strong>✋ Score Factors</strong><span>60-second manual input for judgment factors</span></a><a href="machine/calls/index.html" class="machine-link"><strong>🎯 Call Tickets</strong><span>Suggested calls, approve or reject</span></a><a href="machine/risk/index.html" class="machine-link"><strong>⚠️ Risk</strong><span>VaR, positions, sizer, portfolio heat</span></a></div></div>
-<h2>Open trade calls</h2>
+<div class="machine-nav"><h2>🧠 Cerebrum<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p class="note">Your thinking machine — live interfaces, same data on web and app.</p><div class="machine-links"><a href="machine/brief/index.html" class="machine-link"><strong>📊 Morning Brief</strong><span>Net signal, overnight movers, top factors</span></a><a href="machine/score/index.html" class="machine-link"><strong>✋ Score Factors</strong><span>60-second manual input for judgment factors</span></a><a href="machine/calls/index.html" class="machine-link"><strong>🎯 Call Tickets</strong><span>Suggested calls, approve or reject</span></a><a href="machine/risk/index.html" class="machine-link"><strong>⚠️ Risk</strong><span>VaR, positions, sizer, portfolio heat</span></a></div></div>
+<h2>Open trade calls<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <div class="no-calls"><p><strong>No open trade calls.</strong></p><p class="note">When a call is posted here, it will carry the checklist assessment above, an entry level, a target, a stop, and a time horizon. Calls are currently <strong>unscored</strong> — no backtested signal definitions or walk-forward evidence yet. This page is the scaffold; the validation comes later.</p></div>
-<h2>The checklist</h2>
+<h2>The checklist<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="note">Every trade call gets assessed against these factors. None are backtested or scored yet — this is structured fundamental reasoning, the best available until signals are validated. "Linked" factors pull from live site data; "manual" factors are assessed by hand.</p>
 <div class="checklist">
 <div class="check-item"><h4>Technical: momentum <span class="flag">MANUAL</span> </h4><p class="note">Momentum rating with moving averages. Where is the trend, is it accelerating or rolling over?</p></div>
@@ -786,13 +787,13 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
 <div class="check-item"><h4>Risk budgeting: how much to risk for X? <span class="flag">MANUAL</span> </h4><p class="note">Start from the annual target and work backwards. If you need to make $X this year across N trades with a W% win rate and R average win/loss ratio, how much risk per trade? Size each call so the math works — don't bet the year on one thesis.</p></div>
 <div class="check-item"><h4>Weather & disruptions <span class="flag">MANUAL</span> </h4><p class="note">Hurricanes (USGC), extreme cold (Canadian production), wildfires. Event risk to supply.</p></div>
 </div>
-<h2>Marginal scoring: examples</h2>
+<h2>Marginal scoring: examples<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <div class="checklist">
 <div class="check-item"><h4>Positioning: shorts covering</h4><p class="note">Positioning was stretched short. Shorts start covering, price ticks up on the buy flow. That's <strong>+1 (incrementally bullish)</strong> — not because the absolute position is bullish, but because the <em>change</em> is bullish.</p></div>
 <div class="check-item"><h4>Momentum: trend direction</h4><p class="note">Momentum is up and accelerating. <strong>+1 (bullish incremental).</strong> If momentum rolls over and starts falling, that's <strong>−1 (bearish incremental)</strong> — even if price is still above the moving average in absolute terms.</p></div>
 <div class="check-item"><h4>SPR: heavy sour release</h4><p class="note">News drops: SPR will release heavy sour crude into the US market. Nominal impact is <strong>−1 (bearish)</strong> for WCS — more heavy sour supply competing directly with Canadian barrels. If the release were light sweet, the impact on WCS would be smaller.</p></div>
 </div>
-<h2>Call ticket: required fields</h2>
+<h2>Call ticket: required fields<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="note">Every trade call posted here must carry these fields. No call without a ticket.</p>
 <div class="checklist">
 <div class="check-item"><h4>Grade</h4><p class="note">WCS, SCO, MSW, WTI flat — what exactly are we trading? No vague "crude" calls.</p></div>
@@ -806,7 +807,7 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
 <div class="check-item"><h4>Thesis</h4><p class="note">Which checklist factors drive this call? Reference them by name with their marginal scores. The reader should be able to reconstruct your reasoning.</p></div>
 <div class="check-item"><h4>What kills it</h4><p class="note">What would make you exit early, before the stop? Which factor flipping would invalidate the thesis?</p></div>
 </div>
-<h2>How calls get scored (future)</h2>
+<h2>How calls get scored (future)<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="note">When signal definitions are validated with walk-forward evidence, each call will carry: entry, target, stop, time horizon, and a P&L track record. Until then, this page is a thinking framework, not a signal service.</p>
   <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../balance/index.html">S&amp;D balance</a><a href="../st3-dashboard.html">Projected ST3</a><a href="../scorecard.html">Scorecard</a><a href="../open-calls/index.html">Open calls</a></div><div class="fcol"><h4>Supply</h4><a href="../supply/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../egress/index.html">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
@@ -908,6 +909,74 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
   });
 })();
 </script>
-
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

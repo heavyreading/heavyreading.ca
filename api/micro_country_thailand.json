@@ -1,0 +1,324 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_thailand",
+ "country": "Thailand",
+ "country_code": "THA",
+ "title": "Thailand country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "asia_pacific",
+ "rollup_name": "Asia-Pacific",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 161.5,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 161.6,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 161.5,
+   "spread_pct": 0.1
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 395.8,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 395.8,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1150.3,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 1150.3,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 161.5,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 395.8,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 1150.3,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1157941.67,
+   "unit": "barrels/day",
+   "kbd": 1157.9416666666666,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Energy Statistics, Table 2.4-1 Demand and Supply of Crude Oil and Oil Products (source data: Department of Energy Business / Ministry of Commerce)",
+   "note": "Oil products consumption, EPPO Table 2.4-1, daily rate",
+   "grain": "monthly, trailing 12 months",
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "n_rows": 488,
+   "first": "1986-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 10059.75,
+   "unit": "barrels/day",
+   "kbd": 10.05975,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Energy Statistics, Table 2.4-1 Demand and Supply of Crude Oil and Oil Products (source data: Department of Energy Business / Ministry of Commerce)",
+   "note": "Crude oil exports, EPPO Table 2.4-1, daily rate",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 359,
+   "first": "1994-07",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 217861.58,
+   "unit": "barrels/day",
+   "kbd": 217.86158333333333,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Energy Statistics, Table 2.4-1 Demand and Supply of Crude Oil and Oil Products (source data: Department of Energy Business / Ministry of Commerce)",
+   "note": "Oil products exports, EPPO Table 2.4-1, daily rate",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_products",
+   "leg_label": "Product exports",
+   "n_rows": 452,
+   "first": "1989-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 951757.17,
+   "unit": "barrels/day",
+   "kbd": 951.7571666666666,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Energy Statistics, Table 2.4-1 Demand and Supply of Crude Oil and Oil Products (source data: Department of Energy Business / Ministry of Commerce)",
+   "note": "Crude oil imports, EPPO Table 2.4-1, daily rate",
+   "grain": "monthly, trailing 12 months",
+   "leg": "imports_crude",
+   "leg_label": "Crude imports",
+   "n_rows": 488,
+   "first": "1986-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 119829.58,
+   "unit": "barrels/day",
+   "kbd": 119.82958333333333,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Energy Statistics, Table 2.4-1 Demand and Supply of Crude Oil and Oil Products (source data: Department of Energy Business / Ministry of Commerce)",
+   "note": "Oil products imports, EPPO Table 2.4-1, daily rate",
+   "grain": "monthly, trailing 12 months",
+   "leg": "imports_products",
+   "leg_label": "Product imports",
+   "n_rows": 488,
+   "first": "1986-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 98706.17,
+   "unit": "barrels/day",
+   "kbd": 98.70616666666666,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Table 2.1-1 Production of Crude Oil (source: Department of Mineral Fuels)",
+   "note": "Crude oil production by field, total column, EPPO Table 2.1-1 (excludes condensate), daily rate",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "n_rows": 32,
+   "first": "2024-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 174013.25,
+   "unit": "barrels/day",
+   "kbd": 174.01325,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Energy Statistics, Table 2.4-1 Demand and Supply of Crude Oil and Oil Products (source data: Department of Energy Business / Ministry of Commerce)",
+   "note": "Crude oil and condensate production (PROD. column, crude balance section of EPPO Table 2.4-1), daily rate for the month",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "n_rows": 488,
+   "first": "1986-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1066253.08,
+   "unit": "barrels/day",
+   "kbd": 1066.2530833333333,
+   "source": "Energy Policy and Planning Office (EPPO), Thailand - Energy Statistics, Table 2.4-1 Demand and Supply of Crude Oil and Oil Products (source data: Department of Energy Business / Ministry of Commerce)",
+   "note": "Crude oil throughput, EPPO Table 2.4-1, daily rate",
+   "grain": "monthly, trailing 12 months",
+   "leg": "refinery_throughput",
+   "leg_label": "Refinery throughput",
+   "n_rows": 488,
+   "first": "1986-01",
+   "last": "2026-08",
+   "basis": "measured"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 161.5,
+   "rows": [
+    {
+     "label": "National record: Energy Policy and Planning Office (EPPO), Thailand - Table 2.1-1 Production of Crude Oil (source: Department of Mineral Fuels)",
+     "value": 98.7,
+     "kind": "build",
+     "gap": -62.8,
+     "cause": "Own statistics, exact-volumetric conversion. National latest vs the spines' 2025: part of the gap is time."
+    },
+    {
+     "label": "EIA (international)",
+     "value": 161.5,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 161.6,
+     "kind": "spine",
+     "gap": 0.1,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 395.8,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 395.8,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

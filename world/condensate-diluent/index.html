@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="world/condensate-diluent/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../../options/index.html">The Wing (options)</a><a class="nd-link" href="../../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../maps/index.html">Maps</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../../options/index.html">The Wing (options)</a><a class="mg-link" href="../../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../maps/index.html">Maps</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -658,7 +712,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="note">Read this page as the cost line inside every Western Canadian Select (WCS) barrel. Trade press usually means pentanes plus (C5+) when it says condensate, the Alberta Energy Regulator's (AER) formal category. Every bullet is dated and sourced: 2026 trade-press snapshots sit against the AER's annual ST98 supply and demand balance, the benchmark source.</p>
   <p class="lede">The so-what on diluent is cost, not price: roughly 30% of every dilbit barrel is condensate priced near West Texas Intermediate (WTI), and Alberta is structurally short, 2024 pentanes-plus production of 396,000 b/d against 751,000 b/d of demand, with the two US import lines running at or near full (Cochin, design capacity 110,000 b/d; Southern Lights, nameplate 180,000 b/d, available capacity 198,000 b/d since the Line 13 Expansion entered service in July 2025, and 165,000 b/d committed through 2030). When diluent tightens, the cost hits bitumen netbacks directly even if the <a href="../../venezuela/index.html">TMW</a> print does not move. Fresh signal: FTAI Energy Partners agreed on September 28 to buy the Port Arthur crude terminal and half of the Hardisty Diluent Recovery Unit, midstream money betting that diluent recovery and Gulf Coast placement stay economic.</p>
   <p class="note freshness">Updated October 26, 2026 &middot; refreshes every 14 days</p>
-  <h2>The network</h2>
+  <h2>The network<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <figure class="chart">
     <svg viewbox="0 0 680 560" role="img" aria-label="Schematic map of the condensate import network: Explorer Pipeline from the Texas Gulf Coast to Illinois, Southern Lights and Cochin north to Edmonton and Fort Saskatchewan, and diluent laterals to the oil sands" style="width:100%;height:auto;display:block">
 <rect x="0" y="0" width="680" height="560" fill="var(--paper)" />
@@ -770,29 +824,29 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <figcaption><b>The condensate import network.</b> Drawn by Heavy Reading; routes are schematic, nodes sit at their city and terminal locations. No third-party map or geometry is reproduced. Capacities from filed sources: Southern Lights 180,000 b/d nameplate, 198,000 b/d available since the Line 13 Expansion entered service in July 2025, 165,000 b/d committed through 2030 (CER No. 27; CER pipeline profile, updated Feb 2026). Cochin 110,000 b/d design capacity (joint tariff CER No. 296 / FERC No. 77.43.0). Explorer: committed diluent program, 60,000 b/d minimum, under Item 118 of FERC No. 100.133.0; total expansion capacity is not published. Diluent lateral capacities are not printed: published Polaris figures conflict (820 vs 700 kb/d) and Access and Corridor capacities are undisclosed.</figcaption>
   </figure>
   <p class="note"><a href="print-sheet.html">Print sheet: the one-page version of this map</a></p>
-  <h2>What diluent is, and why bitumen needs it</h2>
+  <h2>What diluent is, and why bitumen needs it<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Dilbit is bitumen diluted with natural gas condensate, typically 30 to 35% by volume. It accounts for about 60% of all marketable crude production from the oil sands, and with the exception of the <a class="plink" href="../../projects/imo_kearl.html">Kearl</a> and <a class="plink" href="../../projects/su_fort_hills.html">Fort Hills</a> mines, all of it comes from thermal in situ facilities.<br><span class="vintage-inline">Page current as of 2026; accessed 2026-09-24 <a href="https://www.oilsandsmagazine.com/technical/product-streams">Oil Sands Magazine</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Bitumen is extra heavy and almost solid at room temperature. Undiluted bitumen is non-marketable because it cannot be stored or shipped by pipeline, so it must be upgraded or diluted with a lighter hydrocarbon.<br><span class="vintage-inline">Page current as of 2026; accessed 2026-09-24 <a href="https://www.oilsandsmagazine.com/technical/product-streams">Oil Sands Magazine</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Alberta pipeline specifications require crude under 350 centistokes of viscosity and density under 940 kilograms per cubic metre (above 18.9 American Petroleum Institute (API) gravity). Condensate at 30% by volume or more is added to bitumen to meet that spec, producing dilbit.<br><span class="vintage-inline">2018 whitepaper; accessed 2026-09-24 <a href="https://albertainnovates.ca/wp-content/uploads/2023/06/Bitumen-Partial-Upgrading-2018-Whitepaper-2433-Jacobs-Consultancy-rev7.pdf">Alberta Innovates (Bitumen Partial Upgrading whitepaper)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Imperial Oil's investor materials define WCS, the Canadian heavy benchmark, as about one-quarter diluent and three-quarters bitumen, and the bitumen realization bridge backs the diluent cost out of the WCS price. Diluent is not a footnote, it is a line item in the netback.<br><span class="vintage-inline">2018 presentation; accessed 2026-09-24 <a href="https://www.sec.gov/Archives/edgar/data/49938/000119312518320124/d644021dex991.htm">Imperial Oil investor presentation (via US Securities and Exchange Commission (SEC) filing)</a> <span class="age-chip">&middot; reference</span></span></li>
   </ul>
-  <h2>The balance: Alberta is structurally short</h2>
+  <h2>The balance: Alberta is structurally short<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>IndexBox reported on Oct 23, citing S and P Global Energy CERA, that Canadian crude oil production, including pentanes and condensate, is expected to reach 5.5 million barrels per day in 2026, 5.8 million in 2027 and 6 million in 2028, a gain of nearly 450,000 barrels per day over three years. No fresh condensate-specific supply release was published in the week to Oct 26.<br><span class="vintage-inline">Published Oct 23, 2026; accessed 2026-10-26 <a href="https://www.indexbox.io/blog/canadian-crude-pipelines-raise-apportionment-as-heavy-oil-discounts-widen/">IndexBox (reporting S&amp;P Global Energy)</a> <span class="age-chip">&middot; 3d old</span></span></li>
+  <li>IndexBox reported on Oct 23, citing S and P Global Energy CERA, that Canadian crude oil production, including pentanes and condensate, is expected to reach 5.5 million barrels per day in 2026, 5.8 million in 2027 and 6 million in 2028, a gain of nearly 450,000 barrels per day over three years. No fresh condensate-specific supply release was published in the week to Oct 26.<br><span class="vintage-inline">Published Oct 23, 2026; accessed 2026-10-26 <a href="https://www.indexbox.io/blog/canadian-crude-pipelines-raise-apportionment-as-heavy-oil-discounts-widen/">IndexBox (reporting S&amp;P Global Energy)</a> <span class="age-chip">&middot; 7d old</span></span></li>
   <li>In 2024, Alberta pentanes plus production averaged 396.2 thousand barrels per day, up 6.8% year on year on higher recovery at field plants. Alberta demand reached 751.1 thousand barrels per day, up 5.1%, driven by higher bitumen production. The province consumed nearly twice what it produced.<br><span class="vintage-inline">ST98 2025 edition (2024 data); accessed 2026-09-24 <a href="https://static.aer.ca/prd/documents/sts/ST98/2025/Alberta-Energy-Outlook_report.pdf">Alberta Energy Regulator, ST98 2025 (Alberta Energy Outlook)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The AER's base-case forecast has pentanes plus production growing to 471.5 thousand barrels per day by 2034 while demand reaches 933.7 thousand barrels per day. Imports of pentanes plus into Alberta are expected to increase over the forecast period to cover the widening shortfall.<br><span class="vintage-inline">ST98 2025 edition (forecast 2025 to 2034); accessed 2026-09-24 <a href="https://static.aer.ca/prd/documents/sts/ST98/2025/Alberta-Energy-Outlook_report.pdf">Alberta Energy Regulator, ST98 2025 (Alberta Energy Outlook)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The Western Canadian Sedimentary Basin (WCSB) imports roughly 260,000 barrels per day of condensate from the US to meet demand. Canada produces about 570,000 barrels per day of condensate, primarily from Montney and Duvernay unconventional plays, with the balance imported by pipeline.<br><span class="vintage-inline">2026; accessed 2026-09-24 <a href="https://oilprice.com/Energy/Energy-General/The-Condensate-Challenge-Facing-Canadas-Oil-Sands-Growth.amp.html">OilPrice.com</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Almost all of Western Canada's refined petroleum product imports from the US are condensate, which is used to blend with heavy bitumen so the blended bitumen can move by pipeline.<br><span class="vintage-inline">April 2026 deck; accessed 2026-09-24 <a href="https://www.capp.ca/wp-content/uploads/2026/07/Canadian-Refining-Industry-April-17-2026.pdf">Canadian Association of Petroleum Producers (CAPP), Canadian Refining Industry deck</a> <span class="age-chip">&middot; reference</span></span></li>
   </ul>
-  <h2>Pricing: condensate trades near or above WTI</h2>
+  <h2>Pricing: condensate trades near or above WTI<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Imperial Oil's Q2 2026 MD&amp;A says first-half average bitumen realizations rose $11.41/bbl year over year on higher marker prices, but that the gain was 'partially offset by a weaker WTI/WCS spread and higher diluent costs,' a concrete producer-level read that the diluent line item bit into netbacks even in a stronger tape. Its six-month averages: WTI US$82.77 (vs 67.52 in 2025), WCS US$68.19 (vs 56.25), WTI/WCS spread US$14.58 (vs 11.27), bitumen US$81.91 (vs 70.50), synthetic crude US$118.86 (vs 93.14).<br><span class="vintage-inline">Published Aug 3, 2026; accessed 2026-10-05 <a href="https://files.quartr.com/reports/9a115ac0dc95cedd6f394ef2e37dfe1a-2026-08-03-19-23-02.pdf?ref=U0E=">Imperial Oil (Q2 2026 MD&amp;A, via Quartr)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Condensate is a premium light stream: Oil Sands Magazine notes that condensate and synthetic crude produced through bitumen upgrading can trade close to par or even at a small premium to West Texas Intermediate (WTI), the US benchmark.<br><span class="vintage-inline">Page current as of 2026; accessed 2026-09-24 <a href="https://www.oilsandsmagazine.com/market-insights/crude-oil-pricing-differentials-why-alberta-crude-sells-at-deep-discount-to-wti">Oil Sands Magazine</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Enverus Intelligence Research expects condensate prices to stay robust as oil sands growth lifts in-basin demand, a tailwind for producers with exposure to the liquids-rich Montney and Duvernay and for select midstreamers.<br><span class="vintage-inline">Apr 9, 2025; accessed 2026-09-24 <a href="https://www.enverus.com/newsroom/100-mbbl-d-increase-in-canadian-oil-sands-sends-condensate-demand-up-aeco-gas-prices-down/">Enverus Intelligence Research</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The arithmetic is unforgiving: every dilbit barrel carries about 30% condensate priced near WTI while the blended barrel sells at a heavy discount to WTI. When the condensate premium firms, bitumen producers absorb the cost, not refiners.<br><span class="vintage-inline">2026; accessed 2026-09-24 <a href="https://www.oilsandsmagazine.com/market-insights/crude-oil-pricing-differentials-why-alberta-crude-sells-at-deep-discount-to-wti">Oil Sands Magazine (differentials page); Imperial Oil realization bridge (SEC filing)</a> <span class="age-chip">&middot; reference</span></span></li>
   </ul>
-  <h2>Infrastructure: the import pipes</h2>
+  <h2>Infrastructure: the import pipes<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Gibson Energy's December 2025 Investor Day presentation targets 1 to 2 additional diluent recovery unit (DRU) phases, each with 50,000-plus b/d of capacity, entering service from 2028 onward, as part of a plan to deploy up to C$1 billion of growth capital over five years. That timeline matches the DRU expansion Rystad Energy cites as the main cover for the basin's projected condensate shortfall. A counter-note: a GuruFocus summary of Gibson's Q2 2026 earnings call said DRU expansion discussions had quieted, suggesting the timeline could slip.<br><span class="vintage-inline">December 2025 Investor Day presentation; accessed 2026-10-12 <a href="https://www.gibsonenergy.com/wp-content/uploads/2025/12/2025-Investor-Day-Presentation-vF-2.pdf">Gibson Energy (December 2025 Investor Day presentation)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Follow-up reporting on FTAI Energy Partners' Sep 28 agreement for the Port Arthur terminal and a 50% stake in the Hardisty diluent recovery unit sharpened the terms: Hydrocarbon Engineering reports FTAI expects the assets to generate about US$50 million of annual EBITDA over the next 12 months, with closing expected in Q4 2026 subject to regulatory approvals. TipRanks reports the deal was signed Sep 27 and will be financed by assuming roughly US$190 million of existing term debt plus a US$72 million Barclays acquisition facility, backed by a long-term take-or-pay contract with an investment-grade producer.<br><span class="vintage-inline">Published Sep 29-30, 2026; accessed 2026-10-05 <a href="https://www.hydrocarbonengineering.com/refining/30092026/ftai-energy-partners-agrees-to-acquire-crude-oil-logistics-assets-from-usd-group/">Hydrocarbon Engineering; TipRanks</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -804,9 +858,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Diluent recovery units (DRUs) would recycle diluent at Edmonton rail terminals instead of importing it. Cenovus studied a unit to process 180,000 barrels per day of dilbit and recover 60,000 barrels per day of diluent for return to northern Alberta projects, at an estimated cost of $800 million to $1 billion. Imperial Oil ruled a DRU out for now, citing high cost and market uncertainty.<br><span class="vintage-inline">Aug 16, 2019 (analyst and executive comments); accessed 2026-09-24 <a href="https://boereport.com/2019/08/16/oilsands-firms-considering-diluent-recovery-units-to-boost-crude-by-rail-volumes/">BOE Report</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Eight Capital's analysis at the time estimated that DRUs at rail-loading terminals could free about one-third of each railcar's space and add roughly 190,000 barrels per day of incremental bitumen capacity if applied across 600,000 barrels per day of crude-by-rail. No major DRU has been built since.<br><span class="vintage-inline">Aug 16, 2019; accessed 2026-09-24 <a href="https://boereport.com/2019/08/16/oilsands-firms-considering-diluent-recovery-units-to-boost-crude-by-rail-volumes/">BOE Report (citing Eight Capital)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>What moves the balance</h2>
+  <h2>What moves the balance<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>Oil Sands Magazine, in a third-quarter wrap updated Oct 20, said Alberta thermal oil sands production averaged a record 1.83 million barrels per day in August and is expected to ramp to a record 1.85 million barrels per day in the fourth quarter, likely making 2026 the sixth consecutive record year. Rising thermal and bitumen output is the demand side of the diluent balance: more bitumen to blend means more condensate demand at the established blend share.<br><span class="vintage-inline">Updated Oct 20, 2026; accessed 2026-10-26 <a href="https://www.oilsandsmagazine.com/news/2026/9/30/q3-wrap-new-thermal-records-midwest-refinery-outages-and-widening-differentials-wcs-sco">Oil Sands Magazine</a> <span class="age-chip">&middot; 6d old</span></span></li>
+  <li>Oil Sands Magazine, in a third-quarter wrap updated Oct 20, said Alberta thermal oil sands production averaged a record 1.83 million barrels per day in August and is expected to ramp to a record 1.85 million barrels per day in the fourth quarter, likely making 2026 the sixth consecutive record year. Rising thermal and bitumen output is the demand side of the diluent balance: more bitumen to blend means more condensate demand at the established blend share.<br><span class="vintage-inline">Updated Oct 20, 2026; accessed 2026-10-26 <a href="https://www.oilsandsmagazine.com/news/2026/9/30/q3-wrap-new-thermal-records-midwest-refinery-outages-and-widening-differentials-wcs-sco">Oil Sands Magazine</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The Hub's Oct 14 analysis, 'A missing ingredient in Canada's pipeline plans,' put the diluent constraint on Canada's pipeline ambitions in AER numbers: Alberta consumed about 781,300 barrels per day of pentanes plus in 2025 while producing just 424,600 barrels per day, a supply gap of roughly 357,000 barrels per day, and the Alberta Energy Regulator expects pentanes plus demand to approach 934,000 barrels per day by 2034. S&amp;P Global's Kevin Birn put total Western Canadian diluent consumption, including condensate and other lighter hydrocarbons, at nearly 900,000 barrels per day. At a typical blend of about 30 percent diluent, a fully utilized 1 million barrel per day dilbit pipeline would alone move roughly 300,000 barrels per day of diluent.<br><span class="vintage-inline">Published Oct 14, 2026; accessed 2026-10-19 <a href="https://thehub.ca/2026/10/14/a-missing-ingredient-in-canadas-pipeline-plans/">The Hub</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>In Rystad Energy's high case, building the proposed Alberta-to-British Columbia (AB-BC) pipeline alongside further Enbridge Mainline expansions (phases 3 and 4) pushes the implied condensate shortfall to about 383,000 b/d at 85% throughput utilization, which Rystad says domestic supply is unlikely to meet without additional natural gas egress. As costly alternatives, Rystad flags condensate imports by rail or using synthetic crude oil (SCO) as diluent, warning both could weigh on bitumen netbacks depending on future oil prices.<br><span class="vintage-inline">Rystad Energy scenario analysis carried by OilPrice.com; accessed 2026-10-12 <a href="https://oilprice.com/Energy/Energy-General/The-Condensate-Challenge-Facing-Canadas-Oil-Sands-Growth.html">Rystad Energy (via OilPrice.com)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Rystad Energy's scenario work on OilPrice.com puts numbers on the condensate question: its base case sees 840,000 b/d of additional Western Canadian egress built within the decade, which would need about 214,200 b/d of additional condensate for transport at 85% throughput utilization. Forecast domestic condensate supply growth of about 150,000 b/d leaves a gap of roughly 64,200 b/d, which Rystad says incremental Southern Lights capacity (15,000 b/d) and diluent recovery unit (DRU) expansion (50,000 to 100,000 b/d) can cover, leaving the condensate market tightly balanced.<br><span class="vintage-inline">Rystad Energy scenario analysis carried by OilPrice.com; accessed 2026-10-12 <a href="https://oilprice.com/Energy/Energy-General/The-Condensate-Challenge-Facing-Canadas-Oil-Sands-Growth.html">Rystad Energy (via OilPrice.com)</a> <span class="age-chip">&middot; reference</span></span></li>
@@ -814,14 +868,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>There is a trade-off: the condensate-directed drilling that feeds the diluent pool also produces associated natural gas, which puts downward pressure on Alberta Energy Company (AECO) gas hub prices. Robust condensate demand is good for liquids-rich producers and bad for dry-gas producers.<br><span class="vintage-inline">2026; accessed 2026-09-24 <a href="https://oilprice.com/Energy/Energy-General/The-Condensate-Challenge-Facing-Canadas-Oil-Sands-Growth.amp.html">OilPrice.com; Enverus Intelligence Research</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Monthly tracking: the AER publishes in situ oil sands production volumes in ST53 and broader oil sands production, supply, and disposition in ST39, both monthly. The annual ST98 outlook is where the condensate supply and demand balance is formally reconciled.<br><span class="vintage-inline">Reports current as of 2026; accessed 2026-09-24 <a href="https://www.aer.ca/data-and-performance-reports/statistical-reports/st53">Alberta Energy Regulator (ST53 and ST39 statistical reports)</a> <span class="age-chip">&middot; reference</span></span></li>
   </ul>
-  <h2>Where sources disagree</h2>
+  <h2>Where sources disagree<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li><b>Size of the import shortfall</b>: OilPrice.com (2026 trade press) vs Alberta Energy Regulator, ST98 2025. OilPrice cites roughly 260,000 barrels per day of US condensate imports for the WCSB, while the AER's 2024 balance shows Alberta demand of 751.1 thousand barrels per day against 396.2 thousand of production, a gross shortfall near 355,000. Different scopes explain it: WCSB versus Alberta, condensate versus pentanes plus, and interprovincial and rail flows.</li>
   <li><b>Diluent recovery unit economics</b>: Eight Capital analyst Phil Skolnick (via BOE Report, 2019) vs Imperial Oil CEO Rich Kruger (via BOE Report, 2019). Skolnick said DRUs can provide attractive returns and free about 190,000 barrels per day of incremental bitumen rail capacity; Kruger ruled a DRU out on high cost and market uncertainty. Analyst economics versus operator decision, 2019 data.</li>
   <li><b>Condensate price versus WTI</b>: Oil Sands Magazine (2026) vs Spot market history. Oil Sands Magazine describes condensate trading close to par or at a small premium to West Texas Intermediate (WTI), but spot differentials swing with seasonality and import-pipeline congestion. There is no single continuous public benchmark series equivalent to the TMW differential.</li>
   </ul>
   <p class="lede">For the WCSB book, watch the AER's ST98 supply and demand balance and the utilization of the two condensate import lines as the leading indicators. If imports saturate and the spot condensate premium firms, bitumen netbacks shrink from the cost side while the <a href="../../venezuela/index.html">TMW</a> print may not move at all. Cheap diluent is as important to the WCS barrel as strong refinery demand.</p>
-  <h2>What this watch tracks</h2>
+  <h2>What this watch tracks<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p class="sub">Updated daily.</p>
   <ul class="ev">
   <li>Alberta Energy Regulator (AER) ST53 monthly condensate production</li>
@@ -831,13 +885,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Diluent supply infrastructure: import pipelines and diluent recovery units</li>
   <li>Western Canadian Select (WCS) blend economics and diluent cost share</li>
   </ul>
-  <h2>What public data cannot verify</h2>
+  <h2>What public data cannot verify<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>There is no monthly public series for Alberta condensate production outside the annual ST98 outlook, so the real-time balance is opaque between editions.</li>
   <li>Enbridge and Pembina do not publish continuous utilization on Southern Lights and Cochin, so 'near capacity' claims are snapshot estimates.</li>
   <li>Owner-level diluent buying, spot versus term, and storage levels are private; this page tracks only the aggregate balance.</li>
   </ul>
-  <h2>Sources</h2>
+  <h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Publisher</th><th>Link</th></tr>
     <tr><td>Oil Sands Magazine</td><td><a href="https://www.oilsandsmagazine.com/technical/product-streams">link</a></td></tr>
@@ -866,7 +920,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>OilPrice.com; Enverus Intelligence Research</td><td><a href="https://oilprice.com/Energy/Energy-General/The-Condensate-Challenge-Facing-Canadas-Oil-Sands-Growth.amp.html">link</a></td></tr>
     <tr><td>Alberta Energy Regulator (ST53 and ST39 statistical reports)</td><td><a href="https://www.aer.ca/data-and-performance-reports/statistical-reports/st53">link</a></td></tr>
   </table></div>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a><a href="../../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -967,5 +1021,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

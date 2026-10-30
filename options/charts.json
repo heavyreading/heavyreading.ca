@@ -1,0 +1,74 @@
+{
+ "page": "options/charts/index.html",
+ "built_at": "2026-10-30T11:53:11-06:00",
+ "generator": "builders/site/build_chartbook.py",
+ "series": [
+  {
+   "id": "brent_smile",
+   "title": "The Brent smile",
+   "section": "Volatility & skew",
+   "unit": "percent implied volatility",
+   "source": "ICE Futures Europe options EOD (report 166)",
+   "pull": "broker-marks-pull (ICE options reports)",
+   "cadence": "daily",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 29, 2026. Series starts October 15, 2026.",
+   "stats": {
+    "futures_ref_far": 107.15,
+    "futures_ref_near": 110.8,
+    "date": "2026-10-29"
+   },
+   "narrative_text": "Brent options charge for a price spike, not a crash. On October 29, 2026 the fear curve for the December 29 expiry sits lowest near the futures price of $107.15 and climbs hard to the right. Calls struck far above the market carry much higher fear prices than puts the same distance below it. The front expiry is stronger still: the call struck about twenty percent above the future, at 133, trades at 62.9 percent fear. That is 7.0 points over the middle. In stock markets, the expensive side is crash insurance. In crude during a supply scare it flips. Supply can vanish overnight. Demand only fades. So the market pays up for the right to buy barrels at a fixed price. This curve is that fear, drawn.",
+   "points": []
+  },
+  {
+   "id": "fear_gauges",
+   "title": "The fear gauges",
+   "section": "Volatility & skew",
+   "unit": "points of implied volatility",
+   "source": "ICE Futures Europe options EOD (report 166)",
+   "pull": "broker-marks-pull (ICE options reports)",
+   "cadence": "daily",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 29, 2026. Series starts October 15, 2026.",
+   "stats": {
+    "dates": 11,
+    "brent_rr25": 3.11,
+    "brent_tail_prem": 7.02,
+    "wti_rr25": null,
+    "date": "2026-10-29"
+   },
+   "narrative_text": "The fear gauges through October 29, 2026. Traders pay more for spike protection than crash protection in both Brent and WTI. The dashed lines show how far that fear runs: far-out spike insurance against the middle of the market. The series starts October 15, 2026. Read the shift in these lines, not one day's level. That is the tradeable part. <span class=\"dim\">(Technical names: risk reversal and tail premium.)</span>",
+   "points": []
+  },
+  {
+   "id": "episode_vol",
+   "title": "Is the fear backed by missing barrels?",
+   "section": "Volatility & skew",
+   "unit": "",
+   "source": "ICE options EOD (report 166); global barrels ledger",
+   "pull": "broker-marks-pull; global-barrels-ledger crons",
+   "cadence": "daily; weekly and monthly",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 29, 2026. Series starts October 15, 2026.",
+   "stats": {
+    "live_episode": true,
+    "brent_rr25_1m": 3.11,
+    "brent_tail_premium_front": 7.02,
+    "hormuz_transits_visible_per_day": 0.44,
+    "hormuz_transits_prewar_per_day": 36.98,
+    "options_date": "2026-10-29",
+    "front_brent": 110.8,
+    "back_brent": 87.62,
+    "front_premium_usd": 23.179999999999993,
+    "implied_outage_e015_mbd": 4.087320246519058,
+    "implied_outage_e010_mbd": 2.7248801643460387,
+    "implied_outage_e020_mbd": 5.4497603286920775,
+    "ledger_outage_mbd": 3.073170731707318,
+    "premium_gap_mbd": 1.0141495148117396,
+    "front_move_pct_window": 4.607250755287007,
+    "back_move_pct_window": 2.9854254818993953
+   },
+   "narrative_text": "The options market charges for a price spike. The barrels only partly back it. The options market is pricing a fast, severe break. Traders are paying 3.1 points more for protection against a price spike than against a crash. The fear is on the upside. One month out, far-out spike insurance costs 7.0 points more than middle-of-the-market insurance. At the front expiry it is stronger: the 133 call trades at 62.9 percent, 7.0 points over the middle. Nobody is paying up for crash protection. One day's far-out read rests on one strike's settlement. Treat it as rough; the gauges above carry the cleaner levels. Mostly, the barrels still move. They just move where the tracking cannot see them. What we can see: ships crossing Hormuz that broadcast their position averaged 0.44 a day in the latest window (as of 2026-10-18), against 36.98 a day before the war. That counts ships we can see. It does not count barrels. Ships run dark in a scare. Kharg Island: no export ship capacity showed in the latest window. That is ships seen, not cargo counted. What the tracking firms say: Kpler puts Hormuz flows, including ship-to-ship transfers in the Gulf of Oman, at about 14 million barrels a day, roughly 82 percent of before the war. It is their claim, not our count. The same firm puts Middle East exports at 24.6 million barrels a day in the week to 2026-10-18. The part we cannot see: about 29.9 shiploads a day move where the tracking cannot see them. That is an estimate built from the two lines above. It is not a count. A hard print: Fujairah product stocks were 6.8 million barrels in the week ended 2026-10-12, against about 20.7 million before the war. Fujairah, the bypass port, moved 72,586 deadweight tons a day of ship capacity. Front Brent (January 2027) settled at $110.80 on October 29, 2026, $23.18 over the December 2027 contract at $87.62. The back contract is the market's own price for Brent after the scare passes. So the gap is what the market pays for the scare itself. One rule of thumb turns that gap into missing barrels: a 26.5 percent front gap prices a supply loss of about 4.1 million barrels a day. The setting matters, so we print it: 2.7 million at the soft setting and 5.4 million at the hard one, on about 103 million barrels a day of world supply. <span class=\"dim\">(The rule of thumb is the one Robin Brooks publishes: a short-run price response of 0.15.)</span> The best physical read is smaller. Tracking firms put Hormuz flows at about 14 million barrels a day, roughly 82 percent of before the war (Kpler). That is an outage of about 3.1 million barrels a day. The difference, about 1.0 million barrels a day, is the part price is paying for that the physical record does not confirm. Since October 15, 2026: the front moved +4.6 percent and the December 2027 contract +3.0 percent. Read: the whole curve moved together. That is a repricing, not just a scare premium. Fade the wing if the tracking firms hold: Hormuz flows stay near 82 percent of before the war, Kharg loadings show up again, and Fujairah stocks build back from 6.8 million barrels toward pre-war levels. Every quiet week with barrels moving takes money out of spike insurance. Own the tail if the claims break: the tracking firms cut their Middle East export figures from 24.6 million barrels a day, the ships we can see stay near 0.44 crossings a day, Kharg stays empty, and Fujairah stocks draw further. Claims rolling over is the sign the shortage is physical. Then spike insurance reprices faster than the flat price.",
+   "points": []
+  }
+ ],
+ "dropped": []
+}

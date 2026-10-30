@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="scorecard.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop active"><a class="nd-top" href="barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="projects/index.html">All projects</a><a class="nd-link" href="apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="world/china-imports/index.html">China imports</a><a class="nd-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="world/sour/index.html">The global sour barrel</a><a class="nd-link" href="venezuela/index.html">Venezuela watch</a><a class="nd-link" href="world/trump/index.html">Trump watch</a><a class="nd-link" href="world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="fieldguide/index.html">Field guide</a><a class="nd-link" href="global-balance.html">Global balance</a><a class="nd-link" href="quotes/index.html">Quotes</a><a class="nd-link" href="tolls/index.html">Toll search</a><a class="nd-link" href="commitments/index.html">Commitments grid</a><a class="nd-link" href="freight-watch.html">Freight watch</a><a class="nd-link" href="sat-watch.html">Sat watch</a><a class="nd-link" href="globe.html">Globe</a><a class="nd-link" href="chartbook.html">Chartbook</a><a class="nd-link" href="arb-watch/index.html">Arb watch</a><a class="nd-link" href="data/index.html">Data downloads</a><a class="nd-link" href="sources/index.html">Sources</a><a class="nd-link" href="methodology/index.html">Methodology</a><a class="nd-link" href="about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="world/china-imports/index.html">China imports</a><a class="nd-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="world/sour/index.html">The global sour barrel</a><a class="nd-link" href="venezuela/index.html">Venezuela watch</a><a class="nd-link" href="world/trump/index.html">Trump watch</a><a class="nd-link" href="world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="options/index.html">The Wing (options)</a><a class="nd-link" href="options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="fieldguide/index.html">Field guide</a><a class="nd-link" href="global-balance.html">Global balance</a><a class="nd-link" href="quotes/index.html">Quotes</a><a class="nd-link" href="tolls/index.html">Toll search</a><a class="nd-link" href="commitments/index.html">Commitments grid</a><a class="nd-link" href="freight-watch.html">Freight watch</a><a class="nd-link" href="sat-watch.html">Sat watch</a><a class="nd-link" href="globe.html">Globe</a><a class="nd-link" href="maps/index.html">Maps</a><a class="nd-link" href="chartbook.html">Chartbook</a><a class="nd-link" href="arb-watch/index.html">Arb watch</a><a class="nd-link" href="data/index.html">Data downloads</a><a class="nd-link" href="sources/index.html">Sources</a><a class="nd-link" href="methodology/index.html">Methodology</a><a class="nd-link" href="about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="projects/index.html">All projects</a><a class="mg-link" href="apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="world/china-imports/index.html">China imports</a><a class="mg-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="world/sour/index.html">The global sour barrel</a><a class="mg-link" href="venezuela/index.html">Venezuela watch</a><a class="mg-link" href="world/trump/index.html">Trump watch</a><a class="mg-link" href="world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="global-balance.html">Global balance</a><a class="mg-link" href="quotes/index.html">Quotes</a><a class="mg-link" href="tolls/index.html">Toll search</a><a class="mg-link" href="commitments/index.html">Commitments grid</a><a class="mg-link" href="freight-watch.html">Freight watch</a><a class="mg-link" href="sat-watch.html">Sat watch</a><a class="mg-link" href="globe.html">Globe</a><a class="mg-link" href="chartbook.html">Chartbook</a><a class="mg-link" href="arb-watch/index.html">Arb watch</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="options/index.html">The Wing (options)</a><a class="mg-link" href="options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="global-balance.html">Global balance</a><a class="mg-link" href="quotes/index.html">Quotes</a><a class="mg-link" href="tolls/index.html">Toll search</a><a class="mg-link" href="commitments/index.html">Commitments grid</a><a class="mg-link" href="freight-watch.html">Freight watch</a><a class="mg-link" href="sat-watch.html">Sat watch</a><a class="mg-link" href="globe.html">Globe</a><a class="mg-link" href="maps/index.html">Maps</a><a class="mg-link" href="chartbook.html">Chartbook</a><a class="mg-link" href="arb-watch/index.html">Arb watch</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -657,9 +711,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="sub">The model grades itself: every prediction scored, with its uncertainty stated.</p>
   <p class="sub">Every published model nowcast, scored against the Alberta Energy Regulator (AER) Monthly Statistics (ST3) actuals when they land. Positive error means the nowcast ran high.</p>
   <p><b>Why the naive rule gets a column.</b> Every number on this page is measured against the simplest possible forecast: repeat last month (persistence), or predict no change at all. The naive rule is a valid forecast, not a straw man. A fancy model that cannot beat it gets cut, and the naive rule that wins gets used and scored like everything else. The scorecard does not care how clever the method is, only how accurate.</p>
-  <p class="vintage-inline">Nowcasts built 2026-09-23, 2026-09-28, 2026-09-29, 2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-13, 2026-10-14, 2026-10-15, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-09-28; loaded 2026-10-10).</p>
-  <p><b>Coverage.</b> Scored: 1 of 2 target months landed, across 30 published nowcast vintages. Still pending: Sep 2026. A month scores when the AER ST3 actuals file carries it; the newest ST3 file in hand is vintage 2026-09-28, which does not carry the pending month yet.</p>
-  <h2>Supply nowcasts</h2>
+  <p class="vintage-inline">Nowcasts built 2026-09-23, 2026-09-28, 2026-09-29, 2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-13, 2026-10-14, 2026-10-15, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30.<br>Actuals: AER ST3 actuals, latest available (ST3 file vintage 2026-09-28; loaded 2026-10-28).</p>
+  <p><b>Coverage.</b> Scored: 1 of 2 target months landed, across 34 published nowcast vintages. Still pending: Sep 2026. A month scores when the AER ST3 actuals file carries it; the newest ST3 file in hand is vintage 2026-09-28, which does not carry the pending month yet.</p>
+  <h2>Supply nowcasts<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p><b>How to read this.</b> Mean error is the average miss across scored months, in thousand barrels per day (kb/d); positive means the nowcast ran high, negative means it ran low. With no scored months yet, this section fills in automatically when the AER publishes ST3 actuals. "On the clock" lists frozen nowcasts: the numbers cannot be revised after the fact, so the score is against exactly what was published.</p>
   <h3>Bias so far</h3>
   <div class="tblwrap"><table class="data">
@@ -742,13 +796,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Conventional heavy</td><td class="num">0.6</td><td class="num">6.2</td><td>stable across vintages</td></tr>
   <tr><td>Conventional ultra-heavy</td><td class="num">4.8</td><td class="num">6.2</td><td>stable across vintages</td></tr>
   </table></div>
-  <p><b>Stable across vintages.</b> Across 30 published vintages, the largest revision of the supply nowcast was 58.6 kb/d, inside the 220.3 kb/d p75 error band. Revisions are noise, not signal.</p>
+  <p><b>Stable across vintages.</b> Across 34 published vintages, the largest revision of the supply nowcast was 58.6 kb/d, inside the 220.3 kb/d p75 error band. Revisions are noise, not signal.</p>
   <h3>How this is built</h3>
   <p><b>The nowcast.</b> Each month, before the AER publishes the Monthly Statistics (ST3), the model estimates each ST3 supply line from its seasonal pattern plus confirmed maintenance shutdowns. Totals are recomputed from the project-level forecasts so everything adds up.</p>
   <p><b>The score.</b> When ST3 actuals publish, the frozen nowcast is compared project by project. Error is nowcast minus actual, in thousand barrels per day (kb/d) and percent. Actuals use the latest ST3 vintage in the model database; cubic metres convert at 6.2898 barrels per cubic metre.</p>
   <p><b>The independent check.</b> Before any ST3 month is trusted, facility-level production from Petrinex, Alberta&apos;s production reporting system, is reconciled against the ST3 monthly actuals. Two groupings are compared: in-situ (thermal oil-sands production) and conventional (conventional crude plus condensate and pentanes). Both sides are compared in cubic metres and the check warns if either grouping differs by more than 3%. Latest full check, July 2026: in-situ -0.5%, conventional -0.1%. August 2026 Petrinex data is in hand but August ST3 is not yet published, so the latest August read is against July ST3 as a sanity check only (+0.8% and +1.1%).</p>
   <p class="tblnote">This page scores the model. It does not change it: calibration is a separate decision, never an automatic one.</p>
-  <h2>Line accuracy backtest</h2>
+  <h2>Line accuracy backtest<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Every forecasted line, graded on its own terms. Backtest: for each of 172 forecast months (Mar 2012 to Jun 2026), each line forecasts its target month from history ending three months before (the ST3 publication lag), then gets scored against the actual. Positive error means the forecast ran high.</p>
   <p><b>The verdict rule.</b> Verdicts are arithmetic, not judgment, and the driver is the average miss. <b>Tie</b> means the model and the best naive rule miss by the same amount (within 0.05 kb/d, half the published precision): identical average misses cannot read "loses". <b>Wins</b> means the model misses by less <i>and</i> beats the naive rule head-to-head more often than a coin flip (win-rate 95% band entirely above 50%), on enough months to say so with confidence. <b>Leading, not yet proven</b> means the model misses by less on average but we do not yet have enough months to claim the edge is statistically significant (win-rate band still includes 50%): the model is doing well, the data just has not caught up to the verdict. More months will resolve this one way or the other. <b>Loses</b> means the naive rule misses by less. Months where the two forecasts are identical are ties: they count for neither side and are excluded from the win rate, which is scored on the months where the forecasts actually differ. <b>Same rule</b> means the forecasts are identical on at least half the months, so there is no head-to-head to grade. The win rate is a secondary check: it only separates "wins" from "leading, not yet proven". Nobody trades a win rate; the economically real number is the average-miss edge in kb/d, which leads every card below.</p>
   <h3>Total supply</h3>
@@ -866,7 +920,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   </table></div>
   <p class="tblnote">The model nowcast is built for the 3-month ST3 publication lag, so it only has a 3-month band. Naive rules can be scored at any distance; that is what shows error growing with horizon. Near months are surer than far ones.</p>
   <p class="tblnote">Uncertainty: the win-rate band is the Wilson 95% interval; depth bands are the empirical 75th and 90th percentiles of absolute error (no normality assumed). Full per-method numbers are in the page data feed.</p>
-  <h2>Bottom-up vs top-down</h2>
+  <h2>Bottom-up vs top-down<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Two ways to forecast a total. <b>Bottom-up</b> forecasts each facility, then adds the forecasts up. <b>Top-down</b> forecasts the total directly with the same seasonal method. The backtest scores both against actuals, and both against the naive rule (repeat last month). Forecast months October 2014 to December 2025, scored 1, 2 and 3 months out; each forecast uses only history that had actually been published at the time (vintage-pinned, re-run September 2026), with no peeking at the future. SAGD is steam-assisted gravity drainage; SCO is synthetic crude oil; ST53 is the Alberta Energy Regulator (AER) monthly in-situ statistics release; ST39 is the AER monthly oil-sands plant statistics release.</p>
   <h3>SAGD</h3>
   <p><b>What it predicts.</b> Steam-assisted gravity drainage (SAGD) production from in-situ schemes, kb/d. Facility detail comes from ST53, the AER monthly in-situ statistics release.</p>
@@ -967,7 +1021,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h3>Blended forecasts</h3>
   <p><b>What it tests.</b> Whether averaging several forecasts beats trusting the best one alone. Three blends per line, tested on the vintage-pinned backtests only: a straight average of the competing forecasts, an average weighted toward whichever method was most accurate recently, and the middle value of the pack. A blend earns a place only if it beats the line&apos;s best single method more often than a coin flip, with the 95% band to prove it.</p>
   <p><b>Verdict.</b> No blend earns a place on any line. The closest calls: mined bitumen, where the straight average beat the bottom-up model 53.8% of the time (95% CI 49.0%-58.6%, which includes 50%, so a tie); total supply, 51.2% (CI 43.7%-58.5%, a tie); light crude, 50.0% (CI 42.3%-57.7%, a tie). Blending in the weaker guidance-based forecasts made things decisively worse, because the weak members drag the average down. The live forecasts stay as they are: the single best method per line, scored above. A blend that cannot beat the best single forecast does not get used.</p>
-  <h2>Other scorecards</h2>
+  <h2>Other scorecards<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Every predictive component gets the same treatment: backtest accuracy with its uncertainty stated, live accuracy as predictions resolve, and an honest label when there is nothing to score yet.</p>
   <h3>Apportionment</h3>
   <p><b>What it predicts.</b> Whether each Mainline corridor will be apportioned (rationed) next month, and by how much. Walk-forward backtest: the model trains only on months before each forecast, 72 system forecasts scored.</p>
@@ -980,6 +1034,15 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <tr><td>Depth: within this, 75% of the time</td><td class="num">&plusmn;0.14 pts</td><td class="num">&plusmn;0.13 pts</td></tr>
   <tr><td>Depth: within this, 90% of the time</td><td class="num">&plusmn;0.23 pts</td><td class="num">&plusmn;0.18 pts</td></tr>
   </table></div>
+  <p><b>Two separate verdicts.</b> Calling whether apportionment happens and calling how deep it runs are different skills, and this backtest scores them differently. On incidence, the model point estimate sits ahead of repeat-last-month on every corridor below, but the 95% uncertainty bands printed in the table overlap on every corridor, so no corridor incidence edge is established yet. On depth, repeat-last-month is ahead on every corridor below. Read the two columns as two records.</p>
+  <div class="tblwrap"><table class="data">
+  <tr><th>Corridor</th><th>Forecasts</th><th>Incidence: model vs naive</th><th>Depth miss: model vs naive</th><th>Verdicts</th></tr>
+  <tr><td>Kerrobert, Line 4/67 (heavy service)</td><td class="num">79</td><td class="num">97.5% vs 96.2% <span class="tblnote">(+1.3 pts)</span> <span class="tblnote">(95% CI 91.2%-99.3% vs 89.4%-98.7%)</span></td><td class="num">0.07 vs 0.06 pts</td><td>Incidence: not established (bands overlap). Depth: naive ahead.</td></tr>
+  <tr><td>Kerrobert heavies</td><td class="num">52</td><td class="num">98.1% vs 94.2% <span class="tblnote">(+3.8 pts)</span> <span class="tblnote">(95% CI 89.9%-99.7% vs 84.4%-98.0%)</span></td><td class="num">0.10 vs 0.07 pts</td><td>Incidence: not established (bands overlap). Depth: naive ahead.</td></tr>
+  <tr><td>Superior, Line 6/61 <span class="tblnote">(small sample)</span></td><td class="num">5</td><td class="num">100.0% vs 80.0% <span class="tblnote">(+20.0 pts)</span> <span class="tblnote">(95% CI 56.5%-100.0% vs 37.5%-96.4%)</span></td><td class="num">0.11 vs 0.07 pts</td><td>Incidence: not established (bands overlap). Depth: naive ahead.</td></tr>
+  </table></div>
+  <p class="tblnote">Smallest sample: Superior, Line 6/61 rests on 5 forecasts. Its incidence line reads 100.0% for the model (95% CI 56.5%-100.0%) against 80.0% for the naive rule (95% CI 37.5%-96.4%). A point-estimate edge inside bands that wide is not an established edge; the row earns a verdict when its count and its bands separate.</p>
+  <p class="tblnote">The live November 2026 judgment call is a separate record of one month: judgment depth miss 4.0 points against persistence at 7.0 points. One live month sits beside the backtest; it does not replace it.</p>
   <p><b>Plain English.</b> The model calls apportionment on or off correctly 95.8% of the time, but the naive rule (just repeat last month) is right 93.1% of the time, and the uncertainty bands overlap: we do not claim the model beats it. On depth (how much gets apportioned), the model misses by 0.10 points on average and lands within &plusmn;0.23 points 90% of the time; the naive rule misses by less (0.08). That is why the live nowcast below is the naive baseline, not the model: if it has no predictive power we do not use it.</p>
   <p><b>On the clock.</b> November 2026 nowcast: November announced Oct 20, 2026: 19% lights / 7% heavies at Kerrobert (plus 13% lights at Cromer, 16% heavies at Superior). scored Oct 20, 2026: persistence (8% / 4%) depth error 11 points light, 3 heavy (MAE 7.0); the registered judgment call (12% / 8%) error 7 light, 1 heavy (MAE 4.0), direction deeper on both classes correct; the judgment call beat the baseline on both segments.</p>
   <p class="tblnote">Uncertainty: hit-rate bands are Wilson 95% intervals; depth bands are the empirical 75th and 90th percentiles of absolute error (no normality assumed).</p>
@@ -1015,30 +1078,37 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="tblnote">Status: no backtest yet; flags logged, scoring rule defined, awaiting real prices.</p>
   <h3>Sat Watch sensor claims</h3>
   <p><b>What it scores.</b> The Sat Watch board claims a plant's heat changed: a QUIET claim says the heat fell well below the plant's own normal, a HEAT claim says it stepped up. Every claim is then adjudicated against the NASA Fire Information for Resource Management System (FIRMS) fire archive: when a satellite pass actually covers the plant after the claim, its detections settle the claim. A covered pass showing the claimed change is a <b>hit</b>; a covered pass showing normal heat makes it a <b>false alarm</b>. When two or more plants claim in the same polling window, the window is also checked for a <b>common-mode artifact</b>: one shared sensor cause, such as a bad frame or a cloud field, moving every plant at once. That class is assigned only by a written adjudication, never inferred from the coincidence alone. A claim whose rechecks never get a covered look inside 24 hours closes <b>unresolved</b>.</p>
-  <p><b>The record.</b> 108 claims scored: 0 hits, 101 false alarms, 5 common-mode artifacts, 1 unresolved, 1 still open. Median time to adjudication: 5.2 hours. 15 coincident windows (two or more plants claiming in one polling window) are flagged in the table.</p>
+  <p><b>The record.</b> 133 claims scored: 0 hits, 126 false alarms, 5 common-mode artifacts, 1 unresolved, 1 still open. Median time to adjudication: 5.2 hours. 18 coincident windows (two or more plants claiming in one polling window) are flagged in the table.</p>
+  <p><b>Claims pause, status.</b> The claims arm was paused on 26 October 2026: no new claim was to be presented as a finding until its gates were proven. The sensor engine has kept logging in the background, and 30 claims have been logged since the pause (17 on the Canada board, 13 on the Gulf board). Those claims are graded here like the rest of the record. The pause covers presentation, not logging, and this line keeps the two from being confused.</p>
+  <p><b>By board.</b> Two boards, two instruments. The Canada board watches upgraders and refineries for QUIET steps, a plant going quiet. The Gulf board watches terminals and the Strait of Hormuz for HEAT steps, heat appearing where it was not. Neither board has produced a hit, and the split shows the failure is not confined to one board or one direction.</p>
+  <div class="tblwrap"><table class="data">
+  <tr><th>Board</th><th>Claims</th><th>Hits</th><th>False alarms</th><th>Common-mode</th><th>Unresolved</th><th>Open</th></tr>
+  <tr><td>Canada (QUIET arm)</td><td class="num">105</td><td class="num">0</td><td class="num">100</td><td class="num">5</td><td class="num">0</td><td class="num">0</td></tr>
+  <tr><td>Gulf (HEAT arm)</td><td class="num">28</td><td class="num">0</td><td class="num">26</td><td class="num">0</td><td class="num">1</td><td class="num">1</td></tr>
+  </table></div>
   <p><b>By claim kind.</b> No kind has produced a hit. QUIET claims (heat fell) and HEAT claims (heat stepped up) fail alike, so the failure is in the step detector itself, not in one direction of it.</p>
   <div class="tblwrap"><table class="data">
   <tr><th>Claim kind</th><th>Claims</th><th>Hits</th><th>False alarms</th><th>Common-mode</th><th>Unresolved</th><th>Open</th></tr>
-  <tr><td>QUIET</td><td class="num">88</td><td class="num">0</td><td class="num">83</td><td class="num">5</td><td class="num">0</td><td class="num">0</td></tr>
-  <tr><td>HEAT</td><td class="num">19</td><td class="num">0</td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num">1</td></tr>
-  <tr><td>HEADLINE</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">0</td></tr>
+  <tr><td>QUIET</td><td class="num">102</td><td class="num">0</td><td class="num">97</td><td class="num">5</td><td class="num">0</td><td class="num">0</td></tr>
+  <tr><td>HEAT</td><td class="num">28</td><td class="num">0</td><td class="num">27</td><td class="num">0</td><td class="num">0</td><td class="num">1</td></tr>
+  <tr><td>HEADLINE</td><td class="num">3</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td class="num">0</td></tr>
   </table></div>
-  <p><b>By firing hour (UTC).</b> Claims are not spread evenly across the day: the 03:00 to 05:59 block holds 26 of 108 claims, against an even share of 14 per 3-hour block. A firing rate that clusters by time of day points at the baseline (what the sensor calls normal at that hour), not at the plants. The full split: 00h 10, 03h 26, 06h 12, 09h 11, 12h 13, 15h 2, 18h 18, 21h 16.</p>
-  <p><b>Baseline weight check.</b> 11 claims carry a logged weight (HEAT average 0.78 over 5 claims; QUIET average 0.61 over 6 claims). The highest weight on record, 0.93 (HEAT on Ras Tanura / Ju&#x27;aymah), is classed Open. So far the weight tracks baseline maturity only; it has not sorted a true claim from a false one, because there has been no true claim to sort.</p>
+  <p><b>By firing hour (UTC).</b> Claims are not spread evenly across the day: the 03:00 to 05:59 block holds 35 of 133 claims, against an even share of 17 per 3-hour block. A firing rate that clusters by time of day points at the baseline (what the sensor calls normal at that hour), not at the plants. The full split: 00h 13, 03h 35, 06h 12, 09h 13, 12h 18, 15h 4, 18h 20, 21h 18.</p>
+  <p><b>Baseline weight check.</b> 36 claims carry a logged weight (HEADLINE average 1.00 over 2 claims; HEAT average 0.92 over 14 claims; QUIET average 0.75 over 20 claims). The highest weight on record, 1.00 (HEAT on Kharg Island), is classed Open. So far the weight tracks baseline maturity only; it has not sorted a true claim from a false one, because there has been no true claim to sort.</p>
   <div class="tblwrap"><table class="data">
   <tr><th>Opened (UTC)</th><th>Plant</th><th>Claim</th><th>Class</th><th>Settled in</th><th>Window</th><th>Baseline weight</th></tr>
-  <tr><td>2026-10-26 13:17</td><td>Ras Tanura / Ju&#x27;aymah</td><td>HEAT</td><td>Open</td><td class="num">-</td><td>-</td><td class="num">0.93</td></tr>
-  <tr><td>2026-10-26 09:06</td><td>Ras Tanura / Ju&#x27;aymah</td><td>HEAT</td><td>False alarm</td><td class="num">3.7 h</td><td>-</td><td class="num">0.92</td></tr>
-  <tr><td>2026-10-26 08:51</td><td>Imperial <a class="plink" href="projects/imo_kearl.html">Kearl</a> oil sands</td><td>HEAT</td><td>False alarm</td><td class="num">3.9 h</td><td>-</td><td class="num">0.70</td></tr>
-  <tr><td>2026-10-26 08:36</td><td><a class="plink" href="projects/syncrude.html">Syncrude</a> Mildred Lake upgrader</td><td>HEAT</td><td>False alarm</td><td class="num">4.2 h</td><td>-</td><td class="num">0.68</td></tr>
-  <tr><td>2026-10-26 07:40</td><td>CNRL <a class="plink" href="projects/cnq_horizon.html">Horizon</a> upgrader</td><td>HEAT</td><td>False alarm</td><td class="num">5.1 h</td><td>-</td><td class="num">0.68</td></tr>
-  <tr><td>2026-10-25 22:15</td><td>Lloydminster upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">14.5 h</td><td>-</td><td class="num">0.63</td></tr>
-  <tr><td>2026-10-25 18:52</td><td>Lloydminster upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">3.1 h</td><td>-</td><td class="num">0.62</td></tr>
-  <tr><td>2026-10-25 04:39</td><td>Imperial <a class="plink" href="projects/imo_kearl.html">Kearl</a> oil sands</td><td>QUIET</td><td>False alarm</td><td class="num">8.5 h</td><td>-</td><td class="num">0.61</td></tr>
-  <tr><td>2026-10-25 04:24</td><td><a class="plink" href="projects/syncrude.html">Syncrude</a> Mildred Lake upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">8.7 h</td><td>-</td><td class="num">0.59</td></tr>
-  <tr><td>2026-10-25 04:09</td><td><a class="plink" href="projects/su_base_plant.html">Suncor Base Plant</a> upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">9.0 h</td><td>-</td><td class="num">0.61</td></tr>
-  <tr><td>2026-10-24 23:24</td><td>CNRL <a class="plink" href="projects/cnq_horizon.html">Horizon</a> upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">13.7 h</td><td>-</td><td class="num">0.57</td></tr>
-  <tr><td>2026-10-24 14:56</td><td>Imperial <a class="plink" href="projects/imo_kearl.html">Kearl</a> oil sands</td><td>QUIET</td><td>Common-mode artifact</td><td class="num">5.4 h</td><td>-</td><td class="num">-</td></tr>
+  <tr><td>2026-10-30 14:02</td><td>Kharg Island</td><td>HEAT</td><td>Open</td><td class="num">-</td><td>-</td><td class="num">1.00</td></tr>
+  <tr><td>2026-10-30 04:19</td><td>Yanbu</td><td>HEAT</td><td>False alarm</td><td class="num">9.5 h</td><td>-</td><td class="num">1.00</td></tr>
+  <tr><td>2026-10-30 03:30</td><td>Kharg Island</td><td>HEAT</td><td>False alarm</td><td class="num">10.3 h</td><td>-</td><td class="num">1.00</td></tr>
+  <tr><td>2026-10-30 03:15</td><td>Strait of Hormuz</td><td>HEAT</td><td>False alarm</td><td class="num">10.5 h</td><td>-</td><td class="num">1.00</td></tr>
+  <tr><td>2026-10-29 11:43</td><td>Strait of Hormuz</td><td>HEADLINE</td><td>False alarm</td><td class="num">11.4 h</td><td>-</td><td class="num">1.00</td></tr>
+  <tr><td>2026-10-29 04:09</td><td>Yanbu</td><td>HEAT</td><td>False alarm</td><td class="num">18.9 h</td><td>-</td><td class="num">1.00</td></tr>
+  <tr><td>2026-10-29 02:54</td><td>Strait of Hormuz</td><td>HEAT</td><td>False alarm</td><td class="num">3.1 h</td><td>-</td><td class="num">1.00</td></tr>
+  <tr><td>2026-10-29 01:59</td><td>Scotford upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">5.1 h</td><td>joint</td><td class="num">0.89</td></tr>
+  <tr><td>2026-10-29 01:59</td><td>Imperial Strathcona refinery</td><td>QUIET</td><td>False alarm</td><td class="num">5.1 h</td><td>joint</td><td class="num">0.85</td></tr>
+  <tr><td>2026-10-28 23:59</td><td><a class="plink" href="projects/syncrude.html">Syncrude</a> Mildred Lake upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">23.1 h</td><td>joint</td><td class="num">0.85</td></tr>
+  <tr><td>2026-10-28 23:59</td><td><a class="plink" href="projects/su_base_plant.html">Suncor Base Plant</a> upgrader</td><td>QUIET</td><td>False alarm</td><td class="num">23.1 h</td><td>joint</td><td class="num">0.86</td></tr>
+  <tr><td>2026-10-28 20:21</td><td>Imperial Strathcona refinery</td><td>QUIET</td><td>False alarm</td><td class="num">5.1 h</td><td>-</td><td class="num">0.83</td></tr>
   </table></div>
   <p class="tblnote">Baseline weight is the claim's confidence weight from its plant's baseline maturity, logged with the claim record from 2026-10-24 on: a claim on a young baseline carries less weight than one on a mature baseline. Claims opened earlier carry no weight and show a dash.</p>
   <h3>Trading signals</h3>
@@ -1046,7 +1116,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p><b>How to read this.</b> Synthetic prices prove the plumbing (flags fire, calls carry their rationale), not edge. No number on this card should be read as evidence the signal makes money. Paper trading, the first real score, has not started.</p>
   <p><b>The honest scoring position.</b> Everything runs on synthetic prices, so the backtests are plumbing checks, not evidence. A weekly internal rollup compares trailing behavior against backtest expectancy and flags deviations beyond two standard deviations. True out-of-sample scoring starts with paper trading, which has not started.</p>
   <p class="tblnote">Status: synthetic only; no live score yet.</p>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="barrels/index.html#disposition">S&amp;D balance</a><a href="barrels/index.html#st3-table">Projected ST3</a><a href="scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="barrels/index.html">Supply hub</a><a href="projects/index.html">All projects</a><a href="apportionment/index.html">Apportionment</a><a href="barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="maintenance/index.html">Maintenance</a><a href="growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="world/middle-east/index.html">Middle East watch</a><a href="world/russia-refining/index.html">Russian refineries</a><a href="world/china-imports/index.html">China imports</a><a href="world/spr-storage/index.html">SPR & storage</a><a href="world/sour/index.html">The global sour barrel</a><a href="venezuela/index.html">Venezuela watch</a><a href="world/trump/index.html">Trump watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="digest/index.html">Latest digest</a><a href="digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="global-balance.html">Global balance</a><a href="tolls/index.html">Toll search</a><a href="commitments/index.html">Commitments</a><a href="sat-watch.html">Sat watch</a><a href="chartbook.html">Chartbook</a><a href="options/index.html">The Wing (options)</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a><a href="about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="barrels/index.html#disposition">S&amp;D balance</a><a href="barrels/index.html#st3-table">Projected ST3</a><a href="scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="barrels/index.html">Supply hub</a><a href="projects/index.html">All projects</a><a href="apportionment/index.html">Apportionment</a><a href="barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="maintenance/index.html">Maintenance</a><a href="growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="world/middle-east/index.html">Middle East watch</a><a href="world/russia-refining/index.html">Russian refineries</a><a href="world/china-imports/index.html">China imports</a><a href="world/spr-storage/index.html">SPR & storage</a><a href="world/sour/index.html">The global sour barrel</a><a href="venezuela/index.html">Venezuela watch</a><a href="world/trump/index.html">Trump watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="digest/index.html">Latest digest</a><a href="digest/index.html">Edition archive</a><a href="changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="global-balance.html">Global balance</a><a href="tolls/index.html">Toll search</a><a href="commitments/index.html">Commitments</a><a href="sat-watch.html">Sat watch</a><a href="maps/index.html">Maps</a><a href="chartbook.html">Chartbook</a><a href="options/index.html">The Wing (options)</a><a href="options/charts/index.html">The Wing charts</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a><a href="about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -1147,5 +1217,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

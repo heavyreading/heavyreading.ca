@@ -1,0 +1,370 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_united_kingdom",
+ "country": "United Kingdom",
+ "country_code": "GBR",
+ "title": "United Kingdom country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "europe",
+ "rollup_name": "Europe",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 615.7,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 598.8,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 615.7,
+   "spread_pct": 2.7
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 768.6,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 768.6,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1417.2,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    },
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1414.4,
+     "basis": "Refined petroleum products consumption (EIA product 54; OECD publishable subset only)",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 1417.2,
+   "spread_pct": 0.2
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 640.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 640.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 615.7,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 768.6,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 1417.2,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 4809.35,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.13 total deliveries of petroleum products for inland consumption",
+   "grain": "monthly, trailing 12 months",
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "n_rows": 342,
+   "first": "1998-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 1998.41,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.10 exports of crude oil and NGLs",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 1334.4,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.10 exports of petroleum products",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_products",
+   "leg_label": "Product exports",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 3212.23,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.10 imports of crude oil and NGLs",
+   "grain": "monthly, trailing 12 months",
+   "leg": "imports_crude",
+   "leg_label": "Crude imports",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 2703.67,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.10 imports of petroleum products",
+   "grain": "monthly, trailing 12 months",
+   "leg": "imports_products",
+   "leg_label": "Product imports",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 2277.76,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.10 indigenous production of crude oil",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 2486.03,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.10 indigenous production, total (crude oil + NGLs + feedstocks)",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 3905.54,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.12 refinery throughput of primary oils",
+   "grain": "monthly, trailing 12 months",
+   "leg": "refinery_throughput",
+   "leg_label": "Refinery throughput",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 4866.44,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.11 total primary stocks at end of period (crude oil and refinery process oils: refinery, terminal, offshore, plus primary net bilaterals)",
+   "grain": "monthly, trailing 12 months",
+   "leg": "stocks_crude",
+   "leg_label": "Crude stocks",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-07 to 2026-06",
+   "value": 5701.55,
+   "unit": "thousand_tonnes",
+   "kbd": null,
+   "source": "DESNZ Energy Trends (UK Department for Energy Security and Net Zero)",
+   "note": "ET 3.11 total petroleum product stocks at end of period",
+   "grain": "monthly, trailing 12 months",
+   "leg": "stocks_products",
+   "leg_label": "Product stocks",
+   "n_rows": 378,
+   "first": "1995-01",
+   "last": "2026-06",
+   "basis": "measured"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 615.7,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 615.7,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 598.8,
+     "kind": "spine",
+     "gap": -16.9,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 768.6,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 768.6,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

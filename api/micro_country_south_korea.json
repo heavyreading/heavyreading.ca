@@ -1,0 +1,224 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_south_korea",
+ "country": "South Korea",
+ "country_code": "KOR",
+ "title": "South Korea country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "asia_pacific",
+ "rollup_name": "Asia-Pacific",
+ "tier": "panel",
+ "grain": {
+  "capture": "Country grain only, as reported to the agencies. Nothing finer is held, and nothing is disaggregated downward.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 0.0,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 0.0,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 0.0,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 110.6,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 110.6,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 2832.2,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    },
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 2464.8,
+     "basis": "Refined petroleum products consumption (EIA product 54; OECD publishable subset only)",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 2832.2,
+   "spread_pct": 13.0
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 0.0,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 110.6,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 2832.2,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "national_record",
+   "state": "missing",
+   "reason": "Petronet is query-only and key-gated. An API registration or browser session closes it.",
+   "route": "National statistics office or energy ministry series (shelf coverage map)."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 0.0,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 0.0,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 0.0,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 110.6,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 110.6,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": [
+  {
+   "kind": "imports_by_origin",
+   "title": "Imports by origin region",
+   "source": "EIA, imports by source (OECD reporting)",
+   "period": "2025 average, kb/d",
+   "note": "Itemized country sources. Largest: Saudi Arabia 980 \u00b7 United Arab Emirates 498 \u00b7 Iraq 341.",
+   "rows": [
+    {
+     "region": "Middle East",
+     "kbd": 2347.0,
+     "share": 90.3
+    },
+    {
+     "region": "Africa",
+     "kbd": 252.1,
+     "share": 9.7
+    }
+   ],
+   "total": 2599.2
+  }
+ ]
+}

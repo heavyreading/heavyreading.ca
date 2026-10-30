@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="maps/drayton.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -721,10 +775,10 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <figcaption>Drawn by Heavy Reading from the compiled node/edge dataset; routes are schematic, nodes sit at their true locations. No third-party map or geometry is reproduced.</figcaption>
   </figure>
   <p class="note"><a href="drayton-print.html">Print sheet: the one-page version of this map</a></p>
-  <h2>Method</h2>
+  <h2>Method<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p class="note">Facts compiled, expression ours (2026-10-17). Content base: WS-H gathering-systems dossier, dossier 2D Part B (stage1/ws_h_gathering_systems.md), which grades its sources P (operator filing / tariff), T (trade press) and S (secondary); the governing primary sources are the Pembina Drayton Valley Petroleum Toll Schedule (effective June 1, 2026) and Pembina's Annual Information Form (AIF) for YE2023. Confidence labels are preserved from WS-H: receipt groupings, the delivery matrix and the mainline documented in the toll schedule are CONFIRMED; the supply-area ellipse is INFERRED shading. Every node is a real place at gazetteer coordinates; two receipt-cluster points are LSD-derived from the tariff township/range groupings and say so in their source. Receipt points are drawn at tariff-grouping grain (laterals and trunk groupings), never at battery grain: battery-level membership is not publicly derivable (WS-H Part 3). Edges are straight or corridor segments between compiled points; routes are schematic, nodes at true locations. Toggle-ready fields follow builders/site/map_data/SCHEMA.md verbatim: facility_type on every node, product and system on every edge, capacity-state and toll fields only where a real source gives them; unknown stays absent, never interpolated. tolls.db was queried 2026-10-19 (python sqlite3): it carries no Drayton Valley pipeline or path (the only Pembina row is Cochin), so no toll_refs id exists to cite; the Drayton tolls are filed as Pembina's own posted toll schedule and are carried in the trunk edge toll_note - an ingest backlog item, not an unpublished toll. Heavy Reading drawings from this dataset are original; no third-party geometry is reproduced. Full rights inventory: references/maps_inventory_2026-10-17.md.</p>
   <p class="vintage"><strong>Data vintage:</strong> October 2026 &middot; compiled 2026-10-19</p>
-  <h2>Withheld</h2>
+  <h2>Withheld<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Battery-level membership is not drawn and no battery is assigned to this system: WS-H Part 3 tested the held Petrinex data (June 2026) and found the battery-to-pipeline counterparty suppressed on 78.9% of Alberta battery oil-disposition volume, with no Alberta battery row naming a pipeline counterparty. Receipt points are shown at tariff-grouping grain only (laterals and trunk groupings in the June 2026 toll schedule).</li>
   <li>Capacity reconciliation is withheld, not resolved: the system carries three filed figures with no published reconciliation - 145,000 b/d (Pembina AIF YE2023), about 170,000 b/d (AIF YE2024) and 190,000-195,000 b/d (completed 2012 Calmar expansion). The nameplate carried on the hub node and the trunk edge is the AIF YE2023 figure, the number WS-H dossier 2D uses as current; the other two are printed in the print-sheet rows, not silently dropped.</li>
@@ -735,7 +789,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>The downstream pool for Drayton low-sulphur receipts is not assigned: the June 2026 tariff creates the low-sulphur category but does not name its Edmonton downstream pool, and WS-H leaves the confirmation against the Enbridge commodity map as an open item.</li>
   <li>Condensate routing beyond the tariff is not drawn: the tariff confirms condensate is a Drayton product with Edmonton delivery, and no separate condensate geometry is shown. The RBN diluent-trail account of Drayton lease condensate reaching Pembina's Edmonton terminal and the Enbridge condensate (CRW) network was not verified in the WS-H pass (flagged there as an open item) and is not relied on here.</li>
   </ul>
-  <h2>Notes</h2>
+  <h2>Notes<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>No Hardisty route: nothing in the June 2026 Drayton Valley toll schedule, the Pembina AIF description or the Enbridge Crude Oil Commodity Map (September 1, 2026) routes Drayton barrels to Hardisty. Drayton is an Edmonton light and condensate feeder; Hardisty is the heavy (Western Canadian Select) pricing point. Any note routing Drayton to Hardisty directly is wrong on the sources found (WS-H dossier 2D).</li>
   <li>Edmonton only, with one exception inside Edmonton: Enbridge Edmonton Terminal and Trans Mountain each take sweet crude, low-sulphur crude and condensate; PKM North 40 takes sweet crude and condensate only - no low-sulphur crude (June 2026 delivery matrix).</li>
@@ -747,14 +801,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>North 40 takes sweet crude and condensate only - no low-sulphur crude (June 2026 delivery matrix).</li>
   <li>Capacity is three filed numbers (145,000 / about 170,000 / 190,000-195,000 b/d) with no published reconciliation; all three are printed rather than one picked silently.</li>
   </ul>
-  <h2>References</h2>
+  <h2>References<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li><a href="https://www.pembina.com/getmedia/b4e10467-54a5-4d58-9965-38838540ef6a/2025-06-Drayton-Toll-Schedule.pdf">Pembina Drayton Valley Toll Schedule</a> &middot; Pembina Pipeline Corporation &middot; Operator-posted petroleum toll schedule for the Drayton Valley Pipeline System: delivery-point matrix and receipt-point tolls in C$/m3. Link is the June 2025 edition; WS-H cites the June 2026 edition for the delivery matrix and toll ranges carried here.</li>
   <li><a href="https://www.newswire.ca/news-releases/pembina-pipeline-corporation-2012-first-quarter-results-510173051.html">Pembina Q1 2012 results (Drayton Valley and Calmar)</a> &middot; Pembina Pipeline Corporation via CNW &middot; Q1 2012 disclosure: the system transporting 130,000 b/d against 145,000 b/d capacity, and the Calmar booster refurbishment expected to add 50,000 b/d for a 195,000 b/d total - the vintage behind the Calmar node and the capacity history.</li>
   <li><a href="https://geosciencepublishing.com/titles-available/pembina-cardium-co2-monitoring-pilot/summary-modified-from-chapter-8/">Pembina Cardium pool summary</a> &middot; Geoscience Publishing (CO2 monitoring pilot summary, modified from Chapter 8) &middot; Field context the map does not draw: the Pembina Cardium pool about 100 km southwest of Edmonton, Cardium pools area 2,542 km2, original oil in place about 7.78 billion bbl, discovered 1953.</li>
   </ul>
   <p class="note">References are linked, never reproduced: third-party maps are shown only where an open licence or written permission allows.</p>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -855,5 +909,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

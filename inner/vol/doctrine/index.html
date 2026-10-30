@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="inner/vol/doctrine/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -623,6 +624,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -635,23 +688,25 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../../../digest/index.html">Edition archive</a><a class="nd-link" href="../../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../../../digest/index.html">Edition archive</a><a class="nd-link" href="../../../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../../../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../../projects/index.html">All projects</a><a class="nd-link" href="../../../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../../../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../../global-balance.html">Global balance</a><a class="nd-link" href="../../../quotes/index.html">Quotes</a><a class="nd-link" href="../../../tolls/index.html">Toll search</a><a class="nd-link" href="../../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../../globe.html">Globe</a><a class="nd-link" href="../../../chartbook.html">Chartbook</a><a class="nd-link" href="../../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../../data/index.html">Data downloads</a><a class="nd-link" href="../../../sources/index.html">Sources</a><a class="nd-link" href="../../../methodology/index.html">Methodology</a><a class="nd-link" href="../../../about/index.html">About</a></div></div></div>
-      <div class="navdrop active"><a class="nd-top nd-plain" href="../../../inner/index.html">Inner</a></div>
+      <div class="navdrop"><a class="nd-top" href="../../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../../../options/index.html">The Wing (options)</a><a class="nd-link" href="../../../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../../global-balance.html">Global balance</a><a class="nd-link" href="../../../quotes/index.html">Quotes</a><a class="nd-link" href="../../../tolls/index.html">Toll search</a><a class="nd-link" href="../../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../../globe.html">Globe</a><a class="nd-link" href="../../../maps/index.html">Maps</a><a class="nd-link" href="../../../chartbook.html">Chartbook</a><a class="nd-link" href="../../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../../data/index.html">Data downloads</a><a class="nd-link" href="../../../sources/index.html">Sources</a><a class="nd-link" href="../../../methodology/index.html">Methodology</a><a class="nd-link" href="../../../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../../../inner/index.html" aria-haspopup="true">Inner</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Wing (options)</p><a class="nd-link" href="../../../options/index.html">The Wing hub</a><a class="nd-link" href="../../../options/charts/index.html">The Wing charts</a><a class="nd-link" href="../../../inner/flow/index.html">The Block Board</a><a class="nd-link" href="../../../inner/vol/index.html">Vol structures</a><a class="nd-link" href="../../../inner/vol-portfolio/index.html">Vol portfolio</a><a class="nd-link" href="../../../inner/vol/checklist/index.html">Pre-trade checklist</a><a class="nd-link" href="../../../inner/vol/doctrine/index.html" aria-current="page">Doctrine</a></div><div class="nd-sec"><p class="nd-label">The whole book</p><a class="nd-link" href="../../../inner/book/index.html">The Book</a><a class="nd-link" href="../../../inner/trade-ideas/index.html">Trade ideas</a><a class="nd-link" href="../../../inner/vol-portfolio/index.html">Vol portfolio</a><a class="nd-link" href="../../../inner/trade-log/index.html">Trade log</a></div></div></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../../weekly/index.html">Edition archive</a></div>
       <div class="mnav-sec"><p class="mnav-label">S&D Balance</p><a class="mg-link" href="../../../barrels/index.html#disposition">S&amp;D balance</a><a class="mg-link" href="../../../barrels/index.html#st3-table">Projected ST3</a><a class="mg-link" href="../../../scorecard.html">Scorecard</a></div>
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../../../projects/index.html">All projects</a><a class="mg-link" href="../../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../../../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../../../digest/index.html">Edition archive</a><a class="mg-link" href="../../../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../../global-balance.html">Global balance</a><a class="mg-link" href="../../../quotes/index.html">Quotes</a><a class="mg-link" href="../../../tolls/index.html">Toll search</a><a class="mg-link" href="../../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../../globe.html">Globe</a><a class="mg-link" href="../../../chartbook.html">Chartbook</a><a class="mg-link" href="../../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../../data/index.html">Data downloads</a><a class="mg-link" href="../../../sources/index.html">Sources</a><a class="mg-link" href="../../../methodology/index.html">Methodology</a><a class="mg-link" href="../../../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../../../digest/index.html">Edition archive</a><a class="mg-link" href="../../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing (options)</p><a class="mg-link" href="../../../options/index.html">The Wing hub</a><a class="mg-link" href="../../../options/charts/index.html">The Wing charts</a><a class="mg-link" href="../../../inner/flow/index.html">The Block Board</a><a class="mg-link" href="../../../inner/vol/index.html">Vol structures</a><a class="mg-link" href="../../../inner/vol-portfolio/index.html">Vol portfolio</a><a class="mg-link" href="../../../inner/vol/checklist/index.html">Pre-trade checklist</a><a class="mg-link" href="../../../inner/vol/doctrine/index.html" aria-current="page">Doctrine</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The whole book</p><a class="mg-link" href="../../../inner/book/index.html">The Book</a><a class="mg-link" href="../../../inner/trade-ideas/index.html">Trade ideas</a><a class="mg-link" href="../../../inner/vol-portfolio/index.html">Vol portfolio</a><a class="mg-link" href="../../../inner/trade-log/index.html">Trade log</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../../global-balance.html">Global balance</a><a class="mg-link" href="../../../quotes/index.html">Quotes</a><a class="mg-link" href="../../../tolls/index.html">Toll search</a><a class="mg-link" href="../../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../../globe.html">Globe</a><a class="mg-link" href="../../../maps/index.html">Maps</a><a class="mg-link" href="../../../chartbook.html">Chartbook</a><a class="mg-link" href="../../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../../data/index.html">Data downloads</a><a class="mg-link" href="../../../sources/index.html">Sources</a><a class="mg-link" href="../../../methodology/index.html">Methodology</a><a class="mg-link" href="../../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../../../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -662,32 +717,32 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p class="wingnav"><strong>The Wing, inner tier:</strong> <a href="../../../inner/book/index.html">The Book</a> &middot; <a href="../../../options/index.html">The Wing (public hub)</a> &middot; <a href="../../../inner/vol/index.html">Vol structures</a> &middot; <a href="../../../inner/vol-portfolio/index.html">Vol portfolio</a> &middot; <a href="../../../inner/flow/index.html">The Block Board</a> &middot; <strong>Doctrine</strong> &middot; <a href="../../../inner/vol/checklist/index.html">Pre-trade checklist</a></p>
 <p>How the book is run, in plain words, worked on the book's own numbers. The rules live once, in the playbook. This page states them and fills in today's figures when it builds, so the example is the real book, not a made-up one.</p>
 <p>This is the first of five doctrine pages: how size is set, and how we size off the bad day. Still to build: the drawdown cut rules, how plays earn bigger budgets, and the limited-losses law. They are named here so the gap is a plan, not a surprise.</p>
-<p>Numbers as of the October 23, 2026 marks. The book's target is $500,000 a month of base P&amp;L. It has one marked day, so no run rate prints. One day is not a rate.</p>
+<p>Numbers as of the October 23, 2026 marks. The book's target is $500,000 a month of net collection. The worked example on this page is the proposed book of October 26, 2026: not booked, pending ruling, and with no record of its own. The old book's scoring record was killed the same day, so no run rate prints. A proposal is not a rate.</p>
 </section>
 <section id="var-budgeting">
-<h2>Size starts as a dollar budget. Lots come last</h2>
+<h2>Size starts as a dollar budget. Lots come last<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p>A trade does not start with lots. It starts with how much it is allowed to lose. We call one full unit of risk 1R: $250,000. An unproven play runs on a quarter unit, $62,500 (we call that state probation). A proven play earns half a unit, $125,000. No play may lose more than one full unit, $250,000, however good the story sounds.</p>
 <p>Lots are what is left when the budget meets the trade's shock loss per lot. We write the budget beside the lots in the book. A later review can then tell a sizing call from a market result.</p>
 <div class="tblwrap"><table class="data">
-<thead><tr><th>Play</th><th>State</th><th>Loss budget</th><th>Shock loss at this size</th><th>Drawdown cap</th><th>Cut rules</th></tr></thead><tbody>
-<tr><td><strong>P1</strong> (S5)</td><td>Probation (unproven)</td><td>0.25R ($62,500)</td><td>$52,747</td><td>$125,000</td><td>clear</td></tr>
-<tr><td><strong>P2</strong> (S3)</td><td>Paused</td><td>0.25R ($62,500)</td><td>no position on</td><td>$125,000</td><td>clear</td></tr>
-<tr><td><strong>P3</strong> (COLLAR-PS)</td><td>Probation (unproven)</td><td>0.25R ($62,500)</td><td>$31,020</td><td>$125,000</td><td>clear</td></tr>
-<tr><td><strong>P4</strong> (CS)</td><td>Probation (unproven)</td><td>0.25R ($62,500)</td><td>no position on</td><td>$125,000</td><td>clear</td></tr>
-<tr><td><strong>P5</strong> (DIFF)</td><td>Probation (unproven)</td><td>0.25R ($62,500)</td><td>no position on</td><td>$125,000</td><td>clear</td></tr>
+<thead><tr><th>Position</th><th>Conviction</th><th>Shock loss at this size</th><th>Worst case</th><th>How the size was set</th></tr></thead><tbody>
+<tr><td><strong>N1</strong> Capped straddle (S8) (-1 C111.5; -1 P111.5; +1 C128; +1 P95.75)</td><td>High</td><td>$107,436</td><td>$249,480</td><td>Full size on the play's scenario budget = hard worst at the 1R play cap ($249,480 vs $250,000). It cannot grow without a ladder promotion. Liquidity also binds: the 95...</td></tr>
+<tr><td><strong>N2</strong> Lopsided condor (S6) (-1 C130; +1 C145; -1 P101; +1 P91)</td><td>Medium</td><td>$56,259</td><td>$240,240</td><td>Half the lopsided condor's full size: scenario loss $56,259 sits inside the 0.25R budget line. The thinnest leg (91 put) trades ~29 lots a day.</td></tr>
+<tr><td><strong>N3</strong> Fade the wing (S3) (-1 C135; +1 C138)</td><td>High</td><td>$63,612</td><td>$249,240</td><td>Held to expiry only, never a monthly round trip: at round-trip cost it nets -$12,090/mo (it collects $0.32/bbl and pays $0.45/bbl of spread). At entry-only cost it kee...</td></tr>
+<tr><td><strong>N4</strong> Wingy put spread (unnumbered candidate) (+1 P90; -1 P75)</td><td>Probe</td><td>$20,500 (its debit: the whole loss)</td><td>$20,500</td><td>Debit $0.82/bbl ($20,500 all-in) is the whole loss at any print at or above $90; that debit is 0.08R, well inside the 0.25R probe budget. Strikes moved from the candid...</td></tr>
+<tr><td><strong>N5</strong> Overwrite on the paper length (S5, conditional) (+1 FUT 2027-01; -1 C130)</td><td>Medium</td><td>$21,099</td><td>$21,099</td><td>Resized from the booked corpus's 5 lots to 2, on the book design (2026-10-26 13:23 MDT: slightly delta short at the book level). The option leg collects $6,160/cycle. ...</td></tr>
 </tbody></table></div>
-<p>The budgets add up on purpose. Five unproven plays at a quarter unit each is 1.25 units of total shock budget. Five proven plays is 2.5 units. Above the plays sit two hard book lines: a $2,500,000 drawdown budget, and a governor line at $1,500,000 where new size halves. Hit the budget and the book is flat.</p>
+<p>The budgets add up on purpose, and so do the caps. The proposed book's shock losses total $268,906 across five positions; its summed worst case is $780,559 against the $1,000,000 complex cap (4R). Above the plays sit two hard book lines: a $2,500,000 drawdown budget, and a governor line at $1,500,000 where new size halves. Hit the budget and the book is flat.</p>
 </section>
 <section id="scenario-first">
-<h2>Size off the bad day, not the normal day</h2>
-<p>Each play is sized so one bad day costs about its budget. The bad day we price: Brent jumps $20 and fear jumps 15 points, right now. It is not a forecast. It is the shock this book fears, priced before the trade goes on.</p>
+<h2>Size off the bad day, not the normal day<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
+<p>Each play is sized so one bad day costs about its budget. The bad days we price are a plain shock grid: price up $15, $25, $30 and down $20; fear up 10, 20, 25 points and down 15; every leg repriced in full. It is not a forecast. It is the shock this book fears, priced before the trade goes on.</p>
 <p>For the whole book we do the same thing bigger: reprice every open trade across the shock grid and take the worst cell. That worst cell runs size.</p>
-<p>At the October 23, 2026 marks, the book's worst priced day is fear falls 10 points: a loss of <strong>$7,918</strong>. Added up on their own, the plays' worst days come to $129,283. Together the worst day is smaller, but that is not diversification: the collar is insurance on the same length the overwrite sits on, so the two cancel each other by construction. The difference, $121,365, is cancellation, and the book counts the pair as one position. Cancellation is not diversification. Per play, the worst priced days are $86,348 for the overwrite and $42,935 for the collar.</p>
-<p>Printed beside it, never instead of it: the normal-day yardstick. It assumes small moves from here. It says the book loses $3,840 on a bad normal day, $10,926 over ten days. This market gaps. A yardstick built on small steps cannot see the jump that actually hurts. So it is a cross-check: it catches a book quietly growing in quiet trading. The shock number is the one size answers to. <span class="dim">(Technical name: Greeks-VaR, 1-day and 10-day, 99%.)</span></p>
-<p>Cut rules are set now, not in the draw. Drawdown at these marks: $0, against the $1,500,000 governor line on this book. At half a play's drawdown cap, new size halves. At the cap, the play goes flat and pauses. The breach stays on the record.</p>
+<p>At the October 23, 2026 marks, the proposed book's worst grid print is at expiry, Brent $145 or higher: a loss of <strong>$716,700</strong>. Marked today instead, the worst cell (price up $30, fear up 25 points) loses $251,160. The three earners (the capped straddle, the condor, the fade) are one short-smile driver, so their worst cases are counted together, not diversified away on paper: summed, the book's hard worst case is $780,559 of the $1,000,000 complex cap, and the joint worst print sits inside it because the three cap out at three different prices. One driver, counted once.</p>
+<p>Printed beside it, never instead of it: the normal-day yardstick. It assumes small moves from here. The Monte Carlo on this book puts the one-day 1-in-20 loss at $14,068 in the grind pool, and the ten-day 1-in-20 loss at $213,182 in the episode pool (the pool that manages this book). This market gaps. A yardstick built on small steps cannot see the jump that actually hurts. So it is a cross-check: it catches a book quietly growing in quiet trading. The shock number is the one size answers to.</p>
+<p>Cut rules are set now, not in the draw. The proposed book has no drawdown: it is not booked and has no record. At half a play's drawdown cap, new size halves. At the cap, the play goes flat and pauses. The breach stays on the record.</p>
 </section>
 <section id="picker">
-<h2>Match the structure to the view</h2>
+<h2>Match the structure to the view<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p>Three questions pick the trade: which way do we lean, what is fear charging, and is the clock chop or an event ahead? The playbook carries the full table. The cells that matter most:</p>
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Lean</th><th>Fear</th><th>Clock</th><th>First choice</th><th>Why</th></tr></thead><tbody>
@@ -702,7 +757,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </tbody></table></div>
 <p>Candidate means tracked and marked, not yet a play. Admission is a ruling, not a default.</p>
 </section>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../../barrels/index.html#st3-table">Projected ST3</a><a href="../../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../../barrels/index.html">Supply hub</a><a href="../../../projects/index.html">All projects</a><a href="../../../apportionment/index.html">Apportionment</a><a href="../../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../../maintenance/index.html">Maintenance</a><a href="../../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../../world/middle-east/index.html">Middle East watch</a><a href="../../../world/russia-refining/index.html">Russian refineries</a><a href="../../../world/china-imports/index.html">China imports</a><a href="../../../world/spr-storage/index.html">SPR & storage</a><a href="../../../world/sour/index.html">The global sour barrel</a><a href="../../../venezuela/index.html">Venezuela watch</a><a href="../../../world/trump/index.html">Trump watch</a><a href="../../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../../digest/index.html">Latest digest</a><a href="../../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../../fieldguide/index.html">Field guide</a><a href="../../../global-balance.html">Global balance</a><a href="../../../tolls/index.html">Toll search</a><a href="../../../commitments/index.html">Commitments</a><a href="../../../sat-watch.html">Sat watch</a><a href="../../../chartbook.html">Chartbook</a><a href="../../../options/index.html">The Wing (options)</a><a href="../../../data/index.html">Data downloads</a><a href="../../../sources/index.html">Sources</a><a href="../../../methodology/index.html">Methodology</a><a href="../../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../../barrels/index.html#st3-table">Projected ST3</a><a href="../../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../../barrels/index.html">Supply hub</a><a href="../../../projects/index.html">All projects</a><a href="../../../apportionment/index.html">Apportionment</a><a href="../../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../../maintenance/index.html">Maintenance</a><a href="../../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../../world/middle-east/index.html">Middle East watch</a><a href="../../../world/russia-refining/index.html">Russian refineries</a><a href="../../../world/china-imports/index.html">China imports</a><a href="../../../world/spr-storage/index.html">SPR & storage</a><a href="../../../world/sour/index.html">The global sour barrel</a><a href="../../../venezuela/index.html">Venezuela watch</a><a href="../../../world/trump/index.html">Trump watch</a><a href="../../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../../digest/index.html">Latest digest</a><a href="../../../digest/index.html">Edition archive</a><a href="../../../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../../../fieldguide/index.html">Field guide</a><a href="../../../global-balance.html">Global balance</a><a href="../../../tolls/index.html">Toll search</a><a href="../../../commitments/index.html">Commitments</a><a href="../../../sat-watch.html">Sat watch</a><a href="../../../maps/index.html">Maps</a><a href="../../../chartbook.html">Chartbook</a><a href="../../../options/index.html">The Wing (options)</a><a href="../../../options/charts/index.html">The Wing charts</a><a href="../../../data/index.html">Data downloads</a><a href="../../../sources/index.html">Sources</a><a href="../../../methodology/index.html">Methodology</a><a href="../../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -803,5 +858,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

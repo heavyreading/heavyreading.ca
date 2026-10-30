@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Charts — Heavy Reading Print Sheet</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #191919;
+         background: #e8e6e1; }
+  .sheet { background: #fff; width: 279mm; min-height: 210mm;
+           margin: 10mm auto; padding: 10mm 11mm 8mm;
+           box-shadow: 0 1px 6px rgba(0,0,0,.25); }
+  header { border-bottom: 2.5px solid #191919; padding-bottom: 3mm;
+           display: flex; justify-content: space-between;
+           align-items: baseline; }
+  .brand { font-family: Helvetica, Arial, sans-serif; font-weight: 700;
+           letter-spacing: 3.5px; font-size: 10.5pt; }
+  .brand small { display: block; letter-spacing: 1.2px; font-weight: 400;
+                 font-size: 7.5pt; color: #4d4d4d; margin-top: 1mm; }
+  h1 { font-size: 21pt; font-weight: 700; letter-spacing: .2px; }
+  .vintage { font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt;
+             color: #4d4d4d; text-align: right; }
+  .cols { display: flex; gap: 7mm; margin-top: 5mm; }
+  .cols.stack { display: block; }
+  .cols.stack .nums { margin-top: 5mm; }
+  .map { flex: 0 0 63%; }
+  .nums { flex: 1; font-family: Helvetica, Arial, sans-serif; }
+  .nums h2, .sheet h2.ph { font-size: 9pt; letter-spacing: 1.6px;
+             color: #4d4d4d; border-bottom: 1px solid #bbb;
+             padding-bottom: 1.2mm; margin: 0 0 2.5mm;
+             font-family: Helvetica, Arial, sans-serif; }
+  .nums h2:not(:first-child), .sheet h2.ph:not(:first-child) {
+             margin-top: 5mm; }
+  .row { font-size: 10.5pt; line-height: 1.45; margin-bottom: 2.2mm; }
+  .row .val { font-size: 15pt; font-weight: 700; line-height: 1.25; }
+  .small { font-size: 8.5pt; color: #4d4d4d; line-height: 1.4; }
+  .lead { font-size: 11pt; line-height: 1.5; margin-top: 4mm; }
+  .tbl { width: 100%; border-collapse: collapse;
+         font-family: Helvetica, Arial, sans-serif; font-size: 9pt;
+         margin-top: 2mm; }
+  .tbl th { text-align: left; letter-spacing: .8px; font-size: 8pt;
+            color: #4d4d4d; border-bottom: 1.5px solid #191919;
+            padding: 1.2mm 2.5mm 1.2mm 0; }
+  .tbl td { border-bottom: 1px solid #ddd; padding: 1.2mm 2.5mm 1.2mm 0;
+            line-height: 1.35; vertical-align: top; }
+  .tbl th.n, .tbl td.n { text-align: right; padding-right: 0; }
+  .tbl tr.tot td { border-top: 1.5px solid #191919;
+                   border-bottom: none; font-weight: 700; }
+  footer { border-top: 1px solid #bbb; margin-top: 5mm; padding-top: 2mm;
+           font-family: Helvetica, Arial, sans-serif; font-size: 7.8pt;
+           color: #4d4d4d; line-height: 1.45; }
+  @page { size: landscape; margin: 8mm; }
+  @media print {
+    body { background: #fff; }
+    .sheet { width: auto; min-height: auto; margin: 0; padding: 2mm;
+             box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div class="brand">HEAVY READING<small>heavyreading.ca</small></div>
+    <h1>Charts</h1>
+    <div class="vintage">PRINT SHEET<br>Data vintage: September 26, 2026<br>
+    Compiled 2026-09-26</div>
+  </header>
+<p class="lead">The latest reading from each chart in this section, on one page. Period and value are the latest point plotted on the chart page itself.</p>
+<h2 class="ph">Latest readings</h2><table class="tbl"><thead><tr><th class="">Chart</th><th class="">What it tracks</th><th class="">Latest period</th><th class="">Latest value</th><th class="">Data vintage</th></tr></thead><tbody><tr><td class="">WCS Futures Positioning</td><td class="">Weekly managed money net position in ICE WCS 1A and Houston futures</td><td class="">2026-10-20</td><td class="">1A -15,165 contracts; Houston 14,550 contracts</td><td class="">CFTC, retrieved 2026-10-23</td></tr><tr><td class="">PADD 2 Crude Stocks</td><td class="">Weekly crude stocks in PADD 2, the U.S. Midwest</td><td class="">2026-10-23</td><td class="">107,884 thousand barrels</td><td class="">EIA, retrieved 2026-10-28</td></tr><tr><td class="">Pipeline Apportionment</td><td class="">Monthly share of nominations cut on each export pipeline</td><td class="">2026-06</td><td class="">Trans Mountain 0%; Enbridge Mainline 10% (system series, 2017-09); Keystone 5%</td><td class="">CER, file apportionment_20260922T040709Z.csv</td></tr><tr><td class="">Production by Type</td><td class="">Annual crude production by stream in Western Canada</td><td class="">2025</td><td class="">5,345 kb/d total</td><td class="">CAPP, retrieved 2026-09-26</td></tr></tbody></table>
+  <footer>Sources: U.S. Commodity Futures Trading Commission (CFTC); U.S. Energy Information Administration (EIA); Canada Energy Regulator (CER); Canadian Association of Petroleum Producers (CAPP). Each value is the latest point on its chart page; see the chart page for the full series and source note.</footer>
+</div>
+</body>
+</html>

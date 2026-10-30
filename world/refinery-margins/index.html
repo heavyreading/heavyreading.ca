@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="world/refinery-margins/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../../options/index.html">The Wing (options)</a><a class="nd-link" href="../../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../maps/index.html">Maps</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../../options/index.html">The Wing (options)</a><a class="mg-link" href="../../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../maps/index.html">Maps</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -658,16 +712,16 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="note">Read this page as the demand-side bid under the heavy barrel. The 3-2-1 crack spread is the industry's shorthand for refinery profitability, utilization shows how hard plants are running, and the turnaround calendar shows when crude demand dips. Every bullet is dated and sourced. Regional benchmarks differ, so compare like with like.</p>
   <p class="lede">Margins say run, but WCS went wide anyway: the 3-2-1 crack stood at $64.65 a barrel on October 4 (RBN Energy's daily print), cooling from the near-record $73.12 of September 22, yet the Western Canadian Select (WCS) discount printed an unusually wide $28 under West Texas Intermediate (WTI) on October 21 (S and P Global Platts, via IndexBox). The 3-2-1 is not grade-specific: it prices a light barrel through a generic refinery, while WCS is priced by coker economics, which heavy barrel wins the marginal coker slot. A record crack with a wide WCS print is consistent with constrained coking capacity choosing between competing heavies, not weak demand, though public weekly data do not directly observe coker availability, so saturation stays an inference. The mechanism: pipes running near full (November apportionment was announced at 19 percent for lights and 7 percent for heavies at Kerrobert) push the marginal barrel down to the US Gulf Coast, where coking capacity looks constrained and Venezuelan exports, now moving under US control and marketed by Vitol and Trafigura, are offered at steep discounts for the same runs (the traders seeking Brent minus $18-20 for Merey). The Joliet outage (ExxonMobil's 275,000 b/d plant, shut September 13, restarting September 23) punched a local hole in PADD 2 (the Petroleum Administration for Defense Districts covering the Midwest) demand, but the plant is back in service, so that leg is fading. The forward risk: when cracks compress and the fall turnaround slate hits, discounted heavy barrels strand first and the differential widens for real.</p>
   <p class="note freshness">Updated October 26, 2026 &middot; refreshes every 14 days</p>
-  <h2>What the 3-2-1 crack spread measures</h2>
+  <h2>What the 3-2-1 crack spread measures<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>A crack spread measures the difference between the purchase price of crude oil and the selling price of finished products, such as gasoline and distillate fuel, that a refinery produces from the crude. It is an indicator of the short-term profit margin of refineries, but it excludes other variable costs and all fixed costs.<br><span class="vintage-inline">Explainer dated 2013, content current; accessed 2026-09-24 <a href="https://www.eia.gov/todayinenergy/includes/CrackSpread_Explain.php">US Energy Information Administration (EIA), crack spread explainer</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The 3-2-1 spread approximates the product yield at a typical US refinery: for every three barrels of crude oil processed, the refinery makes two barrels of gasoline and one barrel of distillate fuel.<br><span class="vintage-inline">Explainer dated 2013, content current; accessed 2026-09-24 <a href="https://www.eia.gov/todayinenergy/includes/CrackSpread_Explain.php">US Energy Information Administration (EIA), crack spread explainer</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The calculation: add the spot price for two barrels of gasoline to one barrel of diesel (multiplying per-gallon quotes by 42 gallons per barrel), subtract the price of three barrels of crude, and divide by three to get a spread in dollars per barrel.<br><span class="vintage-inline">Explainer dated 2013, content current; accessed 2026-09-24 <a href="https://www.eia.gov/todayinenergy/includes/CrackSpread_Explain.php">US Energy Information Administration (EIA), crack spread explainer</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The 3-2-1 crack spread is the most widely used benchmark for US refiner profitability. It is traded on the New York Mercantile Exchange (NYMEX), where refiners use it as a hedging instrument to lock in their margins.<br><span class="vintage-inline">Jul 17, 2026; accessed 2026-09-24 <a href="https://boereport.com/2026/07/16/us-refiner-margins-hit-new-records-as-fuel-shortage-concerns-grow/">Reuters (via BOE Report)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>2026: a record-margin year</h2>
+  <h2>2026: a record-margin year<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>Sky Quarry, in a GlobeNewswire release carried Oct 23, calculated that Salt Lake City diesel rack prices indicated a crack spread of about $133 to $136 a barrel on Oct 21, 2026, compared with about $33 a barrel in January 2026. The release noted the US Energy Information Administration (EIA) expects low distillate inventories to keep diesel crack spreads elevated through 2027.<br><span class="vintage-inline">Published Oct 23, 2026; accessed 2026-10-26 <a href="https://www.financialcontent.com/article/gnwcq-2026-10-23-with-diesel-margins-stretched-production-is-underway-at-nevadas-only-crude-oil-refinery">Sky Quarry (GlobeNewswire, via FinancialContent)</a> <span class="age-chip">&middot; 3d old</span></span></li>
+  <li>Sky Quarry, in a GlobeNewswire release carried Oct 23, calculated that Salt Lake City diesel rack prices indicated a crack spread of about $133 to $136 a barrel on Oct 21, 2026, compared with about $33 a barrel in January 2026. The release noted the US Energy Information Administration (EIA) expects low distillate inventories to keep diesel crack spreads elevated through 2027.<br><span class="vintage-inline">Published Oct 23, 2026; accessed 2026-10-26 <a href="https://www.financialcontent.com/article/gnwcq-2026-10-23-with-diesel-margins-stretched-production-is-underway-at-nevadas-only-crude-oil-refinery">Sky Quarry (GlobeNewswire, via FinancialContent)</a> <span class="age-chip">&middot; 7d old</span></span></li>
   <li>Northwest European refining margins collapsed in early October under the weight of crude acquisition and shipping costs: in north-west Europe, the crack spread fell from $54 a barrel at the start of September to as low as minus $11 a barrel earlier this month, LSEG data cited by The Guardian showed on Oct 14. The International Energy Agency said many refiners are shouldering the crippling cost of crude and fast-rising supertanker hire while making products such as naphtha and gasoline whose prices sit well below the highs seen for diesel and jet fuel. The Guardian noted the squeeze cuts the other way for refiners able to flex output toward diesel and jet: BP raised jet fuel production 30 percent in May and has since adjusted runs back to maximise diesel.<br><span class="vintage-inline">Published Oct 14, 2026; accessed 2026-10-19 <a href="https://www.newsbeep.com/uk/802455/">The Guardian (via Newsbeep)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The International Energy Agency (IEA) said in its October Oil Market Report that global diesel supply constraints are expected to persist into 2027, Bernama reported on Oct 15, citing Xinhua. Global diesel exports fell by 700,000 barrels per day year on year in September, as prolonged supply disruptions from escalating attacks on energy infrastructure in West Asia led to counter-seasonal stock draws ahead of autumn refinery maintenance and peak winter demand. Global diesel prices have eased from record highs of over $200 a barrel in September, but benchmark prices are still nearly twice as high as crude oil prices and almost double their pre-crisis levels, the agency said.<br><span class="vintage-inline">Published Oct 15, 2026; accessed 2026-10-19 <a href="https://paultan.org/2026/10/15/global-diesel-market-to-remain-tight-into-2027-iea/">Bernama (citing Xinhua, reporting the IEA)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Forbes columnist Robert Rapier's third-quarter review found refiners leading energy stocks: Marathon Petroleum returned 55.1 percent in the quarter, Phillips 66 gained 51.8 percent, and Valero returned 49.4 percent, with smaller independents PBF Energy up nearly 70 percent and CVR Energy up almost 86 percent. Rapier argues refining capacity, not crude availability, has increasingly become the constraint, as disruptions to Russian and Middle Eastern refining capacity widened crack spreads. He cautions that refining is notoriously cyclical and unusually high margins can disappear as disrupted capacity returns.<br><span class="vintage-inline">Published Oct 2026; accessed 2026-10-12 <a href="http://www.rrapier.com/2026/10/energy-stocks-surged-in-q3-with-refiners-out-front/">Robert Rapier (Forbes columnist)</a> <span class="age-chip">&middot; reference</span></span></li>
@@ -683,7 +737,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>The West Texas Intermediate (WTI) 3-2-1 crack spread hit $59 per barrel in August 2026, nearly triple its January level and the highest since the 2020 pandemic crash. The 2010 to 2021 average was about $19 per barrel. The six-month forward curve was pricing about $44, still 35% above the long-run average.<br><span class="vintage-inline">Aug 2026; accessed 2026-09-24 <a href="https://www.ainvest.com/news/epa-biofuel-waivers-don-matter-refiner-profits-2609/">AINvest (market commentary)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The diesel crack crossed $100 per barrel in August. Gasoline refining margins were $45 to $50 per barrel and jet kerosene $70 to $75, per BloombergNEF data. Diesel effectively left its historical range.<br><span class="vintage-inline">Aug 22, 2026; accessed 2026-09-24 <a href="https://github.com/oged/sevengatesresearch.com/blob/HEAD/content/research/the-middle-of-the-barrel-has-taken-hostages.md">Seven Gates Research (citing BloombergNEF)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>PADD 2: the Midwest runs flat out</h2>
+  <h2>PADD 2: the Midwest runs flat out<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Reuters reported on Oct 21, citing US Energy Information Administration (EIA) data for the week ended Oct 16, that US refinery crude runs rose by 34,000 barrels per day and refinery utilization fell by 0.1 percentage points to 93.4 percent. Crude inventories fell by 3.06 million barrels to 412.5 million barrels, gasoline stocks fell by 2.95 million barrels to 205.3 million, and distillate stocks rose by 1.68 million barrels to 104.3 million.<br><span class="vintage-inline">Week ending Oct 16, 2026; published Oct 21, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/21/us-crude-and-gasoline-stocks-fall-distillates-rise-eia-says/">Reuters (via BOE Report)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>For the week ended Oct 9, US refinery crude runs rose by 135,000 barrels per day and refinery utilization rates rose by 0.8 percentage points to 93.5 percent, the Energy Information Administration (EIA) said, Reuters reported on Oct 15. Crude inventories fell by 8.6 million barrels to 415.6 million barrels, against analysts' expectations in a Reuters poll for a 288,000 barrel draw, while stocks at Cushing rose by 1.9 million barrels. Distillate stockpiles fell by 2.5 million barrels to 102.6 million barrels and gasoline stocks rose by 3.5 million barrels to 208.3 million. Mizuho's Bob Yawger called it a hurricane report, saying nobody was bringing oil into the Gulf of Mexico with the hurricane spinning around.<br><span class="vintage-inline">Week ending Oct 9, 2026; published Oct 15, 2026; accessed 2026-10-19 <a href="https://boereport.com/2026/10/15/us-crude-stocks-fall-on-hurricane-production-shut-ins-distillate-inventories-fall-eia-says/">Reuters (via BOE Report)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -694,9 +748,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>For the week ending September 18, 2026, US refiners processed less crude, and it was not seasonal maintenance: Exxon's Joliet refinery had been mostly offline since the prior Sunday after a power outage, with floodwater also an issue. The plant accounts for 6 to 8% of regional refining capacity, and the PADD 2 utilization drop pressured an already tight Midwest product market.<br><span class="vintage-inline">Week ending Sep 18, 2026; accessed 2026-09-24 <a href="https://timdallinger.substack.com/p/eia-wpsr-summary-for-week-ending-b3c">Tim Dallinger (EIA Weekly Petroleum Status Report summary)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>That same week, US gasoline inventories were about 6% below the five-year seasonal average and distillate about 12% below. Simple cracks moved back toward record high rates.<br><span class="vintage-inline">Week ending Sep 18, 2026; accessed 2026-09-24 <a href="https://timdallinger.substack.com/p/eia-wpsr-summary-for-week-ending-b3c">Tim Dallinger (EIA Weekly Petroleum Status Report summary)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>How margins pull heavy barrels</h2>
+  <h2>How margins pull heavy barrels<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>IndexBox reported on Oct 23, citing Platts, that Enbridge Mainline apportionment for November stands at 19 percent for light crude at Kerrobert and 7 percent for heavy crude at Kerrobert, with a further 16 percent heavy point at Superior, up from 8 percent for lights and 4 percent for heavies in October. Trans Mountain apportionment for October stands at 7 percent, and the system was 90 percent full in September.<br><span class="vintage-inline">Published Oct 23, 2026; accessed 2026-10-26 <a href="https://www.indexbox.io/blog/canadian-crude-pipelines-raise-apportionment-as-heavy-oil-discounts-widen/">IndexBox (reporting S&amp;P Global Platts)</a> <span class="age-chip">&middot; 3d old</span></span></li>
+  <li>IndexBox reported on Oct 23, citing Platts, that Enbridge Mainline apportionment for November stands at 19 percent for light crude at Kerrobert and 7 percent for heavy crude at Kerrobert, with a further 16 percent heavy point at Superior, up from 8 percent for lights and 4 percent for heavies in October. Trans Mountain apportionment for October stands at 7 percent, and the system was 90 percent full in September.<br><span class="vintage-inline">Published Oct 23, 2026; accessed 2026-10-26 <a href="https://www.indexbox.io/blog/canadian-crude-pipelines-raise-apportionment-as-heavy-oil-discounts-widen/">IndexBox (reporting S&amp;P Global Platts)</a> <span class="age-chip">&middot; 7d old</span></span></li>
   <li>Oil Sands Magazine's Sep 30 third-quarter wrap puts the WCS discount topping $20 a barrel in September, the widest since December 2023, and attributes the jump to the unplanned ExxonMobil Joliet outage and a planned maintenance turnaround at BP's 440,000 b/d Whiting refinery in Indiana, which it calls the largest buyer of Alberta's diluted bitumen.<br><span class="vintage-inline">Published Sep 30, 2026; accessed 2026-10-05 <a href="https://www.oilsandsmagazine.com/news/2026/9/30/q3-wrap-new-thermal-records-midwest-refinery-outages-and-widening-differentials-wcs-sco">Oil Sands Magazine</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The Western Canadian Select (WCS) discount to West Texas Intermediate (WTI) stood at 21 dollars a barrel on Sep 21, per Argus market reporting, an unusually wide differential for 2026. With Friday's WTI settlement at 92.44 dollars, implied WCS was 71.44 dollars a barrel, down about 7.09 dollars on the week. Goldman Sachs' fourth-quarter 2026 Brent target of 85 dollars a barrel translates to WCS near 59 dollars, roughly 12.44 dollars below the current implied level.<br><span class="vintage-inline">Sep 21-25, 2026; published ~Sep 25, 2026; accessed 2026-09-28 <a href="https://oilauthority.com/news/wti-92-brent-spread-wcs-oilsands-netback">Oil Authority (citing Argus and Goldman Sachs)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Midwest refiners invested billions of dollars in coking units to turn Canadian heavy crude into gasoline and diesel. BP's 430,000 barrel-per-day Whiting, Indiana refinery can process up to 85% heavy crude, up from 20% before the upgrades. That conversion hardware is the structural bid under WCS.<br><span class="vintage-inline">2018 (structural background); accessed 2026-09-24 <a href="https://www.marinelink.com/news/refiners-midwest-output430562">Reuters (via MarineLink)</a> <span class="age-chip">&middot; reference</span></span></li>
@@ -706,21 +760,21 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>The competing barrel is a true substitute: Merey 16 runs about 16 degrees API with 2.5 to 2.7 percent sulfur, against WCS at about 21 degrees API and 3.5 percent sulfur. Merey is heavier but slightly less sour; both are delayed-coker feeds, and Merey is the grade US Gulf Coast coking refineries were built to run.<br><span class="vintage-inline">Assays 1997-2025; accessed 2026-09-28 <a href="https://www.ogj.com/home/article/17241730/guide-to-world-crudes-assays-of-two-venezuelan-crudes-differ-significantly">Oil &amp; Gas Journal (Merey assay); FuelBridge Merey 16 datasheet, Paraguaná lab Apr 2025; Oil Sands Magazine (WCS spec)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The displacement is showing up in US import data: US imports of Venezuelan crude ran 583,000 to 782,000 barrels a day in the two weeks to September 18, landing directly into PADD 3. One syndicated market report put the WCS Houston discount more than $3 a barrel wider since the January announcement as refiners opted for cheaper Venezuelan barrels. Treat that figure as reported, not verified; the checkable version is the ICE ARV-TMW spread.<br><span class="vintage-inline">Sep 2026; accessed 2026-09-28 <a href="https://markets.financialcontent.com/postgazette/article/marketminute-2026-1-22-the-heavy-oil-renaissance-venezuelan-merey-returns-to-us-shores-at-steep-discounts">EIA WPSR Table 8 (via local pipeline); marketminute syndicated report Jan 22, 2026 (secondary)</a> <span class="age-chip">&middot; reference</span></span></li>
   </ul>
-  <h2>Turnarounds: the fall maintenance window</h2>
+  <h2>Turnarounds: the fall maintenance window<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Russia is set to extend its ban on most diesel exports beyond the end of September as Ukrainian drone attacks on Russian refineries continue, with an extension of a month or more under consideration, according to people familiar with the matter. The move is cross-verified: the Russian business daily Vedomosti reported on Sep 16 that the ban would run to October 31, citing delayed refinery maintenance and the need to rebuild winter fuel reserves, and Energy Intelligence reported on Sep 18 that an October extension was likely.<br><span class="vintage-inline">Reported Sep 21, 2026; published Sep 21, 2026; accessed 2026-09-28 <a href="https://headlinesbriefing.com/market/bloomberg-markets/russia-extends-diesel-export-ban-5c54b69e">Bloomberg Markets (via Headlines Briefing)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Imperial Oil scheduled full turnarounds at two Canadian refineries in 2026: the 197,000 barrel-per-day Strathcona refinery near Edmonton in Q2, and the 124,000 barrel-per-day Sarnia refinery in Q3 and Q4.<br><span class="vintage-inline">Dec 2025 guidance; accessed 2026-09-24 <a href="https://www.ogj.com/refining-processing/refining/operations/news/55338848/imperial-plans-2026-turnarounds-at-two-canadian-refineries">Oil and Gas Journal (citing Imperial Oil 2026 guidance)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Irving Oil's 320,000 barrel-per-day Saint John, New Brunswick refinery, Canada's largest, began a two-month turnaround in September 2026 running to mid-November, an extended maintenance window over its historical 30 to 35 day turnarounds.<br><span class="vintage-inline">Jul 17, 2026; accessed 2026-09-24 <a href="https://pgjonline.com/news/2026/july/irving-oils-saint-john-refinery-to-begin-fall-turnaround-in-september">Reuters (via Pipeline and Gas Journal)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>US refinery maintenance typically peaks in October, but shipbroker Gibson reported very little confirmed for autumn 2026 because robust margins kept refiners from taking units offline. US utilization was 97.4%, the highest since 2018. The only confirmed PADD 3 turnaround was Exxon's Beaumont fluid catalytic cracker (FCC) and hydrotreaters for about 45 days from early December to mid-January.<br><span class="vintage-inline">Aug 31, 2026; accessed 2026-09-24 <a href="https://www.hellenicshippingnews.com/tanker-market-unplanned-us-refinery-outages-could-impact-freight-trade/">Hellenic Shipping News (citing shipbroker Gibson)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Where sources disagree</h2>
+  <h2>Where sources disagree<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li><b>Peak 2026 3-2-1 level</b>: Reuters (NYMEX 3-2-1, Jul 17, 2026) vs BIC Magazine (Gulf Coast contractor outlook, Sep 2026). Reuters reported the exchange-settled 3-2-1 closing at a record $69.66 per barrel in July, while BIC describes the 3-2-1 peaking 'above $54' in Q2 and compressing 'toward $20'. Different benchmark constructions (NYMEX-settled versus regional PACE-style estimates) and different observation dates explain the divergence.</li>
   <li><b>Diesel crack estimates</b>: Seven Gates Research (BloombergNEF, Aug 22, 2026) vs AINvest (Aug 2026). Seven Gates put the US diesel crack above $100 per barrel in August, AINvest at roughly $95. Benchmark and date differences; both describe the same record diesel margin environment.</li>
   <li><b>Utilization above 100%</b>: Seven Gates Research (Midwest 101.8%, Aug 2026) vs EIA methodology. Above-nameplate readings are a measurement artifact: the EIA measures gross input against nominal operable capacity, and debottlenecking pushes actual throughput above it. Do not read 101.8% as literal over-design operation.</li>
   </ul>
   <p class="lede">For the WCSB book, this page is the demand-side complement to the supply watches: watch PADD 2 utilization and the fall turnaround slate the way you watch <a href="../../venezuela/index.html">TMW</a>. While cracks sit near record highs, refineries have every incentive to run hard and bid for discounted heavy barrels, which supports WCS. The risk is the turn: when maintenance or margin compression takes runs down, heavy barrels lose their bid first.</p>
-  <h2>What this watch tracks</h2>
+  <h2>What this watch tracks<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p class="sub">Updated daily.</p>
   <ul class="ev">
   <li>US Energy Information Administration (EIA) weekly refinery utilization by Petroleum Administration for Defense District (PADD)</li>
@@ -730,13 +784,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Refined product inventories (gasoline, distillate) vs five-year averages</li>
   <li>Heavy crude differentials (WCS, Maya, Mars) as refinery appetite gauges</li>
   </ul>
-  <h2>What public data cannot verify</h2>
+  <h2>What public data cannot verify<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Forward crack spreads, such as the roughly $44 per barrel six-month forward quoted in August commentary, are trader marks, not published by the EIA. The EIA publishes historical price series, not forward margins.</li>
   <li>Refinery-level crude slates, including how much WCS each PADD 2 plant runs, are proprietary. The market only sees the effect when a plant goes down.</li>
   <li>Turnaround schedules are voluntary disclosures. Shipbroker Gibson notes not all maintenance is reported, so the fall calendar is always incomplete.</li>
   </ul>
-  <h2>Sources</h2>
+  <h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Publisher</th><th>Link</th></tr>
     <tr><td>US Energy Information Administration (EIA), crack spread explainer</td><td><a href="https://www.eia.gov/todayinenergy/includes/CrackSpread_Explain.php">link</a></td></tr>
@@ -775,7 +829,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Reuters (via Pipeline and Gas Journal)</td><td><a href="https://pgjonline.com/news/2026/july/irving-oils-saint-john-refinery-to-begin-fall-turnaround-in-september">link</a></td></tr>
     <tr><td>Hellenic Shipping News (citing shipbroker Gibson)</td><td><a href="https://www.hellenicshippingnews.com/tanker-market-unplanned-us-refinery-outages-could-impact-freight-trade/">link</a></td></tr>
   </table></div>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a><a href="../../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -876,5 +930,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="whale-watch.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="projects/index.html">All projects</a><a class="nd-link" href="apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop active"><a class="nd-top nd-plain" href="whale-watch.html" aria-current="page">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="world/china-imports/index.html">China imports</a><a class="nd-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="world/sour/index.html">The global sour barrel</a><a class="nd-link" href="venezuela/index.html">Venezuela watch</a><a class="nd-link" href="world/trump/index.html">Trump watch</a><a class="nd-link" href="world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="fieldguide/index.html">Field guide</a><a class="nd-link" href="global-balance.html">Global balance</a><a class="nd-link" href="quotes/index.html">Quotes</a><a class="nd-link" href="tolls/index.html">Toll search</a><a class="nd-link" href="commitments/index.html">Commitments grid</a><a class="nd-link" href="freight-watch.html">Freight watch</a><a class="nd-link" href="sat-watch.html">Sat watch</a><a class="nd-link" href="globe.html">Globe</a><a class="nd-link" href="chartbook.html">Chartbook</a><a class="nd-link" href="arb-watch/index.html">Arb watch</a><a class="nd-link" href="data/index.html">Data downloads</a><a class="nd-link" href="sources/index.html">Sources</a><a class="nd-link" href="methodology/index.html">Methodology</a><a class="nd-link" href="about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="world/china-imports/index.html">China imports</a><a class="nd-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="world/sour/index.html">The global sour barrel</a><a class="nd-link" href="venezuela/index.html">Venezuela watch</a><a class="nd-link" href="world/trump/index.html">Trump watch</a><a class="nd-link" href="world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="options/index.html">The Wing (options)</a><a class="nd-link" href="options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="fieldguide/index.html">Field guide</a><a class="nd-link" href="global-balance.html">Global balance</a><a class="nd-link" href="quotes/index.html">Quotes</a><a class="nd-link" href="tolls/index.html">Toll search</a><a class="nd-link" href="commitments/index.html">Commitments grid</a><a class="nd-link" href="freight-watch.html">Freight watch</a><a class="nd-link" href="sat-watch.html">Sat watch</a><a class="nd-link" href="globe.html">Globe</a><a class="nd-link" href="maps/index.html">Maps</a><a class="nd-link" href="chartbook.html">Chartbook</a><a class="nd-link" href="arb-watch/index.html">Arb watch</a><a class="nd-link" href="data/index.html">Data downloads</a><a class="nd-link" href="sources/index.html">Sources</a><a class="nd-link" href="methodology/index.html">Methodology</a><a class="nd-link" href="about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="projects/index.html">All projects</a><a class="mg-link" href="apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="world/china-imports/index.html">China imports</a><a class="mg-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="world/sour/index.html">The global sour barrel</a><a class="mg-link" href="venezuela/index.html">Venezuela watch</a><a class="mg-link" href="world/trump/index.html">Trump watch</a><a class="mg-link" href="world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="global-balance.html">Global balance</a><a class="mg-link" href="quotes/index.html">Quotes</a><a class="mg-link" href="tolls/index.html">Toll search</a><a class="mg-link" href="commitments/index.html">Commitments grid</a><a class="mg-link" href="freight-watch.html">Freight watch</a><a class="mg-link" href="sat-watch.html">Sat watch</a><a class="mg-link" href="globe.html">Globe</a><a class="mg-link" href="chartbook.html">Chartbook</a><a class="mg-link" href="arb-watch/index.html">Arb watch</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="options/index.html">The Wing (options)</a><a class="mg-link" href="options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="global-balance.html">Global balance</a><a class="mg-link" href="quotes/index.html">Quotes</a><a class="mg-link" href="tolls/index.html">Toll search</a><a class="mg-link" href="commitments/index.html">Commitments grid</a><a class="mg-link" href="freight-watch.html">Freight watch</a><a class="mg-link" href="sat-watch.html">Sat watch</a><a class="mg-link" href="globe.html">Globe</a><a class="mg-link" href="maps/index.html">Maps</a><a class="mg-link" href="chartbook.html">Chartbook</a><a class="mg-link" href="arb-watch/index.html">Arb watch</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -688,10 +742,10 @@ details.ctx summary{cursor:pointer;font-weight:700;font-size:1.05rem}
 <p class="note"><strong>How to read it:</strong> the snapshot is the latest Friday release (positions as of the preceding Tuesday; neither publisher revises). Rows tagged <span class="src-tag">ICE</span> come from the exchange's own weekly COT reports; the rest come from the U.S. Commodity Futures Trading Commission (CFTC). The flag feed is the detector's full history, newest first. Flags marked <span class="flag on">PUBLISHED DATA</span> rest on published positioning data. Flags marked <span class="flag off">TEST DATA</span> run on a placeholder feed while real history accumulates; treat them as illustrations, not real signals. The open-interest tripwire panel shows only contracts with a live OI feed.</p>
 <div class="verdict v-active"><span class="vstat">ACTIVE</span><p><strong>Positioning.</strong> Funds extremely short ICE WCS 1A (2th percentile of two-year history).</p></div>
 <div class="theread"><h3>The read</h3><p>Funds short ICE WCS 1A at the 2th percentile of two-year history.</p><ul><li>Commercials sold 7,000 lots in WCS 1A - trimming length to +24,203 (from +31,203 last week)</li><li>Commercials sold 4,605 lots in WCS Houston - fresh selling to -21,826 (from -17,221 last week)</li><li>Funds covered 4,250 lots of their WCS 1A short - covering to -15,165 (from -19,415 last week)</li><li>Funds bought 2,630 lots in WCS Houston - fresh buying to +14,550 (from +11,920 last week)</li><li>Commercials sold 1,434 lots in SW 1A - trimming length to +4,967 (from +6,401 last week)</li><li>Commercials: +24,203 WCS 1A vs -21,826 the ICE ARV contract (Canadian heavy at the US Gulf Coast) (category nets on opposite sides; aggregate data do not show whether this is one spread book); cut it by 2,395 lots this week</li><li>Funds: -15,165 WCS 1A vs +14,550 ARV (category nets on opposite sides; aggregate data do not show whether this is one spread book); cut it by 1,620 lots this week</li><li>Outright crude: Commercials sold 23,183 lots of ICE Brent to -438,828 (from -415,645 last week); Commercials bought 12,725 lots of ICE WTI to +145,209 (from +132,484 last week).</li></ul><p class="rq">COT data through 2026-10-20. Written at build time from the snapshot below; every line traces to a number on this page.</p></div>
-<h2>Latest snapshot</h2>
+<h2>Latest snapshot<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Contract</th><th>Managed-money net</th><th>Week change</th><th>Commercial net (wk change)</th><th>Open interest</th><th>Data through</th></tr></thead><tbody><tr><td>ICE WCS 1A</td><td class="num">-15,165</td><td class="num pos">+4,250</td><td class="num neg">+24,203<span class="wow"> (-7,000)</span></td><td class="num">64,215</td><td class="vintage-inline">2026-10-20</td></tr><tr><td>ICE WCS Houston</td><td class="num">+14,550</td><td class="num pos">+2,630</td><td class="num neg">-21,826<span class="wow"> (-4,605)</span></td><td class="num">68,639</td><td class="vintage-inline">2026-10-20</td></tr><tr><td>ICE SW 1A</td><td class="num">+220</td><td class="num pos">+35</td><td class="num neg">+4,967<span class="wow"> (-1,434)</span></td><td class="num">7,499</td><td class="vintage-inline">2026-10-20</td></tr><tr><td>ICE C5 1A</td><td class="num">+0</td><td class="num ">+0</td><td class="num pos">-305<span class="wow"> (+210)</span></td><td class="num">12,810</td><td class="vintage-inline">2026-10-20</td></tr><tr class="group-sep"><td colspan="6">Context: global benchmarks (not Canadian)</td></tr><tr><td>ICE WTI</td><td class="num">+9,024</td><td class="num pos">+1,170</td><td class="num pos">+145,209<span class="wow"> (+12,725)</span></td><td class="num">1,006,957</td><td class="vintage-inline">2026-10-20</td></tr><tr><td>NYMEX WTI</td><td class="num">+89,325</td><td class="num neg">-11,018</td><td class="num pos">-116,158<span class="wow"> (+9,177)</span></td><td class="num">1,835,144</td><td class="vintage-inline">2026-10-20</td></tr><tr><td>ICE Brent <span class="src-tag">ICE</span></td><td class="num">+241,881</td><td class="num pos">+8,852</td><td class="num neg">-438,828<span class="wow"> (-23,183)</span></td><td class="num">3,641,274</td><td class="vintage-inline">2026-10-20</td></tr><tr><td>ICE Gasoil <span class="src-tag">ICE</span></td><td class="num">+75,622</td><td class="num pos">+161</td><td class="num pos">-85,362<span class="wow"> (+580)</span></td><td class="num">860,422</td><td class="vintage-inline">2026-10-20</td></tr></tbody></table></div><p class="vintage"><strong>Data:</strong> Commitments of Traders, data through 2026-10-20. New York Mercantile Exchange (NYMEX) WTI reads the CFTC legacy report (noncommercial as the managed-money proxy); other ICE contracts read futures and options combined. Rows tagged <span class="src-tag">ICE</span> come from the exchange's own weekly COT reports (Brent and Gasoil are not in the CFTC feed); the rest come from the CFTC. Positions as of the Tuesday before each Friday release; neither publisher revises.</p>
-<h2>How extreme is positioning?</h2><p class="note">Current managed-money net as a percentile of its own two-year history. Below 5th = extreme short, above 95th = extreme long. This is crowding, not a signal: extreme positioning marks where a squeeze or flush can start, not where the diff is going.</p><div class="table-wrap"><table class="data"><thead><tr><th>Contract</th><th>Net (lots)</th><th>Percentile</th><th>Read</th></tr></thead><tbody><tr><td>ICE WCS 1A</td><td class="num">-15,165</td><td class="num">2th</td><td>extreme short</td></tr><tr><td>ICE WCS Houston</td><td class="num">+14,550</td><td class="num">99th</td><td>extreme long</td></tr><tr><td>ICE SW 1A</td><td class="num">+220</td><td class="num">87th</td><td>stretched long</td></tr><tr><td>ICE C5 1A</td><td class="num">+0</td><td class="num">71th</td><td>mid-range</td></tr></tbody></table></div>
-<h2>Positioning history</h2>
+<h2>How extreme is positioning?<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p class="note">Current managed-money net as a percentile of its own two-year history. Below 5th = extreme short, above 95th = extreme long. This is crowding, not a signal: extreme positioning marks where a squeeze or flush can start, not where the diff is going.</p><div class="table-wrap"><table class="data"><thead><tr><th>Contract</th><th>Net (lots)</th><th>Percentile</th><th>Read</th></tr></thead><tbody><tr><td>ICE WCS 1A</td><td class="num">-15,165</td><td class="num">2th</td><td>extreme short</td></tr><tr><td>ICE WCS Houston</td><td class="num">+14,550</td><td class="num">99th</td><td>extreme long</td></tr><tr><td>ICE SW 1A</td><td class="num">+220</td><td class="num">87th</td><td>stretched long</td></tr><tr><td>ICE C5 1A</td><td class="num">+0</td><td class="num">71th</td><td>mid-range</td></tr></tbody></table></div>
+<h2>Positioning history<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <h3 class="ctake">Managed-money net: WCS 1A (Hardisty)</h3>
 <figure class="chart">
 <svg viewbox="0 0 720 300" role="img" aria-label="Managed-money net: WCS 1A (Hardisty)"><style>.ww-t{font:11px system-ui;fill:var(--mut)}.ww-e{font:12px system-ui;font-weight:700}</style><rect x="0" y="0" width="720" height="300" fill="none" /><line x1="64" y1="256.0" x2="610" y2="256.0" stroke="var(--ch-grid)" stroke-width="1" /><text x="56" y="260.0" text-anchor="end" class="ww-t">-24,639</text><line x1="64" y1="196.0" x2="610" y2="196.0" stroke="var(--ch-grid)" stroke-width="1" /><text x="56" y="200.0" text-anchor="end" class="ww-t">-15,833</text><line x1="64" y1="136.0" x2="610" y2="136.0" stroke="var(--ch-grid)" stroke-width="1" /><text x="56" y="140.0" text-anchor="end" class="ww-t">-7,026</text><line x1="64" y1="76.0" x2="610" y2="76.0" stroke="var(--ch-grid)" stroke-width="1" /><text x="56" y="80.0" text-anchor="end" class="ww-t">1,780</text><line x1="64" y1="16.0" x2="610" y2="16.0" stroke="var(--ch-grid)" stroke-width="1" /><text x="56" y="20.0" text-anchor="end" class="ww-t">10,586</text><line x1="64" y1="88.1" x2="610" y2="88.1" stroke="var(--faint)" stroke-width="1" /><text x="64.0" y="276" text-anchor="middle" class="ww-t">18/02/20</text><text x="154.6" y="276" text-anchor="middle" class="ww-t">19/07/30</text><text x="245.2" y="276" text-anchor="middle" class="ww-t">21/01/05</text><text x="335.8" y="276" text-anchor="middle" class="ww-t">22/06/14</text><text x="426.4" y="276" text-anchor="middle" class="ww-t">23/11/21</text><text x="517.0" y="276" text-anchor="middle" class="ww-t">25/04/29</text><text x="607.6" y="276" text-anchor="middle" class="ww-t">26/10/06</text><polyline points="64.0,88.1 65.2,88.1 66.4,88.1 67.6,88.1 68.8,88.1 70.0,88.1 71.2,88.1 72.5,88.1 73.7,88.1 74.9,88.1 76.1,88.1 77.3,88.1 78.5,88.1 79.7,88.1 80.9,88.1 82.1,88.1 83.3,88.1 84.5,88.1 85.7,88.1 87.0,88.1 88.2,88.1 89.4,88.1 90.6,88.1 91.8,88.1 93.0,88.1 94.2,88.1 95.4,88.1 96.6,88.1 97.8,88.1 99.0,88.1 100.2,88.1 101.4,88.1 102.7,88.1 103.9,88.1 105.1,88.1 106.3,88.1 107.5,88.1 108.7,88.1 109.9,88.1 111.1,88.1 112.3,88.1 113.5,88.1 114.7,88.1 115.9,88.1 117.2,88.1 118.4,88.1 119.6,88.1 120.8,88.1 122.0,88.1 123.2,88.1 124.4,88.1 125.6,88.1 126.8,88.1 128.0,88.1 129.2,88.1 130.4,88.1 131.6,88.1 132.9,88.1 134.1,88.1 135.3,88.1 136.5,88.1 137.7,88.1 138.9,88.1 140.1,88.1 141.3,88.1 142.5,88.1 143.7,88.1 144.9,88.1 146.1,88.1 147.3,88.1 148.6,88.1 149.8,88.1 151.0,88.1 152.2,88.1 153.4,88.1 154.6,88.1 155.8,88.1 157.0,88.1 158.2,88.1 159.4,88.1 160.6,88.1 161.8,88.1 163.1,88.1 164.3,88.1 165.5,88.1 166.7,88.1 167.9,88.1 169.1,88.1 170.3,88.1 171.5,88.1 172.7,88.1 173.9,88.1 175.1,88.1 176.3,88.1 177.5,88.1 178.8,88.1 180.0,88.1 181.2,88.1 182.4,88.1 183.6,88.1 184.8,88.1 186.0,88.1 187.2,88.1 188.4,88.1 189.6,88.1 190.8,88.1 192.0,88.1 193.3,88.1 194.5,88.1 195.7,88.1 196.9,88.1 198.1,88.1 199.3,88.1 200.5,88.1 201.7,88.1 202.9,88.1 204.1,88.1 205.3,88.1 206.5,88.1 207.7,88.1 209.0,88.1 210.2,88.1 211.4,88.1 212.6,88.1 213.8,88.1 215.0,88.1 216.2,88.1 217.4,88.1 218.6,88.1 219.8,88.1 221.0,88.1 222.2,88.1 223.5,88.1 224.7,88.1 225.9,88.1 227.1,88.1 228.3,88.1 229.5,88.1 230.7,87.6 231.9,87.6 233.1,87.6 234.3,87.4 235.5,87.5 236.7,87.7 237.9,87.7 239.2,87.7 240.4,87.8 241.6,87.9 242.8,88.1 244.0,88.1 245.2,88.1 246.4,88.1 247.6,87.9 248.8,87.9 250.0,87.9 251.2,87.8 252.4,87.8 253.7,87.9 254.9,87.9 256.1,87.9 257.3,87.9 258.5,87.9 259.7,87.9 260.9,87.8 262.1,88.1 263.3,88.6 264.5,89.4 265.7,89.1 266.9,89.1 268.1,88.8 269.4,89.4 270.6,89.7 271.8,89.5 273.0,89.5 274.2,89.8 275.4,89.8 276.6,89.8 277.8,89.8 279.0,89.8 280.2,89.8 281.4,89.8 282.6,89.8 283.8,89.5 285.1,89.4 286.3,88.8 287.5,88.1 288.7,87.7 289.9,88.1 291.1,88.5 292.3,88.5 293.5,88.8 294.7,90.9 295.9,91.9 297.1,91.9 298.3,91.3 299.6,90.6 300.8,90.3 302.0,90.5 303.2,90.0 304.4,90.0 305.6,89.4 306.8,89.4 308.0,89.8 309.2,88.6 310.4,88.8 311.6,88.8 312.8,88.6 314.0,89.1 315.3,89.3 316.5,89.3 317.7,88.7 318.9,88.1 320.1,88.1 321.3,89.1 322.5,89.1 323.7,88.9 324.9,88.9 326.1,88.9 327.3,88.9 328.5,88.9 329.8,88.9 331.0,88.6 332.2,89.0 333.4,89.3 334.6,89.1 335.8,89.1 337.0,89.1 338.2,89.1 339.4,89.4 340.6,89.2 341.8,89.1 343.0,89.1 344.2,89.1 345.5,89.3 346.7,89.1 347.9,89.3 349.1,89.5 350.3,89.6 351.5,89.5 352.7,89.5 353.9,89.7 355.1,89.3 356.3,89.3 357.5,88.9 358.7,88.9 360.0,88.9 361.2,89.3 362.4,89.3 363.6,89.3 364.8,89.3 366.0,89.3 367.2,89.3 368.4,89.2 369.6,89.4 370.8,89.5 372.0,89.1 373.2,88.4 374.4,88.2 375.7,88.2 376.9,87.6 378.1,87.8 379.3,87.8 380.5,87.3 381.7,87.2 382.9,87.3 384.1,87.2 385.3,87.3 386.5,87.3 387.7,87.5 388.9,87.0 390.2,87.4 391.4,87.8 392.6,87.0 393.8,86.9 395.0,86.0 396.2,86.6 397.4,85.4 398.6,85.0 399.8,80.1 401.0,80.1 402.2,84.0 403.4,86.3 404.6,89.1 405.9,80.9 407.1,80.9 408.3,80.9 409.5,80.0 410.7,80.0 411.9,79.7 413.1,79.6 414.3,80.4 415.5,80.6 416.7,80.6 417.9,80.6 419.1,79.9 420.3,79.9 421.6,79.8 422.8,80.0 424.0,80.0 425.2,80.0 426.4,81.6 427.6,81.3 428.8,81.3 430.0,82.2 431.2,83.6 432.4,83.6 433.6,83.6 434.8,83.6 436.1,83.6 437.3,84.0 438.5,85.4 439.7,85.2 440.9,85.2 442.1,88.2 443.3,88.2 444.5,88.2 445.7,88.2 446.9,88.3 448.1,88.3 449.3,88.3 450.5,88.3 451.8,88.1 453.0,87.9 454.2,87.9 455.4,88.1 456.6,88.1 457.8,88.1 459.0,88.1 460.2,87.4 461.4,87.2 462.6,87.1 463.8,86.8 465.0,86.8 466.3,86.8 467.5,86.8 468.7,86.1 469.9,84.0 471.1,88.1 472.3,89.6 473.5,89.8 474.7,90.3 475.9,90.8 477.1,90.6 478.3,91.3 479.5,94.8 480.7,93.6 482.0,94.4 483.2,94.3 484.4,92.7 485.6,94.9 486.8,90.9 488.0,78.2 489.2,70.7 490.4,64.9 491.6,67.5 492.8,58.9 494.0,57.9 495.2,54.7 496.5,54.7 497.7,60.1 498.9,53.5 500.1,58.9 501.3,62.2 502.5,64.2 503.7,74.1 504.9,68.9 506.1,73.8 507.3,70.4 508.5,74.6 509.7,72.2 510.9,75.3 512.2,77.1 513.4,72.7 514.6,78.9 515.8,70.2 517.0,52.6 518.2,49.6 519.4,50.8 520.6,42.7 521.8,45.4 523.0,45.6 524.2,46.9 525.4,46.7 526.7,40.7 527.9,37.5 529.1,37.3 530.3,32.6 531.5,49.4 532.7,54.2 533.9,48.7 535.1,61.9 536.3,73.3 537.5,85.7 538.7,77.5 539.9,76.5 541.1,66.8 542.4,76.8 543.6,76.6 544.8,73.2 546.0,60.0 547.2,51.1 548.4,46.6 549.6,65.9 550.8,62.0 552.0,59.5 553.2,65.2 554.4,59.9 555.6,74.5 556.8,85.9 558.1,89.9 559.3,89.9 560.5,90.8 561.7,127.1 562.9,118.1 564.1,123.5 565.3,124.0 566.5,128.9 567.7,138.1 568.9,146.1 570.1,149.7 571.3,133.0 572.6,133.9 573.8,121.5 575.0,120.6 576.2,112.5 577.4,111.7 578.6,98.4 579.8,98.5 581.0,111.2 582.2,116.7 583.4,118.4 584.6,119.7 585.8,134.6 587.0,147.8 588.3,151.6 589.5,152.7 590.7,162.4 591.9,171.2 593.1,184.0 594.3,183.9 595.5,182.0 596.7,188.5 597.9,194.1 599.1,206.2 600.3,215.5 601.5,228.6 602.8,233.8 604.0,239.4 605.2,222.6 606.4,202.8 607.6,213.6 608.8,220.4 610.0,191.4" fill="none" stroke="#1f6feb" stroke-width="2" /><circle cx="610.0" cy="191.4" r="3.5" fill="#1f6feb" /><text x="618.0" y="195.4" class="ww-e" fill="#1f6feb">ICE WCS 1A -15,165</text></svg>
@@ -747,12 +801,12 @@ details.ctx summary{cursor:pointer;font-weight:700;font-size:1.05rem}
 <figcaption>Weekly managed-money net in ICE Brent and ICE Gasoil, from ICE's own weekly COT PDFs (not in the CFTC feed). The global flat-price crowd these differentials trade against.<br><b>Data:</b> ICE weekly COT; data through 2026-10-20</figcaption>
 <div class="lg"><span><span class="sw" style="background:#1f6feb"></span>ICE Brent</span><span><span class="sw" style="background:#d97706"></span>ICE Gasoil</span></div>
 </figure></details>
-<h2>Open-interest tripwire</h2>
+<h2>Open-interest tripwire<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Contract</th><th>OI feed</th><th>Tripwire</th><th>z-score</th><th>Detail</th></tr></thead><tbody><tr><td>ICE WCS 1A</td><td><span class="flag on">LIVE DATA</span></td><td><span class="flag on">QUIET</span></td><td class="num">n/a</td><td class="note">history accumulating</td></tr><tr><td>ICE SW 1A</td><td><span class="flag on">LIVE DATA</span></td><td><span class="flag on">QUIET</span></td><td class="num">n/a</td><td class="note">history accumulating</td></tr></tbody></table></div><p class="vintage"><strong>Data:</strong> ICE end-of-day open interest (Report Center report 142), history from 2026-09-21 and accumulating. Only contracts with a live OI feed are shown. Direction reads come from the stand-in price feed throughout.</p>
-<h2>How the flags are produced</h2>
+<h2>How the flags are produced<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="note">First, the daily tripwire: the z-score of the daily change in open interest (OI) against its trailing 60-day history. A z-score of 3.0 or more fires; direction comes from five days of price action (rising OI with rising price reads as probable new longs, rising OI with falling price as probable new shorts, falling OI as liquidation). The OI feed is real ICE end-of-day data for the Canadian-differential contracts (history from 2026-09-21, accumulating) and the seeded stand-in elsewhere; every row says which. Second, the weekly attribution: the Friday Commitments of Traders (COT) release z-scores each leg's weekly change in net (managed money and commercial, i.e. producer/merchant) against that leg's own trailing 52-week history. The leg with the most unusual single-week move (|z| largest) owns the flag. |z| of 2.5 or more is whale-sized; 2.0 to 2.5 is the watch tier. There is no absolute lot floor: a whale in a small contract is a smaller whale than a whale in a big one, and the z-score is what makes that comparison honest. A single-week whale build reads as one probable player (high confidence). A multi-week build to the same size reads as accumulation (medium confidence). Watch-tier builds are sub-whale (low confidence, player unattributed). Positioning comes from the CFTC feed for WTI and the Canadian differentials and from ICE's own weekly COT PDFs for Brent and Gasoil. Every flag below names the probable candidate - always as probable, never as fact - and explains how it qualified. Flag colors follow the player type: amber for managed money (funds), green for commercial (producers).</p>
 <p class="note"><strong>What would make this page smarter:</strong> deeper history on the ICE end-of-day feed (the free Report Center window is 7 trading days, so the Canadian activity series starts 2026-09-21 and grows from there) and real settlement prices (flag backtests wait on them). Nothing on this page is a trading recommendation.</p>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="barrels/index.html#disposition">S&amp;D balance</a><a href="barrels/index.html#st3-table">Projected ST3</a><a href="scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="barrels/index.html">Supply hub</a><a href="projects/index.html">All projects</a><a href="apportionment/index.html">Apportionment</a><a href="barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="maintenance/index.html">Maintenance</a><a href="growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="world/middle-east/index.html">Middle East watch</a><a href="world/russia-refining/index.html">Russian refineries</a><a href="world/china-imports/index.html">China imports</a><a href="world/spr-storage/index.html">SPR & storage</a><a href="world/sour/index.html">The global sour barrel</a><a href="venezuela/index.html">Venezuela watch</a><a href="world/trump/index.html">Trump watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="digest/index.html">Latest digest</a><a href="digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="global-balance.html">Global balance</a><a href="tolls/index.html">Toll search</a><a href="commitments/index.html">Commitments</a><a href="sat-watch.html">Sat watch</a><a href="chartbook.html">Chartbook</a><a href="options/index.html">The Wing (options)</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a><a href="about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="barrels/index.html#disposition">S&amp;D balance</a><a href="barrels/index.html#st3-table">Projected ST3</a><a href="scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="barrels/index.html">Supply hub</a><a href="projects/index.html">All projects</a><a href="apportionment/index.html">Apportionment</a><a href="barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="maintenance/index.html">Maintenance</a><a href="growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="world/middle-east/index.html">Middle East watch</a><a href="world/russia-refining/index.html">Russian refineries</a><a href="world/china-imports/index.html">China imports</a><a href="world/spr-storage/index.html">SPR & storage</a><a href="world/sour/index.html">The global sour barrel</a><a href="venezuela/index.html">Venezuela watch</a><a href="world/trump/index.html">Trump watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="digest/index.html">Latest digest</a><a href="digest/index.html">Edition archive</a><a href="changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="global-balance.html">Global balance</a><a href="tolls/index.html">Toll search</a><a href="commitments/index.html">Commitments</a><a href="sat-watch.html">Sat watch</a><a href="maps/index.html">Maps</a><a href="chartbook.html">Chartbook</a><a href="options/index.html">The Wing (options)</a><a href="options/charts/index.html">The Wing charts</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a><a href="about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -853,5 +907,75 @@ details.ctx summary{cursor:pointer;font-weight:700;font-size:1.05rem}
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

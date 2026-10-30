@@ -1,0 +1,370 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_australia",
+ "country": "Australia",
+ "country_code": "AUS",
+ "title": "Australia country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "asia_pacific",
+ "rollup_name": "Asia-Pacific",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 245.5,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 222.2,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 245.5,
+   "spread_pct": 9.5
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 363.2,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 363.2,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1107.8,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 1107.8,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 330.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 330.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 245.5,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 363.2,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 1107.8,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 5181.03,
+   "unit": "ML",
+   "kbd": 1071.375217158904,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Total sales of petroleum products (APS sales basis, not final consumption survey)",
+   "grain": "monthly, trailing 12 months",
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1147.03,
+   "unit": "ML",
+   "kbd": 237.19304318904108,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Exports of crude oil and other refinery feedstocks, APS",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 417.13,
+   "unit": "ML",
+   "kbd": 86.25828201643836,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Total refined petroleum products exports, APS",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_products",
+   "leg_label": "Product exports",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 909.69,
+   "unit": "ML",
+   "kbd": 188.1135695972603,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Imports of crude oil and other refinery feedstocks, APS",
+   "grain": "monthly, trailing 12 months",
+   "leg": "imports_crude",
+   "leg_label": "Crude imports",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 4469.6,
+   "unit": "ML",
+   "kbd": 924.2608693479453,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Total refined petroleum products imports, APS",
+   "grain": "monthly, trailing 12 months",
+   "leg": "imports_products",
+   "leg_label": "Product imports",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 200.92,
+   "unit": "ML",
+   "kbd": 41.54721071232876,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Crude oil production as reported in APS (excludes condensate)",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1067.0,
+   "unit": "ML",
+   "kbd": 220.64308832876716,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Crude oil and condensate production, APS combined column",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1245.58,
+   "unit": "ML",
+   "kbd": 257.5720275890411,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Total refinery input, APS Refinery production table",
+   "grain": "monthly, trailing 12 months",
+   "leg": "refinery_throughput",
+   "leg_label": "Refinery throughput",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1379.68,
+   "unit": "ML",
+   "kbd": 285.3023351287672,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Month-end stocks of crude oil and refinery feedstocks, APS stock volume by product",
+   "grain": "monthly, trailing 12 months",
+   "leg": "stocks_crude",
+   "leg_label": "Crude stocks",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 5518.35,
+   "unit": "ML",
+   "kbd": 1141.1300716767125,
+   "source": "Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+   "note": "Month-end stocks of petroleum products: sum of APS product stock columns (LPG, gasoline, aviation fuels, diesel, fuel oil, lubricants, other)",
+   "grain": "monthly, trailing 12 months",
+   "leg": "stocks_products",
+   "leg_label": "Product stocks",
+   "n_rows": 194,
+   "first": "2010-07",
+   "last": "2026-08",
+   "basis": "converted"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 245.5,
+   "rows": [
+    {
+     "label": "National record: Australian Petroleum Statistics (Department of Climate Change, Energy, the Environment and Water, via data.gov.au)",
+     "value": 41.5,
+     "kind": "build",
+     "gap": -204.0,
+     "cause": "Own statistics, exact-volumetric conversion. National latest vs the spines' 2025: part of the gap is time."
+    },
+    {
+     "label": "EIA (international)",
+     "value": 245.5,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 222.2,
+     "kind": "spine",
+     "gap": -23.3,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 363.2,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 363.2,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

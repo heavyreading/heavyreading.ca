@@ -1,0 +1,310 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_indonesia",
+ "country": "Indonesia",
+ "country_code": "IDN",
+ "title": "Indonesia country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "asia_pacific",
+ "rollup_name": "Asia-Pacific",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 581.6,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 582.0,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 581.6,
+   "spread_pct": 0.1
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 852.6,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 852.6,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 2154.1,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 2154.1,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 600.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 600.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 581.6,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 852.6,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 2154.1,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2025",
+   "value": 84056831.0,
+   "unit": "kilolitres",
+   "kbd": 1448.4972498413972,
+   "source": "Ministry of Energy and Mineral Resources (ESDM), Handbook of Energy & Economic Statistics of Indonesia 2025 (data: Directorate General of Oil and Gas)",
+   "note": "Domestic oil fuels sales, total oil fuel, HEESI Table 6.2.4 (sales basis)",
+   "grain": "annual",
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "n_rows": 11,
+   "first": "2015-01",
+   "last": "2025-01",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 22518.0,
+   "unit": "thousand barrels",
+   "kbd": 61.6931506849315,
+   "source": "Ministry of Energy and Mineral Resources (ESDM), Handbook of Energy & Economic Statistics of Indonesia 2025 (data: Directorate General of Oil and Gas)",
+   "note": "Crude oil exports, HEESI Table 6.2.3",
+   "grain": "annual",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 11,
+   "first": "2015-01",
+   "last": "2025-01",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 133392.0,
+   "unit": "thousand barrels",
+   "kbd": 365.45753424657534,
+   "source": "Ministry of Energy and Mineral Resources (ESDM), Handbook of Energy & Economic Statistics of Indonesia 2025 (data: Directorate General of Oil and Gas)",
+   "note": "Crude oil imports, HEESI Table 6.2.3",
+   "grain": "annual",
+   "leg": "imports_crude",
+   "leg_label": "Crude imports",
+   "n_rows": 11,
+   "first": "2015-01",
+   "last": "2025-01",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 221229.0,
+   "unit": "thousand barrels",
+   "kbd": 606.1068493150684,
+   "source": "Ministry of Energy and Mineral Resources (ESDM), Handbook of Energy & Economic Statistics of Indonesia 2025 (data: Directorate General of Oil and Gas)",
+   "note": "Crude oil production (HEESI Table 6.2.3; from 2025 includes NGL per source note)",
+   "grain": "annual",
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "n_rows": 11,
+   "first": "2015-01",
+   "last": "2025-01",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 1186.1,
+   "unit": "thousand barrels/day",
+   "kbd": null,
+   "source": "Ministry of Energy and Mineral Resources (ESDM), Handbook of Energy & Economic Statistics of Indonesia 2025 (data: Directorate General of Oil and Gas)",
+   "note": "Total refinery capacity 2025, HEESI Table 6.2.2 (sum of 9 refineries as printed)",
+   "grain": "annual",
+   "leg": "refinery_capacity",
+   "leg_label": "Refining capacity",
+   "n_rows": 1,
+   "first": "2025-01",
+   "last": "2025-01",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 322381.0,
+   "unit": "thousand barrels",
+   "kbd": 883.2356164383561,
+   "source": "Ministry of Energy and Mineral Resources (ESDM), Handbook of Energy & Economic Statistics of Indonesia 2025 (data: Directorate General of Oil and Gas)",
+   "note": "Oil refinery input (crude), HEESI Table 6.2.3",
+   "grain": "annual",
+   "leg": "refinery_throughput",
+   "leg_label": "Refinery throughput",
+   "n_rows": 11,
+   "first": "2015-01",
+   "last": "2025-01",
+   "basis": "converted"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 581.6,
+   "rows": [
+    {
+     "label": "National record: Ministry of Energy and Mineral Resources (ESDM), Handbook of Energy & Economic Statistics of Indonesia 2025 (data: Directorate General of Oil and Gas)",
+     "value": 606.1,
+     "kind": "build",
+     "gap": 24.5,
+     "cause": "Own statistics, exact-volumetric conversion. National latest vs the spines' 2025: part of the gap is time."
+    },
+    {
+     "label": "EIA (international)",
+     "value": 581.6,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 582.0,
+     "kind": "spine",
+     "gap": 0.4,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 852.6,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 852.6,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

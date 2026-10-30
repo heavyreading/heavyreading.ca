@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Forward Maintenance Calendar — Heavy Reading Print Sheet</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #191919;
+         background: #e8e6e1; }
+  .sheet { background: #fff; width: 279mm; min-height: 210mm;
+           margin: 10mm auto; padding: 10mm 11mm 8mm;
+           box-shadow: 0 1px 6px rgba(0,0,0,.25); }
+  header { border-bottom: 2.5px solid #191919; padding-bottom: 3mm;
+           display: flex; justify-content: space-between;
+           align-items: baseline; }
+  .brand { font-family: Helvetica, Arial, sans-serif; font-weight: 700;
+           letter-spacing: 3.5px; font-size: 10.5pt; }
+  .brand small { display: block; letter-spacing: 1.2px; font-weight: 400;
+                 font-size: 7.5pt; color: #4d4d4d; margin-top: 1mm; }
+  h1 { font-size: 21pt; font-weight: 700; letter-spacing: .2px; }
+  .vintage { font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt;
+             color: #4d4d4d; text-align: right; }
+  .cols { display: flex; gap: 7mm; margin-top: 5mm; }
+  .cols.stack { display: block; }
+  .cols.stack .nums { margin-top: 5mm; }
+  .map { flex: 0 0 63%; }
+  .nums { flex: 1; font-family: Helvetica, Arial, sans-serif; }
+  .nums h2, .sheet h2.ph { font-size: 9pt; letter-spacing: 1.6px;
+             color: #4d4d4d; border-bottom: 1px solid #bbb;
+             padding-bottom: 1.2mm; margin: 0 0 2.5mm;
+             font-family: Helvetica, Arial, sans-serif; }
+  .nums h2:not(:first-child), .sheet h2.ph:not(:first-child) {
+             margin-top: 5mm; }
+  .row { font-size: 10.5pt; line-height: 1.45; margin-bottom: 2.2mm; }
+  .row .val { font-size: 15pt; font-weight: 700; line-height: 1.25; }
+  .small { font-size: 8.5pt; color: #4d4d4d; line-height: 1.4; }
+  .lead { font-size: 11pt; line-height: 1.5; margin-top: 4mm; }
+  .tbl { width: 100%; border-collapse: collapse;
+         font-family: Helvetica, Arial, sans-serif; font-size: 9pt;
+         margin-top: 2mm; }
+  .tbl th { text-align: left; letter-spacing: .8px; font-size: 8pt;
+            color: #4d4d4d; border-bottom: 1.5px solid #191919;
+            padding: 1.2mm 2.5mm 1.2mm 0; }
+  .tbl td { border-bottom: 1px solid #ddd; padding: 1.2mm 2.5mm 1.2mm 0;
+            line-height: 1.35; vertical-align: top; }
+  .tbl th.n, .tbl td.n { text-align: right; padding-right: 0; }
+  .tbl tr.tot td { border-top: 1.5px solid #191919;
+                   border-bottom: none; font-weight: 700; }
+  footer { border-top: 1px solid #bbb; margin-top: 5mm; padding-top: 2mm;
+           font-family: Helvetica, Arial, sans-serif; font-size: 7.8pt;
+           color: #4d4d4d; line-height: 1.45; }
+  @page { size: landscape; margin: 8mm; }
+  @media print {
+    body { background: #fff; }
+    .sheet { width: auto; min-height: auto; margin: 0; padding: 2mm;
+             box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div class="brand">HEAVY READING<small>heavyreading.ca</small></div>
+    <h1>Forward Maintenance Calendar</h1>
+    <div class="vintage">PRINT SHEET<br>Data vintage: 2026-09-23<br>
+    Compiled 2026-09-23</div>
+  </header>
+  <p class="lead">Major turnarounds only, shown as modeled offline kb/d by month, on top of the baseline forecast. Routine annual maintenance is already inside the baseline, so nothing here is double-counted.</p>
+  <div class="cols">
+    <div class="map"><h2 class="ph">FORWARD CALENDAR, NEXT 12 MONTHS</h2><table class="tbl"><thead><tr><th class="">Month</th><th class="">Facility</th><th class="">What is offline</th><th class="n">Impact kb/d</th></tr></thead><tbody><tr><td class="">Oct 2026</td><td class="">CNQ Horizon</td><td class="">Horizon 35-day turnaround [CONFIRMED]</td><td class="n">+119.0</td></tr><tr><td class="">Oct 2026</td><td class="">SU Syncrude</td><td class="">Syncrude Coker 8-2 turnaround [CONFIRMED]</td><td class="n">+22.4</td></tr><tr><td class="">Oct 2026</td><td class="">IMO Cold Lake</td><td class="">Imperial Cold Lake 3Q/4Q turnaround [GUIDANCE-SOURCED]</td><td class="n">+3.0</td></tr><tr><td class="">Oct 2026</td><td class="">CVE Christina Lake</td><td class="">Christina Lake F/G turnaround tail [ASSUMED (model carry, not company-stated)]</td><td class="n">+20.0</td></tr><tr><td class="">Nov 2026</td><td class="">SU Base Plant</td><td class="">Suncor Base Plant Q4 maintenance (15 bitumen, 5 SCO/diesel) [CONFIRMED]</td><td class="n">+20.0</td></tr><tr><td class="">Nov 2026</td><td class="">IMO Cold Lake</td><td class="">Imperial Cold Lake 3Q/4Q turnaround [GUIDANCE-SOURCED]</td><td class="n">+3.0</td></tr><tr><td class="">Dec 2026</td><td class="">IMO Cold Lake</td><td class="">Imperial Cold Lake 3Q/4Q turnaround [GUIDANCE-SOURCED]</td><td class="n">+3.0</td></tr><tr><td class="">Jan 2027</td><td class="">None</td><td class="">No major turnaround modeled</td><td class="n">0.0</td></tr><tr><td class="">Feb 2027</td><td class="">None</td><td class="">No major turnaround modeled</td><td class="n">0.0</td></tr><tr><td class="">Mar 2027</td><td class="">None</td><td class="">No major turnaround modeled</td><td class="n">0.0</td></tr><tr><td class="">Apr 2027</td><td class="">CNQ Primrose and Wolf Lake</td><td class="">Primrose/Wolf Lake Apr 2027 turnaround [CADENCE-MODELED, WEAK-SIGNAL]</td><td class="n">+26.0</td></tr><tr><td class="">May 2027</td><td class="">None</td><td class="">No major turnaround modeled</td><td class="n">0.0</td></tr><tr><td class="">Jun 2027</td><td class="">None</td><td class="">No major turnaround modeled</td><td class="n">0.0</td></tr><tr><td class="">Jul 2027</td><td class="">None</td><td class="">No major turnaround modeled</td><td class="n">0.0</td></tr><tr><td class="">Aug 2027</td><td class="">None</td><td class="">No major turnaround modeled</td><td class="n">0.0</td></tr><tr><td class="">Sep 2027</td><td class="">SU MacKay River</td><td class="">MacKay River Sep 2027 turnaround [CADENCE-MODELED]</td><td class="n">+12.0</td></tr></tbody></table></div>
+    <div class="nums"><h2>LARGEST SINGLE UPCOMING OUTAGES</h2><p class="row"><b>CNQ Horizon, Oct 2026</b><br><span class="val">+119.0 kb/d offline</span><br><span class="small">Horizon 35-day turnaround [CONFIRMED]</span></p><p class="row"><b>CNQ Primrose and Wolf Lake, Apr 2027</b><br><span class="val">+26.0 kb/d offline</span><br><span class="small">Primrose/Wolf Lake Apr 2027 turnaround [CADENCE-MODELED, WEAK-SIGNAL]</span></p><p class="row"><b>SU Syncrude, Oct 2026</b><br><span class="val">+22.4 kb/d offline</span><br><span class="small">Syncrude Coker 8-2 turnaround [CONFIRMED]</span></p></div>
+  </div>
+  <footer>Method: modeled maintenance offline by month from the forward maintenance calendar, window 2026-10-01 to 2027-12-31, revised 2026-09-23. Sources: company guidance, earnings call transcripts and observed turnaround history, as listed in full on the Maintenance page.</footer>
+</div>
+</body>
+</html>

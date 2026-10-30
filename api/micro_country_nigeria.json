@@ -1,0 +1,385 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_nigeria",
+ "country": "Nigeria",
+ "country_code": "NGA",
+ "title": "Nigeria country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "africa",
+ "rollup_name": "Africa",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1605.3,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1453.2,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 1605.3,
+   "spread_pct": 9.5
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1675.0,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 1675.0,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 602.9,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 602.9,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 1420.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 1420.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 1605.3,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 1675.0,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 602.9,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2015",
+   "value": 771444960.0,
+   "unit": "barrels/year",
+   "kbd": 2113.547835616438,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "",
+   "grain": "annual",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 4,
+   "first": "2012",
+   "last": "2015",
+   "basis": "converted"
+  },
+  {
+   "period": "2008-01 to 2016-01",
+   "value": 792272418.75,
+   "unit": "barrels/year",
+   "kbd": 25557.174798387096,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "n_rows": 59,
+   "first": "1961",
+   "last": "2016",
+   "basis": "converted"
+  },
+  {
+   "period": "2003-01 to 2014-01",
+   "value": 77.22,
+   "unit": "percent",
+   "kbd": null,
+   "source": "National Bureau of Statistics (NBS), Petroleum Statistics: Crude Oil Production (Volume and Value) and Oil Refining (1961-2014)",
+   "note": "as published (sheet values exceed 100% in some years - NBS presentation, kept as published)",
+   "grain": "monthly, trailing 12 months",
+   "leg": "refinery_capacity_utilization",
+   "leg_label": "refinery capacity utilization",
+   "n_rows": 18,
+   "first": "1997",
+   "last": "2014",
+   "basis": "measured"
+  },
+  {
+   "period": "2003-01 to 2014-01",
+   "value": 36624421.29,
+   "unit": "barrels/year",
+   "kbd": 1181.4329449462364,
+   "source": "National Bureau of Statistics (NBS), Petroleum Statistics: Crude Oil Production (Volume and Value) and Oil Refining (1961-2014)",
+   "note": "",
+   "grain": "monthly, trailing 12 months",
+   "leg": "refinery_crude_processed",
+   "leg_label": "refinery crude processed",
+   "n_rows": 18,
+   "first": "1997",
+   "last": "2014",
+   "basis": "converted"
+  },
+  {
+   "period": "2003-01 to 2014-01",
+   "value": 37365969.74,
+   "unit": "barrels/year",
+   "kbd": 1205.3538626344084,
+   "source": "National Bureau of Statistics (NBS), Petroleum Statistics: Crude Oil Production (Volume and Value) and Oil Refining (1961-2014)",
+   "note": "",
+   "grain": "monthly, trailing 12 months",
+   "leg": "refinery_crude_received",
+   "leg_label": "refinery crude received",
+   "n_rows": 18,
+   "first": "1997",
+   "last": "2014",
+   "basis": "converted"
+  },
+  {
+   "period": "2015",
+   "value": 200114.0,
+   "unit": "barrels/year",
+   "kbd": 0.5482575342465753,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "sheet headed '(1,000 b/d)' but values are annual barrels as published - kept in native barrels with this flag",
+   "grain": "annual",
+   "leg": "refinery_output_ago",
+   "leg_label": "refinery output ago",
+   "n_rows": 4,
+   "first": "2012",
+   "last": "2015",
+   "basis": "converted"
+  },
+  {
+   "period": "2015",
+   "value": 283632.0,
+   "unit": "barrels/year",
+   "kbd": 0.7770739726027397,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "sheet headed '(1,000 b/d)' but values are annual barrels as published - kept in native barrels with this flag",
+   "grain": "annual",
+   "leg": "refinery_output_fuel_oil",
+   "leg_label": "refinery output fuel oil",
+   "n_rows": 4,
+   "first": "2012",
+   "last": "2015",
+   "basis": "converted"
+  },
+  {
+   "period": "2015",
+   "value": 144654.0,
+   "unit": "barrels/year",
+   "kbd": 0.3963123287671233,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "sheet headed '(1,000 b/d)' but values are annual barrels as published - kept in native barrels with this flag",
+   "grain": "annual",
+   "leg": "refinery_output_hhk",
+   "leg_label": "refinery output hhk",
+   "n_rows": 4,
+   "first": "2012",
+   "last": "2015",
+   "basis": "converted"
+  },
+  {
+   "period": "2015",
+   "value": 57437.0,
+   "unit": "barrels/year",
+   "kbd": 0.15736164383561643,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "sheet headed '(1,000 b/d)' but values are annual barrels as published - kept in native barrels with this flag",
+   "grain": "annual",
+   "leg": "refinery_output_lpg",
+   "leg_label": "refinery output lpg",
+   "n_rows": 4,
+   "first": "2012",
+   "last": "2015",
+   "basis": "converted"
+  },
+  {
+   "period": "2015",
+   "value": 260787.0,
+   "unit": "barrels/year",
+   "kbd": 0.7144849315068493,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "sheet headed '(1,000 b/d)' but values are annual barrels as published - kept in native barrels with this flag",
+   "grain": "annual",
+   "leg": "refinery_output_pms",
+   "leg_label": "refinery output pms",
+   "n_rows": 4,
+   "first": "2012",
+   "last": "2015",
+   "basis": "converted"
+  },
+  {
+   "period": "2016",
+   "value": 37453000000.0,
+   "unit": "barrels (year-end)",
+   "kbd": null,
+   "source": "National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+   "note": "",
+   "grain": "annual",
+   "leg": "reserves_proved_crude",
+   "leg_label": "reserves proved crude",
+   "n_rows": 5,
+   "first": "2012",
+   "last": "2016",
+   "basis": "measured"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 1605.3,
+   "rows": [
+    {
+     "label": "National record: National Bureau of Statistics (NBS), Selected Petroleum Statistics: Oil and Gas Production, Drilling and Development (2012-2016)",
+     "value": 25557.2,
+     "kind": "build",
+     "gap": 23951.9,
+     "cause": "Own statistics, exact-volumetric conversion. National latest vs the spines' 2025: part of the gap is time."
+    },
+    {
+     "label": "EIA (international)",
+     "value": 1605.3,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Definitional: condensate and Neutral-Zone splits differ by spine. EIA counts lease condensate in crude; ASB and JODI split it out."
+    },
+    {
+     "label": "JODI",
+     "value": 1453.2,
+     "kind": "spine",
+     "gap": -152.1,
+     "cause": "Definitional: condensate and Neutral-Zone splits differ by spine. EIA counts lease condensate in crude; ASB and JODI split it out."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 1675.0,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 1675.0,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

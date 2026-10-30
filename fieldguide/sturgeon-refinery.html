@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="fieldguide/sturgeon-refinery.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,17 +710,17 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>The Sturgeon refinery</h1>
   <p class="sub">The government-backed bitumen refinery northeast of Edmonton. Fifty thousand barrels a day of bitumen that never sees an export pipe.</p>
   <p class="vintage">Field guide entry &middot; written September 29, 2026.</p>
-  <h2>What it is</h2>
+  <h2>What it is<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>The North West Redwater <a class="plink" href="../projects/nwr_sturgeon.html">Sturgeon Refinery</a> is the plant people mean when they say 'the government refinery.' It sits northeast of Edmonton and it is the first refinery built in Canada since 1984, and the first anywhere in the country designed to take bitumen all the way to finished products. Most oil sands plants either upgrade bitumen to synthetic crude (which still needs refining) or dilute it for sale. Sturgeon does the whole job: bitumen in, diesel out.</p>
-  <h2>How it works, physically</h2>
+  <h2>How it works, physically<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Phase 1 takes 50,000 barrels a day of bitumen blended with 29,000 barrels a day of diluent. Out the other end come roughly 40,000 barrels a day of low-sulphur diesel, about 28,000 barrels a day of recovered diluent, and 13,000 barrels a day of lighter products. The diluent recovery matters: of the 29,000 barrels a day of diluent that goes in, 28,000 comes back, so the plant's net draw on the diluent pool is only about 1 kb/d (thousand barrels a day). The refinery gasifies the heaviest residue to make its own hydrogen, and it was built with carbon capture on the hydrogen unit.</p>
-  <h2>Who owns it and who pays</h2>
+  <h2>Who owns it and who pays<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>The commercial structure is a tolling deal. The Alberta Petroleum Marketing Commission, the province's oil marketer, is the 75 percent toll payer; CNRL covers the other 25 percent. Under tolling, the two parties keep ownership of the bitumen straight through the refining process and pay the plant a fee for the service. The province's auditor general later described the deal as high benefit and high risk: about $26 billion in toll payments over thirty years, with the province carrying most of the risk of a 75 percent payer while holding a minority vote. In a 2021 restructuring the province took a 50 percent ownership stake from North West Refining, CNRL took operational leadership, and the processing agreement was extended to 2058. The province says the rework improved its net present value by about $2 billion.</p>
-  <h2>Key numbers</h2>
+  <h2>Key numbers<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev"><li>50 kb/d bitumen plus 29 kb/d diluent in; about 40 diesel, 28 diluent recovered, and 13 light products out.</li><li>Thirty-year tolling agreements covering 100 percent of Phase 1 feedstock.</li><li>Two further 50 kb/d phases were planned, to 150 kb/d total. They were never built.</li></ul>
-<div class="exec"><h2>Why it matters</h2><p>Sturgeon is a 50 kb/d design bitumen feed, 79 kb/d diluted: capacity, not guaranteed daily demand. Those barrels never touch an export pipeline, which tightens the exportable surplus by up to that amount when the plant runs full. It is also a demand-side maintenance risk in reverse: if Sturgeon ever takes a major turnaround, 50 kb/d of bitumen suddenly needs a pipe to market. Uptime, not the nameplate, decides the real export-surplus effect.</p></div>
-<h2>Sources</h2><ul class="ev"><li>Government of Alberta, Getting taxpayers a better deal on the <a class="plink" href="../projects/nwr_sturgeon.html">Sturgeon Refinery</a>, news release (<a href="https://www.alberta.ca/release.cfm?xID=79503ADBD9811-E4F1-1DAB-A5BA42F70D2063D6">https://www.alberta.ca/release.cfm?xID=79503ADBD9811-E4F1-1DAB-A5BA42F70D2063D6</a>)</li><li>U of Calgary School of Public Policy (Brian Livingston), The North West Redwater <a class="plink" href="../projects/nwr_sturgeon.html">Sturgeon Refinery</a>: What are the numbers for Alberta's investment? (<a href="https://www.policyschool.ca/wp-content/uploads/2018/06/NWR-Strugeon-Refinery-Livingston-FINAL-VERSION1.pdf">https://www.policyschool.ca/wp-content/uploads/2018/06/NWR-Strugeon-Refinery-Livingston-FINAL-VERSION1.pdf</a>)</li><li>Wikipedia, <a class="plink" href="../projects/nwr_sturgeon.html">Sturgeon Refinery</a> (<a href="https://en.wikipedia.org/wiki/Sturgeon_Refinery">https://en.wikipedia.org/wiki/Sturgeon_Refinery</a>)</li></ul>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+<div class="exec"><h2>Why it matters<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p>Sturgeon is a 50 kb/d design bitumen feed, 79 kb/d diluted: capacity, not guaranteed daily demand. Those barrels never touch an export pipeline, which tightens the exportable surplus by up to that amount when the plant runs full. It is also a demand-side maintenance risk in reverse: if Sturgeon ever takes a major turnaround, 50 kb/d of bitumen suddenly needs a pipe to market. Uptime, not the nameplate, decides the real export-surplus effect.</p></div>
+<h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><ul class="ev"><li>Government of Alberta, Getting taxpayers a better deal on the <a class="plink" href="../projects/nwr_sturgeon.html">Sturgeon Refinery</a>, news release (<a href="https://www.alberta.ca/release.cfm?xID=79503ADBD9811-E4F1-1DAB-A5BA42F70D2063D6">https://www.alberta.ca/release.cfm?xID=79503ADBD9811-E4F1-1DAB-A5BA42F70D2063D6</a>)</li><li>U of Calgary School of Public Policy (Brian Livingston), The North West Redwater <a class="plink" href="../projects/nwr_sturgeon.html">Sturgeon Refinery</a>: What are the numbers for Alberta's investment? (<a href="https://www.policyschool.ca/wp-content/uploads/2018/06/NWR-Strugeon-Refinery-Livingston-FINAL-VERSION1.pdf">https://www.policyschool.ca/wp-content/uploads/2018/06/NWR-Strugeon-Refinery-Livingston-FINAL-VERSION1.pdf</a>)</li><li>Wikipedia, <a class="plink" href="../projects/nwr_sturgeon.html">Sturgeon Refinery</a> (<a href="https://en.wikipedia.org/wiki/Sturgeon_Refinery">https://en.wikipedia.org/wiki/Sturgeon_Refinery</a>)</li></ul>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -767,5 +821,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

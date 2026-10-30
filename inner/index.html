@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="inner/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -623,6 +624,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -653,15 +706,15 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">The whole book</p><a class="mg-link" href="../../inner/book/index.html">The Book</a><a class="mg-link" href="../../inner/trade-ideas/index.html">Trade ideas</a><a class="mg-link" href="../../inner/vol-portfolio/index.html">Vol portfolio</a><a class="mg-link" href="../../inner/trade-log/index.html">Trade log</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../maps/index.html">Maps</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
   <div class="crumb"><a href="../../index.html">Home</a> / Inner</div>
   <h1>Inner</h1>
   <p class="sub">The inner working pages.</p>
-<p style="color:var(--mut)">Inner pages — the exact models behind the letter.</p><h2 style="font-family:var(--serif);font-size:21px;margin:26px 0 2px">The Wing (options)</h2><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="../options/index.html">The Wing hub</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the public options page</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The front door of the options section, open to every reader: what spike insurance costs, what crash insurance costs, and our dated view, in plain words.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="../options/charts/index.html">The Wing charts</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the fear gauges as charts</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The smile (the fear curve), the fear gauges over time, and the missing-barrels check.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="flow/index.html">The Block Board</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: big options trades, ranked by money</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Big options trades, ranked by money. We count only new positions. Then we follow at most one theme. The clone book rides on the same page.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol/index.html">Vol structures</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: five standing Brent trades and the candidates</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Five standing Brent trades and the capped-grinder candidates. Each one says what happens if Brent moves $1, what time does to it, and the most it can lose.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol-portfolio/index.html">Vol portfolio</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the trades as one book</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The whole paper vol book on one page. Worst priced day first. Then each play in plain words. The detail sits below.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol/checklist/index.html">Pre-trade checklist</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: five fields before any trade</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Five fields before any trade goes on. A four-line review after it comes off.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol/doctrine/index.html">Doctrine</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the reasoning pages</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">How the book sets size, in plain words, worked on the book's own numbers: size as a budget, the worst scenario as the binding number, the drawdown ladder.</p></div><h2 style="font-family:var(--serif);font-size:21px;margin:26px 0 2px">The whole book</h2><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="book/index.html">The Book</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The whole paper book on one screen</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Diffs and the Wing in one account: every trade, its share of the book's worst day, the size ladder to a $10-15M normal year, the VaR calibration, and every limit with its utilization.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="trade-ideas/index.html">Trade ideas</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The current trade book, reasoned in full</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Five trades on one freight regime: mechanism, dated evidence, transmission link by link, and what would prove each one wrong.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol-portfolio/index.html">Vol portfolio</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Book's drill-down for the options side</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The whole paper vol book on one page. Worst priced day first. Then each play in plain words. The detail sits below.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="trade-log/index.html">Trade log</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The book: scored trades, discussions, and what they changed</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Every booked trade marked against ICE settlements: hit rate, risk, drawdowns, and the feedback loop that revises the framework. Stood-down trades are shadow-marked, so the passes are graded too.</p></div><h2 style="font-family:var(--serif);font-size:21px;margin:26px 0 2px">More inside</h2><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="cma/index.html">WTI CMA</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">Prompt-following calendar monthly average</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Settled days, market marks, and the live CMA price — the exact prompt-roll construction, day by day.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="tmx-waterfall/index.html">TMX waterfall</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">Where Trans Mountain barrels go, ranked by refinery netback</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The three-path delivered-cost arb on live broker marks: pipe direct, Burnaby reroute, ANS. The marginal barrel sets the price.</p></div>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
+<p style="color:var(--mut)">Inner pages — the exact models behind the letter.</p><h2 style="font-family:var(--serif);font-size:21px;margin:26px 0 2px">The Wing (options)<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="../options/index.html">The Wing hub</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the public options page</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The front door of the options section, open to every reader: what spike insurance costs, what crash insurance costs, and our dated view, in plain words.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="../options/charts/index.html">The Wing charts</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the fear gauges as charts</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The smile (the fear curve), the fear gauges over time, and the missing-barrels check.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="flow/index.html">The Block Board</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: big options trades, ranked by money</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Big options trades, ranked by money. We count only new positions. Then we follow at most one theme. The clone book rides on the same page.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol/index.html">Vol structures</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: five standing Brent trades and the candidates</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Five standing Brent trades and the capped-grinder candidates. Each one says what happens if Brent moves $1, what time does to it, and the most it can lose.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol-portfolio/index.html">Vol portfolio</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the trades as one book</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The whole paper vol book on one page. Worst priced day first. Then each play in plain words. The detail sits below.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol/checklist/index.html">Pre-trade checklist</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: five fields before any trade</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Five fields before any trade goes on. A four-line review after it comes off.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol/doctrine/index.html">Doctrine</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Wing: the reasoning pages</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">How the book sets size, in plain words, worked on the book's own numbers: size as a budget, the worst scenario as the binding number, the drawdown ladder.</p></div><h2 style="font-family:var(--serif);font-size:21px;margin:26px 0 2px">The whole book<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="book/index.html">The Book</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The whole paper book on one screen</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Diffs and the Wing in one account: every trade, its share of the book's worst day, the size ladder to a $10-15M normal year, the VaR calibration, and every limit with its utilization.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="trade-ideas/index.html">Trade ideas</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The current trade book, reasoned in full</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Five trades on one freight regime: mechanism, dated evidence, transmission link by link, and what would prove each one wrong.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="vol-portfolio/index.html">Vol portfolio</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The Book's drill-down for the options side</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The whole paper vol book on one page. Worst priced day first. Then each play in plain words. The detail sits below.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="trade-log/index.html">Trade log</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">The book: scored trades, discussions, and what they changed</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Every booked trade marked against ICE settlements: hit rate, risk, drawdowns, and the feedback loop that revises the framework. Stood-down trades are shadow-marked, so the passes are graded too.</p></div><h2 style="font-family:var(--serif);font-size:21px;margin:26px 0 2px">More inside<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="cma/index.html">WTI CMA</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">Prompt-following calendar monthly average</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">Settled days, market marks, and the live CMA price — the exact prompt-roll construction, day by day.</p></div><div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper);max-width:560px;margin-top:12px"><h3 style="font-family:var(--serif);font-size:17px;margin:0;padding:12px 14px 4px"><a href="tmx-waterfall/index.html">TMX waterfall</a></h3><div style="font-size:11px;color:var(--faint);padding:0 14px 8px">Where Trans Mountain barrels go, ranked by refinery netback</div><p style="padding:0 14px 14px;font-size:13px;color:var(--mut);margin:0">The three-path delivered-cost arb on live broker marks: pipe direct, Burnaby reroute, ANS. The marginal barrel sets the price.</p></div>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a><a href="../../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -762,5 +815,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

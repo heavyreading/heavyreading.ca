@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Barrels — Heavy Reading Print Sheet</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #191919;
+         background: #e8e6e1; }
+  .sheet { background: #fff; width: 279mm; min-height: 210mm;
+           margin: 10mm auto; padding: 10mm 11mm 8mm;
+           box-shadow: 0 1px 6px rgba(0,0,0,.25); }
+  header { border-bottom: 2.5px solid #191919; padding-bottom: 3mm;
+           display: flex; justify-content: space-between;
+           align-items: baseline; }
+  .brand { font-family: Helvetica, Arial, sans-serif; font-weight: 700;
+           letter-spacing: 3.5px; font-size: 10.5pt; }
+  .brand small { display: block; letter-spacing: 1.2px; font-weight: 400;
+                 font-size: 7.5pt; color: #4d4d4d; margin-top: 1mm; }
+  h1 { font-size: 21pt; font-weight: 700; letter-spacing: .2px; }
+  .vintage { font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt;
+             color: #4d4d4d; text-align: right; }
+  .cols { display: flex; gap: 7mm; margin-top: 5mm; }
+  .cols.stack { display: block; }
+  .cols.stack .nums { margin-top: 5mm; }
+  .map { flex: 0 0 63%; }
+  .nums { flex: 1; font-family: Helvetica, Arial, sans-serif; }
+  .nums h2, .sheet h2.ph { font-size: 9pt; letter-spacing: 1.6px;
+             color: #4d4d4d; border-bottom: 1px solid #bbb;
+             padding-bottom: 1.2mm; margin: 0 0 2.5mm;
+             font-family: Helvetica, Arial, sans-serif; }
+  .nums h2:not(:first-child), .sheet h2.ph:not(:first-child) {
+             margin-top: 5mm; }
+  .row { font-size: 10.5pt; line-height: 1.45; margin-bottom: 2.2mm; }
+  .row .val { font-size: 15pt; font-weight: 700; line-height: 1.25; }
+  .small { font-size: 8.5pt; color: #4d4d4d; line-height: 1.4; }
+  .lead { font-size: 11pt; line-height: 1.5; margin-top: 4mm; }
+  .tbl { width: 100%; border-collapse: collapse;
+         font-family: Helvetica, Arial, sans-serif; font-size: 9pt;
+         margin-top: 2mm; }
+  .tbl th { text-align: left; letter-spacing: .8px; font-size: 8pt;
+            color: #4d4d4d; border-bottom: 1.5px solid #191919;
+            padding: 1.2mm 2.5mm 1.2mm 0; }
+  .tbl td { border-bottom: 1px solid #ddd; padding: 1.2mm 2.5mm 1.2mm 0;
+            line-height: 1.35; vertical-align: top; }
+  .tbl th.n, .tbl td.n { text-align: right; padding-right: 0; }
+  .tbl tr.tot td { border-top: 1.5px solid #191919;
+                   border-bottom: none; font-weight: 700; }
+  footer { border-top: 1px solid #bbb; margin-top: 5mm; padding-top: 2mm;
+           font-family: Helvetica, Arial, sans-serif; font-size: 7.8pt;
+           color: #4d4d4d; line-height: 1.45; }
+  @page { size: landscape; margin: 8mm; }
+  @media print {
+    body { background: #fff; }
+    .sheet { width: auto; min-height: auto; margin: 0; padding: 2mm;
+             box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div class="brand">HEAVY READING<small>heavyreading.ca</small></div>
+    <h1>Barrels</h1>
+    <div class="vintage">PRINT SHEET<br>Data vintage: AER ST3 actuals through Aug 2026; forecast built 2026-10-30<br>
+    Compiled 2026-10-30</div>
+  </header>
+<div class="cols stack">
+<p class="lead">How much crude Western Canada produces in marketable form, whether the pipelines can move it, and what is left for storage. All figures are in thousand barrels per day (kb/d) unless a row says otherwise. Every number on this sheet is computed from the same data as the Barrels page, at the same time, so the two cannot disagree.</p>
+<div class="nums"><h2>THE DURABLE NUMBERS</h2><p class="row"><b>Marketable supply, Oct 2026 (forecast)</b><br><span class="val">4,161.8 kb/d</span><br><span class="small">Crude counted once, in the form it goes to market: in-situ bitumen, mined bitumen sent to market, synthetic crude from the upgraders, and conventional crude. Bitumen sent to an upgrader is counted as synthetic crude output, not again as raw bitumen, so this total is not gross field production. Vintage: AER ST3 actuals through 2026-08 (ST3 file vintage 28 September 2026; loaded 2026-10-28); seasonal baseline forecast, built 2026-10-30; nowcast (seasonal baseline + confirmed maintenance), built 2026-10-30</span></p><p class="row"><b>Marketable supply, Aug 2026 (latest measured month)</b><br><span class="val">4,302.9 kb/d</span><br><span class="small">Measured. Vintage: AER ST3 actuals through 2026-08 (ST3 file vintage 28 September 2026; loaded 2026-10-28)</span></p><p class="row"><b>Enbridge Mainline, crude moved in Jun 2026</b><br><span class="val">3,075.5 kb/d</span><br><span class="small">Measured by the Canada Energy Regulator: what the basin's largest export route actually moved in the latest month in the CER file this page uses. Egress on this site is stated by proven movement, never by nameplate, so no basin capacity total is printed beside the supply figures; the route table below carries each route's measured month and, for reference only, its nameplate.</span></p><p class="row"><b>Balance for Oct 2026: implied change in storage</b><br><span class="val">+0.0 kb/d</span><br><span class="small">Supply that is not used in Alberta and does not move out goes into storage; a shortfall comes out of storage. A positive figure means barrels going into storage, a negative figure means barrels coming out. Vintage: seasonal baseline forecast, built 2026-10-30; nowcast (seasonal baseline + confirmed maintenance), built 2026-10-30</span></p><p class="row"><b>AER reporting adjustment (the residual that closes the count)</b><br><span class="val">130.8 kb/d</span><br><span class="small">The Alberta Energy Regulator plugs its supply and disposition count with this line so the two sides close. It captures reporting lags, metering differences, and barrels in transit.</span></p><p class="row"><b>Crude in storage, end of Aug 2026</b><br><span class="val">60.0 million barrels</span><br><span class="small">AER ST3 closing stocks, the latest month in the data. Vintage: AER ST3 actuals through 2026-08 (ST3 file vintage 28 September 2026; loaded 2026-10-28)</span></p></div>
+<h2 class="ph">SUPPLY BY GRADE, RECENT MONTHS</h2><table class="tbl"><thead><tr><th class="">Month</th><th class="n">Light conventional</th><th class="n">Medium conventional (sour)</th><th class="n">Marketable heavy</th><th class="n">SCO (upgraded bitumen)</th><th class="n">Diluent imports</th><th class="n">Total diluent</th><th class="n">Total supply</th></tr></thead><tbody><tr><td class="">May 2026 (measured)</td><td class="n">421.5</td><td class="n">68.6</td><td class="n">2,695.6</td><td class="n">1,236.4</td><td class="n">339.4</td><td class="n">429.4</td><td class="n">3,992.7</td></tr><tr><td class="">Jun 2026 (measured)</td><td class="n">424.7</td><td class="n">67.2</td><td class="n">2,721.8</td><td class="n">1,315.7</td><td class="n">307.0</td><td class="n">404.3</td><td class="n">4,125.1</td></tr><tr><td class="">Jul 2026 (measured)</td><td class="n">420.6</td><td class="n">67.4</td><td class="n">2,854.5</td><td class="n">1,442.0</td><td class="n">283.4</td><td class="n">375.1</td><td class="n">4,409.4</td></tr><tr><td class="">Aug 2026 (measured)</td><td class="n">428.4</td><td class="n">66.4</td><td class="n">2,821.7</td><td class="n">1,354.2</td><td class="n">275.3</td><td class="n">367.8</td><td class="n">4,302.9</td></tr><tr><td class="">Sep 2026 (nowcast)</td><td class="n">422.5</td><td class="n">67.8</td><td class="n">2,850.0</td><td class="n">1,036.6</td><td class="n">279.1</td><td class="n">376.1</td><td class="n">4,000.8</td></tr><tr><td class="">Oct 2026 (forecast)</td><td class="n">429.6</td><td class="n">67.2</td><td class="n">2,864.4</td><td class="n">1,203.5</td><td class="n">310.2</td><td class="n">402.9</td><td class="n">4,161.8</td></tr></tbody></table><p class="small">The six grade lines are analytical, not additive: condensate appears in both light conventional and, through total diluent, in marketable heavy, and diluent imports are receipts, not production, so the lines do not sum to total supply. Marketable heavy is bitumen net of upgrader feed, plus conventional heavy, plus total diluent blended to pipeline specification. Vintage: AER ST3 actuals through 2026-08 (ST3 file vintage 28 September 2026; loaded 2026-10-28); seasonal baseline forecast, built 2026-10-30; nowcast (seasonal baseline + confirmed maintenance), built 2026-10-30</p><h2 class="ph">EGRESS BY ROUTE</h2><table class="tbl"><thead><tr><th class="">Route</th><th class="n">Moved in Jun 2026 (kb/d), CER measured</th><th class="n">Nameplate capacity (kb/d), reference only</th></tr></thead><tbody><tr><td class="">Enbridge Mainline</td><td class="n">3,075.5</td><td class="n">3,200</td></tr><tr><td class="">Trans Mountain</td><td class="n">819.1</td><td class="n">890</td></tr><tr><td class="">Keystone</td><td class="n">552.1</td><td class="n">640</td></tr><tr><td class="">Express</td><td class="n">no CER series</td><td class="n">310</td></tr><tr><td class="">Milk River</td><td class="n">no CER series</td><td class="n">98</td></tr><tr><td class="">Rangeland</td><td class="n">no CER series</td><td class="n">20</td></tr><tr class="tot"><td class="">Total moved, three CER routes</td><td class="n">4,446.6</td><td class="n"></td></tr></tbody></table><p class="small">Moved is what the Canada Energy Regulator counted moving in Jun 2026, the latest month in the CER file this page uses; the CER publishes throughput for the Mainline, Trans Mountain, and Keystone only. Nameplate is what a route is built to move, printed for reference: this site states egress by proven movement, never by nameplate, and never adds nameplates into a basin total.</p>
+</div>
+  <footer>Method and sources: AER ST3 actuals through 2026-08 (ST3 file vintage 28 September 2026; loaded 2026-10-28); seasonal baseline forecast, built 2026-10-30. Route movement is Canada Energy Regulator measured throughput through Jun 2026; nameplate capacities are printed for reference only. Marketable supply counts each barrel once, in marketable form. Full page, with the charts and data tables behind this sheet: heavyreading.ca/barrels/</footer>
+</div>
+</body>
+</html>

@@ -1,8 +1,8 @@
 {
  "page": "/chartbook.html",
  "title": "Chartbook",
- "dek": "Heavy Reading's standing chartbook: fund positioning, U.S. inventories in seasonal standard deviations, prices and the WCS differential, crack spreads, crude options skew, Alberta storage, egress, apportionment, and a rotating bench for whatever has gone extreme.",
- "built_at": "2026-10-26",
+ "dek": "Heavy Reading's standing chartbook: fund positioning, U.S. inventories in seasonal standard deviations, prices and the WCS differential, crack spreads, Alberta storage, egress, apportionment, and a rotating bench for whatever has gone extreme. The options charts live in The Wing.",
+ "built_at": "2026-10-30",
  "generator": "heavyreading-manifest/1",
  "claims": [
   {
@@ -19,37 +19,37 @@
   },
   {
    "text": "U.S.",
-   "vintage": "EIA Weekly Petroleum Status Report. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report. Data through October 23, 2026.",
    "source": "U.S. Energy Information Administration",
    "source_url": ""
   },
   {
-   "text": "Cushing inventories stand at 27.6 million barrels, 10.5 million barrels (27.6 percent) below the ten-year seasonal average, a gap of 0.6 standard deviations, and in the 36th percentile of readings for this part of the year since 2010.",
-   "vintage": "EIA Weekly Petroleum Status Report. Data through October 16, 2026.",
-   "source": "U.S. Energy Information Administration",
-   "source_url": ""
-  },
-  {
-   "text": "U.S.",
-   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "text": "Cushing inventories stand at 27.0 million barrels, 11.5 million barrels (29.9 percent) below the ten-year seasonal average, a gap of 0.7 standard deviations, and in the 32nd percentile of readings for this part of the year since 2010.",
+   "vintage": "EIA Weekly Petroleum Status Report. Data through October 23, 2026.",
    "source": "U.S. Energy Information Administration",
    "source_url": ""
   },
   {
    "text": "U.S.",
-   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 23, 2026.",
    "source": "U.S. Energy Information Administration",
    "source_url": ""
   },
   {
    "text": "U.S.",
-   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 16, 2026.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 23, 2026.",
    "source": "U.S. Energy Information Administration",
    "source_url": ""
   },
   {
-   "text": "WTI front month closed at $101.56 on October 26, 2026, in the 94th percentile of daily closes since 2020 and +9.15 dollars over the last thirty days.",
-   "vintage": "Exchange front-month futures, via the daily crack file. Data through October 26, 2026.",
+   "text": "U.S.",
+   "vintage": "EIA Weekly Petroleum Status Report, via the stack EIA pull. Data through October 23, 2026.",
+   "source": "U.S. Energy Information Administration",
+   "source_url": ""
+  },
+  {
+   "text": "WTI front month closed at $103.79 on October 30, 2026, in the 96th percentile of daily closes since 2020 and +13.37 dollars over the last thirty days.",
+   "vintage": "Exchange front-month futures, via the daily crack file. Data through October 30, 2026.",
    "source": "Exchange futures (via crack_321 daily file)",
    "source_url": ""
   },
@@ -60,8 +60,8 @@
    "source_url": ""
   },
   {
-   "text": "The 3-2-1 crack spread printed $52.07 a barrel on October 26, 2026, in the 91st percentile of daily readings since 2020.",
-   "vintage": "Computed daily from front-month WTI, RBOB gasoline, and heating oil futures. Data through October 26, 2026.",
+   "text": "The 3-2-1 crack spread printed $48.33 a barrel on October 30, 2026, in the 89th percentile of daily readings since 2020.",
+   "vintage": "Computed daily from front-month WTI, RBOB gasoline, and heating oil futures. Data through October 30, 2026.",
    "source": "Exchange futures (computed)",
    "source_url": ""
   },
@@ -90,26 +90,8 @@
    "source_url": ""
   },
   {
-   "text": "Brent options charge for a price spike, not a crash.",
-   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
-   "source": "ICE Futures Europe options EOD (report 166)",
-   "source_url": ""
-  },
-  {
-   "text": "The fear gauges through October 23, 2026.",
-   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
-   "source": "ICE Futures Europe options EOD (report 166)",
-   "source_url": ""
-  },
-  {
-   "text": "The options market charges for a price spike.",
-   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 23, 2026. Series starts October 15, 2026.",
-   "source": "ICE options EOD (report 166); global barrels ledger",
-   "source_url": ""
-  },
-  {
-   "text": "Very large crude carrier (VLCC) earnings on the Middle East to China route, TD3C, printed $1,370,193 a day in the week of October 16, 2026 (Worldscale 1,281), in the 97th percentile of weekly readings since March 2024.",
-   "vintage": "Baltic Exchange via freight pull. Data through October 16, 2026.",
+   "text": "Very large crude carrier (VLCC) earnings on the Middle East to China route, TD3C, printed $1,287,851 a day in the week of October 23, 2026 (Worldscale 1,208), in the 95th percentile of weekly readings since March 2024.",
+   "vintage": "Baltic Exchange via freight pull. Data through October 23, 2026.",
    "source": "Baltic Exchange (via thedcn.com.au)",
    "source_url": ""
   }

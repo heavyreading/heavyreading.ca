@@ -1,0 +1,310 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_mexico",
+ "country": "Mexico",
+ "country_code": "MEX",
+ "title": "Mexico country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "north_america",
+ "rollup_name": "North America",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1725.9,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1603.5,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 1725.9,
+   "spread_pct": 7.1
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1869.4,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 1869.4,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1479.9,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 1479.9,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 1620.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 1620.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 1725.9,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 1869.4,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 1479.9,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1384.42,
+   "unit": "kb/d",
+   "kbd": 1384.425,
+   "source": "Pemex - Estad\u00edsticas Petroleras (Indicadores Petroleros), August 2026 edition",
+   "note": "Pemex internal sales (ventas internas) of petroleum products, total volume, thousand barrels per day as printed; Pemex sales only, excludes third-party importer sales since market liberalisation",
+   "grain": "monthly, trailing 12 months",
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "n_rows": 32,
+   "first": "2024-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 462.83,
+   "unit": "kb/d",
+   "kbd": 462.8333333333333,
+   "source": "Pemex - Estad\u00edsticas Petroleras (Indicadores Petroleros), August 2026 edition",
+   "note": "Pemex crude oil exports, total volume, thousand barrels per day as printed",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 32,
+   "first": "2024-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 216.37,
+   "unit": "kb/d",
+   "kbd": 216.36666666666667,
+   "source": "Pemex - Estad\u00edsticas Petroleras (Indicadores Petroleros), August 2026 edition",
+   "note": "Pemex exports of petroleum products (productos petroliferos), total volume, thousand barrels per day as printed; excludes natural gas (MMcf/d) and petrochemicals (kt) printed in separate columns",
+   "grain": "monthly, trailing 12 months",
+   "leg": "exports_products",
+   "leg_label": "Product exports",
+   "n_rows": 32,
+   "first": "2024-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 549.44,
+   "unit": "kb/d",
+   "kbd": 549.4416666666667,
+   "source": "Pemex - Estad\u00edsticas Petroleras (Indicadores Petroleros), August 2026 edition",
+   "note": "Pemex imports of petroleum products (productos petroliferos), total volume, thousand barrels per day as printed; excludes natural gas (MMcf/d) and petrochemicals printed in separate columns",
+   "grain": "monthly, trailing 12 months",
+   "leg": "imports_products",
+   "leg_label": "Product imports",
+   "n_rows": 32,
+   "first": "2024-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1653.08,
+   "unit": "kb/d",
+   "kbd": 1653.0833333333333,
+   "source": "Pemex - Estad\u00edsticas Petroleras (Indicadores Petroleros), August 2026 edition",
+   "note": "Pemex crude oil production including partners (con socios), field production, thousand barrels per day as printed",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "n_rows": 32,
+   "first": "2024-01",
+   "last": "2026-08",
+   "basis": "measured"
+  },
+  {
+   "period": "2025-09 to 2026-08",
+   "value": 1772.25,
+   "unit": "kb/d",
+   "kbd": 1772.25,
+   "source": "Pemex - Estad\u00edsticas Petroleras (Indicadores Petroleros), August 2026 edition",
+   "note": "Pemex total liquid hydrocarbons including partners: crude + field condensates + gas-plant liquids (hidrocarburos liquidos de PEMEX, campos mas plantas), thousand barrels per day as printed",
+   "grain": "monthly, trailing 12 months",
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "n_rows": 32,
+   "first": "2024-01",
+   "last": "2026-08",
+   "basis": "measured"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 1725.9,
+   "rows": [
+    {
+     "label": "National record: Pemex - Estad\u00edsticas Petroleras (Indicadores Petroleros), August 2026 edition",
+     "value": 1653.1,
+     "kind": "build",
+     "gap": -72.8,
+     "cause": "Own statistics, exact-volumetric conversion. National latest vs the spines' 2025: part of the gap is time."
+    },
+    {
+     "label": "EIA (international)",
+     "value": 1725.9,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Definitional: condensate and Neutral-Zone splits differ by spine. EIA counts lease condensate in crude; ASB and JODI split it out."
+    },
+    {
+     "label": "JODI",
+     "value": 1603.5,
+     "kind": "spine",
+     "gap": -122.4,
+     "cause": "Definitional: condensate and Neutral-Zone splits differ by spine. EIA counts lease condensate in crude; ASB and JODI split it out."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 1869.4,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 1869.4,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

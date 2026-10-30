@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="world/china-imports/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html" aria-current="page">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html" aria-current="page">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../../options/index.html">The Wing (options)</a><a class="nd-link" href="../../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../maps/index.html">Maps</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html" aria-current="page">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../../options/index.html">The Wing (options)</a><a class="mg-link" href="../../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../maps/index.html">Maps</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -658,18 +712,18 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="note">Read this page as the buy side of the sour barrel: China's import volumes and refinery runs decide how much sour crude Asia pulls, and the stock math (imports plus domestic production minus throughput) shows whether Beijing is building inventories or drawing them. Every bullet is dated and sourced, so read 2026 wartime figures against pre-war baselines rather than against last week alone.</p>
   <p class="lede">China's buying is rotating, not growing: Russian and Iranian crude fell below one-third of September imports from about half in August (Goldman Sachs), and US Treasury Secretary Scott Bessent says only about 15 million barrels of Iranian oil remain on the water under the US blockade, a forced shift toward non-sanctioned sour that bids up the grades Western Canadian Select (WCS) competes with. But the bid is selective: seaborne imports sit almost 3 million b/d below normal seasonal levels even as refineries processed 13.91 million b/d in August, the most since March. Watch the Kayrros satellite inventory reads and the monthly throughput numbers: restocking bids up sour, stock draws soften the WCS basis.</p>
   <p class="note freshness">Updated October 26, 2026 &middot; refreshes every 14 days</p>
-  <h2>Import volumes</h2>
+  <h2>Import volumes<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>Reuters columnist Clyde Russell wrote on Oct 20 that China crude imports are poised to rise to more than 10 million barrels per day in October, the most since the 11.79 million barrels per day recorded in March, citing Kpler seaborne arrivals estimated at 9.02 million barrels per day plus about 1 million barrels per day of pipeline imports from Russia and Central Asia. September imports were 9.03 million barrels per day, refinery processing was 13.99 million barrels per day, and the gap implied a stock draw of about 530,000 barrels per day.<br><span class="vintage-inline">Published Oct 20, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/20/china-uses-crude-stockpiles-but-rising-oil-imports-may-curtail-draws-russell/">Reuters (via BOE Report)</a> <span class="age-chip">&middot; 6d old</span></span></li>
+  <li>Reuters columnist Clyde Russell wrote on Oct 20 that China crude imports are poised to rise to more than 10 million barrels per day in October, the most since the 11.79 million barrels per day recorded in March, citing Kpler seaborne arrivals estimated at 9.02 million barrels per day plus about 1 million barrels per day of pipeline imports from Russia and Central Asia. September imports were 9.03 million barrels per day, refinery processing was 13.99 million barrels per day, and the gap implied a stock draw of about 530,000 barrels per day.<br><span class="vintage-inline">Published Oct 20, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/20/china-uses-crude-stockpiles-but-rising-oil-imports-may-curtail-draws-russell/">Reuters (via BOE Report)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>China's crude oil imports fell 21.5 percent from a year earlier in September to 37.1 million tonnes, or 9.03 million barrels per day, customs data showed, though the daily rate edged up 1.1 percent from August, Reuters reported on Oct 14. Imports for the first nine months of 2026 totalled 357.97 million tonnes, or 9.57 million barrels per day, down 15.3 percent from the same period last year. September seaborne imports stood at 7.6 million barrels per day, down from 9.9 million a year earlier, according to Vortexa, with Iranian oil arrivals down to 0.5 million barrels per day.<br><span class="vintage-inline">Data: Sep 2026 customs; published Oct 14, 2026; accessed 2026-10-19 <a href="https://www.bairdmaritime.com/shipping/tankers/china-burns-through-crude-stockpiles-after-massive-import-drop">Reuters (via Baird Maritime)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>FGE NexantECA and Energy Aspects cut their fourth-quarter China crude import forecasts by about 400,000 b/d, now expecting 9.2 to 9.3 million b/d versus last year's average of 11.6 million b/d, OilPrice.com reported on Sep 30. September imports were expected near August levels, with the arriving cargoes bought when prices were in the $80s before Brent held above $100; August imports were still 23.4% below a year earlier, improved from June's decade low of 7.1 million b/d. OilPrice quoted FGE NexantECA's Samuel Kong saying no significant upside is expected as hefty premiums and record-high freight erode margins, and reported the teapots could start reducing runs as Iranian and Venezuelan supply dries up under US sanctions.<br><span class="vintage-inline">Published Sep 30, 2026; accessed 2026-10-05 <a href="https://oilprice.com/Latest-Energy-News/World-News/Analysts-Cut-Chinas-Q4-Crude-Import-Forecasts-by-400000-Bpd.html">OilPrice.com</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Goldman Sachs estimated China's seaborne crude net imports rose about 6 percent in September from August but stayed almost 3 million barrels per day below normal seasonal levels, and its models point to only about 600,000 barrels per day more total crude imports in the fourth quarter versus the third. The bank estimates a sustained 1 million barrel per day change in China's net crude imports over six months would shift Brent's fair value by about 4 dollars a barrel.<br><span class="vintage-inline">Published Sep 23, 2026; accessed 2026-09-28 <a href="https://www.oilmonster.com/article/goldman-sachs-expects-china-crude-imports-to-remain-weak-amid-high-oil-prices-/8619">Oil Monster (citing Goldman Sachs)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Reuters columnist Clyde Russell's analysis of official data (published Sep 15, 2026) showed China processed 13.91 million b/d in August, the most since March, against 8.93 million b/d of imports plus 4.34 million b/d of domestic production, implying a 640,000 b/d inventory draw. It was the third draw in four months (draws of 500,000 b/d in May and 940,000 b/d in June, a 210,000 b/d surplus in July); stocks are estimated at at least 1.2 billion barrels, and January to August still showed a net surplus of 330,000 b/d.<br><span class="vintage-inline">Data: Aug 2026; published Sep 15, 2026; accessed 2026-09-24 <a href="https://boereport.com/2026/09/15/china-draws-on-crude-inventories-in-august-as-refinery-runs-rise-russell/">BOE Report (Reuters columnist Clyde Russell)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Kpler data cited by Maritime Professional (Sep 23, 2026) put Asia on course to import 23.96 million b/d of crude in September, up from 23.38 million in August and the highest since February, extending the recovery from April's decade-plus low. Even so, September remained 13% below the 27.55 million b/d three-month pre-conflict average through February.<br><span class="vintage-inline">Prelim data: Sep 2026; published Sep 23, 2026; accessed 2026-09-24 <a href="https://logistics.maritimeprofessional.com/transportation/2026/09/23/after-the-iran-conflict-crude-oil-imports-to-asia-hit-a-high-in-september-but-remain-weak">Maritime Professional (citing Kpler)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Sourcing shifts</h2>
+  <h2>Sourcing shifts<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>Reuters columnist Ron Bousso wrote on Oct 22 that Saudi Aramco and Abu Dhabi National Oil Co have started selling some cargoes on a delivered basis to buyers in China and India, a sharp departure from the usual practice of selling crude at the point of loading, as Gulf producers offer large discounts to offset record freight and insurance costs.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/22/dont-mistake-mideast-oil-rebound-for-normality-bousso/">Reuters (via BOE Report)</a> <span class="age-chip">&middot; 4d old</span></span></li>
+  <li>Reuters columnist Ron Bousso wrote on Oct 22 that Saudi Aramco and Abu Dhabi National Oil Co have started selling some cargoes on a delivered basis to buyers in China and India, a sharp departure from the usual practice of selling crude at the point of loading, as Gulf producers offer large discounts to offset record freight and insurance costs.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/22/dont-mistake-mideast-oil-rebound-for-normality-bousso/">Reuters (via BOE Report)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Kpler data showed India remained the largest buyer of Russian crude in September at about 1.82 million barrels per day, but its intake fell roughly 29 percent from July as Chinese refiners stepped up purchases and tightened availability, HDFC Sky reported on Oct 14. China took about 1.49 million barrels per day of Russian crude in September, and Kpler's Sumit Ritolia said Chinese refiners have drawn more Russian barrels in recent months partly because of reduced access to Iranian crude, adding to competition for the available supply.<br><span class="vintage-inline">Data: Sep 2026; published Oct 14, 2026; accessed 2026-10-19 <a href="https://hdfcsky.com/news/indias-russian-oil-imports-fall-to-1-82-mln-bpd-in-september-as-china-competes-for-barrels">HDFC Sky (reporting Kpler data)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Kpler data cited by Reuters on Oct 6 showed China's imports of Iranian oil nearly halved in September from a year earlier to 590,000 barrels per day, the lowest since January 2023, and Iran exported no crude at all in September for the first time since Kpler began tracking flows in 2013. The volume of Iranian crude stored on vessels outside the blockade zone has more than halved to 45 million barrels from 100 million barrels in late July, Kpler said. Reuters also reported that Bloomberg found at least 50 tankers, mostly carrying Iranian crude, bottled up off China's coast, and that Russian ESPO was commanding a premium of almost $30 a barrel above Brent, pricing most independent refiners out of Russian barrels while state-owned refiners took most of the available Russian crude.<br><span class="vintage-inline">Published Oct 6, 2026; accessed 2026-10-12 <a href="https://www.reuters.com/business/energy/chinese-independent-refiners-boost-iraqi-oil-purchases-iranian-flows-fall-2026-10-06">Reuters</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Reuters reported on Oct 6 that Chinese independent refiners stepped up purchases of crude from Iraq and Qatar for October and November delivery to replace dwindling Iranian supplies, as exports from other Gulf producers through the Strait of Hormuz recover. Three traders told Reuters the refiners bought at least 12 million barrels of Iraqi and Qatari crude from trading houses Mercuria, Totsa and Trafigura, with one estimating total purchases of 15 to 20 million barrels. The cargoes sold at premiums of $12 to about $20 a barrel to the ICE Brent benchmark on a delivered basis; most were Iraqi Basra Medium and Heavy, among the cheapest Middle East grades available. Buyers included Hongrun Petrochemical, Qicheng Petrochemical, Qirun Petrochemical, Hualong and Chambroad Petrochemical, and Hongrun and Shenchi Petrochemical also bought 3 million barrels of Qatar's al-Shaheen crude for early-November arrival. One trader told Reuters that Iraqi oil has become the new benchmark for China's independent refiners because supplies are ample and can be obtained quickly. The deals followed purchases of more than 20 million barrels of crude from West Africa, Canada and Colombia between late August and early September as Iranian supply dwindled after the US imposed a naval blockade on Iranian vessels in July.<br><span class="vintage-inline">Published Oct 6, 2026; accessed 2026-10-12 <a href="https://www.reuters.com/business/energy/chinese-independent-refiners-boost-iraqi-oil-purchases-iranian-flows-fall-2026-10-06">Reuters</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -680,7 +734,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Saudi Aramco cut its September official selling price (OSP) for Arab Light to Asia by 50 cents a barrel to a $2/bbl discount against the regional benchmark, the fifth-lowest differential since 2000, per Energies Media (Aug 19, 2026). The cut reflected war-driven costs (freight, rerouting) plus formal discount requests from Asian refiners for longer voyages; Aramco held exports near 5 million b/d, about 70% of normal, leaning on Red Sea port Yanbu and potentially Sidi Kerir loadings.<br><span class="vintage-inline">Reported Aug 19, 2026; accessed 2026-09-24 <a href="https://energiesmedia.com/saudi-aramco-arab-light-price-cut-energy/">Energies Media</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Saudi Arabia left its October-loading Arab Light official selling price (OSP) to Asia unchanged, according to Reuters reporting via TradingView on Sep 3, 2026, pausing the easing that had taken the September price to a $2/bbl discount against the regional benchmark.<br><span class="vintage-inline">Announced Sep 3, 2026; accessed 2026-09-24 <a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L1N44V0N1:0-saudi-arabia-leaves-arab-light-crude-oil-osp-to-asia-for-october-unchanged/">TradingView (citing Reuters)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Product exports</h2>
+  <h2>Product exports<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Reuters columnist Gavin Maguire wrote on Oct 5 that China's suspension of fuel exports for October left India best placed to fill the resulting hole in Asian fuel supply. Citing Kpler data, he reported India has 23 refineries able to process about 5.6 million b/d and was the larger fuel exporter in 2025 (about 47 million tonnes of diesel, gasoline and jet fuel versus China's 25.4 million), though India's fuel exports in the first nine months of 2026 were down roughly 23%, or about 8 million tonnes, year on year. He noted two recent cuts to India's fuel-export taxes and a rebound in Middle East crude deliveries to India, which hit 11.3 million tonnes in September, the highest since February, as signs India can step back into the export market.<br><span class="vintage-inline">Published Oct 5, 2026; accessed 2026-10-05 <a href="https://www.thehindubusinessline.com/markets/commodities/india-poised-to-fill-fuel-export-gap-as-china-suspends-october-shipments/article71546098.ece">Reuters (Gavin Maguire commentary; reprinted by The Hindu Business Line)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Crux Investor reported on Oct 1 that Chinese refiners had suspended refined-product exports beyond Hong Kong and Macau with no stated end date, sending December Brent futures up 2.4% to $100.36 a barrel while the expiring November contract settled at $103.50. The report noted Middle East crude exports had recovered to 17.5 million b/d, 98% of prewar levels, even as US distillate inventories fell 2.3 million barrels to 105.2 million, 14% below the five-year average. The export suspension was corroborated by a Reuters columnist on Oct 5.<br><span class="vintage-inline">Published Oct 1, 2026; accessed 2026-10-05 <a href="https://www.cruxinvestor.com/posts/chinese-fuel-export-ban-lifts-brent-past-100-despite-crude-recovery">Crux Investor</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -689,7 +743,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>General Administration of Customs (GAC) data reported by IDNFinancials (Sep 18, 2026) gave August per-fuel detail: gasoline exports 700,000 tonnes, down 17.5% year on year but the highest since October 2025; diesel 1.33 million tonnes, up 42.1% year on year and the highest since March 2024; jet fuel a record 2.55 million tonnes, up 41.4% year on year. Liquefied natural gas (LNG) imports fell 17.8% year on year to 5.16 million tonnes.<br><span class="vintage-inline">Data: Aug 2026; reported Sep 18, 2026; accessed 2026-09-24 <a href="https://www.idnfinancials.com/news/69072/chinas-refined-oil-product-exports-surge-in-august">IDNFinancials (citing Reuters/GAC data)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Baird Maritime (Sep 21, 2026, citing GAC customs data) reported China's August fuel oil exports fell to 1.21 million tonnes (about 247,000 b/d), down 35% month on month and 27% year on year, the lowest since October 2024, partly on weather disruption at the Zhoushan bunkering hub. Fuel oil imports were 1.3 million tonnes, up 15% month on month and down 11% year on year; crude throughput climbed for a second month, supported by stronger fuel exports after Beijing eased export restrictions in mid-July.<br><span class="vintage-inline">Data: Aug 2026; published Sep 21, 2026; accessed 2026-09-24 <a href="https://www.bairdmaritime.com/shipping/tankers/china-fuel-oil-exports-slide-to-levels-not-seen-since-2024">Baird Maritime (citing GAC customs data)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Freight and landed cost</h2>
+  <h2>Freight and landed cost<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>OilPrice.com reported on Oct 9 that record-high freight costs have effectively shut the US Gulf to Asia crude arbitrage, with Asian refiners turning to more barrels from the Middle East and South America, shipbrokers and traders told Reuters. Trafigura chartered a supertanker to ship crude from the US Gulf Coast to China at a lump-sum fee of $76 million, a source told CNBC, about ten times the $7 to $10 million before the war, implying freight costs of about $38 per barrel. Rates on the US Gulf to Japan route are also surging, with one supertanker offered at $82 million, up 50% from three weeks earlier, Bloomberg reported. With the US-Asia arbitrage closed, Asian refiners are considering more of the UAE's Murban grade, pushing its premium over Dubai quotes above $11 per barrel on Thursday.<br><span class="vintage-inline">Published Oct 9, 2026; accessed 2026-10-12 <a href="https://oilprice.com/Latest-Energy-News/World-News/Asian-Refiners-Ditch-US-Oil-as-Supertanker-Rates-Hit-82-Million.html">OilPrice.com</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Baltic Exchange data put the time charter equivalent for a 270,000-ton very large crude carrier (VLCC) on the TD3C Middle East Gulf to China route at about 1.212 million dollars per day on Sep 17, up from about 1.034 million the day before and roughly 700,000 at the start of September. The Baltic's Sep 18 weekly report put TD3C at Worldscale 1,140, the Gulf of Oman to China TD34 route at 870,947 dollars per day, and West Africa to China TD15 at 524,575 dollars per day.<br><span class="vintage-inline">Data: Sep 17-18, 2026; published Sep 21, 2026; accessed 2026-09-28 <a href="https://www.seanews.com.tr/article/historic-record-in-vlcc-freight-rates-reached-muau6fvr">SeaNews</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -697,24 +751,24 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Tide Signal News (Sep 23, 2026, citing Reuters/Baltic Exchange data) reported very large crude carrier (VLCC) freight from the Gulf of Oman to China hit Worldscale 450, about $11.50 per barrel, a record for the route and up roughly 65% from the Sep 4 TD34 assessment, as conflict risk shrank the pool of tankers willing to trade around the Gulf.<br><span class="vintage-inline">Data: Sep 11, 2026; published Sep 23, 2026; accessed 2026-09-24 <a href="https://tidesignalnews.com/vlcc-rates-ws450-gulf-oman-china/">Tide Signal News (citing Reuters/Baltic Exchange)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Vessel Hunter News (Sep 22, 2026, citing Baltic Exchange data) reported the TD3C Middle East Gulf to China very large crude carrier (VLCC) time-charter equivalent reached $1.2125 million a day on Sep 17, up 40.6% on the week and roughly ten times the $117,400 a day before the February conflict. TD15 West Africa to Far East hit $524,500 a day and TD22 US Gulf to Far East $388,400 a day; the China Crude Oil Tanker Freight Index stood at 14,575 points on Sep 16, about 83% above its early-September level.<br><span class="vintage-inline">Data: Sep 16-17, 2026; published ~Sep 22, 2026; accessed 2026-09-24 <a href="https://vesselhunter.io/news/vlcc-freight-26-dollars-a-barrel-us-gulf-asia-crude">Vessel Hunter News (citing Baltic Exchange data)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Demand signals</h2>
+  <h2>Demand signals<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Reuters reported on Oct 6 that Shandong refinery utilization fell to about 55% by late September from nearly 60% at the start of the month, per consultancy <a class="plink" href="../../projects/cnq_horizon.html">Horizon</a> Insights, as margins deteriorated after China capped fuel price increases while crude feedstock costs surged. Refiners were losing 250 to 500 yuan per metric ton by late September, compared with profits of about 500 yuan per ton in early September. One trader said buyers were unwilling to pay spot premiums above $20 a barrel. Kpler senior analyst Muyu Xu said inventories at some Shandong teapots could run out as early as the end of October and that refiners need to secure alternative supplies to avoid shutting down or cutting run rates significantly.<br><span class="vintage-inline">Published Oct 6, 2026; accessed 2026-10-12 <a href="https://www.reuters.com/business/energy/chinese-independent-refiners-boost-iraqi-oil-purchases-iranian-flows-fall-2026-10-06">Reuters</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The Centre for Research on Energy and Clean Air's August 2026 snapshot (published Sep 17, 2026) found refinery throughput down 6.9% year on year in August, though recovered from July's slump. New energy vehicle (NEV) output rose 21.9% year on year to 61% of all vehicles produced, and battery production surged 70% year on year, consistent with continued structural gasoline displacement.<br><span class="vintage-inline">Data: Aug 2026; published Sep 17, 2026; accessed 2026-09-24 <a href="https://energyandcleanair.org/china-energy-and-emissions-trends-august-2026-snapshot/">Centre for Research on Energy and Clean Air</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Strategic inventories</h2>
+  <h2>Strategic inventories<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>OilPrice.com reported on Oct 22, summarizing Reuters calculations, that China drew about 530,000 barrels per day from inventories in September, the fourth draw in five months, while still holding an estimated at least 1.2 billion barrels in commercial and strategic stocks. October imports above 10 million barrels per day would reduce the need to draw on those stocks.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://oilprice.com/Energy/Energy-General/Rising-Crude-Oil-Imports-Reduce-Chinas-Need-to-Draw-from-Stocks.html">OilPrice.com</a> <span class="age-chip">&middot; 4d old</span></span></li>
+  <li>OilPrice.com reported on Oct 22, summarizing Reuters calculations, that China drew about 530,000 barrels per day from inventories in September, the fourth draw in five months, while still holding an estimated at least 1.2 billion barrels in commercial and strategic stocks. October imports above 10 million barrels per day would reduce the need to draw on those stocks.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://oilprice.com/Energy/Energy-General/Rising-Crude-Oil-Imports-Reduce-Chinas-Need-to-Draw-from-Stocks.html">OilPrice.com</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The weak September arrivals forced the largest draw on China's onshore crude inventories in the trackers' records: Vortexa counted a 57 million barrel draw in September and Kpler a 47.5 million barrel draw, the biggest monthly declines since their series began in 2019 and 2017 respectively, Reuters reported on Oct 14. Vortexa's Emma Li attributed the draw to Middle East shipping disruptions, mainly ship-to-ship transfer bottlenecks around Hormuz, delaying cargoes due in late August and September. Kpler pegged China's fourth-quarter seaborne crude imports at 8.0 to 8.5 million barrels per day.<br><span class="vintage-inline">Data: Sep 2026; published Oct 14, 2026; accessed 2026-10-19 <a href="https://www.bairdmaritime.com/shipping/tankers/china-burns-through-crude-stockpiles-after-massive-import-drop">Reuters (via Baird Maritime)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The US Energy Information Administration (EIA), in analysis published April 2026, classifies China's strategic oil inventories at an estimated 1.397 billion barrels, comprising about 360 million barrels government-held and 1 billion barrels commercial. The EIA treats both as strategic because China's national oil companies have reportedly been instructed since 2024 to hold emergency oil in commercial tanks.<br><span class="vintage-inline">EIA analysis: Apr 2026; accessed 2026-09-24 <a href="https://www.eia.gov/todayinenergy/detail.php?id=67504">US Energy Information Administration (EIA)</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Geospatial firm Kayrros, via MEXC reporting from the Asia Pacific Petroleum Conference (APPEC) in Singapore, estimated China's strategic petroleum reserve (SPR) at about 415 million barrels and commercial stocks at about 780 million barrels in early September 2026, up close to 130 million barrels combined since late March, with above-ground capacity use near 60.5%, leaving room for further builds.<br><span class="vintage-inline">Estimate: early Sep 2026; reported from APPEC; accessed 2026-09-24 <a href="https://www.mexc.fm/ms-MY/news/chinas-secret-crude-stockpiling-may-be-shaping-oil-market-stability/91953">MEXC (citing Kayrros chief analyst Antoine Halff at APPEC)</a> <span class="age-chip">&middot; reference</span></span></li>
   </ul>
-  <h2>Where sources disagree</h2>
+  <h2>Where sources disagree<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li><b>Size of China's oil stockpile</b>: US Energy Information Administration (EIA), Apr 2026 vs Kayrros via APPEC reporting (MEXC), early Sep 2026. The EIA classified China's strategic oil inventories at an estimated 1.397 billion barrels, about 360 million government-held and 1 billion commercial, while Kayrros estimated about 415 million in the strategic petroleum reserve plus about 780 million commercial, roughly 1.2 billion combined. Different observation dates and different definitions: the EIA counts national oil company commercial tanks as strategic by policy instruction, Kayrros measures by satellite, and Kayrros reported a build of nearly 130 million barrels since late March.</li>
   </ul>
   <p class="lede">For the WCSB book, China matters through the sour barrel, not through direct Canadian sales. Strong Chinese runs and restocking bid up the grades Mars and Urals price against, which keeps the Canadian differential tight; a stock draw and a buying pause do the opposite. The teapot substitution story, Urals and fuel oil standing in for blocked Iranian barrels, is the near-term variable to watch.</p>
-  <h2>What this watch tracks</h2>
+  <h2>What this watch tracks<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p class="sub">Updated daily.</p>
   <ul class="ev">
   <li>Monthly GAC customs crude import volumes and y/y comparisons</li>
@@ -727,7 +781,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Baltic Exchange very large crude carrier (VLCC) assessments (TD3C Middle East Gulf to China, TD34 Gulf of Oman to China) and the China Crude Oil Tanker Freight Index as landed-cost inputs.</li>
   <li>Kayrros/EIA China inventory estimates alongside monthly National Bureau of Statistics (NBS) refinery throughput to reconcile implied stock changes with Kpler/Vortexa onshore series.</li>
   </ul>
-  <h2>What public data cannot verify</h2>
+  <h2>What public data cannot verify<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>No single authoritative public series for China's SPR (strategic) inventory changes, estimates rely on satellite/stock-model data.</li>
   <li>Current (September 2026) teapot run rates rely on consultancy surveys (Mysteel, JLC, Oilchem) rather than official NBS data, which lags.</li>
@@ -737,7 +791,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>No public time series for tank fill levels at new strategic reserve sites; satellite estimates (Kayrros) remain the only near-real-time read, and government vs commercial split is an EIA assumption, not disclosed data.</li>
   <li>Aramco's November 2026 official selling prices to Asia (expected around Oct 5) will set the trend for Iranian, Kuwaiti and Iraqi differentials into Q4; direction not verifiable until release.</li>
   </ul>
-  <h2>Sources</h2>
+  <h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Publisher</th><th>Link</th></tr>
     <tr><td>Reuters (via BOE Report)</td><td><a href="https://boereport.com/2026/10/20/china-uses-crude-stockpiles-but-rising-oil-imports-may-curtail-draws-russell/">link</a></td></tr>
@@ -769,7 +823,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>US Energy Information Administration (EIA)</td><td><a href="https://www.eia.gov/todayinenergy/detail.php?id=67504">link</a></td></tr>
     <tr><td>MEXC (citing Kayrros chief analyst Antoine Halff at APPEC)</td><td><a href="https://www.mexc.fm/ms-MY/news/chinas-secret-crude-stockpiling-may-be-shaping-oil-market-stability/91953">link</a></td></tr>
   </table></div>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a><a href="../../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -870,5 +924,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

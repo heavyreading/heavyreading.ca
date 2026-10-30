@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop active"><a class="nd-top nd-plain" href="index.html" aria-current="page">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="digest/index.html">Edition archive</a><a class="nd-link" href="digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="projects/index.html">All projects</a><a class="nd-link" href="apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="world/china-imports/index.html">China imports</a><a class="nd-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="world/sour/index.html">The global sour barrel</a><a class="nd-link" href="venezuela/index.html">Venezuela watch</a><a class="nd-link" href="world/trump/index.html">Trump watch</a><a class="nd-link" href="world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="fieldguide/index.html">Field guide</a><a class="nd-link" href="global-balance.html">Global balance</a><a class="nd-link" href="quotes/index.html">Quotes</a><a class="nd-link" href="tolls/index.html">Toll search</a><a class="nd-link" href="commitments/index.html">Commitments grid</a><a class="nd-link" href="freight-watch.html">Freight watch</a><a class="nd-link" href="sat-watch.html">Sat watch</a><a class="nd-link" href="globe.html">Globe</a><a class="nd-link" href="chartbook.html">Chartbook</a><a class="nd-link" href="arb-watch/index.html">Arb watch</a><a class="nd-link" href="data/index.html">Data downloads</a><a class="nd-link" href="sources/index.html">Sources</a><a class="nd-link" href="methodology/index.html">Methodology</a><a class="nd-link" href="about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="world/china-imports/index.html">China imports</a><a class="nd-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="world/sour/index.html">The global sour barrel</a><a class="nd-link" href="venezuela/index.html">Venezuela watch</a><a class="nd-link" href="world/trump/index.html">Trump watch</a><a class="nd-link" href="world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="options/index.html">The Wing (options)</a><a class="nd-link" href="options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="fieldguide/index.html">Field guide</a><a class="nd-link" href="global-balance.html">Global balance</a><a class="nd-link" href="quotes/index.html">Quotes</a><a class="nd-link" href="tolls/index.html">Toll search</a><a class="nd-link" href="commitments/index.html">Commitments grid</a><a class="nd-link" href="freight-watch.html">Freight watch</a><a class="nd-link" href="sat-watch.html">Sat watch</a><a class="nd-link" href="globe.html">Globe</a><a class="nd-link" href="maps/index.html">Maps</a><a class="nd-link" href="chartbook.html">Chartbook</a><a class="nd-link" href="arb-watch/index.html">Arb watch</a><a class="nd-link" href="data/index.html">Data downloads</a><a class="nd-link" href="sources/index.html">Sources</a><a class="nd-link" href="methodology/index.html">Methodology</a><a class="nd-link" href="about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="projects/index.html">All projects</a><a class="mg-link" href="apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="world/china-imports/index.html">China imports</a><a class="mg-link" href="world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="world/sour/index.html">The global sour barrel</a><a class="mg-link" href="venezuela/index.html">Venezuela watch</a><a class="mg-link" href="world/trump/index.html">Trump watch</a><a class="mg-link" href="world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="global-balance.html">Global balance</a><a class="mg-link" href="quotes/index.html">Quotes</a><a class="mg-link" href="tolls/index.html">Toll search</a><a class="mg-link" href="commitments/index.html">Commitments grid</a><a class="mg-link" href="freight-watch.html">Freight watch</a><a class="mg-link" href="sat-watch.html">Sat watch</a><a class="mg-link" href="globe.html">Globe</a><a class="mg-link" href="chartbook.html">Chartbook</a><a class="mg-link" href="arb-watch/index.html">Arb watch</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="digest/index.html">Edition archive</a><a class="mg-link" href="digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="options/index.html">The Wing (options)</a><a class="mg-link" href="options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="fieldguide/index.html">Field guide</a><a class="mg-link" href="global-balance.html">Global balance</a><a class="mg-link" href="quotes/index.html">Quotes</a><a class="mg-link" href="tolls/index.html">Toll search</a><a class="mg-link" href="commitments/index.html">Commitments grid</a><a class="mg-link" href="freight-watch.html">Freight watch</a><a class="mg-link" href="sat-watch.html">Sat watch</a><a class="mg-link" href="globe.html">Globe</a><a class="mg-link" href="maps/index.html">Maps</a><a class="mg-link" href="chartbook.html">Chartbook</a><a class="mg-link" href="arb-watch/index.html">Arb watch</a><a class="mg-link" href="data/index.html">Data downloads</a><a class="mg-link" href="sources/index.html">Sources</a><a class="mg-link" href="methodology/index.html">Methodology</a><a class="mg-link" href="about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -726,18 +780,18 @@ details.now-det summary{cursor:pointer;color:var(--mut);font-size:.88rem;
 </style>
 
 
-<section class="now-call" aria-label="The call">
+<div class="chg-river" data-chg-river="1"><div class="chg-river-head"><h2 class="chg-river-title">What changed on the site</h2><a class="chg-more" href="changes/index.html">Full list</a></div><ul class="chg-list"><li><a href="micro/wcsb/index.html">WCSB Micro-Balance</a> <span class="chg-sec">How the balance closes, kb/d</span></li><li><a href="micro/wcsb/index.html">WCSB Micro-Balance</a> <span class="chg-sec">Page lead</span></li><li><a href="globe.html">The Globe</a> <span class="chg-sec">What is on this globe, and where it comes from</span></li><li><a href="globe.html">The Globe</a> <span class="chg-sec">Page lead</span></li><li><a href="freight-watch.html">Freight watch</a> <span class="chg-sec">Physical flows: The Narrows</span></li></ul></div><section class="now-call" aria-label="The call">
 <p class="kicker">Now: the WCSB balance</p>
-<p class="call-text">Sunday's reopen traded Brent near $115.7 and WTI near $102.3 in Monday morning reports, about a dollar under Friday's settles of $116.72 and $103.27, after a weekend whose confirmed Saudi events were interceptions and debris against claims on the Rabigh refinery and the East-West Pipeline. The Baltic Exchange Week 43 weekly is published: TD3C at WS 1208.13, TD9 at WS 666 and TD22 at $58.22 million, a second straight sharp dirty correction that has now reached the Caribbean to Gulf leg. The diesel crack printed at $97.49 on the latest validated history, below $100 for a second print after Friday's $97.78 close ended the sustained run that began Aug 17. A calendar correction: the Lake Charles refiner reports Wednesday Oct 28, not Oct 30.</p>
-<div class="chips"><span class="chip">as of Mon Oct 26, 02:40 MDT</span>
-<span class="chip src"><a href="digest/2026-10-26/">Full edition &rarr;</a></span></div>
+<p class="call-text">Thursday's settles were Brent Dec26 $114.88 (down $0.44) and WTI Dec26 $102.00 (down $0.78). Asia reversed the decline overnight, Brent $116.08 and WTI $103.37 at 0323 GMT (Reuters, Oct 30), after a small boat attached explosive devices to an outbound tanker's hull in the Strait of Hormuz, a second tanker took a projectile, and the Houthis claimed a six target wave against Saudi Arabia including a second strike claim on Ras Tanura, still unconfirmed on day three. The Energy Department announced awards of more than 40 million barrels of reserve crude on Oct 29, completing its 172 million barrel release commitment. December WCS at -$30.50 (ICE TMW settle, Oct 29) on 1 lot, after Wednesday's -$31.10 traded 200 lots. The diesel crack fell to $90.42. Imperial Oil reports today.</p>
+<div class="chips"><span class="chip">as of Fri Oct 30, 02:40 MDT</span>
+<span class="chip src"><a href="digest/2026-10-30/">Full edition &rarr;</a></span></div>
 </section>
 
 
 <details class="start-here"><summary>New here? How to read this site</summary><p class="sub">Three ways in, depending on how much time you have:</p><ul class="ev"><li><b><a href="digest/index.html">Give me 5 minutes</a></b>: the daily digest, what changed and what it means.</li><li><b><a href="world/index.html">Something is moving</a></b>: the watches, one page per risk (Trump, Middle East, refineries). Each opens with what changed, then what is coming. The plants get one of their own: <a href="sat-watch.html">Sat Watch</a>, satellite heat over the oil sands facilities.</li><li><b><a href="weekly/index.html">Give me the month</a></b>: the letter, the longer game plan in plain words.</li></ul><p class="sub">Every number is dated. How each figure was built is on the <a href="methodology/index.html">methodology</a> page.</p></details>
 
 <section class="now-sec" aria-label="Overnight changes">
-<h2>Overnight changes, ranked by balance impact</h2>
+<h2>Overnight changes, ranked by balance impact<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="sec-sub">Ranked by estimated balance impact times confirmation
 confidence on the Western Canadian Sedimentary Basin (WCSB) supply/demand
 balance, not by how dramatic the news reads: a big but unverified item ranks
@@ -750,41 +804,41 @@ one paywalled source, no public confirmation yet; <b>rumor</b> = unverified.</p>
 
 <article class="chg-card">
 <div class="chg-top"><span class="chg-rank">1</span>
-<span class="chg-title">The reopen gave back a dollar; the freight correction reached the Gulf leg and the diesel crack printed below $100 again</span></div>
-<p class="chg-delta">Reopen: Brent near $115.7 and WTI near $102.3 in Monday morning reports (was $116.72 / $103.27 at Friday's settles). Baltic Week 43 is published (correcting Sunday's edition): TD9 WS 666 (was WS 830 in Week 42), TD3C WS 1208.13, TD22 $58.22 million. Diesel crack $97.49 on the latest validated print (Friday close $97.78), below $100 for a second print.</p>
-<p class="chg-body">Sunday's reopen opened lower and stayed lower into Monday morning: Brent was quoted at $115.60 and WTI at $102.30 on Sunday evening after an early dip of $2.26 in Brent was partly recovered, and Monday morning reports still had Brent near $115.72. The weekend produced claims on the Rabigh refinery and the East-West Pipeline with two confirmed interceptions and no reported damage or flow interruption, and the first trade of the week paid about a dollar less for the story than Friday's close. The Baltic Exchange Week 43 weekly is published (week ending Oct 23, Baltic direct): TD3C WS 1208.13 with TCE $1,287,851 per day, TD22 at $58.22 million with TCE $451,905 per day, and TD9 at WS 666 with TCE under $210,400 per day, a second straight sharp dirty correction that has reached the Caribbean to Gulf leg. The diesel crack printed at $97.49 on the validated history refreshed this edition, below $100 for a second print after Friday's $97.78 close ended the sustained run that began Aug 17; the 3-2-1 crack is $52.07.</p>
-<p class="chg-balance"><b>Balance read:</b> Claims without a confirmed outage are no longer adding premium at the reopen, while the two internals that tax Canadian heavy both eased at the margin: dirty freight corrected into the Gulf leg and the distillate crack's regime break has follow-through. Friday's Canadian tape still stands: synthetic returning on a traded print, December WCS wider on volume into November apportionment.</p>
-<p class="chg-cond"><b>Model conditional:</b> A Saudi statement of facility damage or an East-West flow interruption -> the weekend grades as a supply event, not a claims event. Monday's settlement file widening December WCS again on volume -> the front is unwinding against strength. A hold near Friday's highs at today's close -> the reopen dip was positioning, not a regrade.</p>
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Oct 23 to 26, 2026</span>
-<span class="chip src">OilPrice, Oct 25, 2026; Multiple, Oct 26, 2026; Reuters, Oct 23 to 24, 2026; Baltic Exchange Tanker Report Week 43 (week ending Oct 23, 2026); validated crack history refreshed Oct 26, 2026</span></div>
+<span class="chg-title">Thursday settled lower, Asia bought back the new Hormuz tanker tactic, and the reserve release programme is fully awarded</span></div>
+<p class="chg-delta">Thursday settles: Brent Dec26 $114.88 (was $115.32 Wednesday), WTI Dec26 $102.00 (was $102.78); spread $12.88 (was $12.54). Asia at 0323 GMT Fri: Brent Dec $116.08, Brent Jan $112.19, WTI $103.37 (Reuters). DOE Oct 29: awards of more than 40 Mbbl complete the 172 Mbbl release commitment; return of more than 216 Mbbl including 44 premium from early next year. Diesel crack $90.42, a sixth close below $100.</p>
+<p class="chg-body">Brent settled at $114.88, down $0.44, and WTI at $102.00, down $0.78 (settles, Oct 29), after both fell more than $2 intraday on diplomacy headlines, the European strategic release announcement and added Chinese fuel export quotas. Overnight the market paid the escalation side: a small boat attached two explosive devices to an outbound tanker's hull in the Strait of Hormuz at 2212 UTC Thursday (UKMTO Warning 187-26; engine room fire, crew safe, vessel underway again), a second tanker took an unknown projectile at about 1600 UTC, and the Houthis claimed a six target wave against Saudi Arabia including a second strike claim on Ras Tanura, unconfirmed on day three with no loading evidence. Asia traded Brent at $116.08 and WTI at $103.37 at 0323 GMT (Reuters, Oct 30). Brent December expires today; January is about $4 lower, so Monday's headline drop is the roll, not a move. The Energy Department announced Oct 29 that awards of more than 40 million barrels, including volumes from previous solicitations, complete its 172 million barrel release commitment, with more than 216 million barrels to return from early next year including 44 million premium barrels; no companies were named and no heating oil reserve award has been posted.</p>
+<p class="chg-balance"><b>Balance read:</b> The physical response is now fully committed on both sides of the Atlantic: the US release programme is spent as an offset, and Europe's 42.6 million barrels (half diesel) are announced into a product market whose tightest stock lines remain 10 percent under their five year averages. What keeps the premium is not flow loss, which the gauges still put at partial recovery, but a threat that keeps changing form: mines claimed, then hull attached explosives, then a legal threat against the largest carrier from Nov 1.</p>
+<p class="chg-cond"><b>Model conditional:</b> A Saudi or Aramco statement of damage at Ras Tanura, Abqaiq or Rabigh, or loading evidence of an interruption, converts three days of claims into a supply event; continued silence with normal loadings closes the cycle. The first French diesel cargoes from the European release test the product crisis call in physical arrivals. Enforcement against a Sinokor vessel on or after Nov 1 moves the legal threat into the flow gauges.</p>
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Oct 23 to 30, 2026</span>
+<span class="chip src">Reuters, Oct 29 to 30, 2026; UKMTO Warnings 186-26 and 187-26 via TradeWinds and Reuters, Oct 30, 2026; US Department of Energy, Oct 29, 2026; validated crack history refreshed Oct 30, 2026</span></div>
 
 </article>
 <article class="chg-card">
 <div class="chg-top"><span class="chg-rank">2</span>
-<span class="chg-title">Saturday's Saudi target list in full: Rabigh and the East-West Pipeline claimed, interceptions confirmed, Dhahran fire confirmed for Friday</span></div>
-<p class="chg-delta">New detail versus Sunday's edition: the full Reuters Oct 24 target list names the Rabigh refinery, East-West Pipeline pumping stations and a Yanbu facility; the coalition destroyed two missiles toward Yanbu and Taif; debris fell in Rabigh among other places. The Saudi Energy Ministry confirmed a Friday attack on a Dhahran administrative building caused a limited fire, no casualties.</p>
-<p class="chg-body">The Houthis claimed on Saturday attacks on the Rabigh refinery, crude pumping stations and the East-West Pipeline, a facility at Yanbu, airports at Riyadh, Dammam and Najran, and the air base at Khamis Mushait (Reuters, Oct 24). The Saudi side confirmed destroying two ballistic missiles toward Yanbu and Taif and reported interception debris in Jeddah, Taif and Rabigh; whether the Rabigh debris relates to the refinery claim is unclear, Saudi Arabia has not commented on the claims, and no hit, damage assessment or flow interruption has been reported. The East-West Pipeline is the Kingdom's bypass to the Red Sea, so a confirmed hit there would be a different class of event; none is confirmed. Separately, the Energy Ministry confirmed a Friday attack on an administrative building at a Dhahran complex caused a limited fire with no casualties. The Revolutionary Guards' vessel claims are on day five to six with no advisory since Oct 22, no named vessel and no corroboration.</p>
-<p class="chg-balance"><b>Balance read:</b> The claimed target set has climbed to first-class infrastructure while the confirmed column still reads interceptions, debris and one limited fire at an administrative building. Confirmed barrel impact of the campaign remains zero; the risk is concentrated in a single confirmation, not in the claim count.</p>
-<p class="chg-cond"><b>Model conditional:</b> Any Saudi or company statement on Rabigh, Yanbu or East-West flow status -> first real barrel fact of the weekend. Continued silence plus a soft close -> the claims premium keeps decaying into the Nov 1 OPEC+ meeting.</p>
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Oct 24 to 26, 2026</span>
-<span class="chip src">Reuters, Oct 24, 2026; Saudi Energy Ministry statement carried in the same coverage; UKMTO position unchanged since Update 088, Oct 22</span></div>
+<span class="chg-title">December WCS: the traded level is Wednesday's -$31.10; Thursday's -$30.50 is one lot, and thermal supply printed records</span></div>
+<p class="chg-delta">ICE Oct 28 file (landed after the Oct 29 edition): TMW Dec26 -$31.10 on 200 lots, Jan27 -$29.15 on 915 lots. ICE Oct 29: TMW Dec26 -$30.50 on 1 lot, Jan27 -$28.75 on 65 lots; ARV Dec26 -$22.973 on 850 lots; ARV to TMW +$7.53 in December, +$7.95 in January. Oil Sands Magazine: third quarter thermal production averaged a record 1.8 Mb/d; September records at <a class="plink" href="projects/cve_foster_creek.html">Foster Creek</a>, <a class="plink" href="projects/meg_christina_lake.html">Christina Lake North</a> and <a class="plink" href="projects/cop_surmont.html">Surmont</a>.</p>
+<p class="chg-body">Wednesday's settlement file answers the question the Oct 29 edition left open: the Canadian front did not follow flat price up; December WCS widened slightly to -$31.10 (ICE TMW settle, Oct 28) and traded 200 lots doing it, with January at -$29.15 on 915 lots. Thursday's settle tightened to -$30.50 (ICE TMW settle, Oct 29) on a single lot, while January tightened on trade to -$28.75 (65 lots) and Houston traded the week's size at -$22.973 on 850 lots. December WCS outright is $71.50 on Thursday's WTI settle. The December export spread compressed to +$7.53 while January's widened to +$7.95. The supply side behind the front printed records: Oil Sands Magazine's September review (Oct 29) has Alberta thermal production at a record third quarter average of 1.8 Mb/d, September all time highs at <a class="plink" href="projects/cve_foster_creek.html">Foster Creek</a> (250 kb/d) and <a class="plink" href="projects/meg_christina_lake.html">Christina Lake North</a> (117 kb/d), and <a class="plink" href="projects/cop_surmont.html">Surmont</a> over 157 kb/d matching its record. Two Midwest buyers are returning against that supply: Joliet continues to recover from its mid September power outage and Toledo is returning to normal rates after its turnaround (Oil Sands Magazine, Oct 29). Imperial Oil reports today (call 9:00 a.m. MT); its release was not out at the 02:05 MDT check.</p>
+<p class="chg-balance"><b>Balance read:</b> The front month's honest level is the one that traded: December at about minus thirty one, January at about minus twenty nine and tightening on volume. Record thermal supply argues the wide persists; returning Midwest runs and a Houston leg trading 850 lots argue the barrels that can move are finding bids. The one lot December tightening is a mark, not a turn.</p>
+<p class="chg-cond"><b>Model conditional:</b> Imperial's volumes today grade the synthetic return story at the asset level. A December print on real volume back through -$31.00 confirms the traded level; a tightening on hundreds of lots, not one, would be the first traded evidence the front is turning. Friday's ICE file lands with the next edition.</p>
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Oct 28 to 30, 2026</span>
+<span class="chip src">ICE Report Center EOD, Oct 28 and Oct 29, 2026; Oil Sands Magazine, Oct 29, 2026; AESO cogen watch, Oct 30, 2026</span></div>
 
 </article>
 <article class="chg-card">
 <div class="chg-top"><span class="chg-rank">3</span>
-<span class="chg-title">Ukraine claimed Tuapse, Ryazan and Syzran overnight; the confirmed refinery-strike pause is over a week; the Lake Charles venue moves to Wednesday</span></div>
-<p class="chg-delta">Fresh unverified claims (Oct 25 to 26) on three refineries sit against a confirmed ledger whose Saturday strikes were petrochemical and missile supply targets. Calendar correction: the Louisiana refiner's third quarter call is Wednesday Oct 28 (company schedule, Sep 16), not Oct 30.</p>
-<p class="chg-body">Ukraine claimed overnight strikes on the Tuapse refinery and on Ryazan and Syzran (RBC-Ukraine via wire live coverage, Oct 25 to 26), unverified with no damage assessment. Saturday's confirmed Ukrainian strikes were on Tolyattikauchuk, Omsky Kauchuk and an Ozon hub at Omsk, the Proton plant at Oryol and an aircraft at Yeysk, petrochemical and missile supply targets, and no refinery strike has been confirmed in over a week (last: Ryazan, Oct 16); the claim of Ryazan and Novoshakhtinsk strikes overnight Oct 23 to 24 remains uncorroborated, and Ryazan's main primary unit has been halted since Oct 15. DOE pages are unchanged: no award for either exchange round, posted contracts at 133.56 Mbbl to 13 companies, and the emergency exchange's cause still unstated. The refiner receiving that exchange reports Wednesday Oct 28, the first on the record venue for the cause question.</p>
-<p class="chg-balance"><b>Balance read:</b> Refinery claims are arriving faster than confirmations; the Russian product subtraction resumes only if a damage assessment lands. The government balance sheet remains the tightest measured part of the system: 133.56 Mbbl lent, two awards unpublished, one emergency exchange unexplained.</p>
-<p class="chg-cond"><b>Model conditional:</b> A confirmed Tuapse or Ryazan damage assessment -> the refinery campaign has resumed and the waiver arithmetic tightens. Wednesday's call naming the Lake Charles disruption -> the emergency exchange gets a cause and a duration. No confirmation by Wednesday's EIA -> the pause read hardens.</p>
-<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Oct 24 to 26, 2026</span>
-<span class="chip src">RBC-Ukraine via Guardian live coverage, Oct 25 to 26, 2026; Ukraine General Staff, Oct 24; SFG Media, Oct 24; DOE pages checked directly Oct 26, 2026; company schedule via Business Wire, Sep 16, 2026</span></div>
+<span class="chg-title">The product supply response arrived on paper: Europe releases, Russia exports, and freight finds its floor argument</span></div>
+<p class="chg-delta">Europe: 42.6 Mbbl by end January, 20.5 of it diesel (Oct 29). Russia: diesel export ban extended to year end, November quotas quadruple to 2 Mt, about 0.5 Mb/d; refinery runs rebounded 350 kb/d to 4.0 Mb/d. Freight: 63 attack disabled tankers still out of service including 20 VLCCs (McQuilling via RBN, Oct 29); Atlantic VLCC rates down 27 to 32 percent from peaks (Vortexa, Oct 28).</p>
+<p class="chg-body">Three supply responses landed in one window. Twelve European countries will release 42.6 million barrels from strategic reserves by end January, including 20.5 million barrels of diesel, completing the coordinated 400 million barrel action; France's 10 million barrel diesel tranche reaches the market in the coming days, sold at cost. Russia extended its diesel export ban to year end while quadrupling November quota exports to 2 million tonnes to fulfil its US arrangement, and its refinery runs rebounded 350 kb/d last week to 4.0 Mb/d after no confirmed attacks since Oct 15 (Reuters, Oct 29). A reported Ukrainian strike on the Novokuybyshevsk refinery overnight Oct 29 to 30 is unconfirmed as to damage (ASTRA, Oct 30). On freight, the correction now has a stated floor: 63 tankers disabled by attacks in 2026 remain out of service, repairs run one to three months, and only 22 sanctioned VLCCs under 20 years old could realistically return to conventional trading (McQuilling via RBN, Oct 29); Vortexa (Oct 28) counts Atlantic VLCC rates down 27 percent (US Gulf) and 32 percent (West Africa) from peaks with ballasters rising, the same floor conclusion. West African trade firmed one day against the trend on Thursday, a 40 point VLCC Worldscale rise (Reuters, Oct 29).</p>
+<p class="chg-balance"><b>Balance read:</b> The diesel crisis trade is being answered with announced barrels on three continents at once, which is why the crack has closed below $100 six straight times. The freight leg of the Canadian differential is different: the rate correction is real, but the fleet arithmetic (disabled hulls, drydock, a thin returnable sanctioned fleet) argues the level stays far above pre war, so the delivered cost pressure on distant heavy barrels fades slowly, not suddenly.</p>
+<p class="chg-cond"><b>Model conditional:</b> Landed French diesel volumes in the coming days confirm or refute the crisis over call. A confirmed Novokuybyshevsk outage would slow the Russian run recovery that underpins the quota story. The Baltic weekly for the week ending Oct 30, when it publishes, shows whether the dirty correction extended or the floor is already forming.</p>
+<div class="chips"><span class="chip conf">confirmed</span><span class="chip">Oct 28 to 30, 2026</span>
+<span class="chip src">Rigzone, Oct 29, 2026 (European release); Reuters, Oct 29, 2026 (Russian quotas and runs); RBN Energy, Oct 29, 2026, citing McQuilling; Vortexa, Oct 28, 2026; ASTRA, Oct 30, 2026 (strike report, unconfirmed)</span></div>
 
 </article>
 </section>
 
 <section class="now-sec" aria-label="Egress watch">
-<h2>Egress watch: how much room is left</h2>
+<h2>Egress watch: how much room is left<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="sec-sub">Three independent reads on spare export capacity out of the
 Western Canadian Sedimentary Basin (WCSB): what the regulator measured, what
 the model says about right now, and what the forward model says. Every figure
@@ -854,83 +908,83 @@ three.</p>
 </section>
 
 <section class="now-sec" aria-label="Flags">
-<h2>Flags: what's forming</h2>
+<h2>Flags: what's forming<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="sec-sub">Not changes yet, but they could become some. Each flag ends
 one of three ways: it becomes a ranked change, it resolves, or it expires.
 Stale flags are removed.</p>
 
 <div class="flag">
-<h3>Hormuz flows above pre-war on exports; the vessel claims are silent for a fifth to sixth day; Saturday's claims named Rabigh and the East-West Pipeline</h3>
-<p>Kpler puts Middle East crude exports at 17.3 Mb/d in October, above the 16.9 pre-war average, with Hormuz flows at 11.7 Mb/d, about 82 percent of pre-war (Oct 22). The Revolutionary Guards' claims (seven vessels, then two supertankers on mines) have no named vessel and no independent corroboration after five to six days, no maritime advisory has issued since Oct 22, and US Central Command called the mine claims incorrect. On Saturday the Houthis claimed the Rabigh refinery, the East-West Pipeline and a Yanbu facility; the confirmed Saudi events were two interceptions toward Yanbu and Taif, debris in Jeddah, Taif and Rabigh, and a ministry confirmed limited fire at a Dhahran administrative building on Friday. Confirmed barrel impact remains zero. Trade the flow prints and confirmed incidents, not the claims.</p>
-<p class="trig"><b>Trigger:</b> Independent corroboration of any claimed incident, a named vessel, a flow print stepping down, or a Saudi statement of facility damage or a pipeline flow interruption</p>
-<div class="chips"><span class="chip">expires 2026-10-31</span></div>
-</div>
-<div class="flag">
-<h3>Sanctions waiver: first US cargo at sea; no official deal per Bratislava; November tranche is the supply test</h3>
-<p>The first tanker under the waiver loaded 40,000 tonnes of diesel at Primorsk on Oct 22 and is heading for New York, arrival estimated Nov 7 (Reuters, shipping data). No signed supply contracts have been confirmed and no further loading has been reported. Slovakia's prime minister said after meeting Putin on Oct 23 that there is no official deal on Russian diesel exports to the United States and no exports yet (Reuters). The announced programme runs 500,000 tonnes in November and 1 million tonnes thereafter. The binding constraint is Russian refining capacity: the Ryazan primary unit is halted since Oct 15, the plant was claimed struck again overnight Oct 23 to 24, and the largest refiner is stretching repairs from days into months. The import licence runs to Apr 7, 2027 and the waiver has no fixed expiry.</p>
-<p class="trig"><b>Trigger:</b> A first loading for the November tranche, a named US buyer or signed-contract confirmation, a Ryazan restart report, or a move in Congress to block the arrangement</p>
-<div class="chips"><span class="chip">expires 2026-10-31</span></div>
-</div>
-<div class="flag">
-<h3>November apportionment 19 percent lights; December call unregistered; the synthetic verdict is scored</h3>
-<p>November Mainline apportionment is Light 19 percent and Heavy 7 percent at Kerrobert (Enbridge notice, Oct 20). December's nowcast opens at persistence on those levels and no December judgment call is registered yet. December nominations close Tuesday Nov 17 at 0700 MST, and on the published pattern (October's notice Sep 16, November's Oct 20) the December notice is expected around Nov 19 to 20, after nominations close, so the call must be registered as a judgment call rather than read off the notice. WCS Dec26 settled at -$28.50 (ICE TMW settle, Oct 23) on 555 lots, widening on traded volume, and the synthetic return verdict scored the same day at +$5.70 on 300 lots, below both registered lines.</p>
-<p class="trig"><b>Trigger:</b> Registration of a December judgment call before Nov 17, third-quarter volumes on Oct 30 and Nov 3 grading the synthetic tape verdict, or a second traded front-month move on Monday's settlement file</p>
-<div class="chips"><span class="chip">expires 2026-11-17</span></div>
-</div>
-<div class="flag">
-<h3>Freight correction confirmed in Week 43 and reached the Gulf leg; clean tankers set records; the TD3C benchmark is on trial from today</h3>
-<p>Baltic Week 43 (week ending Oct 23): TD3C WS 1208.13 (TCE $1,287,851 per day), TD22 $58.22 million (TCE $451,905 per day), TD9 WS 666 (TCE under $210,400 per day), TD28 $14.26 million, a second straight sharp dirty correction on levels, with TD9's fall from WS 830 confirming the correction has reached the Caribbean to Gulf leg that prices competing heavy. Clean tankers diverged: product carrier earnings set records in the same week, with LR2 routes above $300,000 per day. A London trial over whether the TD3C benchmark should have been suspended during the war opens Oct 26. Levels remain multiples of pre-war; the easing trims the FOB discount pressure on WCS Houston at the margin, it does not shelter anything.</p>
-<p class="trig"><b>Trigger:</b> A Week 44 weekly stabilizing or re-accelerating, a fresh fixture at a new high or low, or a ruling/suspension in the benchmark trial</p>
+<h3>Hormuz tactics and Saudi claims: a hull attached explosive attack is verified; Ras Tanura is day three unconfirmed; the carrier action date is Nov 1</h3>
+<p>UKMTO Warning 187-26 (Oct 29, 2212 UTC): a small boat attached two explosive devices to an outbound tanker's hull northeast of Khasab; engine room fire, crew safe, vessel underway again. A second tanker took an unknown projectile the same day (Warning 186-26). October's incident count is a record 29 (IMO via Vortexa). Iran's guard claimed three mine strikes and its army a fourth; the US Central Command position (Oct 28) is that the mine claims are false and primary routes remain cleared. Vortexa's preliminary October loadings west of Hormuz run about 11 Mb/d against 14.5 pre war, about 6 Mb/d of it by ship to ship transfer. The Houthis claimed six Saudi targets on Oct 29 including a second Ras Tanura strike; the coalition confirmed interceptions only, and no statement addresses damage at Ras Tanura, Abqaiq or Rabigh, with no loading interruption reported. From Nov 1 the strait authority threatens legal action against all vessels of the carrier behind 47 percent of September's Hormuz VLCC transits. Trade the loadings, not the claim count.</p>
+<p class="trig"><b>Trigger:</b> A Saudi or Aramco damage statement, loading evidence of an interruption at any named facility, enforcement against a vessel of the threatened carrier on or after Nov 1, or a tier 1 flow print stepping down</p>
 <div class="chips"><span class="chip">expires 2026-11-02</span></div>
+</div>
+<div class="flag">
+<h3>Reserve programme status: the US release is fully awarded and Europe's is announced; the heating oil reserve award is still missing</h3>
+<p>The Energy Department's Oct 29 awards of more than 40 million barrels complete the 172 million barrel US release commitment, with more than 216 million barrels to return from early next year including 44 million premium barrels. No awardee companies were named, and the posted contracts page exposed no table to re-sum, so no verified new borrower tally exists; the last verified tally (133.56 million barrels, 13 companies, Oct 13) is superseded as a status. Europe's 42.6 million barrel release, half diesel, completes the coordinated 400 million barrel action on the announcement side. The Northeast heating oil reserve exchange (bids closed Oct 27, deliveries by Nov 13) still has no award posted. The reserve stock stands at 282.6 million barrels, the lowest since October 1982: the release offset is committed, and what remains is delivery scheduling.</p>
+<p class="trig"><b>Trigger:</b> A posted awardee list or contracts table from the Department, a heating oil reserve award posting, or the first delivered French diesel cargoes from the European release</p>
+<div class="chips"><span class="chip">expires 2026-11-13</span></div>
+</div>
+<div class="flag">
+<h3>Sanctions waiver: three cargoes, a fertilizer dispute, and a disclosure deadline tomorrow</h3>
+<p>The first waiver tanker still declares no destination (for orders). A tracking service assesses the two later St. Petersburg departures are carrying UAN fertilizer, not diesel; fertilizer is not sanctioned and is authorised for import, which would remove those hulls from the legal dispute. Other reporting describes the cargoes as diesel; the question is unresolved on the public record. An environmental group's tracking names seven US bound tankers totalling 288,000 tonnes; no US delivery of any waiver cargo has been confirmed. The senator's letter demanding the first ship's owner recall it and disclose the seller, buyer, charterer, insurer and terminal operator reaches its deadline on Saturday Oct 31, and New Jersey's governor is examining options to keep the tankers out of her state's ports. Russia's diesel export ban extends to year end with November quotas at 2 million tonnes.</p>
+<p class="trig"><b>Trigger:</b> A response to the Oct 31 letter, a confirmed US delivery or port refusal, or cargo documentation resolving the diesel versus fertilizer question</p>
+<div class="chips"><span class="chip">expires 2026-11-02</span></div>
+</div>
+<div class="flag">
+<h3>November apportionment 19 percent lights and 7 percent heavies; the December call is unregistered; December WCS's traded level is -$31.10</h3>
+<p>November Mainline apportionment is Light 19 percent and Heavy 7 percent at Kerrobert (Enbridge notice, Oct 20), with Light 13 percent at Cromer and Heavy 16 percent at Superior. December's outlook is persistence at the same levels; no judgment call is registered, and nominations close Tuesday Nov 17 at 0700 MST. Trans Mountain's October apportionment was 7 percent. The December WCS level that traded volume this week is -$31.10 (ICE TMW settle, Oct 28, 200 lots); Thursday's -$30.50 settle rested on 1 lot, while January traded both days and tightened to -$28.75. Thermal supply printed third quarter records into the constraint.</p>
+<p class="trig"><b>Trigger:</b> A registered December judgment call, a December WCS print on real volume through -$31.00 or a traded tightening, or the December apportionment notice after nominations close</p>
+<div class="chips"><span class="chip">expires 2026-11-17</span></div>
 </div>
 <div class="flag">
 <h3>Nomination week: apportionment gaming likely</h3>
 <p>Mainline nominations were cut 12% on the latest CER data (Jun 2026), and forward spare stays positive, but the latest data says the pipe is already being cut. While nominations are open, expect shippers to over-nominate to protect their allocations, which can inflate Edmonton/Hardisty price assessments. The price effect of a full pipe shows up after the apportionment announcement, passed back to producers. The financial contract settles on the window average: the overbidding is baked into the settlement, but the unwind is not. <a href="fieldguide/apportionment-price-signature.html">Full mechanics in the field guide</a>.</p>
 <p class="trig"><b>Trigger:</b> Mainline apportionment of 10% or more on the latest CER data, or negative forward spare in the next 3 months</p>
-<div class="chips"><span class="chip">expires Oct 27</span></div>
+<div class="chips"><span class="chip">expires Oct 31</span></div>
 </div>
 </section>
 
 <section class="now-sec" aria-label="Forward calendar">
-<h2>Forward calendar: what hits when</h2>
+<h2>Forward calendar: what hits when<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="sec-sub">Roughly the next 90 days. Every event shows its estimated
 impact on the balance in kb/d, or says plainly when it cannot be
 quantified.</p>
 <div class="cal-group"><h3>This week</h3>
-<div class="cal-ev"><span class="cal-date">Tue Oct 27</span>
-<span><b>Saudi energy minister Bahrain keynote; heating oil reserve bids due; private inventory survey</b><br>
-<span class="cal-impact">The minister keynotes on energy security and transitions at 09:50 AST in Bahrain, a headline venue into OPEC+ week on the published agenda, not a policy slot. Bids close on the Oct 21 Northeast heating oil reserve exchange (up to 315,000 barrels), deliveries to complete by Nov 13. The private survey for the week ending Oct 23 lands Tuesday afternoon, ahead of Wednesday's EIA report.</span></span></div>
-<div class="cal-ev"><span class="cal-date">Tue Oct 27</span>
-<span><b>NEHHOR exchange bids due</b><br>
-<span class="cal-impact">Bids close on the Oct 21 Northeast Home Heating Oil Reserve exchange (up to 315,000 barrels, the first use of the reserve since Hurricane Sandy in 2012), with deliveries to complete by Nov 13. Bid uptake is a dated measure of how tight the Northeast distillate balance remains into winter, four days after the diesel crack closed below $100.</span></span></div>
-<div class="cal-ev"><span class="cal-date">Wed Oct 28</span>
-<span><b>EIA weekly report; Louisiana refiner third quarter call</b><br>
-<span class="cal-impact">The EIA reports the week ending Oct 23 at 10:30 a.m. ET. The refiner that received the Oct 23 emergency reserve exchange reports the same day (company schedule, Sep 16): the first on the record venue where the exchange's undisclosed cause can be asked.</span></span></div>
 <div class="cal-ev"><span class="cal-date">Fri Oct 30</span>
-<span><b>Imperial Oil and Cenovus Q3 results</b><br>
-<span class="cal-impact">The first of the Canadian majors to report the quarter that contains the fall turnaround windows. Upstream volumes are the first public test of whether <a class="plink" href="projects/syncrude.html">Syncrude</a>, <a class="plink" href="projects/cnq_horizon.html">Horizon</a> and the Suncor plants returned on their guided schedules; no completion notices have been published for any of them. The synthetic return verdict, now scored on the tape at +$5.70, is graded against these volumes.</span></span></div>
+<span><b>Imperial Oil Q3 results; ExxonMobil Q3; CFTC commitments of traders; Brent December expiry</b><br>
+<span class="cal-impact">Imperial is the first Canadian volume check on the synthetic return verdict (call 9:00 a.m. MT). The positioning release updates the Oct 20 vintage. Brent December expiry means Monday's front month is January, about $4 lower on the roll alone.</span></span></div>
+<div class="cal-ev"><span class="cal-date">Sat Oct 31</span>
+<span><b>Waiver cargo disclosure deadline</b><br>
+<span class="cal-impact">The deadline in the Oct 27 senator's letter for the first waiver tanker's owner to recall the vessel and disclose the seller, buyer, charterer, insurer and terminal operator.</span></span></div>
 <div class="cal-ev"><span class="cal-date">Sun Nov 1</span>
-<span><b>OPEC+ meeting (Nov 1 to 2, most likely Nov 2)</b><br>
-<span class="cal-impact">Five analysts surveyed by Reuters (Oct 23) expect another modest December increase; delegates said after the Oct 5 meeting that the November increase was the last before a first-quarter pause. The spread between those two is the meeting's actual risk, carried into the highest settles of the episode.</span></span></div></div><div class="cal-group"><h3>Next 30 days</h3>
+<span><b>OPEC+ meeting; strait authority action date against the largest Hormuz carrier</b><br>
+<span class="cal-impact">OPEC+ is expected to hold targets steady; only a deviation changes barrels. The strait authority's threatened legal action begins against the carrier behind 47 percent of September's Hormuz VLCC transits; enforcement against a shuttle vessel would hit the transfer machinery that moves about 6 Mb/d.</span></span></div>
 <div class="cal-ev"><span class="cal-date">Tue Nov 3</span>
-<span><b>Suncor Q3 results</b><br>
-<span class="cal-impact">Suncor operates <a class="plink" href="projects/syncrude.html">Syncrude</a> and the <a class="plink" href="projects/su_base_plant.html">Base Plant</a> and Edmonton refinery windows that ended in mid-October; its Q3 volumes are the closest public read on those returns ahead of September AER data.</span></span></div>
+<span><b>Suncor Q3 results; US midterm elections</b><br>
+<span class="cal-impact">Suncor operates <a class="plink" href="projects/syncrude.html">Syncrude</a> and the <a class="plink" href="projects/su_base_plant.html">Base Plant</a> and Edmonton refinery windows that ended in mid October; its volumes complete the return verdict's fundamental check. The midterms open the two month window strategists flag for unconstrained escalation risk before a new Congress is seated on Jan 3.</span></span></div>
 <div class="cal-ev"><span class="cal-date">Wed Nov 4</span>
-<span><b>Vermilion Q3 results</b><br>
-<span class="cal-impact">Vermilion reports the quarter on Nov 4 (announced Oct 21). A smaller read on the basin than the majors, carried for calendar completeness.</span></span></div>
+<span><b>Cenovus Q3 results (corrected date); Vermilion Q3 results</b><br>
+<span class="cal-impact">Cenovus announced Oct 28 that it reports Nov 4 (call 8:30 a.m. ET), superseding the Oct 30 date previously carried. Its SAGD fleet printed combined third quarter volumes of 700 kb/d on the magazine's preview.</span></span></div>
 <div class="cal-ev"><span class="cal-date">Thu Nov 5</span>
-<span><b>MEG Energy Q3 results</b><br>
-<span class="cal-impact">MEG reports Q3 on Nov 5 (earnings call Nov 6), confirmed from the company's events calendar on Oct 24. A thermal producer read on the quarter.</span></span></div>
+<span><b>MEG Energy Q3 results (date unverified in this edition)</b><br>
+<span class="cal-impact">MEG reports the September quarter; <a class="plink" href="projects/cve_christina_lake.html">Christina Lake</a> volumes are the read on the SAGD fleet's autumn. The date could not be independently confirmed in this run and is carried as unverified.</span></span></div>
+<div class="cal-ev"><span class="cal-date">Fri Nov 6</span>
+<span><b>Enbridge Q3 results</b><br>
+<span class="cal-impact">Enbridge reports into the November apportionment month (Light 19 percent, Heavy 7 percent at Kerrobert); Mainline volumes and any December colour are the items.</span></span></div></div><div class="cal-group"><h3>Next 30 days</h3>
+<div class="cal-ev"><span class="cal-date">Sat Nov 7</span>
+<span><b>First waiver cargo's projected US arrival window opens</b><br>
+<span class="cal-impact">The waiver tankers were projected at the US Atlantic coast between Nov 7 and Nov 11; the first ship currently declares no destination, and two later cargoes are disputed as fertilizer rather than diesel.</span></span></div>
 <div class="cal-ev"><span class="cal-date">Fri Nov 13</span>
-<span><b>NEHHOR exchange deliveries complete</b><br>
-<span class="cal-impact">Deliveries under the Oct 21 Northeast Home Heating Oil Reserve exchange (up to 315,000 barrels) are to complete by this date.</span></span></div>
+<span><b>Northeast heating oil reserve exchange deliveries complete</b><br>
+<span class="cal-impact">Deliveries under the heating oil reserve exchange (bids closed Oct 27, no award posted at this edition) complete by Nov 13, refining the winter distillate position in the US Northeast.</span></span></div>
 <div class="cal-ev"><span class="cal-date">Tue Nov 17</span>
 <span><b>December Mainline nominations close (NOS day)</b><br>
-<span class="cal-impact">December's Mainline nowcast opens at naive persistence on November's print (Light 19 percent, Heavy 7 percent at Kerrobert). No December judgment call is registered yet. Nominations close at 0700 MST.</span></span></div></div>
+<span class="cal-impact">Nominations for December close at 0700 MST. December's outlook is persistence at Light 19 percent and Heavy 7 percent; a judgment call registered before the close is the prediction programme's next decision performance entry.</span></span></div></div>
 </section>
 
 <section class="now-sec" aria-label="Levels at a glance">
-<h2>Levels at a glance</h2>
+<h2>Levels at a glance<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="sec-sub">Context only: the changes above are changes <i>against</i>
 these. Four figures, never more. Charts live on the reference pages.</p>
 <ul class="levels">
@@ -946,14 +1000,14 @@ these. Four figures, never more. Charts live on the reference pages.</p>
 <div class="lvl-fig">+0 kb/d</div>
 <div class="lvl-note">implied storage change: stocks building</div>
 <div class="chips"><span class="chip">Oct 2026 estimate</span></div></li>
-<li><div class="lvl-label">December diff settlements</div>
-<div class="lvl-fig">TMW -28.50</div>
-<div class="lvl-note">ICE settles 2026-10-23: ARV -20.00 · TMR -1.95 · TMU +3.05 · TMF +5.25 · TMS +5.70 (US$/bbl)</div>
-<div class="chips"><span class="chip">Intercontinental Exchange (ICE) end-of-day settlements, 2026-10-23</span></div></li>
+<li><div class="lvl-label">January diff settlements</div>
+<div class="lvl-fig">TMW -28.75</div>
+<div class="lvl-note">ICE settles 2026-10-29: ARV -20.80 · TMR -3.10 · TMU +1.85 · TMF +2.80 · TMS +4.70 (US$/bbl)</div>
+<div class="chips"><span class="chip">Intercontinental Exchange (ICE) end-of-day settlements, 2026-10-29</span></div></li>
 </ul>
 </section>
 <p class="now-foot sub">Every number on this page comes from public sources (AER filings, CER data, EIA releases, company disclosures, CFTC positioning), run through the WCSB supply/demand model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is documented on the <a href="sources/index.html">sources</a> page. The full edition archive lives under <a href="digest/index.html">Digest</a>.</p>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="barrels/index.html#disposition">S&amp;D balance</a><a href="barrels/index.html#st3-table">Projected ST3</a><a href="scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="barrels/index.html">Supply hub</a><a href="projects/index.html">All projects</a><a href="apportionment/index.html">Apportionment</a><a href="barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="maintenance/index.html">Maintenance</a><a href="growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="world/middle-east/index.html">Middle East watch</a><a href="world/russia-refining/index.html">Russian refineries</a><a href="world/china-imports/index.html">China imports</a><a href="world/spr-storage/index.html">SPR & storage</a><a href="world/sour/index.html">The global sour barrel</a><a href="venezuela/index.html">Venezuela watch</a><a href="world/trump/index.html">Trump watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="digest/index.html">Latest digest</a><a href="digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="global-balance.html">Global balance</a><a href="tolls/index.html">Toll search</a><a href="commitments/index.html">Commitments</a><a href="sat-watch.html">Sat watch</a><a href="chartbook.html">Chartbook</a><a href="options/index.html">The Wing (options)</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a><a href="about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="barrels/index.html#disposition">S&amp;D balance</a><a href="barrels/index.html#st3-table">Projected ST3</a><a href="scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="barrels/index.html">Supply hub</a><a href="projects/index.html">All projects</a><a href="apportionment/index.html">Apportionment</a><a href="barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="maintenance/index.html">Maintenance</a><a href="growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="world/middle-east/index.html">Middle East watch</a><a href="world/russia-refining/index.html">Russian refineries</a><a href="world/china-imports/index.html">China imports</a><a href="world/spr-storage/index.html">SPR & storage</a><a href="world/sour/index.html">The global sour barrel</a><a href="venezuela/index.html">Venezuela watch</a><a href="world/trump/index.html">Trump watch</a><a href="world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="digest/index.html">Latest digest</a><a href="digest/index.html">Edition archive</a><a href="changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="fieldguide/index.html">Field guide</a><a href="global-balance.html">Global balance</a><a href="tolls/index.html">Toll search</a><a href="commitments/index.html">Commitments</a><a href="sat-watch.html">Sat watch</a><a href="maps/index.html">Maps</a><a href="chartbook.html">Chartbook</a><a href="options/index.html">The Wing (options)</a><a href="options/charts/index.html">The Wing charts</a><a href="data/index.html">Data downloads</a><a href="sources/index.html">Sources</a><a href="methodology/index.html">Methodology</a><a href="about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="methodology/index.html">methodology</a> page; where every fact came from is in <a href="sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -1054,5 +1108,75 @@ these. Four figures, never more. Charts live on the reference pages.</p>
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

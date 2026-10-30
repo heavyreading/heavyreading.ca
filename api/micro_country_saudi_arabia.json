@@ -1,0 +1,601 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_saudi_arabia",
+ "country": "Saudi Arabia",
+ "country_code": "SAU",
+ "title": "Saudi Arabia country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "middle_east",
+ "rollup_name": "Middle East",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 9547.2,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 9482.4,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 9547.2,
+   "spread_pct": 0.7
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 11212.0,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 11212.0,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 2379.6,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 2379.6,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 9070.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 9070.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 9547.2,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 11212.0,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 2379.6,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2025",
+   "value": 155.4,
+   "unit": "million barrels",
+   "kbd": 425.75342465753425,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "GASTAT line 'Crude Oil Consumption' (direct crude use incl. direct burn, as published)",
+   "grain": "annual",
+   "leg": "consumption_crude_direct",
+   "leg_label": "consumption crude direct",
+   "n_rows": 3,
+   "first": "2023",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 207.2,
+   "unit": "million barrels",
+   "kbd": 567.6712328767123,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "consumption_fuel_oil",
+   "leg_label": "consumption fuel oil",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 216.5,
+   "unit": "million barrels",
+   "kbd": 593.1506849315068,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "consumption_gasoil_diesel",
+   "leg_label": "consumption gasoil diesel",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 193.5,
+   "unit": "million barrels",
+   "kbd": 530.1369863013698,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "consumption_gasoline",
+   "leg_label": "consumption gasoline",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 39.6,
+   "unit": "million barrels",
+   "kbd": 108.4931506849315,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "consumption_kerosene_jet",
+   "leg_label": "consumption kerosene jet",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 29.0,
+   "unit": "million barrels",
+   "kbd": 79.45205479452055,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "consumption_lpg",
+   "leg_label": "consumption lpg",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 182.6,
+   "unit": "million barrels",
+   "kbd": 500.2739726027397,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "consumption_other_products",
+   "leg_label": "consumption other products",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 868.4,
+   "unit": "million barrels",
+   "kbd": 2379.1780821917805,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "consumption_refined_products_total",
+   "leg_label": "consumption refined products total",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 2347.3,
+   "unit": "million barrels",
+   "kbd": 6430.958904109589,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 3,
+   "first": "2023",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 75.7,
+   "unit": "million barrels",
+   "kbd": 207.39726027397262,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "exports_fuel_oil",
+   "leg_label": "exports fuel oil",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 247.3,
+   "unit": "million barrels",
+   "kbd": 677.5342465753425,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "exports_gasoil_diesel",
+   "leg_label": "exports gasoil diesel",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 110.5,
+   "unit": "million barrels",
+   "kbd": 302.73972602739724,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "exports_gasoline",
+   "leg_label": "exports gasoline",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 541.0,
+   "unit": "million barrels",
+   "kbd": 1482.1917808219177,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "exports_refined_products_total",
+   "leg_label": "exports refined products total",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 72.9,
+   "unit": "million barrels",
+   "kbd": 199.72602739726028,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "imports_fuel_oil",
+   "leg_label": "imports fuel oil",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 8.8,
+   "unit": "million barrels",
+   "kbd": 24.10958904109589,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "imports_gasoil_diesel",
+   "leg_label": "imports gasoil diesel",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 36.7,
+   "unit": "million barrels",
+   "kbd": 100.54794520547945,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "imports_gasoline",
+   "leg_label": "imports gasoline",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 129.6,
+   "unit": "million barrels",
+   "kbd": 355.0684931506849,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "imports_refined_products_total",
+   "leg_label": "imports refined products total",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 3461.8,
+   "unit": "million barrels",
+   "kbd": 9484.383561643835,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "n_rows": 3,
+   "first": "2023",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 166.8,
+   "unit": "million barrels",
+   "kbd": 456.98630136986304,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_fuel_oil",
+   "leg_label": "production fuel oil",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 432.2,
+   "unit": "million barrels",
+   "kbd": 1184.109589041096,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_gasoil_diesel",
+   "leg_label": "production gasoil diesel",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 242.0,
+   "unit": "million barrels",
+   "kbd": 663.013698630137,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_gasoline",
+   "leg_label": "production gasoline",
+   "n_rows": 2,
+   "first": "2024",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 75.2,
+   "unit": "million barrels",
+   "kbd": 206.02739726027397,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_kerosene_jet",
+   "leg_label": "production kerosene jet",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 11.9,
+   "unit": "million barrels",
+   "kbd": 32.602739726027394,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_lpg",
+   "leg_label": "production lpg",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 63.4,
+   "unit": "million barrels",
+   "kbd": 173.69863013698628,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_other_products",
+   "leg_label": "production other products",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 991.5,
+   "unit": "million barrels",
+   "kbd": 2716.4383561643835,
+   "source": "General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+   "note": "as published by GASTAT (source: Ministry of Energy)",
+   "grain": "annual",
+   "leg": "production_refined_products_total",
+   "leg_label": "production refined products total",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "converted"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "national_record",
+   "state": "missing",
+   "reason": "Monthly publication runs through JODI only; the JODI spine here is the national submission. No independent second read exists.",
+   "route": "Detail in the Level-2 shelf README."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 9547.2,
+   "rows": [
+    {
+     "label": "National record: General Authority for Statistics (GASTAT), Oil and Gas Statistics 2025 - highlights release (GASTAT)",
+     "value": 9484.4,
+     "kind": "build",
+     "gap": -62.8,
+     "cause": "Own statistics, exact-volumetric conversion. National latest vs the spines' 2025: part of the gap is time."
+    },
+    {
+     "label": "EIA (international)",
+     "value": 9547.2,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 9482.4,
+     "kind": "spine",
+     "gap": -64.8,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 11212.0,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 11212.0,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

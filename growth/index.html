@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="growth/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop active"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html" aria-current="page">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html" aria-current="page">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,9 +710,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>Production growth</h1>
   <p class="sub">Confirmed and assumed production growth in the forecast, Oct 2026-Dec 2027: company-guided volumes with kb/d impacts, plus modeled estimates where guidance is vague.</p>
   <p class="sub">Confirmed and assumed production growth in the forecast, October 2026 through December 2027, with kb/d impacts and company sources. Growth is the supply-side mirror of the Maintenance page: turnarounds take barrels away, these projects put them back.</p>
-  <h2>Reading this page</h2>
+  <h2>Reading this page<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev"><li><b>Confirmed (company-guided):</b> the company stated the growth volume and timing in a primary disclosure (results release, budget, regulatory filing). Only these feed the forecast numbers. Company disclosure outranks secondary press, always.</li><li><b>Assumed (modeled estimate):</b> the endpoint is company-guided but the ramp path, monthly shape, or timing is our estimate. Every assumed number is labeled as an estimate, never presented as company-confirmed.</li><li>Growth without primary corporate confirmation does not enter the numbers.</li><li>If a volume or date is unknown, it is left blank, never estimated.</li></ul>
-  <h2>Confirmed growth</h2>
+  <h2>Confirmed growth<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Project</th><th>Operator</th><th>Growth</th><th class="num">2027 avg kb/d</th><th class="num">Dec 2027 kb/d</th><th>By when</th><th>Source</th></tr>
     <tr><td><a class="plink" href="../projects/narrows_lake.html">Narrows Lake</a> tie-back <span class="basis-chip basis-guided">guided</span></td><td>Cenovus</td><td>Baseline correction: stale trailing mean (45 kb/d) reset to the current rate (80 kb/d, Jul 2026 actual). Held flat; no forward ramp assumed.</td><td class="num">+35.0</td><td class="num">+35.0</td><td>Current rate, held through Dec 2027</td><td>Oil Sands Magazine thermal in-situ 2026 outlook (2026-01-29): tie-back boosted <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a> toward 250 kb/d in Q4 2026</td></tr>
@@ -673,7 +727,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr class="total"><td colspan="3"><b>Total</b></td><td class="num"><b>+126.7</b></td><td class="num"><b>+152.8</b></td><td colspan="2"></td></tr>
   </table></div>
   <p class="note">Confirmed growth: +126.7 kb/d average in 2027, +152.8 kb/d exit rate in Dec 2027 (<a class="plink" href="../projects/cve_sunrise.html">Sunrise</a> is a 70 kb/d level hold, counted separately).</p>
-  <h2>Assumed growth (modeled estimates)</h2>
+  <h2>Assumed growth (modeled estimates)<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Item</th><th>Operator</th><th>What is estimated</th><th>Timing</th></tr>
     <tr><td>Long Lake ramp path <span class="basis-chip basis-modeled">modeled</span></td><td>CNOOC</td><td>The 100 kb/d endpoint is company-guided; the path (toward 85 kb/d by Dec 2027, about halfway to the eventual target) and its timing are estimated. The CNOOC filing gives no timeline.</td><td>Estimated</td></tr>
@@ -681,9 +735,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td><a class="plink" href="../projects/narrows_lake.html">Narrows Lake</a> / <a class="plink" href="../projects/cnq_pike.html">Pike</a> 1 flat holds <span class="basis-chip basis-modeled">modeled</span></td><td>Cenovus / CNRL</td><td>The +35/+26 kb/d correct stale baselines to current rates. Holding flat assumes no further ramp, which is conservative by construction.</td><td>Estimated</td></tr>
     <tr><td><a class="plink" href="../projects/cve_sunrise.html">Sunrise</a> monthly shape <span class="basis-chip basis-modeled">modeled</span></td><td>Cenovus</td><td>70 kb/d by 2028 is guided; the flat 70 across forecast months (replacing the declining seasonal baseline) is modeled.</td><td>Estimated</td></tr>
   </table></div>
-  <h2>Sources</h2>
-<div class="tblwrap"><table class="data sources"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-08 (latest file vintage 28 September 2026)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-08</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded</td><td>Monthly</td><td>Actuals through 2026-06</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-12-31, compiled 2026-09-23</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (model build)</td><td>Per build</td><td>Forecast: seasonal baseline forecast, built 2026-10-26; nowcast Sep 2026: nowcast (seasonal baseline + confirmed maintenance), built 2026-10-26</td><td>2026-09-23</td></tr><tr><td>U.S. Energy Information Administration</td><td>Weekly Petroleum Status Report (WPSR): weekly preliminary crude imports by country (Table 8), weekly crude exports</td><td><a href="https://www.eia.gov">https://www.eia.gov</a></td><td>Weekly</td><td>Sep 2025 to Sep 2026 weekly series</td><td>2026-09-23</td></tr><tr><td>Organization of the Petroleum Exporting Countries (OPEC)</td><td>Monthly Oil Market Report (MOMR): Venezuela crude production, secondary sources and direct communication</td><td><a href="https://www.opec.org">https://www.opec.org</a></td><td>Monthly</td><td>Venezuela production series via Aug 2026 MOMR Tables 5-7/5-8</td><td>2026-09-24</td></tr><tr><td>ICE</td><td>Delayed futures quotes</td><td><a href="https://www.ice.com">https://www.ice.com</a></td><td>Daily</td><td>Brent settles referenced in weekly digest pricing</td><td>Per edition</td></tr><tr><td>Statistics Canada</td><td>Canadian energy series referenced in weekly digest editions</td><td><a href="https://www.statcan.gc.ca">https://www.statcan.gc.ca</a></td><td>As published</td><td>Series per digest edition</td><td>Per edition</td></tr><tr><td>Suncor Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Canadian Natural Resources (CNRL)</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Imperial Oil</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Cenovus Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Reuters</td><td>Wire reporting cited on watch pages: Venezuela Merey pricing, Signal Maritime freight rates</td><td><a href="https://www.reuters.com">https://www.reuters.com</a></td><td>As published</td><td>Venezuela watch Sep 2026; geopolitical watch pages</td><td>2026-09-24</td></tr><tr><td>The Associated Press</td><td>Wire reporting cited on geopolitical watch pages</td><td><a href="https://apnews.com">https://apnews.com</a></td><td>As published</td><td>Per watch page</td><td>Per watch page</td></tr><tr><td>OilPrice.com</td><td>Vitol Merey offer to China (Bloomberg-sourced), Jan 2026</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html">https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html</a></td><td>As published</td><td>Venezuela watch, Jan 2026</td><td>2026-09-23</td></tr><tr><td>Signal Maritime</td><td>Aframax freight rates, Jose terminal to USGC, reported via Reuters</td><td>URL not recorded</td><td>As published</td><td>Venezuela watch, Jan/Sep 2026</td><td>2026-09-24</td></tr><tr><td>U.S. Department of Energy</td><td>Strategic Petroleum Reserve (SPR) data and policy statements</td><td><a href="https://www.energy.gov">https://www.energy.gov</a></td><td>As published</td><td>SPR &amp; storage watch</td><td>Per watch page</td></tr><tr><td>Commercial storage</td><td>Licensed market-data inputs embedded in model builds; vendor identities withheld per licence terms</td><td>Not disclosed</td><td>Per licence</td><td>As embedded in builds</td><td>Per build</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+  <h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
+<div class="tblwrap"><table class="data sources"><caption style="text-align:left;font-weight:700;padding:6px 0;">Sources</caption><tr><th>Publisher</th><th>Dataset</th><th>URL</th><th>Published</th><th>Vintage / coverage</th><th>Retrieved</th></tr><tr><td>Alberta Energy Regulator</td><td>ST3: Alberta Energy Resource Industries Monthly Statistics</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st3</a></td><td>Monthly</td><td>Actuals through 2026-08 (latest file vintage 28 September 2026)</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST53: In-situ project data (BITUMEN sheet)</td><td><a href="https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53">https://www.aer.ca/data-and-performance/data-and-publications/statistical-reports/st53</a></td><td>Monthly</td><td>Actuals through 2026-08</td><td>2026-09-22</td></tr><tr><td>Alberta Energy Regulator</td><td>ST39: Mine and upgrader facility data</td><td>URL not recorded</td><td>Monthly</td><td>Actuals through 2026-06</td><td>2026-09-22</td></tr><tr><td>Canada Energy Regulator</td><td>Pipeline throughput, capacity and apportionment (open data)</td><td><a href="https://www.cer-rec.gc.ca/open/energy/throughput-capacity/">https://www.cer-rec.gc.ca/open/energy/throughput-capacity/</a></td><td>Monthly, ~3-month lag</td><td>Jan 2018 to Jun 2026</td><td>2026-09-22</td></tr><tr><td>Company disclosures</td><td>Quarterlies, budget releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance calendar window 2026-10-01 to 2027-12-31, compiled 2026-09-23</td><td>2026-09-22</td></tr><tr><td>Heavy Reading model</td><td>WCSB S&amp;D dashboard build (21 granular leaves, grade layer, maintenance math)</td><td>No public URL (model build)</td><td>Per build</td><td>Forecast: seasonal baseline forecast, built 2026-10-30; nowcast Sep 2026: nowcast (seasonal baseline + confirmed maintenance), built 2026-10-30</td><td>2026-09-23</td></tr><tr><td>U.S. Energy Information Administration</td><td>Weekly Petroleum Status Report (WPSR): weekly preliminary crude imports by country (Table 8), weekly crude exports</td><td><a href="https://www.eia.gov">https://www.eia.gov</a></td><td>Weekly</td><td>Sep 2025 to Sep 2026 weekly series</td><td>2026-09-23</td></tr><tr><td>Organization of the Petroleum Exporting Countries (OPEC)</td><td>Monthly Oil Market Report (MOMR): Venezuela crude production, secondary sources and direct communication</td><td><a href="https://www.opec.org">https://www.opec.org</a></td><td>Monthly</td><td>Venezuela production series via Aug 2026 MOMR Tables 5-7/5-8</td><td>2026-09-24</td></tr><tr><td>ICE</td><td>Delayed futures quotes</td><td><a href="https://www.ice.com">https://www.ice.com</a></td><td>Daily</td><td>Brent settles referenced in weekly digest pricing</td><td>Per edition</td></tr><tr><td>Statistics Canada</td><td>Canadian energy series referenced in weekly digest editions</td><td><a href="https://www.statcan.gc.ca">https://www.statcan.gc.ca</a></td><td>As published</td><td>Series per digest edition</td><td>Per edition</td></tr><tr><td>Suncor Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Canadian Natural Resources (CNRL)</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Imperial Oil</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Cenovus Energy</td><td>Quarterly results, budget/guidance releases, investor presentations, earnings calls</td><td>URLs per record in the forward maintenance calendar</td><td>As published</td><td>Forward maintenance outlook; project profiles</td><td>2026-09-22</td></tr><tr><td>Reuters</td><td>Wire reporting cited on watch pages: Venezuela Merey pricing, Signal Maritime freight rates</td><td><a href="https://www.reuters.com">https://www.reuters.com</a></td><td>As published</td><td>Venezuela watch Sep 2026; geopolitical watch pages</td><td>2026-09-24</td></tr><tr><td>The Associated Press</td><td>Wire reporting cited on geopolitical watch pages</td><td><a href="https://apnews.com">https://apnews.com</a></td><td>As published</td><td>Per watch page</td><td>Per watch page</td></tr><tr><td>OilPrice.com</td><td>Vitol Merey offer to China (Bloomberg-sourced), Jan 2026</td><td><a href="https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html">https://oilprice.com/Latest-Energy-News/World-News/China-Is-Importing-Its-Last-Ultra-Cheap-Sanctioned-Venezuelan-Oil.html</a></td><td>As published</td><td>Venezuela watch, Jan 2026</td><td>2026-09-23</td></tr><tr><td>Signal Maritime</td><td>Aframax freight rates, Jose terminal to USGC, reported via Reuters</td><td>URL not recorded</td><td>As published</td><td>Venezuela watch, Jan/Sep 2026</td><td>2026-09-24</td></tr><tr><td>U.S. Department of Energy</td><td>Strategic Petroleum Reserve (SPR) data and policy statements</td><td><a href="https://www.energy.gov">https://www.energy.gov</a></td><td>As published</td><td>SPR &amp; storage watch</td><td>Per watch page</td></tr><tr><td>Commercial storage</td><td>Licensed market-data inputs embedded in model builds; vendor identities withheld per licence terms</td><td>Not disclosed</td><td>Per licence</td><td>As embedded in builds</td><td>Per build</td></tr></table></div><p class="tblnote">Every number on this page traces to a row above. Anything missing its own source line is flagged in place; nothing ships with an unsourced number.</p>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -784,5 +838,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

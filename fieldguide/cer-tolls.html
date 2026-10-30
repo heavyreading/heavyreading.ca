@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="fieldguide/cer-tolls.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,17 +710,17 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>How the CER regulates pipeline tolls</h1>
   <p class="sub">Pipeline tolls are the one part of the value chain a regulator actually prices. How they get negotiated, litigated, and trued up.</p>
   <p class="vintage">Field guide entry &middot; written September 29, 2026.</p>
-  <h2>Just, reasonable, and non-discriminatory</h2>
+  <h2>Just, reasonable, and non-discriminatory<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>The Canada Energy Regulator (CER) regulates interprovincial and international pipelines: construction, operation, abandonment, tolls, tariffs. The core is Part 3 of the Canadian Energy Regulator Act, sections 225 to 240 (in force August 28, 2019): s. 229 requires tolls to sit in a filed tariff; s. 230 requires tolls to be just and reasonable and charged equally under substantially similar circumstances; ss. 233-234 let the Commission disallow or suspend tariffs.</p><p>Section 232 authorizes interim tolls with later true-up, in either direction. Section 239(1) makes oil pipelines common carriers, bound to receive, transport, and deliver oil offered. The CER does not set production, direct commercial flows, or set prices.</p>
-  <h2>The normal path: negotiated settlements</h2>
+  <h2>The normal path: negotiated settlements<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Most tolls are set by negotiated settlement between pipeline and shippers, filed under the 2002 Guidelines for Negotiated Settlements of Traffic, Tolls and Tariffs, still operative. Unopposed settlements are normally approved without a hearing; litigation is the exception for when negotiation fails.</p><p>Regulation is two-tier: Group 1, the large systems (Mainline, Keystone, Trans Mountain), gets full toll scrutiny; Group 2, roughly 60 smaller companies, is complaint-based. (The count is from a 1997 bulletin; the structure is current.) Complaints may be filed at any time, typically under sections 230 and 235, and can seek suspension under section 234.</p><p>The Mainline Tolling Settlement (MTS) shows the machinery: filed December 15, 2023, approved March 4, 2024 unanimously, retroactive to July 1, 2021, through December 31, 2028, replacing interim tolls from the Competitive Toll Settlement (CTS) expiry.</p>
-  <h2>Three cases that shaped the rules</h2>
+  <h2>Three cases that shaped the rules<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Mainline contracting denied, RH-001-2020: Enbridge applied to contract 90 percent of the Mainline; denied November 26, 2021: 90 percent would leave under 20 percent of Western Canadian Sedimentary Basin (WCSB) egress for monthly shipments and hit some shippers much harder. Firm service is not contrary to the Act; the Commission rejected this proposal's scale and equity.</p><p>Keystone variable tolls, RH-005-2020/2022: Phillips 66 Canada, joined by Cenovus, complained in December 2019 that 2020 variable tolls, up 22.5 percent in Canada, lacked disclosure. The December 2022 decision held the original Transportation Service Agreements (TSAs) just and reasonable, with only some drag-reducing agent (DRA) and capital costs recoverable. On a contracted pipe, the TSA is the toll.</p><p>Trans Mountain, RH-002-2023 to the September 2026 settlement: the expansion's C$34B cost, from ~C$12.6B, blew up the toll negotiation. After 18 months of talks, a settlement was approved September 28, 2026: new toll framework, contracting up from 80 to 90 percent, hearing cancelled. Per the CER, no commercially interested party opposed; the cost-split detail was not in the release.</p>
-  <h2>The data and the border</h2>
+  <h2>The data and the border<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Major companies report monthly throughput and capacity to the CER every quarter. The freshest monthly throughput is one to two quarters old; throughput can exceed reported capacity when conditions shift after the report date, so a print above 100 percent is neither an error nor spare capacity. Group 2 pipelines are exempt and estimated at nameplate minus 1 percent.</p><p>The CER's writ stops at the border: south of it, rates sit with the Federal Energy Regulatory Commission (FERC), safety with the Pipeline and Hazardous Materials Safety Administration (PHMSA). A full-path rate is a stack of two regulators' decisions: the Keystone complaint ran parallel filings, CER for the Canadian tariff and FERC for the US tariff.</p><ul class="ev"><li>Build approval guarantees the tolls: separate decisions under separate tests.</li><li>Interim tolls are the tolls: provisional, trued up with interest either way.</li><li>The CER sets the toll number: it usually approves or rejects the negotiated settlement.</li></ul>
-<div class="exec"><h2>Why it matters</h2><p>Tolls are the one part of the value chain a regulator prices: negotiation punctuated by litigation. The Mainline deal runs to end-2028; the Trans Mountain framework just reset the West Coast pipe.</p></div>
-<h2>Sources</h2><ul class="ev"><li>Government of Canada, Canadian Energy Regulator Act, Part 3 (ss. 225-240), in force Aug 28, 2019 (<a href="https://laws.justice.gc.ca/eng/acts/C-15.1/FullText.html">https://laws.justice.gc.ca/eng/acts/C-15.1/FullText.html</a>)</li><li>National Energy Board, Information Bulletin 6: Traffic, Tolls and Tariffs (1997) (<a href="https://publications.gc.ca/collections/Collection/NE12-3-6-1997E.pdf">https://publications.gc.ca/collections/Collection/NE12-3-6-1997E.pdf</a>)</li><li>National Energy Board, Revised Guidelines for Negotiated Settlements of Traffic, Tolls and Tariffs (2002) (<a href="https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90463/157025/208496/A02885%2D1_NEB_Decision_%E2%80%93_Guidelines_for_Negotiated_Settlements_of_Traffic%2C_Tolls_and_Tariffs_%28A0E4C1%29.pdf">https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90463/157025/208496/A02885%2D1_NEB_Decision_%E2%80%93_Guidelines_for_Negotiated_Settlements_of_Traffic%2C_Tolls_and_Tariffs_%28A0E4C1%29.pdf</a>)</li><li>BOE Report, Enbridge receives CER approval for Mainline tolling settlement (Mar 4, 2024) (<a href="https://boereport.com/2024/03/04/enbridge-receives-canada-energy-regulator-approval-for-mainline-tolling-settlement/">https://boereport.com/2024/03/04/enbridge-receives-canada-energy-regulator-approval-for-mainline-tolling-settlement/</a>)</li><li>Enbridge, Mainline Tolling Settlement application (filed Dec 15, 2023) (<a href="https://www.enbridge.com/~/media/Enb/Documents/Shippers/March-2024-MTS/Mainline_Tolling_Settlement_Application.pdf">https://www.enbridge.com/~/media/Enb/Documents/Shippers/March-2024-MTS/Mainline_Tolling_Settlement_Application.pdf</a>)</li><li>Canada Energy Regulator, CER approves Trans Mountain settlement establishing a new framework for tolls (Sep 28, 2026) (<a href="https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html">https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html</a>)</li><li>Canadian Press via BOE Report, Energy regulator approves Trans Mountain toll settlement (Sep 28, 2026) (<a href="https://boereport.com/2026/09/28/energy-regulator-approves-trans-mountain-toll-settlement/">https://boereport.com/2026/09/28/energy-regulator-approves-trans-mountain-toll-settlement/</a>)</li><li>Canada Energy Regulator, Decision in Brief: Enbridge application for Mainline contracting (2021) (<a href="https://www.cer-rec.gc.ca/en/about/news-room/decision-in-brief/2021/decision-in-brief-enbridge-application-for-mainline-contracting/index.html">https://www.cer-rec.gc.ca/en/about/news-room/decision-in-brief/2021/decision-in-brief-enbridge-application-for-mainline-contracting/index.html</a>)</li><li>Enbridge, Enbridge responds to CER decision to deny Mainline contracting (Nov 28, 2021) (<a href="https://enbridge.mediaroom.com/2021-11-28-Enbridge-Responds-to-Canada-Energy-Regulator-Decision-to-Deny-Mainline-Contracting">https://enbridge.mediaroom.com/2021-11-28-Enbridge-Responds-to-Canada-Energy-Regulator-Decision-to-Deny-Mainline-Contracting</a>)</li><li>South Bow, RH-005-2020 record: CER order on Keystone Tariff No. 44 (<a href="https://southbow.com/wp-content/uploads/2026/03/sb-keystone-cer-order-rh-005-2020-cer-tariff-no-44.pdf">https://southbow.com/wp-content/uploads/2026/03/sb-keystone-cer-order-rh-005-2020-cer-tariff-no-44.pdf</a>)</li><li>Canada Energy Regulator, 2022-23 annual report, Appendix C (RH-005-2022 Phase 1 decision) (<a href="https://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2022/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html">https://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2022/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html</a>)</li><li>Canada Energy Regulator, 2023-24 annual report, Appendix C (RH-002-2023) (<a href="http://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2023/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html">http://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2023/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html</a>)</li><li>Canada Energy Regulator, Market Snapshot: oil pipeline throughputs remained high in 2025 (modified Jun 24, 2026) (<a href="http://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-oil-pipeline-throughputs-remained-high-in-2025.html">http://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-oil-pipeline-throughputs-remained-high-in-2025.html</a>)</li></ul>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+<div class="exec"><h2>Why it matters<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p>Tolls are the one part of the value chain a regulator prices: negotiation punctuated by litigation. The Mainline deal runs to end-2028; the Trans Mountain framework just reset the West Coast pipe.</p></div>
+<h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><ul class="ev"><li>Government of Canada, Canadian Energy Regulator Act, Part 3 (ss. 225-240), in force Aug 28, 2019 (<a href="https://laws.justice.gc.ca/eng/acts/C-15.1/FullText.html">https://laws.justice.gc.ca/eng/acts/C-15.1/FullText.html</a>)</li><li>National Energy Board, Information Bulletin 6: Traffic, Tolls and Tariffs (1997) (<a href="https://publications.gc.ca/collections/Collection/NE12-3-6-1997E.pdf">https://publications.gc.ca/collections/Collection/NE12-3-6-1997E.pdf</a>)</li><li>National Energy Board, Revised Guidelines for Negotiated Settlements of Traffic, Tolls and Tariffs (2002) (<a href="https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90463/157025/208496/A02885%2D1_NEB_Decision_%E2%80%93_Guidelines_for_Negotiated_Settlements_of_Traffic%2C_Tolls_and_Tariffs_%28A0E4C1%29.pdf">https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90463/157025/208496/A02885%2D1_NEB_Decision_%E2%80%93_Guidelines_for_Negotiated_Settlements_of_Traffic%2C_Tolls_and_Tariffs_%28A0E4C1%29.pdf</a>)</li><li>BOE Report, Enbridge receives CER approval for Mainline tolling settlement (Mar 4, 2024) (<a href="https://boereport.com/2024/03/04/enbridge-receives-canada-energy-regulator-approval-for-mainline-tolling-settlement/">https://boereport.com/2024/03/04/enbridge-receives-canada-energy-regulator-approval-for-mainline-tolling-settlement/</a>)</li><li>Enbridge, Mainline Tolling Settlement application (filed Dec 15, 2023) (<a href="https://www.enbridge.com/~/media/Enb/Documents/Shippers/March-2024-MTS/Mainline_Tolling_Settlement_Application.pdf">https://www.enbridge.com/~/media/Enb/Documents/Shippers/March-2024-MTS/Mainline_Tolling_Settlement_Application.pdf</a>)</li><li>Canada Energy Regulator, CER approves Trans Mountain settlement establishing a new framework for tolls (Sep 28, 2026) (<a href="https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html">https://www.canada.ca/en/canada-energy-regulator/news/2026/09/cer-approves-trans-mountain-settlement-establishing-a-new-framework-for-tolls.html</a>)</li><li>Canadian Press via BOE Report, Energy regulator approves Trans Mountain toll settlement (Sep 28, 2026) (<a href="https://boereport.com/2026/09/28/energy-regulator-approves-trans-mountain-toll-settlement/">https://boereport.com/2026/09/28/energy-regulator-approves-trans-mountain-toll-settlement/</a>)</li><li>Canada Energy Regulator, Decision in Brief: Enbridge application for Mainline contracting (2021) (<a href="https://www.cer-rec.gc.ca/en/about/news-room/decision-in-brief/2021/decision-in-brief-enbridge-application-for-mainline-contracting/index.html">https://www.cer-rec.gc.ca/en/about/news-room/decision-in-brief/2021/decision-in-brief-enbridge-application-for-mainline-contracting/index.html</a>)</li><li>Enbridge, Enbridge responds to CER decision to deny Mainline contracting (Nov 28, 2021) (<a href="https://enbridge.mediaroom.com/2021-11-28-Enbridge-Responds-to-Canada-Energy-Regulator-Decision-to-Deny-Mainline-Contracting">https://enbridge.mediaroom.com/2021-11-28-Enbridge-Responds-to-Canada-Energy-Regulator-Decision-to-Deny-Mainline-Contracting</a>)</li><li>South Bow, RH-005-2020 record: CER order on Keystone Tariff No. 44 (<a href="https://southbow.com/wp-content/uploads/2026/03/sb-keystone-cer-order-rh-005-2020-cer-tariff-no-44.pdf">https://southbow.com/wp-content/uploads/2026/03/sb-keystone-cer-order-rh-005-2020-cer-tariff-no-44.pdf</a>)</li><li>Canada Energy Regulator, 2022-23 annual report, Appendix C (RH-005-2022 Phase 1 decision) (<a href="https://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2022/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html">https://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2022/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html</a>)</li><li>Canada Energy Regulator, 2023-24 annual report, Appendix C (RH-002-2023) (<a href="http://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2023/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html">http://www.cer-rec.gc.ca/en/about/publications-reports/annual-report/2023/commission-report/appendix-c-summary-released-commission-decisions-recommendations.html</a>)</li><li>Canada Energy Regulator, Market Snapshot: oil pipeline throughputs remained high in 2025 (modified Jun 24, 2026) (<a href="http://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-oil-pipeline-throughputs-remained-high-in-2025.html">http://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-oil-pipeline-throughputs-remained-high-in-2025.html</a>)</li></ul>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -767,5 +821,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

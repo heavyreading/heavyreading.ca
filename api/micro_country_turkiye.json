@@ -1,0 +1,407 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_turkiye",
+ "country": "Turkiye",
+ "country_code": "TUR",
+ "title": "Turkiye country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "middle_east",
+ "rollup_name": "Middle East",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 124.6,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 124.6,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 124.6,
+   "spread_pct": 0.0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 142.6,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 142.6,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1193.2,
+     "basis": "JODI TOTPRODS total demand, mean over 12 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 1193.2,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 124.6,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 142.6,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 1193.2,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 12 reported months of 2025"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2025",
+   "value": 6646966.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK note: total domestic crude oil procured by refinery licence holders (domestic production delivered to refiners)",
+   "grain": "annual",
+   "leg": "domestic_crude_procured_by_refiners",
+   "leg_label": "domestic crude procured by refiners",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 34489116.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "domestic_sales_products_total",
+   "leg_label": "domestic sales products total",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 14890899.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "exports_products_total",
+   "leg_label": "exports products total",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 31937774.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "imports_crude",
+   "leg_label": "Crude imports",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 18384393.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "imports_products_total",
+   "leg_label": "imports products total",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 50322168.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "imports_total_incl_crude",
+   "leg_label": "imports total incl crude",
+   "n_rows": 1,
+   "first": "2025",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 6532265.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "production_aviation_fuels",
+   "leg_label": "production aviation fuels",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 16895183.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "production_diesel",
+   "leg_label": "production diesel",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 341673.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "production_fuel_oil",
+   "leg_label": "production fuel oil",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 5315882.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "production_gasoline",
+   "leg_label": "production gasoline",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 1129738.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "production_marine_fuels",
+   "leg_label": "production marine fuels",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 8954421.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "production_other_products",
+   "leg_label": "production other products",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 39169752.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "refinery_production_total",
+   "leg_label": "refinery production total",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  },
+  {
+   "period": "2025",
+   "value": 44055018.0,
+   "unit": "tonnes",
+   "kbd": null,
+   "source": "Energy Market Regulatory Authority (EPDK/EMRA), Petroleum Market Development Report 2025 (EMRA/EPDK)",
+   "note": "EPDK market outlook table, tons as published",
+   "grain": "annual",
+   "leg": "total_delivery_products",
+   "leg_label": "total delivery products",
+   "n_rows": 4,
+   "first": "2022",
+   "last": "2025",
+   "basis": "measured"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 124.6,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 124.6,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 124.6,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 142.6,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 142.6,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

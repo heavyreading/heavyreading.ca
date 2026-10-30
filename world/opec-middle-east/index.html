@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="world/opec-middle-east/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../../digest/index.html">Edition archive</a><a class="nd-link" href="../../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../projects/index.html">All projects</a><a class="nd-link" href="../../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../../world/china-imports/index.html">China imports</a><a class="nd-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../../world/trump/index.html">Trump watch</a><a class="nd-link" href="../../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../../options/index.html">The Wing (options)</a><a class="nd-link" href="../../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../../fieldguide/index.html">Field guide</a><a class="nd-link" href="../../global-balance.html">Global balance</a><a class="nd-link" href="../../quotes/index.html">Quotes</a><a class="nd-link" href="../../tolls/index.html">Toll search</a><a class="nd-link" href="../../commitments/index.html">Commitments grid</a><a class="nd-link" href="../../freight-watch.html">Freight watch</a><a class="nd-link" href="../../sat-watch.html">Sat watch</a><a class="nd-link" href="../../globe.html">Globe</a><a class="nd-link" href="../../maps/index.html">Maps</a><a class="nd-link" href="../../chartbook.html">Chartbook</a><a class="nd-link" href="../../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../../data/index.html">Data downloads</a><a class="nd-link" href="../../sources/index.html">Sources</a><a class="nd-link" href="../../methodology/index.html">Methodology</a><a class="nd-link" href="../../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../../world/china-imports/index.html">China imports</a><a class="mg-link" href="../../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../../world/trump/index.html">Trump watch</a><a class="mg-link" href="../../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../../digest/index.html">Edition archive</a><a class="mg-link" href="../../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../../options/index.html">The Wing (options)</a><a class="mg-link" href="../../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../global-balance.html">Global balance</a><a class="mg-link" href="../../quotes/index.html">Quotes</a><a class="mg-link" href="../../tolls/index.html">Toll search</a><a class="mg-link" href="../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a><a class="mg-link" href="../../globe.html">Globe</a><a class="mg-link" href="../../maps/index.html">Maps</a><a class="mg-link" href="../../chartbook.html">Chartbook</a><a class="mg-link" href="../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -658,7 +712,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <p class="note">Read this page as the supply-side bid for sour barrels: OPEC+ quota decisions set the ceiling, the Middle East conflict sets the actual flow, and Saudi official selling prices set the price signal Asian buyers see. Each bullet is dated and sourced, so read 2026 wartime data against the pre-war baselines in the Hormuz watch. The disagreements log flags where trackers and officials genuinely diverge.</p>
   <p class="lede">The Gulf tap is open: Saudi shipments rose by about 4.2 million b/d from August to 6.6 million in September, per Vortexa data reported by Reuters on Oct 6, while total Gulf flows excluding Iran averaged over 81% of pre-war levels; OPEC+ held November quotas flat, the second straight pause since the unwind began in April, with compliance near 115%. That is the fundamental headwind on every sour premium Western Canadian Select (WCS) competes against: the more Gulf medium and heavy sour that loads, the less refiners need to chase substitute barrels. The forward risk is asymmetric: if Hormuz flows normalize or the 2027 baseline review unlocks more OPEC+ barrels, the sour premium collapses and Canadian differentials lose their relative bid; a fresh disruption does the opposite.</p>
   <p class="note freshness">Updated October 26, 2026 &middot; refreshes every 14 days</p>
-  <h2>The pause: quotas held after the unwind</h2>
+  <h2>The pause: quotas held after the unwind<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Nigeria met its OPEC crude oil production quota for a fifth consecutive month in September, averaging 1.53 million barrels per day against its 1.5 million barrels per day allocation, or 102 percent, according to data released by the Nigerian Upstream Petroleum Regulatory Commission (NUPRC) on Oct 13. Combined crude and condensate output averaged 1,717,030 barrels per day, up 2.34 percent from August, and the regulator attributed the performance to stable operations across most producing assets and the absence of major pipeline outages.<br><span class="vintage-inline">Data: Sep 2026; published Oct 13, 2026; accessed 2026-10-19 <a href="https://tb.africa/nigeria-meets-opec-quota-for-fifth-consecutive-month-as-september-output-reaches-1-53-million-barrels-daily/">ThinkBusiness Africa (reporting NUPRC data)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>In an Oct 2 exclusive, Reuters reported that OPEC+ has delayed its maximum sustainable capacity (MSC) review to mid-November after the US-Israeli war on Iran disrupted expansion projects across the Middle East and threw estimates of future production potential into uncertainty, citing two sources close to the matter. The review, originally due by end-September 2026, is to be used as the reference for 2027 production baselines; Reuters said US consultant DeGolyer and MacNaughton (covering all members except Russia, Iran and Venezuela) will not submit its report to OPEC until mid-November, a timeline that still allows consideration at the group's next group-wide meeting in late November.<br><span class="vintage-inline">Published Oct 2, 2026; accessed 2026-10-05 <a href="https://wixx.com/2026/10/02/exclusive-opec-delays-oil-capacity-review-after-iran-war-disrupts-expansion-plans-sources-say/">Reuters</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -668,9 +722,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>OPEC+ approved a 188,000 barrel-per-day production increase for September 2026 and then agreed to hold required production levels flat for October, the first pause since the unwind began in April; required levels include Saudi Arabia at 10.478 million barrels per day, Russia at 9.949 million, Iraq at 4.431 million, Kuwait at 2.676 million, Kazakhstan at 1.628 million, Algeria at 1.007 million, and Oman at 0.841 million, with the next meeting scheduled for October 4.<br><span class="vintage-inline">2026-09-07 <a href="https://www.rigzone.com/news/opec_7_reveal_october_output_plan-07-sep-2026-184549-article/">Rigzone</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Reuters sources said on July 28, 2026 that OPEC+ was likely to keep production increases on hold after September, noting that most of the announced hikes existed only on paper because the Iran war forced Middle East export cuts, and that the group was not expected to change policy until year-end, with 2027 quotas to be set after a capacity review.<br><span class="vintage-inline">2026-07-28 <a href="https://energynews.oedigital.com/fossil-fuels/2026/07/28/sources-say-that-opec-is-likely-to-halt-oil-production-increases-after-september">Reuters via Energy News (OE Digital)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>The war's mark on Gulf output</h2>
+  <h2>The war's mark on Gulf output<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>OilPrice.com reported on Oct 25, citing Kpler figures reported by Reuters, that October flows out of the Strait of Hormuz averaged 11.7 million barrels per day, up from 9.8 million in September and close to the pre-war average of 14.5 million in February, even as at least 25 ships were reported hit in Hormuz in the first 20 days of October.<br><span class="vintage-inline">Published Oct 25, 2026; accessed 2026-10-26 <a href="https://oilprice.com/Energy/Crude-Oil/Oil-Prices-Rise-Despite-Middle-East-Export-Recovery.html">OilPrice.com</a></span></li>
+  <li>OilPrice.com reported on Oct 25, citing Kpler figures reported by Reuters, that October flows out of the Strait of Hormuz averaged 11.7 million barrels per day, up from 9.8 million in September and close to the pre-war average of 14.5 million in February, even as at least 25 ships were reported hit in Hormuz in the first 20 days of October.<br><span class="vintage-inline">Published Oct 25, 2026; accessed 2026-10-26 <a href="https://oilprice.com/Energy/Crude-Oil/Oil-Prices-Rise-Despite-Middle-East-Export-Recovery.html">OilPrice.com</a> <span class="age-chip">&middot; 5d old</span></span></li>
   <li>OPEC+ posted a sharp gain in production in September, pumping an average of 39.07 million barrels per day, up about 900,000 barrels per day from August, OPEC said in its October Monthly Oil Market Report, Reuters reported on Oct 13. Saudi Arabia told OPEC it pumped 8.372 million barrels per day in September, up more than 2 million barrels per day from August, as Aramco ramped up loadings from Gulf export terminals after an attack on the East-West pipeline disrupted its shipments via the Red Sea. Russia's output fell by 38,000 barrels per day, declining amid Ukrainian strikes on its energy infrastructure.<br><span class="vintage-inline">Published Oct 13, 2026; accessed 2026-10-19 <a href="https://wixx.com/2026/10/13/opec-raises-2027-oil-demand-view-citing-need-to-rebuild-stocks/">Reuters (via 101 WIXX)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The US Energy Information Administration raised its Brent forecast in the October Short-Term Energy Outlook, released Oct 6, to an average $105 a barrel in Q4 2026, $14 above the September outlook, citing falling global inventories and tight diesel markets; the agency estimates Middle East crude production shut-ins averaged about 4.5 million barrels per day in Q4 2026, easing to 2.7 million in Q1 2027, and that September shut-ins were the lowest since the war began. For 2026 as a whole Brent is now expected to average $98 a barrel, up 8% from last month's forecast.<br><span class="vintage-inline">Published Oct 6, 2026; accessed 2026-10-12 <a href="https://srnnews.com/us-eia-hikes-oil-price-forecasts-again-as-iran-war-drains-global-stockpile/">Reuters via SRN News</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Reuters reported on Oct 3 that Iraq's state-owned Oil Tanker Company moved 2 million barrels of Iraqi crude aboard a chartered very large crude carrier through the Strait of Hormuz, in what its director general Ali Qais Abdul Jabbar described on October 3 as the company's first such operation in decades. The move shifts delivery beyond the strait rather than free-on-board at Basra, giving state marketer SOMO greater sales and pricing flexibility; the company is in talks to buy specialized crude tankers to compete with regional shipping companies, and Reuters noted Iraq had previously secured Iranian permission for its tankers to transit the strait.<br><span class="vintage-inline">Published Oct 3, 2026; accessed 2026-10-05 <a href="https://boereport.com/2026/10/03/iraq-says-it-transported-2-million-barrels-of-crude-through-strait-of-hormuz/">Reuters</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -682,9 +736,9 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>The EIA's September 2026 Short-Term Energy Outlook estimated that 6.7 million barrels per day of Middle East crude production was shut in during August, up from 5.0 million in July, easing to about 5.7 million in the fourth quarter, with regional output staying below pre-conflict averages until the second quarter of 2027.<br><span class="vintage-inline">2026-09 <a href="https://www.ogj.com/general-interest/economics-markets/news/55404072/eia-sees-brent-near-90-bbl-in-second-half-2026-amid-middle-east-disruptions">US Energy Information Administration (EIA) Short-Term Energy Outlook, via Oil and Gas Journal summary</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>The EIA estimated that the conflict has removed about 400 million barrels from global oil inventories since the start of the year, and forecast Brent crude near $90 per barrel in the second half of 2026 amid the Middle East disruptions.<br><span class="vintage-inline">2026-09 <a href="https://www.ogj.com/general-interest/economics-markets/news/55404072/eia-sees-brent-near-90-bbl-in-second-half-2026-amid-middle-east-disruptions">US Energy Information Administration (EIA) Short-Term Energy Outlook, via Oil and Gas Journal summary</a> <span class="age-chip">&middot; reference</span></span></li>
   </ul>
-  <h2>Gulf loadings: the September snapshot</h2>
+  <h2>Gulf loadings: the September snapshot<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>Reuters columnist Ron Bousso wrote on Oct 22, citing Kpler data, that Middle East oil exports averaged 17.3 million barrels per day so far in October, up from 16.4 million in September and above the 16.9 million average in the two months before the Feb 28 strikes. Flows through the Strait of Hormuz hit 11.7 million barrels per day in October, up from 9.75 million in September, at about 82 percent of pre-war levels.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/22/dont-mistake-mideast-oil-rebound-for-normality-bousso/">Reuters (via BOE Report)</a> <span class="age-chip">&middot; 4d old</span></span></li>
+  <li>Reuters columnist Ron Bousso wrote on Oct 22, citing Kpler data, that Middle East oil exports averaged 17.3 million barrels per day so far in October, up from 16.4 million in September and above the 16.9 million average in the two months before the Feb 28 strikes. Flows through the Strait of Hormuz hit 11.7 million barrels per day in October, up from 9.75 million in September, at about 82 percent of pre-war levels.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/22/dont-mistake-mideast-oil-rebound-for-normality-bousso/">Reuters (via BOE Report)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Lloyd's List reported Oct 6 that September loadings at Middle East Gulf ports rose 50% month on month, 164% above the crisis low, but refined product loadings remain below pre-crisis levels as Middle East refineries operate at reduced rates; Red Sea attacks and refinery outages have pushed more Saudi crude exports through Hormuz, widening the gap between crude and product loadings.<br><span class="vintage-inline">Published Oct 6, 2026; accessed 2026-10-12 <a href="https://www.lloydslist.com/LL1158621/Middle-East-Gulf-product-loadings-rebound-but-lag-crude-recovery-amid-refinery-outages">Lloyd's List</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>OilPrice.com reported that crude flows through the Strait of Hormuz fell 27% from the prior week's wartime high to 10.1 million barrels per day after a fresh surge in attacks, with Kpler counting just seven commodity carriers transiting the strait on Tuesday, the lowest since late July; the sharpest drop was in vessels doing ship-to-ship transfers in the Gulf of Oman, the workaround Saudi Arabia has relied on to rebuild exports. Between Sep 28 and Oct 2 at least 12 attacks on oil, LNG and LPG tankers were recorded, per Reuters citing the US Navy-led Joint Maritime Information Center, the highest weekly count since the war began.<br><span class="vintage-inline">Published Oct 8, 2026; accessed 2026-10-12 <a href="https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Tanker-Traffic-Hits-Two-Month-Low-as-Attacks-Surge.html">OilPrice.com</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Reuters reported Oct 6 that Gulf oil flows excluding Iran averaged over 81% of pre-war levels in September, per Vortexa data, with crude and condensate recovering to 91% of pre-war (against a 16.3 million barrel per day pre-war baseline) while refined-fuel exports, including LPG, lagged at 60% of pre-war (7.3 million baseline); Kpler put total September oil exports at 18.6 million barrels per day, and Saudi shipments rose about 4.2 million barrels per day from August to 6.6 million. Vortexa analyst Claire Jungman cautioned that daily flows are considerably more volatile than before the war, so the question is whether recent levels can be sustained; Iranian exports fell to zero under the US blockade.<br><span class="vintage-inline">Published Oct 6, 2026; accessed 2026-10-12 <a href="https://gcaptain.com/gulf-oil-flows-rise-to-average-81-of-pre-war-rate-in-september/">Reuters via gCaptain</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
@@ -697,29 +751,29 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Three sources told Reuters on September 23, 2026 that Saudi Arabia resumed pumping through the East-West pipeline on September 22 after the drone attacks; Iraq is exporting more than 3 million barrels per day and targeting over 600,000 barrels per day through the Turkey pipeline, while preliminary August estimates of total Iraqi exports differed between trackers: Vortexa at 2.3 million barrels per day and Kpler at 2.17 million, versus pre-war figures of 3.7 million and 3.362 million respectively.<br><span class="vintage-inline">2026-09-23 <a href="https://roydadnaft.ir/English/18774/">Reuters via Roydad Naft</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Kpler data cited September 22, 2026 put Asia's crude imports at 23.96 million barrels per day in September, the highest since February and up from 23.38 million in August, though still 13 percent below pre-conflict levels; US Energy Secretary Chris Wright said on September 21 that as much as 15 million barrels per day was still leaving the Middle East, while tanker-tracking services put observed exports lower.<br><span class="vintage-inline">2026-09-22 <a href="https://logistics.maritimeprofessional.com/transportation/2026/09/22/saudi-arabia-increases-gulf-oil-exports-following-pipeline-attack">Maritime Professional</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Saudi pricing: the sour barrel signal</h2>
+  <h2>Saudi pricing: the sour barrel signal<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
-  <li>Reuters columnist Ron Bousso wrote on Oct 22 that benchmark tanker rates for a 2 million barrel cargo from the Middle East to China remain near an all-time high of about $1.4 million a day, more than 12 times pre-war levels, and tanker insurance has risen to about 10 percent of cargo value from about 3 percent before the war. Saudi Aramco and Abu Dhabi National Oil Co have responded with large discounts and some delivered-basis sales to secure buyers in China and India.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/22/dont-mistake-mideast-oil-rebound-for-normality-bousso/">Reuters (via BOE Report)</a> <span class="age-chip">&middot; 4d old</span></span></li>
+  <li>Reuters columnist Ron Bousso wrote on Oct 22 that benchmark tanker rates for a 2 million barrel cargo from the Middle East to China remain near an all-time high of about $1.4 million a day, more than 12 times pre-war levels, and tanker insurance has risen to about 10 percent of cargo value from about 3 percent before the war. Saudi Aramco and Abu Dhabi National Oil Co have responded with large discounts and some delivered-basis sales to secure buyers in China and India.<br><span class="vintage-inline">Published Oct 22, 2026; accessed 2026-10-26 <a href="https://boereport.com/2026/10/22/dont-mistake-mideast-oil-rebound-for-normality-bousso/">Reuters (via BOE Report)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Saudi Aramco approached traders in mid-October offering additional spot crude oil cargoes for delivery into Europe in late October and into mid-November, three trade sources told Reuters, in a break from its term-only practice with European customers. Saudi Arabia has been ramping up crude flows through its East-West Pipeline to Red Sea export terminals since early October, after drone attacks forced the pipeline's shutdown on September 11, and Poland's Orlen is expected to get at least four October-loading Saudi cargoes, shipping data showed. The volumes could help make up for cargoes European customers missed in September.<br><span class="vintage-inline">Published Oct 15, 2026; accessed 2026-10-19 <a href="https://www.bairdmaritime.com/shipping/tankers/saudi-arabia-races-to-recover-european-oil-market-share-after-pipeline-attacks">Reuters (via Baird Maritime)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Bloomberg corroborated the Saudi November OSP cut, reporting Aramco told Asian refiners to nominate volumes they wish to pick up next month from ports within the Gulf as well as from Yanbu on the Red Sea or the Mediterranean port of Sidi Kerir, in case the closure of the Strait of Hormuz continues; JPMorgan estimated Middle East crude exports were at 98% of pre-war levels last week, framing the Asia price cut as a bid for market share as flows recover.<br><span class="vintage-inline">Published Oct 2026; accessed 2026-10-12 <a href="https://www.energyconnects.com/news/oil/2026/october/saudis-slash-oil-prices-to-asia-in-battle-for-market-share/">Bloomberg via Energy Connects</a> <span class="age-chip">&middot; reference</span></span></li>
   <li>Reuters reported on Oct 5 that Aramco set its November Arab Light official selling price to Asia at $5 a barrel below the average of Oman and Dubai prices, down $3 from October and the widest discount since June 2020, defying a Reuters survey expectation of a $3 a barrel hike. Arab Medium and Arab Heavy OSPs to Asia were cut by $5 a barrel, while November OSPs for northwest Europe were raised $3 a barrel across all grades after exports from Yanbu resumed, and US prices were unchanged; Reuters said the Asia cuts appeared aimed at compensating buyers for elevated freight costs, citing LSEG data putting a VLCC Gulf-to-China time charter at $1.2 million a day versus about $80,000 a day a year ago.<br><span class="vintage-inline">Published Oct 5, 2026; accessed 2026-10-05 <a href="https://gcaptain.com/saudi-arabia-unexpectedly-cuts-oil-prices-to-asia/">Reuters</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>Aramco cut its July 2026 Arab Light official selling price (OSP) for Asia by $11 per barrel to $1.50 below the Oman/Dubai benchmark, the largest single-month reduction in more than two decades; traders said Asian buyers, already satisfied with their crude slate, were unlikely to be swayed, with renewed Iranian competition for Asian buyers cited as a factor in the cut.<br><span class="vintage-inline">2026-07-07 <a href="https://energynews.oedigital.com/crude-oil/2026/07/07/saudi-oil-price-reduction-unlikely-to-convince-asia-buyers-who-are-already-satisfied-traders-say">Energy News (OE Digital)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>The demand revisions</h2>
+  <h2>The demand revisions<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>OPEC lowered its forecast for 2026 oil demand growth for a sixth straight month in its October Monthly Oil Market Report, to 180,000 barrels per day from 380,000, putting world demand at 105.72 million barrels per day, Reuters reported on Oct 13. The group raised its 2027 forecast to growth of 2.55 million barrels per day, to an average of 108.3 million barrels per day, assuming demand softens this year as expected and is then bolstered by the need to replenish inventories depleted by the Iran war.<br><span class="vintage-inline">Published Oct 13, 2026; accessed 2026-10-19 <a href="https://wixx.com/2026/10/13/opec-raises-2027-oil-demand-view-citing-need-to-rebuild-stocks/">Reuters (via 101 WIXX)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The International Energy Agency's (IEA) October Oil Market Report, released Oct 14, sits far below OPEC's view: global oil demand is predicted to fall 2.6 million barrels per day on average in 2026, with diesel expected to account for 25 percent of the decline, the Associated Press reported. Global production climbed 2.5 million barrels per day month over month to 102.3 million barrels per day in September, driven by Gulf producers, with OPEC+ gains of 2.1 million barrels per day led by Saudi Arabia. The agency expects supply to drop by 5.8 million barrels per day to 100.7 million barrels per day this year and said renewed Gulf attacks leave the recovery fragile.<br><span class="vintage-inline">Published Oct 14, 2026; accessed 2026-10-19 <a href="https://www.ttnews.com/articles/iea-lowers-world-oil-demand">Associated Press (via Transport Topics)</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>OPEC's September 2026 Monthly Oil Market Report cut its 2026 oil demand growth forecast for the fifth straight month, lowering it by 200,000 barrels per day to 380,000, with total consumption at 105.84 million barrels per day; it raised the 2027 growth forecast to 2.36 million barrels per day and noted July OPEC+ output of 38.055 million barrels per day.<br><span class="vintage-inline">2026-09-15 <a href="https://www.argusmedia.com/en/news-and-insights/latest-market-news/2876087-opec-cuts-2026-oil-demand-growth-forecast-again">Argus Media</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   <li>The United Arab Emirates withdrew from OPEC and OPEC+ effective May 1, 2026, according to the September report, which also cut cumulative 2026 demand growth by about 1 million barrels per day since the US-Iran war began.<br><span class="vintage-inline">2026-09-15 <a href="https://www.argusmedia.com/en/news-and-insights/latest-market-news/2876087-opec-cuts-2026-oil-demand-growth-forecast-again">Argus Media</a> <span class="age-chip age-stale">&middot; stale</span></span></li>
   </ul>
-  <h2>Where sources disagree</h2>
+  <h2>Where sources disagree<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li><b>2026 world oil demand: OPEC growth versus IEA contraction</b>: OPEC October 2026 Monthly Oil Market Report vs IEA October 2026 Oil Market Report. OPEC sees 2026 world oil demand growing by 180,000 barrels per day to 105.72 million barrels per day; the IEA sees 2026 demand falling by 2.6 million barrels per day to about 102.4 million barrels per day. The gap is mostly the war demand destruction the IEA books and OPEC largely does not; OPEC instead pushes the growth into 2027 on inventory rebuilding.</li>
   <li><b>Iraqi August 2026 export estimates</b>: Vortexa vs Kpler. Vortexa estimated 2.3 million barrels per day of Iraqi exports in August versus a pre-war 3.7 million; Kpler put it at 2.17 million versus a pre-war 3.362 million, as reported by Reuters. Different tracker methodologies, not a data error.</li>
   <li><b>Middle East oil outflows in September 2026</b>: US Energy Secretary Chris Wright (public statement, September 21, 2026) vs tanker-tracking services. Wright said as much as 15 million barrels per day was still leaving the Middle East; tanker trackers reported lower observed exports. Claimed versus tracked, unresolved.</li>
   </ul>
   <p class="lede">For the WCSB book, this page is the fundamental backdrop behind every <a href="../../venezuela/index.html">TMW</a> and <a href="../../venezuela/index.html">ARV</a> print: tight Gulf sour supply is what is keeping the heavy basis bid right now. If Hormuz flows normalize or Saudi pricing turns aggressive again, expect the Canadian differential complex, including <a href="../../venezuela/index.html">TMW</a> and <a href="../../venezuela/index.html">ARV</a>, to soften first at the margin.</p>
-  <h2>What this watch tracks</h2>
+  <h2>What this watch tracks<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p class="sub">Updated daily.</p>
   <ul class="ev">
   <li>OPEC+ monthly output decisions and required production levels</li>
@@ -729,13 +783,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <li>Aramco official selling prices to Asia</li>
   <li>East-West Pipeline flow status and Yanbu crude loadings</li>
   </ul>
-  <h2>What public data cannot verify</h2>
+  <h2>What public data cannot verify<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <ul class="ev">
   <li>Exact per-country September compliance versus required levels was not yet published at the time of writing.</li>
   <li>Day-to-day Hormuz barrel flows are tracker estimates; the US Energy Information Administration (EIA) quarterly volume series lags by months.</li>
   <li>The 2027 quota framework depends on an OPEC+ capacity review not yet completed.</li>
   </ul>
-  <h2>Sources</h2>
+  <h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <div class="tblwrap"><table class="data">
     <tr><th>Publisher</th><th>Link</th></tr>
     <tr><td>ThinkBusiness Africa (reporting NUPRC data)</td><td><a href="https://tb.africa/nigeria-meets-opec-quota-for-fifth-consecutive-month-as-september-output-reaches-1-53-million-barrels-daily/">link</a></td></tr>
@@ -774,7 +828,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
     <tr><td>Associated Press (via Transport Topics)</td><td><a href="https://www.ttnews.com/articles/iea-lowers-world-oil-demand">link</a></td></tr>
     <tr><td>Argus Media</td><td><a href="https://www.argusmedia.com/en/news-and-insights/latest-market-news/2876087-opec-cuts-2026-oil-demand-growth-forecast-again">link</a></td></tr>
   </table></div>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../../barrels/index.html#disposition">S&amp;D balance</a><a href="../../barrels/index.html#st3-table">Projected ST3</a><a href="../../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../../barrels/index.html">Supply hub</a><a href="../../projects/index.html">All projects</a><a href="../../apportionment/index.html">Apportionment</a><a href="../../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../../maintenance/index.html">Maintenance</a><a href="../../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../../world/middle-east/index.html">Middle East watch</a><a href="../../world/russia-refining/index.html">Russian refineries</a><a href="../../world/china-imports/index.html">China imports</a><a href="../../world/spr-storage/index.html">SPR & storage</a><a href="../../world/sour/index.html">The global sour barrel</a><a href="../../venezuela/index.html">Venezuela watch</a><a href="../../world/trump/index.html">Trump watch</a><a href="../../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../../digest/index.html">Latest digest</a><a href="../../digest/index.html">Edition archive</a><a href="../../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../../fieldguide/index.html">Field guide</a><a href="../../global-balance.html">Global balance</a><a href="../../tolls/index.html">Toll search</a><a href="../../commitments/index.html">Commitments</a><a href="../../sat-watch.html">Sat watch</a><a href="../../maps/index.html">Maps</a><a href="../../chartbook.html">Chartbook</a><a href="../../options/index.html">The Wing (options)</a><a href="../../options/charts/index.html">The Wing charts</a><a href="../../data/index.html">Data downloads</a><a href="../../sources/index.html">Sources</a><a href="../../methodology/index.html">Methodology</a><a href="../../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -875,5 +929,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

@@ -1,0 +1,259 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_venezuela",
+ "country": "Venezuela",
+ "country_code": "VEN",
+ "title": "Venezuela country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "south_america",
+ "rollup_name": "South America",
+ "tier": "panel",
+ "grain": {
+  "capture": "Country grain only, as reported to the agencies. Nothing finer is held, and nothing is disaggregated downward.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 972.5,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 1080.9,
+     "basis": "JODI crude oil indigenous production, monthly mean",
+     "vintage": "2026-10-29"
+    },
+    {
+     "spine": "OPEC_ASB2026",
+     "spine_label": "OPEC Annual Statistical Bulletin 2026",
+     "value": 1080.0,
+     "basis": "Crude oil production, ASB 2026 as printed in mb/d, scaled x1000 (Kuwait/Saudi incl. Neutral Zone share)",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 972.5,
+   "spread_pct": 11.1
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1011.7,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 1011.7,
+   "spread_pct": null
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "reads": [
+    {
+     "spine": "JODI",
+     "spine_label": "JODI",
+     "value": 25.8,
+     "basis": "JODI TOTPRODS total demand, mean over 6 reported months of 2025",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "JODI",
+   "headline_value": 25.8,
+   "spread_pct": null
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "reads": [
+    {
+     "spine": "OPEC_ASB2026",
+     "spine_label": "OPEC Annual Statistical Bulletin 2026",
+     "value": 700.0,
+     "basis": "Crude oil exports, ASB 2026 as printed in mb/d, scaled x1000",
+     "vintage": "2026-10-28"
+    }
+   ],
+   "headline_spine": "OPEC_ASB2026",
+   "headline_value": 700.0,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 1000.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 1000.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 972.5,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 1011.7,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [
+  {
+   "id": "consumption_products",
+   "label": "Product consumption",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": 25.8,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "JODI",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "JODI TOTPRODS total demand, mean over 6 reported months of 2025"
+  },
+  {
+   "id": "exports_crude",
+   "label": "Crude exports",
+   "group": null,
+   "dest": null,
+   "kind": "export",
+   "value_kbd": 700.0,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "OPEC Annual Statistical Bulletin 2026",
+   "vintage": "2026-10-28 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil exports, ASB 2026 as printed in mb/d, scaled x1000"
+  }
+ ],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "national_record",
+   "state": "missing",
+   "reason": "Official oil publication stopped years ago. No public national series exists.",
+   "route": "National statistics office or energy ministry series (shelf coverage map)."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 972.5,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 972.5,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "JODI",
+     "value": 1080.9,
+     "kind": "spine",
+     "gap": 108.4,
+     "cause": "Open gap: cause not established in the held record."
+    },
+    {
+     "label": "OPEC Annual Statistical Bulletin 2026",
+     "value": 1080.0,
+     "kind": "spine",
+     "gap": 107.5,
+     "cause": "Open gap: cause not established in the held record."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 1011.7,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 1011.7,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

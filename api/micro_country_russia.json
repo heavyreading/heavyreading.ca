@@ -1,0 +1,236 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_russia",
+ "country": "Russia",
+ "country_code": "RUS",
+ "title": "Russia country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "fsu",
+ "rollup_name": "FSU and Central Asia",
+ "tier": "panel",
+ "grain": {
+  "capture": "Country grain only, as reported to the agencies. Nothing finer is held, and nothing is disaggregated downward.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 9884.8,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 9884.8,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 10534.2,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 10534.2,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 10180.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 10180.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 9884.8,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 10534.2,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "consumption_products",
+   "state": "missing",
+   "reason": "No 2025 product consumption read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "national_record",
+   "state": "missing",
+   "reason": "Official oil publication suspended since 2022. No national series exists; all reads are outside estimates.",
+   "route": "National statistics office or energy ministry series (shelf coverage map)."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 9884.8,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 9884.8,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 10534.2,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 10534.2,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": [
+  {
+   "kind": "exports_by_destination",
+   "title": "Total oil exports by destination",
+   "source": "IEA Oil Market Report, Table 18 (IEA estimates)",
+   "period": "2025 average, kb/d",
+   "note": "Crude plus products. Complete partition of the total.",
+   "rows": [
+    {
+     "region": "China",
+     "kbd": 2462.5,
+     "share": 33.6
+    },
+    {
+     "region": "India",
+     "kbd": 1737.5,
+     "share": 23.7
+    },
+    {
+     "region": "Other",
+     "kbd": 962.5,
+     "share": 13.1
+    },
+    {
+     "region": "T\u00fcrkiye",
+     "kbd": 800.0,
+     "share": 10.9
+    },
+    {
+     "region": "Middle East",
+     "kbd": 375.0,
+     "share": 5.1
+    },
+    {
+     "region": "Africa",
+     "kbd": 375.0,
+     "share": 5.1
+    },
+    {
+     "region": "Europe (EU)",
+     "kbd": 262.5,
+     "share": 3.6
+    },
+    {
+     "region": "Latin America",
+     "kbd": 200.0,
+     "share": 2.7
+    },
+    {
+     "region": "Unknown",
+     "kbd": 137.5,
+     "share": 1.9
+    },
+    {
+     "region": "OECD Asia",
+     "kbd": 12.5,
+     "share": 0.2
+    },
+    {
+     "region": "UK + US",
+     "kbd": 0.0,
+     "share": 0.0
+    }
+   ],
+   "total": 7337.5
+  }
+ ]
+}

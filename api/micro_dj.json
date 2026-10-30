@@ -1,0 +1,504 @@
+{
+ "schema": "micro-balance/1",
+ "region": "dj",
+ "title": "DJ Basin micro-balance",
+ "built": "2026-10-29",
+ "as_of": "October 2026",
+ "as_of_note": "Production is the EIA monthly working figure through Jul 2026. Prices are October 2026 Argus samples, not a held series. Capacities as of Oct 2026.",
+ "units": "kb/d unless a field name says otherwise",
+ "cards": {
+  "nameplate_kbd": null,
+  "effective_kbd": null,
+  "supply_kbd": 450.0,
+  "demand_kbd": 450.0,
+  "in_region_production_kbd": 450.0,
+  "in_region_demand_kbd": 98.0,
+  "imports_kbd": null,
+  "exports_kbd": 350.0,
+  "utilization_pct": null,
+  "balance_kbd": 0.0
+ },
+ "supply": [
+  {
+   "id": "wattenberg_core",
+   "label": "Wattenberg core production (at the EIA Colorado control total)",
+   "group": "production",
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 450.0,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA state crude production series MCRFPCO2 (held, micro_balances/sources/eia/)",
+   "vintage": "2026 monthly, through Jul 2026",
+   "basis": "measured",
+   "note": "Carried at the EIA Colorado state total, of which the DJ and Wattenberg are the overwhelming majority (the Piceance and other Colorado basins are small and mostly gassy). Monthly prints Dec 2025 to Jul 2026 ran 458, 443, 453, 462, 460, 454, 444, 442; the working figure is about 450. The precise DJ-only split and true operator shares require the ECMC county and operator pull, which is not yet in the library. The 2025 Colorado average was about 475."
+  },
+  {
+   "id": "dj_wyoming_fringe",
+   "label": "DJ Wyoming and fringe (Laramie County WY, northern CO fringe)",
+   "group": "production",
+   "dest": null,
+   "kind": "production",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "range",
+   "range_kbd": [
+    10.0,
+    20.0
+   ],
+   "memo": false,
+   "source": "WOGCC and ECMC (not yet pulled)",
+   "vintage": "2026",
+   "basis": "estimated",
+   "note": "Small northern fringe of the basin, estimated at roughly 10-20 kb/d and not separately held. Carried as a range outside the supply card; the dossier frame total including the fringe is about 455-470."
+  },
+  {
+   "id": "guernsey_pool_inbound",
+   "label": "Inbound: Guernsey pool barrels to Commerce City (Suncor Pipeline)",
+   "group": "northern",
+   "dest": null,
+   "kind": "import",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "missing",
+   "range_kbd": null,
+   "memo": false,
+   "source": "Suncor Annual Information Form (Feb 26, 2025), qualitative; East Daley Guernsey note (route)",
+   "vintage": "2025-26",
+   "basis": "modelled",
+   "note": "The refinery's northern supply route is real and company-operated: Suncor pipelines run from storage at Guernsey to Commerce City, carrying Guernsey-pool barrels (Bakken, Powder River, and Canadian WCS and synthetic delivered at Guernsey). The split of the 98 kb/d refinery slate between this route and local DJ gathering is not publicly disclosed."
+  },
+  {
+   "id": "stabilized_crude_memo",
+   "label": "Stabilized crude from gas processing (memo, not additive)",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": null,
+   "nameplate_kbd": 155.0,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "capacity_only",
+   "range_kbd": null,
+   "memo": true,
+   "source": "Western Midstream Q1 2026 materials (Latham plant)",
+   "vintage": "Q1 2026",
+   "basis": "capacity",
+   "note": "Boundary memo so nobody double counts it: stabilization capacity of about 155 kb/d at the Latham plant is a gas-plant figure. On a crude-only basis this stream is already inside the production item above."
+  },
+  {
+   "id": "trucked_lease_memo",
+   "label": "Trucked and lease barrels direct to Platteville and Carr (memo, not additive)",
+   "group": null,
+   "dest": null,
+   "kind": "other",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "missing",
+   "range_kbd": null,
+   "memo": true,
+   "source": "ECMC transporter data (concept); EIA counts production at the lease",
+   "vintage": "2026",
+   "basis": "measured",
+   "note": "Not a gap: EIA counts production at the lease, so these barrels are already inside the production items. Carried as a memo line so the delivery route is visible and never added twice."
+  }
+ ],
+ "demand": [
+  {
+   "id": "commerce_city_refinery",
+   "label": "Commerce City refinery (local refining)",
+   "group": "local_refining",
+   "dest": "Commerce City, Colorado",
+   "kind": "refinery",
+   "value_kbd": null,
+   "nameplate_kbd": 98.0,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "capacity_only",
+   "range_kbd": null,
+   "memo": false,
+   "source": "Suncor MD&A and IR materials (98 kb/d, consistent); EIA PADD 4 refinery inputs and utilization (held)",
+   "vintage": "2026",
+   "basis": "capacity",
+   "note": "Colorado's only refinery and the only demand that consumes no long-haul pipe: when it runs full it floors about a fifth of basin supply at a short-haul netback, and its turnarounds are basin events (several weeks of planned maintenance in spring 2026). One OPIS item in March 2026 cited 117 kb/d; Suncor's own filings say 98 and the dossier uses 98. Runs near nameplate outside turnarounds; PADD 4 refinery utilization printed 100.7-100.8% in Jun-Jul 2026 (EIA, PADD grain). Its slate is two-source: local DJ gathering plus Guernsey-pool barrels on Suncor's own line."
+  },
+  {
+   "id": "saddlehorn_grand_mesa",
+   "label": "Saddlehorn and Grand Mesa to Cushing",
+   "group": "cushing_bound",
+   "dest": "Cushing, Oklahoma",
+   "kind": "pipeline",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "range",
+   "range_kbd": [
+    150.0,
+    300.0
+   ],
+   "memo": false,
+   "source": "Hess Midstream release, Oct 2026 (system described as about 300 kb/d); Global Energy Monitor (segments: Saddlehorn 190, Grand Mesa 150)",
+   "vintage": "2026",
+   "basis": "capacity",
+   "note": "Sold and operated as one DJ-to-Cushing system (Saddlehorn: Carr to Platteville, the collection leg; Grand Mesa: Platteville to Cushing). Segment nameplates differ and the binding segment governs, so the honest state is a range, 150 (the Grand Mesa segment) to about 300 (the company system figure). Monthly flows are not publicly printed. Ownership is shifting: Chevron's 20% Saddlehorn interest moves to Hess Midstream in the Oct 2026 transaction."
+  },
+  {
+   "id": "white_cliffs_crude",
+   "label": "White Cliffs to Cushing (crude service)",
+   "group": "cushing_bound",
+   "dest": "Cushing, Oklahoma",
+   "kind": "pipeline",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "range",
+   "range_kbd": [
+    70.0,
+    150.0
+   ],
+   "memo": false,
+   "source": "SemGroup and Energy Transfer history (2014 looping to about 150 combined; 2019 conversion of one line to NGL service)",
+   "vintage": "2019 conversion; capacity unresolved",
+   "basis": "capacity",
+   "note": "Twin 12-inch lines, Platteville to Cushing. The 2014 looping took combined crude capacity to about 150; in 2019 one line was converted to NGL (Y-grade) service, so crude capacity on the remaining line is materially lower. Public citations run 70 to 215 (the 215 appears stale). The range carries the two sourced anchors: about 70 post-conversion working figure to 150 pre-conversion headline. No clean post-conversion nameplate was found; Form 6 and the FERC tariff resolve it."
+  },
+  {
+   "id": "pony_express_necl",
+   "label": "Pony Express via Northeast Colorado Lateral (DJ-loaded)",
+   "group": "cushing_bound",
+   "dest": "Cushing, Oklahoma (via Guernsey mainline)",
+   "kind": "pipeline",
+   "value_kbd": 122.0,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "modelled",
+   "range_kbd": null,
+   "memo": false,
+   "source": "East Daley note, Sep 2026 (NECL volumes); Enbridge acquisition materials (mainline capacity)",
+   "vintage": "Sep 2026",
+   "basis": "modelled",
+   "note": "East Daley puts Northeast Colorado Lateral loadings at about 122 kb/d average, roughly a quarter of Pony Express flow. DJ access to Pony is access to whatever space Bakken and Powder River barrels leave behind: the lateral is not a DJ-dedicated nameplate, so no nameplate is printed. Pony Express mainline is about 460 kb/d average annual (Guernsey to Cushing), rising to about 515 with PXP2 in late 2027; Enbridge is acquiring 75% of it (announced Sep 2026)."
+  },
+  {
+   "id": "northbound_guernsey",
+   "label": "Northbound placements into the Guernsey pool",
+   "group": "northern",
+   "dest": "Guernsey pool, Wyoming",
+   "kind": "export",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "missing",
+   "range_kbd": null,
+   "memo": false,
+   "source": "Argus Light Sweet Guernsey assessment (not held); East Daley Guernsey analysis (concept)",
+   "vintage": "2026",
+   "basis": "modelled",
+   "note": "DJ barrels reach the Guernsey market by northbound movements out of the northern DJ and commercially by swaps against Guernsey-pool grades. Volumes vary with the swap market and no public series exists. When the Guernsey light-sweet pool cheapens (strong Bakken or Canadian inflow), DJ netbacks at Platteville feel it even though no DJ barrel went north."
+  },
+  {
+   "id": "other_rockies_refining_xref",
+   "label": "Other Rockies refining via Guernsey and Platte (cross-reference, not a DJ item)",
+   "group": null,
+   "dest": "Salt Lake City, Kansas and Sinclair (via Guernsey)",
+   "kind": "refinery",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "missing",
+   "range_kbd": null,
+   "memo": true,
+   "source": "EIA PADD 4 (held); East Daley Guernsey analysis (refinery list)",
+   "vintage": "2026",
+   "basis": "capacity",
+   "note": "Carried as a memo cross-reference only, so barrels are never double counted with the Guernsey build: Salt Lake City's five refineries (about 216 kb/d combined), Kansas refineries via Platte, and Sinclair sit downstream of Guernsey. DJ barrels reach this demand only through the northbound placement item above."
+  },
+  {
+   "id": "storage_residual_dj",
+   "label": "Storage change and truck/rail residual (balancing line)",
+   "group": null,
+   "dest": "Platteville and Carr tankage",
+   "kind": "plug",
+   "value_kbd": null,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "missing",
+   "range_kbd": null,
+   "memo": false,
+   "source": "Computed residual in the house balance build; EIA PADD 4 stocks (held, PADD grain only)",
+   "vintage": "n/a",
+   "basis": "modelled",
+   "note": "The balancing line, printed not buried, per house doctrine. No DJ-grain stock series exists; PADD 4 stocks are the held proxy at the wrong grain and are not dressed up as a DJ number."
+  }
+ ],
+ "groups": [
+  {
+   "id": "production",
+   "label": "Production",
+   "value_kbd": null,
+   "members": [
+    "wattenberg_core",
+    "dj_wyoming_fringe"
+   ],
+   "source": "Dossier section 8, Level 3",
+   "vintage": "2026",
+   "basis": "measured",
+   "note": "State total plus the unmeasured northern fringe; the group prints no separate value because the fringe is a range."
+  },
+  {
+   "id": "cushing_bound",
+   "label": "Cushing-bound",
+   "value_kbd": null,
+   "members": [
+    "saddlehorn_grand_mesa",
+    "white_cliffs_crude",
+    "pony_express_necl"
+   ],
+   "source": "Dossier sections 4 and 7",
+   "vintage": "2026",
+   "basis": "modelled",
+   "note": "The filter's most-used slice: total DJ-to-Cushing capability against the roughly 350 kb/d exit requirement. Combined southbound capability centres on about 450-490 (Saddlehorn/GM 150-300, White Cliffs 70-150, NECL practical access about 120), against about 350 of requirement. Headroom exists on paper and is unevenly distributed across owners, commitments and maintenance schedules."
+  },
+  {
+   "id": "local_refining",
+   "label": "Local refining",
+   "value_kbd": null,
+   "members": [
+    "commerce_city_refinery",
+    "guernsey_pool_inbound"
+   ],
+   "source": "Dossier section 3",
+   "vintage": "2026",
+   "basis": "capacity",
+   "note": "The refinery and its two supply routes: local DJ gathering, and the Guernsey-pool line Suncor operates itself. The route split is undisclosed."
+  },
+  {
+   "id": "northern",
+   "label": "Northern (Guernsey interface)",
+   "value_kbd": null,
+   "members": [
+    "guernsey_pool_inbound",
+    "northbound_guernsey"
+   ],
+   "source": "Dossier section 5",
+   "vintage": "2026",
+   "basis": "modelled",
+   "note": "Everything that touches the Guernsey pool, where DJ barrels meet Bakken and Canadian barrels competing for the same downstream pipes. Guernsey congestion is often caused by other basins' barrels, not Colorado's."
+  },
+  {
+   "id": "light_sweet_complex",
+   "label": "Light sweet complex (pricing group)",
+   "value_kbd": null,
+   "members": [
+    "dj_light_diff",
+    "white_cliffs_diff",
+    "niobrara_diff",
+    "light_sweet_guernsey_diff"
+   ],
+   "source": "Argus Americas Crude sample (Sep 3, 2026 issue, reporting Oct 2026 timing)",
+   "vintage": "Oct 2026 sample",
+   "basis": "measured",
+   "note": "A pricing group, following the template's Region Prices card: the four assessed grades that price the basin and its northern pool. Members are price entries, not volume items."
+  }
+ ],
+ "prices": [
+  {
+   "id": "dj_light_diff",
+   "label": "DJ Light differential (delivered Cushing, vs WTI)",
+   "value": 0.72,
+   "unit": "$/bbl vs WTI",
+   "state": "value",
+   "source": "Argus Americas Crude sample (Sep 3, 2026 issue, reporting Oct 2026 timing)",
+   "vintage": "Oct 2026",
+   "basis": "measured",
+   "note": "October 2026 sample month printed a premium: DJ Light swings both sides of WTI (an earlier sample month printed minus 0.85), a premium when Cushing pulls and pipes have room, a discount when barrels back up. Samples, not a series."
+  },
+  {
+   "id": "white_cliffs_diff",
+   "label": "White Cliffs differential (vs WTI)",
+   "value": 0.75,
+   "unit": "$/bbl vs WTI",
+   "state": "value",
+   "source": "Argus Americas Crude sample (Sep 3, 2026 issue, reporting Oct 2026 timing)",
+   "vintage": "Oct 2026",
+   "basis": "measured",
+   "note": "Tracks DJ Light closely: the same barrel on a different pipe."
+  },
+  {
+   "id": "niobrara_diff",
+   "label": "Niobrara differential (at Cushing, vs WTI)",
+   "value": 1.25,
+   "unit": "$/bbl vs WTI",
+   "state": "value",
+   "source": "Argus Americas Crude sample (Sep 3, 2026 issue, reporting Oct 2026 timing)",
+   "vintage": "Oct 2026",
+   "basis": "measured",
+   "note": "An Argus posting name for Wattenberg-area crude at Cushing. An earlier sample month printed plus 0.75."
+  },
+  {
+   "id": "light_sweet_guernsey_diff",
+   "label": "Light Sweet Guernsey differential (vs CMA)",
+   "value": 4.13,
+   "unit": "$/bbl vs CMA",
+   "state": "value",
+   "source": "Argus Americas Crude sample (Sep 3, 2026 issue, reporting Oct 2026 timing)",
+   "vintage": "Oct 2026",
+   "basis": "measured",
+   "note": "Note the different basis before comparing: this grade prices against the NYMEX calendar month average, not spot WTI. The Oct 2026 sample printed a strong premium (Salt Lake and Kansas refiners competing for the pool); an earlier sample printed plus 1.43, and Jan 2023 deals printed at minus 0.10, so it sits at a discount in weak tape."
+  },
+  {
+   "id": "wcs_cushing_diff",
+   "label": "WCS Cushing differential (for contrast, vs CMA)",
+   "value": -8.78,
+   "unit": "$/bbl vs CMA",
+   "state": "value",
+   "source": "Argus Americas Crude sample (Sep 3, 2026 issue, reporting Oct 2026 timing)",
+   "vintage": "Oct 2026",
+   "basis": "measured",
+   "note": "Carried from the same sample for contrast: the Canadian heavy barrel at the same hub priced 8.78 under the calendar average in the month the DJ light barrel printed premiums. It belongs to the WCSB and Cushing frame, not the DJ balance."
+  },
+  {
+   "id": "dj_diff_series",
+   "label": "DJ differential history (full assessed series)",
+   "value": null,
+   "unit": "$/bbl",
+   "state": "missing",
+   "source": "Argus and Platts assessments (licensed, not held)",
+   "vintage": null,
+   "basis": "measured",
+   "note": "Only two sample months are held. Without a diff series the balance cannot be scored against price; nothing is interpolated."
+  }
+ ],
+ "storage": null,
+ "corridors": [
+  {
+   "id": "corr_saddlehorn_cushing",
+   "label": "Platteville to Cushing (Saddlehorn and Grand Mesa)",
+   "from": "Carr and Platteville, Colorado",
+   "to": "Cushing, Oklahoma",
+   "items": [
+    "saddlehorn_grand_mesa"
+   ],
+   "note": "Two pipes, one commercial system: Saddlehorn collects Carr to Platteville, Grand Mesa runs Platteville to Cushing."
+  },
+  {
+   "id": "corr_white_cliffs_cushing",
+   "label": "Platteville to Cushing (White Cliffs)",
+   "from": "Platteville, Colorado",
+   "to": "Cushing, Oklahoma",
+   "items": [
+    "white_cliffs_crude"
+   ],
+   "note": "One twin line remains in crude service after the 2019 NGL conversion."
+  },
+  {
+   "id": "corr_necl_pony",
+   "label": "Northeast Colorado Lateral to Pony Express to Cushing",
+   "from": "Eastern Colorado (Sterling area)",
+   "to": "Cushing, Oklahoma",
+   "items": [
+    "pony_express_necl"
+   ],
+   "note": "DJ barrels compete with Bakken and Powder River barrels for mainline space from Guernsey south."
+  },
+  {
+   "id": "corr_guernsey_refinery",
+   "label": "Guernsey to Commerce City (Suncor Pipeline)",
+   "from": "Guernsey, Wyoming",
+   "to": "Commerce City, Colorado",
+   "items": [
+    "guernsey_pool_inbound"
+   ],
+   "note": "The refinery's northern supply route, operated by Suncor itself."
+  }
+ ],
+ "notes": [
+  "Capacity cards are null on purpose. The dossier's honest frame is a band: nameplate about 550-590 (the sum of segment nameplates, counting the pre-conversion White Cliffs headline) and effective about 490-540 (White Cliffs at its post-conversion crude reality of about 70, Saddlehorn and Grand Mesa at the binding-segment read). A single printed number would pick a side in a genuine two-source conflict; the Form 6 build resolves it.",
+  "Supply and demand cards carry the dossier's clearing frame: supply about 450 of Colorado crude (DJ-dominated) plus a small unmeasured Wyoming fringe carried as a range item outside the card; demand clears at the same level, with no structural unsold-barrel overhang at current production. This is the opposite shape from East Daley's Canada page, where their demand is wants and exceeds supply.",
+  "Demand footing: the only egress flow actually published is the NECL average (122, East Daley). Commerce City (98) is capacity with runs near nameplate. The remaining roughly 230 kb/d clears on Saddlehorn/Grand Mesa and White Cliffs, inside their combined 220-450 capacity band, plus marginal northbound placements. The items do not foot to the card because flows are not published, and the feed says so rather than modelling them silently.",
+  "Exports card (350) is the exit requirement from the dossier's arithmetic: supply of about 450 less the 98 of local refining leaves roughly 350 that must exit, almost entirely southbound to Cushing, plus marginal truck, rail and northbound placements. Imports card is null because the one inbound route (Guernsey pool to Commerce City) has no disclosed volume.",
+  "Premise correction, evidenced in the dossier: Suncor is not a DJ producer. In this basin Suncor is the only refiner, the operator of the Guernsey-to-Commerce-City line, and a Canadian producer whose oil-sands barrels can reach its own refinery through the Guernsey pool. The producer-refiner inside the DJ is Chevron (largest producer, gathering owner, Saddlehorn part-owner).",
+  "Premise correction, evidenced in the dossier: Cheyenne carries zero crude refinery demand. HF Sinclair ceased crude processing there in 2020 and converted the plant to renewable diesel (completed 2022). No Cheyenne refinery item exists in this feed; the name survives only in pricing geography.",
+  "What binds, in order: local refining first (Commerce City is the only demand that consumes no long-haul pipe, so its turnarounds are the basin's largest scheduled swing), then southbound pipe space, with the marginal pipe often decided at Guernsey by Bakken and Canadian barrels rather than in Colorado.",
+  "Forward items, carried here and never in current cards: PXP2 takes Pony Express to about 515 in late 2027; Bridger Pipeline has filed a 550 kb/d line from the Canadian border to Guernsey (construction target Jul 2027), which East Daley's hub model says Guernsey cannot absorb without a Pony Express twin; Enbridge's Tallgrass acquisition (announced Sep 2026) puts Pony Express in the same owner family as Express-Platte and the Mainline.",
+  "Tariffs for the DJ corridor (Saddlehorn, Grand Mesa, White Cliffs, Pony Express, Platte) are FERC-filed and public, but tolls.db does not carry them yet; they are a named fetch in the tolls workstream."
+ ],
+ "gaps": [
+  {
+   "item": "saddlehorn_grand_mesa",
+   "state": "range",
+   "reason": "Company system figure (about 300) conflicts with segment ratings (190 plus 150); flows are not printed monthly.",
+   "route": "Parse the Saddlehorn and Grand Mesa carriers' Form 6 Schedule 600 filings and load their FERC tariffs into tolls.db."
+  },
+  {
+   "item": "white_cliffs_crude",
+   "state": "range",
+   "reason": "No clean post-2019-conversion crude nameplate exists in public sources; citations run 70 to 215.",
+   "route": "Energy Transfer Form 6 filings for the White Cliffs filer plus its FERC tariff."
+  },
+  {
+   "item": "wattenberg_core",
+   "state": "value",
+   "reason": "The item is carried at the EIA state control total; the DJ-only county split and true operator shares are not held.",
+   "route": "ECMC production-by-county and by-operator downloads (public), mirrored on the ND DMR pattern in the library."
+  },
+  {
+   "item": "dj_wyoming_fringe",
+   "state": "range",
+   "reason": "Wyoming DJ (Laramie County) production is an estimate, not a series.",
+   "route": "WOGCC county pull, alongside the ECMC pull."
+  },
+  {
+   "item": "guernsey_pool_inbound",
+   "state": "missing",
+   "reason": "Commerce City's slate split between local DJ gathering and Guernsey-delivered barrels is not publicly disclosed.",
+   "route": "Form 6 for the Suncor pipeline entity plus EIA-820 refinery-level data (annual)."
+  },
+  {
+   "item": "northbound_guernsey",
+   "state": "missing",
+   "reason": "No public series exists for DJ placements into the Guernsey pool.",
+   "route": "The Light Sweet Guernsey assessment (licensed) plus Guernsey hub flow work in the Guernsey destination build."
+  },
+  {
+   "item": "dj_diff_series",
+   "state": "missing",
+   "reason": "Argus and Platts DJ differential series are licensed products; two sample months only are held.",
+   "route": "Broker marks through the existing channel, or a licence decision. Flagged, not faked."
+  },
+  {
+   "item": "storage_residual_dj",
+   "state": "missing",
+   "reason": "No DJ-grain stock series exists; the balancing line is computed when the balance is run, not fetched.",
+   "route": "Computed as the residual in the monthly balance build; EIA PADD 4 stocks are held as the proxy check."
+  },
+  {
+   "item": "other_rockies_refining_xref",
+   "state": "missing",
+   "reason": "Cross-reference only in this region: the demand belongs to the Guernsey destination balance and is carried there to prevent double counting.",
+   "route": "The Guernsey destination build in the program's build order."
+  },
+  {
+   "item": "trucked_lease_memo",
+   "state": "missing",
+   "reason": "Not a data gap: EIA counts production at the lease, so these barrels are already inside the production items. The entry exists so the item's state is registered; there is nothing to fetch.",
+   "route": "No route needed. Do not fetch; adding a series would double count."
+  }
+ ]
+}

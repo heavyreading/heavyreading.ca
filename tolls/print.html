@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pipeline Tolls — Heavy Reading Print Sheet</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #191919;
+         background: #e8e6e1; }
+  .sheet { background: #fff; width: 279mm; min-height: 210mm;
+           margin: 10mm auto; padding: 10mm 11mm 8mm;
+           box-shadow: 0 1px 6px rgba(0,0,0,.25); }
+  header { border-bottom: 2.5px solid #191919; padding-bottom: 3mm;
+           display: flex; justify-content: space-between;
+           align-items: baseline; }
+  .brand { font-family: Helvetica, Arial, sans-serif; font-weight: 700;
+           letter-spacing: 3.5px; font-size: 10.5pt; }
+  .brand small { display: block; letter-spacing: 1.2px; font-weight: 400;
+                 font-size: 7.5pt; color: #4d4d4d; margin-top: 1mm; }
+  h1 { font-size: 21pt; font-weight: 700; letter-spacing: .2px; }
+  .vintage { font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt;
+             color: #4d4d4d; text-align: right; }
+  .cols { display: flex; gap: 7mm; margin-top: 5mm; }
+  .cols.stack { display: block; }
+  .cols.stack .nums { margin-top: 5mm; }
+  .map { flex: 0 0 63%; }
+  .nums { flex: 1; font-family: Helvetica, Arial, sans-serif; }
+  .nums h2, .sheet h2.ph { font-size: 9pt; letter-spacing: 1.6px;
+             color: #4d4d4d; border-bottom: 1px solid #bbb;
+             padding-bottom: 1.2mm; margin: 0 0 2.5mm;
+             font-family: Helvetica, Arial, sans-serif; }
+  .nums h2:not(:first-child), .sheet h2.ph:not(:first-child) {
+             margin-top: 5mm; }
+  .row { font-size: 10.5pt; line-height: 1.45; margin-bottom: 2.2mm; }
+  .row .val { font-size: 15pt; font-weight: 700; line-height: 1.25; }
+  .small { font-size: 8.5pt; color: #4d4d4d; line-height: 1.4; }
+  .lead { font-size: 11pt; line-height: 1.5; margin-top: 4mm; }
+  .tbl { width: 100%; border-collapse: collapse;
+         font-family: Helvetica, Arial, sans-serif; font-size: 9pt;
+         margin-top: 2mm; }
+  .tbl th { text-align: left; letter-spacing: .8px; font-size: 8pt;
+            color: #4d4d4d; border-bottom: 1.5px solid #191919;
+            padding: 1.2mm 2.5mm 1.2mm 0; }
+  .tbl td { border-bottom: 1px solid #ddd; padding: 1.2mm 2.5mm 1.2mm 0;
+            line-height: 1.35; vertical-align: top; }
+  .tbl th.n, .tbl td.n { text-align: right; padding-right: 0; }
+  .tbl tr.tot td { border-top: 1.5px solid #191919;
+                   border-bottom: none; font-weight: 700; }
+  footer { border-top: 1px solid #bbb; margin-top: 5mm; padding-top: 2mm;
+           font-family: Helvetica, Arial, sans-serif; font-size: 7.8pt;
+           color: #4d4d4d; line-height: 1.45; }
+  @page { size: landscape; margin: 8mm; }
+  @media print {
+    body { background: #fff; }
+    .sheet { width: auto; min-height: auto; margin: 0; padding: 2mm;
+             box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div class="brand">HEAVY READING<small>heavyreading.ca</small></div>
+    <h1>Pipeline Tolls</h1>
+    <div class="vintage">PRINT SHEET<br>Data vintage: 2026-10-15<br>
+    Compiled 2026-10-30</div>
+  </header>
+<div class="cols stack">
+<p class="lead">A toll is the price a pipeline charges to move oil from where it enters the line to where it is delivered, charged per barrel or per cubic metre. Every toll on this sheet comes from a tariff the pipeline filed with its regulator, so any reader can check the figure against the filing itself.</p>
+<div class="nums"><h2>THE DURABLE NUMBERS</h2><p class="row"><b>Toll records in the database</b><br><span class="val">240</span><br><span class="small">Every record in tolls.json; no record in the database is flagged unsourced</span></p><p class="row"><b>Records in effect</b><br><span class="val">222</span><br><span class="small">18 further records are marked superseded and are not printed as current tolls</span></p><p class="row"><b>Pipeline systems</b><br><span class="val">11</span><br><span class="small">9 of the systems named in tolls.json carry toll records</span></p></div>
+<h2 class="ph">HEADLINE FILED TOLLS</h2><table class="tbl"><thead><tr><th class="">System</th><th class="">Movement</th><th class="">Grade and terms</th><th class="n">Filed toll</th><th class="n">Effective</th></tr></thead><tbody><tr><td class="">Enbridge Mainline</td><td class="">Edmonton to the international boundary near Gretna, Manitoba</td><td class="">Light crude, uncommitted</td><td class="n">21.4676 CAD/m3</td><td class="n">2026-07-01</td></tr><tr><td class="">Trans Mountain</td><td class="">Edmonton to Westridge Marine Terminal, British Columbia</td><td class="">Light crude, uncommitted, interim, tank metered</td><td class="n">87.9761 CAD/m3</td><td class="n">2026-05-01</td></tr><tr><td class="">Trans Mountain</td><td class="">Edmonton to Westridge Marine Terminal, British Columbia</td><td class="">Heavy crude, uncommitted, interim, tank metered</td><td class="n">88.4308 CAD/m3</td><td class="n">2026-05-01</td></tr><tr><td class="">Keystone</td><td class="">Hardisty to Cushing, Oklahoma</td><td class="">Light crude, uncommitted</td><td class="n">6.21 USD/bbl</td><td class="n">2026-09-01</td></tr><tr><td class="">Keystone</td><td class="">Hardisty to Cushing, Oklahoma</td><td class="">Heavy crude, uncommitted</td><td class="n">6.75 USD/bbl</td><td class="n">2026-09-01</td></tr><tr><td class="">Express</td><td class="">Hardisty to Casper, Wyoming</td><td class="">Light crude, committed, 20 years or longer</td><td class="n">20.7122 USD/m3</td><td class="n">2026-07-01</td></tr><tr><td class="">Express</td><td class="">Hardisty to Casper, Wyoming</td><td class="">Heavy crude, committed, 20 years or longer</td><td class="n">25.2662 USD/m3</td><td class="n">2026-07-01</td></tr><tr><td class="">Cochin</td><td class="">Fort Saskatchewan to Kankakee County, Illinois</td><td class="">Condensate, uncommitted</td><td class="n">5.5 USD/bbl</td><td class="n">2026-07-01</td></tr><tr><td class="">Flanagan South and Seaway</td><td class="">Hardisty to the Texas Gulf Coast</td><td class="">Light crude, uncommitted</td><td class="n">10.3992 USD/bbl</td><td class="n">2026-07-02</td></tr><tr><td class="">Flanagan South and Seaway</td><td class="">Hardisty to the Texas Gulf Coast</td><td class="">Heavy crude, uncommitted</td><td class="n">9.8608 USD/bbl</td><td class="n">2026-07-02</td></tr></tbody></table><p class="small">Express committed tolls are filed by contract term; the 20 years or longer term is printed here, and the shorter terms are in the full Tolls Search page.</p><p class="small">Trans Mountain tolls printed here are the tank metered interim tolls. The same tariff also files a direct inject rate with a credit; it is in the full Tolls Search page.</p><p class="small">Cochin committed tolls are filed by shipper class, so no single committed toll is printed here; the classes are in the full Tolls Search page.</p><p class="small">Named in the database with no toll records in this vintage, so no toll is printed for them: Enbridge Lakehead System, Rangeland Pipeline.</p><p class="small">Southern Lights is not in this database vintage, so no toll is printed for it.</p>
+</div>
+  <footer>Method and sources: tolls compiled from filed tariff documents of the Canada Energy Regulator and the US Federal Energy Regulatory Commission; the source filing and effective date ride with every record on the Tolls Search page. Tolls are printed in the units the tariff files them in. Charges a tariff lists separately from the toll, such as surcharges the record names as excluded, are not in these figures; the full record states what each toll includes and excludes.</footer>
+</div>
+</body>
+</html>

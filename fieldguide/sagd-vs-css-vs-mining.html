@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="fieldguide/sagd-vs-css-vs-mining.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,15 +710,15 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>SAGD vs CSS vs mining</h1>
   <p class="sub">Steam-assisted gravity drainage (SAGD), cyclic steam stimulation (CSS), and mining: the three ways to get bitumen out of the ground.</p>
   <p class="vintage">Field guide entry &middot; written September 29, 2026.</p>
-  <h2>Mining</h2>
+  <h2>Mining<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Truck and shovel. Where the deposit sits close to the surface, the overburden comes off and the oil sand goes to a hot-water extraction plant. Only about a fifth of the oil sands resource is shallow enough to mine; the rest needs wells. Mined projects: <a class="plink" href="../projects/cnq_horizon.html">Horizon</a>, Muskeg River, Jackpine, <a class="plink" href="../projects/imo_kearl.html">Kearl</a>, <a class="plink" href="../projects/su_fort_hills.html">Fort Hills</a>, Suncor Base, and <a class="plink" href="../projects/syncrude.html">Syncrude</a>'s Mildred Lake and Aurora. Mined bitumen is the main direct feed to the big upgraders, <a class="plink" href="../projects/cnq_horizon.html">Horizon</a>, Scotford, <a class="plink" href="../projects/syncrude.html">Syncrude</a>, and Suncor Base all run on mined barrels, but in-situ barrels feed upgraders too: <a class="plink" href="../projects/su_firebag.html">Firebag</a> feeds Suncor Base, and <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a> and <a class="plink" href="../projects/cve_foster_creek.html">Foster Creek</a> feed Cenovus's Lloydminster upgrader. Mine output is steadier than thermal by design, but turnarounds, equipment outages, and grade changes still move it month to month.</p>
-  <h2>SAGD</h2>
+  <h2>SAGD<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Steam-assisted gravity drainage. Two horizontal wells, one above the other. Steam goes into the top well and forms a chamber; heated bitumen and condensed water drain down to the lower well by gravity and get pumped up. It needs a thick, permeable reservoir and it is the dominant in-situ method: <a class="plink" href="../projects/cve_foster_creek.html">Foster Creek</a>, <a class="plink" href="../projects/cve_christina_lake.html">Christina Lake</a> (both Cenovus, which absorbed MEG Energy's <a class="plink" href="../projects/meg_christina_lake.html">Christina Lake North</a> when it closed the MEG acquisition in November 2025), <a class="plink" href="../projects/cve_sunrise.html">Sunrise</a> (Cenovus), <a class="plink" href="../projects/cop_surmont.html">Surmont</a> (ConocoPhillips), <a class="plink" href="../projects/cnq_jackfish.html">Jackfish</a>, <a class="plink" href="../projects/cnq_kirby.html">Kirby</a>, <a class="plink" href="../projects/ath_leismer.html">Leismer</a>, <a class="plink" href="../projects/su_mackay_river.html">MacKay River</a>, <a class="plink" href="../projects/su_firebag.html">Firebag</a>, Long Lake, <a class="plink" href="../projects/scr_tucker.html">Tucker</a>, <a class="plink" href="../projects/scr_orion.html">Orion</a>, <a class="plink" href="../projects/scr_lindbergh.html">Lindbergh</a>, <a class="plink" href="../projects/connacher_great_divide.html">Great Divide</a>, <a class="plink" href="../projects/harvest_blackgold.html">BlackGold</a>, <a class="plink" href="../projects/ath_hangingstone.html">Hangingstone</a>, and <a class="plink" href="../projects/ipc_blackrod.html">Blackrod</a> (first oil May 2026, ramping) all use it. The key metric is steam-oil ratio: cubic metres of steam per cubic metre of bitumen. Canadian SAGD projects run cumulative ratios of roughly 2.5 to 6, with good operators around 3. Recovery can exceed half the oil in place, which is why SAGD won.</p>
-  <h2>CSS</h2>
+  <h2>CSS<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Cyclic steam stimulation, the original thermal method: huff and puff. Inject high-pressure steam into a well, shut it in to soak, then produce from the same well. Repeat. It works in reservoirs that do not suit SAGD, typically thinner reservoirs. The trade is efficiency: late in a well's life the steam-oil ratio runs higher than SAGD. In Alberta it lives at Imperial's <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a> (the largest CSS project in the oil sands), CNRL's <a class="plink" href="../projects/cnq_peace_river.html">Peace River</a>, and CNRL's <a class="plink" href="../projects/cnq_primrose.html">Primrose</a>.</p>
-<div class="exec"><h2>Why it matters</h2><p>Method sets the decline profile. SAGD pads decline and get replaced by new pads, so the project is a drilling treadmill. CSS wells cycle. Mines just run. When you see a project's forecast shape, you are mostly seeing its extraction method.</p></div>
-<h2>Sources</h2><ul class="ev"><li>MDPI Energies, Improving Thermal Efficiency and Reducing Emissions with CO2 Injection during Late Stage SAGD Development (SAGD SOR range 2.5-6) (<a href="https://www.mdpi.com/2819720">https://www.mdpi.com/2819720</a>)</li><li>ResearchGate, Cyclic Steam Stimulation (field cases including <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a>) (<a href="https://www.researchgate.net/publication/286616425_Cyclic_Steam_Stimulation">https://www.researchgate.net/publication/286616425_Cyclic_Steam_Stimulation</a>)</li><li>Digital Refining, Has the time for partial upgrading of heavy oil and bitumen arrived? (mineable share of resource) (<a href="https://www.digitalrefining.com/article/1000607/has-the-time-for-partial-upgrading-of-heavy-oil-and-bitumen-arrived">https://www.digitalrefining.com/article/1000607/has-the-time-for-partial-upgrading-of-heavy-oil-and-bitumen-arrived</a>)</li><li>Oil &amp; Gas Journal, Cenovus and MEG Energy agree to acquisition deal (2025); Cenovus closed the MEG acquisition November 13, 2025 (<a href="https://www.ogj.com/general-interest/companies/news/55311707/cenovus-meg-energy-agree-to-acquisition-deal-to-grow-canadian-oil-sands-production">https://www.ogj.com/general-interest/companies/news/55311707/cenovus-meg-energy-agree-to-acquisition-deal-to-grow-canadian-oil-sands-production</a>)</li><li>Oil Sands Magazine, Cenovus-MEG, <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a>, <a class="plink" href="../projects/cop_surmont.html">Surmont</a> expansions (2025-11-20): <a class="plink" href="../projects/cop_surmont.html">Surmont</a> 100% ConocoPhillips; <a class="plink" href="../projects/cve_sunrise.html">Sunrise</a> 100% Cenovus (<a href="https://www.oilsandsmagazine.com/news/2025/11/20/cenovus-meg-cold-lake-surmont-expansions">https://www.oilsandsmagazine.com/news/2025/11/20/cenovus-meg-cold-lake-surmont-expansions</a>)</li><li>International Petroleum Corporation via GlobeNewswire, Q2 2026 results (2026-08-04): <a class="plink" href="../projects/ipc_blackrod.html">Blackrod</a> first oil May 31, 2026, ramping, 30 kb/d plateau by end-2027, ships via Grand Rapids Pipeline, 100% IPC (<a href="https://www.globenewswire.com/news-release/2026/08/04/3338025/0/en/International-Petroleum-Corporation-Announces-Second-Quarter-2026-Financial-and-Operational-Results-and-Releases-Sustainability-Report.html">https://www.globenewswire.com/news-release/2026/08/04/3338025/0/en/International-Petroleum-Corporation-Announces-Second-Quarter-2026-Financial-and-Operational-Results-and-Releases-Sustainability-Report.html</a>)</li></ul>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+<div class="exec"><h2>Why it matters<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p>Method sets the decline profile. SAGD pads decline and get replaced by new pads, so the project is a drilling treadmill. CSS wells cycle. Mines just run. When you see a project's forecast shape, you are mostly seeing its extraction method.</p></div>
+<h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><ul class="ev"><li>MDPI Energies, Improving Thermal Efficiency and Reducing Emissions with CO2 Injection during Late Stage SAGD Development (SAGD SOR range 2.5-6) (<a href="https://www.mdpi.com/2819720">https://www.mdpi.com/2819720</a>)</li><li>ResearchGate, Cyclic Steam Stimulation (field cases including <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a>) (<a href="https://www.researchgate.net/publication/286616425_Cyclic_Steam_Stimulation">https://www.researchgate.net/publication/286616425_Cyclic_Steam_Stimulation</a>)</li><li>Digital Refining, Has the time for partial upgrading of heavy oil and bitumen arrived? (mineable share of resource) (<a href="https://www.digitalrefining.com/article/1000607/has-the-time-for-partial-upgrading-of-heavy-oil-and-bitumen-arrived">https://www.digitalrefining.com/article/1000607/has-the-time-for-partial-upgrading-of-heavy-oil-and-bitumen-arrived</a>)</li><li>Oil &amp; Gas Journal, Cenovus and MEG Energy agree to acquisition deal (2025); Cenovus closed the MEG acquisition November 13, 2025 (<a href="https://www.ogj.com/general-interest/companies/news/55311707/cenovus-meg-energy-agree-to-acquisition-deal-to-grow-canadian-oil-sands-production">https://www.ogj.com/general-interest/companies/news/55311707/cenovus-meg-energy-agree-to-acquisition-deal-to-grow-canadian-oil-sands-production</a>)</li><li>Oil Sands Magazine, Cenovus-MEG, <a class="plink" href="../projects/imo_cold_lake.html">Cold Lake</a>, <a class="plink" href="../projects/cop_surmont.html">Surmont</a> expansions (2025-11-20): <a class="plink" href="../projects/cop_surmont.html">Surmont</a> 100% ConocoPhillips; <a class="plink" href="../projects/cve_sunrise.html">Sunrise</a> 100% Cenovus (<a href="https://www.oilsandsmagazine.com/news/2025/11/20/cenovus-meg-cold-lake-surmont-expansions">https://www.oilsandsmagazine.com/news/2025/11/20/cenovus-meg-cold-lake-surmont-expansions</a>)</li><li>International Petroleum Corporation via GlobeNewswire, Q2 2026 results (2026-08-04): <a class="plink" href="../projects/ipc_blackrod.html">Blackrod</a> first oil May 31, 2026, ramping, 30 kb/d plateau by end-2027, ships via Grand Rapids Pipeline, 100% IPC (<a href="https://www.globenewswire.com/news-release/2026/08/04/3338025/0/en/International-Petroleum-Corporation-Announces-Second-Quarter-2026-Financial-and-Operational-Results-and-Releases-Sustainability-Report.html">https://www.globenewswire.com/news-release/2026/08/04/3338025/0/en/International-Petroleum-Corporation-Announces-Second-Quarter-2026-Financial-and-Operational-Results-and-Releases-Sustainability-Report.html</a>)</li></ul>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -765,5 +819,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

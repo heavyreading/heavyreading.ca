@@ -1,0 +1,767 @@
+{
+ "schema": "micro-balance/1",
+ "level": "rollup",
+ "region": "rollup_europe",
+ "title": "Europe balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Each country enters on its declared headline spine per leg (the same declaration as its country page). Totals are sums of those declared reads; coverage counts print beside every total.",
+ "units": "kb/d unless a field name says otherwise",
+ "grain": {
+  "capture": "Country grain from the agency panel, built up from states and basins for the US and from the house balance for Canada.",
+  "display": "Europe"
+ },
+ "totals": {
+  "production_crude": 2886.3,
+  "production_liquids": 3932.1,
+  "consumption_products": 8819.5
+ },
+ "coverage": {
+  "production_crude": 43,
+  "production_liquids": 43,
+  "consumption_products": 8
+ },
+ "n_members": 43,
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "declared_total": 2886.3,
+   "per_spine": {
+    "EIA_international": {
+     "total": 2886.3,
+     "n": 43
+    },
+    "JODI": {
+     "total": 2688.8,
+     "n": 8
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "declared_total": 3932.1,
+   "per_spine": {
+    "EIA_international": {
+     "total": 3932.1,
+     "n": 43
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "declared_total": 8819.5,
+   "per_spine": {
+    "JODI": {
+     "total": 8819.5,
+     "n": 8
+    },
+    "EIA_international": {
+     "total": 6197.5,
+     "n": 4
+    }
+   },
+   "missing_members": 35
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "declared_total": null,
+   "per_spine": {},
+   "missing_members": 43
+  }
+ ],
+ "trade": [],
+ "members": [
+  {
+   "country": "Norway",
+   "code": "NOR",
+   "slug": "norway",
+   "legs": {
+    "production_crude": {
+     "value": 1857.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 2050.6,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 220.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "United Kingdom",
+   "code": "GBR",
+   "slug": "united_kingdom",
+   "legs": {
+    "production_crude": {
+     "value": 615.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 768.6,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1417.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Italy",
+   "code": "ITA",
+   "slug": "italy",
+   "legs": {
+    "production_crude": {
+     "value": 83.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 137.2,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1169.1,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Denmark",
+   "code": "DNK",
+   "slug": "denmark",
+   "legs": {
+    "production_crude": {
+     "value": 71.8,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 79.3,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 141.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Romania",
+   "code": "ROU",
+   "slug": "romania",
+   "legs": {
+    "production_crude": {
+     "value": 51.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 69.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Germany",
+   "code": "DEU",
+   "slug": "germany",
+   "legs": {
+    "production_crude": {
+     "value": 31.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 185.7,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 2173.4,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Ukraine",
+   "code": "UKR",
+   "slug": "ukraine",
+   "legs": {
+    "production_crude": {
+     "value": 31.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 57.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Belarus",
+   "code": "BLR",
+   "slug": "belarus",
+   "legs": {
+    "production_crude": {
+     "value": 25.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 26.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Hungary",
+   "code": "HUN",
+   "slug": "hungary",
+   "legs": {
+    "production_crude": {
+     "value": 23.4,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 46.4,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Netherlands",
+   "code": "NLD",
+   "slug": "netherlands",
+   "legs": {
+    "production_crude": {
+     "value": 21.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 79.2,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 875.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Poland",
+   "code": "POL",
+   "slug": "poland",
+   "legs": {
+    "production_crude": {
+     "value": 16.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 44.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Albania",
+   "code": "ALB",
+   "slug": "albania",
+   "legs": {
+    "production_crude": {
+     "value": 12.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 12.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Serbia",
+   "code": "SRB",
+   "slug": "serbia",
+   "legs": {
+    "production_crude": {
+     "value": 11.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 13.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "France",
+   "code": "FRA",
+   "slug": "france",
+   "legs": {
+    "production_crude": {
+     "value": 10.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 105.9,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1512.6,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Croatia",
+   "code": "HRV",
+   "slug": "croatia",
+   "legs": {
+    "production_crude": {
+     "value": 9.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 12.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Austria",
+   "code": "AUT",
+   "slug": "austria",
+   "legs": {
+    "production_crude": {
+     "value": 8.8,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 22.7,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Greece",
+   "code": "GRC",
+   "slug": "greece",
+   "legs": {
+    "production_crude": {
+     "value": 1.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 14.4,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Czechia",
+   "code": "CZE",
+   "slug": "czechia",
+   "legs": {
+    "production_crude": {
+     "value": 1.3,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 10.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Bulgaria",
+   "code": "BGR",
+   "slug": "bulgaria",
+   "legs": {
+    "production_crude": {
+     "value": 1.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 6.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Lithuania",
+   "code": "LTU",
+   "slug": "lithuania",
+   "legs": {
+    "production_crude": {
+     "value": 0.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 8.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Georgia",
+   "code": "GEO",
+   "slug": "georgia",
+   "legs": {
+    "production_crude": {
+     "value": 0.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Armenia",
+   "code": "ARM",
+   "slug": "armenia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Belgium",
+   "code": "BEL",
+   "slug": "belgium",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 24.7,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Bosnia and Herzegovina",
+   "code": "BIH",
+   "slug": "bosnia_and_herzegovina",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cyprus",
+   "code": "CYP",
+   "slug": "cyprus",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Estonia",
+   "code": "EST",
+   "slug": "estonia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 22.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Faroe Islands",
+   "code": "FRO",
+   "slug": "faroe_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Finland",
+   "code": "FIN",
+   "slug": "finland",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 16.8,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Gibraltar",
+   "code": "GIB",
+   "slug": "gibraltar",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Iceland",
+   "code": "ISL",
+   "slug": "iceland",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Ireland",
+   "code": "IRL",
+   "slug": "ireland",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Latvia",
+   "code": "LVA",
+   "slug": "latvia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Luxembourg",
+   "code": "LUX",
+   "slug": "luxembourg",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Malta",
+   "code": "MLT",
+   "slug": "malta",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Moldova",
+   "code": "MDA",
+   "slug": "moldova",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Montenegro",
+   "code": "MNE",
+   "slug": "montenegro",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "North Macedonia",
+   "code": "MKD",
+   "slug": "north_macedonia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Portugal",
+   "code": "PRT",
+   "slug": "portugal",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 12.4,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Slovakia",
+   "code": "SVK",
+   "slug": "slovakia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 8.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Slovenia",
+   "code": "SVN",
+   "slug": "slovenia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Spain",
+   "code": "ESP",
+   "slug": "spain",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 77.3,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1310.6,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Sweden",
+   "code": "SWE",
+   "slug": "sweden",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 13.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Switzerland",
+   "code": "CHE",
+   "slug": "switzerland",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1.2,
+     "spine": "EIA_international"
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "gaps": [],
+ "supply": [],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "cards": {}
+}

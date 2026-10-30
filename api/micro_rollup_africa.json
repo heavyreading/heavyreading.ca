@@ -1,0 +1,953 @@
+{
+ "schema": "micro-balance/1",
+ "level": "rollup",
+ "region": "rollup_africa",
+ "title": "Africa balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Each country enters on its declared headline spine per leg (the same declaration as its country page). Totals are sums of those declared reads; coverage counts print beside every total.",
+ "units": "kb/d unless a field name says otherwise",
+ "grain": {
+  "capture": "Country grain from the agency panel, built up from states and basins for the US and from the house balance for Canada.",
+  "display": "Africa"
+ },
+ "totals": {
+  "production_crude": 7012.9,
+  "production_liquids": 7615.3,
+  "consumption_products": 1881.9
+ },
+ "coverage": {
+  "production_crude": 57,
+  "production_liquids": 57,
+  "consumption_products": 3
+ },
+ "n_members": 57,
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "declared_total": 7012.9,
+   "per_spine": {
+    "EIA_international": {
+     "total": 7012.9,
+     "n": 57
+    },
+    "JODI": {
+     "total": 2894.1,
+     "n": 3
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "declared_total": 7615.3,
+   "per_spine": {
+    "EIA_international": {
+     "total": 7615.3,
+     "n": 57
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "declared_total": 1881.9,
+   "per_spine": {
+    "JODI": {
+     "total": 1881.9,
+     "n": 3
+    }
+   },
+   "missing_members": 54
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "declared_total": null,
+   "per_spine": {},
+   "missing_members": 57
+  }
+ ],
+ "trade": [],
+ "members": [
+  {
+   "country": "Nigeria",
+   "code": "NGA",
+   "slug": "nigeria",
+   "legs": {
+    "production_crude": {
+     "value": 1605.3,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1675.0,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 602.9,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Libya",
+   "code": "LBY",
+   "slug": "libya",
+   "legs": {
+    "production_crude": {
+     "value": 1363.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1382.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Algeria",
+   "code": "DZA",
+   "slug": "algeria",
+   "legs": {
+    "production_crude": {
+     "value": 1142.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1404.1,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 471.9,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Angola",
+   "code": "AGO",
+   "slug": "angola",
+   "legs": {
+    "production_crude": {
+     "value": 1030.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1059.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Egypt",
+   "code": "EGY",
+   "slug": "egypt",
+   "legs": {
+    "production_crude": {
+     "value": 504.8,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 607.9,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 807.1,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Congo-Brazzaville",
+   "code": "COG",
+   "slug": "congo_brazzaville",
+   "legs": {
+    "production_crude": {
+     "value": 241.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 249.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Gabon",
+   "code": "GAB",
+   "slug": "gabon",
+   "legs": {
+    "production_crude": {
+     "value": 239.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 238.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Ghana",
+   "code": "GHA",
+   "slug": "ghana",
+   "legs": {
+    "production_crude": {
+     "value": 183.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 186.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Chad",
+   "code": "TCD",
+   "slug": "chad",
+   "legs": {
+    "production_crude": {
+     "value": 126.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 126.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "South Sudan",
+   "code": "SSD",
+   "slug": "south_sudan",
+   "legs": {
+    "production_crude": {
+     "value": 112.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 112.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Niger",
+   "code": "NER",
+   "slug": "niger",
+   "legs": {
+    "production_crude": {
+     "value": 101.3,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 101.7,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Senegal",
+   "code": "SEN",
+   "slug": "senegal",
+   "legs": {
+    "production_crude": {
+     "value": 100.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 100.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Equatorial Guinea",
+   "code": "GNQ",
+   "slug": "equatorial_guinea",
+   "legs": {
+    "production_crude": {
+     "value": 76.4,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 84.4,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cameroon",
+   "code": "CMR",
+   "slug": "cameroon",
+   "legs": {
+    "production_crude": {
+     "value": 59.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 59.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cote d'Ivoire",
+   "code": "CIV",
+   "slug": "cote_divoire",
+   "legs": {
+    "production_crude": {
+     "value": 55.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 56.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Sudan",
+   "code": "SDN",
+   "slug": "sudan",
+   "legs": {
+    "production_crude": {
+     "value": 30.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 31.8,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Tunisia",
+   "code": "TUN",
+   "slug": "tunisia",
+   "legs": {
+    "production_crude": {
+     "value": 25.3,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 28.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Congo-Kinshasa",
+   "code": "COD",
+   "slug": "congo_kinshasa",
+   "legs": {
+    "production_crude": {
+     "value": 16.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 16.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "South Africa",
+   "code": "ZAF",
+   "slug": "south_africa",
+   "legs": {
+    "production_crude": {
+     "value": 0.4,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 95.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Benin",
+   "code": "BEN",
+   "slug": "benin",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Botswana",
+   "code": "BWA",
+   "slug": "botswana",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Burkina Faso",
+   "code": "BFA",
+   "slug": "burkina_faso",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Burundi",
+   "code": "BDI",
+   "slug": "burundi",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cabo Verde",
+   "code": "CPV",
+   "slug": "cabo_verde",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Central African Republic",
+   "code": "CAF",
+   "slug": "central_african_republic",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Comoros",
+   "code": "COM",
+   "slug": "comoros",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Djibouti",
+   "code": "DJI",
+   "slug": "djibouti",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Eritrea",
+   "code": "ERI",
+   "slug": "eritrea",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Eswatini",
+   "code": "SWZ",
+   "slug": "eswatini",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Ethiopia",
+   "code": "ETH",
+   "slug": "ethiopia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Gambia, The",
+   "code": "GMB",
+   "slug": "gambia_the",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Guinea",
+   "code": "GIN",
+   "slug": "guinea",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Guinea-Bissau",
+   "code": "GNB",
+   "slug": "guinea_bissau",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Kenya",
+   "code": "KEN",
+   "slug": "kenya",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Lesotho",
+   "code": "LSO",
+   "slug": "lesotho",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Liberia",
+   "code": "LBR",
+   "slug": "liberia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Madagascar",
+   "code": "MDG",
+   "slug": "madagascar",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Malawi",
+   "code": "MWI",
+   "slug": "malawi",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Mali",
+   "code": "MLI",
+   "slug": "mali",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Mauritania",
+   "code": "MRT",
+   "slug": "mauritania",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Mauritius",
+   "code": "MUS",
+   "slug": "mauritius",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Morocco",
+   "code": "MAR",
+   "slug": "morocco",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Mozambique",
+   "code": "MOZ",
+   "slug": "mozambique",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Namibia",
+   "code": "NAM",
+   "slug": "namibia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Reunion",
+   "code": "REU",
+   "slug": "reunion",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Rwanda",
+   "code": "RWA",
+   "slug": "rwanda",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Saint Helena",
+   "code": "SHN",
+   "slug": "saint_helena",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Sao Tome and Principe",
+   "code": "STP",
+   "slug": "sao_tome_and_principe",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Seychelles",
+   "code": "SYC",
+   "slug": "seychelles",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Sierra Leone",
+   "code": "SLE",
+   "slug": "sierra_leone",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Somalia",
+   "code": "SOM",
+   "slug": "somalia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Tanzania",
+   "code": "TZA",
+   "slug": "tanzania",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Togo",
+   "code": "TGO",
+   "slug": "togo",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Uganda",
+   "code": "UGA",
+   "slug": "uganda",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Western Sahara",
+   "code": "ESH",
+   "slug": "western_sahara",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Zambia",
+   "code": "ZMB",
+   "slug": "zambia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Zimbabwe",
+   "code": "ZWE",
+   "slug": "zimbabwe",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.8,
+     "spine": "EIA_international"
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "gaps": [],
+ "supply": [],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "cards": {}
+}

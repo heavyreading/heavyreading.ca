@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="trade-calls/machine/brief/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -714,7 +715,7 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
       <div class="mnav-sec"><a class="mg-link" href="../../../whale-watch.html">Whale watch</a></div>
       <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../../tolls/index.html">Toll search</a><a class="mg-link" href="../../../commitments/index.html">Commitments grid</a><a class="mg-link" href="../../../freight-watch.html">Freight watch</a><a class="mg-link" href="../../../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../../../data/index.html">Data downloads</a><a class="mg-link" href="../../../sources/index.html">Sources</a><a class="mg-link" href="../../../methodology/index.html">Methodology</a><a class="mg-link" href="../../../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../../../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../../../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -768,7 +769,7 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
 </style>
 <nav class="tm-tabs"><a href="../brief/index.html" class="active">📊 Brief</a><a href="../score/index.html" class="">✋ Score</a><a href="../calls/index.html" class="">🎯 Calls</a><a href="../risk/index.html" class="">⚠️ Risk</a></nav>
 
-<h2>Morning Brief</h2>
+<h2>Morning Brief<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p class="note">2026-10-08 — auto-scored from live data (unknown)</p>
 <div class="tm-card" style="text-align:center;">
   <div style="font-size:12px;color:var(--ch-muted);text-transform:uppercase;">Net Marginal Signal (MVP: 17 factors live)</div>
@@ -952,6 +953,74 @@ tr.arb-shut .arb-flag { background:var(--ch-red); color:#fff; }
   });
 })();
 </script>
-
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

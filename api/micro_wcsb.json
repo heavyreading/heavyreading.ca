@@ -1,0 +1,6581 @@
+{
+ "title": "WCSB micro-balance",
+ "built": "2026-10-20",
+ "dashboard_built": "2026-10-30",
+ "default_month": "2026-11",
+ "months": [
+  "2026-10",
+  "2026-11",
+  "2026-12",
+  "2027-01",
+  "2027-02",
+  "2027-03",
+  "2027-04",
+  "2027-05",
+  "2027-06",
+  "2027-07",
+  "2027-08",
+  "2027-09",
+  "2027-10",
+  "2027-11",
+  "2027-12"
+ ],
+ "prices": {
+  "asof": "Oct 30, 2026 11:36 AM MDT",
+  "settle_date": "2026-10-29",
+  "rows": [
+   {
+    "label": "WTI, Dec 26",
+    "value": 104.85,
+    "basis": "intraday quote"
+   },
+   {
+    "label": "Brent, Dec 26",
+    "value": 117.8,
+    "basis": "intraday quote"
+   },
+   {
+    "label": "WCS Hardisty diff (TMW), Dec 26",
+    "value": -30.5,
+    "basis": "ICE end-of-day settle"
+   },
+   {
+    "label": "WCS Hardisty diff (TMW), Jan 27",
+    "value": -28.75,
+    "basis": "ICE end-of-day settle"
+   },
+   {
+    "label": "WCS Houston diff (ARV), Dec 26",
+    "value": -22.973,
+    "basis": "ICE end-of-day settle"
+   },
+   {
+    "label": "Synthetic diff (TMS), Dec 26",
+    "value": 5.95,
+    "basis": "ICE end-of-day settle"
+   }
+  ]
+ },
+ "data": {
+  "2026-10": {
+   "ym": "2026-10",
+   "label": "October 2026",
+   "cards": {
+    "nameplate_pipes_kbd": 5183,
+    "effective_pipes_kbd": 4984.0,
+    "effective_stack_kbd": 5069.0,
+    "supply_net_kbd": 4845.1,
+    "demand_wants_kbd": 4845.1,
+    "refinery_kbd": 580.2,
+    "removals_wanted_kbd": 4264.9,
+    "exports_shipped_kbd": 4264.9,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 96.0
+   },
+   "gross_production_kbd": 4244.7,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1382.2,
+     "prev": null
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 232.8,
+     "prev": null
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 177.7,
+     "prev": null
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 83.8,
+     "prev": null
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 122.7,
+     "prev": null
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1576.5,
+     "prev": null
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 669.0,
+     "prev": null
+    }
+   ],
+   "groups": {
+    "in_situ": 1999.2,
+    "mined": 1576.5,
+    "conv": 669.0
+   },
+   "identity": {
+    "gross": 4244.7,
+    "maintenance": 164.4,
+    "receipts": 1070.5,
+    "losses": 155.5,
+    "flare": 48.9,
+    "fuel": 21.9,
+    "shrinkage": 84.7,
+    "adjustments": -19.4,
+    "plug": 130.8,
+    "net_supply": 4845.1,
+    "refinery": 580.2,
+    "exports": 4264.9,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 760.3,
+   "diluent": {
+    "imports_total": 310.2,
+    "condensate_imports": 226.0,
+    "pentanes_imports": 84.2,
+    "condensate_production": 92.7,
+    "total": 402.9
+   },
+   "refinery": {
+    "total": 580.2,
+    "sales": 490.6,
+    "other": 89.6
+   },
+   "grades": {
+    "total": 4161.8,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 429.6
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 67.2
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 172.1
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1203.5
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2289.4
+     }
+    ],
+    "sco": 1203.5,
+    "mined_dashboard": 1743.4,
+    "mined_to_upgrader": 1511.7,
+    "mined_to_market": 231.7
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 244.3
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 239.5
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 179.0
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 149.4
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 98.7
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 71.0
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 55.5
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.4
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 27.5
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 26.6
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.9
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 19.6
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.9
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 14.4
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 11.1
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.5
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.2
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 7.2
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 177.7
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 151.2
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 122.7
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 83.8
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 74.3
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 4.3
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 315.0
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 288.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 255.8
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 221.3
+     },
+     {
+      "label": "Fort Hills",
+      "value": 184.4
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 173.8
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 172.0
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 132.6
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 369.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 343.6
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 275.8
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 169.5
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 45.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 336.9
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 139.0
+     },
+     {
+      "label": "Condensate",
+      "value": 92.7
+     },
+     {
+      "label": "Medium",
+      "value": 67.2
+     },
+     {
+      "label": "Heavy",
+      "value": 33.1
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2913.9,
+     "util": 95.5,
+     "prev": null
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 890,
+     "effective": 865.6,
+     "flow": 826.8,
+     "util": 95.5,
+     "prev": null
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 614.2,
+     "util": 95.5,
+     "prev": null
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": null
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": null
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": null
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": null
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 4864.9,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 60.04,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 20.6,
+    "pct_full": 74.5
+   },
+   "apportionment": {
+    "light_pct": 8.0,
+    "heavy_pct": 4.0,
+    "source": "Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
+    "note": "November: Light 19% / Heavy 7% at Kerrobert (plus 13% at Cromer, 16% at Superior), up from October"
+   },
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2026-11": {
+   "ym": "2026-11",
+   "label": "November 2026",
+   "cards": {
+    "nameplate_pipes_kbd": 5183,
+    "effective_pipes_kbd": 4984.0,
+    "effective_stack_kbd": 5069.0,
+    "supply_net_kbd": 5145.9,
+    "demand_wants_kbd": 5145.9,
+    "refinery_kbd": 618.7,
+    "removals_wanted_kbd": 4527.2,
+    "exports_shipped_kbd": 4469.0,
+    "overflow_kbd": 58.2,
+    "utilization_pct": 100.0
+   },
+   "gross_production_kbd": 4358.4,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1399.0,
+     "prev": 1382.2
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 241.3,
+     "prev": 232.8
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 177.5,
+     "prev": 177.7
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 83.1,
+     "prev": 83.8
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 121.3,
+     "prev": 122.7
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1652.0,
+     "prev": 1576.5
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 684.2,
+     "prev": 669.0
+    }
+   ],
+   "groups": {
+    "in_situ": 2022.2,
+    "mined": 1652.0,
+    "conv": 684.2
+   },
+   "identity": {
+    "gross": 4358.4,
+    "maintenance": 23.0,
+    "receipts": 1120.7,
+    "losses": 161.9,
+    "flare": 51.2,
+    "fuel": 23.8,
+    "shrinkage": 86.9,
+    "adjustments": -17.5,
+    "plug": 130.8,
+    "net_supply": 5145.9,
+    "refinery": 618.7,
+    "exports": 4469.0,
+    "storage_change": 58.2,
+    "check": -0.0
+   },
+   "receipts_other_kbd": 801.5,
+   "diluent": {
+    "imports_total": 319.2,
+    "condensate_imports": 232.6,
+    "pentanes_imports": 86.6,
+    "condensate_production": 96.1,
+    "total": 415.3
+   },
+   "refinery": {
+    "total": 618.7,
+    "sales": 510.7,
+    "other": 108.0
+   },
+   "grades": {
+    "total": 4422.0,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 446.7
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 66.0
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 171.5
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1433.4
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2304.4
+     }
+    ],
+    "sco": 1433.4,
+    "mined_dashboard": 1943.9,
+    "mined_to_upgrader": 1745.2,
+    "mined_to_market": 198.7
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Firebag (Suncor)",
+      "value": 249.2
+     },
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 248.6
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 199.0
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 150.0
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 95.4
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 78.1
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 56.3
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 32.5
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 27.2
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 24.8
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 24.3
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.7
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 15.9
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.7
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 12.1
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.4
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 8.9
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.4
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 177.5
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 159.0
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 121.3
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 83.1
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 75.0
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 4.3
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 330.7
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 306.7
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 302.0
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 227.5
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 205.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 205.3
+     },
+     {
+      "label": "Fort Hills",
+      "value": 194.6
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 171.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Suncor Base Plant",
+      "value": 377.5
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 374.2
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 340.8
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 291.5
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 49.4
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 350.6
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 138.2
+     },
+     {
+      "label": "Condensate",
+      "value": 96.1
+     },
+     {
+      "label": "Medium",
+      "value": 66.0
+     },
+     {
+      "label": "Heavy",
+      "value": 33.3
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 3050.4,
+     "util": 100.0,
+     "prev": 2913.9
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 890,
+     "effective": 865.6,
+     "flow": 865.6,
+     "util": 100.0,
+     "prev": 826.8
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 614.2
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5069.0,
+   "storage": {
+    "change_kbd": 58.2,
+    "change_mbbl": 1.75,
+    "level_mmbbl": 61.78,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 18.8,
+    "pct_full": 76.7
+   },
+   "apportionment": {
+    "light_pct": 19.0,
+    "heavy_pct": 7.0,
+    "source": "Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
+    "note": "November: Light 19% / Heavy 7% at Kerrobert (plus 13% at Cromer, 16% at Superior), up from October"
+   },
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2026-12": {
+   "ym": "2026-12",
+   "label": "December 2026",
+   "cards": {
+    "nameplate_pipes_kbd": 5183,
+    "effective_pipes_kbd": 4984.0,
+    "effective_stack_kbd": 5069.0,
+    "supply_net_kbd": 5191.6,
+    "demand_wants_kbd": 5191.6,
+    "refinery_kbd": 621.5,
+    "removals_wanted_kbd": 4570.1,
+    "exports_shipped_kbd": 4469.0,
+    "overflow_kbd": 101.1,
+    "utilization_pct": 100.0
+   },
+   "gross_production_kbd": 4368.7,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1394.3,
+     "prev": 1399.0
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 246.2,
+     "prev": 241.3
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 173.8,
+     "prev": 177.5
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 82.3,
+     "prev": 83.1
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 124.8,
+     "prev": 121.3
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1664.4,
+     "prev": 1652.0
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 682.9,
+     "prev": 684.2
+    }
+   ],
+   "groups": {
+    "in_situ": 2021.4,
+    "mined": 1664.4,
+    "conv": 682.9
+   },
+   "identity": {
+    "gross": 4368.7,
+    "maintenance": 3.0,
+    "receipts": 1137.2,
+    "losses": 160.9,
+    "flare": 50.1,
+    "fuel": 23.8,
+    "shrinkage": 87.0,
+    "adjustments": -19.6,
+    "plug": 130.8,
+    "net_supply": 5191.6,
+    "refinery": 621.5,
+    "exports": 4469.0,
+    "storage_change": 101.1,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 804.7,
+   "diluent": {
+    "imports_total": 332.5,
+    "condensate_imports": 242.3,
+    "pentanes_imports": 90.2,
+    "condensate_production": 99.8,
+    "total": 432.3
+   },
+   "refinery": {
+    "total": 621.5,
+    "sales": 509.5,
+    "other": 112.0
+   },
+   "grades": {
+    "total": 4459.4,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 450.6
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 63.9
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 168.4
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1432.3
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2344.2
+     }
+    ],
+    "sco": 1432.3,
+    "mined_dashboard": 1970.2,
+    "mined_to_upgrader": 1738.0,
+    "mined_to_market": 232.2
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 252.7
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 245.0
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 197.4
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 148.8
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 94.6
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 80.3
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 55.9
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.4
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 27.4
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 25.7
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 25.2
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.4
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 16.9
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.6
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 10.5
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 10.5
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.2
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.4
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 173.8
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 157.9
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 124.8
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 82.3
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 80.9
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 4.4
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 330.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 322.8
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 312.8
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 228.2
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 212.2
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 212.0
+     },
+     {
+      "label": "Fort Hills",
+      "value": 193.1
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 158.5
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "sco": [
+     {
+      "label": "Suncor Base Plant",
+      "value": 377.0
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 373.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 344.2
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 286.5
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 50.6
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 350.8
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 136.1
+     },
+     {
+      "label": "Condensate",
+      "value": 99.8
+     },
+     {
+      "label": "Medium",
+      "value": 63.9
+     },
+     {
+      "label": "Heavy",
+      "value": 32.3
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 3050.4,
+     "util": 100.0,
+     "prev": 3050.4
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 890,
+     "effective": 865.6,
+     "flow": 865.6,
+     "util": 100.0,
+     "prev": 865.6
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 643.0
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5069.0,
+   "storage": {
+    "change_kbd": 101.1,
+    "change_mbbl": 3.13,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-01": {
+   "ym": "2027-01",
+   "label": "January 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 5008.1,
+    "demand_wants_kbd": 5008.1,
+    "refinery_kbd": 605.1,
+    "removals_wanted_kbd": 4403.0,
+    "exports_shipped_kbd": 4403.0,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 97.0
+   },
+   "gross_production_kbd": 4165.4,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1391.6,
+     "prev": 1394.3
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 238.1,
+     "prev": 246.2
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 168.5,
+     "prev": 173.8
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 94.9,
+     "prev": 82.3
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 123.8,
+     "prev": 124.8
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1485.6,
+     "prev": 1664.4
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 662.9,
+     "prev": 682.9
+    }
+   ],
+   "groups": {
+    "in_situ": 2016.9,
+    "mined": 1485.6,
+    "conv": 662.9
+   },
+   "identity": {
+    "gross": 4165.4,
+    "maintenance": 0.0,
+    "receipts": 1149.5,
+    "losses": 154.3,
+    "flare": 45.7,
+    "fuel": 23.1,
+    "shrinkage": 85.5,
+    "adjustments": -21.7,
+    "plug": 130.8,
+    "net_supply": 5008.1,
+    "refinery": 605.1,
+    "exports": 4403.0,
+    "storage_change": -0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 787.0,
+   "diluent": {
+    "imports_total": 362.5,
+    "condensate_imports": 264.1,
+    "pentanes_imports": 98.4,
+    "condensate_production": 93.0,
+    "total": 455.5
+   },
+   "refinery": {
+    "total": 605.1,
+    "sales": 503.1,
+    "other": 102.0
+   },
+   "grades": {
+    "total": 4266.5,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 417.7
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 67.4
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 177.9
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1347.3
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2256.2
+     }
+    ],
+    "sco": 1347.3,
+    "mined_dashboard": 1788.7,
+    "mined_to_upgrader": 1650.4,
+    "mined_to_market": 138.3
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 255.6
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 248.7
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 200.9
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 149.2
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 97.1
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 78.4
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.5
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 31.2
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 28.5
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.9
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 23.3
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.1
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 18.0
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.6
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 12.8
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.5
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 9.0
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.4
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 168.5
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 160.0
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 123.8
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 94.9
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 74.8
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.2
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 306.9
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 285.1
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 273.5
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 216.8
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 191.2
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 182.5
+     },
+     {
+      "label": "Fort Hills",
+      "value": 174.6
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 158.2
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 376.2
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 357.3
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 309.0
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 261.0
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 43.8
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 324.7
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 144.2
+     },
+     {
+      "label": "Condensate",
+      "value": 93.0
+     },
+     {
+      "label": "Medium",
+      "value": 67.4
+     },
+     {
+      "label": "Heavy",
+      "value": 33.7
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2948.1,
+     "util": 96.6,
+     "prev": 3050.4
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 923.5,
+     "util": 96.6,
+     "prev": 865.6
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 621.4,
+     "util": 96.6,
+     "prev": 643.0
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5003.0,
+   "storage": {
+    "change_kbd": -0.0,
+    "change_mbbl": -0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-02": {
+   "ym": "2027-02",
+   "label": "February 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 5000.5,
+    "demand_wants_kbd": 5000.5,
+    "refinery_kbd": 624.8,
+    "removals_wanted_kbd": 4375.7,
+    "exports_shipped_kbd": 4375.7,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 96.4
+   },
+   "gross_production_kbd": 4175.8,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1390.8,
+     "prev": 1391.6
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 236.1,
+     "prev": 238.1
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 170.9,
+     "prev": 168.5
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 93.7,
+     "prev": 94.9
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 121.8,
+     "prev": 123.8
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1488.8,
+     "prev": 1485.6
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 673.7,
+     "prev": 662.9
+    }
+   ],
+   "groups": {
+    "in_situ": 2013.3,
+    "mined": 1488.8,
+    "conv": 673.7
+   },
+   "identity": {
+    "gross": 4175.8,
+    "maintenance": 0.0,
+    "receipts": 1125.5,
+    "losses": 154.0,
+    "flare": 44.4,
+    "fuel": 25.4,
+    "shrinkage": 84.2,
+    "adjustments": -16.0,
+    "plug": 130.8,
+    "net_supply": 5000.5,
+    "refinery": 624.8,
+    "exports": 4375.7,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 773.9,
+   "diluent": {
+    "imports_total": 351.6,
+    "condensate_imports": 256.2,
+    "pentanes_imports": 95.4,
+    "condensate_production": 93.5,
+    "total": 445.1
+   },
+   "refinery": {
+    "total": 624.8,
+    "sales": 515.3,
+    "other": 109.5
+   },
+   "grades": {
+    "total": 4282.7,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 423.8
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 68.8
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 181.2
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1367.9
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2241.0
+     }
+    ],
+    "sco": 1367.9,
+    "mined_dashboard": 1786.8,
+    "mined_to_upgrader": 1665.8,
+    "mined_to_market": 121.0
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 253.2
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 244.7
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 203.3
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 150.4
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 97.3
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 79.5
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.7
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 32.4
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 29.0
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 24.2
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 22.8
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.3
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 17.7
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 14.9
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 14.6
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 12.2
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.5
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.7
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 170.9
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 161.3
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 121.8
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 93.7
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 71.6
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.3
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 318.5
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 268.8
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 268.7
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 238.0
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 181.1
+     },
+     {
+      "label": "Fort Hills",
+      "value": 180.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 180.2
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 150.7
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 378.4
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 355.3
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 311.0
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 276.1
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 47.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 330.3
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 146.6
+     },
+     {
+      "label": "Condensate",
+      "value": 93.5
+     },
+     {
+      "label": "Medium",
+      "value": 68.8
+     },
+     {
+      "label": "Heavy",
+      "value": 34.6
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2930.2,
+     "util": 96.1,
+     "prev": 2948.1
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 917.9,
+     "util": 96.1,
+     "prev": 923.5
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 617.6,
+     "util": 96.0,
+     "prev": 621.4
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 4975.7,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-03": {
+   "ym": "2027-03",
+   "label": "March 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 5098.0,
+    "demand_wants_kbd": 5098.0,
+    "refinery_kbd": 616.5,
+    "removals_wanted_kbd": 4481.5,
+    "exports_shipped_kbd": 4481.5,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 98.5
+   },
+   "gross_production_kbd": 4271.0,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1385.6,
+     "prev": 1390.8
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 243.1,
+     "prev": 236.1
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 174.6,
+     "prev": 170.9
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 92.3,
+     "prev": 93.7
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 122.1,
+     "prev": 121.8
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1569.6,
+     "prev": 1488.8
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 683.7,
+     "prev": 673.7
+    }
+   ],
+   "groups": {
+    "in_situ": 2017.7,
+    "mined": 1569.6,
+    "conv": 683.7
+   },
+   "identity": {
+    "gross": 4271.0,
+    "maintenance": 0.0,
+    "receipts": 1130.1,
+    "losses": 156.2,
+    "flare": 45.9,
+    "fuel": 25.1,
+    "shrinkage": 85.2,
+    "adjustments": -16.1,
+    "plug": 130.8,
+    "net_supply": 5098.0,
+    "refinery": 616.5,
+    "exports": 4481.5,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 787.6,
+   "diluent": {
+    "imports_total": 342.5,
+    "condensate_imports": 249.6,
+    "pentanes_imports": 92.9,
+    "condensate_production": 91.9,
+    "total": 434.4
+   },
+   "refinery": {
+    "total": 616.5,
+    "sales": 507.2,
+    "other": 109.3
+   },
+   "grades": {
+    "total": 4382.7,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 431.3
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 71.5
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 180.9
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1387.7
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2311.3
+     }
+    ],
+    "sco": 1387.7,
+    "mined_dashboard": 1860.6,
+    "mined_to_upgrader": 1678.6,
+    "mined_to_market": 182.0
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Firebag (Suncor)",
+      "value": 246.8
+     },
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 246.6
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 202.8
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 148.9
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 99.3
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 77.4
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 54.8
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.6
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 29.4
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 24.8
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 23.3
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.5
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 16.6
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 16.3
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 14.7
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 12.8
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.9
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.7
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 174.6
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 160.2
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 122.1
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 92.3
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 79.5
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.4
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 325.1
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 294.7
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 289.0
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 213.7
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 209.2
+     },
+     {
+      "label": "Fort Hills",
+      "value": 197.1
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 175.8
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 156.0
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "sco": [
+     {
+      "label": "Suncor Base Plant",
+      "value": 379.4
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 361.0
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 314.1
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 284.1
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 49.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 339.4
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 145.8
+     },
+     {
+      "label": "Condensate",
+      "value": 91.9
+     },
+     {
+      "label": "Medium",
+      "value": 71.5
+     },
+     {
+      "label": "Heavy",
+      "value": 35.1
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2999.5,
+     "util": 98.3,
+     "prev": 2930.2
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 939.7,
+     "util": 98.3,
+     "prev": 917.9
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 632.3,
+     "util": 98.3,
+     "prev": 617.6
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5081.5,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-04": {
+   "ym": "2027-04",
+   "label": "April 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 4933.6,
+    "demand_wants_kbd": 4933.6,
+    "refinery_kbd": 548.0,
+    "removals_wanted_kbd": 4385.6,
+    "exports_shipped_kbd": 4385.6,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 96.6
+   },
+   "gross_production_kbd": 4138.3,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1341.9,
+     "prev": 1385.6
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 233.5,
+     "prev": 243.1
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 175.6,
+     "prev": 174.6
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 91.1,
+     "prev": 92.3
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 112.2,
+     "prev": 122.1
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1499.6,
+     "prev": 1569.6
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 684.4,
+     "prev": 683.7
+    }
+   ],
+   "groups": {
+    "in_situ": 1954.3,
+    "mined": 1499.6,
+    "conv": 684.4
+   },
+   "identity": {
+    "gross": 4138.3,
+    "maintenance": 26.0,
+    "receipts": 1115.9,
+    "losses": 150.4,
+    "flare": 42.2,
+    "fuel": 23.9,
+    "shrinkage": 84.3,
+    "adjustments": -13.4,
+    "plug": 130.8,
+    "net_supply": 4933.6,
+    "refinery": 548.0,
+    "exports": 4385.6,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 749.0,
+   "diluent": {
+    "imports_total": 366.9,
+    "condensate_imports": 267.4,
+    "pentanes_imports": 99.5,
+    "condensate_production": 93.4,
+    "total": 460.3
+   },
+   "refinery": {
+    "total": 548.0,
+    "sales": 447.1,
+    "other": 100.9
+   },
+   "grades": {
+    "total": 4229.1,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 435.1
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 71.8
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 177.5
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1332.9
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2211.8
+     }
+    ],
+    "sco": 1332.9,
+    "mined_dashboard": 1685.9,
+    "mined_to_upgrader": 1519.1,
+    "mined_to_market": 166.8
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Firebag (Suncor)",
+      "value": 244.1
+     },
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 216.6
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 199.2
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 146.5
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 97.7
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 79.8
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.1
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.9
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 29.9
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 24.1
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 24.1
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 20.7
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 18.1
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 15.8
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.4
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 12.1
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.8
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.8
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 175.6
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 155.4
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 112.2
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 91.1
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 48.6
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.4
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 319.5
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 277.7
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 262.3
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 221.2
+     },
+     {
+      "label": "Fort Hills",
+      "value": 168.2
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 161.5
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 144.7
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 130.8
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "sco": [
+     {
+      "label": "Suncor Base Plant",
+      "value": 402.3
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 310.7
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 307.6
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 263.3
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 49.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 341.7
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 143.1
+     },
+     {
+      "label": "Condensate",
+      "value": 93.4
+     },
+     {
+      "label": "Medium",
+      "value": 71.8
+     },
+     {
+      "label": "Heavy",
+      "value": 34.4
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2936.6,
+     "util": 96.3,
+     "prev": 2999.5
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 920.0,
+     "util": 96.3,
+     "prev": 939.7
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 619.0,
+     "util": 96.3,
+     "prev": 632.3
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 4985.6,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-05": {
+   "ym": "2027-05",
+   "label": "May 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 4770.8,
+    "demand_wants_kbd": 4770.8,
+    "refinery_kbd": 569.5,
+    "removals_wanted_kbd": 4201.3,
+    "exports_shipped_kbd": 4201.3,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 93.1
+   },
+   "gross_production_kbd": 4018.9,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1346.6,
+     "prev": 1341.9
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 224.0,
+     "prev": 233.5
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 170.6,
+     "prev": 175.6
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 88.6,
+     "prev": 91.1
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 101.1,
+     "prev": 112.2
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1416.6,
+     "prev": 1499.6
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 671.4,
+     "prev": 684.4
+    }
+   ],
+   "groups": {
+    "in_situ": 1930.9,
+    "mined": 1416.6,
+    "conv": 671.4
+   },
+   "identity": {
+    "gross": 4018.9,
+    "maintenance": 0.0,
+    "receipts": 1045.5,
+    "losses": 144.5,
+    "flare": 43.8,
+    "fuel": 23.8,
+    "shrinkage": 76.9,
+    "adjustments": -18.3,
+    "plug": 130.8,
+    "net_supply": 4770.8,
+    "refinery": 569.5,
+    "exports": 4201.3,
+    "storage_change": -0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 683.7,
+   "diluent": {
+    "imports_total": 361.8,
+    "condensate_imports": 263.6,
+    "pentanes_imports": 98.2,
+    "condensate_production": 94.2,
+    "total": 456.0
+   },
+   "refinery": {
+    "total": 569.5,
+    "sales": 464.4,
+    "other": 105.1
+   },
+   "grades": {
+    "total": 4144.8,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 425.9
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 69.4
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 176.1
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1264.4
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2209.0
+     }
+    ],
+    "sco": 1264.4,
+    "mined_dashboard": 1450.1,
+    "mined_to_upgrader": 1298.0,
+    "mined_to_market": 152.1
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Firebag (Suncor)",
+      "value": 241.0
+     },
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 235.7
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 200.4
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 145.8
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 96.9
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 74.8
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 54.0
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 35.7
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 31.0
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 24.3
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.4
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 20.7
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 19.8
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 15.5
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.0
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 12.5
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.4
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.8
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 170.6
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 150.9
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 101.1
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 88.6
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 70.0
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.0
+     }
+    ],
+    "mined": [
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 235.0
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 225.4
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 196.1
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 189.2
+     },
+     {
+      "label": "Fort Hills",
+      "value": 186.4
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 179.4
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 126.5
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 112.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 389.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 352.3
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 267.9
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 209.6
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 44.9
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 331.7
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 142.5
+     },
+     {
+      "label": "Condensate",
+      "value": 94.2
+     },
+     {
+      "label": "Medium",
+      "value": 69.4
+     },
+     {
+      "label": "Heavy",
+      "value": 33.6
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2815.7,
+     "util": 92.3,
+     "prev": 2936.6
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 882.1,
+     "util": 92.3,
+     "prev": 920.0
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 593.5,
+     "util": 92.3,
+     "prev": 619.0
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 4801.3,
+   "storage": {
+    "change_kbd": -0.0,
+    "change_mbbl": -0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-06": {
+   "ym": "2027-06",
+   "label": "June 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 4900.7,
+    "demand_wants_kbd": 4900.7,
+    "refinery_kbd": 584.3,
+    "removals_wanted_kbd": 4316.4,
+    "exports_shipped_kbd": 4316.4,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 95.3
+   },
+   "gross_production_kbd": 4170.2,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1365.8,
+     "prev": 1346.6
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 230.6,
+     "prev": 224.0
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 170.7,
+     "prev": 170.6
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 87.9,
+     "prev": 88.6
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 113.3,
+     "prev": 101.1
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1549.3,
+     "prev": 1416.6
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 652.6,
+     "prev": 671.4
+    }
+   ],
+   "groups": {
+    "in_situ": 1968.3,
+    "mined": 1549.3,
+    "conv": 652.6
+   },
+   "identity": {
+    "gross": 4170.2,
+    "maintenance": 0.0,
+    "receipts": 1036.9,
+    "losses": 149.4,
+    "flare": 48.1,
+    "fuel": 23.1,
+    "shrinkage": 78.2,
+    "adjustments": -26.2,
+    "plug": 130.8,
+    "net_supply": 4900.7,
+    "refinery": 584.3,
+    "exports": 4316.4,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 693.6,
+   "diluent": {
+    "imports_total": 343.3,
+    "condensate_imports": 250.2,
+    "pentanes_imports": 93.1,
+    "condensate_production": 92.6,
+    "total": 435.9
+   },
+   "refinery": {
+    "total": 584.3,
+    "sales": 497.3,
+    "other": 87.0
+   },
+   "grades": {
+    "total": 4296.1,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 410.2
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 66.8
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 175.6
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1331.8
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2311.7
+     }
+    ],
+    "sco": 1331.8,
+    "mined_dashboard": 1712.1,
+    "mined_to_upgrader": 1494.6,
+    "mined_to_market": 217.5
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 251.5
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 241.5
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 205.3
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 139.9
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 96.7
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 79.2
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 58.1
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 32.4
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 30.9
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 24.4
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.5
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 21.3
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.2
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 15.7
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 14.6
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.7
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 9.1
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.6
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 170.7
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 154.8
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 113.3
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 87.9
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 72.6
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.3
+     }
+    ],
+    "mined": [
+     {
+      "label": "Kearl (Imperial)",
+      "value": 287.6
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 241.5
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 229.7
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 225.1
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 207.9
+     },
+     {
+      "label": "Fort Hills",
+      "value": 199.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 179.0
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 141.5
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 367.7
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 355.2
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 349.4
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 219.0
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 40.4
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 317.6
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 142.8
+     },
+     {
+      "label": "Condensate",
+      "value": 92.6
+     },
+     {
+      "label": "Medium",
+      "value": 66.8
+     },
+     {
+      "label": "Heavy",
+      "value": 32.8
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2891.3,
+     "util": 94.8,
+     "prev": 2815.7
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 905.7,
+     "util": 94.8,
+     "prev": 882.1
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 609.4,
+     "util": 94.8,
+     "prev": 593.5
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 4916.4,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-07": {
+   "ym": "2027-07",
+   "label": "July 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 5017.0,
+    "demand_wants_kbd": 5017.0,
+    "refinery_kbd": 623.6,
+    "removals_wanted_kbd": 4393.4,
+    "exports_shipped_kbd": 4393.4,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 96.8
+   },
+   "gross_production_kbd": 4263.1,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1377.2,
+     "prev": 1365.8
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 238.5,
+     "prev": 230.6
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 170.1,
+     "prev": 170.7
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 86.0,
+     "prev": 87.9
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 119.7,
+     "prev": 113.3
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1608.6,
+     "prev": 1549.3
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 663.0,
+     "prev": 652.6
+    }
+   ],
+   "groups": {
+    "in_situ": 1991.5,
+    "mined": 1608.6,
+    "conv": 663.0
+   },
+   "identity": {
+    "gross": 4263.1,
+    "maintenance": 0.0,
+    "receipts": 1053.5,
+    "losses": 153.0,
+    "flare": 48.0,
+    "fuel": 23.7,
+    "shrinkage": 81.3,
+    "adjustments": -15.8,
+    "plug": 130.8,
+    "net_supply": 5017.0,
+    "refinery": 623.6,
+    "exports": 4393.4,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 726.1,
+   "diluent": {
+    "imports_total": 327.4,
+    "condensate_imports": 238.6,
+    "pentanes_imports": 88.8,
+    "condensate_production": 95.2,
+    "total": 422.6
+   },
+   "refinery": {
+    "total": 623.6,
+    "sales": 517.0,
+    "other": 106.6
+   },
+   "grades": {
+    "total": 4395.9,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 421.0
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 67.9
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 174.1
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1415.1
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2317.8
+     }
+    ],
+    "sco": 1415.1,
+    "mined_dashboard": 1893.7,
+    "mined_to_upgrader": 1693.9,
+    "mined_to_market": 199.8
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 257.4
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 231.7
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 210.8
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 146.8
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 99.4
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 73.9
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 56.3
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.1
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 33.0
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 24.0
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 23.4
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.1
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.6
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.7
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 15.2
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 11.4
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.3
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.6
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 170.1
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 155.4
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 119.7
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 86.0
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 79.6
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.5
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 333.8
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 308.8
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 297.6
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 241.2
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 196.6
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 187.0
+     },
+     {
+      "label": "Fort Hills",
+      "value": 177.4
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 151.2
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 380.4
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 357.6
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 329.5
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 302.0
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 45.6
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 325.8
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 140.6
+     },
+     {
+      "label": "Condensate",
+      "value": 95.2
+     },
+     {
+      "label": "Medium",
+      "value": 67.9
+     },
+     {
+      "label": "Heavy",
+      "value": 33.5
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2941.7,
+     "util": 96.4,
+     "prev": 2891.3
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 921.6,
+     "util": 96.4,
+     "prev": 905.7
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 620.1,
+     "util": 96.4,
+     "prev": 609.4
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 4993.4,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-08": {
+   "ym": "2027-08",
+   "label": "August 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5273,
+    "effective_pipes_kbd": 5074.0,
+    "effective_stack_kbd": 5159.0,
+    "supply_net_kbd": 4960.9,
+    "demand_wants_kbd": 4960.9,
+    "refinery_kbd": 613.0,
+    "removals_wanted_kbd": 4347.9,
+    "exports_shipped_kbd": 4347.9,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 95.9
+   },
+   "gross_production_kbd": 4245.4,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1388.2,
+     "prev": 1377.2
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 226.7,
+     "prev": 238.5
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 169.7,
+     "prev": 170.1
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 85.4,
+     "prev": 86.0
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 121.5,
+     "prev": 119.7
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1580.5,
+     "prev": 1608.6
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 673.4,
+     "prev": 663.0
+    }
+   ],
+   "groups": {
+    "in_situ": 1991.5,
+    "mined": 1580.5,
+    "conv": 673.4
+   },
+   "identity": {
+    "gross": 4245.4,
+    "maintenance": 0.0,
+    "receipts": 1016.9,
+    "losses": 154.2,
+    "flare": 49.0,
+    "fuel": 23.9,
+    "shrinkage": 81.3,
+    "adjustments": -16.4,
+    "plug": 130.8,
+    "net_supply": 4960.9,
+    "refinery": 613.0,
+    "exports": 4347.9,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 722.5,
+   "diluent": {
+    "imports_total": 294.4,
+    "condensate_imports": 214.5,
+    "pentanes_imports": 79.9,
+    "condensate_production": 100.5,
+    "total": 394.9
+   },
+   "refinery": {
+    "total": 613.0,
+    "sales": 511.0,
+    "other": 102.0
+   },
+   "grades": {
+    "total": 4383.8,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 431.5
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 68.6
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 173.4
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1407.9
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2302.4
+     }
+    ],
+    "sco": 1407.9,
+    "mined_dashboard": 1878.9,
+    "mined_to_upgrader": 1700.0,
+    "mined_to_market": 178.9
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 254.0
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 242.5
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 214.7
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 149.3
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 103.4
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 70.2
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 55.9
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.2
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 33.4
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 24.9
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 24.0
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.3
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.8
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.8
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 15.4
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 11.5
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.5
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.5
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 169.7
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 148.4
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 121.5
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 85.4
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 74.6
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 3.6
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 312.5
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 310.0
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 293.4
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 224.4
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 201.2
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 194.1
+     },
+     {
+      "label": "Fort Hills",
+      "value": 184.8
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 158.6
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 382.9
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 363.7
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 331.9
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 282.6
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 46.9
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 331.0
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 139.8
+     },
+     {
+      "label": "Condensate",
+      "value": 100.5
+     },
+     {
+      "label": "Medium",
+      "value": 68.6
+     },
+     {
+      "label": "Heavy",
+      "value": 33.6
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3200,
+     "effective": 3050.4,
+     "flow": 2911.9,
+     "util": 95.5,
+     "prev": 2941.7
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 912.2,
+     "util": 95.5,
+     "prev": 921.6
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 613.8,
+     "util": 95.5,
+     "prev": 620.1
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 4947.9,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-09": {
+   "ym": "2027-09",
+   "label": "September 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5423,
+    "effective_pipes_kbd": 5224.0,
+    "effective_stack_kbd": 5309.0,
+    "supply_net_kbd": 5019.1,
+    "demand_wants_kbd": 5019.1,
+    "refinery_kbd": 558.7,
+    "removals_wanted_kbd": 4460.4,
+    "exports_shipped_kbd": 4460.4,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 95.3
+   },
+   "gross_production_kbd": 4322.9,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1389.3,
+     "prev": 1388.2
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 236.6,
+     "prev": 226.7
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 173.3,
+     "prev": 169.7
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 84.5,
+     "prev": 85.4
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 120.9,
+     "prev": 121.5
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1655.4,
+     "prev": 1580.5
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 662.9,
+     "prev": 673.4
+    }
+   ],
+   "groups": {
+    "in_situ": 2004.6,
+    "mined": 1655.4,
+    "conv": 662.9
+   },
+   "identity": {
+    "gross": 4322.9,
+    "maintenance": 12.0,
+    "receipts": 1011.4,
+    "losses": 151.6,
+    "flare": 48.0,
+    "fuel": 23.9,
+    "shrinkage": 79.7,
+    "adjustments": -20.8,
+    "plug": 130.8,
+    "net_supply": 5019.1,
+    "refinery": 558.7,
+    "exports": 4460.4,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 710.4,
+   "diluent": {
+    "imports_total": 301.0,
+    "condensate_imports": 219.3,
+    "pentanes_imports": 81.7,
+    "condensate_production": 97.0,
+    "total": 398.0
+   },
+   "refinery": {
+    "total": 558.7,
+    "sales": 463.8,
+    "other": 94.9
+   },
+   "grades": {
+    "total": 4455.8,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 422.5
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 67.8
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 172.6
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1349.9
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2443.0
+     }
+    ],
+    "sco": 1349.9,
+    "mined_dashboard": 1819.4,
+    "mined_to_upgrader": 1507.6,
+    "mined_to_market": 311.8
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 257.4
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 247.5
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 214.8
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 148.2
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 101.7
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 78.2
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.8
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 33.5
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 26.6
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 25.2
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.4
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.6
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 17.0
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 16.0
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 13.6
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 11.4
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.5
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.5
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 173.3
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 153.3
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 120.9
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 84.5
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 79.3
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 4.0
+     }
+    ],
+    "mined": [
+     {
+      "label": "Kearl (Imperial)",
+      "value": 318.1
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 314.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 302.4
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 233.1
+     },
+     {
+      "label": "Fort Hills",
+      "value": 187.2
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 172.8
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 160.0
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 131.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 363.2
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 361.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 298.7
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 280.9
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 45.3
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 325.5
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 139.8
+     },
+     {
+      "label": "Condensate",
+      "value": 97.0
+     },
+     {
+      "label": "Medium",
+      "value": 67.8
+     },
+     {
+      "label": "Heavy",
+      "value": 32.8
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3350,
+     "effective": 3200.4,
+     "flow": 3034.6,
+     "util": 94.8,
+     "prev": 2911.9
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 906.1,
+     "util": 94.8,
+     "prev": 912.2
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 609.7,
+     "util": 94.8,
+     "prev": 613.8
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5060.4,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-10": {
+   "ym": "2027-10",
+   "label": "October 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5423,
+    "effective_pipes_kbd": 5224.0,
+    "effective_stack_kbd": 5309.0,
+    "supply_net_kbd": 5024.5,
+    "demand_wants_kbd": 5024.5,
+    "refinery_kbd": 580.2,
+    "removals_wanted_kbd": 4444.3,
+    "exports_shipped_kbd": 4444.3,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 95.0
+   },
+   "gross_production_kbd": 4244.7,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1382.2,
+     "prev": 1389.3
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 232.8,
+     "prev": 236.6
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 177.7,
+     "prev": 173.3
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 83.8,
+     "prev": 84.5
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 122.7,
+     "prev": 120.9
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1576.5,
+     "prev": 1655.4
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 669.0,
+     "prev": 662.9
+    }
+   ],
+   "groups": {
+    "in_situ": 1999.2,
+    "mined": 1576.5,
+    "conv": 669.0
+   },
+   "identity": {
+    "gross": 4244.7,
+    "maintenance": 0.0,
+    "receipts": 1085.5,
+    "losses": 155.5,
+    "flare": 48.9,
+    "fuel": 21.9,
+    "shrinkage": 84.7,
+    "adjustments": -19.4,
+    "plug": 130.8,
+    "net_supply": 5024.5,
+    "refinery": 580.2,
+    "exports": 4444.3,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 760.2,
+   "diluent": {
+    "imports_total": 325.3,
+    "condensate_imports": 237.0,
+    "pentanes_imports": 88.3,
+    "condensate_production": 92.7,
+    "total": 418.0
+   },
+   "refinery": {
+    "total": 580.2,
+    "sales": 490.6,
+    "other": 89.6
+   },
+   "grades": {
+    "total": 4393.5,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 429.6
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 67.2
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 172.1
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1351.2
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2373.4
+     }
+    ],
+    "sco": 1351.2,
+    "mined_dashboard": 1743.4,
+    "mined_to_upgrader": 1511.7,
+    "mined_to_market": 231.7
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 256.3
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 239.5
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 215.6
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 149.4
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 98.7
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 76.0
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 55.5
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.4
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 33.5
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 28.6
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 26.6
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 23.9
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 19.6
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.9
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 14.4
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 11.1
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.5
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.2
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 177.7
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 154.2
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 122.7
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 83.8
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 74.3
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 4.3
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 315.0
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 288.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 255.8
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 221.3
+     },
+     {
+      "label": "Fort Hills",
+      "value": 184.4
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 173.8
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 172.0
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 132.6
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 369.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 343.6
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 298.2
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 294.8
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 45.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 336.9
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 139.0
+     },
+     {
+      "label": "Condensate",
+      "value": 92.7
+     },
+     {
+      "label": "Medium",
+      "value": 67.2
+     },
+     {
+      "label": "Heavy",
+      "value": 33.1
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3350,
+     "effective": 3200.4,
+     "flow": 3023.9,
+     "util": 94.5,
+     "prev": 3034.6
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 902.9,
+     "util": 94.5,
+     "prev": 906.1
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 607.5,
+     "util": 94.5,
+     "prev": 609.7
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5044.3,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-11": {
+   "ym": "2027-11",
+   "label": "November 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5423,
+    "effective_pipes_kbd": 5224.0,
+    "effective_stack_kbd": 5309.0,
+    "supply_net_kbd": 5171.0,
+    "demand_wants_kbd": 5171.0,
+    "refinery_kbd": 618.7,
+    "removals_wanted_kbd": 4552.3,
+    "exports_shipped_kbd": 4552.3,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 97.0
+   },
+   "gross_production_kbd": 4358.4,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1399.0,
+     "prev": 1382.2
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 241.3,
+     "prev": 232.8
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 177.5,
+     "prev": 177.7
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 83.1,
+     "prev": 83.8
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 121.3,
+     "prev": 122.7
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1652.0,
+     "prev": 1576.5
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 684.2,
+     "prev": 669.0
+    }
+   ],
+   "groups": {
+    "in_situ": 2022.2,
+    "mined": 1652.0,
+    "conv": 684.2
+   },
+   "identity": {
+    "gross": 4358.4,
+    "maintenance": 0.0,
+    "receipts": 1122.8,
+    "losses": 161.9,
+    "flare": 51.2,
+    "fuel": 23.8,
+    "shrinkage": 86.9,
+    "adjustments": -17.5,
+    "plug": 130.8,
+    "net_supply": 5171.0,
+    "refinery": 618.7,
+    "exports": 4552.3,
+    "storage_change": 0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 801.5,
+   "diluent": {
+    "imports_total": 321.3,
+    "condensate_imports": 234.1,
+    "pentanes_imports": 87.2,
+    "condensate_production": 96.1,
+    "total": 417.4
+   },
+   "refinery": {
+    "total": 618.7,
+    "sales": 510.7,
+    "other": 108.0
+   },
+   "grades": {
+    "total": 4513.3,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 446.7
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 66.0
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 171.5
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1444.7
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2384.4
+     }
+    ],
+    "sco": 1444.7,
+    "mined_dashboard": 1958.9,
+    "mined_to_upgrader": 1745.2,
+    "mined_to_market": 213.7
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 260.6
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 249.2
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 215.6
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 150.0
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 95.4
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 84.1
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 56.3
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 33.2
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 32.5
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 30.3
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 24.8
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 24.3
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.7
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 15.9
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.7
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 12.1
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.4
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.4
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 177.5
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 162.0
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 121.3
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 83.1
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 75.0
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 4.3
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 330.7
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 317.0
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 306.7
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 227.5
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 205.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 205.3
+     },
+     {
+      "label": "Fort Hills",
+      "value": 194.6
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 171.1
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "sco": [
+     {
+      "label": "Suncor Base Plant",
+      "value": 382.5
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 374.2
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 340.8
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 297.8
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 49.4
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 350.6
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 138.2
+     },
+     {
+      "label": "Condensate",
+      "value": 96.1
+     },
+     {
+      "label": "Medium",
+      "value": 66.0
+     },
+     {
+      "label": "Heavy",
+      "value": 33.3
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3350,
+     "effective": 3200.4,
+     "flow": 3095.9,
+     "util": 96.7,
+     "prev": 3023.9
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 924.4,
+     "util": 96.7,
+     "prev": 902.9
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 622.0,
+     "util": 96.7,
+     "prev": 607.5
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5152.3,
+   "storage": {
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  },
+  "2027-12": {
+   "ym": "2027-12",
+   "label": "December 2027",
+   "cards": {
+    "nameplate_pipes_kbd": 5423,
+    "effective_pipes_kbd": 5224.0,
+    "effective_stack_kbd": 5309.0,
+    "supply_net_kbd": 5194.9,
+    "demand_wants_kbd": 5194.9,
+    "refinery_kbd": 621.5,
+    "removals_wanted_kbd": 4573.4,
+    "exports_shipped_kbd": 4573.4,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 97.4
+   },
+   "gross_production_kbd": 4368.7,
+   "production": [
+    {
+     "id": "sagd",
+     "label": "SAGD",
+     "group": "in_situ",
+     "value": 1394.3,
+     "prev": 1399.0
+    },
+    {
+     "id": "css",
+     "label": "CSS (cyclic steam)",
+     "group": "in_situ",
+     "value": 246.2,
+     "prev": 241.3
+    },
+    {
+     "id": "primary",
+     "label": "Primary bitumen",
+     "group": "in_situ",
+     "value": 173.8,
+     "prev": 177.5
+    },
+    {
+     "id": "enhanced",
+     "label": "Enhanced recovery",
+     "group": "in_situ",
+     "value": 82.3,
+     "prev": 83.1
+    },
+    {
+     "id": "unmapped_comm",
+     "label": "Unmapped commercial schemes",
+     "group": "in_situ",
+     "value": 124.8,
+     "prev": 121.3
+    },
+    {
+     "id": "mined",
+     "label": "Mined bitumen",
+     "group": "mined",
+     "value": 1664.4,
+     "prev": 1652.0
+    },
+    {
+     "id": "conventional",
+     "label": "Conventional crude",
+     "group": "conv",
+     "value": 682.9,
+     "prev": 684.2
+    }
+   ],
+   "groups": {
+    "in_situ": 2021.4,
+    "mined": 1664.4,
+    "conv": 682.9
+   },
+   "identity": {
+    "gross": 4368.7,
+    "maintenance": 0.0,
+    "receipts": 1137.5,
+    "losses": 160.9,
+    "flare": 50.1,
+    "fuel": 23.8,
+    "shrinkage": 87.0,
+    "adjustments": -19.6,
+    "plug": 130.8,
+    "net_supply": 5194.9,
+    "refinery": 621.5,
+    "exports": 4573.4,
+    "storage_change": -0.0,
+    "check": 0.0
+   },
+   "receipts_other_kbd": 804.8,
+   "diluent": {
+    "imports_total": 332.7,
+    "condensate_imports": 242.4,
+    "pentanes_imports": 90.3,
+    "condensate_production": 99.8,
+    "total": 432.5
+   },
+   "refinery": {
+    "total": 621.5,
+    "sales": 509.5,
+    "other": 112.0
+   },
+   "grades": {
+    "total": 4527.9,
+    "items": [
+     {
+      "id": "grade_conv_light",
+      "label": "Conventional light and medium",
+      "value": 450.6
+     },
+     {
+      "id": "grade_conv_sour",
+      "label": "Conventional sours",
+      "value": 63.9
+     },
+     {
+      "id": "grade_conv_heavy",
+      "label": "Blended heavy conventional",
+      "value": 168.4
+     },
+     {
+      "id": "grade_sco",
+      "label": "SCO (synthetic crude oil)",
+      "value": 1438.6
+     },
+     {
+      "id": "grade_dilbit",
+      "label": "Dilbit and raw bitumen blends",
+      "value": 2406.4
+     }
+    ],
+    "sco": 1438.6,
+    "mined_dashboard": 1970.2,
+    "mined_to_upgrader": 1738.0,
+    "mined_to_market": 232.2
+   },
+   "detail": {
+    "sagd": [
+     {
+      "label": "Foster Creek (Cenovus)",
+      "value": 264.7
+     },
+     {
+      "label": "Firebag (Suncor)",
+      "value": 245.0
+     },
+     {
+      "label": "Christina Lake (Cenovus)",
+      "value": 213.9
+     },
+     {
+      "label": "Surmont (ConocoPhillips)",
+      "value": 148.8
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 94.6
+     },
+     {
+      "label": "Narrows Lake (Cenovus)",
+      "value": 85.9
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 85.3
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 55.9
+     },
+     {
+      "label": "Pike (CNRL)",
+      "value": 52.1
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 34.4
+     },
+     {
+      "label": "Leismer (Athabasca)",
+      "value": 33.4
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 30.2
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 25.7
+     },
+     {
+      "label": "Tucker (Strathcona)",
+      "value": 25.2
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 21.4
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 16.9
+     },
+     {
+      "label": "Lindbergh (Strathcona)",
+      "value": 15.6
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 10.5
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.2
+     },
+     {
+      "label": "MacKay River (PetroChina) (PetroChina)",
+      "value": 8.4
+     }
+    ],
+    "css": [
+     {
+      "label": "Primary bitumen (ST53)",
+      "value": 173.8
+     },
+     {
+      "label": "Cold Lake (Imperial)",
+      "value": 160.9
+     },
+     {
+      "label": "Unmapped commercial (ST53)",
+      "value": 124.8
+     },
+     {
+      "label": "Enhanced recovery (ST53)",
+      "value": 82.3
+     },
+     {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 80.9
+     },
+     {
+      "label": "Peace River (CNRL)",
+      "value": 4.4
+     }
+    ],
+    "mined": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 330.6
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 322.8
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 312.8
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 228.2
+     },
+     {
+      "label": "Syncrude Aurora",
+      "value": 212.2
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 212.0
+     },
+     {
+      "label": "Fort Hills",
+      "value": 193.1
+     },
+     {
+      "label": "Jackpine (CNRL)",
+      "value": 158.5
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.0
+     }
+    ],
+    "sco": [
+     {
+      "label": "Suncor Base Plant",
+      "value": 377.0
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 373.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 344.2
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 292.8
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 50.6
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": 0.1
+     }
+    ],
+    "conventional": [
+     {
+      "label": "Light",
+      "value": 350.8
+     },
+     {
+      "label": "Ultra-heavy",
+      "value": 136.1
+     },
+     {
+      "label": "Condensate",
+      "value": 99.8
+     },
+     {
+      "label": "Medium",
+      "value": 63.9
+     },
+     {
+      "label": "Heavy",
+      "value": 32.3
+     }
+    ]
+   },
+   "egress": [
+    {
+     "id": "mainline",
+     "label": "Enbridge Mainline (Lakehead)",
+     "dest": "Flanagan, Chicago and the US Midwest",
+     "kind": "swing",
+     "region": "US Midwest",
+     "nameplate": 3350,
+     "effective": 3200.4,
+     "flow": 3110.0,
+     "util": 97.2,
+     "prev": 3095.9
+    },
+    {
+     "id": "trans_mountain",
+     "label": "Trans Mountain (TMX)",
+     "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
+     "kind": "swing",
+     "region": "Pacific coast",
+     "nameplate": 980,
+     "effective": 955.6,
+     "flow": 928.6,
+     "util": 97.2,
+     "prev": 924.4
+    },
+    {
+     "id": "keystone",
+     "label": "Keystone",
+     "dest": "Cushing and Patoka (carried as one line)",
+     "kind": "swing",
+     "region": "US Midcontinent",
+     "nameplate": 640,
+     "effective": 643.0,
+     "flow": 624.8,
+     "util": 97.2,
+     "prev": 622.0
+    },
+    {
+     "id": "express",
+     "label": "Express",
+     "dest": "Casper and Guernsey, Wyoming",
+     "kind": "baseload",
+     "region": "US Rockies",
+     "nameplate": 310,
+     "effective": 290.0,
+     "flow": 290.0,
+     "util": 100.0,
+     "prev": 290.0
+    },
+    {
+     "id": "milk_river",
+     "label": "Milk River",
+     "dest": "Coutts border crossing into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 98,
+     "effective": 90.0,
+     "flow": 90.0,
+     "util": 100.0,
+     "prev": 90.0
+    },
+    {
+     "id": "rangeland",
+     "label": "Rangeland",
+     "dest": "Aurora border segment into Montana",
+     "kind": "baseload",
+     "region": "Montana",
+     "nameplate": 45,
+     "effective": 45.0,
+     "flow": 45.0,
+     "util": 100.0,
+     "prev": 45.0
+    },
+    {
+     "id": "rail",
+     "label": "Rail",
+     "dest": "US destinations by rail",
+     "kind": "rail",
+     "region": "Across the US by rail",
+     "nameplate": null,
+     "effective": 85.0,
+     "flow": 85.0,
+     "util": 100.0,
+     "prev": 85.0
+    }
+   ],
+   "sk_other_kbd": 600.0,
+   "marketable_on_lines_kbd": 5173.4,
+   "storage": {
+    "change_kbd": -0.0,
+    "change_mbbl": -0.0,
+    "level_mmbbl": 64.92,
+    "capacity_mmbbl": 80.6,
+    "ullage_mmbbl": 15.7,
+    "pct_full": 80.5
+   },
+   "apportionment": null,
+   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+  }
+ }
+}

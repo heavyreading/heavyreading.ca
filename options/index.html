@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="options/index.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html" aria-current="page">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html" aria-current="page">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,25 +710,39 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>The Wing</h1>
   <p class="sub">The options section in plain words: what spike insurance costs, what crash insurance costs, and whether real barrels back the fear.</p>
 <section id="top">
-<p><strong>Traders are paying 9.2 points more for protection against a price spike than against a crash. The fear is on the upside.</strong></p>
+<p><strong>Traders are paying 3.1 points more for protection against a price spike than against a crash. The fear is on the upside.</strong></p>
 <p>The Wing reads the crude options market in plain words. We watch what traders pay for insurance against a jump, what they pay against a fall, and whether real barrels back the fear.</p>
 <div class="statgrid">
-<div class="stat"><div class="v">+9.2 pts</div><div class="l">Spike protection minus crash protection</div><div class="d">Technical name: RR25. It compares options that gain from a price jump with options that gain from a fall.</div></div>
-<div class="stat"><div class="v">+43.6 pts</div><div class="l">Far-out spike insurance minus the middle</div><div class="d">Technical name: tail premium. The far-out call is struck about 20% above the market.</div></div>
-<div class="stat"><div class="v">October 23, 2026</div><div class="l">Data date</div><div class="d">Series starts October 15, 2026: n = 7 prints. We print the count. A week is not a history.</div></div>
+<div class="stat"><div class="v">+3.1 pts</div><div class="l">Spike protection minus crash protection</div><div class="d">Technical name: RR25. It compares options that gain from a price jump with options that gain from a fall.</div></div>
+<div class="stat"><div class="v">+7.0 pts</div><div class="l">Far-out spike insurance minus the middle</div><div class="d">Technical name: tail premium. The far-out call is struck about 20% above the market.</div></div>
+<div class="stat"><div class="v">October 29, 2026</div><div class="l">Data date</div><div class="d">Series starts October 15, 2026: n = 11 prints. We print the count. A week is not a history.</div></div>
 </div>
 <p>Public pages show the gauges and our view. No positions. No sizes. No calls to trade. The book sits behind the gate.</p>
 </section>
+<section id="pages">
+<h2>The Wing, page by page<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
+<p>One section, two tiers. The charts are open to every reader. The rest sits behind the sign-in; cleared readers go straight through.</p>
+<h3>The Wing (options)</h3>
+<p><a href="charts/index.html">The Wing charts</a>: the smile (the fear curve), the fear gauges over time, and the missing-barrels check.</p>
+<p><a href="../inner/flow/index.html">The Block Board</a>: big options trades ranked by money. We count only new positions. Then we follow at most one theme.</p>
+<p><a href="../inner/vol/index.html">Vol structures</a>: five standing Brent trades, and the candidate structures tracked beside them. Each one says what it makes if Brent moves $1, what time does to it, and the most it can lose.</p>
+<p><a href="../inner/vol-portfolio/index.html">Vol portfolio</a>: the trades as one book. First question: what is the worst day we have already priced? Every input prints its data date beside the number it feeds.</p>
+<p><a href="../inner/vol/checklist/index.html">The pre-trade checklist</a>: five fields before any trade goes on. A four-line review after it comes off.</p>
+<p><a href="../inner/vol/doctrine/index.html">Doctrine</a>: the reasoning pages. How we size, when we cut size, and the rules every trade lives under, worked on the book's own numbers.</p>
+<h3>The whole book</h3>
+<p><a href="../inner/book/index.html">The Book</a>: the whole paper book on one screen, diffs and the Wing in one account. Every trade, its share of the book's worst day, the size ladder, and every limit with how much of it is used. Its drill-downs sit with it inside the gate: <a href="../inner/trade-ideas/index.html">trade ideas</a> and the <a href="../inner/trade-log/index.html">trade log</a>.</p>
+<p>Positions, sizes and the scored record stay behind the gate.</p>
+</section>
 <section id="view">
-<h2>Our view</h2>
+<h2>Our view<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p>This is what we think. It is not a data print. The gauges below say what the market is paying for. This block says where we land on it.</p>
 <h3>What the barrels are doing</h3>
 <p>On the big agencies' current flow numbers, crude looks roughly balanced to us. Supply and demand are close. This is not a market with a clear barrel shortage.</p>
 <p>East-west barrels and Hormuz barrels are moving. The strongest outside counts put Hormuz-linked flow at roughly 70 to 82 percent of its pre-war pace. Much of it moves dark, under escort, or through ship-to-ship transfers.</p>
 <p>Iran is already all-in on disruption. It is not stopping the flow against the US Navy escort system. More shouting about escalation does not, by itself, take away barrels that are already moving.</p>
-<p>Products are the soft leg. This part is now checked: checked Oct 25 against our own crack series, Reuters, and the IEA's October report. The crack that pulled refinery demand for crude has broken. Our diesel crack closed Oct 23 at $97.78, the first close under $100 since the run began Aug 17. Gasoline fell from $48.01 to $28.12 between Oct 2 and Oct 23. Products lagged while crude rallied.</p>
+<p>Products are softening. This part is now checked: checked Oct 25 against our own crack series, Reuters, and the IEA's October report. The crack that pulled refinery demand for crude has broken. Our diesel crack closed Oct 23 at $97.78, the first close under $100 since the run began Aug 17. Gasoline fell from $48.01 to $28.12 between Oct 2 and Oct 23. Products lagged while crude rallied.</p>
 <p>Russia's refinery damage is a real, large subtraction. Reuters industry sources put about 900,000 barrels a day of primary refining capacity idle in October, and Russian diesel exports are down 41 percent from a year ago. The exact size cannot be verified: estimates range widely, and Kyiv's claim that 51 percent of capacity is out is unverified. Reuters sees over half of October's idle capacity coming back in November. That return is the dated risk to this leg.</p>
-<p>China did not cut its export quotas. The batches came in flat. What changed is Beijing filling its own tanks first: diesel stocks sit about 20 million barrels below pre-war, so exports are rationed month to month. Chinese refiners ran hard, about 14.0 million barrels a day in September, chasing record overseas prices. The genuine Chinese softness is gasoline demand, not refining.</p>
+<p>China's export quotas came in flat versus last year. Beijing is filling its own tanks first: diesel stocks sit about 20 million barrels below pre-war, so exports are rationed month to month. Chinese refiners ran hard, about 14.0 million barrels a day in September, chasing record overseas prices. The genuine Chinese softness is gasoline demand, not refining.</p>
 <p>Freight into Europe is not weak. It is at records: the Baltic clean tanker index topped 3,000 for the first time, and the big product carriers earn over $300,000 a day. The IEA's own line is that record freight and crude costs crushed refinery margins in Europe and Asia. Europe's refiners are strangled by cost, not short of ships.</p>
 <p>One warning against reading this as products healing: diesel stays short. The IEA sees no rebuild of diesel stocks before the second half of 2027. The softness is gasoline and refinery margins in Europe and Asia, not a diesel surplus.</p>
 <h3>What the options market is paying for</h3>
@@ -684,7 +752,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <h3>Where we think price is wrong</h3>
 <p>We think price is charging for barrels stopping when the barrels have not stopped. The shortage in the price is bigger than the shortage in the water.</p>
 <p>A strike headline would not change that by itself. Our first read of a strike-driven spike would be fear first, not a new physical loss. That read lasts only until the flow check says otherwise.</p>
-<p>The soft leg is products, not crude. Crude can look balanced while gasoline and refinery margins struggle. Diesel is a different story: it stays short, and this view does not say otherwise.</p>
+<p>Products are the softening leg. Crude can look balanced while gasoline and refinery margins struggle. Diesel is a different story: it stays short, and this view does not say otherwise.</p>
 <h3>What would change our mind</h3>
 <p>If the best outside tanker counts fall hard, loadings drop, and the barrels stop crossing, this view is wrong. A headline would not do it. Stopped barrels would.</p>
 <p>If the escort system fails, bypass routes stop working, and storage at the big hubs draws fast at the same time, the shortage is real and the fear is backed.</p>
@@ -693,48 +761,36 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p>View date: October 25, 2026. Every change gets a new date. An old view is not quietly edited into a right one.</p>
 </section>
 <section id="gauges">
-<h2>The fear gauges</h2>
-<p>Data date: October 23, 2026. Start with the sentence you can repeat: Traders are paying 9.2 points more for protection against a price spike than against a crash. The fear is on the upside.</p>
-<p>Far-out spike insurance costs 43.6 points more than middle-of-the-market insurance. That tells us how far the fear runs. It does not tell us a spike will happen.</p>
+<h2>The fear gauges<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
+<p>Data date: October 29, 2026. Start with the sentence you can repeat: Traders are paying 3.1 points more for protection against a price spike than against a crash. The fear is on the upside.</p>
+<p>Far-out spike insurance costs 7.0 points more than middle-of-the-market insurance. That tells us how far the fear runs. It does not tell us a spike will happen.</p>
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Contract</th><th>Futures</th><th>Middle-of-the-market volatility<br><span class="dim">at-the-money IV</span></th><th>Higher-price insurance minus lower-price insurance<br><span class="dim">technical name: RR25, points</span></th><th>Far-out spike insurance minus the middle<br><span class="dim">technical name: tail premium, points</span></th><th>Far-out call volatility</th></tr></thead><tbody>
-<tr><td><strong>Brent, October 28, 2026 expiry</strong><br><span class="dim">5 days to run, n = 7 prints</span></td><td>116.72</td><td>46.72%</td><td>+9.17<br><span class="dim">n too small (7 prints)</span></td><td>+43.64</td><td>90.37%</td></tr>
-<tr><td><strong>Brent, November 26, 2026 expiry</strong><br><span class="dim">34 days to run, n = 7 prints</span></td><td>111.70</td><td>59.15%</td><td>+8.87</td><td>+8.02</td><td>67.17%</td></tr>
-<tr><td><strong>WTI, November 20, 2026 expiry</strong><br><span class="dim">28 days to run, n = 7 prints</span></td><td>103.23</td><td>52.69%</td><td>+6.86<br><span class="dim">n too small (6 prints)</span></td><td>+9.19</td><td>61.88%</td></tr>
-<tr><td><strong>WTI, December 21, 2026 expiry</strong><br><span class="dim">59 days to run, n = 7 prints</span></td><td>100.87</td><td>51.92%</td><td>+7.49</td><td>+6.96</td><td>58.89%</td></tr>
+<tr><td><strong>Brent, November 26, 2026 expiry</strong><br><span class="dim">28 days to run, n = 11 prints</span></td><td>110.80</td><td>55.85%</td><td>+3.11<br><span class="dim">50th pct of 10 prints</span></td><td>+7.02</td><td>62.87%</td></tr>
+<tr><td><strong>Brent, December 29, 2026 expiry</strong><br><span class="dim">61 days to run, n = 11 prints</span></td><td>107.15</td><td>54.22%</td><td>+6.47</td><td>+5.26</td><td>59.49%</td></tr>
+<tr><td><strong>WTI, November 20, 2026 expiry</strong><br><span class="dim">22 days to run, n = 11 prints</span></td><td>101.98</td><td>47.03%</td><td>+1.28<br><span class="dim">20th pct of 10 prints</span></td><td>+14.61</td><td>61.63%</td></tr>
+<tr><td><strong>WTI, December 21, 2026 expiry</strong><br><span class="dim">53 days to run, n = 11 prints</span></td><td>101.98</td><td>n/a%</td><td>n/a</td><td>n/a</td><td>n/a%</td></tr>
 </tbody></table></div>
-<p>Front Brent expires October 28, 2026. Its far-out call trades at 90.37% volatility. A week earlier, spike protection cost about the same as crash protection, but the far-out insurance was already bid. The deep insurance went on first.</p>
-<p><a href="../chartbook.html#volatility">Chartbook: Volatility and skew</a>. The price curve, the fear gauges, and the missing-barrels check.</p>
+<p>Front Brent expires November 26, 2026. Its far-out call trades at 62.87% volatility. A week earlier, spike protection cost about the same as crash protection, but the far-out insurance was already bid. The deep insurance went on first.</p>
+<p><a href="charts/index.html">The Wing charts</a>: the smile (the fear curve), the fear gauges, and the missing-barrels check.</p>
 </section>
 <section id="episode">
-<h2>Is the fear backed by missing barrels?</h2>
+<h2>Is the fear backed by missing barrels?<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p>When crude jumps on a supply scare, we ask one plain question: are barrels really missing?</p>
 <p>First we count what we can see. Ships still report their position. Big storage hubs publish stocks.</p>
 <p>Then we write down what tracking firms say moved. Those are claims, not counts. Ships can turn their signals off.</p>
 <p>Price can pay for more missing barrels than the physical record confirms. That extra part is fear money. In plain words: it is the part price is paying for that the physical record does not confirm.</p>
 <p>We also check the back of the curve. If Brent for late 2027 has not moved, the market is paying for a front scare, not a lasting shortage.</p>
-<p><a href="../chartbook.html#volatility">See the current missing-barrels check in the Chartbook</a>. When no scare is live, it says so in plain words.</p>
+<p><a href="charts/index.html">See the current missing-barrels check on the Wing charts page</a>. When no scare is live, it says so in plain words.</p>
 </section>
 <section id="lesson">
-<h2>Lesson one: expensive insurance is not a forecast</h2>
+<h2>Lesson one: expensive insurance is not a forecast<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
 <p>Expensive spike insurance says fear costs money. It does not say the spike is likely.</p>
 <p>Some buyers have no choice. A refiner that needs crude must protect against a jump. Sellers charge for carrying that risk. So insurance can stay rich for months while nothing happens.</p>
 <p>October 2026 is the worked example. For a week, spike protection cost about the same as crash protection, while far-out spike insurance stayed bid. Then the front gauge jumped with price. The front fear reacted. The far-out insurance was the early tell.</p>
 <p><a href="../fieldguide/index.html">The field guide</a>: the teaching pages. The options course lands there piece by piece.</p>
 </section>
-<section id="inner">
-<h2>Inside the gate</h2>
-<h3>Vol structures</h3>
-<p>Five standing Brent trades, and the candidate structures tracked beside them: the capped straddle, the lopsided condor, and the risk reversal with its crash tail cut off. Each one says what it makes if Brent moves $1, what it makes or loses each day as time passes, and the most it can lose.</p>
-<h3>Vol portfolio</h3>
-<p>The trades as one book. First question: what is the worst day we have already priced? Every input prints its data date beside the number it feeds.</p>
-<h3>The Block Board</h3>
-<p>Big options trades ranked by money. We count only new positions. Then we follow at most one theme.</p>
-<h3>Reasoning pages</h3>
-<p>How we size, when we cut size, and the five checks every trade passes before it goes on.</p>
-<p>Positions, sizes and the scored record stay behind the gate.</p>
-</section>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -835,5 +891,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

@@ -1,0 +1,195 @@
+{
+ "schema": "micro-balance/1",
+ "level": "rollup",
+ "region": "rollup_fsu",
+ "title": "FSU and Central Asia balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Each country enters on its declared headline spine per leg (the same declaration as its country page). Totals are sums of those declared reads; coverage counts print beside every total.",
+ "units": "kb/d unless a field name says otherwise",
+ "grain": {
+  "capture": "Country grain from the agency panel, built up from states and basins for the US and from the house balance for Canada.",
+  "display": "FSU and Central Asia"
+ },
+ "totals": {
+  "production_crude": 12729.9,
+  "production_liquids": 13592.1,
+  "consumption_products": 119.0
+ },
+ "coverage": {
+  "production_crude": 7,
+  "production_liquids": 7,
+  "consumption_products": 1
+ },
+ "n_members": 7,
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "declared_total": 12729.9,
+   "per_spine": {
+    "JODI": {
+     "total": 2209.6,
+     "n": 2
+    },
+    "EIA_international": {
+     "total": 12729.9,
+     "n": 7
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "declared_total": 13592.1,
+   "per_spine": {
+    "EIA_international": {
+     "total": 13592.1,
+     "n": 7
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "declared_total": 119.0,
+   "per_spine": {
+    "JODI": {
+     "total": 119.0,
+     "n": 1
+    }
+   },
+   "missing_members": 6
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "declared_total": null,
+   "per_spine": {},
+   "missing_members": 7
+  }
+ ],
+ "trade": [],
+ "members": [
+  {
+   "country": "Russia",
+   "code": "RUS",
+   "slug": "russia",
+   "legs": {
+    "production_crude": {
+     "value": 9884.8,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 10534.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Kazakhstan",
+   "code": "KAZ",
+   "slug": "kazakhstan",
+   "legs": {
+    "production_crude": {
+     "value": 2047.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 2150.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Azerbaijan",
+   "code": "AZE",
+   "slug": "azerbaijan",
+   "legs": {
+    "production_crude": {
+     "value": 571.3,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 577.3,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 119.0,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Turkmenistan",
+   "code": "TKM",
+   "slug": "turkmenistan",
+   "legs": {
+    "production_crude": {
+     "value": 190.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 274.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Uzbekistan",
+   "code": "UZB",
+   "slug": "uzbekistan",
+   "legs": {
+    "production_crude": {
+     "value": 29.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 49.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Kyrgyzstan",
+   "code": "KGZ",
+   "slug": "kyrgyzstan",
+   "legs": {
+    "production_crude": {
+     "value": 5.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 5.5,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Tajikistan",
+   "code": "TJK",
+   "slug": "tajikistan",
+   "legs": {
+    "production_crude": {
+     "value": 0.3,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.3,
+     "spine": "EIA_international"
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "gaps": [],
+ "supply": [],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "cards": {}
+}

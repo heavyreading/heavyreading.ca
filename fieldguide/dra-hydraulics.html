@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="fieldguide/dra-hydraulics.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,21 +710,21 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>Drag-reducing agents and pipeline hydraulics</h1>
   <p class="sub">Chemistry is the cheapest pipeline capacity there is. A few parts per million of polymer can buy Trans Mountain 90,000 bpd, and the same physics explains why nameplate capacity is a reference point, not a physical constant.</p>
   <p class="vintage">Field guide entry &middot; written September 29, 2026.</p>
-  <h2>The Toms effect</h2>
+  <h2>The Toms effect<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>In 1948, B. A. Toms found that a few parts per million of polymer in a flowing liquid can cut skin-friction drag by up to 80% in turbulent flow. Drag-reducing agents (DRAs), also called flow improvers, are very-long-chain polymers (molecular weight typically above 2 million), usually polyolefins like polydecene for crude oil. At tens of ppm, the chains are stretched by turbulent eddies and damp them, thickening the calm layer near the pipe wall: the same pumps push more oil, or the same oil at lower pressure.</p><p>The critical qualifier: this only works in turbulent flow. In laminar flow there are no eddies to suppress, so DRA does nothing, which is why it fails on heavy oil.</p>
-  <h2>Pumps eat the polymer</h2>
+  <h2>Pumps eat the polymer<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>High shear in pumps, elbows, and valves chops the chains up, irreversibly. Each pump station destroys the polymer from the previous segment, so fresh chemical must be re-injected along the line.</p><p>It is also a consumable: unlike steel, you keep paying for it with every barrel. Trans-Alaska (TAPS) used a drag-reducing additive from 1979 to hit the 1.52 Mb/d Prudhoe Bay production rate, but the additive was expensive, so the permanent path to the 2.0 Mb/d limit was added pumping capacity (Oil & Gas Journal, February 1980). Chemistry now versus steel later is as old as DRA itself.</p>
-  <h2>Trans Mountain's $9 million barrel</h2>
+  <h2>Trans Mountain's $9 million barrel<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Trans Mountain's May 2026 fact sheet: DRA injection adds approximately 90,000 bpd, about 10% of nominal capacity, in service January 2027, via 17 injection units at 13 stations, about $9 million (Stockwatch summary of Financial Post, Sep 2026).</p><p>Compare the steel. The same fact sheet states the Mainline Optimization Project at 210,000 bpd by Q4 2028, taking the system to 1,190,000 bpd including DRA. CEO Mark Maki earlier floated roughly 360,000 b/d at $3 to 4 billion (Globe and Mail); the fact sheet is the current company statement. Chemistry runs roughly two orders of magnitude cheaper per barrel of capacity than steel. Caveat: the DRA project only proceeds if shippers confirm the volumes through an open season.</p>
-  <h2>Where DRA does not help</h2>
+  <h2>Where DRA does not help<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>DRA reduces frictional pressure loss and nothing else. Its limits:</p><ul class="ev"><li>Heavy oil. Traditional DRAs become ineffective and uneconomic below about 23 API gravity: heavy oil is too thick for strong turbulence. Dedicated heavy-oil products exist (LiquidPower's ExtremePower cites proven results on WCS).</li><li>Non-friction constraints. Nothing for bottlenecks at terminals, tankage, marine loading, or regulatory and contractual caps.</li><li>Lines running below their hydraulic limit. No friction bottleneck, no benefit.</li></ul>
-  <h2>Why capacity is a range, not a number</h2>
+  <h2>Why capacity is a range, not a number<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Keystone's regulatory documents distinguish design capacity (maximum with all equipment available) from nominal capacity (the long-term sustainable rate, net of seasonal temperature, maintenance, and outages). Check which one any capacity number is.</p><p>Throughput moves with the batch slate (heavy batches are more viscous and move slower), temperature (cold oil is thicker), each segment's pressure limit, the elevation profile, and pump station spacing and availability. There is also a floor: multigrade lines must stay turbulent enough to keep batches from smearing together. Nameplate capacity is a reference point, not a physical constant.</p>
-  <h2>The optimization ladder, cheapest first</h2>
+  <h2>The optimization ladder, cheapest first<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>The ladder, cheapest first: DRA dosing (millions, months, little regulatory lift), pump re-wheeling and variable-frequency drives (VFDs), terminal enhancements and booster stations (tens to hundreds of millions), then parallel loops and new pump stations (billions, multi-year, full regulatory review). DRA is the cheapest marginal barrel.</p>
-<div class="exec"><h2>Why it matters</h2><p>Every capacity headline is an assumption stack: whose definition, what slate, what season, what is actually built. For WCS, remember the heavy-oil limit: traditional DRA fades below about 23 API, so chemistry buys less on heavy lines than light ones. Read every nameplate as a reference rate under stated conditions, then discount it for season, slate, and the constraints DRA cannot touch.</p></div>
-<h2>Sources</h2><ul class="ev"><li>Trans Mountain, Fact Sheet, May: Capacity Overview (published July 2026) (<a href="https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf">https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf</a>)</li><li>Stockwatch / Financial Post, Summary of Trans Mountain DRA project reporting (Sep 2026) (<a href="https://www.stockwatch.com/News/Item?bid=Z-C:*MKTOIL-3782355&symbol=*MKTOIL&region=C">https://www.stockwatch.com/News/Item?bid=Z-C:*MKTOIL-3782355&amp;symbol=*MKTOIL&amp;region=C</a>)</li><li>Globe and Mail, Trans Mountain CEO Mark Maki on DRA and Mainline Optimization scope (<a href="https://groups.google.com/g/sid-l/c/Ke6bTCUwcdc">https://groups.google.com/g/sid-l/c/Ke6bTCUwcdc</a>)</li><li>LiquidPower, LP 100 drag-reducing agent product brochure (<a href="https://delrio.com.co/wp-content/uploads/2021/06/BROCHURE-PIPELINES-LP100-INGLES.pdf">https://delrio.com.co/wp-content/uploads/2021/06/BROCHURE-PIPELINES-LP100-INGLES.pdf</a>)</li><li>MDPI Polymers, Drag reduction review (2023) (<a href="https://www.mdpi.com/2073-4360/15/5/1108/xml">https://www.mdpi.com/2073-4360/15/5/1108/xml</a>)</li><li>Wikipedia, Toms effect (<a href="https://en.wikipedia.org/wiki/Toms_effect">https://en.wikipedia.org/wiki/Toms_effect</a>)</li><li>Wikipedia, Drag reducing agent (<a href="https://en.wikipedia.org/wiki/Drag_reducing_agent">https://en.wikipedia.org/wiki/Drag_reducing_agent</a>)</li><li>BOE Report, New pipeline projects appear enough to solve recurring capacity constraints (2022-09-20) (<a href="https://boereport.com/2022/09/20/new-pipeline-projects-appear-enough-to-solve-recurring-capacity-constraints-for-canadian-crude-but-permanent-relief-is-not-guaranteed/amp/">https://boereport.com/2022/09/20/new-pipeline-projects-appear-enough-to-solve-recurring-capacity-constraints-for-canadian-crude-but-permanent-relief-is-not-guaranteed/amp/</a>)</li><li>Montana DEQ, Keystone XL Chapter 4 (design vs. nominal capacity) (<a href="https://deq.mt.gov/files/DEQAdmin/MFS/Documents/Chapter4.pdf">https://deq.mt.gov/files/DEQAdmin/MFS/Documents/Chapter4.pdf</a>)</li><li>Rigzone, The process of crude oil transport via pipelines (<a href="https://www.rigzone.com/insights/operational-questions-8/what-is-the-process-of-crude-oil-transport-via-pipelines-984/">https://www.rigzone.com/insights/operational-questions-8/what-is-the-process-of-crude-oil-transport-via-pipelines-984/</a>)</li><li>OSTI, Oil &amp; Gas Journal, February 1980 (TAPS additive history) (<a href="https://www.osti.gov/biblio/5502862">https://www.osti.gov/biblio/5502862</a>)</li></ul>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+<div class="exec"><h2>Why it matters<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p>Every capacity headline is an assumption stack: whose definition, what slate, what season, what is actually built. For WCS, remember the heavy-oil limit: traditional DRA fades below about 23 API, so chemistry buys less on heavy lines than light ones. Read every nameplate as a reference rate under stated conditions, then discount it for season, slate, and the constraints DRA cannot touch.</p></div>
+<h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><ul class="ev"><li>Trans Mountain, Fact Sheet, May: Capacity Overview (published July 2026) (<a href="https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf">https://docs.transmountain.com/1063_May-TM-Fact-Sheet_July_2_2026.pdf</a>)</li><li>Stockwatch / Financial Post, Summary of Trans Mountain DRA project reporting (Sep 2026) (<a href="https://www.stockwatch.com/News/Item?bid=Z-C:*MKTOIL-3782355&symbol=*MKTOIL&region=C">https://www.stockwatch.com/News/Item?bid=Z-C:*MKTOIL-3782355&amp;symbol=*MKTOIL&amp;region=C</a>)</li><li>Globe and Mail, Trans Mountain CEO Mark Maki on DRA and Mainline Optimization scope (<a href="https://groups.google.com/g/sid-l/c/Ke6bTCUwcdc">https://groups.google.com/g/sid-l/c/Ke6bTCUwcdc</a>)</li><li>LiquidPower, LP 100 drag-reducing agent product brochure (<a href="https://delrio.com.co/wp-content/uploads/2021/06/BROCHURE-PIPELINES-LP100-INGLES.pdf">https://delrio.com.co/wp-content/uploads/2021/06/BROCHURE-PIPELINES-LP100-INGLES.pdf</a>)</li><li>MDPI Polymers, Drag reduction review (2023) (<a href="https://www.mdpi.com/2073-4360/15/5/1108/xml">https://www.mdpi.com/2073-4360/15/5/1108/xml</a>)</li><li>Wikipedia, Toms effect (<a href="https://en.wikipedia.org/wiki/Toms_effect">https://en.wikipedia.org/wiki/Toms_effect</a>)</li><li>Wikipedia, Drag reducing agent (<a href="https://en.wikipedia.org/wiki/Drag_reducing_agent">https://en.wikipedia.org/wiki/Drag_reducing_agent</a>)</li><li>BOE Report, New pipeline projects appear enough to solve recurring capacity constraints (2022-09-20) (<a href="https://boereport.com/2022/09/20/new-pipeline-projects-appear-enough-to-solve-recurring-capacity-constraints-for-canadian-crude-but-permanent-relief-is-not-guaranteed/amp/">https://boereport.com/2022/09/20/new-pipeline-projects-appear-enough-to-solve-recurring-capacity-constraints-for-canadian-crude-but-permanent-relief-is-not-guaranteed/amp/</a>)</li><li>Montana DEQ, Keystone XL Chapter 4 (design vs. nominal capacity) (<a href="https://deq.mt.gov/files/DEQAdmin/MFS/Documents/Chapter4.pdf">https://deq.mt.gov/files/DEQAdmin/MFS/Documents/Chapter4.pdf</a>)</li><li>Rigzone, The process of crude oil transport via pipelines (<a href="https://www.rigzone.com/insights/operational-questions-8/what-is-the-process-of-crude-oil-transport-via-pipelines-984/">https://www.rigzone.com/insights/operational-questions-8/what-is-the-process-of-crude-oil-transport-via-pipelines-984/</a>)</li><li>OSTI, Oil &amp; Gas Journal, February 1980 (TAPS additive history) (<a href="https://www.osti.gov/biblio/5502862">https://www.osti.gov/biblio/5502862</a>)</li></ul>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -771,5 +825,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

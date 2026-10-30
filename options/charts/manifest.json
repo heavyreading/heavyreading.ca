@@ -1,0 +1,39 @@
+{
+ "page": "/options/charts/",
+ "title": "The Wing charts",
+ "dek": "The Wing charts: the Brent smile, the fear gauges, and the missing-barrels check, from ICE crude options end-of-day settlements.",
+ "built_at": "2026-10-30",
+ "generator": "heavyreading-manifest/1",
+ "claims": [
+  {
+   "text": "Brent options charge for a price spike, not a crash.",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 29, 2026. Series starts October 15, 2026.",
+   "source": "ICE Futures Europe options EOD (report 166)",
+   "source_url": ""
+  },
+  {
+   "text": "The fear gauges through October 29, 2026.",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 29, 2026. Series starts October 15, 2026.",
+   "source": "ICE Futures Europe options EOD (report 166)",
+   "source_url": ""
+  },
+  {
+   "text": "The options market charges for a price spike.",
+   "vintage": "ICE Futures Europe options end-of-day report (report 166), turned into fear prices by this site. Data through October 29, 2026. Series starts October 15, 2026.",
+   "source": "ICE options EOD (report 166); global barrels ledger",
+   "source_url": ""
+  }
+ ],
+ "sources": [
+  {
+   "publisher": "ICE Futures Europe options EOD (report 166)",
+   "vintage": "daily",
+   "url": ""
+  },
+  {
+   "publisher": "Global barrels ledger",
+   "vintage": "official hub prints and tracker claims, weekly and monthly",
+   "url": ""
+  }
+ ]
+}

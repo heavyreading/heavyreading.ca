@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Globe Demo | Heavy Reading</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cesium@1.124.0/Build/Cesium/Widgets/widgets.css">
+<style>
+  :root{
+    --ink:#eef2f5; --mut:#9fb0ba; --faint:#6d808c;
+    --amber:#ffb03a; --teal:#3fd2dc; --red:#ff5147;
+    --panel:rgba(10,16,20,.88); --panel2:rgba(14,22,28,.94);
+    --line:rgba(160,190,205,.22);
+    --serif:Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0;height:100%;background:#04070a;color:var(--ink);
+    font-family:var(--sans);overflow:hidden}
+  #globe{position:fixed;inset:0}
+  #globe canvas{display:block}
+  .cesium-viewer-bottom{opacity:.55;font-size:10px}
+  .cesium-widget-credits{font-size:10px}
+
+  /* ---------- top title card ---------- */
+  #titlecard{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);left:12px;right:12px;
+    pointer-events:none;z-index:20;display:flex;flex-direction:column;gap:6px}
+  #titlecard .tt{font-family:var(--serif);font-size:clamp(21px,6vw,32px);font-weight:600;
+    letter-spacing:.01em;text-shadow:0 2px 14px rgba(0,0,0,.85);line-height:1.08}
+  #titlecard .ts{font-size:clamp(12.5px,3.4vw,14.5px);color:#d7e2e8;max-width:34rem;
+    text-shadow:0 1px 10px rgba(0,0,0,.9);line-height:1.35}
+  #titlecard .tv{font-size:11px;color:var(--mut);letter-spacing:.04em}
+  #skipIntro{pointer-events:auto;align-self:flex-start;margin-top:2px;min-height:44px;
+    padding:10px 18px;border-radius:999px;border:1px solid var(--line);
+    background:var(--panel);color:var(--ink);font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+  #skipIntro[hidden]{display:none}
+
+  /* ---------- episode strip ---------- */
+  #episodes{position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 118px);
+    z-index:15;display:flex;gap:8px;overflow-x:auto;padding:2px;scrollbar-width:none}
+  #episodes::-webkit-scrollbar{display:none}
+  .ep{flex:0 0 auto;max-width:78vw;background:var(--panel);border:1px solid var(--line);
+    border-radius:12px;padding:9px 12px;backdrop-filter:blur(6px)}
+  .ep .eh{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);font-weight:700}
+  .ep .eb{font-size:13px;line-height:1.35;color:var(--ink);margin-top:2px}
+
+  /* ---------- control dock ---------- */
+  #dock{position:fixed;left:0;right:0;bottom:0;z-index:25;
+    padding:8px 10px calc(env(safe-area-inset-bottom,0px) + 8px);
+    background:linear-gradient(to top, rgba(4,8,11,.92) 55%, rgba(4,8,11,0));}
+  #dockrow{display:flex;gap:8px;align-items:stretch}
+  .dockbtn{flex:1;min-height:52px;border-radius:14px;border:1px solid var(--line);
+    background:var(--panel2);color:var(--ink);font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+  .dockbtn.acc{border-color:var(--amber);color:var(--amber)}
+  .dockbtn:active{transform:scale(.985)}
+  #timerow{display:flex;align-items:center;gap:10px;margin-top:8px;padding:0 2px}
+  #timerow .tlab{font-size:11px;color:var(--mut);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+  #timeSlider{flex:1;accent-color:var(--amber);height:32px}
+  #timeLabel{font-size:12.5px;color:var(--ink);min-width:86px;text-align:right;font-variant-numeric:tabular-nums}
+
+  /* ---------- layer drawer ---------- */
+  #drawer{position:fixed;left:0;right:0;bottom:0;top:12%;z-index:40;background:var(--panel2);
+    border-top:1px solid var(--line);border-radius:18px 18px 0 0;transform:translateY(103%);
+    transition:transform .38s cubic-bezier(.32,.72,.24,1);display:flex;flex-direction:column;
+    backdrop-filter:blur(10px)}
+  #drawer.open{transform:translateY(0)}
+  #drawer .grab{width:44px;height:5px;border-radius:3px;background:var(--faint);margin:10px auto 2px}
+  #drawer h2{font-family:var(--serif);font-size:19px;margin:6px 18px 2px;font-weight:600}
+  #drawer .sub{font-size:12.5px;color:var(--mut);margin:0 18px 8px;line-height:1.4}
+  #laylist{overflow-y:auto;padding:2px 12px 26px}
+  .lgroup{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint);
+    margin:16px 6px 6px;font-weight:700}
+  .lrow{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:8px 10px;
+    border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);
+    color:var(--ink);font:inherit;text-align:left;cursor:pointer;margin-bottom:7px}
+  .lrow .dot{flex:0 0 auto;width:13px;height:13px;border-radius:50%;border:2px solid var(--faint)}
+  .lrow[aria-pressed="true"] .dot{background:var(--amber);border-color:var(--amber)}
+  .lrow .lt{flex:1}
+  .lrow .lt .a{font-size:15px;font-weight:650}
+  .lrow .lt .b{font-size:12px;color:var(--mut);line-height:1.3;margin-top:1px}
+  .lrow .cnt{font-size:12px;color:var(--faint);font-variant-numeric:tabular-nums}
+  #drawerClose{position:absolute;top:10px;right:12px;min-width:44px;min-height:44px;border-radius:50%;
+    border:1px solid var(--line);background:transparent;color:var(--ink);font-size:17px;cursor:pointer}
+
+  /* ---------- info card sheet ---------- */
+  #card{position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--panel2);
+    border-top:1px solid var(--line);border-radius:18px 18px 0 0;transform:translateY(105%);
+    transition:transform .38s cubic-bezier(.32,.72,.24,1);max-height:72dvh;display:flex;flex-direction:column;
+    backdrop-filter:blur(10px)}
+  #card.open{transform:translateY(0)}
+  #card .grab{width:44px;height:5px;border-radius:3px;background:var(--faint);margin:10px auto 0}
+  #cardBody{overflow-y:auto;padding:6px 20px calc(env(safe-area-inset-bottom,0px) + 22px)}
+  #cardBody .k{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--amber);font-weight:700}
+  #cardBody h3{font-family:var(--serif);font-size:21px;margin:3px 0 6px;font-weight:600;line-height:1.15}
+  #cardBody p{font-size:14.5px;line-height:1.5;color:#dbe5ea;margin:5px 0}
+  #cardBody .fact{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-top:1px solid var(--line)}
+  #cardBody .fact .fk{color:var(--mut);font-size:13px}
+  #cardBody .fact .fv{font-size:13.5px;text-align:right;font-variant-numeric:tabular-nums}
+  #cardBody .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.07em;
+    padding:2.5px 8px;border-radius:999px;border:1px solid var(--line);color:var(--mut);margin:2px 4px 2px 0}
+  #cardBody .tag.measured{color:var(--teal);border-color:var(--teal)}
+  #cardBody .tag.modelled{color:var(--amber);border-color:var(--amber)}
+  #cardBody .tag.assumed{color:#c9a0dc;border-color:#c9a0dc}
+  #cardBody .tag.open{color:#57e389;border-color:#57e389}
+  #cardBody .tag.closed{color:var(--red);border-color:var(--red)}
+  #cardBody .src{font-size:11.5px;color:var(--faint);line-height:1.45;margin-top:8px}
+  #cardClose{position:absolute;top:10px;right:12px;min-width:44px;min-height:44px;border-radius:50%;
+    border:1px solid var(--line);background:transparent;color:var(--ink);font-size:17px;cursor:pointer;z-index:2}
+  #cardBody iframe{width:100%;height:230px;border:0;border-radius:10px;margin-top:8px;background:#000}
+  #cardBody .bigbtn{display:block;width:100%;min-height:48px;margin-top:12px;border-radius:12px;
+    border:1px solid var(--amber);background:transparent;color:var(--amber);
+    font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+  .spark{width:100%;height:64px;margin-top:6px}
+
+  /* ---------- ride overlay ---------- */
+  #ride{position:fixed;inset:0;z-index:60;pointer-events:none;display:none}
+  #ride.on{display:block}
+  #rideCard{position:absolute;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);max-height:52vh;overflow-y:auto;
+    background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:14px 16px 12px;
+    pointer-events:auto;backdrop-filter:blur(10px)}
+  #rideCard .rk{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--amber);font-weight:700}
+  #rideCard h3{font-family:var(--serif);font-size:20px;margin:2px 0 4px;font-weight:600}
+  #rideCard p{font-size:14.5px;line-height:1.45;margin:4px 0;color:#dbe5ea}
+  #rideDots{display:flex;gap:5px;margin-top:9px}
+  #rideDots i{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.16)}
+  #rideDots i.done{background:var(--amber)}
+  #rideExit{position:absolute;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px;pointer-events:auto;z-index:40;
+    min-width:48px;min-height:48px;border-radius:50%;border:1px solid var(--line);
+    background:var(--panel);color:var(--ink);font-size:18px;cursor:pointer}
+  #rideTitle{position:absolute;top:calc(env(safe-area-inset-top,0px) + 12px);left:12px;pointer-events:none;
+    font-family:var(--serif);font-size:19px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+
+  #toast{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:50%;transform:translateX(-50%);
+    z-index:70;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+    font-size:13.5px;padding:10px 16px;border-radius:999px;display:none;max-width:88vw;text-align:center}
+  @media (min-width:760px){
+    #drawer{left:auto;width:430px;border-left:1px solid var(--line);border-radius:18px 0 0 0}
+    #card{left:auto;width:470px;border-left:1px solid var(--line);border-radius:18px 0 0 0}
+    #episodes{bottom:118px}
+  }
+</style>
+</head>
+<body>
+<div id="globe"></div>
+
+<div id="titlecard">
+  <div class="tt">The Globe</div>
+  <div class="ts" id="titleSub">The physical oil market on one planet. Every pin is a place we measure or a call we have made, with its source and date on it.</div>
+  <div class="tv" id="titleVintage"></div>
+  <button id="skipIntro" hidden>Skip intro</button>
+</div>
+
+<div id="episodes"></div>
+
+<div id="dock">
+  <div id="dockrow">
+    <button class="dockbtn acc" id="rideBtn">▶ The Barrel Ride</button>
+    <button class="dockbtn" id="layersBtn">Layers</button>
+    <button class="dockbtn" id="resetBtn">Reset view</button>
+  </div>
+  <div id="timerow">
+    <span class="tlab">Time</span>
+    <input type="range" id="timeSlider" min="0" max="100" value="100" step="0.5">
+    <span id="timeLabel">Live</span>
+  </div>
+</div>
+
+<div id="drawer" aria-hidden="true">
+  <div class="grab"></div>
+  <button id="drawerClose" aria-label="Close layers">✕</button>
+  <h2>Layers</h2>
+  <p class="sub">Three data colours only: amber is modelled energy, teal is measured water and steel, red is damage and closed routes. Everything else is the earth.</p>
+  <div id="laylist"></div>
+</div>
+
+<div id="card" aria-hidden="true">
+  <div class="grab"></div>
+  <button id="cardClose" aria-label="Close card">✕</button>
+  <div id="cardBody"></div>
+</div>
+
+<div id="ride">
+  <div id="rideTitle">The Barrel Ride</div>
+  <button id="rideExit" aria-label="Exit the ride">✕</button>
+  <div id="rideCard">
+    <div class="rk" id="rideKicker">Hop 1</div>
+    <h3 id="rideName"></h3>
+    <p id="rideText"></p>
+    <div id="rideDots"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/cesium@1.124.0/Build/Cesium/Cesium.js"></script>
+<script>window.CESIUM_BASE_URL = "https://cdn.jsdelivr.net/npm/cesium@1.124.0/Build/Cesium/";</script>
+<script src="https://cdn.jsdelivr.net/npm/satellite.js@5.0.0/dist/satellite.min.js"></script>
+<script>
+"use strict";
+const BUILT_AT = "2026-10-27T13:28:53Z";
+const $ = s => document.querySelector(s);
+const AMBER = "#ffb03a", TEAL = "#3fd2dc", RED = "#ff5147",
+      GREY = "#8fa5b0", WHITE = "#eef2f5", PURPLE = "#c9a0dc", GREEN = "#57e389";
+const COL = h => Cesium.Color.fromCssColorString(h);
+const fmt = (n, d=0) => n == null || isNaN(n) ? "not published" :
+  Number(n).toLocaleString("en-US", {maximumFractionDigits: d, minimumFractionDigits: d});
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------------- viewer: dark treated earth, atmosphere, bloom -------- */
+Cesium.Ion.defaultAccessToken = "";
+const esri = new Cesium.UrlTemplateImageryProvider({
+  url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  credit: "Imagery © Esri, Maxar, Earthstar Geographics",
+  maximumLevel: 18,
+});
+/* The base layer is built as an ImageryLayer and passed in whole:
+   the Viewer's imageryProvider option converts asynchronously in
+   this Cesium version, so imageryLayers.get(0) is still undefined
+   right after construction and the treatment below would throw. */
+const baseLayer = new Cesium.ImageryLayer(esri);
+baseLayer.brightness = 0.52; baseLayer.contrast = 1.12;
+baseLayer.saturation = 0.62; baseLayer.gamma = 0.92;
+const viewer = new Cesium.Viewer("globe", {
+  baseLayer,
+  terrainProvider: new Cesium.EllipsoidTerrainProvider(),
+  animation: false, timeline: false, baseLayerPicker: false, geocoder: false,
+  homeButton: false, sceneModePicker: false, navigationHelpButton: false,
+  fullscreenButton: false, infoBox: false, selectionIndicator: false,
+  shouldAnimate: true, requestRenderMode: false,
+});
+viewer.scene.backgroundColor = COL("#04070a");
+viewer.scene.globe.enableLighting = false;
+viewer.scene.fog.enabled = true;
+viewer.scene.fog.density = 0.00016;
+if (viewer.scene.skyAtmosphere) {
+  viewer.scene.skyAtmosphere.hueShift = -0.08;
+  viewer.scene.skyAtmosphere.saturationShift = -0.25;
+  viewer.scene.skyAtmosphere.brightnessShift = 0.12;
+}
+/* Sizing: widgets.css carries the 100% width/height chain for the
+   viewer and its canvas; resize explicitly as well, once layout has
+   settled and on every window resize, so the canvas fills the stage
+   at phone and desktop sizes alike. */
+function fitGlobe() { try { viewer.resize(); } catch (e) { /* CSS sizing stands */ } }
+window.addEventListener("resize", fitGlobe);
+requestAnimationFrame(fitGlobe);
+try {
+  const bloom = viewer.scene.postProcessStages.bloom;
+  bloom.enabled = true;
+  bloom.uniforms.glowOnly = false;
+  bloom.uniforms.strength = 0.55;
+  bloom.uniforms.radius = 0.65;
+  bloom.uniforms.brightness = -0.22;
+} catch (e) { /* bloom unavailable on this GPU: the earth still renders */ }
+/* Resilience watchdog: if a shader in the post chain fails on an old
+   or software GPU, shed the treatment in steps and keep the globe. */
+let shedStage = 0;
+viewer.scene.renderError.addEventListener(() => {
+  shedStage++;
+  try {
+    if (shedStage === 1 && viewer.scene.postProcessStages.bloom) {
+      viewer.scene.postProcessStages.bloom.enabled = false;
+    } else if (shedStage === 2) {
+      viewer.scene.postProcessStages.enabled = false;
+      viewer.scene.fog.enabled = false;
+    } else if (shedStage >= 3) {
+      baseLayer.brightness = 0.8; baseLayer.saturation = 1.0;
+    }
+    viewer.resize();
+    viewer.camera.moveEnd.raiseEvent();
+  } catch (e) { /* nothing left to shed */ }
+});
+viewer.camera.setView({ destination: Cesium.Cartesian3.fromDegrees(-40, 28, 26000000) });
+const EASE = Cesium.EasingFunction.CUBIC_IN_OUT;
+function flyTo(lon, lat, height, dur, done) {
+  viewer.camera.flyTo({
+    destination: Cesium.Cartesian3.fromDegrees(lon, lat, height),
+    duration: dur == null ? 2.6 : dur, easingFunction: EASE,
+    complete: done, cancel: () => {},
+  });
+}
+
+/* ---------------- data ---------------- */
+let G = null, D = null;   // globe.json (base), globe_demo.json (demo layers)
+const layerState = {};    // key -> {ds: DataSource, on: bool, def}
+const pendingCards = new Map(); // entity -> card html builder
+
+function makeDS(name) {
+  const ds = new Cesium.CustomDataSource(name);
+  viewer.dataSources.add(ds);
+  return ds;
+}
+function point(ds, lon, lat, opts) {
+  const e = ds.entities.add({
+    position: Cesium.Cartesian3.fromDegrees(lon, lat, opts.h || 0),
+    point: {
+      pixelSize: opts.size || 8, color: COL(opts.color || AMBER),
+      outlineColor: Cesium.Color.BLACK.withAlpha(0.55), outlineWidth: 1.4,
+      scaleByDistance: new Cesium.NearFarScalar(8e5, 1.25, 1.6e7, 0.5),
+      disableDepthTestDistance: 0,
+    },
+    label: opts.label ? {
+      text: opts.label, font: "600 11px sans-serif",
+      fillColor: COL(WHITE), outlineColor: Cesium.Color.BLACK, outlineWidth: 3,
+      style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+      pixelOffset: new Cesium.Cartesian2(0, -13),
+      scaleByDistance: new Cesium.NearFarScalar(8e5, 0.95, 9e6, 0.0),
+      disableDepthTestDistance: 0,
+    } : undefined,
+  });
+  if (opts.card) pendingCards.set(e, opts.card);
+  return e;
+}
+function line(ds, coords, opts) {
+  const e = ds.entities.add({
+    polyline: {
+      positions: Cesium.Cartesian3.fromDegreesArray(coords.flatMap(c => [c[0], c[1]])),
+      width: opts.width || 2.2,
+      material: new Cesium.PolylineDashMaterialProperty({
+        color: COL(opts.color || AMBER).withAlpha(opts.alpha == null ? 0.9 : opts.alpha),
+        dashLength: opts.dash == null ? 0 : opts.dash,
+      }),
+      clampToGround: false,
+    },
+  });
+  if (opts.card) pendingCards.set(e, opts.card);
+  return e;
+}
+function arcLine(ds, a, b, opts) {
+  const pts = [];
+  const N = 42;
+  const la1 = a[1] * Math.PI / 180, la2 = b[1] * Math.PI / 180;
+  const dLon = (b[0] - a[0]) * Math.PI / 180;
+  const d = 2 * Math.asin(Math.sqrt(Math.sin((la2 - la1) / 2) ** 2 +
+    Math.cos(la1) * Math.cos(la2) * Math.sin(dLon / 2) ** 2));
+  const lift = Math.min(2600000, Math.max(120000, d * 6371000 * 0.16));
+  for (let i = 0; i <= N; i++) {
+    const t = i / N;
+    const lon = a[0] + (b[0] - a[0]) * t, lat = a[1] + (b[1] - a[1]) * t;
+    pts.push([lon, lat, Math.sin(t * Math.PI) * lift]);
+  }
+  const e = ds.entities.add({
+    polyline: {
+      positions: Cesium.Cartesian3.fromDegreesArrayHeights(pts.flat()),
+      width: opts.width || 2.4,
+      material: COL(opts.color || AMBER).withAlpha(opts.alpha == null ? 0.85 : opts.alpha),
+    },
+  });
+  if (opts.card) pendingCards.set(e, opts.card);
+  return e;
+}
+function disc(ds, lon, lat, radiusKm, color, alpha) {
+  return ds.entities.add({
+    position: Cesium.Cartesian3.fromDegrees(lon, lat),
+    ellipse: {
+      semiMajorAxis: radiusKm * 1000, semiMinorAxis: radiusKm * 1000,
+      material: COL(color).withAlpha(alpha), height: 0,
+    },
+  });
+}
+function tag(txt, cls) { return `<span class="tag ${cls || ""}">${esc(txt)}</span>`; }
+function basisTag(b) {
+  const s = String(b || "").toUpperCase();
+  if (s.startsWith("MEAS")) return tag("MEASURED", "measured");
+  if (s.startsWith("MODEL")) return tag("MODELLED", "modelled");
+  if (s.startsWith("ASSUM")) return tag("ASSUMED", "assumed");
+  return b ? tag(b, "") : "";
+}
+function fact(k, v) { return `<div class="fact"><span class="fk">${esc(k)}</span><span class="fv">${esc(v)}</span></div>`; }
+function openCard(html) {
+  $("#cardBody").innerHTML = html;
+  $("#card").classList.add("open");
+  $("#card").setAttribute("aria-hidden", "false");
+}
+function closeCard() {
+  $("#card").classList.remove("open");
+  $("#card").setAttribute("aria-hidden", "true");
+}
+$("#cardClose").addEventListener("click", closeCard);
+
+const pickHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+pickHandler.setInputAction(mov => {
+  const picked = viewer.scene.pick(mov.position);
+  if (picked && picked.id && pendingCards.has(picked.id)) {
+    const c = pendingCards.get(picked.id);
+    openCard(typeof c === "function" ? c() : c);
+  }
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+
+/* ---------------- layer registry ---------------- */
+const LAYERS = [];  // {key, group, name, desc, count, build(): ds, defaultOn}
+function regLayer(def) { LAYERS.push(def); layerState[def.key] = { on: !!def.defaultOn, ds: null }; }
+function setLayer(key, on) {
+  const st = layerState[key]; if (!st) return;
+  st.on = on;
+  const def = LAYERS.find(l => l.key === key);
+  if (on && !st.ds) { st.ds = def.build(); }
+  if (st.ds) st.ds.show = on;
+  document.querySelectorAll(`.lrow[data-key="${key}"]`).forEach(r =>
+    r.setAttribute("aria-pressed", on ? "true" : "false"));
+}
+function buildDrawer() {
+  const el = $("#laylist"); el.innerHTML = "";
+  let lastGroup = null;
+  for (const def of LAYERS) {
+    if (!def.present || !def.present()) continue;
+    if (def.group !== lastGroup) {
+      const g = document.createElement("div"); g.className = "lgroup"; g.textContent = def.group;
+      el.appendChild(g); lastGroup = def.group;
+    }
+    const b = document.createElement("button");
+    b.className = "lrow"; b.dataset.key = def.key;
+    b.setAttribute("aria-pressed", layerState[def.key].on ? "true" : "false");
+    b.innerHTML = `<span class="dot"></span><span class="lt"><span class="a">${esc(def.name)}</span>` +
+      `<span class="b">${esc(def.desc || "")}</span></span><span class="cnt">${esc(typeof def.count === "function" ? def.count() : (def.count || ""))}</span>`;
+    b.addEventListener("click", () => setLayer(def.key, !layerState[def.key].on));
+    el.appendChild(b);
+  }
+}
+$("#layersBtn").addEventListener("click", () => {
+  $("#drawer").classList.add("open"); $("#drawer").setAttribute("aria-hidden", "false");
+});
+$("#drawerClose").addEventListener("click", () => {
+  $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden", "true");
+});
+$("#resetBtn").addEventListener("click", () => flyTo(-40, 30, 24000000, 2.4));
+
+function toast(msg, ms) {
+  const t = $("#toast"); t.textContent = msg; t.style.display = "block";
+  setTimeout(() => t.style.display = "none", ms || 4200);
+}
+
+/* ================= DEMO LAYERS (globe_demo.json) ================= */
+function cardHTML(kicker, title, inner) {
+  return `<div class="k">${esc(kicker)}</div><h3>${esc(title)}</h3>${inner}`;
+}
+function srcLine() {
+  return `<div class="src">${[...arguments].filter(Boolean).map(esc).join(" · ")}</div>`;
+}
+
+/* refineries */
+regLayer({ key: "refineries", group: "World", name: "Every refinery on earth",
+  desc: "Name, operator, capacity, status. Open sources only, source on every pin.",
+  present: () => D && (D.refineries || []).length,
+  count: () => fmt((D.refineries || []).length),
+  build() {
+    const ds = makeDS("refineries");
+    for (const r of D.refineries) {
+      if (r.lat == null || r.lon == null) continue;
+      point(ds, r.lon, r.lat, {
+        size: r.capacity_kbd >= 1000 ? 11 : r.capacity_kbd >= 400 ? 8.5 : 6,
+        color: r.status && r.status !== "operating" ? GREY : AMBER,
+        label: r.capacity_kbd >= 1200 ? r.name : null,
+        card: () => cardHTML("Refinery", r.name,
+          (r.capacity_kbd != null ? fact("Crude capacity", fmt(r.capacity_kbd) + " kb/d") : fact("Crude capacity", "not published")) +
+          (r.operator ? fact("Operator", r.operator) : "") +
+          (r.country ? fact("Country", r.country) : "") +
+          (r.status ? fact("Status", r.status) : "") +
+          srcLine(r.source, r.source_detail)),
+      });
+    }
+    return ds;
+  } });
+
+/* basins */
+regLayer({ key: "basins", group: "World", name: "Production basins",
+  desc: "The major crude basins, what they make, and how much. Approximate outlines, labelled.",
+  present: () => D && (D.basins || []).length,
+  count: () => fmt((D.basins || []).length),
+  build() {
+    const ds = makeDS("basins");
+    for (const b of D.basins) {
+      if (b.lat == null) continue;
+      const g = b.geometry || {};
+      if (g.radius_km_approx) disc(ds, b.lon, b.lat, g.radius_km_approx, AMBER, 0.07);
+      point(ds, b.lon, b.lat, { size: 9, color: AMBER, label: b.name,
+        card: () => cardHTML("Production basin", b.name,
+          (b.production_kbd != null ? fact("Production", fmt(b.production_kbd) + " kb/d") : fact("Production", "not published")) +
+          (b.crude_character ? `<p>${esc(b.crude_character)}</p>` : "") +
+          (b.country ? fact("Country", b.country) : "") +
+          (b.vintage ? fact("Vintage", b.vintage) : "") +
+          (g.approximate ? `<p>${tag("Outline approximate", "assumed")}</p>` : "") +
+          srcLine(b.source)) });
+    }
+    return ds;
+  } });
+
+/* countries */
+regLayer({ key: "countries", group: "World", name: "Countries: production and balance",
+  desc: "Country production and demand. The agencies disagree; every read prints, ours beside theirs.",
+  present: () => D && (D.countries || []).length,
+  count: () => fmt((D.countries || []).length),
+  defaultOn: true,
+  build() {
+    const ds = makeDS("countries");
+    for (const c of D.countries) {
+      if (c.lat == null) continue;
+      point(ds, c.lon, c.lat, { size: 7.5, color: TEAL,
+        label: c.production_kbd ? `${c.country} ${fmt(c.production_kbd)}` : c.country,
+        card: () => {
+          let h = "";
+          if (c.production_kbd != null) h += fact("Production", fmt(c.production_kbd) + " kb/d");
+          if (c.demand_kbd != null) h += fact("Demand", fmt(c.demand_kbd) + " kb/d");
+          if (c.our_read_kbd != null) h += fact("Our read", fmt(c.our_read_kbd) + " kb/d");
+          const ag = c.agency_reads || {};
+          for (const k of Object.keys(ag)) {
+            const v = ag[k];
+            h += fact(k.toUpperCase() + " read", (typeof v === "object" ? fmt(v.value_kbd ?? v.production_kbd) + " kb/d" : fmt(v)) +
+              (typeof v === "object" && v.vintage ? ` (${v.vintage})` : ""));
+          }
+          if (c.disagreement_note) h += `<p>${esc(c.disagreement_note)}</p>`;
+          return cardHTML("Country", c.country, h +
+            srcLine(c.production_source, c.production_vintage ? "vintage " + c.production_vintage : null));
+        } });
+    }
+    return ds;
+  } });
+
+/* global pipelines */
+regLayer({ key: "globalpipes", group: "World", name: "Every pipe that matters",
+  desc: "World crude trunk lines with flows. The label says how each flow was got: measured, modelled, or assumed.",
+  present: () => D && (D.global_pipelines || []).length,
+  count: () => fmt((D.global_pipelines || []).length),
+  defaultOn: true,
+  build() {
+    const ds = makeDS("globalpipes");
+    for (const p of D.global_pipelines) {
+      if (!p.path || p.path.length < 2) continue;
+      const basis = String(p.flow_basis || "").toUpperCase();
+      line(ds, p.path, {
+        width: Math.max(1.6, Math.min(6, Math.sqrt((p.flow_kbd || 300) / 60))),
+        color: AMBER, dash: basis === "ASSUMED" ? 14 : 0, alpha: 0.85,
+        card: () => cardHTML("Pipeline", p.name,
+          fact("From", p.from) + fact("To", p.to) +
+          (p.capacity_kbd != null ? fact("Capacity", fmt(p.capacity_kbd) + " kb/d") : "") +
+          (p.flow_kbd != null ? fact("Flow", fmt(p.flow_kbd) + " kb/d") : "") +
+          `<p>${basisTag(p.flow_basis)} ${esc(p.flow_note || "")}</p>` +
+          (p.status ? fact("Status", p.status) : "") +
+          srcLine(p.source)) });
+      const mid = p.path[Math.floor(p.path.length / 2)];
+      point(ds, mid[0], mid[1], { size: 4.5, color: AMBER });
+    }
+    return ds;
+  } });
+
+/* damage */
+regLayer({ key: "damage", group: "World", name: "Damage and outages",
+  desc: "Strike and damage sites, tier-1 sources only, dated on the pin. Unconfirmed reports are labelled or absent.",
+  present: () => D && (D.damage || []).length,
+  count: () => fmt((D.damage || []).length),
+  build() {
+    const ds = makeDS("damage");
+    for (const s of D.damage) {
+      if (s.lat == null) continue;
+      point(ds, s.lon, s.lat, { size: 10, color: RED, label: s.site,
+        card: () => {
+          let h = `<p>${esc(s.what_was_hit || "")}</p>`;
+          if (s.event_date) h += fact("Date", s.event_date);
+          if (s.capacity_affected_kbd != null) h += fact("Capacity affected", fmt(s.capacity_affected_kbd) + " kb/d");
+          if (s.status) h += fact("Status", s.status + (s.status_asof ? ` (as of ${s.status_asof})` : ""));
+          if (s.return_reporting) h += `<p>${esc(s.return_reporting)}</p>`;
+          if (s.unconfirmed) h += `<p>${tag("UNCONFIRMED", "closed")}</p>`;
+          const srcs = (s.sources || []).map(x => typeof x === "string" ? x : `${x.outlet || ""} ${x.date || ""}`).join(" · ");
+          return cardHTML("Damage site", s.site, h + srcLine(srcs));
+        } });
+    }
+    return ds;
+  } });
+
+/* hotspots */
+let ghostDS = null;
+window.__ghost = function (name) {
+  if (ghostDS) { viewer.dataSources.remove(ghostDS, true); ghostDS = null; }
+  const g = ((D.meta || {}).ghosts || []).find(x =>
+    String(x.hotspot || "").toLowerCase() === String(name).toLowerCase());
+  if (!g) { toast("No archived episode pattern for this hotspot yet."); return; }
+  if (!(g.arc_pattern || []).length) {
+    openCard(cardHTML("Episode ghost", g.hotspot,
+      `<p>${esc(g.pattern_note || "")}</p>` +
+      (g.episode_window ? fact("Archived window", g.episode_window) : "") +
+      `<p>The archive holds the narrative pattern for this one. The numeric ghost waits on more archive.</p>`));
+    return;
+  }
+  ghostDS = makeDS("ghost");
+  for (const a of (g.arc_pattern || [])) {
+    if (a.from && a.to) arcLine(ghostDS, [a.from.lon ?? a.from[0], a.from.lat ?? a.from[1]],
+      [a.to.lon ?? a.to[0], a.to.lat ?? a.to[1]], { color: GREY, alpha: 0.55, width: 2 });
+  }
+  toast(`Ghost: ${g.hotspot}, ${g.episode_window || ""}. Grey arcs are the archived pattern.`);
+  closeCard();
+};
+regLayer({ key: "hotspots", group: "World", name: "Geopolitical hotspots",
+  desc: "Tension points in the episode grammar: normal, strained, episode. State changes only on tier-1 evidence.",
+  present: () => D && (D.hotspots || []).length,
+  count: () => fmt((D.hotspots || []).length),
+  defaultOn: true,
+  build() {
+    const ds = makeDS("hotspots");
+    for (const h of D.hotspots) {
+      if (h.lat == null) continue;
+      const colr = h.state === "EPISODE" ? RED : h.state === "STRAINED" ? AMBER : TEAL;
+      disc(ds, h.lon, h.lat, 190, colr, h.state === "EPISODE" ? 0.20 : 0.10);
+      point(ds, h.lon, h.lat, { size: 9, color: colr, label: h.name,
+        card: () => {
+          let x = "";
+          if (h.status_card) x += `<p>${esc(h.status_card)}</p>`;
+          x += `<p>${tag(h.state || "NORMAL", h.state === "EPISODE" ? "closed" : h.state === "STRAINED" ? "modelled" : "measured")}</p>`;
+          if (h.barrels_per_day != null) x += fact("Barrels governed", fmt(h.barrels_per_day / 1000, 1) + " Mb/d");
+          if (h.last_change) x += fact("Last change", `${h.last_change.date || ""} ${h.last_change.what || ""}`);
+          if (h.last_change && h.last_change.source) x += fact("Source", h.last_change.source);
+          x += `<button class="bigbtn" onclick="window.__ghost('${esc(h.name).replace(/'/g, "")}')">Show the last similar episode</button>`;
+          return cardHTML("Hotspot", h.name, x + srcLine(h.basis, h.state_as_of ? "state as of " + h.state_as_of : null));
+        } });
+    }
+    return ds;
+  } });
+
+/* policy pins */
+regLayer({ key: "policy", group: "World", name: "Policy pins",
+  desc: "Sanctions, quotas, export bans: decisions pinned to the capital that made them, with the barrels they touch.",
+  present: () => D && (D.policy || []).length,
+  count: () => fmt((D.policy || []).length),
+  build() {
+    const ds = makeDS("policy");
+    for (const p of D.policy) {
+      if (p.lat == null) continue;
+      point(ds, p.lon, p.lat, { size: 8.5, color: PURPLE, label: p.capital,
+        card: () => cardHTML("Policy", p.capital,
+          `<p>${esc(p.decision || "")}</p>` +
+          (p.deciding_body ? fact("Decided by", p.deciding_body) : "") +
+          (p.decision_date ? fact("Date", p.decision_date) : "") +
+          (p.barrels_touched_kbd != null ? fact("Barrels touched", fmt(p.barrels_touched_kbd) + " kb/d") : "") +
+          (p.status ? fact("Status", p.status) : "") +
+          srcLine(p.source)) });
+    }
+    return ds;
+  } });
+
+/* condensate */
+regLayer({ key: "condensate", group: "Flows", name: "Condensate: supply, demand, arteries",
+  desc: "Supply pins, the splitters and crackers and blending hubs that consume it, and the lines that flow into Alberta.",
+  present: () => D && D.condensate,
+  count: () => {
+    const c = D.condensate || {};
+    return fmt((c.supply || []).length + (c.demand || []).length + (c.arteries || []).length);
+  },
+  build() {
+    const ds = makeDS("condensate");
+    const c = D.condensate || {};
+    for (const s of (c.supply || [])) {
+      if (s.lat == null) continue;
+      point(ds, s.lon, s.lat, { size: 8, color: AMBER, label: s.name,
+        card: () => cardHTML("Condensate supply", s.name,
+          (s.supply_kbd != null ? fact("Supply", fmt(s.supply_kbd) + " kb/d") : "") +
+          `<p>${basisTag(s.basis)} ${esc(s.basis_note || "")}</p>` + srcLine(s.source, s.vintage)) });
+    }
+    for (const d of (c.demand || [])) {
+      if (d.lat == null) continue;
+      point(ds, d.lon, d.lat, { size: 8.5, color: WHITE, label: d.name,
+        card: () => cardHTML("Condensate demand", d.name,
+          (d.capacity_kbd != null ? fact("Capacity", fmt(d.capacity_kbd) + " kb/d") : "") +
+          (d.type ? fact("Type", d.type) : "") +
+          (d.note ? `<p>${esc(d.note)}</p>` : "") +
+          (d.basis ? `<p>${basisTag(d.basis)}</p>` : "") + srcLine(d.source, d.vintage)) });
+    }
+    for (const f of (c.flows || [])) {
+      if (!f.from || !f.to) continue;
+      arcLine(ds, [f.from.lon, f.from.lat], [f.to.lon, f.to.lat],
+        { color: f.mode === "ship" ? TEAL : AMBER, width: 2.2,
+          card: () => cardHTML("Condensate flow", `${f.from.name} → ${f.to.name}`,
+            (f.flow_kbd != null ? fact("Flow", fmt(f.flow_kbd) + " kb/d") : "") +
+            `<p>${basisTag(f.basis)} ${esc(f.basis_note || "")}</p>` + srcLine(f.source, f.vintage)) });
+    }
+    for (const a of (c.arteries || [])) {
+      if (!a.path || a.path.length < 2) continue;
+      line(ds, a.path, { width: 3.4, color: TEAL, dash: 6,
+        card: () => {
+          let h = `<p>Flows <b>into Alberta</b>, against the crude. This is the diluent supply line the Edmonton C5 balance prices against.</p>`;
+          if (a.capacity_kbd != null) h += fact("Capacity", fmt(a.capacity_kbd) + " kb/d");
+          if (a.flow_kbd != null) h += fact("Flow (import requirement)", fmt(a.flow_kbd, 1) + " kb/d");
+          if (a.committed_pct != null) h += fact("Committed share", fmt(a.committed_pct) + "%");
+          if (a.toll_usd_bbl != null) h += fact("Uncommitted toll", "$" + fmt(a.toll_usd_bbl, 4) + "/bbl");
+          h += `<p>${basisTag(a.flow_basis || "MODELLED")} ${esc(a.flow_note || "")}</p>`;
+          return cardHTML("Diluent artery", a.name, h + srcLine(a.source, a.vintage));
+        } });
+      const mid = a.path[Math.floor(a.path.length / 2)];
+      point(ds, mid[0], mid[1], { size: 5, color: TEAL, label: a.name });
+    }
+    return ds;
+  } });
+
+/* arcs and arbs */
+let TEMP_MODE = false;
+function arcColor(a) {
+  if (!TEMP_MODE) return a.state === "OPEN" ? AMBER : RED;
+  const m = a.margin_usd_bbl || 0;
+  return m >= 2 ? "#ffd88a" : m > 0 ? AMBER : m > -2 ? "#c2504a" : RED;
+}
+regLayer({ key: "arcs", group: "Flows", name: "Arcs and transport arbs",
+  desc: "Surplus to deficit. Destination price minus origin price minus the freight and tolls between them. Open or closed, margin on the card.",
+  present: () => D && D.arcs && (D.arcs.arcs || D.arcs).length,
+  count: () => fmt(((D.arcs || {}).arcs || D.arcs || []).length),
+  defaultOn: true,
+  build() {
+    const ds = makeDS("arcs");
+    const arcs = (D.arcs || {}).arcs || D.arcs || [];
+    for (const a of arcs) {
+      if (!a.from || !a.to) continue;
+      arcLine(ds, [a.from.lon, a.from.lat], [a.to.lon, a.to.lat], {
+        color: arcColor(a), width: a.state === "OPEN" ? 3.2 : 2.2,
+        alpha: a.state === "OPEN" ? 0.95 : 0.6,
+        card: () => {
+          let h = `<p>${tag(a.state, a.state === "OPEN" ? "open" : "closed")} ${basisTag("MODELLED")}</p>`;
+          if (a.margin_usd_bbl != null) h += fact("Delivered margin", "$" + fmt(a.margin_usd_bbl, 2) + "/bbl");
+          if (a.origin_price) h += fact(`Origin: ${a.origin_price.label || a.from.name}`, "$" + fmt(a.origin_price.value, 2) + "/bbl");
+          if (a.destination_price) h += fact(`Destination: ${a.destination_price.label || a.to.name}`, "$" + fmt(a.destination_price.value, 2) + "/bbl");
+          for (const leg of (a.transport_stack || [])) h += fact("Transport: " + (leg.leg || ""), "$" + fmt(leg.cost, 2) + "/bbl");
+          const vs = [a.origin_price && a.origin_price.vintage, a.destination_price && a.destination_price.vintage].filter(Boolean).join(" · ");
+          return cardHTML("Transport arb", a.name, h + srcLine(a.commodity, vs, a.as_of ? "as of " + a.as_of : null));
+        } });
+    }
+    return ds;
+  } });
+window.__tempMode = function () {
+  TEMP_MODE = !TEMP_MODE;
+  const st = layerState["arcs"];
+  if (st && st.ds) { viewer.dataSources.remove(st.ds, true); st.ds = null; setLayer("arcs", true); }
+  toast(TEMP_MODE ? "Price as temperature: warm arcs earn, cold arcs bleed." : "Arcs back to open and closed.");
+};
+
+/* floating storage */
+regLayer({ key: "floatstore", group: "Sea", name: "Floating storage",
+  desc: "Laden tankers sitting at anchor past the dwell threshold. The estimate is modelled; the method is on every pin.",
+  present: () => D && D.floating_storage && (D.floating_storage.vessels || []).length,
+  count: () => fmt(((D.floating_storage || {}).vessels || []).length),
+  build() {
+    const ds = makeDS("floatstore");
+    const fs = D.floating_storage || {};
+    for (const v of (fs.vessels || [])) {
+      if (v.lat == null) continue;
+      point(ds, v.lon, v.lat, { size: 9, color: TEAL, label: `⚓ ${fmt(v.dwell_days)}d`,
+        card: () => cardHTML("Floating storage", v.name || ("MMSI " + (v.mmsi || "")),
+          fact("At anchor", fmt(v.dwell_days, 1) + " days") +
+          (v.since_date ? fact("Since", v.since_date) : "") +
+          (v.est_cargo_bbl != null ? fact("Estimated cargo", fmt(v.est_cargo_bbl / 1e6, 2) + " Mbbl") : "") +
+          `<p>${basisTag("MODELLED")}</p><p>${esc(fs.method || "")}</p>` +
+          srcLine(fs.coverage_note, fs.as_of ? "as of " + fs.as_of : null)) });
+    }
+    return ds;
+  } });
+
+/* silence */
+regLayer({ key: "silence", group: "Sea", name: "The silence layer",
+  desc: "Places that should be reporting and are not. Publication lags and dead zones, drawn dark.",
+  present: () => D && D.meta && (D.meta.silence || []).length,
+  count: () => fmt(((D.meta || {}).silence || []).length),
+  build() {
+    const ds = makeDS("silence");
+    const patches = (D.meta || {}).silence || [];
+    for (const p of patches) {
+      if (p.lat == null) continue;
+      disc(ds, p.lon, p.lat, p.radius_km_approx || 220, "#000000", 0.52);
+      point(ds, p.lon, p.lat, { size: 6, color: GREY, label: p.name,
+        card: () => cardHTML("Silence", p.name,
+          `<p>${esc(p.why_dark || "")}</p>` +
+          (p.lag_days != null ? fact("Lag", fmt(p.lag_days) + " days") : "") +
+          (p.next_expected ? fact("Next print expected", p.next_expected) : "") +
+          srcLine(p.source)) });
+    }
+    return ds;
+  } });
+
+/* flights that matter */
+regLayer({ key: "flights", group: "Sea", name: "Flights that matter",
+  desc: "Oil and gas corporate tails and state aircraft only, from the public registries. Owner and aircraft are facts; purpose is not on the pin.",
+  present: () => D && D.flights && ((D.flights.tails || []).length || (D.flights.positions || []).length),
+  count: () => fmt(((D.flights || {}).tails || []).length) + " tails · " +
+    fmt(((D.flights || {}).positions || []).length) + " up",
+  build() {
+    const ds = makeDS("flights");
+    const fl = D.flights || {};
+    for (const p of (fl.positions || [])) {
+      if (p.lat == null) continue;
+      point(ds, p.lon, p.lat, { size: 7, color: WHITE, h: Math.max(6000, (p.altitude_ft || 30000) * 0.3048 * 6),
+        label: p.tail,
+        card: () => cardHTML("Aircraft", p.tail,
+          (p.owner ? fact("Registered owner", p.owner) : "") +
+          (p.aircraft_type ? fact("Aircraft", p.aircraft_type) : "") +
+          (p.altitude_ft != null ? fact("Altitude", fmt(p.altitude_ft) + " ft") : "") +
+          (p.speed_kn != null ? fact("Ground speed", fmt(p.speed_kn) + " kn") : "") +
+          srcLine(fl.attribution, fl.latency_label ? "feed: " + fl.latency_label : null, p.as_of)) });
+    }
+    return ds;
+  } });
+
+/* cameras */
+regLayer({ key: "cameras", group: "Sea", name: "Cameras",
+  desc: "Public port and terminal cameras, only where the published terms allow them. The thinnest layer, honestly counted.",
+  present: () => D && (D.cameras || []).length,
+  count: () => fmt((D.cameras || []).length),
+  build() {
+    const ds = makeDS("cameras");
+    for (const c of D.cameras) {
+      if (c.lat == null) continue;
+      point(ds, c.lon, c.lat, { size: 8, color: WHITE, label: "📷 " + (c.place || c.name),
+        card: () => {
+          let h = `<p>${esc(c.view || "")}</p>`;
+          if (c.embed_allowed && c.embed_url) h += `<iframe src="${esc(c.embed_url)}" loading="lazy" title="${esc(c.name)}"></iframe>`;
+          else if (c.page_url) h += `<a class="bigbtn" href="${esc(c.page_url)}" target="_blank" rel="noopener">Open the camera page</a>`;
+          h += srcLine(c.source, c.terms_basis);
+          return cardHTML("Camera", c.name, h);
+        } });
+    }
+    return ds;
+  } });
+/* ================= WCSB CORE (globe_demo.json) ================= */
+const W = () => (D && D.wcsb) || {};
+
+regLayer({ key: "facilities", group: "WCSB core", name: "Production by site",
+  desc: "Alberta facilities at Petrinex grain, aggregated to area counts for the phone, plus the named plants with operator and grade.",
+  present: () => (W().facilities || []).length || (W().named_plants || []).length,
+  count: () => fmt((W().facilities || []).length + (W().named_plants || []).length),
+  build() {
+    const ds = makeDS("facilities");
+    for (const f of (W().facilities || [])) {
+      if (f.lat == null) continue;
+      point(ds, f.lon, f.lat, { size: 4.5, color: GREY,
+        card: () => cardHTML("Facility", f.name || f.facility_id || "Facility",
+          (f.operator ? fact("Operator", f.operator) : "") +
+          (f.type ? fact("Type", f.type) : "") + srcLine("Petrinex facility infrastructure (AER)")) });
+    }
+    for (const a of (W().facility_aggregates || [])) {
+      point(ds, a.lon, a.lat, { size: 9, color: GREY, label: fmt(a.count),
+        card: () => cardHTML("Facility cluster", fmt(a.count) + " facilities in this area",
+          (a.operators || []).map(o => `<p>${esc(o)}</p>`).join("") +
+          `<p>Aggregated for the phone payload budget. The full site carries site grain.</p>`) });
+    }
+    for (const p of (W().named_plants || [])) {
+      if (p.lat == null) continue;
+      point(ds, p.lon, p.lat, { size: 10, color: AMBER, label: p.name,
+        card: () => cardHTML("Production site", p.name,
+          (p.operator ? fact("Operator", p.operator) : "") +
+          (p.grade ? fact("Produces", p.grade) : "") +
+          (p.production_kbd != null ? fact("Modelled production", fmt(p.production_kbd, 1) + " kb/d") : "") +
+          srcLine(p.source)) });
+    }
+    return ds;
+  } });
+
+regLayer({ key: "heartbeats", group: "WCSB core", name: "Plant heartbeats",
+  desc: "Sat Watch plants pulsing at their learned rhythm. A changed rhythm is visible before you tap anything.",
+  present: () => (((D && D.meta && (D.meta.heartbeats || {}).plants) || (G && G.plants) || []).length),
+  count: () => fmt((((D || {}).meta || {}).heartbeats || {}).plants
+    ? (D.meta.heartbeats.plants || []).length : ((G || {}).plants || []).length),
+  build() {
+    const ds = makeDS("heartbeats");
+    const meta = ((D.meta || {}).heartbeats || {}).plants || [];
+    const base = (G && G.plants) || [];
+    const rows = meta.length ? meta : base.map(p => ({
+      name: p.label || p.key, lat: p.lat, lon: p.lon, current_state: p.status,
+      last_change: p.last_check_utc, rhythm_hours: null }));
+    for (const p of rows) {
+      if (p.lat == null) continue;
+      const period = p.rhythm_hours ? Math.min(4.2, Math.max(1.1, p.rhythm_hours / 6)) : 2.4;
+      const e = point(ds, p.lon, p.lat, { size: 9,
+        color: p.current_state && p.current_state !== "NORMAL" ? RED : TEAL,
+        card: () => cardHTML("Sat Watch plant", p.name,
+          (p.current_state ? fact("State now", p.current_state) : "") +
+          (p.rhythm_hours ? fact("Learned rhythm", fmt(p.rhythm_hours, 1) + " h") : fact("Rhythm", "still learning")) +
+          (p.last_change ? fact("Last change", p.last_change) : "") + srcLine("Sat Watch sensor state")) });
+      const baseSize = 8.5, t0 = Math.random() * 6.28;
+      e.point.pixelSize = new Cesium.CallbackProperty(() => {
+        const s = 1 + 0.38 * Math.sin(t0 + performance.now() / 1000 / period * 6.28);
+        return baseSize * s;
+      }, false);
+    }
+    return ds;
+  } });
+
+let TIME_T = 1, TIME_DATE = null;
+function timeWindow() {
+  const st = (D && D.ships_time && D.ships_time.time_support) || {};
+  const months = st.balance_vintages || [];
+  let start, end;
+  if (months.length) { start = new Date(months[0] + "-01T00:00:00Z"); end = new Date(months[months.length - 1] + "-01T00:00:00Z"); }
+  else { end = new Date(); start = new Date(end.getTime() - 365 * 864e5); }
+  const fwd = new Date(end.getTime() + 540 * 864e5);
+  return { start, end, fwd };
+}
+function sliderDate() {
+  const { start, fwd } = timeWindow();
+  return new Date(start.getTime() + (fwd.getTime() - start.getTime()) * TIME_T);
+}
+let maintDS = null, projDS = null;
+function refreshTimeLayers() {
+  TIME_DATE = sliderDate();
+  const { end } = timeWindow();
+  $("#timeLabel").textContent = TIME_T >= 0.995 ? "Live" :
+    TIME_DATE.toISOString().slice(0, 7) + (TIME_DATE > end ? " (forward)" : "");
+  if (maintDS) for (const e of maintDS.entities.values) {
+    const ev = e.__maint; if (!ev) continue;
+    const s = new Date(ev.start), en = new Date(ev.end || ev.start);
+    e.show = TIME_DATE >= new Date(s.getTime() - 45 * 864e5) && TIME_DATE <= en;
+  }
+  if (projDS) for (const e of projDS.entities.values) {
+    const pj = e.__proj; if (!pj || !pj.in_service) continue;
+    const built = TIME_DATE >= new Date(pj.in_service);
+    e.point.color = COL(built ? AMBER : GREY).withAlpha(built ? 1 : 0.45);
+  }
+}
+$("#timeSlider").addEventListener("input", ev => { TIME_T = ev.target.value / 100; refreshTimeLayers(); });
+
+regLayer({ key: "maintenance", group: "WCSB core", name: "Maintenance weather front",
+  desc: "Dated, site-level turnarounds. Move the time slider and the front sweeps the forward view.",
+  present: () => (W().maintenance || []).length,
+  count: () => fmt((W().maintenance || []).length),
+  build() {
+    const ds = makeDS("maintenance"); maintDS = ds;
+    for (const ev of (W().maintenance || [])) {
+      if (ev.lat == null) continue;
+      const e = point(ds, ev.lon, ev.lat, { size: 11, color: RED, label: ev.site,
+        card: () => cardHTML("Turnaround", ev.site,
+          (ev.operator ? fact("Operator", ev.operator) : "") +
+          fact("Window", `${ev.start || "?"} to ${ev.end || "?"}`) +
+          (ev.capacity_offline_kbd != null ? fact("Offline", fmt(ev.capacity_offline_kbd) + " kb/d") : "") +
+          (ev.impact_note ? `<p>${esc(ev.impact_note)}</p>` : "") +
+          srcLine("WCSB maintenance forecast", ev.vintage ? "forecast vintage " + ev.vintage : null)) });
+      e.__maint = ev;
+    }
+    refreshTimeLayers();
+    return ds;
+  } });
+
+regLayer({ key: "projects", group: "WCSB core", name: "Projects and slow assumptions",
+  desc: "What is being built and when it lands, plus the dated capacity step-ups the forward balance stands on. Assumptions are labelled as assumptions.",
+  present: () => (W().projects || []).length || (W().assumptions || []).length,
+  count: () => fmt((W().projects || []).length + (W().assumptions || []).length),
+  build() {
+    const ds = makeDS("projects"); projDS = ds;
+    for (const p of (W().projects || [])) {
+      if (p.lat == null) continue;
+      const e = point(ds, p.lon, p.lat, { size: 9, color: AMBER, label: p.name,
+        card: () => cardHTML("Project", p.name,
+          (p.operator ? fact("Operator", p.operator) : "") +
+          (p.type ? fact("Type", p.type) : "") +
+          (p.status ? fact("Status", p.status) : "") +
+          (p.in_service ? fact("In service", p.in_service) : "") + srcLine(p.source)) });
+      e.__proj = p;
+    }
+    const anchors = { tmx: [-122.93, 49.27], trans: [-122.93, 49.27], mainline: [-113.35, 53.63], enbridge: [-113.35, 53.63], keystone: [-111.3, 52.67], egress: [-113.35, 53.63] };
+    for (const a of (W().assumptions || [])) {
+      const key = Object.keys(anchors).find(k => String(a.system || "").toLowerCase().includes(k));
+      const at = (a.lat != null) ? [a.lon, a.lat] : (key ? anchors[key] : [-113.35, 53.63]);
+      point(ds, at[0], at[1], { size: 8, color: PURPLE,
+        card: () => cardHTML("Slow assumption", a.system || "Capacity step",
+          fact("Date", a.date || "?") +
+          (a.change_kbd != null ? fact("Change", (a.change_kbd > 0 ? "+" : "") + fmt(a.change_kbd) + " kb/d") : "") +
+          `<p>${tag("ASSUMPTION", "assumed")} ${esc(a.assumption_note || "")}</p>` + srcLine(a.basis || a.source)) });
+    }
+    refreshTimeLayers();
+    return ds;
+  } });
+
+regLayer({ key: "hubs", group: "WCSB core", name: "Hubs: storage and apportionment",
+  desc: "Edmonton and Hardisty with the balance's storage line, the cavern pond, and apportionment by segment with our scored record.",
+  present: () => G && (G.hubs || []).length,
+  count: () => fmt(((W().apportionment || []).length) || ((G || {}).hubs || []).length),
+  defaultOn: true,
+  build() {
+    const ds = makeDS("hubs");
+    const apport = W().apportionment || [];
+    for (const h of (G.hubs || [])) {
+      point(ds, h.lon, h.lat, { size: 11, color: AMBER, label: h.name,
+        card: () => {
+          let x = `<p>${esc(h.region || "")}</p>`;
+          const st = h.storage;
+          if (st && st.mm_bbl != null) x += fact("Alberta stocks", fmt(st.mm_bbl, 1) + " Mbbl (" + (st.month || "") + ")") +
+            `<div class="src">${esc(st.vintage || "")}</div>`;
+          if (h.pond) x += fact("Hardisty cavern pond", `${fmt(h.pond.area_m2)} m² water, ${h.pond.date || ""}`) +
+            `<div class="src">Our own Sentinel-1 pond reader. The pond grows as brine is displaced.</div>`;
+          if (h.cushing) x += fact("Cushing stocks", fmt(h.cushing.stocks_kbbl / 1000, 1) + " Mbbl, week of " + (h.cushing.week_ending || ""));
+          if (h.key === "edmonton" || h.key === "hardisty") {
+            for (const a of apport) x += fact(`Apportionment: ${a.segment}`,
+              `${a.latest_actual_pct != null ? fmt(a.latest_actual_pct) + "% actual" : ""}` +
+              `${a.our_guess_pct != null ? ` · our call ${fmt(a.our_guess_pct)}%` : ""}` +
+              `${a.history ? ` · ${esc(a.history)}` : ""}`);
+            const ga = (G.apportionment || {});
+            if (ga.note) x += `<p>${esc(ga.note)}</p><div class="src">${esc(ga.source || "")}</div>`;
+          }
+          return cardHTML("Hub", h.name, x);
+        } });
+    }
+    return ds;
+  } });
+
+/* ================= BASE FEED LAYERS (api/globe.json as-is) ================= */
+regLayer({ key: "tankers", group: "Sea", name: "Tankers (AIS)",
+  desc: "Latest tanker positions and trails from our own AIS collector. Draught makes the laden call.",
+  present: () => G && (G.vessels || []).length,
+  count: () => fmt(((G || {}).vessels || []).length),
+  defaultOn: true,
+  build() {
+    const ds = makeDS("tankers");
+    for (const v of (G.vessels || [])) {
+      point(ds, v.lon, v.lat, { size: 7.5, color: TEAL,
+        card: () => cardHTML("Tanker", v.name || ("MMSI " + v.mmsi),
+          fact("State", v.state || "") +
+          (v.draught != null ? fact("Draught", fmt(v.draught, 1) + " m") : "") +
+          (v.dest ? fact("Broadcast destination", v.dest) : "") +
+          (v.speed != null ? fact("Speed", fmt(v.speed, 1) + " kn") : "") +
+          srcLine("Narrows AIS collector (AISStream)", v.ts)) });
+      if ((v.trail || []).length > 3) {
+        line(ds, v.trail.map(t => [t[1], t[0]]), { width: 1.2, color: TEAL, alpha: 0.35 });
+      }
+    }
+    return ds;
+  } });
+
+regLayer({ key: "napipes", group: "Flows", name: "North America pipes (measured)",
+  desc: "The egress network with CER flows, utilization, apportionment and filed tolls on the card.",
+  present: () => G && (G.pipelines || []).length,
+  count: () => fmt(((G || {}).pipelines || []).length),
+  defaultOn: true,
+  build() {
+    const ds = makeDS("napipes");
+    for (const p of (G.pipelines || [])) {
+      if (!p.path) continue;
+      line(ds, p.path, { width: Math.max(1.8, Math.min(6.5, (p.utilization || .6) * 5.4)), color: AMBER, alpha: .9,
+        card: () => {
+          let h = fact("Nameplate", fmt(p.nameplate_kbd) + " kb/d") +
+            (p.last_flow_kbd != null ? fact("Latest CER flow", fmt(p.last_flow_kbd) + " kb/d (" + (p.flow_vintage || "") + ")") : "") +
+            (p.utilization != null ? fact("Utilization", fmt(p.utilization * 100, 0) + "%") : "");
+          for (const t of (p.tolls || []).slice(0, 4)) h += fact(`Toll: ${t.grade || ""} ${t.commitment || ""}`, "$" + fmt(t.toll || t.value || 0, 4) + "/bbl");
+          h += `<p>${tag("MEASURED", "measured")} flows are CER reported; tolls are the filed tariffs.</p>`;
+          return cardHTML("Pipeline", p.label || p.id, h + srcLine(p.from_name + " → " + p.to_name));
+        } });
+    }
+    return ds;
+  } });
+
+regLayer({ key: "freight", group: "Flows", name: "Freight routes",
+  desc: "Baltic dirty-tanker routes we hold, with the rate and the dollars per barrel where the pull computes them.",
+  present: () => G && (G.freight || []).length,
+  count: () => fmt(((G || {}).freight || []).length),
+  build() {
+    const ds = makeDS("freight");
+    for (const f of (G.freight || [])) {
+      arcLine(ds, [f.from[1], f.from[0]], [f.to[1], f.to[0]], { color: TEAL, width: 2,
+        card: () => cardHTML("Freight route", f.label || f.route,
+          (f.ws != null ? fact("Worldscale", fmt(f.ws, 1)) : "") +
+          (f.tce_usd_day != null ? fact("TCE", "$" + fmt(f.tce_usd_day) + "/day") : "") +
+          (f.usd_per_bbl != null ? fact("Cost", "$" + fmt(f.usd_per_bbl, 2) + "/bbl") : "") +
+          srcLine("Baltic Exchange via the digest freight pull", f.date)) });
+    }
+    return ds;
+  } });
+
+regLayer({ key: "chokepoints", group: "Sea", name: "Chokepoints",
+  desc: "IMF PortWatch daily tanker transits against their own recent average. Counts are transits, never flows.",
+  present: () => G && (G.chokepoints || []).length,
+  count: () => fmt(((G || {}).chokepoints || []).length),
+  build() {
+    const ds = makeDS("chokepoints");
+    for (const c of (G.chokepoints || [])) {
+      point(ds, c.lon, c.lat, { size: 9.5, color: TEAL, label: c.name,
+        card: () => cardHTML("Chokepoint", c.name,
+          fact("Tankers, latest day", fmt(c.n_tanker)) +
+          (c.tankers_7d_avg != null ? fact("Tankers, 7-day average", fmt(c.tankers_7d_avg, 1)) : "") +
+          (c.tanker_dwt != null ? fact("Tanker tonnage", fmt(c.tanker_dwt / 1e6, 2) + " M DWT") : "") +
+          `<p>Transit counts from port data. A count of ships is not a flow of barrels; the flow read lives in the hotspot card.</p>` +
+          srcLine("IMF PortWatch", c.date)) });
+    }
+    return ds;
+  } });
+
+const SATS = [];
+regLayer({ key: "satellites", group: "Sea", name: "Satellites",
+  desc: "The free-orbit sensors we read, live overhead now, on CelesTrak elements propagated in your browser.",
+  present: () => typeof satellite !== "undefined" && G && (G.satellites || []).some(s => s.l1),
+  count: () => fmt(((G || {}).satellites || []).length),
+  build() {
+    const ds = makeDS("satellites");
+    for (const s of (G.satellites || [])) {
+      if (!s.l1 || !s.l2) continue;
+      const rec = satellite.twoline2satrec(s.l1, s.l2);
+      const e = point(ds, 0, 0, { size: 7, color: WHITE, label: s.name,
+        card: () => cardHTML("Satellite", s.name, `<p>${esc(s.role || "")}</p>` +
+          srcLine("CelesTrak elements, propagated live with satellite.js (MIT)")) });
+      e.__satrec = rec;
+      SATS.push(e);
+    }
+    return ds;
+  } });
+setInterval(() => {
+  if (!SATS.length) return;
+  const now = new Date();
+  for (const e of SATS) {
+    try {
+      const pv = satellite.propagate(e.__satrec, now);
+      if (!pv || !pv.position) continue;
+      const gmst = satellite.gstime(now);
+      const geo = satellite.eciToGeodetic(pv.position, gmst);
+      e.position = Cesium.Cartesian3.fromDegrees(
+        satellite.degreesLong(geo.longitude), satellite.degreesLat(geo.latitude),
+        geo.height * 1000);
+    } catch (err) { /* one bad element set must not stop the sky */ }
+  }
+}, 2000);
+
+/* ================= FIELD BIOGRAPHIES ================= */
+let bioTimer = null;
+window.__playBio = function (idx) {
+  const f = ((D.field_bios || {}).fields || D.field_bios || [])[idx];
+  if (!f || !(f.series || []).length) return;
+  const readout = document.getElementById("bioYear");
+  const series = f.series.slice().sort((a, b) => a.year - b.year);
+  const peak = Math.max(...series.map(p => p.production_kbd || 0));
+  let i = 0;
+  clearInterval(bioTimer);
+  bioTimer = setInterval(() => {
+    if (i >= series.length) { clearInterval(bioTimer); return; }
+    const p = series[i++];
+    if (readout) readout.textContent = `${p.year}: ${fmt(p.production_kbd)} kb/d` +
+      (peak && p.production_kbd >= peak ? " (the peak)" : "");
+  }, 260);
+};
+regLayer({ key: "fieldbios", group: "World", name: "Field biographies",
+  desc: "Legacy fields. Tap one and its whole producing life plays: discovery, peak, decline.",
+  present: () => D && (((D.field_bios || {}).fields || D.field_bios || []).length),
+  count: () => fmt(((D.field_bios || {}).fields || D.field_bios || []).length),
+  build() {
+    const ds = makeDS("fieldbios");
+    const fields = (D.field_bios || {}).fields || D.field_bios || [];
+    fields.forEach((f, idx) => {
+      if (f.lat == null) return;
+      const series = (f.series || []).slice().sort((a, b) => a.year - b.year);
+      const peakV = Math.max(1, ...series.map(p => p.production_kbd || 0));
+      const pts = series.map((p, i) =>
+        `${(i / Math.max(1, series.length - 1)) * 260},${58 - (p.production_kbd / peakV) * 50}`).join(" ");
+      point(ds, f.lon, f.lat, { size: 9.5, color: AMBER, label: f.name,
+        card: () => cardHTML("Field biography", f.name,
+          `<p>${esc(f.life_note || "")}</p>` +
+          (f.discovery_year ? fact("Discovered", f.discovery_year) : "") +
+          (f.peak ? fact("Peak", `${f.peak.year}: ${fmt(f.peak.kbd)} kb/d`) : "") +
+          (f.current ? fact("Now", `${fmt(f.current.kbd)} kb/d (${f.current.year})`) : "") +
+          (f.crude_character ? fact("Crude", f.crude_character) : "") +
+          (series.length ? `<svg class="spark" viewBox="0 0 260 64" preserveAspectRatio="none">
+             <polyline points="${pts}" fill="none" stroke="#ffb03a" stroke-width="2"/></svg>
+             <p id="bioYear" style="font-variant-numeric:tabular-nums">${series[0].year}: ${fmt(series[0].production_kbd)} kb/d</p>
+             <button class="bigbtn" onclick="window.__playBio(${idx})">Play the field's life</button>` : "") +
+          srcLine(f.source)) });
+    });
+    return ds;
+  } });
+
+/* ================= EPISODES STRIP ================= */
+function renderEpisodes() {
+  const el = $("#episodes"); const ep = (G || {}).episodes || {};
+  const cards = [];
+  if (ep.satwatch) {
+    const blind = (ep.satwatch.blind || []).map(b => b.label).join(", ");
+    cards.push({ h: "Sat Watch", b: `${ep.satwatch.normal || 0} of ${ep.satwatch.sites || 0} watched sites normal.` +
+      (blind ? ` Blind today: ${blind}.` : "") });
+  }
+  if (ep.loading && ep.loading.name) cards.push({ h: "Latest TMX loading", b: `${ep.loading.name} at Westridge.` });
+  const hs = ((D || {}).hotspots || []).filter(h => h.state === "EPISODE");
+  for (const h of hs) cards.push({ h: "Episode: " + h.name, b: h.status_card || "" });
+  el.innerHTML = cards.map(c =>
+    `<div class="ep"><div class="eh">${esc(c.h)}</div><div class="eb">${esc(c.b)}</div></div>`).join("");
+}
+
+/* ================= SCORED OPENING + COLD OPEN ================= */
+let introCancelled = false;
+$("#skipIntro").addEventListener("click", () => {
+  introCancelled = true;
+  $("#skipIntro").hidden = true;
+  viewer.camera.cancelFlight();
+  flyTo(-40, 30, 24000000, 2.2);
+});
+async function coldOpen() {
+  const so = ((D || {}).meta || {}).scored_opening || null;
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  if (!so || (!so.best_call && !so.worst_miss)) {
+    flyTo(-102, 47, 9800000, 3.4);
+    return;
+  }
+  $("#skipIntro").hidden = false;
+  const leg = async (call, words) => {
+    if (!call || !call.location || introCancelled) return;
+    $("#titleSub").textContent = words + ": " + (call.what_was_called || "");
+    flyTo(call.location.lon, call.location.lat, 850000, 3.6);
+    await sleep(4300);
+  };
+  await leg(so.best_call, "Our best settled call");
+  await leg(so.worst_miss, "Our worst miss, kept on the record");
+  if (!introCancelled) {
+    $("#titleSub").textContent = "The physical oil market on one planet. Every pin is a place we measure or a call we have made, with its source and date on it.";
+    flyTo(-40, 30, 24000000, 3.8);
+  }
+  $("#skipIntro").hidden = true;
+}
+
+/* ================= THE BARREL RIDE ================= */
+let riding = false;
+const wait = ms => new Promise(r => setTimeout(r, ms));
+$("#rideExit").addEventListener("click", () => { riding = false; });
+async function playRide() {
+  const ride = (D || {}).ride;
+  if (!ride || !(ride.hops || []).length) { toast("The ride is still being assembled from the archive."); return; }
+  closeCard();
+  riding = true;
+  $("#ride").classList.add("on");
+  const dw = ride.date_window;
+  const dwTxt = dw ? (typeof dw === "string" ? dw : (dw.start + " to " + dw.end)) : "";
+  $("#rideTitle").textContent = "The Barrel Ride" + (dwTxt ? " — " + dwTxt : "");
+  const hops = ride.hops;
+  $("#rideDots").innerHTML = hops.map(() => "<i></i>").join("");
+  let trackDS = null;
+  for (let i = 0; i < hops.length && riding; i++) {
+    const h = hops[i];
+    document.querySelectorAll("#rideDots i").forEach((d, j) => d.className = j <= i ? "done" : "");
+    $("#rideKicker").textContent = `Hop ${i + 1} of ${hops.length}${h.type ? " — " + h.type : ""}`;
+    $("#rideName").textContent = h.name || "";
+    $("#rideText").innerHTML =
+      (i === 0 && ride.label ? esc(ride.label) + "<br><br>" : "") +
+      (h.arrive_note ? esc(h.arrive_note) + "<br><br>" : "") +
+      (h.facts || []).map(esc).join("<br>") +
+      (h.basis ? "<br><br>" + esc(h.basis) : "");
+    if (trackDS) { viewer.dataSources.remove(trackDS, true); trackDS = null; }
+    if (h.track && h.track.length > 2) {
+      trackDS = makeDS("ridetrack");
+      line(trackDS, h.track, { width: 3, color: TEAL, alpha: 0.95 });
+    }
+    flyTo(h.lon, h.lat, h.height || 420000, 2.4);
+    const share = Math.max(4, Math.min(16, (h.duration_share || 100 / hops.length) * 0.9));
+    await wait(share * 1000);
+  }
+  $("#ride").classList.remove("on");
+  riding = false;
+  if (trackDS) viewer.dataSources.remove(trackDS, true);
+  toast("Ride over. The globe is yours.");
+}
+$("#rideBtn").addEventListener("click", playRide);
+
+/* ================= LOAD ================= */
+async function loadJSON(url) {
+  try { const r = await fetch(url, { cache: "no-cache" }); if (r.ok) return await r.json(); } catch (e) {}
+  return null;
+}
+(async function init() {
+  G = await loadJSON("api/globe.json");
+  D = await loadJSON("api/globe_demo.json");
+  $("#titleVintage").textContent =
+    `Base globe built ${(G || {}).built_at || "unknown"} · demo feed built ${(D || {}).built_at || BUILT_AT || ""}`;
+  buildDrawer();
+  for (const def of LAYERS) if (layerState[def.key].on && (!def.present || def.present())) setLayer(def.key, true);
+  const tempBtn = document.createElement("button");
+  tempBtn.className = "lrow"; tempBtn.innerHTML =
+    `<span class="dot"></span><span class="lt"><span class="a">Price as temperature</span>` +
+    `<span class="b">Recolour the arcs by margin: warm routes earn, cold routes bleed.</span></span>`;
+  tempBtn.addEventListener("click", () => window.__tempMode());
+  $("#laylist").appendChild(tempBtn);
+  renderEpisodes();
+  refreshTimeLayers();
+  coldOpen();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+{
+ "schema": "micro-balance/1",
+ "level": "rollup",
+ "region": "rollup_south_america",
+ "title": "South America balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Each country enters on its declared headline spine per leg (the same declaration as its country page). Totals are sums of those declared reads; coverage counts print beside every total.",
+ "units": "kb/d unless a field name says otherwise",
+ "grain": {
+  "capture": "Country grain from the agency panel, built up from states and basins for the US and from the house balance for Canada.",
+  "display": "South America"
+ },
+ "totals": {
+  "production_crude": 7543.6,
+  "production_liquids": 8824.2,
+  "consumption_products": 184.0,
+  "exports_crude": 700.0
+ },
+ "coverage": {
+  "production_crude": 13,
+  "production_liquids": 13,
+  "consumption_products": 2,
+  "exports_crude": 1
+ },
+ "n_members": 13,
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "declared_total": 7543.6,
+   "per_spine": {
+    "OPEC_ASB2026": {
+     "total": 1080.0,
+     "n": 1
+    },
+    "JODI": {
+     "total": 1106.6,
+     "n": 2
+    },
+    "EIA_international": {
+     "total": 7543.6,
+     "n": 13
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "declared_total": 8824.2,
+   "per_spine": {
+    "EIA_international": {
+     "total": 8824.2,
+     "n": 13
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "declared_total": 184.0,
+   "per_spine": {
+    "JODI": {
+     "total": 184.0,
+     "n": 2
+    }
+   },
+   "missing_members": 11
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "declared_total": 700.0,
+   "per_spine": {
+    "OPEC_ASB2026": {
+     "total": 700.0,
+     "n": 1
+    }
+   },
+   "missing_members": 12
+  }
+ ],
+ "trade": [],
+ "members": [
+  {
+   "country": "Brazil",
+   "code": "BRA",
+   "slug": "brazil",
+   "legs": {
+    "production_crude": {
+     "value": 3767.1,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 4650.4,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Venezuela",
+   "code": "VEN",
+   "slug": "venezuela",
+   "legs": {
+    "production_crude": {
+     "value": 972.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1011.7,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 25.8,
+     "spine": "JODI"
+    },
+    "exports_crude": {
+     "value": 700.0,
+     "spine": "OPEC_ASB2026"
+    }
+   }
+  },
+  {
+   "country": "Argentina",
+   "code": "ARG",
+   "slug": "argentina",
+   "legs": {
+    "production_crude": {
+     "value": 793.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 983.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Guyana",
+   "code": "GUY",
+   "slug": "guyana",
+   "legs": {
+    "production_crude": {
+     "value": 746.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 746.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Colombia",
+   "code": "COL",
+   "slug": "colombia",
+   "legs": {
+    "production_crude": {
+     "value": 746.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 776.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Ecuador",
+   "code": "ECU",
+   "slug": "ecuador",
+   "legs": {
+    "production_crude": {
+     "value": 441.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 444.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Peru",
+   "code": "PER",
+   "slug": "peru",
+   "legs": {
+    "production_crude": {
+     "value": 44.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 123.3,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 158.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Bolivia",
+   "code": "BOL",
+   "slug": "bolivia",
+   "legs": {
+    "production_crude": {
+     "value": 17.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 51.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Suriname",
+   "code": "SUR",
+   "slug": "suriname",
+   "legs": {
+    "production_crude": {
+     "value": 12.1,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 11.7,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Chile",
+   "code": "CHL",
+   "slug": "chile",
+   "legs": {
+    "production_crude": {
+     "value": 2.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 21.1,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "French Guiana",
+   "code": "GUF",
+   "slug": "french_guiana",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Paraguay",
+   "code": "PRY",
+   "slug": "paraguay",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 2.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Uruguay",
+   "code": "URY",
+   "slug": "uruguay",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1.4,
+     "spine": "EIA_international"
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "gaps": [],
+ "supply": [],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "cards": {}
+}

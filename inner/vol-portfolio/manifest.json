@@ -2,19 +2,25 @@
  "page": "/inner/vol-portfolio/",
  "title": "Vol portfolio",
  "dek": "",
- "built_at": "2026-10-26",
+ "built_at": "2026-10-30",
  "generator": "heavyreading-manifest/1",
  "claims": [
   {
-   "text": "On the October 23, 2026 marks, the paper vol book sizes off the worst loss on its shock grid, not the normal-day yardstick. Both numbers print on the page.",
-   "vintage": "Marks 2026-10-23",
-   "source": "Portfolio stacker (portfolio/risk_2026-10-23.csv)",
+   "text": "The proposed Wing book (2026-10-26, not booked) collects $477,779 a month gross at the Oct 23 marks, $351,866 net of round-trip execution costs (70% of the $500,000 bogey), with a summed hard worst case of $780,559 inside the $1,000,000 complex cap.",
+   "vintage": "Marks 2026-10-23; proposal 2026-10-26",
+   "source": "Proposed book (portfolio/proposed_book_2026-10-26.json; bin/proposed_book_analysis.py)",
    "source_url": ""
   },
   {
-   "text": "Bogey bridge at the 2026-10-23 marks: the grinder rows (S3 fade, S5 overwrite, S6 condor candidate, S8 capped straddle candidate), each sized to a 0.5R shock budget inside a 1R worst-case cap, carry about $581,920 a month of GROSS rent against the $500,000 bogey. Gross means cycles complete; no expected-rent figure is claimed, because the record is 1 marked day(s) long and the stay-inside share is unmeasured.",
-   "vintage": "Marks 2026-10-23",
-   "source": "Structures risk file (structure_risk.csv)",
+   "text": "The Wing's prior scoring record was killed on 2026-10-26; the proposed book starts unscored and its record starts at zero when booked.",
+   "vintage": "2026-10-26",
+   "source": "KILLED_SCORING_2026-10-26.md",
+   "source_url": ""
+  },
+  {
+   "text": "One position carries a stated defect: N3 (fade the wing) has a 10-day noise band of $27,357 (trailing-60 basis) against $29,760 collected, so its exit rule is thesis-only with no mark-based stop; its size is unchanged. Book marginal VaR95 (episode, 10-day) foots to the $213,182 total: N1 $92,414, N2 $70,236, N3 $66,758, N4 -$6,036, N5 -$6,386, remainder -$3,804.",
+   "vintage": "Marks 2026-10-23; works 2026-10-26",
+   "source": "The works (portfolio/proposed_works_2026-10-23.json; bin/proposed_works.py)",
    "source_url": ""
   }
  ],
@@ -22,11 +28,6 @@
   {
    "publisher": "ICE Futures Europe options EOD (report 166), inverted in-stack",
    "vintage": "settlements to 2026-10-23",
-   "url": ""
-  },
-  {
-   "publisher": "Global barrels ledger (IMF PortWatch visible layer)",
-   "vintage": "seeded 2026-10-25",
    "url": ""
   }
  ]

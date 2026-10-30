@@ -1,0 +1,323 @@
+{
+ "schema": "micro-balance/1",
+ "level": "rollup",
+ "region": "rollup_middle_east",
+ "title": "Middle East balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Each country enters on its declared headline spine per leg (the same declaration as its country page). Totals are sums of those declared reads; coverage counts print beside every total.",
+ "units": "kb/d unless a field name says otherwise",
+ "grain": {
+  "capture": "Country grain from the agency panel, built up from states and basins for the US and from the house balance for Canada.",
+  "display": "Middle East"
+ },
+ "totals": {
+  "production_crude": 27049.3,
+  "production_liquids": 30966.4,
+  "consumption_products": 3935.5
+ },
+ "coverage": {
+  "production_crude": 15,
+  "production_liquids": 15,
+  "consumption_products": 3
+ },
+ "n_members": 15,
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "declared_total": 27049.3,
+   "per_spine": {
+    "EIA_international": {
+     "total": 27049.3,
+     "n": 15
+    },
+    "JODI": {
+     "total": 12076.2,
+     "n": 3
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "declared_total": 30966.4,
+   "per_spine": {
+    "EIA_international": {
+     "total": 30966.4,
+     "n": 15
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "declared_total": 3935.5,
+   "per_spine": {
+    "JODI": {
+     "total": 3935.5,
+     "n": 3
+    }
+   },
+   "missing_members": 12
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "declared_total": null,
+   "per_spine": {},
+   "missing_members": 15
+  }
+ ],
+ "trade": [],
+ "members": [
+  {
+   "country": "Saudi Arabia",
+   "code": "SAU",
+   "slug": "saudi_arabia",
+   "legs": {
+    "production_crude": {
+     "value": 9547.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 11212.0,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 2379.6,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Iraq",
+   "code": "IRQ",
+   "slug": "iraq",
+   "legs": {
+    "production_crude": {
+     "value": 4387.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 4499.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Iran",
+   "code": "IRN",
+   "slug": "iran",
+   "legs": {
+    "production_crude": {
+     "value": 4051.7,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 4769.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "United Arab Emirates",
+   "code": "ARE",
+   "slug": "united_arab_emirates",
+   "legs": {
+    "production_crude": {
+     "value": 3769.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 4337.9,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Kuwait",
+   "code": "KWT",
+   "slug": "kuwait",
+   "legs": {
+    "production_crude": {
+     "value": 2583.3,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 2804.8,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 362.7,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Qatar",
+   "code": "QAT",
+   "slug": "qatar",
+   "legs": {
+    "production_crude": {
+     "value": 1297.4,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1878.3,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Oman",
+   "code": "OMN",
+   "slug": "oman",
+   "legs": {
+    "production_crude": {
+     "value": 1002.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1011.3,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Bahrain",
+   "code": "BHR",
+   "slug": "bahrain",
+   "legs": {
+    "production_crude": {
+     "value": 175.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 188.8,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Turkiye",
+   "code": "TUR",
+   "slug": "turkiye",
+   "legs": {
+    "production_crude": {
+     "value": 124.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 142.6,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1193.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Syria",
+   "code": "SYR",
+   "slug": "syria",
+   "legs": {
+    "production_crude": {
+     "value": 75.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 81.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Israel",
+   "code": "ISR",
+   "slug": "israel",
+   "legs": {
+    "production_crude": {
+     "value": 19.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 25.3,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Yemen",
+   "code": "YEM",
+   "slug": "yemen",
+   "legs": {
+    "production_crude": {
+     "value": 15.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 15.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Jordan",
+   "code": "JOR",
+   "slug": "jordan",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.3,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Lebanon",
+   "code": "LBN",
+   "slug": "lebanon",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Palestinian Territories",
+   "code": "PSE",
+   "slug": "palestinian_territories",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "gaps": [],
+ "supply": [],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "cards": {}
+}

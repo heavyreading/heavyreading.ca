@@ -1,0 +1,298 @@
+{
+ "schema": "micro-balance/1",
+ "level": "country",
+ "region": "country_oman",
+ "country": "Oman",
+ "country_code": "OMN",
+ "title": "Oman country balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Headline values are 2025 annual means from the declared spine per leg. Spine reads sit side by side and are never averaged.",
+ "units": "kb/d unless a field name says otherwise",
+ "rollup": "middle_east",
+ "rollup_name": "Middle East",
+ "tier": "deep",
+ "grain": {
+  "capture": "Country grain from the national statistics office, plus agency country reads. No finer national grain is held yet.",
+  "display": "Country"
+ },
+ "spine_table": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1002.0,
+     "basis": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 1002.0,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "reads": [
+    {
+     "spine": "EIA_international",
+     "spine_label": "EIA (international)",
+     "value": 1011.3,
+     "basis": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "EIA_international",
+   "headline_value": 1011.3,
+   "spread_pct": null
+  },
+  {
+   "leg": "production_iea_table3_basis",
+   "leg_label": "Production, IEA Table 3 basis",
+   "reads": [
+    {
+     "spine": "IEA_OMR_free",
+     "spine_label": "IEA Oil Market Report (free edition)",
+     "value": 1080.0,
+     "basis": "IEA OMR Table 3 crude oil production",
+     "vintage": "2026-10-29"
+    }
+   ],
+   "headline_spine": "IEA_OMR_free",
+   "headline_value": 1080.0,
+   "spread_pct": null
+  }
+ ],
+ "cards": {},
+ "supply": [
+  {
+   "id": "production_crude",
+   "label": "Crude production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 1002.0,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Crude oil incl. lease condensate (EIA product 57), monthly mean over 12 months of 2025"
+  },
+  {
+   "id": "production_liquids",
+   "label": "Total liquids production",
+   "group": null,
+   "dest": null,
+   "kind": "production",
+   "value_kbd": 1011.3,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "EIA (international)",
+   "vintage": "2026-10-29 (2025 annual)",
+   "basis": "measured",
+   "note": "Total petroleum and other liquids (EIA product 53), monthly mean over 12 months of 2025"
+  }
+ ],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "national_record": [
+  {
+   "period": "2026-09",
+   "value": 9395.9,
+   "unit": "thousand barrels/month",
+   "kbd": 313.19666666666666,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "domestic sales of refinery products, all refineries, sum of products, NCSI bulletin Table 10",
+   "grain": "monthly",
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "n_rows": 3,
+   "first": "2026-07",
+   "last": "2026-09",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 112309.4,
+   "unit": "thousand barrels/year",
+   "kbd": 307.69698630136986,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "domestic sales of refinery products, full-year 2025, sum of products, NCSI bulletin Table 10",
+   "grain": "annual",
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "n_rows": 1,
+   "first": "2025-01",
+   "last": "2025-01",
+   "basis": "converted"
+  },
+  {
+   "period": "2026-09",
+   "value": 26797.9,
+   "unit": "thousand barrels/month",
+   "kbd": 893.2633333333333,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "total oil exports (crude + condensate combined), NCSI bulletin Table 9",
+   "grain": "monthly",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 3,
+   "first": "2026-07",
+   "last": "2026-09",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 307960.9,
+   "unit": "thousand barrels/year",
+   "kbd": 843.7284931506849,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "total oil exports (crude + condensate combined), full-year 2025 total, NCSI bulletin Table 9",
+   "grain": "annual",
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "n_rows": 1,
+   "first": "2025-01",
+   "last": "2025-01",
+   "basis": "converted"
+  },
+  {
+   "period": "2026-09",
+   "value": 10812.8,
+   "unit": "thousand barrels/month",
+   "kbd": 360.4266666666667,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "export sales of refinery products, all refineries, sum of products, NCSI bulletin Table 10",
+   "grain": "monthly",
+   "leg": "exports_products",
+   "leg_label": "Product exports",
+   "n_rows": 3,
+   "first": "2026-07",
+   "last": "2026-09",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 131053.7,
+   "unit": "thousand barrels/year",
+   "kbd": 359.05123287671233,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "export sales of refinery products, full-year 2025, sum of products, NCSI bulletin Table 10",
+   "grain": "annual",
+   "leg": "exports_products",
+   "leg_label": "Product exports",
+   "n_rows": 1,
+   "first": "2025-01",
+   "last": "2025-01",
+   "basis": "converted"
+  },
+  {
+   "period": "2026-09",
+   "value": 35123.2,
+   "unit": "thousand barrels/month",
+   "kbd": 1170.7733333333333,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "total oil production (crude + condensate), NCSI bulletin Table 9",
+   "grain": "monthly",
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "n_rows": 3,
+   "first": "2026-07",
+   "last": "2026-09",
+   "basis": "converted"
+  },
+  {
+   "period": "2025",
+   "value": 365754.4,
+   "unit": "thousand barrels/year",
+   "kbd": 1002.0668493150685,
+   "source": "Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+   "note": "total oil production (crude + condensate), full-year 2025 total, NCSI bulletin Table 9",
+   "grain": "annual",
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "n_rows": 1,
+   "first": "2025-01",
+   "last": "2025-01",
+   "basis": "converted"
+  }
+ ],
+ "notes": [],
+ "gaps": [
+  {
+   "item": "consumption_products",
+   "state": "missing",
+   "reason": "No 2025 product consumption read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "exports_crude",
+   "state": "missing",
+   "reason": "No 2025 crude exports read in any held spine.",
+   "explanation": "No spine in the library carries this leg at country grain; all five were pulled in full. The leg stays open and is not estimated.",
+   "route": "Standing routes (JODI, EIA) pulled; no row."
+  },
+  {
+   "item": "trade_partners",
+   "state": "missing",
+   "reason": "Partner split not held. The held EIA by-source route itemizes non-OECD sources only, so OECD-to-OECD flows (Norway to the UK, US to Europe) are absent from it.",
+   "route": "Customs and national trade tables. Eurostat partner files are held in mass units and are not converted."
+  }
+ ],
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "headline_spine": "EIA_international",
+   "headline_value": 1002.0,
+   "rows": [
+    {
+     "label": "National record: Oman National Centre for Statistics and Information (NCSI), Monthly Statistical Bulletin October 2026 (underlying data: Ministry of Energy and Minerals)",
+     "value": 1170.8,
+     "kind": "build",
+     "gap": 168.8,
+     "cause": "Own statistics, exact-volumetric conversion. National latest vs the spines' 2025: part of the gap is time."
+    },
+    {
+     "label": "EIA (international)",
+     "value": 1002.0,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "headline_spine": "EIA_international",
+   "headline_value": 1011.3,
+   "rows": [
+    {
+     "label": "EIA (international)",
+     "value": 1011.3,
+     "kind": "spine",
+     "gap": 0.0,
+     "cause": "Only read held; no second figure exists to reconcile against."
+    }
+   ]
+  }
+ ],
+ "trade": []
+}

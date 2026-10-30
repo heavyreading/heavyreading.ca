@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="hr-page-key" content="fieldguide/quality-banks.html">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
@@ -620,6 +621,58 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   padding:14px 18px; margin:22px 0; }
 .takeaway h2 { margin:0 0 8px; font-size:17px; }
 .takeaway p.note { margin-bottom:0; }
+
+/* What's Changed layer (2026-10-30): computed section stamps, the nav
+   badge, the since-last-visit treatment, and the changes river. Quiet by
+   design: whisper type, hairlines, the oxide accent only on fresh
+   changes. Stamps are computed by build_changes.py from section content
+   hashes, never hand-written, and never advance on a republication. */
+.chg-stamp { display:inline-block; margin-left:10px; font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.02em; color:var(--faint);
+  vertical-align:middle; white-space:nowrap; }
+.chg-stamp::before { content:""; display:inline-block; width:6px; height:6px;
+  border-radius:50%; background:var(--line); margin-right:5px;
+  vertical-align:1px; }
+.chg-stamp.chg-week { color:var(--mut); }
+.chg-stamp.chg-week::before { background:var(--faint); }
+.chg-stamp.chg-new { color:var(--acc-deep); font-weight:600; }
+.chg-stamp.chg-new::before { background:var(--acc); }
+.chg-stamp.chg-since { color:var(--acc-deep); font-weight:600;
+  text-decoration:underline; text-decoration-color:var(--acc);
+  text-underline-offset:3px; }
+.chg-stamp.chg-since::before { background:var(--acc);
+  box-shadow:0 0 0 3px var(--ch-wash-acc); }
+/* since-last-visit section treatment (v2, 2026-10-30): the section
+   container a fresh stamp belongs to gets a 1px inset ring in the
+   rust accent at low opacity plus a very slight warm tint. Inset
+   shadow and background only: zero layout shift, no animation. A
+   gentle highlight, not an alert. Light values first, dark lifted. */
+.chg-since-sec { box-shadow:inset 0 0 0 1px rgba(161,60,34,.35);
+  background:rgba(161,60,34,.045); }
+[data-theme="dark"] .chg-since-sec {
+  box-shadow:inset 0 0 0 1px rgba(207,113,80,.40);
+  background:rgba(207,113,80,.07); }
+.chg-badge { display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--sans); font-size:12px; font-weight:600;
+  color:var(--acc-deep); text-decoration:none; padding:4px 0 4px 14px;
+  white-space:nowrap; }
+.chg-badge::before { content:""; width:7px; height:7px; border-radius:50%;
+  background:var(--acc); }
+.chg-badge:hover { text-decoration:underline; text-underline-offset:3px; }
+.chg-river { border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line); padding:16px 0 8px; margin:20px 0 28px; }
+.chg-river .chg-river-head { display:flex; justify-content:space-between;
+  align-items:baseline; gap:12px; }
+.chg-river h2.chg-river-title { font-size:19px; margin:0 0 4px; }
+.chg-river .chg-more { font-size:12.5px; color:var(--mut); white-space:nowrap; }
+.chg-day { font-family:var(--serif); font-size:19px; margin:28px 0 4px; }
+.chg-list { list-style:none; margin:0; padding:0; }
+.chg-list li { padding:7px 0; border-bottom:1px solid var(--line2);
+  font-size:14.5px; line-height:1.45; }
+.chg-list .chg-sec { color:var(--mut); }
+.chg-list .chg-note { display:block; color:var(--ink); }
+.chg-list a { color:var(--ink); font-weight:600; text-decoration:none; }
+.chg-list a:hover { text-decoration:underline; text-underline-offset:3px; }
 </style>
 </head>
 <body>
@@ -632,12 +685,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <nav class="sitenav" aria-label="Sections">
       <div class="navdrop"><a class="nd-top nd-plain" href="../index.html">Now</a></div>
       <div class="navdrop"><a class="nd-top" href="../weekly/index.html" aria-haspopup="true">Letter</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Letter</p><a class="nd-link" href="../weekly/index.html">Edition archive</a></div></div></div>
-      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
+      <div class="navdrop"><a class="nd-top" href="../digest/index.html" aria-haspopup="true">Digest</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">The Digest</p><a class="nd-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="nd-link" href="../digest/index.html">Edition archive</a><a class="nd-link" href="../digest/podcast/index.html">Reader podcast</a></div></div></div>
       <div class="navdrop"><a class="nd-top" href="../barrels/index.html" aria-haspopup="true">Barrels</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../projects/index.html">All projects</a><a class="nd-link" href="../apportionment/index.html">Apportionment</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../whale-watch.html">Whale watch</a></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../sat-watch.html">Sat Watch</a></div>
       <div class="navdrop"><a class="nd-top" href="../maintenance/index.html" aria-haspopup="true">Maintenance</a><div class="nd-panel"><div class="nd-sec"><a class="nd-link" href="../growth/index.html">Production growth</a></div></div></div>
-      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
+      <div class="navdrop active"><a class="nd-top" href="../reference/index.html" aria-haspopup="true">Reference</a><div class="nd-panel"><div class="nd-sec"><p class="nd-label">World</p><a class="nd-link" href="../world/middle-east/index.html">Middle East watch</a><a class="nd-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="nd-link" href="../world/china-imports/index.html">China imports</a><a class="nd-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="nd-link" href="../world/sour/index.html">The global sour barrel</a><a class="nd-link" href="../venezuela/index.html">Venezuela watch</a><a class="nd-link" href="../world/trump/index.html">Trump watch</a><a class="nd-link" href="../world/index.html">World</a></div><div class="nd-sec"><p class="nd-label">The Wing</p><a class="nd-link" href="../options/index.html">The Wing (options)</a><a class="nd-link" href="../options/charts/index.html">The Wing charts</a></div><div class="nd-sec"><a class="nd-link" href="../fieldguide/index.html">Field guide</a><a class="nd-link" href="../global-balance.html">Global balance</a><a class="nd-link" href="../quotes/index.html">Quotes</a><a class="nd-link" href="../tolls/index.html">Toll search</a><a class="nd-link" href="../commitments/index.html">Commitments grid</a><a class="nd-link" href="../freight-watch.html">Freight watch</a><a class="nd-link" href="../sat-watch.html">Sat watch</a><a class="nd-link" href="../globe.html">Globe</a><a class="nd-link" href="../maps/index.html">Maps</a><a class="nd-link" href="../chartbook.html">Chartbook</a><a class="nd-link" href="../arb-watch/index.html">Arb watch</a><a class="nd-link" href="../data/index.html">Data downloads</a><a class="nd-link" href="../sources/index.html">Sources</a><a class="nd-link" href="../methodology/index.html">Methodology</a><a class="nd-link" href="../about/index.html">About</a></div></div></div>
       <div class="navdrop"><a class="nd-top nd-plain" href="../inner/index.html">Inner</a></div>
       <div class="mnav-groups">
       <div class="mnav-sec"><p class="mnav-label">The Letter</p><a class="mg-link" href="../weekly/index.html">Edition archive</a></div>
@@ -645,10 +698,11 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
       <div class="mnav-sec"><p class="mnav-label">Barrels</p><a class="mg-link" href="../projects/index.html">All projects</a><a class="mg-link" href="../apportionment/index.html">Apportionment</a></div>
       <div class="mnav-sec"><p class="mnav-label">Maintenance</p><a class="mg-link" href="../growth/index.html">Production growth</a></div>
       <div class="mnav-sec"><p class="mnav-label">World</p><a class="mg-link" href="../world/middle-east/index.html">Middle East watch</a><a class="mg-link" href="../world/russia-refining/index.html">Russian refineries</a><a class="mg-link" href="../world/china-imports/index.html">China imports</a><a class="mg-link" href="../world/spr-storage/index.html">SPR &amp; storage</a><a class="mg-link" href="../world/sour/index.html">The global sour barrel</a><a class="mg-link" href="../venezuela/index.html">Venezuela watch</a><a class="mg-link" href="../world/trump/index.html">Trump watch</a><a class="mg-link" href="../world/index.html">World</a></div>
-      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-26/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
-      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Digest</p><a class="mg-link" href="../digest/2026-10-30/index.html">Today&apos;s edition</a><a class="mg-link" href="../digest/index.html">Edition archive</a><a class="mg-link" href="../digest/podcast/index.html">Reader podcast</a></div>
+      <div class="mnav-sec"><p class="mnav-label">The Wing</p><a class="mg-link" href="../options/index.html">The Wing (options)</a><a class="mg-link" href="../options/charts/index.html">The Wing charts</a></div>
+      <div class="mnav-sec"><p class="mnav-label">Reference</p><a class="mg-link" href="../fieldguide/index.html">Field guide</a><a class="mg-link" href="../global-balance.html">Global balance</a><a class="mg-link" href="../quotes/index.html">Quotes</a><a class="mg-link" href="../tolls/index.html">Toll search</a><a class="mg-link" href="../commitments/index.html">Commitments grid</a><a class="mg-link" href="../freight-watch.html">Freight watch</a><a class="mg-link" href="../sat-watch.html">Sat watch</a><a class="mg-link" href="../globe.html">Globe</a><a class="mg-link" href="../maps/index.html">Maps</a><a class="mg-link" href="../chartbook.html">Chartbook</a><a class="mg-link" href="../arb-watch/index.html">Arb watch</a><a class="mg-link" href="../data/index.html">Data downloads</a><a class="mg-link" href="../sources/index.html">Sources</a><a class="mg-link" href="../methodology/index.html">Methodology</a><a class="mg-link" href="../about/index.html">About</a></div>
       </div>
-      </nav>
+      <a class="chg-badge" href="../changes/index.html">401 changed today</a></nav>
       </details>
     <div class="searchbox" role="search"><input type="search" id="sitesearch" placeholder="Search Heavy Reading" aria-label="Search Heavy Reading" autocomplete="off" data-index="../search-index.json"><div class="searchres" id="searchres" hidden></div></div>
   </header>
@@ -656,19 +710,19 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   <h1>Quality banks and assay differentials</h1>
   <p class="sub">Shared pipelines commingle everyone's crude. Quality banks settle the value differences, and the assay decides what your barrel is really worth.</p>
   <p class="vintage">Field guide entry &middot; written September 29, 2026.</p>
-  <h2>Why a pipeline needs a quality bank</h2>
+  <h2>Why a pipeline needs a quality bank<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>When shippers share a pipeline, their crudes commingle into a common stream: what comes out is not the identical crude that went in. A quality bank is the money mechanism that credits or debits each shipper for the value difference between its input crude and the common stream. Without it, good crude subsidizes bad.</p><p>Two design families exist (RBN Energy, November 2022). The crude-valuation approach prices a handful of traits such as API gravity and sulphur. The assay approach runs a full lab assay and values each distilled component against refined-product markets, as on the Trans Alaska Pipeline System (TAPS). These are not trivia: Anadarko won a US$9 million court judgment against Williams Alaska in a quality-bank dispute dating to 2000.</p>
-  <h2>Canada's version: equalization</h2>
+  <h2>Canada's version: equalization<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Canada's version is called equalization, run industry-wide rather than per pipeline. Pipeline system operators administer it; shippers govern it through the Equalization Steering Committee (industryeq.ca, accessed September 2026). The system is zero-sum within each commodity type: positive adjustments offset negative ones, so the bank carries no profit or loss.</p><p>The scope line matters: equalization covers light crude, medium crude, and condensate only. Heavy crude, including dilbit and WCS, is not equalized. Heavy quality is priced through the differential market instead.</p>
-  <h2>The numbers: May 2026 summary</h2>
+  <h2>The numbers: May 2026 summary<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>The monthly output is Enbridge's Equalization Summary. For May 2026 (issued June 30, 2026), the per-stream WADF (weighted average differential factor), in C$/m3:</p><ul class="ev"><li>Condensates: -$5.1520</li><li>Light Sour Blend: $11.8142</li><li>Medium Sour Blend: $18.9176</li><li>Midale: $41.8784</li><li>Mixed Blend Sweet: $0.5055</li></ul><p>Caveats: the April 2026 summary only partially extracted and the full schedule carries more streams, so treat this as a partial view. No public source states the exact WADF formula.</p><p>The latest condensate notice found covers November 2025 production (issued December 11, 2025): density slope $0.17 C$/m3 per kg/m3, sulphur penalty $1.38 C$/m3 per 0.1 wt% (in force since February 2015), and a light-ends cliff: deemed C4 and lighter above 5.0 vol% gets zero value. The slope moves monthly with the condensate-heavy spread and ran $0.16 to $0.24 through 2025. No newer notices were found.</p>
-  <h2>Assay differentials: WCS against Maya</h2>
+  <h2>Assay differentials: WCS against Maya<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Producers think in API gravity and sulphur; refiners price the full assay: the yield slate the crude will produce in their configuration (RBN, November 2022). A representative WCS assay is 20.9 degrees API, 3.5 percent sulphur, 10 percent MCR (micro carbon residue), and about 295 ppmw sediment. The closest global peer is Mexican Maya, about 21.8 degrees API and 3.3 percent sulphur.</p><p>TD Economics, with data through about 2018, decomposed the fundamental WCS discount to US$13 to 17/bbl: US$4 to 10 of transport plus about US$8 of quality proxied by the LLS-Maya spread. Vintage flag: the two-component logic stands, but the levels are not current. The quality half is set by refinery economics and is permanent; the logistics half moves with egress and apportionment and is volatile.</p>
-  <h2>Transmix: the shipper eats the interface</h2>
+  <h2>Transmix: the shipper eats the interface<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2>
   <p>Where two batches meet, mixing creates an interface zone. Pipelines detect it with densitometers and cut it into the adjacent lower-value batch or to slop: a downgrade cost, not a reprocessing business the way refined-products transmix is. The shipper eats it: Enbridge's tariff Rule 5(c) disclaims carrier liability for quality changes from transportation, including commingling.</p><p>Schedulers sequence batches to minimize incompatible contacts, and larger batches mean fewer interfaces per barrel moved.</p>
-<div class="exec"><h2>Why it matters</h2><p>Quality banks decide what your nominated grade pays you. On light and medium barrels, stream selection and density/sulphur management set the monthly credit or debit, and the condensate C4 cliff punishes sloppy light ends. Heavy barrels live outside the bank: WCS quality is priced in the differential, so split the discount into its permanent quality half and its volatile logistics half before trading the move.</p></div>
-<h2>Sources</h2><ul class="ev"><li>RBN Energy, Crude oil pipeline quality banks (Nov 2022) (<a href="https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks">https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks</a>)</li><li>RBN Energy, Crude oil pipeline quality banks, part 2: TAPS (Nov 2022) (<a href="https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks-part-2">https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks-part-2</a>)</li><li>industryeq.ca, Canadian equalization system overview (accessed Sep 2026) (<a href="https://www.industryeq.ca/">https://www.industryeq.ca/</a>)</li><li>Enbridge Pipelines Inc., Equalization Summary, May 2026 (issued Jun 30, 2026) (<a href="https://www.industryeq.ca/wp-content/uploads/2026/06/05-Equalization-Summary-2026.pdf">https://www.industryeq.ca/wp-content/uploads/2026/06/05-Equalization-Summary-2026.pdf</a>)</li><li>Enbridge Pipelines Inc., Condensate equalization notice, November 2025 production (issued Dec 11, 2025) (<a href="https://www.industryeq.ca/wp-content/uploads/2025/12/November-2025-Condensate-Equalization.pdf">https://www.industryeq.ca/wp-content/uploads/2025/12/November-2025-Condensate-Equalization.pdf</a>)</li><li>Canada Energy Regulator, Enbridge tariff NEB No. 342, Rule 5: Changes in Quality and Segregation (tariff on file) (<a href="https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90465/92835/155829/256889/2454491/NEB_No._342_-_A3W9G0.pdf?nodeid=2454400&vernum=-2">https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90465/92835/155829/256889/2454491/NEB_No._342_-_A3W9G0.pdf?nodeid=2454400&amp;vernum=-2</a>)</li><li>Oil Sands Magazine, Western Canadian Select (WCS) specs (accessed Sep 2026) (<a href="https://www.oilsandsmagazine.com/technical/western-canadian-select-wcs">https://www.oilsandsmagazine.com/technical/western-canadian-select-wcs</a>)</li><li>Oil Sands Magazine, Crude oil pricing differentials: why Alberta crude sells at a deep discount to WTI (updated ~Jul 2026) (<a href="https://www.oilsandsmagazine.com/market-insights/crude-oil-pricing-differentials-why-alberta-crude-sells-at-deep-discount-to-wti">https://www.oilsandsmagazine.com/market-insights/crude-oil-pricing-differentials-why-alberta-crude-sells-at-deep-discount-to-wti</a>)</li><li>TD Economics, Canadian oil spreads (data through ~2018) (<a href="https://economics.td.com/domains/economics.td.com/documents/reports/oa/CanadianOilSpreads.pdf">https://economics.td.com/domains/economics.td.com/documents/reports/oa/CanadianOilSpreads.pdf</a>)</li><li>Discovery Alert, Alberta oil sands outlook: TMX 2027 (Sep 2026) (<a href="https://discoveryalert.com/analysis/alberta-oil-sands-outlook-tmx-2027/">https://discoveryalert.com/analysis/alberta-oil-sands-outlook-tmx-2027/</a>)</li></ul>
-  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
+<div class="exec"><h2>Why it matters<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><p>Quality banks decide what your nominated grade pays you. On light and medium barrels, stream selection and density/sulphur management set the monthly credit or debit, and the condensate C4 cliff punishes sloppy light ends. Heavy barrels live outside the bank: WCS quality is priced in the differential, so split the discount into its permanent quality half and its volatile logistics half before trading the move.</p></div>
+<h2>Sources<span class="chg-stamp chg-new" data-chg="2026-10-30" title="This section last changed October 30, 2026">changed Oct 30</span></h2><ul class="ev"><li>RBN Energy, Crude oil pipeline quality banks (Nov 2022) (<a href="https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks">https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks</a>)</li><li>RBN Energy, Crude oil pipeline quality banks, part 2: TAPS (Nov 2022) (<a href="https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks-part-2">https://rbnenergy.com/daily-posts/blog/crude-oil-pipeline-quality-banks-part-2</a>)</li><li>industryeq.ca, Canadian equalization system overview (accessed Sep 2026) (<a href="https://www.industryeq.ca/">https://www.industryeq.ca/</a>)</li><li>Enbridge Pipelines Inc., Equalization Summary, May 2026 (issued Jun 30, 2026) (<a href="https://www.industryeq.ca/wp-content/uploads/2026/06/05-Equalization-Summary-2026.pdf">https://www.industryeq.ca/wp-content/uploads/2026/06/05-Equalization-Summary-2026.pdf</a>)</li><li>Enbridge Pipelines Inc., Condensate equalization notice, November 2025 production (issued Dec 11, 2025) (<a href="https://www.industryeq.ca/wp-content/uploads/2025/12/November-2025-Condensate-Equalization.pdf">https://www.industryeq.ca/wp-content/uploads/2025/12/November-2025-Condensate-Equalization.pdf</a>)</li><li>Canada Energy Regulator, Enbridge tariff NEB No. 342, Rule 5: Changes in Quality and Segregation (tariff on file) (<a href="https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90465/92835/155829/256889/2454491/NEB_No._342_-_A3W9G0.pdf?nodeid=2454400&vernum=-2">https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/fetch/2000/90465/92835/155829/256889/2454491/NEB_No._342_-_A3W9G0.pdf?nodeid=2454400&amp;vernum=-2</a>)</li><li>Oil Sands Magazine, Western Canadian Select (WCS) specs (accessed Sep 2026) (<a href="https://www.oilsandsmagazine.com/technical/western-canadian-select-wcs">https://www.oilsandsmagazine.com/technical/western-canadian-select-wcs</a>)</li><li>Oil Sands Magazine, Crude oil pricing differentials: why Alberta crude sells at a deep discount to WTI (updated ~Jul 2026) (<a href="https://www.oilsandsmagazine.com/market-insights/crude-oil-pricing-differentials-why-alberta-crude-sells-at-deep-discount-to-wti">https://www.oilsandsmagazine.com/market-insights/crude-oil-pricing-differentials-why-alberta-crude-sells-at-deep-discount-to-wti</a>)</li><li>TD Economics, Canadian oil spreads (data through ~2018) (<a href="https://economics.td.com/domains/economics.td.com/documents/reports/oa/CanadianOilSpreads.pdf">https://economics.td.com/domains/economics.td.com/documents/reports/oa/CanadianOilSpreads.pdf</a>)</li><li>Discovery Alert, Alberta oil sands outlook: TMX 2027 (Sep 2026) (<a href="https://discoveryalert.com/analysis/alberta-oil-sands-outlook-tmx-2027/">https://discoveryalert.com/analysis/alberta-oil-sands-outlook-tmx-2027/</a>)</li></ul>
+  <footer class="sitefoot"><div class="fcols"><div class="fcol"><h4>The Letter</h4><a href="../weekly/index.html">Edition archive</a></div><div class="fcol"><h4>S&D Balance</h4><a href="../barrels/index.html#disposition">S&amp;D balance</a><a href="../barrels/index.html#st3-table">Projected ST3</a><a href="../scorecard.html">Scorecard</a></div><div class="fcol"><h4>Supply</h4><a href="../barrels/index.html">Supply hub</a><a href="../projects/index.html">All projects</a><a href="../apportionment/index.html">Apportionment</a><a href="../barrels/index.html#disposition">Egress</a></div><div class="fcol"><h4>Maintenance</h4><a href="../maintenance/index.html">Maintenance</a><a href="../growth/index.html">Production growth</a></div><div class="fcol"><h4>World</h4><a href="../world/middle-east/index.html">Middle East watch</a><a href="../world/russia-refining/index.html">Russian refineries</a><a href="../world/china-imports/index.html">China imports</a><a href="../world/spr-storage/index.html">SPR & storage</a><a href="../world/sour/index.html">The global sour barrel</a><a href="../venezuela/index.html">Venezuela watch</a><a href="../world/trump/index.html">Trump watch</a><a href="../world/index.html">World</a></div><div class="fcol"><h4>The Digest</h4><a href="../digest/index.html">Latest digest</a><a href="../digest/index.html">Edition archive</a><a href="../changes/index.html">What&apos;s changed</a></div><div class="fcol"><h4>Reference</h4><a href="../fieldguide/index.html">Field guide</a><a href="../global-balance.html">Global balance</a><a href="../tolls/index.html">Toll search</a><a href="../commitments/index.html">Commitments</a><a href="../sat-watch.html">Sat watch</a><a href="../maps/index.html">Maps</a><a href="../chartbook.html">Chartbook</a><a href="../options/index.html">The Wing (options)</a><a href="../options/charts/index.html">The Wing charts</a><a href="../data/index.html">Data downloads</a><a href="../sources/index.html">Sources</a><a href="../methodology/index.html">Methodology</a><a href="../about/index.html">About</a></div></div><p class="fcolophon"><b>Heavy Reading</b>: the WCSB supply letter. Every number on this site comes from public sources: AER filings, CER data, and company disclosures, run through the WCSB S&amp;D model. How each figure was built is on the <a href="../methodology/index.html">methodology</a> page; where every fact came from is in <a href="../sources/index.html">sources</a>.</p></footer>
 </div>
 <script>
 (function(){
@@ -769,5 +823,75 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 })();
 </script>
 
+
+<script id="chg-visit">
+(function(){try{
+  var meta=document.querySelector('meta[name="hr-page-key"]');
+  var page=meta?meta.getAttribute('content'):'';
+  if(!page){ return; }
+  function markBox(el){
+    var sec=el.closest('section');
+    if(sec){ sec.classList.add('chg-since-sec'); return; }
+    var h2=el.closest('h2');
+    if(h2&&h2.parentNode){
+      // Bare-heading pages (the world watches): the section is an
+      // <h2> plus sibling content with no <section> wrapper, so
+      // painting the heading alone leaves the section body plain
+      // and reads as no highlight at all. Wrap the heading and its
+      // following siblings, up to the next <h2>, in a <section> so
+      // the whole section body carries the treatment.
+      var wrap=document.createElement('section');
+      wrap.className='chg-since-sec';
+      h2.parentNode.insertBefore(wrap,h2);
+      var node=h2;
+      while(node){
+        var next=node.nextSibling;
+        wrap.appendChild(node);
+        if(next&&next.nodeType===1&&next.tagName==='H2'){ break; }
+        node=next;
+      }
+      return;
+    }
+    if(el.parentElement){ el.parentElement.classList.add('chg-since-sec'); }
+  }
+  function apply(prev){
+    if(!prev){ return; }
+    var sd=String(prev).slice(0,10);
+    document.querySelectorAll('.chg-stamp[data-chg]').forEach(function(el){
+      if(el.getAttribute('data-chg')>sd){
+        el.classList.add('chg-since');
+        el.title=el.title+' (since your last visit to this page)';
+        markBox(el);
+      }
+    });
+  }
+  function fallback(){
+    try{
+      var KEY='hr-last-visit:'+page, SKEY='hr-visit-since:'+page;
+      var since=sessionStorage.getItem(SKEY);
+      if(since===null){
+        var prev=localStorage.getItem(KEY);
+        sessionStorage.setItem(SKEY,prev||'');
+        localStorage.setItem(KEY,new Date().toISOString());
+        since=prev;
+      }
+      if(since){ apply(since); }
+    }catch(e){}
+  }
+  var settled=false;
+  fetch('/api/visit?page='+encodeURIComponent(page),
+        {credentials:'same-origin',headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(!r.ok){ throw new Error('visit '+r.status); }
+      return r.json();
+    })
+    .then(function(j){
+      settled=true;
+      if(j&&('prevVisitEnd' in j)){ apply(j.prevVisitEnd); }
+      else{ fallback(); }
+    })
+    .catch(function(){ if(!settled){ fallback(); } });
+}catch(e){}})();
+</script>
 </body>
 </html>

@@ -1,0 +1,642 @@
+{
+ "schema": "micro-balance/1",
+ "level": "rollup",
+ "region": "rollup_north_america",
+ "title": "North America balance",
+ "built": "2026-10-28",
+ "as_of": "2025 annual reads (agency spines)",
+ "as_of_note": "Each country enters on its declared headline spine per leg (the same declaration as its country page). Totals are sums of those declared reads; coverage counts print beside every total.",
+ "units": "kb/d unless a field name says otherwise",
+ "grain": {
+  "capture": "Country grain from the agency panel, built up from states and basins for the US and from the house balance for Canada.",
+  "display": "North America"
+ },
+ "totals": {
+  "production_crude": 20432.3,
+  "production_liquids": 31959.6,
+  "consumption_products": 24706.6
+ },
+ "coverage": {
+  "production_crude": 36,
+  "production_liquids": 36,
+  "consumption_products": 3
+ },
+ "n_members": 36,
+ "reconciliation": [
+  {
+   "leg": "production_crude",
+   "leg_label": "Crude production",
+   "declared_total": 20432.3,
+   "per_spine": {
+    "EIA_international": {
+     "total": 20432.3,
+     "n": 36
+    },
+    "JODI": {
+     "total": 19342.9,
+     "n": 3
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "production_liquids",
+   "leg_label": "Total liquids production",
+   "declared_total": 31959.6,
+   "per_spine": {
+    "EIA_international": {
+     "total": 31959.6,
+     "n": 36
+    }
+   },
+   "missing_members": 0
+  },
+  {
+   "leg": "consumption_products",
+   "leg_label": "Product consumption",
+   "declared_total": 24706.6,
+   "per_spine": {
+    "JODI": {
+     "total": 24706.6,
+     "n": 3
+    },
+    "EIA_international": {
+     "total": 23287.3,
+     "n": 2
+    }
+   },
+   "missing_members": 33
+  },
+  {
+   "leg": "exports_crude",
+   "leg_label": "Crude exports",
+   "declared_total": null,
+   "per_spine": {},
+   "missing_members": 36
+  }
+ ],
+ "trade": [],
+ "members": [
+  {
+   "country": "United States",
+   "code": "USA",
+   "slug": "united_states",
+   "legs": {
+    "production_crude": {
+     "value": 13659.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 23725.3,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 20724.2,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Canada",
+   "code": "CAN",
+   "slug": "canada",
+   "legs": {
+    "production_crude": {
+     "value": 4962.6,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 6255.5,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 2502.5,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Mexico",
+   "code": "MEX",
+   "slug": "mexico",
+   "legs": {
+    "production_crude": {
+     "value": 1725.9,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1869.4,
+     "spine": "EIA_international"
+    },
+    "consumption_products": {
+     "value": 1479.9,
+     "spine": "JODI"
+    }
+   }
+  },
+  {
+   "country": "Trinidad and Tobago",
+   "code": "TTO",
+   "slug": "trinidad_and_tobago",
+   "legs": {
+    "production_crude": {
+     "value": 51.2,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 71.6,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cuba",
+   "code": "CUB",
+   "slug": "cuba",
+   "legs": {
+    "production_crude": {
+     "value": 25.5,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 27.7,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Guatemala",
+   "code": "GTM",
+   "slug": "guatemala",
+   "legs": {
+    "production_crude": {
+     "value": 5.4,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 5.8,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Barbados",
+   "code": "BRB",
+   "slug": "barbados",
+   "legs": {
+    "production_crude": {
+     "value": 1.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 1.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Belize",
+   "code": "BLZ",
+   "slug": "belize",
+   "legs": {
+    "production_crude": {
+     "value": 0.8,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.8,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Antigua and Barbuda",
+   "code": "ATG",
+   "slug": "antigua_and_barbuda",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Aruba",
+   "code": "ABW",
+   "slug": "aruba",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Bermuda",
+   "code": "BMU",
+   "slug": "bermuda",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "British Virgin Islands",
+   "code": "VGB",
+   "slug": "british_virgin_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Cayman Islands",
+   "code": "CYM",
+   "slug": "cayman_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Costa Rica",
+   "code": "CRI",
+   "slug": "costa_rica",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.4,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Dominica",
+   "code": "DMA",
+   "slug": "dominica",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Dominican Republic",
+   "code": "DOM",
+   "slug": "dominican_republic",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "El Salvador",
+   "code": "SLV",
+   "slug": "el_salvador",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Falkland Islands",
+   "code": "FLK",
+   "slug": "falkland_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Greenland",
+   "code": "GRL",
+   "slug": "greenland",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Grenada",
+   "code": "GRD",
+   "slug": "grenada",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Guadeloupe",
+   "code": "GLP",
+   "slug": "guadeloupe",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Haiti",
+   "code": "HTI",
+   "slug": "haiti",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Honduras",
+   "code": "HND",
+   "slug": "honduras",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Jamaica",
+   "code": "JAM",
+   "slug": "jamaica",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 2.3,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Martinique",
+   "code": "MTQ",
+   "slug": "martinique",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": -0.2,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Montserrat",
+   "code": "MSR",
+   "slug": "montserrat",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Nicaragua",
+   "code": "NIC",
+   "slug": "nicaragua",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": -0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Panama",
+   "code": "PAN",
+   "slug": "panama",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Puerto Rico",
+   "code": "PRI",
+   "slug": "puerto_rico",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Saint Kitts and Nevis",
+   "code": "KNA",
+   "slug": "saint_kitts_and_nevis",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Saint Lucia",
+   "code": "LCA",
+   "slug": "saint_lucia",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Saint Pierre and Miquelon",
+   "code": "SPM",
+   "slug": "saint_pierre_and_miquelon",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Saint Vincent/Grenadines",
+   "code": "VCT",
+   "slug": "saint_vincent_grenadines",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "The Bahamas",
+   "code": "BHS",
+   "slug": "the_bahamas",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "Turks and Caicos Islands",
+   "code": "TCA",
+   "slug": "turks_and_caicos_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  },
+  {
+   "country": "U.S. Virgin Islands",
+   "code": "VIR",
+   "slug": "us_virgin_islands",
+   "legs": {
+    "production_crude": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    },
+    "production_liquids": {
+     "value": 0.0,
+     "spine": "EIA_international"
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "gaps": [],
+ "supply": [],
+ "demand": [],
+ "groups": [],
+ "prices": [],
+ "storage": null,
+ "corridors": [],
+ "cards": {}
+}
