@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-29T13:46:18Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-10-30T01:51:47Z",
  "data": {
-  "updated_at": "2026-10-29T13:45:57.394763Z",
+  "updated_at": "2026-10-30T01:51:16.972862Z",
   "events": [
+   {
+    "id": "brent-1793324478",
+    "detected_at": "2026-10-30T01:51:16.972862Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-10-30T00:35:00Z",
+    "to_ts": "2026-10-30T01:41:18Z",
+    "from_price": 111.43,
+    "to_price": 113.07,
+    "move_usd": 1.64,
+    "move_pct": 1.47,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Vessel catches fire in Hormuz off Oman's coast: UKMTO - IANS LIVE",
+      "source": "IANS LIVE",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcE1IdktGRDlMV1ZhTERtV0djbFNYa1V6YUI0TjZTTzdWUmp5NXFWckxYV3c0c25RY0hCWFZJelBTNUtRZk5qcVdyc1JRSW95clRuMlNaRG5NTWRFOVB6VHNMdDZWcWM3WFl1TlNWZWtmMS1EVEdZNGNIbm9KbFVxLW1WSXhnb1I3QlJUdzdRcEw?oc=5",
+      "published": "2026-10-30T01:23:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Vessel catches fire in Hormuz off Oman's coast: UKMTO &nbsp;&nbsp; IANS LIVE"
+     },
+     {
+      "title": "Oil Prices Today: Brent Crude Nears $116, Jumps 10% In October; Is $120 The Next Stop? - NDTV Profit",
+      "source": "NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOWUtfbi1xbGdHVEF6UHFzNEJ2UVZhcktabVJGWFZiREk3LWF4WUlRYnJUQmI4WUlZX3BQTTkyQndjUEtPZ1lRQjdZRHhPLWVXVjF6LVNuUXdfMGFRUEdKZkl5VFpfQW91N3M3ZkhLa2w3T3V5TnJ4Qk5hbkx5Vm4yT2pSMENJcEhJV1BmeTlva0lxWUZuSnhZTlR2akVFZC1aYXdUd1N4V1ZuWmdiY0stYXptSWVzRFZIZHR5aTJ3N2dKdkUtVGN5X2wtbW5HOUxMTTJlUlZ4V2RkUFNscXBxVS0wNmNxQlJmNG9aZU1iSGt5V0ZpVy1JWlc5dE3SAYQCQVVfeXFMTXRmOW1fenV2UUtuYzNLM2ppUzZaeHcyNHdqaE9YcEkyOXlCa240OEtvdGloZTZyRjhqcFIzXzBwNjMwTHJjMWI1NXFkckNHRzNIMjVUbHVTMDk1TzhfdHdseHZOSGNkNTEyWDlvRzhpV0JQMFdjWUlqZFhmOEJuUDdGUzluTmhpNWFYOFZKRklScDVLOWpNY05ib0xyR01FZnN5bUp0SmJidWdfODA4NEF3OGcwa3AzakREYzAyOG9yeDBYRmdXcE84Ql9fc1dVdjBlb2FJVllRX0VsbzdGblVDck5jUjZyM2E2R2JnY0owMDNxb1pEV012OS1aVmtmZ19yWW4?oc=5",
+      "published": "2026-10-30T01:20:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Today: Brent Crude Nears $116, Jumps 10% In October; Is $120 The Next Stop? &nbsp;&nbsp; NDTV Profit"
+     },
+     {
+      "title": "Brent remains around $115; Oil remains high as fears of renewed US strikes on Iran grow - CNBC TV18",
+      "source": "CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX3FoR2YwS1E1NHdKMjRWd25HdXNveENYWUFCbmhnSEVEMEoxOGc3UklJQ2tCVlRPZ1E2Qk9iTDRvclhGMUo2a1h4Z0txcVVlS3ROU0MtNF8wRWpwcElSTEsxbVRMb1JSR3pCOXVocnZyQWduclpoVmcwekRRazZIQkFrcVJWdXp3VTBGSGR6ZEplbmxkQXZfQTAyLXBfSTBUQmg3dUFvT3RtdEtEa1V4dW1McGVUZWh6UTg4OUlfVkgwM0lVT3Y0X20zR2ZBY2JiSUoxU3NrY3U1c2ZxaFZ4clhIRzhyMzQzeklxSnI4bUhZRUhfOHFsM0hEQdIBgAJBVV95cUxORWllZzBlaGttTDRnYUxyWGRHX1U5MGwxalgtTW9hdDlhVTRCOXVqM3lScEM4anc1eDFjOVhWNDNZV1h2MFNzVUJ1dF96ZGRxbWhUX0Joazc4dTdkeU9OdVVoQ0x4ZFU5eTg5MjhKY25tQU14T1pvUHpZM1U1WWw0ZEhoNHJGREFmb2VzTjFIZjZrUWdTRGl1TUtnLUdJdXUyMFRjMjljcy1RaTluUHRZUjVaNjRLYUoyTmpubnJtdy1IeGpERjVGcVA3VXBidlNzY3N0UmxSemlyU1g2ajE3a2JtTmNQZUtzNWo5Y3AzNmNyQ2tkOGdvaEV4T0xrem5y?oc=5",
+      "published": "2026-10-30T01:09:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent remains around $115; Oil remains high as fears of renewed US strikes on Iran grow &nbsp;&nbsp; CNBC TV18"
+     },
+     {
+      "title": "Saudi Aramco Offers Spot Oil Cargoes to European Buyers - IndexBox",
+      "source": "IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNN1R3RjdQSkxVVEJZYUtrdG16bXpXNWlXTmJGdGtwZVFiV0RFVWswSWdEM3hHbXdHamdvNTFFamd6cnpDSWNWVjZTYm9iTHBCZWVQRHdOMzZCVm9kVE9za2NtR0FUeS10TlMxbkpETFI4aTNXQ2dqbWFsM2JEN3FWaEVfVm5GNlpySHZZaHBB?oc=5",
+      "published": "2026-10-30T00:30:32Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Aramco Offers Spot Oil Cargoes to European Buyers &nbsp;&nbsp; IndexBox"
+     },
+     {
+      "title": "Risky Move? Lemigas Takes Over Pertamina\u2019s Oil Import Role - Jakarta Globe",
+      "source": "Jakarta Globe",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTjh3UFV0ZmVRUW9qR2lVTWxhdWw0ajB2YXVIY2ZPNWJScVZfa2g5bkpyWTQ1eTJhdVlsQk9Ic3lBcms4a2ktd0tOODlpWFR5VmNBRGJTNkNwazVjbWV4Tl9LalpPNlAzY0hsRG1BSnRHX0pCUFUwLTFMWU5fMERlQi16YVBTUVlsclNJOTBn?oc=5",
+      "published": "2026-10-30T00:27:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Risky Move? Lemigas Takes Over Pertamina\u2019s Oil Import Role &nbsp;&nbsp; Jakarta Globe"
+     },
+     {
+      "title": "Oil prices settles lower as diplomacy hopes offset some Mideast supply concerns - Central Oregon Daily",
+      "source": "Central Oregon Daily",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPalk4aTdXUWV2WjZtRjZZRFl3YjJBTkZRRjlYUXJUajNoUDJVX3VGMUJvMnF1TFZPLS1GZEZKcFd3TkNibVM4WXBlX1FZa254a2ZCOFRpX2lyUkNYTFhZRGtWd0dMd2dBZy1oWXhhVnhXNllSclBCd3VHVGtnRUFndVAtYlFlSjNkb09RUnFqZkRMeG1nQko2a2hRU3hYSHktMjNZaU4zZzY3MzJmQkh4MlFsaV95RlhqVUczNjhOOW8tOTVqVHc3OUgydnA2VlRKelUyVzFVaEFFQ1F1UTdpVzN2V3ZrM3JzUDFBbDV2bmtoR3c5b2hQcmdyNER3YkZseldXQzlvdUFadw?oc=5",
+      "published": "2026-10-30T00:25:04Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices settles lower as diplomacy hopes offset some Mideast supply concerns &nbsp;&nbsp; Central Oregon Daily"
+     },
+     {
+      "title": "Fuel prices today, October 30th: Petrolimex raises prices, world oil prices remain high. - Vietnam.vn",
+      "source": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONV9mY2FTVWpITmd3eVRiTzV5X1ByVURmUkNUYUc1R0NhdVlDeFZ2MXd1d0o5a3p2a3JlVFhRcVdWRDN6UmtyVVBhNWs4akVib1JwTG9iNWpYSFZkNmR3d3ZiZ0dVdTdPaENBMjdoSUgzU3JneURKejhyTGtyRVlkMXdKVi12dnA3dDdSWVBDbHp0Y1ZYRGk2RFl6ZEFQNFVI?oc=5",
+      "published": "2026-10-30T00:10:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Fuel prices today, October 30th: Petrolimex raises prices, world oil prices remain high. &nbsp;&nbsp; Vietnam.vn"
+     },
+     {
+      "title": "Off-Grid Solar Is Now the Cheapest Power for Nearly 400 Million People - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVTItMXJoX0NUTkZ5TkRxcUJ0TWZORUxQdDlzdWhKSEpsa3ZOM2RXVW0wZWU3Z3hTUG1GS21lcmtKYmZrVTMwdnNQVXpZMVJhZm1GUWttaHBuM2QtSXJaaDItelpvZTl3enJtTk81X0lvbW9sMDR6bldOUkM0ekZLdlNEYkJnZTlMbVVlRVFtS2J3TTRUazVuTy0wNEVqRDdCMEpfWUprSVprVXgzNXFLaElGSm5HMjBpR1VaX0pyVmRiM19lTEFN0gHMAUFVX3lxTE0zd21sYW40Z1l0T2tBQlZVeHhBU05GVDh5SzlSQTZndzRCN1RSWHNXR21kY0JZcmxNUFdIR0JGSnJJc3NlVW9fTzBEUHFERm1RdWU1MTBLVURqZl9rN20xcmNQM1dVT1BJQ01CdGNKVjBqb052dHlSTmJ6SzVFaVhVTzdrelJ6VmlWR3V4bjhUZUlhZjAzRWZxb0ZyOWkxMU1oMWJZN1k2aFp1dkdqYkFRUjBIVTJVT3FtSnNBb0ZTVldoMDdZNC00N1I5Sg?oc=5",
+      "published": "2026-10-30T00:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Off-Grid Solar Is Now the Cheapest Power for Nearly 400 Million People &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "WTI rises 0.8% on Oct 30 amid fears of US strikes on Iran - Nation Thailand",
+      "source": "Nation Thailand",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1JUE9ER2JDZ3FjWHZNV19HMmhNQ0dKWTJjejE4U21QSUVsbmQ1M2FRZ1I2QS11cHJRUVNTWThHeDk3OHNIbzloNWxiTWM3SUJjdlVtdVRyQndPaG1kb1dr?oc=5",
+      "published": "2026-10-29T23:49:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI rises 0.8% on Oct 30 amid fears of US strikes on Iran &nbsp;&nbsp; Nation Thailand"
+     },
+     {
+      "title": "Replenishing Crude, Fuel Supplies Could Take Two Years, Saudi Aramco CEO Says - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT0duRkRMRFphM1dCUTkxcmgzWENDSkJtQkxYR0tGY19Ed0Zaei1STkF2cERJZEpDR2tZN19hVnB1Mjk0eng2a3A4cUdIOS1pUGxDeWxTNHI3ckFmbHJ6WTJudElESlp4UEUyOUREaW5tbnBDT1l6ZmxLejlLLUZSZjdtS3ZsMWIzUTVyWW5UVkdubVdYMWhoZmgtMklWc2JZYl9meVl2UjRKdw?oc=5",
+      "published": "2026-10-29T23:14:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Replenishing Crude, Fuel Supplies Could Take Two Years, Saudi Aramco CEO Says &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "What's Next for Global Natural Gas Demand - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOXzlzN3Y0azlZeHQ4RUlFazYzZ2JiTjQzT3JfNEtJUFRSZXJWUGNEMnpFU2UzNkczaDE3bjVzZFFaVGlrTlp2a3l3bXl0VEJWcGF0a0x6SS1EOTI5UnZIdHRyWjhCRV9zbDg2RkVxX0RNN0hTcF9uWmE1UHVWM2MzUjgza1dhbUp6MVJKRkNR0gGTAUFVX3lxTE1fZVJkLS00VXVyXzRxY2lSQVBBU3pRRHJYYmxSR0ljMjVKMzJMYWRmeGdfU2hRNjRjSzRheVZManhiZ3o1ZHo2b2VEY3lYRXNUM1ZveFdrLUg5aEtUaF9jR0ZVbElpb3pOeXBpYkh6aXJULWdmVGN1RG1FOTVMUlhUeDctb2RKVjhfb0QyMkhwR3RGRQ?oc=5",
+      "published": "2026-10-29T23:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "What's Next for Global Natural Gas Demand &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Strait of Hormuz Watch: Vessel Attacks Persist - IndustryWeek",
+      "source": "IndustryWeek",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQMzdGVkRCRkxtektNWVpJYUlyU2dMRFBSeVNxOVNsaHlDblpiblVTQ2d1SWotMmhUSk52YlNoalZKaGJkV1N4LUdjbXFFLVN4dk9JX1dYYnhZbHU1anY4QjBMNFF4N1JpVHNHNGUxcjk0YzRfSHFjWExic3NLTFFiVUhRVVhZaW1iZEt4eldXVFBfMnlaSmw0T1BMMnhfOGM2WmpROTF0OTZuc2t1Z1llRklEaVRwQ3FPT0tPdGo4Z052c3ZvQTMyVnRrVk9xM1JKRGJsUjhVMA?oc=5",
+      "published": "2026-10-29T22:38:21Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Strait of Hormuz Watch: Vessel Attacks Persist &nbsp;&nbsp; IndustryWeek"
+     },
+     {
+      "title": "Oil\u2019s New Problem Isn\u2019t Supply. It\u2019s Logistics: Bousso - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMXQ2YTBfVVVFbFYyWlIwaEZ1VlA0WHg0R1RKX2dfNWpRZndtQi02eE9wd2VIRWE5aVpZSW9qVnpraWdZMzY4c2NqZmtNT3JRdVVXc3U4VTBOUTNFRDNRdGdwVHlPSU9JdE5iYW1ub3pEZnd5MWo5NU1rdDUxSW5pZGlSZTQwaVE?oc=5",
+      "published": "2026-10-29T22:29:17Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil\u2019s New Problem Isn\u2019t Supply. It\u2019s Logistics: Bousso &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "AMERICAN ENERGY SNAPSHOT: Why Gasoline Prices Don\u2019t Always Move in Lockstep with Crude Oil Prices - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOQllwV3FRcWtSUHdaOGZ1eUlkaHRnN1NjTGNIeDRYQVhNekF5NkRGTE1KY3BnWXR4a0I5RTAtNy0ybktHd3BYakI0VlFjQlBtd0pNdVVOdzZrN0tzWmIya0VFU2JPRWxnS0x1NWJ3UTRDOUtPU1IxZmJiNVlBSXNvWUJLa1VMTWlxaGhwYm5jN3AybVZzYXBpbUZuOXlhMnozd3M2NlhyZUkzU0RsWkhULVJ4Y2pCVDRRckw2em40MUc4YUEz?oc=5",
+      "published": "2026-10-29T22:10:14Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "AMERICAN ENERGY SNAPSHOT: Why Gasoline Prices Don\u2019t Always Move in Lockstep with Crude Oil Prices &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "New Report of Attack on Strait of Hormuz Shipping Fans fears of Threats to Oil Supplies - EnergyNow",
+      "source": "EnergyNow",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQc0dsNUwwMFNORWQ4dGpBQUFidFdTLWJOUjh2UDBESFlRdHhQYkk4cVRqWlhGN1VHbFlsTmNLbGcwaVB5RjhTWjJMYUdlN2tvNnNQbTlocERmOUkwdjFKcHdfQmZ1bHI3Z0RGeHNid0h0VV9XUUU2VHU1c2Nza2ZUUHpuazNSQ2tJLWQ1eFczX1F5M3N2WkxTQ1l4QXhtU2JnRFhzQzFVdXp3bC1XZVBmcktKNS1vbDlO?oc=5",
+      "published": "2026-10-29T22:05:06Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "New Report of Attack on Strait of Hormuz Shipping Fans fears of Threats to Oil Supplies &nbsp;&nbsp; EnergyNow"
+     },
+     {
+      "title": "Fujairah Oil Zone Hit by Fire After Drone Attack as UAE Says it Intercepted Iran Missiles - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUmRjOW5iTlYxTE5NSkNHZlRTZXJRWXBZTEJMZ0FyNFItWWtPV3pmWUdnVTF0M2JzMmxOTmMyMU5MMG1nM3VJcnk2OS1OMXBrS3IxbTBvVVZVb1N0S2F6M1ZSS09kT18yOWZvZUh1MEdWSzlhTWw2TlAxWmpHcGZOZEN0U0haVUNBWHBPeS1ZNzVzYmlBZkMxTmFkb25vbERIeUx1eDBSeHNoUkVSUjVkc1dZeG8yYUZRbFJoTA?oc=5",
+      "published": "2026-10-29T22:04:59Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Fujairah Oil Zone Hit by Fire After Drone Attack as UAE Says it Intercepted Iran Missiles &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "China's Battery Factories May Sit Atop Lithium Resources - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSnplb2FrUVgyaGsyV2d6Z2x1SHM0b0RQd0kyN04zRWdNMkpVY1M5RnhwXzhQV0UtY1Q5NUwxVnFQamFEOGtnYXdNVG45X0ZhMGJ2czVoZVYxNWNwZHF2MVZpTlQwZnl0amNqQ3lQcDlTRDdmZ3UtMWhqLXV1NWxsbFdCazRIRWNwVGVTZHZvMWllclVSX2xYOHhtaDdPci1nNE5NOVNB0gGrAUFVX3lxTE02aXZ6NGNGUktSenBvZDJQcGxwN3poa3FaMVk3SlJORV9QQkw0cm5CSndfSXBRU2dtOEtLVklEUGlSSW56bWRwUDhwNWpndERCUml1bjlVOG5seG1sQmNuRFBiajFnRTFzUzViLU1LLUJFeWhDWVYySmJWaXU4eFlWc2J1RnZTWEIwSllNa05ieHRheUpvVW84RlFkYS1uZnZjRUozYnRqTmN0Yw?oc=5",
+      "published": "2026-10-29T22:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "China's Battery Factories May Sit Atop Lithium Resources &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Tanker \u2018mostly submerged\u2019 and \u2018on fire\u2019 in US-protected Hormuz route off Oman - TradeWinds News",
+      "source": "TradeWinds News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOVd6cUFjazJhSXdDaUlzMFNNbnBrNVBwd0NsSXFYZXFEUk13T1l3M21ob3RyaDgzUHM1MFBIUEtMT08zVElrSFFDZWtCOTQzcFlIdnA4ZTBVVUFqaFg3dTczRGxibTRhbUZFQV84QUFnbXhjcE9YSDlFNlFSTG1RM2lhb3JlOUxsSTB6cHZzTzJsdnpRUFdTWVhoeFhVSC14bjh2Q1BfVUUwMFJVeXYzYTcwZFFPcmtEWHE4?oc=5",
+      "published": "2026-10-29T21:59:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Tanker \u2018mostly submerged\u2019 and \u2018on fire\u2019 in US-protected Hormuz route off Oman &nbsp;&nbsp; TradeWinds News"
+     },
+     {
+      "title": "Alternative Routes for Middle East Oil and Gas Due to Hormuz Disruption - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNE1fMzFiSjhrOFpJV21kajdMYkJEd20zcGM4Sm0yREpWU09IZnBwX0VyUk9LTWlHYWhDYXZCOS04eng0d1lPdVlKX2pZUjFwYzAwZkM4NWlDazVaSUFfRHlLaTczenpiZTdrb0lXd09XZTRiWHpNVGYxcDRjaHhoZ3JvcVFtb1VZM29raVc4RE9kUXBZWVdkbmktRU5FbV9hb1Fweg?oc=5",
+      "published": "2026-10-29T21:51:32Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Alternative Routes for Middle East Oil and Gas Due to Hormuz Disruption &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "Oil Price Shocks Now Benefit the US as Venezuelan Crude Flows to Texas - https://economy.ac/",
+      "source": "https://economy.ac/",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE02WE5RdU9oQ0pTSngwTWlVcFRIX2NOd3owLXFPVmRuN2hGdDFnanhHdC1zanhFWHd2Vl9YRHhJa0M5amtCd0pmQVgxeDNDR2tNcjhyRGM4VG9BUQ?oc=5",
+      "published": "2026-10-29T21:37:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Price Shocks Now Benefit the US as Venezuelan Crude Flows to Texas &nbsp;&nbsp; https://economy.ac/"
+     },
+     {
+      "title": "WTI Price Forecast: Triangle Breakout Could Extend Above $106.84 - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRkxTci0xZHdCVU1lRFM3blZhUFhCSUpaSndvUkZ4VmJKUDN5RjZYMnNMWjI1eG1MTUlnY3Z1TlFPdmxiOUhRNy0yeHRhaVU4aTZQZUtXS3g1SFdhV3YwUmt6aHhTZ1RmdzNXZjgzR3REUEFocE9aTEttMU9MYWplVmJzUWMtRUpIdDlEU2J6M0pWb0dPSlNUR3BDUnJEdTJlUURnenJBcmFaQjlXWEtIcHdvNA?oc=5",
+      "published": "2026-10-29T21:29:35Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI Price Forecast: Triangle Breakout Could Extend Above $106.84 &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Whitecap Profits Surge 60% as Ottawa's Tax Break Promises Another $400 Million - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRU9EaDFZTEx5UzMzb0dxdU92TUJrRnMyc0J6MWQwUmVCSmo2NEFjY3FXN21ZMlJvN1pvMmw5QUhtSXBWQmJsQWNmMXYzQzhRSmFkR0F3YVREaWFQbjF0ajd2Z2pvNzN4UGpJRUZMXzVnelZzM2ViVlZXZFdDNENBYmllaEJZUjlCV29lY2l6WTJVT1dpSy1GTk04UzRxQy1MLXdjbkprZ1V2blhzWFJuSEhxSFDSAboBQVVfeXFMUDNfODBZQW5paElCNy1SeGd5dWpKOVJycVg0UXNWTTZGYjlneXBCZ2dyQ19OVi1NdlBoOFlsNlpWT2UtLW9xR0xmZmlQbl9RdXFValFRVDRka0UzcHVQUmw3VGFLS0NVT0hsY2MxNS0tVmVDV2UzQkxHWE5LQ0VmcEppdmFHUTFXc2RVSmo1N1dwdFdMTl9rYnNTTDZsWGFiOENtVkN4ZktYWmhreUZQRUhteUZ2bzAxVnBn?oc=5",
+      "published": "2026-10-29T21:28:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Whitecap Profits Surge 60% as Ottawa's Tax Break Promises Another $400 Million &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Iran-backed Houthis claim six attacks on Saudi oil sites, airports - Iran International",
+      "source": "Iran International",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GSkQwSkVnTTBFM1IwNUFmSkQ5VVFBYWEwR0ZMR0wtWHJGYVkxa1pFN3JET2ZLRG5LVUJ0TllRaUdCMVZXYTIzMEkzWFB5SzdqS2c?oc=5",
+      "published": "2026-10-29T21:13:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran-backed Houthis claim six attacks on Saudi oil sites, airports &nbsp;&nbsp; Iran International"
+     },
+     {
+      "title": "Iran says 3 oil tankers struck mines, and other Mideast news - AOL.com",
+      "source": "AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xVDZDNlc0enUtMzktd05PNFIxeWRkdG8tbXRmNkQ3eGs4ZmdJZ1ZGVzJpdTRTSlFtV3FaRUJoVV9qVnhKREdiT1BkQ082R2V5Y0tsemxXQnloVlFvd01zekR4ODd6X2dyb09iT3J6VjR1SzYtZXc?oc=5",
+      "published": "2026-10-29T21:10:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran says 3 oil tankers struck mines, and other Mideast news &nbsp;&nbsp; AOL.com"
+     },
+     {
+      "title": "Whitecap rides high oil prices, banks the cash - Financial Post",
+      "source": "Financial Post",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQ2sxOTltVVJrNVhZSjEzMF9lV3dRelVhQnQtcW9GWFp6ZDgyRHZZUnVfNWlqRXhNYXQzTlI3VXV0Qjk4X3pzZUZ2aWpvZThhRTltNlVDMFZHM3VSQzVLeWs0c2FaZ2lpNTZSTjdEM3RIcFFWWlgxQ1lJdHNSeTVuTzE1dEpUNVR3NTJnaWdxZlI3aVZ5ak1mVmt6TTZjTmlqM2o5WE9fOVlrRlNEMnZUVzdEUHE2UU5BWlpfdkFNMUQzTmZkOGJaVGhEbi1KM0E?oc=5",
+      "published": "2026-10-29T21:05:14Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Whitecap rides high oil prices, banks the cash &nbsp;&nbsp; Financial Post"
+     }
+    ]
+   },
    {
     "id": "wti-1793280951",
     "detected_at": "2026-10-29T13:45:57.394763Z",
