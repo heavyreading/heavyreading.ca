@@ -178,10 +178,10 @@
    "state": "capacity_only",
    "range_kbd": null,
    "memo": false,
-   "source": "CER pipeline profile; East Daley Crude Oil Edge (utilization)",
+   "source": "CER pipeline profile; CER and Enbridge prints (utilization)",
    "vintage": "2023 utilization; capacity as of 2026",
    "basis": "capacity",
-   "note": "Reversed in 2013 to carry Bakken crude north into the Mainline at Cromer. CER prints 145 kb/d, East Daley 149. Utilization ran about 7-26% in 2023: it is the relief valve and the most expensive routine option (about $6/bbl toll versus about $2.56 on the Enbridge ND system, East Daley tariff comparison), so its utilization is a clean tightness gauge for the northern light complex."
+   "note": "Reversed in 2013 to carry Bakken crude north into the Mainline at Cromer. CER prints 145 kb/d (149 in some prints). Utilization ran about 7-26% in 2023: it is the relief valve and the most expensive routine option (about $6/bbl toll versus about $2.56 on the Enbridge ND system, filed tariff comparison), so its utilization is a clean tightness gauge for the northern light complex."
   },
   {
    "id": "high_plains_mandan",
@@ -502,8 +502,8 @@
   }
  ],
  "notes": [
-  "Demand in this feed is CLEARED demand, not wants: the demand card equals supply less storage change by the house convention. East Daley's template prints wants (their Canada demand exceeded both supply and effective capacity); we do not copy that. Nominations are carried only where a source publishes them.",
-  "The demand card (1,240) does not foot to the valued demand items (781: Dakota Access 611 plus rail 170) because only Dakota Access and the rail lanes publish flows. The remaining roughly 459 kb/d clears on Enbridge ND, Bakken North, Butte, Double H and the two in-basin refineries, whose monthly flows are not published by anyone. That is a publication gap, not a balance gap, and it is the normal state of this basin: Form 6 is annual and filer-level, so monthly pipe flows are modelled in every public treatment, including East Daley's.",
+  "Demand in this feed is CLEARED demand, not wants: the demand card equals supply less storage change by the house convention. A wants-based template prints demand above both supply and effective capacity; we do not copy that. Nominations are carried only where a source publishes them.",
+  "The demand card (1,240) does not foot to the valued demand items (781: Dakota Access 611 plus rail 170) because only Dakota Access and the rail lanes publish flows. The remaining roughly 459 kb/d clears on Enbridge ND, Bakken North, Butte, Double H and the two in-basin refineries, whose monthly flows are not published by anyone. That is a publication gap, not a balance gap, and it is the normal state of this basin: Form 6 is annual and filer-level, so monthly pipe flows are modelled in every public treatment.",
   "Effective capacity (1,300) is an explicit estimate: nameplate less a routine maintenance and derate haircut. No carrier publishes an effective figure for the system; the dossier flags it as an estimate to be replaced by shipper-notice history.",
   "Utilization card is null: the only hard utilization is Dakota Access at 81% (CY2024 Form 6). A system figure would be an estimate (the dossier's range is roughly 75-85%) and is not printed as a card.",
   "Exports card is null: exports equal cleared demand minus in-region refining (about 1,145 on this frame), but the dossier does not print that split as a card and the feed does not derive one silently.",

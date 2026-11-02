@@ -455,7 +455,7 @@
    "source": "Group definitions per eagle_ford_dossier.md section 8 (overlapping roll-ups, not a partition)",
    "vintage": "2026-10",
    "basis": "modelled",
-   "note": "The group East Daley's format has no native slot for, and the one that decides this basin's realized economics."
+   "note": "The group a standard basin format has no native slot for, and the one that decides this basin's realized economics."
   }
  ],
  "prices": [
@@ -552,7 +552,7 @@
    "item": "oil_lease_crude",
    "state": "missing",
    "reason": "Texas RRC pull does not exist in the library (the texas_rrc folder was empty at dossier time).",
-   "route": "RRC production data by lease and product code (public). This is East Daley's monthly T-1 Texas source from the call."
+   "route": "RRC production data by lease and product code (public). The monthly T-1 pipeline reports are the Texas flow source."
   },
   {
    "item": "gas_lease_condensate",

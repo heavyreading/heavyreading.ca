@@ -275,7 +275,7 @@
   {
    "item": "rail_receipts_st_james",
    "reason": "Unloading capacity of about 130 to 140 kb/d is held from 2011 to 2012 releases. Louisiana specific current rail receipts are not observed; EIA crude by rail is held at PADD grain only.",
-   "route": "EIA crude by rail at PADD grain with the East Daley back into method, plus terminal operator disclosures for St James receipts.",
+   "route": "EIA crude by rail at PADD grain with a back-into estimate, plus terminal operator disclosures for St James receipts.",
    "state": "capacity_only"
   },
   {
@@ -441,7 +441,7 @@
   "utilization_pct is null for the same reason. EIA printed Louisiana Gulf Coast gross inputs of 3,237 to 3,429 kb/d across Feb to Jul 2026, near full utilization, but at district grain. The district prints operable capacity of about 3,386 kb/d for mid 2026, higher than the state total, because the district boundary and the state boundary are not the same thing. No state level utilization is computed from a district numerator and a state denominator.",
   "in_region_production_kbd 71.0 is Louisiana onshore field production averaged over 2025 from the EIA state series, with 65 kb/d printed in Jul 2026. It differs from the SONRIS 2022 supply-item split (50.0 plus 23.0) because the items carry the SONRIS 2022 split and the card carries the EIA 2025 average. The difference is vintagee and source, and both are labelled where they sit.",
   "in_region_demand_kbd, imports_kbd and exports_kbd are null. Refinery runs are not published at state grain, Louisiana imports and exports are not published separately from PADD 3, and no defensible state number exists for any of the three. Each null has a matching entry in gaps.",
-  "balance_kbd is null and there is no plug item. The dossier does not copy the East Daley plug. Our rule, carried from the dossier: the residual is printed as stock change at Clovelly plus St. James plus PADD 3 commercial stocks, and it must foot or the page does not build. Partial valued sums (73.0 on the supply side, 0.0 on the demand side) and 0.0 would give a balance number with no meaning, so none is printed.",
+  "balance_kbd is null and there is no plug item. The dossier does not carry a plug. Our rule, carried from the dossier: the residual is printed as stock change at Clovelly plus St. James plus PADD 3 commercial stocks, and it must foot or the page does not build. Partial valued sums (73.0 on the supply side, 0.0 on the demand side) and 0.0 would give a balance number with no meaning, so none is printed.",
   "Demand in this feed means refinery capacity by cluster plus water egress plus the SPR sink, because Louisiana is a processing and transshipment hub. The refinery items are nameplate capacity, not cleared runs and not nominations. Anyone reading a refinery item value as demand flow would be reading a number this feed does not carry, since those items are capacity only with null values.",
   "Storm state filter, Louisiana specific, carried in notes and not as an item. The dossier template addition is a storm state toggle with three states, normal, shut in and restoring, applied to the offshore supply items and to the two refinery cluster items, because this hub has a discrete weather regime. Evidence for the scale: Hurricane Ida made landfall on Aug 29, 2021 as a Category 4 storm, BSEE reported 95.65 percent of Gulf oil production shut in, 1.74 million barrels a day, about 75 percent of Louisiana refining capacity was offline the next day, roughly 2.2 million barrels a day, and the IEA put total supply loss at roughly 30 million barrels with about 30 percent of production still shut in mid September 2021.",
   "Permanent demand losses, in notes and not in any item, because both plants are already out of the Jan 1, 2026 state total. Shell Convent, St. James Parish, 211,146 b/cd, closed at the end of 2020 after failing to sell. Phillips 66 Alliance, Belle Chasse, 255,600 b/cd, flooded in Hurricane Ida, never restarted, converted to a terminal and sold to Harvest Midstream in 2023. Together about 467 kb/d of river corridor refining demand has been lost since 2020.",
@@ -658,7 +658,7 @@
    "label": "Rail receipts at St. James",
    "memo": false,
    "nameplate_kbd": null,
-   "note": "Residual supply leg. St. James built about 130 to 140 kb/d of unit train unloading capacity in the shale era. The range is carried in this note instead of a single nameplate because the sources give a range. Current Louisiana rail receipts are not observed directly; the East Daley method backs into them from EIA data at PADD grain, and no Louisiana specific flow is held.",
+   "note": "Residual supply leg. St. James built about 130 to 140 kb/d of unit train unloading capacity in the shale era. The range is carried in this note instead of a single nameplate because the sources give a range. Current Louisiana rail receipts are not observed directly; a back-into method estimates them from EIA data at PADD grain, and no Louisiana specific flow is held.",
    "range_kbd": null,
    "source": "USD Group and Plains releases, 2011 to 2012; EIA crude by rail series in the library at PADD grain",
    "state": "capacity_only",

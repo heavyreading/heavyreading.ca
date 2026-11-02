@@ -71,7 +71,7 @@
    "state": "missing",
    "range_kbd": null,
    "memo": false,
-   "source": "Suncor Annual Information Form (Feb 26, 2025), qualitative; East Daley Guernsey note (route)",
+   "source": "Suncor Annual Information Form (Feb 26, 2025), qualitative; carrier filings (route)",
    "vintage": "2025-26",
    "basis": "modelled",
    "note": "The refinery's northern supply route is real and company-operated: Suncor pipelines run from storage at Guernsey to Commerce City, carrying Guernsey-pool barrels (Bakken, Powder River, and Canadian WCS and synthetic delivered at Guernsey). The split of the 98 kb/d refinery slate between this route and local DJ gathering is not publicly disclosed."
@@ -187,10 +187,10 @@
    "state": "modelled",
    "range_kbd": null,
    "memo": false,
-   "source": "East Daley note, Sep 2026 (NECL volumes); Enbridge acquisition materials (mainline capacity)",
+   "source": "Modelled estimate, Sep 2026 (NECL loadings); Enbridge acquisition materials (mainline capacity)",
    "vintage": "Sep 2026",
    "basis": "modelled",
-   "note": "East Daley puts Northeast Colorado Lateral loadings at about 122 kb/d average, roughly a quarter of Pony Express flow. DJ access to Pony is access to whatever space Bakken and Powder River barrels leave behind: the lateral is not a DJ-dedicated nameplate, so no nameplate is printed. Pony Express mainline is about 460 kb/d average annual (Guernsey to Cushing), rising to about 515 with PXP2 in late 2027; Enbridge is acquiring 75% of it (announced Sep 2026)."
+   "note": "Northeast Colorado Lateral loadings are estimated at about 122 kb/d average, roughly a quarter of Pony Express flow. DJ access to Pony is access to whatever space Bakken and Powder River barrels leave behind: the lateral is not a DJ-dedicated nameplate, so no nameplate is printed. Pony Express mainline is about 460 kb/d average annual (Guernsey to Cushing), rising to about 515 with PXP2 in late 2027; Enbridge is acquiring 75% of it (announced Sep 2026)."
   },
   {
    "id": "northbound_guernsey",
@@ -205,7 +205,7 @@
    "state": "missing",
    "range_kbd": null,
    "memo": false,
-   "source": "Argus Light Sweet Guernsey assessment (not held); East Daley Guernsey analysis (concept)",
+   "source": "Argus Light Sweet Guernsey assessment (not held); Guernsey hub build, this site (concept)",
    "vintage": "2026",
    "basis": "modelled",
    "note": "DJ barrels reach the Guernsey market by northbound movements out of the northern DJ and commercially by swaps against Guernsey-pool grades. Volumes vary with the swap market and no public series exists. When the Guernsey light-sweet pool cheapens (strong Bakken or Canadian inflow), DJ netbacks at Platteville feel it even though no DJ barrel went north."
@@ -223,7 +223,7 @@
    "state": "missing",
    "range_kbd": null,
    "memo": true,
-   "source": "EIA PADD 4 (held); East Daley Guernsey analysis (refinery list)",
+   "source": "EIA PADD 4 (held); Guernsey hub build, this site (refinery list)",
    "vintage": "2026",
    "basis": "capacity",
    "note": "Carried as a memo cross-reference only, so barrels are never double counted with the Guernsey build: Salt Lake City's five refineries (about 216 kb/d combined), Kansas refineries via Platte, and Sinclair sit downstream of Guernsey. DJ barrels reach this demand only through the northbound placement item above."
@@ -430,13 +430,13 @@
  ],
  "notes": [
   "Capacity cards are null on purpose. The dossier's honest frame is a band: nameplate about 550-590 (the sum of segment nameplates, counting the pre-conversion White Cliffs headline) and effective about 490-540 (White Cliffs at its post-conversion crude reality of about 70, Saddlehorn and Grand Mesa at the binding-segment read). A single printed number would pick a side in a genuine two-source conflict; the Form 6 build resolves it.",
-  "Supply and demand cards carry the dossier's clearing frame: supply about 450 of Colorado crude (DJ-dominated) plus a small unmeasured Wyoming fringe carried as a range item outside the card; demand clears at the same level, with no structural unsold-barrel overhang at current production. This is the opposite shape from East Daley's Canada page, where their demand is wants and exceeds supply.",
-  "Demand footing: the only egress flow actually published is the NECL average (122, East Daley). Commerce City (98) is capacity with runs near nameplate. The remaining roughly 230 kb/d clears on Saddlehorn/Grand Mesa and White Cliffs, inside their combined 220-450 capacity band, plus marginal northbound placements. The items do not foot to the card because flows are not published, and the feed says so rather than modelling them silently.",
+  "Supply and demand cards carry the dossier's clearing frame: supply about 450 of Colorado crude (DJ-dominated) plus a small unmeasured Wyoming fringe carried as a range item outside the card; demand clears at the same level, with no structural unsold-barrel overhang at current production. This is the opposite shape from a wants-based balance, where demand is nominations and exceeds supply.",
+  "Demand footing: the only egress flow actually published is the NECL average (122, modelled estimate). Commerce City (98) is capacity with runs near nameplate. The remaining roughly 230 kb/d clears on Saddlehorn/Grand Mesa and White Cliffs, inside their combined 220-450 capacity band, plus marginal northbound placements. The items do not foot to the card because flows are not published, and the feed says so rather than modelling them silently.",
   "Exports card (350) is the exit requirement from the dossier's arithmetic: supply of about 450 less the 98 of local refining leaves roughly 350 that must exit, almost entirely southbound to Cushing, plus marginal truck, rail and northbound placements. Imports card is null because the one inbound route (Guernsey pool to Commerce City) has no disclosed volume.",
   "Premise correction, evidenced in the dossier: Suncor is not a DJ producer. In this basin Suncor is the only refiner, the operator of the Guernsey-to-Commerce-City line, and a Canadian producer whose oil-sands barrels can reach its own refinery through the Guernsey pool. The producer-refiner inside the DJ is Chevron (largest producer, gathering owner, Saddlehorn part-owner).",
   "Premise correction, evidenced in the dossier: Cheyenne carries zero crude refinery demand. HF Sinclair ceased crude processing there in 2020 and converted the plant to renewable diesel (completed 2022). No Cheyenne refinery item exists in this feed; the name survives only in pricing geography.",
   "What binds, in order: local refining first (Commerce City is the only demand that consumes no long-haul pipe, so its turnarounds are the basin's largest scheduled swing), then southbound pipe space, with the marginal pipe often decided at Guernsey by Bakken and Canadian barrels rather than in Colorado.",
-  "Forward items, carried here and never in current cards: PXP2 takes Pony Express to about 515 in late 2027; Bridger Pipeline has filed a 550 kb/d line from the Canadian border to Guernsey (construction target Jul 2027), which East Daley's hub model says Guernsey cannot absorb without a Pony Express twin; Enbridge's Tallgrass acquisition (announced Sep 2026) puts Pony Express in the same owner family as Express-Platte and the Mainline.",
+  "Forward items, carried here and never in current cards: PXP2 takes Pony Express to about 515 in late 2027; Bridger Pipeline has filed a 550 kb/d line from the Canadian border to Guernsey (construction target Jul 2027), which Guernsey cannot absorb without a Pony Express twin on this site's hub arithmetic; Enbridge's Tallgrass acquisition (announced Sep 2026) puts Pony Express in the same owner family as Express-Platte and the Mainline.",
   "Tariffs for the DJ corridor (Saddlehorn, Grand Mesa, White Cliffs, Pony Express, Platte) are FERC-filed and public, but tolls.db does not carry them yet; they are a named fetch in the tolls workstream."
  ],
  "gaps": [

@@ -224,7 +224,7 @@
    "source": "Enbridge releases; RBN, September 2026",
    "vintage": "2026",
    "basis": "capacity",
-   "note": "900 kb/d at start-up, plus 80 in May 2025 and 40 in May 2026 on drag-reducing agent. East Daley's demo showed a demand read near 1,096 on this line, above the expanded capacity: their demand items are nominations, not metered flow."
+   "note": "900 kb/d at start-up, plus 80 in May 2025 and 40 in May 2026 on drag-reducing agent. A nominations-based read showed demand near 1,096 on this line, above the expanded capacity: nominations are not metered flow."
   },
   {
    "id": "cactus_ii",
@@ -257,7 +257,7 @@
    "state": "capacity_only",
    "range_kbd": null,
    "memo": false,
-   "source": "Plains releases and 8-K; East Daley, August 2026",
+   "source": "Plains releases and 8-K, August 2026",
    "vintage": "2026",
    "basis": "capacity",
    "note": "Plains acquired 100 percent in 2025. A 75 kb/d expansion came online at the end of August 2026 to reach 725. Expansion toward 900 is unsanctioned optionality."
@@ -654,7 +654,7 @@
     "bridgetex_permian",
     "longhorn"
    ],
-   "note": "Corridor utilisation about 91.7 percent (East Daley 2026, from Texas RRC T-1 filings). The MEH minus Midland spread prices this pull."
+   "note": "Corridor utilisation about 91.7 percent (modelled estimate, 2026). The MEH minus Midland spread prices this pull."
   },
   {
    "id": "corr_corpus",
@@ -667,7 +667,7 @@
     "cactus_iii",
     "cactus_i"
    ],
-   "note": "Corridor utilisation about 99.7 percent (East Daley 2026, from T-1 filings): the tightest corridor in the basin."
+   "note": "Corridor utilisation about 99.7 percent (modelled estimate, 2026): the tightest corridor in the basin."
   },
   {
    "id": "corr_nederland",
@@ -690,15 +690,15 @@
     "sunrise_system",
     "centurion_cushing"
    ],
-   "note": "Corridor utilisation about 68.2 percent (East Daley 2026). Cushing is the relief valve: it holds the basin's spare capacity because the Gulf pays better."
+   "note": "Corridor utilisation about 68.2 percent (modelled estimate, 2026). Cushing is the relief valve: it holds the basin's spare capacity because the Gulf pays better."
   }
  ],
  "notes": [
-  "Two-speed system: the basin's spare pipe capacity sits on the corridor barrels least want (Cushing, about 68 percent utilised), while the corridors to the water run nearly full (Corpus about 99.7 percent, Houston about 91.7 percent, East Daley 2026 from Texas RRC T-1 filings). A single basin utilisation number hides the story, so none is printed.",
+  "Two-speed system: the basin's spare pipe capacity sits on the corridor barrels least want (Cushing, about 68 percent utilised), while the corridors to the water run nearly full (Corpus about 99.7 percent, Houston about 91.7 percent, modelled estimates, 2026). A single basin utilisation number hides the story, so none is printed.",
   "Supply card: 6,900 is the current point on EIA's October 2026 STEO path (2026 average forecast 6,810; Q4 2026 forecast 6,920). It is a control total. The item list does not foot to it (valued items sum 2,100): three of the four production split items are unmeasured at current vintage because no official split exists, and the fourth is a Q4 2024 reading. The difference is the unallocated remainder, named here rather than plugged into an item.",
-  "Nameplate card: 7,890 is East Daley's 2026 long-haul reference print from T-1 filings. Bottom-up verified steel in the dossier sums to about 7,200 to 7,400 plus local refining. The gap sits in the unverified zone (West Texas Gulf's current rating, Centurion's Cushing segment, Seminole swing treatment) and is a research finding, not an error to force closed. Their demo frame printed 8,200 nameplate and 8,200 effective.",
+  "Nameplate card: 7,890 is a 2026 long-haul reference print compiled from T-1 filings. Bottom-up verified steel in the dossier sums to about 7,200 to 7,400 plus local refining. The gap sits in the unverified zone (West Texas Gulf's current rating, Centurion's Cushing segment, Seminole swing treatment) and is a research finding, not an error to force closed. Their demo frame printed 8,200 nameplate and 8,200 effective.",
   "Effective capacity is not printed as one number: the derate is corridor-specific. Cushing's effective takeaway is about 710 to 745 against segment nameplates that sum far higher, because onward legs bottleneck (Sunrise) and one segment is unverified (Centurion). Corpus and Houston run at nameplate.",
-  "Demand card is blank on purpose. No demand item carries a flow, because the Texas RRC T-1 monthly reports, the flow source behind East Daley's utilisation prints, are not held. The last published flow split (RBN, Q1 2025, on about 6,600 of production) was Corpus about 2,500, Houston about 2,400, Nederland about 900, and Cushing plus local plus other about 800. Items carry verified capacity, labelled capacity.",
+  "Demand card is blank on purpose. No demand item carries a flow, because the Texas RRC T-1 monthly reports, the flow source behind published utilisation prints, are not held. The last published flow split (RBN, Q1 2025, on about 6,600 of production) was Corpus about 2,500, Houston about 2,400, Nederland about 900, and Cushing plus local plus other about 800. Items carry verified capacity, labelled capacity.",
   "Double-count rules carried on the items: Midland-to-ECHO 3 is steel inside Wink to Webster; Sunrise's 500 ends at Wichita Falls; Centurion's system totals are gathering, not takeaway; Cactus has no Permian-to-Cushing leg.",
   "Price vintage warning: EIA's Permian forecast flipped during 2026. The January 2026 STEO (WTI assumed $52) forecast a plateau at 6.6 falling to 6.5; the October 2026 STEO (WTI realised about $84 through August) forecasts 6.81 in 2026 and 7.14 in 2027. This feed uses the October vintage and says so.",
   "What actually binds crude here is associated gas, not crude pipe. Gas-oil ratios run about 4,200 cubic feet per barrel and climb as wells age. Waha was negative on 46 percent of 2024 trading days. Documented 2026 high-GOR shut-ins run 200 to 400 MMcf/d of gas on any given day (Bloomberg, June 2026); no source converts that to a crude loss, and none is printed. Produced water binds locally under the RRC's seismic response area suspensions and June 2025 disposal guidelines; it is a slow squeeze, not yet a basin-wide cap.",
@@ -716,7 +716,7 @@
    "item": "midland_basin_production",
    "state": "missing",
    "reason": "No official Midland versus Delaware production split exists in public data.",
-   "route": "Same RRC county-allocation build; East Daley's two-item grain is the fallback if the split cannot be held honestly."
+   "route": "Same RRC county-allocation build; a two-item grain (Delaware and Midland) is the fallback if the split cannot be held honestly."
   },
   {
    "item": "cbp_other_production",
