@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-02T13:51:16Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-02T17:06:14Z",
  "data": {
-  "updated_at": "2026-11-02T13:51:02.089626Z",
+  "updated_at": "2026-11-02T17:06:00.437810Z",
   "events": [
+   {
+    "id": "brent-1793638561",
+    "detected_at": "2026-11-02T17:06:00.437810Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-11-02T15:55:00Z",
+    "to_ts": "2026-11-02T16:56:01Z",
+    "from_price": 106.18,
+    "to_price": 104.55,
+    "move_usd": -1.63,
+    "move_pct": -1.54,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Gas, diesel, oil prices are down, but reprieve could be temporary - Spectrum News",
+      "source": "Spectrum News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQzNpb2VTa0dsUlQxNTBRZHJEM21yNXRPa2ZqUmhBWHhSSU5RUjBWcjF3dEp3M0NidXdlOUFwWGdFUXhNbFdwRzJudGsweE9Scm92WDc3VkNsZFNISkNCMDlObWk4eG5pUEVpQXRpR2p1Q19HS3VpNGxKSi1VeTAzNHdLV0kzaUZlWE1ybGN2Q3NBS2s?oc=5",
+      "published": "2026-11-02T17:01:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gas, diesel, oil prices are down, but reprieve could be temporary &nbsp;&nbsp; Spectrum News"
+     },
+     {
+      "title": "US stocks recover some of last week's sell-off after oil prices drop - The Washington Post",
+      "source": "The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSG9xZkR1YmZleVZubkhSZWtza2xzbUtEdjFOVnVGUTBLWFMtTmFHXzRDX0VGbXB2TTZ0YkFnMXBtVVJTbkxmRWtrT0EwbjJoVGwyUFNaRmVnS2R0Um1RNDQ1MGczMVVNQkduNE4tUGxmRldfb3Q3X0xMTFM2bGhiRGJWVE0ydFZwY2RIWGpYYVdyWHhYcEw5NE56VUhic2s2UElJazRXVVlnUG9vTm95ZE5NX3YxLVFmN2tkVEVVQWx2bGxXX0tITWYtTzFsc0k?oc=5",
+      "published": "2026-11-02T16:52:59Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US stocks recover some of last week's sell-off after oil prices drop &nbsp;&nbsp; The Washington Post"
+     },
+     {
+      "title": "Iran war latest: Tehran holding intensive talks with mediators, foreign minister says - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT2RZbUR3bEtVUzBna1hJbGUwNHBnLXRJQkhtZDRDLXkyNkFlYzFHTU1ndUh0T1J5RHQ4aEpjWVhfT3F1cUVkS2dqc2NIdXFIaTdDSk1BbXJtNmR2eDNMa3M2TEpEbXR4VEtyYmYyS3pDeW50SGhicmNha2NDc0xvTXFGUnJ0UTd3RWZQNA?oc=5",
+      "published": "2026-11-02T16:51:17Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran war latest: Tehran holding intensive talks with mediators, foreign minister says &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Gold News: XAUUSD Rebounds as Oil Plunge Pressures Fed Hike Expectations - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMlVybm1Yd1dUTzRLLWpJRU5fdmZaX3F4bmQwUWVsSlNuelZDMVYyMTZtREtKV3dRRGdSREc4OWQzQlJUdG1zMnNwUEVMRkpGZC1JYUhaZ2tPT3VQanlyZWZjQ1pURDR0d0h3Y3RQSVlfdlJqMGFoV3lMem5GdU5pNWpxXzBIRHlLTlljYzBpclNNbEdWaXlYNnd4ZXJKQWFSSVpRczIwOWhJR0kyUkt4SWwwMnhfbHhISDNqXzRvaw?oc=5",
+      "published": "2026-11-02T16:44:59Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold News: XAUUSD Rebounds as Oil Plunge Pressures Fed Hike Expectations &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Oil price falls amid hope of a breakthrough to end Iran war - The Guardian",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWFFqOGFUT2tuNXpyMGN0LVN4YlVCMFZ2VjZyeDc0OEM0WmdaOS1kRDVzWlREOVF1OW1FaTBLQ3NDR0NhSGlhSThXWU9sODhOdHFTQ2JKYldHNTFOb2RwQWJBRG9LVElmQVMzUDhjQWxOUTVvcGhWZjRFS2xTU0k4NU9fbU1Ic092RkFtRU1xUjB0UzlmRlJWUlJYZTZxVTJ4aWJnanF0MGxQM3R0?oc=5",
+      "published": "2026-11-02T16:39:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil price falls amid hope of a breakthrough to end Iran war &nbsp;&nbsp; The Guardian"
+     },
+     {
+      "title": "Kazakhstan suspends Atyrau-Samara oil exports after drone attack, restart expected soon - marketscreener.com",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUmxJckROakNnMERPMjBmdDFCU2pwUm9BVkYyRmItUDh3YWN3M1BrUkF5cWh1eHlHRE9FQUV3VmRsNlgzMC1CSTVJX3JobFQ3TUhlZzhuaDFzNEd3TUVnWnNkamdMMUFqbkI4T0o0QjA3YjhHeUpkSFlGdlVwajB5MEpZeUNIbngxd0ozMlJwMjMxeG1KUEIxTVEzS1hqWGEwZnlkSWQybHNzcjBSUlFwOWlFeGs5YkdCak5neWYxelFVdFJpbTdfNEZtZlptbGpwQTR3ZGtn?oc=5",
+      "published": "2026-11-02T16:37:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Kazakhstan suspends Atyrau-Samara oil exports after drone attack, restart expected soon &nbsp;&nbsp; marketscreener.com"
+     },
+     {
+      "title": "Oil Prices Plunge 7% as U.S. and Iran Signal Room for Diplomacy - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNODhmTVRNRktLcVZDd0FjQVRmZzh3WkRpM0RBSFlrWjk3NmJUTUNYYW1KeGRaXzZJcWhYSEZyYVAyVzdEUHRSR21QejV0Q0hQdk5hR2UxS3JFazNEOHBPczYzei1DUVZ3T2o3LW9FQW1rZGlNaDFnZm1iYTVhTGlNSHdLeFlLWnNWSkZMcGdaTzI3RlRhOXd2MDUwUHdkZnRUNmNZeHNoZkN2aDVrUzh0Y2otRkgwZEXSAbwBQVVfeXFMUGxKNUozZ1lwbElEd0k0OS1ERFdFbXJvVWV4TEpST0R3cTJFanZXbVMyY2c2cUdweUxDTmtSUUJVcmphc2VqM1k0cG1IMjJfaERLeFhScFpsc3pyRkMtXy0tZU5VQjI3SjZKaDBaYmRQdlFIYXlzcndSRXVBYktsYVJoMFRvd0MyNk9jSGdqWldueFZCVzd3VDlVZ2ktQ2NyZHg3RUhINlhSc181THdpVVlwd0ZZMWJZVUpWcjA?oc=5",
+      "published": "2026-11-02T16:36:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Plunge 7% as U.S. and Iran Signal Room for Diplomacy &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Crude Oil Prices Sink on Hopes Diplomacy Can End US-Iran Conflict - Barchart.com",
+      "source": "Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdFdkMTRrZkxFMmVOS25zc2Y1QV9lbm1jOC1XdjZTTEx3Y09MdHN2RXhPSDgzVjdPTTVOWHpIeGVMZXRtWWhxRnhOT1k3TnlyZXc1aHBXWmVIODhWTERwX3FxX2ZlbWMzVEpFT0FmM2pFdUs4SFI5YXZlb3pKdURoa0pzQWxOM2o5LWJXTlc1emFpbkUyS3NBbHVlVDJ2Ry1oSnNXbVgyX0Q0bkQyS0E?oc=5",
+      "published": "2026-11-02T16:35:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Prices Sink on Hopes Diplomacy Can End US-Iran Conflict &nbsp;&nbsp; Barchart.com"
+     },
+     {
+      "title": "U.S.-Backed Consortium Proposes $4.4 Billion LNG Terminal in Pakistan - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbUtZNXV3RmlUaG5qNGM4UnluSXpONHVVcndDd29XbkVVV3EzOU84ZURXekU3Qld4TWJOSHhyZ05jOXdRZV9WbUg3MTRzU2NNd0h4UC0wSDRuajdCbW9PWGlqMG9UNi1vTVpyMnRxQzByWmttd05UNS1TNmpDbFZBRm10RmhHcXBmNFRjLUdpYlMwWVJTbHdGdjZOU09Fb0ljVVE4a1Njc3lOb08wWHZ5bWZpbjFWWVp5MkFlbV9n?oc=5",
+      "published": "2026-11-02T16:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "U.S.-Backed Consortium Proposes $4.4 Billion LNG Terminal in Pakistan &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices decline after draft of Iran peace agreement circulates - upi",
+      "source": "upi",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeXgwMFgtLWhBVTZkTG1UdzV3aEo0aExjd0IxSFIxVzdDamwtMTFfWS1GUFRMNHN0RmNjclFXWWxBeTc2OGEzcXZiU2ZrdWRSSFFsRmlQM2hCdjk2bmVON2ROR3V0ZDVJUU9vZGhhSjFwWjhHck1VZ2R1SHBQTkt4ZFhNM2R5c2RuaXFJX0E0TEsySVhCOVJQYtIBngFBVV95cUxNSWVMd1pXNnU2QjM0YVZVOHlyUmpBb2FZR1JZdXV0aU8yQVdHd1lPSE5XdnZmdzBZN2hmWGZGd3NYWUxfcGZjMlpNb1dBbnFfeTZUMF80emNXYlpNaE1WdWhrSzdmcl9SaG1uQlozSkU0dmRpY3hBbWgxazdOTTdsZkpvNmtKM2Zpc1NraTI5Wm1XalRpeE92RlFYbzBFUQ?oc=5",
+      "published": "2026-11-02T16:29:21Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices decline after draft of Iran peace agreement circulates &nbsp;&nbsp; upi"
+     },
+     {
+      "title": "Canadian energy stocks fall as oil prices retreat on easing Middle East tensions - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVlktRlhTMEJTS1k3VzhmUmo0c282NmpuU2daSnJyLTFLU3N3alB4ZGxMRGcwSWUwNWhLVzVNNkJHQnRLaDhzOC11cVU5b1hyY0xRblZHbmM4dW5hZTZuemNTQkF3eG9yYW5PcW1uYXNhdF8zZ1d2TlVQTmUxTnY4eFNXeUY1SVM5WkVQamRsNGhheG1ENGdIN1ExU2dOS2ZUNDA4Nnp0UWs0QURKTnUwdWdmNkNZR2taUkV6X09SQVJScmRmeUZxd3dwTk5xb3lORTRn?oc=5",
+      "published": "2026-11-02T16:22:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Canadian energy stocks fall as oil prices retreat on easing Middle East tensions &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Canadian bond yields retreat as oil prices ease inflation concerns, data in focus - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSzBnd3g4enVIeFdGSzM1bWhsSWFwa19VZmlWMk5oUWl3R01nTDg4MW1TaDVyMGM3Y0tpaHBEVHlfVkxoTG9oUzRoZjZvcTduakZzeTk4dDJuUFZlZmEyNnl6aF9kU2QwdFdleXljTEt0ZlI5VUFBYThSOXBMMjhCZ3ZPQW1aYUZMekc3ZmI2NTFMMWEzREJDOXRoZzZXRHdPVTVfYW9ONzNBSHBVMVctOHpJa1IzaklmVzJWdXF1YnVtXzF4X3JjTHF0MGk?oc=5",
+      "published": "2026-11-02T16:22:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Canadian bond yields retreat as oil prices ease inflation concerns, data in focus &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Stocks Rally as Crude Oil Sinks on US-Iran Hopes - Barchart.com",
+      "source": "Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObVVBTHpHNkh2NHE1WUZ4cGRuZk9IbkNSMFc0eVlWbHpqczZGVEo3VGFMZ3lPNDR4aVNNMFp5bFE3eVFBSDd5a1JYNF9vZ3FiVmdvVlJfNVhxSHg2Mm14cGN5SmN5VHF3NFJQTFlGZVRxa29GTVVGT0tidkdGdDF6cnBqdlM3Uk01dU9wT1UtTHpxNUFNblln?oc=5",
+      "published": "2026-11-02T16:14:32Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Stocks Rally as Crude Oil Sinks on US-Iran Hopes &nbsp;&nbsp; Barchart.com"
+     },
+     {
+      "title": "Stock Market Today: Oil Slides on Middle East Hopes as Wall Street Rebounds, Gold price Gains 2% - Eurasia Business News",
+      "source": "Eurasia Business News",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMjhFNjRqdzM0dXRXT1Z4cUowYjFRSndydFE5NjBJY3VaMF94X2NaWFZ5YjE0eDdLNkhnSGJJTDBDdXZOVDJFZmREa180OG1tZHhFQ3dETlAtUE5ybllvOXFCbnpwRWlXWkhKVVliTFgybFpxU1JoUGw3S3pEX3RJM3J4bzctWUxZRXhoQ09rVzZfSTgwUHZBYndQTk0yRnoxZDk5elZ5MlhUbi11UWpxUW95MDNJN1lldGZhQ0Jha1ltZ1FWMk11VWVQSGtQMVFzLTQ4?oc=5",
+      "published": "2026-11-02T16:11:18Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Stock Market Today: Oil Slides on Middle East Hopes as Wall Street Rebounds, Gold price Gains 2% &nbsp;&nbsp; Eurasia Business News"
+     },
+     {
+      "title": "3 Energy Stocks To Watch As Oil Prices Fall And Risk Stays High - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcllJOENibjEwMXhUNXNCTjgzZ1p2ZGg0azM1U2wwanVTSnlMaXJfYnpKM1U0cXNDSzl1aVUzTmNIV1Fac2lQTkdiSXA5dktxUjQ0b2pHbWpEaUpzdVU0dFhtek52WE8zNFR4aVlfdWFUNnJmLXJWTS1jU095Z2Rld2lhbkljZk50ZGc?oc=5",
+      "published": "2026-11-02T16:10:50Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "3 Energy Stocks To Watch As Oil Prices Fall And Risk Stays High &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "New Wave of Attacks Hits Tankers and LNG Carrier in Strait of Hormuz and Persian Gulf - gCaptain",
+      "source": "gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOVJtMWVtZFU2czNUaFJwd0RWUTNqdmoyS0pMU3RLdkZpQnB3SmZTa1JwR3FNaWdHci1hT1ZWTWQ2YVRTZ2NMdmRlcUpicmJzU3dvVXdOQWZ3VzlNbHZyQWZzYlBVRDhZeC1OamlMQkVyR0k1SU5XMGpnSFFEOGZ2ak4tYUs1WWh4czZuVjJtTFN4Z3JTb3dLY05xcDNpdjlObUcySkhUWk5tUVU?oc=5",
+      "published": "2026-11-02T16:00:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "New Wave of Attacks Hits Tankers and LNG Carrier in Strait of Hormuz and Persian Gulf &nbsp;&nbsp; gCaptain"
+     },
+     {
+      "title": "How Iran Just Broke the U.S. Oil Shield In Saudi Arabia Yet Again - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdVhoeUd6NmRJc2w4VU5xQ0tVcjAzMHltSVJKQVRBQzRKM1Y4cDZraVhNMU0td05hWlFIUWYtNHktLUNzWWd1RnRaaVdUUU02ZUFFUnlMa2dxbjlNVExhdDdBWDk2TGp5UmRya2pscEhYZlVxdEtua0hXNFpyMG9oR293TktMMXlLM0V1RU81OUhrZkhKUFVzcEItajJsbmhrVG52MzJnRmJOMmk3U1o5b9IBtgFBVV95cUxOSWNuamwtUVI5ekRlcnY3em1sUFhuVTJnRnJOZnpxYnJuck9RRVY5dkgtenUtQmlRWHhGWTJoRFkxUUs2bVM4XzRqOFdHRmx1UEg1d0JOcU1CNzNPb0NKZFpINFhzNl9MUUU4Z095cnpzeUYzekFrRzhoN295c2FEZGxBZTl2TW5mdTBPVDdxcExJQVQxM2d2MUpXQ0EzUlZNUDR6dlRoc3VvSkNtdVA5S2NMNkZZdw?oc=5",
+      "published": "2026-11-02T16:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "How Iran Just Broke the U.S. Oil Shield In Saudi Arabia Yet Again &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Brent And WTI Crude Oil Price Forecasts Face A New Test As Peace Hopes Cut Prices - Exchange Rates UK",
+      "source": "Exchange Rates UK",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQ2cxSENqTjBuQzVBUFpjUmJDUWlDYUFyMU9zMG9tS0U0S21RQUVQUnEtRlpJQy14Z1dMUG94ZTBqV0hkVXpHT1RPTHU5dmFHYlJnSUtFOWp2QTFZcWFLR0w0VHZlUjZHZVd5aHl5QnlkRGhWUllUOVk4cHhaemFFV1BvcHVNcnpUUDNYY2ZGRHhDY3NtVm9qM19ONWYyNUFqeU85TG1KM0EwYzBaOGpLdWNaU1BEejI4NW9QVUtBQmtxb3RpakhvZU81eVhZLVRMX3ZXUmRmbWQ?oc=5",
+      "published": "2026-11-02T16:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent And WTI Crude Oil Price Forecasts Face A New Test As Peace Hopes Cut Prices &nbsp;&nbsp; Exchange Rates UK"
+     },
+     {
+      "title": "Oil Prices Fall as US and Iran Signal Possible Peace Deal - TechJuice",
+      "source": "TechJuice",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTjFDN2E4bHVzNjZ5T0d5bVd5RkxWX0p3cDlNXzhoeEk0QXNhSUlIakwzZ2luVE9jMktlejBWaVdlb2dRcnhkeFRUa2hKbTRGVUNpRHdKTmQ4OEh0MFF6QThPdFFxRzk0dk5kdmc2eXVWYzl2VHRMZ2RHVmhRQi1YTkQ1VmlHaWp6LWJB?oc=5",
+      "published": "2026-11-02T15:56:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Fall as US and Iran Signal Possible Peace Deal &nbsp;&nbsp; TechJuice"
+     },
+     {
+      "title": "Oil Prices Fall More Than 6% as Iran Peace Talks Ease Supply Fears - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSGlnQ2hWb0xhREU3dG5ZeGtaV3cxb1kzRk9TT2FOanNnRW8yWWVkd0xCLWpmbDRLVkVqRVpMWXJuY2E1N2tfMGRnV3hkWE1IRmtjYWU0M3Z0V1FlMmoyaTlGSXl2Y1R1ZVZYUUdvdnJnZjNVRzBTNzhtb0FnaWJuV3hhWkpVQU1iRkVtSmFhWjQ0XzM3T0NBVmFudVVldWhZemFoeDJPSy1hWXhCbmdEbUVB?oc=5",
+      "published": "2026-11-02T15:55:00Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Oil Prices Fall More Than 6% as Iran Peace Talks Ease Supply Fears &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
+      "source": "LiteFinance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
+      "published": "2026-11-02T15:49:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days &nbsp;&nbsp; LiteFinance"
+     },
+     {
+      "title": "Banks Hike Oil Price Forecasts on Prolonged Gulf Disruptions - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNkJCUnJ0UGhBRDNCcWRtN1QzR2h5eEl4TEoxWGVaaVowMXA5NWxtM19jYnA5OUtYanNlZTloLUM2VFZTenhiazU5M1VjWU1vM2JXVTM4bUd6NG9FMnlQMWlDRVpWalJIQTY0V2c0QS1KeWdtQVFHa184aW56NEdGMWdPNi1kLUM5eW1YU0xJLU83ZkFWd1E?oc=5",
+      "published": "2026-11-02T15:44:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Banks Hike Oil Price Forecasts on Prolonged Gulf Disruptions &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "Oil Declines Ahead of Midterm Elections Despite Hormuz Attacks - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQemlrUnpqR1g0OFFfbnJHTUktSE94dmx1MUQxbFpseThLLWNLaFVmdUp1ZFBHMjloZDFSR1Z2aDFVRHU0bmN4aE1vMGJRR1c4UldXMW9iWDY4clhNODVZVV9OQ0VvelF0Y2pKWlo2T0o3OWVCRTlGeU9fVXNiNEZfNTF5cnU0Rk5yX1htSDd6UW9oSDBNdU93NXNmV08?oc=5",
+      "published": "2026-11-02T15:43:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Declines Ahead of Midterm Elections Despite Hormuz Attacks &nbsp;&nbsp; Bloomberg.com"
+     },
+     {
+      "title": "Energy briefs\u2013falling oil prices, optimism grows over talks with Iran - Oklahoma Energy Today",
+      "source": "Oklahoma Energy Today",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNGZza3VnT01PWEdZS19lZmRQZHdKaWlSMUhuWEFsQ1RyYkhELWkzQ29pdFg5OV8xbkhVbThzUEZ1Y3JmNFJUR3U5WU1sUXNvUUJOUmlhOWJBNE4xaDVUZ1RVTVpvYWRBd0VTQVVYTUdPVldKUEdtLTlReUR1LTdTaTIyOHJDd3ozY0FsRldCQVFHbDlScUNXbTN5SlhjLXlwNVNQcGV3?oc=5",
+      "published": "2026-11-02T15:43:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Energy briefs\u2013falling oil prices, optimism grows over talks with Iran &nbsp;&nbsp; Oklahoma Energy Today"
+     },
+     {
+      "title": "Goldman Sachs Raises Oil Price Forecasts, Sees Brent Upside at $140 a Barrel - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWWdLclFHZ2c4cHNSTG5Gb2pzM3dyUXJ0dTRfaURrRW1QcUVaeVNOWEJxQmtrRDRmUFhUc3YxVjI4Q1B1M2ZKb3paWExmOGx0dU4tU3VIWVV4V0VrbmI1TlhWQng2eWZkejkxdXk5LWF0RWpkNl9ET1ZWTHFxeGxfeFNMTEVTbURCSF9zNm5WTWkxZWViX3FTYUNhRk5laTA3WGxJOWszQm0?oc=5",
+      "published": "2026-11-02T15:41:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs Raises Oil Price Forecasts, Sees Brent Upside at $140 a Barrel &nbsp;&nbsp; EnergyNow.com"
+     }
+    ]
+   },
    {
     "id": "brent-1793626863",
     "detected_at": "2026-11-02T13:51:02.089626Z",
