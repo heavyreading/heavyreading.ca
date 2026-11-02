@@ -1,8 +1,490 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-01T23:21:16Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-02T05:11:10Z",
  "data": {
-  "updated_at": "2026-11-01T23:21:04.114462Z",
+  "updated_at": "2026-11-02T05:10:57.350768Z",
   "events": [
+   {
+    "id": "brent-1793595411",
+    "detected_at": "2026-11-02T05:10:57.350768Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-11-02T00:30:00Z",
+    "to_ts": "2026-11-02T04:56:51Z",
+    "from_price": 111.76,
+    "to_price": 109.99,
+    "move_usd": -1.77,
+    "move_pct": -1.58,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil prices fall amid reports that the U.S. and Iran are both seeking diplomacy - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQXd1a2c2UEtTYmUxbDlrUGdYYmxXdWJJd19lbVVpa1NCZFNIT1ZpV2xBOEFmY195WVZSLXNIdktTTldXRHVlWHBYN0ZIRmhMb21lRWY0X1U2NERwSzNLSTFaVjNFTmVXWDBrM1BrNE8yTjBjVUdFWG9ET05OdGhPMUstRzljYTjSAYwBQVVfeXFMTVhDTDhNM0RuaF9EMUI4clJLbjhRWVNITUd3Z3BUX2dPaXgzOFVEYlFQajBfbTFpdGtoVzhsUm0tYkdST2VKYjZPbWZCZTNvVnJra1oyU3RWRUNkYmE2dElpVUVGRDBxLWVXYVZlOVBoUy1QNVJ6dHdnOVVJUjdSdm85QWRxWTFDUmMwTHY?oc=5",
+      "published": "2026-11-02T05:04:26Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Oil prices fall amid reports that the U.S. and Iran are both seeking diplomacy &nbsp;&nbsp; CNBC"
+     },
+     {
+      "title": "Tanker hit by two unidentified projectiles off Saudi Arabia - The Siasat Daily",
+      "source": "The Siasat Daily",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQ0J1MnZhUUV3VnNpQkhfTmE2bTd0b0o0NVh1RXRKTmEtakE3V1FROENOWGluaUNFaUNqOFRGLVZibkV2Ykk5NmR5M0taWTJlV2FTR1FSazBTa2IzNS1iM1VETVRCWEczOUhkcE9WTEJUVzNrUnlWQXVYNHJKRlpCR29GT3QtdzdEd3I0SUsyaEtuQ0pWU1HSAZsBQVVfeXFMTTFzTkZLSy10VFRtaHZ2SnVIcktVMmFveGdHUG5kSHpmNk9vR1lOaWhpVkpUcy11SDBROF9ITTV0ZHdFMHhSY0J2YTlrZDhoZkoyYi13R2tHdDBmYmNLc0ZpamNncmV2Z2xsLXA1UnBRSjZSZEJ1c3Zoa2lpS1hLNWdkbW16V2tsTkZtbE5UY2lvZExCTVlURTg2UGs?oc=5",
+      "published": "2026-11-02T05:01:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Tanker hit by two unidentified projectiles off Saudi Arabia &nbsp;&nbsp; The Siasat Daily"
+     },
+     {
+      "title": "Oil prices slide more than 3% as Trump signals more time for Iran diplomacy - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZXFCaTVVelZiN250TWozd1VIX3BTOHFDVU8ycDZKWkxRb1NsYWQtUG5TTzdQY0lnRUxkTjBhTFZUR1JTTTdEMUY5U2FoR2VUUS1qaDAzNUJiamVVUFRqeUNyc0xaUWgyR2VlY0x4aW03WkFWRGpPODBIemQ3SU8wSll4X29Bbkdxb0NWQ0VIYkZjaTYyQ1VQa1pYclNGT2pIYjV4dnZGTTJCOEgtSFN0T2ZrM1BWMjBQU2pwMnFqb2pnNnR3S0E?oc=5",
+      "published": "2026-11-02T04:59:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices slide more than 3% as Trump signals more time for Iran diplomacy &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Sensex Jumps 765 Pts on Reliance Rally, Falling Oil Prices - Rediff MoneyWiz",
+      "source": "Rediff MoneyWiz",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdGZsVTlxNDJnTGliNm1BbXB4SHlVZzBGdUJNSWp1NG1TZE8wQ3JvVm16cmUyY2l2cHFLSjBpSG8zTEhLOHRNWHpqZXRjSWVQUlJTRGZCWnQ0VkFvdjdPN1FqbEVwOWRnMzNpUy1CMzRmX3NVVWlxa21nRzZaX0x1OW01VUFwTXpFSU5rc1R3Y3gzYUEtUW1zWUNqVm5GVUlOS1NfMHd5MzYzY0g5UkHSAbMBQVVfeXFMTWNLUHp2RURGQkpTamQ2b19BaEZlSXI4WC1uQmFpcGFmaElDbmVxYmUwZ1FOcEw1ajZoUmhFNkpKb3ZzRVBSNkR5TkRHYWtteWo0dVE2TzdpakUzc3FyaHhHazEzTUZrRkNEUlc0SDl5cXZKdURtVmVvNWFEd0pLODY2WUE5MENpMVd5cG1FVzNLdjdNY3cyS0VZMmtKX2FLdkpsQ00waWNpY1U1TTd2MDUwNjA?oc=5",
+      "published": "2026-11-02T04:56:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Sensex Jumps 765 Pts on Reliance Rally, Falling Oil Prices &nbsp;&nbsp; Rediff MoneyWiz"
+     },
+     {
+      "title": "Goldman Sachs Lifts December Brent Forecast to $105, Pricing In $27 Middle East Risk Premium - finance.biggo.com",
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9nYk1HTDFUMVF1ajR4My04U0VMMkVNc255aGp3cEIyZE1xVmRFUFhOVU12LThrdE9Ca2lIQUllRWd1ZkJKTGJ0ZWR1MUExUF8tYm16NjZxSGhzckhkQUZGd1g1OEF2WldRRkFMUktqbDJCY3lJWFE?oc=5",
+      "published": "2026-11-02T04:55:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs Lifts December Brent Forecast to $105, Pricing In $27 Middle East Risk Premium &nbsp;&nbsp; finance.biggo.com"
+     },
+     {
+      "title": "Global oil prices fall by more than 1% amid Iran war negotiations - Daily Ausaf",
+      "source": "Daily Ausaf",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY3RkUkI3bWNLckF3TldOUlZyWDBPMWE3VHJUUTMzV0tsejEwUHZoQnY0TWhVaHFySlpyQzZoeXNyaDZrYlV6ZFlZS0ktZDNDeGZ5QVFkWDhadjdxeDl1RUV0OEI4cTNmQW02LTRweUhIMFowLWlEUDdSaTgzR2tuR01Gd09UN2l0STMzclRrcTJ4YXBZT1FDLWVLeGZMQdIBowFBVV95cUxQZnNwblo2X1pwT3loR2N3YnRERGlFT2RtaDIybHNrdHVEUW9yM1dCUk0wZV9oU3paY0VmTURlRlRSU3puUWRERjktM1JWX3MyWmtDVmdaX2Zuay1SNkJSQk1rWU93bE1aOTR5RTNGbHR2dmdxd0VQZnNDM3I4M2RqelJzVTlHejVuNFhjeW1xMHJncDUzUVdaQjUtaWdwbFRwT2ZJ?oc=5",
+      "published": "2026-11-02T04:53:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Global oil prices fall by more than 1% amid Iran war negotiations &nbsp;&nbsp; Daily Ausaf"
+     },
+     {
+      "title": "Sensex jumps 765 points during early trade on sharp rally in Reliance shares, decline in oil prices - The Hindu",
+      "source": "The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOb2FkTkg2VnZrRi0xdVhSMXNZcmIxZnprT0t3RVd0MmdzbjRqMGNrQjFYWUV5cUhBRmdQUndlU3dBaTZ4NVdfczVsNkpibWNIWDh3bzB2d0I0cHlfczB4cDJCdEFUSDhuRU1vcUhyZW9QSDNsbEo3dVZMMUpNd3NUYXNoWDhwS3ljYTN2aDlCUU9YbEtmVFhlRGhmWThKb2FQM09xRjlSYno4LVM3TjM5bW5pc2NlOE1Kdm9LN0I5alJRV3Q2WkVKSFpvTlJ4UG9TODdFeGN1MXNKUHh1SzhxVThoeXAyYkxvWDVqc1ZzY2pMQdIB-AFBVV95cUxPdVIzYkpJZ3ZaNkNPWE1LV01wUjZEVi02ZkJLbjlTNFdNT0VTVGpGTlZlWFpLUjdDR1dLRlRkRUJSSTdQOUppZGgxNEo0SVVoZzFYYmlrX1dzLTNWcEVvNnRGVEZPd1I5NHlqdkp1Qk1ObjhnQ3dia3pMd0lKVGZaaGRMNXhVQ3VMTkpFbUg3Tk9DVm5BVEV2RkIyZ3V1UHJhVjUwVkdNZHZBUE9hRlRnWUdQVHVyRWNVUV9yN29vM0U2TVV5OG9TSFRoSENTbUZlNXV0cDlJbHRMRzVHd2g2NklOZUw1V3dxMzA1a3BzTVNOQnhUVFJZdg?oc=5",
+      "published": "2026-11-02T04:50:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Sensex jumps 765 points during early trade on sharp rally in Reliance shares, decline in oil prices &nbsp;&nbsp; The Hindu"
+     },
+     {
+      "title": "Gold rises above $3,900, silver tops $50 as easing oil prices cool inflation fears - Moneycontrol.com",
+      "source": "Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNY2dhSW43X0dwOU9vQ2VJWlpjdWRYSUtGc01xRjJBNFNVV1I4Mnp1aXBvUFNXbjlXVGNnUXpwVjhheUQzcGJVSTBJclpFaHJxdWRUa0ozQmdNUEo1S29yWlo5enF1Yk5yMzE5MGI3YnRZYm5SQW1FUDBDZ1Byd3Y4VXF1UW5tR3YyYVZsaFYxRmQweVY1UEtYbm02Vkc3dnpzcUxoZ0hwYlJtalJxemVGaUQtNEppMmxvbW1PTENaWkJWZkhGbWZfdVhHY3RVMkM1emlLdTRsNWlycGZXSGVRQWVOdnB4dHhv0gHuAUFVX3lxTE9fd0J6eFRlbVU2MDF1Yk15TXRCWHN0bkhTSV9VNkQtaUdEdHhlMmJNWFR6cnZKRXFxMWs1cEJja1pvQUo4TFN1ckMtUHRWTl95ODlhQmxwTDZRM255NE5BMlZacDJiaEY0T21jYkJPRUtOQnFzU2tyYzRja3JVUk5kLXlfXy04R0dSZ3lrR0FhYjZFQWtVcW1McFgyU2QtVktVQ09Fdi1Ob1lTVG11eGxXMXFJbmpLNlZVWE5oYjRtbl91enRzbXJISjZ0Z1FlVUVCWlhIcmxpcE92UmpnbFktWklMMUV1S0F5Q0RfVFE?oc=5",
+      "published": "2026-11-02T04:48:28Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold rises above $3,900, silver tops $50 as easing oil prices cool inflation fears &nbsp;&nbsp; Moneycontrol.com"
+     },
+     {
+      "title": "Global oil prices fall more than 3pc amid US-Iran peace talks - Pajhwok Afghan News",
+      "source": "Pajhwok Afghan News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY1REbHpTMkg2aFVIOGItQmVERXpEdXJUOEtReTZfUzh2clM4b2hIWlF5UmVULVN4c1JBX2tQVFc4NVdkWnRRMDBfbFFDcUZpMFE2LVlPZGNCVVpjdWZ4cDFiSV9pa0dKeE9SYWJUSC1jSFpteDRmUmVpWVpTVDRWbVNkWFVHUGFDTml1Y0JkRXVYUDd5QVJRWA?oc=5",
+      "published": "2026-11-02T04:46:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Global oil prices fall more than 3pc amid US-Iran peace talks &nbsp;&nbsp; Pajhwok Afghan News"
+     },
+     {
+      "title": "Middle East war risks push oil shipping costs to $20 a barrel - Daily Sun",
+      "source": "Daily Sun",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeU02cW1zc2NZWDJBM3hxM2E2QXhoOWRNUEs0TlhkQkcxb3FVRHhublUxdU55MUVsMWh5YXNFTVJ1My15SE45VUtTODdrWE13c3huc1laVGs1T180NWR0d1k0UFJZRTFBaGx5Q1lWdU5JYVJlSXRSTEl5bVVBdUtZUXVSVDFPcEV6SEdIbDhXbHlZVDNSV0Mybk1hM0luLWRu?oc=5",
+      "published": "2026-11-02T04:38:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East war risks push oil shipping costs to $20 a barrel &nbsp;&nbsp; Daily Sun"
+     },
+     {
+      "title": "Iran warns new war could last longer after Trump threatens strikes - The Daily Star",
+      "source": "The Daily Star",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeHZuTXVxbllBM0x2VzBSV3RTdlUzT2Y1NGNIRHdkUko1ZkM5MnBncnVseHBGQ2trYnRzQk9vOWc0VFlrbjNFTWNqVjl6bjlocWFjODhmMUI0aXRRcTBlVDRiZ1lXNU5WVnBMU2RoN05xWDJLd1JQZUFEOUJyeVFQTDZIV0k0NXhwQUFpVFhucEdOVjR3UWZqWnZEOTc3XzkxZ3p5YzJNcWJ5UURRWkxiRVNNeTJldDlNYllz?oc=5",
+      "published": "2026-11-02T04:37:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran warns new war could last longer after Trump threatens strikes &nbsp;&nbsp; The Daily Star"
+     },
+     {
+      "title": "Oil fell 1.5% to $102.56 per barrel amid talks to end the war with Iran - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "source": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY3NGSHFNWlNvTDBfMDE4TTl2ZU16a2tlcTIwMnkyZzJuU1Bfc3FxZFVGbjRsMEVOTjZaYlkwd1MxaTRjMkZmdnRSUGs3Y0ZFVWhTZFJxVHRBV3BEUmpsVmJoTnBzSXcwZWZIQWJwWEEwV2JocWJTVENBY0E1MWtoRU5DU2EwQjJFb3hxSHFjM0RrWGJTNWJOZVFTeF9NYzNodmFDeDdB0gGkAUFVX3lxTE5adTRhR3ZYaEVMNUR2Z21kSjNrTmR2dnBUT3ZoRHlscjFOUGh5QmE5dzAzbUFJcmJZVWVWRFRkN3gyT29yUGcxcDRpYXBoTHBnUG1mM1FiNVFyWEw4Ykk1Qm1oZjhFb2N0c0dXaWRDcUxJTWIzd3RIblRlRGNGeGxfQUhFM0FTVHNtZVZWZ0phUXMyMUVCTFFESHRwZzNOWl9mcURu?oc=5",
+      "published": "2026-11-02T04:35:48Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil fell 1.5% to $102.56 per barrel amid talks to end the war with Iran &nbsp;&nbsp; \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
+     },
+     {
+      "title": "Crude Falls 3% to $110 as Iran\u2013Qatar Talks Ease Supply Fears - HDFC Sky",
+      "source": "HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRnhsR1NnZU9oZDNoYWlTdUZZeV83SzJfYnFuTlcyNWxHUGN0c0hmbllQS0V3cjh1X3JPR0VRajFYd1VDMkdLbUtpTWlwY1dYRXpnb2ZJS0tDa0gxdlM4UjJpZXNjS0dzT3VEcW0xcFdLX0E5aHVjSkJhMTdMYWZUQVV0OF9IRXhtVEFPVEpXSFZUM3Y4MHI4aG9ncTZSdTdVTE00cm53d2NXZVVfUlZObmxOZXNPalV4NUhCeUxjM09ieV81djBBYV9IZzB2dkJlZVAyZm1fX2JUTDVqVDltNVdYM3NPRTBpZFFj?oc=5",
+      "published": "2026-11-02T04:34:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Falls 3% to $110 as Iran\u2013Qatar Talks Ease Supply Fears &nbsp;&nbsp; HDFC Sky"
+     },
+     {
+      "title": "Oil prices retreat to $110 on Iran diplomacy hopes - Mettis Global",
+      "source": "Mettis Global",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaFQxZ2M0TDFoWjZCU2RVZmhYNkhsS0k4a2pwam1wZTNTbld1OWdrTWgzdUFIQURWbjhWV1lXVEhteko2R011Y0g5T0ZNbncxLUEta05VT3JzUjdGb056M1dWT05MZGV4VVpkVWxMd1p6X0VlRWp3cUVkbEZIaW13WHBYZTBzeHBa?oc=5",
+      "published": "2026-11-02T04:32:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices retreat to $110 on Iran diplomacy hopes &nbsp;&nbsp; Mettis Global"
+     },
+     {
+      "title": "Crude oil futures fall as diplomatic efforts to end Iran-US war continue - BusinessLine",
+      "source": "BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQLUQ5RWRmMHJjUEJnRkxPTi12VGZGcDJnZXlpSG1hSTFlVDgwUmktVkVBZXowU05KS2t0MmVPMG1KUEpPVHlFVmR4Q3AwU0FTSzIycXI2TWNEeGpLdlFTcjczT0xPQkFyRzQtS3FQSlA4T0dqMU0zRzhvYXBySmRVOTNyZEZqM1FyeS16SzVtUjAxMzFXdms3MzNfT19JYk9YaENxUC1zNzJ4ZDNoanJxSTFFdGZfY2s5ZlVCTHRQQVUwZ19JWktsWUZYSUY5S1JjamNxY3ZUVzVqblpLMUh3QTZqQdIB6gFBVV95cUxQUF9wU2d0SmRDbzd0bk9sOHRwZW4xeElFaDlDSF9TMmI1cFN0WmlQZkl5SVRsa2h0MHRCcE1OVnNIVThFU1kwaTU0VVdXQnQ1cG4wdjNnMXB3TVZSMVBiLXVRQlctbHlFaVVhUG9UZmlXckR3VjVvRU9GQ3BvYTlReXhIQlNLVGxNdDdjb3gyX2RWbURyTzExUWZSOHQtNWRPcDVDSXUzdjNNd0pNV0ZsREx2U0J5YmQzSkNfUGtaa2NrQ0tOQlk0YTd2VjdpQlBfUXZ0Sy1jYkt6SXB0R0gzMDFxZ1lPTlV3WUE?oc=5",
+      "published": "2026-11-02T04:30:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude oil futures fall as diplomatic efforts to end Iran-US war continue &nbsp;&nbsp; BusinessLine"
+     },
+     {
+      "title": "Goldman Sachs Raises Year-End Brent Oil Forecast to $105 on Middle East Supply Disruption Fears - bloomingbit",
+      "source": "bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Jbjdwb293eW90RXdZaThtekZvbTZMbEo3WmFZb0h5Rm5YR24yTjJiNFFPamlHcnVFV3hyZFNsbmRZd0dJeUMxblMwR0NCanRWYUh3cA?oc=5",
+      "published": "2026-11-02T04:28:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs Raises Year-End Brent Oil Forecast to $105 on Middle East Supply Disruption Fears &nbsp;&nbsp; bloomingbit"
+     },
+     {
+      "title": "Goldman Sachs raises oil price forecasts, warns Brent could hit $140 in 2027 - The Economic Times",
+      "source": "The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbFpVWl9JZXltaWNGRHZqZmJGYjFEZ1hsMWRjd29LNm9QR3JPZmtyYWVDZ0I2d3FBRTBtSDhMVE5Scno3Qzh1MmZpN0hEMld4c0RlRnVfMElJU2pXeXhfRUZiUkJ3bTI1UlFjLUxFUi15ZWtpWExpSzA3dWJUcHBXS05STnltME1QYlk5SWdUVVF4MHFqdVg5SDlzbkFtMEFuV2xpa1lyVkkwVTd2by1kTlpCci1PemltdWwzUkR2V3Ztd0k4WU9wWGZGMlJOMXNMTGJzZEJtS3pTRmlWdWxWM0JnWHotQdIB6wFBVV95cUxQejUzRUlaNGxKY1FNR3JudEZwVlNJN0x2TjUwakJXMkJpNE9VM3hNcExUSFNEd253ejdVSzlJMnF3dHN4TFF6VkpnLXFmaUZhZGpVSnU3OVhoS3BaNnBsOEpBQmpXdElkeUVNREV3QWlueVdiTlJEUkZYOGpWU2lodktfZlRZSEhMejNubDBYSUZheFh0MWt5bGN4WjdqcmpwdlZnZFM3WnYwbUM0bHNTdmp0TUxMM01Va3BzTVVsRURuVDB5RG53M3pQU0JWTUkyLW5KUW9NczdwME1fa09zRTNhOU9vQVhtbzVB?oc=5",
+      "published": "2026-11-02T04:27:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs raises oil price forecasts, warns Brent could hit $140 in 2027 &nbsp;&nbsp; The Economic Times"
+     },
+     {
+      "title": "Middle East latest: Oil prices slide more than 3% as Trump signals more time for Iran diplomacy - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT2RZbUR3bEtVUzBna1hJbGUwNHBnLXRJQkhtZDRDLXkyNkFlYzFHTU1ndUh0T1J5RHQ4aEpjWVhfT3F1cUVkS2dqc2NIdXFIaTdDSk1BbXJtNmR2eDNMa3M2TEpEbXR4VEtyYmYyS3pDeW50SGhicmNha2NDc0xvTXFGUnJ0UTd3RWZQNA?oc=5",
+      "published": "2026-11-02T04:19:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East latest: Oil prices slide more than 3% as Trump signals more time for Iran diplomacy &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Crude Oil Gains As Traders Brace For US-Iran Tensions After US Midterm Elections By Kedia Advisory - Investing.com India",
+      "source": "Investing.com India",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeWxrV2ZhUGFHLUVQaXU1UVBqRFN2UXdpUHlIbzNzd0ZFZzRiVHdNUTBYSFMwWjUtSU5aUWpqOGhlcXN0Y1dPTU4xYkZrMTRvbEVyYzdXdm9XcU5ua3pxX3gtLVdtNEQ5LXNWQk02NGM5c2kzNnJYYVd3VFEzc3liMGlEYzA3WkVramQzOUhTUzctQmUzWW1GSTNFOE9ObGY4LTlyd1Vqdnd2Q1VQUmdWeUJWQ2tfX0hJRTQxTDh5bTlDX1BycFFEbXRxOTZCMjg?oc=5",
+      "published": "2026-11-02T04:17:35Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Gains As Traders Brace For US-Iran Tensions After US Midterm Elections By Kedia Advisory &nbsp;&nbsp; Investing.com India"
+     },
+     {
+      "title": "Brent crude price slips 3% to $110, WTI at $100.9 amid talks over ending Iran war - Moneycontrol.com",
+      "source": "Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQ29Wdlhwa3ZfdzBRbko4NXZBMXJEWE5RWldmUzNPU2RKNlp2U2s1UjJlRXo3bXVOWGJYWGFrQ2puTm45TnFGaVRyRWE4YWVGV01mUll6RVJrdlBfWVV0emkwN2pPRGMtTGhhM3p0c1JReVludHJlX21hNWZ5T3BzblViRzZHeTMtWVZjLUJ6WUxIRDV6NlFHR254ZTlKdVN6YVJBUjVIR3JLXzRxUGN3UG9QRmhSQXF3SThQbVJqY0dST0lfOGFHVFpfRTlUNUFMVk1jRTd2Q2xtd9IB3wFBVV95cUxNeGlYV1BSYzZTQTNjcEJuRzE2cno0Y05mejFBdmhwc2JkZFZRVEl4Rk9wbTRwRFFUYTlPa0hYaTgtU0FLekhwVFFxNTBBdjB4ZlAwVzFOX2xKWUZSTXhqUGdQdDZyWjAyampnYmF2N3o4MFJTSlJ4cE9qeHhYV20tREZvRlVZZlptazBTRFBrZm1PY0pMV2xSMjVOQmVKVWZKbUdia0VTYW5oQzB2NUt4T1hVaDNqZGRaOHNkbmdURzRZNlJrSEZBdTB3WlNJT0k2MVJhZC1WVkxUSzNEQlpF?oc=5",
+      "published": "2026-11-02T04:17:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent crude price slips 3% to $110, WTI at $100.9 amid talks over ending Iran war &nbsp;&nbsp; Moneycontrol.com"
+     },
+     {
+      "title": "Oil Prices Fall Nearly 3% as Trump Urges Netanyahu to Give Iran Diplomacy More Time Ahead of US Midterm Elections; Brent Crude Drops to $110 Per Barrel - The Sunday Guardian",
+      "source": "The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPelRYMzk5bkRYR3VEWmpVNTc4ME9VMGJUUno3LTZTRkJQeXNXTFNSRWlCRkZlRFBaUU1vdW81TFQwRVFqMHpRM28zY2UtNDdTUVZlOWIxOGJtclR1WkJ4Um90WVlOR0F5Y1VZLW9VZVp0VmpPdHFLWkE2NjBpeXJ5a1Q2MG1KUkROdERFSG9waWxfZkxXQ0pZTFJvRDlLOEhJclZ1MHpMaTJLVkhvSVRKM0tEUzk0U2xGRXJKT3Q0Vll2MUpFMmRRWmw0ZG1SU2wya2FGN1o0TzY2SHk3NlZFR1hPSmdGVlNUZDdtSGg4NkVrdVB6UHktbTZqaFM1Ykw0S0FyYkZoeEd5Q0hVcHpXSk1RZ1dwSk9Bb0JHVTR30gGjAkFVX3lxTFA0djFPZ3ZfNE1oN1NmdlkwLVc5OGhXMDU2cGhWV3NaVGEtbGp3S0ppak9vTnhVTXV0aWJ6WEhBdEJuSUFkZEJpSGJJNDlQRU9TeDEyQTBrLTNSSTR2TnRvZGFCMWREY1pQZ25Tei00ckZSMU1IODNiWGVlcmVPTm9vbmNDblFKSG9HWDVBN29NMGg2c3Z0MDU5dnJQZ1plYjRqX1RYVGc3dDlkZjV6dDdMRnZBaTNuWldjaWlxUGtacTQ0NzlaWkxDNnI4cXlCbVNMbHZkU0VWN2xndENKUldOOTN6bGo1WUJDSTBnT19tR2ctVXVSdFM1eDdnSDVBYmxiZThkMVoxaGxfRVh6MTVuNDFuS3RLb2JsRmt5b1k0aDBEVQ?oc=5",
+      "published": "2026-11-02T04:17:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Fall Nearly 3% as Trump Urges Netanyahu to Give Iran Diplomacy More Time Ahead of US Midterm Elections; Brent Crude Drops to $110 Per Barrel &nbsp;&nbsp; The Sunday Guardian"
+     },
+     {
+      "title": "Goldman Sachs raises oil price forecasts, sees Brent upside at US$140 a barrel - KLSE Screener",
+      "source": "KLSE Screener",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV2hybXpfZ0wzbmZ5OFR2ZEVnOEQtSlBPZHJnMXRJV0FlQVIxUHhFNURIaktXWUtmMm5nU2taaG9iY1FaQXoyZzV4OGRoV2FiXzk0VDBvbWdoUlRvZ0dZcTFSWXZtT3BRWmJ0ay03cGRKNXhGdlZiWm0tRVR0ZmNNNVU0VE5iblNDMW1kY0hxX3ZIRm9IZFh1MlJ4c3ZnNWg3N2EtU0FYVG82aF9FRXAwaWU1MENFSDNjSC1iVmVqMmo5YTRuUnc?oc=5",
+      "published": "2026-11-02T04:12:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs raises oil price forecasts, sees Brent upside at US$140 a barrel &nbsp;&nbsp; KLSE Screener"
+     },
+     {
+      "title": "Goldman lifts December Brent forecast to $105 on Middle East and Russia supply risks - investingLive",
+      "source": "investingLive",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeFUtVUJ5cHdSV1pKYXhtdmQ2d3NVbXdDQUhQYW1oNFF6WnQ4VHVFeWlLeC1FNVczTUQxZmZOVlRUaGdfWUEyZHRVN2lUdk13STRYQnk1LWJ1cWt0aG5NdmNJbmlENlNhWE5UTGU0SXRZUXR0MXFUcXQ1UzN4VG9ybVBKMFhpR0k2TDlzbW4zS2swZW8wZERjV1dsMzFiUHJjNzFyRkw0QzRZN2NsbDZqd3UyZW9zSEYwRERiRTYwbw?oc=5",
+      "published": "2026-11-02T04:07:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman lifts December Brent forecast to $105 on Middle East and Russia supply risks &nbsp;&nbsp; investingLive"
+     },
+     {
+      "title": "Goldman Sachs significantly raises oil price forecasts! Year-end target for Brent crude lifted to $105, with global supply potentially declining by 1 million barrels per day by 2027. - \u5bcc\u9014\u725b\u725b",
+      "source": "\u5bcc\u9014\u725b\u725b",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRF9iSTZYTWQxN0hLZk51TnB3YVJ4T0pnOFdCU3NZTU9tNm1zbjVEZTZLZElWQ21qb1locVI2WUxNQS1GWkdocEVVTDR1blVLem9GcmJkMzNqQi1UOTJVYzc4dzZFRG9TNUlRcEU5eEdBXzY1RVc2Ry1JclRIZ0VHNGFORENPY1FzdmFvWl9YTzA1bktCNG9QdUhJUDRiWHpNaWIyc1ZMaHBsS0hLVERQVGozWQ?oc=5",
+      "published": "2026-11-02T04:06:04Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs significantly raises oil price forecasts! Year-end target for Brent crude lifted to $105, with global supply potentially declining by 1 million barrels per day by 2027. &nbsp;&nbsp; \u5bcc\u9014\u725b\u725b"
+     },
+     {
+      "title": "Goldman hikes oil-price forecasts on \u2018substantial\u2019 supply risks - BusinessLine",
+      "source": "BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWDdnTGZwSnNKWlF6Yjh5dTl3TTZtQUo5SFJvSmRLNm5MZVhrNjV4TEJUOTJ1dDlQSFFMbTZZY3VTdDZ6clF5Z3h3TFRScERUMDVwVExvNjluaFAyX3hqOUZlamxPaVZ2Tkl5aU1HTXdlOTZUalphR2xtU3Jyb1lpUmJSdTRUeXh3QUlRSW1fZkhWWjR3MlVZVVBrWDFCOUI5U1dJbUZRWnFibmRCbkRNRlNXemdGSEtCeVFlNzVXQm41cXM1MG5FbWRWc083S3ZFRl96NtIB2wFBVV95cUxOeEJyZXZoVEFsdkd1S3ROM0hudWowSUtQTnNEMmZEeFZXSElNMF9yR29qWVpRVFM1enhFS21wbm9CY0VDd2x3WEhCNjFqdndncEJFaktUM19FZ00tMHJYekFRUnVXSDZ3b1Z4SDVZbkdZM3R2Q2xCZ25aaENDZi1OQk4wdXF2dlQtb0czdHpfTmJnZUIxdm9pdnYwb3RIcG1qci1fTjZtamVrVmFQWWxkcDVuTVIxM1VlSkJuT0UzVW53OXFMelNvVnFuQ2JyZjJOZnNleHVZVnhnRW8?oc=5",
+      "published": "2026-11-02T04:05:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman hikes oil-price forecasts on \u2018substantial\u2019 supply risks &nbsp;&nbsp; BusinessLine"
+     }
+    ]
+   },
+   {
+    "id": "wti-1793595655",
+    "detected_at": "2026-11-02T05:10:57.350768Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-11-02T00:40:00Z",
+    "to_ts": "2026-11-02T05:00:55Z",
+    "from_price": 102.48,
+    "to_price": 100.68,
+    "move_usd": -1.8,
+    "move_pct": -1.76,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil prices fall amid reports that the U.S. and Iran are both seeking diplomacy - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQXd1a2c2UEtTYmUxbDlrUGdYYmxXdWJJd19lbVVpa1NCZFNIT1ZpV2xBOEFmY195WVZSLXNIdktTTldXRHVlWHBYN0ZIRmhMb21lRWY0X1U2NERwSzNLSTFaVjNFTmVXWDBrM1BrNE8yTjBjVUdFWG9ET05OdGhPMUstRzljYTjSAYwBQVVfeXFMTVhDTDhNM0RuaF9EMUI4clJLbjhRWVNITUd3Z3BUX2dPaXgzOFVEYlFQajBfbTFpdGtoVzhsUm0tYkdST2VKYjZPbWZCZTNvVnJra1oyU3RWRUNkYmE2dElpVUVGRDBxLWVXYVZlOVBoUy1QNVJ6dHdnOVVJUjdSdm85QWRxWTFDUmMwTHY?oc=5",
+      "published": "2026-11-02T05:04:26Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Oil prices fall amid reports that the U.S. and Iran are both seeking diplomacy &nbsp;&nbsp; CNBC"
+     },
+     {
+      "title": "Tanker hit by two unidentified projectiles off Saudi Arabia - The Siasat Daily",
+      "source": "The Siasat Daily",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQ0J1MnZhUUV3VnNpQkhfTmE2bTd0b0o0NVh1RXRKTmEtakE3V1FROENOWGluaUNFaUNqOFRGLVZibkV2Ykk5NmR5M0taWTJlV2FTR1FSazBTa2IzNS1iM1VETVRCWEczOUhkcE9WTEJUVzNrUnlWQXVYNHJKRlpCR29GT3QtdzdEd3I0SUsyaEtuQ0pWU1HSAZsBQVVfeXFMTTFzTkZLSy10VFRtaHZ2SnVIcktVMmFveGdHUG5kSHpmNk9vR1lOaWhpVkpUcy11SDBROF9ITTV0ZHdFMHhSY0J2YTlrZDhoZkoyYi13R2tHdDBmYmNLc0ZpamNncmV2Z2xsLXA1UnBRSjZSZEJ1c3Zoa2lpS1hLNWdkbW16V2tsTkZtbE5UY2lvZExCTVlURTg2UGs?oc=5",
+      "published": "2026-11-02T05:01:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Tanker hit by two unidentified projectiles off Saudi Arabia &nbsp;&nbsp; The Siasat Daily"
+     },
+     {
+      "title": "Oil prices slide more than 3% as Trump signals more time for Iran diplomacy - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZXFCaTVVelZiN250TWozd1VIX3BTOHFDVU8ycDZKWkxRb1NsYWQtUG5TTzdQY0lnRUxkTjBhTFZUR1JTTTdEMUY5U2FoR2VUUS1qaDAzNUJiamVVUFRqeUNyc0xaUWgyR2VlY0x4aW03WkFWRGpPODBIemQ3SU8wSll4X29Bbkdxb0NWQ0VIYkZjaTYyQ1VQa1pYclNGT2pIYjV4dnZGTTJCOEgtSFN0T2ZrM1BWMjBQU2pwMnFqb2pnNnR3S0E?oc=5",
+      "published": "2026-11-02T04:59:55Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices slide more than 3% as Trump signals more time for Iran diplomacy &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Sensex Jumps 765 Pts on Reliance Rally, Falling Oil Prices - Rediff MoneyWiz",
+      "source": "Rediff MoneyWiz",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdGZsVTlxNDJnTGliNm1BbXB4SHlVZzBGdUJNSWp1NG1TZE8wQ3JvVm16cmUyY2l2cHFLSjBpSG8zTEhLOHRNWHpqZXRjSWVQUlJTRGZCWnQ0VkFvdjdPN1FqbEVwOWRnMzNpUy1CMzRmX3NVVWlxa21nRzZaX0x1OW01VUFwTXpFSU5rc1R3Y3gzYUEtUW1zWUNqVm5GVUlOS1NfMHd5MzYzY0g5UkHSAbMBQVVfeXFMTWNLUHp2RURGQkpTamQ2b19BaEZlSXI4WC1uQmFpcGFmaElDbmVxYmUwZ1FOcEw1ajZoUmhFNkpKb3ZzRVBSNkR5TkRHYWtteWo0dVE2TzdpakUzc3FyaHhHazEzTUZrRkNEUlc0SDl5cXZKdURtVmVvNWFEd0pLODY2WUE5MENpMVd5cG1FVzNLdjdNY3cyS0VZMmtKX2FLdkpsQ00waWNpY1U1TTd2MDUwNjA?oc=5",
+      "published": "2026-11-02T04:56:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Sensex Jumps 765 Pts on Reliance Rally, Falling Oil Prices &nbsp;&nbsp; Rediff MoneyWiz"
+     },
+     {
+      "title": "Goldman Sachs Lifts December Brent Forecast to $105, Pricing In $27 Middle East Risk Premium - finance.biggo.com",
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9nYk1HTDFUMVF1ajR4My04U0VMMkVNc255aGp3cEIyZE1xVmRFUFhOVU12LThrdE9Ca2lIQUllRWd1ZkJKTGJ0ZWR1MUExUF8tYm16NjZxSGhzckhkQUZGd1g1OEF2WldRRkFMUktqbDJCY3lJWFE?oc=5",
+      "published": "2026-11-02T04:55:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs Lifts December Brent Forecast to $105, Pricing In $27 Middle East Risk Premium &nbsp;&nbsp; finance.biggo.com"
+     },
+     {
+      "title": "Global oil prices fall by more than 1% amid Iran war negotiations - Daily Ausaf",
+      "source": "Daily Ausaf",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY3RkUkI3bWNLckF3TldOUlZyWDBPMWE3VHJUUTMzV0tsejEwUHZoQnY0TWhVaHFySlpyQzZoeXNyaDZrYlV6ZFlZS0ktZDNDeGZ5QVFkWDhadjdxeDl1RUV0OEI4cTNmQW02LTRweUhIMFowLWlEUDdSaTgzR2tuR01Gd09UN2l0STMzclRrcTJ4YXBZT1FDLWVLeGZMQdIBowFBVV95cUxQZnNwblo2X1pwT3loR2N3YnRERGlFT2RtaDIybHNrdHVEUW9yM1dCUk0wZV9oU3paY0VmTURlRlRSU3puUWRERjktM1JWX3MyWmtDVmdaX2Zuay1SNkJSQk1rWU93bE1aOTR5RTNGbHR2dmdxd0VQZnNDM3I4M2RqelJzVTlHejVuNFhjeW1xMHJncDUzUVdaQjUtaWdwbFRwT2ZJ?oc=5",
+      "published": "2026-11-02T04:53:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Global oil prices fall by more than 1% amid Iran war negotiations &nbsp;&nbsp; Daily Ausaf"
+     },
+     {
+      "title": "Sensex jumps 765 points during early trade on sharp rally in Reliance shares, decline in oil prices - The Hindu",
+      "source": "The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOb2FkTkg2VnZrRi0xdVhSMXNZcmIxZnprT0t3RVd0MmdzbjRqMGNrQjFYWUV5cUhBRmdQUndlU3dBaTZ4NVdfczVsNkpibWNIWDh3bzB2d0I0cHlfczB4cDJCdEFUSDhuRU1vcUhyZW9QSDNsbEo3dVZMMUpNd3NUYXNoWDhwS3ljYTN2aDlCUU9YbEtmVFhlRGhmWThKb2FQM09xRjlSYno4LVM3TjM5bW5pc2NlOE1Kdm9LN0I5alJRV3Q2WkVKSFpvTlJ4UG9TODdFeGN1MXNKUHh1SzhxVThoeXAyYkxvWDVqc1ZzY2pMQdIB-AFBVV95cUxPdVIzYkpJZ3ZaNkNPWE1LV01wUjZEVi02ZkJLbjlTNFdNT0VTVGpGTlZlWFpLUjdDR1dLRlRkRUJSSTdQOUppZGgxNEo0SVVoZzFYYmlrX1dzLTNWcEVvNnRGVEZPd1I5NHlqdkp1Qk1ObjhnQ3dia3pMd0lKVGZaaGRMNXhVQ3VMTkpFbUg3Tk9DVm5BVEV2RkIyZ3V1UHJhVjUwVkdNZHZBUE9hRlRnWUdQVHVyRWNVUV9yN29vM0U2TVV5OG9TSFRoSENTbUZlNXV0cDlJbHRMRzVHd2g2NklOZUw1V3dxMzA1a3BzTVNOQnhUVFJZdg?oc=5",
+      "published": "2026-11-02T04:50:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Sensex jumps 765 points during early trade on sharp rally in Reliance shares, decline in oil prices &nbsp;&nbsp; The Hindu"
+     },
+     {
+      "title": "Gold rises above $3,900, silver tops $50 as easing oil prices cool inflation fears - Moneycontrol.com",
+      "source": "Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNY2dhSW43X0dwOU9vQ2VJWlpjdWRYSUtGc01xRjJBNFNVV1I4Mnp1aXBvUFNXbjlXVGNnUXpwVjhheUQzcGJVSTBJclpFaHJxdWRUa0ozQmdNUEo1S29yWlo5enF1Yk5yMzE5MGI3YnRZYm5SQW1FUDBDZ1Byd3Y4VXF1UW5tR3YyYVZsaFYxRmQweVY1UEtYbm02Vkc3dnpzcUxoZ0hwYlJtalJxemVGaUQtNEppMmxvbW1PTENaWkJWZkhGbWZfdVhHY3RVMkM1emlLdTRsNWlycGZXSGVRQWVOdnB4dHhv0gHuAUFVX3lxTE9fd0J6eFRlbVU2MDF1Yk15TXRCWHN0bkhTSV9VNkQtaUdEdHhlMmJNWFR6cnZKRXFxMWs1cEJja1pvQUo4TFN1ckMtUHRWTl95ODlhQmxwTDZRM255NE5BMlZacDJiaEY0T21jYkJPRUtOQnFzU2tyYzRja3JVUk5kLXlfXy04R0dSZ3lrR0FhYjZFQWtVcW1McFgyU2QtVktVQ09Fdi1Ob1lTVG11eGxXMXFJbmpLNlZVWE5oYjRtbl91enRzbXJISjZ0Z1FlVUVCWlhIcmxpcE92UmpnbFktWklMMUV1S0F5Q0RfVFE?oc=5",
+      "published": "2026-11-02T04:48:28Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold rises above $3,900, silver tops $50 as easing oil prices cool inflation fears &nbsp;&nbsp; Moneycontrol.com"
+     },
+     {
+      "title": "Global oil prices fall more than 3pc amid US-Iran peace talks - Pajhwok Afghan News",
+      "source": "Pajhwok Afghan News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY1REbHpTMkg2aFVIOGItQmVERXpEdXJUOEtReTZfUzh2clM4b2hIWlF5UmVULVN4c1JBX2tQVFc4NVdkWnRRMDBfbFFDcUZpMFE2LVlPZGNCVVpjdWZ4cDFiSV9pa0dKeE9SYWJUSC1jSFpteDRmUmVpWVpTVDRWbVNkWFVHUGFDTml1Y0JkRXVYUDd5QVJRWA?oc=5",
+      "published": "2026-11-02T04:46:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Global oil prices fall more than 3pc amid US-Iran peace talks &nbsp;&nbsp; Pajhwok Afghan News"
+     },
+     {
+      "title": "Middle East war risks push oil shipping costs to $20 a barrel - Daily Sun",
+      "source": "Daily Sun",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeU02cW1zc2NZWDJBM3hxM2E2QXhoOWRNUEs0TlhkQkcxb3FVRHhublUxdU55MUVsMWh5YXNFTVJ1My15SE45VUtTODdrWE13c3huc1laVGs1T180NWR0d1k0UFJZRTFBaGx5Q1lWdU5JYVJlSXRSTEl5bVVBdUtZUXVSVDFPcEV6SEdIbDhXbHlZVDNSV0Mybk1hM0luLWRu?oc=5",
+      "published": "2026-11-02T04:38:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East war risks push oil shipping costs to $20 a barrel &nbsp;&nbsp; Daily Sun"
+     },
+     {
+      "title": "Iran warns new war could last longer after Trump threatens strikes - The Daily Star",
+      "source": "The Daily Star",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeHZuTXVxbllBM0x2VzBSV3RTdlUzT2Y1NGNIRHdkUko1ZkM5MnBncnVseHBGQ2trYnRzQk9vOWc0VFlrbjNFTWNqVjl6bjlocWFjODhmMUI0aXRRcTBlVDRiZ1lXNU5WVnBMU2RoN05xWDJLd1JQZUFEOUJyeVFQTDZIV0k0NXhwQUFpVFhucEdOVjR3UWZqWnZEOTc3XzkxZ3p5YzJNcWJ5UURRWkxiRVNNeTJldDlNYllz?oc=5",
+      "published": "2026-11-02T04:37:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran warns new war could last longer after Trump threatens strikes &nbsp;&nbsp; The Daily Star"
+     },
+     {
+      "title": "Oil fell 1.5% to $102.56 per barrel amid talks to end the war with Iran - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "source": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY3NGSHFNWlNvTDBfMDE4TTl2ZU16a2tlcTIwMnkyZzJuU1Bfc3FxZFVGbjRsMEVOTjZaYlkwd1MxaTRjMkZmdnRSUGs3Y0ZFVWhTZFJxVHRBV3BEUmpsVmJoTnBzSXcwZWZIQWJwWEEwV2JocWJTVENBY0E1MWtoRU5DU2EwQjJFb3hxSHFjM0RrWGJTNWJOZVFTeF9NYzNodmFDeDdB0gGkAUFVX3lxTE5adTRhR3ZYaEVMNUR2Z21kSjNrTmR2dnBUT3ZoRHlscjFOUGh5QmE5dzAzbUFJcmJZVWVWRFRkN3gyT29yUGcxcDRpYXBoTHBnUG1mM1FiNVFyWEw4Ykk1Qm1oZjhFb2N0c0dXaWRDcUxJTWIzd3RIblRlRGNGeGxfQUhFM0FTVHNtZVZWZ0phUXMyMUVCTFFESHRwZzNOWl9mcURu?oc=5",
+      "published": "2026-11-02T04:35:48Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil fell 1.5% to $102.56 per barrel amid talks to end the war with Iran &nbsp;&nbsp; \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
+     },
+     {
+      "title": "Crude Falls 3% to $110 as Iran\u2013Qatar Talks Ease Supply Fears - HDFC Sky",
+      "source": "HDFC Sky",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRnhsR1NnZU9oZDNoYWlTdUZZeV83SzJfYnFuTlcyNWxHUGN0c0hmbllQS0V3cjh1X3JPR0VRajFYd1VDMkdLbUtpTWlwY1dYRXpnb2ZJS0tDa0gxdlM4UjJpZXNjS0dzT3VEcW0xcFdLX0E5aHVjSkJhMTdMYWZUQVV0OF9IRXhtVEFPVEpXSFZUM3Y4MHI4aG9ncTZSdTdVTE00cm53d2NXZVVfUlZObmxOZXNPalV4NUhCeUxjM09ieV81djBBYV9IZzB2dkJlZVAyZm1fX2JUTDVqVDltNVdYM3NPRTBpZFFj?oc=5",
+      "published": "2026-11-02T04:34:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Falls 3% to $110 as Iran\u2013Qatar Talks Ease Supply Fears &nbsp;&nbsp; HDFC Sky"
+     },
+     {
+      "title": "Oil prices retreat to $110 on Iran diplomacy hopes - Mettis Global",
+      "source": "Mettis Global",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaFQxZ2M0TDFoWjZCU2RVZmhYNkhsS0k4a2pwam1wZTNTbld1OWdrTWgzdUFIQURWbjhWV1lXVEhteko2R011Y0g5T0ZNbncxLUEta05VT3JzUjdGb056M1dWT05MZGV4VVpkVWxMd1p6X0VlRWp3cUVkbEZIaW13WHBYZTBzeHBa?oc=5",
+      "published": "2026-11-02T04:32:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices retreat to $110 on Iran diplomacy hopes &nbsp;&nbsp; Mettis Global"
+     },
+     {
+      "title": "Crude oil futures fall as diplomatic efforts to end Iran-US war continue - BusinessLine",
+      "source": "BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQLUQ5RWRmMHJjUEJnRkxPTi12VGZGcDJnZXlpSG1hSTFlVDgwUmktVkVBZXowU05KS2t0MmVPMG1KUEpPVHlFVmR4Q3AwU0FTSzIycXI2TWNEeGpLdlFTcjczT0xPQkFyRzQtS3FQSlA4T0dqMU0zRzhvYXBySmRVOTNyZEZqM1FyeS16SzVtUjAxMzFXdms3MzNfT19JYk9YaENxUC1zNzJ4ZDNoanJxSTFFdGZfY2s5ZlVCTHRQQVUwZ19JWktsWUZYSUY5S1JjamNxY3ZUVzVqblpLMUh3QTZqQdIB6gFBVV95cUxQUF9wU2d0SmRDbzd0bk9sOHRwZW4xeElFaDlDSF9TMmI1cFN0WmlQZkl5SVRsa2h0MHRCcE1OVnNIVThFU1kwaTU0VVdXQnQ1cG4wdjNnMXB3TVZSMVBiLXVRQlctbHlFaVVhUG9UZmlXckR3VjVvRU9GQ3BvYTlReXhIQlNLVGxNdDdjb3gyX2RWbURyTzExUWZSOHQtNWRPcDVDSXUzdjNNd0pNV0ZsREx2U0J5YmQzSkNfUGtaa2NrQ0tOQlk0YTd2VjdpQlBfUXZ0Sy1jYkt6SXB0R0gzMDFxZ1lPTlV3WUE?oc=5",
+      "published": "2026-11-02T04:30:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude oil futures fall as diplomatic efforts to end Iran-US war continue &nbsp;&nbsp; BusinessLine"
+     },
+     {
+      "title": "Goldman Sachs Raises Year-End Brent Oil Forecast to $105 on Middle East Supply Disruption Fears - bloomingbit",
+      "source": "bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Jbjdwb293eW90RXdZaThtekZvbTZMbEo3WmFZb0h5Rm5YR24yTjJiNFFPamlHcnVFV3hyZFNsbmRZd0dJeUMxblMwR0NCanRWYUh3cA?oc=5",
+      "published": "2026-11-02T04:28:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs Raises Year-End Brent Oil Forecast to $105 on Middle East Supply Disruption Fears &nbsp;&nbsp; bloomingbit"
+     },
+     {
+      "title": "Goldman Sachs raises oil price forecasts, warns Brent could hit $140 in 2027 - The Economic Times",
+      "source": "The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbFpVWl9JZXltaWNGRHZqZmJGYjFEZ1hsMWRjd29LNm9QR3JPZmtyYWVDZ0I2d3FBRTBtSDhMVE5Scno3Qzh1MmZpN0hEMld4c0RlRnVfMElJU2pXeXhfRUZiUkJ3bTI1UlFjLUxFUi15ZWtpWExpSzA3dWJUcHBXS05STnltME1QYlk5SWdUVVF4MHFqdVg5SDlzbkFtMEFuV2xpa1lyVkkwVTd2by1kTlpCci1PemltdWwzUkR2V3Ztd0k4WU9wWGZGMlJOMXNMTGJzZEJtS3pTRmlWdWxWM0JnWHotQdIB6wFBVV95cUxQejUzRUlaNGxKY1FNR3JudEZwVlNJN0x2TjUwakJXMkJpNE9VM3hNcExUSFNEd253ejdVSzlJMnF3dHN4TFF6VkpnLXFmaUZhZGpVSnU3OVhoS3BaNnBsOEpBQmpXdElkeUVNREV3QWlueVdiTlJEUkZYOGpWU2lodktfZlRZSEhMejNubDBYSUZheFh0MWt5bGN4WjdqcmpwdlZnZFM3WnYwbUM0bHNTdmp0TUxMM01Va3BzTVVsRURuVDB5RG53M3pQU0JWTUkyLW5KUW9NczdwME1fa09zRTNhOU9vQVhtbzVB?oc=5",
+      "published": "2026-11-02T04:27:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs raises oil price forecasts, warns Brent could hit $140 in 2027 &nbsp;&nbsp; The Economic Times"
+     },
+     {
+      "title": "Middle East latest: Oil prices slide more than 3% as Trump signals more time for Iran diplomacy - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT2RZbUR3bEtVUzBna1hJbGUwNHBnLXRJQkhtZDRDLXkyNkFlYzFHTU1ndUh0T1J5RHQ4aEpjWVhfT3F1cUVkS2dqc2NIdXFIaTdDSk1BbXJtNmR2eDNMa3M2TEpEbXR4VEtyYmYyS3pDeW50SGhicmNha2NDc0xvTXFGUnJ0UTd3RWZQNA?oc=5",
+      "published": "2026-11-02T04:19:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Middle East latest: Oil prices slide more than 3% as Trump signals more time for Iran diplomacy &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Crude Oil Gains As Traders Brace For US-Iran Tensions After US Midterm Elections By Kedia Advisory - Investing.com India",
+      "source": "Investing.com India",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeWxrV2ZhUGFHLUVQaXU1UVBqRFN2UXdpUHlIbzNzd0ZFZzRiVHdNUTBYSFMwWjUtSU5aUWpqOGhlcXN0Y1dPTU4xYkZrMTRvbEVyYzdXdm9XcU5ua3pxX3gtLVdtNEQ5LXNWQk02NGM5c2kzNnJYYVd3VFEzc3liMGlEYzA3WkVramQzOUhTUzctQmUzWW1GSTNFOE9ObGY4LTlyd1Vqdnd2Q1VQUmdWeUJWQ2tfX0hJRTQxTDh5bTlDX1BycFFEbXRxOTZCMjg?oc=5",
+      "published": "2026-11-02T04:17:35Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Gains As Traders Brace For US-Iran Tensions After US Midterm Elections By Kedia Advisory &nbsp;&nbsp; Investing.com India"
+     },
+     {
+      "title": "Brent crude price slips 3% to $110, WTI at $100.9 amid talks over ending Iran war - Moneycontrol.com",
+      "source": "Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQ29Wdlhwa3ZfdzBRbko4NXZBMXJEWE5RWldmUzNPU2RKNlp2U2s1UjJlRXo3bXVOWGJYWGFrQ2puTm45TnFGaVRyRWE4YWVGV01mUll6RVJrdlBfWVV0emkwN2pPRGMtTGhhM3p0c1JReVludHJlX21hNWZ5T3BzblViRzZHeTMtWVZjLUJ6WUxIRDV6NlFHR254ZTlKdVN6YVJBUjVIR3JLXzRxUGN3UG9QRmhSQXF3SThQbVJqY0dST0lfOGFHVFpfRTlUNUFMVk1jRTd2Q2xtd9IB3wFBVV95cUxNeGlYV1BSYzZTQTNjcEJuRzE2cno0Y05mejFBdmhwc2JkZFZRVEl4Rk9wbTRwRFFUYTlPa0hYaTgtU0FLekhwVFFxNTBBdjB4ZlAwVzFOX2xKWUZSTXhqUGdQdDZyWjAyampnYmF2N3o4MFJTSlJ4cE9qeHhYV20tREZvRlVZZlptazBTRFBrZm1PY0pMV2xSMjVOQmVKVWZKbUdia0VTYW5oQzB2NUt4T1hVaDNqZGRaOHNkbmdURzRZNlJrSEZBdTB3WlNJT0k2MVJhZC1WVkxUSzNEQlpF?oc=5",
+      "published": "2026-11-02T04:17:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent crude price slips 3% to $110, WTI at $100.9 amid talks over ending Iran war &nbsp;&nbsp; Moneycontrol.com"
+     },
+     {
+      "title": "Oil Prices Fall Nearly 3% as Trump Urges Netanyahu to Give Iran Diplomacy More Time Ahead of US Midterm Elections; Brent Crude Drops to $110 Per Barrel - The Sunday Guardian",
+      "source": "The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPelRYMzk5bkRYR3VEWmpVNTc4ME9VMGJUUno3LTZTRkJQeXNXTFNSRWlCRkZlRFBaUU1vdW81TFQwRVFqMHpRM28zY2UtNDdTUVZlOWIxOGJtclR1WkJ4Um90WVlOR0F5Y1VZLW9VZVp0VmpPdHFLWkE2NjBpeXJ5a1Q2MG1KUkROdERFSG9waWxfZkxXQ0pZTFJvRDlLOEhJclZ1MHpMaTJLVkhvSVRKM0tEUzk0U2xGRXJKT3Q0Vll2MUpFMmRRWmw0ZG1SU2wya2FGN1o0TzY2SHk3NlZFR1hPSmdGVlNUZDdtSGg4NkVrdVB6UHktbTZqaFM1Ykw0S0FyYkZoeEd5Q0hVcHpXSk1RZ1dwSk9Bb0JHVTR30gGjAkFVX3lxTFA0djFPZ3ZfNE1oN1NmdlkwLVc5OGhXMDU2cGhWV3NaVGEtbGp3S0ppak9vTnhVTXV0aWJ6WEhBdEJuSUFkZEJpSGJJNDlQRU9TeDEyQTBrLTNSSTR2TnRvZGFCMWREY1pQZ25Tei00ckZSMU1IODNiWGVlcmVPTm9vbmNDblFKSG9HWDVBN29NMGg2c3Z0MDU5dnJQZ1plYjRqX1RYVGc3dDlkZjV6dDdMRnZBaTNuWldjaWlxUGtacTQ0NzlaWkxDNnI4cXlCbVNMbHZkU0VWN2xndENKUldOOTN6bGo1WUJDSTBnT19tR2ctVXVSdFM1eDdnSDVBYmxiZThkMVoxaGxfRVh6MTVuNDFuS3RLb2JsRmt5b1k0aDBEVQ?oc=5",
+      "published": "2026-11-02T04:17:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Fall Nearly 3% as Trump Urges Netanyahu to Give Iran Diplomacy More Time Ahead of US Midterm Elections; Brent Crude Drops to $110 Per Barrel &nbsp;&nbsp; The Sunday Guardian"
+     },
+     {
+      "title": "Goldman Sachs raises oil price forecasts, sees Brent upside at US$140 a barrel - KLSE Screener",
+      "source": "KLSE Screener",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV2hybXpfZ0wzbmZ5OFR2ZEVnOEQtSlBPZHJnMXRJV0FlQVIxUHhFNURIaktXWUtmMm5nU2taaG9iY1FaQXoyZzV4OGRoV2FiXzk0VDBvbWdoUlRvZ0dZcTFSWXZtT3BRWmJ0ay03cGRKNXhGdlZiWm0tRVR0ZmNNNVU0VE5iblNDMW1kY0hxX3ZIRm9IZFh1MlJ4c3ZnNWg3N2EtU0FYVG82aF9FRXAwaWU1MENFSDNjSC1iVmVqMmo5YTRuUnc?oc=5",
+      "published": "2026-11-02T04:12:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs raises oil price forecasts, sees Brent upside at US$140 a barrel &nbsp;&nbsp; KLSE Screener"
+     },
+     {
+      "title": "Goldman lifts December Brent forecast to $105 on Middle East and Russia supply risks - investingLive",
+      "source": "investingLive",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeFUtVUJ5cHdSV1pKYXhtdmQ2d3NVbXdDQUhQYW1oNFF6WnQ4VHVFeWlLeC1FNVczTUQxZmZOVlRUaGdfWUEyZHRVN2lUdk13STRYQnk1LWJ1cWt0aG5NdmNJbmlENlNhWE5UTGU0SXRZUXR0MXFUcXQ1UzN4VG9ybVBKMFhpR0k2TDlzbW4zS2swZW8wZERjV1dsMzFiUHJjNzFyRkw0QzRZN2NsbDZqd3UyZW9zSEYwRERiRTYwbw?oc=5",
+      "published": "2026-11-02T04:07:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman lifts December Brent forecast to $105 on Middle East and Russia supply risks &nbsp;&nbsp; investingLive"
+     },
+     {
+      "title": "Goldman Sachs significantly raises oil price forecasts! Year-end target for Brent crude lifted to $105, with global supply potentially declining by 1 million barrels per day by 2027. - \u5bcc\u9014\u725b\u725b",
+      "source": "\u5bcc\u9014\u725b\u725b",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRF9iSTZYTWQxN0hLZk51TnB3YVJ4T0pnOFdCU3NZTU9tNm1zbjVEZTZLZElWQ21qb1locVI2WUxNQS1GWkdocEVVTDR1blVLem9GcmJkMzNqQi1UOTJVYzc4dzZFRG9TNUlRcEU5eEdBXzY1RVc2Ry1JclRIZ0VHNGFORENPY1FzdmFvWl9YTzA1bktCNG9QdUhJUDRiWHpNaWIyc1ZMaHBsS0hLVERQVGozWQ?oc=5",
+      "published": "2026-11-02T04:06:04Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs significantly raises oil price forecasts! Year-end target for Brent crude lifted to $105, with global supply potentially declining by 1 million barrels per day by 2027. &nbsp;&nbsp; \u5bcc\u9014\u725b\u725b"
+     },
+     {
+      "title": "Goldman hikes oil-price forecasts on \u2018substantial\u2019 supply risks - BusinessLine",
+      "source": "BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWDdnTGZwSnNKWlF6Yjh5dTl3TTZtQUo5SFJvSmRLNm5MZVhrNjV4TEJUOTJ1dDlQSFFMbTZZY3VTdDZ6clF5Z3h3TFRScERUMDVwVExvNjluaFAyX3hqOUZlamxPaVZ2Tkl5aU1HTXdlOTZUalphR2xtU3Jyb1lpUmJSdTRUeXh3QUlRSW1fZkhWWjR3MlVZVVBrWDFCOUI5U1dJbUZRWnFibmRCbkRNRlNXemdGSEtCeVFlNzVXQm41cXM1MG5FbWRWc083S3ZFRl96NtIB2wFBVV95cUxOeEJyZXZoVEFsdkd1S3ROM0hudWowSUtQTnNEMmZEeFZXSElNMF9yR29qWVpRVFM1enhFS21wbm9CY0VDd2x3WEhCNjFqdndncEJFaktUM19FZ00tMHJYekFRUnVXSDZ3b1Z4SDVZbkdZM3R2Q2xCZ25aaENDZi1OQk4wdXF2dlQtb0czdHpfTmJnZUIxdm9pdnYwb3RIcG1qci1fTjZtamVrVmFQWWxkcDVuTVIxM1VlSkJuT0UzVW53OXFMelNvVnFuQ2JyZjJOZnNleHVZVnhnRW8?oc=5",
+      "published": "2026-11-02T04:05:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman hikes oil-price forecasts on \u2018substantial\u2019 supply risks &nbsp;&nbsp; BusinessLine"
+     }
+    ]
+   },
    {
     "id": "brent-1793574652",
     "detected_at": "2026-11-01T23:21:04.114462Z",
