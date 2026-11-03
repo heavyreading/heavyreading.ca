@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-03T13:01:09Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-03T13:06:14Z",
  "data": {
-  "updated_at": "2026-11-03T13:00:55.737009Z",
+  "updated_at": "2026-11-03T13:05:59.259879Z",
   "events": [
+   {
+    "id": "wti-1793710560",
+    "detected_at": "2026-11-03T13:05:59.259879Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-11-03T11:55:00Z",
+    "to_ts": "2026-11-03T12:56:00Z",
+    "from_price": 98.55,
+    "to_price": 96.99,
+    "move_usd": -1.56,
+    "move_pct": -1.58,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil Prices Rise as Middle East, Ukraine-Russia Conflict Fuel Supply Worries - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUnhpZVZHQUliUnJIQUJWb3JmbVl6VV9GZ3NJN0M3X0EzZU9pa2N4SEcybGNlakZkcmxyeVNqV0E5LWRxTU1VZUM4Uk9TdGZTS0RJLU1CZ1JVVFBlM0pTcWFPd2U0b1RFTkVyV2oxSzNwZzYzMjBwVmRtbUFvWUowS1RPSEQ3eE1Qa2ZQQVJ5SExsbzVXQTQtNlZYRC1Bbnh2YmpnZ2VGaHZLQlJDRWJRZEZOU2VCZ1hPcENQcTUtYw?oc=5",
+      "published": "2026-11-03T12:59:49Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Oil Prices Rise as Middle East, Ukraine-Russia Conflict Fuel Supply Worries &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "After Brent Crude's 75% Surge This Year, \"Commodities Godfather\" Currie Says: Time to Take Profits on the Short Term - finance.biggo.com",
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YblQ1UWROdW1BUlp1QTVmZnBhTlpua2ZGX1QwTEJmbkpMWVNEX0lhY1BDa09hdDd2aW9kUUJUcU4zaFVsRkhfWmJiNlhTelFwZWx5NXpXNjNKRlBNbXRwNmpkY2xMOUxJbXFXQlZMUWxPbzA2Tnc?oc=5",
+      "published": "2026-11-03T12:56:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "After Brent Crude's 75% Surge This Year, \"Commodities Godfather\" Currie Says: Time to Take Profits on the Short Term &nbsp;&nbsp; finance.biggo.com"
+     },
+     {
+      "title": "Saudi Arabia Looking to Expand Exit Ports for Oil - Energy News Beat",
+      "source": "Energy News Beat",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSk9zOUVSUUJJYUEzaFVaRllQNEFNREdUMFd2aHB2ZEplQnpXRDNjdjJkZXdrRlI5Y0ppTzB3U3NINXRTOGJ6THJFYVJJSGtEVGFZV0dsYWtFU2p6bFk0NWE4SXNwZlUtRG1FeHk2ekZIX3NXSVhLU3lfelNJdHNXMG4wSmwyN0F4Sk4ydml3VQ?oc=5",
+      "published": "2026-11-03T12:46:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia Looking to Expand Exit Ports for Oil &nbsp;&nbsp; Energy News Beat"
+     },
+     {
+      "title": "Crude Oil Prices Jump Over 1.7% After Reported US Attack On Iran's Qeshm Island - Oneindia",
+      "source": "Oneindia",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPT3lPMTdoMnhLYVpSa1hubWVQVlB1TTB0ZDZEVVFVWUxnY2tHTE1tQUxQM1pZRE9sQ0w0ejR0aW1vSG1PUzB2TndTSXhmZDdRM2k1WXY1UklaamY0Vm9uS1NDanV6MFdibTNCejFsbjlXQ0c0cFRwaFNHM0ZDU21vcHY3SDdwQnVyTDlQbVgtdU1NdjN4aDBRWXlidFBYWVJlZ3VCcTFweXNObXZLeEYtaXQ1bzNjYzEyQ1dzMGRjQ1RQQ2doTFlkYg?oc=5",
+      "published": "2026-11-03T12:45:06Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Prices Jump Over 1.7% After Reported US Attack On Iran's Qeshm Island &nbsp;&nbsp; Oneindia"
+     },
+     {
+      "title": "Goldman Raises Its Brent Oil Forecast To $105, WTI Crude To $94 - Exchange Rates UK",
+      "source": "Exchange Rates UK",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOODNGeHoxTHdteFFlWU1fOGRXd25MR0h2SnYxT2M2MnVvOFduZmJIRF80eG9HM3R3cHFPRF9oeXRiYnpEdEV2b2FMbjFfRGtmNHUxeHlXMHJQYktDN0hXeTRmTzRoRE5ydXpJSnp3emZOQXJ3bWdpN1BfZFlMdHVpaGQtQ2ZFX216b0hXVVRKU2VDajdIQnhPSHdURXJJWVpLLThURkUtVmxjT1BFMk1jX3hhYlhraVpiSENadQ?oc=5",
+      "published": "2026-11-03T12:45:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Raises Its Brent Oil Forecast To $105, WTI Crude To $94 &nbsp;&nbsp; Exchange Rates UK"
+     },
+     {
+      "title": "TSX futures drop amid rise in oil prices; U.S. midterm elections ahead - Investing.com Nigeria",
+      "source": "Investing.com Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONEVtbjR0U1hsa0dzX1A4R1dLTEg1QjZjRU5vX0NuWVpfdy1wVmszNVZTQURNcVZyaUl1RWx5ZnM1WmJ6MlhiVldZLVRSNWhpekhEelpaWXI5UWRQZUt2ZUZvWEZMUDdXZTI5bkROcHZ6b0x6RklhMWI0WnFnOENwSmpkcG9fTWhVRmVtbHJudFlpazVyWDQ4M0hVOGxhcVo5a0o2NUZ4cUY5aEJjY0ZUeGphREpjaV9OVFBwQXhmTFQ?oc=5",
+      "published": "2026-11-03T12:44:40Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "TSX futures drop amid rise in oil prices; U.S. midterm elections ahead &nbsp;&nbsp; Investing.com Nigeria"
+     },
+     {
+      "title": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks - BNN Bloomberg",
+      "source": "BNN Bloomberg",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQR21QdWJMNGFqMTE2R1ZxeFBxR0NnUl9ManlPczRHallrSzVfeXZISEJxUnl3eTJ6Z1RBVXhNYmdreXluZnVQempGUTY5TXVHZ2s5b04xOUFRZFlXcjcyS3puMXRZOGFTMkpYdEtOUElwMUp1N0VPWTYwaXoyUGR5ano3OFBXdFhvVnJiQ0VaSzgxSHR2TFRJTi0zRTJ4cEE3eHN4Q0xiaUJreWVPYi1tNkRnc2I5RkNjaGdLdkR6WlRja29JX0RN?oc=5",
+      "published": "2026-11-03T12:38:36Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks &nbsp;&nbsp; BNN Bloomberg"
+     },
+     {
+      "title": "Crude oil tumbles aren't helping diesel - Axios",
+      "source": "Axios",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5LOEU0RE1VVURSZUpaNC1XdnhWTWRPTkhpQlJpanVqaWZwYkNIS012QTRPcFNaUzR3aG9RNW9yMkQtY1JvQUFXVXV4UjNUdVhzSUk2ejlueEpyZXRNamR1M3RaMGFabFE4Rkg2c3JPQk0?oc=5",
+      "published": "2026-11-03T12:12:31Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude oil tumbles aren't helping diesel &nbsp;&nbsp; Axios"
+     },
+     {
+      "title": "Aramco profit rises 9% after East-West pipeline attacks - Gulf News",
+      "source": "Gulf News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSGZQZndoSDB5VW0wMTVmVGpLaXV1TDA3QjZ4bllkLTdLNjVRZFJBajdFd0M2bzlIY1QtcjI2YXYxSXR2MU45RDBsWl9kYXpFODdzSDBnbG1iT1F0Q2lSalVNbEhHem0zSWlHb3daa0tKbDVDOF91NTRMYnNTeE8xbzk4NnFUbmNCMEREVnVIelBjeFY5YzBYUTNWY2jSAawBQVVfeXFMT1ZJSjB2Qmx4NWEzeWJyNVFiZUVJYS10NzIxX3RBSzhDdTFZaTNiVEI5VnBYaUVHa1Z6WjlnZXJvdlRvQUdQZ3ZoMWJZWHdmdHJ3TXhpYktCS0d6cWNKNi1WY3BRVXdRTkN5bnJUTXVmZW0wMkNDREl6M0h5ZmdrWDd0YklzQTN3blVRNXk3SW9uRWV2Tk5FbTVyMHhsaHVneGFVNzhUTG5Oa05wYg?oc=5",
+      "published": "2026-11-03T12:06:15Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco profit rises 9% after East-West pipeline attacks &nbsp;&nbsp; Gulf News"
+     },
+     {
+      "title": "Republicans could pay political price for surging oil prices in US midterms - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdnpSdU56cktfa0otLWhuel9iRkp1VVdzME1Ra3pieVJ4Zk14aUdZUGpJMF9QWTl6bWVnSnJnNTNZNk42V1dDLVpfaG90cmJUUnh5UzVkUGdnNllHUnQ3MllZdmJka1JFSWtoTHUwNFRPNTZBdmdqcnJ3bTByWjJSQks0em92RTFjSGszUzZnSklUQUV3bVRjRWRtRmRfb2ZFYW15YUdlbFZCejJPVU5SOC1peFhDdGJx?oc=5",
+      "published": "2026-11-03T12:04:36Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Republicans could pay political price for surging oil prices in US midterms &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "Aramco Profit Beats Estimates After Refining Boom, Oil Surge - Bloomberg",
+      "source": "Bloomberg",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUFZidUVNR21lLTV0emU0cjY4MmRHRDRNNHl4ODdlN25Ea1hkQ1ExQVhxNE1uWmo1TzRlUm5DR1c2a0dKU25uN3V3d2JxTU9pQkJHaGx3bUZRaUNfWVRaZDBTOFd4QjZGaEx3WkhleG9QWERyTEZ0Vi1RenV2TVBtUWtUUGhBNkEtaXpsc0sxZ3ZSNzZRWnBqU19kWE1OWVZiN2VFOVpNNENVS19LdklN?oc=5",
+      "published": "2026-11-03T12:03:06Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Aramco Profit Beats Estimates After Refining Boom, Oil Surge &nbsp;&nbsp; Bloomberg"
+     },
+     {
+      "title": "Current price of oil as of November 3, 2026 - Fortune",
+      "source": "Fortune",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9KbEJ2X1pJTHNxWHJwOFFURW5FNUtubUpydG54dDh5R3RXNTNzSG1QTVNHUUNJSTFRa0JGSVdPVXQxWmhoZ0IycjhMbG1XWWx0eE1zTk9ySG1WRG9lTndpaGFR?oc=5",
+      "published": "2026-11-03T12:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Current price of oil as of November 3, 2026 &nbsp;&nbsp; Fortune"
+     },
+     {
+      "title": "Aramco begins engineering work to expand East\u2013West oil pipeline \u2014 Asharq Al-Awsat - UA.NEWS",
+      "source": "UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWkd2dWhVQmJiazdWQW9jMnVfM1Q5Wk8yZUJ5ZEtUdUJRdjVNcEJtYTdiLUZSUDg5UHNFekVyeG9melA1NVkxaGZJWDIzdG5JZnRxcTNjTG1HRFNNbERDa0tEUzM0dUl4c1lfZVJ0dTNlU1M5VVk5LXFIc0NYQlFpd240Q0VsT0twa0YzczZUVGFqRlZUTTNsN1cxSHBXUjJmX3RDQlBEZlJ0LUNOaFhXcDFkUGNRVzFiTVFJdEdGTjBZZzA?oc=5",
+      "published": "2026-11-03T11:59:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco begins engineering work to expand East\u2013West oil pipeline \u2014 Asharq Al-Awsat &nbsp;&nbsp; UA.NEWS"
+     },
+     {
+      "title": "U.S. strikes Iranian targets in the Strait of Hormuz, official says, leaving unclear what comes next - WCNC",
+      "source": "WCNC",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNkNlcndWMjVkRFhvVl96MGlYdElKdFJldHRjMThTbExGLVUxVElTMUpFVWVoSHFhNTJHdl9JUHhSRHo1TnhWaG5SMkpuY1hLcWRjSndxMHNRYVdvSURhdHg5OFdIQjF0V18wU3I5Y0ZzVnQtY0FWTmxDS3Z1b3ZGanNXbW5mTm56NHNLdTVJaVlSQmNoWDNnLUM1QVNQNUg3UkdmSlpxNzZRSElfQTg2TTVMV2gyQ041NW1nblpmNFZwblNhV3pNRWRRem52YzhvajJ3Z1A1SmhaSTBLaXJiMXJVTmljaVdGS0E?oc=5",
+      "published": "2026-11-03T11:57:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "U.S. strikes Iranian targets in the Strait of Hormuz, official says, leaving unclear what comes next &nbsp;&nbsp; WCNC"
+     },
+     {
+      "title": "U.S. MIDTERM MADNESS: Oil Prices Rebound as U.S. Strikes Iran\u2019s Qeshm Island, Renewing Middle East Supply Fears - WTI Near $98, Brent Above $106 - EnergyNow",
+      "source": "EnergyNow",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOWW9aTHVCemNnLUI4UGI0MVBZU3BtT1pIMkZ1MS1mTHA1M04xakZ3YS1id2Y3cFNGQ1VHaWFfRzRHU21kT24tNjYzYVNwSS1wcWlMNGRSbWxkd1dTVVNad0FpMnhUU05yWWlfdG5CWWM0a3RodFgwQjBEeFRwRnhuM1BPQ0syQUVjZ3lMOTdyaWlzNDZ0Q21BRzJMbEs2d3ZhenBqV1Z4VWRSb3J4dEtfVF9BdDViU1BHd09LRnJQYVdCbzVPY0pNd1c1QzBGQ1ZyMXpqczQwWVQtOW00aTdqQjF1TWNkMEtRd0xMem5vc0NLSEp0WFg0?oc=5",
+      "published": "2026-11-03T11:48:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "U.S. MIDTERM MADNESS: Oil Prices Rebound as U.S. Strikes Iran\u2019s Qeshm Island, Renewing Middle East Supply Fears - WTI Near $98, Brent Above $106 &nbsp;&nbsp; EnergyNow"
+     },
+     {
+      "title": "Saudi Arabia Adjusts Oil Export Routes As Regional Disruptions Reshape Global Energy Flows - Forbes Middle East",
+      "source": "Forbes Middle East",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUWxycXNvd2RZQXBpcEZwMWI1ekhsNWdVWVVEQUxiWWVxZ0ZwY3lkN1pKcGNSQjlBUlQ3cUZVWUV2VWpGTDNvMzdHZmxsV0NMS2g5WUlmVmlQZGVaOE5lbTVsNWwwSHNzNU55ZC13VUpkX21HRDZwOEVTeHBETUlPaExJaERXZVNvY0pQTDRNcDR1TEhYX2JIaUpxM1p5b011dk44Nlc1cUx1RENRcF8weTN6WlpnaGwxYjJqaERSdElHVVpkWnZUMm1ZTDZOMHFwMFJWU2xnUmZTZ0JWTG54dXBB?oc=5",
+      "published": "2026-11-03T11:37:31Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia Adjusts Oil Export Routes As Regional Disruptions Reshape Global Energy Flows &nbsp;&nbsp; Forbes Middle East"
+     },
+     {
+      "title": "Saudi Aramco Plans to Maximise Oil Production as Exports Recover - Equitypandit",
+      "source": "Equitypandit",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUnFNWWI0SkFNNDFTbkJBSUwtWGk2X3NIalBiTWRJZFN5ZG1faW42V3UxaWZNNlNUVVl6U1A5cmw4N3FTSW5HOW4yTWJMVHhUdFdvcVVtMkZ6bEg5Zjh5NVRzX1dZdWdRZWZmc1NZTG1MZktXV3lZeGVDdkJDdEhKTG5reEpUblZEX1RDNG5qbk0xSnY0bWc3aUhR?oc=5",
+      "published": "2026-11-03T11:35:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Aramco Plans to Maximise Oil Production as Exports Recover &nbsp;&nbsp; Equitypandit"
+     },
+     {
+      "title": "US Strikes Iran's Qeshm Island, Oil Prices Surge Above $106: What Happened Near Hormuz? - The United Indian",
+      "source": "The United Indian",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUUliRjFWU2gtRmVIeFBqRld0WlJkdS1TOTVpSlhKdDVJVlBYRUJFMWY0SUFxQ24yX1RRa2hPVGFlcno1cEhBRURmQzJFR2NpWHEwZmRYMEtXVjBZSkFkU0tibGc5eTJ2OENmYk93ZGZLQ2UwSGpYamVPaVdJY2l3aEZMbzZtTFRscS1Rbm9R?oc=5",
+      "published": "2026-11-03T11:27:21Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US Strikes Iran's Qeshm Island, Oil Prices Surge Above $106: What Happened Near Hormuz? &nbsp;&nbsp; The United Indian"
+     },
+     {
+      "title": "Aramco looking to circumvent Strait of Hormuz via pipeline expansion, CEO says - The Jerusalem Post",
+      "source": "The Jerusalem Post",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwMF9yQThid09BLUZicDhxWUtfQlBJYzBzdTkxR2xXMUZwMVEtR1hfTVZHOWVHV19SSkV3cUZYQW9MU2FOcEZvbi1IWFVmLU5RZTg5aWVjc3djYy1s?oc=5",
+      "published": "2026-11-03T11:26:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco looking to circumvent Strait of Hormuz via pipeline expansion, CEO says &nbsp;&nbsp; The Jerusalem Post"
+     },
+     {
+      "title": "Goldman Raises Oil Price Forecast for December as War Risks Cloud 2027 Outlook - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcTdQNFZUZ3dyYjJ5NzE1cXZWS0lYU0szZHVqa0lCdzdmekMyWk1ZUk1yZWVUZkkxNU8tNjhCOXJiQ2VfNzBqWHY2ZUNROHZlcllncGEwNGQ2TVpJSS1BT3ZMUmZBMkFxdF90dE1uYldva3hXN1JHRmt1UGxjbDg3RGVaVkJ5SGM4M2ZpVktGeXRoSDkw?oc=5",
+      "published": "2026-11-03T11:22:01Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Raises Oil Price Forecast for December as War Risks Cloud 2027 Outlook &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "Oil Prices Jump After US Strike Report on Iran's Qeshm - Bol News",
+      "source": "Bol News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM2pXMHZnRWZTRG4zUHI0czRLeWpSaG5waE55RDJoX3Z1LUZiSl83MHpMbm9ibi1lNy1EZi0xU3RBTzJwUnlsOUdfY255OHlWaUt5d3U1S29NRm5SZXpnVVhZNlBTZ3lvOGhLU0hSS2g3bTgzOG02UmJORGhKVWpYR2o0OFNuNDRsNUdMcnZQM1oxY3Q0dF91UQ?oc=5",
+      "published": "2026-11-03T11:12:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Jump After US Strike Report on Iran's Qeshm &nbsp;&nbsp; Bol News"
+     },
+     {
+      "title": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks - WTOP News",
+      "source": "WTOP News",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQXhwQzBaTFJUUGFFcXpmTWZYV1RvRjhHQWdBMmJWYTlLTHZEVHNtTEhWMzMwcEcxeFhQbXZtbFh6NWVUWXRpRTFYUG1DNGVfLUFHQjF6Y3NETkx0LUVVYkE3MkVyazc1YWRDYjNMUEJPSjJneEtqTTVaanVObzZMd0xmUWpBektiemZzMTJHMm9sQy1DSktTZ09tX0puSVpkbXRWMTRyT2NJbXJw?oc=5",
+      "published": "2026-11-03T11:05:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks &nbsp;&nbsp; WTOP News"
+     },
+     {
+      "title": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks - reflector.com",
+      "source": "reflector.com",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOdWZmVHpZb1hSbHdUNllzNDlVRmE5NW12VXRLWWp5WXd0bTdUWDhISlJ5VldoUF9SeU1uMTNWZVczN2FCYmpKM3d1bTlXeDlHVW9VZlk5S1dFZzJEQl9NZzIwdEtBQTRTT3NmTzZEYmROZU1tT1ctbTdDNkVnUE1GdElXZUFqQWFZS3liUzV6MThfWkFUUlU4NWpLWk5rdFZJcVNxUnE0S0NjdzJ0WkRvM1k0YjVrR3NraVd2bDMtcmd4aEZJWnRLV25RRFo5U21zWmlSSldYQUhQNFhIUERWRWhXeXY0NmFQSU1xZGZBRHlZVUtacG13X0RB?oc=5",
+      "published": "2026-11-03T11:02:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks &nbsp;&nbsp; reflector.com"
+     },
+     {
+      "title": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks - WKMG",
+      "source": "WKMG",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOb19QdW1BR1ZHYTdFV21RbnRDMERZZk1DZEpaMzJKLUM0VzFuMk4ta2FsVk9mSWZicTI1U0dFV1NaUGFjUjZ2bExKV0RqTlkzc3l2Yy1vUmQ3Y2ozQ3FqaXJIczhBVHJJb3hJSVBrTDFqLW9la3NDQnFsT21rRUoyMmU4MHNJejBNVEF2bDh6aUVXQlVIZFBKX055RUZRZ1pialVscUdZYURpWXVwaHhLdDRBeXdhUWVHQ2haNU56NXZramE0?oc=5",
+      "published": "2026-11-03T11:02:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks &nbsp;&nbsp; WKMG"
+     },
+     {
+      "title": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObHotaUhjbDNvOUdOVXAwenQ2SklzT3dUZXc0S0JsSjItbXNGS0hNUDJvR01rM0k4SnlJbXZBSDhGQnFKQmo0eHNtRTc4X3puS2RXeFpKUEo2ekpSWVExelJteHVhVldlempxbG1yZnJTZlMyUmpMZ1pBV0pEUjlMNmFfX1hOLXVzdFZNSDZ1QQ?oc=5",
+      "published": "2026-11-03T11:02:49Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks &nbsp;&nbsp; Yahoo Finance"
+     }
+    ]
+   },
    {
     "id": "brent-1793710252",
     "detected_at": "2026-11-03T13:00:55.737009Z",
