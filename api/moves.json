@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-03T13:06:14Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-04T09:36:33Z",
  "data": {
-  "updated_at": "2026-11-03T13:05:59.259879Z",
+  "updated_at": "2026-11-04T09:35:58.542244Z",
   "events": [
+   {
+    "id": "brent-1793784362",
+    "detected_at": "2026-11-04T09:35:58.542244Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-11-04T08:25:00Z",
+    "to_ts": "2026-11-04T09:26:02Z",
+    "from_price": 104.03,
+    "to_price": 102.35,
+    "move_usd": -1.68,
+    "move_pct": -1.61,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Treasury Secretary Bessent Says \u2018The World Can Live Without Iranian Oil\u2019 As Trump Weighs Further Strikes - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNT0JYak5PcmlWLW1saktHZDdydVFhUkZValc3MVVmQ21qaV9WQ3B2bDllQlY1OFI0MGZQVW54al8xaWxKQ3NkRVlnU1ZaVlpST052TmE2MThCNkdzV0NSU3cwdnlFcTFiRzY4WmJudVY1NFZEa3plMFNETVBrNVRCWUl1QUhoYTU0OVNfX3VySGxmRTV4WUJtelJn?oc=5",
+      "published": "2026-11-04T09:12:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Treasury Secretary Bessent Says \u2018The World Can Live Without Iranian Oil\u2019 As Trump Weighs Further Strikes &nbsp;&nbsp; Yahoo Finance"
+     },
+     {
+      "title": "India Races to Triple Coal Stockpiles to Prevent Summer Blackouts - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOV2hVQ0pjYWdlZzFDeVVlci1RWnhhSm9LNm1yNFBNZWNjNUJmd3lsQ2ZkdzhLR0VEbXFtbUFMdnctN1cyTlZqVHBZSWZvNTVGZmF2Y1RZS2hkdlpRUFJqRjhlVnM2MDF1NFNQaU9pRy1OVkZXaWowcjVoVkVnZHNPVGM5TXV0UHdiMTFSRXoyVGt1TnNDUF9HbkczN0xyb3NnY1VUVmRPQnhNY2EyS3dzMHhwajVKOTNFRFZkVDRR0gHDAUFVX3lxTE9oRWF0dXFHWm5ud0ZhbjY0V0p0Rmt0cGQ4NFpGWmNhdU03bzA3SFBEOUhsdXdyUHZWdkFqNW4zb042ZzV5SGVmblNhTXR1UU56MjdtdUY4aWRjaWZFSUxjYW16aGFJRDJRT2tNSmlXYjdjNkY0ZVFZdkw5ZTlaMXBCVUNFR24tNEh3b2VCd3NER1RLblF3T0l0bER6TGxqOXlDUEV1c1BlVnpvWTJTaTBXdmh4UGZhRHJ4VG9JU3ZDeWlJRQ?oc=5",
+      "published": "2026-11-04T09:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "India Races to Triple Coal Stockpiles to Prevent Summer Blackouts &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices climb as uncertainty over Iran war deepens after US election - RBC-Ukraine",
+      "source": "RBC-Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTTRPamppUmg5RjZqb1RqZ1RLUmVMNkRrdUQ5bWdZbzZIeXdsNEllanlndmljRGNCaW1handDQ1I5VEZtUk1ReUd2NkNjdlZuM3hFWlZYOEJFSU9tVXl3azhnYlNnbmIyYWFidlZiRVU5bEw1ZEMzR0dSUl81WEM4VVVSOEV3R3E5THY2ZDcxcmF4aGc?oc=5",
+      "published": "2026-11-04T08:50:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices climb as uncertainty over Iran war deepens after US election &nbsp;&nbsp; RBC-Ukraine"
+     },
+     {
+      "title": "Global oil prices fall amid Middle East tensions - GhanaWeb",
+      "source": "GhanaWeb",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQWJfQmZJMndsNWdack1CbTc1M1dIYlAwWTk1QURLbkZNNS1UejVIdFFNMHVXV0ZVSU8yZ0xwV2tvLVphUmdIQWJreWh0N01sa002OXBWenRablZiYmJGTWFyUGM3azVMQnBSdHdFOUd4TmpwVGlmbFVpYWNpdG1GNmlFOEFSUVFGTlZ5SXlYR21zSnF4UkU0eERQUnZEOHpRMHhSMkpfVQ?oc=5",
+      "published": "2026-11-04T08:47:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Global oil prices fall amid Middle East tensions &nbsp;&nbsp; GhanaWeb"
+     },
+     {
+      "title": "Global Oil Prices Plunge for Second Day; Brent Crude in $103 Range on US-Iran Talks Hopes, Midterm Election Factor - BigGo Finance",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE02b1oxZDVVbF9ZRUc0M2V3YWhyNWhBZlFJTzR6Z0pqSC1NLXlDQU1DVkNrS3kzSS0yUUJjZ2FWRm5wUHFyeGxEZThIY1NjaVdwenlYXzlIVGlNMzNOVDNSU2dwcm9TSTJ5WXRHTTlWY0tvUXpsNFE?oc=5",
+      "published": "2026-11-04T08:45:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Global Oil Prices Plunge for Second Day; Brent Crude in $103 Range on US-Iran Talks Hopes, Midterm Election Factor &nbsp;&nbsp; BigGo Finance"
+     },
+     {
+      "title": "Oil Prices Rise Amid Uncertainty Over Iran War... - Jordan News",
+      "source": "Jordan News",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUlo2aXFCZkQ4cEQxdmwwTTlERkIxNVlac3drZ2hmcmRwM2RVTGVwM3AxU2U3YjJRbnNtSG83T0xKMXFCanlGam9wQW9tVTFHYnZoZUtwSUhrWGhQMlFmdGNIZ3RoQ1RLblF2bGNEQi1IclFreDl3SnVSb0pfVXM3ZUppNm85YnVGNjk2UUJTSTJOSWhSeFEwSnQxMzBkWGs?oc=5",
+      "published": "2026-11-04T08:30:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rise Amid Uncertainty Over Iran War... &nbsp;&nbsp; Jordan News"
+     },
+     {
+      "title": "Oil prices rebound as Brent reaches $103.60 - grafa.com",
+      "source": "grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaHhNMmgyZlRrMFljQjlaWVdXcTdaQXJlcWVXeEswaXI2ck50SVJSaXNzMHRuWldvMGMzY012Y3d5MWRKMmhfdGlieHJ6WG1wTUN4MGhhalEtVUVobmQyT2JkTVdfbTl1NHRvOVdidEU2Sk1vMlpUb2dTYzVRWEhiSXJUYWpnaHl2T3lGUHNEY08?oc=5",
+      "published": "2026-11-04T08:28:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rebound as Brent reaches $103.60 &nbsp;&nbsp; grafa.com"
+     },
+     {
+      "title": "Oil rises on renewed US threats against Iran, diplomatic hopes cap gains - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOc3BDRDg0dVl2Y21rY3FwNGFJcVR3cnJvQndvRFNRbFF0dWFiYng3MUV5a1EtN0hYMXV4MlpwRWJtVF9TRzRlOHRHNWowUFBNV29odVcyNG51M1lFbWVLeFhER0JNVmMwRUJVSlkzU1QwRl9IdkdLMGg5dHJFcnZsSHFxanVKSVJQTlZPSGFva3hLSEVWUk5HUFRUZE5hYVhaRzliaVFtc3RnMW1XeGdLUk1KVQ?oc=5",
+      "published": "2026-11-04T08:27:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil rises on renewed US threats against Iran, diplomatic hopes cap gains &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "BP Appoints Former Shell Executive Emma Lewis to Lead Downstream Business - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRW1QZVhMU2NwMHdTZjdWaktCeWdWbGE1cHBOWTNqWUMtWmZuR3NRYWx2NnBZaXpTajBobkV4TzR0NVU4bk4zdHVwTXl4RTdQX3dVd0hzMmpDUjhBSG1nUzZhY2N3MlowN0RZaTVZM1RXNFMyOTJUbnNUMDJUVzk0ZkdyMnJyemEtMFZ6X0VkM1o1cnhlb2Fnc0FYbmVUeWg3d294U0FNX2tja1lrMGZPeUVB0gG3AUFVX3lxTFBtdzRjMnBTVEh1OHV5ME9XRU5rZGZHbkhnMHBJei1JeGNZQVJheU0zME01Qmo2RmViRk1NUXlkdkpTZk1OZVRSZThsME9EUFVoM1VfTEl2UVJHeHdDM1pjTk1ZUFJWRlg2aGN1NVptOGRieHN1S3VibjFiRnRTMFBZY1JoSUdNLVZmSzhJOW1fZGhfOGRHa0JnWmpXU2RKYm15NFVjSGgzSlZBSTV5akFRRHBURzBDdw?oc=5",
+      "published": "2026-11-04T08:22:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "BP Appoints Former Shell Executive Emma Lewis to Lead Downstream Business &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Crude Oil Market Update: WTI and Brent Ease, Curve Remains in Backwardation - CMB News",
+      "source": "CMB News",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVHV4bjg3N3dxakMxUG1POVNuMWxRS0FEX1ZxQ3poRGNFczhkalN5YjIyX3o0b3BteXFkR1hYS29tUHNLdUhFTTA5M3V3WVBtUG1aRkd1UUlCcmpLLUN6UDZtVXRrM3dGYWRpajdfVjZKbm9lcDhPLWxzUV9saG9EMFo0UEFQVTVFVExkNmI3LXZMaVBndHc?oc=5",
+      "published": "2026-11-04T07:50:44Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Market Update: WTI and Brent Ease, Curve Remains in Backwardation &nbsp;&nbsp; CMB News"
+     },
+     {
+      "title": "Aramco's Resilience Pays Off as Profit Rises to $31.2 Bn, East-West Pipeline Expansion Advances - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ0VfV2RSUFp2R1BQcmFrU3BsM3lSOVd0d0hyeFhJV1FuN0pyRUR5T1labXRMWGRITnVyalR0ZElHMUxNSFBnVy1ZcjN0ZXJUWElhZ1BMWXBpVlRkenRiTGx1NVlqbGJmZkxKdXFGcm5NdlRObFBGQWlhQWFJUWtPdjBjWXd4OXpaVXE0dzR0LWR1bDFhbDItMG4zWjgzZ2ZhekM0Y0dES21PZ1RLZkpzX2tXQVh4NEVmRk01WWFaeG9EckU?oc=5",
+      "published": "2026-11-04T07:46:42Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco's Resilience Pays Off as Profit Rises to $31.2 Bn, East-West Pipeline Expansion Advances &nbsp;&nbsp; ASHARQ AL-AWSAT English"
+     },
+     {
+      "title": "Oil Prices Rise as Investors Weigh U.S. Midterm Results, Iran Risks - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVGZJRGVaVkdJaDR5b1REaE5CdWQtY2ZlczBhUXFWT253Vi0tMkNoUVhSNUI0Rzlqbnc5UnVVS0lqN1kwVzZ3eTJ6ODByNlc5ck5HYmlkMEVyRzlrVDNFdk8zQ2JuRWdQLUdYc3ozNUVCc3hRSGhDc0tKNW9QY1A2ZVpMZC1PNGxqUU81QkQyZms0R1VxWUUzbTRLSmYyUTRvM0ZHVmVjdTRpZ2NxLUJkcFlQZzY?oc=5",
+      "published": "2026-11-04T07:40:00Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Oil Prices Rise as Investors Weigh U.S. Midterm Results, Iran Risks &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Oil Prices Rebound as U.S. Crude Inventories Unexpectedly Decline - GuruFocus",
+      "source": "GuruFocus",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM2FGUHdwT1V2bllkMXFFY3VTaFNycXJLdXkySjdfYzJXckowZGZoRlo2RDA5S21wSVFydXVnZHB4S1FLM28yc1ZFOE1UOFhENXRwVE81UzB5VHdJNzhpS0psbHVTWi03OVhaaUw5dFdNZ2hqTXc4R3M5cFNHd3JoTXZ3S240WWw5TDJnTkI0c3lxck1VWnZzYkhvVnFmWWRvMVI0Uw?oc=5",
+      "published": "2026-11-04T07:35:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rebound as U.S. Crude Inventories Unexpectedly Decline &nbsp;&nbsp; GuruFocus"
+     },
+     {
+      "title": "Iran says US reply to Hormuz plan \u2018unconvincing\u2019; Trump confirms strikes - Al Jazeera",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxON1ZqTGJfa3lWVVdvUzRRRUc3TlVVYUNFMHhkWlREdDZsYUFzSmdJVjBhcU9PaEptVWRxRm9QMnRGcmpkYkNHVXgydHhJYTd6X0d5dF9JMG1vc1dVOWtBWWxBUTB3VjhkZlAyUEt4cGhPUlJIRzR2cFhkdFVoOEc4SkRkM1FRQ0FpblBPZHh5S3JKMl9zbUhjeUlVazhmdkJ5QjRaUXJ6eV8taGNpV3lv0gG0AUFVX3lxTE1qMndoTmRKR0xGNDZnMVJYWmdselZrTXdiXzFKVjgwQW9OZ242eHJDWFlMa2x5MU1mbGVGdFIwV2V5Q2V2OVpfYmtfd0RLUnhmN01vTjZMdHgzVnVaMlZfelBSajJHOWVJOXZ0UTlQZEMwR0RsalU2bThPekFSRDExWG9KUUVMdFlVSFRPNTgteTdyNGxZMmhCMU9aUjU1SnNaTWJETmdSTlFyeHUwQmRUOGpRMw?oc=5",
+      "published": "2026-11-04T07:35:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran says US reply to Hormuz plan \u2018unconvincing\u2019; Trump confirms strikes &nbsp;&nbsp; Al Jazeera"
+     },
+     {
+      "title": "China Now Home to Nearly Half of World's Clean Industrial Plants - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRFNrWkdiSHc5TkIxaWhnc2UzbEU4VTJsY21ZVG54VDlZeENBaXJ1N2hTaDlTTF8xa3pZWEdIYUhQeUFrNHNSb0JfUUtweEtiS19KeVZmaVZKYW1XY2wzZGN5UEFYVkxhcUs1VTVEOE53M0RYZGhrd3Z4YXA3eWRrY3daajdHM0ZaamV2eE9ENnpqRzNIMWJfbllTRHRhdjlzZ3lZTU5NeWlFSkZ6NmVXU3JLTWJISS1acnd3?oc=5",
+      "published": "2026-11-04T07:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "China Now Home to Nearly Half of World's Clean Industrial Plants &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "REGIONAL REPORT: MIDDLE EAST - World Oil",
+      "source": "World Oil",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcXprWjJCQzVEUTk3MlhZd3VVXzAxNy0zX2VEV0FiSWJkRENtQjBkdE4ycjRZcE9xX1BHTi10cVdtLXplNjdCRUhyaU41Zm9tMHpoU3oxN0tFbnpZTEJFMEROZ2hfMnJLUGZ3UjBGQ3VZcjN4ZXZRWThjMWo0NmtwVXM1MlNxaXp0bzcyaw?oc=5",
+      "published": "2026-11-04T07:16:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "REGIONAL REPORT: MIDDLE EAST &nbsp;&nbsp; World Oil"
+     },
+     {
+      "title": "Aramco says it can restore oil output in less than three weeks - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONUUxWWtfRGg1VTZLRUFFUXNLbnp2clVPVkJZMWdFYzVlRXYxRllXVFNUQS03akZXSlZnU2Y5MjJsUG1SYVhYUWJqbVFqSGczc2w2ZU1OcXVsbDZ0TFlrTEIyeU5NVmlnazNDcHkyX01oYWRQNUROeGE1azZRLV93TVM1WjJKQldSQlJROUVUM3hkazE5RFNpdVRoSDVlUEFTa2pPTzRtWdIBrwFBVV95cUxPaG9PcXhXTDZZTkY2X25PWEtKX0F6Szh4TmZNQzlkSTVJM3hEbXZWTlZBclRaZW9UVkFhRDBRVVhMNEZhOTRKdFJtVmd2Z0NEbTc3QlVzVzg0RXl1NTlEWmEySlFjdkVNZ1V4YjFRU1RoZzhrU1RSMU9UaU9WdVlJYXVqeGZZMGtSYUtlbFFPYkFra2ZDRzc2R0JtdTRIRlAzTG0wRzZUc2d6UjlDSGhr?oc=5",
+      "published": "2026-11-04T07:07:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco says it can restore oil output in less than three weeks &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "Gold Turns Lower Again as US Midterm Elections and Sharp Oil Price Swings Keep Investors Cautious! - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWnZmS0ZOV2NLSHlKM0xlUGpOcFlLZFhIUGRfWDBVZm0tN2R0dEtKeFZDTmdOaWVHWm1kemZVcGVYeDYwYmFVZjM2T3VsY1lKV2hoRUdXVmNOSk92YkhpRUVpem44T1IwSmhrSVRVZDFfRlY1bDY5alg1TzNiQlV4bDE4MA?oc=5",
+      "published": "2026-11-04T07:03:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold Turns Lower Again as US Midterm Elections and Sharp Oil Price Swings Keep Investors Cautious! &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Oil Prices Fall Again on Nov. 3 as Iran Talks Raise Hopes - Demokratis.co.id",
+      "source": "Demokratis.co.id",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBlc2F1dEJ0aGRPN3FaLUtOZmc2UnlCckxPV2tYdVBnRVY3R2p6RXQ1SkJFV05CMUpwcElGSXdMX01TTFFDVnMtQ0JucTlMMklLZndYWGlLam9DMFdZSk1lNzVNd1c?oc=5",
+      "published": "2026-11-04T06:53:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Fall Again on Nov. 3 as Iran Talks Raise Hopes &nbsp;&nbsp; Demokratis.co.id"
+     },
+     {
+      "title": "Shafaq News..Basrah crude prices retreat alongside global decline - \u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
+      "source": "\u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZUtOZzhOQ1ZxMC10eDVRdnVCVVY2dHJ0SDJIWU1PS2tjbHBRNk1pZTFWVGdqbGJTSUF5MFhJMklONkVkQWdKdUVWNUt0VlplQVNhOF83WHJzV0gwQ3U2VFpPTWdKQ3J1STJrMWdmdllJaWNZcnBSOURhT1JWNnlPcmlIMHhTRzhpU2c?oc=5",
+      "published": "2026-11-04T06:52:46Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Shafaq News..Basrah crude prices retreat alongside global decline &nbsp;&nbsp; \u0634\u0641\u0642 \u0646\u064a\u0648\u0632"
+     },
+     {
+      "title": "Oil prices rise as market awaits US policy steps - Mehr News Agency",
+      "source": "Mehr News Agency",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR0ttcXlrMWJOUGtnUG5kX202bTN4eWJndUFrd3F1ZGRLeWJtbzgtQW01V2xNa0dYT0xjZWdsaW9Gei1PRHloV3IzMmVfZnA2QngxQkxYNkU4N0ZKdGRxZVh5VVp6OGdZXzlKR0xmSm5WdUpqdmRabDdtWnpSRXkzdWx1R0JtLXB5dDVqNA?oc=5",
+      "published": "2026-11-04T06:47:00Z",
+      "event_date": null,
+      "classification": "CLAIM_ONLY",
+      "summary": "Oil prices rise as market awaits US policy steps &nbsp;&nbsp; Mehr News Agency"
+     },
+     {
+      "title": "Oil Prices Rise as Investors Weigh U.S. Midterm Results, Iran Risks - marketscreener.com",
+      "source": "marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVmd5UTFtZ0ZQQ0JiN0ozd3h5aVRCTThoNnpjZEJXQWMyVm9LNVBSSUdRdW5FaFFJMGU2cVczbmw4MVlKc2doZVFvNlVvV3FXb1VSeDJYenZnMFZ5a1RoX2pJbTlqTnZyQ0tZeEhCRW96MjhjWkdpTlpzX0hPbS1fWXNWMW14QmtISUl4blhLNms2S05Belk4T3hwdW50UmFNLVFtT1hBTERDRUM4clFKbjBfNEtULUk4eXc?oc=5",
+      "published": "2026-11-04T06:41:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rise as Investors Weigh U.S. Midterm Results, Iran Risks &nbsp;&nbsp; marketscreener.com"
+     },
+     {
+      "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
+      "source": "LiteFinance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
+      "published": "2026-11-04T06:34:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days &nbsp;&nbsp; LiteFinance"
+     },
+     {
+      "title": "Oil Prices Rebound as Middle East Supply Fears Return - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOWVBTGY0NXRUc3UyVms3Y0h1VUItOE1qLXFkNWVsR1A3aWZOLS0yNVc1RXpMYzlZNWR6OHJxNU81cnBzNW14eXVmRS1NR3hncl9sNE16U1M5VWs2ZkVTRFdVaXNEMVhBTThsNDE3ZC01c01hRTFiQmIzOGo2ZjdkcmY0YXVXUmZsVDk0TnVRZkVVV0NJQndsNEthVUx2R21YUDBQVGt2dlV2eUdTMUHSAbMBQVVfeXFMTld0ZWlGOUQ0NGxhS3pBV2dXWFVteE5ZOGlUMG5kQUJVVlY2c21kRzJfc1gxRUNxczNCX1ZzVlVVbGZkYUVRdXJ0aDZOSnEzV1l5RzVVZVZGOXR4QTJ3cVpQUm9SeWZQTW1ZRmtuMjlFTXBwSXEzdzg4NDFVX29Hb0h3WHRZOFViNDZzcXpVTDYwSTR5dXMyczRiRTluTV9SVU9YU1VZUUVPRVdvbTdRRjlPMnM?oc=5",
+      "published": "2026-11-04T06:15:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rebound as Middle East Supply Fears Return &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Crude Oil Prices Rise on Supply Concerns Despite OPEC\u2019s Sixth Demand Forecast Cut - APAC Media",
+      "source": "APAC Media",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTk5mSXBGaUEwRF85emR5WE05cE1FalppM2lYM0wwQVlkRWJWcnR3aGZGNHE1Skp2Mno1QlVfUkR2dS1QTWVnVEVZeGF1eVJpbFpVSmMxWE5Yc0FoVUpmOVcwbjZibVB5RmhvZHhXa1ZuQnYzQTNxRWlDR2NDX3JYdVpTQ1Z3M2dVR0RWdW5KajdQMDNv?oc=5",
+      "published": "2026-11-04T06:11:27Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Prices Rise on Supply Concerns Despite OPEC\u2019s Sixth Demand Forecast Cut &nbsp;&nbsp; APAC Media"
+     }
+    ]
+   },
    {
     "id": "wti-1793710560",
     "detected_at": "2026-11-03T13:05:59.259879Z",
