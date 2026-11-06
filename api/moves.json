@@ -1,8 +1,490 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-06T08:36:30Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-06T10:56:15Z",
  "data": {
-  "updated_at": "2026-11-06T08:35:58.916023Z",
+  "updated_at": "2026-11-06T10:56:01.576264Z",
   "events": [
+   {
+    "id": "brent-1793961950",
+    "detected_at": "2026-11-06T10:56:01.576264Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-11-06T09:45:00Z",
+    "to_ts": "2026-11-06T10:45:50Z",
+    "from_price": 96.77,
+    "to_price": 98.24,
+    "move_usd": 1.47,
+    "move_pct": 1.52,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil prices fall amid fears of renewed U.S.-Iran conflict - Traders Union",
+      "source": "Traders Union",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1aWjdDUXlCa3phbmN1a0twNEgxbGNhOEs3VWE5UXNqWDN1bWRlZDdKdDJKdFo3OW1VNHRtUzItOHBUS1pJWGliS0JRelR1bldzSWN5bjNEM1ZmX2ZhMVRybWVUY3ZFdnRpZ0tPcmpaVmFBY0hlQ3MxSHlGaw?oc=5",
+      "published": "2026-11-06T10:25:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices fall amid fears of renewed U.S.-Iran conflict &nbsp;&nbsp; Traders Union"
+     },
+     {
+      "title": "Brent crude near $99 as global oil risks persist - News Karnataka",
+      "source": "News Karnataka",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQb283MXB0aWwzd0N3a21JWDZGMU80ajY0b3BuV19xMjVldlFpXzRVVzV6Q1lEajNnOTBMeFIweU9hREI2aURWaGFrTlNoVzJTMDVKRi1DNVhMak1Kb2FDWDNQRmY3WkpLTDhwLTdTY0NUMWZWT1J6SGhham0yMkdiaHV6aHdLMUJKX2x2aVhOYWZ2SEUzSEVZ?oc=5",
+      "published": "2026-11-06T10:11:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent crude near $99 as global oil risks persist &nbsp;&nbsp; News Karnataka"
+     },
+     {
+      "title": "The Yanbu Oil Hub - INSIGHTS IAS",
+      "source": "INSIGHTS IAS",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoNnFZS3FNTlVFeXB5RXdqZF90RnBGQXUwWXNLTTRJRkdlM1ZHYTc1S3gta0hLdXVCWDlCbkItTDFfT2piNHcwLUVsSmlJMHlyQVU4SGM1MV81c0JfSHZadDNEdC1LMjFGZi1jWE1B?oc=5",
+      "published": "2026-11-06T09:55:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "The Yanbu Oil Hub &nbsp;&nbsp; INSIGHTS IAS"
+     },
+     {
+      "title": "Aramco's Pipeline Bypasses Hormuz Risks with 10M Bpd Target - PravdaReport",
+      "source": "PravdaReport",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU2RtUE1mRHBiTFlkYnRxTEpLTHQ3QnRPcENXUjNHR2xWWXpfRjMwQ2dHN3ZXWGZQTnh2MnBFWk50MkJ1bkZyZVdGY1NtMkFGZWpQOG1EV2pOMkhYLV9Ra3RTbU5raVNUUFU4REVaNU5qS2FGOVpsT2VRT0JNZlg2MW9ZSjItaWJ4bXdYT2VMRndEenB5UHR2NzRKNURsZw?oc=5",
+      "published": "2026-11-06T09:43:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco's Pipeline Bypasses Hormuz Risks with 10M Bpd Target &nbsp;&nbsp; PravdaReport"
+     },
+     {
+      "title": "Oil Prices Rebound Towards $100 but Brent Heads for 12% Weekly Decline - Investors King",
+      "source": "Investors King",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMTFoU1FWa2E5N3VzYlR6Umt6aTRRaGZXQUxYLWdCc2NOWER1WU1nMG0xbFloNll2S1dKaFV3MXJWTW9ZV1A5WTlmRHJsNE9Da3p4N21ZYUdDbUxPNENTVDk5VEtoeEkycjFHdXdvZ19SLVpneS1RbTBDMm5TRkRVTV9tUEs0akdFY3pBazB5aHl0N3A2aENnX1RMSE40OEZuc0o3UWJDSHlYQdIBrwFBVV95cUxOODdNd2V6WERvX2R6ZGhLcXZ3dDg1bG5odU00c29TTG5PeXY3YlMyUW85dmJLeEEyVUt6OFkzRTViTkJVNTZGM1ZjdEJtaW01eXhNVHNRQXFUN1R4dEs1dWJFaVd2VXpJcFl5LXpNcDU1RzF0RVBMQTBneHNkQy1zVGdaOTlvZ0xRemxQaGdOTmNVNENNeEpBMEpOT3BJRGhQNFNfRzN0ZE9CdllYd3Vn?oc=5",
+      "published": "2026-11-06T09:42:37Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rebound Towards $100 but Brent Heads for 12% Weekly Decline &nbsp;&nbsp; Investors King"
+     },
+     {
+      "title": "Oil Prices Sink as U.S. Midterms Raise Market Hopes for Middle East Solution - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVGZJRGVaVkdJaDR5b1REaE5CdWQtY2ZlczBhUXFWT253Vi0tMkNoUVhSNUI0Rzlqbnc5UnVVS0lqN1kwVzZ3eTJ6ODByNlc5ck5HYmlkMEVyRzlrVDNFdk8zQ2JuRWdQLUdYc3ozNUVCc3hRSGhDc0tKNW9QY1A2ZVpMZC1PNGxqUU81QkQyZms0R1VxWUUzbTRLSmYyUTRvM0ZHVmVjdTRpZ2NxLUJkcFlQZzY?oc=5",
+      "published": "2026-11-06T09:38:46Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Sink as U.S. Midterms Raise Market Hopes for Middle East Solution &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Can WTI sustain gains above $90.00 as US-Iran tensions linger and bullish conviction remains weak? - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdDdUMVRXRi01UXlRbTR2OEk3UWJpYmZ5WmpubGEzNDBNbzNBLWhPRmc1YWhCa0xfV2xoSUtOMXdCdEFETjFES2FrdndFaFVDdzFQUkliT09DeFEtUVZZOVcwNURnLWxxNFFmOTViMV9LamZNX1E5enc0SzNaLVJaX2NTSjM0UkFlUl9SZkQ5ajk3UXEyMWhONDJERlMwWUJtbmU4NzNlR2hJdnBVa1NFakJLTmhnc2M0eUVVTTBtWkpHS3JDT3c5QlRFa21fU00xYVFYTUFWY2c1Y3NZMG1ZZmdZRURVVHM?oc=5",
+      "published": "2026-11-06T09:35:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Can WTI sustain gains above $90.00 as US-Iran tensions linger and bullish conviction remains weak? &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Oil Prices Face 12% Weekly Drop as Gulf Risks Persist - grafa.com",
+      "source": "grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRW5wN1ZReFYyLUJBbkVhMlpIUUM2eU50Nk5OVGlIZmp4aG5ZR05taHpDZ0VFNjVJdXZLamF1QmJoVDJCLWZrRGRuUk5RSmd2LWtoNVlhanJuLS01RW5hSUJQNTU2VlE5ald5QkkyQldEbFZ0cl9GWG9lblVockF6NU9FVkkyRElNSHJzZ18ybi1tbmU3T09RUFJmRXFLRGtwd19pMk1lNzVQWkZSd1o5b2NQUmdFaVdpbmh5dnMtSDRVSkhudml4NDROMjUyZ0Fa?oc=5",
+      "published": "2026-11-06T09:31:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Face 12% Weekly Drop as Gulf Risks Persist &nbsp;&nbsp; grafa.com"
+     },
+     {
+      "title": "Oil prices fall as Chinese economic data fuel demand concerns - oEnergetice.cz",
+      "source": "oEnergetice.cz",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZi1SQjdWLWhnZWJ4TGx1SmF5ZEdtRld4ZkI2WXpNVk9kVDc2VWktLWhoWGp3T3FCMlZOT0lqeV9XRmVlV0NrbWJkSm84YnFtRkc1bE9IX0lqbXFHdlhrd1dnUHd6TjJaVXZLT2N4WC04ODBXR25QUl9XRkhrYU16aVlQZlVqWXRNYnp2U2hzTGs5YV9xekE?oc=5",
+      "published": "2026-11-06T09:27:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices fall as Chinese economic data fuel demand concerns &nbsp;&nbsp; oEnergetice.cz"
+     },
+     {
+      "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
+      "source": "LiteFinance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
+      "published": "2026-11-06T09:19:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days &nbsp;&nbsp; LiteFinance"
+     },
+     {
+      "title": "Oil set for sharp weekly drop after U.S. midterms raise hopes of more Mideast crude exports - The Globe and Mail",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX0dfNnRBX0ZKNVNHTkJGemZid1Q3WkJzU2o5VW5YN0luZjd0WFV0TjVXbTRZajhHNV85cERhbDZPVzdVa0loa1VSeXl4SnRTYUpIU2xGbzNDVEh4WnEzQTQtRGpGRjZTeF95Y1RrUVJfUWQ5QWNCX0pDUEVMNVI3UjJCejFxUG5NRzF0a0NSY1kxRWZtdldfeWFUbkRrck5ldFY4ek5kN2k2X3oyVlVubFlESmVDa0JGUFE?oc=5",
+      "published": "2026-11-06T09:15:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil set for sharp weekly drop after U.S. midterms raise hopes of more Mideast crude exports &nbsp;&nbsp; The Globe and Mail"
+     },
+     {
+      "title": "Can US midterm outcome bring relief to India? Kotak flags lower crude prices - Firstpost",
+      "source": "Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOWZ2angxQTc0WE9RQzEteFpOOUFSUHpxdUplcV83c1JVRm12bUFJRzBEY29LUW9Uc0dUSC1STTFUZ0J2cFh2czd0OVlxMzktWFptZE05a0t3cTN2WXhwdm1NOURYOTRISXZEbzRIRVdPdGM4dzV5SGVvNW9qY1NFc241VmxCdHBxdklHWkplZ1JFT0JCeGF3ZHJKUFR2RmE0WUpCRjF1Z0lnRjl0YUZUckNTNTZ0c1NOb0NGWlFaTnEyQdIBxwFBVV95cUxOZHRWVVVyM1VGdWVfNEJQX2tFejJnbUIySEQ0TkRacnR1cUxocExjUU1CQ1lKdG5ONURyd3g0cm0yN3Atck1rNmVzdERhcWR0WURNZWxmQUdBUjB1cjBnUUthNHctelBUU3dzaVlzaHZQRkZha1NpeVJJNFBDU3J5V0VGYWtuUjl6cVNheThZRnczWkhIWmZvS2d1NWpsTEI1SmJIM1NpX2t6VW9Sei1fdXBwYTh5N1JDQXVZT3JNTDE5UTlaeEc4?oc=5",
+      "published": "2026-11-06T08:53:13Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Can US midterm outcome bring relief to India? Kotak flags lower crude prices &nbsp;&nbsp; Firstpost"
+     },
+     {
+      "title": "Seafarer missing in Gulf tanker strike as Iran redraws Hormuz blacklist - Splash247",
+      "source": "Splash247",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVDEzeS1sOHFCdGhsSFUzQ1BzYzhibXYzTWZOTUp0SDBFbVpidjVVX2pNbE9rX3hIeDhfNXBubU9ZeV9vYVQybGNoUG1GVDNsLTRhOGc5Uy1Ub1pldmVHNURCQWI0VlVVNGYtWjhOWExWNktvTGUycHVDUGdNSlhKUkFScXBhRkFRWGZxNDlGMlJJTC1LaFBLZElB?oc=5",
+      "published": "2026-11-06T08:46:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Seafarer missing in Gulf tanker strike as Iran redraws Hormuz blacklist &nbsp;&nbsp; Splash247"
+     },
+     {
+      "title": "China's Carbon Emissions Plunge 3.1% as Oil Demand Slumps - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNakFoSW5UOXF3b1ZYcVBYbWlORDkxc2xfR3ZLbWZBdms0cDhGa1I2Nm0tWGthUVdPM1hsZUNDbDFrMVd0dVVDcEhQbldGS3h4Z1pBc0FYTVA4Tkpud3NhYVQzLU13aGF6UGdzRE9hTnBTN1U1WjZYdV80SmZ6emsyVjBxMDVZdjcyWmpkQ3NJQUtfNmgxNnhJcTB6a053NlRoT0lfQXdBN1pRUUZWSWtz0gG0AUFVX3lxTE5SZ0IzaVRuVnRleWFNNURzeEx0dHNsWm1vdnBvZ0VRa2hnOTJNSFBwY0ZRdHE3SE1jSXYyTktMckc1UkhNb2V1bXJMa01sNkxmdVNwUmloaUY3N1RvYnVQMkxXdU13YXJsbnhlN1hfcUxyMVRsdnlmaHQzc3h2b3hzS2F0alY0REM0NnkzNVZhUjlpYmlqQk0wMFp0TlFHZFRBdVJWVHVnanZfMUk0TUlOMTloag?oc=5",
+      "published": "2026-11-06T08:45:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "China's Carbon Emissions Plunge 3.1% as Oil Demand Slumps &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices set for weekly drop on Trump\u2019s election rout - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS2pfQmJDOG1kQTdVQzRpalZXMXR3bEVZa1d6ZmZvd050T1d0eGJZeEd4VzNFNV9mQTBPajU0RW9JN08zbldLd3Z3dDVsTDRqV1hBR204MnlEVXJRTnJQd25ESmQ0ZmVrcUhRT0NXZWNsRTI0QjZ0TG4tenFoenk2bEdITUVjeVVuTk1YYi1QbDZUYlNqOFVJdXdkODJZdV9rOXV6M1A1cm1Pb0V2aTZpTFpWM3I?oc=5",
+      "published": "2026-11-06T08:43:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices set for weekly drop on Trump\u2019s election rout &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Crude Oil Futures Rise on Positive Global Trends - Rediff MoneyWiz",
+      "source": "Rediff MoneyWiz",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPclJnT0FfdGJSelBGb2xmVUVxenYtNGxMT3lMZHBlQVVWdy10TGloZzRXMFNlM1ZTRW1WdVFUZi1jSWNGYmJkdjBySUlkYjNMV1g0Rjd5RUFxbkc4blVXX05yRy1vNExCQjhoZVlNVWNVX1J2ZHBTV1dRc1hSdFB1c2xaT1RhS0ZPVkZlN1B1OXVwMHZuaXdadjJLMmIyb3E0RnfSAacBQVVfeXFMT1NuYVlWTDk5ekNMQTVNTXFSeENZTG1oYU5jSnBmcnU3SDA0VWVLMzREN1RCVzBYRjdfT2lXWHAyWlJlX2M0ZmNWNnhnU2NpR2FYdU5OdTBUVXBCRWJFSXJvWjRhZTZyTkkwZktVUGVMSkwxXy1kRWNkOEhDdTRTUkg3eWtLM1QxQXlrNHdpcTF2SC1uZWlwYTQ5V09wVnc4UjNJM1ozMzg?oc=5",
+      "published": "2026-11-06T08:31:29Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Futures Rise on Positive Global Trends &nbsp;&nbsp; Rediff MoneyWiz"
+     },
+     {
+      "title": "ADNOC Signs 10-Year LNG Supply Deal With India's Gujarat Energy - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNY09tSDRVc1FfeDFvZWNpSzFQU2ZRMEloRWw0NGRnQ0lUWVNnZUdpdFNFRGtPb3U4ZHNzRmx4M00zTXY0b2gxcXdKZFJwYV9sdzA0eGh3Q2NyY1dDa0VucXFJZFZGaDhMclRiWE9rcUZjNjhKX0hrVEZGLWVHenp4Qk5NZ3dtbjRCeGY3YjZnN2J4U05pME1ta0toNnExZWdCcGdz0gGoAUFVX3lxTE9Wekc4YUlfcVRvLXJuTVljaFQtTW5janEyeWxrRkMyblZLNURNWmYyTTY4Vm1ONDFWbmViME56cHdkX1pCcEwyREQ4T210TzdDaVgxWDhURjYwTGg2cjVnYUFGVUFBeTBsVVo3eDFERHdwREcwclJKbFU4RzhRcVFGRkozelN5MTQ1WjJqdGNtczVzV0QzZnRkemFTNnFHSlVVRjZxSms0dw?oc=5",
+      "published": "2026-11-06T08:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "ADNOC Signs 10-Year LNG Supply Deal With India's Gujarat Energy &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Gold Drops Over 1% on Higher Oil Prices; US Payrolls Data in Focus - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUDM2SDVFR1NxS2VSbF9qUmVMTTRfUlNKcDd1S0g2Yl82SUkydDhGS0w0ejF6bkdfaVppZFdtdzhTWmdIVGo1TDB2Mmgyc01DSEx0bFBJalFZSTI5LUh5ZUdwWFhlRjVOeVY2aEoyZHlRZVdYZlF3bEpENXdERk1ZLS1XWU95QTM1UUQtVUZFQzh2cWZOMzJsUjFqa0wxcE85MGhnZw?oc=5",
+      "published": "2026-11-06T08:13:42Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold Drops Over 1% on Higher Oil Prices; US Payrolls Data in Focus &nbsp;&nbsp; ASHARQ AL-AWSAT English"
+     },
+     {
+      "title": "3 Oil Stocks Retail Investors Are Watching After The Latest Crude Price Swing - Yahoo Finance Singapore",
+      "source": "Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORmptamZLVHZxYUk1Y2U5TkJOSWlsbzM5UDhoR1FCVHlZVVUzLU5qOU01VVJmUVNTak83NXZENHhFOXFOQ0h6S0xJQ1RpZUgyOHpUai1aZWZiNzk1bmp0RGpfOTdCUVhIdk5zQnJqRzNDTi15Q1ZlWnhXSjVaMURFOXRsZXM?oc=5",
+      "published": "2026-11-06T08:13:34Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "3 Oil Stocks Retail Investors Are Watching After The Latest Crude Price Swing &nbsp;&nbsp; Yahoo Finance Singapore"
+     },
+     {
+      "title": "Oil prices rise: Brent nears $100, while U.S. crude hits $91.66 - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOclZTR1VOVnBGR1ZzS1d6N1g2X0ZlNGIxNkxKbldmUjB1bm9CeWY5NEw4REt2RXZ0NzdGQ3Bub0pIdTRLQ1lKSmtpelVCMi0xV3BHR2t6OWsyMExBVnpkSEdZZ0pqbVdWOUg0U0EtWXBZcDF5TjNnMHlUdzR0T1ljbjFndE1iVi16QWZYbWxfWkxyQkEybkhPMnZjTGZMQktzbTdNN0c0RS1yT0YzTnpwU2FTYUc?oc=5",
+      "published": "2026-11-06T08:11:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rise: Brent nears $100, while U.S. crude hits $91.66 &nbsp;&nbsp; \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a"
+     },
+     {
+      "title": "Crude oil rout pressures South American soybean oil prices - S&P Global",
+      "source": "S&P Global",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeDlDaU56N184bWJyTUJTZlFVOXZTZkhOckxaeS02WnJadnZCTlBpbnp5RVdVeUltOXhEdTY3dS1ZelZ1bkJCREZqZjFVdG4wM2dzcjZQY0tuS2hRRHFkMzRsWDdoUkJiR1p4d1V4RWl3dTJTb09Dck1GMDV4MHlZOS1YWEJGZWpYb3B2QmJIeTNYcmFYb0tWMzRFRFIyNWExRl9OajQwXy1GLU14NVRzWFZLX0RUa21mSmo0NmtzdHBlcDVFZzlOaFlKTnVpVDR5amtsYQ?oc=5",
+      "published": "2026-11-06T08:09:25Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude oil rout pressures South American soybean oil prices &nbsp;&nbsp; S&P Global"
+     },
+     {
+      "title": "WTI holds gains around $90.50 on Middle East supply risks despite steep weekly loss - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZHdsSi1TaDN4dk5tbWpNSzJHcmlhc1c1TWhUN1lLZkg4aENzWUliWDdOT1c2LS1pT05GSjV4eng1dU5mcHlGNC1ha0dmZkVIakl3LTBxYV9Pa25rNW1oYWJXZzJBWkdtS3c1cTRVYy1sRDhlb1M1cFhEcllLN2paakE2Y25Yc2VzUHNabVlDbk1nSGUtTjJOUndSRU5DY0dvQXdwM1FuczEyR2h1Tlh2V2tiNXplQy0yVXJNWkdGMURJdmRpMlRQU3dJYXRZYW92bTBUeHF4dGNNUnUyTEg4dw?oc=5",
+      "published": "2026-11-06T08:04:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI holds gains around $90.50 on Middle East supply risks despite steep weekly loss &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Tanker Fires in Strait of Hormuz: Impact on Crude Oil Prices - CMB News",
+      "source": "CMB News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZWo4ZUNrcW5vS0I2VXk0dmc0MkZpYmZPWVVneVVWdVJ6WVdkZTdpS1poeEpCSUQ4OUhXaDRaU3hPSjZOeEMxZHVLVmtwN0xsdUE4WDdUcEFneEZpal9YX24wc2daa0dodEZyZjZmeG9IN0VWMWMzb0tYYjUwbll6U0NhQm9pQjhnYjNnaU5KeVRSNEE3VFpRUDV5aXBtbmF0VlE?oc=5",
+      "published": "2026-11-06T08:01:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Tanker Fires in Strait of Hormuz: Impact on Crude Oil Prices &nbsp;&nbsp; CMB News"
+     },
+     {
+      "title": "Crude Oil Market Update: Prompt Rebound, Curve Backwardation Widens - CMB News",
+      "source": "CMB News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSkpEai1qUHhBQUpnOWxHQVJhb3N5cmZCZmhIUEdQR1VWeDlNZXF4WnFFS3c3bElfejhleDVTT0VPZGxFc09yR1VJZWk0NE1qdjA3TnpCNHUxSHUzYWJ4N0xtZHBGYWJoS0g5T0JLbFlMRVk2RnZRV1hyYm80a2l4LTlsR2N2XzhKX0RmRHdEMWlkWmM?oc=5",
+      "published": "2026-11-06T07:55:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Market Update: Prompt Rebound, Curve Backwardation Widens &nbsp;&nbsp; CMB News"
+     },
+     {
+      "title": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdXo3c0pXbll5VVJ6eUlRbTJQZ0xLSnFISGlnVGRReWlBTnJYT2d5RVd5cTZmTnFkS0VoZ3h1cVNGOEhOMHUtMUlRU0hPMDhhTmtINTNHdC1JeVRlTExaSklrRWNvaHpMSERXOF9VRlRZTGh4YmZ4aWg3a2ctdlI1bkVsdUY4X0RDMElsTHpaOFN4VVE4YzBwRzVHRk0yamVxM2dJMmdVYlNSdVZoaGR6akhlUGU5WTlx?oc=5",
+      "published": "2026-11-06T07:55:06Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist &nbsp;&nbsp; WSJ"
+     }
+    ]
+   },
+   {
+    "id": "wti-1793961963",
+    "detected_at": "2026-11-06T10:56:01.576264Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-11-06T09:45:00Z",
+    "to_ts": "2026-11-06T10:46:03Z",
+    "from_price": 89.15,
+    "to_price": 90.7,
+    "move_usd": 1.55,
+    "move_pct": 1.74,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil prices fall amid fears of renewed U.S.-Iran conflict - Traders Union",
+      "source": "Traders Union",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1aWjdDUXlCa3phbmN1a0twNEgxbGNhOEs3VWE5UXNqWDN1bWRlZDdKdDJKdFo3OW1VNHRtUzItOHBUS1pJWGliS0JRelR1bldzSWN5bjNEM1ZmX2ZhMVRybWVUY3ZFdnRpZ0tPcmpaVmFBY0hlQ3MxSHlGaw?oc=5",
+      "published": "2026-11-06T10:25:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices fall amid fears of renewed U.S.-Iran conflict &nbsp;&nbsp; Traders Union"
+     },
+     {
+      "title": "Brent crude near $99 as global oil risks persist - News Karnataka",
+      "source": "News Karnataka",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQb283MXB0aWwzd0N3a21JWDZGMU80ajY0b3BuV19xMjVldlFpXzRVVzV6Q1lEajNnOTBMeFIweU9hREI2aURWaGFrTlNoVzJTMDVKRi1DNVhMak1Kb2FDWDNQRmY3WkpLTDhwLTdTY0NUMWZWT1J6SGhham0yMkdiaHV6aHdLMUJKX2x2aVhOYWZ2SEUzSEVZ?oc=5",
+      "published": "2026-11-06T10:11:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent crude near $99 as global oil risks persist &nbsp;&nbsp; News Karnataka"
+     },
+     {
+      "title": "The Yanbu Oil Hub - INSIGHTS IAS",
+      "source": "INSIGHTS IAS",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoNnFZS3FNTlVFeXB5RXdqZF90RnBGQXUwWXNLTTRJRkdlM1ZHYTc1S3gta0hLdXVCWDlCbkItTDFfT2piNHcwLUVsSmlJMHlyQVU4SGM1MV81c0JfSHZadDNEdC1LMjFGZi1jWE1B?oc=5",
+      "published": "2026-11-06T09:55:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "The Yanbu Oil Hub &nbsp;&nbsp; INSIGHTS IAS"
+     },
+     {
+      "title": "Aramco's Pipeline Bypasses Hormuz Risks with 10M Bpd Target - PravdaReport",
+      "source": "PravdaReport",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU2RtUE1mRHBiTFlkYnRxTEpLTHQ3QnRPcENXUjNHR2xWWXpfRjMwQ2dHN3ZXWGZQTnh2MnBFWk50MkJ1bkZyZVdGY1NtMkFGZWpQOG1EV2pOMkhYLV9Ra3RTbU5raVNUUFU4REVaNU5qS2FGOVpsT2VRT0JNZlg2MW9ZSjItaWJ4bXdYT2VMRndEenB5UHR2NzRKNURsZw?oc=5",
+      "published": "2026-11-06T09:43:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Aramco's Pipeline Bypasses Hormuz Risks with 10M Bpd Target &nbsp;&nbsp; PravdaReport"
+     },
+     {
+      "title": "Oil Prices Rebound Towards $100 but Brent Heads for 12% Weekly Decline - Investors King",
+      "source": "Investors King",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMTFoU1FWa2E5N3VzYlR6Umt6aTRRaGZXQUxYLWdCc2NOWER1WU1nMG0xbFloNll2S1dKaFV3MXJWTW9ZV1A5WTlmRHJsNE9Da3p4N21ZYUdDbUxPNENTVDk5VEtoeEkycjFHdXdvZ19SLVpneS1RbTBDMm5TRkRVTV9tUEs0akdFY3pBazB5aHl0N3A2aENnX1RMSE40OEZuc0o3UWJDSHlYQdIBrwFBVV95cUxOODdNd2V6WERvX2R6ZGhLcXZ3dDg1bG5odU00c29TTG5PeXY3YlMyUW85dmJLeEEyVUt6OFkzRTViTkJVNTZGM1ZjdEJtaW01eXhNVHNRQXFUN1R4dEs1dWJFaVd2VXpJcFl5LXpNcDU1RzF0RVBMQTBneHNkQy1zVGdaOTlvZ0xRemxQaGdOTmNVNENNeEpBMEpOT3BJRGhQNFNfRzN0ZE9CdllYd3Vn?oc=5",
+      "published": "2026-11-06T09:42:37Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rebound Towards $100 but Brent Heads for 12% Weekly Decline &nbsp;&nbsp; Investors King"
+     },
+     {
+      "title": "Oil Prices Sink as U.S. Midterms Raise Market Hopes for Middle East Solution - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVGZJRGVaVkdJaDR5b1REaE5CdWQtY2ZlczBhUXFWT253Vi0tMkNoUVhSNUI0Rzlqbnc5UnVVS0lqN1kwVzZ3eTJ6ODByNlc5ck5HYmlkMEVyRzlrVDNFdk8zQ2JuRWdQLUdYc3ozNUVCc3hRSGhDc0tKNW9QY1A2ZVpMZC1PNGxqUU81QkQyZms0R1VxWUUzbTRLSmYyUTRvM0ZHVmVjdTRpZ2NxLUJkcFlQZzY?oc=5",
+      "published": "2026-11-06T09:38:46Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Sink as U.S. Midterms Raise Market Hopes for Middle East Solution &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Can WTI sustain gains above $90.00 as US-Iran tensions linger and bullish conviction remains weak? - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdDdUMVRXRi01UXlRbTR2OEk3UWJpYmZ5WmpubGEzNDBNbzNBLWhPRmc1YWhCa0xfV2xoSUtOMXdCdEFETjFES2FrdndFaFVDdzFQUkliT09DeFEtUVZZOVcwNURnLWxxNFFmOTViMV9LamZNX1E5enc0SzNaLVJaX2NTSjM0UkFlUl9SZkQ5ajk3UXEyMWhONDJERlMwWUJtbmU4NzNlR2hJdnBVa1NFakJLTmhnc2M0eUVVTTBtWkpHS3JDT3c5QlRFa21fU00xYVFYTUFWY2c1Y3NZMG1ZZmdZRURVVHM?oc=5",
+      "published": "2026-11-06T09:35:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Can WTI sustain gains above $90.00 as US-Iran tensions linger and bullish conviction remains weak? &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Oil Prices Face 12% Weekly Drop as Gulf Risks Persist - grafa.com",
+      "source": "grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRW5wN1ZReFYyLUJBbkVhMlpIUUM2eU50Nk5OVGlIZmp4aG5ZR05taHpDZ0VFNjVJdXZLamF1QmJoVDJCLWZrRGRuUk5RSmd2LWtoNVlhanJuLS01RW5hSUJQNTU2VlE5ald5QkkyQldEbFZ0cl9GWG9lblVockF6NU9FVkkyRElNSHJzZ18ybi1tbmU3T09RUFJmRXFLRGtwd19pMk1lNzVQWkZSd1o5b2NQUmdFaVdpbmh5dnMtSDRVSkhudml4NDROMjUyZ0Fa?oc=5",
+      "published": "2026-11-06T09:31:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Face 12% Weekly Drop as Gulf Risks Persist &nbsp;&nbsp; grafa.com"
+     },
+     {
+      "title": "Oil prices fall as Chinese economic data fuel demand concerns - oEnergetice.cz",
+      "source": "oEnergetice.cz",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZi1SQjdWLWhnZWJ4TGx1SmF5ZEdtRld4ZkI2WXpNVk9kVDc2VWktLWhoWGp3T3FCMlZOT0lqeV9XRmVlV0NrbWJkSm84YnFtRkc1bE9IX0lqbXFHdlhrd1dnUHd6TjJaVXZLT2N4WC04ODBXR25QUl9XRkhrYU16aVlQZlVqWXRNYnp2U2hzTGs5YV9xekE?oc=5",
+      "published": "2026-11-06T09:27:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices fall as Chinese economic data fuel demand concerns &nbsp;&nbsp; oEnergetice.cz"
+     },
+     {
+      "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
+      "source": "LiteFinance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
+      "published": "2026-11-06T09:19:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days &nbsp;&nbsp; LiteFinance"
+     },
+     {
+      "title": "Oil set for sharp weekly drop after U.S. midterms raise hopes of more Mideast crude exports - The Globe and Mail",
+      "source": "The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX0dfNnRBX0ZKNVNHTkJGemZid1Q3WkJzU2o5VW5YN0luZjd0WFV0TjVXbTRZajhHNV85cERhbDZPVzdVa0loa1VSeXl4SnRTYUpIU2xGbzNDVEh4WnEzQTQtRGpGRjZTeF95Y1RrUVJfUWQ5QWNCX0pDUEVMNVI3UjJCejFxUG5NRzF0a0NSY1kxRWZtdldfeWFUbkRrck5ldFY4ek5kN2k2X3oyVlVubFlESmVDa0JGUFE?oc=5",
+      "published": "2026-11-06T09:15:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil set for sharp weekly drop after U.S. midterms raise hopes of more Mideast crude exports &nbsp;&nbsp; The Globe and Mail"
+     },
+     {
+      "title": "Can US midterm outcome bring relief to India? Kotak flags lower crude prices - Firstpost",
+      "source": "Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOWZ2angxQTc0WE9RQzEteFpOOUFSUHpxdUplcV83c1JVRm12bUFJRzBEY29LUW9Uc0dUSC1STTFUZ0J2cFh2czd0OVlxMzktWFptZE05a0t3cTN2WXhwdm1NOURYOTRISXZEbzRIRVdPdGM4dzV5SGVvNW9qY1NFc241VmxCdHBxdklHWkplZ1JFT0JCeGF3ZHJKUFR2RmE0WUpCRjF1Z0lnRjl0YUZUckNTNTZ0c1NOb0NGWlFaTnEyQdIBxwFBVV95cUxOZHRWVVVyM1VGdWVfNEJQX2tFejJnbUIySEQ0TkRacnR1cUxocExjUU1CQ1lKdG5ONURyd3g0cm0yN3Atck1rNmVzdERhcWR0WURNZWxmQUdBUjB1cjBnUUthNHctelBUU3dzaVlzaHZQRkZha1NpeVJJNFBDU3J5V0VGYWtuUjl6cVNheThZRnczWkhIWmZvS2d1NWpsTEI1SmJIM1NpX2t6VW9Sei1fdXBwYTh5N1JDQXVZT3JNTDE5UTlaeEc4?oc=5",
+      "published": "2026-11-06T08:53:13Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Can US midterm outcome bring relief to India? Kotak flags lower crude prices &nbsp;&nbsp; Firstpost"
+     },
+     {
+      "title": "Seafarer missing in Gulf tanker strike as Iran redraws Hormuz blacklist - Splash247",
+      "source": "Splash247",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVDEzeS1sOHFCdGhsSFUzQ1BzYzhibXYzTWZOTUp0SDBFbVpidjVVX2pNbE9rX3hIeDhfNXBubU9ZeV9vYVQybGNoUG1GVDNsLTRhOGc5Uy1Ub1pldmVHNURCQWI0VlVVNGYtWjhOWExWNktvTGUycHVDUGdNSlhKUkFScXBhRkFRWGZxNDlGMlJJTC1LaFBLZElB?oc=5",
+      "published": "2026-11-06T08:46:39Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Seafarer missing in Gulf tanker strike as Iran redraws Hormuz blacklist &nbsp;&nbsp; Splash247"
+     },
+     {
+      "title": "China's Carbon Emissions Plunge 3.1% as Oil Demand Slumps - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNakFoSW5UOXF3b1ZYcVBYbWlORDkxc2xfR3ZLbWZBdms0cDhGa1I2Nm0tWGthUVdPM1hsZUNDbDFrMVd0dVVDcEhQbldGS3h4Z1pBc0FYTVA4Tkpud3NhYVQzLU13aGF6UGdzRE9hTnBTN1U1WjZYdV80SmZ6emsyVjBxMDVZdjcyWmpkQ3NJQUtfNmgxNnhJcTB6a053NlRoT0lfQXdBN1pRUUZWSWtz0gG0AUFVX3lxTE5SZ0IzaVRuVnRleWFNNURzeEx0dHNsWm1vdnBvZ0VRa2hnOTJNSFBwY0ZRdHE3SE1jSXYyTktMckc1UkhNb2V1bXJMa01sNkxmdVNwUmloaUY3N1RvYnVQMkxXdU13YXJsbnhlN1hfcUxyMVRsdnlmaHQzc3h2b3hzS2F0alY0REM0NnkzNVZhUjlpYmlqQk0wMFp0TlFHZFRBdVJWVHVnanZfMUk0TUlOMTloag?oc=5",
+      "published": "2026-11-06T08:45:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "China's Carbon Emissions Plunge 3.1% as Oil Demand Slumps &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices set for weekly drop on Trump\u2019s election rout - The National",
+      "source": "The National",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS2pfQmJDOG1kQTdVQzRpalZXMXR3bEVZa1d6ZmZvd050T1d0eGJZeEd4VzNFNV9mQTBPajU0RW9JN08zbldLd3Z3dDVsTDRqV1hBR204MnlEVXJRTnJQd25ESmQ0ZmVrcUhRT0NXZWNsRTI0QjZ0TG4tenFoenk2bEdITUVjeVVuTk1YYi1QbDZUYlNqOFVJdXdkODJZdV9rOXV6M1A1cm1Pb0V2aTZpTFpWM3I?oc=5",
+      "published": "2026-11-06T08:43:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices set for weekly drop on Trump\u2019s election rout &nbsp;&nbsp; The National"
+     },
+     {
+      "title": "Crude Oil Futures Rise on Positive Global Trends - Rediff MoneyWiz",
+      "source": "Rediff MoneyWiz",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPclJnT0FfdGJSelBGb2xmVUVxenYtNGxMT3lMZHBlQVVWdy10TGloZzRXMFNlM1ZTRW1WdVFUZi1jSWNGYmJkdjBySUlkYjNMV1g0Rjd5RUFxbkc4blVXX05yRy1vNExCQjhoZVlNVWNVX1J2ZHBTV1dRc1hSdFB1c2xaT1RhS0ZPVkZlN1B1OXVwMHZuaXdadjJLMmIyb3E0RnfSAacBQVVfeXFMT1NuYVlWTDk5ekNMQTVNTXFSeENZTG1oYU5jSnBmcnU3SDA0VWVLMzREN1RCVzBYRjdfT2lXWHAyWlJlX2M0ZmNWNnhnU2NpR2FYdU5OdTBUVXBCRWJFSXJvWjRhZTZyTkkwZktVUGVMSkwxXy1kRWNkOEhDdTRTUkg3eWtLM1QxQXlrNHdpcTF2SC1uZWlwYTQ5V09wVnc4UjNJM1ozMzg?oc=5",
+      "published": "2026-11-06T08:31:29Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Futures Rise on Positive Global Trends &nbsp;&nbsp; Rediff MoneyWiz"
+     },
+     {
+      "title": "ADNOC Signs 10-Year LNG Supply Deal With India's Gujarat Energy - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNY09tSDRVc1FfeDFvZWNpSzFQU2ZRMEloRWw0NGRnQ0lUWVNnZUdpdFNFRGtPb3U4ZHNzRmx4M00zTXY0b2gxcXdKZFJwYV9sdzA0eGh3Q2NyY1dDa0VucXFJZFZGaDhMclRiWE9rcUZjNjhKX0hrVEZGLWVHenp4Qk5NZ3dtbjRCeGY3YjZnN2J4U05pME1ta0toNnExZWdCcGdz0gGoAUFVX3lxTE9Wekc4YUlfcVRvLXJuTVljaFQtTW5janEyeWxrRkMyblZLNURNWmYyTTY4Vm1ONDFWbmViME56cHdkX1pCcEwyREQ4T210TzdDaVgxWDhURjYwTGg2cjVnYUFGVUFBeTBsVVo3eDFERHdwREcwclJKbFU4RzhRcVFGRkozelN5MTQ1WjJqdGNtczVzV0QzZnRkemFTNnFHSlVVRjZxSms0dw?oc=5",
+      "published": "2026-11-06T08:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "ADNOC Signs 10-Year LNG Supply Deal With India's Gujarat Energy &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Gold Drops Over 1% on Higher Oil Prices; US Payrolls Data in Focus - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUDM2SDVFR1NxS2VSbF9qUmVMTTRfUlNKcDd1S0g2Yl82SUkydDhGS0w0ejF6bkdfaVppZFdtdzhTWmdIVGo1TDB2Mmgyc01DSEx0bFBJalFZSTI5LUh5ZUdwWFhlRjVOeVY2aEoyZHlRZVdYZlF3bEpENXdERk1ZLS1XWU95QTM1UUQtVUZFQzh2cWZOMzJsUjFqa0wxcE85MGhnZw?oc=5",
+      "published": "2026-11-06T08:13:42Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold Drops Over 1% on Higher Oil Prices; US Payrolls Data in Focus &nbsp;&nbsp; ASHARQ AL-AWSAT English"
+     },
+     {
+      "title": "3 Oil Stocks Retail Investors Are Watching After The Latest Crude Price Swing - Yahoo Finance Singapore",
+      "source": "Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORmptamZLVHZxYUk1Y2U5TkJOSWlsbzM5UDhoR1FCVHlZVVUzLU5qOU01VVJmUVNTak83NXZENHhFOXFOQ0h6S0xJQ1RpZUgyOHpUai1aZWZiNzk1bmp0RGpfOTdCUVhIdk5zQnJqRzNDTi15Q1ZlWnhXSjVaMURFOXRsZXM?oc=5",
+      "published": "2026-11-06T08:13:34Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "3 Oil Stocks Retail Investors Are Watching After The Latest Crude Price Swing &nbsp;&nbsp; Yahoo Finance Singapore"
+     },
+     {
+      "title": "Oil prices rise: Brent nears $100, while U.S. crude hits $91.66 - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOclZTR1VOVnBGR1ZzS1d6N1g2X0ZlNGIxNkxKbldmUjB1bm9CeWY5NEw4REt2RXZ0NzdGQ3Bub0pIdTRLQ1lKSmtpelVCMi0xV3BHR2t6OWsyMExBVnpkSEdZZ0pqbVdWOUg0U0EtWXBZcDF5TjNnMHlUdzR0T1ljbjFndE1iVi16QWZYbWxfWkxyQkEybkhPMnZjTGZMQktzbTdNN0c0RS1yT0YzTnpwU2FTYUc?oc=5",
+      "published": "2026-11-06T08:11:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rise: Brent nears $100, while U.S. crude hits $91.66 &nbsp;&nbsp; \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a"
+     },
+     {
+      "title": "Crude oil rout pressures South American soybean oil prices - S&P Global",
+      "source": "S&P Global",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeDlDaU56N184bWJyTUJTZlFVOXZTZkhOckxaeS02WnJadnZCTlBpbnp5RVdVeUltOXhEdTY3dS1ZelZ1bkJCREZqZjFVdG4wM2dzcjZQY0tuS2hRRHFkMzRsWDdoUkJiR1p4d1V4RWl3dTJTb09Dck1GMDV4MHlZOS1YWEJGZWpYb3B2QmJIeTNYcmFYb0tWMzRFRFIyNWExRl9OajQwXy1GLU14NVRzWFZLX0RUa21mSmo0NmtzdHBlcDVFZzlOaFlKTnVpVDR5amtsYQ?oc=5",
+      "published": "2026-11-06T08:09:25Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude oil rout pressures South American soybean oil prices &nbsp;&nbsp; S&P Global"
+     },
+     {
+      "title": "WTI holds gains around $90.50 on Middle East supply risks despite steep weekly loss - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZHdsSi1TaDN4dk5tbWpNSzJHcmlhc1c1TWhUN1lLZkg4aENzWUliWDdOT1c2LS1pT05GSjV4eng1dU5mcHlGNC1ha0dmZkVIakl3LTBxYV9Pa25rNW1oYWJXZzJBWkdtS3c1cTRVYy1sRDhlb1M1cFhEcllLN2paakE2Y25Yc2VzUHNabVlDbk1nSGUtTjJOUndSRU5DY0dvQXdwM1FuczEyR2h1Tlh2V2tiNXplQy0yVXJNWkdGMURJdmRpMlRQU3dJYXRZYW92bTBUeHF4dGNNUnUyTEg4dw?oc=5",
+      "published": "2026-11-06T08:04:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI holds gains around $90.50 on Middle East supply risks despite steep weekly loss &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Tanker Fires in Strait of Hormuz: Impact on Crude Oil Prices - CMB News",
+      "source": "CMB News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZWo4ZUNrcW5vS0I2VXk0dmc0MkZpYmZPWVVneVVWdVJ6WVdkZTdpS1poeEpCSUQ4OUhXaDRaU3hPSjZOeEMxZHVLVmtwN0xsdUE4WDdUcEFneEZpal9YX24wc2daa0dodEZyZjZmeG9IN0VWMWMzb0tYYjUwbll6U0NhQm9pQjhnYjNnaU5KeVRSNEE3VFpRUDV5aXBtbmF0VlE?oc=5",
+      "published": "2026-11-06T08:01:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Tanker Fires in Strait of Hormuz: Impact on Crude Oil Prices &nbsp;&nbsp; CMB News"
+     },
+     {
+      "title": "Crude Oil Market Update: Prompt Rebound, Curve Backwardation Widens - CMB News",
+      "source": "CMB News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSkpEai1qUHhBQUpnOWxHQVJhb3N5cmZCZmhIUEdQR1VWeDlNZXF4WnFFS3c3bElfejhleDVTT0VPZGxFc09yR1VJZWk0NE1qdjA3TnpCNHUxSHUzYWJ4N0xtZHBGYWJoS0g5T0JLbFlMRVk2RnZRV1hyYm80a2l4LTlsR2N2XzhKX0RmRHdEMWlkWmM?oc=5",
+      "published": "2026-11-06T07:55:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Market Update: Prompt Rebound, Curve Backwardation Widens &nbsp;&nbsp; CMB News"
+     },
+     {
+      "title": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdXo3c0pXbll5VVJ6eUlRbTJQZ0xLSnFISGlnVGRReWlBTnJYT2d5RVd5cTZmTnFkS0VoZ3h1cVNGOEhOMHUtMUlRU0hPMDhhTmtINTNHdC1JeVRlTExaSklrRWNvaHpMSERXOF9VRlRZTGh4YmZ4aWg3a2ctdlI1bkVsdUY4X0RDMElsTHpaOFN4VVE4YzBwRzVHRk0yamVxM2dJMmdVYlNSdVZoaGR6akhlUGU5WTlx?oc=5",
+      "published": "2026-11-06T07:55:06Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist &nbsp;&nbsp; WSJ"
+     }
+    ]
+   },
    {
     "id": "brent-1793953561",
     "detected_at": "2026-11-06T08:35:58.916023Z",
