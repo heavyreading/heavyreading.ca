@@ -1,8 +1,490 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-04T18:41:10Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-06T08:36:30Z",
  "data": {
-  "updated_at": "2026-11-04T18:40:57.663523Z",
+  "updated_at": "2026-11-06T08:35:58.916023Z",
   "events": [
+   {
+    "id": "brent-1793953561",
+    "detected_at": "2026-11-06T08:35:58.916023Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-11-06T07:25:00Z",
+    "to_ts": "2026-11-06T08:26:01Z",
+    "from_price": 99.45,
+    "to_price": 97.6,
+    "move_usd": -1.85,
+    "move_pct": -1.86,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil prices today: Brent nears $100 despite 12% weekly slump - Invezz",
+      "source": "Invezz",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVjdQb3dYekgxRWFSZ1BiQV9GRlRHeWE5SFpxd2NqNXBLZEpIMGxUVHhGdjBLWl92dFNPb3gwUEtYM3JPNjBtN244VTR1OGY0M3N0ZWZFZE9IWFpicE1nNkNQSl85azVQUzBfOTdkUVBCTnlkNFJGSWpqV3RBYXdCLXl6aVA2c0VIYXdueXp6dVFOQll5MzgwUlcxc1ZFaVhSTFFCUUZaUmZxWFNG?oc=5",
+      "published": "2026-11-06T07:30:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices today: Brent nears $100 despite 12% weekly slump &nbsp;&nbsp; Invezz"
+     },
+     {
+      "title": "Big-time oil price cut seen next week - Cebu Daily News",
+      "source": "Cebu Daily News",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSWYzQ0diUGM2SUYzdFpBbjZiYUR3U25yRW03aWpzdjNxeWxTaXNVVTFVOFh5T1VVaWREMUZ5cVB4el9OTFg3cHdSb3dLMkVvOWZyWjBxLS1rYThlQUZUMl94MHFfeW9zVUhnNUwxeGNFcG1GZWlMbzlWMDY5dmV6TU5ySDM4UdIBiwFBVV95cUxQM25QZU5ZVkZoOTd1LVZlaHA0RkhvSFI3TUZreWNFT0xLSGo0dXBFRHlvUmtxOEdMbGJDQlY0YUtSN3oyZjhNR1JDWnEtSWszajROU2pPbnIxX2hCSV9aRXF3MzN6dXNxVl92QXdtNDVoX2VuNkpPdnp6THNYMGdTOEd1MFFoQV9DcnY4?oc=5",
+      "published": "2026-11-06T07:27:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Big-time oil price cut seen next week &nbsp;&nbsp; Cebu Daily News"
+     },
+     {
+      "title": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks af\u2026 - Rich Picks Daily",
+      "source": "Rich Picks Daily",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcE90VzV2VE9nd3kwcHNwcWhjWnFlbG9MNmdnUTBicUFGM1RYdTlPaWhZZElNTVZnQU1YOHV2bFV5WUloU0FueTg4Y0dZa1ppYmJPNzBIUHdrX013NUZteW94UEhVc2d2UlhKMV8xUUVRMEtFdGdoWVVMZXpFeHRTdTFqa3hZdmp0WFVKZExqLU1ITGViZU1aZXN0VWtVNFB0aGVoR05wRmlXR3NwYnJfSVRn?oc=5",
+      "published": "2026-11-06T07:24:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks af\u2026 &nbsp;&nbsp; Rich Picks Daily"
+     },
+     {
+      "title": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy - Rich Picks Daily",
+      "source": "Rich Picks Daily",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeGFlRDlPMHBPQnRMeWJHTzhzekZZOVZ3YThxeE9RcXlrVEJ3U2wwUFJHaGpCNXRVcV9kclV2SjJEOXU0Y0NtQTdEdFR0WG40bThjbnowbk0wTngxMWs5Wks4UDAwMm5sb2xpVXN6dU15cWNUUmtlVGFNYVRNQkZmVEd5aGNNb1htZE42NkJn?oc=5",
+      "published": "2026-11-06T07:24:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy &nbsp;&nbsp; Rich Picks Daily"
+     },
+     {
+      "title": "REGIONAL REPORT: MIDDLE EAST - World Oil",
+      "source": "World Oil",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcXprWjJCQzVEUTk3MlhZd3VVXzAxNy0zX2VEV0FiSWJkRENtQjBkdE4ycjRZcE9xX1BHTi10cVdtLXplNjdCRUhyaU41Zm9tMHpoU3oxN0tFbnpZTEJFMEROZ2hfMnJLUGZ3UjBGQ3VZcjN4ZXZRWThjMWo0NmtwVXM1MlNxaXp0bzcyaw?oc=5",
+      "published": "2026-11-06T07:16:11Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "REGIONAL REPORT: MIDDLE EAST &nbsp;&nbsp; World Oil"
+     },
+     {
+      "title": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdXo3c0pXbll5VVJ6eUlRbTJQZ0xLSnFISGlnVGRReWlBTnJYT2d5RVd5cTZmTnFkS0VoZ3h1cVNGOEhOMHUtMUlRU0hPMDhhTmtINTNHdC1JeVRlTExaSklrRWNvaHpMSERXOF9VRlRZTGh4YmZ4aWg3a2ctdlI1bkVsdUY4X0RDMElsTHpaOFN4VVE4YzBwRzVHRk0yamVxM2dJMmdVYlNSdVZoaGR6akhlUGU5WTlx?oc=5",
+      "published": "2026-11-06T07:15:00Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Brent Futures Surge Over $3 as Iran War Tensions Escalate - Business Post Nigeria",
+      "source": "Business Post Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOak9HNThseUQySVRrMjRMS0NmTVhkM256ZWNNdDI1cTZoNkVZYUtjcnVuQVNBNWZFb2xVYUpIamRnSjZGeFJhX1VsS0lHWUVqcE40bHp1encwZmR5bGRqbWtDbXdiZFNyZlp6RGNEV0tOdUhCbzFxLUFEeTJWTmpWQ0NfX0o3OVFGR1pvMmZSQ2s5bVU?oc=5",
+      "published": "2026-11-06T06:55:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Futures Surge Over $3 as Iran War Tensions Escalate &nbsp;&nbsp; Business Post Nigeria"
+     },
+     {
+      "title": "Oil prices rebound above $100 as fresh tanker attacks heighten supply concerns - \u0130lke Haber Ajans\u0131",
+      "source": "\u0130lke Haber Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORWwxR0VJVlJRZm94YmZLclgxQkY2cTRCMnZTMVpNZ2JTVnBWa3RTV0ZqWmFnZDkyNVVlRk0yV0M2d2t2Q1dtNlRGMUw3UHM2ejU3STk3ei1fbl9DYVJUcUFUMXM1OW00d3YxYlFjODI5dnltVzZFLWUxTkg4T3M3dFZrM1RwV01pY3R4bHVldlE4NUVTVXlpT1Jud3NOem9uSDBXM3ZWblJaMUNoR2JQdlpBcWhCQnhj?oc=5",
+      "published": "2026-11-06T06:45:16Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rebound above $100 as fresh tanker attacks heighten supply concerns &nbsp;&nbsp; \u0130lke Haber Ajans\u0131"
+     },
+     {
+      "title": "Brent Crude Plunges 20% in a Week as Goldman Sachs Calls Gold the \"Inverse Oil Trade\" - BigGo Finance",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBmaUhaNW56U3l1QlY4c1Q1SlFnSkdibE9mRFZPakpfbkhpTmdvUW0yeklCQVJ3MWhvb2N6T192dk5jYUloMmZneHRNNHB6T2dSN1l4ODVGMHJzYjc2dWpOeTIzejZmaEtPUGhlcjQxRUhBOWdpQmc?oc=5",
+      "published": "2026-11-06T06:36:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Crude Plunges 20% in a Week as Goldman Sachs Calls Gold the \"Inverse Oil Trade\" &nbsp;&nbsp; BigGo Finance"
+     },
+     {
+      "title": "BIG-TIME OIL PRICE ROLLBACK\u26fd\ud83d\udcc9 Effective Tuesday, November 10, 2026, oil companies will implement a fuel price adjustments in pump prices nationwide. Here are the estimated price decreases per liter: #AllYouNeedToKnow - Facebook",
+      "source": "Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNkJWX1AtSjkxQnpYVUMzTzYwRnd6VWcxaE9aczRKMERUeVZxRmJoM1FTU1JWVk02YjhQNWROc1lSMFlaMUpqa19uYW1FTzZYbHdnYUM1NnZBNzk3Ui1Dai1aSlNZNVUxSzRmQ0lMU2gxY1RuS2hPVXJoVVZtOU5hZnpNV1ZsUHdOTHlQY1dEVElXSFNORDZjVUg2eVhtYk5mRWlYcFk3ano5WEh0NHd3c3dtd1RLN085S1hqX3hDTlcxT0M4bEx2WjQydGdGeDZMZGlSRlZaZ01pUGE3YjlF?oc=5",
+      "published": "2026-11-06T06:35:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "BIG-TIME OIL PRICE ROLLBACK\u26fd\ud83d\udcc9 Effective Tuesday, November 10, 2026, oil companies will implement a fuel price adjustments in pump prices nationwide. Here are the estimated price decreases per liter: #AllYouNeedToKnow &nbsp;&nbsp; Facebook"
+     },
+     {
+      "title": "Tanker Attacks in the Strait of Hormuz Push Brent Crude Toward $100 Mark - BigGo Finance",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5KT09zYWw1RkJYVzBWMmZXNkJNMzNwVDFjb1UtLWNHTXJJQWpYMUdaWVcxVWdrbV9XcGxqTzF4TlZQX3phZ2FXR2ExNWNSLVcwSlhTbm9iZDBta0JaNk5aeWFxV29yZnNWc3VycTJVZjlRT0tCQ0E?oc=5",
+      "published": "2026-11-06T06:05:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Tanker Attacks in the Strait of Hormuz Push Brent Crude Toward $100 Mark &nbsp;&nbsp; BigGo Finance"
+     },
+     {
+      "title": "Oil Prices Head for 12% Weekly Loss Despite Fresh Tanker Attacks - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYUJLYkpBS2YzZ01lWVU3MGJNQ1RucGpwZXFDY1VoblNacG5BTUl0VkRWVDA1MU9YaTdja0xFQ2Rodnc2Y2NKWVE3MDQyNU5RcldBZ25UMnRDSDhCWi1MdWpLQXh5ZXJwNER2UW1fZktBeFlGRzEwa1RKYUs0R0R1Mk1KcVl3N2lTeGlnTDBKb215YUJDM0w5bTV4SnJ6a2lnYkxmZjh5VzRNcU82OWVFWXZ2RHpodlh3NjI00gHAAUFVX3lxTFBfUnNKc1Rkam5WZ09yRFV2NmRqM0ZRUXpxZHAteHZfMm1RSFg4cy1NV3FKcWR3OWlKS1Z2Qml3RmNVZDZndW5zXzRJTVRldjk0VjkxeXVBc0JIV3JBTGxVbTdxVFlOMkkxTVo5WFRPTzd2dDZVLWhHaHNnanYzaGZQSGRzTmVhc3NfVHVUY2JKMnVKa0w0ODZ3WThiOWQ1R2JuQWx4VEJqUmVxZkYzOUlWVFJlYVE2Y2NaX21DYnYzSA?oc=5",
+      "published": "2026-11-06T06:05:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Head for 12% Weekly Loss Despite Fresh Tanker Attacks &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "WTI sticks to gains above $90.00 as US-Iran tensions persist; lacks bullish conviction - Mitrade",
+      "source": "Mitrade",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORzY5NjAxLUVrSV9PZ25tZWNEV0J2NGdQd0lBa3Y1UkpJQU1rVjY5SWhyR0toZllkTFdSVjR5UnlTc0xxY1VnZ0hwR2VYUXl4ZGdsVHBEUlIteFlrcUtoUXcxQlFsbjdxVXo1dmVjTFNKMkJLVmNENC1zSGtrRkJULURZYw?oc=5",
+      "published": "2026-11-06T06:01:44Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI sticks to gains above $90.00 as US-Iran tensions persist; lacks bullish conviction &nbsp;&nbsp; Mitrade"
+     },
+     {
+      "title": "Oil Prices Up - 05-11-26 - Armenpress",
+      "source": "Armenpress",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5McUI3c1draXY0V2IxejJYWEh4V2hXT0Q2OXRFdld6NHRTb3NCVHBNVUJodFBXNkFSOS04Wm54UXotaERhMjJwSnJ6allWTWVTS3fSAVdBVV95cUxNTlNjbDkyb0ZyaVFkVF9zMmF2WHM2WmpvTEsxQW5xZWI2V2RRbXVsX1FxOGZjRlluWk1tUmpIaUhDNnpTMFlRSFFydGtQcEFScXhrQk9faUU?oc=5",
+      "published": "2026-11-06T05:47:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Up - 05-11-26 &nbsp;&nbsp; Armenpress"
+     },
+     {
+      "title": "WTI Price Forecast: Crude Oil Rebounds From Critical Support - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORWM1VGExZWNzN19WRG9KTXhwMUtpSU9aalQycVJvS1VWdkRCeHJ3Y0xTamRlOEpNNDNGSm9xYnJ3ek9yaHVvaEhTUFlwbm85M1dCb25DZ283OU9DUXlleEQ5bnprMGRCY0QtZzFCLVo1SHFSR3NNZnNFekFheW1jZllNdjlYb0ZkQ2Y0LVVBZEQ2UGJVeUJiUVI2TDhibnM3WGRGd2R5VHhpT3d6MWZJ?oc=5",
+      "published": "2026-11-06T05:41:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI Price Forecast: Crude Oil Rebounds From Critical Support &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Ukraine strikes oil refinery in Krasnodar \u2013 VIDEO - TodayPress.tv",
+      "source": "TodayPress.tv",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRnNTS2prZzJWWV9HNndJNmh5QXlqNERXXzRidWhmR3RuSlZPbkNIclRRX3EyX3M4MjA0X2ZGdC1QaWFVU2habEZRNXNmM29DRkUzTnFLNHppaVU0SVBITXl6RjJEeS1ES2V1ME9iTDl1eEhSRnlJT25tVVRPc3psNnFTMTI?oc=5",
+      "published": "2026-11-06T05:34:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Ukraine strikes oil refinery in Krasnodar \u2013 VIDEO &nbsp;&nbsp; TodayPress.tv"
+     },
+     {
+      "title": "US President Threatens To Destroy Iran Again After Midterm Poll Setback - TimelineDaily",
+      "source": "TimelineDaily",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSFpEQkU4SUVtTlM5dkxYU3A3WTV4c3E1VFUzUW5yZ0JRU0VoUER2TlJ4NEtCS2xCQUNQME5sNElnRXFTWDJPZVlZNDhUQTZTN1BwOGt0WENhaDFMal9DVEdvdE9xZ0IzRmY2VjJ2amNhN2VEQ25JZUFWNkZiVG5aV21BSDAyQmJQQnVWOURNcE01dDlESDlVSVN2bW1zeENaNE1SNlhR?oc=5",
+      "published": "2026-11-06T05:27:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US President Threatens To Destroy Iran Again After Midterm Poll Setback &nbsp;&nbsp; TimelineDaily"
+     },
+     {
+      "title": "Shafaq News..Oil rebounds but faces 12% weekly drop - \u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
+      "source": "\u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvd095Yy01cGJFbUNvcGFMS3VRTU9vZmlxS3dQeUZuUWJuMmJhazVoTkl6MFZGcS1JZFVUd28wVUpkUEE1d2RkWUZ4SVlKQ2RkOXBXYjVRdF9GV01la2c2SFpkeTJXLXVRdkNjeGRSUkdBQUtUNWc?oc=5",
+      "published": "2026-11-06T05:24:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Shafaq News..Oil rebounds but faces 12% weekly drop &nbsp;&nbsp; \u0634\u0641\u0642 \u0646\u064a\u0648\u0632"
+     },
+     {
+      "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
+      "source": "LiteFinance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
+      "published": "2026-11-06T05:18:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days &nbsp;&nbsp; LiteFinance"
+     },
+     {
+      "title": "Markets fret over growth and inflation despite easing oil prices - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONUh4V2hzQnA1Rk9zNTN6d3ZxcVZycGZQVmNUNjR3NmpXSmphZHh4LWZvaGJmTTVEWDdBc0lNWmZyUUp3MTFndk5uZl80Qnk0QXotRmo5S1g0MVhDejlwMjJlczNLVWY1eHRLZ1c4dExyOUNqdjJPaUFhVnE2WC16QUc4aTVfUlAwQUtKMktZYi1STk94cXBnSXF5OEQ?oc=5",
+      "published": "2026-11-06T05:09:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Markets fret over growth and inflation despite easing oil prices &nbsp;&nbsp; Reuters"
+     },
+     {
+      "title": "Goldman Sachs: Gold has become a \"reverse oil trade\" and is more defensive - \u5bcc\u9014\u725b\u725b",
+      "source": "\u5bcc\u9014\u725b\u725b",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQczZzS3ZkV0N6VElQUGNFbnpTZlRoNm5Vb3l1bURmMW53TDN0NERXZGY1aHJud2pTWmcwRnM3SWpCejFPSGhLdXZuaTJmeGwwb2hnaUh5VTY0alR3S0MwTTFfM3hxeElhZS1xZk9lU0gzS1FXdzAwZjR3TVRScjlWUXB6SjNQSjlLTmtaNHRDbzNDWVJIellocnRjeXI?oc=5",
+      "published": "2026-11-06T05:08:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs: Gold has become a \"reverse oil trade\" and is more defensive &nbsp;&nbsp; \u5bcc\u9014\u725b\u725b"
+     },
+     {
+      "title": "Saudi intercepts Houthi ballistic missile fired at Madinah - www.daily-sun.com",
+      "source": "www.daily-sun.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVEg1SGtQTUR5Y0YtcmtEWTQwSVFjMGtmejl0SmlpNm5STHZVR2FRT2dzNzhKbEZDTWh4cE1SNG44SVNUM3VDZlp2bm40SmFnb2RQVV9kVWY5ckV1STJBVEFsaXVQaExvUnEyZDlHcFU3Q215UTJvNUNQVWt1Nl85c2luMHJQYlVDT1E3ZEdfVjNkWTR4UzU5SEpKR1dvRHNHM2NFWTRhXzRXSUU?oc=5",
+      "published": "2026-11-06T05:07:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi intercepts Houthi ballistic missile fired at Madinah &nbsp;&nbsp; www.daily-sun.com"
+     },
+     {
+      "title": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zQW9uWnVUd0hLODVnWG1oa29OUEJuQlFjLXNlMjhyZDdrNGl5T1MxRTJDQXJ0TUJNbXh4MDhaYk1DeUM2bHh1b3RsNWZ3Sm1zT05udHZJQ3JzWS16RXd3NjR0Qmt5UWtPQnRMbE5MWdIBdEFVX3lxTE9DMzBrTllWWDUtQmdHLV9fR0hwU21fcllTNWZ2bnZTRDlTNUthbmRnWk83V1NMYVZ3eTZZSl8tZnh5NGNGanN5VEtfYVIza0huQnR3S3NVRTl5bkpzaGF0R0d1LXdCcURLVlJYWHRwS2ljS2Uz?oc=5",
+      "published": "2026-11-06T05:06:56Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections &nbsp;&nbsp; CNBC"
+     },
+     {
+      "title": "Gold eases on inflation worries from higher oil; U.S. payrolls data in focus - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORVdNVmUyT0ZSU0FWcFd6by11bjExUWl4SVp3M04ySXNJaElHLXEzbzBxbkY4cHlLbUxaNFFQenFaQWhDM1pkQm5iemlTejhkYWtRVEhmZm5SLWdlNHczMUs4TG1zbzJzUHhmRm9JNFBkd3J6UGpPTDg3UnlVRF9ldVZMT3hUeUI4eXA4OEs3ODRTUk41Qm1lSGRLU0dGWFhuaTBYX3B0Y3dteDJHNUFr0gG0AUFVX3lxTE5YYjlweVZndF95ZnBFbkw3b2pENzZjOVRPcVNyM1pleEt5czdSMXBRXzV3bXJZWmZEVkNqekltR0dvVEg2eXo3d2lOSjZFWU9mTzdCc3hiaHJvU0lyOUJiM2NRTVMtaTYxVGRPT0JCR01WVHZJeXRackVrTk9Ea0tPY25wTGVDc0duM3k4UHVGLU04ZW9qdXhRSy1lX3lxenpXcmk5NnZhbDRQVFAzV0pYVVlXaQ?oc=5",
+      "published": "2026-11-06T05:03:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold eases on inflation worries from higher oil; U.S. payrolls data in focus &nbsp;&nbsp; CNBC"
+     },
+     {
+      "title": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLZXJrYkJKMnZienpycEJReHZ6MWVUMTBlLXZQUnl2Q3FfU2NsLXNQSVcxREswWENMUVFCQnJtWjVoN3JuTUJRU1pMRVRzd2diaEdzVkxjNnZVZzU3NUJTSVc1bXphcF9aQWZ0aVpnUWkxWU5IM2JFaVFrSTJKNTjSAYQBQVVfeXFMTkhmWnBwU29Nblh1UjVhR25KS0tCbGRTZ0haWnRCZWJzeU85OUJKb3FHbGxxYnFoZzVVdkRvV0hhWjVGakR1SVBVcEhMdXJmT2M2YUpINFVkR0dQUFd3ZEg2YnNwdVBnRS1pamxQRU8zX3NTSzVxSTBIb1duZWtjanFQbzl3?oc=5",
+      "published": "2026-11-06T04:46:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy &nbsp;&nbsp; CNBC"
+     }
+    ]
+   },
+   {
+    "id": "wti-1793953558",
+    "detected_at": "2026-11-06T08:35:58.916023Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-11-06T07:25:00Z",
+    "to_ts": "2026-11-06T08:25:58Z",
+    "from_price": 91.28,
+    "to_price": 89.78,
+    "move_usd": -1.5,
+    "move_pct": -1.64,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil prices today: Brent nears $100 despite 12% weekly slump - Invezz",
+      "source": "Invezz",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVjdQb3dYekgxRWFSZ1BiQV9GRlRHeWE5SFpxd2NqNXBLZEpIMGxUVHhGdjBLWl92dFNPb3gwUEtYM3JPNjBtN244VTR1OGY0M3N0ZWZFZE9IWFpicE1nNkNQSl85azVQUzBfOTdkUVBCTnlkNFJGSWpqV3RBYXdCLXl6aVA2c0VIYXdueXp6dVFOQll5MzgwUlcxc1ZFaVhSTFFCUUZaUmZxWFNG?oc=5",
+      "published": "2026-11-06T07:30:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices today: Brent nears $100 despite 12% weekly slump &nbsp;&nbsp; Invezz"
+     },
+     {
+      "title": "Big-time oil price cut seen next week - Cebu Daily News",
+      "source": "Cebu Daily News",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSWYzQ0diUGM2SUYzdFpBbjZiYUR3U25yRW03aWpzdjNxeWxTaXNVVTFVOFh5T1VVaWREMUZ5cVB4el9OTFg3cHdSb3dLMkVvOWZyWjBxLS1rYThlQUZUMl94MHFfeW9zVUhnNUwxeGNFcG1GZWlMbzlWMDY5dmV6TU5ySDM4UdIBiwFBVV95cUxQM25QZU5ZVkZoOTd1LVZlaHA0RkhvSFI3TUZreWNFT0xLSGo0dXBFRHlvUmtxOEdMbGJDQlY0YUtSN3oyZjhNR1JDWnEtSWszajROU2pPbnIxX2hCSV9aRXF3MzN6dXNxVl92QXdtNDVoX2VuNkpPdnp6THNYMGdTOEd1MFFoQV9DcnY4?oc=5",
+      "published": "2026-11-06T07:27:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Big-time oil price cut seen next week &nbsp;&nbsp; Cebu Daily News"
+     },
+     {
+      "title": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks af\u2026 - Rich Picks Daily",
+      "source": "Rich Picks Daily",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcE90VzV2VE9nd3kwcHNwcWhjWnFlbG9MNmdnUTBicUFGM1RYdTlPaWhZZElNTVZnQU1YOHV2bFV5WUloU0FueTg4Y0dZa1ppYmJPNzBIUHdrX013NUZteW94UEhVc2d2UlhKMV8xUUVRMEtFdGdoWVVMZXpFeHRTdTFqa3hZdmp0WFVKZExqLU1ITGViZU1aZXN0VWtVNFB0aGVoR05wRmlXR3NwYnJfSVRn?oc=5",
+      "published": "2026-11-06T07:24:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks af\u2026 &nbsp;&nbsp; Rich Picks Daily"
+     },
+     {
+      "title": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy - Rich Picks Daily",
+      "source": "Rich Picks Daily",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeGFlRDlPMHBPQnRMeWJHTzhzekZZOVZ3YThxeE9RcXlrVEJ3U2wwUFJHaGpCNXRVcV9kclV2SjJEOXU0Y0NtQTdEdFR0WG40bThjbnowbk0wTngxMWs5Wks4UDAwMm5sb2xpVXN6dU15cWNUUmtlVGFNYVRNQkZmVEd5aGNNb1htZE42NkJn?oc=5",
+      "published": "2026-11-06T07:24:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy &nbsp;&nbsp; Rich Picks Daily"
+     },
+     {
+      "title": "REGIONAL REPORT: MIDDLE EAST - World Oil",
+      "source": "World Oil",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcXprWjJCQzVEUTk3MlhZd3VVXzAxNy0zX2VEV0FiSWJkRENtQjBkdE4ycjRZcE9xX1BHTi10cVdtLXplNjdCRUhyaU41Zm9tMHpoU3oxN0tFbnpZTEJFMEROZ2hfMnJLUGZ3UjBGQ3VZcjN4ZXZRWThjMWo0NmtwVXM1MlNxaXp0bzcyaw?oc=5",
+      "published": "2026-11-06T07:16:11Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "REGIONAL REPORT: MIDDLE EAST &nbsp;&nbsp; World Oil"
+     },
+     {
+      "title": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdXo3c0pXbll5VVJ6eUlRbTJQZ0xLSnFISGlnVGRReWlBTnJYT2d5RVd5cTZmTnFkS0VoZ3h1cVNGOEhOMHUtMUlRU0hPMDhhTmtINTNHdC1JeVRlTExaSklrRWNvaHpMSERXOF9VRlRZTGh4YmZ4aWg3a2ctdlI1bkVsdUY4X0RDMElsTHpaOFN4VVE4YzBwRzVHRk0yamVxM2dJMmdVYlNSdVZoaGR6akhlUGU5WTlx?oc=5",
+      "published": "2026-11-06T07:15:00Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Brent Crude Climbs Above $100 as Middle East Oil Supply Risks Persist &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Brent Futures Surge Over $3 as Iran War Tensions Escalate - Business Post Nigeria",
+      "source": "Business Post Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOak9HNThseUQySVRrMjRMS0NmTVhkM256ZWNNdDI1cTZoNkVZYUtjcnVuQVNBNWZFb2xVYUpIamRnSjZGeFJhX1VsS0lHWUVqcE40bHp1encwZmR5bGRqbWtDbXdiZFNyZlp6RGNEV0tOdUhCbzFxLUFEeTJWTmpWQ0NfX0o3OVFGR1pvMmZSQ2s5bVU?oc=5",
+      "published": "2026-11-06T06:55:47Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Futures Surge Over $3 as Iran War Tensions Escalate &nbsp;&nbsp; Business Post Nigeria"
+     },
+     {
+      "title": "Oil prices rebound above $100 as fresh tanker attacks heighten supply concerns - \u0130lke Haber Ajans\u0131",
+      "source": "\u0130lke Haber Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORWwxR0VJVlJRZm94YmZLclgxQkY2cTRCMnZTMVpNZ2JTVnBWa3RTV0ZqWmFnZDkyNVVlRk0yV0M2d2t2Q1dtNlRGMUw3UHM2ejU3STk3ei1fbl9DYVJUcUFUMXM1OW00d3YxYlFjODI5dnltVzZFLWUxTkg4T3M3dFZrM1RwV01pY3R4bHVldlE4NUVTVXlpT1Jud3NOem9uSDBXM3ZWblJaMUNoR2JQdlpBcWhCQnhj?oc=5",
+      "published": "2026-11-06T06:45:16Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rebound above $100 as fresh tanker attacks heighten supply concerns &nbsp;&nbsp; \u0130lke Haber Ajans\u0131"
+     },
+     {
+      "title": "Brent Crude Plunges 20% in a Week as Goldman Sachs Calls Gold the \"Inverse Oil Trade\" - BigGo Finance",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBmaUhaNW56U3l1QlY4c1Q1SlFnSkdibE9mRFZPakpfbkhpTmdvUW0yeklCQVJ3MWhvb2N6T192dk5jYUloMmZneHRNNHB6T2dSN1l4ODVGMHJzYjc2dWpOeTIzejZmaEtPUGhlcjQxRUhBOWdpQmc?oc=5",
+      "published": "2026-11-06T06:36:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Crude Plunges 20% in a Week as Goldman Sachs Calls Gold the \"Inverse Oil Trade\" &nbsp;&nbsp; BigGo Finance"
+     },
+     {
+      "title": "BIG-TIME OIL PRICE ROLLBACK\u26fd\ud83d\udcc9 Effective Tuesday, November 10, 2026, oil companies will implement a fuel price adjustments in pump prices nationwide. Here are the estimated price decreases per liter: #AllYouNeedToKnow - Facebook",
+      "source": "Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNkJWX1AtSjkxQnpYVUMzTzYwRnd6VWcxaE9aczRKMERUeVZxRmJoM1FTU1JWVk02YjhQNWROc1lSMFlaMUpqa19uYW1FTzZYbHdnYUM1NnZBNzk3Ui1Dai1aSlNZNVUxSzRmQ0lMU2gxY1RuS2hPVXJoVVZtOU5hZnpNV1ZsUHdOTHlQY1dEVElXSFNORDZjVUg2eVhtYk5mRWlYcFk3ano5WEh0NHd3c3dtd1RLN085S1hqX3hDTlcxT0M4bEx2WjQydGdGeDZMZGlSRlZaZ01pUGE3YjlF?oc=5",
+      "published": "2026-11-06T06:35:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "BIG-TIME OIL PRICE ROLLBACK\u26fd\ud83d\udcc9 Effective Tuesday, November 10, 2026, oil companies will implement a fuel price adjustments in pump prices nationwide. Here are the estimated price decreases per liter: #AllYouNeedToKnow &nbsp;&nbsp; Facebook"
+     },
+     {
+      "title": "Tanker Attacks in the Strait of Hormuz Push Brent Crude Toward $100 Mark - BigGo Finance",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5KT09zYWw1RkJYVzBWMmZXNkJNMzNwVDFjb1UtLWNHTXJJQWpYMUdaWVcxVWdrbV9XcGxqTzF4TlZQX3phZ2FXR2ExNWNSLVcwSlhTbm9iZDBta0JaNk5aeWFxV29yZnNWc3VycTJVZjlRT0tCQ0E?oc=5",
+      "published": "2026-11-06T06:05:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Tanker Attacks in the Strait of Hormuz Push Brent Crude Toward $100 Mark &nbsp;&nbsp; BigGo Finance"
+     },
+     {
+      "title": "Oil Prices Head for 12% Weekly Loss Despite Fresh Tanker Attacks - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYUJLYkpBS2YzZ01lWVU3MGJNQ1RucGpwZXFDY1VoblNacG5BTUl0VkRWVDA1MU9YaTdja0xFQ2Rodnc2Y2NKWVE3MDQyNU5RcldBZ25UMnRDSDhCWi1MdWpLQXh5ZXJwNER2UW1fZktBeFlGRzEwa1RKYUs0R0R1Mk1KcVl3N2lTeGlnTDBKb215YUJDM0w5bTV4SnJ6a2lnYkxmZjh5VzRNcU82OWVFWXZ2RHpodlh3NjI00gHAAUFVX3lxTFBfUnNKc1Rkam5WZ09yRFV2NmRqM0ZRUXpxZHAteHZfMm1RSFg4cy1NV3FKcWR3OWlKS1Z2Qml3RmNVZDZndW5zXzRJTVRldjk0VjkxeXVBc0JIV3JBTGxVbTdxVFlOMkkxTVo5WFRPTzd2dDZVLWhHaHNnanYzaGZQSGRzTmVhc3NfVHVUY2JKMnVKa0w0ODZ3WThiOWQ1R2JuQWx4VEJqUmVxZkYzOUlWVFJlYVE2Y2NaX21DYnYzSA?oc=5",
+      "published": "2026-11-06T06:05:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Head for 12% Weekly Loss Despite Fresh Tanker Attacks &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "WTI sticks to gains above $90.00 as US-Iran tensions persist; lacks bullish conviction - Mitrade",
+      "source": "Mitrade",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORzY5NjAxLUVrSV9PZ25tZWNEV0J2NGdQd0lBa3Y1UkpJQU1rVjY5SWhyR0toZllkTFdSVjR5UnlTc0xxY1VnZ0hwR2VYUXl4ZGdsVHBEUlIteFlrcUtoUXcxQlFsbjdxVXo1dmVjTFNKMkJLVmNENC1zSGtrRkJULURZYw?oc=5",
+      "published": "2026-11-06T06:01:44Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI sticks to gains above $90.00 as US-Iran tensions persist; lacks bullish conviction &nbsp;&nbsp; Mitrade"
+     },
+     {
+      "title": "Oil Prices Up - 05-11-26 - Armenpress",
+      "source": "Armenpress",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5McUI3c1draXY0V2IxejJYWEh4V2hXT0Q2OXRFdld6NHRTb3NCVHBNVUJodFBXNkFSOS04Wm54UXotaERhMjJwSnJ6allWTWVTS3fSAVdBVV95cUxNTlNjbDkyb0ZyaVFkVF9zMmF2WHM2WmpvTEsxQW5xZWI2V2RRbXVsX1FxOGZjRlluWk1tUmpIaUhDNnpTMFlRSFFydGtQcEFScXhrQk9faUU?oc=5",
+      "published": "2026-11-06T05:47:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Up - 05-11-26 &nbsp;&nbsp; Armenpress"
+     },
+     {
+      "title": "WTI Price Forecast: Crude Oil Rebounds From Critical Support - FXEmpire",
+      "source": "FXEmpire",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORWM1VGExZWNzN19WRG9KTXhwMUtpSU9aalQycVJvS1VWdkRCeHJ3Y0xTamRlOEpNNDNGSm9xYnJ3ek9yaHVvaEhTUFlwbm85M1dCb25DZ283OU9DUXlleEQ5bnprMGRCY0QtZzFCLVo1SHFSR3NNZnNFekFheW1jZllNdjlYb0ZkQ2Y0LVVBZEQ2UGJVeUJiUVI2TDhibnM3WGRGd2R5VHhpT3d6MWZJ?oc=5",
+      "published": "2026-11-06T05:41:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI Price Forecast: Crude Oil Rebounds From Critical Support &nbsp;&nbsp; FXEmpire"
+     },
+     {
+      "title": "Ukraine strikes oil refinery in Krasnodar \u2013 VIDEO - TodayPress.tv",
+      "source": "TodayPress.tv",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRnNTS2prZzJWWV9HNndJNmh5QXlqNERXXzRidWhmR3RuSlZPbkNIclRRX3EyX3M4MjA0X2ZGdC1QaWFVU2habEZRNXNmM29DRkUzTnFLNHppaVU0SVBITXl6RjJEeS1ES2V1ME9iTDl1eEhSRnlJT25tVVRPc3psNnFTMTI?oc=5",
+      "published": "2026-11-06T05:34:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Ukraine strikes oil refinery in Krasnodar \u2013 VIDEO &nbsp;&nbsp; TodayPress.tv"
+     },
+     {
+      "title": "US President Threatens To Destroy Iran Again After Midterm Poll Setback - TimelineDaily",
+      "source": "TimelineDaily",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSFpEQkU4SUVtTlM5dkxYU3A3WTV4c3E1VFUzUW5yZ0JRU0VoUER2TlJ4NEtCS2xCQUNQME5sNElnRXFTWDJPZVlZNDhUQTZTN1BwOGt0WENhaDFMal9DVEdvdE9xZ0IzRmY2VjJ2amNhN2VEQ25JZUFWNkZiVG5aV21BSDAyQmJQQnVWOURNcE01dDlESDlVSVN2bW1zeENaNE1SNlhR?oc=5",
+      "published": "2026-11-06T05:27:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US President Threatens To Destroy Iran Again After Midterm Poll Setback &nbsp;&nbsp; TimelineDaily"
+     },
+     {
+      "title": "Shafaq News..Oil rebounds but faces 12% weekly drop - \u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
+      "source": "\u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvd095Yy01cGJFbUNvcGFMS3VRTU9vZmlxS3dQeUZuUWJuMmJhazVoTkl6MFZGcS1JZFVUd28wVUpkUEE1d2RkWUZ4SVlKQ2RkOXBXYjVRdF9GV01la2c2SFpkeTJXLXVRdkNjeGRSUkdBQUtUNWc?oc=5",
+      "published": "2026-11-06T05:24:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Shafaq News..Oil rebounds but faces 12% weekly drop &nbsp;&nbsp; \u0634\u0641\u0642 \u0646\u064a\u0648\u0632"
+     },
+     {
+      "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days - LiteFinance",
+      "source": "LiteFinance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm51RHFTMGNQcnB2aFl5bjNQQzFXUVVHckh1eW1IVktpM0lfaXlCQ2p6RF9nYWxkajlxb2R2V0lkRi1FNnljalUwMlhaU2FFT2dCUDBwem9tVG14Y1FXZGVKbWJvSm0xNlVVZ1BwdTItWnJkOTF3TnFTU2FQLWZibmhXRXlnX2RJY25leTB2ekVVUHZMZS1zbjBhWkNJLWs?oc=5",
+      "published": "2026-11-06T05:18:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week, and Next 30 Days &nbsp;&nbsp; LiteFinance"
+     },
+     {
+      "title": "Markets fret over growth and inflation despite easing oil prices - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONUh4V2hzQnA1Rk9zNTN6d3ZxcVZycGZQVmNUNjR3NmpXSmphZHh4LWZvaGJmTTVEWDdBc0lNWmZyUUp3MTFndk5uZl80Qnk0QXotRmo5S1g0MVhDejlwMjJlczNLVWY1eHRLZ1c4dExyOUNqdjJPaUFhVnE2WC16QUc4aTVfUlAwQUtKMktZYi1STk94cXBnSXF5OEQ?oc=5",
+      "published": "2026-11-06T05:09:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Markets fret over growth and inflation despite easing oil prices &nbsp;&nbsp; Reuters"
+     },
+     {
+      "title": "Goldman Sachs: Gold has become a \"reverse oil trade\" and is more defensive - \u5bcc\u9014\u725b\u725b",
+      "source": "\u5bcc\u9014\u725b\u725b",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQczZzS3ZkV0N6VElQUGNFbnpTZlRoNm5Vb3l1bURmMW53TDN0NERXZGY1aHJud2pTWmcwRnM3SWpCejFPSGhLdXZuaTJmeGwwb2hnaUh5VTY0alR3S0MwTTFfM3hxeElhZS1xZk9lU0gzS1FXdzAwZjR3TVRScjlWUXB6SjNQSjlLTmtaNHRDbzNDWVJIellocnRjeXI?oc=5",
+      "published": "2026-11-06T05:08:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Goldman Sachs: Gold has become a \"reverse oil trade\" and is more defensive &nbsp;&nbsp; \u5bcc\u9014\u725b\u725b"
+     },
+     {
+      "title": "Saudi intercepts Houthi ballistic missile fired at Madinah - www.daily-sun.com",
+      "source": "www.daily-sun.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVEg1SGtQTUR5Y0YtcmtEWTQwSVFjMGtmejl0SmlpNm5STHZVR2FRT2dzNzhKbEZDTWh4cE1SNG44SVNUM3VDZlp2bm40SmFnb2RQVV9kVWY5ckV1STJBVEFsaXVQaExvUnEyZDlHcFU3Q215UTJvNUNQVWt1Nl85c2luMHJQYlVDT1E3ZEdfVjNkWTR4UzU5SEpKR1dvRHNHM2NFWTRhXzRXSUU?oc=5",
+      "published": "2026-11-06T05:07:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi intercepts Houthi ballistic missile fired at Madinah &nbsp;&nbsp; www.daily-sun.com"
+     },
+     {
+      "title": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zQW9uWnVUd0hLODVnWG1oa29OUEJuQlFjLXNlMjhyZDdrNGl5T1MxRTJDQXJ0TUJNbXh4MDhaYk1DeUM2bHh1b3RsNWZ3Sm1zT05udHZJQ3JzWS16RXd3NjR0Qmt5UWtPQnRMbE5MWdIBdEFVX3lxTE9DMzBrTllWWDUtQmdHLV9fR0hwU21fcllTNWZ2bnZTRDlTNUthbmRnWk83V1NMYVZ3eTZZSl8tZnh5NGNGanN5VEtfYVIza0huQnR3S3NVRTl5bkpzaGF0R0d1LXdCcURLVlJYWHRwS2ljS2Uz?oc=5",
+      "published": "2026-11-06T05:06:56Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections &nbsp;&nbsp; CNBC"
+     },
+     {
+      "title": "Gold eases on inflation worries from higher oil; U.S. payrolls data in focus - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORVdNVmUyT0ZSU0FWcFd6by11bjExUWl4SVp3M04ySXNJaElHLXEzbzBxbkY4cHlLbUxaNFFQenFaQWhDM1pkQm5iemlTejhkYWtRVEhmZm5SLWdlNHczMUs4TG1zbzJzUHhmRm9JNFBkd3J6UGpPTDg3UnlVRF9ldVZMT3hUeUI4eXA4OEs3ODRTUk41Qm1lSGRLU0dGWFhuaTBYX3B0Y3dteDJHNUFr0gG0AUFVX3lxTE5YYjlweVZndF95ZnBFbkw3b2pENzZjOVRPcVNyM1pleEt5czdSMXBRXzV3bXJZWmZEVkNqekltR0dvVEg2eXo3d2lOSjZFWU9mTzdCc3hiaHJvU0lyOUJiM2NRTVMtaTYxVGRPT0JCR01WVHZJeXRackVrTk9Ea0tPY25wTGVDc0duM3k4UHVGLU04ZW9qdXhRSy1lX3lxenpXcmk5NnZhbDRQVFAzV0pYVVlXaQ?oc=5",
+      "published": "2026-11-06T05:03:22Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold eases on inflation worries from higher oil; U.S. payrolls data in focus &nbsp;&nbsp; CNBC"
+     },
+     {
+      "title": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLZXJrYkJKMnZienpycEJReHZ6MWVUMTBlLXZQUnl2Q3FfU2NsLXNQSVcxREswWENMUVFCQnJtWjVoN3JuTUJRU1pMRVRzd2diaEdzVkxjNnZVZzU3NUJTSVc1bXphcF9aQWZ0aVpnUWkxWU5IM2JFaVFrSTJKNTjSAYQBQVVfeXFMTkhmWnBwU29Nblh1UjVhR25KS0tCbGRTZ0haWnRCZWJzeU85OUJKb3FHbGxxYnFoZzVVdkRvV0hhWjVGakR1SVBVcEhMdXJmT2M2YUpINFVkR0dQUFd3ZEg2YnNwdVBnRS1pamxQRU8zX3NTSzVxSTBIb1duZWtjanFQbzl3?oc=5",
+      "published": "2026-11-06T04:46:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy &nbsp;&nbsp; CNBC"
+     }
+    ]
+   },
    {
     "id": "brent-1793817055",
     "detected_at": "2026-11-04T18:40:57.663523Z",
