@@ -721,14 +721,14 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Marked to</strong></td><td>November 6, 2026 (ICE settlements file 2026-11-06)</td></tr>
-<tr><td><strong>Unrealized profit and loss (open trades)</strong></td><td>$+511,286 ($-22,621 on the day)</td></tr>
-<tr><td><strong>Profit by trade (unrealized)</strong></td><td>T1 $+304,958; T2 $+206,328</td></tr>
-<tr><td><strong>Realized profit and loss</strong></td><td>$0 (no closed trades)</td></tr>
-<tr><td><strong>Book cost (open risk at invalidation)</strong></td><td>$481,000, about 1.9R, against the 4R ($1,000,000) complex budget</td></tr>
-<tr><td><strong>Expected profit, open trades at their printed targets</strong></td><td>$383,000</td></tr>
+<tr><td><strong>Unrealized profit and loss (open trades)</strong></td><td>$+515,820 ($-22,621 on the day)</td></tr>
+<tr><td><strong>Profit by trade (unrealized)</strong></td><td>T2 $+515,820; T3 $+0</td></tr>
+<tr><td><strong>Realized profit and loss</strong></td><td>$+304,958</td></tr>
+<tr><td><strong>Book cost (open risk at invalidation)</strong></td><td>$994,000, about 4.0R, against the 4R ($1,000,000) complex budget</td></tr>
+<tr><td><strong>Expected profit, open trades at their printed targets</strong></td><td>$750,000</td></tr>
 <tr><td><strong>Book drawdown (marked)</strong></td><td>$80,675 peak to trough, against the $2,500,000 budget</td></tr>
-<tr><td><strong>Stress loss at booked adverse levels</strong></td><td>$481,000 if every live trade runs to its adverse level together; a scenario, not a probability</td></tr>
-<tr><td><strong>Value at risk (ICE settlements basis)</strong></td><td>1-day 95 percent $90,437, 99 percent $127,876; 10-day 99 percent $404,379; indicative only on 27 mark days (the line firms up as the settlements archive builds; the stress line governs until then)</td></tr>
+<tr><td><strong>Stress loss at booked adverse levels</strong></td><td>$994,000 if every live trade runs to its adverse level together; a scenario, not a probability</td></tr>
+<tr><td><strong>Value at risk (ICE settlements basis)</strong></td><td>1-day 95 percent $116,338, 99 percent $164,500; 10-day 99 percent $520,194; indicative only on 27 mark days (the line firms up as the settlements archive builds; the stress line governs until then)</td></tr>
 <tr><td><strong>Shadow book: T5 (stood down, graded as a pass)</strong></td><td>$-286,805 at 36 lots per side</td></tr>
 </tbody>
 </table></div>
@@ -738,14 +738,13 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <h2>Scoreboard</h2>
 <div class="tblwrap"><table class="data">
 <tbody>
-<tr><td><strong>Booked</strong></td><td>5 trades: 2 with risk running, 1 sequenced, 1 folded into another trade, 1 stood down, 0 candidate, 0 closed</td></tr>
-<tr><td><strong>Hit rate (closed)</strong></td><td>No closed trades yet. The first close starts the record.</td></tr>
-<tr><td><strong>Average win / average loss</strong></td><td>Not applicable until trades close.</td></tr>
-<tr><td><strong>Calibration: expected vs realized moves</strong></td><td>Defined as the mean signed error of the printed expected moves (realized minus expected) across closed trades. Nothing to score yet.</td></tr>
-<tr><td><strong>Realized profit and loss</strong></td><td>$0 (no closed trades)</td></tr>
-<tr><td><strong>Unrealized profit and loss (marked)</strong></td><td>$+511,286 at the November 6, 2026 marks ($-22,621 on the day)</td></tr>
-<tr><td><strong>Open risk</strong></td><td>$481,000, about 1.9R, against the 4R ($1,000,000) complex budget: inside budget</td></tr>
-<tr><td><strong>Sequenced complex</strong></td><td>About $496,000, about 2.0R, when trade 1 exits: the TMR strip steps to full pace (about $400,000) and the sequenced trade 3 rides resume ($96,000). Risk is sequenced, not stacked (trade-ideas sizing framework, October 12, 2026).</td></tr>
+<tr><td><strong>Booked</strong></td><td>5 trades: 2 with risk running, 0 sequenced, 1 folded into another trade, 1 stood down, 0 candidate, 1 closed</td></tr>
+<tr><td><strong>Hit rate (closed)</strong></td><td>100 percent (1 of 1)</td></tr>
+<tr><td><strong>Average win</strong></td><td>$304,958</td></tr>
+<tr><td><strong>Calibration: mean signed error of printed expected moves (realized minus expected)</strong></td><td>+1.17/bbl over 1 closed trades</td></tr>
+<tr><td><strong>Realized profit and loss</strong></td><td>$+304,958</td></tr>
+<tr><td><strong>Unrealized profit and loss (marked)</strong></td><td>$+515,820 at the November 6, 2026 marks ($-22,621 on the day)</td></tr>
+<tr><td><strong>Open risk</strong></td><td>$994,000, about 4.0R, against the 4R ($1,000,000) complex budget: inside budget</td></tr>
 <tr><td><strong>Book drawdown (marked, active trades)</strong></td><td>$80,675 peak to trough on 20 mark date(s), against the $2,500,000 book drawdown budget</td></tr>
 <tr><td><strong>Shadow book (stood down)</strong></td><td>T5: $-286,805 at 36 lots per side</td></tr>
 </tbody>
@@ -773,7 +772,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td>November 3, 2026</td><td>T1 $+423,945; T2 $+165,904</td><td class="num">$+589,849</td></tr>
 <tr><td>November 4, 2026</td><td>T1 $+411,232; T2 $+180,728</td><td class="num">$+591,960</td></tr>
 <tr><td>November 5, 2026</td><td>T1 $+341,002; T2 $+192,904</td><td class="num">$+533,906</td></tr>
-<tr><td>November 6, 2026</td><td>T1 $+304,958; T2 $+206,328</td><td class="num">$+511,286</td></tr>
+<tr><td>November 6, 2026</td><td>T1 $+304,958; T2 $+206,328; T3 $+0</td><td class="num">$+511,286</td></tr>
 </tbody>
 </table></div>
 <p>The marked series has 20 date(s). It is shown as a table, not a curve: a drawdown chart on this little history would be decoration, not information.
@@ -784,7 +783,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Grade</th><th>Graded</th><th>The grade</th></tr></thead>
 <tbody>
-<tr><td><strong>Stop discipline</strong></td><td>0 exits, 2 running</td><td>No exit has been graded: no trade has closed. The 2 running trades have used at most 1.3 percent of their printed stop distance (T1 the deepest); no stop has been crossed, and none has been tested where it counts, at an exit.</td></tr>
+<tr><td><strong>Stop discipline</strong></td><td>1 exits, 2 running</td><td>All 3 graded trades (closed and running) stayed inside their printed stop distances.</td></tr>
 <tr><td><strong>Size discipline</strong></td><td>0 of 5 measurable</td><td>Not gradable yet: all 5 trades were booked before the sizing rule existed (the rule dates from October 25, 2026), and no entry since has frozen a framework size to grade against. The measured fractions in the detail are context, not failures.</td></tr>
 <tr><td><strong>Conviction calibration</strong></td><td>n = 0 declared</td><td>No trade has ever declared a conviction tier (n = 0 of 5 booked). The four buckets are built and empty; calibration starts with the first entry that declares one, and the ledger's risk column is booked risk, not a declaration.</td></tr>
 <tr><td><strong>View discipline</strong></td><td>2 edits, 3 versions</td><td>The house view is dated 2026-10-25 and has 2 edit(s) in its git history; the edit on record is an evidence upgrade, not a change of mind: the view date and the change-mind section never moved. Whether a printed trigger fired first is a manual grade, and the change is listed in the detail for one.</td></tr>
@@ -798,11 +797,12 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Basis</th><th>Trades closed</th><th>Hit rate</th><th>Average win</th><th>Average loss</th><th>Expectancy per trade</th><th>Trades for $15M</th><th>Trades for $20M</th><th>Size scale at 18 trades (for $17.5M)</th></tr></thead>
 <tbody>
-<tr><td><strong>Plan case (assumed), operative</strong></td><td class="num">0</td><td class="num">55 percent</td><td class="num">$2,500,000</td><td class="num">$450,000</td><td class="num">$+1,172,500</td><td class="num">about 13 (12.8)</td><td class="num">about 17 (17.1)</td><td class="num">0.83x</td></tr>
+<tr><td><strong>Measured</strong></td><td class="num">1</td><td class="num">100 percent</td><td class="num">$304,958</td><td class="num">$0</td><td class="num">$+304,958</td><td class="num">about 49 (49.2)</td><td class="num">about 66 (65.6)</td><td class="num">3.19x</td></tr>
+<tr><td><strong>Plan case (assumed), operative</strong></td><td class="num">1</td><td class="num">55 percent</td><td class="num">$2,500,000</td><td class="num">$450,000</td><td class="num">$+1,172,500</td><td class="num">about 13 (12.8)</td><td class="num">about 17 (17.1)</td><td class="num">0.83x</td></tr>
 </tbody>
 </table></div>
-<p>Measured basis: no trades have closed yet, so no measured line exists. It prints from the first close, labeled with its count, and carries wide uncertainty until the sample builds.</p>
-<p><strong>Verdict: ON PLAN</strong>, on the plan-case basis (framework assumptions; 0 trades have closed). At this expectancy, about 17 trades at the current size reach $20M, inside the realistic flow, and the size scale required to land $17.5M at 18 trades is 0.83x, no increase. Nothing past the risk caps is required.</p>
+<p>The measured line above rests on 1 closed trade(s). At this sample size its rates carry wide uncertainty; it is printed for the record and does not key the verdict until 25 trades have closed.</p>
+<p><strong>Verdict: ON PLAN</strong>, on the plan-case basis (framework assumptions; 1 trades have closed). At this expectancy, about 17 trades at the current size reach $20M, inside the realistic flow, and the size scale required to land $17.5M at 18 trades is 0.83x, no increase. Nothing past the risk caps is required.</p>
 <p>Recalibration happens at the monthly vintage, on trailing data. The book never sizes up mid-drawdown to chase the target, and the drawdown governor (at a $1.5M book drawdown, all new risk halves) overrides this arithmetic.</p>
 </section>
 <section id="mechanisms">
@@ -811,8 +811,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Mechanism</th><th>Trades</th><th>Open risk</th><th>Unrealized</th><th>Closed</th><th>Hit rate</th></tr></thead>
 <tbody>
-<tr><td><strong>roll down trade</strong></td><td>T1</td><td class="num">$281,000</td><td class="num">$+304,958</td><td class="num">0</td><td>no closes yet</td></tr>
-<tr><td><strong>roll up trade</strong></td><td>T2, T3</td><td class="num">$200,000</td><td class="num">$+206,328</td><td class="num">0</td><td>no closes yet</td></tr>
+<tr><td><strong>roll down trade</strong></td><td>T1</td><td class="num">$0</td><td class="num">$+0</td><td class="num">1</td><td>100 percent (1 of 1)</td></tr>
+<tr><td><strong>roll up trade</strong></td><td>T2, T3</td><td class="num">$994,000</td><td class="num">$+515,820</td><td class="num">0</td><td>no closes yet</td></tr>
 <tr><td><strong>switching</strong></td><td>T4</td><td class="num">$0</td><td class="num">$+0</td><td class="num">0</td><td>no closes yet</td></tr>
 <tr><td><strong>reversion</strong></td><td>T5</td><td class="num">$0</td><td class="num">$+0 (plus shadow $-286,805)</td><td class="num">0</td><td>no closes yet</td></tr>
 </tbody>
@@ -820,7 +820,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </section>
 <section id="t1">
 <h2>T1. Short December TMW: the trapped heavy barrel</h2>
-<p><strong>Status:</strong> Active, booked October 12, 2026. <strong>Structure:</strong> roll down trade.</p>
+<p><strong>Status:</strong> closed. <strong>Structure:</strong> roll down trade.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
 <tr><td><strong>Contracts</strong></td><td>ICE TMW Dec 2026</td></tr>
@@ -830,11 +830,7 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <tr><td><strong>Expected move</strong></td><td>2.90/bbl; expected profit $218,000</td></tr>
 <tr><td><strong>Risk at invalidation</strong></td><td>$281,000 (1.1R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Hard freight break (sustained collapse in TD3C or TD28); secondary: destination inventories drawing while egress stays full</td></tr>
-</tbody>
-</table></div>
-<div class="tblwrap"><table class="data">
-<thead><tr><th>Entry (cost)</th><th>Mark (November 6, 2026)</th><th>Move</th><th>Unrealized P&amp;L</th><th>Progress to expected</th><th>To adverse</th></tr></thead>
-<tbody><tr><td class="num">-25.60</td><td class="num">-29.67</td><td class="num">+4.07/bbl</td><td class="num"><strong>$+304,958</strong></td><td class="num">140.2 percent</td><td class="num">3.75/bbl</td></tr>
+<tr><td><strong>Close</strong></td><td>2026-11-09; realized move +4.07/bbl, realized $+304,958; reasoning-chain grade: Thesis right; exit on regime, not price. Freight stayed high and the differential held wide into the convergence window; the $2.90 target printed Oct 23 and the roll kept paying to +5.48 at the Nov 4 settle. Closed on the November 4 war-regime call (the trade's variable became freight, on which no view is held) at the scorer's exit mark: +4.07/bbl, +$304,957.50, 140% of expected. Neither invalidation leg fired in the trade's life.</td></tr>
 </tbody>
 </table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> Managed money in TMW itself is positioned to cover (that check is still open), and December snaps back toward the pre-spike curve before the storage pricing has time to bind.</p>
@@ -850,18 +846,18 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 <p><strong>Status:</strong> Active, booked October 12, 2026. <strong>Structure:</strong> roll up trade.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
-<tr><td><strong>Contracts</strong></td><td>ICE TMR strip Dec 2026, Jan 2027, Feb 2027 (Dec 2026 is the marking reference; strip settles Oct 9 2026: Dec -2.50, Jan -3.00, Feb -2.90)</td></tr>
+<tr><td><strong>Contracts</strong></td><td>ICE TMR strip Dec 2026, Jan 2027, Feb 2027, Mar 2027 (Dec 2026 is the marking reference; strip settles Nov 6 2026: Dec +0.08, Jan -2.65, Feb -2.70, Mar -2.75)</td></tr>
 <tr><td><strong>Direction</strong></td><td>long</td></tr>
-<tr><td><strong>Size</strong></td><td>80 lots</td></tr>
+<tr><td><strong>Size</strong></td><td>200 lots</td></tr>
 <tr><td><strong>Entry reference</strong></td><td>-2.50 (ICE settle, Oct 9 2026 (December marking reference))</td></tr>
-<tr><td><strong>Expected move</strong></td><td>2.50/bbl; expected profit $165,000</td></tr>
-<tr><td><strong>Risk at invalidation</strong></td><td>$200,000 (0.8R)</td></tr>
+<tr><td><strong>Expected move</strong></td><td>2.50/bbl; expected profit $390,000</td></tr>
+<tr><td><strong>Risk at invalidation</strong></td><td>$500,000 (2.0R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Westridge premium fades with no confirmed sweet loading inside the cycle</td></tr>
 </tbody>
 </table></div>
 <div class="tblwrap"><table class="data">
 <thead><tr><th>Entry (cost)</th><th>Mark (November 6, 2026)</th><th>Move</th><th>Unrealized P&amp;L</th><th>Progress to expected</th><th>To adverse</th></tr></thead>
-<tbody><tr><td class="num">-2.50</td><td class="num">0.08</td><td class="num">+2.58/bbl</td><td class="num"><strong>$+206,328</strong></td><td class="num">103.2 percent</td><td class="num">2.50/bbl</td></tr>
+<tbody><tr><td class="num">-2.50</td><td class="num">0.08</td><td class="num">+2.58/bbl</td><td class="num"><strong>$+515,820</strong></td><td class="num">103.2 percent</td><td class="num">2.50/bbl</td></tr>
 </tbody>
 </table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> No cargo actually fixes. The Westridge premium fades on its own and December follows the January shape down through -3.00 toward -5.00.</p>
@@ -879,16 +875,21 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
 </section>
 <section id="t3">
 <h2>T3. Long SYN into year-end, hard exit: the front premium, not the spread</h2>
-<p><strong>Status:</strong> Sequenced, booked October 12, 2026: the program is live but its risk is held behind trade 1's exit and is not currently running. <strong>Structure:</strong> roll up trade.</p>
+<p><strong>Status:</strong> Active, booked October 12, 2026. <strong>Structure:</strong> roll up trade.</p>
 <div class="tblwrap"><table class="data">
 <tbody>
-<tr><td><strong>Contracts</strong></td><td>ICE TMS Dec 2026 (pricing reference for the current ride; worked in broker and physical SYN market)</td></tr>
+<tr><td><strong>Contracts</strong></td><td>ICE TMS Jan 2027 (pricing reference for the current ride; worked in broker and physical SYN market)</td></tr>
 <tr><td><strong>Direction</strong></td><td>long</td></tr>
-<tr><td><strong>Size</strong></td><td>35 lots-equivalent per ride (rides paused; see status)</td></tr>
-<tr><td><strong>Entry reference</strong></td><td>4.65 (ICE settle, Oct 9 2026)</td></tr>
-<tr><td><strong>Expected move</strong></td><td>2.00/bbl; expected profit $70,000</td></tr>
-<tr><td><strong>Risk at invalidation</strong></td><td>$96,000 (0.4R)</td></tr>
+<tr><td><strong>Size</strong></td><td>180 lots</td></tr>
+<tr><td><strong>Entry reference</strong></td><td>5.10 (ICE settle, Nov 6 2026)</td></tr>
+<tr><td><strong>Expected move</strong></td><td>2.00/bbl; expected profit $360,000</td></tr>
+<tr><td><strong>Risk at invalidation</strong></td><td>$494,000 (2.0R)</td></tr>
 <tr><td><strong>Invalidation</strong></td><td>Prompt premium fails to re-form at the roll, or the freight regime breaks; standing calendar exit before year-end supply regardless of profit</td></tr>
+</tbody>
+</table></div>
+<div class="tblwrap"><table class="data">
+<thead><tr><th>Entry (cost)</th><th>Mark (November 6, 2026)</th><th>Move</th><th>Unrealized P&amp;L</th><th>Progress to expected</th><th>To adverse</th></tr></thead>
+<tbody><tr><td class="num">5.10</td><td class="num">5.10</td><td class="num">+0.00/bbl</td><td class="num"><strong>$+0</strong></td><td class="num">0.0 percent</td><td class="num">2.75/bbl</td></tr>
 </tbody>
 </table></div>
 <p><strong>Pre-mortem, most likely wrong because:</strong> The prompt premium fails to re-form as December becomes the front month: the premium was the previous month's story, and year-end synthetic supply arrives early.</p>
