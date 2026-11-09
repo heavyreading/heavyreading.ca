@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-09T11:31:07Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-09T14:31:10Z",
  "data": {
-  "updated_at": "2026-11-09T11:30:54.251213Z",
+  "updated_at": "2026-11-09T14:30:56.214258Z",
   "events": [
+   {
+    "id": "brent-1794234058",
+    "detected_at": "2026-11-09T14:30:56.214258Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-11-09T13:20:00Z",
+    "to_ts": "2026-11-09T14:20:58Z",
+    "from_price": 94.59,
+    "to_price": 93.1,
+    "move_usd": -1.49,
+    "move_pct": -1.58,
+    "verdict": "CONFIRMED FRESH headline on the wire within the move window \u2014 treat as a live driver until contradicted.",
+    "headlines": [
+     {
+      "title": "Oil Price Today: Brent Falls 4.96% to 93.44 on Iran Peace Hopes as Gold Climbs - JournalArta",
+      "source": "JournalArta",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUmZOMERPb3p5SWxKNk1kbU5PNFFCZTFQeURUSTVkRllSZ2I0SWdlOFBxQ0xKcnIweTBnLWZFczc5dXhaVmNkb2t6amVLdHJPYml3X2ROaXZwSm9md29GTTlNbHp3UV9rc2xJYnZtY092cmloQkVtQTNpLVhTNm51a2lQaTk5ajlCUTQ2czRfZFZ6cWhyY0xHSkZWRVpfRmZEY2EwOUdRc3dMdWZNZWR4YUlvZHlBUQ?oc=5",
+      "published": "2026-11-09T14:11:08Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Price Today: Brent Falls 4.96% to 93.44 on Iran Peace Hopes as Gold Climbs &nbsp;&nbsp; JournalArta"
+     },
+     {
+      "title": "Heads up, motorists! \ud83d\udce2 \u26fd\ufe0f The Department of Energy (DOE) has announced an oil price rollback on petroleum products effective Tuesday, Nov. 10. - Facebook",
+      "source": "Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOYmFCWTZGc2VSVE5RSFJlRkJSaE9kNi1STlQxTzNiaUpNVmJ3T3NrclhURnRXeTlwVl9OS1BxSjF6YVN2aU13VGlxQkphUTh6cGdFeDEzTmpGMm0wUndiN3ozeGVQNmtMRnI5Zmh5STdKd2RLbW1YdWdLVU8wOVNuZS1lMzhWZFRkdFVRTkxZTGV6cXFVT2RMMXlGUjZ1RWdVb0ljeEpxV0F3V1dlYzh0UGg1YjB1bERlRWRhUUFEZjNNR1FGVFY3dFRQemJ4OHZ4d0ZkcUJGVk42bVE?oc=5",
+      "published": "2026-11-09T14:09:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Heads up, motorists! \ud83d\udce2 \u26fd\ufe0f The Department of Energy (DOE) has announced an oil price rollback on petroleum products effective Tuesday, Nov. 10. &nbsp;&nbsp; Facebook"
+     },
+     {
+      "title": "International Oil Prices Fall Together; WTI Drops 3.4%, Brent Down 3.8% - bloomingbit",
+      "source": "bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTWV9HQXRsZEZuV3B6cGppT1hkSGZZMEJpWFZ1ZWo3azFCdExfSGpOTVFVbTV3NWtwbXg4eUR3WEYxeU5XYm9HSXFWYWZzTnlMd1hvcQ?oc=5",
+      "published": "2026-11-09T13:59:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "International Oil Prices Fall Together; WTI Drops 3.4%, Brent Down 3.8% &nbsp;&nbsp; bloomingbit"
+     },
+     {
+      "title": "Brent oil falls 4 percent on Iran deal hopes - IG Bank",
+      "source": "IG Bank",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOM2VYeEFMOFY4dkgzMEtwWHZwdzdHOGo5VTBtWDdpdTI5NUoxeWk0NUR3US1wTFljcVQteEdXa09JQ0NFWVZyN3lENzNBWTR2enBZWUhBZUtCS2twVHdWOHNfNFB0cDJ1SHRMaDVvZml0RVpIU2FCbHh0TjdrVU9nZ3ZTcDRhZC1kQUFWUjBLeE1NVi1uNjlTZFhRaFBNTlU?oc=5",
+      "published": "2026-11-09T13:58:48Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent oil falls 4 percent on Iran deal hopes &nbsp;&nbsp; IG Bank"
+     },
+     {
+      "title": "Global energy prices extend losses as Brent crude drops over 3% - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa0NBa2hrU09IRHpwVkQ2UldlNTc3dW5XRndDd1pGY1JaX01wdDZfUHN1S0xWc3JxbEJYTjQyOVd3dFR6UlZwRnlVU0l2em52MGtCM05uYXFHVFFWZkJoTFFMVVpLYjdManRFaEdWTmdxRWNmY1I1Q2RnMHFmOW1GN0RRQzV1UkZoYWhXZG40Vkw4UG42US0yczFtaXJjcll0UUE?oc=5",
+      "published": "2026-11-09T13:43:41Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Global energy prices extend losses as Brent crude drops over 3% &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report - Kitco",
+      "source": "Kitco",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYTZrV1FJeGNGeTBRNGdiQkFwNGVsc2pMcVk5eXhhT2dsN3JOczR2blM4X3hLcTVSU1UyOWxSY0Iya0ZmaVBUWmo1eGNKd0FFZEthajVFbUxXSUliYXBlTDVYRGpXUFVZTXBoQmhHeWF1Mmhjdjc4akM3RElORDg5UzVXMzlkQXhsRzJ2OFJQN2psUXRPMGxkdHdYaTNLdUJwOTVFWjhYQXdHU1N6OXQ1RU9IblhvZ3M1?oc=5",
+      "published": "2026-11-09T13:35:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report &nbsp;&nbsp; Kitco"
+     },
+     {
+      "title": "S&P 500 Futures Rise as Oil Falls; Nvidia Sinks on Huang Affair - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSkRSbWhPaUtmRFBUSy10cUNCTFJFSGFWUGJrYUlZcEF0eE9vLWN4azVnVU1HQmYxRDQ4V1lUbGtzM3czZzBKZTNPVWhONkI5V2lxMUVObXFmczNpMWRmMW1vXzU5S0tfa3pubzlra1V0NmRVMjZPM1oxbjJ1Z3VVNUdjY2VMdWZieEVERjRMWGpSQzcyeHdXc1NpaGtWS1VMRlVQbHdpbnlDRTc1TG5FLXFEOA?oc=5",
+      "published": "2026-11-09T13:34:22Z",
+      "event_date": null,
+      "classification": "CONFIRMED_FRESH",
+      "summary": "S&P 500 Futures Rise as Oil Falls; Nvidia Sinks on Huang Affair &nbsp;&nbsp; Bloomberg.com"
+     },
+     {
+      "title": "Oil Sinks to $94 as Iran's $8 Billion Hormuz Deal Heads to Trump - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV2JmcmZSU2xCM3BOWWgtRHlmSFRNY1d0ajF3bEZSZVhHeXc1OWttSm9sMXkydHhORmRqY2xTS1oxRTFwNFc0ZlNFSWlXbEJUenhucVgxUjNsUnNvanctR3pHcFBaSTlRSnBMMmdmRDh1MU5ETDVwYUxvby1BbmFnV1hROXptcXVOMmxrUW9VNGVmYldybGJnX2RJOXVzcTdzdHV5MUprMVhRdFk2WTBGV3ZaMUdQUFI40gG-AUFVX3lxTE13UTNzbnJjd3p3NjEwd2wyYlZ4VWZZaXJ3TVVKMTQxR2NnQmZfSkplYTROSzhmQVlrbnFOQXdVNGx6cTVPOE16eHZFa1NJTzFzbE05Z0g2VmtQQ1Zvam1YN0doTzItaEdDWTNkWjhMaGNSTURrNUx4TDBNb3FxSHRiamo2cll4WHpVQ25WRWlGUFBOOFdJVHgyV2pFMFRjMV9OMGJtTEs3QjdrLXo4N3BlQVJWSVRBSGt4cFVRVmc?oc=5",
+      "published": "2026-11-09T13:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Sinks to $94 as Iran's $8 Billion Hormuz Deal Heads to Trump &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Oil prices decline as Iran reviews Qatar proposals - Transport Topics",
+      "source": "Transport Topics",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBHR0lTZ1dKQU8tOW5Sb296TVluQ1FrUU13Q0E1Y1V6YjlvaEYtUnVtaUlfT1B0UTdEZEV3ZnJaQkpLbzhZRGp2Q2habjA0eGtzaGhNRnp2b1ZiVVBtOXFmVzZZRWV3LUlLVXNVTw?oc=5",
+      "published": "2026-11-09T13:26:40Z",
+      "event_date": null,
+      "classification": "CLAIM_ONLY",
+      "summary": "Oil prices decline as Iran reviews Qatar proposals &nbsp;&nbsp; Transport Topics"
+     },
+     {
+      "title": "Lower oil prices could cut Indonesia\u2019s 2026 energy subsidy bill by US$1.11 billion - Indonesia Business Post",
+      "source": "Indonesia Business Post",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNc3BsV1B6NWo2Q3lDTERxYjA3cXJFTzFQZVdSUllHcG52YXZFcTBwajRvdVZwcmxqdWo1clg5R3RWSzZtWTVfVlNJRUFqVzlQenF6VkxhbEFuM0hxd0JWZlFsNU5PSmZjN1JiUGU4a3dBUlJOR0cyTmdYNlN1Tm5lREI4WTJIanY2Z25UVENpRFpKT2hxdnZJYjBsMmV4ZUdYMlp5Qm96SUtpRlhfQVNWMllNTkFoQ05OMDhMSGFzVmRlRzlYWjZpREF0OEFVdw?oc=5",
+      "published": "2026-11-09T13:21:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Lower oil prices could cut Indonesia\u2019s 2026 energy subsidy bill by US$1.11 billion &nbsp;&nbsp; Indonesia Business Post"
+     },
+     {
+      "title": "3 Value Stocks Under $5 to Buy Amid Oil Price Volatility - Zacks Investment Research",
+      "source": "Zacks Investment Research",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUDVRbjA3R2RkRnJDMkpCbVBLZjBBQjgtME9BWUU1ckZFRFNqVFd4bWRlVjQ5MmlfZnc1ejhxMnhqQjJwaGNJamlKOHQxc3hkZzhiMU9fS0lDTW5YbEVDOHpNMEc0ekNQb3pzSWdrOXF4N1BWR19kbGtlTWs3cDE5T3dDeGM0WHNjS2ZaVUFLbEZ0djM0OUdNS2pwd08?oc=5",
+      "published": "2026-11-09T13:19:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "3 Value Stocks Under $5 to Buy Amid Oil Price Volatility &nbsp;&nbsp; Zacks Investment Research"
+     },
+     {
+      "title": "Oil Prices Fall as Trump Signals Reluctance to Launch Further Strikes on Iran - PUKmedia \u06cc\u06d5\u06a9\u06ce\u062a\u06cc\u06cc \u0646\u06cc\u0634\u062a\u0645\u0627\u0646\u06cc\u06cc \u06a9\u0648\u0631\u062f\u0633\u062a\u0627\u0646",
+      "source": "PUKmedia \u06cc\u06d5\u06a9\u06ce\u062a\u06cc\u06cc \u0646\u06cc\u0634\u062a\u0645\u0627\u0646\u06cc\u06cc \u06a9\u0648\u0631\u062f\u0633\u062a\u0627\u0646",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBIV3dwVC16MW5xamE1V1lndmI0aHgxZnFMWXpOcFpES0JNbWwtbmpvQlg5TkRlaUM3UEVKNmNQYjlzSnB5OW5yd0ZUVHNvUQ?oc=5",
+      "published": "2026-11-09T13:17:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Fall as Trump Signals Reluctance to Launch Further Strikes on Iran &nbsp;&nbsp; PUKmedia \u06cc\u06d5\u06a9\u06ce\u062a\u06cc\u06cc \u0646\u06cc\u0634\u062a\u0645\u0627\u0646\u06cc\u06cc \u06a9\u0648\u0631\u062f\u0633\u062a\u0627\u0646"
+     },
+     {
+      "title": "Crude Oil Prices Fall After Trump Says Fresh Iran Attacks Are Unlikely - theopenpress.in",
+      "source": "theopenpress.in",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjZ5ZThkZ19ZamdQR0tNQmlHRWpFS3h0eHBQZ0tMT0xyYS1Qb3R1SmVuR3poTHo3Y3djTG85UTJjakE4RlpIMHdKbVZWWm9qWU1BWUgzTHF3NTQ3V1hzQklHbjNJUVNEYlVsVW1pVWVHdFhjZC1PY05jb3g3SHJqdTJLSmJtcldNaGFVU01B?oc=5",
+      "published": "2026-11-09T13:16:03Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Prices Fall After Trump Says Fresh Iran Attacks Are Unlikely &nbsp;&nbsp; theopenpress.in"
+     },
+     {
+      "title": "European Gas Prices Edge Higher as Hormuz Shipping Attack Offsets Trump's Pause on Iran - BigGo Finance",
+      "source": "BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5NTXVJVUwxUlE0LW1Lc0lUZDJqOF9MSHlVY1Y3OVlMR2tJNFFYUlE2ZTZLcEhtNDdnYUhtVEtYOVY1akRqNXdKbmZxVEJfc1FBNEU4bWpzZkhSaDFEeUdLaDEtVVY1LTFwajBJWi1ETWN3N2VoRFE?oc=5",
+      "published": "2026-11-09T13:08:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "European Gas Prices Edge Higher as Hormuz Shipping Attack Offsets Trump's Pause on Iran &nbsp;&nbsp; BigGo Finance"
+     },
+     {
+      "title": "Oil slips below $100 as Trump played down further Iran strikes - Quartz",
+      "source": "Quartz",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5NZktnUkRDOVVYSWh3WEJ2REM3UEFaSlVmaXdERzJKZHg1bW8tNGVDME9mY0ZBaG5PS1NZZjczd3MtcWEtR1lyZ3FNWnpKVklMTGg0X0gtTUtPTHdId2NTa0lzYWNJcG9GaU1TbnBDWmNEN0ot?oc=5",
+      "published": "2026-11-09T13:06:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil slips below $100 as Trump played down further Iran strikes &nbsp;&nbsp; Quartz"
+     },
+     {
+      "title": "oil prices fall as US signals restraint on Iran tensions - NewzTodays",
+      "source": "NewzTodays",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRFhKSi11RUVZd3JLdjc5TE5zeU9hQl9tamhqbUN0U1VKSFRVWThnbWhGWWZpVVZHSXJoalpjajRJOFZ2WVExeTlJdGxJM0JhYmU2U0dUSzNCMl94VTZaSEdwa0ZocDhnUExqWFYwQXU5MUJwN3lEZmlNV2ZrV1FBTHdn?oc=5",
+      "published": "2026-11-09T13:01:36Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "oil prices fall as US signals restraint on Iran tensions &nbsp;&nbsp; NewzTodays"
+     },
+     {
+      "title": "EUR/USD, Oil Forecast: Two trades to watch 91126 - StoneX",
+      "source": "StoneX",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVjRtVWY4U245UHdxMXo3ZzR0bTRvSF9SU1hGMWVGSGhxMmVRMnhsTUZMVGFGSzZiaWRyRDBMTThWcW9LWGNaRHhxTkF1LXUzSk9FdW5yNDlZQkU0Smt0Q1ZmVXA1VmdXc1g2aWZiRHllVXlVbEhHSjdPMVBsYVFmZ2ctMlZFSHpDQWtzZHlFSnh6Y1JRd011a0RB?oc=5",
+      "published": "2026-11-09T12:55:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "EUR/USD, Oil Forecast: Two trades to watch 91126 &nbsp;&nbsp; StoneX"
+     },
+     {
+      "title": "Current price of oil as of November 9, 2026 - Fortune",
+      "source": "Fortune",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4tS0VJXzlGYWY2NWhRSGZjZjR3M1lrYmJMUV9RU0xJVmU1eTVWRHVVNUlmc3ozY3g2eGZycDJUeE9nN1pLbk55aVc3QlhfOXh2akV6Vlp1OHRGMUZXUXhTZXhR?oc=5",
+      "published": "2026-11-09T12:45:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Current price of oil as of November 9, 2026 &nbsp;&nbsp; Fortune"
+     },
+     {
+      "title": "WTI oil deepens losses towards $87.00 as efforts continue to restart US-Iran talks - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaENHcnl5eWdveWRUUmFFenQ1cklpUERIb195RHNnbUwyam1YSXdJRnFXdXpsZUFfeUhKMXdkZDkzWG1CbXV5emdQR20xYUdQRHpLV1gwdjNKS1VZWjdmSk9SWm00WUxuWU5BYXY5TGk3c2lhSlo3My1rU05waVhvQzRiY0RBeTZmYTM5M2thSDI4dUlFOHRPTkJjTFpOY3RTdUVYWUtFVGRRN0EwSEo2SkRmTjN0ZTI1Z2ctcjJETExuNmxMcC1XWm5yNkxTc2ZPQUJvUGVnSzhSYW5zc19qQXh3?oc=5",
+      "published": "2026-11-09T12:40:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI oil deepens losses towards $87.00 as efforts continue to restart US-Iran talks &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Dow Jones futures advance as cheaper oil eases inflation concerns - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbmJvVTVraWd1WXkwMTNDU0FwbEVoRUlTMVRTVFBrbEhMTFNlY2NXZVhJWHhhOG9XaVhNWW9fRWxZczY3WU9CcW9BVU9yUE9pcDhCX09zb3JTR21yNlVySUNxOE1uRDd4RnVDWUdCdW9YWnJ0VENIVXJ0SU1RUDFPd2pFZVdaN2plTnByRVRQeUN0TjhzeXplS3pvYkRyOFpIeUJid3R5cUJvemtza0ZnaEYtVzh5bnRGNldhTXZTblZrNlZJNDRGb3kzS1RDNnRoN1NleQ?oc=5",
+      "published": "2026-11-09T12:40:14Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Dow Jones futures advance as cheaper oil eases inflation concerns &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "EUR/USD: Oil offers relief while fiscal risks persist \u2013 BBH - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMkE4TUVFSndVVFRSZ0Y5M2lqNndUeTlXWFVfV0NFSy1oTGVuQzRrem9uVkZDSXFZb3JmQ3YtVjBON2JRUDBnekJzV3poWnlkS1kwa1BqREFfWUQyVVhqVVozalljTHQ2bHNZSW92d2I5aDcxOXVONldOdjdreTVnQWZqX2F5NWM0Z1o3S01rSG40MWRpZmVUN0lTeVVaUkp1TXgtYXlJdXBkX1R3VFN2Q1FhWHF1Zw?oc=5",
+      "published": "2026-11-09T12:38:15Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "EUR/USD: Oil offers relief while fiscal risks persist \u2013 BBH &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Indonesian Rupiah strengthens as lower oil prices push USD/IDR down - www.tmgm.com",
+      "source": "www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZEFRbUxuSm93bTZFcHk4OG0xN2ZCbHRpb1VKTFBraW5XUjQ5QXhwclFwdWFqMG8tVV9BemZCQnVJb18xYWRwbmJENG0xc01RUDRlbkJZUU94Nm1iT1ZMWW83c2ctZmhSR0g1WEoxTzdneDhHci14dGdRamJ5YUg1Ni14RFBVbTZkdnBkR3BZaUpjVG5aWGV4UENERzZsRWRpaTI2R0F2b2tJdU9ORWFWR0QwNUtWcVRhQTNwTFVKX25JZTFtTUZkb0RrY2NMZw?oc=5",
+      "published": "2026-11-09T12:38:12Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Indonesian Rupiah strengthens as lower oil prices push USD/IDR down &nbsp;&nbsp; www.tmgm.com"
+     },
+     {
+      "title": "Oil slides as Trump signals restraint on Iran despite fresh shipping attacks - Khaleej Times",
+      "source": "Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOFNiZm1WYWp5cFRTcUlqWGZWS0tIZmxzd2VJbGpKSnBFOThHSTAxMzR4ZTdybXZUZWlQM0hNUDdlU3oydkJUTGhXZmRnMkQtc1ppR3ZEOURGcVY3MWZEYy1IMm9MNnplQkt6d3B2ZmlSWmJBYTNzMDhOSWwtMi1aT0ZLNDZhMFh5cVVOVGJpLXU5R0p2TV92Y2kxdi04ODk4eFJ6VktWTFdlTUdXNlJPSmdoeUpTai1GX0pIYtIBvAFBVV95cUxNOFNiZm1WYWp5cFRTcUlqWGZWS0tIZmxzd2VJbGpKSnBFOThHSTAxMzR4ZTdybXZUZWlQM0hNUDdlU3oydkJUTGhXZmRnMkQtc1ppR3ZEOURGcVY3MWZEYy1IMm9MNnplQkt6d3B2ZmlSWmJBYTNzMDhOSWwtMi1aT0ZLNDZhMFh5cVVOVGJpLXU5R0p2TV92Y2kxdi04ODk4eFJ6VktWTFdlTUdXNlJPSmdoeUpTai1GX0pIYg?oc=5",
+      "published": "2026-11-09T12:35:51Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil slides as Trump signals restraint on Iran despite fresh shipping attacks &nbsp;&nbsp; Khaleej Times"
+     },
+     {
+      "title": "WTI OIl extends losses nearing $87.00 amid efforts to resume US-Iran negotiations - FXStreet",
+      "source": "FXStreet",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZG5SbVFYaUJjakJBTEQ1dzl6NTVKNjdfVU91aDlRY25CZ2RwREpLY0l2c3hQdlh3NEloVjE4OXJFM2hWMU1oVDFaMFpob0Q1OU9BQ1J2azlCV1lsZC1rRlBvbTlnMF9mVF83WTAyYmdwcnZ6OENzTXd5MnZWXzc5TzhVTkhUTEZfM1NIY1dFbVk2SlhfbnRNNlVqU0d4bnVSWGpyLUR2UWZkaG1GMEhGZERVWVhoYUZnZlVzMzhFRQ?oc=5",
+      "published": "2026-11-09T12:33:02Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "WTI OIl extends losses nearing $87.00 amid efforts to resume US-Iran negotiations &nbsp;&nbsp; FXStreet"
+     },
+     {
+      "title": "Oil prices fall over 3% as hopes of US-Iran peace talks ease supply fears - CNBC TV18 - LinkedIn",
+      "source": "LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdUQ4anFvY3c5R2Vmc29lRjdNTkJQTnhJd05BaVJhVGpTUnN4cUp2Mm51YzRrYmVIN05qMGhIa1dBaXNWemt6S3BrUGJBa05sWDM1LXJwenFOX0xsVG9BazhSem5iN25mY0Y5eGNRRWRzTUdiaE0tdWsyM2lIQ3dDY0RGbWk3Zk5DelM3TmgwWW9IeVhlWEJqNXlBUlV6MGZkRFBRVjdqTUpESWUyZk5LR3FHYWFrcjBL?oc=5",
+      "published": "2026-11-09T12:32:50Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices fall over 3% as hopes of US-Iran peace talks ease supply fears - CNBC TV18 &nbsp;&nbsp; LinkedIn"
+     }
+    ]
+   },
    {
     "id": "brent-1794223257",
     "detected_at": "2026-11-09T11:30:54.251213Z",
