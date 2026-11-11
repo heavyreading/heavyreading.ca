@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-10T15:21:09Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-11T10:16:25Z",
  "data": {
-  "updated_at": "2026-11-10T15:20:56.273223Z",
+  "updated_at": "2026-11-11T10:15:59.614779Z",
   "events": [
+   {
+    "id": "brent-1794391553",
+    "detected_at": "2026-11-11T10:15:59.614779Z",
+    "benchmark": "Brent",
+    "symbol": "BZ=F",
+    "window_min": 60,
+    "from_ts": "2026-11-11T09:05:00Z",
+    "to_ts": "2026-11-11T10:05:53Z",
+    "from_price": 91.56,
+    "to_price": 93.12,
+    "move_usd": 1.56,
+    "move_pct": 1.7,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "Oil prices rose after Iran's new statement - \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "source": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5wT3dTWVAtS0tTZlFLeFFsMWlXcU1ONUxOTXFNSzk2MEVvUkJDTUIzVjU3V1ZfZHNZQlBQbzkzcTdERUhNNm9pWHhUdXRlaHhMS2p4ZHdTWVp4Mk1EWXhrZnJadFZYd19UWnNacW9uWk1JZ9IBcEFVX3lxTFBfTklnSVhrVjVkTEtYbE1qLXZZWjUzRVN5c3pjS3BxSzdRNnZudHB4OVJXVVA0QTB2UE9PTDVQMHFEU1hTSjFkQTJEeWxjQ2RuZ0RJMnFrQ0N3MnNGNU9wM3B1MU5ydkF1c01qWGRxZVY?oc=5",
+      "published": "2026-11-11T10:05:24Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rose after Iran's new statement &nbsp;&nbsp; \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
+     },
+     {
+      "title": "Crude Oil Futures Rise on Positive Global Cues - Rediff MoneyWiz",
+      "source": "Rediff MoneyWiz",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVXNmWWZwa3lqNmk3VkdDZExXRy05YU5XNnY1bWl0dHdOZWNYMUNfR3lQWVJ1Qjc2azR6eUQ5V2pvVjRveVN0Y3FER05wYUtuLW1UZUVWZmkwNnFERW1XVU5id3FHcHE5NXlqLTZDWVJWaVN3WFZkekFQcjN3U0xyQlhXRWJCbW1LeXA5R2gtM1RIbEJLOGxYVm1fb3Q3cDTSAaQBQVVfeXFMTUZtZU1CUERmRnI2Q3NKWkVsWkU3QUZTZHZ4dlM5YjV4UDBfblFsdlVBOGZobjJJLXhNakdNVDE3MkVVZTk2Rk9BdlkwZmVYbDJjQ056d0lGVnhxSkJQeElUazlwTXdyVnN1WWMyUEFFQmxhaHEzX1FNWGJfR29HTWcyR2pmeFkwQWk3VE1vNDZRcW9XNUl1SzhSV2d2eXJ1blhQc0Q?oc=5",
+      "published": "2026-11-11T10:05:17Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Futures Rise on Positive Global Cues &nbsp;&nbsp; Rediff MoneyWiz"
+     },
+     {
+      "title": "Why is Iran stepping up tanker attacks amid peace talks? The high-risk strategy behind the Hormuz escalation - Gulf News",
+      "source": "Gulf News",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPb0l4VTllSmlOcGdsX3VFTXN3TEg3TThKZFJfWHV2REJBTHctRThmRV9EVjNwY0t6RlJUclFMN3Z1UzJXLTYwZERuZWpwdU12enRRbWlHTGR2RElERDQtejFMRnJNSjRMR3dIVzExbFdwQ0I3SnhEMzZSZlR6NURrdVQ4NkxMWU9nMGt5ZkcwRmtWVXNOMVJYdzZFc3VVTHJDX25RQUdjano1RkZuUkRMYTZLU1phMzdNdzlSTklqb3p3eUVQSGFNZF85VlRleHNMSTBKajJnTTR0UE5z0gHvAUFVX3lxTE43TUNKN0NIVHFCdXBCV2VfMFA3WnJiTU4wamd0VkRUa3E5SGl1WlJCbm5NZ0RkU3RTck4tcmlZYVEyOTBjVXhzNkRNNWJReWhmUzF3Z2FkazF1bGFyS1FzSGg4WFZMcS1TeGxINzV3ajZUYUUzUUs2bW5qOWc0TkFOTGFXQ0loSUdiM0dqS25YLXc1dXB5eVBTTlpBdnFUdmNOZGtiRWhCdWpvQXpEUXlUaHNJTk9wTVJSSWpSVG54b2N4U2ltSkktYVg4b0xhbFVQUnY3UUx6S1QzakEyUUtkOGhRck0wUXlzdlFCa0F3?oc=5",
+      "published": "2026-11-11T10:00:50Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Why is Iran stepping up tanker attacks amid peace talks? The high-risk strategy behind the Hormuz escalation &nbsp;&nbsp; Gulf News"
+     },
+     {
+      "title": "Siemens Energy More Than Triples Dividend After Record Year - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdG1xWUlCcHVNdUs1dWRQMnVwRkxwTDcwQVVaWGdVR0pGb3lodjY1X1FPbXpVODNWOTZnRDU4aTctZ0lJdW9MQVlQcG96ZG0xajNOeVJsTTRaNHM2RlI1TzNma195NnhmY3dCVzctQTAxa05QUE43Y2hjcEZ5dE1Qd1Y5RmctajBHdVN6eWRaTVpZUzVmbG5YSGZheVExc0JhR1B6bUpOQjc0LXk4bFRDX010bFg4d9IBuwFBVV95cUxQZjRZSzczMzFreFFxRk5IM19JQUg2cjdWUjdFZmhtaUZRSXNPeEJkN0VTdC1yODNfdXpFMTFvdzBOREtnMHk0bXlxM3R2V3Rseml2M0NVUGpaSlh0MGF4MnA2N3ZmUFBCeWZYSWZwb2dBSXZGZGlqSXFjOTZzZk5ZSXd5SGRPWUUtRXVrZWM2YU9peUhucGdGQnAwY0ZGc3RVaFhfRUk0c1d5RVNadG9OeXZMRnFqMjg3ZWRr?oc=5",
+      "published": "2026-11-11T10:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Siemens Energy More Than Triples Dividend After Record Year &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Dow Jones Top Energy Headlines at 4 AM ET: Oil Prices Rebound as Middle East Supply Risks Persist | KKR, ... - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOalRhcjd0QUF0OE9PcnRvU2REWGRDUjUwZERSYmoxRy1kZ2tlaVpOdkVjRXpfTWRoLXNEZkZRcDhTVFp2RDBKTFBoOTFNVVB5cUpvQzBJa29oVHpDWUwxSlZIa2NyV2lZWEpLdTdTZTVkbVVRRWZQWHhnenBqNExJLW9temROZnlZaXNxNTdiT0pKTzA?oc=5",
+      "published": "2026-11-11T09:42:31Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Dow Jones Top Energy Headlines at 4 AM ET: Oil Prices Rebound as Middle East Supply Risks Persist | KKR, ... &nbsp;&nbsp; Moomoo"
+     },
+     {
+      "title": "Iran War \u2018Isn\u2019t Out of the Woods\u2019: Top Strategist Warns Oil Is \u2018Significantly Oversold and Underpriced\u2019 W - Benzinga",
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQNkp4ZWZTV01SZUVSaWlZV19DaWIteENpeExpZ0hsM1haZG5wa1BPV2FKTkV3c2FzaXJXN1RUWll3akVMVFVVZnlZZVd2SkJBMkFUbEFlNVJMMDRRREFWdjBHZFgwaWRYaGpmTnJTb0VGQWNUVWNwUnV2MEljSUFSU0FtX0pOWGNLbzBJdzBMdk5EWXIyWFo5MjdMekhrbWRRaUlfR3FRa2dkUFNZZDI2V3VmZjgzUXQ4WHJRNFBQM3hxaHlfYW10NVhVNFNKQjVNYldPd2oxQUt3bWV5VnNXLUdoZ0ZNR0tQeUd5Mlgzd2k0SnBjT1AxdnhuY2JjQUFjV2N4ZnRwRkV0Sk1qdFlfY21sQQ?oc=5",
+      "published": "2026-11-11T09:36:02Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran War \u2018Isn\u2019t Out of the Woods\u2019: Top Strategist Warns Oil Is \u2018Significantly Oversold and Underpriced\u2019 W &nbsp;&nbsp; Benzinga"
+     },
+     {
+      "title": "Can Trump End the Iran War Without Paying a Lasting Economic Price? - Modern Diplomacy",
+      "source": "Modern Diplomacy",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcTRXdk5YdVhlYVFwTjR6REk3TlFNY3d0VnVXZHJmUWptZGRzQnVTMlZMSmNWOGh1S24tX29KSlktcnpKY2lWamR0Y0JkZ01LR1Q5TG8wd3ktNktTckdPeFRIak1abHEtdWZHWTAyaEhPVEg1bDBVbkRTclZ1NG9MMzduVVFDOTMweXBGMXFDWWxERXBDTWkxRHM2cklOaThsT0FSWEpvRlM?oc=5",
+      "published": "2026-11-11T09:33:27Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Can Trump End the Iran War Without Paying a Lasting Economic Price? &nbsp;&nbsp; Modern Diplomacy"
+     },
+     {
+      "title": "Oil Futures Slide as Trump Says New Strikes on Iran Unlikely - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVFNfSjlGZWFOd01laGhIaG9idVhwaUxEOXctN1hkb1E2Qkd6YXEyaE5DUHFzMEdoT3dqWXNQbkxScXRFb3o2aGU4SEpWdnU5SGdKQUJXTUFMdS1kcHJKVnJPVnBUZk1XUjd6NXRLcnJwSGhXMFZVa2hqQ1VvVWkzM2FxT2tCNlhGN1VYYjgwRTdiY2Z6SElpNmtfMXRmTjF0RW5fX0JVVWhuZVlsX1lWdDBMU1g1ZzBFeXlGT2tZbUNyQjlLUFE?oc=5",
+      "published": "2026-11-11T09:32:16Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Futures Slide as Trump Says New Strikes on Iran Unlikely &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Crude oil price surge after Iran attack ships in Strait of Hormuz | Tap to know more | Inshorts - Inshorts",
+      "source": "Inshorts",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMVdjT3dwdVdOcWR1eEZNZVZjdFZNNEpoYUttcW9vTWptVFptUnYyNEFCcktvLU5TZWtpNW85WWphb1VGZFNlc21icFJBX1hCTmtWQTV0OUp4cWhCUnJZS2hJblhMZmstbmYtV0tUNmxEVW1VM1M3WXd4TGRBT08zQ0ZNSDNjTG4xYlJ6cDFTM0tzc3JzMVN2dU9VQmNxVno2MHBGM1NnUnRHTlVB0gGyAUFVX3lxTE56SVN3ZTdaR0k5QmpfcG1vR1cyMm1hbENUV3FkeU5NdlBsT0dVaWJYZFMyYy1XOHN6WWx0OFRLX3p6TFdsdmtQRzVlYXpNSUloRnNWdEh5NXg3T3p0QURVMXhKWk94azgxVEhlbW5KcEhENTBYelBQMDdvT3YzQ2VmSWtQVWliMXYxTnRIQlhtSkR0YnJoNUZYZE9FRnNCbjhtX1Jhd2F6dkwycTVBdEpWZnc?oc=5",
+      "published": "2026-11-11T09:24:04Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude oil price surge after Iran attack ships in Strait of Hormuz | Tap to know more | Inshorts &nbsp;&nbsp; Inshorts"
+     },
+     {
+      "title": "Occidental shares rise as debt milestone sharpens focus on oil-price risk - finchannel",
+      "source": "finchannel",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQei1DeFJVM3hWRnl0QlFTTHlSdWoxdUFjN2U4YkNaNkhTel83eTU2dzRCXzUtTEFTSnJEZWpWSXRWaU1GZVF2NW12MjZLaUlEdTJqYVB1OER1T3VqRXFSckRSVXY4SjVOTW04VzZQQ3YwbjdGSFBiSnVySURKUkd1UU1YWVZFVFhXSHhSZE9VbGxxNWRYNkYtOTJGb1FxYkRBOG9NeWF4amR4alV2YWlvazkwb1Atd29Remtvend2TUxDV3VPQnBEZm42UTVNTWphT0w4ZnU4SXJIZGFHMFJqQnBOUzI?oc=5",
+      "published": "2026-11-11T09:15:19Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Occidental shares rise as debt milestone sharpens focus on oil-price risk &nbsp;&nbsp; finchannel"
+     },
+     {
+      "title": "Oil prices rise amid tanker attacks in Strait of Hormuz - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNal9fQlN3Vlp6QU5la3pxQ1kyYS12bHhsQTQxT2ZkRVgwR05oTDJrcnF1T1Y3bm1XQmZ5VmFwQmpfTVVIaWMwamNRWFlib21GTnlocXJKNDhwaF93b044dW9iR1RiSkhYSVdmRnNVREc0eURpb1NCUEtrNWFWZVZvaS10RVJKZEo5TUFpcERlSTVkeS02SWxYc1BJOXF1QdIBpgFBVV95cUxQOUZMaTFWZVB1NzgzUEY3M1NNejRIbnRURk03amRtRjNhb1JvS0NMTV9GSEVkSE1zbnpaVHpJYzYyanhLeWI5LVF2T2RGSktQWDZBdEZ1OV9HWmVBWGlVOHpzOHUxbVZ2WWI2ZE5IckhPaUwzWFM1WnFaWHZ6UHVNS1VJNUQxRnJkc0h3azRLZzBnNzRWVzlrMWFRbFBHcTdmMDFSYkdB?oc=5",
+      "published": "2026-11-11T09:15:02Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rise amid tanker attacks in Strait of Hormuz &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "Japan's Eneos ups FY26 net profit forecast 48% on stronger oil prices - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeDFJYlJIelhCREFjcEllcTVJTDg4YlVjU3kzSm9fdHYybUdNNXFwWHZlaGkxUlk2ZDZTT2NrNzU0VHlJQW55cDNOOVVOVlBRZC11amNYcGw2b1BDRDZvT0lEaWpBb3J0eGdXaVZWc3lMQzd3Z1pqNkZZTnBjWE52ZWE2cVdIZVhaZG0xRlpGZnRiS3RZSW1xalF6ZWJ3RVhZN3BzT2o0SDdrTHNYR3d0VVhHamVsNnM?oc=5",
+      "published": "2026-11-11T09:12:58Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Japan's Eneos ups FY26 net profit forecast 48% on stronger oil prices &nbsp;&nbsp; Reuters"
+     },
+     {
+      "title": "Oil Rebounds After Two-Day Drop on U.S.-Iran Conflict Uncertainty -- Market Talk - Moomoo",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT3ZHV3hZWEdpc1ZaVDVoZGoyQlVXamlsbXlBZU9HMjlEMWtyVDEtM3lTVjgtb1pkcTB5aEEzRWZxQ2pQcFFLQW5QMzVMaHRtZUNsZzJ1M3RoMllvTS1SVVAxTkVuRkUxak1IZ2V3MDRmMWVhUXFSU0FNVjB3TWpTbExYRzZMV2wtNjdXUXlHdDN4ZklSeHY5UmtoVQ?oc=5",
+      "published": "2026-11-11T09:12:20Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Rebounds After Two-Day Drop on U.S.-Iran Conflict Uncertainty -- Market Talk &nbsp;&nbsp; Moomoo"
+     },
+     {
+      "title": "Japan's Idemitsu quadruples FY27 profit forecast to $1.86 billion on stronger oil prices - The Economic Times",
+      "source": "The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxONE0tX21NUzBiYjRqMTZ6dWlzUFFyRzByZkRCeGtJdUl2UHhEeV90VVo5UGNkSk0wb055SVRycjk0cnc3NU9sSVhBTU14aERvMUp2Z3BGWVphTU9iVU12OGs4aGx5RVJaNVdpTktBM0pXV0hDMTZlcmZfQ3FFUnF5dk1GLXJJRlNNSlM5emVCME1fd2oyaHlwYy0yWndOdXFSejlHVDI2Q0RpdWMwZ3Ffa09UNFk5ODRqSXpGeFdPc1Z0T2E5a1ZPLXRnTUR6Q2l1M2ZBamVSVW9xc0poNFVYV2cwMm5BQUppdlF0R2pyaE4yRGlTYnVlZk43ZlDSAYICQVVfeXFMUHlDNmtjQkR5ZnFYOXFOVlRZY3RPSEExaTRuaEZvRDkxWE1XeVFEVktBRnNiNHYyYlFzRVo5OXRwUmI0MkxCd2hBLWVqVVZVcnNacXR4dkRucmh2TFVwcnJOcHF1S3oyTFZYdzBLVmV5VmV4QVQzQ3Q3bzVZQzhnOTJoSVEydk9OWWdMSklPWjl5aXgxY05KVUd6emo0RDZrejlyTTNIbGYxWUVlT3NIcmFIZ1hZVUp0VW03d3pGaXRFTGQ5SlRGb0hXZGFVRG5lTEtrUGhRdElBN3lfNGVBWG1ScmdRanUwamVJdDRJOHFKVXN3TnhEVlBpWVJWQUkxa0N3?oc=5",
+      "published": "2026-11-11T09:04:53Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Japan's Idemitsu quadruples FY27 profit forecast to $1.86 billion on stronger oil prices &nbsp;&nbsp; The Economic Times"
+     },
+     {
+      "title": "Crude Oil Dec 26 (CL=F) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "source": "Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE00VWlSRWZ2MlhDNjNtbmVmMS1fQmlXRW9wcngwTjF3Mldqckx6YmNjUXlibm1FV28wc0s5dlhXRVVZeWo1OERid0NidFNpcGlnM1E?oc=5",
+      "published": "2026-11-11T09:00:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Dec 26 (CL=F) Stock Price, News, Quote & History &nbsp;&nbsp; Yahoo! Finance Canada"
+     },
+     {
+      "title": "EIA raises oil price forecast for 4th straight month amid Mideast disruptions - Anadolu Ajans\u0131",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSEg4ZkdHamdkN1VacUo0TGxjamNEZDRVZkprTlp2TXJJQjZkYVJ5Ujl6RHF1bGZQN1dNazVRVWRUUDZpcHU1MEFtT2dFcFdFRjdBREdBelFYaUQydHZuMWZqVHRqS1kxQ1lxUnpPR0x3a0liLUZrS0pReGM2VlZaV2hCQVBvaU43Wk40UDBQLXZadUI0dEhqcWxIeFUwbHB1bHJRZVRKS2docHdZTTZ3akVWaHBkSTR4cmE00gHDAUFVX3lxTFBSOW5wdm05OTlKM0VSSWN3RmtZX0IzcmlFWENOZ2RNZHVfVjRRV3N3YnUxRVE2RzYwU2R3N3VQQnhZTkFhcjRhNDhRRUxzQUpqVW5VUGlLanBvbjUzRGFJcHAxWEw5ZXcwZUtRd0JlQ2gwOVNldjNmMGR5TmVYMnRfMkgtdFA1YW5mSVJ4RWE3TVBqY3Jvcms1N3VieHQ3SGFVQmJoZ2tfcmpfZDFkRjRfdDh6bF9OVDluSDB5OWwtd2Iwaw?oc=5",
+      "published": "2026-11-11T09:00:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "EIA raises oil price forecast for 4th straight month amid Mideast disruptions &nbsp;&nbsp; Anadolu Ajans\u0131"
+     },
+     {
+      "title": "Oil prices hit two-month lows as Iran escalation fears ease - \u0633\u0627\u0646\u0627",
+      "source": "\u0633\u0627\u0646\u0627",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB4X3Q5ZG0wU3Zpall0S294MzFxNTJUMGROMjNGdkI0cml6dGd4UjRPT0x6SmdFVGFkS1FYV1dTUHVVZjRBYU1mN0tJem8?oc=5",
+      "published": "2026-11-11T08:52:07Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices hit two-month lows as Iran escalation fears ease &nbsp;&nbsp; \u0633\u0627\u0646\u0627"
+     },
+     {
+      "title": "Oil Prices Rebound as Hormuz Shipping Risks Persist - grafa.com",
+      "source": "grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaGtVTlU3RUdyVVpfdDZjTGw2UVFYMGl2U0ZFMlVBZ19rd2J5UEw1aDR5dXJoRm5PS21Vcm1pTnA1aU9TbVVSN0lUWGlBTngtb3ZGRm1ZU1ZrZU16eFdDcnpZdUgxZWV0MzluN29sZld5TTVHVU5YR3E2MF8tdzJybXNoSTRwVDhFWFJ3QnhTaHQ1NllJ?oc=5",
+      "published": "2026-11-11T08:48:10Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rebound as Hormuz Shipping Risks Persist &nbsp;&nbsp; grafa.com"
+     },
+     {
+      "title": "Saudi Arabia and Turkey Sign Major 3 GW Wind Power Deal - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNc3YybU5VSlgzM21pbXdLMTZHZnlGU3RZWTdEZ1luZHA2a3VuWEhGWVRCQ0oyR200WWFEcmZMakhMLWRrUmUyYmFqVlQ1c2tmeFVVZDJqSGRmZ2s0dGlOOFhGcHNwQmZpbWl6YXYzV3dBQ0pHc3RmWnlYLS1DWUhGaTFpcFpMVXlGM3NobGZNMWJVNER2SXVCZl9QTFpPNjRrMUVjWVZJclk4T002Qy04QtIBtgFBVV95cUxNa1AyX3h1V0R0c2JISmJiWWVSUFdZSVgwRnY5aG0zd0h0cTgxRDZDeWhNX3BQU0NnZnNyVmxGRFJlTEYyWU41MUxYSUhUcFJud1g5UVcwNzJHaTVGNjlKbXN3Slk4NExEVU1GSXhTZUFTdndLM2dEWThISWRtWjRTQ3lUVDE2cW56Q2FjbjN4UHhfRU9oZVdzUEZjVnpUa3MzNHVIZUpGRWlPam42WDFfUmdrV1p3dw?oc=5",
+      "published": "2026-11-11T08:45:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia and Turkey Sign Major 3 GW Wind Power Deal &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Port of Fujairah Resumes Oil Loadings After Attack and Why it Matters Globally - EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVkp0Q2hNMmJIWS1RLTBFWUNVZnlydF9NemhEVEVhcWJzV29TX1huZGlNUUpFRFMxSkljQkY0RUxlVmxKUThDWlJHRFJXcXdVdVF5a2hINlV5NlEtSG1rR05zMGtUb2VUbEJoTUFZUERJRE1Oc1hIUmlzU3l5UEpSeG5Xc1BVNUI1TFFUekVfVGdqcDhvQ2VfOXZhbXR0OTExNGJJRF9oOHdqbUpKZGc?oc=5",
+      "published": "2026-11-11T08:28:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Port of Fujairah Resumes Oil Loadings After Attack and Why it Matters Globally &nbsp;&nbsp; EnergyNow.com"
+     },
+     {
+      "title": "Oil prices rebound amid Strait of Hormuz attacks - Profit by Pakistan Today",
+      "source": "Profit by Pakistan Today",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS3RTMWFwc3c4Q1pMam5SendZc1dfRjNEMm9uNTdFQjlldE1pZ0toUDRTZmtaaXhzcDFEYm1fWF9TVldhSFg2LVZnZXdpQkZpWHIwQ1BvU3FySWtVVkVpakpiNUtQRlR6SFM4cnNaNEpZTDJTU3FCODh2U2Nla3Zva2hWdVF0c1FsNnk2UjlvSVNsYk5TeVl0bHhmOGc4NGNGY0MxcXJmTzZtbXhSLWdoWVdyOFlodUVXTHd2R0hhRQ?oc=5",
+      "published": "2026-11-11T08:24:29Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil prices rebound amid Strait of Hormuz attacks &nbsp;&nbsp; Profit by Pakistan Today"
+     },
+     {
+      "title": "EUR/GBP Price Forecast: Euro stalls below 0.8370 as Crude recovery weighs - FXStreet",
+      "source": "FXStreet",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaUJMdnYyUGk3WEZZM0UwUnJUS3liTDVLN0huWUl0M1N1TEdaT3VfTlJhOGQxWDBicDRsS2J6Y2hfWHFCRWVqc0JDTE9wX0xyZFNKYXh6dTJQakNJbDNlbUFNNGVSMm5tTGt5Rmh3c3lHeUVVR0YxUnc4OWtoay1NLWhqaXA1ZFhfc1MxZGdfMVNHWldiWFU0V3BKeWc2dVM0NGtnYWR1ZTlzYzJYMDM1Wk1pdi0?oc=5",
+      "published": "2026-11-11T08:15:51Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "EUR/GBP Price Forecast: Euro stalls below 0.8370 as Crude recovery weighs &nbsp;&nbsp; FXStreet"
+     },
+     {
+      "title": "FTSE 100 climbs as oil rebounds ahead of UK GDP test - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQV1JxNGc4YmlzU2Y2TllHNkNmeE9XUV9ROWd0WFhlSDRZYW8xZHJTX3htV3hUMzFXcnhROF9CbWxPYXBvR19qZzdkUWU3ZE41X2VLdlNiY0dCWDRvbm55RVkwRXVuX2I5Y0Z6QUNQcXZtdUY3S2xUeG05RjJLZ29VQXBZTURPX3N5RFlzcGs4QWZhMmlsZFl5N3BGZHNPZ1BqZ01TU1owUXg3RGg5R3c?oc=5",
+      "published": "2026-11-11T08:13:08Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "FTSE 100 climbs as oil rebounds ahead of UK GDP test &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "The Commodities Feed: Oil rebounds as geopolitical risks linger - ing think",
+      "source": "ing think",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbGpxdVR2ck9rUUlfTEZHTFJQZGpQZXFLZldFY1FSOFRSdkM3a3piRmFXUHlTRGdTdENPUnhGUWx2RHpBOVNha1hDUTVzak5ZbEJrQk9vVGhiT2xSeHpmWXI3YWdEZ2k2dFdULXVNNVJGTEZKNmUzY0RNOExyTk13a0U5NXRWME9tOWtNc2R0cVRFY050VVdKRzNR?oc=5",
+      "published": "2026-11-11T08:10:57Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "The Commodities Feed: Oil rebounds as geopolitical risks linger &nbsp;&nbsp; ing think"
+     },
+     {
+      "title": "Oil Prices Rebound as Middle East Supply Risks Persist - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMG9QUTRTOFdKeFlQeU5fLTdmZnJjdllnZFFQb0tRcU4wOGUxaDdkUThaMERudUlRM3hyalVvMVVVZHJkZUM2OWVSWXR5ZThzSEVEOGo0WjdncmVET1NtcHZ3a1ZScFZTaGt4dlpWYnlMRGtpT3ZoM3p0cWhmN1FCNHk1LTI0dGxHMDZwQmpxcDgtSmNQNzNOZFJqbFFDVE44OVNYcERB?oc=5",
+      "published": "2026-11-11T08:02:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Prices Rebound as Middle East Supply Risks Persist &nbsp;&nbsp; WSJ"
+     }
+    ]
+   },
    {
     "id": "brent-1794323456",
     "detected_at": "2026-11-10T15:20:56.273223Z",
