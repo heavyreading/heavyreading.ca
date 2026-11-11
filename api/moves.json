@@ -1,8 +1,249 @@
 {
- "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-11T15:36:14Z",
+ "vintage": "Big-move events from bin/move_watch.py (Yahoo 5-min front-month bars, delayed) + Google News RSS headline candidates with vintage-checked classifications; built 2026-11-11T17:41:31Z",
  "data": {
-  "updated_at": "2026-11-11T15:35:58.277330Z",
+  "updated_at": "2026-11-11T17:40:58.473489Z",
   "events": [
+   {
+    "id": "wti-1794418258",
+    "detected_at": "2026-11-11T17:40:58.473489Z",
+    "benchmark": "WTI",
+    "symbol": "CL=F",
+    "window_min": 60,
+    "from_ts": "2026-11-11T16:30:00Z",
+    "to_ts": "2026-11-11T17:30:58Z",
+    "from_price": 88.26,
+    "to_price": 86.81,
+    "move_usd": -1.45,
+    "move_pct": -1.64,
+    "verdict": "No confirmed fresh driver found; candidates are unverified leads or recycled coverage only.",
+    "headlines": [
+     {
+      "title": "US oil and gas stocks rise as crude prices climb on Iran tensions - Investing.com",
+      "source": "Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYTczeUZqdDBTOWptbUROT2hhTk4yeWZhNGhzQWpCQVduT2t0ejJYejhKc0JUM195UlJBZkRoTTRJcXJjRE5nRUN6OTUxZUQwa0tNOHdOTEY5bWdsYXpUb3loMGctUmdQcWxDUU1FYmtkX2dHUy1DUW1XSzVjNzhUUWdsVDFSb0w3LU4xVl9rVmxBOEI0TTMxeFZJUnJGaGFKaWJKTHpWYzNvX2hfNG9sa282TnRnYXVtSlp0Q0hoOEJMMkwxc1E?oc=5",
+      "published": "2026-11-11T17:32:31Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "US oil and gas stocks rise as crude prices climb on Iran tensions &nbsp;&nbsp; Investing.com"
+     },
+     {
+      "title": "Crude Oil Gains 2%; CoreWeave Posts Upbeat Q3 Results - Benzinga",
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdHM4YklLVWJoalI3amJ1SDA4YVE0cHJQbTlTaXJhbG9aLVBPVVFjZmh3M2Q1UksxQzRjYUtjdnpneVVIUjJNS09TQnV0S2dvYjMzYXhJWXhfVF9lRlNLc2FRSVc0NzdhcmJCRlJUMkJGVlBGZ2t2RFpfVEFhdldOSmtwdHZIRU1WNHoydVBaTEg4VmJKOHZPWmRFWnRpNDBLbVN2cUM1NzJqdzIwYWRlSmt3eEtGT01ZaE5QMWZPd19EUzg2TnRoVll6MlRFWlJXMDhOdHhn?oc=5",
+      "published": "2026-11-11T17:09:41Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Gains 2%; CoreWeave Posts Upbeat Q3 Results &nbsp;&nbsp; Benzinga"
+     },
+     {
+      "title": "Germany Bets Big on Natural Gas to Keep the Lights On - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYlMyU3F5R21PY050SUdLOWc4cWoxQkhhVlJ0c0o1ZDJXZGtFc0Q1Mm9XM0g1VGkwVjRPNXJGRFg0MENyVEpYVlZuTVBPR1FJN1hSVnVHMnFheEdRMmJmZTRCZVdUWXVHY0lOMkJwMGFpa3g2WTN6SE0wMHd0cEZLeXhBQlNaTGdmTGpDdFB2ZlBWbHVzSVhPYXJpd1l1RGhUYVFv0gGoAUFVX3lxTE9wUDhfSXl2LWdLSjgtbnVHSzNOb083QW9mM2JURWllc3VlTlltMUdZRGRybEhsUC11SjF0bjlHNUhRU25ZNFhSdzRXdGVfTm4zS0tqT1RFRk03dTYxRFlCOXViTXBab3dPTm9PS3BRaGFrSVhBSGQyZWJFYXo5dklORll6TXZSX1owUHFYY05jS21MamhQZF9KSFJSc2JGb3BpeDNSQ1l5cg?oc=5",
+      "published": "2026-11-11T17:00:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Germany Bets Big on Natural Gas to Keep the Lights On &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Saudi tanker with Indian seafarers attacked in Hormuz Strait - Rediff",
+      "source": "Rediff",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMndWOG1QdUZZaEpKWmQ0ZElQZU9VVm9yeE5uSm94QlExV1NEX1AwN1c3c3MwSUdPVnZwM3hpTkRTcTBDbkptVkRqZlREQS1TUXowcFVxUExpX21zM2JMSWg5WW1DTWo2UlY5UGhwLUFoZmRHMWNwa2tvZTVRX1JLbGxBQTdIVnJxTm53ZW5ONHZyV2wtMTFoZHdIa05JMjJ0allHUWlEeVptREpY0gGvAUFVX3lxTE5NNTRpNVl1cnR5RWlEVGRWX3JJMFpscWdTVzhlM1o2UlpQdFdhNHM1Ri1MM3F5b1BBRVZBYl8wRDl0TDJ1WlBpbHJTQ3Jia1hFUG5FTTRvLXhJUzJrZDJuOTNuV2N4cXBoVG1WQW51WTFkWGRvZzFRcGlxcm9ld0FTeHNMUWJjYXFjdjBfVmVrRTBhNXdxamw3UUxCY2hwcHNTXzlSRG9uYzBSSWdLSFE?oc=5",
+      "published": "2026-11-11T16:43:04Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi tanker with Indian seafarers attacked in Hormuz Strait &nbsp;&nbsp; Rediff"
+     },
+     {
+      "title": "Crude Oil Prices Jump on Elusive Peace Prospects in the Middle East - Barchart.com",
+      "source": "Barchart.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPckJFOW9wNFRLNlBSS2xjSC1idmtOWmZSNGRueEp2M09CZG5kVEhCNUNUakVkdkhycDBiMjJFd2lJTEUtX2s5OVNYcjZXbmJWV29DT3Q3ZVN4OGlsUEIzSmwxVGJycksyN2Q5ZERlcGdOQVpSTHNwR0syRXdRQWprNlM0X2RKYlBIeVR3Q3ItSzcwV195UEhaUTJCVTJxOThsOXF0V1czcDR1X3J0cDJHTw?oc=5",
+      "published": "2026-11-11T16:31:56Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude Oil Prices Jump on Elusive Peace Prospects in the Middle East &nbsp;&nbsp; Barchart.com"
+     },
+     {
+      "title": "Brent Jumps Nearly 3% as Iran Denies Any Talks With Washington - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNb1hPam1ySEF6WUpZWU9iNXdDU28zS2MwMkxpYmx4eVUwTEd3a3pzRThzVzFGQlNscDBMTXNOVjZudE11RWJ4Y3pOWkJReFBrMVZqcjdSa19rMlNSb3kta1plM0hXODZYNGJUMjB1VzU5NmhFYkNweUh4eGYzRnA3NnBGVVpSaGhqMWljNHRWUC1IeDFFUlpiTnFxd3phVzJiQlo1Tl9GT2ljVmN0NDhySS1xVGlrbGPSAbwBQVVfeXFMT0ZDZ1QyM1VmSUhXbldHU241RDlCemg5ejF1bFVXTkJ3M2p6OE9RbVNCRmUtNko2VGE4X1E2SmtDV0hENld2aEJ2NnM4SThHbnJmWEVfUEV2UTlPNUItNjNWQ19VV0o2aDhETWJPbWtkdkR5dDY3dGNHZUlEa0Y5VTFiOXZyRVRvM2NlLU10MlBhLS1heVpQLVBkUGtHRTZ0YXN0a1NKZEI4WG5kck5DbWN4anVXSEplQkFKSlg?oc=5",
+      "published": "2026-11-11T16:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Brent Jumps Nearly 3% as Iran Denies Any Talks With Washington &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Asia Buys Up African, Brazilian Oil as Shipping Costs Fall - The China-Global South Project",
+      "source": "The China-Global South Project",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRDRMU1ZLZ0tZVEVUdWFwUlFrR1hCckZGLWRNY3FubnhWYThQSGR6TVBGMlEwN0RUbFRfWU1Zd284SkdJN2xZNUJSV2FoNWtRQ3oxM3o0azdwZElEN0c1STE4bkVMMWEwa05WY245UWFyXzFtR1dNci1rQVRGWG4xSDlkSTM1NVMxdkRQMWdfTGV2bERwN1dxYWQ1MHA?oc=5",
+      "published": "2026-11-11T16:18:43Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Asia Buys Up African, Brazilian Oil as Shipping Costs Fall &nbsp;&nbsp; The China-Global South Project"
+     },
+     {
+      "title": "Oil price today: Brent rebounds to $93 despite a massive OPEC+ output surge - Invezz",
+      "source": "Invezz",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObU5jdmJRRGI4RTdpYkM2dG5YbnFTY2pQTXFJY2h4YkJPNVBrWFYwTThwMTJLNlExUlFFemhpT1UzcExlRldDRVFqRGdyRVZNdnpOcXFjUmxpZzJLTXpRWEtnSlZ1d1lqTXZhY2N2bXp1RlN1a2o0ekNNYWMzZ1lOTkt4M2ZpMVR5SG5hQ0dpa2k1bkFxbUVfUzdtdVJVY0E0aEJ1S1FMX0ZzRDdtOVZ2aWtsOFlVTndN?oc=5",
+      "published": "2026-11-11T16:18:38Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil price today: Brent rebounds to $93 despite a massive OPEC+ output surge &nbsp;&nbsp; Invezz"
+     },
+     {
+      "title": "Iran Just Crossed a Red Line No One Ever Thought They Would: Tehran Keeps Attacking Oil Tankers and Trump Can't Stop It - National Security Journal",
+      "source": "National Security Journal",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQa0JxU1RPYS1LNlJodVI4S0UtTENnQWVCTzU5SmMyRkRZc01EbmRNRk1OTHNZN085dGllY1k3ZDZOc1VwTlI3M1BSYnNlSklnX0hmVkdia2lGSTI0eFRVc0k0WGNlNmI3blNRRnRZZHBKZlpyeGpTWXZUcjBmclp5eGx2R1h2aFJjeEFsNU5tcGRYcm9KV1AyZU1tYlpYU21UZW54ODR5ajNqbFdVdzk3amNoUGVOZTZ0cmpwZTNCdDV1R1VVXzQ4Tlp5NkdBNzRxYTFEOHh5ZlZFV2tPMFVpS1RtSUNZMmw4M0E?oc=5",
+      "published": "2026-11-11T16:00:51Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran Just Crossed a Red Line No One Ever Thought They Would: Tehran Keeps Attacking Oil Tankers and Trump Can't Stop It &nbsp;&nbsp; National Security Journal"
+     },
+     {
+      "title": "Saudi Arabia increased oil production by 26% in October \u2014 OilPrice - UA.NEWS",
+      "source": "UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcEhYQUVZRFAyb2dQWndVUmxKamk3TWxLblEtU3RTODRQa0luOXhMWFRoR2lQX1FGRVJqa2Vsb1pYbnp5YTFlT0VkNDZuLU9nUGJFeG5vMjQzU1hCWmlQTjduZDlDOXJUOTU0N1FUREhBMzlkMjF1MlQ1b0xQOXdJTlN5bUMwMFlIc2JJVzgzNi1XTTB1NEZHNGR3YW56MWR1bl9j?oc=5",
+      "published": "2026-11-11T15:55:33Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia increased oil production by 26% in October \u2014 OilPrice &nbsp;&nbsp; UA.NEWS"
+     },
+     {
+      "title": "Crude oil prices may fall to $75 by December as West Asia tensions ease - BusinessLine",
+      "source": "BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONkwxblk5Q3RFRVFMSGVCVmt3Q2FPSWdVZ0FWYlZmbjJVcjdpQ0x6MVExTklZV0tHMVlacEhhT2dBM0FzemluSjYtaUZrUURXNHFsZXQ2QzRlQlJOWnlVemhaSzlWSHd3aWN1TVlMeWxlX3hvTlhEVU9JSzJYWkx2eTdVdUpjakx1aXJldWIzQU91SVBUNDRULXhxWm9fYzg0dU5CUExiZWo2dVRxNXkwLVpmb25NRUxLTnhWTTZGSXBfMEs1V3ZVVS1vZHZvYWM0R1ZwZkdjdDV6Wk95cnFBa9IB5wFBVV95cUxNOEkweld6YXpqMk9TaU4yVnFRdWwtbENFbVNxQnZpdVBWaFViVDJFeUdNOVJGcVY5eU5GTFNCR19SYk9SdDRFTGlOOG02RGFQMFhjRGQ1TXEzckJ2NzJfdDRVb3FZWmdES3BVR2tzb19JenJFNmdQQUdnUEhrWFdyZlZCOXlVQ1FWbUtGYURzeHQ1NV9UZGpRdy1Ual9GM0VCTVNWNzVFTkRqZ0s1SHJfMllfaGRhenZmcWJ3QnRrV1Y0NDVpX2Q0UEx1b3kxbVI3dFB0Q01tdE56emhZZWVqNnpoMDFyZ3c?oc=5",
+      "published": "2026-11-11T15:54:05Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Crude oil prices may fall to $75 by December as West Asia tensions ease &nbsp;&nbsp; BusinessLine"
+     },
+     {
+      "title": "Here\u2019s what could happen to the BP share price if oil prices fall another 20% - Yahoo Finance UK",
+      "source": "Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNa3dTbmJHeEZUU0c3ZTc5LUR2ME1LaDRsYnhCUUtTTU9tYXlRQ1NfSHlaeEVuQ1ppaHQwN3FhWG9kT2ZZbWRnUVJLSE94NmFpTUQ3LUxtcVYwaVhVb0c3ZWpDenlucEo1U3AxWmxON2lXZmZISmNHcU1kQzhYeElycm9B?oc=5",
+      "published": "2026-11-11T15:50:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Here\u2019s what could happen to the BP share price if oil prices fall another 20% &nbsp;&nbsp; Yahoo Finance UK"
+     },
+     {
+      "title": "Oil Futures Slide as Trump Says New Strikes on Iran Unlikely - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVFNfSjlGZWFOd01laGhIaG9idVhwaUxEOXctN1hkb1E2Qkd6YXEyaE5DUHFzMEdoT3dqWXNQbkxScXRFb3o2aGU4SEpWdnU5SGdKQUJXTUFMdS1kcHJKVnJPVnBUZk1XUjd6NXRLcnJwSGhXMFZVa2hqQ1VvVWkzM2FxT2tCNlhGN1VYYjgwRTdiY2Z6SElpNmtfMXRmTjF0RW5fX0JVVWhuZVlsX1lWdDBMU1g1ZzBFeXlGT2tZbUNyQjlLUFE?oc=5",
+      "published": "2026-11-11T15:32:18Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Oil Futures Slide as Trump Says New Strikes on Iran Unlikely &nbsp;&nbsp; WSJ"
+     },
+     {
+      "title": "Saudi Crude Output Jumps 26% as Riyadh Reports Near Pre-War Production - Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdU5RdXRreEJxVUp4OXhIM042aUdTWFMwbFBfemx5VVgtY2pTSTBsTWlMWk55UEE3c2JlS09uMmVUaDlPZHpwZGpNZVgzWWRiV2FvRnJ5VFNsS1M4aElacDVzOVdadVNHR2FYR2h2YWNXVEpLOEsxTXlPN09qSjhQNHgxOXNCOVJWTUZuUWViXzBlRGFMT0l6dUpWYlJ2X2dDUnpHVmZEVWwycmRPNXpscUtkSE5JajBmLWttLVhXR3NIajFvUHQwMNIByAFBVV95cUxQdU5RdXRreEJxVUp4OXhIM042aUdTWFMwbFBfemx5VVgtY2pTSTBsTWlMWk55UEE3c2JlS09uMmVUaDlPZHpwZGpNZVgzWWRiV2FvRnJ5VFNsS1M4aElacDVzOVdadVNHR2FYR2h2YWNXVEpLOEsxTXlPN09qSjhQNHgxOXNCOVJWTUZuUWViXzBlRGFMT0l6dUpWYlJ2X2dDUnpHVmZEVWwycmRPNXpscUtkSE5JajBmLWttLVhXR3NIajFvUHQwMA?oc=5",
+      "published": "2026-11-11T15:30:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Crude Output Jumps 26% as Riyadh Reports Near Pre-War Production &nbsp;&nbsp; Crude Oil Prices Today | OilPrice.com"
+     },
+     {
+      "title": "Saudi-Flagged Oil Tanker Carrying 3 Indians Safe After 'Possible Attack' In Strait Of Hormuz - The Daily Jagran",
+      "source": "The Daily Jagran",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQM1FCVzUyRGVPR0M4aTBHNlRkQ0tfUEtUVXBCZHpLZkprZHJXX3lRcnZSN2lIMTRYVTdteFc1X3dCSXRreWN4Vk5xNlZhaHc3d3hocVF6UmxHZ19DZ3BOZXJBVENSMFo0VmJLWWRySUN0d0I2c3ZvTHlxaDFkRHRjV1QycWMyeENOYXJoYzA1VWhJSVl3UThINllaNk1OMlRQYkJBOFB0T29zeGEzTHV2M2EzUmhiXzFmQ2FNV1ZRd0d6VkVqZ2o4VE1yTDNNbTM0WWhFakt3dUI0Y1VZUktQN1J4ZWQ2N3M2eF81M0Y1b3RnRnZT0gH7AUFVX3lxTFBCaURoUXViYkRXbzUta3M0OGNFdlhUbHpBWVN3YjR0Um05V0NiMThoTzNGUUZFUTFmOFpZVllKSDQtcjNGNmdIUElFMlJCWFJFbEFTSkU3OXJCdDlSbzlJb25WUWdFY0R1dFJSUDRKdEVyXzhHSnV4RTA0QzlKM3BzeG5ZZ3N1QzNoNlhpTHdVaXUxdnlRNEMwMFF3cUwtcEgxOHIwdzBIZDhiMkhnUDdDWnlEdFplVmk5Y2syVHFJN3FiSi1UWEl4ZmhkNTNKbXdDLWVyaFRQNGk1aEFyeXJ2QTFNXzNlZVBIOVNFWGdyOGJKZDc0R0NUbFlV?oc=5",
+      "published": "2026-11-11T15:29:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi-Flagged Oil Tanker Carrying 3 Indians Safe After 'Possible Attack' In Strait Of Hormuz &nbsp;&nbsp; The Daily Jagran"
+     },
+     {
+      "title": "Marketers To FCCPC: Lower Crude Oil Prices Don\u2019t Translate To Lower Petrol Prices - LEADERSHIP Newspapers",
+      "source": "LEADERSHIP Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNck5fN3hacWZLWkF0YjBvYnVvWGN1dUV5b2hqNE5jcmVLdUJzeFJ3ZFRCQ2tVNFZxY284d1BEbTBRa1JNaDVDTU9JdnNBbEZIbERPdmhyMXQxV2lMYi0yQjFrMUpmZXdlYk1ZOFZiTFJrWkJaQmJ4NjNNRXVVOEJyVTgxb3JUZU91alZlNHVxTEFCcmtVam5rVmM4bkFnQlBncUhCbw?oc=5",
+      "published": "2026-11-11T14:58:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Marketers To FCCPC: Lower Crude Oil Prices Don\u2019t Translate To Lower Petrol Prices &nbsp;&nbsp; LEADERSHIP Newspapers"
+     },
+     {
+      "title": "Iran claims tanker hit mine in Strait of Hormuz - safety4sea",
+      "source": "safety4sea",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1PY3h1VEhEY3FvQ2p3Um1zd0VoWnNGSlpPNHU2MlhjXzViZW9GbFI1VkJiYzVaaGxXMzhYSHBRRlhrYi1iT2piaVF5WWNQR0RzaF9jQnM0ZkNrcm5uU003dFZwOFE1dTZWREUxVE9yV05ZdDFKc3I1dURNQQ?oc=5",
+      "published": "2026-11-11T14:58:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Iran claims tanker hit mine in Strait of Hormuz &nbsp;&nbsp; safety4sea"
+     },
+     {
+      "title": "Diesel still costing close to a \u2018dismal\u2019 \u00a32 a litre despite oil price falls - The Guardian",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdmRrX2dJN0NndlF0U3ctaTdvZndWUU9kWF9KVl9keW1oczBJalk4MFBrZW9vdFZ5NlU0UTVfWUZWb0U3enVZWGhGcU9oUnJxdEFDdmtkSGd2ZUpyQ3BDRi1TdlN2STF6SE9wWjliRk1rQnIzTElkZVVBYXFteHVPUlJJMGx3VFRHWTIwczhYNA?oc=5",
+      "published": "2026-11-11T14:58:00Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Diesel still costing close to a \u2018dismal\u2019 \u00a32 a litre despite oil price falls &nbsp;&nbsp; The Guardian"
+     },
+     {
+      "title": "Strike on Sinokor VLCC injures four seafarers in Strait of Hormuz - TradeWinds News",
+      "source": "TradeWinds News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbkExTWdKRUd0N2pfR2R5eVdYRU5nd1NuYTY3NGpDOWNXUUdsN3BPLXFabVEya1hJOEp6TFZ3a09HMVNZUkxYdjZVb0MzUFF1Wlp6ZWl6azRsYUszUnhMS0tlSDFJQmtNanREZk43ZDJaOVNnZDRuUHU5eXh3cENjUXNGMEFkcnF5aXJsLUdKYjFOb3ZoZTlDU1hJSzlNSVNNUWw5NHNJVzhWYnBFT3pXRlFmY0VVUDJOR1pZ?oc=5",
+      "published": "2026-11-11T14:49:54Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Strike on Sinokor VLCC injures four seafarers in Strait of Hormuz &nbsp;&nbsp; TradeWinds News"
+     },
+     {
+      "title": "Indonesia Sets October Crude Oil Price at US$117.24 per Barrel - Tempo.co English",
+      "source": "Tempo.co English",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONl9YRU9XaEU3ZmhrSm1rU1FwTk1nWXRmUXdzZTJfdmVzQmpmUlJ4MXlfdlFKVnJjX3RicXZwZWpaZmVGcWZlNWQ0SGpoVF90Mjdac2QwYktmdXJqOXdPdVhsUThzZXJPYVlFTElLQllFMDZmcVB3VHlkSk0tbjR4cGtQY05qN0dHeUZheldVY3pSU3hfMmtlYnhB?oc=5",
+      "published": "2026-11-11T14:44:52Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Indonesia Sets October Crude Oil Price at US$117.24 per Barrel &nbsp;&nbsp; Tempo.co English"
+     },
+     {
+      "title": "Saudi Arabia Claims Destruction of 3 Houthi Cruise Missiles Targeting Riyadh - UrduPoint",
+      "source": "UrduPoint",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPakNkR1lKbUh4VWFRZGZMMlcwRGxZNnY0QjUwTi1wS2wzck5BLW84QUd6aUtMMk5wU1pFbkRsQVNqWUdmazdGdFB1NGQ2S25pZC1KNm1EUFZIM1F4UzNqdXpCWDVESUlvSXZZVjJlN0E5MmZGY2pxZDNuWHFQLTVmMGlTNzZUcHNpbG5QLUw5RWpNUmd6OUFNYm0zaElWdnA3Qm1aRmZBWDljamR3R0F6NHRIUV9RM0ZTSzlXSm5hY0JjUQ?oc=5",
+      "published": "2026-11-11T14:33:23Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Saudi Arabia Claims Destruction of 3 Houthi Cruise Missiles Targeting Riyadh &nbsp;&nbsp; UrduPoint"
+     },
+     {
+      "title": "3 Indians safe after possible attack on Saudi tanker in Hormuz - The Siasat Daily",
+      "source": "The Siasat Daily",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQWpyTjlNYUN1ZldXSlFRejcwZjl0WGxOYUM2cGpvS1RaOXYyZzJsYmZPdTQyckQwbjJ0UzFwSnZaa0U3SkE2a193QUc2ZXZoNmo2aENtTUNNWndicmdaU3ZoODdVMi1ibllJS0ktRVhENF9tZ3BPT0lrZFQxZmpQWXhjdkRLY2tENmZNRm43dlJJaWZWcG83dGtn0gGfAUFVX3lxTE5ZSlFlUnJVMWxaYmNFYy1PVVVSejRPRkNaUU1Vd2lKNUtwUDZJNEp1TlV5Nkg1VWdHY0JmbWR3ZzBHd0gwNVA1N2JnUWRaOW9jMmNqazZCTlZzWk8tOVFKTDFXZUlZbGE4d2hVeGEyeENNT1ZBQkhRZ0x0ZU9XQWZvSjNib241b1dtSFlOMzR1ODhNSFE1b0NkQlVfV0Facw?oc=5",
+      "published": "2026-11-11T14:31:30Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "3 Indians safe after possible attack on Saudi tanker in Hormuz &nbsp;&nbsp; The Siasat Daily"
+     },
+     {
+      "title": "OCBC Revises 2027 Crude Oil Outlook Amid Easing Geopolitical Tensions In Middle East - BusinessToday Malaysia",
+      "source": "BusinessToday Malaysia",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNHh1c0trVUh6a1E3LWRrMDFSYUZBMzZLWndvajdNcUx4WXVEa3lQWl82VllzckxmTUViUlpLMXNWZHlXT0xWOVRBWVVPdkRCMV9hSzhxbThBa0VvbWJoOXdLWkdyWExuQU9lc0RCU0ZzUVByUWxfOC1YWjVTbG5UMzZyZUVqS1IxNk15Sk1fWkFfWFZEZkp2R2I1UjNhY0puLVN4OHg0aGFLbTFDTFk4emZZX2pEUm5uWmNpNGQ2TVpaaTVCSnJ0Sg?oc=5",
+      "published": "2026-11-11T14:31:08Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "OCBC Revises 2027 Crude Oil Outlook Amid Easing Geopolitical Tensions In Middle East &nbsp;&nbsp; BusinessToday Malaysia"
+     },
+     {
+      "title": "Gold and silver prices rebounded following CPI-induced selling, while tensions in the Strait of Hormuz pushed crude oil prices higher. - \u5bcc\u9014\u725b\u725b",
+      "source": "\u5bcc\u9014\u725b\u725b",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOX193Y3ZpZnIwZjRxdlJnUkx4UTN4S1cwNGtHQUpRWXNSY1FpU082QjZtZktpQXJTbFBjaURrZ2dmTFU5TjNBck5uWV9tMUh6eldOdFhvZEQwWWhWS0Ywc08tZm1EX1pNWGRFQVdGZmFEQ2Npb2tDWm1TTGZObVFjUGdQX0J0b0RObS1ONVNYV3JBZWQ4T3FXRDJaVUtJTTRJSEZqMzY1ZGMwOVkyVW1RMA?oc=5",
+      "published": "2026-11-11T14:21:26Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Gold and silver prices rebounded following CPI-induced selling, while tensions in the Strait of Hormuz pushed crude oil prices higher. &nbsp;&nbsp; \u5bcc\u9014\u725b\u725b"
+     },
+     {
+      "title": "Rupee closes at seven-month high of 93.69 as FPI inflows, lower crude prices boost sentiment - TradingView",
+      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUkduT1FDLWV1TVFPU00tU3lYVlJhQ01BcmMwX18yWDB3THhYTnpKQWlLNXNCM0F3MjRsRzFOZ2xSVFdTcEp4cVpDcnhNOWNlUVdVbm9NNnQ1Qi1Hc2xpWklXUlF3OEx4LTRRZHU2STUwMGptYlNTSHZfTmJ6SGxDQVhRQm44QWpfbzBpSjFkZlFESnVVc0NGSWs3M3ZWVXozWjY5Z0otTFotdWtuZVZ4NWRoNzlYaTFENnNGbTJGSF93b0V0VXRvVmxiTUZqU1p3UzNvTmRGWnBIN0dEOUZZM3pB?oc=5",
+      "published": "2026-11-11T13:48:09Z",
+      "event_date": null,
+      "classification": "UNVERIFIED",
+      "summary": "Rupee closes at seven-month high of 93.69 as FPI inflows, lower crude prices boost sentiment &nbsp;&nbsp; TradingView"
+     }
+    ]
+   },
    {
     "id": "wti-1794410759",
     "detected_at": "2026-11-11T15:35:58.277330Z",
