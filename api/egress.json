@@ -1,5 +1,5 @@
 {
- "vintage": "CER open data pulled 2026-09-22; AER ST3 thru 2026-07; model build 2026-09-27; feed built 2026-10-30",
+ "vintage": "CER open data pulled 2026-09-22; AER ST3 thru 2026-07; model build 2026-11-04; feed built 2026-11-17",
  "data": {
   "history": [
    {
@@ -1450,7 +1450,7 @@
     "total_capacity_kbd": 5069.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 19.6,
+    "spare_kbd": -40.8,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1464,7 +1464,7 @@
     "total_capacity_kbd": 5069.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 111.9,
+    "spare_kbd": 63.6,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1478,7 +1478,7 @@
     "total_capacity_kbd": 5069.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 204.1,
+    "spare_kbd": 95.4,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1517,28 +1517,28 @@
    {
     "month": "2027-01",
     "kind": "forecast",
-    "total_capacity_kbd": 5159.0,
+    "total_capacity_kbd": 5069.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 156.0,
+    "spare_kbd": 0.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
-     "trans_mountain_kbd": 955.6,
+     "trans_mountain_kbd": 865.6,
      "express_kbd": 290.0
     }
    },
    {
     "month": "2027-02",
     "kind": "forecast",
-    "total_capacity_kbd": 5159.0,
+    "total_capacity_kbd": 5069.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 183.3,
+    "spare_kbd": 0.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
-     "trans_mountain_kbd": 955.6,
+     "trans_mountain_kbd": 865.6,
      "express_kbd": 290.0
     }
    },
@@ -1548,7 +1548,7 @@
     "total_capacity_kbd": 5159.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 77.5,
+    "spare_kbd": 0.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1562,7 +1562,7 @@
     "total_capacity_kbd": 5159.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 173.4,
+    "spare_kbd": 67.1,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1576,7 +1576,7 @@
     "total_capacity_kbd": 5159.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 357.7,
+    "spare_kbd": 250.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1590,7 +1590,7 @@
     "total_capacity_kbd": 5159.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 242.6,
+    "spare_kbd": 132.5,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1604,7 +1604,7 @@
     "total_capacity_kbd": 5159.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 165.6,
+    "spare_kbd": 58.9,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1618,7 +1618,7 @@
     "total_capacity_kbd": 5159.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 211.1,
+    "spare_kbd": 106.6,
     "by_pipe": {
      "enbridge_mainline_kbd": 3050.4,
      "keystone_kbd": 643.0,
@@ -1632,7 +1632,7 @@
     "total_capacity_kbd": 5309.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 248.6,
+    "spare_kbd": 143.5,
     "by_pipe": {
      "enbridge_mainline_kbd": 3200.4,
      "keystone_kbd": 643.0,
@@ -1646,7 +1646,7 @@
     "total_capacity_kbd": 5309.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 264.7,
+    "spare_kbd": 155.9,
     "by_pipe": {
      "enbridge_mainline_kbd": 3200.4,
      "keystone_kbd": 643.0,
@@ -1660,7 +1660,7 @@
     "total_capacity_kbd": 5309.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 156.7,
+    "spare_kbd": 47.7,
     "by_pipe": {
      "enbridge_mainline_kbd": 3200.4,
      "keystone_kbd": 643.0,
@@ -1674,7 +1674,7 @@
     "total_capacity_kbd": 5309.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 135.6,
+    "spare_kbd": 24.1,
     "by_pipe": {
      "enbridge_mainline_kbd": 3200.4,
      "keystone_kbd": 643.0,
@@ -1688,7 +1688,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 161.2,
+    "spare_kbd": 85.5,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1702,7 +1702,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 189.1,
+    "spare_kbd": 85.1,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1716,7 +1716,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 79.0,
+    "spare_kbd": 0.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1730,7 +1730,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 178.0,
+    "spare_kbd": 60.6,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1744,7 +1744,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 368.7,
+    "spare_kbd": 250.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1758,7 +1758,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 249.1,
+    "spare_kbd": 127.7,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1772,7 +1772,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 168.9,
+    "spare_kbd": 51.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1786,7 +1786,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 215.7,
+    "spare_kbd": 100.1,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1800,7 +1800,7 @@
     "total_capacity_kbd": 5326.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 98.7,
+    "spare_kbd": 0.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1814,7 +1814,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 325.0,
+    "spare_kbd": 204.8,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1828,7 +1828,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 212.5,
+    "spare_kbd": 92.1,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1842,7 +1842,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 190.2,
+    "spare_kbd": 67.2,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1856,7 +1856,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 366.5,
+    "spare_kbd": 290.8,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1870,7 +1870,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 394.4,
+    "spare_kbd": 290.5,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1884,7 +1884,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 284.3,
+    "spare_kbd": 196.7,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1898,7 +1898,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 383.4,
+    "spare_kbd": 265.9,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1912,7 +1912,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 574.1,
+    "spare_kbd": 455.4,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1926,7 +1926,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 454.5,
+    "spare_kbd": 333.2,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1940,7 +1940,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 374.4,
+    "spare_kbd": 256.5,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1954,7 +1954,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 421.2,
+    "spare_kbd": 305.7,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1968,7 +1968,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 304.2,
+    "spare_kbd": 187.9,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1982,7 +1982,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 320.4,
+    "spare_kbd": 200.3,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -1996,7 +1996,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 207.9,
+    "spare_kbd": 87.5,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2010,7 +2010,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 185.6,
+    "spare_kbd": 62.5,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2024,7 +2024,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 361.8,
+    "spare_kbd": 286.2,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2038,7 +2038,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 389.7,
+    "spare_kbd": 285.8,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2052,7 +2052,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 279.7,
+    "spare_kbd": 192.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2066,7 +2066,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 378.7,
+    "spare_kbd": 261.2,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2080,7 +2080,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 569.5,
+    "spare_kbd": 450.8,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2094,7 +2094,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 449.9,
+    "spare_kbd": 328.6,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2108,7 +2108,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 369.9,
+    "spare_kbd": 252.0,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2122,7 +2122,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 416.8,
+    "spare_kbd": 301.2,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2136,7 +2136,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 299.7,
+    "spare_kbd": 183.4,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2150,7 +2150,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 315.9,
+    "spare_kbd": 195.8,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2164,7 +2164,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 203.3,
+    "spare_kbd": 82.9,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2178,7 +2178,7 @@
     "total_capacity_kbd": 5536.0,
     "throughput_kbd": null,
     "utilization_pct": null,
-    "spare_kbd": 180.9,
+    "spare_kbd": 57.9,
     "by_pipe": {
      "enbridge_mainline_kbd": 3135.0,
      "keystone_kbd": 643.0,
@@ -2189,148 +2189,8 @@
   ],
   "forecast": [
    {
-    "month": "2026-01",
-    "marketable_supply_kbd": 4993.1,
-    "spare_kbd": 65.6,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 855.3,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-02",
-    "marketable_supply_kbd": 4946.3,
-    "spare_kbd": 112.4,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 855.3,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-03",
-    "marketable_supply_kbd": 5000.2,
-    "spare_kbd": 58.5,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 855.3,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-04",
-    "marketable_supply_kbd": 5062.5,
-    "spare_kbd": -3.8,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 855.3,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-05",
-    "marketable_supply_kbd": 4948.0,
-    "spare_kbd": 110.7,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 855.3,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-06",
-    "marketable_supply_kbd": 4819.2,
-    "spare_kbd": 249.8,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 865.6,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-07",
-    "marketable_supply_kbd": 5141.6,
-    "spare_kbd": -72.6,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 865.6,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-08",
-    "marketable_supply_kbd": 5049.4,
-    "spare_kbd": 19.6,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 865.6,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-09",
-    "marketable_supply_kbd": 4957.1,
-    "spare_kbd": 111.9,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 865.6,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
-    "month": "2026-10",
-    "marketable_supply_kbd": 4864.9,
-    "spare_kbd": 204.1,
-    "rail_kbd": 85.0,
-    "by_pipe": {
-     "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 865.6,
-     "keystone_kbd": 643.0,
-     "express_kbd": 290.0,
-     "milk_river_kbd": 90.0,
-     "rangeland_kbd": 45.0
-    }
-   },
-   {
     "month": "2026-11",
-    "marketable_supply_kbd": 5069.0,
+    "marketable_supply_kbd": 5141.6,
     "spare_kbd": 0.0,
     "rail_kbd": 85.0,
     "by_pipe": {
@@ -2344,7 +2204,7 @@
    },
    {
     "month": "2026-12",
-    "marketable_supply_kbd": 5069.0,
+    "marketable_supply_kbd": 5141.6,
     "spare_kbd": 0.0,
     "rail_kbd": 85.0,
     "by_pipe": {
@@ -2358,12 +2218,12 @@
    },
    {
     "month": "2027-01",
-    "marketable_supply_kbd": 5003.0,
-    "spare_kbd": 156.0,
+    "marketable_supply_kbd": 5141.6,
+    "spare_kbd": 0.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 955.6,
+     "trans_mountain_kbd": 865.6,
      "keystone_kbd": 643.0,
      "express_kbd": 290.0,
      "milk_river_kbd": 90.0,
@@ -2372,12 +2232,12 @@
    },
    {
     "month": "2027-02",
-    "marketable_supply_kbd": 4975.7,
-    "spare_kbd": 183.3,
+    "marketable_supply_kbd": 5141.6,
+    "spare_kbd": 0.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
-     "trans_mountain_kbd": 955.6,
+     "trans_mountain_kbd": 865.6,
      "keystone_kbd": 643.0,
      "express_kbd": 290.0,
      "milk_river_kbd": 90.0,
@@ -2386,8 +2246,8 @@
    },
    {
     "month": "2027-03",
-    "marketable_supply_kbd": 5081.5,
-    "spare_kbd": 77.5,
+    "marketable_supply_kbd": 5231.6,
+    "spare_kbd": 0.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
@@ -2400,8 +2260,8 @@
    },
    {
     "month": "2027-04",
-    "marketable_supply_kbd": 4985.6,
-    "spare_kbd": 173.4,
+    "marketable_supply_kbd": 5164.5,
+    "spare_kbd": 67.1,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
@@ -2414,8 +2274,8 @@
    },
    {
     "month": "2027-05",
-    "marketable_supply_kbd": 4801.3,
-    "spare_kbd": 357.7,
+    "marketable_supply_kbd": 4981.6,
+    "spare_kbd": 250.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
@@ -2428,8 +2288,8 @@
    },
    {
     "month": "2027-06",
-    "marketable_supply_kbd": 4916.4,
-    "spare_kbd": 242.6,
+    "marketable_supply_kbd": 5099.1,
+    "spare_kbd": 132.5,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
@@ -2442,8 +2302,8 @@
    },
    {
     "month": "2027-07",
-    "marketable_supply_kbd": 4993.4,
-    "spare_kbd": 165.6,
+    "marketable_supply_kbd": 5172.7,
+    "spare_kbd": 58.9,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
@@ -2456,8 +2316,8 @@
    },
    {
     "month": "2027-08",
-    "marketable_supply_kbd": 4947.9,
-    "spare_kbd": 211.1,
+    "marketable_supply_kbd": 5125.0,
+    "spare_kbd": 106.6,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3050.4,
@@ -2470,8 +2330,8 @@
    },
    {
     "month": "2027-09",
-    "marketable_supply_kbd": 5060.4,
-    "spare_kbd": 248.6,
+    "marketable_supply_kbd": 5238.1,
+    "spare_kbd": 143.5,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3200.4,
@@ -2484,8 +2344,8 @@
    },
    {
     "month": "2027-10",
-    "marketable_supply_kbd": 5044.3,
-    "spare_kbd": 264.7,
+    "marketable_supply_kbd": 5225.7,
+    "spare_kbd": 155.9,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3200.4,
@@ -2498,8 +2358,8 @@
    },
    {
     "month": "2027-11",
-    "marketable_supply_kbd": 5152.3,
-    "spare_kbd": 156.7,
+    "marketable_supply_kbd": 5333.9,
+    "spare_kbd": 47.7,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3200.4,
@@ -2512,8 +2372,8 @@
    },
    {
     "month": "2027-12",
-    "marketable_supply_kbd": 5173.4,
-    "spare_kbd": 135.6,
+    "marketable_supply_kbd": 5357.5,
+    "spare_kbd": 24.1,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3200.4,
@@ -2526,8 +2386,8 @@
    },
    {
     "month": "2028-01",
-    "marketable_supply_kbd": 5164.8,
-    "spare_kbd": 161.2,
+    "marketable_supply_kbd": 5313.1,
+    "spare_kbd": 85.5,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2540,8 +2400,8 @@
    },
    {
     "month": "2028-02",
-    "marketable_supply_kbd": 5136.9,
-    "spare_kbd": 189.1,
+    "marketable_supply_kbd": 5313.5,
+    "spare_kbd": 85.1,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2554,8 +2414,8 @@
    },
    {
     "month": "2028-03",
-    "marketable_supply_kbd": 5247.0,
-    "spare_kbd": 79.0,
+    "marketable_supply_kbd": 5398.6,
+    "spare_kbd": 0.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2568,8 +2428,8 @@
    },
    {
     "month": "2028-04",
-    "marketable_supply_kbd": 5148.0,
-    "spare_kbd": 178.0,
+    "marketable_supply_kbd": 5338.0,
+    "spare_kbd": 60.6,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2582,8 +2442,8 @@
    },
    {
     "month": "2028-05",
-    "marketable_supply_kbd": 4957.3,
-    "spare_kbd": 368.7,
+    "marketable_supply_kbd": 5148.6,
+    "spare_kbd": 250.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2596,8 +2456,8 @@
    },
    {
     "month": "2028-06",
-    "marketable_supply_kbd": 5076.9,
-    "spare_kbd": 249.1,
+    "marketable_supply_kbd": 5270.9,
+    "spare_kbd": 127.7,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2610,8 +2470,8 @@
    },
    {
     "month": "2028-07",
-    "marketable_supply_kbd": 5157.1,
-    "spare_kbd": 168.9,
+    "marketable_supply_kbd": 5347.6,
+    "spare_kbd": 51.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2624,8 +2484,8 @@
    },
    {
     "month": "2028-08",
-    "marketable_supply_kbd": 5110.3,
-    "spare_kbd": 215.7,
+    "marketable_supply_kbd": 5298.5,
+    "spare_kbd": 100.1,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2638,8 +2498,8 @@
    },
    {
     "month": "2028-09",
-    "marketable_supply_kbd": 5227.3,
-    "spare_kbd": 98.7,
+    "marketable_supply_kbd": 5398.6,
+    "spare_kbd": 0.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2652,8 +2512,8 @@
    },
    {
     "month": "2028-10",
-    "marketable_supply_kbd": 5211.0,
-    "spare_kbd": 325.0,
+    "marketable_supply_kbd": 5403.8,
+    "spare_kbd": 204.8,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2666,8 +2526,8 @@
    },
    {
     "month": "2028-11",
-    "marketable_supply_kbd": 5323.5,
-    "spare_kbd": 212.5,
+    "marketable_supply_kbd": 5516.5,
+    "spare_kbd": 92.1,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2680,8 +2540,8 @@
    },
    {
     "month": "2028-12",
-    "marketable_supply_kbd": 5345.8,
-    "spare_kbd": 190.2,
+    "marketable_supply_kbd": 5541.4,
+    "spare_kbd": 67.2,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2694,8 +2554,8 @@
    },
    {
     "month": "2029-01",
-    "marketable_supply_kbd": 5169.5,
-    "spare_kbd": 366.5,
+    "marketable_supply_kbd": 5317.8,
+    "spare_kbd": 290.8,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2708,8 +2568,8 @@
    },
    {
     "month": "2029-02",
-    "marketable_supply_kbd": 5141.6,
-    "spare_kbd": 394.4,
+    "marketable_supply_kbd": 5318.1,
+    "spare_kbd": 290.5,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2722,8 +2582,8 @@
    },
    {
     "month": "2029-03",
-    "marketable_supply_kbd": 5251.7,
-    "spare_kbd": 284.3,
+    "marketable_supply_kbd": 5411.9,
+    "spare_kbd": 196.7,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2736,8 +2596,8 @@
    },
    {
     "month": "2029-04",
-    "marketable_supply_kbd": 5152.6,
-    "spare_kbd": 383.4,
+    "marketable_supply_kbd": 5342.7,
+    "spare_kbd": 265.9,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2750,8 +2610,8 @@
    },
    {
     "month": "2029-05",
-    "marketable_supply_kbd": 4961.9,
-    "spare_kbd": 574.1,
+    "marketable_supply_kbd": 5153.2,
+    "spare_kbd": 455.4,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2764,8 +2624,8 @@
    },
    {
     "month": "2029-06",
-    "marketable_supply_kbd": 5081.5,
-    "spare_kbd": 454.5,
+    "marketable_supply_kbd": 5275.4,
+    "spare_kbd": 333.2,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2778,8 +2638,8 @@
    },
    {
     "month": "2029-07",
-    "marketable_supply_kbd": 5161.6,
-    "spare_kbd": 374.4,
+    "marketable_supply_kbd": 5352.1,
+    "spare_kbd": 256.5,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2792,8 +2652,8 @@
    },
    {
     "month": "2029-08",
-    "marketable_supply_kbd": 5114.8,
-    "spare_kbd": 421.2,
+    "marketable_supply_kbd": 5302.9,
+    "spare_kbd": 305.7,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2806,8 +2666,8 @@
    },
    {
     "month": "2029-09",
-    "marketable_supply_kbd": 5231.8,
-    "spare_kbd": 304.2,
+    "marketable_supply_kbd": 5420.7,
+    "spare_kbd": 187.9,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2820,8 +2680,8 @@
    },
    {
     "month": "2029-10",
-    "marketable_supply_kbd": 5215.6,
-    "spare_kbd": 320.4,
+    "marketable_supply_kbd": 5408.3,
+    "spare_kbd": 200.3,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2834,8 +2694,8 @@
    },
    {
     "month": "2029-11",
-    "marketable_supply_kbd": 5328.1,
-    "spare_kbd": 207.9,
+    "marketable_supply_kbd": 5521.1,
+    "spare_kbd": 87.5,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2848,8 +2708,8 @@
    },
    {
     "month": "2029-12",
-    "marketable_supply_kbd": 5350.4,
-    "spare_kbd": 185.6,
+    "marketable_supply_kbd": 5546.1,
+    "spare_kbd": 62.5,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2862,8 +2722,8 @@
    },
    {
     "month": "2030-01",
-    "marketable_supply_kbd": 5174.2,
-    "spare_kbd": 361.8,
+    "marketable_supply_kbd": 5322.4,
+    "spare_kbd": 286.2,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2876,8 +2736,8 @@
    },
    {
     "month": "2030-02",
-    "marketable_supply_kbd": 5146.3,
-    "spare_kbd": 389.7,
+    "marketable_supply_kbd": 5322.8,
+    "spare_kbd": 285.8,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2890,8 +2750,8 @@
    },
    {
     "month": "2030-03",
-    "marketable_supply_kbd": 5256.3,
-    "spare_kbd": 279.7,
+    "marketable_supply_kbd": 5416.6,
+    "spare_kbd": 192.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2904,8 +2764,8 @@
    },
    {
     "month": "2030-04",
-    "marketable_supply_kbd": 5157.3,
-    "spare_kbd": 378.7,
+    "marketable_supply_kbd": 5347.4,
+    "spare_kbd": 261.2,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2918,8 +2778,8 @@
    },
    {
     "month": "2030-05",
-    "marketable_supply_kbd": 4966.5,
-    "spare_kbd": 569.5,
+    "marketable_supply_kbd": 5157.8,
+    "spare_kbd": 450.8,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2932,8 +2792,8 @@
    },
    {
     "month": "2030-06",
-    "marketable_supply_kbd": 5086.1,
-    "spare_kbd": 449.9,
+    "marketable_supply_kbd": 5280.0,
+    "spare_kbd": 328.6,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2946,8 +2806,8 @@
    },
    {
     "month": "2030-07",
-    "marketable_supply_kbd": 5166.1,
-    "spare_kbd": 369.9,
+    "marketable_supply_kbd": 5356.6,
+    "spare_kbd": 252.0,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2960,8 +2820,8 @@
    },
    {
     "month": "2030-08",
-    "marketable_supply_kbd": 5119.2,
-    "spare_kbd": 416.8,
+    "marketable_supply_kbd": 5307.4,
+    "spare_kbd": 301.2,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2974,8 +2834,8 @@
    },
    {
     "month": "2030-09",
-    "marketable_supply_kbd": 5236.3,
-    "spare_kbd": 299.7,
+    "marketable_supply_kbd": 5425.2,
+    "spare_kbd": 183.4,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -2988,8 +2848,8 @@
    },
    {
     "month": "2030-10",
-    "marketable_supply_kbd": 5220.1,
-    "spare_kbd": 315.9,
+    "marketable_supply_kbd": 5412.8,
+    "spare_kbd": 195.8,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -3002,8 +2862,8 @@
    },
    {
     "month": "2030-11",
-    "marketable_supply_kbd": 5332.7,
-    "spare_kbd": 203.3,
+    "marketable_supply_kbd": 5525.7,
+    "spare_kbd": 82.9,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
@@ -3016,8 +2876,8 @@
    },
    {
     "month": "2030-12",
-    "marketable_supply_kbd": 5355.1,
-    "spare_kbd": 180.9,
+    "marketable_supply_kbd": 5550.7,
+    "spare_kbd": 57.9,
     "rail_kbd": 85.0,
     "by_pipe": {
      "mainline_kbd": 3135.0,
