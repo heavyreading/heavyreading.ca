@@ -17,17 +17,17 @@
   --ch-ink:#1C1E21; --ch-ink-lab:#ffffff;
   --ch-ink2:#3C434A; --ch-ink2-lab:#ffffff;
   --ch-acc:#2A1B10; --ch-acc-lab:#ffffff;
-  --ch-steel:#6F7B88; --ch-steel-lab:#ffffff;
-  --ch-g1:#444A52; --ch-g1-lab:#ffffff;
-  --ch-g2:#6E7A87; --ch-g2-lab:#ffffff;
-  --ch-g3:#9FA7B1; --ch-g3-lab:#1C1E21;
-  --ch-g4:#C9CED3; --ch-g4-lab:#1C1E21;
-  --ch-nc:#5A636D; --ch-nc-lab:#ffffff;
-  --ch-fc:#6D7986; --ch-fc-lab:#ffffff;
-  --ch-sand:#B1B8C0; --ch-sand-lab:#1C1E21;
-  --ch-blue:#5F6974; --ch-blue-lab:#ffffff;
+  --ch-steel:#7C8B99; --ch-steel-lab:#1C1E21;
+  --ch-g1:#7A4A21; --ch-g1-lab:#ffffff;
+  --ch-g2:#B07D2B; --ch-g2-lab:#ffffff;
+  --ch-g3:#5F7355; --ch-g3-lab:#ffffff;
+  --ch-g4:#B4552D; --ch-g4-lab:#ffffff;
+  --ch-nc:#2E7D74; --ch-nc-lab:#ffffff;
+  --ch-fc:#C07A24; --ch-fc-lab:#ffffff;
+  --ch-sand:#C9A876; --ch-sand-lab:#1C1E21;
+  --ch-blue:#33658A; --ch-blue-lab:#ffffff;
   --ch-red:#BE2E1F; --ch-red-lab:#ffffff;
-  --ch-gray:#6E7A87; --ch-gray-lab:#ffffff;
+  --ch-gray:#9AA0A6; --ch-gray-lab:#1C1E21;
   --ch-grid:#E4E6EB; --ch-axis:#C9CDD2;
   --ch-band-nc:#E7E3D9; --ch-band-fc:#D5D9DD;
   --ch-evt:#9FA7B1;
@@ -654,7 +654,8 @@ hr { border:none; border-top:1px solid var(--line); margin:2.6rem 0; max-width:7
   .navburger .nb-ic { display:flex; flex-direction:column; gap:4px; }
   .navburger .nb-ic span { display:block; width:18px; height:2px; background:var(--ink); }
   .mnav .sitenav { display:none; flex-direction:column; border-top:none; border-bottom:none; }
-  .mnav[open] .sitenav { display:flex; }
+  .mnav[open] .sitenav { display:flex; max-height:calc(100dvh - 112px);
+    overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; }
   .mnav[open] .navburger { border-bottom:none; }
   .navdrop { border-bottom:1px solid var(--line); }
   .navdrop-sep { margin-left:0; padding-left:0; border-left:none; }

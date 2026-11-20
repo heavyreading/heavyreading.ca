@@ -1,6 +1,6 @@
 {
  "title": "WCSB micro-balance",
- "built": "2026-11-04",
+ "built": "2026-11-20",
  "dashboard_built": "2026-11-19",
  "default_month": "2026-11",
  "months": [
@@ -483,11 +483,7 @@
    "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 63.78,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 16.8,
-    "pct_full": 79.1
+    "change_mbbl": 0.0
    },
    "apportionment": {
     "light_pct": 8.0,
@@ -923,11 +919,7 @@
    "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
     "change_kbd": 192.3,
-    "change_mbbl": 5.77,
-    "level_mmbbl": 69.55,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 11.0,
-    "pct_full": 86.3
+    "change_mbbl": 5.77
    },
    "apportionment": {
     "light_pct": 19.0,
@@ -1363,11 +1355,7 @@
    "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
     "change_kbd": 215.9,
-    "change_mbbl": 6.69,
-    "level_mmbbl": 76.24,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 4.4,
-    "pct_full": 94.6
+    "change_mbbl": 6.69
    },
    "apportionment": {
     "light_pct": 24.0,
@@ -1381,16 +1369,16 @@
    "ym": "2027-01",
    "label": "January 2027",
    "cards": {
-    "nameplate_pipes_kbd": 5183,
-    "effective_pipes_kbd": 4984.0,
-    "effective_stack_kbd": 5069.0,
+    "nameplate_pipes_kbd": 5243,
+    "effective_pipes_kbd": 5044.0,
+    "effective_stack_kbd": 5129.0,
     "supply_net_kbd": 5202.3,
     "demand_wants_kbd": 5202.3,
     "refinery_kbd": 610.1,
     "removals_wanted_kbd": 4592.2,
-    "exports_shipped_kbd": 4541.6,
-    "overflow_kbd": 50.6,
-    "utilization_pct": 101.4
+    "exports_shipped_kbd": 4592.2,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 101.2
    },
    "gross_production_kbd": 4318.2,
    "production": [
@@ -1461,9 +1449,9 @@
     "plug": 121.5,
     "net_supply": 5202.3,
     "refinery": 610.1,
-    "exports": 4541.6,
-    "storage_change": 50.6,
-    "check": -0.0
+    "exports": 4592.2,
+    "storage_change": 0.0,
+    "check": 0.0
    },
    "receipts_other_kbd": 789.5,
    "diluent": {
@@ -1731,9 +1719,9 @@
      "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
      "kind": "swing",
      "region": "Pacific coast",
-     "nameplate": 890,
-     "effective": 865.6,
-     "flow": 865.6,
+     "nameplate": 950,
+     "effective": 925.6,
+     "flow": 925.6,
      "util": 100.0,
      "prev": 865.6
     },
@@ -1799,15 +1787,11 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5069.0,
-   "bound_uplift_unallocated_kbd": 72.6,
+   "marketable_on_lines_kbd": 5129.0,
+   "bound_uplift_unallocated_kbd": 63.2,
    "storage": {
-    "change_kbd": 50.6,
-    "change_mbbl": 1.57,
-    "level_mmbbl": 77.81,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 2.8,
-    "pct_full": 96.5
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -1816,16 +1800,16 @@
    "ym": "2027-02",
    "label": "February 2027",
    "cards": {
-    "nameplate_pipes_kbd": 5183,
-    "effective_pipes_kbd": 4984.0,
-    "effective_stack_kbd": 5069.0,
+    "nameplate_pipes_kbd": 5243,
+    "effective_pipes_kbd": 5044.0,
+    "effective_stack_kbd": 5129.0,
     "supply_net_kbd": 5189.9,
     "demand_wants_kbd": 5189.9,
     "refinery_kbd": 629.9,
     "removals_wanted_kbd": 4560.0,
-    "exports_shipped_kbd": 4541.6,
-    "overflow_kbd": 18.4,
-    "utilization_pct": 101.4
+    "exports_shipped_kbd": 4560.0,
+    "overflow_kbd": 0.0,
+    "utilization_pct": 100.6
    },
    "gross_production_kbd": 4328.1,
    "production": [
@@ -1896,9 +1880,9 @@
     "plug": 121.5,
     "net_supply": 5189.9,
     "refinery": 629.9,
-    "exports": 4541.6,
-    "storage_change": 18.4,
-    "check": -0.0
+    "exports": 4560.0,
+    "storage_change": 0.0,
+    "check": 0.0
    },
    "receipts_other_kbd": 776.4,
    "diluent": {
@@ -2166,11 +2150,11 @@
      "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
      "kind": "swing",
      "region": "Pacific coast",
-     "nameplate": 890,
-     "effective": 865.6,
-     "flow": 865.6,
+     "nameplate": 950,
+     "effective": 925.6,
+     "flow": 925.6,
      "util": 100.0,
-     "prev": 865.6
+     "prev": 925.6
     },
     {
      "id": "keystone",
@@ -2234,15 +2218,11 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5069.0,
-   "bound_uplift_unallocated_kbd": 72.6,
+   "marketable_on_lines_kbd": 5129.0,
+   "bound_uplift_unallocated_kbd": 31.0,
    "storage": {
-    "change_kbd": 18.4,
-    "change_mbbl": 0.52,
-    "level_mmbbl": 78.32,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 2.3,
-    "pct_full": 97.2
+    "change_kbd": 0.0,
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -2605,7 +2585,7 @@
      "effective": 955.6,
      "flow": 955.6,
      "util": 100.0,
-     "prev": 865.6
+     "prev": 925.6
     },
     {
      "id": "keystone",
@@ -2673,11 +2653,7 @@
    "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
     "change_kbd": 33.1,
-    "change_mbbl": 1.03,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": 1.03
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -3108,11 +3084,7 @@
    "bound_uplift_unallocated_kbd": 5.5,
    "storage": {
     "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -3543,11 +3515,7 @@
    "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": -0.0,
-    "change_mbbl": -0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": -0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -3978,11 +3946,7 @@
    "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": -0.0,
-    "change_mbbl": -0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": -0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -4413,11 +4377,7 @@
    "bound_uplift_unallocated_kbd": 13.7,
    "storage": {
     "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -4848,11 +4808,7 @@
    "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -5283,11 +5239,7 @@
    "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -5718,11 +5670,7 @@
    "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -6153,11 +6101,7 @@
    "bound_uplift_unallocated_kbd": 24.9,
    "storage": {
     "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": 0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
@@ -6588,11 +6532,7 @@
    "bound_uplift_unallocated_kbd": 48.5,
    "storage": {
     "change_kbd": -0.0,
-    "change_mbbl": -0.0,
-    "level_mmbbl": 79.35,
-    "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 1.2,
-    "pct_full": 98.4
+    "change_mbbl": -0.0
    },
    "apportionment": null,
    "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
