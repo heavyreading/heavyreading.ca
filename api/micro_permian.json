@@ -2,12 +2,14 @@
  "schema": "micro-balance/1",
  "region": "permian",
  "title": "Permian micro-balance",
- "built": "2026-10-29",
+ "built": "2026-11-02",
  "as_of": "October 2026",
  "as_of_note": "Current frame on the EIA October 2026 STEO path. Items carry their own vintages; the production split items are older or unmeasured, and say so on the item.",
  "units": "kb/d unless a field name says otherwise",
  "cards": {
-  "nameplate_kbd": 7890.0,
+  "nameplate_kbd": null,
+  "nameplate_min_kbd": 7200.0,
+  "nameplate_max_kbd": 7400.0,
   "effective_kbd": null,
   "supply_kbd": 6900.0,
   "demand_kbd": null,
@@ -224,7 +226,7 @@
    "source": "Enbridge releases; RBN, September 2026",
    "vintage": "2026",
    "basis": "capacity",
-   "note": "900 kb/d at start-up, plus 80 in May 2025 and 40 in May 2026 on drag-reducing agent. A nominations-based read showed demand near 1,096 on this line, above the expanded capacity: nominations are not metered flow."
+   "note": "900 kb/d at start-up, plus 80 in May 2025 and 40 in May 2026 on drag-reducing agent. A nominations-based read showed demand near 1,096 on this line, above the expanded capacity: those demand items are nominations, not metered flow."
   },
   {
    "id": "cactus_ii",
@@ -694,9 +696,9 @@
   }
  ],
  "notes": [
-  "Two-speed system: the basin's spare pipe capacity sits on the corridor barrels least want (Cushing, about 68 percent utilised), while the corridors to the water run nearly full (Corpus about 99.7 percent, Houston about 91.7 percent, modelled estimates, 2026). A single basin utilisation number hides the story, so none is printed.",
+  "Two-speed system: the basin's spare pipe capacity sits on the corridor barrels least want (Cushing, about 68 percent utilised), while the corridors to the water run nearly full (Corpus about 99.7 percent, Houston about 91.7 percent; modelled estimates, 2026). A single basin utilisation number hides the story, so none is printed.",
   "Supply card: 6,900 is the current point on EIA's October 2026 STEO path (2026 average forecast 6,810; Q4 2026 forecast 6,920). It is a control total. The item list does not foot to it (valued items sum 2,100): three of the four production split items are unmeasured at current vintage because no official split exists, and the fourth is a Q4 2024 reading. The difference is the unallocated remainder, named here rather than plugged into an item.",
-  "Nameplate card: 7,890 is a 2026 long-haul reference print compiled from T-1 filings. Bottom-up verified steel in the dossier sums to about 7,200 to 7,400 plus local refining. The gap sits in the unverified zone (West Texas Gulf's current rating, Centurion's Cushing segment, Seminole swing treatment) and is a research finding, not an error to force closed. Their demo frame printed 8,200 nameplate and 8,200 effective.",
+  "Nameplate card: the printed range is bottom-up verified steel from the dossier, about 7,200 to 7,400 plus local refining. A higher long-haul reference print (7,890) circulates from T-1-based compilations; the gap to it sits in the unverified zone (West Texas Gulf's current rating, Centurion's Cushing segment, Seminole swing treatment) and is a research finding, not an error to force closed.",
   "Effective capacity is not printed as one number: the derate is corridor-specific. Cushing's effective takeaway is about 710 to 745 against segment nameplates that sum far higher, because onward legs bottleneck (Sunrise) and one segment is unverified (Centurion). Corpus and Houston run at nameplate.",
   "Demand card is blank on purpose. No demand item carries a flow, because the Texas RRC T-1 monthly reports, the flow source behind published utilisation prints, are not held. The last published flow split (RBN, Q1 2025, on about 6,600 of production) was Corpus about 2,500, Houston about 2,400, Nederland about 900, and Cushing plus local plus other about 800. Items carry verified capacity, labelled capacity.",
   "Double-count rules carried on the items: Midland-to-ECHO 3 is steel inside Wink to Webster; Sunrise's 500 ends at Wichita Falls; Centurion's system totals are gathering, not takeaway; Cactus has no Permian-to-Cushing leg.",

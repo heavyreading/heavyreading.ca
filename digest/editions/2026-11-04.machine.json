@@ -1,6 +1,84 @@
 {
  "edition": "2026-11-04",
- "generated_at": "2026-11-04T09:31:19",
+ "generated_at": "2026-11-04T19:07:49",
  "generator": "change_engine v1",
- "changes": []
+ "changes": [
+  {
+   "title": "Mined bitumen forecast revised up for Oct 2026",
+   "delta": "+1,489 kb/d",
+   "body": "Mined bitumen for Oct 2026 moved from 1,549 to 3,038 kb/d in the latest ST3 dashboard build.",
+   "balance": "Looser: more supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-04; feed built 2026-11-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-mined-2026-10-3,038",
+   "auto_detected": true
+  },
+  {
+   "title": "Mined bitumen forecast revised up for Nov 2026",
+   "delta": "+1,453 kb/d",
+   "body": "Mined bitumen for Nov 2026 moved from 1,888 to 3,341 kb/d in the latest ST3 dashboard build.",
+   "balance": "Looser: more supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-04; feed built 2026-11-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-mined-2026-11-3,341",
+   "auto_detected": true
+  },
+  {
+   "title": "Synthetic crude (SCO) output forecast revised down for Nov 2027",
+   "delta": "-1,445 kb/d",
+   "body": "Synthetic crude (SCO) output for Nov 2027 moved from 1,445 to -0 kb/d in the latest ST3 dashboard build.",
+   "balance": "Tighter: less supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-04; feed built 2026-11-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-upgraded_production-2027-11--0",
+   "auto_detected": true
+  },
+  {
+   "title": "Synthetic crude (SCO) output forecast revised down for Dec 2027",
+   "delta": "-1,439 kb/d",
+   "body": "Synthetic crude (SCO) output for Dec 2027 moved from 1,439 to -0 kb/d in the latest ST3 dashboard build.",
+   "balance": "Tighter: less supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-04; feed built 2026-11-04",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-upgraded_production-2027-12--0",
+   "auto_detected": true
+  },
+  {
+   "title": "Pipeline spare capacity revised for Jan 2027",
+   "delta": "-234 kb/d",
+   "body": "Pipeline spare capacity for Jan 2027 moved from 183 to -51 kb/d in the reconciled balance.",
+   "balance": "Tighter: less room before the pipes bind.",
+   "vintage": "2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant); feed built 2026-11-04",
+   "source": "WCSB supply/demand balance model",
+   "confirmation": "confirmed",
+   "dedup_key": "balance-pipe_spare_kbd-2027-01--51",
+   "auto_detected": true
+  },
+  {
+   "title": "Pipeline spare capacity revised for Feb 2027",
+   "delta": "-229 kb/d",
+   "body": "Pipeline spare capacity for Feb 2027 moved from 211 to -18 kb/d in the reconciled balance.",
+   "balance": "Tighter: less room before the pipes bind.",
+   "vintage": "2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant); feed built 2026-11-04",
+   "source": "WCSB supply/demand balance model",
+   "confirmation": "confirmed",
+   "dedup_key": "balance-pipe_spare_kbd-2027-02--18",
+   "auto_detected": true
+  },
+  {
+   "title": "Pipeline spare capacity revised for Nov 2026",
+   "delta": "-162 kb/d",
+   "body": "Pipeline spare capacity for Nov 2026 moved from -31 to -192 kb/d in the reconciled balance.",
+   "balance": "Tighter: less room before the pipes bind.",
+   "vintage": "2026-09-28 (F3 rail-baseload split before the pipe cap; F5 economic inventory path; inventory floor + shortage-side price response; barrel-conservation invariant); feed built 2026-11-04",
+   "source": "WCSB supply/demand balance model",
+   "confirmation": "confirmed",
+   "dedup_key": "balance-pipe_spare_kbd-2026-11--192",
+   "auto_detected": true
+  }
+ ]
 }

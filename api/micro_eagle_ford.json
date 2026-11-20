@@ -2,7 +2,7 @@
  "schema": "micro-balance/1",
  "region": "eagle_ford",
  "title": "Eagle Ford micro-balance",
- "built": "2026-10-29",
+ "built": "2026-11-02",
  "as_of": "October 2026",
  "as_of_note": "Current frame on EIA's October 2026 vintage. Production is EIA's combined crude plus lease condensate definition; the split into RRC categories does not exist in held data and the items say so.",
  "units": "kb/d unless a field name says otherwise",
@@ -552,7 +552,7 @@
    "item": "oil_lease_crude",
    "state": "missing",
    "reason": "Texas RRC pull does not exist in the library (the texas_rrc folder was empty at dossier time).",
-   "route": "RRC production data by lease and product code (public). The monthly T-1 pipeline reports are the Texas flow source."
+   "route": "RRC production data by lease and product code (public); the monthly T-1 pipeline reports are the Texas flow source."
   },
   {
    "item": "gas_lease_condensate",

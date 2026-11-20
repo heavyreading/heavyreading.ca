@@ -1,7 +1,7 @@
 {
  "title": "WCSB micro-balance",
- "built": "2026-10-20",
- "dashboard_built": "2026-10-30",
+ "built": "2026-11-04",
+ "dashboard_built": "2026-11-19",
  "default_month": "2026-11",
  "months": [
   "2026-10",
@@ -21,37 +21,37 @@
   "2027-12"
  ],
  "prices": {
-  "asof": "Oct 30, 2026 11:36 AM MDT",
-  "settle_date": "2026-10-29",
+  "asof": "Nov 18, 2026 1:07 AM MDT",
+  "settle_date": "2026-11-16",
   "rows": [
    {
     "label": "WTI, Dec 26",
-    "value": 104.85,
+    "value": 84.09,
     "basis": "intraday quote"
    },
    {
-    "label": "Brent, Dec 26",
-    "value": 117.8,
+    "label": "Brent, Jan 27",
+    "value": 91.75,
     "basis": "intraday quote"
    },
    {
     "label": "WCS Hardisty diff (TMW), Dec 26",
-    "value": -30.5,
+    "value": -28.2176,
     "basis": "ICE end-of-day settle"
    },
    {
     "label": "WCS Hardisty diff (TMW), Jan 27",
-    "value": -28.75,
+    "value": -25.75,
     "basis": "ICE end-of-day settle"
    },
    {
     "label": "WCS Houston diff (ARV), Dec 26",
-    "value": -22.973,
+    "value": -19.345,
     "basis": "ICE end-of-day settle"
    },
    {
     "label": "Synthetic diff (TMS), Dec 26",
-    "value": 5.95,
+    "value": 8.1125,
     "basis": "ICE end-of-day settle"
    }
   ]
@@ -64,28 +64,28 @@
     "nameplate_pipes_kbd": 5183,
     "effective_pipes_kbd": 4984.0,
     "effective_stack_kbd": 5069.0,
-    "supply_net_kbd": 4845.1,
-    "demand_wants_kbd": 4845.1,
-    "refinery_kbd": 580.2,
-    "removals_wanted_kbd": 4264.9,
-    "exports_shipped_kbd": 4264.9,
+    "supply_net_kbd": 5031.2,
+    "demand_wants_kbd": 5031.2,
+    "refinery_kbd": 585.0,
+    "removals_wanted_kbd": 4446.2,
+    "exports_shipped_kbd": 4446.2,
     "overflow_kbd": 0.0,
-    "utilization_pct": 96.0
+    "utilization_pct": 99.6
    },
-   "gross_production_kbd": 4244.7,
+   "gross_production_kbd": 4393.2,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1382.2,
+     "value": 1520.6,
      "prev": null
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 232.8,
+     "value": 248.9,
      "prev": null
     },
     {
@@ -113,68 +113,68 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1576.5,
+     "value": 1567.2,
      "prev": null
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 669.0,
+     "value": 672.3,
      "prev": null
     }
    ],
    "groups": {
-    "in_situ": 1999.2,
-    "mined": 1576.5,
-    "conv": 669.0
+    "in_situ": 2153.7,
+    "mined": 1567.2,
+    "conv": 672.3
    },
    "identity": {
-    "gross": 4244.7,
+    "gross": 4393.2,
     "maintenance": 164.4,
-    "receipts": 1070.5,
-    "losses": 155.5,
-    "flare": 48.9,
+    "receipts": 1085.1,
+    "losses": 155.8,
+    "flare": 49.1,
     "fuel": 21.9,
-    "shrinkage": 84.7,
-    "adjustments": -19.4,
-    "plug": 130.8,
-    "net_supply": 4845.1,
-    "refinery": 580.2,
-    "exports": 4264.9,
+    "shrinkage": 84.8,
+    "adjustments": -5.4,
+    "plug": 121.5,
+    "net_supply": 5031.2,
+    "refinery": 585.0,
+    "exports": 4446.2,
     "storage_change": 0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 760.3,
+   "receipts_other_kbd": 762.8,
    "diluent": {
-    "imports_total": 310.2,
-    "condensate_imports": 226.0,
-    "pentanes_imports": 84.2,
-    "condensate_production": 92.7,
-    "total": 402.9
+    "imports_total": 322.3,
+    "condensate_imports": 233.3,
+    "pentanes_imports": 89.0,
+    "condensate_production": 93.5,
+    "total": 415.8
    },
    "refinery": {
-    "total": 580.2,
-    "sales": 490.6,
-    "other": 89.6
+    "total": 585.0,
+    "sales": 493.9,
+    "other": 91.1
    },
    "grades": {
-    "total": 4161.8,
+    "total": 4228.8,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 429.6
+      "value": 432.9
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 67.2
+      "value": 67.1
      },
      {
       "id": "grade_conv_heavy",
       "label": "Blended heavy conventional",
-      "value": 172.1
+      "value": 172.3
      },
      {
       "id": "grade_sco",
@@ -184,99 +184,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2289.4
+      "value": 2353.0
      }
     ],
     "sco": 1203.5,
-    "mined_dashboard": 1743.4,
-    "mined_to_upgrader": 1511.7,
-    "mined_to_market": 231.7
+    "mined_dashboard": 1460.8,
+    "mined_to_upgrader": 1261.5,
+    "mined_to_market": 199.3
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 244.3
+      "value": 247.2
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 239.5
+      "value": 242.3
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 179.0
+      "value": 181.1
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 149.4
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 98.7
+      "value": 151.2
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 115.4
      },
      {
-      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 71.0
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 55.5
+      "label": "Jackfish (CNRL)",
+      "value": 99.9
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 72.5
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 71.8
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 70.8
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 56.2
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.4
+      "value": 34.8
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 27.5
+      "value": 27.8
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 26.6
+      "value": 26.9
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.9
-     },
-     {
-      "label": "Great Divide (Greenfire)",
-      "value": 19.6
+      "value": 24.2
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.9
+      "value": 20.9
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 19.8
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 14.4
+      "value": 17.7
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 11.1
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.5
+      "value": 11.2
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.2
+      "value": 9.7
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.6
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 7.2
+      "value": 9.4
      }
     ],
     "css": [
@@ -286,109 +286,109 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 151.2
+      "value": 153.0
      },
      {
       "label": "Unmapped commercial (ST53)",
       "value": 122.7
      },
      {
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 91.5
+     },
+     {
       "label": "Enhanced recovery (ST53)",
       "value": 83.8
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 74.3
-     },
-     {
       "label": "Peace River (CNRL)",
-      "value": 4.3
+      "value": 4.4
      }
     ],
     "mined": [
      {
-      "label": "Horizon (CNRL)",
-      "value": 315.0
+      "label": "Suncor Base Plant",
+      "value": 261.7
      },
      {
       "label": "Kearl (Imperial)",
-      "value": 288.6
+      "value": 258.5
      },
      {
-      "label": "Suncor Base Plant",
-      "value": 255.8
+      "label": "Horizon (CNRL)",
+      "value": 247.4
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 221.3
+      "value": 198.2
      },
      {
       "label": "Fort Hills",
-      "value": 184.4
-     },
-     {
-      "label": "Syncrude Mildred Lake",
-      "value": 173.8
+      "value": 165.1
      },
      {
       "label": "Syncrude Aurora",
-      "value": 172.0
+      "value": 154.1
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 129.1
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 132.6
+      "value": 118.8
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
+      "value": -72.1
      }
     ],
     "sco": [
      {
       "label": "Scotford (Shell)",
-      "value": 369.6
+      "value": 338.0
      },
      {
       "label": "Suncor Base Plant",
-      "value": 343.6
+      "value": 314.2
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 275.8
+      "value": 250.4
      },
      {
       "label": "Horizon (CNRL)",
-      "value": 169.5
+      "value": 248.9
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 45.1
+      "value": 52.0
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
+      "value": 0.0
      }
     ],
     "conventional": [
      {
       "label": "Light",
-      "value": 336.9
+      "value": 339.4
      },
      {
       "label": "Ultra-heavy",
-      "value": 139.0
+      "value": 139.4
      },
      {
       "label": "Condensate",
-      "value": 92.7
+      "value": 93.5
      },
      {
       "label": "Medium",
-      "value": 67.2
+      "value": 67.1
      },
      {
       "label": "Heavy",
-      "value": 33.1
+      "value": 32.9
      }
     ]
    },
@@ -401,8 +401,8 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2913.9,
-     "util": 95.5,
+     "flow": 3035.1,
+     "util": 99.5,
      "prev": null
     },
     {
@@ -413,8 +413,8 @@
      "region": "Pacific coast",
      "nameplate": 890,
      "effective": 865.6,
-     "flow": 826.8,
-     "util": 95.5,
+     "flow": 861.3,
+     "util": 99.5,
      "prev": null
     },
     {
@@ -425,8 +425,8 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 614.2,
-     "util": 95.5,
+     "flow": 639.8,
+     "util": 99.5,
      "prev": null
     },
     {
@@ -479,22 +479,23 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 4864.9,
+   "marketable_on_lines_kbd": 5046.2,
+   "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
     "change_mbbl": 0.0,
-    "level_mmbbl": 60.04,
+    "level_mmbbl": 63.78,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 20.6,
-    "pct_full": 74.5
+    "ullage_mmbbl": 16.8,
+    "pct_full": 79.1
    },
    "apportionment": {
     "light_pct": 8.0,
     "heavy_pct": 4.0,
-    "source": "Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
-    "note": "November: Light 19% / Heavy 7% at Kerrobert (plus 13% at Cromer, 16% at Superior), up from October"
+    "source": "Enbridge notice, Nov 18, 2026 (Dec); Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
+    "note": "December: Light 24% / Heavy 17% at Kerrobert, up from November (19% / 7%); Cromer and Superior points for December not yet in hand"
    },
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2026-11": {
    "ym": "2026-11",
@@ -503,29 +504,29 @@
     "nameplate_pipes_kbd": 5183,
     "effective_pipes_kbd": 4984.0,
     "effective_stack_kbd": 5069.0,
-    "supply_net_kbd": 5145.9,
-    "demand_wants_kbd": 5145.9,
-    "refinery_kbd": 618.7,
-    "removals_wanted_kbd": 4527.2,
-    "exports_shipped_kbd": 4469.0,
-    "overflow_kbd": 58.2,
-    "utilization_pct": 100.0
+    "supply_net_kbd": 5357.7,
+    "demand_wants_kbd": 5357.7,
+    "refinery_kbd": 623.8,
+    "removals_wanted_kbd": 4733.9,
+    "exports_shipped_kbd": 4541.6,
+    "overflow_kbd": 192.3,
+    "utilization_pct": 101.4
    },
-   "gross_production_kbd": 4358.4,
+   "gross_production_kbd": 4508.3,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1399.0,
-     "prev": 1382.2
+     "value": 1538.4,
+     "prev": 1520.6
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 241.3,
-     "prev": 232.8
+     "value": 257.6,
+     "prev": 248.9
     },
     {
      "id": "primary",
@@ -552,170 +553,170 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1652.0,
-     "prev": 1576.5
+     "value": 1642.8,
+     "prev": 1567.2
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 684.2,
-     "prev": 669.0
+     "value": 687.6,
+     "prev": 672.3
     }
    ],
    "groups": {
-    "in_situ": 2022.2,
-    "mined": 1652.0,
-    "conv": 684.2
+    "in_situ": 2177.9,
+    "mined": 1642.8,
+    "conv": 687.6
    },
    "identity": {
-    "gross": 4358.4,
-    "maintenance": 23.0,
-    "receipts": 1120.7,
-    "losses": 161.9,
-    "flare": 51.2,
+    "gross": 4508.3,
+    "maintenance": 0.0,
+    "receipts": 1138.1,
+    "losses": 162.3,
+    "flare": 51.4,
     "fuel": 23.8,
-    "shrinkage": 86.9,
-    "adjustments": -17.5,
-    "plug": 130.8,
-    "net_supply": 5145.9,
-    "refinery": 618.7,
-    "exports": 4469.0,
-    "storage_change": 58.2,
+    "shrinkage": 87.1,
+    "adjustments": -4.9,
+    "plug": 121.5,
+    "net_supply": 5357.7,
+    "refinery": 623.8,
+    "exports": 4541.6,
+    "storage_change": 192.3,
     "check": -0.0
    },
-   "receipts_other_kbd": 801.5,
+   "receipts_other_kbd": 804.6,
    "diluent": {
-    "imports_total": 319.2,
-    "condensate_imports": 232.6,
-    "pentanes_imports": 86.6,
-    "condensate_production": 96.1,
-    "total": 415.3
+    "imports_total": 333.5,
+    "condensate_imports": 241.4,
+    "pentanes_imports": 92.1,
+    "condensate_production": 97.0,
+    "total": 430.5
    },
    "refinery": {
-    "total": 618.7,
-    "sales": 510.7,
-    "other": 108.0
+    "total": 623.8,
+    "sales": 514.2,
+    "other": 109.6
    },
    "grades": {
-    "total": 4422.0,
+    "total": 4508.3,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 446.7
+      "value": 450.2
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 66.0
+      "value": 65.9
      },
      {
       "id": "grade_conv_heavy",
       "label": "Blended heavy conventional",
-      "value": 171.5
+      "value": 171.6
      },
      {
       "id": "grade_sco",
       "label": "SCO (synthetic crude oil)",
-      "value": 1433.4
+      "value": 1438.4
      },
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2304.4
+      "value": 2382.2
      }
     ],
-    "sco": 1433.4,
-    "mined_dashboard": 1943.9,
-    "mined_to_upgrader": 1745.2,
-    "mined_to_market": 198.7
+    "sco": 1438.4,
+    "mined_dashboard": 1650.5,
+    "mined_to_upgrader": 1446.2,
+    "mined_to_market": 204.3
    },
    "detail": {
     "sagd": [
      {
       "label": "Firebag (Suncor)",
-      "value": 249.2
+      "value": 248.2
      },
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 248.6
+      "value": 247.6
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 199.0
+      "value": 198.2
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 150.0
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 95.4
+      "value": 149.4
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 113.5
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 95.0
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 78.1
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 56.3
+      "value": 77.8
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 71.4
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 69.7
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 56.1
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 32.5
+      "value": 32.4
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 27.2
+      "value": 27.1
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 24.8
+      "value": 24.7
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 24.3
+      "value": 24.2
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.7
-     },
-     {
-      "label": "Hangingstone Expansion (Greenfire)",
-      "value": 15.9
+      "value": 21.6
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.7
+      "value": 20.4
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 19.1
      },
      {
       "label": "BlackGold (Harvest)",
       "value": 12.1
      },
      {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.4
-     },
-     {
       "label": "Blackrod (IPC)",
-      "value": 8.9
+      "value": 10.9
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.4
+      "value": 9.7
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.4
      }
     ],
     "css": [
@@ -725,19 +726,19 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 159.0
+      "value": 162.1
      },
      {
       "label": "Unmapped commercial (ST53)",
       "value": 121.3
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 83.1
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 91.2
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 75.0
+      "label": "Enhanced recovery (ST53)",
+      "value": 83.1
      },
      {
       "label": "Peace River (CNRL)",
@@ -747,61 +748,61 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 330.7
-     },
-     {
-      "label": "Kearl (Imperial)",
-      "value": 306.7
+      "value": 401.1
      },
      {
       "label": "Suncor Base Plant",
-      "value": 302.0
+      "value": 324.9
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 275.2
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 227.5
+      "value": 204.2
      },
      {
       "label": "Syncrude Aurora",
-      "value": 205.9
+      "value": 184.8
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 205.3
+      "value": 184.3
      },
      {
       "label": "Fort Hills",
-      "value": 194.6
+      "value": 174.7
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 171.1
+      "value": 153.6
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.1
+      "value": -252.3
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 373.2
+     },
+     {
       "label": "Suncor Base Plant",
-      "value": 377.5
+      "value": 351.3
      },
      {
       "label": "Scotford (Shell)",
-      "value": 374.2
+      "value": 343.7
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 340.8
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 291.5
+      "value": 312.9
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 49.4
+      "value": 57.3
      },
      {
       "label": "Other/unallocated (ST39 gap)",
@@ -811,23 +812,23 @@
     "conventional": [
      {
       "label": "Light",
-      "value": 350.6
+      "value": 353.2
      },
      {
       "label": "Ultra-heavy",
-      "value": 138.2
+      "value": 138.5
      },
      {
       "label": "Condensate",
-      "value": 96.1
+      "value": 97.0
      },
      {
       "label": "Medium",
-      "value": 66.0
+      "value": 65.9
      },
      {
       "label": "Heavy",
-      "value": 33.3
+      "value": 33.1
      }
     ]
    },
@@ -842,7 +843,7 @@
      "effective": 3050.4,
      "flow": 3050.4,
      "util": 100.0,
-     "prev": 2913.9
+     "prev": 3035.1
     },
     {
      "id": "trans_mountain",
@@ -854,7 +855,7 @@
      "effective": 865.6,
      "flow": 865.6,
      "util": 100.0,
-     "prev": 826.8
+     "prev": 861.3
     },
     {
      "id": "keystone",
@@ -866,7 +867,7 @@
      "effective": 643.0,
      "flow": 643.0,
      "util": 100.0,
-     "prev": 614.2
+     "prev": 639.8
     },
     {
      "id": "express",
@@ -919,21 +920,22 @@
    ],
    "sk_other_kbd": 600.0,
    "marketable_on_lines_kbd": 5069.0,
+   "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
-    "change_kbd": 58.2,
-    "change_mbbl": 1.75,
-    "level_mmbbl": 61.78,
+    "change_kbd": 192.3,
+    "change_mbbl": 5.77,
+    "level_mmbbl": 69.55,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 18.8,
-    "pct_full": 76.7
+    "ullage_mmbbl": 11.0,
+    "pct_full": 86.3
    },
    "apportionment": {
     "light_pct": 19.0,
     "heavy_pct": 7.0,
-    "source": "Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
-    "note": "November: Light 19% / Heavy 7% at Kerrobert (plus 13% at Cromer, 16% at Superior), up from October"
+    "source": "Enbridge notice, Nov 18, 2026 (Dec); Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
+    "note": "December: Light 24% / Heavy 17% at Kerrobert, up from November (19% / 7%); Cromer and Superior points for December not yet in hand"
    },
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2026-12": {
    "ym": "2026-12",
@@ -942,29 +944,29 @@
     "nameplate_pipes_kbd": 5183,
     "effective_pipes_kbd": 4984.0,
     "effective_stack_kbd": 5069.0,
-    "supply_net_kbd": 5191.6,
-    "demand_wants_kbd": 5191.6,
-    "refinery_kbd": 621.5,
-    "removals_wanted_kbd": 4570.1,
-    "exports_shipped_kbd": 4469.0,
-    "overflow_kbd": 101.1,
-    "utilization_pct": 100.0
+    "supply_net_kbd": 5384.1,
+    "demand_wants_kbd": 5384.1,
+    "refinery_kbd": 626.6,
+    "removals_wanted_kbd": 4757.5,
+    "exports_shipped_kbd": 4541.6,
+    "overflow_kbd": 215.9,
+    "utilization_pct": 101.4
    },
-   "gross_production_kbd": 4368.7,
+   "gross_production_kbd": 4519.9,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1394.3,
-     "prev": 1399.0
+     "value": 1534.3,
+     "prev": 1538.4
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 246.2,
-     "prev": 241.3
+     "value": 263.7,
+     "prev": 257.6
     },
     {
      "id": "primary",
@@ -991,63 +993,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1664.4,
-     "prev": 1652.0
+     "value": 1654.7,
+     "prev": 1642.8
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 682.9,
-     "prev": 684.2
+     "value": 686.3,
+     "prev": 687.6
     }
    ],
    "groups": {
-    "in_situ": 2021.4,
-    "mined": 1664.4,
-    "conv": 682.9
+    "in_situ": 2178.9,
+    "mined": 1654.7,
+    "conv": 686.3
    },
    "identity": {
-    "gross": 4368.7,
-    "maintenance": 3.0,
-    "receipts": 1137.2,
-    "losses": 160.9,
-    "flare": 50.1,
-    "fuel": 23.8,
-    "shrinkage": 87.0,
-    "adjustments": -19.6,
-    "plug": 130.8,
-    "net_supply": 5191.6,
-    "refinery": 621.5,
-    "exports": 4469.0,
-    "storage_change": 101.1,
-    "check": 0.0
+    "gross": 4519.9,
+    "maintenance": 0.0,
+    "receipts": 1152.4,
+    "losses": 161.3,
+    "flare": 50.3,
+    "fuel": 23.9,
+    "shrinkage": 87.1,
+    "adjustments": -5.4,
+    "plug": 121.5,
+    "net_supply": 5384.1,
+    "refinery": 626.6,
+    "exports": 4541.6,
+    "storage_change": 215.9,
+    "check": -0.0
    },
-   "receipts_other_kbd": 804.7,
+   "receipts_other_kbd": 807.2,
    "diluent": {
-    "imports_total": 332.5,
-    "condensate_imports": 242.3,
-    "pentanes_imports": 90.2,
-    "condensate_production": 99.8,
-    "total": 432.3
+    "imports_total": 345.2,
+    "condensate_imports": 249.8,
+    "pentanes_imports": 95.4,
+    "condensate_production": 100.8,
+    "total": 446.0
    },
    "refinery": {
-    "total": 621.5,
-    "sales": 509.5,
-    "other": 112.0
+    "total": 626.6,
+    "sales": 513.0,
+    "other": 113.6
    },
    "grades": {
-    "total": 4459.4,
+    "total": 4519.9,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 450.6
+      "value": 454.2
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 63.9
+      "value": 63.8
      },
      {
       "id": "grade_conv_heavy",
@@ -1062,99 +1064,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2344.2
+      "value": 2401.2
      }
     ],
     "sco": 1432.3,
-    "mined_dashboard": 1970.2,
-    "mined_to_upgrader": 1738.0,
-    "mined_to_market": 232.2
+    "mined_dashboard": 1664.4,
+    "mined_to_upgrader": 1442.1,
+    "mined_to_market": 222.3
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 252.7
+      "value": 250.6
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 245.0
+      "value": 242.9
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 197.4
+      "value": 195.7
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 148.8
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 94.6
+      "value": 147.5
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 113.0
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 93.8
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 80.3
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 55.9
+      "value": 79.6
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 71.1
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 69.4
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 55.4
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.4
+      "value": 34.1
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 27.4
+      "value": 27.2
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 25.7
+      "value": 25.5
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 25.2
+      "value": 25.0
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.4
+      "value": 21.2
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 16.9
+      "value": 20.3
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.6
-     },
-     {
-      "label": "BlackGold (Harvest)",
-      "value": 10.5
+      "value": 20.2
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 10.5
+      "value": 12.3
      },
      {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.2
+      "label": "BlackGold (Harvest)",
+      "value": 10.4
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.4
+      "value": 9.7
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.1
      }
     ],
     "css": [
@@ -1164,19 +1166,19 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 157.9
+      "value": 160.9
      },
      {
       "label": "Unmapped commercial (ST53)",
       "value": 124.8
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 82.3
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 98.4
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 80.9
+      "label": "Enhanced recovery (ST53)",
+      "value": 82.3
      },
      {
       "label": "Peace River (CNRL)",
@@ -1186,87 +1188,87 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 330.6
+      "value": 401.0
      },
      {
       "label": "Suncor Base Plant",
-      "value": 322.8
+      "value": 331.0
      },
      {
       "label": "Kearl (Imperial)",
-      "value": 312.8
+      "value": 280.7
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 228.2
+      "value": 204.8
      },
      {
       "label": "Syncrude Aurora",
-      "value": 212.2
+      "value": 190.5
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 212.0
+      "value": 190.3
      },
      {
       "label": "Fort Hills",
-      "value": 193.1
+      "value": 173.3
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 158.5
+      "value": 142.2
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -249.4
+     }
+    ],
+    "sco": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 367.2
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 346.5
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 343.6
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 316.3
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 58.7
      },
      {
       "label": "Other/unallocated (ST39 gap)",
       "value": 0.0
      }
     ],
-    "sco": [
-     {
-      "label": "Suncor Base Plant",
-      "value": 377.0
-     },
-     {
-      "label": "Scotford (Shell)",
-      "value": 373.9
-     },
-     {
-      "label": "Syncrude Mildred Lake",
-      "value": 344.2
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 286.5
-     },
-     {
-      "label": "Sturgeon (NWR)",
-      "value": 50.6
-     },
-     {
-      "label": "Other/unallocated (ST39 gap)",
-      "value": 0.1
-     }
-    ],
     "conventional": [
      {
       "label": "Light",
-      "value": 350.8
+      "value": 353.4
      },
      {
       "label": "Ultra-heavy",
-      "value": 136.1
+      "value": 136.4
      },
      {
       "label": "Condensate",
-      "value": 99.8
+      "value": 100.8
      },
      {
       "label": "Medium",
-      "value": 63.9
+      "value": 63.8
      },
      {
       "label": "Heavy",
-      "value": 32.3
+      "value": 32.0
      }
     ]
    },
@@ -1358,47 +1360,53 @@
    ],
    "sk_other_kbd": 600.0,
    "marketable_on_lines_kbd": 5069.0,
+   "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
-    "change_kbd": 101.1,
-    "change_mbbl": 3.13,
-    "level_mmbbl": 64.92,
+    "change_kbd": 215.9,
+    "change_mbbl": 6.69,
+    "level_mmbbl": 76.24,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 4.4,
+    "pct_full": 94.6
    },
-   "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "apportionment": {
+    "light_pct": 24.0,
+    "heavy_pct": 17.0,
+    "source": "Enbridge notice, Nov 18, 2026 (Dec); Enbridge notice, Oct 20, 2026 (Nov); Enbridge notice, Sep 16, 2026 (Oct); Enbridge announcement (Sep)",
+    "note": "December: Light 24% / Heavy 17% at Kerrobert, up from November (19% / 7%); Cromer and Superior points for December not yet in hand"
+   },
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-01": {
    "ym": "2027-01",
    "label": "January 2027",
    "cards": {
-    "nameplate_pipes_kbd": 5273,
-    "effective_pipes_kbd": 5074.0,
-    "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 5008.1,
-    "demand_wants_kbd": 5008.1,
-    "refinery_kbd": 605.1,
-    "removals_wanted_kbd": 4403.0,
-    "exports_shipped_kbd": 4403.0,
-    "overflow_kbd": 0.0,
-    "utilization_pct": 97.0
+    "nameplate_pipes_kbd": 5183,
+    "effective_pipes_kbd": 4984.0,
+    "effective_stack_kbd": 5069.0,
+    "supply_net_kbd": 5202.3,
+    "demand_wants_kbd": 5202.3,
+    "refinery_kbd": 610.1,
+    "removals_wanted_kbd": 4592.2,
+    "exports_shipped_kbd": 4541.6,
+    "overflow_kbd": 50.6,
+    "utilization_pct": 101.4
    },
-   "gross_production_kbd": 4165.4,
+   "gross_production_kbd": 4318.2,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1391.6,
-     "prev": 1394.3
+     "value": 1531.9,
+     "prev": 1534.3
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 238.1,
-     "prev": 246.2
+     "value": 254.3,
+     "prev": 263.7
     },
     {
      "id": "primary",
@@ -1425,58 +1433,58 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1485.6,
-     "prev": 1664.4
+     "value": 1478.7,
+     "prev": 1654.7
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 662.9,
-     "prev": 682.9
+     "value": 666.1,
+     "prev": 686.3
     }
    ],
    "groups": {
-    "in_situ": 2016.9,
-    "mined": 1485.6,
-    "conv": 662.9
+    "in_situ": 2173.4,
+    "mined": 1478.7,
+    "conv": 666.1
    },
    "identity": {
-    "gross": 4165.4,
+    "gross": 4318.2,
     "maintenance": 0.0,
-    "receipts": 1149.5,
-    "losses": 154.3,
-    "flare": 45.7,
+    "receipts": 1166.3,
+    "losses": 154.7,
+    "flare": 45.9,
     "fuel": 23.1,
-    "shrinkage": 85.5,
-    "adjustments": -21.7,
-    "plug": 130.8,
-    "net_supply": 5008.1,
-    "refinery": 605.1,
-    "exports": 4403.0,
-    "storage_change": -0.0,
-    "check": 0.0
+    "shrinkage": 85.7,
+    "adjustments": -6.0,
+    "plug": 121.5,
+    "net_supply": 5202.3,
+    "refinery": 610.1,
+    "exports": 4541.6,
+    "storage_change": 50.6,
+    "check": -0.0
    },
-   "receipts_other_kbd": 787.0,
+   "receipts_other_kbd": 789.5,
    "diluent": {
-    "imports_total": 362.5,
-    "condensate_imports": 264.1,
-    "pentanes_imports": 98.4,
-    "condensate_production": 93.0,
-    "total": 455.5
+    "imports_total": 376.8,
+    "condensate_imports": 272.7,
+    "pentanes_imports": 104.1,
+    "condensate_production": 93.9,
+    "total": 470.7
    },
    "refinery": {
-    "total": 605.1,
-    "sales": 503.1,
-    "other": 102.0
+    "total": 610.1,
+    "sales": 506.5,
+    "other": 103.6
    },
    "grades": {
-    "total": 4266.5,
+    "total": 4318.2,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 417.7
+      "value": 420.9
      },
      {
       "id": "grade_conv_sour",
@@ -1496,99 +1504,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2256.2
+      "value": 2304.7
      }
     ],
     "sco": 1347.3,
-    "mined_dashboard": 1788.7,
-    "mined_to_upgrader": 1650.4,
-    "mined_to_market": 138.3
+    "mined_dashboard": 1510.1,
+    "mined_to_upgrader": 1378.8,
+    "mined_to_market": 131.3
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 255.6
+      "value": 252.1
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 248.7
+      "value": 245.3
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 200.9
+      "value": 198.2
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 149.2
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 97.1
+      "value": 147.2
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 112.5
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 95.8
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 78.4
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 53.5
+      "value": 77.3
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 70.7
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 69.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 52.8
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 31.2
+      "value": 30.8
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 28.5
+      "value": 28.1
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.9
+      "value": 23.6
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 23.3
-     },
-     {
-      "label": "Great Divide (Greenfire)",
-      "value": 21.1
+      "value": 23.0
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 18.0
+      "value": 21.6
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 20.8
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.6
+      "value": 20.1
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 12.8
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.5
-     },
-     {
-      "label": "BlackGold (Harvest)",
-      "value": 9.0
+      "value": 15.1
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.4
+      "value": 9.7
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.4
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 8.9
      }
     ],
     "css": [
@@ -1598,7 +1606,7 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 160.0
+      "value": 160.1
      },
      {
       "label": "Unmapped commercial (ST53)",
@@ -1610,7 +1618,7 @@
      },
      {
       "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 74.8
+      "value": 91.0
      },
      {
       "label": "Peace River (CNRL)",
@@ -1620,61 +1628,61 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 306.9
-     },
-     {
-      "label": "Kearl (Imperial)",
-      "value": 285.1
+      "value": 372.4
      },
      {
       "label": "Suncor Base Plant",
-      "value": 273.5
+      "value": 280.5
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 256.0
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 216.8
+      "value": 194.6
      },
      {
       "label": "Syncrude Aurora",
-      "value": 191.2
+      "value": 171.6
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 182.5
+      "value": 163.8
      },
      {
       "label": "Fort Hills",
-      "value": 174.6
+      "value": 156.7
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 158.2
+      "value": 142.0
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
+      "value": -227.5
      }
     ],
     "sco": [
      {
       "label": "Scotford (Shell)",
-      "value": 376.2
-     },
-     {
-      "label": "Suncor Base Plant",
-      "value": 357.3
-     },
-     {
-      "label": "Syncrude Mildred Lake",
-      "value": 309.0
+      "value": 346.7
      },
      {
       "label": "Horizon (CNRL)",
-      "value": 261.0
+      "value": 335.5
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 329.3
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 284.8
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 43.8
+      "value": 51.0
      },
      {
       "label": "Other/unallocated (ST39 gap)",
@@ -1684,15 +1692,15 @@
     "conventional": [
      {
       "label": "Light",
-      "value": 324.7
+      "value": 327.0
      },
      {
       "label": "Ultra-heavy",
-      "value": 144.2
+      "value": 144.5
      },
      {
       "label": "Condensate",
-      "value": 93.0
+      "value": 93.9
      },
      {
       "label": "Medium",
@@ -1700,7 +1708,7 @@
      },
      {
       "label": "Heavy",
-      "value": 33.7
+      "value": 33.4
      }
     ]
    },
@@ -1713,8 +1721,8 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2948.1,
-     "util": 96.6,
+     "flow": 3050.4,
+     "util": 100.0,
      "prev": 3050.4
     },
     {
@@ -1723,10 +1731,10 @@
      "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
      "kind": "swing",
      "region": "Pacific coast",
-     "nameplate": 980,
-     "effective": 955.6,
-     "flow": 923.5,
-     "util": 96.6,
+     "nameplate": 890,
+     "effective": 865.6,
+     "flow": 865.6,
+     "util": 100.0,
      "prev": 865.6
     },
     {
@@ -1737,8 +1745,8 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 621.4,
-     "util": 96.6,
+     "flow": 643.0,
+     "util": 100.0,
      "prev": 643.0
     },
     {
@@ -1791,48 +1799,49 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5003.0,
+   "marketable_on_lines_kbd": 5069.0,
+   "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
-    "change_kbd": -0.0,
-    "change_mbbl": -0.0,
-    "level_mmbbl": 64.92,
+    "change_kbd": 50.6,
+    "change_mbbl": 1.57,
+    "level_mmbbl": 77.81,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 2.8,
+    "pct_full": 96.5
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-02": {
    "ym": "2027-02",
    "label": "February 2027",
    "cards": {
-    "nameplate_pipes_kbd": 5273,
-    "effective_pipes_kbd": 5074.0,
-    "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 5000.5,
-    "demand_wants_kbd": 5000.5,
-    "refinery_kbd": 624.8,
-    "removals_wanted_kbd": 4375.7,
-    "exports_shipped_kbd": 4375.7,
-    "overflow_kbd": 0.0,
-    "utilization_pct": 96.4
+    "nameplate_pipes_kbd": 5183,
+    "effective_pipes_kbd": 4984.0,
+    "effective_stack_kbd": 5069.0,
+    "supply_net_kbd": 5189.9,
+    "demand_wants_kbd": 5189.9,
+    "refinery_kbd": 629.9,
+    "removals_wanted_kbd": 4560.0,
+    "exports_shipped_kbd": 4541.6,
+    "overflow_kbd": 18.4,
+    "utilization_pct": 101.4
    },
-   "gross_production_kbd": 4175.8,
+   "gross_production_kbd": 4328.1,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1390.8,
-     "prev": 1391.6
+     "value": 1530.7,
+     "prev": 1531.9
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 236.1,
-     "prev": 238.1
+     "value": 251.6,
+     "prev": 254.3
     },
     {
      "id": "primary",
@@ -1859,63 +1868,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1488.8,
-     "prev": 1485.6
+     "value": 1482.4,
+     "prev": 1478.7
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 673.7,
-     "prev": 662.9
+     "value": 677.0,
+     "prev": 666.1
     }
    ],
    "groups": {
-    "in_situ": 2013.3,
-    "mined": 1488.8,
-    "conv": 673.7
+    "in_situ": 2168.7,
+    "mined": 1482.4,
+    "conv": 677.0
    },
    "identity": {
-    "gross": 4175.8,
+    "gross": 4328.1,
     "maintenance": 0.0,
-    "receipts": 1125.5,
-    "losses": 154.0,
-    "flare": 44.4,
+    "receipts": 1142.1,
+    "losses": 154.4,
+    "flare": 44.6,
     "fuel": 25.4,
-    "shrinkage": 84.2,
-    "adjustments": -16.0,
-    "plug": 130.8,
-    "net_supply": 5000.5,
-    "refinery": 624.8,
-    "exports": 4375.7,
-    "storage_change": 0.0,
-    "check": 0.0
+    "shrinkage": 84.4,
+    "adjustments": -4.4,
+    "plug": 121.5,
+    "net_supply": 5189.9,
+    "refinery": 629.9,
+    "exports": 4541.6,
+    "storage_change": 18.4,
+    "check": -0.0
    },
-   "receipts_other_kbd": 773.9,
+   "receipts_other_kbd": 776.4,
    "diluent": {
-    "imports_total": 351.6,
-    "condensate_imports": 256.2,
-    "pentanes_imports": 95.4,
-    "condensate_production": 93.5,
-    "total": 445.1
+    "imports_total": 365.7,
+    "condensate_imports": 264.7,
+    "pentanes_imports": 101.0,
+    "condensate_production": 94.3,
+    "total": 460.0
    },
    "refinery": {
-    "total": 624.8,
-    "sales": 515.3,
-    "other": 109.5
+    "total": 629.9,
+    "sales": 518.8,
+    "other": 111.1
    },
    "grades": {
-    "total": 4282.7,
+    "total": 4328.1,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 423.8
+      "value": 427.0
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 68.8
+      "value": 68.7
      },
      {
       "id": "grade_conv_heavy",
@@ -1930,99 +1939,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2241.0
+      "value": 2283.3
      }
     ],
     "sco": 1367.9,
-    "mined_dashboard": 1786.8,
-    "mined_to_upgrader": 1665.8,
-    "mined_to_market": 121.0
+    "mined_dashboard": 1513.1,
+    "mined_to_upgrader": 1398.5,
+    "mined_to_market": 114.6
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 253.2
+      "value": 248.9
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 244.7
+      "value": 240.5
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 203.3
+      "value": 199.8
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 150.4
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 97.3
+      "value": 147.8
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 112.1
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 95.6
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 79.5
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 53.7
+      "value": 78.1
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 70.5
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 68.8
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 52.8
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 32.4
+      "value": 31.8
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 29.0
+      "value": 28.5
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 24.2
+      "value": 23.8
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 22.8
-     },
-     {
-      "label": "Great Divide (Greenfire)",
-      "value": 21.3
+      "value": 22.4
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 17.7
+      "value": 21.1
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 20.9
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 14.9
+      "value": 19.1
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 14.6
+      "value": 16.8
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 12.2
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.5
+      "value": 12.0
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.7
+      "value": 9.9
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.3
      }
     ],
     "css": [
@@ -2032,7 +2041,7 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 161.3
+      "value": 161.2
      },
      {
       "label": "Unmapped commercial (ST53)",
@@ -2044,7 +2053,7 @@
      },
      {
       "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 71.6
+      "value": 87.1
      },
      {
       "label": "Peace River (CNRL)",
@@ -2054,61 +2063,61 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 318.5
+      "value": 385.6
      },
      {
       "label": "Suncor Base Plant",
-      "value": 268.8
+      "value": 275.2
      },
      {
       "label": "Kearl (Imperial)",
-      "value": 268.7
+      "value": 240.7
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 238.0
+      "value": 213.3
      },
      {
       "label": "Syncrude Aurora",
-      "value": 181.1
+      "value": 162.2
      },
      {
       "label": "Fort Hills",
-      "value": 180.9
+      "value": 162.1
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 180.2
+      "value": 161.4
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 150.7
+      "value": 135.1
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
+      "value": -222.5
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 353.6
+     },
+     {
       "label": "Scotford (Shell)",
-      "value": 378.4
+      "value": 347.6
      },
      {
       "label": "Suncor Base Plant",
-      "value": 355.3
+      "value": 326.4
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 311.0
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 276.1
+      "value": 285.7
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 47.1
+      "value": 54.6
      },
      {
       "label": "Other/unallocated (ST39 gap)",
@@ -2118,23 +2127,23 @@
     "conventional": [
      {
       "label": "Light",
-      "value": 330.3
+      "value": 332.7
      },
      {
       "label": "Ultra-heavy",
-      "value": 146.6
+      "value": 146.9
      },
      {
       "label": "Condensate",
-      "value": 93.5
+      "value": 94.3
      },
      {
       "label": "Medium",
-      "value": 68.8
+      "value": 68.7
      },
      {
       "label": "Heavy",
-      "value": 34.6
+      "value": 34.3
      }
     ]
    },
@@ -2147,9 +2156,9 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2930.2,
-     "util": 96.1,
-     "prev": 2948.1
+     "flow": 3050.4,
+     "util": 100.0,
+     "prev": 3050.4
     },
     {
      "id": "trans_mountain",
@@ -2157,11 +2166,11 @@
      "dest": "Burnaby, the Westridge marine terminal and Puget Sound",
      "kind": "swing",
      "region": "Pacific coast",
-     "nameplate": 980,
-     "effective": 955.6,
-     "flow": 917.9,
-     "util": 96.1,
-     "prev": 923.5
+     "nameplate": 890,
+     "effective": 865.6,
+     "flow": 865.6,
+     "util": 100.0,
+     "prev": 865.6
     },
     {
      "id": "keystone",
@@ -2171,9 +2180,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 617.6,
-     "util": 96.0,
-     "prev": 621.4
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 643.0
     },
     {
      "id": "express",
@@ -2225,17 +2234,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 4975.7,
+   "marketable_on_lines_kbd": 5069.0,
+   "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
-    "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "change_kbd": 18.4,
+    "change_mbbl": 0.52,
+    "level_mmbbl": 78.32,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 2.3,
+    "pct_full": 97.2
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-03": {
    "ym": "2027-03",
@@ -2244,29 +2254,29 @@
     "nameplate_pipes_kbd": 5273,
     "effective_pipes_kbd": 5074.0,
     "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 5098.0,
-    "demand_wants_kbd": 5098.0,
-    "refinery_kbd": 616.5,
-    "removals_wanted_kbd": 4481.5,
-    "exports_shipped_kbd": 4481.5,
-    "overflow_kbd": 0.0,
-    "utilization_pct": 98.5
+    "supply_net_kbd": 5286.3,
+    "demand_wants_kbd": 5286.3,
+    "refinery_kbd": 621.6,
+    "removals_wanted_kbd": 4664.7,
+    "exports_shipped_kbd": 4631.6,
+    "overflow_kbd": 33.1,
+    "utilization_pct": 101.4
    },
-   "gross_production_kbd": 4271.0,
+   "gross_production_kbd": 4422.9,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1385.6,
-     "prev": 1390.8
+     "value": 1525.2,
+     "prev": 1530.7
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 243.1,
-     "prev": 236.1
+     "value": 260.3,
+     "prev": 251.6
     },
     {
      "id": "primary",
@@ -2293,58 +2303,58 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1569.6,
-     "prev": 1488.8
+     "value": 1561.4,
+     "prev": 1482.4
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 683.7,
-     "prev": 673.7
+     "value": 687.0,
+     "prev": 677.0
     }
    ],
    "groups": {
-    "in_situ": 2017.7,
-    "mined": 1569.6,
-    "conv": 683.7
+    "in_situ": 2174.5,
+    "mined": 1561.4,
+    "conv": 687.0
    },
    "identity": {
-    "gross": 4271.0,
+    "gross": 4422.9,
     "maintenance": 0.0,
-    "receipts": 1130.1,
-    "losses": 156.2,
-    "flare": 45.9,
+    "receipts": 1146.0,
+    "losses": 156.6,
+    "flare": 46.1,
     "fuel": 25.1,
-    "shrinkage": 85.2,
-    "adjustments": -16.1,
-    "plug": 130.8,
-    "net_supply": 5098.0,
-    "refinery": 616.5,
-    "exports": 4481.5,
-    "storage_change": 0.0,
-    "check": 0.0
+    "shrinkage": 85.4,
+    "adjustments": -4.5,
+    "plug": 121.5,
+    "net_supply": 5286.3,
+    "refinery": 621.6,
+    "exports": 4631.6,
+    "storage_change": 33.1,
+    "check": -0.0
    },
-   "receipts_other_kbd": 787.6,
+   "receipts_other_kbd": 790.4,
    "diluent": {
-    "imports_total": 342.5,
-    "condensate_imports": 249.6,
-    "pentanes_imports": 92.9,
-    "condensate_production": 91.9,
-    "total": 434.4
+    "imports_total": 355.6,
+    "condensate_imports": 257.4,
+    "pentanes_imports": 98.2,
+    "condensate_production": 92.7,
+    "total": 448.3
    },
    "refinery": {
-    "total": 616.5,
-    "sales": 507.2,
-    "other": 109.3
+    "total": 621.6,
+    "sales": 510.6,
+    "other": 111.0
    },
    "grades": {
-    "total": 4382.7,
+    "total": 4422.9,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 431.3
+      "value": 434.5
      },
      {
       "id": "grade_conv_sour",
@@ -2354,7 +2364,7 @@
      {
       "id": "grade_conv_heavy",
       "label": "Blended heavy conventional",
-      "value": 180.9
+      "value": 181.0
      },
      {
       "id": "grade_sco",
@@ -2364,99 +2374,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2311.3
+      "value": 2348.2
      }
     ],
     "sco": 1387.7,
-    "mined_dashboard": 1860.6,
-    "mined_to_upgrader": 1678.6,
-    "mined_to_market": 182.0
+    "mined_dashboard": 1573.9,
+    "mined_to_upgrader": 1400.2,
+    "mined_to_market": 173.7
    },
    "detail": {
     "sagd": [
      {
       "label": "Firebag (Suncor)",
-      "value": 246.8
+      "value": 241.8
      },
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 246.6
+      "value": 241.6
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 202.8
+      "value": 198.7
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 148.9
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 99.3
+      "value": 145.9
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 111.7
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 97.3
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 77.4
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 54.8
+      "value": 75.8
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 70.2
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 68.6
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.7
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.6
+      "value": 33.9
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 29.4
+      "value": 28.8
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 24.8
+      "value": 24.3
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 23.3
+      "value": 22.8
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.5
+      "value": 21.1
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 16.6
-     },
-     {
-      "label": "Blackrod (IPC)",
-      "value": 16.3
+      "value": 19.8
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 14.7
+      "value": 18.8
+     },
+     {
+      "label": "Blackrod (IPC)",
+      "value": 18.2
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 12.8
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.9
+      "value": 12.5
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.7
+      "value": 9.9
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.7
      }
     ],
     "css": [
@@ -2473,12 +2483,12 @@
       "value": 122.1
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 92.3
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 96.7
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 79.5
+      "label": "Enhanced recovery (ST53)",
+      "value": 92.3
      },
      {
       "label": "Peace River (CNRL)",
@@ -2488,79 +2498,79 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 325.1
+      "value": 393.6
      },
      {
       "label": "Suncor Base Plant",
-      "value": 294.7
+      "value": 301.7
      },
      {
       "label": "Kearl (Imperial)",
-      "value": 289.0
+      "value": 259.0
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 213.7
+      "value": 191.6
      },
      {
       "label": "Syncrude Aurora",
-      "value": 209.2
+      "value": 187.5
      },
      {
       "label": "Fort Hills",
-      "value": 197.1
+      "value": 176.7
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 175.8
+      "value": 157.5
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 156.0
+      "value": 139.8
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.0
+      "value": -233.5
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 363.5
+     },
+     {
       "label": "Suncor Base Plant",
-      "value": 379.4
+      "value": 348.1
      },
      {
       "label": "Scotford (Shell)",
-      "value": 361.0
+      "value": 331.2
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 314.1
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 284.1
+      "value": 288.2
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 49.1
+      "value": 56.8
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.0
+      "value": -0.1
      }
     ],
     "conventional": [
      {
       "label": "Light",
-      "value": 339.4
+      "value": 341.8
      },
      {
       "label": "Ultra-heavy",
-      "value": 145.8
+      "value": 146.1
      },
      {
       "label": "Condensate",
-      "value": 91.9
+      "value": 92.7
      },
      {
       "label": "Medium",
@@ -2568,7 +2578,7 @@
      },
      {
       "label": "Heavy",
-      "value": 35.1
+      "value": 34.9
      }
     ]
    },
@@ -2581,9 +2591,9 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2999.5,
-     "util": 98.3,
-     "prev": 2930.2
+     "flow": 3050.4,
+     "util": 100.0,
+     "prev": 3050.4
     },
     {
      "id": "trans_mountain",
@@ -2593,9 +2603,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 939.7,
-     "util": 98.3,
-     "prev": 917.9
+     "flow": 955.6,
+     "util": 100.0,
+     "prev": 865.6
     },
     {
      "id": "keystone",
@@ -2605,9 +2615,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 632.3,
-     "util": 98.3,
-     "prev": 617.6
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 643.0
     },
     {
      "id": "express",
@@ -2659,17 +2669,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5081.5,
+   "marketable_on_lines_kbd": 5159.0,
+   "bound_uplift_unallocated_kbd": 72.6,
    "storage": {
-    "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "change_kbd": 33.1,
+    "change_mbbl": 1.03,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-04": {
    "ym": "2027-04",
@@ -2678,29 +2689,29 @@
     "nameplate_pipes_kbd": 5273,
     "effective_pipes_kbd": 5074.0,
     "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 4933.6,
-    "demand_wants_kbd": 4933.6,
-    "refinery_kbd": 548.0,
-    "removals_wanted_kbd": 4385.6,
-    "exports_shipped_kbd": 4385.6,
+    "supply_net_kbd": 5117.0,
+    "demand_wants_kbd": 5117.0,
+    "refinery_kbd": 552.5,
+    "removals_wanted_kbd": 4564.5,
+    "exports_shipped_kbd": 4564.5,
     "overflow_kbd": 0.0,
-    "utilization_pct": 96.6
+    "utilization_pct": 100.1
    },
-   "gross_production_kbd": 4138.3,
+   "gross_production_kbd": 4287.4,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1341.9,
-     "prev": 1385.6
+     "value": 1479.0,
+     "prev": 1525.2
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 233.5,
-     "prev": 243.1
+     "value": 249.7,
+     "prev": 260.3
     },
     {
      "id": "primary",
@@ -2727,63 +2738,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1499.6,
-     "prev": 1569.6
+     "value": 1492.1,
+     "prev": 1561.4
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 684.4,
-     "prev": 683.7
+     "value": 687.7,
+     "prev": 687.0
     }
    ],
    "groups": {
-    "in_situ": 1954.3,
-    "mined": 1499.6,
-    "conv": 684.4
+    "in_situ": 2107.6,
+    "mined": 1492.1,
+    "conv": 687.7
    },
    "identity": {
-    "gross": 4138.3,
+    "gross": 4287.4,
     "maintenance": 26.0,
-    "receipts": 1115.9,
-    "losses": 150.4,
-    "flare": 42.2,
-    "fuel": 23.9,
-    "shrinkage": 84.3,
-    "adjustments": -13.4,
-    "plug": 130.8,
-    "net_supply": 4933.6,
-    "refinery": 548.0,
-    "exports": 4385.6,
+    "receipts": 1131.6,
+    "losses": 150.8,
+    "flare": 42.4,
+    "fuel": 24.0,
+    "shrinkage": 84.4,
+    "adjustments": -3.7,
+    "plug": 121.5,
+    "net_supply": 5117.0,
+    "refinery": 552.5,
+    "exports": 4564.5,
     "storage_change": 0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 749.0,
+   "receipts_other_kbd": 750.5,
    "diluent": {
-    "imports_total": 366.9,
-    "condensate_imports": 267.4,
-    "pentanes_imports": 99.5,
-    "condensate_production": 93.4,
-    "total": 460.3
+    "imports_total": 381.1,
+    "condensate_imports": 275.8,
+    "pentanes_imports": 105.3,
+    "condensate_production": 94.3,
+    "total": 475.4
    },
    "refinery": {
-    "total": 548.0,
-    "sales": 447.1,
-    "other": 100.9
+    "total": 552.5,
+    "sales": 450.1,
+    "other": 102.4
    },
    "grades": {
-    "total": 4229.1,
+    "total": 4261.4,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 435.1
+      "value": 438.5
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 71.8
+      "value": 71.7
      },
      {
       "id": "grade_conv_heavy",
@@ -2798,99 +2809,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2211.8
+      "value": 2240.8
      }
     ],
     "sco": 1332.9,
-    "mined_dashboard": 1685.9,
-    "mined_to_upgrader": 1519.1,
-    "mined_to_market": 166.8
+    "mined_dashboard": 1381.9,
+    "mined_to_upgrader": 1248.7,
+    "mined_to_market": 133.2
    },
    "detail": {
     "sagd": [
      {
       "label": "Firebag (Suncor)",
-      "value": 244.1
+      "value": 237.8
      },
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 216.6
+      "value": 211.0
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 199.2
+      "value": 194.0
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 146.5
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 97.7
+      "value": 142.7
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 111.0
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 95.2
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 79.8
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 53.1
+      "value": 77.7
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 69.8
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 68.2
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 51.7
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.9
+      "value": 34.0
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 29.9
+      "value": 29.1
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 24.1
+      "value": 23.5
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 24.1
+      "value": 23.5
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 20.7
+      "value": 20.2
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 18.1
-     },
-     {
-      "label": "Hangingstone Expansion (Greenfire)",
-      "value": 15.8
+      "value": 20.1
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.4
+      "value": 19.6
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 18.7
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 12.1
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.8
+      "value": 11.8
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.8
+      "value": 10.0
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.5
      }
     ],
     "css": [
@@ -2900,7 +2911,7 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 155.4
+      "value": 173.5
      },
      {
       "label": "Unmapped commercial (ST53)",
@@ -2912,97 +2923,97 @@
      },
      {
       "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 48.6
+      "value": 72.4
      },
      {
       "label": "Peace River (CNRL)",
-      "value": 3.4
+      "value": 3.8
      }
     ],
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 319.5
-     },
-     {
-      "label": "Kearl (Imperial)",
-      "value": 277.7
+      "value": 385.2
      },
      {
       "label": "Suncor Base Plant",
-      "value": 262.3
+      "value": 267.3
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 247.7
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 221.2
+      "value": 197.4
      },
      {
       "label": "Fort Hills",
-      "value": 168.2
+      "value": 150.1
      },
      {
       "label": "Syncrude Aurora",
-      "value": 161.5
+      "value": 144.1
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 144.7
+      "value": 129.1
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 130.8
+      "value": 116.7
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -255.7
+     }
+    ],
+    "sco": [
+     {
+      "label": "Horizon (CNRL)",
+      "value": 393.3
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 365.1
+     },
+     {
+      "label": "Scotford (Shell)",
+      "value": 279.3
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 239.0
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 56.2
      },
      {
       "label": "Other/unallocated (ST39 gap)",
       "value": 0.0
      }
     ],
-    "sco": [
-     {
-      "label": "Suncor Base Plant",
-      "value": 402.3
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 310.7
-     },
-     {
-      "label": "Scotford (Shell)",
-      "value": 307.6
-     },
-     {
-      "label": "Syncrude Mildred Lake",
-      "value": 263.3
-     },
-     {
-      "label": "Sturgeon (NWR)",
-      "value": 49.1
-     },
-     {
-      "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
-     }
-    ],
     "conventional": [
      {
       "label": "Light",
-      "value": 341.7
+      "value": 344.2
      },
      {
       "label": "Ultra-heavy",
-      "value": 143.1
+      "value": 143.4
      },
      {
       "label": "Condensate",
-      "value": 93.4
+      "value": 94.3
      },
      {
       "label": "Medium",
-      "value": 71.8
+      "value": 71.7
      },
      {
       "label": "Heavy",
-      "value": 34.4
+      "value": 34.1
      }
     ]
    },
@@ -3015,9 +3026,9 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2936.6,
-     "util": 96.3,
-     "prev": 2999.5
+     "flow": 3050.4,
+     "util": 100.0,
+     "prev": 3050.4
     },
     {
      "id": "trans_mountain",
@@ -3027,9 +3038,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 920.0,
-     "util": 96.3,
-     "prev": 939.7
+     "flow": 955.6,
+     "util": 100.0,
+     "prev": 955.6
     },
     {
      "id": "keystone",
@@ -3039,9 +3050,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 619.0,
-     "util": 96.3,
-     "prev": 632.3
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 643.0
     },
     {
      "id": "express",
@@ -3093,17 +3104,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 4985.6,
+   "marketable_on_lines_kbd": 5159.0,
+   "bound_uplift_unallocated_kbd": 5.5,
    "storage": {
     "change_kbd": 0.0,
     "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-05": {
    "ym": "2027-05",
@@ -3112,29 +3124,29 @@
     "nameplate_pipes_kbd": 5273,
     "effective_pipes_kbd": 5074.0,
     "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 4770.8,
-    "demand_wants_kbd": 4770.8,
-    "refinery_kbd": 569.5,
-    "removals_wanted_kbd": 4201.3,
-    "exports_shipped_kbd": 4201.3,
+    "supply_net_kbd": 4955.8,
+    "demand_wants_kbd": 4955.8,
+    "refinery_kbd": 574.2,
+    "removals_wanted_kbd": 4381.6,
+    "exports_shipped_kbd": 4381.6,
     "overflow_kbd": 0.0,
-    "utilization_pct": 93.1
+    "utilization_pct": 96.6
    },
-   "gross_production_kbd": 4018.9,
+   "gross_production_kbd": 4166.7,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1346.6,
-     "prev": 1341.9
+     "value": 1482.7,
+     "prev": 1479.0
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 224.0,
-     "prev": 233.5
+     "value": 239.1,
+     "prev": 249.7
     },
     {
      "id": "primary",
@@ -3161,63 +3173,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1416.6,
-     "prev": 1499.6
+     "value": 1409.9,
+     "prev": 1492.1
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 671.4,
-     "prev": 684.4
+     "value": 674.7,
+     "prev": 687.7
     }
    ],
    "groups": {
-    "in_situ": 1930.9,
-    "mined": 1416.6,
-    "conv": 671.4
+    "in_situ": 2082.1,
+    "mined": 1409.9,
+    "conv": 674.7
    },
    "identity": {
-    "gross": 4018.9,
+    "gross": 4166.7,
     "maintenance": 0.0,
-    "receipts": 1045.5,
-    "losses": 144.5,
-    "flare": 43.8,
-    "fuel": 23.8,
-    "shrinkage": 76.9,
-    "adjustments": -18.3,
-    "plug": 130.8,
-    "net_supply": 4770.8,
-    "refinery": 569.5,
-    "exports": 4201.3,
+    "receipts": 1060.6,
+    "losses": 144.9,
+    "flare": 44.0,
+    "fuel": 23.9,
+    "shrinkage": 77.0,
+    "adjustments": -5.1,
+    "plug": 121.5,
+    "net_supply": 4955.8,
+    "refinery": 574.2,
+    "exports": 4381.6,
     "storage_change": -0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 683.7,
+   "receipts_other_kbd": 684.7,
    "diluent": {
-    "imports_total": 361.8,
-    "condensate_imports": 263.6,
-    "pentanes_imports": 98.2,
-    "condensate_production": 94.2,
-    "total": 456.0
+    "imports_total": 375.9,
+    "condensate_imports": 272.1,
+    "pentanes_imports": 103.8,
+    "condensate_production": 95.1,
+    "total": 471.0
    },
    "refinery": {
-    "total": 569.5,
-    "sales": 464.4,
-    "other": 105.1
+    "total": 574.2,
+    "sales": 467.6,
+    "other": 106.6
    },
    "grades": {
-    "total": 4144.8,
+    "total": 4166.7,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 425.9
+      "value": 429.2
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 69.4
+      "value": 69.3
      },
      {
       "id": "grade_conv_heavy",
@@ -3232,99 +3244,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2209.0
+      "value": 2227.7
      }
     ],
     "sco": 1264.4,
-    "mined_dashboard": 1450.1,
-    "mined_to_upgrader": 1298.0,
-    "mined_to_market": 152.1
+    "mined_dashboard": 1287.6,
+    "mined_to_upgrader": 1142.0,
+    "mined_to_market": 145.6
    },
    "detail": {
     "sagd": [
      {
       "label": "Firebag (Suncor)",
-      "value": 241.0
+      "value": 233.2
      },
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 235.7
+      "value": 228.1
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 200.4
+      "value": 193.9
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 145.8
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 96.9
+      "value": 141.1
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 110.3
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 93.8
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 74.8
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 54.0
+      "value": 72.4
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 69.4
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 67.7
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 52.3
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 35.7
+      "value": 34.5
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 31.0
+      "value": 30.0
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 24.3
+      "value": 23.5
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.4
-     },
-     {
-      "label": "Great Divide (Greenfire)",
-      "value": 20.7
+      "value": 22.6
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 19.8
+      "value": 21.4
      },
      {
-      "label": "Hangingstone Expansion (Greenfire)",
-      "value": 15.5
+      "label": "Great Divide (Greenfire)",
+      "value": 20.0
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.0
+      "value": 19.0
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 18.2
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 12.5
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.4
+      "value": 12.1
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.8
+      "value": 10.0
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.1
      }
     ],
     "css": [
@@ -3346,7 +3358,7 @@
      },
      {
       "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 70.0
+      "value": 85.2
      },
      {
       "label": "Peace River (CNRL)",
@@ -3355,62 +3367,62 @@
     ],
     "mined": [
      {
-      "label": "Muskeg River (Shell)",
-      "value": 235.0
-     },
-     {
       "label": "Horizon (CNRL)",
-      "value": 225.4
+      "value": 275.7
      },
      {
-      "label": "Kearl (Imperial)",
-      "value": 196.1
+      "label": "Muskeg River (Shell)",
+      "value": 212.7
      },
      {
       "label": "Suncor Base Plant",
-      "value": 189.2
+      "value": 195.7
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 177.5
      },
      {
       "label": "Fort Hills",
-      "value": 186.4
+      "value": 168.7
      },
      {
       "label": "Syncrude Aurora",
-      "value": 179.4
+      "value": 162.4
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 126.5
+      "value": 114.5
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 112.1
+      "value": 101.4
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.0
+      "value": -121.0
      }
     ],
     "sco": [
      {
       "label": "Scotford (Shell)",
-      "value": 389.6
+      "value": 362.5
      },
      {
       "label": "Suncor Base Plant",
-      "value": 352.3
-     },
-     {
-      "label": "Syncrude Mildred Lake",
-      "value": 267.9
+      "value": 327.8
      },
      {
       "label": "Horizon (CNRL)",
-      "value": 209.6
+      "value": 271.9
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 249.3
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 44.9
+      "value": 52.8
      },
      {
       "label": "Other/unallocated (ST39 gap)",
@@ -3420,23 +3432,23 @@
     "conventional": [
      {
       "label": "Light",
-      "value": 331.7
+      "value": 334.1
      },
      {
       "label": "Ultra-heavy",
-      "value": 142.5
+      "value": 142.8
      },
      {
       "label": "Condensate",
-      "value": 94.2
+      "value": 95.1
      },
      {
       "label": "Medium",
-      "value": 69.4
+      "value": 69.3
      },
      {
       "label": "Heavy",
-      "value": 33.6
+      "value": 33.3
      }
     ]
    },
@@ -3449,9 +3461,9 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2815.7,
-     "util": 92.3,
-     "prev": 2936.6
+     "flow": 2934.0,
+     "util": 96.2,
+     "prev": 3050.4
     },
     {
      "id": "trans_mountain",
@@ -3461,9 +3473,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 882.1,
-     "util": 92.3,
-     "prev": 920.0
+     "flow": 919.1,
+     "util": 96.2,
+     "prev": 955.6
     },
     {
      "id": "keystone",
@@ -3473,9 +3485,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 593.5,
-     "util": 92.3,
-     "prev": 619.0
+     "flow": 618.5,
+     "util": 96.2,
+     "prev": 643.0
     },
     {
      "id": "express",
@@ -3527,17 +3539,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 4801.3,
+   "marketable_on_lines_kbd": 4981.6,
+   "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": -0.0,
     "change_mbbl": -0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-06": {
    "ym": "2027-06",
@@ -3546,29 +3559,29 @@
     "nameplate_pipes_kbd": 5273,
     "effective_pipes_kbd": 5074.0,
     "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 4900.7,
-    "demand_wants_kbd": 4900.7,
-    "refinery_kbd": 584.3,
-    "removals_wanted_kbd": 4316.4,
-    "exports_shipped_kbd": 4316.4,
+    "supply_net_kbd": 5088.2,
+    "demand_wants_kbd": 5088.2,
+    "refinery_kbd": 589.1,
+    "removals_wanted_kbd": 4499.1,
+    "exports_shipped_kbd": 4499.1,
     "overflow_kbd": 0.0,
-    "utilization_pct": 95.3
+    "utilization_pct": 98.8
    },
-   "gross_production_kbd": 4170.2,
+   "gross_production_kbd": 4316.2,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1365.8,
-     "prev": 1346.6
+     "value": 1501.9,
+     "prev": 1482.7
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 230.6,
-     "prev": 224.0
+     "value": 246.3,
+     "prev": 239.1
     },
     {
      "id": "primary",
@@ -3595,68 +3608,68 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1549.3,
-     "prev": 1416.6
+     "value": 1540.4,
+     "prev": 1409.9
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 652.6,
-     "prev": 671.4
+     "value": 655.7,
+     "prev": 674.7
     }
    ],
    "groups": {
-    "in_situ": 1968.3,
-    "mined": 1549.3,
-    "conv": 652.6
+    "in_situ": 2120.1,
+    "mined": 1540.4,
+    "conv": 655.7
    },
    "identity": {
-    "gross": 4170.2,
+    "gross": 4316.2,
     "maintenance": 0.0,
-    "receipts": 1036.9,
-    "losses": 149.4,
-    "flare": 48.1,
-    "fuel": 23.1,
-    "shrinkage": 78.2,
-    "adjustments": -26.2,
-    "plug": 130.8,
-    "net_supply": 4900.7,
-    "refinery": 584.3,
-    "exports": 4316.4,
-    "storage_change": 0.0,
-    "check": 0.0
+    "receipts": 1050.7,
+    "losses": 149.9,
+    "flare": 48.3,
+    "fuel": 23.2,
+    "shrinkage": 78.4,
+    "adjustments": -7.3,
+    "plug": 121.5,
+    "net_supply": 5088.2,
+    "refinery": 589.1,
+    "exports": 4499.1,
+    "storage_change": -0.0,
+    "check": -0.0
    },
-   "receipts_other_kbd": 693.6,
+   "receipts_other_kbd": 694.7,
    "diluent": {
-    "imports_total": 343.3,
-    "condensate_imports": 250.2,
-    "pentanes_imports": 93.1,
-    "condensate_production": 92.6,
-    "total": 435.9
+    "imports_total": 356.0,
+    "condensate_imports": 257.7,
+    "pentanes_imports": 98.3,
+    "condensate_production": 93.5,
+    "total": 449.5
    },
    "refinery": {
-    "total": 584.3,
-    "sales": 497.3,
-    "other": 87.0
+    "total": 589.1,
+    "sales": 500.7,
+    "other": 88.4
    },
    "grades": {
-    "total": 4296.1,
+    "total": 4316.2,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 410.2
+      "value": 413.4
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 66.8
+      "value": 66.7
      },
      {
       "id": "grade_conv_heavy",
       "label": "Blended heavy conventional",
-      "value": 175.6
+      "value": 175.7
      },
      {
       "id": "grade_sco",
@@ -3666,99 +3679,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2311.7
+      "value": 2328.6
      }
     ],
     "sco": 1331.8,
-    "mined_dashboard": 1712.1,
-    "mined_to_upgrader": 1494.6,
-    "mined_to_market": 217.5
+    "mined_dashboard": 1443.7,
+    "mined_to_upgrader": 1235.2,
+    "mined_to_market": 208.5
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 251.5
+      "value": 243.6
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 241.5
+      "value": 233.9
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 205.3
+      "value": 198.9
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 139.9
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 96.7
+      "value": 135.5
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 110.4
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 93.7
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 79.2
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 58.1
+      "value": 76.7
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 69.5
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 67.8
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 56.3
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 32.4
+      "value": 31.4
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 30.9
+      "value": 29.9
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 24.4
+      "value": 23.6
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.5
+      "value": 22.8
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 21.3
+      "value": 22.5
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.2
+      "value": 20.5
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 15.7
+      "value": 18.4
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 14.6
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.7
-     },
-     {
-      "label": "BlackGold (Harvest)",
-      "value": 9.1
+      "value": 18.4
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.6
+      "value": 9.8
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.4
+     },
+     {
+      "label": "BlackGold (Harvest)",
+      "value": 8.8
      }
     ],
     "css": [
@@ -3768,19 +3781,19 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 154.8
+      "value": 154.7
      },
      {
       "label": "Unmapped commercial (ST53)",
       "value": 113.3
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 87.9
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 88.3
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 72.6
+      "label": "Enhanced recovery (ST53)",
+      "value": 87.9
      },
      {
       "label": "Peace River (CNRL)",
@@ -3789,88 +3802,88 @@
     ],
     "mined": [
      {
-      "label": "Kearl (Imperial)",
-      "value": 287.6
-     },
-     {
       "label": "Horizon (CNRL)",
-      "value": 241.5
+      "value": 296.8
      },
      {
-      "label": "Muskeg River (Shell)",
-      "value": 229.7
+      "label": "Kearl (Imperial)",
+      "value": 261.5
      },
      {
       "label": "Suncor Base Plant",
-      "value": 225.1
+      "value": 233.8
+     },
+     {
+      "label": "Muskeg River (Shell)",
+      "value": 208.8
      },
      {
       "label": "Syncrude Aurora",
-      "value": 207.9
+      "value": 189.0
      },
      {
       "label": "Fort Hills",
-      "value": 199.9
+      "value": 181.7
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 179.0
+      "value": 162.7
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 141.5
+      "value": 128.6
+     },
+     {
+      "label": "Other/unallocated (ST39 gap)",
+      "value": -219.2
+     }
+    ],
+    "sco": [
+     {
+      "label": "Scotford (Shell)",
+      "value": 342.8
+     },
+     {
+      "label": "Syncrude Mildred Lake",
+      "value": 331.1
+     },
+     {
+      "label": "Suncor Base Plant",
+      "value": 325.7
+     },
+     {
+      "label": "Horizon (CNRL)",
+      "value": 284.7
+     },
+     {
+      "label": "Sturgeon (NWR)",
+      "value": 47.6
      },
      {
       "label": "Other/unallocated (ST39 gap)",
       "value": -0.1
      }
     ],
-    "sco": [
-     {
-      "label": "Scotford (Shell)",
-      "value": 367.7
-     },
-     {
-      "label": "Syncrude Mildred Lake",
-      "value": 355.2
-     },
-     {
-      "label": "Suncor Base Plant",
-      "value": 349.4
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 219.0
-     },
-     {
-      "label": "Sturgeon (NWR)",
-      "value": 40.4
-     },
-     {
-      "label": "Other/unallocated (ST39 gap)",
-      "value": 0.1
-     }
-    ],
     "conventional": [
      {
       "label": "Light",
-      "value": 317.6
+      "value": 319.9
      },
      {
       "label": "Ultra-heavy",
-      "value": 142.8
+      "value": 143.1
      },
      {
       "label": "Condensate",
-      "value": 92.6
+      "value": 93.5
      },
      {
       "label": "Medium",
-      "value": 66.8
+      "value": 66.7
      },
      {
       "label": "Heavy",
-      "value": 32.8
+      "value": 32.6
      }
     ]
    },
@@ -3883,9 +3896,9 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2891.3,
-     "util": 94.8,
-     "prev": 2815.7
+     "flow": 3011.1,
+     "util": 98.7,
+     "prev": 2934.0
     },
     {
      "id": "trans_mountain",
@@ -3895,9 +3908,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 905.7,
-     "util": 94.8,
-     "prev": 882.1
+     "flow": 943.3,
+     "util": 98.7,
+     "prev": 919.1
     },
     {
      "id": "keystone",
@@ -3907,9 +3920,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 609.4,
-     "util": 94.8,
-     "prev": 593.5
+     "flow": 634.7,
+     "util": 98.7,
+     "prev": 618.5
     },
     {
      "id": "express",
@@ -3961,17 +3974,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 4916.4,
+   "marketable_on_lines_kbd": 5099.1,
+   "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
-    "change_kbd": 0.0,
-    "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "change_kbd": -0.0,
+    "change_mbbl": -0.0,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-07": {
    "ym": "2027-07",
@@ -3980,29 +3994,29 @@
     "nameplate_pipes_kbd": 5273,
     "effective_pipes_kbd": 5074.0,
     "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 5017.0,
-    "demand_wants_kbd": 5017.0,
-    "refinery_kbd": 623.6,
-    "removals_wanted_kbd": 4393.4,
-    "exports_shipped_kbd": 4393.4,
+    "supply_net_kbd": 5201.5,
+    "demand_wants_kbd": 5201.5,
+    "refinery_kbd": 628.8,
+    "removals_wanted_kbd": 4572.7,
+    "exports_shipped_kbd": 4572.7,
     "overflow_kbd": 0.0,
-    "utilization_pct": 96.8
+    "utilization_pct": 100.3
    },
-   "gross_production_kbd": 4263.1,
+   "gross_production_kbd": 4412.8,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1377.2,
-     "prev": 1365.8
+     "value": 1515.2,
+     "prev": 1501.9
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 238.5,
-     "prev": 230.6
+     "value": 255.7,
+     "prev": 246.3
     },
     {
      "id": "primary",
@@ -4029,63 +4043,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1608.6,
-     "prev": 1549.3
+     "value": 1599.9,
+     "prev": 1540.4
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 663.0,
-     "prev": 652.6
+     "value": 666.2,
+     "prev": 655.7
     }
    ],
    "groups": {
-    "in_situ": 1991.5,
-    "mined": 1608.6,
-    "conv": 663.0
+    "in_situ": 2146.7,
+    "mined": 1599.9,
+    "conv": 666.2
    },
    "identity": {
-    "gross": 4263.1,
+    "gross": 4412.8,
     "maintenance": 0.0,
-    "receipts": 1053.5,
-    "losses": 153.0,
-    "flare": 48.0,
+    "receipts": 1068.0,
+    "losses": 153.4,
+    "flare": 48.2,
     "fuel": 23.7,
-    "shrinkage": 81.3,
-    "adjustments": -15.8,
-    "plug": 130.8,
-    "net_supply": 5017.0,
-    "refinery": 623.6,
-    "exports": 4393.4,
+    "shrinkage": 81.5,
+    "adjustments": -4.4,
+    "plug": 121.5,
+    "net_supply": 5201.5,
+    "refinery": 628.8,
+    "exports": 4572.7,
     "storage_change": 0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 726.1,
+   "receipts_other_kbd": 728.1,
    "diluent": {
-    "imports_total": 327.4,
-    "condensate_imports": 238.6,
-    "pentanes_imports": 88.8,
-    "condensate_production": 95.2,
-    "total": 422.6
+    "imports_total": 339.9,
+    "condensate_imports": 246.0,
+    "pentanes_imports": 93.9,
+    "condensate_production": 96.1,
+    "total": 436.0
    },
    "refinery": {
-    "total": 623.6,
-    "sales": 517.0,
-    "other": 106.6
+    "total": 628.8,
+    "sales": 520.5,
+    "other": 108.3
    },
    "grades": {
-    "total": 4395.9,
+    "total": 4412.8,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 421.0
+      "value": 424.3
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 67.9
+      "value": 67.8
      },
      {
       "id": "grade_conv_heavy",
@@ -4100,99 +4114,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2317.8
+      "value": 2331.5
      }
     ],
     "sco": 1415.1,
-    "mined_dashboard": 1893.7,
-    "mined_to_upgrader": 1693.9,
-    "mined_to_market": 199.8
+    "mined_dashboard": 1597.7,
+    "mined_to_upgrader": 1412.9,
+    "mined_to_market": 184.8
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 257.4
+      "value": 249.5
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 231.7
+      "value": 224.6
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 210.8
+      "value": 204.4
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 146.8
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 99.4
+      "value": 142.3
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 110.5
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 96.4
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 73.9
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 56.3
+      "value": 71.6
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 69.5
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 67.9
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 54.6
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.1
+      "value": 33.1
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 33.0
-     },
-     {
-      "label": "Orion (Strathcona)",
-      "value": 24.0
+      "value": 32.0
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 23.4
+      "value": 24.7
+     },
+     {
+      "label": "Orion (Strathcona)",
+      "value": 23.3
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.1
+      "value": 22.4
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.6
+      "value": 20.9
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.7
+      "value": 19.9
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 15.2
+      "value": 17.8
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 11.4
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.3
+      "value": 11.1
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.6
+      "value": 9.8
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.0
      }
     ],
     "css": [
@@ -4209,12 +4223,12 @@
       "value": 119.7
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 86.0
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 96.8
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 79.6
+      "label": "Enhanced recovery (ST53)",
+      "value": 86.0
      },
      {
       "label": "Peace River (CNRL)",
@@ -4224,87 +4238,87 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 333.8
-     },
-     {
-      "label": "Kearl (Imperial)",
-      "value": 308.8
+      "value": 404.1
      },
      {
       "label": "Suncor Base Plant",
-      "value": 297.6
+      "value": 304.5
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 276.6
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 241.2
+      "value": 216.1
      },
      {
       "label": "Syncrude Aurora",
-      "value": 196.6
+      "value": 176.1
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 187.0
+      "value": 167.5
      },
      {
       "label": "Fort Hills",
-      "value": 177.4
+      "value": 159.0
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 151.2
+      "value": 135.5
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.1
+      "value": -241.7
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 384.2
+     },
+     {
       "label": "Scotford (Shell)",
-      "value": 380.4
+      "value": 348.5
      },
      {
       "label": "Suncor Base Plant",
-      "value": 357.6
+      "value": 327.7
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 329.5
-     },
-     {
-      "label": "Horizon (CNRL)",
       "value": 302.0
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 45.6
+      "value": 52.8
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.0
+      "value": -0.1
      }
     ],
     "conventional": [
      {
       "label": "Light",
-      "value": 325.8
+      "value": 328.2
      },
      {
       "label": "Ultra-heavy",
-      "value": 140.6
+      "value": 140.9
      },
      {
       "label": "Condensate",
-      "value": 95.2
+      "value": 96.1
      },
      {
       "label": "Medium",
-      "value": 67.9
+      "value": 67.8
      },
      {
       "label": "Heavy",
-      "value": 33.5
+      "value": 33.2
      }
     ]
    },
@@ -4317,9 +4331,9 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2941.7,
-     "util": 96.4,
-     "prev": 2891.3
+     "flow": 3050.4,
+     "util": 100.0,
+     "prev": 3011.1
     },
     {
      "id": "trans_mountain",
@@ -4329,9 +4343,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 921.6,
-     "util": 96.4,
-     "prev": 905.7
+     "flow": 955.6,
+     "util": 100.0,
+     "prev": 943.3
     },
     {
      "id": "keystone",
@@ -4341,9 +4355,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 620.1,
-     "util": 96.4,
-     "prev": 609.4
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 634.7
     },
     {
      "id": "express",
@@ -4395,17 +4409,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 4993.4,
+   "marketable_on_lines_kbd": 5159.0,
+   "bound_uplift_unallocated_kbd": 13.7,
    "storage": {
     "change_kbd": 0.0,
     "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-08": {
    "ym": "2027-08",
@@ -4414,29 +4429,29 @@
     "nameplate_pipes_kbd": 5273,
     "effective_pipes_kbd": 5074.0,
     "effective_stack_kbd": 5159.0,
-    "supply_net_kbd": 4960.9,
-    "demand_wants_kbd": 4960.9,
-    "refinery_kbd": 613.0,
-    "removals_wanted_kbd": 4347.9,
-    "exports_shipped_kbd": 4347.9,
+    "supply_net_kbd": 5143.0,
+    "demand_wants_kbd": 5143.0,
+    "refinery_kbd": 618.0,
+    "removals_wanted_kbd": 4525.0,
+    "exports_shipped_kbd": 4525.0,
     "overflow_kbd": 0.0,
-    "utilization_pct": 95.9
+    "utilization_pct": 99.3
    },
-   "gross_production_kbd": 4245.4,
+   "gross_production_kbd": 4393.5,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1388.2,
-     "prev": 1377.2
+     "value": 1525.1,
+     "prev": 1515.2
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 226.7,
-     "prev": 238.5
+     "value": 242.8,
+     "prev": 255.7
     },
     {
      "id": "primary",
@@ -4463,63 +4478,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1580.5,
-     "prev": 1608.6
+     "value": 1572.3,
+     "prev": 1599.9
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 673.4,
-     "prev": 663.0
+     "value": 676.7,
+     "prev": 666.2
     }
    ],
    "groups": {
-    "in_situ": 1991.5,
-    "mined": 1580.5,
-    "conv": 673.4
+    "in_situ": 2144.5,
+    "mined": 1572.3,
+    "conv": 676.7
    },
    "identity": {
-    "gross": 4245.4,
+    "gross": 4393.5,
     "maintenance": 0.0,
-    "receipts": 1016.9,
-    "losses": 154.2,
-    "flare": 49.0,
+    "receipts": 1030.3,
+    "losses": 154.7,
+    "flare": 49.3,
     "fuel": 23.9,
-    "shrinkage": 81.3,
-    "adjustments": -16.4,
-    "plug": 130.8,
-    "net_supply": 4960.9,
-    "refinery": 613.0,
-    "exports": 4347.9,
+    "shrinkage": 81.5,
+    "adjustments": -4.6,
+    "plug": 121.5,
+    "net_supply": 5143.0,
+    "refinery": 618.0,
+    "exports": 4525.0,
     "storage_change": 0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 722.5,
+   "receipts_other_kbd": 724.2,
    "diluent": {
-    "imports_total": 294.4,
-    "condensate_imports": 214.5,
-    "pentanes_imports": 79.9,
-    "condensate_production": 100.5,
-    "total": 394.9
+    "imports_total": 306.1,
+    "condensate_imports": 221.5,
+    "pentanes_imports": 84.6,
+    "condensate_production": 101.4,
+    "total": 407.5
    },
    "refinery": {
-    "total": 613.0,
-    "sales": 511.0,
-    "other": 102.0
+    "total": 618.0,
+    "sales": 514.5,
+    "other": 103.5
    },
    "grades": {
-    "total": 4383.8,
+    "total": 4393.5,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 431.5
+      "value": 434.8
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 68.6
+      "value": 68.5
      },
      {
       "id": "grade_conv_heavy",
@@ -4534,99 +4549,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2302.4
+      "value": 2308.9
      }
     ],
     "sco": 1407.9,
-    "mined_dashboard": 1878.9,
-    "mined_to_upgrader": 1700.0,
-    "mined_to_market": 178.9
+    "mined_dashboard": 1570.7,
+    "mined_to_upgrader": 1406.3,
+    "mined_to_market": 164.4
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 254.0
+      "value": 245.3
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 242.5
+      "value": 234.2
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 214.7
+      "value": 207.3
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 149.3
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 103.4
+      "value": 144.2
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 110.1
      },
      {
-      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 70.2
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 55.9
+      "label": "Jackfish (CNRL)",
+      "value": 99.8
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 69.2
+     },
+     {
+      "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
+      "value": 67.8
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 67.6
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 54.0
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.2
+      "value": 33.0
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 33.4
+      "value": 32.3
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 24.9
+      "value": 25.9
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 24.0
+      "value": 23.2
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.3
+      "value": 22.5
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.8
+      "value": 21.1
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.8
+      "value": 19.9
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 15.4
+      "value": 18.1
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 11.5
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.5
+      "value": 11.1
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.5
+      "value": 9.6
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.2
      }
     ],
     "css": [
@@ -4636,19 +4651,19 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 148.4
+      "value": 148.5
      },
      {
       "label": "Unmapped commercial (ST53)",
       "value": 121.5
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 85.4
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 90.7
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 74.6
+      "label": "Enhanced recovery (ST53)",
+      "value": 85.4
      },
      {
       "label": "Peace River (CNRL)",
@@ -4658,61 +4673,61 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 312.5
-     },
-     {
-      "label": "Kearl (Imperial)",
-      "value": 310.0
+      "value": 379.5
      },
      {
       "label": "Suncor Base Plant",
-      "value": 293.4
+      "value": 301.3
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 278.6
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 224.4
+      "value": 201.7
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 201.2
+      "value": 180.8
      },
      {
       "label": "Syncrude Aurora",
-      "value": 194.1
+      "value": 174.5
      },
      {
       "label": "Fort Hills",
-      "value": 184.8
+      "value": 166.1
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 158.6
+      "value": 142.5
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
+      "value": -254.3
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 360.9
+     },
+     {
       "label": "Scotford (Shell)",
-      "value": 382.9
+      "value": 352.4
      },
      {
       "label": "Suncor Base Plant",
-      "value": 363.7
+      "value": 334.8
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 331.9
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 282.6
+      "value": 305.5
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 46.9
+      "value": 54.4
      },
      {
       "label": "Other/unallocated (ST39 gap)",
@@ -4722,23 +4737,23 @@
     "conventional": [
      {
       "label": "Light",
-      "value": 331.0
+      "value": 333.4
      },
      {
       "label": "Ultra-heavy",
-      "value": 139.8
+      "value": 140.1
      },
      {
       "label": "Condensate",
-      "value": 100.5
+      "value": 101.4
      },
      {
       "label": "Medium",
-      "value": 68.6
+      "value": 68.5
      },
      {
       "label": "Heavy",
-      "value": 33.6
+      "value": 33.3
      }
     ]
    },
@@ -4751,9 +4766,9 @@
      "region": "US Midwest",
      "nameplate": 3200,
      "effective": 3050.4,
-     "flow": 2911.9,
-     "util": 95.5,
-     "prev": 2941.7
+     "flow": 3028.1,
+     "util": 99.3,
+     "prev": 3050.4
     },
     {
      "id": "trans_mountain",
@@ -4763,9 +4778,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 912.2,
-     "util": 95.5,
-     "prev": 921.6
+     "flow": 948.6,
+     "util": 99.3,
+     "prev": 955.6
     },
     {
      "id": "keystone",
@@ -4775,9 +4790,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 613.8,
-     "util": 95.5,
-     "prev": 620.1
+     "flow": 638.3,
+     "util": 99.3,
+     "prev": 643.0
     },
     {
      "id": "express",
@@ -4829,17 +4844,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 4947.9,
+   "marketable_on_lines_kbd": 5125.0,
+   "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
     "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-09": {
    "ym": "2027-09",
@@ -4848,29 +4864,29 @@
     "nameplate_pipes_kbd": 5423,
     "effective_pipes_kbd": 5224.0,
     "effective_stack_kbd": 5309.0,
-    "supply_net_kbd": 5019.1,
-    "demand_wants_kbd": 5019.1,
-    "refinery_kbd": 558.7,
-    "removals_wanted_kbd": 4460.4,
-    "exports_shipped_kbd": 4460.4,
+    "supply_net_kbd": 5201.4,
+    "demand_wants_kbd": 5201.4,
+    "refinery_kbd": 563.3,
+    "removals_wanted_kbd": 4638.1,
+    "exports_shipped_kbd": 4638.1,
     "overflow_kbd": 0.0,
-    "utilization_pct": 95.3
+    "utilization_pct": 98.7
    },
-   "gross_production_kbd": 4322.9,
+   "gross_production_kbd": 4468.3,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1389.3,
-     "prev": 1388.2
+     "value": 1525.8,
+     "prev": 1525.1
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 236.6,
-     "prev": 226.7
+     "value": 253.8,
+     "prev": 242.8
     },
     {
      "id": "primary",
@@ -4897,63 +4913,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1655.4,
-     "prev": 1580.5
+     "value": 1643.8,
+     "prev": 1572.3
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 662.9,
-     "prev": 673.4
+     "value": 666.2,
+     "prev": 676.7
     }
    ],
    "groups": {
-    "in_situ": 2004.6,
-    "mined": 1655.4,
-    "conv": 662.9
+    "in_situ": 2158.3,
+    "mined": 1643.8,
+    "conv": 666.2
    },
    "identity": {
-    "gross": 4322.9,
+    "gross": 4468.3,
     "maintenance": 12.0,
-    "receipts": 1011.4,
-    "losses": 151.6,
-    "flare": 48.0,
-    "fuel": 23.9,
-    "shrinkage": 79.7,
-    "adjustments": -20.8,
-    "plug": 130.8,
-    "net_supply": 5019.1,
-    "refinery": 558.7,
-    "exports": 4460.4,
+    "receipts": 1024.5,
+    "losses": 152.1,
+    "flare": 48.2,
+    "fuel": 24.0,
+    "shrinkage": 79.9,
+    "adjustments": -5.8,
+    "plug": 121.5,
+    "net_supply": 5201.4,
+    "refinery": 563.3,
+    "exports": 4638.1,
     "storage_change": 0.0,
-    "check": 0.0
+    "check": -0.0
    },
-   "receipts_other_kbd": 710.4,
+   "receipts_other_kbd": 712.8,
    "diluent": {
-    "imports_total": 301.0,
-    "condensate_imports": 219.3,
-    "pentanes_imports": 81.7,
-    "condensate_production": 97.0,
-    "total": 398.0
+    "imports_total": 311.7,
+    "condensate_imports": 225.6,
+    "pentanes_imports": 86.1,
+    "condensate_production": 97.9,
+    "total": 409.6
    },
    "refinery": {
-    "total": 558.7,
-    "sales": 463.8,
-    "other": 94.9
+    "total": 563.3,
+    "sales": 466.9,
+    "other": 96.4
    },
    "grades": {
-    "total": 4455.8,
+    "total": 4456.3,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 422.5
+      "value": 425.8
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 67.8
+      "value": 67.7
      },
      {
       "id": "grade_conv_heavy",
@@ -4968,99 +4984,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2443.0
+      "value": 2440.3
      }
     ],
     "sco": 1349.9,
-    "mined_dashboard": 1819.4,
-    "mined_to_upgrader": 1507.6,
-    "mined_to_market": 311.8
+    "mined_dashboard": 1522.4,
+    "mined_to_upgrader": 1240.4,
+    "mined_to_market": 282.0
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 257.4
+      "value": 249.4
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 247.5
+      "value": 239.8
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 214.8
+      "value": 208.1
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 148.2
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 101.7
+      "value": 143.6
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 110.5
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 98.5
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 78.2
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 53.8
+      "value": 75.8
      },
      {
       "label": "Pike (CNRL)",
+      "value": 69.5
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 67.8
+     },
+     {
+      "label": "Kirby (CNRL)",
       "value": 52.1
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 33.5
+      "value": 32.5
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 26.6
+      "value": 27.6
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 25.2
+      "value": 24.4
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.4
+      "value": 22.7
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.6
-     },
-     {
-      "label": "MacKay River (Suncor)",
-      "value": 17.0
+      "value": 20.9
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 16.0
+      "value": 20.2
+     },
+     {
+      "label": "MacKay River (Suncor)",
+      "value": 16.5
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 13.6
+      "value": 16.0
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 11.4
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.5
+      "value": 11.0
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.5
+      "value": 9.7
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.2
      }
     ],
     "css": [
@@ -5070,19 +5086,19 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 153.3
+      "value": 153.4
      },
      {
       "label": "Unmapped commercial (ST53)",
       "value": 120.9
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 84.5
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 96.4
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 79.3
+      "label": "Enhanced recovery (ST53)",
+      "value": 84.5
      },
      {
       "label": "Peace River (CNRL)",
@@ -5091,62 +5107,62 @@
     ],
     "mined": [
      {
-      "label": "Kearl (Imperial)",
-      "value": 318.1
-     },
-     {
       "label": "Horizon (CNRL)",
-      "value": 314.6
+      "value": 380.8
      },
      {
       "label": "Suncor Base Plant",
-      "value": 302.4
+      "value": 309.5
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 285.0
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 233.1
+      "value": 208.8
      },
      {
       "label": "Fort Hills",
-      "value": 187.2
+      "value": 167.7
      },
      {
       "label": "Syncrude Aurora",
-      "value": 172.8
+      "value": 154.8
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 160.0
+      "value": 143.3
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 131.1
+      "value": 117.5
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.1
+      "value": -245.0
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 357.8
+     },
+     {
       "label": "Scotford (Shell)",
-      "value": 363.2
+      "value": 333.4
      },
      {
       "label": "Suncor Base Plant",
-      "value": 361.9
+      "value": 332.2
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 298.7
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 280.9
+      "value": 274.1
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 45.3
+      "value": 52.5
      },
      {
       "label": "Other/unallocated (ST39 gap)",
@@ -5156,23 +5172,23 @@
     "conventional": [
      {
       "label": "Light",
-      "value": 325.5
+      "value": 327.9
      },
      {
       "label": "Ultra-heavy",
-      "value": 139.8
+      "value": 140.1
      },
      {
       "label": "Condensate",
-      "value": 97.0
+      "value": 97.9
      },
      {
       "label": "Medium",
-      "value": 67.8
+      "value": 67.7
      },
      {
       "label": "Heavy",
-      "value": 32.8
+      "value": 32.5
      }
     ]
    },
@@ -5185,9 +5201,9 @@
      "region": "US Midwest",
      "nameplate": 3350,
      "effective": 3200.4,
-     "flow": 3034.6,
-     "util": 94.8,
-     "prev": 2911.9
+     "flow": 3153.1,
+     "util": 98.5,
+     "prev": 3028.1
     },
     {
      "id": "trans_mountain",
@@ -5197,9 +5213,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 906.1,
-     "util": 94.8,
-     "prev": 912.2
+     "flow": 941.5,
+     "util": 98.5,
+     "prev": 948.6
     },
     {
      "id": "keystone",
@@ -5209,9 +5225,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 609.7,
-     "util": 94.8,
-     "prev": 613.8
+     "flow": 633.5,
+     "util": 98.5,
+     "prev": 638.3
     },
     {
      "id": "express",
@@ -5263,17 +5279,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5060.4,
+   "marketable_on_lines_kbd": 5238.1,
+   "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
     "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-10": {
    "ym": "2027-10",
@@ -5282,29 +5299,29 @@
     "nameplate_pipes_kbd": 5423,
     "effective_pipes_kbd": 5224.0,
     "effective_stack_kbd": 5309.0,
-    "supply_net_kbd": 5024.5,
-    "demand_wants_kbd": 5024.5,
-    "refinery_kbd": 580.2,
-    "removals_wanted_kbd": 4444.3,
-    "exports_shipped_kbd": 4444.3,
+    "supply_net_kbd": 5210.7,
+    "demand_wants_kbd": 5210.7,
+    "refinery_kbd": 585.0,
+    "removals_wanted_kbd": 4625.7,
+    "exports_shipped_kbd": 4625.7,
     "overflow_kbd": 0.0,
-    "utilization_pct": 95.0
+    "utilization_pct": 98.4
    },
-   "gross_production_kbd": 4244.7,
+   "gross_production_kbd": 4393.2,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1382.2,
-     "prev": 1389.3
+     "value": 1520.6,
+     "prev": 1525.8
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 232.8,
-     "prev": 236.6
+     "value": 248.9,
+     "prev": 253.8
     },
     {
      "id": "primary",
@@ -5331,68 +5348,68 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1576.5,
-     "prev": 1655.4
+     "value": 1567.2,
+     "prev": 1643.8
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 669.0,
-     "prev": 662.9
+     "value": 672.3,
+     "prev": 666.2
     }
    ],
    "groups": {
-    "in_situ": 1999.2,
-    "mined": 1576.5,
-    "conv": 669.0
+    "in_situ": 2153.7,
+    "mined": 1567.2,
+    "conv": 672.3
    },
    "identity": {
-    "gross": 4244.7,
+    "gross": 4393.2,
     "maintenance": 0.0,
-    "receipts": 1085.5,
-    "losses": 155.5,
-    "flare": 48.9,
+    "receipts": 1100.2,
+    "losses": 155.8,
+    "flare": 49.1,
     "fuel": 21.9,
-    "shrinkage": 84.7,
-    "adjustments": -19.4,
-    "plug": 130.8,
-    "net_supply": 5024.5,
-    "refinery": 580.2,
-    "exports": 4444.3,
+    "shrinkage": 84.8,
+    "adjustments": -5.4,
+    "plug": 121.5,
+    "net_supply": 5210.7,
+    "refinery": 585.0,
+    "exports": 4625.7,
     "storage_change": 0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 760.2,
+   "receipts_other_kbd": 762.8,
    "diluent": {
-    "imports_total": 325.3,
-    "condensate_imports": 237.0,
-    "pentanes_imports": 88.3,
-    "condensate_production": 92.7,
-    "total": 418.0
+    "imports_total": 337.4,
+    "condensate_imports": 244.2,
+    "pentanes_imports": 93.2,
+    "condensate_production": 93.5,
+    "total": 430.9
    },
    "refinery": {
-    "total": 580.2,
-    "sales": 490.6,
-    "other": 89.6
+    "total": 585.0,
+    "sales": 493.9,
+    "other": 91.1
    },
    "grades": {
-    "total": 4393.5,
+    "total": 4393.2,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 429.6
+      "value": 432.9
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 67.2
+      "value": 67.1
      },
      {
       "id": "grade_conv_heavy",
       "label": "Blended heavy conventional",
-      "value": 172.1
+      "value": 172.3
      },
      {
       "id": "grade_sco",
@@ -5402,99 +5419,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2373.4
+      "value": 2369.7
      }
     ],
     "sco": 1351.2,
-    "mined_dashboard": 1743.4,
-    "mined_to_upgrader": 1511.7,
-    "mined_to_market": 231.7
+    "mined_dashboard": 1477.5,
+    "mined_to_upgrader": 1261.5,
+    "mined_to_market": 216.0
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 256.3
+      "value": 246.1
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 239.5
+      "value": 229.9
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 215.6
+      "value": 207.0
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 149.4
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 98.7
+      "value": 143.4
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 109.5
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 94.8
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 76.0
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 55.5
+      "value": 73.0
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 68.8
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 67.2
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.3
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.4
+      "value": 33.0
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 33.5
+      "value": 32.2
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 28.6
+      "value": 29.5
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 26.6
+      "value": 25.5
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 23.9
-     },
-     {
-      "label": "Great Divide (Greenfire)",
-      "value": 19.6
+      "value": 22.9
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.9
+      "value": 19.9
+     },
+     {
+      "label": "Great Divide (Greenfire)",
+      "value": 18.8
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 14.4
+      "value": 16.8
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 11.1
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.5
+      "value": 10.7
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.2
+      "value": 9.2
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.1
      }
     ],
     "css": [
@@ -5511,12 +5528,12 @@
       "value": 122.7
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 83.8
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 90.4
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 74.3
+      "label": "Enhanced recovery (ST53)",
+      "value": 83.8
      },
      {
       "label": "Peace River (CNRL)",
@@ -5526,87 +5543,87 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 315.0
-     },
-     {
-      "label": "Kearl (Imperial)",
-      "value": 288.6
+      "value": 381.4
      },
      {
       "label": "Suncor Base Plant",
-      "value": 255.8
+      "value": 261.7
+     },
+     {
+      "label": "Kearl (Imperial)",
+      "value": 258.5
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 221.3
+      "value": 198.2
      },
      {
       "label": "Fort Hills",
-      "value": 184.4
+      "value": 165.1
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 173.8
+      "value": 155.7
      },
      {
       "label": "Syncrude Aurora",
-      "value": 172.0
+      "value": 154.1
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 132.6
+      "value": 118.8
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
+      "value": -216.0
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 374.2
+     },
+     {
       "label": "Scotford (Shell)",
-      "value": 369.6
+      "value": 338.0
      },
      {
       "label": "Suncor Base Plant",
-      "value": 343.6
+      "value": 314.2
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 298.2
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 294.8
+      "value": 272.8
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 45.1
+      "value": 52.0
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": -0.1
+      "value": 0.0
      }
     ],
     "conventional": [
      {
       "label": "Light",
-      "value": 336.9
+      "value": 339.4
      },
      {
       "label": "Ultra-heavy",
-      "value": 139.0
+      "value": 139.4
      },
      {
       "label": "Condensate",
-      "value": 92.7
+      "value": 93.5
      },
      {
       "label": "Medium",
-      "value": 67.2
+      "value": 67.1
      },
      {
       "label": "Heavy",
-      "value": 33.1
+      "value": 32.9
      }
     ]
    },
@@ -5619,9 +5636,9 @@
      "region": "US Midwest",
      "nameplate": 3350,
      "effective": 3200.4,
-     "flow": 3023.9,
-     "util": 94.5,
-     "prev": 3034.6
+     "flow": 3144.9,
+     "util": 98.3,
+     "prev": 3153.1
     },
     {
      "id": "trans_mountain",
@@ -5631,9 +5648,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 902.9,
-     "util": 94.5,
-     "prev": 906.1
+     "flow": 939.0,
+     "util": 98.3,
+     "prev": 941.5
     },
     {
      "id": "keystone",
@@ -5643,9 +5660,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 607.5,
-     "util": 94.5,
-     "prev": 609.7
+     "flow": 631.8,
+     "util": 98.3,
+     "prev": 633.5
     },
     {
      "id": "express",
@@ -5697,17 +5714,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5044.3,
+   "marketable_on_lines_kbd": 5225.7,
+   "bound_uplift_unallocated_kbd": 0.0,
    "storage": {
     "change_kbd": 0.0,
     "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-11": {
    "ym": "2027-11",
@@ -5716,29 +5734,29 @@
     "nameplate_pipes_kbd": 5423,
     "effective_pipes_kbd": 5224.0,
     "effective_stack_kbd": 5309.0,
-    "supply_net_kbd": 5171.0,
-    "demand_wants_kbd": 5171.0,
-    "refinery_kbd": 618.7,
-    "removals_wanted_kbd": 4552.3,
-    "exports_shipped_kbd": 4552.3,
+    "supply_net_kbd": 5357.7,
+    "demand_wants_kbd": 5357.7,
+    "refinery_kbd": 623.8,
+    "removals_wanted_kbd": 4733.9,
+    "exports_shipped_kbd": 4733.9,
     "overflow_kbd": 0.0,
-    "utilization_pct": 97.0
+    "utilization_pct": 100.5
    },
-   "gross_production_kbd": 4358.4,
+   "gross_production_kbd": 4508.3,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1399.0,
-     "prev": 1382.2
+     "value": 1538.4,
+     "prev": 1520.6
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 241.3,
-     "prev": 232.8
+     "value": 257.6,
+     "prev": 248.9
     },
     {
      "id": "primary",
@@ -5765,68 +5783,68 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1652.0,
-     "prev": 1576.5
+     "value": 1642.8,
+     "prev": 1567.2
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 684.2,
-     "prev": 669.0
+     "value": 687.6,
+     "prev": 672.3
     }
    ],
    "groups": {
-    "in_situ": 2022.2,
-    "mined": 1652.0,
-    "conv": 684.2
+    "in_situ": 2177.9,
+    "mined": 1642.8,
+    "conv": 687.6
    },
    "identity": {
-    "gross": 4358.4,
+    "gross": 4508.3,
     "maintenance": 0.0,
-    "receipts": 1122.8,
-    "losses": 161.9,
-    "flare": 51.2,
+    "receipts": 1138.1,
+    "losses": 162.3,
+    "flare": 51.4,
     "fuel": 23.8,
-    "shrinkage": 86.9,
-    "adjustments": -17.5,
-    "plug": 130.8,
-    "net_supply": 5171.0,
-    "refinery": 618.7,
-    "exports": 4552.3,
+    "shrinkage": 87.1,
+    "adjustments": -4.9,
+    "plug": 121.5,
+    "net_supply": 5357.7,
+    "refinery": 623.8,
+    "exports": 4733.9,
     "storage_change": 0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 801.5,
+   "receipts_other_kbd": 804.6,
    "diluent": {
-    "imports_total": 321.3,
-    "condensate_imports": 234.1,
-    "pentanes_imports": 87.2,
-    "condensate_production": 96.1,
-    "total": 417.4
+    "imports_total": 333.5,
+    "condensate_imports": 241.4,
+    "pentanes_imports": 92.1,
+    "condensate_production": 97.0,
+    "total": 430.5
    },
    "refinery": {
-    "total": 618.7,
-    "sales": 510.7,
-    "other": 108.0
+    "total": 623.8,
+    "sales": 514.2,
+    "other": 109.6
    },
    "grades": {
-    "total": 4513.3,
+    "total": 4508.3,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 446.7
+      "value": 450.2
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 66.0
+      "value": 65.9
      },
      {
       "id": "grade_conv_heavy",
       "label": "Blended heavy conventional",
-      "value": 171.5
+      "value": 171.6
      },
      {
       "id": "grade_sco",
@@ -5836,99 +5854,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2384.4
+      "value": 2375.9
      }
     ],
     "sco": 1444.7,
-    "mined_dashboard": 1958.9,
-    "mined_to_upgrader": 1745.2,
-    "mined_to_market": 213.7
+    "mined_dashboard": 1644.2,
+    "mined_to_upgrader": 1446.2,
+    "mined_to_market": 198.0
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 260.6
+      "value": 249.5
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 249.2
+      "value": 238.6
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 215.6
+      "value": 206.4
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 150.0
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 95.4
+      "value": 143.6
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 109.2
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 91.4
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 84.1
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 56.3
+      "value": 80.5
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 68.7
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 67.0
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.9
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 33.2
+      "value": 31.8
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 32.5
+      "value": 31.1
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 30.3
+      "value": 30.9
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 24.8
+      "value": 23.7
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 24.3
+      "value": 23.3
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.7
-     },
-     {
-      "label": "Hangingstone Expansion (Greenfire)",
-      "value": 15.9
+      "value": 20.8
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.7
+      "value": 19.6
+     },
+     {
+      "label": "Hangingstone Expansion (Greenfire)",
+      "value": 18.4
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 12.1
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.4
+      "value": 11.6
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.4
+      "value": 9.3
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 9.0
      }
     ],
     "css": [
@@ -5938,19 +5956,19 @@
      },
      {
       "label": "Cold Lake (Imperial)",
-      "value": 162.0
+      "value": 162.1
      },
      {
       "label": "Unmapped commercial (ST53)",
       "value": 121.3
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 83.1
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 91.2
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 75.0
+      "label": "Enhanced recovery (ST53)",
+      "value": 83.1
      },
      {
       "label": "Peace River (CNRL)",
@@ -5960,61 +5978,61 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 330.7
+      "value": 401.1
      },
      {
       "label": "Suncor Base Plant",
-      "value": 317.0
+      "value": 324.9
      },
      {
       "label": "Kearl (Imperial)",
-      "value": 306.7
+      "value": 275.2
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 227.5
+      "value": 204.2
      },
      {
       "label": "Syncrude Aurora",
-      "value": 205.9
+      "value": 184.8
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 205.3
+      "value": 184.3
      },
      {
       "label": "Fort Hills",
-      "value": 194.6
+      "value": 174.7
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 171.1
+      "value": 153.6
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.1
+      "value": -258.6
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 379.5
+     },
+     {
       "label": "Suncor Base Plant",
-      "value": 382.5
+      "value": 351.3
      },
      {
       "label": "Scotford (Shell)",
-      "value": 374.2
+      "value": 343.7
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 340.8
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 297.8
+      "value": 312.9
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 49.4
+      "value": 57.3
      },
      {
       "label": "Other/unallocated (ST39 gap)",
@@ -6024,23 +6042,23 @@
     "conventional": [
      {
       "label": "Light",
-      "value": 350.6
+      "value": 353.2
      },
      {
       "label": "Ultra-heavy",
-      "value": 138.2
+      "value": 138.5
      },
      {
       "label": "Condensate",
-      "value": 96.1
+      "value": 97.0
      },
      {
       "label": "Medium",
-      "value": 66.0
+      "value": 65.9
      },
      {
       "label": "Heavy",
-      "value": 33.3
+      "value": 33.1
      }
     ]
    },
@@ -6053,9 +6071,9 @@
      "region": "US Midwest",
      "nameplate": 3350,
      "effective": 3200.4,
-     "flow": 3095.9,
-     "util": 96.7,
-     "prev": 3023.9
+     "flow": 3200.4,
+     "util": 100.0,
+     "prev": 3144.9
     },
     {
      "id": "trans_mountain",
@@ -6065,9 +6083,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 924.4,
-     "util": 96.7,
-     "prev": 902.9
+     "flow": 955.6,
+     "util": 100.0,
+     "prev": 939.0
     },
     {
      "id": "keystone",
@@ -6077,9 +6095,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 622.0,
-     "util": 96.7,
-     "prev": 607.5
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 631.8
     },
     {
      "id": "express",
@@ -6131,17 +6149,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5152.3,
+   "marketable_on_lines_kbd": 5309.0,
+   "bound_uplift_unallocated_kbd": 24.9,
    "storage": {
     "change_kbd": 0.0,
     "change_mbbl": 0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   },
   "2027-12": {
    "ym": "2027-12",
@@ -6150,29 +6169,29 @@
     "nameplate_pipes_kbd": 5423,
     "effective_pipes_kbd": 5224.0,
     "effective_stack_kbd": 5309.0,
-    "supply_net_kbd": 5194.9,
-    "demand_wants_kbd": 5194.9,
-    "refinery_kbd": 621.5,
-    "removals_wanted_kbd": 4573.4,
-    "exports_shipped_kbd": 4573.4,
+    "supply_net_kbd": 5384.1,
+    "demand_wants_kbd": 5384.1,
+    "refinery_kbd": 626.6,
+    "removals_wanted_kbd": 4757.5,
+    "exports_shipped_kbd": 4757.5,
     "overflow_kbd": 0.0,
-    "utilization_pct": 97.4
+    "utilization_pct": 100.9
    },
-   "gross_production_kbd": 4368.7,
+   "gross_production_kbd": 4519.9,
    "production": [
     {
      "id": "sagd",
      "label": "SAGD",
      "group": "in_situ",
-     "value": 1394.3,
-     "prev": 1399.0
+     "value": 1534.3,
+     "prev": 1538.4
     },
     {
      "id": "css",
      "label": "CSS (cyclic steam)",
      "group": "in_situ",
-     "value": 246.2,
-     "prev": 241.3
+     "value": 263.7,
+     "prev": 257.6
     },
     {
      "id": "primary",
@@ -6199,63 +6218,63 @@
      "id": "mined",
      "label": "Mined bitumen",
      "group": "mined",
-     "value": 1664.4,
-     "prev": 1652.0
+     "value": 1654.7,
+     "prev": 1642.8
     },
     {
      "id": "conventional",
      "label": "Conventional crude",
      "group": "conv",
-     "value": 682.9,
-     "prev": 684.2
+     "value": 686.3,
+     "prev": 687.6
     }
    ],
    "groups": {
-    "in_situ": 2021.4,
-    "mined": 1664.4,
-    "conv": 682.9
+    "in_situ": 2178.9,
+    "mined": 1654.7,
+    "conv": 686.3
    },
    "identity": {
-    "gross": 4368.7,
+    "gross": 4519.9,
     "maintenance": 0.0,
-    "receipts": 1137.5,
-    "losses": 160.9,
-    "flare": 50.1,
-    "fuel": 23.8,
-    "shrinkage": 87.0,
-    "adjustments": -19.6,
-    "plug": 130.8,
-    "net_supply": 5194.9,
-    "refinery": 621.5,
-    "exports": 4573.4,
+    "receipts": 1152.4,
+    "losses": 161.3,
+    "flare": 50.3,
+    "fuel": 23.9,
+    "shrinkage": 87.1,
+    "adjustments": -5.4,
+    "plug": 121.5,
+    "net_supply": 5384.1,
+    "refinery": 626.6,
+    "exports": 4757.5,
     "storage_change": -0.0,
     "check": 0.0
    },
-   "receipts_other_kbd": 804.8,
+   "receipts_other_kbd": 807.2,
    "diluent": {
-    "imports_total": 332.7,
-    "condensate_imports": 242.4,
-    "pentanes_imports": 90.3,
-    "condensate_production": 99.8,
-    "total": 432.5
+    "imports_total": 345.2,
+    "condensate_imports": 249.8,
+    "pentanes_imports": 95.4,
+    "condensate_production": 100.8,
+    "total": 446.0
    },
    "refinery": {
-    "total": 621.5,
-    "sales": 509.5,
-    "other": 112.0
+    "total": 626.6,
+    "sales": 513.0,
+    "other": 113.6
    },
    "grades": {
-    "total": 4527.9,
+    "total": 4519.9,
     "items": [
      {
       "id": "grade_conv_light",
       "label": "Conventional light and medium",
-      "value": 450.6
+      "value": 454.2
      },
      {
       "id": "grade_conv_sour",
       "label": "Conventional sours",
-      "value": 63.9
+      "value": 63.8
      },
      {
       "id": "grade_conv_heavy",
@@ -6270,99 +6289,99 @@
      {
       "id": "grade_dilbit",
       "label": "Dilbit and raw bitumen blends",
-      "value": 2406.4
+      "value": 2394.9
      }
     ],
     "sco": 1438.6,
-    "mined_dashboard": 1970.2,
-    "mined_to_upgrader": 1738.0,
-    "mined_to_market": 232.2
+    "mined_dashboard": 1658.1,
+    "mined_to_upgrader": 1442.1,
+    "mined_to_market": 216.0
    },
    "detail": {
     "sagd": [
      {
       "label": "Foster Creek (Cenovus)",
-      "value": 264.7
+      "value": 252.8
      },
      {
       "label": "Firebag (Suncor)",
-      "value": 245.0
+      "value": 234.0
      },
      {
       "label": "Christina Lake (Cenovus)",
-      "value": 213.9
+      "value": 204.3
      },
      {
       "label": "Surmont (ConocoPhillips)",
-      "value": 148.8
-     },
-     {
-      "label": "Jackfish (CNRL)",
-      "value": 94.6
+      "value": 142.1
      },
      {
       "label": "Narrows Lake (Cenovus)",
-      "value": 85.9
+      "value": 108.9
+     },
+     {
+      "label": "Jackfish (CNRL)",
+      "value": 90.3
      },
      {
       "label": "Long Lake SAGD (CNOOC Petroleum North America ULC)",
-      "value": 85.3
-     },
-     {
-      "label": "Sunrise (Cenovus)",
-      "value": 70.0
-     },
-     {
-      "label": "Kirby (CNRL)",
-      "value": 55.9
+      "value": 81.5
      },
      {
       "label": "Pike (CNRL)",
-      "value": 52.1
+      "value": 68.5
+     },
+     {
+      "label": "Sunrise (Cenovus)",
+      "value": 66.9
+     },
+     {
+      "label": "Kirby (CNRL)",
+      "value": 53.4
      },
      {
       "label": "MacKay River (Suncor)",
-      "value": 34.4
+      "value": 32.9
      },
      {
       "label": "Leismer (Athabasca)",
-      "value": 33.4
+      "value": 31.9
      },
      {
       "label": "Blackrod (IPC)",
-      "value": 30.2
+      "value": 30.7
      },
      {
       "label": "Orion (Strathcona)",
-      "value": 25.7
+      "value": 24.5
      },
      {
       "label": "Tucker (Strathcona)",
-      "value": 25.2
+      "value": 24.1
      },
      {
       "label": "Great Divide (Greenfire)",
-      "value": 21.4
+      "value": 20.4
      },
      {
       "label": "Hangingstone Expansion (Greenfire)",
-      "value": 16.9
+      "value": 19.6
      },
      {
       "label": "Lindbergh (Strathcona)",
-      "value": 15.6
+      "value": 19.5
      },
      {
       "label": "BlackGold (Harvest)",
-      "value": 10.5
-     },
-     {
-      "label": "Hangingstone (Athabasca)",
-      "value": 9.2
+      "value": 10.0
      },
      {
       "label": "MacKay River (PetroChina) (PetroChina)",
-      "value": 8.4
+      "value": 9.4
+     },
+     {
+      "label": "Hangingstone (Athabasca)",
+      "value": 8.8
      }
     ],
     "css": [
@@ -6379,12 +6398,12 @@
       "value": 124.8
      },
      {
-      "label": "Enhanced recovery (ST53)",
-      "value": 82.3
+      "label": "Primrose and Wolf Lake (CNRL)",
+      "value": 98.4
      },
      {
-      "label": "Primrose and Wolf Lake (CNRL)",
-      "value": 80.9
+      "label": "Enhanced recovery (ST53)",
+      "value": 82.3
      },
      {
       "label": "Peace River (CNRL)",
@@ -6394,87 +6413,87 @@
     "mined": [
      {
       "label": "Horizon (CNRL)",
-      "value": 330.6
+      "value": 401.0
      },
      {
       "label": "Suncor Base Plant",
-      "value": 322.8
+      "value": 331.0
      },
      {
       "label": "Kearl (Imperial)",
-      "value": 312.8
+      "value": 280.7
      },
      {
       "label": "Muskeg River (Shell)",
-      "value": 228.2
+      "value": 204.8
      },
      {
       "label": "Syncrude Aurora",
-      "value": 212.2
+      "value": 190.5
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 212.0
+      "value": 190.3
      },
      {
       "label": "Fort Hills",
-      "value": 193.1
+      "value": 173.3
      },
      {
       "label": "Jackpine (CNRL)",
-      "value": 158.5
+      "value": 142.2
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.0
+      "value": -255.7
      }
     ],
     "sco": [
      {
+      "label": "Horizon (CNRL)",
+      "value": 373.5
+     },
+     {
       "label": "Suncor Base Plant",
-      "value": 377.0
+      "value": 346.5
      },
      {
       "label": "Scotford (Shell)",
-      "value": 373.9
+      "value": 343.6
      },
      {
       "label": "Syncrude Mildred Lake",
-      "value": 344.2
-     },
-     {
-      "label": "Horizon (CNRL)",
-      "value": 292.8
+      "value": 316.3
      },
      {
       "label": "Sturgeon (NWR)",
-      "value": 50.6
+      "value": 58.7
      },
      {
       "label": "Other/unallocated (ST39 gap)",
-      "value": 0.1
+      "value": -0.0
      }
     ],
     "conventional": [
      {
       "label": "Light",
-      "value": 350.8
+      "value": 353.4
      },
      {
       "label": "Ultra-heavy",
-      "value": 136.1
+      "value": 136.4
      },
      {
       "label": "Condensate",
-      "value": 99.8
+      "value": 100.8
      },
      {
       "label": "Medium",
-      "value": 63.9
+      "value": 63.8
      },
      {
       "label": "Heavy",
-      "value": 32.3
+      "value": 32.0
      }
     ]
    },
@@ -6487,9 +6506,9 @@
      "region": "US Midwest",
      "nameplate": 3350,
      "effective": 3200.4,
-     "flow": 3110.0,
-     "util": 97.2,
-     "prev": 3095.9
+     "flow": 3200.4,
+     "util": 100.0,
+     "prev": 3200.4
     },
     {
      "id": "trans_mountain",
@@ -6499,9 +6518,9 @@
      "region": "Pacific coast",
      "nameplate": 980,
      "effective": 955.6,
-     "flow": 928.6,
-     "util": 97.2,
-     "prev": 924.4
+     "flow": 955.6,
+     "util": 100.0,
+     "prev": 955.6
     },
     {
      "id": "keystone",
@@ -6511,9 +6530,9 @@
      "region": "US Midcontinent",
      "nameplate": 640,
      "effective": 643.0,
-     "flow": 624.8,
-     "util": 97.2,
-     "prev": 622.0
+     "flow": 643.0,
+     "util": 100.0,
+     "prev": 643.0
     },
     {
      "id": "express",
@@ -6565,17 +6584,18 @@
     }
    ],
    "sk_other_kbd": 600.0,
-   "marketable_on_lines_kbd": 5173.4,
+   "marketable_on_lines_kbd": 5309.0,
+   "bound_uplift_unallocated_kbd": 48.5,
    "storage": {
     "change_kbd": -0.0,
     "change_mbbl": -0.0,
-    "level_mmbbl": 64.92,
+    "level_mmbbl": 79.35,
     "capacity_mmbbl": 80.6,
-    "ullage_mmbbl": 15.7,
-    "pct_full": 80.5
+    "ullage_mmbbl": 1.2,
+    "pct_full": 98.4
    },
    "apportionment": null,
-   "vintage": "ST3/ST53 thru 2026-08, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
+   "vintage": "ST3/ST53 thru 2026-09, ST39 thru 2026-06 (AER); maint cal 2026-09-23"
   }
  }
 }

@@ -1,6 +1,51 @@
 {
  "edition": "2026-11-16",
- "generated_at": "2026-11-16T08:53:42",
+ "generated_at": "2026-11-16T23:18:21",
  "generator": "change_engine v1",
- "changes": []
+ "changes": [
+  {
+   "title": "Mined bitumen forecast revised down for Nov 2027",
+   "delta": "-1,697 kb/d",
+   "body": "Mined bitumen for Nov 2027 moved from 3,341 to 1,644 kb/d in the latest ST3 dashboard build.",
+   "balance": "Tighter: less supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-16; feed built 2026-11-16",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-mined-2027-11-1,644",
+   "auto_detected": true
+  },
+  {
+   "title": "Mined bitumen forecast revised down for Nov 2026",
+   "delta": "-1,691 kb/d",
+   "body": "Mined bitumen for Nov 2026 moved from 3,341 to 1,650 kb/d in the latest ST3 dashboard build.",
+   "balance": "Tighter: less supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-16; feed built 2026-11-16",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-mined-2026-11-1,650",
+   "auto_detected": true
+  },
+  {
+   "title": "Mined bitumen forecast revised down for Dec 2027",
+   "delta": "-1,688 kb/d",
+   "body": "Mined bitumen for Dec 2027 moved from 3,346 to 1,658 kb/d in the latest ST3 dashboard build.",
+   "balance": "Tighter: less supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-16; feed built 2026-11-16",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-mined-2027-12-1,658",
+   "auto_detected": true
+  },
+  {
+   "title": "Mined bitumen forecast revised down for Dec 2026",
+   "delta": "-1,682 kb/d",
+   "body": "Mined bitumen for Dec 2026 moved from 3,346 to 1,664 kb/d in the latest ST3 dashboard build.",
+   "balance": "Tighter: less supply against fixed egress.",
+   "vintage": "AER ST3 thru 2026-07; dashboard artifact built 2026-11-16; feed built 2026-11-16",
+   "source": "WCSB supply/demand model (ST3 dashboard)",
+   "confirmation": "confirmed",
+   "dedup_key": "supply-mined-2026-12-1,664",
+   "auto_detected": true
+  }
+ ]
 }

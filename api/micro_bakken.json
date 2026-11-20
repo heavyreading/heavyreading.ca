@@ -2,17 +2,17 @@
  "schema": "micro-balance/1",
  "region": "bakken",
  "title": "Bakken micro-balance",
- "built": "2026-10-29",
+ "built": "2026-11-02",
  "as_of": "August 2026",
- "as_of_note": "Production Aug 2026 (ND DMR). Rail Jul 2026 (EIA). Dakota Access flow is the CY2024 Form 6 average. Capacities as of Oct 2026.",
+ "as_of_note": "Production Aug 2026 (ND DMR). Montana Bakken Jul 2026 (state board well-grain rollup). Saskatchewan Viewfield Jul 2026 (pool file). Rail Aug 2026 (EIA). Pipe flows are CY2025 Form 6 (Dakota Access deliveries; Enbridge ND Clearbrook leg from the Schedule 600 destination-state split). The disposition closes on CY2025. Refining per EIA-820, Jan 1 2026. Capacities as of Oct 2026.",
  "units": "kb/d unless a field name says otherwise",
  "cards": {
-  "nameplate_kbd": 1358.0,
-  "effective_kbd": 1300.0,
-  "supply_kbd": 1240.0,
-  "demand_kbd": 1240.0,
-  "in_region_production_kbd": 1240.0,
-  "in_region_demand_kbd": 95.0,
+  "nameplate_kbd": 1259.0,
+  "effective_kbd": 1205.0,
+  "supply_kbd": 1233.2,
+  "demand_kbd": 1233.2,
+  "in_region_production_kbd": 1233.2,
+  "in_region_demand_kbd": 72.0,
   "imports_kbd": 0.0,
   "exports_kbd": null,
   "utilization_pct": null,
@@ -25,7 +25,7 @@
    "group": null,
    "dest": null,
    "kind": "production",
-   "value_kbd": 1133.0,
+   "value_kbd": 1132.9,
    "nameplate_kbd": null,
    "effective_kbd": null,
    "util_pct": null,
@@ -35,7 +35,7 @@
    "source": "ND DMR county/formation monthly file (held, micro_balances/sources/north_dakota_dmr/)",
    "vintage": "Aug 2026",
    "basis": "measured",
-   "note": "Formation total as counted by the North Dakota regulator, Bakken and Three Forks together."
+   "note": "Formation total for Bakken and Three Forks together, from the NDIC well file (production is the Runs column). Printed pool rows sum to about 1,002 kb/d; the balance is confidential-well runs (about 131 kb/d in Aug 2026) allocated to the formation, which closes the formation to the NDIC formation series within about 0.3%. The allocation is labelled as an allocation, never printed as measurement."
   },
   {
    "id": "nd_conventional",
@@ -43,7 +43,7 @@
    "group": null,
    "dest": null,
    "kind": "production",
-   "value_kbd": 28.0,
+   "value_kbd": 28.5,
    "nameplate_kbd": null,
    "effective_kbd": null,
    "util_pct": null,
@@ -53,43 +53,43 @@
    "source": "ND DMR county/formation monthly file (held, micro_balances/sources/north_dakota_dmr/)",
    "vintage": "Aug 2026",
    "basis": "measured",
-   "note": "State total (1,161) minus the Bakken and Three Forks formation total (1,133), computed from the held DMR file. Small, slow-declining streams gathered into the same systems."
+   "note": "State total of record (1,161.4) minus the Bakken and Three Forks formation total (1,132.9). Small, slow-declining streams gathered into the same systems."
   },
   {
    "id": "mt_williston",
-   "label": "Montana Williston production",
+   "label": "Montana Bakken production (Williston counties)",
    "group": null,
    "dest": null,
    "kind": "production",
-   "value_kbd": 79.0,
+   "value_kbd": 52.6,
    "nameplate_kbd": null,
    "effective_kbd": null,
    "util_pct": null,
    "state": "value",
    "range_kbd": null,
    "memo": false,
-   "source": "EIA state production table (Montana total, 28.774 MMbbl CY2025)",
-   "vintage": "CY2025 average",
+   "source": "Montana Board of Oil and Gas well files, six Williston counties, rolled up monthly (held, micro_balances/sources/other_states/montana_bakken_rollup_monthly.csv)",
+   "vintage": "Jul 2026",
    "basis": "measured",
-   "note": "State total used as the Williston proxy; a small share of Montana output is non-Williston (central Montana). No Montana monthly series is held yet."
+   "note": "Well-grain Bakken-formation slice for the Montana Williston. Supersedes the earlier whole-state EIA proxy (79 kb/d, CY2025 average), which counted non-Williston Montana output. The six-county well sum runs 82.5-92.3% of the EIA Montana state total; the remainder is non-Williston production and coverage difference."
   },
   {
    "id": "sk_bakken_memo",
-   "label": "Saskatchewan Bakken (memo, loads at Cromer)",
+   "label": "Saskatchewan Bakken production (Viewfield pool)",
    "group": null,
    "dest": null,
    "kind": "production",
-   "value_kbd": 31.6,
+   "value_kbd": 19.2,
    "nameplate_kbd": null,
    "effective_kbd": null,
    "util_pct": null,
    "state": "value",
    "range_kbd": null,
-   "memo": true,
-   "source": "Saskatchewan Geological Survey, Top Oil Play Opportunities 2021",
-   "vintage": "2020-21",
+   "memo": false,
+   "source": "Saskatchewan Monthly Production by Pool workbooks (held, micro_balances/sources/saskatchewan/sk_viewfield_bakken_pool_monthly.csv)",
+   "vintage": "Jul 2026",
    "basis": "measured",
-   "note": "Memo item: Canadian Bakken is adjacent supply, not in-region supply, and is excluded from the supply card. It gathers at Cromer and enters the Enbridge Mainline pool."
+   "note": "Viewfield Bakken Sand Pool: 19,174 b/d in Jul 2026 (8,413 from named units plus 10,761 on the pool-level row). Part of the basin frame; it gathers north to Cromer and enters the Enbridge Mainline pool. Well-level Saskatchewan production is a paid IRIS product and is not held."
   },
   {
    "id": "mb_bakken_memo",
@@ -117,17 +117,17 @@
    "group": "patoka_gulf",
    "dest": "Patoka, Illinois",
    "kind": "pipeline",
-   "value_kbd": 611.0,
+   "value_kbd": 536.0,
    "nameplate_kbd": 750.0,
    "effective_kbd": 750.0,
-   "util_pct": 81.5,
+   "util_pct": 71.5,
    "state": "value",
    "range_kbd": null,
    "memo": false,
-   "source": "FERC Form 6 Schedule 600 sample parse (held, micro_balances/sources/ferc_form6/), Dakota Access LLC filing",
-   "vintage": "CY2024",
+   "source": "FERC Form 6 Schedule 600 totals parse (held, micro_balances/sources/ferc_form6/bakken_form6_actuals.csv), Dakota Access LLC filing",
+   "vintage": "CY2025",
    "basis": "measured",
-   "note": "The one hard pipe flow number held: 223.53 MMbbl received from North Dakota origins, 223.36 MMbbl delivered out in CY2024, an average of about 611 kb/d, 81% of nameplate. Dakota Access is 55% of the basin's pipe egress nameplate."
+   "note": "The one hard pipe flow number held: 195.55 MMbbl received from North Dakota origins, 195.80 MMbbl delivered out in CY2025, an average of about 536 kb/d (deliveries basis; receipts average 535.7), about 72% of nameplate. Dakota Access is 55% of the basin's pipe egress nameplate. Expansion status, corrected Oct 2026: the often-cited increase to about 1.1 MMb/d was a 2019 plan; the completed optimization phase reached the current 750 kb/d in Aug 2021, and no further Dakota Access expansion is a live project (Dakota Access North, 250 kb/d, was dropped from Energy Transfer's Q2 2026 deck backlog with no FID). The basin's live pipe growth item is the proposed Bridger Pipeline Expansion, about 550 kb/d from the Canadian border to Guernsey, in permitting."
   },
   {
    "id": "etco_gulf",
@@ -143,9 +143,9 @@
    "range_kbd": null,
    "memo": false,
    "source": "FERC Form 6, Dakota Access LLC delivery rows (partial evidence only)",
-   "vintage": "CY2024",
+   "vintage": "CY2025",
    "basis": "measured",
-   "note": "Dakota Access and ETCO are marketed as one Bakken system. The Form 6 delivery rows show the shape (126.6 MMbbl terminated on its own Illinois trunk lines, 96.7 MMbbl delivered out to connecting carriers in CY2024) but ETCO capacity was not verified from a primary source in the dossier pass (commonly cited near 570-600, not printed)."
+   "note": "Dakota Access and ETCO are marketed as one Bakken system. The Form 6 delivery rows show the shape (125.2 MMbbl terminated on its own Illinois trunk lines, 70.6 MMbbl delivered out to connecting carriers in CY2025) but ETCO capacity was not verified from a primary source in the dossier pass (commonly cited near 570-600, not printed)."
   },
   {
    "id": "enbridge_nd_clearbrook",
@@ -153,17 +153,17 @@
    "group": "clearbrook_mainline",
    "dest": "Clearbrook, Minnesota",
    "kind": "pipeline",
-   "value_kbd": null,
+   "value_kbd": 219.1,
    "nameplate_kbd": 214.0,
-   "effective_kbd": null,
-   "util_pct": null,
-   "state": "capacity_only",
+   "effective_kbd": 214.0,
+   "util_pct": 102.4,
+   "state": "value",
    "range_kbd": null,
    "memo": false,
-   "source": "Enbridge factsheets (Line 81 average annual capacity); carrier Form 6 in the held filer universe, not yet parsed",
-   "vintage": "2026",
-   "basis": "capacity",
-   "note": "The original egress, operating since the 1950s-60s. Historically ran near full before Dakota Access; no current public flow. Nameplate is the Line 81 average annual figure."
+   "source": "FERC Form 6 Schedule 600 destination-state detail, North Dakota Pipeline Company LLC filing (held, micro_balances/sources/ferc_form6/bakken_point_delivery_ledger.csv); nameplate from Enbridge factsheets (Line 81 average annual capacity)",
+   "vintage": "CY2025",
+   "basis": "measured",
+   "note": "The original egress, operating since the 1950s-60s. The carrier's Form 6 detail splits its CY2025 deliveries by destination state: 79,973,055 barrels (219.1 kb/d) filed under Minnesota, the Clearbrook hand-off, and 17,369,245 barrels (47.6 kb/d) filed under North Dakota, the Berthold interconnects to Dakota Access and Bakken North. The disposition counts only the Clearbrook leg; the Berthold barrels exit inside the Dakota Access and Bakken North lines. The system total (266.7 kb/d) is never added to the Clearbrook figure. Filed Clearbrook deliveries run above the 214 Line 81 legacy nameplate: the system has grown by looping since that figure was set. Receipts include 41.7 MMbbl from connecting carriers, so a share of the Clearbrook deliveries is transit barrels gathered by other systems; the share is not filed."
   },
   {
    "id": "bakken_north_cromer",
@@ -171,17 +171,35 @@
    "group": "clearbrook_mainline",
    "dest": "Cromer, Manitoba",
    "kind": "pipeline",
-   "value_kbd": null,
+   "value_kbd": 25.0,
    "nameplate_kbd": 145.0,
-   "effective_kbd": null,
-   "util_pct": null,
-   "state": "capacity_only",
+   "effective_kbd": 145.0,
+   "util_pct": 17.2,
+   "state": "value",
    "range_kbd": null,
    "memo": false,
-   "source": "CER pipeline profile; CER and Enbridge prints (utilization)",
-   "vintage": "2023 utilization; capacity as of 2026",
-   "basis": "capacity",
-   "note": "Reversed in 2013 to carry Bakken crude north into the Mainline at Cromer. CER prints 145 kb/d (149 in some prints). Utilization ran about 7-26% in 2023: it is the relief valve and the most expensive routine option (about $6/bbl toll versus about $2.56 on the Enbridge ND system, filed tariff comparison), so its utilization is a clean tightness gauge for the northern light complex."
+   "source": "House estimate of 2025 deliveries into Cromer from CER and Enbridge prints; US-leg Form 6 Schedule 600 (held, micro_balances/sources/ferc_form6/bakken_point_delivery_ledger.csv); filed nameplate per CER pipeline profile (CER No. 52)",
+   "vintage": "CY2025",
+   "basis": "estimated",
+   "note": "145 kb/d is filed nameplate, not a take. Actual 2025 flow is about 25 kb/d, our estimate from CER and Enbridge prints of deliveries into Cromer (about 30 kb/d committed out of the May 2024 open season); the US leg's Form 6 prints 30.9 kb/d delivered to the border in CY2025, and the spread between the two segments' reads is printed, not resolved. Reversed in 2013 to carry Bakken crude north into the Mainline at Cromer. Utilization ran about 7-26% in 2023: it is the relief valve and the most expensive routine option (about $4.64/bbl on the spot stack via Cromer versus about $2.56 on the Enbridge ND system direct to Clearbrook, filed tariffs), so its utilization is a clean tightness gauge for the northern light complex."
+  },
+  {
+   "id": "sk_bakken_westspur",
+   "label": "Saskatchewan Bakken via Westspur to Cromer",
+   "group": "clearbrook_mainline",
+   "dest": "Cromer, Manitoba",
+   "kind": "pipeline",
+   "value_kbd": 20.5,
+   "nameplate_kbd": null,
+   "effective_kbd": null,
+   "util_pct": null,
+   "state": "value",
+   "range_kbd": null,
+   "memo": false,
+   "source": "Attributed by identity: Saskatchewan Viewfield production (pool file, held) inside the measured Westspur flow (CER pipeline profile)",
+   "vintage": "CY2025",
+   "basis": "estimated",
+   "note": "The Saskatchewan Bakken's exit: Viewfield barrels gather on SaskOil and Westspur into Cromer and enter the Enbridge Mainline pool. The flow is attributed at the pool's own production (CY2025 average 20.5 kb/d) inside Westspur's measured 152 kb/d flow (2025), which is mostly Saskatchewan conventional crude and is not basin supply. No separate Form 6 or CER line isolates the Bakken share."
   },
   {
    "id": "high_plains_mandan",
@@ -196,31 +214,10 @@
    "state": "capacity_only",
    "range_kbd": null,
    "memo": false,
-   "source": "GEM wiki citing Tesoro Logistics (trunk capacity); EIA refinery capacity (Mandan 74-76)",
+   "source": "GEM wiki citing Tesoro Logistics (trunk capacity); EIA-820 refinery capacity file, Jan 1 2026 (Mandan 72,000 b/cd calendar day, 76,500 stream day)",
    "vintage": "2026",
    "basis": "capacity",
-   "note": "About 90 kb/d trunk on a 700-mile gathering system feeding Marathon's Mandan refinery (74-76 kb/d capacity; 74 cited 2020, 76 in 2022). Refinery crude runs are not published monthly. Operating status after the Fort Berthold right-of-way litigation needs a build-stage check."
-  },
-  {
-   "id": "dickinson_refinery",
-   "label": "Dickinson refinery (direct and gathered)",
-   "group": "in_basin_refining",
-   "dest": "Dickinson, North Dakota",
-   "kind": "refinery",
-   "value_kbd": null,
-   "nameplate_kbd": null,
-   "effective_kbd": null,
-   "util_pct": null,
-   "state": "range",
-   "range_kbd": [
-    19.0,
-    20.0
-   ],
-   "memo": false,
-   "source": "Trade press (Inspectioneering news summary); EIA refinery capacity table is the pull route",
-   "vintage": "2026",
-   "basis": "capacity",
-   "note": "Marathon Dickinson (ex-Dakota Prairie), built 2015, diesel-focused, runs local Bakken crude. Capacity cited at about 19-20 kb/d; the range is the honest state."
+   "note": "About 90 kb/d trunk on a 700-mile gathering system feeding Marathon's Mandan refinery. Mandan is North Dakota's only crude refinery: 72 kb/d calendar-day capacity in the EIA-820 file dated Jan 1, 2026 (older citations of 74-76 are superseded). Refinery crude runs are not published monthly. Operating status after the Fort Berthold right-of-way litigation needs a build-stage check."
   },
   {
    "id": "butte_guernsey",
@@ -235,31 +232,28 @@
    "state": "capacity_only",
    "range_kbd": null,
    "memo": false,
-   "source": "ND PSC filing (Bentek study); Bridger Pipeline LLC Form 6 in the held universe, not yet parsed",
+   "source": "ND PSC filing (Bentek study); Bridger Pipeline LLC Form 6 system totals parsed (held, micro_balances/sources/ferc_form6/bakken_form6_actuals.csv)",
    "vintage": "2026",
    "basis": "capacity",
-   "note": "The only southbound pipe out of the Montana side, expanded to 150 kb/d in 2011. Carries Montana Bakken and North Dakota barrels gathered to Baker. Flows are not published."
+   "note": "The only southbound pipe out of the Montana side, expanded to 150 kb/d in 2011. Carries Montana Bakken and North Dakota barrels gathered to Baker. Flows are not published. Capacity evidence has widened since the 2011 figure: the North Dakota Pipeline Authority's 2024 annual report states the Butte system at 275 kb/d to Guernsey, and Bridger Pipeline's Form 6 system totals (Butte has run inside Bridger's system under master lease since January 1, 2022) show Wyoming deliveries of 317.3 kb/d in CY2024 rising to 395.6 kb/d in CY2025 across all Wyoming destinations, after Double H left crude service. The 150 kb/d carried here is the filed 2011 expansion nameplate; the spread between filed nameplate and demonstrated throughput is printed, not resolved."
   },
   {
-   "id": "double_h_guernsey",
-   "label": "Double H to Guernsey",
+   "id": "guernsey_bakken_exit",
+   "label": "Bakken barrels delivered at Guernsey (Butte and Bridger systems, basin-attributed)",
    "group": "guernsey_sink",
    "dest": "Guernsey, Wyoming",
    "kind": "pipeline",
-   "value_kbd": null,
+   "value_kbd": 215.0,
    "nameplate_kbd": null,
    "effective_kbd": null,
    "util_pct": null,
-   "state": "range",
-   "range_kbd": [
-    84.0,
-    99.0
-   ],
+   "state": "value",
+   "range_kbd": null,
    "memo": false,
-   "source": "Kinder Morgan 2015 releases; GEM wiki",
-   "vintage": "2015-16",
-   "basis": "capacity",
-   "note": "Capacity is a genuine conflict: 84 kb/d at in-service (Feb 2015), about 99 for the system after the 2015 Powder River connection, about 108 in a 2016 expansion plan whose completion is unverified. The range carries the two sourced figures; joint tariff with Pony Express to Ponca City and Cushing."
+   "source": "Attributed from FERC Form 6 Schedule 600 detail (held, micro_balances/sources/ferc_form6/bakken_point_delivery_ledger.csv and bakken_point_delivery_notes.md)",
+   "vintage": "CY2025",
+   "basis": "estimated",
+   "note": "No filing isolates basin barrels delivered at Guernsey. The filed anchors (CY2025): Bridger-system deliveries in Wyoming 395.6 kb/d across all Wyoming destinations; Pony Express took in 267.4 kb/d of Wyoming receipts at Guernsey from all suppliers. No filing prints a quarterly Butte-segment rate. The printed 215 is the Pony Express Guernsey uplift attributed to the Butte and Bridger systems, net of Platte's Guernsey hand-off, less the Montana conventional content of those systems' gathering (Montana non-Bakken production in the Williston counties was 11.1 kb/d in CY2025 and is not in this balance's supply). Stated range 200 to 250 kb/d. This is the one modelled line in the closed disposition."
   },
   {
    "id": "rail_west_coast",
@@ -267,7 +261,7 @@
    "group": "rail_complex",
    "dest": "Puget Sound and California refineries",
    "kind": "rail",
-   "value_kbd": 160.0,
+   "value_kbd": 238.0,
    "nameplate_kbd": null,
    "effective_kbd": null,
    "util_pct": null,
@@ -275,7 +269,7 @@
    "range_kbd": null,
    "memo": false,
    "source": "EIA crude-by-rail monthly (held, micro_balances/sources/eia/eia_crude_by_rail.csv)",
-   "vintage": "Jul 2026",
+   "vintage": "Aug 2026",
    "basis": "measured",
    "note": "EIA lane: PADD 2 origin to PADD 5. The PADD 2 origin lane is overwhelmingly Bakken loadings plus a small non-Bakken Midwest residual. In the current loose-pipe regime, rail volumes are set by West Coast refinery demand for Bakken light sweet, not by basin egress stress."
   },
@@ -285,7 +279,7 @@
    "group": "rail_complex",
    "dest": "East Coast refineries",
    "kind": "rail",
-   "value_kbd": 8.0,
+   "value_kbd": 11.0,
    "nameplate_kbd": null,
    "effective_kbd": null,
    "util_pct": null,
@@ -293,7 +287,7 @@
    "range_kbd": null,
    "memo": false,
    "source": "EIA crude-by-rail monthly (held, micro_balances/sources/eia/eia_crude_by_rail.csv)",
-   "vintage": "Jul 2026",
+   "vintage": "Aug 2026",
    "basis": "measured",
    "note": "The 2013-15 pattern (marginal rail barrel east to Brent-priced refineries) has flipped: the East Coast lane is now a residual."
   },
@@ -311,7 +305,7 @@
    "range_kbd": null,
    "memo": false,
    "source": "EIA crude-by-rail monthly (held, micro_balances/sources/eia/eia_crude_by_rail.csv)",
-   "vintage": "Jul 2026",
+   "vintage": "Aug 2026",
    "basis": "measured",
    "note": "Small residual lanes from PADD 2 origins."
   },
@@ -335,7 +329,7 @@
   },
   {
    "id": "storage_change",
-   "label": "Storage change (balancing line)",
+   "label": "Stock change and measurement difference (residual)",
    "group": null,
    "dest": "Clearbrook and Berthold tankage",
    "kind": "plug",
@@ -346,10 +340,10 @@
    "state": "missing",
    "range_kbd": null,
    "memo": false,
-   "source": "Computed residual in the house balance build; shell bounds from Enbridge factsheets",
-   "vintage": "n/a",
+   "source": "Computed residual of the closed calendar-2025 disposition in the house balance build; shell bounds from Enbridge factsheets",
+   "vintage": "CY2025",
    "basis": "modelled",
-   "note": "Storage is the printed balancing line of this balance, computed as the residual when the balance is run; it is never a measured input. Sanity bound: Clearbrook shell about 1.3 MMbbl plus Berthold about 0.7 MMbbl. No public Bakken stock series exists; PADD 2 stocks are the closest held aggregate."
+   "note": "The residual is renamed: on the closed calendar-2025 disposition it is about +22 kb/d (1.7% of supply), and it is not storage. Its composition: refining printed at capacity overstates the sink (Mandan runs are not published); the Guernsey attribution carries a range of about plus or minus 30; the Enbridge ND Clearbrook line includes connecting-carrier transit barrels of unfiled size; true stock change is bounded by about 2.0 MMbbl of northern-hub shell (Clearbrook about 1.3 MMbbl plus Berthold about 0.7), about 65 kb/d for one month and near zero on an annual average; and lease-meter to pipeline-meter differences sit inside the published series. No public Bakken stock series exists; PADD 2 stocks are the closest held aggregate."
   }
  ],
  "groups": [
@@ -372,12 +366,12 @@
    "value_kbd": null,
    "members": [
     "butte_guernsey",
-    "double_h_guernsey"
+    "guernsey_bakken_exit"
    ],
-   "source": "Dossier sections 4-5",
-   "vintage": "2026",
-   "basis": "capacity",
-   "note": "The southern optionality view: Butte plus Double H inbound, Pony Express (about 460, to about 515 in late 2027) and Platte (145 to Wood River) outbound. Space is contested with Powder River, DJ and Canadian Express barrels. Neither inbound line publishes flows, so the group carries no value."
+   "source": "Dossier sections 4-5; Kinder Morgan conversion record (Oct 2026 sweep); Form 6 point-delivery ledger",
+   "vintage": "CY2025",
+   "basis": "estimated",
+   "note": "The southern optionality view: Butte inbound, Pony Express (about 460, to about 515 in late 2027) and Platte (145 to Wood River) outbound. Space is contested with Powder River, DJ and Canadian Express barrels. Double H no longer belongs in this group: Kinder Morgan took it out of crude service in early Q3 2025 for the Hiland Express NGL conversion (NGL service from Apr 29, 2026), and its crude barrels moved to Butte. Butte publishes no segment flow; the group carries the basin-attributed Guernsey exit (215 kb/d, CY2025) built from the Form 6 anchors, with the Butte nameplate printed as a ceiling only."
   },
   {
    "id": "clearbrook_mainline",
@@ -386,6 +380,7 @@
    "members": [
     "enbridge_nd_clearbrook",
     "bakken_north_cromer",
+    "sk_bakken_westspur",
     "sk_bakken_memo",
     "mb_bakken_memo"
    ],
@@ -402,37 +397,36 @@
     "dapl_patoka",
     "etco_gulf"
    ],
-   "source": "FERC Form 6 Schedule 600 sample parse (held, micro_balances/sources/ferc_form6/)",
-   "vintage": "CY2024",
+   "source": "FERC Form 6 Schedule 600 totals parse (held, micro_balances/sources/ferc_form6/bakken_form6_actuals.csv)",
+   "vintage": "CY2025",
    "basis": "measured",
    "note": "The growth and litigation view. Dakota Access carries the value; the ETCO onward split is not yet verified, so the group prints no separate total."
   },
   {
    "id": "rail_complex",
    "label": "Rail complex",
-   "value_kbd": 170.0,
+   "value_kbd": 251.0,
    "members": [
     "rail_west_coast",
     "rail_east_coast",
     "rail_gulf_other"
    ],
    "source": "EIA crude-by-rail monthly (held, micro_balances/sources/eia/eia_crude_by_rail.csv)",
-   "vintage": "Jul 2026",
+   "vintage": "Aug 2026",
    "basis": "measured",
-   "note": "The swing view, priced off destination netbacks. Total rail out of PADD 2 origins was about 170 kb/d in Jul 2026, against a Dec 2014 peak of about 830-850."
+   "note": "The swing view, priced off destination netbacks. Total rail out of PADD 2 origins was about 251 kb/d in Aug 2026, against a Dec 2014 peak of about 830-850."
   },
   {
    "id": "in_basin_refining",
    "label": "In-basin refining",
    "value_kbd": null,
    "members": [
-    "high_plains_mandan",
-    "dickinson_refinery"
+    "high_plains_mandan"
    ],
-   "source": "Dossier section 7",
+   "source": "Dossier section 7; EIA-820 refinery capacity file, Jan 1 2026",
    "vintage": "2026",
    "basis": "capacity",
-   "note": "The firm-demand floor: Mandan (74-76) plus Dickinson (about 19-20) is roughly 95 kb/d of demand that consumes no long-haul egress, about 8% of supply."
+   "note": "The firm-demand floor is one refinery: Mandan at 72 kb/d (EIA-820 calendar-day) is about 6% of supply and consumes no long-haul egress. Dickinson is gone from the crude system: it stopped processing crude in May 2020 and operates as Marathon's renewable diesel facility, so it carries no crude demand."
   }
  ],
  "prices": [
@@ -495,20 +489,21 @@
    "from": "Guernsey, Wyoming",
    "to": "Cushing, Oklahoma",
    "items": [
-    "butte_guernsey",
-    "double_h_guernsey"
+    "butte_guernsey"
    ],
-   "note": "Pony Express about 460 kb/d average annual, PXP2 expansion to about 515 due late 2027. Platte runs Guernsey to Wood River at 145."
+   "note": "Pony Express about 460 kb/d average annual, PXP2 expansion to about 515 due late 2027. Platte runs Guernsey to Wood River at 145. Double H formerly shared this corridor; it left crude service in 2025 for the Hiland Express NGL conversion (in service Apr 29, 2026)."
   }
  ],
  "notes": [
   "Demand in this feed is CLEARED demand, not wants: the demand card equals supply less storage change by the house convention. A wants-based template prints demand above both supply and effective capacity; we do not copy that. Nominations are carried only where a source publishes them.",
-  "The demand card (1,240) does not foot to the valued demand items (781: Dakota Access 611 plus rail 170) because only Dakota Access and the rail lanes publish flows. The remaining roughly 459 kb/d clears on Enbridge ND, Bakken North, Butte, Double H and the two in-basin refineries, whose monthly flows are not published by anyone. That is a publication gap, not a balance gap, and it is the normal state of this basin: Form 6 is annual and filer-level, so monthly pipe flows are modelled in every public treatment.",
-  "Effective capacity (1,300) is an explicit estimate: nameplate less a routine maintenance and derate haircut. No carrier publishes an effective figure for the system; the dossier flags it as an estimate to be replaced by shipper-notice history.",
-  "Utilization card is null: the only hard utilization is Dakota Access at 81% (CY2024 Form 6). A system figure would be an estimate (the dossier's range is roughly 75-85%) and is not printed as a card.",
-  "Exports card is null: exports equal cleared demand minus in-region refining (about 1,145 on this frame), but the dossier does not print that split as a card and the feed does not derive one silently.",
+  "The demand card (1,233) does not foot to the valued demand items (787: Dakota Access 536 plus rail 251) because only Dakota Access and the rail lanes publish flows. The remaining roughly 446 kb/d clears on Enbridge ND, Bakken North, Butte and the Mandan refinery, whose monthly flows are not published by anyone. That is a publication gap, not a balance gap, and it is the normal state of this basin: Form 6 is annual and filer-level, so monthly pipe flows are modelled in every public treatment.",
+  "Effective capacity (1,205) is an explicit estimate: nameplate (1,259) less the same roughly 4% routine maintenance and derate haircut applied in the October 2026 feed. No carrier publishes an effective figure for the system; the dossier flags it as an estimate to be replaced by shipper-notice history.",
+  "Utilization card is null: the only hard utilization is Dakota Access at 72% (CY2025 Form 6). A system figure would be an estimate (the dossier's range is roughly 75-85%) and is not printed as a card.",
+  "Exports card is null: exports equal cleared demand minus in-region refining (about 1,161 on this frame), but the dossier does not print that split as a card and the feed does not derive one silently.",
   "The basin's real governor in growth months is gas, not pipe: North Dakota's 91% gas-capture rule (NDIC Order 24665) restricts wells to 200 bbl/d of oil at 60% capture and 100 bbl/d below that, so gas gathering and processing capacity in the core counties caps oil before egress does.",
-  "Supply must be re-bought monthly: legacy decline runs about 6% of production per month, so holding 1.16 MMb/d flat needs roughly 70-100 kb/d of new-well production every month. The rig count (35, Oct 2026, via the DMR Director's Cut as cited in trade press) and completion crews are the leading indicators, not the well count."
+  "Supply must be re-bought monthly: legacy decline runs about 6% of production per month, so holding 1.16 MMb/d flat needs roughly 70-100 kb/d of new-well production every month. The rig count (31, Oct 2026, NDIC Director's Cut dated Oct 20, 2026, held activity file) and completion crews are the leading indicators, not the well count.",
+  "Dickinson carries no crude demand in this feed: Marathon's Dickinson plant (ex-Dakota Prairie, about 19 kb/d of crude capacity) stopped processing crude in May 2020 and was converted to a renewable diesel facility (184 MM gal/yr, fully operational 2021). It is absent from the EIA-820 crude capacity file dated Jan 1, 2026, which lists Mandan as North Dakota's only crude refinery. Earlier editions of this feed carried Dickinson at 19-20 kb/d of crude demand; that was stale and is removed.",
+  "Double H carries no crude egress in this feed: Kinder Morgan took the line out of crude service in early Q3 2025 for the Hiland Express NGL conversion, and it entered NGL service on Apr 29, 2026. Its crude barrels moved to Butte. Earlier editions carried Double H as an 84-99 kb/d crude range; that was stale and is removed, and system nameplate falls from 1,358 to 1,259 kb/d as a result."
  ],
  "gaps": [
   {
@@ -519,45 +514,33 @@
   },
   {
    "item": "enbridge_nd_clearbrook",
-   "state": "capacity_only",
-   "reason": "Carrier publishes capacity, not current flow.",
-   "route": "Parse Enbridge Pipelines (North Dakota) LLC Form 6 filings, already identified in the held filer universe."
+   "state": "value",
+   "reason": "Segment split landed: the Form 6 Schedule 600 destination-state detail separates Clearbrook deliveries (219.1 kb/d, CY2025) from the Berthold interconnect legs (47.6). The remaining gap is the connecting-carrier transit share inside the Clearbrook figure, which the filing does not split.",
+   "route": "Point-delivery ledger landed (bakken_point_delivery_ledger.csv, CY2024-2025); the transit share would need carrier segment reporting that Form 6 does not file."
   },
   {
    "item": "bakken_north_cromer",
-   "state": "capacity_only",
-   "reason": "Utilization published only as a 2023 range; no flow series held.",
-   "route": "CER throughput products for the Enbridge Bakken system plus the carrier's Form 6 parse."
+   "state": "value",
+   "reason": "US-leg Form 6 prints 30.9 kb/d delivered to the border in CY2025 against our estimate of about 25 kb/d delivered into Cromer from CER and Enbridge prints; both print, the spread is the two segments' timing and linefill, and the Canada segment files no public throughput series.",
+   "route": "Point-delivery ledger landed (bakken_point_delivery_ledger.csv); CER throughput products for the Canada segment remain the open pull."
   },
   {
    "item": "butte_guernsey",
    "state": "capacity_only",
-   "reason": "Flows not published.",
-   "route": "Parse Bridger Pipeline LLC Form 6 filings (2023, 2024) already in the held universe."
-  },
-  {
-   "item": "double_h_guernsey",
-   "state": "range",
-   "reason": "Capacity sources conflict (84 at in-service, about 99 after the Powder River connection, about 108 unverified plan).",
-   "route": "Parse Hiland Crude LLC Form 6 filings and Kinder Morgan tariff filings in tolls.db."
-  },
-  {
-   "item": "dickinson_refinery",
-   "state": "range",
-   "reason": "Capacity cited only as about 19-20 kb/d in trade press; no runs series.",
-   "route": "EIA refinery capacity table pull for the plant, already identified as the source."
+   "reason": "Segment flows not published; the carrier's Form 6 files gathering-inclusive system totals only. The balance carries a basin-attributed Guernsey exit (215 kb/d, CY2025, range 200-250) built from the Form 6 anchors; the attribution method is in bakken_point_delivery_notes.md.",
+   "route": "Bridger Form 6 parse landed (system totals and destination-state detail, CY2021-2025); the Guernsey segment flow is not filed separately, so the attributed line is the carried figure."
   },
   {
    "item": "mt_williston",
    "state": "value",
-   "reason": "Montana monthly production series is not in the held EIA file; the feed uses the CY2025 annual average.",
-   "route": "Add the EIA Montana monthly state series (MCRFPMT2) to the library EIA pull."
+   "reason": "Well-grain rollup covers six Williston counties and runs 82.5-92.3% of the EIA Montana state total; the remainder is non-Williston output and coverage difference.",
+   "route": "Montana Board of Oil and Gas monthly well files, already landed (montana_bakken_rollup_monthly.csv); the EIA state series is held as the coverage check."
   },
   {
    "item": "sk_bakken_memo",
    "state": "value",
-   "reason": "Formation-level Saskatchewan Bakken split is 2020-21 vintage; the held Saskatchewan file is pool-level.",
-   "route": "Saskatchewan ministry formation-level series or a Petrinex SK formation pull."
+   "reason": "Pool-level grain from the held Saskatchewan workbooks; well-level Saskatchewan production is a paid IRIS product (Directive PNG030) and is not held.",
+   "route": "Saskatchewan Monthly Production by Pool workbooks (landed, sk_viewfield_bakken_pool_monthly.csv); IRIS well-level is a purchase decision, not a pull."
   },
   {
    "item": "mb_bakken_memo",

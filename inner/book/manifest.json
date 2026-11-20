@@ -1,19 +1,19 @@
 {
  "page": "/inner/book/",
  "title": "The Book",
- "dek": "",
- "built_at": "2026-10-26",
+ "dek": "The whole paper book on one screen: every trade, its share of the risk, the size ladder, and the limits. Marks: November 11, 2026.",
+ "built_at": "2026-11-19",
  "generator": "heavyreading-manifest/1",
  "claims": [
   {
-   "text": "Whole paper book at the October 23, 2026 marks: P&L +$261,500 (diffs), worst priced day $610,283 with every running position's own worst day added and no offsets between families.",
-   "vintage": "Marks 2026-10-23",
+   "text": "Whole paper book at the November 11, 2026 marks: P&L +$633,600 (diff book only; the Wing carries no record), worst priced day $1,363,283 with every running position's own worst day added and no offsets between families.",
+   "vintage": "Marks 2026-11-11",
    "source": "bin/size_ladder.py over the trade ledger and the Wing corpus files",
    "source_url": ""
   },
   {
-   "text": "Size ladder verdict, net of execution costs: Rung 3 (1R = $1,000,000) is the first rung whose central-case normal year lands inside the $10-15M normal-year band ($13,922,594 net; Rung 2 reaches the band gross at $10,532,778 but nets $7,013,472); the diversification and earning gates are not met today (3 live drivers, top driver about 100% of expected normal-year P&L net of costs, 0 scored months), so the book may not climb yet.",
-   "vintage": "Computed 2026-10-25",
+   "text": "Size ladder verdict, net of execution costs: at the re-based unit (1R = $750,000, November 13, 2026) no rung's central-case normal year lands inside the $10-15M normal-year band: Rung 1 prices $15,651,999 gross and $9,769,594 net, and Rung 2 nets $19,226,144; the diversification and earning gates are not met today (4 live drivers, top driver about 106% of expected normal-year P&L net of costs, 0 scored months), so the book may not climb yet.",
+   "vintage": "Computed 2026-11-13",
    "source": "bin/size_ladder.py with bin/execution_costs.py; assumptions printed on the page",
    "source_url": ""
   },
@@ -27,12 +27,12 @@
  "sources": [
   {
    "publisher": "ICE settlements (TMW/TMR/TMS daily files) and ICE options EOD report 166",
-   "vintage": "settlements to 2026-10-23",
+   "vintage": "settlements to 2026-11-12",
    "url": ""
   },
   {
    "publisher": "CFTC COT (TMW open interest) and Enbridge apportionment notice, November 2026",
-   "vintage": "COT 2026-10-20; notice 2026-10-20",
+   "vintage": "COT 2026-11-03; notice November 2026",
    "url": ""
   }
  ]
