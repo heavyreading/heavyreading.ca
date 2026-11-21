@@ -65,7 +65,7 @@ localStorage.removeItem('hr-theme');}catch(e){}})();
       <div class="mnav-sec"><p class="mnav-label">Companies</p><a class="mg-link" href="../../maintenance/index.html">Maintenance</a><a class="mg-link" href="../../growth/index.html">Production growth</a><a class="mg-link" href="../../micro/bakken/index.html">Bakken</a><a class="mg-link" href="../../projects/index.html">All projects</a><a class="mg-link" href="../../sat-watch.html">Sat watch</a></div>
       <div class="mnav-sec"><p class="mnav-label">Record</p><a class="mg-link" href="../../scorecard.html">Scorecard</a><a class="mg-link" href="../../fieldguide/index.html">Field guide</a><a class="mg-link" href="../../data/index.html">Data downloads</a><a class="mg-link" href="../../sources/index.html">Sources</a><a class="mg-link" href="../../methodology/index.html">Methodology</a><a class="mg-link" href="../../about/index.html">About</a><a class="mg-link" href="../../reference/index.html">Reference hub</a></div>
       </div>
-      <a class="chg-badge" href="../../changes/index.html">256 changed today</a></nav>
+      <a class="chg-badge" href="../../changes/index.html">32 changed today</a></nav>
       </details>
     </div>
     <div class="tb-search" id="tbsearch" hidden>
@@ -91,7 +91,7 @@ tr.floorrow td { border-top:2px solid #b42318;
 
 <p class="booknav"><strong>The Book</strong> · <a href="../trade-ideas/">Trade ideas</a> · <a href="../trade-log/">Trade log</a> · <a href="../vol-portfolio/">Vol portfolio</a> · <a href="../vol/">Vol structures</a> · <a href="../flow/">The Block Board</a> · <a href="../../options/">The Wing (public)</a></p>
 <p>Two paper books have been running side by side: the diff trades (TMW, TMR, SYN) and the Wing options plays. This page is the one account for both: what the whole book is making, what its worst day costs, how its size climbs toward a pro book, and how much of every limit it is using. The family pages stay as the drill-downs; nothing on them is the book total.</p>
-<h2>Boss questions: the book's Greeks<span class="chg-stamp chg-new" data-chg="2026-11-19" title="This section last changed November 19, 2026">changed Nov 19</span></h2>
+<h2>Boss questions: the book's Greeks<span class="chg-stamp chg-week" data-chg="2026-11-19" title="This section last changed November 19, 2026">changed Nov 19</span></h2>
 <p>The four numbers a boss asks for, on the booked positions (the Wing's two plays; the diffs are linear and carry delta only, tabled below). Marks: October 23, 2026. The strip refreshes nightly with the marks run (bin/book_greeks.py, chained from the stacker).</p>
 <div class="statgrid"><div class="stat"><div class="v">-41 bbl</div><div class="l">Book delta (Brent)</div><div class="d">flat for practical purposes: a $1 Brent move changes the book by about $41. The diffs run on their own spreads; their deltas are in the table below.</div></div><div class="stat"><div class="v">+125 bbl per $1</div><div class="l">Book gamma</div><div class="d">the bend: at Brent $10 lower the book's delta is -1,314 bbl; at $10 higher, +920 bbl.</div></div><div class="stat"><div class="v">-$416 a day</div><div class="l">Book theta</div><div class="d">pays $416 a day if nothing moves. This is the rent meter.</div></div><div class="stat"><div class="v">+$667 per vol point</div><div class="l">Book vega</div><div class="d">a 10-point fall in fear costs about $6,672.</div></div></div>
 <p>If the question is the length dressed (the 25-lot paper length wearing the overwrite and the collar): delta +19,959 bbl, gamma +125 bbl per $1, theta -$416 a day, vega +$667 per vol point. The difference from the booked book is the length itself.</p>
@@ -363,8 +363,6 @@ tr.floorrow td { border-top:2px solid #b42318;
   on();
 })();
 </script>
-
-
 <script id="chg-visit">
 (function(){try{
   var meta=document.querySelector('meta[name="hr-page-key"]');
