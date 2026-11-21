@@ -1,8 +1,8 @@
 {
  "page": "/inner/trade-ideas/",
  "title": "Trade ideas",
- "dek": "Inner trade ideas: five trades on one freight regime, sized from a framework that requires 3 to 5 carrier trades a year, plus the bigger-trades candidate pipeline.",
- "built_at": "2026-11-19",
+ "dek": "Inner trade ideas: four trades on one freight regime, sized from a framework that requires 3 to 5 carrier trades a year, plus the bigger-trades candidate pipeline.",
+ "built_at": "2026-11-21",
  "generator": "heavyreading-manifest/1",
  "claims": [
   {
@@ -12,20 +12,14 @@
    "source_url": ""
   },
   {
-   "text": "WCS carry construction on the real daily settles, per day (window September 30, 2026 to November 17, 2026, 33 days with both legs): window-average implied WCS outright December $63.82, January $64.07, a deferral premium of +0.25 against full carry near $0.89/bbl (storage plus financing). Gap about $0.64/bbl. Latest settle day: December $55.72, January $59.04, premium +3.32.",
-   "vintage": "ICE settlements and WTI strip snapshots, September 30, 2026 to November 17, 2026",
-   "source": "ICE Endex report center; house CMA-window construction on daily WTI strips",
-   "source_url": ""
-  },
-  {
    "text": "S&D model: supply 4,866 kb/d October 2026, 5,167 November (+301 against October) and 5,213 December (+346 against October; December only about 45 kb/d above November); 52 kb/d (November) and 95 kb/d (December) carried as requiring a price response; pipeline spare capacity zero. The step is turnaround returns: the maintenance schedule carries 310 kb/d offline in September, 164 in October, 23 in November, 3 in December, and the model carries no named new-production adds for November or December.",
    "vintage": "Balance model vintage September 28, 2026; maintenance forward calendar September 22, 2026",
    "source": "WCSB S&D model (Heavy Reading)",
    "source_url": ""
   },
   {
-   "text": "TMW December 2026 to January 2027 calendar spread on ICE settles: +0.95 on September 30, 2026, +3.47 on November 17, 2026 (full series printed on the page; the series ends there, at nominations, where December's paper trading stopped), against roughly $0.86/bbl of full carry. Synthetic crude minus WCS spread: +27.15 (September 30, 2026) to +32.57 (October 19, 2026) on ICE November settles; +30.30 (October 2, 2026) to +33.25 (November 18, 2026) on November CalRock marks.",
-   "vintage": "ICE settlements and CalRock marks, September 30, 2026 to November 18, 2026",
+   "text": "Synthetic crude minus WCS spread: +27.15 (September 30, 2026) to +32.57 (October 19, 2026) on ICE November settles; +30.30 (October 2, 2026) to +32.25 (November 20, 2026) on November CalRock marks.",
+   "vintage": "ICE settlements and CalRock marks, September 30, 2026 to November 20, 2026",
    "source": "ICE Endex report center; CalRock broker marks (private)",
    "source_url": ""
   },
@@ -42,8 +36,8 @@
    "source_url": ""
   },
   {
-   "text": "Egress strip candidate: short TMW December 2026 to February 2027 (settles -28.22, -23.45, -22.55; 531 lots combined volume, November 18, 2026). Static sizing caps near 120 lots per month at the $1M risk ceiling; carrier scale exists only as a staged build to 425 lots total. The balance model shows pipeline spare capacity positive in every month of 2027, so the candidate is a winter 2026-27 trade.",
-   "vintage": "ICE settlements November 18, 2026; balance model vintage September 28, 2026",
+   "text": "Egress strip candidate: short TMW December 2026 to February 2027 (settles -28.22, -21.65, -21.40; 436 lots combined volume, November 20, 2026). Static sizing caps near 120 lots per month at the $1M risk ceiling; carrier scale exists only as a staged build to 425 lots total. The balance model shows pipeline spare capacity positive in every month of 2027, so the candidate is a winter 2026-27 trade.",
+   "vintage": "ICE settlements November 20, 2026; balance model vintage September 28, 2026",
    "source": "ICE Endex report center; WCSB S&D model (Heavy Reading)",
    "source_url": ""
   },
@@ -58,23 +52,17 @@
    "vintage": "Balance model vintage September 28, 2026",
    "source": "WCSB S&D model (Heavy Reading)",
    "source_url": ""
-  },
-  {
-   "text": "TMW positioning, CFTC Disaggregated COT report of November 10, 2026: managed money net short 15,065 lots (long 0, short 15,065) against open interest of 61,990; the short is 24.3 percent of open interest against a 456-week median of 0.1 percent; only 11 of 456 reports show managed money more short; net short 47 consecutive weeks; combined managed-money and swap-dealer shorts about 23,538 lots. Crowded short, in the direction of trade 1; the scale path stays shut on this evidence and 75 lots stands.",
-   "vintage": "CFTC Disaggregated COT, report of November 10, 2026",
-   "source": "CFTC Disaggregated COT (futures-only)",
-   "source_url": ""
   }
  ],
  "sources": [
   {
    "publisher": "ICE Endex",
-   "vintage": "settlements, September 30, 2026 to November 18, 2026",
+   "vintage": "settlements, September 30, 2026 to November 20, 2026",
    "url": ""
   },
   {
    "publisher": "CalRock broker marks (private)",
-   "vintage": "marks, to November 18, 2026",
+   "vintage": "marks, to November 20, 2026",
    "url": ""
   },
   {
@@ -100,11 +88,6 @@
   {
    "publisher": "WCSB apportionment scorecard (Heavy Reading)",
    "vintage": "walk-forward backtest, October 2026",
-   "url": ""
-  },
-  {
-   "publisher": "CFTC Disaggregated COT",
-   "vintage": "TMW report of November 10, 2026",
    "url": ""
   }
  ]
