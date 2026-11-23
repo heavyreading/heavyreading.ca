@@ -2,9 +2,15 @@
  "page": "/world/spr-storage/",
  "title": "US SPR & Storage Watch",
  "dek": "US Strategic Petroleum Reserve (SPR) and commercial crude stocks, SPR inventory, the 2026 exchange/refill mechanics, and Cushing.",
- "built_at": "2026-11-21",
+ "built_at": "2026-11-23",
  "generator": "heavyreading-manifest/1",
  "claims": [
+  {
+   "text": "Status check on Nov 22: no new Department of Energy (DOE) Strategic Petroleum Reserve (SPR) award, exchange or solicitation announcement had been published on energy.gov as of this check. The DOE search checked directly on Nov 22 lists the newest SPR press release as the Oct 29 contract awards for an exchange of more than 40 million barrels, which completed the US commitment to release 172 million barrels, and the only newer reserves item remains the Nov 9 update to the SPR Quick Facts page, not an award or solicitation. The next Energy Information Administration (EIA) Weekly Petroleum Status Report, for the week ending Nov 20, is due on Wednesday, Nov 25, so the last official SPR inventory figure remains 276.4 million barrels in the week ending Nov 13.",
+   "vintage": "Nov 22, 2026",
+   "source": "U.S. Department of Energy",
+   "source_url": "https://www.energy.gov/search?keywords=%22Strategic+Petroleum+Reserve%22&page=0"
+  },
   {
    "text": "Status check on Nov 21: no new Department of Energy (DOE) Strategic Petroleum Reserve (SPR) award, exchange or solicitation announcement had been published on energy.gov as of this check. The DOE search checked directly on Nov 21 lists the newest SPR press release as the Oct 29 contract awards for an exchange of more than 40 million barrels, which completed the US commitment to release 172 million barrels, and the only newer reserves item remains the Nov 9 update to the SPR Quick Facts page, not an award or solicitation. The next Energy Information Administration (EIA) Weekly Petroleum Status Report, for the week ending Nov 20, had not been published at the time of this check, so the last official SPR inventory figure remains 276.4 million barrels in the week ending Nov 13.",
    "vintage": "Nov 21, 2026",
@@ -721,6 +727,11 @@
   }
  ],
  "sources": [
+  {
+   "publisher": "U.S. Department of Energy",
+   "vintage": "",
+   "url": "https://www.energy.gov/search?keywords=%22Strategic+Petroleum+Reserve%22&page=0"
+  },
   {
    "publisher": "U.S. Department of Energy",
    "vintage": "",
